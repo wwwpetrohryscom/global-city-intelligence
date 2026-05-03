@@ -1,0 +1,223 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { LinkCard } from "@/components/cards/link-card";
+import { MetricCard } from "@/components/cards/MetricCard";
+import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
+import { JsonLd } from "@/components/seo/json-ld";
+import { SourceBlock } from "@/components/seo/source-block";
+import { DataTable } from "@/components/tables/DataTable";
+import { PageHeader } from "@/components/layout/PageHeader";
+import { ScoreBar } from "@/components/ui/score-bar";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { getCities, getCityBySlug, getRankings } from "@/lib/data/queries";
+import { getSourcesByIds } from "@/lib/data/sources";
+import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
+import { createMetadata } from "@/lib/seo/metadata";
+import { cityRoute, countryRoute, moduleRoute, rankingRoute } from "@/lib/seo/routes";
+import { breadcrumbSchema, datasetSchema, webpageSchema } from "@/lib/seo/schema";
+
+type PageProps = {
+  params: Promise<{ city: string }>;
+};
+
+export function generateStaticParams() {
+  return getCities().map((city) => ({ city: city.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { city: citySlug } = await params;
+  const city = getCityBySlug(citySlug);
+
+  if (!city) {
+    return {};
+  }
+
+  return createMetadata({
+    title: `${city.name} City Intelligence: Scores, Data and Rankings`,
+    description: `${city.name} city intelligence profile with affordability, air quality, energy, resilience, sources, tables, and rankings.`,
+    path: cityRoute(city.slug),
+    type: "article",
+  });
+}
+
+export default async function CityPage({ params }: PageProps) {
+  const { city: citySlug } = await params;
+  const city = getCityBySlug(citySlug);
+
+  if (!city) {
+    notFound();
+  }
+
+  const title = `${city.name} City Intelligence`;
+  const description = `${city.intro} Compare affordability, air quality, energy readiness, resilience, sources, and rankings.`;
+  const breadcrumbs = cityBreadcrumbs(city.slug);
+  const sources = getSourcesByIds(city.sources);
+  const rankings = getRankings().slice(0, 3);
+
+  return (
+    <main>
+      <JsonLd data={webpageSchema({ path: cityRoute(city.slug), title, description })} />
+      <JsonLd data={breadcrumbSchema(breadcrumbs)} />
+      <JsonLd
+        data={datasetSchema({
+          name: `${city.name} city intelligence dataset`,
+          description,
+          path: cityRoute(city.slug),
+          dataYear: city.dataYear,
+          sources,
+        })}
+      />
+      <PageHeader eyebrow={`${city.countryName} / ${city.region}`} intro={city.intro} title={title}>
+        <dl className="grid gap-4">
+          <div>
+            <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+              Last updated
+            </dt>
+            <dd className="mt-1 text-lg font-semibold text-text-primary">
+              {city.lastUpdated}
+            </dd>
+          </div>
+          <div>
+            <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+              Data year
+            </dt>
+            <dd className="mt-1 text-lg font-semibold text-text-primary">
+              {city.dataYear}
+            </dd>
+          </div>
+          <div>
+            <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+              Population
+            </dt>
+            <dd className="mt-1 text-lg font-semibold text-text-primary">
+              {city.population}
+            </dd>
+          </div>
+        </dl>
+      </PageHeader>
+
+      <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
+        <BreadcrumbNav items={breadcrumbs} />
+
+        <section className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr]">
+          <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
+            <h2 className="text-2xl font-semibold text-text-primary">
+              Overall score
+            </h2>
+            <p className="mt-4 leading-7 text-text-secondary">{city.outlook}</p>
+            <div className="mt-6 space-y-4">
+              <ScoreBar label="Overall" value={city.scores.overall} />
+              <ScoreBar label="Affordability" value={city.scores.affordability} />
+              <ScoreBar label="Air quality" value={city.scores.airQuality} />
+              <ScoreBar label="Energy" value={city.scores.energy} />
+            </div>
+          </article>
+          <div className="grid gap-5 md:grid-cols-3">
+            {city.metrics.map((metric) => (
+              <MetricCard key={metric.label} metric={metric} />
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <SectionHeading
+            description="The table is part of the initial server-rendered HTML and mirrors the key city score cards."
+            title={`${city.name} data table`}
+          />
+          <div className="mt-6">
+            <DataTable
+              caption={`${city.name} city intelligence data table`}
+              rows={[
+                {
+                  metric: "Overall score",
+                  value: `${city.scores.overall}/100`,
+                  context: "Composite score across major city intelligence modules.",
+                },
+                {
+                  metric: "Affordability",
+                  value: `${city.scores.affordability}/100`,
+                  context: city.modules["cost-of-living"].summary,
+                },
+                {
+                  metric: "Air quality",
+                  value: `${city.scores.airQuality}/100`,
+                  context: city.modules["air-quality"].summary,
+                },
+                {
+                  metric: "Energy readiness",
+                  value: `${city.scores.energy}/100`,
+                  context: city.modules.energy.summary,
+                },
+                {
+                  metric: "Resilience",
+                  value: `${city.scores.resilience}/100`,
+                  context: "Climate adaptation and infrastructure continuity context.",
+                },
+              ]}
+            />
+          </div>
+        </section>
+
+        <section>
+          <SectionHeading
+            description="City pages link to module and ranking pages so crawlers can move through the topic cluster naturally."
+            title={`Explore ${city.name} modules`}
+          />
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            <LinkCard
+              description={city.modules["cost-of-living"].summary}
+              href={moduleRoute("cost-of-living", city.slug)}
+              title={`Cost of living in ${city.name}`}
+            />
+            <LinkCard
+              description={city.modules["air-quality"].summary}
+              href={moduleRoute("air-quality", city.slug)}
+              title={`Air quality in ${city.name}`}
+            />
+            <LinkCard
+              description={city.modules.energy.summary}
+              href={moduleRoute("energy", city.slug)}
+              title={`Energy in ${city.name}`}
+            />
+            <LinkCard
+              description="Compare this city against other indexed cities in crawlable ranking tables."
+              href={rankingRoute("overall-city-intelligence")}
+              title="City rankings"
+            />
+          </div>
+        </section>
+
+        <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
+          <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
+            <h2 className="text-2xl font-semibold text-text-primary">
+              Explanation
+            </h2>
+            <p className="mt-4 leading-7 text-text-secondary">
+              This city profile is designed as the topic hub. It summarizes the
+              city&apos;s main scores, then links to deeper subtopic pages for cost
+              of living, air quality, and energy. That structure supports users
+              who want a quick read and search engines that need crawlable
+              topical depth.
+            </p>
+            <p className="mt-4 leading-7 text-text-secondary">
+              Country context is available on the{" "}
+              <a className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50" href={countryRoute(city.countrySlug)}>
+                {city.countryName} country page
+              </a>
+              . Related rankings include{" "}
+              {rankings.map((ranking, index) => (
+                <span key={ranking.slug}>
+                  <a className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50" href={rankingRoute(ranking.slug)}>
+                    {ranking.shortTitle}
+                  </a>
+                  {index < rankings.length - 1 ? ", " : "."}
+                </span>
+              ))}
+            </p>
+          </article>
+          <SourceBlock sources={sources} />
+        </section>
+      </div>
+    </main>
+  );
+}
