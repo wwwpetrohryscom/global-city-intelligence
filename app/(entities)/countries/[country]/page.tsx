@@ -9,8 +9,14 @@ import { DataTable } from "@/components/tables/DataTable";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
+  generateCountryExplanation,
+  generateCountryIntro,
+} from "@/lib/content/generators";
+import { internalLink } from "@/lib/content/links";
+import { demoDataNotice } from "@/lib/content/quality";
+import {
+  getAllCountries,
   getCitiesByCountrySlug,
-  getCountries,
   getCountryBySlug,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
@@ -24,7 +30,7 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getCountries().map((country) => ({ country: country.slug }));
+  return getAllCountries().map((country) => ({ country: country.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -55,7 +61,11 @@ export default async function CountryPage({ params }: PageProps) {
   const sources = getSourcesByIds(country.sources);
   const breadcrumbs = countryBreadcrumbs(country.slug);
   const title = `${country.name} City Intelligence`;
-  const description = country.intro;
+  const introCopy = generateCountryIntro(country, cities);
+  const explanationCopy = generateCountryExplanation(country, cities);
+  const description = introCopy;
+  const methodologyLink = internalLink.methodology();
+  const dataSourcesLink = internalLink.dataSources();
 
   return (
     <main>
@@ -70,7 +80,7 @@ export default async function CountryPage({ params }: PageProps) {
           sources,
         })}
       />
-      <PageHeader eyebrow={country.region} intro={country.intro} title={title}>
+      <PageHeader eyebrow={country.region} intro={introCopy} title={title}>
         <dl className="grid gap-4">
           <div>
             <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
@@ -152,13 +162,9 @@ export default async function CountryPage({ params }: PageProps) {
         <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-semibold text-text-primary">
-              Explanation
+              Interpretation
             </h2>
-            <p className="mt-4 leading-7 text-text-secondary">
-              Country pages provide a stable parent layer for programmatic SEO.
-              They prevent city pages from becoming isolated and make it easier
-              to add new cities, regions, and source-specific context later.
-            </p>
+            <p className="mt-4 leading-7 text-text-secondary">{explanationCopy}</p>
             <ul className="mt-6 space-y-3 text-sm">
               <li>
                 <a
@@ -175,16 +181,31 @@ export default async function CountryPage({ params }: PageProps) {
               <li>
                 <a
                   className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
-                  href={staticRoutes.dataSources}
+                  href={dataSourcesLink.href}
                 >
-                  Data sources
+                  {dataSourcesLink.text}
                 </a>
                 <span className="text-text-secondary">
                   {" "}
-                  shows the source registry used across city and country pages.
+                  for the source registry behind these scores.
+                </span>
+              </li>
+              <li>
+                <a
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={methodologyLink.href}
+                >
+                  {methodologyLink.text}
+                </a>
+                <span className="text-text-secondary">
+                  {" "}
+                  for the scoring model used across modules.
                 </span>
               </li>
             </ul>
+            <p className="mt-4 text-xs leading-6 text-text-secondary">
+              {demoDataNotice()}
+            </p>
           </article>
           <SourceBlock sources={sources} />
         </section>

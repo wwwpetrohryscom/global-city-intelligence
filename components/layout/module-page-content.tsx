@@ -8,6 +8,12 @@ import { DataTable } from "@/components/tables/DataTable";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { PageHeader } from "@/components/layout/PageHeader";
+import {
+  generateModuleExplanation,
+  generateModuleIntro,
+} from "@/lib/content/generators";
+import { internalLink } from "@/lib/content/links";
+import { demoDataNotice } from "@/lib/content/quality";
 import { getAllCities, getAllModules, getAllRankings } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { moduleBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -36,13 +42,19 @@ export function ModulePageContent({
   const rankings = getAllRankings().slice(0, 2);
   const path = moduleRoute(moduleItem.slug, city.slug);
 
-  const otherCities = getAllCities()
+  const allCities = getAllCities();
+  const otherCities = allCities
     .filter((otherCity) => otherCity.slug !== city.slug)
     .map((otherCity) => ({
       city: otherCity,
       moduleData: otherCity.modules[moduleItem.slug],
     }))
     .sort((a, b) => b.moduleData.score - a.moduleData.score);
+
+  const introCopy = generateModuleIntro(moduleItem, city);
+  const explanationCopy = generateModuleExplanation(moduleItem, city, allCities);
+  const cityProfileLink = internalLink.cityProfile(city);
+  const methodologyLink = internalLink.methodology();
 
   return (
     <main>
@@ -57,7 +69,7 @@ export function ModulePageContent({
           sources,
         })}
       />
-      <PageHeader eyebrow={moduleItem.name} intro={moduleData.summary} title={title}>
+      <PageHeader eyebrow={moduleItem.name} intro={introCopy} title={title}>
         <dl className="grid gap-4">
           <div>
             <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
@@ -176,16 +188,28 @@ export function ModulePageContent({
         <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-semibold text-text-primary">
-              Explanation
+              Interpretation
             </h2>
+            <p className="mt-4 leading-7 text-text-secondary">{explanationCopy}</p>
             <p className="mt-4 leading-7 text-text-secondary">
-              {moduleData.explanation}
+              Read this module with the main{" "}
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={cityProfileLink.href}
+              >
+                {cityProfileLink.text.toLowerCase()}
+              </Link>{" "}
+              and the{" "}
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={methodologyLink.href}
+              >
+                {methodologyLink.text.toLowerCase()}
+              </Link>{" "}
+              page so single-topic pages do not hide tradeoffs across dimensions.
             </p>
-            <p className="mt-4 leading-7 text-text-secondary">
-              Read this module with the main city profile because single-topic
-              pages can miss tradeoffs. A city with a high energy score can
-              still have housing pressure, and a city with strong opportunity
-              can still carry health exposure risk.
+            <p className="mt-4 text-xs leading-6 text-text-secondary">
+              {demoDataNotice()}
             </p>
           </article>
           <SourceBlock sources={sources} />

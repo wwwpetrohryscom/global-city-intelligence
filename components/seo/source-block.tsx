@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/Card";
+import { generateSourceBlockIntro } from "@/lib/content/generators";
 import type { DataSource } from "@/types";
 
 export function SourceBlock({ sources }: { sources: DataSource[] }) {
@@ -6,9 +7,9 @@ export function SourceBlock({ sources }: { sources: DataSource[] }) {
     <Card as="section">
       <h2 className="text-xl font-semibold text-text-primary">Sources</h2>
       <p className="mt-3 text-sm leading-6 text-text-secondary">
-        These pages use trusted institutional references for methodology and
-        context. Mock values are typed and ready to be replaced by API-backed
-        city datasets without changing route structure.
+        {generateSourceBlockIntro(sources)} Mock values are typed and ready to
+        be replaced by API-backed city datasets without changing route
+        structure.
       </p>
       <ul className="mt-5 space-y-4">
         {sources.map((source) => (

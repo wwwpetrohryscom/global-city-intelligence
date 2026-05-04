@@ -9,9 +9,16 @@ import { FactList } from "@/components/ui/fact-list";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
+  generateRankingExplanation,
+  generateRankingIntro,
+} from "@/lib/content/generators";
+import { internalLink } from "@/lib/content/links";
+import { demoDataNotice } from "@/lib/content/quality";
+import {
+  getCityBySlug,
   getRankingBySlug,
   getRankingEntriesWithCities,
-  getRankings,
+  getAllRankings,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { rankingBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -24,7 +31,7 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getRankings().map((ranking) => ({ ranking: ranking.slug }));
+  return getAllRankings().map((ranking) => ({ ranking: ranking.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -54,6 +61,12 @@ export default async function RankingDetailPage({ params }: PageProps) {
   const entries = getRankingEntriesWithCities(ranking.slug);
   const breadcrumbs = rankingBreadcrumbs(ranking.slug);
   const sources = getSourcesByIds(ranking.sources);
+  const topCity = ranking.entries[0]
+    ? getCityBySlug(ranking.entries[0].citySlug)
+    : undefined;
+  const introCopy = generateRankingIntro(ranking);
+  const explanationCopy = generateRankingExplanation(ranking, topCity);
+  const methodologyLink = internalLink.methodology();
 
   return (
     <main>
@@ -74,7 +87,7 @@ export default async function RankingDetailPage({ params }: PageProps) {
           sources,
         })}
       />
-      <PageHeader eyebrow="Ranking" intro={ranking.description} title={ranking.title} />
+      <PageHeader eyebrow="Ranking" intro={introCopy} title={ranking.title} />
       <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
         <BreadcrumbNav items={breadcrumbs} />
         <FactList
@@ -99,15 +112,23 @@ export default async function RankingDetailPage({ params }: PageProps) {
         <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-semibold text-text-primary">
-              Explanation
+              Methodology and interpretation
             </h2>
-            <p className="mt-4 leading-7 text-text-secondary">
-              {ranking.methodology}
-            </p>
+            <p className="mt-4 leading-7 text-text-secondary">{explanationCopy}</p>
             <p className="mt-4 leading-7 text-text-secondary">
               Rankings are directional intelligence, not official government
               scores. Each entry links to a city profile where users can inspect
-              module-level context, source blocks, and data tables.
+              module-level context, source blocks, and data tables. See the{" "}
+              <a
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={methodologyLink.href}
+              >
+                {methodologyLink.text.toLowerCase()}
+              </a>{" "}
+              for the underlying scoring model.
+            </p>
+            <p className="mt-4 text-xs leading-6 text-text-secondary">
+              {demoDataNotice()}
             </p>
           </article>
           <SourceBlock sources={sources} />

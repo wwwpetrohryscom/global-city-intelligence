@@ -9,6 +9,12 @@ import { DataTable } from "@/components/tables/DataTable";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { SectionHeading } from "@/components/ui/section-heading";
+import {
+  generateCityExplanation,
+  generateCityIntro,
+} from "@/lib/content/generators";
+import { internalLink } from "@/lib/content/links";
+import { demoDataNotice } from "@/lib/content/quality";
 import { getAllCities, getAllModules, getAllRankings, getCityBySlug } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -54,6 +60,10 @@ export default async function CityPage({ params }: PageProps) {
   const sources = getSourcesByIds(city.sources);
   const rankings = getAllRankings().slice(0, 3);
   const modules = getAllModules();
+  const introCopy = generateCityIntro(city);
+  const explanationCopy = generateCityExplanation(city, modules);
+  const rankingsLink = internalLink.cityInRankings(city);
+  const methodologyLink = internalLink.methodology();
 
   return (
     <main>
@@ -68,7 +78,7 @@ export default async function CityPage({ params }: PageProps) {
           sources,
         })}
       />
-      <PageHeader eyebrow={`${city.countryName} / ${city.region}`} intro={city.intro} title={title}>
+      <PageHeader eyebrow={`${city.countryName} / ${city.region}`} intro={introCopy} title={title}>
         <dl className="grid gap-4">
           <div>
             <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
@@ -174,15 +184,9 @@ export default async function CityPage({ params }: PageProps) {
         <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-semibold text-text-primary">
-              Explanation
+              Interpretation
             </h2>
-            <p className="mt-4 leading-7 text-text-secondary">
-              This city profile is designed as the topic hub. It summarizes the
-              city&apos;s main scores, then links to deeper subtopic pages for cost
-              of living, air quality, and energy. That structure supports users
-              who want a quick read and search engines that need crawlable
-              topical depth.
-            </p>
+            <p className="mt-4 leading-7 text-text-secondary">{explanationCopy}</p>
             <p className="mt-4 leading-7 text-text-secondary">
               Country context is available on the{" "}
               <a className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50" href={countryRoute(city.countrySlug)}>
@@ -196,7 +200,16 @@ export default async function CityPage({ params }: PageProps) {
                   </a>
                   {index < rankings.length - 1 ? ", " : "."}
                 </span>
-              ))}
+              ))}{" "}
+              <a className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50" href={rankingsLink.href}>
+                {rankingsLink.text}
+              </a>{" "}or{" "}
+              <a className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50" href={methodologyLink.href}>
+                {methodologyLink.text.toLowerCase()}
+              </a>.
+            </p>
+            <p className="mt-4 text-xs leading-6 text-text-secondary">
+              {demoDataNotice()}
             </p>
           </article>
           <SourceBlock sources={sources} />
