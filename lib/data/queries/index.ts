@@ -2,9 +2,10 @@ import { cities } from "@/lib/data/cities";
 import { countries } from "@/lib/data/countries";
 import { intelligenceModules } from "@/lib/data/modules";
 import { rankings } from "@/lib/data/rankings";
+import { dataSources, getSourcesByIds as getSourcesByIdsImpl } from "@/lib/data/sources";
 import type { ModuleSlug } from "@/types";
 
-export function getCities() {
+export function getAllCities() {
   return cities;
 }
 
@@ -12,7 +13,7 @@ export function getCityBySlug(slug: string) {
   return cities.find((city) => city.slug === slug);
 }
 
-export function getCountries() {
+export function getAllCountries() {
   return countries;
 }
 
@@ -24,7 +25,7 @@ export function getCitiesByCountrySlug(countrySlug: string) {
   return cities.filter((city) => city.countrySlug === countrySlug);
 }
 
-export function getModules() {
+export function getAllModules() {
   return intelligenceModules;
 }
 
@@ -42,7 +43,7 @@ export function getCityModule(citySlug: string, moduleSlug: ModuleSlug) {
   return city.modules[moduleSlug];
 }
 
-export function getRankings() {
+export function getAllRankings() {
   return rankings;
 }
 
@@ -64,3 +65,15 @@ export function getRankingEntriesWithCities(slug: string) {
     })
     .filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
 }
+
+export function getAllSources() {
+  return dataSources;
+}
+
+export const getSourcesByIds = getSourcesByIdsImpl;
+
+// Backward-compatible aliases.
+export const getCities = getAllCities;
+export const getCountries = getAllCountries;
+export const getModules = getAllModules;
+export const getRankings = getAllRankings;

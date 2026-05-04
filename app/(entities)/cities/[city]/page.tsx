@@ -9,7 +9,7 @@ import { DataTable } from "@/components/tables/DataTable";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { getCities, getCityBySlug, getRankings } from "@/lib/data/queries";
+import { getAllCities, getAllModules, getAllRankings, getCityBySlug } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
@@ -21,7 +21,7 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getCities().map((city) => ({ city: city.slug }));
+  return getAllCities().map((city) => ({ city: city.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -52,7 +52,8 @@ export default async function CityPage({ params }: PageProps) {
   const description = `${city.intro} Compare affordability, air quality, energy readiness, resilience, sources, and rankings.`;
   const breadcrumbs = cityBreadcrumbs(city.slug);
   const sources = getSourcesByIds(city.sources);
-  const rankings = getRankings().slice(0, 3);
+  const rankings = getAllRankings().slice(0, 3);
+  const modules = getAllModules();
 
   return (
     <main>
@@ -133,21 +134,11 @@ export default async function CityPage({ params }: PageProps) {
                   value: `${city.scores.overall}/100`,
                   context: "Composite score across major city intelligence modules.",
                 },
-                {
-                  metric: "Affordability",
-                  value: `${city.scores.affordability}/100`,
-                  context: city.modules["cost-of-living"].summary,
-                },
-                {
-                  metric: "Air quality",
-                  value: `${city.scores.airQuality}/100`,
-                  context: city.modules["air-quality"].summary,
-                },
-                {
-                  metric: "Energy readiness",
-                  value: `${city.scores.energy}/100`,
-                  context: city.modules.energy.summary,
-                },
+                ...modules.map((moduleItem) => ({
+                  metric: moduleItem.name,
+                  value: `${city.modules[moduleItem.slug].score}/100`,
+                  context: city.modules[moduleItem.slug].summary,
+                })),
                 {
                   metric: "Resilience",
                   value: `${city.scores.resilience}/100`,
@@ -163,22 +154,15 @@ export default async function CityPage({ params }: PageProps) {
             description="City pages link to module and ranking pages so crawlers can move through the topic cluster naturally."
             title={`Explore ${city.name} modules`}
           />
-          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            <LinkCard
-              description={city.modules["cost-of-living"].summary}
-              href={moduleRoute("cost-of-living", city.slug)}
-              title={`Cost of living in ${city.name}`}
-            />
-            <LinkCard
-              description={city.modules["air-quality"].summary}
-              href={moduleRoute("air-quality", city.slug)}
-              title={`Air quality in ${city.name}`}
-            />
-            <LinkCard
-              description={city.modules.energy.summary}
-              href={moduleRoute("energy", city.slug)}
-              title={`Energy in ${city.name}`}
-            />
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {modules.map((moduleItem) => (
+              <LinkCard
+                description={city.modules[moduleItem.slug].summary}
+                href={moduleRoute(moduleItem.slug, city.slug)}
+                key={moduleItem.slug}
+                title={`${moduleItem.name} in ${city.name}`}
+              />
+            ))}
             <LinkCard
               description="Compare this city against other indexed cities in crawlable ranking tables."
               href={rankingRoute("overall-city-intelligence")}

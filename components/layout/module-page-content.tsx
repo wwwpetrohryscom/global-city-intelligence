@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
@@ -7,12 +8,12 @@ import { DataTable } from "@/components/tables/DataTable";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { getModules, getRankings } from "@/lib/data/queries";
+import { getAllCities, getAllModules, getAllRankings } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { moduleBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { cityRoute, moduleRoute, rankingRoute } from "@/lib/seo/routes";
 import { breadcrumbSchema, datasetSchema, webpageSchema } from "@/lib/seo/schema";
-import type { City, CityModuleData, IntelligenceModule, ModuleSlug } from "@/types";
+import type { City, CityModuleData, IntelligenceModule } from "@/types";
 
 export function ModulePageContent({
   city,
@@ -29,11 +30,19 @@ export function ModulePageContent({
 }) {
   const breadcrumbs = moduleBreadcrumbs(moduleItem.slug, city.slug);
   const sources = getSourcesByIds(moduleData.sources);
-  const relatedModules = getModules().filter(
+  const relatedModules = getAllModules().filter(
     (relatedModule) => relatedModule.slug !== moduleItem.slug,
   );
-  const rankings = getRankings().slice(0, 2);
+  const rankings = getAllRankings().slice(0, 2);
   const path = moduleRoute(moduleItem.slug, city.slug);
+
+  const otherCities = getAllCities()
+    .filter((otherCity) => otherCity.slug !== city.slug)
+    .map((otherCity) => ({
+      city: otherCity,
+      moduleData: otherCity.modules[moduleItem.slug],
+    }))
+    .sort((a, b) => b.moduleData.score - a.moduleData.score);
 
   return (
     <main>
@@ -112,6 +121,58 @@ export function ModulePageContent({
           </div>
         </section>
 
+        <section>
+          <SectionHeading
+            description="A crawlable comparison across every indexed city makes it easy to scan how this module changes between metros."
+            title={`${moduleItem.name} city comparison`}
+          />
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm">
+            <table className="min-w-full border-collapse text-left text-sm">
+              <caption className="sr-only">{`${moduleItem.name} city comparison table`}</caption>
+              <thead className="bg-neutral-soft text-text-secondary">
+                <tr>
+                  <th className="px-4 py-3 font-semibold" scope="col">
+                    City
+                  </th>
+                  <th className="px-4 py-3 font-semibold" scope="col">
+                    Score
+                  </th>
+                  <th className="px-4 py-3 font-semibold" scope="col">
+                    Summary
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-neutral-border">
+                <tr className="bg-orange-50/40">
+                  <th className="px-4 py-4 font-medium text-text-primary" scope="row">
+                    {city.name} (this page)
+                  </th>
+                  <td className="border-l-2 border-brand-500 px-4 py-4 font-semibold text-text-primary">
+                    {moduleData.score}/100
+                  </td>
+                  <td className="px-4 py-4 text-text-secondary">{moduleData.summary}</td>
+                </tr>
+                {otherCities.map(({ city: otherCity, moduleData: otherModule }) => (
+                  <tr className="odd:bg-white even:bg-neutral-soft/60 hover:bg-orange-50/60" key={otherCity.slug}>
+                    <th className="px-4 py-4 font-medium text-text-primary" scope="row">
+                      <Link
+                        className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
+                        href={moduleRoute(moduleItem.slug, otherCity.slug)}
+                      >
+                        {otherCity.name}
+                      </Link>
+                    </th>
+                    <td className="border-l-2 border-brand-500 px-4 py-4 font-semibold text-text-primary">
+                      {otherModule.score}/100
+                    </td>
+                    <td className="px-4 py-4 text-text-secondary">{otherModule.summary}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
             <h2 className="text-2xl font-semibold text-text-primary">
@@ -144,7 +205,7 @@ export function ModulePageContent({
             {relatedModules.map((relatedModule) => (
               <LinkCard
                 description={relatedModule.description}
-                href={moduleRoute(relatedModule.slug as ModuleSlug, city.slug)}
+                href={moduleRoute(relatedModule.slug, city.slug)}
                 key={relatedModule.slug}
                 title={`${relatedModule.name} in ${city.name}`}
               />

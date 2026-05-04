@@ -5,7 +5,7 @@ import { getAllCities, getCityBySlug, getModuleBySlug } from "@/lib/data/queries
 import { createMetadata } from "@/lib/seo/metadata";
 import { moduleRoute } from "@/lib/seo/routes";
 
-const MODULE_SLUG = "energy" as const;
+const MODULE_SLUG = "climate-risk" as const;
 
 type PageProps = {
   params: Promise<{ city: string }>;
@@ -24,14 +24,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return createMetadata({
-    title: `Energy Readiness in ${city.name}: Score, Data and Sources`,
-    description: `${city.name} energy intelligence with clean-energy readiness, grid resilience, climate stressors, data table, and trusted sources.`,
+    title: `Climate Risk in ${city.name}: Score, Data and Sources`,
+    description: `${city.name} climate-risk profile with hazard exposure, adaptation capacity, data table, and sources.`,
     path: moduleRoute(MODULE_SLUG, city.slug),
     type: "article",
   });
 }
 
-export default async function EnergyPage({ params }: PageProps) {
+export default async function ClimateRiskPage({ params }: PageProps) {
   const { city: citySlug } = await params;
   const city = getCityBySlug(citySlug);
   const moduleItem = getModuleBySlug(MODULE_SLUG);
@@ -45,10 +45,10 @@ export default async function EnergyPage({ params }: PageProps) {
   return (
     <ModulePageContent
       city={city}
-      description={`${moduleData.summary} Includes readiness score, visible data table, source block, and links back to the city profile.`}
+      description={`${moduleData.summary} Includes climate-risk score, visible data table, source block, and links back to the city profile.`}
       moduleData={moduleData}
       moduleItem={moduleItem}
-      title={`Energy Readiness in ${city.name}`}
+      title={`Climate Risk in ${city.name}`}
     />
   );
 }

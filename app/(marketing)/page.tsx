@@ -12,7 +12,7 @@ import { Card } from "@/components/ui/Card";
 import { Divider } from "@/components/ui/Divider";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
-import { getCities, getRankings } from "@/lib/data/queries";
+import { getAllCities, getAllModules, getAllRankings } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { createMetadata } from "@/lib/seo/metadata";
 import { cityRoute, rankingRoute, staticRoutes } from "@/lib/seo/routes";
@@ -29,8 +29,9 @@ export const metadata: Metadata = createMetadata({
 });
 
 export default function HomePage() {
-  const cities = getCities();
-  const rankings = getRankings();
+  const cities = getAllCities();
+  const rankings = getAllRankings();
+  const modules = getAllModules();
   const sources = getSourcesByIds([
     "un-habitat",
     "who-air",
@@ -134,22 +135,18 @@ export default function HomePage() {
               />
             ))}
           </div>
-          <div className="mt-6 grid gap-5 md:grid-cols-3">
-            <LinkCard
-              description="Compare essentials, housing pressure, mobility cost offsets, and practical affordability."
-              href="/cost-of-living/copenhagen"
-              title="Cost of living module"
-            />
-            <LinkCard
-              description="Read health-oriented air-quality context with visible pollutant explanation and source references."
-              href="/air-quality/copenhagen"
-              title="Air quality module"
-            />
-            <LinkCard
-              description="Review clean-energy readiness, climate stressors, and infrastructure transition signals."
-              href="/energy/copenhagen"
-              title="Energy module"
-            />
+          <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {modules.map((moduleItem) => {
+              const sampleCity = cities[0];
+              return (
+                <LinkCard
+                  description={moduleItem.description}
+                  href={`/${moduleItem.pathSegment}/${sampleCity.slug}`}
+                  key={moduleItem.slug}
+                  title={`${moduleItem.name} module`}
+                />
+              );
+            })}
           </div>
         </section>
 

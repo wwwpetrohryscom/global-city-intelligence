@@ -61,6 +61,56 @@ export const dataSources: DataSource[] = [
     reliabilityNote:
       "Used to explain urban climate vulnerability and adaptation scoring logic.",
   },
+  {
+    id: "numbeo-cost",
+    name: "Cost of Living Index",
+    organization: "Numbeo",
+    url: "https://www.numbeo.com/cost-of-living/",
+    description:
+      "Crowd-sourced cost-of-living, rent, and purchasing-power index used as a directional comparison reference.",
+    reliabilityNote:
+      "Used for directional affordability framing alongside official housing and price datasets.",
+  },
+  {
+    id: "iea-cities",
+    name: "Empowering Urban Energy Transitions",
+    organization: "International Energy Agency",
+    url: "https://www.iea.org/reports/empowering-urban-energy-transitions",
+    description:
+      "City-scale clean-energy transition framing covering policy, electrification, buildings, and grid context.",
+    reliabilityNote:
+      "Used to ground energy-readiness scoring in international transition guidance.",
+  },
+  {
+    id: "unodc-crime",
+    name: "UNODC Data Portal",
+    organization: "United Nations Office on Drugs and Crime",
+    url: "https://dataunodc.un.org/",
+    description:
+      "International crime, victimization, and criminal-justice statistics used for safety context.",
+    reliabilityNote:
+      "Used as a directional benchmark for relative city safety framing.",
+  },
+  {
+    id: "itu-connectivity",
+    name: "Measuring Digital Development",
+    organization: "International Telecommunication Union",
+    url: "https://www.itu.int/itu-d/reports/statistics/",
+    description:
+      "Global broadband, mobile, and digital-development indicators for connectivity benchmarking.",
+    reliabilityNote:
+      "Used as the connectivity reference for national and city-level digital-readiness signals.",
+  },
+  {
+    id: "ookla-speedtest",
+    name: "Speedtest Global Index",
+    organization: "Ookla",
+    url: "https://www.speedtest.net/global-index",
+    description:
+      "Continuously updated fixed-broadband and mobile-network performance comparison index.",
+    reliabilityNote:
+      "Used as a directional speed and latency reference for city connectivity scoring.",
+  },
 ];
 
 export function getSourceById(sourceId: string) {

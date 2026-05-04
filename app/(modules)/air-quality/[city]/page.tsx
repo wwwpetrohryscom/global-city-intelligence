@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ModulePageContent } from "@/components/layout/module-page-content";
-import { getCities, getCityBySlug, getModuleBySlug } from "@/lib/data/queries";
+import { getAllCities, getCityBySlug, getModuleBySlug } from "@/lib/data/queries";
 import { createMetadata } from "@/lib/seo/metadata";
 import { moduleRoute } from "@/lib/seo/routes";
 
@@ -12,7 +12,7 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getCities().map((city) => ({ city: city.slug }));
+  return getAllCities().map((city) => ({ city: city.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
