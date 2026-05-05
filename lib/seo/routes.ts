@@ -3,7 +3,7 @@ import type { ModuleSlug } from "@/types";
 
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://global-city-intelligence.vercel.app";
+  "https://www.globalcityintelligence.com";
 
 export const staticRoutes = {
   home: "/",
