@@ -29,7 +29,7 @@ export const countries: Country[] = [
     intro:
       "The United States profile combines strong data transparency, large regional variation, and city-level contrasts in affordability, air quality, and climate risk.",
     sources: ["un-habitat", "nasa-power", "epa-naaqs", "ipcc-urban"],
-    citySlugs: ["new-york", "san-francisco"],
+    citySlugs: ["new-york", "san-francisco", "los-angeles", "chicago", "seattle"],
     metrics: [
       { label: "Urban variation", value: "Very high", description: "Large metropolitan differences make city-level pages more useful than national averages." },
       { label: "Air-quality context", value: "Strong monitoring", description: "EPA standards and reporting support pollutant trend interpretation." },
@@ -131,7 +131,7 @@ export const countries: Country[] = [
     intro:
       "Canada's profile combines strong public services, low-carbon electricity in many provinces, and rising housing-cost pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities"],
-    citySlugs: ["toronto"],
+    citySlugs: ["toronto", "vancouver"],
     metrics: [
       { label: "Service depth", value: "High", description: "Public health and education services support strong daily life." },
       { label: "Energy transition context", value: "Favorable grid", description: "Low-carbon electricity in major provinces supports city-level transition." },
@@ -148,7 +148,7 @@ export const countries: Country[] = [
     intro:
       "Australia's profile combines high quality of life and outdoor amenity with elevated housing pressure and meaningful climate exposure from heat and bushfire.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban"],
-    citySlugs: ["sydney"],
+    citySlugs: ["sydney", "melbourne", "brisbane"],
     metrics: [
       { label: "Outdoor amenity", value: "Very high", description: "Coastal and outdoor amenity supports a high quality of daily life." },
       { label: "Climate exposure", value: "Heat and bushfire", description: "Heat and bushfire pressure are central adaptation priorities." },
@@ -182,7 +182,7 @@ export const countries: Country[] = [
     intro:
       "Spain's profile blends walkable, transit-rich cities, strong renewable resources, and growing climate-adaptation work focused on heat and water stress.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["barcelona"],
+    citySlugs: ["barcelona", "madrid"],
     metrics: [
       { label: "Renewable resource", value: "Very strong", description: "Solar and wind potential support a steady national clean-energy build-out." },
       { label: "Urban walkability", value: "High", description: "Compact urban form and street-level life reduce mobility friction." },
@@ -267,7 +267,7 @@ export const countries: Country[] = [
     intro:
       "The United Arab Emirates' profile features rapidly evolving urban infrastructure, ambitious renewable-energy targets, and active climate-adaptation work in hot, arid conditions.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities", "itu-connectivity"],
-    citySlugs: ["dubai"],
+    citySlugs: ["dubai", "abu-dhabi"],
     metrics: [
       { label: "Solar resource", value: "Exceptional", description: "Among the strongest solar irradiance levels globally." },
       { label: "Service depth", value: "Strong", description: "Health, transit, and digital services reach broad coverage in major cities." },
@@ -335,7 +335,7 @@ export const countries: Country[] = [
     intro:
       "South Africa's profile features creative urban centers, strong tourism and financial services, and ongoing energy-transition and water-resilience work.",
     sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["cape-town"],
+    citySlugs: ["cape-town", "johannesburg"],
     metrics: [
       { label: "Outdoor amenity", value: "Very high", description: "Coastal and natural amenity supports a strong quality of daily life." },
       { label: "Energy transition", value: "In progress", description: "Grid diversification and renewable build-out are central priorities." },
@@ -374,6 +374,295 @@ export const countries: Country[] = [
       { label: "Energy mix", value: "Low-carbon", description: "Hydropower and geothermal generation support a favorable baseline." },
       { label: "Outdoor amenity", value: "Very high", description: "Coastal and natural amenity supports a strong quality of daily life." },
       { label: "Affordability pressure", value: "High", description: "Housing pressure is the main resident well-being constraint in major cities." },
+    ],
+  },
+  {
+    slug: "italy",
+    name: "Italy",
+    iso2: "IT",
+    region: "Southern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Italy's profile combines deep cultural heritage, walkable historic cities, growing renewable build-out, and active climate-adaptation work in heat-exposed regions.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
+    citySlugs: ["rome", "milan"],
+    metrics: [
+      { label: "Cultural heritage", value: "Globally leading", description: "Heritage and creative industries shape city identities." },
+      { label: "Energy transition context", value: "Accelerating", description: "Renewable build-out and EU funds support city-level transition." },
+      { label: "Heat adaptation", value: "Rising priority", description: "Sustained summer heat is becoming central to urban planning." },
+    ],
+  },
+  {
+    slug: "portugal",
+    name: "Portugal",
+    iso2: "PT",
+    region: "Southern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Portugal's profile blends mild Atlantic climate, strong renewable resources, and rising remote-work and digital-services activity in major cities.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
+    citySlugs: ["lisbon"],
+    metrics: [
+      { label: "Renewable resource", value: "Very strong", description: "Wind and solar potential support a steady national clean-energy build-out." },
+      { label: "Climate context", value: "Mild Atlantic", description: "Coastal moderation supports a comfortable urban operating environment." },
+      { label: "Digital readiness", value: "Strong", description: "Fiber and 5G coverage support remote work and digital services." },
+    ],
+  },
+  {
+    slug: "czechia",
+    name: "Czechia",
+    iso2: "CZ",
+    region: "Central Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Czechia's profile combines compact historic cities, mature public transit, and an active energy transition supported by EU framing and city-level programs.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
+    citySlugs: ["prague"],
+    metrics: [
+      { label: "Public transit", value: "Strong", description: "Metro, tram, and bus reach support car-light daily life in major cities." },
+      { label: "Cultural heritage", value: "Deep", description: "Long-standing cultural and creative ecosystems shape urban identity." },
+      { label: "Energy transition context", value: "In progress", description: "Heating decarbonization and renewables are central transition levers." },
+    ],
+  },
+  {
+    slug: "poland",
+    name: "Poland",
+    iso2: "PL",
+    region: "Central Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Poland's profile features fast-growing tech and services activity, expanding transit networks, and an active energy transition supported by EU funds.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
+    citySlugs: ["warsaw"],
+    metrics: [
+      { label: "Tech-sector activity", value: "Growing", description: "Software, services, and finance expand opportunity in major cities." },
+      { label: "Energy transition context", value: "In progress", description: "Heating and grid decarbonization are central transition levers." },
+      { label: "Public transit", value: "Strong", description: "Metro, tram, and bus reach support car-light daily life in major cities." },
+    ],
+  },
+  {
+    slug: "argentina",
+    name: "Argentina",
+    iso2: "AR",
+    region: "Latin America",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Argentina's profile blends deep cultural and culinary identity with rising renewable resource development and active urban-modernization work.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: ["buenos-aires"],
+    metrics: [
+      { label: "Cultural depth", value: "Very high", description: "Music, theater, and culinary traditions shape urban identity." },
+      { label: "Renewable resource", value: "Strong", description: "Wind resource is favorable nationally, supporting transition." },
+      { label: "Urban variation", value: "Wide", description: "Resident experience varies sharply across districts and metro areas." },
+    ],
+  },
+  {
+    slug: "chile",
+    name: "Chile",
+    iso2: "CL",
+    region: "Latin America",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Chile's profile combines strong solar resource, growing renewable build-out, and active climate-adaptation work focused on water and air resilience.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "iea-cities"],
+    citySlugs: ["santiago"],
+    metrics: [
+      { label: "Solar resource", value: "Exceptional", description: "Among the strongest solar irradiance levels globally." },
+      { label: "Energy transition context", value: "Accelerating", description: "Solar and wind build-out are among the fastest in the region." },
+      { label: "Water resilience", value: "Active", description: "Long-running drought planning is integral to urban operations." },
+    ],
+  },
+  {
+    slug: "colombia",
+    name: "Colombia",
+    iso2: "CO",
+    region: "Latin America",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Colombia's profile features creative urban centers, hydro-led low-carbon electricity, and innovative public-transit systems shaping daily life.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: ["bogota"],
+    metrics: [
+      { label: "Energy mix", value: "Renewable-heavy", description: "Hydropower supports a comparatively low-carbon electricity baseline." },
+      { label: "Bus rapid transit", value: "Globally cited", description: "BRT systems are widely studied internationally." },
+      { label: "Cultural depth", value: "Very high", description: "Music, food, and creative ecosystems shape urban identity." },
+    ],
+  },
+  {
+    slug: "peru",
+    name: "Peru",
+    iso2: "PE",
+    region: "Latin America",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Peru's profile blends globally cited culinary depth, growing services activity, and active climate-adaptation work focused on water and seismic resilience.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: ["lima"],
+    metrics: [
+      { label: "Culinary depth", value: "Globally cited", description: "Peruvian gastronomy is among the most influential globally." },
+      { label: "Renewable resource", value: "Strong", description: "Hydropower and solar resources support transition direction." },
+      { label: "Water resilience", value: "Active", description: "Andes water cycles shape long-run resource planning." },
+    ],
+  },
+  {
+    slug: "china",
+    name: "China",
+    iso2: "CN",
+    region: "East Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "China's profile features dense metropolitan economies, leading EV and renewable build-out, and major adaptation programs in coastal and high-heat regions.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "iea-cities"],
+    citySlugs: ["shanghai"],
+    metrics: [
+      { label: "EV adoption", value: "Globally leading", description: "EV sales and charging infrastructure are among the highest globally." },
+      { label: "Energy transition context", value: "Accelerating", description: "Renewable build-out is among the fastest globally." },
+      { label: "Urban transit", value: "Globally leading", description: "Major cities operate among the world's largest metro networks." },
+    ],
+  },
+  {
+    slug: "taiwan",
+    name: "Taiwan",
+    iso2: "TW",
+    region: "East Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Taiwan's profile combines strong public transit, leading semiconductor industry context, and active climate-adaptation work for typhoons and seismic exposure.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "itu-connectivity"],
+    citySlugs: ["taipei"],
+    metrics: [
+      { label: "Tech-industry context", value: "Leading", description: "Semiconductor and electronics ecosystems shape opportunity." },
+      { label: "Public transit", value: "Very strong", description: "Major cities support car-light daily life." },
+      { label: "Adaptation context", value: "Strong", description: "Engineering capacity supports typhoon and seismic resilience." },
+    ],
+  },
+  {
+    slug: "malaysia",
+    name: "Malaysia",
+    iso2: "MY",
+    region: "Southeast Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Malaysia's profile blends multicultural urban centers, growing digital infrastructure, and active climate-adaptation work in tropical conditions.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "itu-connectivity"],
+    citySlugs: ["kuala-lumpur"],
+    metrics: [
+      { label: "Multicultural depth", value: "Very high", description: "Diverse cultural and culinary traditions shape urban identity." },
+      { label: "Digital readiness", value: "Strong", description: "Fiber and mobile networks reach broad urban coverage." },
+      { label: "Affordability context", value: "Favorable", description: "Cost-of-living levels are comparatively favorable for the region." },
+    ],
+  },
+  {
+    slug: "indonesia",
+    name: "Indonesia",
+    iso2: "ID",
+    region: "Southeast Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Indonesia's profile features a diverse archipelago of urban regions, growing renewable build-out, and major climate and water-resilience work in coastal cities.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "iea-cities"],
+    citySlugs: ["jakarta"],
+    metrics: [
+      { label: "Cultural depth", value: "Very high", description: "Diverse cultural and culinary traditions shape urban identity." },
+      { label: "Energy transition context", value: "In progress", description: "Renewable build-out and grid expansion are central levers." },
+      { label: "Climate exposure", value: "Coastal flood and heat", description: "Coastal flooding and rising heat shape adaptation priorities." },
+    ],
+  },
+  {
+    slug: "philippines",
+    name: "Philippines",
+    iso2: "PH",
+    region: "Southeast Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "The Philippines' profile features deep services and digital-economy activity, strong solar resources, and active climate-adaptation work for typhoons and floods.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: ["manila"],
+    metrics: [
+      { label: "Services economy", value: "Strong", description: "Business-process services and creative industries shape opportunity." },
+      { label: "Renewable resource", value: "Strong", description: "Solar and wind resources support transition direction." },
+      { label: "Climate exposure", value: "Typhoon and flood", description: "Tropical storm and flood pressure shape adaptation priorities." },
+    ],
+  },
+  {
+    slug: "india",
+    name: "India",
+    iso2: "IN",
+    region: "South Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "India's profile features fast-growing metropolitan economies, accelerating renewable build-out, and major climate and air-quality programs across major regions.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "iea-cities"],
+    citySlugs: ["mumbai"],
+    metrics: [
+      { label: "Economic depth", value: "Globally significant", description: "Finance, services, film, and trade ecosystems shape opportunity." },
+      { label: "Energy transition context", value: "Accelerating", description: "Solar build-out is among the fastest globally." },
+      { label: "Climate exposure", value: "Heat and monsoon", description: "Heat, monsoon rainfall, and coastal flooding shape adaptation priorities." },
+    ],
+  },
+  {
+    slug: "qatar",
+    name: "Qatar",
+    iso2: "QA",
+    region: "Western Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Qatar's profile features rapidly evolving urban infrastructure, ambitious solar build-out, and active climate-adaptation work in hot, arid conditions.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities", "itu-connectivity"],
+    citySlugs: ["doha"],
+    metrics: [
+      { label: "Solar resource", value: "Exceptional", description: "Among the strongest solar irradiance levels globally." },
+      { label: "Service depth", value: "Strong", description: "Health, transit, and digital services reach broad coverage." },
+      { label: "Heat adaptation", value: "Active", description: "Cooling demand and outdoor-design choices shape urban planning." },
+    ],
+  },
+  {
+    slug: "nigeria",
+    name: "Nigeria",
+    iso2: "NG",
+    region: "Africa",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Nigeria's profile features Africa's largest urban regions, vibrant creative and entrepreneurial culture, and active urban-modernization and climate-adaptation work.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: ["lagos"],
+    metrics: [
+      { label: "Creative economy", value: "Globally cited", description: "Music, film, and creative industries shape global recognition." },
+      { label: "Innovation activity", value: "Growing", description: "Fintech and tech-services activity expands opportunity." },
+      { label: "Climate exposure", value: "Coastal flood", description: "Coastal flooding and intense rainfall shape adaptation priorities." },
+    ],
+  },
+  {
+    slug: "rwanda",
+    name: "Rwanda",
+    iso2: "RW",
+    region: "Africa",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Rwanda's profile is shaped by clean public spaces, stable institutional signals, and a fast-growing technology and services sector in major cities.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: ["kigali"],
+    metrics: [
+      { label: "Public-space quality", value: "Notable", description: "Well-kept public spaces are widely cited regionally." },
+      { label: "Innovation activity", value: "Growing", description: "Tech-services activity expands opportunity in major cities." },
+      { label: "Renewable resource", value: "Strong", description: "Hydro and solar resources support transition direction." },
     ],
   },
 ];

@@ -2397,6 +2397,2706 @@ const seeds: CitySeed[] = [
       },
     },
   },
+  {
+    slug: "madrid",
+    name: "Madrid",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "6.7M metro",
+    intro:
+      "Madrid is a major European capital with a strong cultural identity, extensive public transport, and a growing role in business and remote work.",
+    outlook:
+      "Madrid is most useful for users comparing cost of living, air quality, energy, and connectivity to understand how the city fits relocation, lifestyle, and planning needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "eea-air", "ipcc-urban"],
+    scores: { overall: 83, affordability: 72, airQuality: 78, energy: 80, resilience: 78 },
+    metrics: [
+      { label: "Overall city intelligence", value: "83", unit: "/100", score: 83, description: "Balanced profile across affordability, services, and energy direction." },
+      { label: "Public transit reach", value: "Very high", description: "Dense metro and bus networks support car-light daily life." },
+      { label: "Cultural depth", value: "Very high", description: "Museums, gastronomy, and creative industries shape daily life." },
+    ],
+    relatedCitySlugs: ["barcelona", "lisbon", "paris"],
+    modules: {
+      "cost-of-living": {
+        score: 72,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Madrid offers moderate affordability for a major European capital, with central rents rising and transit and food keeping daily costs balanced.",
+        explanation:
+          "The cost-of-living model weighs essential spending against transit and service offsets. Madrid's transit and food markets keep many household routines steady.",
+        facts: [
+          { label: "Affordability score", value: "72", unit: "/100", description: "Moderate affordability balanced against rising central-rent pressure.", context: "Outer districts remain more accessible than the center." },
+          { label: "Housing pressure", value: "Rising", description: "Central neighborhoods are increasingly competitive for renters.", context: "Investor demand has lifted rents in popular districts." },
+          { label: "Transport offset", value: "Strong", description: "Metro and bus reach reduce private mobility costs across the metro.", context: "Compact urban form supports car-light daily routines." },
+        ],
+      },
+      "air-quality": {
+        score: 78,
+        sources: ["who-air", "eea-air"],
+        summary:
+          "Madrid performs well on baseline air quality, supported by EU monitoring, low-emission zones, and ongoing mobility reform.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure against monitoring confidence and policy momentum. Madrid's clean-air zone work supports the score.",
+        facts: [
+          { label: "Clean-air score", value: "78", unit: "/100", description: "Solid baseline with steady policy attention.", context: "European monitoring supports trend visibility." },
+          { label: "Primary pollutant watch", value: "NO2 and PM2.5", description: "Traffic-related nitrogen dioxide and fine particles drive the focus.", context: "Low-emission zone policy targets these pollutants directly." },
+          { label: "Monitoring confidence", value: "High", description: "European reporting standards anchor pollutant interpretation.", context: "Trend visibility supports comparable city-level framing." },
+        ],
+      },
+      energy: {
+        score: 80,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Madrid benefits from strong national renewable build-out and rising solar and efficiency activity in the building sector.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and climate-adaptation depth. Spain's renewable acceleration supports Madrid's score.",
+        facts: [
+          { label: "Energy readiness", value: "80", unit: "/100", description: "Strong baseline lifted by national renewable progress.", context: "Solar resource is favorable across central Spain." },
+          { label: "Primary transition lever", value: "Solar and efficiency", description: "Distributed solar and building retrofits are the main levers.", context: "EU funds support efficiency programs." },
+          { label: "Climate stressor", value: "Heat and dry summers", description: "Rising heat and dry-summer cycles shape adaptation work.", context: "Cooling demand grows with summer extremes." },
+        ],
+      },
+      safety: {
+        score: 84,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Madrid is among the safer large European capitals, with low violent-crime context and strong night-time public life.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Madrid's daily public life remains visibly stable.",
+        facts: [
+          { label: "Safety score", value: "84", unit: "/100", description: "Strong score consistent across most central districts.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Pickpocketing", description: "Tourist-area opportunistic risks remain the main practical pain point.", context: "Common-sense precautions remain useful in busy areas." },
+        ],
+      },
+      "internet-speed": {
+        score: 88,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Madrid offers fast fiber broadband and broad mobile coverage, supporting remote work and a growing digital-services sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Spain's national fiber rollout is among Europe's deepest.",
+        facts: [
+          { label: "Fixed broadband median", value: "260", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "150", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 72,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Madrid carries moderate climate exposure centered on heat and dry-summer water stress, balanced by EU adaptation framing and city programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Madrid's main pressure is heat; flood exposure is comparatively limited.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and drought", description: "Rising heat and water stress are the main hazards.", context: "Inland location concentrates heat exposure." },
+          { label: "Flood exposure", value: "Low", description: "Surface flooding pressure is comparatively limited.", context: "Drainage and topography reduce flood risk." },
+          { label: "Adaptation capacity", value: "Strong", description: "EU framing and city programs support resilience.", context: "Tree planting and shade programs build heat resilience." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "rome",
+    name: "Rome",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "4.3M metro",
+    intro:
+      "Rome is a historic Mediterranean capital where deep cultural heritage meets a working modern metro and active climate-adaptation work.",
+    outlook:
+      "Rome is most useful for users weighing cultural depth and walkability against heat, mobility, and infrastructure-renewal needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "eea-air", "ipcc-urban"],
+    scores: { overall: 80, affordability: 70, airQuality: 74, energy: 76, resilience: 74 },
+    metrics: [
+      { label: "Overall city intelligence", value: "80", unit: "/100", score: 80, description: "Strong cultural and walkability profile balanced against mobility and heat pressure." },
+      { label: "Cultural depth", value: "Exceptional", description: "Heritage sites and creative life shape daily experience." },
+      { label: "Walkability", value: "Very high", description: "Compact historic core supports car-light daily life." },
+    ],
+    relatedCitySlugs: ["milan", "madrid", "barcelona"],
+    modules: {
+      "cost-of-living": {
+        score: 70,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Rome offers moderate affordability for a major European capital, with central rents and tourism shaping price levels in popular districts.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Rome's neighborhood food markets remain a structural offset.",
+        facts: [
+          { label: "Affordability score", value: "70", unit: "/100", description: "Moderate affordability with central rents on the higher side.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "Rising", description: "Central districts have firmed under tourism and remote-work demand.", context: "Long-term rental supply is constrained." },
+          { label: "Transport offset", value: "Mixed", description: "Bus and metro support daily life; coverage varies by district.", context: "Walking remains a practical default in the core." },
+        ],
+      },
+      "air-quality": {
+        score: 74,
+        sources: ["who-air", "eea-air"],
+        summary:
+          "Rome's air quality is moderate-to-good with traffic-related pollutants the main focus and EU monitoring providing strong trend visibility.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure against monitoring confidence. Rome's pollutant context is shaped by traffic and urban form.",
+        facts: [
+          { label: "Clean-air score", value: "74", unit: "/100", description: "Moderate baseline with traffic pollutants the main focus.", context: "Trend visibility is strong under EU monitoring." },
+          { label: "Primary pollutant watch", value: "NO2 and PM2.5", description: "Traffic emissions dominate the pollutant profile.", context: "Mobility reform targets these directly." },
+          { label: "Monitoring confidence", value: "High", description: "European reporting standards anchor pollutant interpretation.", context: "Health-based benchmarks structure the score." },
+        ],
+      },
+      energy: {
+        score: 76,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Rome's energy profile reflects solid Mediterranean solar resource and ongoing national renewable build-out, with building retrofits a focus.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and climate-adaptation depth. Italy's renewable acceleration supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "76", unit: "/100", description: "Solid baseline with building-retrofit focus.", context: "Heritage stock makes retrofits more complex." },
+          { label: "Primary transition lever", value: "Buildings and solar", description: "Retrofits and distributed solar are the main levers.", context: "EU funds support efficiency upgrades." },
+          { label: "Climate stressor", value: "Heat", description: "Rising summer heat shapes adaptation work.", context: "Tree planting and shade build heat resilience." },
+        ],
+      },
+      safety: {
+        score: 80,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Rome is broadly safe with low violent-crime context and tourist-area pickpocketing the most visible practical concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Rome's resident experience is predominantly stable.",
+        facts: [
+          { label: "Safety score", value: "80", unit: "/100", description: "Strong score consistent across most residential districts.", context: "Tourist-area opportunistic risks are concentrated." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Pickpocketing", description: "Tourist-area property risks are the practical concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 80,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Rome delivers solid fiber broadband and reliable mobile coverage, with national fiber rollout still expanding district by district.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Italy's fiber program is widening Rome's footprint.",
+        facts: [
+          { label: "Fixed broadband median", value: "180", unit: " Mbps", description: "Solid fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "120", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Broad", description: "Fiber footprint is widening across central and outer districts.", context: "Service availability continues to grow." },
+        ],
+      },
+      "climate-risk": {
+        score: 72,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Rome carries moderate climate exposure centered on heat and dry-summer water stress, balanced by EU adaptation framing and city programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Rome's main pressure is heat; flood exposure is moderate.",
+        facts: [
+          { label: "Primary hazard", value: "Heat", description: "Rising summer heat is the main hazard.", context: "Inland Mediterranean climate concentrates heat." },
+          { label: "Flood exposure", value: "Moderate", description: "River and stormwater flood pressure rises in cycles.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "EU framing and city programs support resilience.", context: "Heritage stock makes adaptation more complex." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "milan",
+    name: "Milan",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "3.3M metro",
+    intro:
+      "Milan is Italy's economic and design capital, combining strong financial services, fashion, and creative industries with active mobility and air-quality reform.",
+    outlook:
+      "Milan is most useful for users comparing economic depth and design culture against air-quality pressure and rising housing costs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "eea-air", "ipcc-urban"],
+    scores: { overall: 82, affordability: 64, airQuality: 70, energy: 82, resilience: 78 },
+    metrics: [
+      { label: "Overall city intelligence", value: "82", unit: "/100", score: 82, description: "Strong economic, design, and connectivity profile balanced against air and housing pressure." },
+      { label: "Economic depth", value: "Very high", description: "Finance, design, and manufacturing shape opportunity." },
+      { label: "Mobility reform", value: "Active", description: "Low-emission zones and transit upgrades shape urban form." },
+    ],
+    relatedCitySlugs: ["rome", "paris", "zurich"],
+    modules: {
+      "cost-of-living": {
+        score: 64,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Milan is among Italy's most expensive metros, with rising central rents balanced by strong transit and food markets.",
+        explanation:
+          "The cost-of-living model weighs essential spending against transit and amenity offsets. Milan's transit reach is a meaningful daily-life offset.",
+        facts: [
+          { label: "Affordability score", value: "64", unit: "/100", description: "Lower score driven by rising central-rent pressure.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "High", description: "Central districts are increasingly competitive for renters.", context: "Investor and remote-work demand has lifted rents." },
+          { label: "Transport offset", value: "Strong", description: "Metro and tram reach reduce private mobility costs.", context: "Compact urban form supports car-light routines." },
+        ],
+      },
+      "air-quality": {
+        score: 70,
+        sources: ["who-air", "eea-air"],
+        summary:
+          "Milan's air-quality profile is shaped by Po Valley geography, with traffic and seasonal particulate exposure the main focus and active policy response.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure against monitoring confidence and policy momentum. Po Valley geography concentrates seasonal exposure.",
+        facts: [
+          { label: "Clean-air score", value: "70", unit: "/100", description: "Mid-tier baseline with seasonal particulate pressure.", context: "Po Valley geography concentrates exposure." },
+          { label: "Primary pollutant watch", value: "PM2.5 and NO2", description: "Fine particles and traffic-related nitrogen dioxide drive focus.", context: "Low-emission zones target these directly." },
+          { label: "Monitoring confidence", value: "High", description: "European reporting standards anchor interpretation.", context: "Trend visibility supports comparable framing." },
+        ],
+      },
+      energy: {
+        score: 82,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Milan benefits from a strong national renewable build-out, district heating capacity, and active building-retrofit work supported by EU funds.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation depth. Italy's renewable acceleration supports Milan's score.",
+        facts: [
+          { label: "Energy readiness", value: "82", unit: "/100", description: "Strong baseline lifted by district energy and policy depth.", context: "EU funds support retrofit programs." },
+          { label: "Primary transition lever", value: "Buildings and renewables", description: "Retrofits and distributed solar are the main levers.", context: "District heating supports efficient heat delivery." },
+          { label: "Climate stressor", value: "Heat", description: "Rising summer heat shapes adaptation work.", context: "Cooling demand grows with extremes." },
+        ],
+      },
+      safety: {
+        score: 80,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Milan is broadly safe with low violent-crime context and property-related opportunistic risks the most visible day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Milan's resident experience is mostly stable.",
+        facts: [
+          { label: "Safety score", value: "80", unit: "/100", description: "Strong score with neighborhood-level variation.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Property", description: "Property-related opportunistic risks remain the practical concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 86,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Milan offers fast fiber broadband and dense mobile coverage, supporting financial services, design, and a growing remote-work community.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Italy's national fiber rollout reaches Milan deeply.",
+        facts: [
+          { label: "Fixed broadband median", value: "240", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "140", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 74,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Milan carries moderate climate exposure from heat and intense rainfall, balanced by active EU adaptation framing and city programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Milan's hazards are real; institutional capacity supports a healthy score.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and rainfall", description: "Summer heat and intense rainfall are the main hazards.", context: "Po Valley geography concentrates both." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and river flood pressure rises with intense rainfall.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "EU framing and city programs support resilience.", context: "Tree planting and shade build heat resilience." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "lisbon",
+    name: "Lisbon",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "2.9M metro",
+    intro:
+      "Lisbon is a coastal European capital known for mild climate, strong creative culture, and a fast-growing remote-work and digital-services sector.",
+    outlook:
+      "Lisbon is most useful for users comparing affordability, climate, and connectivity for remote work or relocation against rising housing pressure.",
+    sources: ["un-habitat", "who-air", "nasa-power", "eea-air", "ipcc-urban"],
+    scores: { overall: 82, affordability: 70, airQuality: 82, energy: 82, resilience: 76 },
+    metrics: [
+      { label: "Overall city intelligence", value: "82", unit: "/100", score: 82, description: "Balanced lifestyle, climate, and connectivity profile with rising housing pressure to manage." },
+      { label: "Climate", value: "Mild Atlantic", description: "Coastal moderation supports a comfortable year-round profile." },
+      { label: "Remote-work activity", value: "Growing", description: "Coworking and digital-services activity continue to expand." },
+    ],
+    relatedCitySlugs: ["madrid", "barcelona", "paris"],
+    modules: {
+      "cost-of-living": {
+        score: 70,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Lisbon offers moderate affordability for Western Europe, with central rents climbing as remote-work demand grows.",
+        explanation:
+          "The cost-of-living model balances housing pressure against transit and food access. Lisbon's tram and bus reach support steady daily routines.",
+        facts: [
+          { label: "Affordability score", value: "70", unit: "/100", description: "Moderate affordability balanced against rising rents.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "High", description: "Central districts have firmed under remote-work demand.", context: "Long-term rental supply is constrained." },
+          { label: "Transport offset", value: "Strong", description: "Metro, tram, and bus reach reduce private mobility costs.", context: "Compact urban form supports walkable routines." },
+        ],
+      },
+      "air-quality": {
+        score: 82,
+        sources: ["who-air", "eea-air"],
+        summary:
+          "Lisbon performs well on baseline air quality, helped by coastal context, EU monitoring, and limited heavy industry.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure against monitoring confidence. Lisbon's coastal geography supports a healthy baseline.",
+        facts: [
+          { label: "Clean-air score", value: "82", unit: "/100", description: "Strong baseline supported by coastal context.", context: "Atlantic ventilation reduces persistent buildup." },
+          { label: "Primary pollutant watch", value: "PM2.5 and NO2", description: "Fine particles and traffic emissions remain the central focus.", context: "Mobility reform targets these directly." },
+          { label: "Monitoring confidence", value: "High", description: "European reporting standards anchor interpretation.", context: "Trend visibility supports comparable framing." },
+        ],
+      },
+      energy: {
+        score: 82,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Lisbon benefits from strong national renewable build-out led by wind and solar, with active building-efficiency activity.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation depth. Portugal's renewable share supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "82", unit: "/100", description: "Strong baseline lifted by national renewable progress.", context: "Wind and solar resources are favorable." },
+          { label: "Primary transition lever", value: "Solar and efficiency", description: "Distributed solar and building retrofits are the main levers.", context: "EU funds support efficiency programs." },
+          { label: "Climate stressor", value: "Heat and dry summers", description: "Rising heat and water stress shape adaptation work.", context: "Coastal context moderates extremes." },
+        ],
+      },
+      safety: {
+        score: 86,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Lisbon is among the safer European capitals, with low violent-crime context and strong public-life stability.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Lisbon's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "86", unit: "/100", description: "Strong score across most central districts.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Pickpocketing", description: "Tourist-area opportunistic risks are the practical concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 88,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Lisbon delivers fast fiber broadband and reliable mobile coverage, supporting a vibrant remote-work and digital-services scene.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Portugal's national fiber rollout is among Europe's deepest.",
+        facts: [
+          { label: "Fixed broadband median", value: "260", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "150", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 72,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Lisbon carries moderate climate exposure centered on heat and dry-summer water stress, balanced by EU adaptation framing.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Lisbon's main pressure is heat and water; coastal location moderates some extremes.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and drought", description: "Rising summer heat and dry cycles are the main hazards.", context: "Coastal context moderates some extremes." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and coastal flood pressure rises in storm cycles.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "EU framing and city programs support resilience.", context: "Tree planting and shade build heat resilience." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "prague",
+    name: "Prague",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Central Europe",
+    population: "1.3M metro",
+    intro:
+      "Prague is a Central European capital with strong cultural heritage, dense public transit, and a growing technology and services economy.",
+    outlook:
+      "Prague is most useful for users comparing affordability, services, and connectivity in Central Europe against air-quality and energy-transition needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "eea-air", "ipcc-urban"],
+    scores: { overall: 81, affordability: 74, airQuality: 76, energy: 74, resilience: 80 },
+    metrics: [
+      { label: "Overall city intelligence", value: "81", unit: "/100", score: 81, description: "Balanced services, transit, and cultural depth with energy-transition needs to manage." },
+      { label: "Public transit", value: "Very high", description: "Metro, tram, and bus networks support car-light daily life." },
+      { label: "Cultural depth", value: "Very high", description: "Heritage and creative industries shape daily life." },
+    ],
+    relatedCitySlugs: ["vienna", "warsaw", "berlin"],
+    modules: {
+      "cost-of-living": {
+        score: 74,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Prague offers favorable affordability for Central Europe, with central rents rising and food and transit keeping daily costs balanced.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Prague's transit reach is a structural daily-life offset.",
+        facts: [
+          { label: "Affordability score", value: "74", unit: "/100", description: "Favorable affordability for the region.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "Rising", description: "Central districts have firmed under demand.", context: "Long-term rental supply is constrained." },
+          { label: "Transport offset", value: "Strong", description: "Metro and tram reach reduce private mobility costs.", context: "Compact urban form supports car-light routines." },
+        ],
+      },
+      "air-quality": {
+        score: 76,
+        sources: ["who-air", "eea-air"],
+        summary:
+          "Prague's air quality is moderate-to-good with seasonal heating-related particulate exposure and active EU monitoring.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure against monitoring confidence and policy momentum. Heating cycles concentrate seasonal exposure.",
+        facts: [
+          { label: "Clean-air score", value: "76", unit: "/100", description: "Solid baseline with heating-cycle seasonal pressure.", context: "Topography concentrates winter exposure." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus during heating season.", context: "Heating reform targets these directly." },
+          { label: "Monitoring confidence", value: "High", description: "European reporting standards anchor interpretation.", context: "Trend visibility supports comparable framing." },
+        ],
+      },
+      energy: {
+        score: 74,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Prague's energy profile reflects ongoing transition work, with district heating capacity and rising renewable share at the national level.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation depth. Czechia's transition is steadily progressing.",
+        facts: [
+          { label: "Energy readiness", value: "74", unit: "/100", description: "Solid baseline with active transition direction.", context: "EU funds support retrofit programs." },
+          { label: "Primary transition lever", value: "Heating and renewables", description: "Heating decarbonization and solar are the main levers.", context: "District heating supports efficient delivery." },
+          { label: "Climate stressor", value: "Heat and rainfall", description: "Rising heat and intense rainfall shape adaptation work.", context: "Cooling demand grows with extremes." },
+        ],
+      },
+      safety: {
+        score: 88,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Prague is among the safer European capitals, with low violent-crime context and consistent neighborhood experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Prague's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "88", unit: "/100", description: "Strong score across most central districts.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Pickpocketing", description: "Tourist-area opportunistic risks are the practical concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 88,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Prague delivers fast fiber broadband and dense mobile coverage, supporting a growing technology and services economy.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Czechia's fiber footprint is broad in major metros.",
+        facts: [
+          { label: "Fixed broadband median", value: "240", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "140", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 78,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Prague carries moderate climate exposure centered on heat, intense rainfall, and river flood pressure, balanced by EU adaptation framing.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Prague's main pressures are heat and river flooding.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and rainfall", description: "Rising heat and intense rainfall are the main hazards.", context: "Continental geography concentrates heat." },
+          { label: "Flood exposure", value: "Moderate", description: "River flood pressure rises in storm cycles.", context: "Vltava flood-management programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "EU framing and city programs support resilience.", context: "Tree planting and shade build heat resilience." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "warsaw",
+    name: "Warsaw",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "3.1M metro",
+    intro:
+      "Warsaw is Poland's capital and a fast-growing Central European business hub with strong public transit, expanding tech industries, and active modernization.",
+    outlook:
+      "Warsaw is most useful for users comparing affordability, services, and tech-sector activity in Central Europe against air-quality and energy-transition needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "eea-air", "ipcc-urban"],
+    scores: { overall: 79, affordability: 74, airQuality: 70, energy: 70, resilience: 76 },
+    metrics: [
+      { label: "Overall city intelligence", value: "79", unit: "/100", score: 79, description: "Strong services and tech-sector profile balanced against air and energy-transition needs." },
+      { label: "Tech-sector activity", value: "Growing", description: "Software, services, and finance shape opportunity." },
+      { label: "Public transit", value: "Strong", description: "Metro, tram, and bus networks support car-light daily life." },
+    ],
+    relatedCitySlugs: ["prague", "berlin", "vienna"],
+    modules: {
+      "cost-of-living": {
+        score: 74,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Warsaw offers favorable affordability for a major European capital, with central rents rising and transit keeping daily costs balanced.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Warsaw's transit reach offsets many daily costs.",
+        facts: [
+          { label: "Affordability score", value: "74", unit: "/100", description: "Favorable affordability for the region.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "Rising", description: "Central districts have firmed under tech-sector demand.", context: "Long-term rental supply is constrained." },
+          { label: "Transport offset", value: "Strong", description: "Metro and tram reach reduce private mobility costs.", context: "Compact urban form supports car-light routines." },
+        ],
+      },
+      "air-quality": {
+        score: 70,
+        sources: ["who-air", "eea-air"],
+        summary:
+          "Warsaw's air quality reflects ongoing improvement with seasonal heating-related particulate exposure remaining the main focus.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure against monitoring confidence and policy momentum. Heating reform shapes the trend.",
+        facts: [
+          { label: "Clean-air score", value: "70", unit: "/100", description: "Mid-tier baseline with seasonal heating exposure.", context: "Trend has improved with heating reform." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus during heating season.", context: "Coal-replacement programs target these directly." },
+          { label: "Monitoring confidence", value: "High", description: "European reporting standards anchor interpretation.", context: "Trend visibility supports comparable framing." },
+        ],
+      },
+      energy: {
+        score: 70,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Warsaw's energy profile reflects an active transition with district heating decarbonization and rising renewable share.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation depth. Poland's transition is steadily progressing.",
+        facts: [
+          { label: "Energy readiness", value: "70", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "EU funds support program acceleration." },
+          { label: "Primary transition lever", value: "Heating and renewables", description: "Heating decarbonization and solar are the main levers.", context: "District heating supports efficient delivery." },
+          { label: "Climate stressor", value: "Heat and rainfall", description: "Rising heat and intense rainfall shape adaptation work.", context: "Cooling demand grows with extremes." },
+        ],
+      },
+      safety: {
+        score: 86,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Warsaw is among the safer European capitals, with low violent-crime context and stable resident experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Warsaw's daily public life is stable.",
+        facts: [
+          { label: "Safety score", value: "86", unit: "/100", description: "Strong score across most central districts.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Property", description: "Property-related opportunistic risks remain the practical concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 86,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Warsaw delivers fast fiber broadband and dense mobile coverage, supporting a growing tech and services economy.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Poland's fiber footprint is broad in major metros.",
+        facts: [
+          { label: "Fixed broadband median", value: "230", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "130", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 76,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Warsaw carries moderate climate exposure centered on heat, intense rainfall, and river flood pressure, balanced by EU adaptation framing.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Warsaw's main pressures are heat and river flooding.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and rainfall", description: "Rising heat and intense rainfall are the main hazards.", context: "Continental geography concentrates heat." },
+          { label: "Flood exposure", value: "Moderate", description: "River and stormwater flood pressure rises in cycles.", context: "Vistula flood-management programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "EU framing and city programs support resilience.", context: "Tree planting and shade build heat resilience." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "los-angeles",
+    name: "Los Angeles",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "13.2M metro",
+    intro:
+      "Los Angeles is a major Pacific-coast metropolis with a globally significant creative economy, large port and logistics base, and active climate-adaptation work.",
+    outlook:
+      "Los Angeles is most useful for users comparing creative-economy depth and amenity against affordability, mobility, and climate-exposure trade-offs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "epa-naaqs", "ipcc-urban"],
+    scores: { overall: 78, affordability: 56, airQuality: 66, energy: 80, resilience: 70 },
+    metrics: [
+      { label: "Overall city intelligence", value: "78", unit: "/100", score: 78, description: "Strong creative and innovation profile balanced against affordability and climate exposure." },
+      { label: "Creative economy", value: "Globally leading", description: "Film, media, and design ecosystems shape opportunity." },
+      { label: "Climate exposure", value: "Heat and wildfire", description: "Heat, drought, and wildfire shape adaptation priorities." },
+    ],
+    relatedCitySlugs: ["san-francisco", "seattle", "chicago"],
+    modules: {
+      "cost-of-living": {
+        score: 56,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Los Angeles is expensive on housing and central services, partially offset by amenity and labor-market depth.",
+        explanation:
+          "The cost-of-living model balances housing pressure with services and amenity. Los Angeles' costs are dominated by housing and transport.",
+        facts: [
+          { label: "Affordability score", value: "56", unit: "/100", description: "Lower score driven by housing and mobility costs.", context: "Amenity and labor depth partially offset costs." },
+          { label: "Housing pressure", value: "Very high", description: "Long-run demand and supply imbalances dominate the cost profile.", context: "Coastal and central districts are especially competitive." },
+          { label: "Transport cost", value: "High", description: "Car dependence raises recurring household transport spend.", context: "Transit expansion is in progress but coverage varies." },
+        ],
+      },
+      "air-quality": {
+        score: 66,
+        sources: ["who-air", "epa-naaqs"],
+        summary:
+          "Los Angeles' air-quality profile is shaped by basin geography, traffic, and seasonal wildfire smoke, with long-running policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure against monitoring depth and policy momentum. Basin geography concentrates pollutants.",
+        facts: [
+          { label: "Clean-air score", value: "66", unit: "/100", description: "Mid-tier baseline with seasonal wildfire and ozone exposure.", context: "Trend has improved meaningfully over decades." },
+          { label: "Primary pollutant watch", value: "Ozone and PM2.5", description: "Ozone and fine particles are the central health benchmarks.", context: "Wildfire smoke drives episodic spikes." },
+          { label: "Monitoring confidence", value: "High", description: "EPA standards and reporting anchor pollutant interpretation.", context: "Public monitoring supports trend visibility." },
+        ],
+      },
+      energy: {
+        score: 80,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Los Angeles benefits from strong solar resource, ambitious state-level transition policy, and active building and transport electrification.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. California's policy depth supports a strong score.",
+        facts: [
+          { label: "Energy readiness", value: "80", unit: "/100", description: "Strong baseline lifted by state policy and solar resource.", context: "Distributed solar adoption is high." },
+          { label: "Primary transition lever", value: "Solar and EVs", description: "Distributed solar and EV adoption are the main levers.", context: "Charging infrastructure continues to grow." },
+          { label: "Climate stressor", value: "Heat and wildfire", description: "Rising heat and wildfire shape adaptation work.", context: "Grid resilience programs target these directly." },
+        ],
+      },
+      safety: {
+        score: 70,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Los Angeles has mid-tier safety with strong neighborhood variation; resident experience differs widely across districts.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Los Angeles shows wide variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "70", unit: "/100", description: "Mid-tier score with strong neighborhood variation.", context: "Resident experience varies sharply by district." },
+          { label: "Violent-crime context", value: "Mid", description: "Violent-crime context varies meaningfully by district.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property", description: "Property crime is the main practical day-to-day concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 88,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Los Angeles delivers fast fiber broadband and dense mobile coverage, supporting media production and a large remote-work community.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Los Angeles' fiber and mobile footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "260", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "150", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 64,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Los Angeles carries meaningful climate exposure from heat, drought, wildfire, and coastal pressure, balanced by active state-level adaptation.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Los Angeles' hazards are concurrent and require sustained investment.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and wildfire", description: "Rising heat and wildfire are the main hazards.", context: "Drought cycles raise long-run pressure." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and coastal flood pressure rises in storm cycles.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "State and city programs support resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "chicago",
+    name: "Chicago",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "9.3M metro",
+    intro:
+      "Chicago is a major Midwestern metropolis with a deep finance, logistics, and creative economy and a strong architecture and lakefront identity.",
+    outlook:
+      "Chicago is most useful for users comparing affordability, transit, and economic depth in the US Midwest against winter and air-quality considerations.",
+    sources: ["un-habitat", "who-air", "nasa-power", "epa-naaqs", "ipcc-urban"],
+    scores: { overall: 79, affordability: 68, airQuality: 74, energy: 76, resilience: 76 },
+    metrics: [
+      { label: "Overall city intelligence", value: "79", unit: "/100", score: 79, description: "Balanced economic and transit profile with affordability tilt favorable to coastal peers." },
+      { label: "Public transit", value: "Strong", description: "Rail and bus reach support car-light daily life in central districts." },
+      { label: "Economic depth", value: "Very high", description: "Finance, logistics, and creative industries shape opportunity." },
+    ],
+    relatedCitySlugs: ["new-york", "toronto", "los-angeles"],
+    modules: {
+      "cost-of-living": {
+        score: 68,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Chicago is more affordable than US coastal peers, with central rents balanced and transit reach reducing transport costs.",
+        explanation:
+          "The cost-of-living model balances housing pressure with transit and services access. Chicago's transit reach offsets many costs.",
+        facts: [
+          { label: "Affordability score", value: "68", unit: "/100", description: "Moderate affordability favorable versus coastal peers.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "Moderate", description: "Central districts are competitive but supply is broader than coastal peers.", context: "Long-term rental options span a wide range." },
+          { label: "Transport offset", value: "Strong", description: "Rail and bus reach reduce private mobility costs.", context: "Transit-oriented routines lower household transport spend." },
+        ],
+      },
+      "air-quality": {
+        score: 74,
+        sources: ["who-air", "epa-naaqs"],
+        summary:
+          "Chicago's air-quality profile is moderate-to-good, shaped by traffic and industrial sources, with strong EPA monitoring.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure against monitoring depth and policy momentum. Chicago's monitoring is broad.",
+        facts: [
+          { label: "Clean-air score", value: "74", unit: "/100", description: "Solid baseline with episodic seasonal pressure.", context: "Trend has improved meaningfully over decades." },
+          { label: "Primary pollutant watch", value: "Ozone and PM2.5", description: "Ozone and fine particles are the central health benchmarks.", context: "Wildfire smoke drift drives some episodic spikes." },
+          { label: "Monitoring confidence", value: "High", description: "EPA standards and reporting anchor pollutant interpretation.", context: "Public monitoring supports trend visibility." },
+        ],
+      },
+      energy: {
+        score: 76,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Chicago has solid grid reliability with strong wind resource in the region and growing building-efficiency activity.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Midwest wind resource and state policy support the score.",
+        facts: [
+          { label: "Energy readiness", value: "76", unit: "/100", description: "Solid baseline with regional renewable strength.", context: "Wind resource is among the strongest in the country." },
+          { label: "Primary transition lever", value: "Wind and efficiency", description: "Regional wind and building retrofits are the main levers.", context: "Federal funds support efficiency programs." },
+          { label: "Climate stressor", value: "Heat and rainfall", description: "Rising heat and intense rainfall shape adaptation work.", context: "Drainage programs are central." },
+        ],
+      },
+      safety: {
+        score: 72,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Chicago has mid-tier safety with strong neighborhood variation; central districts and the Loop are widely stable for daily life.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Chicago shows wide variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "72", unit: "/100", description: "Mid-tier score with strong neighborhood variation.", context: "Resident experience varies sharply by district." },
+          { label: "Violent-crime context", value: "Mid", description: "Violent-crime context varies meaningfully by district.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property", description: "Property crime is the main practical day-to-day concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 88,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Chicago delivers fast fiber broadband and reliable mobile coverage, supporting financial services and a growing tech sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Chicago's fiber and mobile footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "270", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "140", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 76,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Chicago carries moderate climate exposure from heat, intense rainfall, and lakefront stormwater pressure, balanced by active adaptation.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Chicago's main pressures are heat and rainfall-driven flooding.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and rainfall", description: "Rising heat and intense rainfall are the main hazards.", context: "Lakefront geography moderates some heat extremes." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and stormwater flood pressure rises in cycles.", context: "Drainage and stormwater programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "State and city programs support resilience.", context: "Tree planting and shade build heat resilience." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "vancouver",
+    name: "Vancouver",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "2.6M metro",
+    intro:
+      "Vancouver is a Pacific-coast Canadian city with strong outdoor amenity, low-carbon hydroelectricity, and a fast-growing tech and creative economy.",
+    outlook:
+      "Vancouver is most useful for users comparing outdoor amenity, clean-energy direction, and tech-sector growth against high housing pressure.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban", "iea-cities"],
+    scores: { overall: 84, affordability: 56, airQuality: 86, energy: 90, resilience: 80 },
+    metrics: [
+      { label: "Overall city intelligence", value: "84", unit: "/100", score: 84, description: "Strong amenity and clean-energy profile balanced against high housing pressure." },
+      { label: "Outdoor amenity", value: "Very high", description: "Coastal and mountain amenity supports a strong quality of daily life." },
+      { label: "Energy mix", value: "Low-carbon", description: "Hydropower supports a favorable transition baseline." },
+    ],
+    relatedCitySlugs: ["seattle", "toronto", "auckland"],
+    modules: {
+      "cost-of-living": {
+        score: 56,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Vancouver is expensive on housing and central services, partially offset by outdoor amenity and service depth.",
+        explanation:
+          "The cost-of-living model weighs essential spending against amenity and service offsets. Vancouver's amenity is high; housing dominates the score.",
+        facts: [
+          { label: "Affordability score", value: "56", unit: "/100", description: "Lower score driven by housing pressure.", context: "Amenity and services partially offset costs." },
+          { label: "Housing pressure", value: "Very high", description: "Long-run demand and supply imbalances dominate the cost profile.", context: "Inner-suburb districts remain especially competitive." },
+          { label: "Amenity offset", value: "Strong", description: "Outdoor and service amenity reduce some practical costs.", context: "Outdoor lifestyle reduces some indoor entertainment expense." },
+        ],
+      },
+      "air-quality": {
+        score: 86,
+        sources: ["who-air"],
+        summary:
+          "Vancouver has strong baseline air quality, helped by coastal context, with episodic wildfire smoke the main seasonal concern.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring confidence. Vancouver's baseline is healthy; wildfire seasons drive most spikes.",
+        facts: [
+          { label: "Clean-air score", value: "86", unit: "/100", description: "Strong baseline with stable trend.", context: "Coastal context supports the baseline." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles are the central benchmark.", context: "Wildfire smoke drives episodic spikes." },
+          { label: "Monitoring confidence", value: "High", description: "Public monitoring supports trend visibility.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 90,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Vancouver operates with a low-carbon electricity baseline led by hydropower, with active building and transport electrification work.",
+        explanation:
+          "Energy readiness scoring weighs grid carbon intensity, building efficiency, and adaptation. British Columbia's hydro mix gives a structural advantage.",
+        facts: [
+          { label: "Energy readiness", value: "90", unit: "/100", description: "Very strong baseline supported by hydropower.", context: "Provincial grid is among the lowest-carbon globally." },
+          { label: "Primary transition lever", value: "Buildings and transport", description: "Building electrification and EV adoption are the main levers.", context: "Heat-pump uptake is rising." },
+          { label: "Climate stressor", value: "Heat and rainfall", description: "Rising heat and atmospheric-river rainfall shape adaptation work.", context: "Coastal-storm exposure is rising." },
+        ],
+      },
+      safety: {
+        score: 84,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Vancouver is among the safer large North American cities, with low violent-crime context and strong institutional response.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Vancouver's resident experience is mostly stable.",
+        facts: [
+          { label: "Safety score", value: "84", unit: "/100", description: "Strong score with consistent neighborhood experience.", context: "Among the safer large North American cities." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Property", description: "Property and opportunistic risks are the main practical concerns.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 88,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Vancouver delivers fast fiber broadband and reliable mobile coverage, supporting a growing tech and creative economy.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Vancouver's fiber footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "260", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "140", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service availability is broad." },
+        ],
+      },
+      "climate-risk": {
+        score: 76,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Vancouver faces moderate climate exposure from heat, atmospheric-river rainfall, and seasonal wildfire smoke, balanced by active adaptation.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Vancouver's main pressures are heat and rainfall.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and rainfall", description: "Rising heat and atmospheric-river rainfall are the main hazards.", context: "Coastal-storm exposure is rising." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and coastal flood pressure rises in storm cycles.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "Provincial and city programs support resilience.", context: "Implementation depth supports the score." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "seattle",
+    name: "Seattle",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "4.0M metro",
+    intro:
+      "Seattle is a Pacific-Northwest metropolis with a deep technology and aerospace economy, low-carbon hydroelectricity, and strong outdoor amenity.",
+    outlook:
+      "Seattle is most useful for users comparing tech-sector depth and clean-energy context against affordability and rainfall-related considerations.",
+    sources: ["un-habitat", "who-air", "nasa-power", "epa-naaqs", "ipcc-urban", "iea-cities"],
+    scores: { overall: 84, affordability: 60, airQuality: 84, energy: 90, resilience: 80 },
+    metrics: [
+      { label: "Overall city intelligence", value: "84", unit: "/100", score: 84, description: "Strong tech and clean-energy profile balanced against housing pressure." },
+      { label: "Tech-sector depth", value: "Very high", description: "Software, cloud, and aerospace ecosystems shape opportunity." },
+      { label: "Energy mix", value: "Low-carbon", description: "Hydropower supports a favorable transition baseline." },
+    ],
+    relatedCitySlugs: ["vancouver", "san-francisco", "los-angeles"],
+    modules: {
+      "cost-of-living": {
+        score: 60,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Seattle is expensive on housing and central services, partially offset by amenity, services, and tech-sector wage depth.",
+        explanation:
+          "The cost-of-living model balances housing pressure with services and amenity. Seattle's costs are dominated by housing.",
+        facts: [
+          { label: "Affordability score", value: "60", unit: "/100", description: "Lower score driven by housing pressure.", context: "Amenity and services partially offset costs." },
+          { label: "Housing pressure", value: "High", description: "Long-run demand and supply imbalances dominate the cost profile.", context: "Central districts remain especially competitive." },
+          { label: "Amenity offset", value: "Strong", description: "Outdoor and service amenity reduce some practical costs.", context: "Outdoor lifestyle supports car-light routines for many." },
+        ],
+      },
+      "air-quality": {
+        score: 84,
+        sources: ["who-air", "epa-naaqs"],
+        summary:
+          "Seattle has strong baseline air quality with episodic wildfire smoke the main seasonal concern.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring confidence. Seattle's baseline is healthy; wildfire seasons drive most spikes.",
+        facts: [
+          { label: "Clean-air score", value: "84", unit: "/100", description: "Strong baseline with stable trend.", context: "Coastal context supports the baseline." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles are the central benchmark.", context: "Wildfire smoke drives episodic spikes." },
+          { label: "Monitoring confidence", value: "High", description: "EPA standards and reporting anchor pollutant interpretation.", context: "Health-based benchmarks structure the score." },
+        ],
+      },
+      energy: {
+        score: 90,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Seattle operates with a low-carbon electricity baseline led by hydropower, with active building and transport electrification work.",
+        explanation:
+          "Energy readiness scoring weighs grid carbon intensity, building efficiency, and adaptation. The Pacific-Northwest hydro mix gives a structural advantage.",
+        facts: [
+          { label: "Energy readiness", value: "90", unit: "/100", description: "Very strong baseline supported by hydropower.", context: "Regional grid is among the lowest-carbon nationally." },
+          { label: "Primary transition lever", value: "Buildings and transport", description: "Building electrification and EV adoption are the main levers.", context: "Heat-pump uptake is rising." },
+          { label: "Climate stressor", value: "Rainfall and heat", description: "Atmospheric-river rainfall and rising heat shape adaptation work.", context: "Wildfire smoke drives seasonal pressure." },
+        ],
+      },
+      safety: {
+        score: 78,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Seattle has solid overall safety with neighborhood variation and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Seattle's resident experience is mostly stable.",
+        facts: [
+          { label: "Safety score", value: "78", unit: "/100", description: "Solid score with neighborhood-level variation.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Mid-low", description: "Violent-crime context is comparatively low globally.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property", description: "Property crime is the main practical day-to-day concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 90,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Seattle delivers fast fiber broadband and reliable mobile coverage, supporting a deep technology and remote-work community.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Seattle's fiber and mobile footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "300", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "150", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 76,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Seattle faces moderate climate exposure from heat, atmospheric-river rainfall, and seasonal wildfire smoke, balanced by active adaptation.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Seattle's main pressures are heat and rainfall.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and rainfall", description: "Rising heat and atmospheric-river rainfall are the main hazards.", context: "Wildfire smoke drives seasonal pressure." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and coastal flood pressure rises in storm cycles.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "State and city programs support resilience.", context: "Implementation depth supports the score." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "buenos-aires",
+    name: "Buenos Aires",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "Latin America",
+    population: "15.5M metro",
+    intro:
+      "Buenos Aires is a major Latin American capital with a deep cultural identity, dense walkable neighborhoods, and a vibrant creative and culinary scene.",
+    outlook:
+      "Buenos Aires is most useful for users comparing affordability, walkability, and cultural depth against currency volatility and infrastructure modernization needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 76, affordability: 76, airQuality: 72, energy: 70, resilience: 72 },
+    metrics: [
+      { label: "Overall city intelligence", value: "76", unit: "/100", score: 76, description: "Strong cultural and walkability profile balanced against macroeconomic volatility." },
+      { label: "Walkability", value: "Very high", description: "Compact urban form supports car-light daily life." },
+      { label: "Cultural depth", value: "Very high", description: "Music, theater, and culinary traditions shape daily life." },
+    ],
+    relatedCitySlugs: ["sao-paulo", "santiago", "mexico-city"],
+    modules: {
+      "cost-of-living": {
+        score: 76,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Buenos Aires offers favorable affordability for a major capital, with currency dynamics shaping international comparisons over time.",
+        explanation:
+          "The cost-of-living model weighs essential spending against transit and food access. Buenos Aires' food and transit reach support steady daily routines.",
+        facts: [
+          { label: "Affordability score", value: "76", unit: "/100", description: "Favorable affordability with macroeconomic variability.", context: "Currency dynamics shape international comparisons." },
+          { label: "Housing pressure", value: "Moderate", description: "Rental options span a wide range across the metro.", context: "Central neighborhoods are more competitive." },
+          { label: "Transport offset", value: "Strong", description: "Subway and bus reach reduce private mobility costs.", context: "Walking is a practical default in many districts." },
+        ],
+      },
+      "air-quality": {
+        score: 72,
+        sources: ["who-air"],
+        summary:
+          "Buenos Aires has moderate-to-good baseline air quality, helped by coastal and river ventilation, with traffic the main pollutant focus.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring confidence. Buenos Aires' baseline is supported by coastal and river ventilation.",
+        facts: [
+          { label: "Clean-air score", value: "72", unit: "/100", description: "Solid baseline with traffic pollutants the main focus.", context: "Coastal ventilation supports the score." },
+          { label: "Primary pollutant watch", value: "PM2.5 and NO2", description: "Fine particles and traffic-related nitrogen dioxide drive focus.", context: "Trend visibility continues to expand." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is improving, with continued expansion needed.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 70,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Buenos Aires has solid grid reliability with growing renewable build-out at the national level and active building-efficiency activity.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Argentina's renewable build-out supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "70", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "Renewable capacity is growing nationally." },
+          { label: "Primary transition lever", value: "Renewables and efficiency", description: "Renewable build-out and efficiency are the main levers.", context: "Wind resource is strong nationally." },
+          { label: "Climate stressor", value: "Heat and rainfall", description: "Rising heat and intense rainfall shape adaptation work.", context: "Drainage programs are central." },
+        ],
+      },
+      safety: {
+        score: 70,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Buenos Aires has mid-tier safety with neighborhood variation and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Buenos Aires shows variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "70", unit: "/100", description: "Mid-tier score with neighborhood-level variation.", context: "Resident experience varies across districts." },
+          { label: "Violent-crime context", value: "Mid", description: "Violent-crime context is moderate globally.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property", description: "Property crime is the main practical day-to-day concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 78,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Buenos Aires has solid fiber broadband and improving mobile coverage, supporting a growing remote-work and creative-industry presence.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Buenos Aires scores well within the region.",
+        facts: [
+          { label: "Fixed broadband median", value: "180", unit: " Mbps", description: "Solid fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "100", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber and cable footprints reach most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 72,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Buenos Aires carries moderate climate exposure from heat, intense rainfall, and river flood pressure, balanced by active adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Buenos Aires' main pressures are heat and rainfall-driven flooding.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and rainfall", description: "Rising heat and intense rainfall are the main hazards.", context: "River geography concentrates flood exposure." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and river flood pressure rises in storm cycles.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Improving", description: "Climate plans and infrastructure investment build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "santiago",
+    name: "Santiago",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "Latin America",
+    population: "7.2M metro",
+    intro:
+      "Santiago is Chile's capital and economic center, with a developed metro network, growing solar capacity, and active climate-adaptation work for water and air.",
+    outlook:
+      "Santiago is most useful for users comparing services, transit, and connectivity in South America against air-quality and water-resilience considerations.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban", "iea-cities"],
+    scores: { overall: 76, affordability: 70, airQuality: 64, energy: 78, resilience: 72 },
+    metrics: [
+      { label: "Overall city intelligence", value: "76", unit: "/100", score: 76, description: "Strong services and energy direction with air-quality and water-resource pressure to manage." },
+      { label: "Public transit", value: "Strong", description: "Metro network supports car-light daily life in central districts." },
+      { label: "Solar resource", value: "Very strong", description: "National solar capacity is among the strongest globally." },
+    ],
+    relatedCitySlugs: ["buenos-aires", "lima", "sao-paulo"],
+    modules: {
+      "cost-of-living": {
+        score: 70,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Santiago offers moderate affordability for a major Latin American capital, with central rents and services balanced against transit reach.",
+        explanation:
+          "The cost-of-living model balances housing pressure with transit and food access. Santiago's metro reach supports steady daily routines.",
+        facts: [
+          { label: "Affordability score", value: "70", unit: "/100", description: "Moderate affordability with rising central rents.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "Rising", description: "Central districts have firmed under demand.", context: "Long-term rental supply is constrained." },
+          { label: "Transport offset", value: "Strong", description: "Metro and bus reach reduce private mobility costs.", context: "Compact urban form supports car-light routines." },
+        ],
+      },
+      "air-quality": {
+        score: 64,
+        sources: ["who-air"],
+        summary:
+          "Santiago's air-quality profile is shaped by basin geography, with seasonal heating-related particulate exposure and active policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Basin geography concentrates seasonal exposure.",
+        facts: [
+          { label: "Clean-air score", value: "64", unit: "/100", description: "Mid-tier baseline with seasonal heating pressure.", context: "Trend has improved over decades." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus during heating season.", context: "Heating reform targets these directly." },
+          { label: "Monitoring confidence", value: "High", description: "Public monitoring supports trend visibility.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 78,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Santiago benefits from one of the strongest national solar build-outs globally, with active building and transport electrification work.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Chile's solar acceleration supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "78", unit: "/100", description: "Strong baseline lifted by national solar build-out.", context: "Solar resource in central Chile is exceptional." },
+          { label: "Primary transition lever", value: "Solar and electrification", description: "Distributed solar and EV adoption are the main levers.", context: "Charging infrastructure continues to grow." },
+          { label: "Climate stressor", value: "Drought and heat", description: "Long-running drought and rising heat shape adaptation work.", context: "Water-management programs are central." },
+        ],
+      },
+      safety: {
+        score: 76,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Santiago has solid overall safety with neighborhood variation; property-related opportunistic risks remain the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Santiago's resident experience is mostly stable.",
+        facts: [
+          { label: "Safety score", value: "76", unit: "/100", description: "Solid score with neighborhood-level variation.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Mid-low", description: "Violent-crime context is comparatively low for the region.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property", description: "Property crime is the main practical day-to-day concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 84,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Santiago delivers fast fiber broadband and reliable mobile coverage, supporting a growing technology and services sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Chile's fiber rollout reaches Santiago broadly.",
+        facts: [
+          { label: "Fixed broadband median", value: "230", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "120", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 70,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Santiago faces meaningful climate exposure centered on long-running drought and rising heat, balanced by active water and adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Santiago's main pressures are drought and heat.",
+        facts: [
+          { label: "Primary hazard", value: "Drought and heat", description: "Long-running drought and rising heat are the main hazards.", context: "Water scarcity raises long-run pressure." },
+          { label: "Seismic exposure", value: "Meaningful", description: "Earthquake exposure shapes building and infrastructure standards.", context: "Engineering codes are mature." },
+          { label: "Adaptation capacity", value: "Improving", description: "Climate plans and water programs build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "bogota",
+    name: "Bogotá",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "Latin America",
+    population: "11.7M metro",
+    intro:
+      "Bogotá is Colombia's capital and a high-altitude Andean city with a globally cited bus-rapid-transit network and a fast-growing services and creative economy.",
+    outlook:
+      "Bogotá is most useful for users comparing affordability, transit innovation, and cultural depth against altitude and infrastructure modernization needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 72, affordability: 80, airQuality: 64, energy: 72, resilience: 72 },
+    metrics: [
+      { label: "Overall city intelligence", value: "72", unit: "/100", score: 72, description: "Strong affordability and transit-innovation profile balanced against air-quality and modernization needs." },
+      { label: "Affordability profile", value: "Favorable", description: "Cost-of-living levels are comparatively favorable for a major capital." },
+      { label: "Bus rapid transit", value: "Globally cited", description: "TransMilenio is a widely studied BRT system." },
+    ],
+    relatedCitySlugs: ["lima", "mexico-city", "santiago"],
+    modules: {
+      "cost-of-living": {
+        score: 80,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Bogotá offers strong affordability for a major Latin American capital, with food and transit costs supporting steady daily life.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Bogotá's BRT and food markets support steady daily routines.",
+        facts: [
+          { label: "Affordability score", value: "80", unit: "/100", description: "Strong affordability for a major capital.", context: "Markets and transit support stable daily costs." },
+          { label: "Housing pressure", value: "Moderate", description: "Rental options span a wide range across the metro.", context: "Central neighborhoods are more competitive." },
+          { label: "Transport offset", value: "Strong", description: "BRT and bus reach reduce private mobility costs.", context: "Transit-heavy daily routines lower private mobility costs." },
+        ],
+      },
+      "air-quality": {
+        score: 64,
+        sources: ["who-air"],
+        summary:
+          "Bogotá's air-quality profile is shaped by altitude, traffic, and basin geography, with active policy attention and public monitoring.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Bogotá's altitude and basin geography concentrate exposure.",
+        facts: [
+          { label: "Clean-air score", value: "64", unit: "/100", description: "Mid-tier baseline with altitude and traffic pressure.", context: "Trend visibility is improving." },
+          { label: "Primary pollutant watch", value: "PM2.5 and NO2", description: "Fine particles and traffic emissions drive focus.", context: "Mobility reform targets these directly." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is improving with continued expansion.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 72,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Bogotá benefits from a renewable-heavy national grid led by hydropower, with active EV-bus deployment and building-efficiency work.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Colombia's hydro mix supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "72", unit: "/100", description: "Solid baseline supported by hydropower.", context: "National grid is comparatively low-carbon." },
+          { label: "Primary transition lever", value: "Buildings and transport", description: "EV-bus deployment and building efficiency are the main levers.", context: "Public-fleet electrification is accelerating." },
+          { label: "Climate stressor", value: "Rainfall", description: "Intense rainfall and Andean weather shape adaptation work.", context: "Drainage programs are central." },
+        ],
+      },
+      safety: {
+        score: 64,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Bogotá has mid-tier safety with neighborhood variation and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Bogotá shows wide variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "64", unit: "/100", description: "Mid-tier score with neighborhood-level variation.", context: "Resident experience varies sharply by district." },
+          { label: "Violent-crime context", value: "Mid", description: "Violent-crime context varies meaningfully by district.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property and transit", description: "Property and transit-related risks are practical day-to-day issues.", context: "Common situational awareness remains useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 76,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Bogotá has solid fiber broadband and improving mobile coverage, supporting a fast-growing technology and services sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Bogotá's fiber footprint continues to expand.",
+        facts: [
+          { label: "Fixed broadband median", value: "160", unit: " Mbps", description: "Solid fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "90", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Broad", description: "Fiber footprint is widening across central and outer districts.", context: "Service availability continues to grow." },
+        ],
+      },
+      "climate-risk": {
+        score: 74,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Bogotá's altitude moderates heat exposure, with intense rainfall and landslide pressure shaping adaptation priorities.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Bogotá's altitude reduces heat exposure relative to lower-elevation peers.",
+        facts: [
+          { label: "Primary hazard", value: "Rainfall and landslide", description: "Intense rainfall and landslide pressure are the main hazards.", context: "Andean topography concentrates exposure." },
+          { label: "Heat exposure", value: "Low", description: "High altitude moderates heat-stress impact.", context: "Heat is a smaller driver than for lowland peers." },
+          { label: "Adaptation capacity", value: "Improving", description: "Climate plans and infrastructure investment build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "lima",
+    name: "Lima",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "Latin America",
+    population: "11.4M metro",
+    intro:
+      "Lima is Peru's capital and a Pacific-coast metropolis with a deep culinary identity, growing services economy, and active work on water and air resilience.",
+    outlook:
+      "Lima is most useful for users comparing affordability and culinary depth against air-quality, water, and seismic adaptation needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 70, affordability: 78, airQuality: 60, energy: 70, resilience: 68 },
+    metrics: [
+      { label: "Overall city intelligence", value: "70", unit: "/100", score: 70, description: "Strong affordability and culinary depth balanced against modernization and resilience needs." },
+      { label: "Culinary depth", value: "Globally cited", description: "Lima's gastronomy is among the most influential globally." },
+      { label: "Affordability profile", value: "Favorable", description: "Cost-of-living levels are comparatively favorable." },
+    ],
+    relatedCitySlugs: ["bogota", "santiago", "mexico-city"],
+    modules: {
+      "cost-of-living": {
+        score: 78,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Lima offers strong affordability for a major capital, with food and transit costs supporting steady daily life.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Lima's markets support steady daily routines.",
+        facts: [
+          { label: "Affordability score", value: "78", unit: "/100", description: "Strong affordability for a major capital.", context: "Markets and transit support stable daily costs." },
+          { label: "Housing pressure", value: "Moderate", description: "Rental options span a wide range across the metro.", context: "Central districts are more competitive." },
+          { label: "Transport offset", value: "Mixed", description: "Bus and rail reach reduce some private mobility costs.", context: "Transit expansion continues across the metro." },
+        ],
+      },
+      "air-quality": {
+        score: 60,
+        sources: ["who-air"],
+        summary:
+          "Lima's air-quality profile is shaped by traffic, dust, and seasonal humidity, with active monitoring and policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Lima's coastal humidity moderates some pollutants.",
+        facts: [
+          { label: "Clean-air score", value: "60", unit: "/100", description: "Mid-tier baseline with traffic and dust pressure.", context: "Trend visibility is improving." },
+          { label: "Primary pollutant watch", value: "PM2.5 and PM10", description: "Particulate exposure drives the focus.", context: "Dust sources contribute alongside traffic." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is improving with continued expansion.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 70,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Lima has solid grid reliability with growing renewable build-out and active building-efficiency work.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Peru's hydro and renewable mix supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "70", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "Hydropower supports a favorable grid baseline." },
+          { label: "Primary transition lever", value: "Solar and efficiency", description: "Distributed solar and building efficiency are the main levers.", context: "Solar resource is favorable nationally." },
+          { label: "Climate stressor", value: "Water and heat", description: "Water variability and rising heat shape adaptation work.", context: "Water-management programs are central." },
+        ],
+      },
+      safety: {
+        score: 64,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Lima has mid-tier safety with neighborhood variation and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Lima shows variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "64", unit: "/100", description: "Mid-tier score with neighborhood-level variation.", context: "Resident experience varies across districts." },
+          { label: "Violent-crime context", value: "Mid", description: "Violent-crime context varies meaningfully by district.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property", description: "Property crime is the main practical day-to-day concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 76,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Lima has solid fiber broadband and improving mobile coverage, supporting a growing technology and remote-work community.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Lima's fiber footprint continues to expand.",
+        facts: [
+          { label: "Fixed broadband median", value: "150", unit: " Mbps", description: "Solid fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "90", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Broad", description: "Fiber footprint is widening across central and outer districts.", context: "Service availability continues to grow." },
+        ],
+      },
+      "climate-risk": {
+        score: 68,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Lima carries meaningful climate exposure from water variability, seismic activity, and rising heat, balanced by active adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Lima's main pressures are water and seismic.",
+        facts: [
+          { label: "Primary hazard", value: "Water and seismic", description: "Water variability and earthquake exposure are the main hazards.", context: "Andes water cycle shapes resource availability." },
+          { label: "Flood exposure", value: "Low", description: "Coastal arid context limits surface flooding.", context: "Episodic events drive most water pressure." },
+          { label: "Adaptation capacity", value: "Improving", description: "Climate plans and infrastructure investment build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "shanghai",
+    name: "Shanghai",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "29.2M metro",
+    intro:
+      "Shanghai is one of the world's largest urban economies, with deep finance, manufacturing, and creative industries and a globally cited transit network.",
+    outlook:
+      "Shanghai is most useful for users comparing economic depth, mobility, and digital infrastructure against air-quality and climate-exposure considerations.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban", "iea-cities"],
+    scores: { overall: 80, affordability: 64, airQuality: 64, energy: 78, resilience: 76 },
+    metrics: [
+      { label: "Overall city intelligence", value: "80", unit: "/100", score: 80, description: "Strong economic and connectivity depth balanced against air-quality and climate exposure." },
+      { label: "Public transit", value: "Globally leading", description: "Among the world's most extensive metro networks." },
+      { label: "Economic depth", value: "Globally leading", description: "Finance, manufacturing, and trade ecosystems shape opportunity." },
+    ],
+    relatedCitySlugs: ["tokyo", "hong-kong", "singapore"],
+    modules: {
+      "cost-of-living": {
+        score: 64,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Shanghai is among China's most expensive metros, with central rents balanced against deep services, food, and transit access.",
+        explanation:
+          "The cost-of-living model balances housing pressure with services and transit. Shanghai's transit and services depth offsets many costs.",
+        facts: [
+          { label: "Affordability score", value: "64", unit: "/100", description: "Lower score driven by central rents.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "High", description: "Central districts remain especially competitive.", context: "Long-term rental options span a wide range." },
+          { label: "Transport offset", value: "Strong", description: "Metro reach reduces private mobility costs.", context: "Transit-heavy daily routines lower household transport spend." },
+        ],
+      },
+      "air-quality": {
+        score: 64,
+        sources: ["who-air"],
+        summary:
+          "Shanghai's air-quality profile reflects ongoing improvement with seasonal particulate exposure remaining the main focus.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Trend has improved meaningfully over the past decade.",
+        facts: [
+          { label: "Clean-air score", value: "64", unit: "/100", description: "Mid-tier baseline with continued improvement.", context: "Trend has improved over the past decade." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus.", context: "Industrial and traffic sources contribute." },
+          { label: "Monitoring confidence", value: "High", description: "Public monitoring supports trend visibility.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 78,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Shanghai benefits from rapid national renewable build-out, leading EV adoption, and active building-efficiency work.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. China's renewable acceleration supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "78", unit: "/100", description: "Strong baseline lifted by national renewable progress.", context: "EV adoption is among the highest globally." },
+          { label: "Primary transition lever", value: "EVs and renewables", description: "EV adoption and renewable build-out are the main levers.", context: "Charging infrastructure is broad." },
+          { label: "Climate stressor", value: "Heat and storms", description: "Rising heat and tropical storms shape adaptation work.", context: "Coastal-storm exposure is rising." },
+        ],
+      },
+      safety: {
+        score: 86,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Shanghai is among the safer large global cities, with low violent-crime context and consistent neighborhood experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Shanghai's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "86", unit: "/100", description: "Strong score with consistent neighborhood experience.", context: "Among the safer large global cities." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Property", description: "Property and opportunistic risks are the main practical concerns.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 86,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Shanghai delivers fast fiber broadband and dense mobile coverage, supporting a deep digital-services and finance economy.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Shanghai's fiber and mobile footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "300", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "180", unit: " Mbps", description: "Reliable 5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service availability is broad." },
+        ],
+      },
+      "climate-risk": {
+        score: 68,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Shanghai carries meaningful climate exposure from coastal flooding, typhoons, and rising heat, balanced by major adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Shanghai's main pressures are coastal flooding and storms.",
+        facts: [
+          { label: "Primary hazard", value: "Coastal flood and typhoon", description: "Sea-level rise and storms are the main hazards.", context: "Major flood-management programs are central." },
+          { label: "Heat exposure", value: "Rising", description: "Sustained summer heat is becoming central to planning.", context: "Cooling demand is structural for daily life." },
+          { label: "Adaptation capacity", value: "Strong", description: "Major adaptation investments build resilience.", context: "Implementation depth supports the score." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "taipei",
+    name: "Taipei",
+    countrySlug: "taiwan",
+    countryName: "Taiwan",
+    region: "East Asia",
+    population: "7.1M metro",
+    intro:
+      "Taipei is the capital of Taiwan and a dense East Asian city with strong public transit, leading semiconductor industry context, and high digital infrastructure.",
+    outlook:
+      "Taipei is most useful for users comparing transit, services, and connectivity in East Asia against typhoon and seismic adaptation needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban", "itu-connectivity"],
+    scores: { overall: 84, affordability: 70, airQuality: 76, energy: 78, resilience: 80 },
+    metrics: [
+      { label: "Overall city intelligence", value: "84", unit: "/100", score: 84, description: "Strong transit, services, and connectivity profile balanced against climate exposure." },
+      { label: "Public transit", value: "Very high", description: "Metro and bus reach support car-light daily life." },
+      { label: "Tech-industry context", value: "Leading", description: "Semiconductor and electronics ecosystems shape opportunity." },
+    ],
+    relatedCitySlugs: ["seoul", "hong-kong", "tokyo"],
+    modules: {
+      "cost-of-living": {
+        score: 70,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Taipei offers moderate affordability for a major East Asian capital, with central rents balanced and food and transit costs steady.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Taipei's transit and food markets keep daily costs balanced.",
+        facts: [
+          { label: "Affordability score", value: "70", unit: "/100", description: "Moderate affordability for a major East Asian capital.", context: "Outer districts remain more accessible." },
+          { label: "Housing pressure", value: "Rising", description: "Central districts have firmed under demand.", context: "Long-term rental supply is constrained." },
+          { label: "Transport offset", value: "Strong", description: "Metro and bus reach reduce private mobility costs.", context: "Compact urban form supports car-light routines." },
+        ],
+      },
+      "air-quality": {
+        score: 76,
+        sources: ["who-air"],
+        summary:
+          "Taipei has solid baseline air quality with traffic and seasonal particulate exposure the main focus and active monitoring.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Taipei's monitoring supports a clear trend.",
+        facts: [
+          { label: "Clean-air score", value: "76", unit: "/100", description: "Solid baseline with seasonal pressure.", context: "Trend has improved over the past decade." },
+          { label: "Primary pollutant watch", value: "PM2.5 and ozone", description: "Fine particles and ozone are the central benchmarks.", context: "Long-range transport drives some seasonal exposure." },
+          { label: "Monitoring confidence", value: "High", description: "Public monitoring supports trend visibility.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 78,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Taipei has solid grid reliability with rising renewable build-out and active building and transport electrification work.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Taiwan's renewable expansion supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "78", unit: "/100", description: "Solid baseline with active transition direction.", context: "Renewable capacity is growing nationally." },
+          { label: "Primary transition lever", value: "Renewables and efficiency", description: "Solar and offshore wind build-out are the main levers.", context: "Building-efficiency programs continue to expand." },
+          { label: "Climate stressor", value: "Heat and typhoons", description: "Rising heat and typhoons shape adaptation work.", context: "Coastal-storm exposure is structural." },
+        ],
+      },
+      safety: {
+        score: 90,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Taipei is among the safer large global cities, with very low violent-crime context and consistent neighborhood experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Taipei's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "90", unit: "/100", description: "Very strong score with consistent neighborhood experience.", context: "Among the safest large global cities." },
+          { label: "Violent-crime context", value: "Very low", description: "Violent-crime context is among the lowest globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Traffic", description: "Traffic safety remains a practical day-to-day concern.", context: "Pedestrian and scooter safety attention is useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 92,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Taipei delivers very fast fiber broadband and dense mobile coverage, supporting one of Asia's strongest digital-readiness profiles.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Taiwan's fiber and 5G footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "320", unit: " Mbps", description: "Very strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "180", unit: " Mbps", description: "Reliable 5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service availability is broad." },
+        ],
+      },
+      "climate-risk": {
+        score: 70,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Taipei carries meaningful climate exposure from typhoons, intense rainfall, and seismic activity, balanced by mature engineering and adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Taipei's hazards are concurrent; engineering depth supports the score.",
+        facts: [
+          { label: "Primary hazard", value: "Typhoon and rainfall", description: "Tropical storms and intense rainfall are the main hazards.", context: "Engineering codes support resilience." },
+          { label: "Seismic exposure", value: "Meaningful", description: "Earthquake exposure shapes building and infrastructure standards.", context: "Codes and drills are mature." },
+          { label: "Adaptation capacity", value: "Strong", description: "Engineering capacity and city programs build resilience.", context: "Implementation depth supports the score." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "kuala-lumpur",
+    name: "Kuala Lumpur",
+    countrySlug: "malaysia",
+    countryName: "Malaysia",
+    region: "Southeast Asia",
+    population: "8.4M metro",
+    intro:
+      "Kuala Lumpur is Malaysia's capital and a multicultural Southeast Asian metropolis with growing transit, deep services, and an expanding digital economy.",
+    outlook:
+      "Kuala Lumpur is most useful for users comparing affordability, services, and connectivity in Southeast Asia against air-quality and heat considerations.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 76, affordability: 78, airQuality: 66, energy: 72, resilience: 72 },
+    metrics: [
+      { label: "Overall city intelligence", value: "76", unit: "/100", score: 76, description: "Strong affordability and services profile balanced against air and heat pressure." },
+      { label: "Affordability profile", value: "Favorable", description: "Cost-of-living levels are comparatively favorable for a major capital." },
+      { label: "Multicultural depth", value: "Very high", description: "Diverse cultural and culinary traditions shape daily life." },
+    ],
+    relatedCitySlugs: ["singapore", "bangkok", "jakarta"],
+    modules: {
+      "cost-of-living": {
+        score: 78,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Kuala Lumpur offers strong affordability for a major Southeast Asian capital, with food and transit costs supporting steady daily life.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Kuala Lumpur's hawker culture supports stable daily costs.",
+        facts: [
+          { label: "Affordability score", value: "78", unit: "/100", description: "Strong affordability for a major capital.", context: "Markets and transit support stable daily costs." },
+          { label: "Housing pressure", value: "Moderate", description: "Rental options span a wide range across the metro.", context: "Central districts are more competitive." },
+          { label: "Transport offset", value: "Strong", description: "Rail and bus reach reduce private mobility costs.", context: "Transit expansion continues across the metro." },
+        ],
+      },
+      "air-quality": {
+        score: 66,
+        sources: ["who-air"],
+        summary:
+          "Kuala Lumpur's air quality is shaped by traffic and seasonal regional haze, with active monitoring and policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Regional haze drives episodic seasonal exposure.",
+        facts: [
+          { label: "Clean-air score", value: "66", unit: "/100", description: "Mid-tier baseline with seasonal haze pressure.", context: "Regional haze cycles drive episodic spikes." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus during haze cycles.", context: "Indoor-air practice is widely adopted." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is improving with continued expansion.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 72,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Kuala Lumpur has solid grid reliability with growing solar build-out and active building-efficiency work in the commercial sector.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Malaysia's solar and efficiency direction supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "72", unit: "/100", description: "Solid baseline with active transition direction.", context: "Solar resource is favorable nationally." },
+          { label: "Primary transition lever", value: "Solar and efficiency", description: "Distributed solar and efficiency are the main levers.", context: "Commercial-sector retrofits are visible." },
+          { label: "Climate stressor", value: "Heat and rainfall", description: "Sustained heat and intense rainfall shape adaptation work.", context: "Cooling demand is structural for daily life." },
+        ],
+      },
+      safety: {
+        score: 78,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Kuala Lumpur has solid overall safety with neighborhood variation and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Kuala Lumpur's resident experience is mostly stable.",
+        facts: [
+          { label: "Safety score", value: "78", unit: "/100", description: "Solid score with neighborhood-level variation.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Property", description: "Property crime is the main practical day-to-day concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 84,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Kuala Lumpur offers fast fiber broadband and dense mobile coverage, supporting a growing digital-services and finance sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Malaysia's fiber rollout reaches Kuala Lumpur deeply.",
+        facts: [
+          { label: "Fixed broadband median", value: "220", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "130", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 72,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Kuala Lumpur carries moderate climate exposure from heat and intense rainfall, balanced by active adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Kuala Lumpur's main pressures are heat and rainfall-driven flooding.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and rainfall", description: "Sustained heat and intense rainfall are the main hazards.", context: "Tropical context concentrates exposure." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and river flood pressure rises in storm cycles.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Improving", description: "City and federal programs build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "jakarta",
+    name: "Jakarta",
+    countrySlug: "indonesia",
+    countryName: "Indonesia",
+    region: "Southeast Asia",
+    population: "33.4M metro",
+    intro:
+      "Jakarta is Indonesia's capital and one of Southeast Asia's largest urban regions, with deep cultural variety, growing transit investment, and active climate-adaptation work.",
+    outlook:
+      "Jakarta is most useful for users comparing affordability, services, and connectivity in Southeast Asia against air-quality, flood, and subsidence considerations.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 70, affordability: 80, airQuality: 56, energy: 68, resilience: 64 },
+    metrics: [
+      { label: "Overall city intelligence", value: "70", unit: "/100", score: 70, description: "Strong affordability and cultural depth balanced against air-quality and flood pressure." },
+      { label: "Affordability profile", value: "Favorable", description: "Cost-of-living levels are comparatively favorable." },
+      { label: "Cultural depth", value: "Very high", description: "Diverse cultural and culinary traditions shape daily life." },
+    ],
+    relatedCitySlugs: ["kuala-lumpur", "manila", "bangkok"],
+    modules: {
+      "cost-of-living": {
+        score: 80,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Jakarta offers strong affordability for a major Southeast Asian capital, with food and transit costs supporting steady daily life.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Jakarta's markets and street food support stable daily costs.",
+        facts: [
+          { label: "Affordability score", value: "80", unit: "/100", description: "Strong affordability for a major capital.", context: "Markets and transit support stable daily costs." },
+          { label: "Housing pressure", value: "Moderate", description: "Rental options span a wide range across the metro.", context: "Central districts are more competitive." },
+          { label: "Transport offset", value: "Improving", description: "MRT and bus rapid transit expansion reduce mobility costs.", context: "Transit reach continues to grow." },
+        ],
+      },
+      "air-quality": {
+        score: 56,
+        sources: ["who-air"],
+        summary:
+          "Jakarta's air-quality profile is shaped by traffic, industry, and meteorology, with active monitoring and policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Jakarta's pollutant levels warrant continued attention.",
+        facts: [
+          { label: "Clean-air score", value: "56", unit: "/100", description: "Lower-tier baseline with persistent pollutant exposure.", context: "Trend visibility is improving." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus.", context: "Industrial and traffic sources contribute." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is improving with continued expansion.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 68,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Jakarta's energy profile reflects an active transition with growing renewable build-out at the national level and rising efficiency programs.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Indonesia's renewable transition is steadily progressing.",
+        facts: [
+          { label: "Energy readiness", value: "68", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "Solar resource is strong nationally." },
+          { label: "Primary transition lever", value: "Renewables and efficiency", description: "Renewable build-out and efficiency are the main levers.", context: "Distributed solar continues to expand." },
+          { label: "Climate stressor", value: "Heat and flooding", description: "Sustained heat and flooding shape adaptation work.", context: "Subsidence raises long-run flood pressure." },
+        ],
+      },
+      safety: {
+        score: 70,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Jakarta has mid-tier safety with neighborhood variation and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Jakarta shows variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "70", unit: "/100", description: "Mid-tier score with neighborhood-level variation.", context: "Resident experience varies across districts." },
+          { label: "Violent-crime context", value: "Mid-low", description: "Violent-crime context is comparatively moderate.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property and traffic", description: "Property crime and traffic safety are the main practical concerns.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 76,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Jakarta has solid fiber broadband and broad mobile coverage, supporting a fast-growing digital-services and creative-economy sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Jakarta's fiber footprint continues to expand.",
+        facts: [
+          { label: "Fixed broadband median", value: "150", unit: " Mbps", description: "Solid fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "100", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Broad", description: "Fiber footprint is widening across central and outer districts.", context: "Service availability continues to grow." },
+        ],
+      },
+      "climate-risk": {
+        score: 60,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Jakarta faces meaningful climate exposure from coastal flooding, subsidence, and rising heat, balanced by major adaptation programs and a planned capital relocation.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Jakarta's hazards are concurrent and require sustained investment.",
+        facts: [
+          { label: "Primary hazard", value: "Flood and subsidence", description: "Coastal flooding and land subsidence are the main hazards.", context: "Long-run pressure shapes long-term planning." },
+          { label: "Heat exposure", value: "High", description: "Sustained heat is structural for daily life.", context: "Cooling demand grows with extremes." },
+          { label: "Adaptation capacity", value: "Improving", description: "Major adaptation programs build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "manila",
+    name: "Manila",
+    countrySlug: "philippines",
+    countryName: "Philippines",
+    region: "Southeast Asia",
+    population: "14.6M metro",
+    intro:
+      "Manila is the Philippines' capital and a coastal Southeast Asian metropolis with a deep services economy, growing tech sector, and active climate-adaptation work.",
+    outlook:
+      "Manila is most useful for users comparing affordability and services in Southeast Asia against typhoon, flood, and infrastructure modernization needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 70, affordability: 78, airQuality: 60, energy: 66, resilience: 60 },
+    metrics: [
+      { label: "Overall city intelligence", value: "70", unit: "/100", score: 70, description: "Strong affordability and services profile balanced against typhoon and modernization needs." },
+      { label: "Affordability profile", value: "Favorable", description: "Cost-of-living levels are comparatively favorable." },
+      { label: "Services economy", value: "Strong", description: "Business-process services and creative industries shape opportunity." },
+    ],
+    relatedCitySlugs: ["jakarta", "bangkok", "kuala-lumpur"],
+    modules: {
+      "cost-of-living": {
+        score: 78,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Manila offers strong affordability for a major Southeast Asian capital, with food and transit costs supporting steady daily life.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Manila's markets support stable daily costs.",
+        facts: [
+          { label: "Affordability score", value: "78", unit: "/100", description: "Strong affordability for a major capital.", context: "Markets and transit support stable daily costs." },
+          { label: "Housing pressure", value: "Rising", description: "Central business districts have firmed under demand.", context: "Long-term rental supply varies." },
+          { label: "Transport offset", value: "Mixed", description: "Bus and rail reach reduce some private mobility costs.", context: "Transit expansion continues across the metro." },
+        ],
+      },
+      "air-quality": {
+        score: 60,
+        sources: ["who-air"],
+        summary:
+          "Manila's air-quality profile is shaped by traffic, industry, and meteorology, with active monitoring and policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Manila's pollutant levels warrant continued attention.",
+        facts: [
+          { label: "Clean-air score", value: "60", unit: "/100", description: "Mid-tier baseline with persistent pollutant exposure.", context: "Trend visibility is improving." },
+          { label: "Primary pollutant watch", value: "PM2.5 and NO2", description: "Fine particles and traffic emissions drive focus.", context: "Mobility reform targets these directly." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is improving with continued expansion.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 66,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Manila's energy profile reflects an active transition with growing renewable build-out and rising distributed-solar adoption.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. The Philippines' renewable transition continues to progress.",
+        facts: [
+          { label: "Energy readiness", value: "66", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "Solar resource is strong nationally." },
+          { label: "Primary transition lever", value: "Renewables and grid", description: "Renewable build-out and grid resilience are the main levers.", context: "Distributed solar continues to expand." },
+          { label: "Climate stressor", value: "Heat and typhoons", description: "Sustained heat and typhoons shape adaptation work.", context: "Coastal-storm exposure is structural." },
+        ],
+      },
+      safety: {
+        score: 66,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Manila has mid-tier safety with neighborhood variation and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Manila shows variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "66", unit: "/100", description: "Mid-tier score with neighborhood-level variation.", context: "Resident experience varies across districts." },
+          { label: "Violent-crime context", value: "Mid", description: "Violent-crime context varies meaningfully by district.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property and traffic", description: "Property crime and traffic safety are the main practical concerns.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 76,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Manila has solid fiber broadband and broad mobile coverage, supporting a deep business-process services and creative-economy sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Manila's fiber footprint continues to expand.",
+        facts: [
+          { label: "Fixed broadband median", value: "180", unit: " Mbps", description: "Solid fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "90", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Broad", description: "Fiber footprint is widening across central and outer districts.", context: "Service availability continues to grow." },
+        ],
+      },
+      "climate-risk": {
+        score: 56,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Manila faces meaningful climate exposure from typhoons, coastal flooding, and rising heat, balanced by adaptation programs that continue to scale.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Manila's hazards are concurrent and require sustained investment.",
+        facts: [
+          { label: "Primary hazard", value: "Typhoon and flood", description: "Tropical storms and coastal flooding are the main hazards.", context: "Concurrent hazards shape adaptation work." },
+          { label: "Heat exposure", value: "High", description: "Sustained heat is structural for daily life.", context: "Cooling demand grows with extremes." },
+          { label: "Adaptation capacity", value: "Improving", description: "City and national programs build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "mumbai",
+    name: "Mumbai",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "21.7M metro",
+    intro:
+      "Mumbai is India's financial capital and one of South Asia's largest urban regions, with deep finance, film, and creative industries and active urban-modernization work.",
+    outlook:
+      "Mumbai is most useful for users comparing affordability and economic depth in South Asia against air-quality, flood, and infrastructure modernization needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 70, affordability: 78, airQuality: 54, energy: 66, resilience: 60 },
+    metrics: [
+      { label: "Overall city intelligence", value: "70", unit: "/100", score: 70, description: "Strong affordability and economic depth balanced against air-quality and flood pressure." },
+      { label: "Economic depth", value: "Globally significant", description: "Finance, film, and trade ecosystems shape opportunity." },
+      { label: "Affordability profile", value: "Favorable", description: "Cost-of-living levels are comparatively favorable." },
+    ],
+    relatedCitySlugs: ["bangkok", "manila", "jakarta"],
+    modules: {
+      "cost-of-living": {
+        score: 78,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Mumbai offers strong affordability for a major South Asian capital, with food and transit costs supporting steady daily life despite housing pressure.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Mumbai's markets support stable daily costs.",
+        facts: [
+          { label: "Affordability score", value: "78", unit: "/100", description: "Strong affordability for a major financial capital.", context: "Markets and transit support stable daily costs." },
+          { label: "Housing pressure", value: "Very high", description: "Central districts are among Asia's most competitive.", context: "Long-term supply remains constrained." },
+          { label: "Transport offset", value: "Strong", description: "Suburban rail and bus reach reduce private mobility costs.", context: "Metro expansion continues across the metro." },
+        ],
+      },
+      "air-quality": {
+        score: 54,
+        sources: ["who-air"],
+        summary:
+          "Mumbai's air-quality profile is shaped by traffic, industry, and seasonal meteorology, with active monitoring and policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Mumbai's pollutant levels warrant continued attention.",
+        facts: [
+          { label: "Clean-air score", value: "54", unit: "/100", description: "Lower-tier baseline with seasonal pressure.", context: "Trend visibility is improving." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus.", context: "Industrial and traffic sources contribute." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is improving with continued expansion.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 66,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Mumbai's energy profile reflects an active national transition with growing renewable build-out and rising distributed-solar adoption.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. India's renewable acceleration supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "66", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "Solar resource is strong nationally." },
+          { label: "Primary transition lever", value: "Renewables and efficiency", description: "Renewable build-out and efficiency are the main levers.", context: "Distributed solar continues to expand." },
+          { label: "Climate stressor", value: "Heat and monsoon", description: "Sustained heat and intense monsoon shape adaptation work.", context: "Coastal-storm exposure is structural." },
+        ],
+      },
+      safety: {
+        score: 76,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Mumbai has solid overall safety with consistent neighborhood experience and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Mumbai's resident experience is broadly stable.",
+        facts: [
+          { label: "Safety score", value: "76", unit: "/100", description: "Solid score with consistent neighborhood experience.", context: "Stable institutional response reinforces the score." },
+          { label: "Violent-crime context", value: "Mid-low", description: "Violent-crime context is comparatively low for a major metro.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property and traffic", description: "Property crime and traffic safety are the main practical concerns.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 80,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Mumbai has solid fiber broadband and broad mobile coverage, supporting deep finance, services, and digital-economy activity.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Mumbai's fiber and mobile footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "200", unit: " Mbps", description: "Solid fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "100", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Broad", description: "Fiber footprint is widening across central and outer districts.", context: "Service availability continues to grow." },
+        ],
+      },
+      "climate-risk": {
+        score: 56,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Mumbai faces meaningful climate exposure from coastal flooding, monsoon rainfall, and rising heat, balanced by adaptation programs that continue to scale.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Mumbai's hazards are concurrent and require sustained investment.",
+        facts: [
+          { label: "Primary hazard", value: "Coastal flood and monsoon", description: "Sea-level rise and intense monsoon rainfall are the main hazards.", context: "Concurrent hazards shape adaptation work." },
+          { label: "Heat exposure", value: "High", description: "Sustained heat is structural for daily life.", context: "Cooling demand grows with extremes." },
+          { label: "Adaptation capacity", value: "Improving", description: "City and national programs build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "doha",
+    name: "Doha",
+    countrySlug: "qatar",
+    countryName: "Qatar",
+    region: "Western Asia",
+    population: "2.4M metro",
+    intro:
+      "Doha is Qatar's capital and a fast-growing Gulf city with deep services, modern infrastructure, and ambitious clean-energy and adaptation programs in hot, arid conditions.",
+    outlook:
+      "Doha is most useful for users comparing services, connectivity, and modern infrastructure in the Gulf against heat-adaptation needs.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities", "itu-connectivity"],
+    scores: { overall: 80, affordability: 64, airQuality: 70, energy: 78, resilience: 76 },
+    metrics: [
+      { label: "Overall city intelligence", value: "80", unit: "/100", score: 80, description: "Strong services and infrastructure profile balanced against heat exposure." },
+      { label: "Service depth", value: "Strong", description: "Health, transit, and digital services reach broad coverage." },
+      { label: "Solar resource", value: "Exceptional", description: "Among the strongest solar irradiance levels globally." },
+    ],
+    relatedCitySlugs: ["dubai", "abu-dhabi", "singapore"],
+    modules: {
+      "cost-of-living": {
+        score: 64,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Doha is moderately expensive on housing and central services, with food, transit, and household services balanced for residents.",
+        explanation:
+          "The cost-of-living model balances housing pressure with services and amenity. Doha's services depth offsets some costs.",
+        facts: [
+          { label: "Affordability score", value: "64", unit: "/100", description: "Lower score driven by housing and services costs.", context: "Compounds and outer districts offer more options." },
+          { label: "Housing pressure", value: "Moderate", description: "Rental options span a wide range across the metro.", context: "Central districts are more competitive." },
+          { label: "Services offset", value: "Strong", description: "Modern services reduce some practical household costs.", context: "Public infrastructure supports daily life." },
+        ],
+      },
+      "air-quality": {
+        score: 70,
+        sources: ["who-air"],
+        summary:
+          "Doha's air quality is shaped by arid context with seasonal dust, traffic, and industrial sources contributing to particulate exposure.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Arid context drives natural dust contribution.",
+        facts: [
+          { label: "Clean-air score", value: "70", unit: "/100", description: "Mid-tier baseline shaped by dust and traffic.", context: "Seasonal dust drives episodic pressure." },
+          { label: "Primary pollutant watch", value: "PM10 and PM2.5", description: "Particulates from dust and traffic drive focus.", context: "Indoor-air practice is widely adopted." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is expanding with continued investment.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 78,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Doha benefits from exceptional solar resource and ambitious clean-energy targets supporting renewable build-out and efficiency programs.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Qatar's solar resource and transition direction support the score.",
+        facts: [
+          { label: "Energy readiness", value: "78", unit: "/100", description: "Strong baseline lifted by solar resource and policy direction.", context: "Large-scale solar build-out is underway." },
+          { label: "Primary transition lever", value: "Solar and efficiency", description: "Distributed solar and efficiency are the main levers.", context: "Building cooling efficiency is a focus." },
+          { label: "Climate stressor", value: "Heat", description: "Sustained extreme heat shapes adaptation work.", context: "Cooling demand is structural for daily life." },
+        ],
+      },
+      safety: {
+        score: 90,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Doha is among the safer global cities, with very low violent-crime context and consistent neighborhood experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Doha's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "90", unit: "/100", description: "Very strong score with consistent neighborhood experience.", context: "Among the safest global cities." },
+          { label: "Violent-crime context", value: "Very low", description: "Violent-crime context is among the lowest globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Traffic", description: "Traffic safety remains a practical day-to-day concern.", context: "Pedestrian-friendly design is expanding." },
+        ],
+      },
+      "internet-speed": {
+        score: 90,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Doha delivers very fast fiber broadband and dense 5G mobile coverage, supporting a rapidly expanding digital economy.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Qatar's fiber and 5G footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "300", unit: " Mbps", description: "Very strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "200", unit: " Mbps", description: "Reliable 5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service availability is broad." },
+        ],
+      },
+      "climate-risk": {
+        score: 64,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Doha carries meaningful climate exposure centered on extreme heat and water stress, balanced by ambitious adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Doha's main pressure is heat; coastal location adds storm sensitivity.",
+        facts: [
+          { label: "Primary hazard", value: "Heat", description: "Sustained extreme heat is the main hazard.", context: "Arid context concentrates exposure." },
+          { label: "Water resilience", value: "Active", description: "Desalination and water-management programs are central.", context: "Long-run water security is a structural priority." },
+          { label: "Adaptation capacity", value: "Strong", description: "Ambitious adaptation programs build resilience.", context: "Implementation depth supports the score." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "abu-dhabi",
+    name: "Abu Dhabi",
+    countrySlug: "united-arab-emirates",
+    countryName: "United Arab Emirates",
+    region: "Western Asia",
+    population: "1.6M metro",
+    intro:
+      "Abu Dhabi is the UAE's capital and a major Gulf city with deep services, modern infrastructure, and ambitious clean-energy and adaptation programs in hot, arid conditions.",
+    outlook:
+      "Abu Dhabi is most useful for users comparing services, connectivity, and modern infrastructure in the Gulf against heat-adaptation needs.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities", "itu-connectivity"],
+    scores: { overall: 82, affordability: 66, airQuality: 70, energy: 82, resilience: 78 },
+    metrics: [
+      { label: "Overall city intelligence", value: "82", unit: "/100", score: 82, description: "Strong services and infrastructure profile balanced against heat exposure." },
+      { label: "Service depth", value: "Strong", description: "Health, transit, and digital services reach broad coverage." },
+      { label: "Solar resource", value: "Exceptional", description: "Among the strongest solar irradiance levels globally." },
+    ],
+    relatedCitySlugs: ["dubai", "doha", "singapore"],
+    modules: {
+      "cost-of-living": {
+        score: 66,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Abu Dhabi is moderately expensive on housing and central services, with food, transit, and household services balanced for residents.",
+        explanation:
+          "The cost-of-living model balances housing pressure with services and amenity. Abu Dhabi's services depth offsets some costs.",
+        facts: [
+          { label: "Affordability score", value: "66", unit: "/100", description: "Moderate affordability with services depth as offset.", context: "Outer districts offer more options." },
+          { label: "Housing pressure", value: "Moderate", description: "Rental options span a wide range across the metro.", context: "Central districts are more competitive." },
+          { label: "Services offset", value: "Strong", description: "Modern services reduce some practical household costs.", context: "Public infrastructure supports daily life." },
+        ],
+      },
+      "air-quality": {
+        score: 70,
+        sources: ["who-air"],
+        summary:
+          "Abu Dhabi's air quality is shaped by arid context with seasonal dust, traffic, and industrial sources contributing to particulate exposure.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Arid context drives natural dust contribution.",
+        facts: [
+          { label: "Clean-air score", value: "70", unit: "/100", description: "Mid-tier baseline shaped by dust and traffic.", context: "Seasonal dust drives episodic pressure." },
+          { label: "Primary pollutant watch", value: "PM10 and PM2.5", description: "Particulates from dust and traffic drive focus.", context: "Indoor-air practice is widely adopted." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is expanding with continued investment.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 82,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Abu Dhabi benefits from exceptional solar resource and one of the world's largest utility-scale solar build-outs supporting clean-energy progress.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. The UAE's solar acceleration is among the most ambitious globally.",
+        facts: [
+          { label: "Energy readiness", value: "82", unit: "/100", description: "Strong baseline lifted by major solar build-out.", context: "Among the largest utility-scale solar deployments globally." },
+          { label: "Primary transition lever", value: "Solar and clean fuels", description: "Utility-scale solar and clean fuels are the main levers.", context: "Diversification programs continue to grow." },
+          { label: "Climate stressor", value: "Heat", description: "Sustained extreme heat shapes adaptation work.", context: "Cooling demand is structural for daily life." },
+        ],
+      },
+      safety: {
+        score: 90,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Abu Dhabi is among the safer global cities, with very low violent-crime context and consistent neighborhood experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Abu Dhabi's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "90", unit: "/100", description: "Very strong score with consistent neighborhood experience.", context: "Among the safest global cities." },
+          { label: "Violent-crime context", value: "Very low", description: "Violent-crime context is among the lowest globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Traffic", description: "Traffic safety remains a practical day-to-day concern.", context: "Pedestrian-friendly design is expanding." },
+        ],
+      },
+      "internet-speed": {
+        score: 90,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Abu Dhabi delivers very fast fiber broadband and dense 5G mobile coverage, supporting a rapidly expanding digital economy.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. The UAE's fiber and 5G footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "300", unit: " Mbps", description: "Very strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "200", unit: " Mbps", description: "Reliable 5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service availability is broad." },
+        ],
+      },
+      "climate-risk": {
+        score: 66,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Abu Dhabi carries meaningful climate exposure centered on extreme heat and water stress, balanced by ambitious adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Abu Dhabi's main pressure is heat; coastal location adds sensitivity.",
+        facts: [
+          { label: "Primary hazard", value: "Heat", description: "Sustained extreme heat is the main hazard.", context: "Arid context concentrates exposure." },
+          { label: "Water resilience", value: "Active", description: "Desalination and water-management programs are central.", context: "Long-run water security is a structural priority." },
+          { label: "Adaptation capacity", value: "Strong", description: "Ambitious adaptation programs build resilience.", context: "Implementation depth supports the score." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "lagos",
+    name: "Lagos",
+    countrySlug: "nigeria",
+    countryName: "Nigeria",
+    region: "Africa",
+    population: "21.0M metro",
+    intro:
+      "Lagos is Nigeria's economic capital and one of Africa's largest urban regions, with a vibrant creative, music, and entrepreneurial culture and active urban-modernization work.",
+    outlook:
+      "Lagos is most useful for users comparing affordability, creative-economy depth, and entrepreneurial activity in West Africa against air-quality and modernization needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 66, affordability: 78, airQuality: 54, energy: 60, resilience: 56 },
+    metrics: [
+      { label: "Overall city intelligence", value: "66", unit: "/100", score: 66, description: "Strong affordability and creative-economy profile balanced against modernization needs." },
+      { label: "Creative economy", value: "Globally cited", description: "Music, film, and creative industries shape opportunity." },
+      { label: "Affordability profile", value: "Favorable", description: "Cost-of-living levels are comparatively favorable." },
+    ],
+    relatedCitySlugs: ["nairobi", "johannesburg", "cape-town"],
+    modules: {
+      "cost-of-living": {
+        score: 78,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Lagos offers strong affordability for a major capital, with food and transit costs supporting steady daily life despite urban density.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Lagos' markets support stable daily costs.",
+        facts: [
+          { label: "Affordability score", value: "78", unit: "/100", description: "Strong affordability for a major capital.", context: "Markets support stable daily costs." },
+          { label: "Housing pressure", value: "Rising", description: "Central districts have firmed under demand.", context: "Long-term rental supply varies." },
+          { label: "Transport offset", value: "Mixed", description: "Bus and growing rail reach reduce some private mobility costs.", context: "Transit expansion continues across the metro." },
+        ],
+      },
+      "air-quality": {
+        score: 54,
+        sources: ["who-air"],
+        summary:
+          "Lagos' air-quality profile is shaped by traffic, industry, and seasonal dust, with active monitoring expansion and policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Lagos' pollutant levels warrant continued attention.",
+        facts: [
+          { label: "Clean-air score", value: "54", unit: "/100", description: "Lower-tier baseline with seasonal pressure.", context: "Trend visibility is improving." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus.", context: "Industrial and traffic sources contribute." },
+          { label: "Monitoring confidence", value: "Mid-low", description: "Public monitoring continues to expand with investment.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 60,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Lagos' energy profile reflects an active transition with rising distributed-solar adoption and ongoing grid-modernization work.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Nigeria's solar resource and transition direction support the score.",
+        facts: [
+          { label: "Energy readiness", value: "60", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "Solar resource is favorable nationally." },
+          { label: "Primary transition lever", value: "Solar and grid", description: "Distributed solar and grid resilience are the main levers.", context: "Off-grid solar continues to expand." },
+          { label: "Climate stressor", value: "Heat and rainfall", description: "Sustained heat and intense rainfall shape adaptation work.", context: "Coastal exposure raises storm sensitivity." },
+        ],
+      },
+      safety: {
+        score: 60,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Lagos has mid-tier safety with strong neighborhood variation and property-related opportunistic risks the main day-to-day concern.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Lagos shows wide variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "60", unit: "/100", description: "Mid-tier score with strong neighborhood variation.", context: "Resident experience varies sharply by district." },
+          { label: "Violent-crime context", value: "Mid", description: "Violent-crime context varies meaningfully by district.", context: "Trend visibility continues to improve." },
+          { label: "Watch item", value: "Property and traffic", description: "Property crime and traffic safety are the main practical concerns.", context: "Common situational awareness remains useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 70,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Lagos has improving fiber broadband and broad mobile coverage, supporting a fast-growing technology and creative-industry sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Lagos' fiber footprint continues to expand.",
+        facts: [
+          { label: "Fixed broadband median", value: "120", unit: " Mbps", description: "Improving fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "80", unit: " Mbps", description: "Reliable 4G mobile experience with growing 5G.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Broad", description: "Fiber footprint is widening across central and outer districts.", context: "Service availability continues to grow." },
+        ],
+      },
+      "climate-risk": {
+        score: 56,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Lagos faces meaningful climate exposure from coastal flooding, intense rainfall, and rising heat, balanced by adaptation programs that continue to scale.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Lagos' hazards are concurrent and require sustained investment.",
+        facts: [
+          { label: "Primary hazard", value: "Coastal flood and rainfall", description: "Sea-level rise and intense rainfall are the main hazards.", context: "Concurrent hazards shape adaptation work." },
+          { label: "Heat exposure", value: "High", description: "Sustained heat is structural for daily life.", context: "Cooling demand grows with extremes." },
+          { label: "Adaptation capacity", value: "Improving", description: "City and national programs build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "kigali",
+    name: "Kigali",
+    countrySlug: "rwanda",
+    countryName: "Rwanda",
+    region: "Africa",
+    population: "1.7M metro",
+    intro:
+      "Kigali is Rwanda's capital and a fast-developing East African city known for clean public spaces, strong governance signals, and a growing technology and services sector.",
+    outlook:
+      "Kigali is most useful for users comparing affordability, public-space quality, and institutional context in East Africa against modernization needs.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 74, affordability: 80, airQuality: 70, energy: 70, resilience: 72 },
+    metrics: [
+      { label: "Overall city intelligence", value: "74", unit: "/100", score: 74, description: "Strong affordability and public-space profile balanced against modernization needs." },
+      { label: "Public-space quality", value: "Notable", description: "Well-kept public spaces are widely cited regionally." },
+      { label: "Institutional signals", value: "Stable", description: "Governance signals support a stable operating environment." },
+    ],
+    relatedCitySlugs: ["nairobi", "cape-town", "lagos"],
+    modules: {
+      "cost-of-living": {
+        score: 80,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Kigali offers strong affordability for an African capital, with food and transit costs supporting steady daily life.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and transit access. Kigali's markets support stable daily costs.",
+        facts: [
+          { label: "Affordability score", value: "80", unit: "/100", description: "Strong affordability for a regional capital.", context: "Markets support stable daily costs." },
+          { label: "Housing pressure", value: "Moderate", description: "Central districts have firmed with growth.", context: "Outer districts remain more accessible." },
+          { label: "Transport offset", value: "Improving", description: "Bus reach and growing rail plans reduce mobility costs.", context: "Transit-network expansion is in progress." },
+        ],
+      },
+      "air-quality": {
+        score: 70,
+        sources: ["who-air"],
+        summary:
+          "Kigali has solid baseline air quality with traffic and seasonal dust the main pollutant focus and active monitoring expansion.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Kigali's geography supports a moderate baseline.",
+        facts: [
+          { label: "Clean-air score", value: "70", unit: "/100", description: "Solid baseline with traffic and seasonal pressure.", context: "Trend visibility continues to improve." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus.", context: "Traffic and dust sources contribute." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring is improving with continued expansion.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 70,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Kigali's energy profile reflects an active transition with growing renewable build-out and rising solar adoption supporting national targets.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Rwanda's renewable direction supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "70", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "Solar and hydro resources support progress." },
+          { label: "Primary transition lever", value: "Solar and grid", description: "Distributed solar and grid expansion are the main levers.", context: "National electrification continues to grow." },
+          { label: "Climate stressor", value: "Rainfall", description: "Intense rainfall shapes adaptation work.", context: "Slope stability is a related concern." },
+        ],
+      },
+      safety: {
+        score: 84,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Kigali is widely cited as among the safer African capitals, with low violent-crime context and consistent neighborhood experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Kigali's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "84", unit: "/100", description: "Strong score with consistent neighborhood experience.", context: "Among the safer regional capitals." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low for the region.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Property", description: "Property-related opportunistic risks remain the practical concern.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 76,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Kigali offers improving fiber broadband and broad mobile coverage, supporting a growing technology and services sector.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Kigali's fiber footprint continues to expand.",
+        facts: [
+          { label: "Fixed broadband median", value: "150", unit: " Mbps", description: "Improving fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "80", unit: " Mbps", description: "Reliable 4G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Broad", description: "Fiber footprint is widening across central and outer districts.", context: "Service availability continues to grow." },
+        ],
+      },
+      "climate-risk": {
+        score: 72,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Kigali carries moderate climate exposure from intense rainfall and slope stability, balanced by active adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Kigali's altitude moderates heat exposure.",
+        facts: [
+          { label: "Primary hazard", value: "Rainfall and slope", description: "Intense rainfall and slope stability are the main hazards.", context: "Hilly topography concentrates exposure." },
+          { label: "Heat exposure", value: "Low", description: "High altitude moderates heat-stress impact.", context: "Heat is a smaller driver than for lowland peers." },
+          { label: "Adaptation capacity", value: "Strong", description: "City and national programs build resilience.", context: "Implementation depth supports the score." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "johannesburg",
+    name: "Johannesburg",
+    countrySlug: "south-africa",
+    countryName: "South Africa",
+    region: "Africa",
+    population: "9.7M metro",
+    intro:
+      "Johannesburg is South Africa's largest urban region and a major economic and cultural hub with deep finance, mining, and creative industries.",
+    outlook:
+      "Johannesburg is most useful for users comparing affordability and economic depth in southern Africa against energy-transition and safety considerations.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban", "iea-cities"],
+    scores: { overall: 70, affordability: 76, airQuality: 64, energy: 64, resilience: 68 },
+    metrics: [
+      { label: "Overall city intelligence", value: "70", unit: "/100", score: 70, description: "Strong economic depth and affordability profile balanced against energy-transition needs." },
+      { label: "Economic depth", value: "Very high", description: "Finance, mining, and creative industries shape opportunity." },
+      { label: "Affordability profile", value: "Favorable", description: "Cost-of-living levels are comparatively favorable." },
+    ],
+    relatedCitySlugs: ["cape-town", "nairobi", "lagos"],
+    modules: {
+      "cost-of-living": {
+        score: 76,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Johannesburg offers favorable affordability for a major economic capital, with food and services costs supporting steady daily life.",
+        explanation:
+          "The cost-of-living model balances housing pressure with food and services access. Johannesburg's services depth supports stable daily costs.",
+        facts: [
+          { label: "Affordability score", value: "76", unit: "/100", description: "Favorable affordability for a major capital.", context: "Markets and services support stable daily costs." },
+          { label: "Housing pressure", value: "Moderate", description: "Rental options span a wide range across the metro.", context: "Central districts are more competitive." },
+          { label: "Transport offset", value: "Mixed", description: "Bus and rail reach reduce some mobility costs.", context: "Transit expansion continues across the metro." },
+        ],
+      },
+      "air-quality": {
+        score: 64,
+        sources: ["who-air"],
+        summary:
+          "Johannesburg's air-quality profile is shaped by traffic, industry, and seasonal heating, with active monitoring and policy attention.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring depth and policy momentum. Johannesburg's pollutant levels warrant continued attention.",
+        facts: [
+          { label: "Clean-air score", value: "64", unit: "/100", description: "Mid-tier baseline with seasonal pressure.", context: "Trend visibility is supported by monitoring." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles drive the focus during heating season.", context: "Heating reform targets these directly." },
+          { label: "Monitoring confidence", value: "Mid", description: "Public monitoring continues to expand.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 64,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Johannesburg's energy profile reflects an active national transition with rising renewable build-out and ongoing grid-resilience work.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. South Africa's renewable acceleration supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "64", unit: "/100", description: "Mid-tier baseline with active transition direction.", context: "Solar resource is favorable nationally." },
+          { label: "Primary transition lever", value: "Renewables and grid", description: "Renewable build-out and grid resilience are the main levers.", context: "Distributed solar continues to expand." },
+          { label: "Climate stressor", value: "Heat and storms", description: "Rising heat and intense storms shape adaptation work.", context: "Hailstorms drive some seasonal pressure." },
+        ],
+      },
+      safety: {
+        score: 60,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Johannesburg has mid-tier safety with strong neighborhood variation; resident experience differs widely across districts.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Johannesburg shows wide variation across the metro.",
+        facts: [
+          { label: "Safety score", value: "60", unit: "/100", description: "Mid-tier score with strong neighborhood variation.", context: "Resident experience varies sharply by district." },
+          { label: "Violent-crime context", value: "Mid-high", description: "Violent-crime context varies meaningfully by district.", context: "Trend visibility is supported by public reporting." },
+          { label: "Watch item", value: "Property", description: "Property crime is the main practical day-to-day concern.", context: "Common situational awareness remains useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 80,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Johannesburg offers solid fiber broadband and reliable mobile coverage, supporting a deep finance, services, and digital-economy presence.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Johannesburg's fiber footprint is broad.",
+        facts: [
+          { label: "Fixed broadband median", value: "180", unit: " Mbps", description: "Solid fixed-broadband performance for remote work.", context: "Performance varies by district and provider." },
+          { label: "Mobile median", value: "100", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 70,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Johannesburg carries moderate climate exposure from heat, water variability, and intense storms, balanced by active adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Johannesburg's altitude moderates some heat extremes.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and storms", description: "Rising heat and intense storms are the main hazards.", context: "Drought cycles raise long-run pressure." },
+          { label: "Water resilience", value: "Active", description: "Drought-cycle planning and water programs are central.", context: "Long-run water security shapes urban operations." },
+          { label: "Adaptation capacity", value: "Improving", description: "City and national programs build resilience.", context: "Implementation timelines extend into the medium term." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "melbourne",
+    name: "Melbourne",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "5.2M metro",
+    intro:
+      "Melbourne is Australia's second-largest city, known for cultural depth, design and creative industries, walkable laneways, and a growing technology and services economy.",
+    outlook:
+      "Melbourne is most useful for users comparing cultural depth, services, and connectivity against high housing pressure and rising heat exposure.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 86, affordability: 60, airQuality: 84, energy: 78, resilience: 78 },
+    metrics: [
+      { label: "Overall city intelligence", value: "86", unit: "/100", score: 86, description: "Strong cultural and connectivity profile balanced against housing pressure." },
+      { label: "Cultural depth", value: "Very high", description: "Design, food, and creative industries shape daily life." },
+      { label: "Walkability", value: "Strong", description: "Compact central form and laneways support car-light routines." },
+    ],
+    relatedCitySlugs: ["sydney", "brisbane", "auckland"],
+    modules: {
+      "cost-of-living": {
+        score: 60,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Melbourne is expensive on housing and central services, partially offset by amenity and service quality.",
+        explanation:
+          "The cost-of-living model balances housing pressure with services and amenity. Melbourne's amenity is high; housing dominates the score.",
+        facts: [
+          { label: "Affordability score", value: "60", unit: "/100", description: "Lower score driven by housing pressure.", context: "Amenity and services partially offset costs." },
+          { label: "Housing pressure", value: "Very high", description: "Long-run demand and supply imbalances dominate the cost profile.", context: "Inner-suburb districts remain especially competitive." },
+          { label: "Amenity offset", value: "Strong", description: "Cultural and service amenity reduce some practical costs.", context: "Walking and tram routines support car-light life." },
+        ],
+      },
+      "air-quality": {
+        score: 84,
+        sources: ["who-air"],
+        summary:
+          "Melbourne has strong baseline air quality with episodic bushfire smoke the main seasonal concern.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring confidence. Melbourne's baseline is healthy; bushfire seasons drive most spikes.",
+        facts: [
+          { label: "Clean-air score", value: "84", unit: "/100", description: "Strong baseline with stable trend.", context: "Coastal context supports the baseline." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles are the central benchmark.", context: "Bushfire smoke drives episodic spikes." },
+          { label: "Monitoring confidence", value: "High", description: "Public monitoring supports trend visibility.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 78,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Melbourne benefits from rapid renewable build-out at the state level, with rising distributed-solar adoption and active building-efficiency work.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Victoria's renewable acceleration supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "78", unit: "/100", description: "Strong baseline lifted by state renewable progress.", context: "Distributed solar adoption is high." },
+          { label: "Primary transition lever", value: "Renewables and electrification", description: "Renewable build-out and electrification are the main levers.", context: "Heat-pump uptake is rising." },
+          { label: "Climate stressor", value: "Heat and bushfire", description: "Rising heat and bushfire shape adaptation work.", context: "Drought cycles raise long-run pressure." },
+        ],
+      },
+      safety: {
+        score: 86,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Melbourne is among the safer large global cities, with low violent-crime context and consistent neighborhood experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Melbourne's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "86", unit: "/100", description: "Strong score with consistent neighborhood experience.", context: "Among the safer large global cities." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Property", description: "Property and opportunistic risks are the main practical concerns.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 86,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Melbourne offers fast fiber broadband and reliable mobile coverage, supporting a growing tech, design, and remote-work community.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Australia's NBN footprint reaches Melbourne broadly.",
+        facts: [
+          { label: "Fixed broadband median", value: "240", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "130", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service variety supports household choice." },
+        ],
+      },
+      "climate-risk": {
+        score: 74,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Melbourne carries moderate climate exposure from heat, bushfire, and storm pressure, balanced by active adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Melbourne's main pressures are heat and bushfire.",
+        facts: [
+          { label: "Primary hazard", value: "Heat and bushfire", description: "Rising heat and bushfire are the main hazards.", context: "Drought cycles raise long-run pressure." },
+          { label: "Flood exposure", value: "Moderate", description: "Surface and storm flood pressure rises in cycles.", context: "Drainage programs are central." },
+          { label: "Adaptation capacity", value: "Strong", description: "State and city programs support resilience.", context: "Tree planting and shade build heat resilience." },
+        ],
+      },
+    },
+  },
+  {
+    slug: "brisbane",
+    name: "Brisbane",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "2.7M metro",
+    intro:
+      "Brisbane is Queensland's capital, a sub-tropical Australian city with strong outdoor amenity, growing tech and services activity, and active climate-adaptation work.",
+    outlook:
+      "Brisbane is most useful for users comparing outdoor amenity, growing services activity, and connectivity against heat and storm-exposure considerations.",
+    sources: ["un-habitat", "who-air", "nasa-power", "ipcc-urban"],
+    scores: { overall: 84, affordability: 64, airQuality: 84, energy: 78, resilience: 76 },
+    metrics: [
+      { label: "Overall city intelligence", value: "84", unit: "/100", score: 84, description: "Strong outdoor amenity and connectivity profile balanced against housing pressure." },
+      { label: "Outdoor amenity", value: "Very high", description: "Sub-tropical climate and outdoor amenity support strong daily life." },
+      { label: "Tech-sector activity", value: "Growing", description: "Software, services, and finance shape rising opportunity." },
+    ],
+    relatedCitySlugs: ["sydney", "melbourne", "auckland"],
+    modules: {
+      "cost-of-living": {
+        score: 64,
+        sources: ["un-habitat", "ipcc-urban", "numbeo-cost"],
+        summary:
+          "Brisbane is moderately expensive on housing and central services, partially offset by amenity and service quality.",
+        explanation:
+          "The cost-of-living model balances housing pressure with services and amenity. Brisbane's amenity is high; housing pressure has firmed.",
+        facts: [
+          { label: "Affordability score", value: "64", unit: "/100", description: "Lower score driven by rising housing pressure.", context: "Outer suburbs remain more accessible." },
+          { label: "Housing pressure", value: "High", description: "Long-run demand has firmed under interstate migration.", context: "Inner-suburb districts are especially competitive." },
+          { label: "Amenity offset", value: "Strong", description: "Outdoor and service amenity reduce some practical costs.", context: "Outdoor lifestyle reduces some indoor entertainment expense." },
+        ],
+      },
+      "air-quality": {
+        score: 84,
+        sources: ["who-air"],
+        summary:
+          "Brisbane has strong baseline air quality, supported by coastal context, with episodic bushfire smoke the main seasonal concern.",
+        explanation:
+          "Air-quality scoring weighs pollutant exposure with monitoring confidence. Brisbane's baseline is healthy; bushfire seasons drive most spikes.",
+        facts: [
+          { label: "Clean-air score", value: "84", unit: "/100", description: "Strong baseline with stable trend.", context: "Coastal context supports the baseline." },
+          { label: "Primary pollutant watch", value: "PM2.5", description: "Fine particles are the central benchmark.", context: "Bushfire smoke drives episodic spikes." },
+          { label: "Monitoring confidence", value: "High", description: "Public monitoring supports trend visibility.", context: "Health-based benchmarks anchor the score." },
+        ],
+      },
+      energy: {
+        score: 78,
+        sources: ["nasa-power", "ipcc-urban", "iea-cities"],
+        summary:
+          "Brisbane benefits from rapid renewable build-out at the state level and one of the world's highest distributed-solar adoption rates.",
+        explanation:
+          "Energy readiness scoring weighs grid context, transition strategy, and adaptation. Queensland's renewable acceleration supports the score.",
+        facts: [
+          { label: "Energy readiness", value: "78", unit: "/100", description: "Strong baseline lifted by state renewable progress.", context: "Distributed solar adoption is among the highest globally." },
+          { label: "Primary transition lever", value: "Solar and electrification", description: "Distributed solar and electrification are the main levers.", context: "Battery adoption continues to rise." },
+          { label: "Climate stressor", value: "Heat and storms", description: "Rising heat and storms shape adaptation work.", context: "Coastal-storm exposure is structural." },
+        ],
+      },
+      safety: {
+        score: 86,
+        sources: ["unodc-crime", "un-habitat"],
+        summary:
+          "Brisbane is among the safer large global cities, with low violent-crime context and consistent neighborhood experience.",
+        explanation:
+          "Safety scoring weighs violent-crime context, neighborhood variation, and institutional response. Brisbane's resident experience is widely stable.",
+        facts: [
+          { label: "Safety score", value: "86", unit: "/100", description: "Strong score with consistent neighborhood experience.", context: "Among the safer large global cities." },
+          { label: "Violent-crime context", value: "Low", description: "Violent-crime context is comparatively low globally.", context: "Long-run stability supports daily life." },
+          { label: "Watch item", value: "Property", description: "Property and opportunistic risks are the main practical concerns.", context: "Common-sense precautions remain useful." },
+        ],
+      },
+      "internet-speed": {
+        score: 84,
+        sources: ["itu-connectivity", "ookla-speedtest"],
+        summary:
+          "Brisbane offers fast fiber broadband and reliable mobile coverage, supporting a growing tech and services economy.",
+        explanation:
+          "Connectivity scoring weighs fixed and mobile performance and digital-readiness depth. Australia's NBN footprint reaches Brisbane broadly.",
+        facts: [
+          { label: "Fixed broadband median", value: "220", unit: " Mbps", description: "Strong fixed-broadband performance for remote work.", context: "Solid for streaming, calls, and large-file workflows." },
+          { label: "Mobile median", value: "130", unit: " Mbps", description: "Reliable 4G/5G mobile experience.", context: "Hybrid work-friendly mobile productivity." },
+          { label: "Coverage", value: "Comprehensive", description: "Fiber footprint reaches most residential areas.", context: "Service availability is broad." },
+        ],
+      },
+      "climate-risk": {
+        score: 70,
+        sources: ["ipcc-urban", "nasa-power", "un-habitat"],
+        summary:
+          "Brisbane carries moderate climate exposure from heat, intense rainfall, and storm and flood pressure, balanced by active adaptation programs.",
+        explanation:
+          "Climate-risk scoring weighs hazard exposure with adaptation capacity. Brisbane's main pressures are storms and flooding.",
+        facts: [
+          { label: "Primary hazard", value: "Storms and flood", description: "Tropical storms and intense rainfall are the main hazards.", context: "Concurrent hazards shape adaptation work." },
+          { label: "Heat exposure", value: "Rising", description: "Sustained heat is rising as a structural concern.", context: "Cooling demand grows with extremes." },
+          { label: "Adaptation capacity", value: "Strong", description: "State and city programs support resilience.", context: "Drainage and stormwater investments are central." },
+        ],
+      },
+    },
+  },
 ];
 
 export const cities: City[] = seeds.map(buildCity);
