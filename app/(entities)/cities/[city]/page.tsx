@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
+import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
@@ -15,7 +16,14 @@ import {
 } from "@/lib/content/generators";
 import { internalLink } from "@/lib/content/links";
 import { demoDataNotice } from "@/lib/content/quality";
-import { getAllCities, getAllModules, getAllRankings, getCityBySlug } from "@/lib/data/queries";
+import {
+  getAllCities,
+  getAllModules,
+  getAllRankings,
+  getCityBySlug,
+  getCitySafetyProfile,
+  getCountryEmergencyProfile,
+} from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
@@ -64,6 +72,8 @@ export default async function CityPage({ params }: PageProps) {
   const explanationCopy = generateCityExplanation(city, modules);
   const rankingsLink = internalLink.cityInRankings(city);
   const methodologyLink = internalLink.methodology();
+  const countryEmergencyProfile = getCountryEmergencyProfile(city.countrySlug);
+  const citySafetyProfile = getCitySafetyProfile(city.slug);
 
   return (
     <main>
@@ -158,6 +168,15 @@ export default async function CityPage({ params }: PageProps) {
             />
           </div>
         </section>
+
+        <PublicSafetySection
+          cityName={city.name}
+          cityProfile={citySafetyProfile}
+          countryHref={countryRoute(city.countrySlug)}
+          countryName={city.countryName}
+          countryProfile={countryEmergencyProfile}
+          variant="city"
+        />
 
         <section>
           <SectionHeading

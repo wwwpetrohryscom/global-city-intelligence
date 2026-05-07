@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CityCard } from "@/components/cards/CityCard";
 import { MetricCard } from "@/components/cards/MetricCard";
+import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
@@ -18,12 +19,20 @@ import {
   getAllCountries,
   getCitiesByCountrySlug,
   getCountryBySlug,
+  getCountryEmergencyContacts,
+  getCountryEmergencyProfile,
+  getEmergencySources,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { countryBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
 import { countryRoute, staticRoutes } from "@/lib/seo/routes";
-import { breadcrumbSchema, datasetSchema, webpageSchema } from "@/lib/seo/schema";
+import {
+  breadcrumbSchema,
+  datasetSchema,
+  emergencyServiceSchema,
+  webpageSchema,
+} from "@/lib/seo/schema";
 
 type PageProps = {
   params: Promise<{ country: string }>;
@@ -66,6 +75,13 @@ export default async function CountryPage({ params }: PageProps) {
   const description = introCopy;
   const methodologyLink = internalLink.methodology();
   const dataSourcesLink = internalLink.dataSources();
+  const emergencyProfile = getCountryEmergencyProfile(country.slug);
+  const emergencyContacts = emergencyProfile
+    ? getCountryEmergencyContacts(emergencyProfile)
+    : [];
+  const emergencySources = emergencyProfile
+    ? getEmergencySources(emergencyProfile)
+    : [];
 
   return (
     <main>
@@ -80,6 +96,17 @@ export default async function CountryPage({ params }: PageProps) {
           sources,
         })}
       />
+      {emergencyProfile && emergencyContacts.length > 0 ? (
+        <JsonLd
+          data={emergencyServiceSchema({
+            countryName: country.name,
+            path: countryRoute(country.slug),
+            profile: emergencyProfile,
+            contacts: emergencyContacts,
+            sources: emergencySources,
+          })}
+        />
+      ) : null}
       <PageHeader eyebrow={country.region} intro={introCopy} title={title}>
         <dl className="grid gap-4">
           <div>
@@ -146,6 +173,12 @@ export default async function CountryPage({ params }: PageProps) {
             />
           </div>
         </section>
+
+        <PublicSafetySection
+          countryName={country.name}
+          countryProfile={emergencyProfile}
+          variant="country"
+        />
 
         <section>
           <SectionHeading

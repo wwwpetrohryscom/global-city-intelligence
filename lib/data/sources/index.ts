@@ -111,6 +111,96 @@ export const dataSources: DataSource[] = [
     reliabilityNote:
       "Used as a directional speed and latency reference for city connectivity scoring.",
   },
+  {
+    id: "ec-112",
+    name: "112 — The European emergency number",
+    organization: "European Commission",
+    url: "https://digital-strategy.ec.europa.eu/en/policies/112",
+    description:
+      "Official European Commission policy page describing 112 as the single emergency number reachable across the European Union and several neighboring countries.",
+    reliabilityNote:
+      "Used as the primary attribution for the EU-wide 112 universal emergency number on European country profiles.",
+  },
+  {
+    id: "fcc-911",
+    name: "9-1-1 and E9-1-1 services",
+    organization: "Federal Communications Commission",
+    url: "https://www.fcc.gov/general/9-1-1-and-e9-1-1-services",
+    description:
+      "FCC reference page for the United States 9-1-1 and Enhanced 9-1-1 emergency calling system, covering availability and routing.",
+    reliabilityNote:
+      "Used as the primary attribution for the United States 911 universal emergency number.",
+  },
+  {
+    id: "canada-emergency",
+    name: "Emergency services in Canada",
+    organization: "Government of Canada",
+    url: "https://www.canada.ca/en/services/policing/police/community-safety-policing/911service.html",
+    description:
+      "Government of Canada reference for 9-1-1 emergency calling service availability across Canadian provinces and territories.",
+    reliabilityNote:
+      "Used as the primary attribution for Canada's 911 universal emergency number.",
+  },
+  {
+    id: "triple-zero-au",
+    name: "Triple Zero (000)",
+    organization: "Australian Government",
+    url: "https://www.triplezero.gov.au/",
+    description:
+      "Official Australian Government information site for the Triple Zero (000) emergency call service for police, fire, and ambulance.",
+    reliabilityNote:
+      "Used as the primary attribution for Australia's 000 universal emergency number.",
+  },
+  {
+    id: "nz-police-111",
+    name: "Dial 111 — Emergencies",
+    organization: "New Zealand Police",
+    url: "https://www.police.govt.nz/contact-us/dial-111-emergencies",
+    description:
+      "New Zealand Police reference page for the 111 emergency calling service across police, fire, and ambulance.",
+    reliabilityNote:
+      "Used as the primary attribution for New Zealand's 111 universal emergency number.",
+  },
+  {
+    id: "npa-japan",
+    name: "National Police Agency of Japan",
+    organization: "National Police Agency, Japan",
+    url: "https://www.npa.go.jp/english/",
+    description:
+      "Official site of Japan's National Police Agency, with public guidance referencing 110 for police and 119 for fire and ambulance.",
+    reliabilityNote:
+      "Used as the primary attribution for Japan's 110 police and 119 fire and ambulance emergency numbers.",
+  },
+  {
+    id: "spf-singapore",
+    name: "Singapore Police Force",
+    organization: "Singapore Police Force",
+    url: "https://www.police.gov.sg/",
+    description:
+      "Official Singapore Police Force site with public emergency contact guidance, referencing 999 for police emergencies.",
+    reliabilityNote:
+      "Used as the primary attribution for Singapore's 999 police emergency number.",
+  },
+  {
+    id: "scdf-singapore",
+    name: "Singapore Civil Defence Force",
+    organization: "Singapore Civil Defence Force",
+    url: "https://www.scdf.gov.sg/",
+    description:
+      "Official Singapore Civil Defence Force site with public emergency contact guidance, referencing 995 for fire and ambulance.",
+    reliabilityNote:
+      "Used as the primary attribution for Singapore's 995 fire and ambulance emergency number.",
+  },
+  {
+    id: "korea-police",
+    name: "Korean National Police Agency",
+    organization: "Korean National Police Agency",
+    url: "https://www.police.go.kr/eng/main.do",
+    description:
+      "Official site of the Korean National Police Agency, with public guidance referencing 112 for police and 119 for fire and ambulance.",
+    reliabilityNote:
+      "Used as the primary attribution for South Korea's 112 police and 119 fire and ambulance emergency numbers.",
+  },
 ];
 
 export function getSourceById(sourceId: string) {
