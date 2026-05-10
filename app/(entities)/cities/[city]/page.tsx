@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
+import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -21,8 +22,12 @@ import {
   getAllModules,
   getAllRankings,
   getCityBySlug,
+  getCityHealthcareProfile,
   getCitySafetyProfile,
   getCountryEmergencyProfile,
+  getCountryHealthcareProfile,
+  getHospitalRegistryProfile,
+  getVerifiedHospitalsForCity,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -74,6 +79,13 @@ export default async function CityPage({ params }: PageProps) {
   const methodologyLink = internalLink.methodology();
   const countryEmergencyProfile = getCountryEmergencyProfile(city.countrySlug);
   const citySafetyProfile = getCitySafetyProfile(city.slug);
+  const countryHealthcareProfile = getCountryHealthcareProfile(city.countrySlug);
+  const cityHealthcareProfile = getCityHealthcareProfile(city.slug);
+  const cityHospitalRegistry = getHospitalRegistryProfile(
+    city.countrySlug,
+    city.slug,
+  );
+  const cityVerifiedHospitals = getVerifiedHospitalsForCity(city.slug);
 
   return (
     <main>
@@ -176,6 +188,18 @@ export default async function CityPage({ params }: PageProps) {
           countryName={city.countryName}
           countryProfile={countryEmergencyProfile}
           variant="city"
+        />
+
+        <HealthcareAccessSection
+          cityName={city.name}
+          cityProfile={cityHealthcareProfile}
+          countryHref={countryRoute(city.countrySlug)}
+          countryName={city.countryName}
+          countryProfile={countryHealthcareProfile}
+          emergencySectionHref="#emergency-public-safety-heading"
+          hospitalRegistry={cityHospitalRegistry}
+          variant="city"
+          verifiedHospitals={cityVerifiedHospitals}
         />
 
         <section>

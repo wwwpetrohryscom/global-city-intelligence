@@ -201,6 +201,186 @@ export const dataSources: DataSource[] = [
     reliabilityNote:
       "Used as the primary attribution for South Korea's 112 police and 119 fire and ambulance emergency numbers.",
   },
+  {
+    id: "who",
+    name: "World Health Organization",
+    organization: "World Health Organization",
+    url: "https://www.who.int/",
+    description:
+      "United Nations specialized agency for international public health, providing health system context, guidelines, and country statistics.",
+    reliabilityNote:
+      "Used for international public-health context and as a secondary reference for country health-system framing.",
+  },
+  {
+    id: "oecd-health",
+    name: "OECD Health Statistics",
+    organization: "Organisation for Economic Co-operation and Development",
+    url: "https://www.oecd.org/health/health-data.htm",
+    description:
+      "Comparable cross-country health expenditure, workforce, and outcomes statistics for OECD member countries.",
+    reliabilityNote:
+      "Used as a comparative reference for OECD-country healthcare-system framing.",
+  },
+  {
+    id: "us-hhs",
+    name: "U.S. Department of Health and Human Services",
+    organization: "U.S. Department of Health and Human Services",
+    url: "https://www.hhs.gov/",
+    description:
+      "Cabinet-level United States department responsible for federal public health, social services, and health policy.",
+    reliabilityNote:
+      "Used as the primary federal attribution for United States public-health context.",
+  },
+  {
+    id: "us-cms-care-compare",
+    name: "Medicare Care Compare",
+    organization: "Centers for Medicare & Medicaid Services",
+    url: "https://www.medicare.gov/care-compare/",
+    description:
+      "Official United States federal directory for comparing Medicare-certified hospitals, nursing homes, and care providers.",
+    reliabilityNote:
+      "Used as the official United States hospital registry reference for verified facility lookups.",
+  },
+  {
+    id: "uk-nhs",
+    name: "National Health Service",
+    organization: "National Health Service (UK)",
+    url: "https://www.nhs.uk/",
+    description:
+      "Official information portal for the United Kingdom's National Health Service, including service finders and public health guidance.",
+    reliabilityNote:
+      "Used as the primary attribution for United Kingdom public-health and hospital information.",
+  },
+  {
+    id: "uk-nhs-find-hospital",
+    name: "Find a hospital — NHS",
+    organization: "National Health Service (UK)",
+    url: "https://www.nhs.uk/service-search/find-a-hospital",
+    description:
+      "Official NHS hospital and service finder for England.",
+    reliabilityNote:
+      "Used as the official England hospital registry reference for verified facility lookups.",
+  },
+  {
+    id: "ca-health",
+    name: "Health Canada",
+    organization: "Government of Canada",
+    url: "https://www.canada.ca/en/health-canada.html",
+    description:
+      "Federal department of the Government of Canada responsible for national public health policy and information.",
+    reliabilityNote:
+      "Used as the primary federal attribution for Canadian public-health context.",
+  },
+  {
+    id: "ca-cihi",
+    name: "Canadian Institute for Health Information",
+    organization: "Canadian Institute for Health Information",
+    url: "https://www.cihi.ca/en",
+    description:
+      "Independent, not-for-profit organization that provides comparable Canadian health-system data and analysis recognized by federal and provincial governments.",
+    reliabilityNote:
+      "Used as the primary reference for Canadian health-system statistics and hospital-system framing.",
+  },
+  {
+    id: "au-health",
+    name: "Australian Department of Health and Aged Care",
+    organization: "Australian Government",
+    url: "https://www.health.gov.au/",
+    description:
+      "Federal Australian department responsible for national health policy, public health, and aged care.",
+    reliabilityNote:
+      "Used as the primary federal attribution for Australian public-health context.",
+  },
+  {
+    id: "au-aihw",
+    name: "Australian Institute of Health and Welfare — MyHospitals",
+    organization: "Australian Institute of Health and Welfare",
+    url: "https://www.aihw.gov.au/reports-data/myhospitals",
+    description:
+      "Official Australian Government statistical agency hospital information portal.",
+    reliabilityNote:
+      "Used as the official Australian hospital registry reference for verified facility lookups.",
+  },
+  {
+    id: "nz-tewhatuora",
+    name: "Te Whatu Ora — Health New Zealand",
+    organization: "Te Whatu Ora — Health New Zealand",
+    url: "https://www.tewhatuora.govt.nz/",
+    description:
+      "Public agency responsible for delivering and funding New Zealand's health services nationally.",
+    reliabilityNote:
+      "Used as the primary attribution for New Zealand public-health and hospital information.",
+  },
+  {
+    id: "sg-moh",
+    name: "Ministry of Health, Singapore",
+    organization: "Ministry of Health, Singapore",
+    url: "https://www.moh.gov.sg/",
+    description:
+      "Singapore Government ministry responsible for national health policy, hospital oversight, and public health information.",
+    reliabilityNote:
+      "Used as the primary attribution for Singapore public-health context.",
+  },
+  {
+    id: "sg-moh-hospitals",
+    name: "Hospital Services — Ministry of Health, Singapore",
+    organization: "Ministry of Health, Singapore",
+    url: "https://www.moh.gov.sg/home/our-healthcare-system/healthcare-services-and-facilities/hospitals",
+    description:
+      "Official Ministry of Health directory describing Singapore's public and private hospital services.",
+    reliabilityNote:
+      "Used as the official Singapore hospital registry reference for verified facility framing.",
+  },
+  {
+    id: "jp-mhlw",
+    name: "Ministry of Health, Labour and Welfare, Japan",
+    organization: "Ministry of Health, Labour and Welfare, Japan",
+    url: "https://www.mhlw.go.jp/english/",
+    description:
+      "Japanese ministry responsible for national health, labour, and welfare policy and public health information.",
+    reliabilityNote:
+      "Used as the primary attribution for Japanese public-health context.",
+  },
+  {
+    id: "de-bmg",
+    name: "Federal Ministry of Health, Germany",
+    organization: "Federal Ministry of Health (Bundesministerium für Gesundheit)",
+    url: "https://www.bundesgesundheitsministerium.de/en/",
+    description:
+      "German federal ministry responsible for national health policy and public health information.",
+    reliabilityNote:
+      "Used as the primary attribution for German public-health context.",
+  },
+  {
+    id: "fr-sante",
+    name: "Ministère de la Santé et de la Prévention",
+    organization: "Government of France",
+    url: "https://sante.gouv.fr/",
+    description:
+      "French ministry responsible for national health policy, public health, and prevention.",
+    reliabilityNote:
+      "Used as the primary attribution for French public-health context.",
+  },
+  {
+    id: "dk-sst",
+    name: "Sundhedsstyrelsen — Danish Health Authority",
+    organization: "Danish Health Authority",
+    url: "https://www.sst.dk/en",
+    description:
+      "Danish national board of health responsible for public health policy, surveillance, and prevention.",
+    reliabilityNote:
+      "Used as the primary attribution for Danish public-health context.",
+  },
+  {
+    id: "nl-rivm",
+    name: "RIVM — National Institute for Public Health and the Environment",
+    organization: "RIVM (Government of the Netherlands)",
+    url: "https://www.rivm.nl/en",
+    description:
+      "Dutch government public health and environment institute responsible for national health monitoring and prevention.",
+    reliabilityNote:
+      "Used as the primary attribution for Dutch public-health context.",
+  },
 ];
 
 export function getSourceById(sourceId: string) {

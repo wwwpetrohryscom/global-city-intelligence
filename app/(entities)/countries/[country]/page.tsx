@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CityCard } from "@/components/cards/CityCard";
 import { MetricCard } from "@/components/cards/MetricCard";
+import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -21,7 +22,10 @@ import {
   getCountryBySlug,
   getCountryEmergencyContacts,
   getCountryEmergencyProfile,
+  getCountryHealthcareProfile,
   getEmergencySources,
+  getHealthcareSources,
+  getHospitalRegistryProfile,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { countryBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -31,6 +35,7 @@ import {
   breadcrumbSchema,
   datasetSchema,
   emergencyServiceSchema,
+  healthcareAccessSchema,
   webpageSchema,
 } from "@/lib/seo/schema";
 
@@ -82,6 +87,24 @@ export default async function CountryPage({ params }: PageProps) {
   const emergencySources = emergencyProfile
     ? getEmergencySources(emergencyProfile)
     : [];
+  const healthcareProfile = getCountryHealthcareProfile(country.slug);
+  const hospitalRegistry = getHospitalRegistryProfile(country.slug);
+  const healthcareSources = healthcareProfile
+    ? getHealthcareSources(healthcareProfile)
+    : [];
+  const hospitalRegistrySources = hospitalRegistry
+    ? getHealthcareSources(hospitalRegistry)
+    : [];
+  const healthcareJsonLdSources = (() => {
+    const seen = new Set<string>();
+    return [...healthcareSources, ...hospitalRegistrySources].filter((source) => {
+      if (seen.has(source.id)) {
+        return false;
+      }
+      seen.add(source.id);
+      return true;
+    });
+  })();
 
   return (
     <main>
@@ -104,6 +127,17 @@ export default async function CountryPage({ params }: PageProps) {
             profile: emergencyProfile,
             contacts: emergencyContacts,
             sources: emergencySources,
+          })}
+        />
+      ) : null}
+      {healthcareProfile ? (
+        <JsonLd
+          data={healthcareAccessSchema({
+            countryName: country.name,
+            path: countryRoute(country.slug),
+            profile: healthcareProfile,
+            sources: healthcareJsonLdSources,
+            hospitalRegistry,
           })}
         />
       ) : null}
@@ -177,6 +211,14 @@ export default async function CountryPage({ params }: PageProps) {
         <PublicSafetySection
           countryName={country.name}
           countryProfile={emergencyProfile}
+          variant="country"
+        />
+
+        <HealthcareAccessSection
+          countryName={country.name}
+          countryProfile={healthcareProfile}
+          emergencySectionHref="#emergency-public-safety-heading"
+          hospitalRegistry={hospitalRegistry}
           variant="country"
         />
 

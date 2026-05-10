@@ -8,6 +8,15 @@ export type {
   EmergencyContactType,
   VerificationStatus,
 } from "./emergency";
+export type {
+  CityHealthcareProfile,
+  HealthcareAccessProfile,
+  HealthcareLink,
+  HealthcareSourceType,
+  HealthcareVerificationStatus,
+  HospitalRegistryProfile,
+  VerifiedHospital,
+} from "./healthcare";
 export type { IntelligenceModule, ModuleSlug } from "./module";
 export type { Ranking, RankingEntry } from "./ranking";
 export type {

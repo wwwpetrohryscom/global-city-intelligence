@@ -85,3 +85,13 @@ export {
   getEmergencySources,
   hasVerifiedEmergencyData,
 } from "@/lib/data/queries/emergency";
+
+export {
+  getCityHealthcareProfile,
+  getCountryHealthcareProfile,
+  getHealthcareSources,
+  getHospitalRegistryProfile,
+  getVerifiedHospitalsForCity,
+  hasVerifiedHealthcareData,
+  hasVerifiedHospitalData,
+} from "@/lib/data/queries/healthcare";

@@ -5,6 +5,8 @@ import type {
   CountryEmergencyProfile,
   DataSource,
   EmergencyContact,
+  HealthcareAccessProfile,
+  HospitalRegistryProfile,
 } from "@/types";
 
 export function websiteSchema() {
@@ -133,6 +135,60 @@ export function emergencyServiceSchema({
           url: primary.url,
         }
       : undefined,
+    dateModified: profile.lastVerified,
+  };
+}
+
+export function healthcareAccessSchema({
+  countryName,
+  path,
+  profile,
+  sources,
+  hospitalRegistry,
+}: {
+  countryName: string;
+  path: string;
+  profile: HealthcareAccessProfile;
+  sources: DataSource[];
+  hospitalRegistry?: HospitalRegistryProfile;
+}) {
+  const portal = profile.officialHealthPortal;
+  const authority = profile.publicHealthAuthority;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    name:
+      profile.healthcareSystemName ?? `${countryName} healthcare information`,
+    description:
+      "Verified national healthcare and public-health information attributed to official government, public health, or recognised health-system publishers.",
+    areaServed: {
+      "@type": "Country",
+      name: countryName,
+      identifier: profile.countryCode,
+    },
+    url: absoluteUrl(path),
+    sameAs: [
+      portal?.url,
+      authority?.url,
+      hospitalRegistry?.registryUrl,
+    ].filter((value): value is string => Boolean(value)),
+    parentOrganization: portal
+      ? {
+          "@type": "GovernmentOrganization",
+          name: portal.label,
+          url: portal.url,
+        }
+      : undefined,
+    isBasedOn: sources.map((source) => ({
+      "@type": "CreativeWork",
+      name: source.name,
+      url: source.url,
+      publisher: {
+        "@type": "Organization",
+        name: source.organization,
+      },
+    })),
     dateModified: profile.lastVerified,
   };
 }
