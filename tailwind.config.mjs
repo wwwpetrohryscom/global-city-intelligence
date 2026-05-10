@@ -8,22 +8,27 @@ const config = {
     extend: {
       colors: {
         brand: {
-          400: "#FB923C",
-          500: "#F97316",
-          600: "#EA580C",
+          400: "#FF8A33",
+          500: "#FF6B00",
+          600: "#E55F00",
+          navy: "#0D1B3D",
+          gray: "#D7DBE0",
         },
         neutral: {
           bg: "#FFFFFF",
-          soft: "#F9FAFB",
+          soft: "#F8FAFC",
           border: "#E5E7EB",
+          line: "#D7DBE0",
         },
         text: {
-          primary: "#0F172A",
+          primary: "#0D1B3D",
           secondary: "#475569",
+          muted: "#64748B",
+          inverse: "#FFFFFF",
         },
-        accent: {
-          blue: "#2563EB",
-          teal: "#0D9488",
+        surface: {
+          DEFAULT: "#FFFFFF",
+          soft: "#F8FAFC",
         },
       },
     },

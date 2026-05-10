@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "@/components/layout/BrandMark";
 import { Container } from "@/components/layout/Container";
 import { staticRoutes } from "@/lib/seo/routes";
 
@@ -10,23 +11,15 @@ const navItems = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-30 border-b border-neutral-border bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-30 border-b border-neutral-border bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <Container className="flex items-center justify-between gap-5 py-4">
-        <Link
-          className="flex items-center gap-3 font-semibold text-text-primary"
-          href={staticRoutes.home}
-        >
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-500 text-sm font-bold text-text-primary shadow-sm">
-            GCI
-          </span>
-          <span>Global City Intelligence</span>
-        </Link>
+        <BrandMark size="md" />
         <nav aria-label="Primary navigation">
-          <ul className="flex flex-wrap items-center justify-end gap-2 sm:gap-4">
+          <ul className="flex flex-wrap items-center justify-end gap-1 sm:gap-2">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
-                  className="rounded-full px-3 py-2 text-sm font-medium text-text-secondary transition duration-150 hover:bg-orange-50 hover:text-text-primary"
+                  className="inline-flex items-center rounded-full px-3 py-2 text-sm font-medium text-text-secondary transition duration-150 hover:bg-orange-50 hover:text-text-primary focus-visible:bg-orange-50"
                   href={item.href}
                 >
                   {item.label}

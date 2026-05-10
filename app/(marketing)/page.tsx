@@ -20,7 +20,7 @@ import { datasetSchema, webpageSchema } from "@/lib/seo/schema";
 
 const title = "Global City Intelligence Platform";
 const description =
-  "Explore server-rendered city intelligence data across affordability, air quality, energy readiness, resilience, countries, and rankings.";
+  "Server-rendered city and country intelligence covering affordability, air quality, energy readiness, resilience, public safety, healthcare, and global rankings — attributed to official data sources.";
 
 export const metadata: Metadata = createMetadata({
   title,
@@ -158,15 +158,18 @@ export default function HomePage() {
             <p className="mt-4 leading-7 text-text-secondary">
               Global City Intelligence is organized as topic, subtopic, and
               article paths. City pages summarize the whole profile. Module
-              pages go deeper into a single topic. Ranking pages connect cities
-              through crawlable comparison tables.
+              pages go deeper into a single topic. Country pages add national
+              context. Ranking pages connect cities through crawlable
+              comparison tables.
             </p>
             <Divider className="my-5" />
             <p className="leading-7 text-text-secondary">
-              The current dataset is typed mock intelligence data, not a live
-              API feed. It is structured to be replaced by official ingestion
-              pipelines while keeping metadata, sitemap generation, internal
-              links, and JSON-LD stable.
+              Structured indicators are directional and intended for
+              orientation. Verified layers — including emergency contacts and
+              healthcare access — are attributed to official government,
+              public-health, and emergency-service publishers and are being
+              integrated continuously. For critical decisions, always verify
+              through the official sources cited on each page.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50" href={cityRoute("new-york")}>

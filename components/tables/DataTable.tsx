@@ -11,15 +11,15 @@ export function DataTable({
     <div className="overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm">
       <table className="min-w-full border-collapse text-left text-sm">
         <caption className="sr-only">{caption}</caption>
-        <thead className="bg-neutral-soft text-text-secondary">
+        <thead className="bg-neutral-soft text-text-primary">
           <tr>
-            <th className="px-4 py-3 font-semibold" scope="col">
+            <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide" scope="col">
               Metric
             </th>
-            <th className="px-4 py-3 font-semibold" scope="col">
+            <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide" scope="col">
               Value
             </th>
-            <th className="px-4 py-3 font-semibold" scope="col">
+            <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide" scope="col">
               Context
             </th>
           </tr>

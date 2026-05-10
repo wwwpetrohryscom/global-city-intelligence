@@ -111,9 +111,10 @@ export default function MethodologyPage() {
               the interpretation.
             </p>
             <p className="mt-4 leading-7 text-text-secondary">
-              The mock data is production-shaped. Each city, module, ranking,
-              and source is typed so future ingestion can replace static values
-              while preserving crawlable pages and unique metadata.
+              The data layer is production-shaped. Each city, module, ranking,
+              and source is typed so verified datasets can be integrated
+              continuously without changing crawlable routes, metadata, or
+              structured data.
             </p>
           </article>
           <SourceBlock sources={sources} />

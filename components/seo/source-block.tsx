@@ -7,9 +7,10 @@ export function SourceBlock({ sources }: { sources: DataSource[] }) {
     <Card as="section">
       <h2 className="text-xl font-semibold text-text-primary">Sources</h2>
       <p className="mt-3 text-sm leading-6 text-text-secondary">
-        {generateSourceBlockIntro(sources)} Mock values are typed and ready to
-        be replaced by API-backed city datasets without changing route
-        structure.
+        {generateSourceBlockIntro(sources)} Structured indicators on this page
+        are directional and intended for orientation; verified datasets are
+        being integrated and official sources should be used for critical
+        decisions.
       </p>
       <ul className="mt-5 space-y-4">
         {sources.map((source) => (

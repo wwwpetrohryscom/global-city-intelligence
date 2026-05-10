@@ -93,9 +93,12 @@ export default function DataSourcesPage() {
               model scalable and makes source governance easier.
             </p>
             <p className="mt-4 leading-7 text-text-secondary">
-              The current values are mock intelligence data. They are not
-              presented as official measured observations; the source registry
-              defines the trusted references that future ingestion should use.
+              Structured indicators are directional and intended for
+              orientation; they are not presented as official measured
+              observations. Verified layers — such as country emergency
+              contacts and healthcare access — are attributed to the official
+              publishers listed here, and additional verified data is
+              integrated continuously.
             </p>
           </article>
           <SourceBlock sources={dataSources} />

@@ -54,8 +54,8 @@ export function freshnessSentence(input: {
   return `Data year ${input.dataYear}; last updated ${input.lastUpdated}.${sourcePart}`;
 }
 
-// Demo-data transparency line used on every dynamic page.
+// Transparency line used on dynamic pages with structured indicators.
 // Keeps factual safety explicit so the reader is never misled about precision.
 export function demoDataNotice(): string {
-  return "This page uses a typed sample dataset shaped to demonstrate the indexable content structure. Values are directional and not official measurements.";
+  return "Structured indicators on this page are directional and intended for orientation. Verified datasets are being integrated; official sources should be used for critical decisions.";
 }
