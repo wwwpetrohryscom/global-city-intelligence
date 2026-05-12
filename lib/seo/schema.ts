@@ -1,8 +1,10 @@
 import { siteName } from "@/lib/seo/metadata";
 import { absoluteUrl, siteUrl } from "@/lib/seo/routes";
 import type {
+  AirportProfile,
   BreadcrumbItem,
   CountryEmergencyProfile,
+  CountryTransportProfile,
   DataSource,
   EmergencyContact,
   HealthcareAccessProfile,
@@ -190,5 +192,83 @@ export function healthcareAccessSchema({
       },
     })),
     dateModified: profile.lastVerified,
+  };
+}
+
+export function transportAuthoritySchema({
+  countryName,
+  path,
+  profile,
+  sources,
+}: {
+  countryName: string;
+  path: string;
+  profile: CountryTransportProfile;
+  sources: DataSource[];
+}) {
+  const portal =
+    profile.nationalTransportAuthority ?? profile.officialTransportPortal;
+  const sameAs = [
+    profile.nationalTransportAuthority?.url,
+    profile.aviationAuthority?.url,
+    profile.railAuthority?.url,
+    profile.transportSafetyAuthority?.url,
+    profile.officialTransportPortal?.url,
+  ].filter((value): value is string => Boolean(value));
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "GovernmentOrganization",
+    name:
+      profile.nationalTransportAuthority?.label ??
+      `${countryName} transport authorities`,
+    description:
+      "Verified national transport authorities, operators, and aviation publishers attributed to official government sources.",
+    areaServed: {
+      "@type": "Country",
+      name: countryName,
+      identifier: profile.countryCode,
+    },
+    url: portal ? portal.url : absoluteUrl(path),
+    sameAs,
+    isBasedOn: sources.map((source) => ({
+      "@type": "CreativeWork",
+      name: source.name,
+      url: source.url,
+      publisher: {
+        "@type": "Organization",
+        name: source.organization,
+      },
+    })),
+    dateModified: profile.lastVerified,
+  };
+}
+
+export function airportSchema({
+  airport,
+  cityName,
+  countryName,
+}: {
+  airport: AirportProfile;
+  cityName?: string;
+  countryName: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Airport",
+    name: airport.name,
+    iataCode: airport.iataCode,
+    url: airport.officialUrl,
+    address: cityName
+      ? {
+          "@type": "PostalAddress",
+          addressLocality: cityName,
+          addressCountry: countryName,
+        }
+      : {
+          "@type": "PostalAddress",
+          addressCountry: countryName,
+        },
+    dateModified: airport.lastVerified,
   };
 }

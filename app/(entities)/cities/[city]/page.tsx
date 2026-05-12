@@ -4,6 +4,7 @@ import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
+import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
@@ -18,14 +19,17 @@ import {
 import { internalLink } from "@/lib/content/links";
 import { demoDataNotice } from "@/lib/content/quality";
 import {
+  getAirportsForCity,
   getAllCities,
   getAllModules,
   getAllRankings,
   getCityBySlug,
   getCityHealthcareProfile,
+  getCityMobilityProfile,
   getCitySafetyProfile,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
+  getCountryTransportProfile,
   getHospitalRegistryProfile,
   getVerifiedHospitalsForCity,
 } from "@/lib/data/queries";
@@ -33,7 +37,12 @@ import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
 import { cityRoute, countryRoute, moduleRoute, rankingRoute } from "@/lib/seo/routes";
-import { breadcrumbSchema, datasetSchema, webpageSchema } from "@/lib/seo/schema";
+import {
+  airportSchema,
+  breadcrumbSchema,
+  datasetSchema,
+  webpageSchema,
+} from "@/lib/seo/schema";
 
 type PageProps = {
   params: Promise<{ city: string }>;
@@ -86,6 +95,9 @@ export default async function CityPage({ params }: PageProps) {
     city.slug,
   );
   const cityVerifiedHospitals = getVerifiedHospitalsForCity(city.slug);
+  const countryTransportProfile = getCountryTransportProfile(city.countrySlug);
+  const cityMobilityProfile = getCityMobilityProfile(city.slug);
+  const cityAirports = getAirportsForCity(city.slug);
 
   return (
     <main>
@@ -100,6 +112,16 @@ export default async function CityPage({ params }: PageProps) {
           sources,
         })}
       />
+      {cityAirports.map((airport) => (
+        <JsonLd
+          data={airportSchema({
+            airport,
+            cityName: city.name,
+            countryName: city.countryName,
+          })}
+          key={airport.id}
+        />
+      ))}
       <PageHeader eyebrow={`${city.countryName} / ${city.region}`} intro={introCopy} title={title}>
         <dl className="grid gap-4">
           <div>
@@ -200,6 +222,18 @@ export default async function CityPage({ params }: PageProps) {
           hospitalRegistry={cityHospitalRegistry}
           variant="city"
           verifiedHospitals={cityVerifiedHospitals}
+        />
+
+        <TransportMobilitySection
+          cityAirports={cityAirports}
+          cityName={city.name}
+          cityProfile={cityMobilityProfile}
+          countryHref={countryRoute(city.countrySlug)}
+          countryName={city.countryName}
+          countryProfile={countryTransportProfile}
+          emergencySectionHref="#emergency-public-safety-heading"
+          healthcareSectionHref="#healthcare-access-heading"
+          variant="city"
         />
 
         <section>

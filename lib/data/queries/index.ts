@@ -95,3 +95,12 @@ export {
   hasVerifiedHealthcareData,
   hasVerifiedHospitalData,
 } from "@/lib/data/queries/healthcare";
+
+export {
+  getAirportsForCity,
+  getCityMobilityProfile,
+  getCountryTransportProfile,
+  getTransportSources,
+  hasVerifiedCityMobilityData,
+  hasVerifiedTransportData,
+} from "@/lib/data/queries/transport";

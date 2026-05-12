@@ -381,6 +381,446 @@ export const dataSources: DataSource[] = [
     reliabilityNote:
       "Used as the primary attribution for Dutch public-health context.",
   },
+  {
+    id: "us-dot",
+    name: "U.S. Department of Transportation",
+    organization: "U.S. Department of Transportation",
+    url: "https://www.transportation.gov/",
+    description:
+      "Federal United States department responsible for national transportation policy, infrastructure, and safety.",
+    reliabilityNote:
+      "Used as the primary federal attribution for United States national transport context.",
+  },
+  {
+    id: "us-faa",
+    name: "Federal Aviation Administration",
+    organization: "Federal Aviation Administration",
+    url: "https://www.faa.gov/",
+    description:
+      "United States federal agency regulating civil aviation safety and airspace.",
+    reliabilityNote:
+      "Used as the primary attribution for United States aviation authority information.",
+  },
+  {
+    id: "us-fra",
+    name: "Federal Railroad Administration",
+    organization: "Federal Railroad Administration",
+    url: "https://railroads.dot.gov/",
+    description:
+      "United States federal agency responsible for railroad safety and policy.",
+    reliabilityNote:
+      "Used as the primary attribution for United States rail authority information.",
+  },
+  {
+    id: "us-mta",
+    name: "Metropolitan Transportation Authority",
+    organization: "MTA — New York",
+    url: "https://www.mta.info/",
+    description:
+      "Public benefit corporation responsible for public transportation in the New York City metropolitan area.",
+    reliabilityNote:
+      "Used as the primary attribution for New York metro and commuter rail information.",
+  },
+  {
+    id: "us-panynj",
+    name: "Port Authority of New York and New Jersey",
+    organization: "Port Authority of New York and New Jersey",
+    url: "https://www.panynj.gov/",
+    description:
+      "Bi-state public agency that operates JFK, LaGuardia, and Newark Liberty international airports and other regional transport assets.",
+    reliabilityNote:
+      "Used as the primary attribution for New York metropolitan airport information.",
+  },
+  {
+    id: "uk-dft",
+    name: "Department for Transport",
+    organization: "UK Government",
+    url: "https://www.gov.uk/government/organisations/department-for-transport",
+    description:
+      "United Kingdom government department responsible for national transport policy and statistics.",
+    reliabilityNote:
+      "Used as the primary attribution for United Kingdom national transport context.",
+  },
+  {
+    id: "uk-caa",
+    name: "Civil Aviation Authority",
+    organization: "UK Civil Aviation Authority",
+    url: "https://www.caa.co.uk/",
+    description:
+      "UK statutory corporation that oversees and regulates civil aviation in the United Kingdom.",
+    reliabilityNote:
+      "Used as the primary attribution for United Kingdom aviation authority information.",
+  },
+  {
+    id: "uk-networkrail",
+    name: "Network Rail",
+    organization: "Network Rail",
+    url: "https://www.networkrail.co.uk/",
+    description:
+      "Public body that owns and operates most of the rail network infrastructure in Great Britain.",
+    reliabilityNote:
+      "Used as the primary attribution for Great Britain rail infrastructure information.",
+  },
+  {
+    id: "uk-tfl",
+    name: "Transport for London",
+    organization: "Transport for London",
+    url: "https://tfl.gov.uk/",
+    description:
+      "Local government body responsible for most aspects of London's transport system.",
+    reliabilityNote:
+      "Used as the primary attribution for London public transport authority information.",
+  },
+  {
+    id: "ca-tc",
+    name: "Transport Canada",
+    organization: "Government of Canada",
+    url: "https://tc.canada.ca/en",
+    description:
+      "Federal department responsible for transportation policies and programs in Canada.",
+    reliabilityNote:
+      "Used as the primary federal attribution for Canadian national transport context.",
+  },
+  {
+    id: "ca-via",
+    name: "VIA Rail Canada",
+    organization: "VIA Rail Canada",
+    url: "https://www.viarail.ca/",
+    description:
+      "Canadian Crown corporation that operates intercity passenger rail services.",
+    reliabilityNote:
+      "Used as the primary attribution for Canadian national rail operator information.",
+  },
+  {
+    id: "ca-ttc",
+    name: "Toronto Transit Commission",
+    organization: "Toronto Transit Commission",
+    url: "https://www.ttc.ca/",
+    description:
+      "Public transit agency operating buses, streetcars, and subway lines in Toronto, Ontario.",
+    reliabilityNote:
+      "Used as the primary attribution for Toronto public transport authority information.",
+  },
+  {
+    id: "ca-gtaa",
+    name: "Greater Toronto Airports Authority",
+    organization: "Greater Toronto Airports Authority",
+    url: "https://www.torontopearson.com/",
+    description:
+      "Operator of Toronto Pearson International Airport (YYZ).",
+    reliabilityNote:
+      "Used as the official attribution for Toronto Pearson International Airport.",
+  },
+  {
+    id: "au-infrastructure",
+    name: "Department of Infrastructure, Transport, Regional Development, Communications and the Arts",
+    organization: "Australian Government",
+    url: "https://www.infrastructure.gov.au/",
+    description:
+      "Australian federal department responsible for transport policy, infrastructure, and aviation oversight.",
+    reliabilityNote:
+      "Used as the primary federal attribution for Australian national transport context.",
+  },
+  {
+    id: "au-casa",
+    name: "Civil Aviation Safety Authority",
+    organization: "Civil Aviation Safety Authority",
+    url: "https://www.casa.gov.au/",
+    description:
+      "Australian statutory authority that regulates civil aviation safety.",
+    reliabilityNote:
+      "Used as the primary attribution for Australian aviation authority information.",
+  },
+  {
+    id: "au-tfnsw",
+    name: "Transport for NSW",
+    organization: "Transport for NSW",
+    url: "https://www.transport.nsw.gov.au/",
+    description:
+      "Government agency responsible for transport across New South Wales, including Sydney's public transport network.",
+    reliabilityNote:
+      "Used as the primary attribution for Sydney and New South Wales public transport authority information.",
+  },
+  {
+    id: "au-syd",
+    name: "Sydney Airport",
+    organization: "Sydney Airport Corporation",
+    url: "https://www.sydneyairport.com.au/",
+    description:
+      "Operator of Sydney (Kingsford Smith) Airport (SYD).",
+    reliabilityNote:
+      "Used as the official attribution for Sydney Airport.",
+  },
+  {
+    id: "nz-nzta",
+    name: "Waka Kotahi NZ Transport Agency",
+    organization: "Waka Kotahi NZ Transport Agency",
+    url: "https://www.nzta.govt.nz/",
+    description:
+      "New Zealand crown entity responsible for land transport, roads, and licensing.",
+    reliabilityNote:
+      "Used as the primary attribution for New Zealand national land-transport context.",
+  },
+  {
+    id: "nz-caa",
+    name: "Civil Aviation Authority of New Zealand",
+    organization: "Civil Aviation Authority of New Zealand",
+    url: "https://www.aviation.govt.nz/",
+    description:
+      "New Zealand government agency responsible for civil aviation safety and regulation.",
+    reliabilityNote:
+      "Used as the primary attribution for New Zealand aviation authority information.",
+  },
+  {
+    id: "sg-lta",
+    name: "Land Transport Authority",
+    organization: "Land Transport Authority, Singapore",
+    url: "https://www.lta.gov.sg/",
+    description:
+      "Statutory board under the Singapore Ministry of Transport responsible for land transport infrastructure and policy.",
+    reliabilityNote:
+      "Used as the primary attribution for Singapore public-transport authority information.",
+  },
+  {
+    id: "sg-caas",
+    name: "Civil Aviation Authority of Singapore",
+    organization: "Civil Aviation Authority of Singapore",
+    url: "https://www.caas.gov.sg/",
+    description:
+      "Singapore statutory board responsible for civil aviation oversight.",
+    reliabilityNote:
+      "Used as the primary attribution for Singapore aviation authority information.",
+  },
+  {
+    id: "sg-changi",
+    name: "Changi Airport Group",
+    organization: "Changi Airport Group",
+    url: "https://www.changiairport.com/",
+    description:
+      "Operator of Singapore Changi Airport (SIN).",
+    reliabilityNote:
+      "Used as the official attribution for Singapore Changi Airport.",
+  },
+  {
+    id: "jp-mlit",
+    name: "Ministry of Land, Infrastructure, Transport and Tourism",
+    organization: "Ministry of Land, Infrastructure, Transport and Tourism, Japan",
+    url: "https://www.mlit.go.jp/en/",
+    description:
+      "Japanese ministry responsible for national policy on land, infrastructure, transport, and tourism.",
+    reliabilityNote:
+      "Used as the primary attribution for Japanese national transport and aviation context.",
+  },
+  {
+    id: "jp-tokyometro",
+    name: "Tokyo Metro",
+    organization: "Tokyo Metro Co., Ltd.",
+    url: "https://www.tokyometro.jp/en/",
+    description:
+      "Operator of nine of the Tokyo subway lines.",
+    reliabilityNote:
+      "Used as the primary attribution for Tokyo metro operator information.",
+  },
+  {
+    id: "jp-haneda",
+    name: "Haneda Airport (Tokyo International)",
+    organization: "Japan Airport Terminal Co., Ltd.",
+    url: "https://tokyo-haneda.com/en/",
+    description:
+      "Operator of Tokyo Haneda Airport (HND).",
+    reliabilityNote:
+      "Used as the official attribution for Tokyo Haneda Airport.",
+  },
+  {
+    id: "jp-narita",
+    name: "Narita International Airport",
+    organization: "Narita International Airport Corporation",
+    url: "https://www.narita-airport.jp/en",
+    description:
+      "Operator of Narita International Airport (NRT) serving the Greater Tokyo Area.",
+    reliabilityNote:
+      "Used as the official attribution for Narita International Airport.",
+  },
+  {
+    id: "de-bmdv",
+    name: "Federal Ministry for Digital and Transport",
+    organization: "Bundesministerium für Digitales und Verkehr",
+    url: "https://www.bmdv.bund.de/EN/",
+    description:
+      "German federal ministry responsible for digital infrastructure and transport policy.",
+    reliabilityNote:
+      "Used as the primary federal attribution for German national transport context.",
+  },
+  {
+    id: "de-db",
+    name: "Deutsche Bahn",
+    organization: "Deutsche Bahn AG",
+    url: "https://www.bahn.com/en",
+    description:
+      "German national railway company, owned by the federal government.",
+    reliabilityNote:
+      "Used as the primary attribution for German national rail operator information.",
+  },
+  {
+    id: "de-bvg",
+    name: "Berliner Verkehrsbetriebe",
+    organization: "BVG — Berliner Verkehrsbetriebe",
+    url: "https://www.bvg.de/en",
+    description:
+      "Berlin's main public transport company, operating U-Bahn, trams, buses, and ferries.",
+    reliabilityNote:
+      "Used as the primary attribution for Berlin public-transport operator information.",
+  },
+  {
+    id: "de-ber",
+    name: "Berlin Brandenburg Airport",
+    organization: "Flughafen Berlin Brandenburg GmbH",
+    url: "https://ber.berlin-airport.de/en.html",
+    description:
+      "Operator of Berlin Brandenburg Airport (BER).",
+    reliabilityNote:
+      "Used as the official attribution for Berlin Brandenburg Airport.",
+  },
+  {
+    id: "fr-ecologie",
+    name: "Ministère de la Transition écologique",
+    organization: "Government of France",
+    url: "https://www.ecologie.gouv.fr/",
+    description:
+      "French ministry responsible for ecological transition, transport, and infrastructure policy.",
+    reliabilityNote:
+      "Used as the primary federal attribution for French national transport context.",
+  },
+  {
+    id: "fr-sncf",
+    name: "SNCF",
+    organization: "Société nationale des chemins de fer français",
+    url: "https://www.sncf.com/en",
+    description:
+      "French national state-owned railway company.",
+    reliabilityNote:
+      "Used as the primary attribution for French national rail operator information.",
+  },
+  {
+    id: "fr-idfm",
+    name: "Île-de-France Mobilités",
+    organization: "Île-de-France Mobilités",
+    url: "https://www.iledefrance-mobilites.fr/en",
+    description:
+      "Public transport authority for the Paris and Île-de-France region.",
+    reliabilityNote:
+      "Used as the primary attribution for Paris public-transport authority information.",
+  },
+  {
+    id: "fr-ratp",
+    name: "RATP",
+    organization: "Régie Autonome des Transports Parisiens",
+    url: "https://www.ratp.fr/en",
+    description:
+      "Public operator of metro, RER, tram, and bus services in the Paris region.",
+    reliabilityNote:
+      "Used as the primary attribution for Paris metro and bus operator information.",
+  },
+  {
+    id: "fr-paris-aeroport",
+    name: "Paris Aéroport",
+    organization: "Groupe ADP",
+    url: "https://www.parisaeroport.fr/en",
+    description:
+      "Operator of Paris-Charles de Gaulle (CDG), Paris-Orly (ORY), and Paris-Le Bourget airports.",
+    reliabilityNote:
+      "Used as the official attribution for Paris airport information.",
+  },
+  {
+    id: "dk-trafikstyrelsen",
+    name: "Trafikstyrelsen — Danish Transport Authority",
+    organization: "Danish Transport Authority",
+    url: "https://www.trafikstyrelsen.dk/",
+    description:
+      "Danish national authority responsible for civil aviation, rail safety, and transport oversight.",
+    reliabilityNote:
+      "Used as the primary attribution for Danish national transport context.",
+  },
+  {
+    id: "dk-dsb",
+    name: "DSB",
+    organization: "DSB — Danske Statsbaner",
+    url: "https://www.dsb.dk/en",
+    description:
+      "Danish state-owned railway company.",
+    reliabilityNote:
+      "Used as the primary attribution for Danish national rail operator information.",
+  },
+  {
+    id: "dk-metroselskabet",
+    name: "Metroselskabet — Copenhagen Metro",
+    organization: "Metroselskabet I/S",
+    url: "https://m.dk/en/",
+    description:
+      "Operator of the Copenhagen Metro.",
+    reliabilityNote:
+      "Used as the primary attribution for Copenhagen metro operator information.",
+  },
+  {
+    id: "dk-cph",
+    name: "Copenhagen Airport",
+    organization: "Københavns Lufthavne A/S",
+    url: "https://www.cph.dk/en",
+    description:
+      "Operator of Copenhagen Airport (CPH).",
+    reliabilityNote:
+      "Used as the official attribution for Copenhagen Airport.",
+  },
+  {
+    id: "nl-iw",
+    name: "Ministerie van Infrastructuur en Waterstaat",
+    organization: "Government of the Netherlands",
+    url: "https://www.rijksoverheid.nl/ministeries/ministerie-van-infrastructuur-en-waterstaat",
+    description:
+      "Dutch ministry responsible for infrastructure, water management, and transport policy.",
+    reliabilityNote:
+      "Used as the primary federal attribution for Dutch national transport context.",
+  },
+  {
+    id: "nl-ns",
+    name: "Nederlandse Spoorwegen",
+    organization: "Nederlandse Spoorwegen (NS)",
+    url: "https://www.ns.nl/en",
+    description:
+      "Principal passenger railway operator in the Netherlands.",
+    reliabilityNote:
+      "Used as the primary attribution for Dutch national rail operator information.",
+  },
+  {
+    id: "nl-gvb",
+    name: "GVB — Amsterdam Public Transport",
+    organization: "GVB",
+    url: "https://en.gvb.nl/",
+    description:
+      "Amsterdam public transport operator running metro, tram, bus, and ferry services.",
+    reliabilityNote:
+      "Used as the primary attribution for Amsterdam public-transport operator information.",
+  },
+  {
+    id: "nl-schiphol",
+    name: "Schiphol Group — Amsterdam Airport",
+    organization: "Royal Schiphol Group",
+    url: "https://www.schiphol.nl/en/",
+    description:
+      "Operator of Amsterdam Airport Schiphol (AMS).",
+    reliabilityNote:
+      "Used as the official attribution for Amsterdam Schiphol Airport.",
+  },
+  {
+    id: "uk-heathrow",
+    name: "Heathrow Airport",
+    organization: "Heathrow Airport Holdings",
+    url: "https://www.heathrow.com/",
+    description:
+      "Operator of London Heathrow Airport (LHR).",
+    reliabilityNote:
+      "Used as the official attribution for London Heathrow Airport.",
+  },
 ];
 
 export function getSourceById(sourceId: string) {

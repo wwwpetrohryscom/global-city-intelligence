@@ -4,6 +4,7 @@ import { CityCard } from "@/components/cards/CityCard";
 import { MetricCard } from "@/components/cards/MetricCard";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
+import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
@@ -23,9 +24,11 @@ import {
   getCountryEmergencyContacts,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
+  getCountryTransportProfile,
   getEmergencySources,
   getHealthcareSources,
   getHospitalRegistryProfile,
+  getTransportSources,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { countryBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -36,6 +39,7 @@ import {
   datasetSchema,
   emergencyServiceSchema,
   healthcareAccessSchema,
+  transportAuthoritySchema,
   webpageSchema,
 } from "@/lib/seo/schema";
 
@@ -105,6 +109,10 @@ export default async function CountryPage({ params }: PageProps) {
       return true;
     });
   })();
+  const transportProfile = getCountryTransportProfile(country.slug);
+  const transportSources = transportProfile
+    ? getTransportSources(transportProfile)
+    : [];
 
   return (
     <main>
@@ -138,6 +146,16 @@ export default async function CountryPage({ params }: PageProps) {
             profile: healthcareProfile,
             sources: healthcareJsonLdSources,
             hospitalRegistry,
+          })}
+        />
+      ) : null}
+      {transportProfile ? (
+        <JsonLd
+          data={transportAuthoritySchema({
+            countryName: country.name,
+            path: countryRoute(country.slug),
+            profile: transportProfile,
+            sources: transportSources,
           })}
         />
       ) : null}
@@ -219,6 +237,14 @@ export default async function CountryPage({ params }: PageProps) {
           countryProfile={healthcareProfile}
           emergencySectionHref="#emergency-public-safety-heading"
           hospitalRegistry={hospitalRegistry}
+          variant="country"
+        />
+
+        <TransportMobilitySection
+          countryName={country.name}
+          countryProfile={transportProfile}
+          emergencySectionHref="#emergency-public-safety-heading"
+          healthcareSectionHref="#healthcare-access-heading"
           variant="country"
         />
 
