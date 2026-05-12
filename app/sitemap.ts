@@ -16,25 +16,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticItems: MetadataRoute.Sitemap = [
     {
       url: absoluteUrl(staticRoutes.home),
-      lastModified: new Date("2026-05-03"),
+      lastModified: new Date("2026-05-10"),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
+      url: absoluteUrl(staticRoutes.cities),
+      lastModified: new Date("2026-05-10"),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: absoluteUrl(staticRoutes.countries),
+      lastModified: new Date("2026-05-10"),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: absoluteUrl(staticRoutes.methodology),
-      lastModified: new Date("2026-05-03"),
+      lastModified: new Date("2026-05-10"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: absoluteUrl(staticRoutes.dataSources),
-      lastModified: new Date("2026-05-03"),
+      lastModified: new Date("2026-05-10"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: absoluteUrl(staticRoutes.rankings),
-      lastModified: new Date("2026-05-03"),
+      lastModified: new Date("2026-05-10"),
       changeFrequency: "weekly",
       priority: 0.9,
     },

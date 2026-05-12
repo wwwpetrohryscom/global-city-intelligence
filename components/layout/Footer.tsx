@@ -29,6 +29,7 @@ export function Footer() {
         </div>
 
         <FooterColumn label="Cities">
+          <FooterLink href={staticRoutes.cities}>All cities</FooterLink>
           {cities.map((city) => (
             <FooterLink href={cityRoute(city.slug)} key={city.slug}>
               {city.name}
@@ -37,6 +38,7 @@ export function Footer() {
         </FooterColumn>
 
         <FooterColumn label="Countries">
+          <FooterLink href={staticRoutes.countries}>All countries</FooterLink>
           {countries.map((country) => (
             <FooterLink href={countryRoute(country.slug)} key={country.slug}>
               {country.name}
@@ -45,6 +47,7 @@ export function Footer() {
         </FooterColumn>
 
         <FooterColumn label="Rankings">
+          <FooterLink href={staticRoutes.rankings}>All rankings</FooterLink>
           {rankings.map((ranking) => (
             <FooterLink href={rankingRoute(ranking.slug)} key={ranking.slug}>
               {ranking.shortTitle}
@@ -53,7 +56,6 @@ export function Footer() {
         </FooterColumn>
 
         <FooterColumn label="Reference">
-          <FooterLink href={staticRoutes.rankings}>All rankings</FooterLink>
           <FooterLink href={staticRoutes.methodology}>Methodology</FooterLink>
           <FooterLink href={staticRoutes.dataSources}>Data sources</FooterLink>
         </FooterColumn>

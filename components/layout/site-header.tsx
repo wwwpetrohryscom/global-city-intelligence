@@ -4,6 +4,8 @@ import { Container } from "@/components/layout/Container";
 import { staticRoutes } from "@/lib/seo/routes";
 
 const navItems = [
+  { href: staticRoutes.cities, label: "Cities" },
+  { href: staticRoutes.countries, label: "Countries" },
   { href: staticRoutes.rankings, label: "Rankings" },
   { href: staticRoutes.methodology, label: "Methodology" },
   { href: staticRoutes.dataSources, label: "Data Sources" },

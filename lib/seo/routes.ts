@@ -7,6 +7,8 @@ export const siteUrl =
 
 export const staticRoutes = {
   home: "/",
+  cities: "/cities",
+  countries: "/countries",
   methodology: "/methodology",
   dataSources: "/data-sources",
   rankings: "/rankings",
@@ -42,6 +44,8 @@ export function getAllIndexableRoutes() {
 
   return [
     staticRoutes.home,
+    staticRoutes.cities,
+    staticRoutes.countries,
     staticRoutes.methodology,
     staticRoutes.dataSources,
     staticRoutes.rankings,

@@ -14,7 +14,7 @@ export function cityBreadcrumbs(citySlug: string): BreadcrumbItem[] {
     homeCrumb,
     {
       name: "Cities",
-      href: staticRoutes.home,
+      href: staticRoutes.cities,
     },
     {
       name: city?.name || "City",
@@ -30,7 +30,7 @@ export function countryBreadcrumbs(countrySlug: string): BreadcrumbItem[] {
     homeCrumb,
     {
       name: "Countries",
-      href: staticRoutes.home,
+      href: staticRoutes.countries,
     },
     {
       name: country?.name || "Country",
