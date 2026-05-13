@@ -47,6 +47,7 @@ export default function RootLayout({
         <Script
           data-endpoint={WEBMASTERID_ENDPOINT}
           data-wmid={WEBMASTERID_SITE_ID}
+          defer
           id="webmasterid-tracker"
           src="https://webmasterid.com/tracker.iife.min.js"
           strategy="afterInteractive"
