@@ -72,3 +72,32 @@ propagates a fresh `dateModified` across all profile-driven JSON-LD.
 - **Keep content server-rendered.** All directory and profile content
   must be present in the initial HTML so it remains crawlable and
   accessible without client JavaScript.
+
+## Recent expansion batches
+
+### 2026-05-15 — global cities batch
+
+29 cities and 16 countries added. Verified emergency, healthcare, and
+transport profiles for new countries are intentionally left in the
+fallback state until each field can be attributed to an official
+publisher; pages render the transparent disclaimer rather than guessed
+values.
+
+Cities added: Stockholm, Oslo, Helsinki, Brussels, Munich, Hamburg,
+Dublin, Edinburgh, Osaka, Kyoto, Beijing, Shenzhen, Ho Chi Minh City,
+Hanoi, Delhi, Bangalore, Riyadh, Tel Aviv, Istanbul, Casablanca, Accra,
+Cairo, Addis Ababa, Rio de Janeiro, Montevideo, Quito, Panama City,
+Perth, Wellington.
+
+Countries added: Sweden, Norway, Finland, Belgium, Ireland, Vietnam,
+Saudi Arabia, Israel, Turkey, Morocco, Ghana, Egypt, Ethiopia, Uruguay,
+Ecuador, Panama. Existing country `citySlugs` arrays were updated for
+Germany (added Munich, Hamburg), United Kingdom (Edinburgh), Japan
+(Osaka, Kyoto), China (Beijing, Shenzhen), India (Delhi, Bangalore),
+Brazil (Rio de Janeiro), Australia (Perth), and New Zealand
+(Wellington).
+
+All new entries cite existing source ids from
+[`lib/data/sources/index.ts`](../lib/data/sources/index.ts); no source
+URLs were invented. Structured indicators on city pages are directional
+and intended for orientation, consistent with the rest of the platform.
