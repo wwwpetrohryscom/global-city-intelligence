@@ -56,6 +56,7 @@ export function Footer() {
         </FooterColumn>
 
         <FooterColumn label="Reference">
+          <FooterLink href={staticRoutes.compare}>City comparisons</FooterLink>
           <FooterLink href={staticRoutes.methodology}>Methodology</FooterLink>
           <FooterLink href={staticRoutes.dataSources}>Data sources</FooterLink>
         </FooterColumn>

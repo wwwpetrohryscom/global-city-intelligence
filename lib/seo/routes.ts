@@ -12,7 +12,12 @@ export const staticRoutes = {
   methodology: "/methodology",
   dataSources: "/data-sources",
   rankings: "/rankings",
+  compare: "/compare",
 } as const;
+
+export function comparisonRoute(comparisonSlug: string) {
+  return `/compare/${comparisonSlug}`;
+}
 
 export function absoluteUrl(path: string) {
   if (path === "/") {
@@ -49,6 +54,7 @@ export function getAllIndexableRoutes() {
     staticRoutes.methodology,
     staticRoutes.dataSources,
     staticRoutes.rankings,
+    staticRoutes.compare,
     ...cities.map((city) => cityRoute(city.slug)),
     ...getCountries().map((country) => countryRoute(country.slug)),
     ...modules.flatMap((moduleItem) =>

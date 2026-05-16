@@ -104,3 +104,12 @@ export {
   hasVerifiedCityMobilityData,
   hasVerifiedTransportData,
 } from "@/lib/data/queries/transport";
+
+export {
+  getAllComparisons,
+  getComparisonBySlug,
+  getComparisonsForCity,
+  getRelatedComparisons,
+} from "@/lib/data/queries/comparisons";
+
+export { buildComparisonSlug, getComparisonIntentLabel } from "@/lib/data/comparisons";

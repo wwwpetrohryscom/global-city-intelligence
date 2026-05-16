@@ -25,6 +25,12 @@ export type {
   TransportSourceType,
   TransportVerificationStatus,
 } from "./transport";
+export type {
+  CityComparison,
+  ComparisonCategory,
+  ComparisonIntent,
+  ComparisonRegion,
+} from "./comparison";
 export type { IntelligenceModule, ModuleSlug } from "./module";
 export type { Ranking, RankingEntry } from "./ranking";
 export type {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
+import { RelatedComparisons } from "@/components/comparison/RelatedComparisons";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
@@ -27,6 +28,7 @@ import {
   getCityHealthcareProfile,
   getCityMobilityProfile,
   getCitySafetyProfile,
+  getComparisonsForCity,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
   getCountryTransportProfile,
@@ -98,6 +100,7 @@ export default async function CityPage({ params }: PageProps) {
   const countryTransportProfile = getCountryTransportProfile(city.countrySlug);
   const cityMobilityProfile = getCityMobilityProfile(city.slug);
   const cityAirports = getAirportsForCity(city.slug);
+  const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
 
   return (
     <main>
@@ -235,6 +238,10 @@ export default async function CityPage({ params }: PageProps) {
           healthcareSectionHref="#healthcare-access-heading"
           variant="city"
         />
+
+        {relatedComparisons.length > 0 ? (
+          <RelatedComparisons comparisons={relatedComparisons} />
+        ) : null}
 
         <section>
           <SectionHeading

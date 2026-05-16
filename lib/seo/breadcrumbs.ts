@@ -1,5 +1,18 @@
-import { getCityBySlug, getCountryBySlug, getModuleBySlug, getRankingBySlug } from "@/lib/data/queries";
-import { cityRoute, countryRoute, moduleRoute, rankingRoute, staticRoutes } from "@/lib/seo/routes";
+import {
+  getCityBySlug,
+  getComparisonBySlug,
+  getCountryBySlug,
+  getModuleBySlug,
+  getRankingBySlug,
+} from "@/lib/data/queries";
+import {
+  cityRoute,
+  comparisonRoute,
+  countryRoute,
+  moduleRoute,
+  rankingRoute,
+  staticRoutes,
+} from "@/lib/seo/routes";
 import type { BreadcrumbItem, ModuleSlug } from "@/types";
 
 const homeCrumb: BreadcrumbItem = {
@@ -84,4 +97,24 @@ export function staticBreadcrumbs(
   href: string,
 ): BreadcrumbItem[] {
   return [homeCrumb, { name: label, href }];
+}
+
+export function comparisonBreadcrumbs(slug: string): BreadcrumbItem[] {
+  const comparison = getComparisonBySlug(slug);
+  const cityA = comparison ? getCityBySlug(comparison.cityASlug) : undefined;
+  const cityB = comparison ? getCityBySlug(comparison.cityBSlug) : undefined;
+  const name =
+    cityA && cityB ? `${cityA.name} vs ${cityB.name}` : "Comparison";
+
+  return [
+    homeCrumb,
+    {
+      name: "Compare",
+      href: staticRoutes.compare,
+    },
+    {
+      name,
+      href: comparisonRoute(slug),
+    },
+  ];
 }

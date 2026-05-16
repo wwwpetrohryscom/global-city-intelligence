@@ -73,6 +73,17 @@ propagates a fresh `dateModified` across all profile-driven JSON-LD.
   must be present in the initial HTML so it remains crawlable and
   accessible without client JavaScript.
 
+## Add a city comparison
+
+1. Append a new entry to [`lib/data/comparisons.ts`](../lib/data/comparisons.ts) with `cityASlug`, `cityBSlug`, `cityAName`, `cityBName`, `intent`, `region`, and `description`. Both city slugs must already exist in [`lib/data/cities.ts`](../lib/data/cities.ts).
+2. Reuse the existing `ComparisonIntent` values (`relocation`, `remote_work`, `business`, `travel_planning`, `quality_of_life`, `regional_alternative`, `global_hub_comparison`). Do not invent new intents without updating the type.
+3. Do not create reversed duplicate pairs (e.g. `london-vs-paris` and `paris-vs-london`).
+4. The new comparison automatically appears in:
+   - `/compare` directory (grouped by region)
+   - sitemap
+   - related-comparisons sections on the linked city profiles
+5. The per-comparison page lives at `/compare/[comparison]` — no route changes needed. Category rows are derived from the underlying city and country profiles, so no per-comparison content needs to be authored.
+
 ## Recent expansion batches
 
 ### 2026-05-15 — global cities batch
