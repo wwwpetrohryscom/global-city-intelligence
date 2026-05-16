@@ -25,20 +25,11 @@ const title = "Global Country Intelligence Directory";
 const description =
   "Browse every supported country profile and understand national context for city data, emergency services, healthcare access, and transport systems. All country links are server-rendered and crawlable.";
 
-export const metadata: Metadata = {
-  ...createMetadata({
-    title,
-    description,
-    path: staticRoutes.countries,
-  }),
-  openGraph: {
-    title,
-    description,
-    url: staticRoutes.countries,
-    siteName: "Global City Intelligence",
-    type: "website",
-  },
-};
+export const metadata: Metadata = createMetadata({
+  title,
+  description,
+  path: staticRoutes.countries,
+});
 
 export default function CountriesIndexPage() {
   const countries = getAllCountries()

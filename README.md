@@ -1,15 +1,19 @@
 # Global City Intelligence Platform
 
-A scalable, server-rendered programmatic SEO platform for city intelligence data.
-The app compares cities, countries, modules, and rankings with indexable HTML,
-visible source context, metadata, sitemap generation, and typed mock data ready
-for API-backed ingestion.
+A scalable, server-rendered programmatic SEO platform for city and country
+intelligence. The app compares cities, countries, modules, and rankings with
+indexable HTML, visible source attribution, automated metadata, sitemap
+generation, and verified intelligence layers for emergency, healthcare, and
+transport — each attributed to official publishers.
 
 ## Features
-- City intelligence profiles
-- Country cluster pages
-- Cost of living, air quality, and energy module pages
+- City intelligence profiles (cost of living, air quality, energy, safety,
+  internet speed, climate risk)
+- Country profiles with national context and verified-layer indicators
+- /cities and /countries directory pages
 - City ranking pages
+- Verified Emergency & Public Safety, Healthcare & Hospitals, and Transport &
+  Mobility intelligence layers with transparent fallbacks
 - Server-rendered tables, source blocks, breadcrumbs, and JSON-LD
 - Dynamic sitemap and permissive robots configuration
 

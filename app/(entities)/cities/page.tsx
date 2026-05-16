@@ -25,20 +25,11 @@ const title = "Global City Intelligence Directory";
 const description =
   "Browse every indexed city profile and compare structured indicators across affordability, air quality, energy readiness, resilience, public safety, healthcare, and transport. All city links are server-rendered and crawlable.";
 
-export const metadata: Metadata = {
-  ...createMetadata({
-    title,
-    description,
-    path: staticRoutes.cities,
-  }),
-  openGraph: {
-    title,
-    description,
-    url: staticRoutes.cities,
-    siteName: "Global City Intelligence",
-    type: "website",
-  },
-};
+export const metadata: Metadata = createMetadata({
+  title,
+  description,
+  path: staticRoutes.cities,
+});
 
 export default function CitiesIndexPage() {
   const cities = getAllCities();

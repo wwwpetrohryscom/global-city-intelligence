@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { LAST_UPDATED } from "@/lib/data/constants";
 import { getCities, getCountries, getModules, getRankings } from "@/lib/data/queries";
 import {
   absoluteUrl,
@@ -12,41 +13,42 @@ import {
 export default function sitemap(): MetadataRoute.Sitemap {
   const cities = getCities();
   const modules = getModules();
+  const staticFreshness = new Date(LAST_UPDATED);
 
   const staticItems: MetadataRoute.Sitemap = [
     {
       url: absoluteUrl(staticRoutes.home),
-      lastModified: new Date("2026-05-10"),
+      lastModified: staticFreshness,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: absoluteUrl(staticRoutes.cities),
-      lastModified: new Date("2026-05-10"),
+      lastModified: staticFreshness,
       changeFrequency: "weekly",
       priority: 0.95,
     },
     {
       url: absoluteUrl(staticRoutes.countries),
-      lastModified: new Date("2026-05-10"),
+      lastModified: staticFreshness,
       changeFrequency: "weekly",
       priority: 0.95,
     },
     {
       url: absoluteUrl(staticRoutes.methodology),
-      lastModified: new Date("2026-05-10"),
+      lastModified: staticFreshness,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: absoluteUrl(staticRoutes.dataSources),
-      lastModified: new Date("2026-05-10"),
+      lastModified: staticFreshness,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: absoluteUrl(staticRoutes.rankings),
-      lastModified: new Date("2026-05-10"),
+      lastModified: staticFreshness,
       changeFrequency: "weekly",
       priority: 0.9,
     },
