@@ -123,3 +123,14 @@ export {
 } from "@/lib/data/queries/collections";
 
 export { getCollectionIntentLabel } from "@/lib/data/collections";
+
+export {
+  getCollectionsForCountry,
+  getComparisonsForCountry,
+  getRankingsForCountry,
+} from "@/lib/data/queries/country-hub";
+
+export type {
+  CountryCollectionMatch,
+  CountryRankingMatch,
+} from "@/lib/data/queries/country-hub";

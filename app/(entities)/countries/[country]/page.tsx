@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CityCard } from "@/components/cards/CityCard";
 import { MetricCard } from "@/components/cards/MetricCard";
+import { CountryCitiesSection } from "@/components/country/CountryCitiesSection";
+import { CountryCollectionsSection } from "@/components/country/CountryCollectionsSection";
+import { CountryComparisonsSection } from "@/components/country/CountryComparisonsSection";
+import { CountryHubNavigation } from "@/components/country/CountryHubNavigation";
+import {
+  CountryOverviewCards,
+  type OverviewCard,
+} from "@/components/country/CountryOverviewCards";
+import { CountryRankingsSection } from "@/components/country/CountryRankingsSection";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
+import { PageHeader } from "@/components/layout/PageHeader";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
-import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
 import { DataTable } from "@/components/tables/DataTable";
-import { PageHeader } from "@/components/layout/PageHeader";
+import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
   generateCountryExplanation,
@@ -20,6 +29,8 @@ import { demoDataNotice } from "@/lib/content/quality";
 import {
   getAllCountries,
   getCitiesByCountrySlug,
+  getCollectionsForCountry,
+  getComparisonsForCountry,
   getCountryBySlug,
   getCountryEmergencyContacts,
   getCountryEmergencyProfile,
@@ -28,7 +39,11 @@ import {
   getEmergencySources,
   getHealthcareSources,
   getHospitalRegistryProfile,
+  getRankingsForCountry,
   getTransportSources,
+  hasVerifiedEmergencyData,
+  hasVerifiedHealthcareData,
+  hasVerifiedTransportData,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { countryBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -59,10 +74,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
+  const cityCount = getCitiesByCountrySlug(country.slug).length;
+  const cityCountText =
+    cityCount === 0
+      ? ""
+      : cityCount === 1
+        ? " covering one supported city profile,"
+        : ` covering ${cityCount} supported city profiles,`;
+
   return createMetadata({
-    title: `${country.name} City Intelligence Country Profile`,
-    description: `${country.name} country profile for indexed city intelligence pages, source context, data year, and connected city pages.`,
+    title: `${country.name} Country Intelligence Hub`,
+    description: `Explore ${country.name} city intelligence${cityCountText} public safety context, healthcare access, transport information, comparisons, collections, rankings, and source-attributed data.`,
     path: countryRoute(country.slug),
+    lastModified: country.lastUpdated,
     type: "article",
   });
 }
@@ -78,12 +102,13 @@ export default async function CountryPage({ params }: PageProps) {
   const cities = getCitiesByCountrySlug(country.slug);
   const sources = getSourcesByIds(country.sources);
   const breadcrumbs = countryBreadcrumbs(country.slug);
-  const title = `${country.name} City Intelligence`;
+  const title = `${country.name} Country Intelligence Hub`;
   const introCopy = generateCountryIntro(country, cities);
   const explanationCopy = generateCountryExplanation(country, cities);
   const description = introCopy;
   const methodologyLink = internalLink.methodology();
   const dataSourcesLink = internalLink.dataSources();
+
   const emergencyProfile = getCountryEmergencyProfile(country.slug);
   const emergencyContacts = emergencyProfile
     ? getCountryEmergencyContacts(emergencyProfile)
@@ -91,6 +116,7 @@ export default async function CountryPage({ params }: PageProps) {
   const emergencySources = emergencyProfile
     ? getEmergencySources(emergencyProfile)
     : [];
+
   const healthcareProfile = getCountryHealthcareProfile(country.slug);
   const hospitalRegistry = getHospitalRegistryProfile(country.slug);
   const healthcareSources = healthcareProfile
@@ -109,14 +135,110 @@ export default async function CountryPage({ params }: PageProps) {
       return true;
     });
   })();
+
   const transportProfile = getCountryTransportProfile(country.slug);
   const transportSources = transportProfile
     ? getTransportSources(transportProfile)
     : [];
 
+  const countryComparisons = getComparisonsForCountry(country.slug);
+  const countryCollections = getCollectionsForCountry(country.slug);
+  const countryRankings = getRankingsForCountry(country.slug);
+
+  const verifiedEmergency = hasVerifiedEmergencyData(emergencyProfile);
+  const verifiedHealthcare =
+    hasVerifiedHealthcareData(healthcareProfile) ||
+    hasVerifiedHealthcareData(hospitalRegistry);
+  const verifiedTransport = hasVerifiedTransportData(transportProfile);
+
+  const overviewCards: OverviewCard[] = [
+    {
+      label: "Supported cities",
+      value: String(cities.length),
+      description: `City profiles indexed for ${country.name}.`,
+    },
+    {
+      label: "Emergency profile",
+      value: verifiedEmergency ? "Verified" : "Fallback",
+      description: verifiedEmergency
+        ? "Country emergency contacts attributed to official publishers."
+        : "Verified emergency data is not available; fallback context is shown.",
+    },
+    {
+      label: "Healthcare profile",
+      value: verifiedHealthcare ? "Verified" : "Fallback",
+      description: verifiedHealthcare
+        ? "Healthcare layer attributed to official health authorities."
+        : "Verified healthcare data is not available; fallback context is shown.",
+    },
+    {
+      label: "Transport profile",
+      value: verifiedTransport ? "Verified" : "Fallback",
+      description: verifiedTransport
+        ? "Transport authority and operator references attributed to official sources."
+        : "Verified transport data is not available; fallback context is shown.",
+    },
+    {
+      label: "Related comparisons",
+      value: String(countryComparisons.length),
+      description: "Curated city-vs-city comparison pages that reference this country.",
+    },
+    {
+      label: "Related collections",
+      value: String(countryCollections.length),
+      description: "Best Cities collections that include at least one city from this country.",
+    },
+    {
+      label: "Data year",
+      value: country.dataYear,
+      description: "Reference year for the country intelligence dataset.",
+    },
+    {
+      label: "Last updated",
+      value: country.lastUpdated,
+      description: "Most recent platform-side review of the country hub.",
+    },
+  ];
+
+  const hubNavItems: { href: string; label: string }[] = [
+    { href: "#country-overview", label: "Overview" },
+    { href: "#country-cities", label: "Cities" },
+  ];
+
+  if (emergencyProfile) {
+    hubNavItems.push({
+      href: "#emergency-public-safety-heading",
+      label: "Public safety",
+    });
+  }
+  if (healthcareProfile || hospitalRegistry) {
+    hubNavItems.push({
+      href: "#healthcare-access-heading",
+      label: "Healthcare",
+    });
+  }
+  if (transportProfile) {
+    hubNavItems.push({
+      href: "#transport-mobility-heading",
+      label: "Transport",
+    });
+  }
+  hubNavItems.push(
+    { href: "#country-comparisons", label: "Comparisons" },
+    { href: "#country-collections", label: "Collections" },
+    { href: "#country-rankings", label: "Rankings" },
+    { href: "#country-sources", label: "Sources" },
+  );
+
   return (
     <main>
-      <JsonLd data={webpageSchema({ path: countryRoute(country.slug), title, description })} />
+      <JsonLd
+        data={webpageSchema({
+          path: countryRoute(country.slug),
+          title,
+          description,
+        })}
+      />
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
       <JsonLd
         data={datasetSchema({
@@ -191,6 +313,21 @@ export default async function CountryPage({ params }: PageProps) {
       <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
         <BreadcrumbNav items={breadcrumbs} />
 
+        <CountryHubNavigation items={hubNavItems} />
+
+        <section aria-labelledby="country-overview-heading" id="country-overview">
+          <SectionHeading
+            description={`Snapshot of structured ${country.name} city intelligence and which verified utility layers are available on this hub.`}
+            title={`${country.name} country overview`}
+          />
+          <h2 className="sr-only" id="country-overview-heading">
+            {country.name} country overview
+          </h2>
+          <div className="mt-6">
+            <CountryOverviewCards cards={overviewCards} />
+          </div>
+        </section>
+
         <section className="grid gap-5 md:grid-cols-3">
           {country.metrics.map((metric) => (
             <MetricCard key={metric.label} metric={metric} />
@@ -209,12 +346,13 @@ export default async function CountryPage({ params }: PageProps) {
                 {
                   metric: "Region",
                   value: country.region,
-                  context: "Used for geographic clustering and regional comparisons.",
+                  context:
+                    "Used for geographic clustering and regional comparisons.",
                 },
                 {
                   metric: "Indexed cities",
                   value: String(cities.length),
-                  context: cities.map((city) => city.name).join(", "),
+                  context: cities.map((city) => city.name).join(", ") || "—",
                 },
                 ...country.metrics.map((metric) => ({
                   metric: metric.label,
@@ -225,6 +363,8 @@ export default async function CountryPage({ params }: PageProps) {
             />
           </div>
         </section>
+
+        <CountryCitiesSection countryName={country.name} cities={cities} />
 
         <PublicSafetySection
           countryName={country.name}
@@ -248,59 +388,126 @@ export default async function CountryPage({ params }: PageProps) {
           variant="country"
         />
 
-        <section>
-          <SectionHeading
-            description="Each linked city page includes its own metadata, data table, source block, and module links."
-            title={`Indexed cities in ${country.name}`}
-          />
-          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {cities.map((city) => (
-              <CityCard city={city} key={city.slug} />
-            ))}
-          </div>
-        </section>
+        <CountryComparisonsSection
+          comparisons={countryComparisons}
+          countryName={country.name}
+        />
 
-        <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
+        <CountryCollectionsSection
+          countryName={country.name}
+          matches={countryCollections}
+        />
+
+        <CountryRankingsSection
+          countryName={country.name}
+          matches={countryRankings}
+        />
+
+        <section
+          aria-labelledby="country-sources-heading"
+          className="grid gap-5 lg:grid-cols-[1fr_1fr]"
+          id="country-sources"
+        >
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-semibold text-text-primary">
-              Interpretation
+            <h2
+              className="text-2xl font-semibold text-text-primary"
+              id="country-sources-heading"
+            >
+              Interpretation and methodology note
             </h2>
-            <p className="mt-4 leading-7 text-text-secondary">{explanationCopy}</p>
+            <p className="mt-4 leading-7 text-text-secondary">
+              {explanationCopy}
+            </p>
+            <p className="mt-4 leading-7 text-text-secondary">
+              Structured indicators on this hub are directional and intended for
+              orientation. Verified utility layers — emergency, healthcare,
+              transport — are attributed to official publishers where available
+              and use transparent fallback states where verified country-level
+              data is not yet integrated.
+            </p>
             <ul className="mt-6 space-y-3 text-sm">
               <li>
-                <a
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.cities}
+                >
+                  Cities directory
+                </Link>
+                <span className="text-text-secondary">
+                  {" "}
+                  — browse every indexed city profile.
+                </span>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.countries}
+                >
+                  All countries
+                </Link>
+                <span className="text-text-secondary">
+                  {" "}
+                  — navigate to other country hubs.
+                </span>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.compare}
+                >
+                  City comparisons
+                </Link>
+                <span className="text-text-secondary">
+                  {" "}
+                  — curated city-vs-city pages with structured indicators.
+                </span>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.collections}
+                >
+                  Best Cities collections
+                </Link>
+                <span className="text-text-secondary">
+                  {" "}
+                  — comparison-oriented shortlists by intent.
+                </span>
+              </li>
+              <li>
+                <Link
                   className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
                   href={staticRoutes.rankings}
                 >
                   All rankings
-                </a>
+                </Link>
                 <span className="text-text-secondary">
                   {" "}
-                  compare city profiles through ranking tables.
+                  — structured rankings across city intelligence categories.
                 </span>
               </li>
               <li>
-                <a
-                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
-                  href={dataSourcesLink.href}
-                >
-                  {dataSourcesLink.text}
-                </a>
-                <span className="text-text-secondary">
-                  {" "}
-                  for the source registry behind these scores.
-                </span>
-              </li>
-              <li>
-                <a
+                <Link
                   className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
                   href={methodologyLink.href}
                 >
                   {methodologyLink.text}
-                </a>
+                </Link>
                 <span className="text-text-secondary">
                   {" "}
                   for the scoring model used across modules.
+                </span>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={dataSourcesLink.href}
+                >
+                  {dataSourcesLink.text}
+                </Link>
+                <span className="text-text-secondary">
+                  {" "}
+                  for the source registry behind verified layers.
                 </span>
               </li>
             </ul>
