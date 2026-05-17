@@ -1,7 +1,17 @@
 import type { Metadata } from "next";
 import { LAST_UPDATED } from "@/lib/data/constants";
-import { absoluteUrl, getCollectionUrl } from "@/lib/seo/routes";
-import type { CityCollection } from "@/types";
+import {
+  absoluteUrl,
+  getCityIntentUrl,
+  getCollectionUrl,
+} from "@/lib/seo/routes";
+import type {
+  City,
+  CityCollection,
+  CityIntent,
+  CityIntentPage,
+  Country,
+} from "@/types";
 
 interface MetadataInput {
   title: string;
@@ -55,6 +65,30 @@ export function generateCollectionMetadata(
     description: collection.description,
     path: getCollectionUrl(collection.slug),
     lastModified: collection.updatedDate,
+    type: "article",
+  });
+}
+
+export function generateCityIntentMetadata({
+  city,
+  country,
+  intent,
+  intentPage,
+}: {
+  city: City;
+  country: Country | undefined;
+  intent: CityIntent;
+  intentPage: CityIntentPage;
+}): Metadata {
+  const countryFragment = country ? ` in ${country.name}` : "";
+  const title = `${city.name} for ${intent.shortTitle}: City Intelligence Guide`;
+  const description = `Explore ${city.name}${countryFragment} for ${intent.shortTitle.toLowerCase()} using structured city intelligence across cost context, safety, healthcare, transport, public services, sources, and related comparisons.`;
+
+  return createMetadata({
+    title,
+    description,
+    path: getCityIntentUrl(intentPage.citySlug, intentPage.intentSlug),
+    lastModified: intentPage.updatedDate,
     type: "article",
   });
 }

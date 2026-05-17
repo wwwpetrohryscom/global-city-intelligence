@@ -36,6 +36,12 @@ export type {
   CollectionCriterion,
   CollectionIntent,
 } from "./collection";
+export type {
+  CityIntent,
+  CityIntentCriterion,
+  CityIntentPage,
+  CityIntentSlug,
+} from "./intent";
 export type { IntelligenceModule, ModuleSlug } from "./module";
 export type { Ranking, RankingEntry } from "./ranking";
 export type {

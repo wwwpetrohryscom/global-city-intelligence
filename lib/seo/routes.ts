@@ -1,4 +1,5 @@
 import {
+  getAllCityIntentPages,
   getAllCollections,
   getCities,
   getCountries,
@@ -36,6 +37,10 @@ export function absoluteUrl(path: string) {
 
 export function cityRoute(citySlug: string) {
   return `/cities/${citySlug}`;
+}
+
+export function getCityIntentUrl(citySlug: string, intentSlug: string) {
+  return `/cities/${citySlug}/${intentSlug}`;
 }
 
 export function countryRoute(countrySlug: string) {
@@ -78,5 +83,8 @@ export function getAllIndexableRoutes() {
     ),
     ...getRankings().map((ranking) => rankingRoute(ranking.slug)),
     ...getAllCollections().map((collection) => getCollectionUrl(collection.slug)),
+    ...getAllCityIntentPages().map((page) =>
+      getCityIntentUrl(page.citySlug, page.intentSlug),
+    ),
   ];
 }

@@ -130,6 +130,18 @@ export {
   getRankingsForCountry,
 } from "@/lib/data/queries/country-hub";
 
+export {
+  getAllCityIntentPages,
+  getAllCityIntents,
+  getCityIntentBySlug,
+  getCityIntentPage,
+  getIntentPagesForCity,
+  getIntentPagesForCollection,
+  getIntentPagesForIntent,
+} from "@/lib/data/queries/city-intents";
+
+export { getCityIntentTitle } from "@/lib/data/city-intents";
+
 export type {
   CountryCollectionMatch,
   CountryRankingMatch,

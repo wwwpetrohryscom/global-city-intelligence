@@ -28,9 +28,11 @@ import {
   getCityHealthcareProfile,
   getCityMobilityProfile,
   getCitySafetyProfile,
+  getCityIntentBySlug,
   getCollectionIntentLabel,
   getCollectionsForCity,
   getComparisonsForCity,
+  getIntentPagesForCity,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
   getCountryTransportProfile,
@@ -43,6 +45,7 @@ import { createMetadata } from "@/lib/seo/metadata";
 import {
   cityRoute,
   countryRoute,
+  getCityIntentUrl,
   getCollectionUrl,
   moduleRoute,
   rankingRoute,
@@ -110,6 +113,7 @@ export default async function CityPage({ params }: PageProps) {
   const cityMobilityProfile = getCityMobilityProfile(city.slug);
   const cityAirports = getAirportsForCity(city.slug);
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
+  const cityIntentPages = getIntentPagesForCity(city.slug);
 
   return (
     <main>
@@ -268,6 +272,32 @@ export default async function CityPage({ params }: PageProps) {
                   />
                 </li>
               ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {cityIntentPages.length > 0 ? (
+          <section>
+            <SectionHeading
+              description={`Practical intent-focused guides available for ${city.name}. Each guide is a comparison-oriented view, not an official ranking.`}
+              title={`${city.name} intent guides`}
+            />
+            <ul className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {cityIntentPages.map((page) => {
+                const intent = getCityIntentBySlug(page.intentSlug);
+                if (!intent) {
+                  return null;
+                }
+                return (
+                  <li key={`${page.citySlug}-${page.intentSlug}`}>
+                    <LinkCard
+                      description={page.summary}
+                      href={getCityIntentUrl(page.citySlug, page.intentSlug)}
+                      title={`${city.name} for ${intent.shortTitle}`}
+                    />
+                  </li>
+                );
+              })}
             </ul>
           </section>
         ) : null}

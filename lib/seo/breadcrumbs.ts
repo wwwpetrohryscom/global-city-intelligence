@@ -1,5 +1,6 @@
 import {
   getCityBySlug,
+  getCityIntentBySlug,
   getCollectionBySlug,
   getComparisonBySlug,
   getCountryBySlug,
@@ -10,6 +11,7 @@ import {
   cityRoute,
   comparisonRoute,
   countryRoute,
+  getCityIntentUrl,
   getCollectionUrl,
   moduleRoute,
   rankingRoute,
@@ -99,6 +101,30 @@ export function staticBreadcrumbs(
   href: string,
 ): BreadcrumbItem[] {
   return [homeCrumb, { name: label, href }];
+}
+
+export function cityIntentBreadcrumbs(
+  citySlug: string,
+  intentSlug: string,
+): BreadcrumbItem[] {
+  const city = getCityBySlug(citySlug);
+  const intent = getCityIntentBySlug(intentSlug);
+
+  return [
+    homeCrumb,
+    {
+      name: "Cities",
+      href: staticRoutes.cities,
+    },
+    {
+      name: city?.name || "City",
+      href: cityRoute(citySlug),
+    },
+    {
+      name: intent?.shortTitle || "Intent",
+      href: getCityIntentUrl(citySlug, intentSlug),
+    },
+  ];
 }
 
 export function collectionBreadcrumbs(slug?: string): BreadcrumbItem[] {
