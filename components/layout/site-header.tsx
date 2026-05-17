@@ -8,6 +8,7 @@ const navItems = [
   { href: staticRoutes.countries, label: "Countries" },
   { href: staticRoutes.rankings, label: "Rankings" },
   { href: staticRoutes.compare, label: "Compare" },
+  { href: staticRoutes.collections, label: "Best Cities" },
   { href: staticRoutes.methodology, label: "Methodology" },
   { href: staticRoutes.dataSources, label: "Data Sources" },
 ];

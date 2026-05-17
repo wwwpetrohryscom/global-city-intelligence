@@ -1,4 +1,10 @@
-import { getCities, getCountries, getModules, getRankings } from "@/lib/data/queries";
+import {
+  getAllCollections,
+  getCities,
+  getCountries,
+  getModules,
+  getRankings,
+} from "@/lib/data/queries";
 import type { ModuleSlug } from "@/types";
 
 export const siteUrl =
@@ -13,6 +19,7 @@ export const staticRoutes = {
   dataSources: "/data-sources",
   rankings: "/rankings",
   compare: "/compare",
+  collections: "/best-cities",
 } as const;
 
 export function comparisonRoute(comparisonSlug: string) {
@@ -43,6 +50,14 @@ export function rankingRoute(rankingSlug: string) {
   return `/rankings/${rankingSlug}`;
 }
 
+export function getCollectionUrl(slug: string) {
+  return `/${slug}`;
+}
+
+export function getCollectionsIndexUrl() {
+  return staticRoutes.collections;
+}
+
 export function getAllIndexableRoutes() {
   const cities = getCities();
   const modules = getModules();
@@ -55,11 +70,13 @@ export function getAllIndexableRoutes() {
     staticRoutes.dataSources,
     staticRoutes.rankings,
     staticRoutes.compare,
+    staticRoutes.collections,
     ...cities.map((city) => cityRoute(city.slug)),
     ...getCountries().map((country) => countryRoute(country.slug)),
     ...modules.flatMap((moduleItem) =>
       cities.map((city) => moduleRoute(moduleItem.slug, city.slug)),
     ),
     ...getRankings().map((ranking) => rankingRoute(ranking.slug)),
+    ...getAllCollections().map((collection) => getCollectionUrl(collection.slug)),
   ];
 }

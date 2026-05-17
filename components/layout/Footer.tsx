@@ -1,10 +1,16 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/layout/BrandMark";
 import { Container } from "@/components/layout/Container";
-import { getCities, getCountries, getRankings } from "@/lib/data/queries";
+import {
+  getAllCollections,
+  getCities,
+  getCountries,
+  getRankings,
+} from "@/lib/data/queries";
 import {
   cityRoute,
   countryRoute,
+  getCollectionUrl,
   rankingRoute,
   staticRoutes,
 } from "@/lib/seo/routes";
@@ -13,6 +19,7 @@ export function Footer() {
   const cities = getCities().slice(0, 5);
   const countries = getCountries().slice(0, 5);
   const rankings = getRankings().slice(0, 4);
+  const collections = getAllCollections().slice(0, 5);
   const currentYear = new Date().getFullYear();
 
   return (
@@ -51,6 +58,18 @@ export function Footer() {
           {rankings.map((ranking) => (
             <FooterLink href={rankingRoute(ranking.slug)} key={ranking.slug}>
               {ranking.shortTitle}
+            </FooterLink>
+          ))}
+        </FooterColumn>
+
+        <FooterColumn label="Best Cities">
+          <FooterLink href={staticRoutes.collections}>All collections</FooterLink>
+          {collections.map((collection) => (
+            <FooterLink
+              href={getCollectionUrl(collection.slug)}
+              key={collection.slug}
+            >
+              {collection.shortTitle}
             </FooterLink>
           ))}
         </FooterColumn>

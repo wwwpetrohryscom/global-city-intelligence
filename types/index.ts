@@ -31,6 +31,11 @@ export type {
   ComparisonIntent,
   ComparisonRegion,
 } from "./comparison";
+export type {
+  CityCollection,
+  CollectionCriterion,
+  CollectionIntent,
+} from "./collection";
 export type { IntelligenceModule, ModuleSlug } from "./module";
 export type { Ranking, RankingEntry } from "./ranking";
 export type {

@@ -12,10 +12,21 @@ import { Card } from "@/components/ui/Card";
 import { Divider } from "@/components/ui/Divider";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
-import { getAllCities, getAllModules, getAllRankings } from "@/lib/data/queries";
+import {
+  getAllCities,
+  getAllCollections,
+  getAllModules,
+  getAllRankings,
+  getCollectionIntentLabel,
+} from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { createMetadata } from "@/lib/seo/metadata";
-import { cityRoute, rankingRoute, staticRoutes } from "@/lib/seo/routes";
+import {
+  cityRoute,
+  getCollectionUrl,
+  rankingRoute,
+  staticRoutes,
+} from "@/lib/seo/routes";
 import { datasetSchema, webpageSchema } from "@/lib/seo/schema";
 
 const title = "Global City Intelligence Platform";
@@ -32,6 +43,7 @@ export default function HomePage() {
   const cities = getAllCities();
   const rankings = getAllRankings();
   const modules = getAllModules();
+  const collections = getAllCollections();
   const sources = getSourcesByIds([
     "un-habitat",
     "who-air",
@@ -118,6 +130,32 @@ export default function HomePage() {
               }))}
             />
           </div>
+        </section>
+
+        <section>
+          <SectionHeading
+            description="Curated city collections offer comparison-oriented shortlists by intent — for remote work, families, startups, clean air, and public transport. None of these are scored rankings."
+            title="Best Cities collections"
+          />
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {collections.map((collection) => (
+              <LinkCard
+                description={`${getCollectionIntentLabel(collection.intent)} — ${collection.description}`}
+                href={getCollectionUrl(collection.slug)}
+                key={collection.slug}
+                title={collection.title}
+              />
+            ))}
+          </div>
+          <p className="mt-6 text-sm leading-6 text-text-secondary">
+            <Link
+              className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+              href={staticRoutes.collections}
+            >
+              Browse all city collections
+            </Link>
+            .
+          </p>
         </section>
 
         <section>

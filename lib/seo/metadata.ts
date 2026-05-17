@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LAST_UPDATED } from "@/lib/data/constants";
-import { absoluteUrl } from "@/lib/seo/routes";
+import { absoluteUrl, getCollectionUrl } from "@/lib/seo/routes";
+import type { CityCollection } from "@/types";
 
 interface MetadataInput {
   title: string;
@@ -44,4 +45,16 @@ export function createMetadata({
       updatedDate: lastModified,
     },
   };
+}
+
+export function generateCollectionMetadata(
+  collection: CityCollection,
+): Metadata {
+  return createMetadata({
+    title: collection.title,
+    description: collection.description,
+    path: getCollectionUrl(collection.slug),
+    lastModified: collection.updatedDate,
+    type: "article",
+  });
 }

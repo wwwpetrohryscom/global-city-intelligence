@@ -28,6 +28,8 @@ import {
   getCityHealthcareProfile,
   getCityMobilityProfile,
   getCitySafetyProfile,
+  getCollectionIntentLabel,
+  getCollectionsForCity,
   getComparisonsForCity,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
@@ -38,7 +40,13 @@ import {
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
-import { cityRoute, countryRoute, moduleRoute, rankingRoute } from "@/lib/seo/routes";
+import {
+  cityRoute,
+  countryRoute,
+  getCollectionUrl,
+  moduleRoute,
+  rankingRoute,
+} from "@/lib/seo/routes";
 import {
   airportSchema,
   breadcrumbSchema,
@@ -98,6 +106,7 @@ export default async function CityPage({ params }: PageProps) {
   );
   const cityVerifiedHospitals = getVerifiedHospitalsForCity(city.slug);
   const countryTransportProfile = getCountryTransportProfile(city.countrySlug);
+  const cityCollections = getCollectionsForCity(city.slug);
   const cityMobilityProfile = getCityMobilityProfile(city.slug);
   const cityAirports = getAirportsForCity(city.slug);
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
@@ -241,6 +250,26 @@ export default async function CityPage({ params }: PageProps) {
 
         {relatedComparisons.length > 0 ? (
           <RelatedComparisons comparisons={relatedComparisons} />
+        ) : null}
+
+        {cityCollections.length > 0 ? (
+          <section>
+            <SectionHeading
+              description={`Curated city collections that include ${city.name}. Each is a comparison-oriented shortlist, not an official ranking.`}
+              title={`${city.name} in city collections`}
+            />
+            <ul className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {cityCollections.map((collection) => (
+                <li key={collection.slug}>
+                  <LinkCard
+                    description={`${getCollectionIntentLabel(collection.intent)} — ${collection.description}`}
+                    href={getCollectionUrl(collection.slug)}
+                    title={collection.title}
+                  />
+                </li>
+              ))}
+            </ul>
+          </section>
         ) : null}
 
         <section>

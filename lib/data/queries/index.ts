@@ -113,3 +113,13 @@ export {
 } from "@/lib/data/queries/comparisons";
 
 export { buildComparisonSlug, getComparisonIntentLabel } from "@/lib/data/comparisons";
+
+export {
+  getAllCollections,
+  getCitiesForCollection,
+  getCollectionBySlug,
+  getCollectionsForCity,
+  getRelatedCollections,
+} from "@/lib/data/queries/collections";
+
+export { getCollectionIntentLabel } from "@/lib/data/collections";

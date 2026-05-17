@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { LAST_UPDATED } from "@/lib/data/constants";
 import {
+  getAllCollections,
   getAllComparisons,
   getCities,
   getCountries,
@@ -12,6 +13,7 @@ import {
   cityRoute,
   comparisonRoute,
   countryRoute,
+  getCollectionUrl,
   moduleRoute,
   rankingRoute,
   staticRoutes,
@@ -65,6 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    {
+      url: absoluteUrl(staticRoutes.collections),
+      lastModified: staticFreshness,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
   ];
 
   const cityItems = cities.map((city) => ({
@@ -104,6 +112,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
+  const collectionItems = getAllCollections().map((collection) => ({
+    url: absoluteUrl(getCollectionUrl(collection.slug)),
+    lastModified: new Date(collection.updatedDate),
+    changeFrequency: "weekly" as const,
+    priority: 0.88,
+  }));
+
   return [
     ...staticItems,
     ...cityItems,
@@ -111,5 +126,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...moduleItems,
     ...rankingItems,
     ...comparisonItems,
+    ...collectionItems,
   ];
 }

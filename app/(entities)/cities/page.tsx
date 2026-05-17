@@ -214,6 +214,18 @@ export default function CitiesIndexPage() {
                 — the official registry behind verified layers.
               </span>
             </li>
+            <li>
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={staticRoutes.collections}
+              >
+                Best Cities collections
+              </Link>
+              <span className="text-text-secondary">
+                {" "}
+                — curated city shortlists by intent.
+              </span>
+            </li>
           </ul>
         </section>
       </Container>

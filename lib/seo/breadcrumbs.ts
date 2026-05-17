@@ -1,5 +1,6 @@
 import {
   getCityBySlug,
+  getCollectionBySlug,
   getComparisonBySlug,
   getCountryBySlug,
   getModuleBySlug,
@@ -9,6 +10,7 @@ import {
   cityRoute,
   comparisonRoute,
   countryRoute,
+  getCollectionUrl,
   moduleRoute,
   rankingRoute,
   staticRoutes,
@@ -97,6 +99,26 @@ export function staticBreadcrumbs(
   href: string,
 ): BreadcrumbItem[] {
   return [homeCrumb, { name: label, href }];
+}
+
+export function collectionBreadcrumbs(slug?: string): BreadcrumbItem[] {
+  const crumbs: BreadcrumbItem[] = [
+    homeCrumb,
+    {
+      name: "Best Cities",
+      href: staticRoutes.collections,
+    },
+  ];
+
+  if (slug) {
+    const collection = getCollectionBySlug(slug);
+    crumbs.push({
+      name: collection?.shortTitle || collection?.title || "Collection",
+      href: getCollectionUrl(slug),
+    });
+  }
+
+  return crumbs;
 }
 
 export function comparisonBreadcrumbs(slug: string): BreadcrumbItem[] {
