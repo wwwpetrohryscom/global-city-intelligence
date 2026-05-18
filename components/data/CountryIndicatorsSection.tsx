@@ -21,7 +21,7 @@ interface CountryIndicatorsSectionProps {
 }
 
 const BASELINE_PROVENANCE_NOTE =
-  "Verified country indicators for this country are not yet integrated. Verified batches currently cover 10 supported countries across 9 World Bank Development Indicators (population, internet usage, urban-population share, GDP per capita, life expectancy, current health expenditure per capita, unemployment rate, CO₂ emissions per capita, fixed broadband subscriptions); additional batches will follow.";
+  "Verified country indicators for this country are not yet integrated. Verified batches currently cover 25 supported countries across 9 World Bank Development Indicators (population, internet usage, urban-population share, GDP per capita, life expectancy, current health expenditure per capita, unemployment rate, CO₂ emissions per capita, fixed broadband subscriptions); additional batches will follow.";
 
 function buildBaselineProvenance(country: Country): DataProvenance {
   return {

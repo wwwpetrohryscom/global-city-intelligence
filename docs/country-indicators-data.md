@@ -7,10 +7,10 @@ The country-indicators layer is the second verified dataset to ride on the platf
 - Dataset ID: `global-country-indicators`
 - Publisher: World Bank — World Development Indicators
 - Verification status: `partial`
-- Verified batches: **9 indicators × 10 countries = 90 verified records**
+- Verified batches: **9 indicators × 25 countries = 225 verified records**
 - Source: World Bank Data API (https://data.worldbank.org/), `lastupdated: 2026-04-08`
 
-Verified batches cover Australia, Canada, Denmark, France, Germany, Japan, Netherlands, Singapore, United Kingdom, and United States. Other supported countries continue to render transparent fallback until later batches integrate additional records.
+Verified batches cover Australia, Austria, Brazil, Canada, China, Czechia, Denmark, Finland, France, Germany, Ireland, Italy, Japan, Mexico, Netherlands, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, United Kingdom, and United States. Other supported countries continue to render transparent fallback until later batches integrate additional records. The platform's registry uses the modern `czechia` slug for the Czech Republic; the coverage expansion reuses that slug rather than introducing a `czech-republic` alias.
 
 ## Indicators
 
@@ -53,7 +53,13 @@ INDICATOR_FILTER="gdp_per_capita:life_expectancy:health_expenditure" \
 # refresh only batch 3 (unemployment / CO2 / fixed broadband)
 INDICATOR_FILTER="unemployment_rate:co2_emissions_per_capita:digital_access" \
   ./scripts/data/ingest-country-indicators.sh > /tmp/batch3.ts
+
+# refresh only the coverage-expansion countries (uses COUNTRY_FILTER)
+COUNTRY_FILTER="italy:spain:portugal:sweden:norway:finland:austria:switzerland:ireland:poland:czechia:south-korea:china:brazil:mexico" \
+  ./scripts/data/ingest-country-indicators.sh > /tmp/coverage.ts
 ```
+
+`COUNTRY_FILTER` and `INDICATOR_FILTER` are independent and may be combined: setting both narrows emission to the intersection of the two sets. Either filter accepts a colon-separated list of slugs / indicator keys; leaving a filter empty disables it.
 
 After reviewing the generated file, paste the records into `lib/data/official/country-indicators/dataset.ts` (between the existing array brackets), then run:
 

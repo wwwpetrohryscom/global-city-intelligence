@@ -31,6 +31,24 @@ declare -a COUNTRIES=(
   "singapore:SG:SGP:Singapore"
   "denmark:DK:DNK:Denmark"
   "netherlands:NL:NLD:Netherlands"
+  # Coverage expansion batch:
+  "italy:IT:ITA:Italy"
+  "spain:ES:ESP:Spain"
+  "portugal:PT:PRT:Portugal"
+  "sweden:SE:SWE:Sweden"
+  "norway:NO:NOR:Norway"
+  "finland:FI:FIN:Finland"
+  "austria:AT:AUT:Austria"
+  "switzerland:CH:CHE:Switzerland"
+  "ireland:IE:IRL:Ireland"
+  "poland:PL:POL:Poland"
+  # The platform's existing country record uses the modern "czechia"
+  # slug; we reuse it rather than introducing a "czech-republic" alias.
+  "czechia:CZ:CZE:Czechia"
+  "south-korea:KR:KOR:South Korea"
+  "china:CN:CHN:China"
+  "brazil:BR:BRA:Brazil"
+  "mexico:MX:MEX:Mexico"
 )
 
 declare -a INDICATORS=(
@@ -54,6 +72,13 @@ declare -a INDICATORS=(
 # list of indicatorKey values to limit emission. Useful when refreshing
 # a single batch without touching the rest.
 INDICATOR_FILTER="${INDICATOR_FILTER:-}"
+
+# Optional country filter: set COUNTRY_FILTER to a colon-separated
+# list of countrySlug values to limit emission. Useful when adding a
+# coverage batch without re-emitting records for already-shipped
+# countries. Example:
+#   COUNTRY_FILTER="italy:spain:portugal" ./scripts/data/ingest-country-indicators.sh
+COUNTRY_FILTER="${COUNTRY_FILTER:-}"
 
 last_observation() {
   local iso3="$1"
@@ -126,6 +151,14 @@ echo "export const worldBankRecords: CountryIndicatorRecord[] = ["
 
 for country in "${COUNTRIES[@]}"; do
   IFS=":" read -r slug iso2 iso3 _name <<<"$country"
+  if [ -n "$COUNTRY_FILTER" ]; then
+    case ":${COUNTRY_FILTER}:" in
+      *":${slug}:"*) ;;
+      *)
+        continue
+        ;;
+    esac
+  fi
   for indicator in "${INDICATORS[@]}"; do
     IFS=":" read -r wbCode key label unit <<<"$indicator"
     if [ -n "$INDICATOR_FILTER" ]; then
