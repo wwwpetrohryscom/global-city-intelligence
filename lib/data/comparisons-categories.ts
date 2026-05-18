@@ -1,10 +1,12 @@
 import {
+  getAirQualityProfileForCity,
   getCityMobilityProfile,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
   getCountryTransportProfile,
 } from "@/lib/data/queries";
 import type {
+  AirQualityCityProfile,
   City,
   ComparisonCategory,
   Country,
@@ -200,16 +202,31 @@ export function buildComparisonCategories({
   countryA?: Country;
   countryB?: Country;
 }): ComparisonCategory[] {
+  const airQualityProfileA = getAirQualityProfileForCity(cityA.slug);
+  const airQualityProfileB = getAirQualityProfileForCity(cityB.slug);
+
   const moduleCategories: ComparisonCategory[] = moduleOrder.map(
-    ({ slug, label, interpretation }) => ({
-      key: slug,
-      label,
-      summary: cityA.modules[slug]?.summary ?? cityModuleSummary(cityA, slug),
-      cityANote: cityModuleScore(cityA, slug),
-      cityBNote: cityModuleScore(cityB, slug),
-      interpretation,
-      sourceIds: cityA.modules[slug]?.sources ?? [],
-    }),
+    ({ slug, label, interpretation }) => {
+      if (slug === "air-quality") {
+        return airQualityCategoryRow({
+          cityA,
+          cityB,
+          profileA: airQualityProfileA,
+          profileB: airQualityProfileB,
+          interpretation,
+          label,
+        });
+      }
+      return {
+        key: slug,
+        label,
+        summary: cityA.modules[slug]?.summary ?? cityModuleSummary(cityA, slug),
+        cityANote: cityModuleScore(cityA, slug),
+        cityBNote: cityModuleScore(cityB, slug),
+        interpretation,
+        sourceIds: cityA.modules[slug]?.sources ?? [],
+      };
+    },
   );
 
   return [
@@ -219,4 +236,70 @@ export function buildComparisonCategories({
     emergencyRow(countryA, countryB),
     countryContextRow(countryA, countryB),
   ];
+}
+
+function describeAirQuality(
+  city: City,
+  profile: AirQualityCityProfile | undefined,
+): string {
+  if (!profile || profile.verificationStatus !== "verified") {
+    return `${city.name}: verified city-level air-quality measurements unavailable; structured air-quality module context is shown instead.`;
+  }
+  const numericMetrics = profile.metrics.filter(
+    (metric) => metric.value !== undefined,
+  );
+  if (numericMetrics.length === 0) {
+    return `${city.name}: verified air-quality dataset is available; see the city profile for source-attributed values.`;
+  }
+  const summary = numericMetrics
+    .map((metric) => {
+      const unit = metric.unit ? ` ${metric.unit}` : "";
+      return `${metric.label} ${metric.value}${unit}`;
+    })
+    .join("; ");
+  return `${city.name}: ${summary}.`;
+}
+
+function airQualityCategoryRow({
+  cityA,
+  cityB,
+  profileA,
+  profileB,
+  interpretation,
+  label,
+}: {
+  cityA: City;
+  cityB: City;
+  profileA: AirQualityCityProfile | undefined;
+  profileB: AirQualityCityProfile | undefined;
+  interpretation: string;
+  label: string;
+}): ComparisonCategory {
+  const anyVerified =
+    profileA?.verificationStatus === "verified" ||
+    profileB?.verificationStatus === "verified";
+
+  const summary = anyVerified
+    ? "Compares air quality using source-attributed measurements where the platform has integrated verified datasets; structured module context elsewhere."
+    : (cityA.modules["air-quality"]?.summary ??
+        "Structured air-quality module context; verified dataset measurements are not yet integrated for either city.");
+
+  const sourceIdsFromProfiles = [
+    ...(profileA?.sourceIds ?? []),
+    ...(profileB?.sourceIds ?? []),
+  ];
+  const sourceIds =
+    sourceIdsFromProfiles.length > 0
+      ? Array.from(new Set(sourceIdsFromProfiles))
+      : (cityA.modules["air-quality"]?.sources ?? []);
+
+  return {
+    key: "air-quality",
+    label,
+    summary,
+    cityANote: describeAirQuality(cityA, profileA),
+    cityBNote: describeAirQuality(cityB, profileB),
+    interpretation,
+    sourceIds,
+  };
 }

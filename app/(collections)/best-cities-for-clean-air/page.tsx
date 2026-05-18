@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CollectionPage } from "@/components/collections/CollectionPage";
-import { getCollectionBySlug } from "@/lib/data/queries";
+import { AirQualityCoverageTable } from "@/components/data/AirQualityCoverageTable";
+import { SectionHeading } from "@/components/ui/section-heading";
+import {
+  getCitiesForCollection,
+  getCollectionBySlug,
+  getCitiesWithVerifiedAirQualityData,
+} from "@/lib/data/queries";
 import { generateCollectionMetadata } from "@/lib/seo/metadata";
 
 const COLLECTION_SLUG = "best-cities-for-clean-air";
@@ -44,8 +50,34 @@ export default function BestCitiesForCleanAirPage() {
     notFound();
   }
 
+  const collectionCities = getCitiesForCollection(collection.slug);
+  const verifiedCount = getCitiesWithVerifiedAirQualityData().filter(
+    (citySlug) => collectionCities.some((city) => city.slug === citySlug),
+  ).length;
+
   return (
     <CollectionPage
+      additionalSection={
+        <section aria-labelledby="clean-air-dataset-coverage-heading">
+          <SectionHeading
+            description={
+              verifiedCount > 0
+                ? `Air-quality dataset coverage for cities in this collection. Verified measurements are surfaced where the platform has integrated source-attributed data; transparent fallback is shown otherwise.`
+                : "Air-quality dataset coverage for cities in this collection. The platform has not yet integrated verified city-level measurements from accepted publishers, so every row shows transparent fallback. The collection remains an unordered curated shortlist, not a ranked claim of which city has the cleanest air."
+            }
+            title="Air-quality dataset coverage"
+          />
+          <h2 className="sr-only" id="clean-air-dataset-coverage-heading">
+            Air-quality dataset coverage
+          </h2>
+          <div className="mt-6">
+            <AirQualityCoverageTable
+              caption="Air-quality dataset coverage table for cities in this collection"
+              cities={collectionCities}
+            />
+          </div>
+        </section>
+      }
       collection={collection}
       comparisonNotes={comparisonNotes}
     />

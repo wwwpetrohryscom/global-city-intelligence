@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AirQualityProfileSection } from "@/components/data/AirQualityProfileSection";
 import { CityIntentCriteria } from "@/components/intents/CityIntentCriteria";
 import {
   CityIntentOverviewCards,
@@ -265,6 +266,23 @@ export function CityIntentPage({
             />
           </div>
         </section>
+
+        {intent.slug === "clean-air" ? (
+          <AirQualityProfileSection
+            city={city}
+            fallbackCopy={`Source-attributed air-quality measurements for ${city.name} will appear in this clean-air intent guide once the platform integrates verified values from accepted official publishers. Until then, structured air-quality module context informs the comparison.`}
+            contextLinks={[
+              {
+                label: "Browse the clean-air city collection",
+                href: "/best-cities-for-clean-air",
+              },
+              {
+                label: `Open the ${city.name} city profile`,
+                href: cityRoute(city.slug),
+              },
+            ]}
+          />
+        ) : null}
 
         <section aria-labelledby="utility-layers-heading">
           <SectionHeading

@@ -42,6 +42,19 @@ export type {
   CityIntentPage,
   CityIntentSlug,
 } from "./intent";
+export type {
+  DataProvenance,
+  DatasetCoverage,
+  MetricVerificationStatus,
+  NormalizedMetric,
+  OfficialDataset,
+} from "./datasets";
+export type {
+  AirQualityCityMetric,
+  AirQualityCityProfile,
+  AirQualityDatasetRecord,
+  AirQualityMetricKey,
+} from "./air-quality";
 export type { IntelligenceModule, ModuleSlug } from "./module";
 export type { Ranking, RankingEntry } from "./ranking";
 export type {

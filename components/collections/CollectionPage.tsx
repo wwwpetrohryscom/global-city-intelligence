@@ -12,7 +12,9 @@ import { Card } from "@/components/ui/Card";
 import { FactList } from "@/components/ui/fact-list";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
+  getAllCityIntents,
   getCitiesForCollection,
+  getCityIntentPage,
   getCollectionIntentLabel,
   getRelatedCollections,
 } from "@/lib/data/queries";
@@ -21,26 +23,50 @@ import { collectionBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
   absoluteUrl,
   cityRoute,
+  getCityIntentUrl,
   getCollectionUrl,
   staticRoutes,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, datasetSchema, webpageSchema } from "@/lib/seo/schema";
+import type { ReactNode } from "react";
 import type { CityCollection } from "@/types";
 
 interface CollectionPageProps {
   collection: CityCollection;
   comparisonNotes: Record<string, string>;
+  /**
+   * Optional server-rendered slot rendered after the methodology
+   * note. Used by individual collection pages (e.g. clean-air) to
+   * surface dataset coverage without altering the shared layout.
+   */
+  additionalSection?: ReactNode;
 }
 
 export function CollectionPage({
   collection,
   comparisonNotes,
+  additionalSection,
 }: CollectionPageProps) {
   const cities = getCitiesForCollection(collection.slug);
   const related = getRelatedCollections(collection.slug);
   const sources = getSourcesByIds(collection.sourceIds);
   const breadcrumbs = collectionBreadcrumbs(collection.slug);
   const collectionPath = getCollectionUrl(collection.slug);
+
+  const matchingIntent = getAllCityIntents().find(
+    (intent) => intent.relatedCollectionSlug === collection.slug,
+  );
+  const intentGuidesForCollection = matchingIntent
+    ? cities
+        .map((city) => ({
+          city,
+          page: getCityIntentPage(city.slug, matchingIntent.slug),
+        }))
+        .filter(
+          (entry): entry is { city: typeof entry.city; page: NonNullable<typeof entry.page> } =>
+            Boolean(entry.page),
+        )
+    : [];
 
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -213,6 +239,8 @@ export function CollectionPage({
           <SourceBlock sources={sources} />
         </section>
 
+        {additionalSection}
+
         <section>
           <SectionHeading
             description="Continue from this collection into broader navigation paths or other comparison-oriented collections."
@@ -251,6 +279,40 @@ export function CollectionPage({
             />
           </div>
         </section>
+
+        {matchingIntent && intentGuidesForCollection.length > 0 ? (
+          <section aria-labelledby="related-intent-guides-heading">
+            <SectionHeading
+              description={`Practical ${matchingIntent.shortTitle.toLowerCase()} intent guides for cities listed in this collection. Each guide is a comparison-oriented view, not an official ranking.`}
+              title={`${matchingIntent.shortTitle} intent guides for these cities`}
+            />
+            <h2 className="sr-only" id="related-intent-guides-heading">
+              {matchingIntent.shortTitle} intent guides for these cities
+            </h2>
+            <ul className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {intentGuidesForCollection.map(({ city, page }) => (
+                <li key={`${city.slug}-${page.intentSlug}`}>
+                  <Card as="article" className="h-full" interactive>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                      {matchingIntent.shortTitle}
+                    </p>
+                    <h3 className="mt-2 text-base font-semibold text-text-primary">
+                      <Link
+                        className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
+                        href={getCityIntentUrl(page.citySlug, page.intentSlug)}
+                      >
+                        {city.name} for {matchingIntent.shortTitle}
+                      </Link>
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-text-secondary">
+                      {page.summary}
+                    </p>
+                  </Card>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
         <section>
           <SectionHeading

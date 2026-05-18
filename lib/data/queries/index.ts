@@ -142,6 +142,22 @@ export {
 
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
+export {
+  getAirQualityDatasetMetadata,
+  getAirQualityMetricsForCity,
+  getAirQualityProfileForCity,
+  getAirQualitySourcesForCity,
+  getCitiesWithVerifiedAirQualityData,
+  hasVerifiedAirQualityData,
+} from "@/lib/data/official/air-quality/queries";
+
+export {
+  getAirQualityBaselineSourceIds,
+  getAirQualityBaselineSources,
+} from "@/lib/data/official/air-quality/sources";
+
+export { listOfficialDatasets } from "@/lib/data/official/registry";
+
 export type {
   CountryCollectionMatch,
   CountryRankingMatch,

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
 import { RelatedComparisons } from "@/components/comparison/RelatedComparisons";
+import { AirQualityProfileSection } from "@/components/data/AirQualityProfileSection";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
@@ -250,6 +251,20 @@ export default async function CityPage({ params }: PageProps) {
           emergencySectionHref="#emergency-public-safety-heading"
           healthcareSectionHref="#healthcare-access-heading"
           variant="city"
+        />
+
+        <AirQualityProfileSection
+          city={city}
+          contextLinks={[
+            {
+              label: `Open the ${city.name} air-quality module`,
+              href: moduleRoute("air-quality", city.slug),
+            },
+            {
+              label: "Browse the clean-air city collection",
+              href: "/best-cities-for-clean-air",
+            },
+          ]}
         />
 
         {relatedComparisons.length > 0 ? (
