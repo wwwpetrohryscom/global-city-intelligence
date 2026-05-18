@@ -407,6 +407,323 @@ const seeds: ComparisonSeed[] = [
     description:
       "Compare Singapore and Sydney across cost of living, air quality, safety, healthcare, transport, and country context for Asia-Pacific relocation planning.",
   },
+
+  // Expansion batch: comparisons that pair newly added cities with
+  // each other and with existing peers. Every pair is curated for
+  // a clear comparison reason; verified utility layers attach where
+  // available and transparent fallback applies otherwise.
+
+  // Europe
+  {
+    cityASlug: "athens",
+    cityBSlug: "rome",
+    cityAName: "Athens",
+    cityBName: "Rome",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Review Athens and Rome side by side through cost framing, transport access, healthcare and emergency context, and Mediterranean climate-adaptation priorities.",
+  },
+  {
+    cityASlug: "budapest",
+    cityBSlug: "prague",
+    cityAName: "Budapest",
+    cityBName: "Prague",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Use this comparison to weigh Budapest and Prague as Central-European capitals — affordability framing, transport access, and country-level intelligence sit alongside cultural and service-quality context.",
+  },
+  {
+    cityASlug: "tallinn",
+    cityBSlug: "riga",
+    cityAName: "Tallinn",
+    cityBName: "Riga",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Tallinn and Riga as compact Baltic EU capitals across digital-readiness context, cost framing, and country-level public-service profiles.",
+  },
+  {
+    cityASlug: "riga",
+    cityBSlug: "vilnius",
+    cityAName: "Riga",
+    cityBName: "Vilnius",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Riga and Vilnius for a Baltic comparison across cost framing, connectivity context, transport, and country-level indicators.",
+  },
+  {
+    cityASlug: "bratislava",
+    cityBSlug: "vienna",
+    cityAName: "Bratislava",
+    cityBName: "Vienna",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Bratislava and Vienna across cost framing, transport access, and country-level context for users considering the Danube-crossing relocation corridor.",
+  },
+  {
+    cityASlug: "ljubljana",
+    cityBSlug: "zagreb",
+    cityAName: "Ljubljana",
+    cityBName: "Zagreb",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Review Ljubljana and Zagreb as compact regional capitals — useful for cross-border comparisons between Alpine and Adriatic contexts.",
+  },
+  {
+    cityASlug: "belgrade",
+    cityBSlug: "bucharest",
+    cityAName: "Belgrade",
+    cityBName: "Bucharest",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Belgrade and Bucharest for a Southeast-European comparison across cost context, services activity, and country-level intelligence.",
+  },
+
+  // North America
+  {
+    cityASlug: "boston",
+    cityBSlug: "washington-dc",
+    cityAName: "Boston",
+    cityBName: "Washington DC",
+    intent: "global_hub_comparison",
+    region: "North America",
+    description:
+      "Compare Boston and Washington DC across cost framing, transport access, and policy/services context, useful for US East-Coast relocation review.",
+  },
+  {
+    cityASlug: "miami",
+    cityBSlug: "austin",
+    cityAName: "Miami",
+    cityBName: "Austin",
+    intent: "remote_work",
+    region: "North America",
+    description:
+      "Pair Miami and Austin for a remote-work-oriented comparison across cost framing, connectivity context, climate-resilience considerations, and country-level signals.",
+  },
+  {
+    cityASlug: "montreal",
+    cityBSlug: "toronto",
+    cityAName: "Montreal",
+    cityBName: "Toronto",
+    intent: "relocation",
+    region: "North America",
+    description:
+      "Compare Montreal and Toronto across cost framing, transport access, country-level healthcare and emergency context, and cultural depth.",
+  },
+  {
+    cityASlug: "calgary",
+    cityBSlug: "vancouver",
+    cityAName: "Calgary",
+    cityBName: "Vancouver",
+    intent: "regional_alternative",
+    region: "North America",
+    description:
+      "Pair Calgary and Vancouver for a Western-Canada comparison across cost framing, country-level public-service context, and natural-environment considerations.",
+  },
+  {
+    cityASlug: "dallas",
+    cityBSlug: "austin",
+    cityAName: "Dallas",
+    cityBName: "Austin",
+    intent: "regional_alternative",
+    region: "North America",
+    description:
+      "Compare Dallas and Austin as Texas metros across cost framing, transport access, connectivity, and country-level context.",
+  },
+  {
+    cityASlug: "boston",
+    cityBSlug: "new-york",
+    cityAName: "Boston",
+    cityBName: "New York",
+    intent: "regional_alternative",
+    region: "North America",
+    description:
+      "Compare Boston and New York as US East-Coast metros across cost framing, transport access, public-services context, and country-level intelligence.",
+  },
+  {
+    cityASlug: "washington-dc",
+    cityBSlug: "new-york",
+    cityAName: "Washington DC",
+    cityBName: "New York",
+    intent: "regional_alternative",
+    region: "North America",
+    description:
+      "Pair Washington DC and New York for a US Northeast comparison across cost framing, transport access, and policy/services context.",
+  },
+  {
+    cityASlug: "montreal",
+    cityBSlug: "calgary",
+    cityAName: "Montreal",
+    cityBName: "Calgary",
+    intent: "regional_alternative",
+    region: "North America",
+    description:
+      "Compare Montreal and Calgary across cost framing, country-level public-service context, and cultural/linguistic profile for cross-Canada relocation review.",
+  },
+
+  // Asia
+  {
+    cityASlug: "guangzhou",
+    cityBSlug: "shenzhen",
+    cityAName: "Guangzhou",
+    cityBName: "Shenzhen",
+    intent: "global_hub_comparison",
+    region: "Asia",
+    description:
+      "Pair Guangzhou and Shenzhen for a Pearl-River-Delta comparison across cost framing, transport access, and country-level intelligence.",
+  },
+  {
+    cityASlug: "busan",
+    cityBSlug: "seoul",
+    cityAName: "Busan",
+    cityBName: "Seoul",
+    intent: "regional_alternative",
+    region: "Asia",
+    description:
+      "Compare Busan and Seoul as primary and secondary Korean metros across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "fukuoka",
+    cityBSlug: "osaka",
+    cityAName: "Fukuoka",
+    cityBName: "Osaka",
+    intent: "relocation",
+    region: "Asia",
+    description:
+      "Pair Fukuoka and Osaka for a Japanese cross-region comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "chiang-mai",
+    cityBSlug: "bangkok",
+    cityAName: "Chiang Mai",
+    cityBName: "Bangkok",
+    intent: "remote_work",
+    region: "Asia",
+    description:
+      "Compare Chiang Mai and Bangkok for a remote-work-oriented Thai comparison across cost framing, connectivity, air-quality context, and country-level signals.",
+  },
+  {
+    cityASlug: "chengdu",
+    cityBSlug: "guangzhou",
+    cityAName: "Chengdu",
+    cityBName: "Guangzhou",
+    intent: "regional_alternative",
+    region: "Asia",
+    description:
+      "Pair Chengdu and Guangzhou for an inland-versus-coastal Chinese comparison across cost framing, transport access, and country-level intelligence.",
+  },
+  {
+    cityASlug: "wuhan",
+    cityBSlug: "chengdu",
+    cityAName: "Wuhan",
+    cityBName: "Chengdu",
+    intent: "regional_alternative",
+    region: "Asia",
+    description:
+      "Compare Wuhan and Chengdu across cost framing, transport access, and country-level context for inland-China relocation review.",
+  },
+  {
+    cityASlug: "phnom-penh",
+    cityBSlug: "bangkok",
+    cityAName: "Phnom Penh",
+    cityBName: "Bangkok",
+    intent: "regional_alternative",
+    region: "Asia",
+    description:
+      "Pair Phnom Penh and Bangkok for a Southeast-Asian comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "colombo",
+    cityBSlug: "bangalore",
+    cityAName: "Colombo",
+    cityBName: "Bangalore",
+    intent: "regional_alternative",
+    region: "Asia",
+    description:
+      "Compare Colombo and Bangalore across cost framing, connectivity context, and country-level signals for South-Asian regional review.",
+  },
+
+  // Middle East
+  {
+    cityASlug: "muscat",
+    cityBSlug: "dubai",
+    cityAName: "Muscat",
+    cityBName: "Dubai",
+    intent: "regional_alternative",
+    region: "Middle East",
+    description:
+      "Pair Muscat and Dubai for a Gulf-region comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "amman",
+    cityBSlug: "dubai",
+    cityAName: "Amman",
+    cityBName: "Dubai",
+    intent: "regional_alternative",
+    region: "Middle East",
+    description:
+      "Compare Amman and Dubai across cost framing, transport access, and country-level context for Levant-Gulf relocation review.",
+  },
+
+  // Africa
+  {
+    cityASlug: "tunis",
+    cityBSlug: "rabat",
+    cityAName: "Tunis",
+    cityBName: "Rabat",
+    intent: "regional_alternative",
+    region: "Africa",
+    description:
+      "Pair Tunis and Rabat for a North-African comparison across cost framing, transport access, and country-level Mediterranean-Atlantic context.",
+  },
+  {
+    cityASlug: "dakar",
+    cityBSlug: "accra",
+    cityAName: "Dakar",
+    cityBName: "Accra",
+    intent: "regional_alternative",
+    region: "Africa",
+    description:
+      "Compare Dakar and Accra as West-African Atlantic metros across cost framing, transport access, and country-level public-service context.",
+  },
+
+  // Oceania
+  {
+    cityASlug: "adelaide",
+    cityBSlug: "melbourne",
+    cityAName: "Adelaide",
+    cityBName: "Melbourne",
+    intent: "regional_alternative",
+    region: "Oceania",
+    description:
+      "Compare Adelaide and Melbourne across cost framing, transport access, and country-level public-service context for Australian intra-country relocation review.",
+  },
+  {
+    cityASlug: "canberra",
+    cityBSlug: "sydney",
+    cityAName: "Canberra",
+    cityBName: "Sydney",
+    intent: "regional_alternative",
+    region: "Oceania",
+    description:
+      "Pair Canberra and Sydney for an Australian capital-versus-largest-metro comparison across cost framing, transport access, and country-level context.",
+  },
+  {
+    cityASlug: "christchurch",
+    cityBSlug: "auckland",
+    cityAName: "Christchurch",
+    cityBName: "Auckland",
+    intent: "regional_alternative",
+    region: "Oceania",
+    description:
+      "Compare Christchurch and Auckland across cost framing, transport access, and country-level public-service context for New Zealand cross-island relocation review.",
+  },
 ];
 
 function buildSlug(a: string, b: string): string {
