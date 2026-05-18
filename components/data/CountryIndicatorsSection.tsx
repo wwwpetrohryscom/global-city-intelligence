@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CountryIndicatorCards } from "@/components/data/CountryIndicatorCards";
+import { CountryIndicatorGuide } from "@/components/data/CountryIndicatorGuide";
 import { CountryIndicatorsTable } from "@/components/data/CountryIndicatorsTable";
 import { DataProvenanceBlock } from "@/components/data/DataProvenanceBlock";
 import { DataVerificationBadge } from "@/components/data/DataVerificationBadge";
@@ -20,7 +21,7 @@ interface CountryIndicatorsSectionProps {
 }
 
 const BASELINE_PROVENANCE_NOTE =
-  "Verified country indicators for this country are not yet integrated. Verified batches currently cover 10 supported countries across 6 World Bank Development Indicators (population, internet usage, urban-population share, GDP per capita, life expectancy, current health expenditure per capita); additional batches will follow.";
+  "Verified country indicators for this country are not yet integrated. Verified batches currently cover 10 supported countries across 9 World Bank Development Indicators (population, internet usage, urban-population share, GDP per capita, life expectancy, current health expenditure per capita, unemployment rate, CO₂ emissions per capita, fixed broadband subscriptions); additional batches will follow.";
 
 function buildBaselineProvenance(country: Country): DataProvenance {
   return {
@@ -76,29 +77,39 @@ export function CountryIndicatorsSection({
 
       {verified && profile ? (
         <div className="mt-6 space-y-6">
-          <CountryIndicatorCards indicators={profile.indicators} />
+          <CountryIndicatorGuide />
+          <CountryIndicatorCards grouped indicators={profile.indicators} />
           <CountryIndicatorsTable
             caption={`${country.name} verified country indicators`}
             indicators={profile.indicators}
           />
         </div>
       ) : (
-        <Card as="article" className="mt-6 border-dashed">
-          <h3 className="text-base font-semibold text-text-primary">
-            Verified country indicator values are not yet published for{" "}
-            {country.name}
-          </h3>
-          <p className="mt-3 text-sm leading-6 text-text-secondary">
-            {fallbackCopy ??
-              `The platform will display source-attributed values for ${country.name} once verified records are integrated from accepted official publishers. Existing public-service layers (emergency, healthcare, transport) remain available above.`}
-          </p>
-          <div className="mt-4">
-            <CountryIndicatorsTable
-              caption={`${country.name} country indicator dataset coverage`}
-              indicators={[]}
-            />
-          </div>
-        </Card>
+        <div className="mt-6 space-y-6">
+          <CountryIndicatorGuide />
+          <Card as="article" className="border-dashed">
+            <h3 className="text-base font-semibold text-text-primary">
+              Verified country indicator values are not yet published for{" "}
+              {country.name}
+            </h3>
+            <p className="mt-3 text-sm leading-6 text-text-secondary">
+              {fallbackCopy ??
+                `The platform does not guess values. Source-attributed records for ${country.name} will appear here once they are integrated from accepted publishers. In the meantime, review the city profiles in ${country.name}, the public-safety, healthcare, and transport sections above, and the methodology and data-sources pages linked below.`}
+            </p>
+            <ul className="mt-4 grid gap-1.5 text-sm leading-6 text-text-secondary sm:grid-cols-2">
+              <li>· Cities in this country — listed above.</li>
+              <li>· Verified public-service layers where available.</li>
+              <li>· Methodology and data-sources registry — linked below.</li>
+              <li>· No placeholder numbers are shown.</li>
+            </ul>
+            <div className="mt-4">
+              <CountryIndicatorsTable
+                caption={`${country.name} country indicator dataset coverage`}
+                indicators={[]}
+              />
+            </div>
+          </Card>
+        </div>
       )}
 
       <div className="mt-6 grid gap-5 lg:grid-cols-[1fr_1fr]">
