@@ -534,6 +534,130 @@ const seeds: CityIntentSeed[] = [
     summary:
       "Zurich is a European public-transport anchor with structured city intelligence and country-level context.",
   },
+
+  // Expansion batch: 15 curated intent pages for cities added to the
+  // expansion shortlist (Baltics, North-American secondary metros,
+  // Korean / Japanese / Latin-American peers). Each entry reuses the
+  // existing intent slug and links to the relevant curated comparison
+  // pages without inventing scores, costs, AQI, or transport facts.
+
+  // Remote work
+  {
+    citySlug: "tallinn",
+    intentSlug: "remote-work",
+    summary:
+      "Tallinn is a Baltic EU capital often cited for digital-services context and useful to compare for remote-work relocation. Structured city intelligence covers cost framing, transport access, country-level public-service profiles, and source-backed references where available.",
+    relatedComparisonSlugs: ["tallinn-vs-riga"],
+  },
+  {
+    citySlug: "riga",
+    intentSlug: "remote-work",
+    summary:
+      "Riga is a compact Baltic EU capital useful to compare for remote-work planning. Structured intelligence covers cost framing, connectivity context, transport access, and country-level public-service references.",
+    relatedComparisonSlugs: ["tallinn-vs-riga", "riga-vs-vilnius"],
+  },
+  {
+    citySlug: "chiang-mai",
+    intentSlug: "remote-work",
+    summary:
+      "Chiang Mai is a Northern-Thai metro frequently included in remote-work shortlists. Structured intelligence covers cost framing, country-level transport and healthcare context, and seasonal air-quality dynamics that benefit from honest comparison framing.",
+    relatedComparisonSlugs: ["chiang-mai-vs-bangkok"],
+  },
+
+  // Family life
+  {
+    citySlug: "adelaide",
+    intentSlug: "family-life",
+    summary:
+      "Adelaide is a compact Australian metro often cited for quality-of-life context and useful to compare for family-life planning. Structured intelligence covers public-service references, country-level healthcare context, and transport access.",
+    relatedComparisonSlugs: ["adelaide-vs-melbourne"],
+  },
+  {
+    citySlug: "christchurch",
+    intentSlug: "family-life",
+    summary:
+      "Christchurch is a South-Island New Zealand metro with active urban-renewal context and useful to compare for family-life planning. Structured intelligence covers country-level public-service references and seismic-resilience framing.",
+    relatedComparisonSlugs: ["christchurch-vs-auckland"],
+  },
+  {
+    citySlug: "montreal",
+    intentSlug: "family-life",
+    summary:
+      "Montreal is a bilingual Canadian metro with deep cultural depth and useful to compare for family-life planning. Structured intelligence covers verified Canadian country-level healthcare and emergency references plus transport access.",
+    relatedComparisonSlugs: ["montreal-vs-toronto", "montreal-vs-calgary"],
+  },
+
+  // Startup ecosystem
+  {
+    citySlug: "boston",
+    intentSlug: "startup-ecosystem",
+    summary:
+      "Boston is a US East-Coast metro anchored by universities and life-sciences activity, useful to compare for startup-context review through structured connectivity, transport, and country-level references.",
+    relatedComparisonSlugs: ["boston-vs-washington-dc", "boston-vs-new-york"],
+  },
+  {
+    citySlug: "austin",
+    intentSlug: "startup-ecosystem",
+    summary:
+      "Austin is a fast-growing Texan metro with a strong technology economy, useful to compare for startup-context review through cost framing, connectivity, and country-level intelligence.",
+    relatedComparisonSlugs: ["miami-vs-austin", "dallas-vs-austin"],
+  },
+  {
+    citySlug: "washington-dc",
+    intentSlug: "startup-ecosystem",
+    summary:
+      "Washington DC is the US capital region with high institutional density, useful to compare for policy-and-services-oriented startup review through structured intelligence and country-level context.",
+    relatedComparisonSlugs: [
+      "boston-vs-washington-dc",
+      "washington-dc-vs-new-york",
+    ],
+  },
+
+  // Clean air
+  {
+    citySlug: "tallinn",
+    intentSlug: "clean-air",
+    summary:
+      "Tallinn is a Baltic EU comparison anchor for air-quality context, with EU monitoring framing and the platform's transparent fallback while city-level measurements are integrated.",
+    relatedComparisonSlugs: ["tallinn-vs-riga"],
+  },
+  {
+    citySlug: "riga",
+    intentSlug: "clean-air",
+    summary:
+      "Riga is a Baltic EU comparison anchor for air-quality context. Structured intelligence references WHO and EEA benchmarks; verified city-level measurements appear in the air-quality dataset section when integrated.",
+    relatedComparisonSlugs: ["tallinn-vs-riga", "riga-vs-vilnius"],
+  },
+  {
+    citySlug: "ljubljana",
+    intentSlug: "clean-air",
+    summary:
+      "Ljubljana is an Alpine-adjacent EU comparison anchor for air-quality context, useful alongside other Central-European capitals. Structured intelligence references WHO and EEA benchmarks; verified city-level measurements appear when integrated.",
+    relatedComparisonSlugs: ["ljubljana-vs-zagreb"],
+  },
+
+  // Public transport
+  {
+    citySlug: "busan",
+    intentSlug: "public-transport",
+    summary:
+      "Busan is South Korea's second metro and a major Pacific port, useful to compare for cross-region Korean public-transport context through structured intelligence and country-level references.",
+    relatedComparisonSlugs: ["busan-vs-seoul"],
+  },
+  {
+    citySlug: "fukuoka",
+    intentSlug: "public-transport",
+    summary:
+      "Fukuoka is a compact Kyushu Japanese metro useful to compare for cross-Japan public-transport context. Structured intelligence covers country-level transport references and city-scale mobility framing.",
+    relatedComparisonSlugs: ["fukuoka-vs-osaka"],
+  },
+  {
+    citySlug: "montreal",
+    intentSlug: "public-transport",
+    summary:
+      "Montreal is a Canadian bilingual metro useful to compare for cross-Canada public-transport context, with structured intelligence covering metro and country-level transport references.",
+    relatedComparisonSlugs: ["montreal-vs-toronto", "montreal-vs-calgary"],
+  },
 ];
 
 export const cityIntentPages: CityIntentPage[] = seeds.map((seed) => {
