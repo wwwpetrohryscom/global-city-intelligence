@@ -29,7 +29,18 @@ export const countries: Country[] = [
     intro:
       "The United States profile combines strong data transparency, large regional variation, and city-level contrasts in affordability, air quality, and climate risk.",
     sources: ["un-habitat", "nasa-power", "epa-naaqs", "ipcc-urban"],
-    citySlugs: ["new-york", "san-francisco", "los-angeles", "chicago", "seattle"],
+    citySlugs: [
+      "new-york",
+      "san-francisco",
+      "los-angeles",
+      "chicago",
+      "seattle",
+      "boston",
+      "washington-dc",
+      "miami",
+      "austin",
+      "dallas",
+    ],
     metrics: [
       { label: "Urban variation", value: "Very high", description: "Large metropolitan differences make city-level pages more useful than national averages." },
       { label: "Air-quality context", value: "Strong monitoring", description: "EPA standards and reporting support pollutant trend interpretation." },
@@ -46,7 +57,7 @@ export const countries: Country[] = [
     intro:
       "Japan's country profile is shaped by dense transit-oriented cities, high infrastructure discipline, and serious climate and seismic adaptation needs.",
     sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
-    citySlugs: ["tokyo", "osaka", "kyoto"],
+    citySlugs: ["tokyo", "osaka", "kyoto", "fukuoka"],
     metrics: [
       { label: "Infrastructure reliability", value: "Very high", description: "Urban systems are supported by mature rail, emergency planning, and engineering capacity." },
       { label: "Adaptation priority", value: "High", description: "Heat, flood, storm, and seismic exposure make resilience central." },
@@ -131,7 +142,7 @@ export const countries: Country[] = [
     intro:
       "Canada's profile combines strong public services, low-carbon electricity in many provinces, and rising housing-cost pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities"],
-    citySlugs: ["toronto", "vancouver"],
+    citySlugs: ["toronto", "vancouver", "montreal", "calgary"],
     metrics: [
       { label: "Service depth", value: "High", description: "Public health and education services support strong daily life." },
       { label: "Energy transition context", value: "Favorable grid", description: "Low-carbon electricity in major provinces supports city-level transition." },
@@ -148,7 +159,14 @@ export const countries: Country[] = [
     intro:
       "Australia's profile combines high quality of life and outdoor amenity with elevated housing pressure and meaningful climate exposure from heat and bushfire.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban"],
-    citySlugs: ["sydney", "melbourne", "brisbane", "perth"],
+    citySlugs: [
+      "sydney",
+      "melbourne",
+      "brisbane",
+      "perth",
+      "adelaide",
+      "canberra",
+    ],
     metrics: [
       { label: "Outdoor amenity", value: "Very high", description: "Coastal and outdoor amenity supports a high quality of daily life." },
       { label: "Climate exposure", value: "Heat and bushfire", description: "Heat and bushfire pressure are central adaptation priorities." },
@@ -233,7 +251,7 @@ export const countries: Country[] = [
     intro:
       "South Korea's profile combines dense, transit-rich cities, leading digital infrastructure, and serious work on air quality and energy transition.",
     sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "itu-connectivity"],
-    citySlugs: ["seoul"],
+    citySlugs: ["seoul", "busan"],
     metrics: [
       { label: "Digital infrastructure", value: "Top-tier", description: "Fiber and 5G networks reach near-universal household coverage." },
       { label: "Urban transit", value: "Very strong", description: "Dense rail and bus systems support efficient daily life." },
@@ -284,7 +302,7 @@ export const countries: Country[] = [
     intro:
       "Thailand's profile combines a vibrant urban culture, fast-growing connectivity, and meaningful climate and air-quality challenges centered on flooding and seasonal haze.",
     sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "itu-connectivity"],
-    citySlugs: ["bangkok"],
+    citySlugs: ["bangkok", "chiang-mai"],
     metrics: [
       { label: "Urban dynamism", value: "High", description: "A dense, mixed-use urban culture supports strong service density." },
       { label: "Air-quality priority", value: "Rising", description: "Seasonal particulate exposure is a central public-health focus." },
@@ -369,7 +387,7 @@ export const countries: Country[] = [
     intro:
       "New Zealand's profile combines high quality of life, low-carbon electricity, and outdoor amenity, balanced by housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities"],
-    citySlugs: ["auckland", "wellington"],
+    citySlugs: ["auckland", "wellington", "christchurch"],
     metrics: [
       { label: "Energy mix", value: "Low-carbon", description: "Hydropower and geothermal generation support a favorable baseline." },
       { label: "Outdoor amenity", value: "Very high", description: "Coastal and natural amenity supports a strong quality of daily life." },
@@ -488,7 +506,7 @@ export const countries: Country[] = [
     intro:
       "Colombia's profile features creative urban centers, hydro-led low-carbon electricity, and innovative public-transit systems shaping daily life.",
     sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
-    citySlugs: ["bogota"],
+    citySlugs: ["bogota", "medellin"],
     metrics: [
       { label: "Energy mix", value: "Renewable-heavy", description: "Hydropower supports a comparatively low-carbon electricity baseline." },
       { label: "Bus rapid transit", value: "Globally cited", description: "BRT systems are widely studied internationally." },
@@ -522,7 +540,14 @@ export const countries: Country[] = [
     intro:
       "China's profile features dense metropolitan economies, leading EV and renewable build-out, and major adaptation programs in coastal and high-heat regions.",
     sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["shanghai", "beijing", "shenzhen"],
+    citySlugs: [
+      "shanghai",
+      "beijing",
+      "shenzhen",
+      "guangzhou",
+      "chengdu",
+      "wuhan",
+    ],
     metrics: [
       { label: "EV adoption", value: "Globally leading", description: "EV sales and charging infrastructure are among the highest globally." },
       { label: "Energy transition context", value: "Accelerating", description: "Renewable build-out is among the fastest globally." },
@@ -828,7 +853,7 @@ export const countries: Country[] = [
     intro:
       "Morocco's profile features dynamic coastal cities, leading solar build-out, and active climate-adaptation work focused on water resilience.",
     sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["casablanca"],
+    citySlugs: ["casablanca", "rabat"],
     metrics: [
       { label: "Solar resource", value: "Very strong", description: "High solar irradiance supports a steady renewable build-out." },
       { label: "Water resilience", value: "Active", description: "Long-running drought planning is integral to urban operations." },
@@ -935,6 +960,414 @@ export const countries: Country[] = [
       { label: "Logistics depth", value: "Globally cited", description: "Canal and trade infrastructure shape regional and global flows." },
       { label: "Climate exposure", value: "Coastal", description: "Coastal flooding and storm exposure shape adaptation priorities." },
       { label: "Services growth", value: "Strong", description: "Finance and logistics services expand opportunity." },
+    ],
+  },
+  {
+    slug: "greece",
+    name: "Greece",
+    iso2: "GR",
+    region: "Southern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Greece's country profile combines a strategic Mediterranean location, EU policy alignment, and city-level contrasts shaped by tourism, services, and a growing remote-work scene.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["athens"],
+    metrics: [
+      { label: "Regional context", value: "Mediterranean EU", description: "EU alignment with strong Mediterranean climate and maritime context." },
+      { label: "Data confidence", value: "Moderate", description: "European reporting supports indexable comparisons; verified layers are integrated progressively." },
+      { label: "Climate exposure", value: "Heat and water", description: "Heat stress and water-resource pressure are key adaptation priorities." },
+    ],
+  },
+  {
+    slug: "hungary",
+    name: "Hungary",
+    iso2: "HU",
+    region: "Central Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Hungary's profile pairs Central-European geographic positioning with a strong service-economy core, useful for comparing relocation, remote-work, and regional-hub contexts.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["budapest"],
+    metrics: [
+      { label: "Regional context", value: "Central Europe", description: "Strategic position between Western and Eastern Europe." },
+      { label: "Data confidence", value: "Moderate", description: "European monitoring supports comparable indicators; verified layers are added progressively." },
+      { label: "Service economy", value: "Notable", description: "Business services and remote-work-adjacent activity expand opportunity." },
+    ],
+  },
+  {
+    slug: "romania",
+    name: "Romania",
+    iso2: "RO",
+    region: "Eastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Romania's profile combines EU membership with rapid digital-services growth, useful for users comparing Eastern European cost context and remote-work relocation.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["bucharest"],
+    metrics: [
+      { label: "Regional context", value: "Eastern EU", description: "EU membership with Eastern-European cost and labor-market context." },
+      { label: "Digital services", value: "Growing", description: "Tech and digital-services growth shapes city-level intelligence." },
+      { label: "Data confidence", value: "Moderate", description: "European reporting supports comparison; verified layers are integrated progressively." },
+    ],
+  },
+  {
+    slug: "serbia",
+    name: "Serbia",
+    iso2: "RS",
+    region: "Southeastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Serbia's profile reflects a Western-Balkans context with growing services activity and ongoing EU-accession discussion, useful for regional-comparison users.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["belgrade"],
+    metrics: [
+      { label: "Regional context", value: "Western Balkans", description: "Strategic position in the Western Balkans with EU-accession dynamics." },
+      { label: "Data confidence", value: "Moderate", description: "Comparable monitoring is improving; verified layers are integrated progressively." },
+      { label: "Services growth", value: "Steady", description: "Business and digital services support city-level activity." },
+    ],
+  },
+  {
+    slug: "croatia",
+    name: "Croatia",
+    iso2: "HR",
+    region: "Southeastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Croatia's profile blends Mediterranean coastal context with EU membership, useful for users comparing relocation, tourism-economy, and regional-hub contexts.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["zagreb"],
+    metrics: [
+      { label: "Regional context", value: "Adriatic EU", description: "Adriatic coastline within the EU regulatory and monitoring frame." },
+      { label: "Climate exposure", value: "Coastal and heat", description: "Mediterranean exposure shapes resilience priorities." },
+      { label: "Data confidence", value: "Moderate", description: "European reporting supports comparable indicators." },
+    ],
+  },
+  {
+    slug: "slovenia",
+    name: "Slovenia",
+    iso2: "SI",
+    region: "Central Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Slovenia's profile combines Alpine geography with EU membership and a compact services-oriented economy, useful for comparing Central-European city contexts.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["ljubljana"],
+    metrics: [
+      { label: "Regional context", value: "Alpine EU", description: "Alpine geography within the EU monitoring and reporting framework." },
+      { label: "Data confidence", value: "Moderate to high", description: "European reporting supports comparable indicators." },
+      { label: "Climate exposure", value: "Alpine and water", description: "Mountain and water-cycle dynamics shape adaptation priorities." },
+    ],
+  },
+  {
+    slug: "slovakia",
+    name: "Slovakia",
+    iso2: "SK",
+    region: "Central Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Slovakia's profile sits in the Central-European industrial and services corridor, useful for users comparing relocation and remote-work options in the Visegrád region.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["bratislava"],
+    metrics: [
+      { label: "Regional context", value: "Central Europe", description: "Visegrád context with manufacturing and services activity." },
+      { label: "Data confidence", value: "Moderate", description: "European monitoring supports comparable indicators." },
+      { label: "Services growth", value: "Steady", description: "Business services support city-level intelligence." },
+    ],
+  },
+  {
+    slug: "estonia",
+    name: "Estonia",
+    iso2: "EE",
+    region: "Baltic Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Estonia's profile is widely cited for digital-government infrastructure and remote-work relocation, useful for comparing Baltic and EU contexts.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "itu-connectivity"],
+    citySlugs: ["tallinn"],
+    metrics: [
+      { label: "Regional context", value: "Baltic EU", description: "Baltic geography within the EU regulatory and monitoring frame." },
+      { label: "Digital services", value: "Notably strong", description: "Digital-government infrastructure shapes city-level intelligence." },
+      { label: "Data confidence", value: "Moderate to high", description: "European reporting supports comparable indicators." },
+    ],
+  },
+  {
+    slug: "latvia",
+    name: "Latvia",
+    iso2: "LV",
+    region: "Baltic Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Latvia's profile combines Baltic geography, EU membership, and a compact services economy, useful for regional-comparison and relocation users.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["riga"],
+    metrics: [
+      { label: "Regional context", value: "Baltic EU", description: "Baltic geography within the EU regulatory and monitoring frame." },
+      { label: "Data confidence", value: "Moderate", description: "European reporting supports comparable indicators." },
+      { label: "Services growth", value: "Steady", description: "Business and digital services support city-level intelligence." },
+    ],
+  },
+  {
+    slug: "lithuania",
+    name: "Lithuania",
+    iso2: "LT",
+    region: "Baltic Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Lithuania's profile reflects a Baltic EU context with growing financial-services activity, useful for users comparing relocation and regional-hub contexts.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["vilnius"],
+    metrics: [
+      { label: "Regional context", value: "Baltic EU", description: "Baltic geography within the EU regulatory and monitoring frame." },
+      { label: "Services growth", value: "Notable", description: "Financial and digital services expand activity." },
+      { label: "Data confidence", value: "Moderate", description: "European reporting supports comparable indicators." },
+    ],
+  },
+  {
+    slug: "costa-rica",
+    name: "Costa Rica",
+    iso2: "CR",
+    region: "Central America",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Costa Rica's profile highlights conservation policy, renewable-energy continuity, and a Central-American services economy useful for regional comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["san-jose"],
+    metrics: [
+      { label: "Regional context", value: "Central America", description: "Central-American context with strong environmental policy framing." },
+      { label: "Energy transition context", value: "Notable", description: "Renewable-electricity continuity supports city-level energy framing." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting is improving; verified layers are integrated progressively." },
+    ],
+  },
+  {
+    slug: "dominican-republic",
+    name: "Dominican Republic",
+    iso2: "DO",
+    region: "Caribbean",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "The Dominican Republic's profile reflects a Caribbean services economy with strong tourism activity, useful for regional and relocation comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["santo-domingo"],
+    metrics: [
+      { label: "Regional context", value: "Caribbean", description: "Caribbean context with maritime and climate-exposure considerations." },
+      { label: "Services activity", value: "Tourism-heavy", description: "Tourism and services support city-level activity." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively; verified layers added carefully." },
+    ],
+  },
+  {
+    slug: "guatemala",
+    name: "Guatemala",
+    iso2: "GT",
+    region: "Central America",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Guatemala's profile reflects a Central-American context with significant cultural depth and city-level intelligence that benefits from cautious framing.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["guatemala-city"],
+    metrics: [
+      { label: "Regional context", value: "Central America", description: "Central-American geography and climate." },
+      { label: "Climate exposure", value: "Notable", description: "Seismic and storm exposure shape resilience priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively; verified layers added carefully." },
+    ],
+  },
+  {
+    slug: "cambodia",
+    name: "Cambodia",
+    iso2: "KH",
+    region: "Southeast Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Cambodia's profile reflects a Southeast-Asian context with rapidly evolving urban services, useful for regional comparison and relocation users.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["phnom-penh"],
+    metrics: [
+      { label: "Regional context", value: "Southeast Asia", description: "Southeast-Asian context with Mekong-region dynamics." },
+      { label: "Climate exposure", value: "Monsoon", description: "Monsoon and flood exposure shape adaptation priorities." },
+      { label: "Data confidence", value: "Lower", description: "Verified layers are integrated cautiously; fallback states apply." },
+    ],
+  },
+  {
+    slug: "sri-lanka",
+    name: "Sri Lanka",
+    iso2: "LK",
+    region: "South Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Sri Lanka's profile reflects a South-Asian island context with monsoon climate, maritime exposure, and services activity useful for regional comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["colombo"],
+    metrics: [
+      { label: "Regional context", value: "South Asian island", description: "Island geography with maritime and monsoon dynamics." },
+      { label: "Climate exposure", value: "Coastal and monsoon", description: "Sea-level rise and monsoon variability shape resilience priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "oman",
+    name: "Oman",
+    iso2: "OM",
+    region: "Middle East",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Oman's profile combines Gulf-region geography with a diversifying economy, useful for users comparing Middle-Eastern city contexts and relocation factors.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["muscat"],
+    metrics: [
+      { label: "Regional context", value: "Gulf region", description: "Gulf-region geography with arid climate context." },
+      { label: "Climate exposure", value: "Heat and water", description: "Heat stress and water-resource pressure are key adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "kuwait",
+    name: "Kuwait",
+    iso2: "KW",
+    region: "Middle East",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Kuwait's profile reflects a Gulf-region energy economy with a compact urban core, useful for regional and relocation comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["kuwait-city"],
+    metrics: [
+      { label: "Regional context", value: "Gulf region", description: "Gulf-region geography with arid climate context." },
+      { label: "Climate exposure", value: "Heat and water", description: "Heat stress and water-resource pressure are key adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "bahrain",
+    name: "Bahrain",
+    iso2: "BH",
+    region: "Middle East",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Bahrain's profile combines a small island Gulf state with a financial-services hub, useful for users comparing regional services and relocation contexts.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["manama"],
+    metrics: [
+      { label: "Regional context", value: "Gulf island", description: "Gulf-region island state with financial-services depth." },
+      { label: "Climate exposure", value: "Heat and coastal", description: "Heat stress and coastal exposure shape resilience priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "jordan",
+    name: "Jordan",
+    iso2: "JO",
+    region: "Middle East",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Jordan's profile reflects a Levant-region context with stability anchors and ongoing water-resource priorities, useful for regional comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["amman"],
+    metrics: [
+      { label: "Regional context", value: "Levant", description: "Levant-region geography and policy framing." },
+      { label: "Water context", value: "Constrained", description: "Water-resource pressure shapes adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "tunisia",
+    name: "Tunisia",
+    iso2: "TN",
+    region: "North Africa",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Tunisia's profile combines North-African geography with Mediterranean exposure and a services economy, useful for regional comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["tunis"],
+    metrics: [
+      { label: "Regional context", value: "North Africa", description: "Mediterranean-facing North-African context." },
+      { label: "Climate exposure", value: "Heat and water", description: "Heat and water-resource pressure shape adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "senegal",
+    name: "Senegal",
+    iso2: "SN",
+    region: "West Africa",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Senegal's profile reflects a West-African Atlantic context with regional services and infrastructure activity, useful for regional comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["dakar"],
+    metrics: [
+      { label: "Regional context", value: "West Africa", description: "Atlantic-facing West-African context." },
+      { label: "Climate exposure", value: "Coastal and heat", description: "Coastal erosion and heat shape adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "tanzania",
+    name: "Tanzania",
+    iso2: "TZ",
+    region: "East Africa",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Tanzania's profile reflects an East-African Indian-Ocean context with rapid urban growth and biodiversity considerations, useful for regional comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["dar-es-salaam"],
+    metrics: [
+      { label: "Regional context", value: "East Africa", description: "Indian-Ocean-facing East-African context." },
+      { label: "Climate exposure", value: "Coastal and rainfall", description: "Coastal and rainfall variability shape adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "uganda",
+    name: "Uganda",
+    iso2: "UG",
+    region: "East Africa",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Uganda's profile reflects an inland East-African context with significant urban growth and biodiversity context, useful for regional comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["kampala"],
+    metrics: [
+      { label: "Regional context", value: "East Africa", description: "Inland East-African context with lake-basin dynamics." },
+      { label: "Climate exposure", value: "Rainfall variability", description: "Rainfall and water-cycle variability shape adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "botswana",
+    name: "Botswana",
+    iso2: "BW",
+    region: "Southern Africa",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Botswana's profile combines Southern-African geography with stable institutional context, useful for regional and relocation comparisons.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["gaborone"],
+    metrics: [
+      { label: "Regional context", value: "Southern Africa", description: "Southern-African context with stable institutional anchors." },
+      { label: "Climate exposure", value: "Water and heat", description: "Water-resource pressure and heat shape adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
     ],
   },
 ];

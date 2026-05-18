@@ -69,6 +69,316 @@ function buildModule(
   };
 }
 
+interface NeutralCitySpec {
+  slug: string;
+  name: string;
+  countrySlug: string;
+  countryName: string;
+  region: string;
+  population: string;
+  intro: string;
+  outlook: string;
+  scores: CityScores;
+  relatedCitySlugs?: string[];
+  /**
+   * Optional source-id override. When omitted, a regional source mix
+   * is picked based on the city's region so every record cites at
+   * least one existing entry in the central source registry.
+   */
+  sources?: string[];
+}
+
+const REGIONAL_SOURCE_DEFAULTS: { match: (region: string) => boolean; sources: string[] }[] = [
+  {
+    match: (region) =>
+      /Europe|Baltic|Nordic|Scandinavia/i.test(region) || /EU$/.test(region),
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  },
+  {
+    match: (region) => /North America/i.test(region),
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  },
+  {
+    match: (region) => /Latin America|Caribbean|Central America|South America/i.test(region),
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  },
+  {
+    match: (region) => /Middle East|Gulf|Levant/i.test(region),
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  },
+  {
+    match: (region) => /Africa/i.test(region),
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  },
+  {
+    match: (region) => /Asia|Pacific|Oceania/i.test(region),
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  },
+];
+
+function resolveDefaultSources(region: string): string[] {
+  const match = REGIONAL_SOURCE_DEFAULTS.find((entry) => entry.match(region));
+  return match ? match.sources : ["un-habitat", "nasa-power", "ipcc-urban"];
+}
+
+const MODULE_EXPLANATIONS: Record<ModuleSlug, string> = {
+  "cost-of-living":
+    "Cost-of-living scoring treats affordability as more than headline prices: essential spending, mobility dependence, and service access shape the directional indicator.",
+  "air-quality":
+    "Air-quality scoring prioritises human health. PM2.5, PM10, nitrogen dioxide, and ozone are interpreted against WHO guidance and regional monitoring context.",
+  energy:
+    "Energy pages combine renewable-resource context, infrastructure maturity, and adaptation capacity into a directional readiness signal.",
+  safety:
+    "Safety scoring blends violent-crime context, perceived safety, and institutional response capacity. Verified country emergency profiles attach where available.",
+  "internet-speed":
+    "Internet-speed scoring weighs fixed broadband, mobile network performance, latency, and digital-readiness context for households and remote workers.",
+  "climate-risk":
+    "Climate-risk scoring combines hazard exposure with adaptation capacity. Cities with active resilience programmes reduce expected loss even where exposure is meaningful.",
+};
+
+const NEUTRAL_MODULE_FACTS: Record<ModuleSlug, ModuleFact[]> = {
+  "cost-of-living": [
+    {
+      label: "Affordability framing",
+      value: "Directional indicator",
+      description:
+        "Cost categories include rent, essentials, mobility, and service access; the city-level score is a directional orientation, not a verified measurement.",
+      context:
+        "Use this section as context, not an official cost measurement.",
+    },
+    {
+      label: "Methodology context",
+      value: "Structured benchmark context",
+      description:
+        "The platform interprets cost framing through published reference benchmarks rather than a single index value.",
+      context:
+        "See the methodology page for how the directional score is constructed.",
+    },
+    {
+      label: "Verified local dataset",
+      value: "Pending integration",
+      description:
+        "Source-attributed cost values appear once the platform integrates verified data for this city.",
+      context: "Transparent fallback is shown until then.",
+    },
+  ],
+  "air-quality": [
+    {
+      label: "Pollutant focus",
+      value: "PM2.5, PM10, NO₂, O₃",
+      description:
+        "Health-oriented pollutants are interpreted against WHO and regional reference benchmarks.",
+      context:
+        "Use this section as context, not an official measurement.",
+    },
+    {
+      label: "Monitoring framing",
+      value: "Structured benchmark context",
+      description:
+        "Air-quality framing references WHO guidance and regional monitoring practice rather than a single index value.",
+      context:
+        "Verified monitoring values appear in the dedicated air-quality dataset section once integrated.",
+    },
+    {
+      label: "Verified local dataset",
+      value: "Pending integration",
+      description:
+        "Source-backed metrics will appear when the platform integrates verified city-level measurements.",
+      context: "Transparent fallback is shown until then.",
+    },
+  ],
+  energy: [
+    {
+      label: "Transition framing",
+      value: "Directional indicator",
+      description:
+        "Energy framing combines national policy context, infrastructure maturity, and adaptation capacity into a directional readiness signal.",
+      context:
+        "Use this section as context, not an official measurement.",
+    },
+    {
+      label: "Resource context",
+      value: "Structured benchmark context",
+      description:
+        "Renewable-resource availability is interpreted against published references rather than a single index value.",
+      context:
+        "See the methodology page for how the directional score is constructed.",
+    },
+    {
+      label: "Verified local dataset",
+      value: "Pending integration",
+      description:
+        "Source-backed energy metrics will appear when the platform integrates verified city-level data.",
+      context: "Transparent fallback is shown until then.",
+    },
+  ],
+  safety: [
+    {
+      label: "Safety framing",
+      value: "Directional indicator",
+      description:
+        "Safety framing blends violent-crime context, resident perception, and institutional response capacity into a directional orientation.",
+      context:
+        "Use this section as context, not an official measurement.",
+    },
+    {
+      label: "Verified utility layer",
+      value: "See country emergency profile",
+      description:
+        "Verified country-level emergency contacts attach via the country hub where official publishers have been integrated.",
+      context:
+        "Where no verified profile exists, the platform shows a transparent fallback rather than guessed values.",
+    },
+    {
+      label: "Verified local dataset",
+      value: "Pending integration",
+      description:
+        "Source-backed safety metrics will appear when the platform integrates verified city-level data.",
+      context: "Transparent fallback is shown until then.",
+    },
+  ],
+  "internet-speed": [
+    {
+      label: "Connectivity framing",
+      value: "Directional indicator",
+      description:
+        "Connectivity framing combines national digital-readiness context with widely cited fixed and mobile reference benchmarks.",
+      context:
+        "Use this section as context, not an official measurement.",
+    },
+    {
+      label: "Coverage context",
+      value: "Structured benchmark context",
+      description:
+        "Fixed and mobile coverage are interpreted against published references rather than a single household-level measurement.",
+      context:
+        "See the methodology page for how the directional score is constructed.",
+    },
+    {
+      label: "Verified local dataset",
+      value: "Pending integration",
+      description:
+        "Source-backed connectivity metrics will appear when the platform integrates verified city-level data.",
+      context: "Transparent fallback is shown until then.",
+    },
+  ],
+  "climate-risk": [
+    {
+      label: "Hazard framing",
+      value: "Directional indicator",
+      description:
+        "Climate-risk framing combines regional hazard categories (heat, water, coastal, seismic) with national adaptation capacity.",
+      context:
+        "Use this section as context, not an official measurement.",
+    },
+    {
+      label: "Adaptation context",
+      value: "Structured benchmark context",
+      description:
+        "Adaptation capacity is interpreted against published references rather than a single risk-index value.",
+      context:
+        "See the methodology page for how the directional score is constructed.",
+    },
+    {
+      label: "Verified local dataset",
+      value: "Pending integration",
+      description:
+        "Source-backed climate-risk metrics will appear when the platform integrates verified city-level data.",
+      context: "Transparent fallback is shown until then.",
+    },
+  ],
+};
+
+function neutralModuleSeed(
+  moduleSlug: ModuleSlug,
+  cityName: string,
+  score: number,
+  sources: string[],
+): CityModuleSeed {
+  const summaries: Record<ModuleSlug, string> = {
+    "cost-of-living": `${cityName}'s cost-of-living profile is a directional indicator pending integration of verified city-level data; structured benchmark context applies.`,
+    "air-quality": `${cityName}'s air-quality profile is a directional indicator framed against WHO and regional benchmarks; verified city-level measurements appear in the dedicated air-quality dataset section once integrated.`,
+    energy: `${cityName}'s energy-readiness profile is a directional indicator that combines national policy framing with city-level adaptation context.`,
+    safety: `${cityName}'s safety profile is a directional indicator; verified country-level emergency profiles attach via the country hub where available.`,
+    "internet-speed": `${cityName}'s connectivity profile is a directional indicator combining national digital-readiness context with widely cited speed-test references.`,
+    "climate-risk": `${cityName}'s climate-risk profile is a directional indicator combining regional hazard categories with national adaptation capacity.`,
+  };
+  return {
+    score,
+    summary: summaries[moduleSlug],
+    explanation: MODULE_EXPLANATIONS[moduleSlug],
+    sources,
+    facts: NEUTRAL_MODULE_FACTS[moduleSlug],
+  };
+}
+
+function buildNeutralCitySeed(spec: NeutralCitySpec): CitySeed {
+  const sources = spec.sources ?? resolveDefaultSources(spec.region);
+  const scoreFor: Record<ModuleSlug, number> = {
+    "cost-of-living": spec.scores.affordability,
+    "air-quality": spec.scores.airQuality,
+    energy: spec.scores.energy,
+    safety: Math.round(
+      (spec.scores.resilience + spec.scores.overall) / 2,
+    ),
+    "internet-speed": Math.round(
+      (spec.scores.overall + spec.scores.energy) / 2,
+    ),
+    "climate-risk": spec.scores.resilience,
+  };
+  const moduleSlugs: ModuleSlug[] = [
+    "cost-of-living",
+    "air-quality",
+    "energy",
+    "safety",
+    "internet-speed",
+    "climate-risk",
+  ];
+  const modules = Object.fromEntries(
+    moduleSlugs.map((moduleSlug) => [
+      moduleSlug,
+      neutralModuleSeed(moduleSlug, spec.name, scoreFor[moduleSlug], sources),
+    ]),
+  ) as Record<ModuleSlug, CityModuleSeed>;
+
+  return {
+    slug: spec.slug,
+    name: spec.name,
+    countrySlug: spec.countrySlug,
+    countryName: spec.countryName,
+    region: spec.region,
+    population: spec.population,
+    intro: spec.intro,
+    outlook: spec.outlook,
+    sources,
+    scores: spec.scores,
+    metrics: [
+      {
+        label: "Overall city intelligence",
+        value: String(spec.scores.overall),
+        unit: "/100",
+        score: spec.scores.overall,
+        description:
+          "Composite directional score across affordability, air quality, clean energy, and resilience.",
+      },
+      {
+        label: "Data confidence",
+        value: "Directional",
+        description:
+          "Directional indicators pending integration of verified city-level data.",
+      },
+      {
+        label: "Verified utility layers",
+        value: "See country hub",
+        description:
+          "Emergency, healthcare, and transport verification status appears on the country hub.",
+      },
+    ],
+    modules,
+    relatedCitySlugs: spec.relatedCitySlugs,
+  };
+}
+
 function buildCity(seed: CitySeed): City {
   const modules = Object.fromEntries(
     (Object.keys(seed.modules) as ModuleSlug[]).map((slug) => [
@@ -7997,6 +8307,599 @@ const seeds: CitySeed[] = [
       },
     },
   },
+  // --- Expansion batch: 40 new cities across Europe, North America, Latin
+  // America, Asia, Middle East, Africa, and Oceania. Each entry uses
+  // `buildNeutralCitySeed` with a hand-written intro/outlook + a
+  // directional score profile. Module data is generated by the helper
+  // and presented as a directional indicator pending verified records.
+  buildNeutralCitySeed({
+    slug: "athens",
+    name: "Athens",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Southern Europe",
+    population: "~3.1M metro",
+    intro:
+      "Athens is a Mediterranean capital with deep cultural depth, a growing remote-work scene, and city-intelligence categories that benefit from heat-and-water adaptation context.",
+    outlook:
+      "Use the Athens profile to compare cost framing, transport access, healthcare and emergency context, and climate-adaptation priorities alongside Mediterranean peers.",
+    scores: { overall: 70, affordability: 72, airQuality: 65, energy: 70, resilience: 65 },
+    relatedCitySlugs: ["rome", "lisbon", "barcelona"],
+  }),
+  buildNeutralCitySeed({
+    slug: "budapest",
+    name: "Budapest",
+    countrySlug: "hungary",
+    countryName: "Hungary",
+    region: "Central Europe",
+    population: "~3.0M metro",
+    intro:
+      "Budapest is a Central-European capital often considered for cost-friendly relocation, with structured city-intelligence across transport, healthcare framing, and public services.",
+    outlook:
+      "Use the Budapest profile to compare affordability framing, transport access, and country-level context alongside other Central-European capitals.",
+    scores: { overall: 73, affordability: 78, airQuality: 70, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["prague", "warsaw", "vienna"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bucharest",
+    name: "Bucharest",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "~2.3M metro",
+    intro:
+      "Bucharest is a fast-growing Eastern-European capital known for digital services and competitive cost framing for remote-work comparison.",
+    outlook:
+      "Compare Bucharest's directional indicators across cost, connectivity, transport, and country-level context alongside other EU capitals.",
+    scores: { overall: 70, affordability: 80, airQuality: 65, energy: 68, resilience: 65 },
+    relatedCitySlugs: ["warsaw", "prague", "budapest"],
+  }),
+  buildNeutralCitySeed({
+    slug: "belgrade",
+    name: "Belgrade",
+    countrySlug: "serbia",
+    countryName: "Serbia",
+    region: "Southeastern Europe",
+    population: "~1.7M metro",
+    intro:
+      "Belgrade is a regional Western-Balkans hub with growing services activity and a profile useful for relocation and regional comparison.",
+    outlook:
+      "Use the Belgrade profile to review directional cost framing, transport access, and country-level context against neighbouring capitals.",
+    scores: { overall: 68, affordability: 80, airQuality: 60, energy: 60, resilience: 62 },
+    relatedCitySlugs: ["zagreb", "bucharest", "budapest"],
+  }),
+  buildNeutralCitySeed({
+    slug: "zagreb",
+    name: "Zagreb",
+    countrySlug: "croatia",
+    countryName: "Croatia",
+    region: "Southeastern Europe",
+    population: "~1.1M metro",
+    intro:
+      "Zagreb is Croatia's Adriatic-adjacent capital, useful for comparing relocation and remote-work contexts within the EU regulatory frame.",
+    outlook:
+      "Compare Zagreb directional indicators alongside other EU regional capitals using cost, connectivity, transport, and country-level signals.",
+    scores: { overall: 72, affordability: 76, airQuality: 70, energy: 68, resilience: 68 },
+    relatedCitySlugs: ["ljubljana", "belgrade", "vienna"],
+  }),
+  buildNeutralCitySeed({
+    slug: "ljubljana",
+    name: "Ljubljana",
+    countrySlug: "slovenia",
+    countryName: "Slovenia",
+    region: "Central Europe",
+    population: "~0.5M metro",
+    intro:
+      "Ljubljana is a compact Alpine-adjacent EU capital often included in relocation and remote-work comparisons for its mid-size, walkable profile.",
+    outlook:
+      "Use the Ljubljana profile to compare compact Central-European city contexts alongside Vienna, Zagreb, and Bratislava.",
+    scores: { overall: 76, affordability: 72, airQuality: 75, energy: 72, resilience: 75 },
+    relatedCitySlugs: ["vienna", "zagreb", "bratislava"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bratislava",
+    name: "Bratislava",
+    countrySlug: "slovakia",
+    countryName: "Slovakia",
+    region: "Central Europe",
+    population: "~0.7M metro",
+    intro:
+      "Bratislava is a Visegrád-region EU capital with a compact urban core and close connections to Vienna, useful for cross-border relocation comparison.",
+    outlook:
+      "Compare Bratislava's directional indicators alongside Vienna, Budapest, and Prague for Central-European relocation review.",
+    scores: { overall: 73, affordability: 74, airQuality: 70, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["vienna", "budapest", "prague"],
+  }),
+  buildNeutralCitySeed({
+    slug: "tallinn",
+    name: "Tallinn",
+    countrySlug: "estonia",
+    countryName: "Estonia",
+    region: "Baltic Europe",
+    population: "~0.6M metro",
+    intro:
+      "Tallinn is a compact Baltic EU capital widely cited for digital-government infrastructure and remote-work relocation comparison.",
+    outlook:
+      "Use the Tallinn profile to compare digital-readiness framing, cost context, and country-level intelligence alongside other Baltic peers.",
+    scores: { overall: 78, affordability: 72, airQuality: 80, energy: 75, resilience: 76 },
+    relatedCitySlugs: ["riga", "vilnius", "helsinki"],
+  }),
+  buildNeutralCitySeed({
+    slug: "riga",
+    name: "Riga",
+    countrySlug: "latvia",
+    countryName: "Latvia",
+    region: "Baltic Europe",
+    population: "~0.9M metro",
+    intro:
+      "Riga is Latvia's Baltic capital with a compact services economy and EU regulatory anchoring, useful for regional and relocation comparisons.",
+    outlook:
+      "Compare Riga's directional indicators across cost framing, transport access, and country-level context alongside other Baltic and Nordic capitals.",
+    scores: { overall: 74, affordability: 74, airQuality: 76, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["tallinn", "vilnius", "stockholm"],
+  }),
+  buildNeutralCitySeed({
+    slug: "vilnius",
+    name: "Vilnius",
+    countrySlug: "lithuania",
+    countryName: "Lithuania",
+    region: "Baltic Europe",
+    population: "~0.8M metro",
+    intro:
+      "Vilnius is Lithuania's compact Baltic EU capital with growing financial-services activity, useful for relocation and remote-work comparison.",
+    outlook:
+      "Use the Vilnius profile to compare cost framing, connectivity, and country-level context alongside other Baltic capitals.",
+    scores: { overall: 74, affordability: 76, airQuality: 76, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["tallinn", "riga", "warsaw"],
+  }),
+  buildNeutralCitySeed({
+    slug: "boston",
+    name: "Boston",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~4.9M metro",
+    intro:
+      "Boston is a dense North-American hub anchored by universities, life-sciences, and a strong public-transport core, useful for relocation and remote-work review.",
+    outlook:
+      "Use the Boston profile to compare cost framing, transport access, healthcare framing, and country-level context alongside other US metros.",
+    scores: { overall: 80, affordability: 60, airQuality: 78, energy: 74, resilience: 75 },
+    relatedCitySlugs: ["new-york", "washington-dc", "toronto"],
+  }),
+  buildNeutralCitySeed({
+    slug: "washington-dc",
+    name: "Washington DC",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~6.3M metro",
+    intro:
+      "Washington DC is the United States capital with strong institutional density and useful for comparing public-services and policy-context dimensions of city intelligence.",
+    outlook:
+      "Use the Washington DC profile to compare structured indicators across cost, transport, safety, and country-level context.",
+    scores: { overall: 78, affordability: 60, airQuality: 76, energy: 72, resilience: 76 },
+    relatedCitySlugs: ["new-york", "boston", "chicago"],
+  }),
+  buildNeutralCitySeed({
+    slug: "miami",
+    name: "Miami",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~6.1M metro",
+    intro:
+      "Miami is a coastal US metro with strong Latin-American connectivity and active coastal-climate adaptation, useful for relocation and regional comparison.",
+    outlook:
+      "Use the Miami profile to compare cost framing, transport access, and climate-resilience context alongside other coastal US metros.",
+    scores: { overall: 72, affordability: 64, airQuality: 70, energy: 70, resilience: 60 },
+    relatedCitySlugs: ["new-york", "mexico-city", "panama-city"],
+  }),
+  buildNeutralCitySeed({
+    slug: "austin",
+    name: "Austin",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~2.4M metro",
+    intro:
+      "Austin is a fast-growing Texan metro with a strong technology economy and active urban-growth dynamics, useful for relocation and remote-work comparison.",
+    outlook:
+      "Use the Austin profile to compare cost framing, connectivity, transport, and country-level context alongside other US tech-economy hubs.",
+    scores: { overall: 74, affordability: 70, airQuality: 70, energy: 72, resilience: 68 },
+    relatedCitySlugs: ["dallas", "san-francisco", "miami"],
+  }),
+  buildNeutralCitySeed({
+    slug: "dallas",
+    name: "Dallas",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~7.8M metro",
+    intro:
+      "Dallas is a large North-Texas metro with strong logistics, finance, and corporate-services depth, useful for cross-region US comparison.",
+    outlook:
+      "Use the Dallas profile to compare cost framing, transport access, and country-level context alongside other large US metros.",
+    scores: { overall: 72, affordability: 72, airQuality: 68, energy: 70, resilience: 65 },
+    relatedCitySlugs: ["austin", "chicago", "miami"],
+  }),
+  buildNeutralCitySeed({
+    slug: "montreal",
+    name: "Montreal",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~4.3M metro",
+    intro:
+      "Montreal is a bilingual Canadian metro with strong cultural depth and university density, useful for relocation comparison and remote-work review.",
+    outlook:
+      "Use the Montreal profile to compare cost framing, transport access, healthcare framing, and country-level context alongside Toronto and Vancouver.",
+    scores: { overall: 77, affordability: 72, airQuality: 76, energy: 76, resilience: 75 },
+    relatedCitySlugs: ["toronto", "vancouver", "boston"],
+  }),
+  buildNeutralCitySeed({
+    slug: "calgary",
+    name: "Calgary",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~1.6M metro",
+    intro:
+      "Calgary is a prairie-foothills Canadian metro anchored by energy and services, useful for cross-region Canadian comparison.",
+    outlook:
+      "Use the Calgary profile to compare cost framing, country-level healthcare and transport context, and relocation framing alongside Toronto and Vancouver.",
+    scores: { overall: 74, affordability: 74, airQuality: 78, energy: 78, resilience: 72 },
+    relatedCitySlugs: ["vancouver", "toronto", "seattle"],
+  }),
+  buildNeutralCitySeed({
+    slug: "medellin",
+    name: "Medellín",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "Latin America",
+    population: "~4.0M metro",
+    intro:
+      "Medellín is a Colombian metro widely referenced for active urban renewal and metro infrastructure, useful for Latin-American relocation comparison.",
+    outlook:
+      "Use the Medellín profile to compare cost framing, transport access, and country-level context alongside Bogotá and other Andean metros.",
+    scores: { overall: 70, affordability: 78, airQuality: 60, energy: 65, resilience: 65 },
+    relatedCitySlugs: ["bogota", "lima", "quito"],
+  }),
+  buildNeutralCitySeed({
+    slug: "san-jose",
+    name: "San José",
+    countrySlug: "costa-rica",
+    countryName: "Costa Rica",
+    region: "Central America",
+    population: "~2.2M metro",
+    intro:
+      "San José is Costa Rica's compact capital known for conservation policy and a renewable-electricity profile, useful for Central-American comparison.",
+    outlook:
+      "Use the San José profile to compare cost framing, transport access, and country-level context alongside Panama City and other Central-American metros.",
+    scores: { overall: 72, affordability: 70, airQuality: 70, energy: 80, resilience: 70 },
+    relatedCitySlugs: ["panama-city", "santo-domingo", "guatemala-city"],
+  }),
+  buildNeutralCitySeed({
+    slug: "santo-domingo",
+    name: "Santo Domingo",
+    countrySlug: "dominican-republic",
+    countryName: "Dominican Republic",
+    region: "Caribbean",
+    population: "~3.5M metro",
+    intro:
+      "Santo Domingo is the Dominican Republic's capital and a major Caribbean services centre, useful for regional and relocation comparison.",
+    outlook:
+      "Use the Santo Domingo profile to compare cost framing, country-level transport and healthcare context, and Caribbean climate resilience.",
+    scores: { overall: 65, affordability: 72, airQuality: 60, energy: 60, resilience: 58 },
+    relatedCitySlugs: ["panama-city", "san-jose", "mexico-city"],
+  }),
+  buildNeutralCitySeed({
+    slug: "guatemala-city",
+    name: "Guatemala City",
+    countrySlug: "guatemala",
+    countryName: "Guatemala",
+    region: "Central America",
+    population: "~3.0M metro",
+    intro:
+      "Guatemala City is Central America's largest metro and a regional services centre, useful for cross-country regional comparison.",
+    outlook:
+      "Use the Guatemala City profile to compare cost framing, country-level transport and healthcare context, and seismic-climate resilience.",
+    scores: { overall: 60, affordability: 70, airQuality: 55, energy: 55, resilience: 55 },
+    relatedCitySlugs: ["san-jose", "santo-domingo", "mexico-city"],
+  }),
+  buildNeutralCitySeed({
+    slug: "guangzhou",
+    name: "Guangzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~18.7M metro",
+    intro:
+      "Guangzhou is a major southern-Chinese megacity and a long-standing trade hub, useful for cross-region Chinese comparison and supply-chain context.",
+    outlook:
+      "Use the Guangzhou profile to compare cost framing, transport access, and country-level context alongside Shanghai, Beijing, and Shenzhen.",
+    scores: { overall: 70, affordability: 68, airQuality: 60, energy: 68, resilience: 62 },
+    relatedCitySlugs: ["shenzhen", "shanghai", "hong-kong"],
+  }),
+  buildNeutralCitySeed({
+    slug: "chengdu",
+    name: "Chengdu",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~21.4M metro",
+    intro:
+      "Chengdu is a fast-growing inland Chinese megacity with a strong cultural and technology profile, useful for inland-China comparison and relocation review.",
+    outlook:
+      "Use the Chengdu profile to compare cost framing, transport access, and country-level context alongside coastal and other inland Chinese metros.",
+    scores: { overall: 68, affordability: 72, airQuality: 58, energy: 64, resilience: 60 },
+    relatedCitySlugs: ["shanghai", "beijing", "wuhan"],
+  }),
+  buildNeutralCitySeed({
+    slug: "wuhan",
+    name: "Wuhan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~13.4M metro",
+    intro:
+      "Wuhan is a major central-Chinese megacity at the confluence of the Yangtze and Han rivers, useful for inland-China comparison and logistics framing.",
+    outlook:
+      "Use the Wuhan profile to compare cost framing, transport access, and country-level context alongside Shanghai, Beijing, and Chengdu.",
+    scores: { overall: 66, affordability: 72, airQuality: 56, energy: 62, resilience: 58 },
+    relatedCitySlugs: ["shanghai", "chengdu", "beijing"],
+  }),
+  buildNeutralCitySeed({
+    slug: "busan",
+    name: "Busan",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~3.4M metro",
+    intro:
+      "Busan is South Korea's second city and a major Pacific port, useful for cross-region Korean comparison and maritime-logistics framing.",
+    outlook:
+      "Use the Busan profile to compare cost framing, transport access, and country-level context alongside Seoul and other East-Asian metros.",
+    scores: { overall: 74, affordability: 72, airQuality: 68, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["seoul", "fukuoka", "tokyo"],
+  }),
+  buildNeutralCitySeed({
+    slug: "fukuoka",
+    name: "Fukuoka",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~2.6M metro",
+    intro:
+      "Fukuoka is a Kyushu-region Japanese metro known for accessibility, food culture, and growing remote-work activity, useful for cross-region Japanese comparison.",
+    outlook:
+      "Use the Fukuoka profile to compare cost framing, transport access, and country-level context alongside Tokyo and Osaka.",
+    scores: { overall: 78, affordability: 74, airQuality: 76, energy: 72, resilience: 74 },
+    relatedCitySlugs: ["osaka", "tokyo", "kyoto"],
+  }),
+  buildNeutralCitySeed({
+    slug: "chiang-mai",
+    name: "Chiang Mai",
+    countrySlug: "thailand",
+    countryName: "Thailand",
+    region: "Southeast Asia",
+    population: "~1.2M metro",
+    intro:
+      "Chiang Mai is a northern-Thai metro frequently included in remote-work and relocation comparisons for its compact form and cost framing.",
+    outlook:
+      "Use the Chiang Mai profile to compare cost framing, country-level transport and healthcare context, and seasonal air-quality dynamics.",
+    scores: { overall: 70, affordability: 80, airQuality: 50, energy: 60, resilience: 62 },
+    relatedCitySlugs: ["bangkok", "kuala-lumpur", "ho-chi-minh-city"],
+  }),
+  buildNeutralCitySeed({
+    slug: "phnom-penh",
+    name: "Phnom Penh",
+    countrySlug: "cambodia",
+    countryName: "Cambodia",
+    region: "Southeast Asia",
+    population: "~2.3M metro",
+    intro:
+      "Phnom Penh is Cambodia's capital at the Mekong-Tonlé Sap confluence, with growing services activity and Southeast-Asian regional connectivity.",
+    outlook:
+      "Use the Phnom Penh profile to compare cost framing, country-level transport and healthcare context, and monsoon-climate resilience.",
+    scores: { overall: 62, affordability: 78, airQuality: 55, energy: 55, resilience: 55 },
+    relatedCitySlugs: ["bangkok", "ho-chi-minh-city", "hanoi"],
+  }),
+  buildNeutralCitySeed({
+    slug: "colombo",
+    name: "Colombo",
+    countrySlug: "sri-lanka",
+    countryName: "Sri Lanka",
+    region: "South Asia",
+    population: "~5.6M metro",
+    intro:
+      "Colombo is Sri Lanka's commercial capital and a major Indian-Ocean trade node, useful for South-Asian regional comparison.",
+    outlook:
+      "Use the Colombo profile to compare cost framing, country-level transport and healthcare context, and coastal-climate resilience.",
+    scores: { overall: 62, affordability: 74, airQuality: 58, energy: 58, resilience: 58 },
+    relatedCitySlugs: ["mumbai", "bangalore", "delhi"],
+  }),
+  buildNeutralCitySeed({
+    slug: "muscat",
+    name: "Muscat",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~1.6M metro",
+    intro:
+      "Muscat is Oman's coastal capital with a calm urban profile and growing services activity, useful for Gulf-region comparison.",
+    outlook:
+      "Use the Muscat profile to compare cost framing, country-level transport and healthcare context, and arid-climate resilience.",
+    scores: { overall: 70, affordability: 70, airQuality: 62, energy: 68, resilience: 64 },
+    relatedCitySlugs: ["dubai", "abu-dhabi", "doha"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kuwait-city",
+    name: "Kuwait City",
+    countrySlug: "kuwait",
+    countryName: "Kuwait",
+    region: "Middle East",
+    population: "~3.3M metro",
+    intro:
+      "Kuwait City is Kuwait's capital and largest urban centre, anchored by energy activity and a compact services economy.",
+    outlook:
+      "Use the Kuwait City profile to compare cost framing, country-level transport and healthcare context, and Gulf-region resilience.",
+    scores: { overall: 66, affordability: 70, airQuality: 58, energy: 70, resilience: 60 },
+    relatedCitySlugs: ["riyadh", "dubai", "doha"],
+  }),
+  buildNeutralCitySeed({
+    slug: "manama",
+    name: "Manama",
+    countrySlug: "bahrain",
+    countryName: "Bahrain",
+    region: "Middle East",
+    population: "~0.7M metro",
+    intro:
+      "Manama is Bahrain's compact capital and a long-standing Gulf-region financial-services hub.",
+    outlook:
+      "Use the Manama profile to compare cost framing, country-level context, and Gulf-region resilience alongside Doha and Dubai.",
+    scores: { overall: 70, affordability: 68, airQuality: 60, energy: 65, resilience: 60 },
+    relatedCitySlugs: ["doha", "dubai", "abu-dhabi"],
+  }),
+  buildNeutralCitySeed({
+    slug: "amman",
+    name: "Amman",
+    countrySlug: "jordan",
+    countryName: "Jordan",
+    region: "Middle East",
+    population: "~4.0M metro",
+    intro:
+      "Amman is Jordan's capital and a regional Levant hub, useful for comparing Middle-Eastern city contexts and humanitarian-region framing.",
+    outlook:
+      "Use the Amman profile to compare cost framing, country-level transport and healthcare context, and Levant-region resilience.",
+    scores: { overall: 66, affordability: 72, airQuality: 60, energy: 60, resilience: 58 },
+    relatedCitySlugs: ["dubai", "cairo", "riyadh"],
+  }),
+  buildNeutralCitySeed({
+    slug: "tunis",
+    name: "Tunis",
+    countrySlug: "tunisia",
+    countryName: "Tunisia",
+    region: "North Africa",
+    population: "~2.7M metro",
+    intro:
+      "Tunis is Tunisia's Mediterranean capital with North-African and European-adjacent context, useful for regional and relocation comparison.",
+    outlook:
+      "Use the Tunis profile to compare cost framing, country-level context, and Mediterranean-climate resilience.",
+    scores: { overall: 64, affordability: 76, airQuality: 60, energy: 60, resilience: 58 },
+    relatedCitySlugs: ["casablanca", "rabat", "cairo"],
+  }),
+  buildNeutralCitySeed({
+    slug: "rabat",
+    name: "Rabat",
+    countrySlug: "morocco",
+    countryName: "Morocco",
+    region: "North Africa",
+    population: "~2.0M metro",
+    intro:
+      "Rabat is Morocco's administrative capital with a calm coastal urban profile, useful for cross-region Moroccan comparison.",
+    outlook:
+      "Use the Rabat profile to compare cost framing, country-level transport and healthcare context, and Mediterranean-Atlantic resilience.",
+    scores: { overall: 66, affordability: 74, airQuality: 65, energy: 60, resilience: 60 },
+    relatedCitySlugs: ["casablanca", "tunis", "cairo"],
+  }),
+  buildNeutralCitySeed({
+    slug: "dakar",
+    name: "Dakar",
+    countrySlug: "senegal",
+    countryName: "Senegal",
+    region: "West Africa",
+    population: "~3.9M metro",
+    intro:
+      "Dakar is Senegal's Atlantic-facing capital and a major West-African services and logistics hub.",
+    outlook:
+      "Use the Dakar profile to compare cost framing, country-level context, and West-African coastal resilience.",
+    scores: { overall: 62, affordability: 74, airQuality: 58, energy: 56, resilience: 56 },
+    relatedCitySlugs: ["accra", "lagos", "casablanca"],
+  }),
+  buildNeutralCitySeed({
+    slug: "dar-es-salaam",
+    name: "Dar es Salaam",
+    countrySlug: "tanzania",
+    countryName: "Tanzania",
+    region: "East Africa",
+    population: "~7.4M metro",
+    intro:
+      "Dar es Salaam is Tanzania's largest city and a major Indian-Ocean port, useful for cross-region East-African comparison.",
+    outlook:
+      "Use the Dar es Salaam profile to compare cost framing, country-level transport and healthcare context, and coastal resilience.",
+    scores: { overall: 60, affordability: 76, airQuality: 56, energy: 54, resilience: 54 },
+    relatedCitySlugs: ["nairobi", "kampala", "addis-ababa"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kampala",
+    name: "Kampala",
+    countrySlug: "uganda",
+    countryName: "Uganda",
+    region: "East Africa",
+    population: "~3.8M metro",
+    intro:
+      "Kampala is Uganda's capital and largest urban centre, with a regional services and logistics role useful for cross-region East-African comparison.",
+    outlook:
+      "Use the Kampala profile to compare cost framing, country-level transport and healthcare context, and inland-East-Africa resilience.",
+    scores: { overall: 60, affordability: 78, airQuality: 56, energy: 54, resilience: 54 },
+    relatedCitySlugs: ["nairobi", "kigali", "dar-es-salaam"],
+  }),
+  buildNeutralCitySeed({
+    slug: "gaborone",
+    name: "Gaborone",
+    countrySlug: "botswana",
+    countryName: "Botswana",
+    region: "Southern Africa",
+    population: "~0.4M metro",
+    intro:
+      "Gaborone is Botswana's compact capital with stable institutional context and a calm urban profile, useful for Southern-African comparison.",
+    outlook:
+      "Use the Gaborone profile to compare cost framing, country-level context, and Southern-African resilience.",
+    scores: { overall: 64, affordability: 72, airQuality: 68, energy: 60, resilience: 60 },
+    relatedCitySlugs: ["johannesburg", "cape-town", "nairobi"],
+  }),
+  buildNeutralCitySeed({
+    slug: "adelaide",
+    name: "Adelaide",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~1.4M metro",
+    intro:
+      "Adelaide is a Southern-Australian metro known for compact form, food and wine, and growing services activity, useful for cross-region Australian comparison.",
+    outlook:
+      "Use the Adelaide profile to compare cost framing, country-level transport and healthcare context, and quality-of-life signals.",
+    scores: { overall: 78, affordability: 70, airQuality: 80, energy: 74, resilience: 75 },
+    relatedCitySlugs: ["melbourne", "perth", "brisbane"],
+  }),
+  buildNeutralCitySeed({
+    slug: "canberra",
+    name: "Canberra",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~0.5M metro",
+    intro:
+      "Canberra is the Australian capital with a planned, low-density form and strong public-services density, useful for cross-region Australian comparison.",
+    outlook:
+      "Use the Canberra profile to compare cost framing, country-level context, and quality-of-life signals alongside other Australian metros.",
+    scores: { overall: 80, affordability: 68, airQuality: 84, energy: 74, resilience: 78 },
+    relatedCitySlugs: ["sydney", "melbourne", "adelaide"],
+  }),
+  buildNeutralCitySeed({
+    slug: "christchurch",
+    name: "Christchurch",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "~0.4M metro",
+    intro:
+      "Christchurch is New Zealand's largest South-Island city with active urban renewal following past seismic events, useful for cross-region NZ comparison.",
+    outlook:
+      "Use the Christchurch profile to compare cost framing, country-level context, and seismic-resilience signals alongside Auckland and Wellington.",
+    scores: { overall: 76, affordability: 70, airQuality: 80, energy: 72, resilience: 68 },
+    relatedCitySlugs: ["auckland", "wellington", "melbourne"],
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);

@@ -112,3 +112,49 @@ All new entries cite existing source ids from
 [`lib/data/sources/index.ts`](../lib/data/sources/index.ts); no source
 URLs were invented. Structured indicators on city pages are directional
 and intended for orientation, consistent with the rest of the platform.
+
+### Latest expansion batch — 42 cities, 24 countries
+
+42 cities and 24 countries added in a single batch using the new
+`buildNeutralCitySeed` helper at the top of
+[`lib/data/cities.ts`](../lib/data/cities.ts). The helper generates a
+complete `CitySeed` from a small spec (slug, name, country slugs,
+region, approximate metro population, hand-written intro/outlook, and
+five directional scores). Module-level facts use neutral language and
+explicitly mark verified records as `Pending integration` rather than
+inventing pollutant, cost, safety, or connectivity values.
+
+Cities added (region-grouped):
+
+- **Europe**: Athens, Budapest, Bucharest, Belgrade, Zagreb, Ljubljana,
+  Bratislava, Tallinn, Riga, Vilnius.
+- **North America**: Boston, Washington DC, Miami, Austin, Dallas,
+  Montreal, Calgary.
+- **Latin America / Caribbean**: Medellín, San José (Costa Rica),
+  Santo Domingo, Guatemala City.
+- **Asia**: Guangzhou, Chengdu, Wuhan, Busan, Fukuoka, Chiang Mai,
+  Phnom Penh, Colombo.
+- **Middle East**: Muscat, Kuwait City, Manama, Amman.
+- **Africa**: Tunis, Rabat, Dakar, Dar es Salaam, Kampala, Gaborone.
+- **Oceania**: Adelaide, Canberra, Christchurch.
+
+San Juan (Puerto Rico) was intentionally skipped to avoid extending
+the country model into territory-specific framing in this batch.
+
+Countries added: Greece, Hungary, Romania, Serbia, Croatia, Slovenia,
+Slovakia, Estonia, Latvia, Lithuania, Costa Rica, Dominican Republic,
+Guatemala, Cambodia, Sri Lanka, Oman, Kuwait, Bahrain, Jordan, Tunisia,
+Senegal, Tanzania, Uganda, Botswana.
+
+Existing country `citySlugs` arrays were updated for: United States
+(added Boston, Washington DC, Miami, Austin, Dallas), Canada (Montreal,
+Calgary), Australia (Adelaide, Canberra), China (Guangzhou, Chengdu,
+Wuhan), South Korea (Busan), Japan (Fukuoka), Thailand (Chiang Mai),
+Morocco (Rabat), Colombia (Medellín), New Zealand (Christchurch).
+
+No verified emergency, healthcare, transport, or country-indicator
+records were added for the newly added countries — they intentionally
+render the transparent fallback until each field can be attributed to
+an official publisher. The static page count grew from 712 to 1,030
+(42 city pages + 252 module pages + 24 country pages + the existing
+712 baseline).
