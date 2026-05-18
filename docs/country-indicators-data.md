@@ -7,7 +7,7 @@ The country-indicators layer is the second verified dataset to ride on the platf
 - Dataset ID: `global-country-indicators`
 - Publisher: World Bank — World Development Indicators
 - Verification status: `partial`
-- Verified batches: **6 indicators × 10 countries = 60 verified records**
+- Verified batches: **9 indicators × 10 countries = 90 verified records**
 - Source: World Bank Data API (https://data.worldbank.org/), `lastupdated: 2026-04-08`
 
 Verified batches cover Australia, Canada, Denmark, France, Germany, Japan, Netherlands, Singapore, United Kingdom, and United States. Other supported countries continue to render transparent fallback until later batches integrate additional records.
@@ -22,10 +22,21 @@ Verified batches cover Australia, Canada, Denmark, France, Germany, Japan, Nethe
 | `gdp_per_capita` | `NY.GDP.PCAP.CD` | current US$ | 2 |
 | `life_expectancy` | `SP.DYN.LE00.IN` | years | 2 |
 | `health_expenditure` | `SH.XPD.CHEX.PC.CD` | current US$ | 2 |
+| `unemployment_rate` | `SL.UEM.TOTL.ZS` | percent | 3 |
+| `co2_emissions_per_capita` | `EN.GHG.CO2.PC.CE.AR5` | metric tons per capita | 3 |
+| `digital_access` | `IT.NET.BBND.P2` | per 100 people | 3 |
 
 Every record carries `verificationStatus: "verified"`, cites `world-bank-wdi`, and uses `datasetId: "global-country-indicators"`. Values are stored as the raw numbers returned by the World Bank API — no rounding, scaling, or interpolation is performed.
 
-Different indicators may have different latest-available years. For the current batches, `population`, `internet_usage`, `urban_population_share`, `gdp_per_capita`, and `life_expectancy` are mostly available for 2024; `health_expenditure` lags by roughly one year for several countries and uses 2023 where 2024 is not yet published. Each record carries its own `dataYear`, so the surface UI surfaces the year alongside the value.
+Different indicators may have different latest-available years. For the current batches, `population`, `internet_usage`, `urban_population_share`, `gdp_per_capita`, and `life_expectancy` are mostly available for 2024; `health_expenditure` lags by roughly one year for several countries and uses 2023 where 2024 is not yet published; `unemployment_rate` (ILO-modeled) is mostly available for 2025; `co2_emissions_per_capita` and `digital_access` are 2024. Each record carries its own `dataYear`, so the surface UI surfaces the year alongside the value.
+
+### `digital_access` indicator mapping
+
+The platform's `digital_access` indicator key is currently sourced from the World Bank "Fixed broadband subscriptions (per 100 people)" indicator (`IT.NET.BBND.P2`). The label rendered in `CountryIndicatorCards` and `CountryIndicatorsTable` is **"Fixed broadband subscriptions"**, and the unit is **"per 100 people"** — both surfaced from `COUNTRY_INDICATOR_LABELS` / `COUNTRY_INDICATOR_UNITS` in `lib/data/official/country-indicators/types.ts`. The indicator is a rate per 100 people, not a percentage of population, so it is **excluded from the validator's `PERCENT_KEYS` set** and may legitimately exceed 100 in countries with multi-subscription households. Do not relabel this indicator as a generic "internet access" measurement.
+
+### `co2_emissions_per_capita` indicator mapping
+
+The World Bank archived the legacy `EN.ATM.CO2E.PC` indicator; the current published replacement is `EN.GHG.CO2.PC.CE.AR5` (Carbon dioxide emissions excluding LULUCF per capita, in tonnes of CO₂ equivalent per capita, AR5 framework). The ingestion script and stored records use the current code; the dataset's notes and `coverage.notes` field both reference the AR5-based code so the attribution is honest.
 
 ## Refreshing a batch
 
@@ -38,6 +49,10 @@ Different indicators may have different latest-available years. For the current 
 # refresh only batch 2 (used when adding the second World Bank batch)
 INDICATOR_FILTER="gdp_per_capita:life_expectancy:health_expenditure" \
   ./scripts/data/ingest-country-indicators.sh > /tmp/batch2.ts
+
+# refresh only batch 3 (unemployment / CO2 / fixed broadband)
+INDICATOR_FILTER="unemployment_rate:co2_emissions_per_capita:digital_access" \
+  ./scripts/data/ingest-country-indicators.sh > /tmp/batch3.ts
 ```
 
 After reviewing the generated file, paste the records into `lib/data/official/country-indicators/dataset.ts` (between the existing array brackets), then run:
@@ -46,7 +61,7 @@ After reviewing the generated file, paste the records into `lib/data/official/co
 npm run typecheck && npm run lint && npm run build
 ```
 
-The validator in `lib/data/official/country-indicators/validate.ts` runs at module load and refuses any record that violates the schema. Existing checks cover: country slug, iso2 match, source id registration, dataset id match, indicator key membership, finite non-negative value, percentages within 0–100, life expectancy ≤ 130, verified records without a numeric value, and duplicate `(countrySlug, indicatorKey)` pairs.
+The validator in `lib/data/official/country-indicators/validate.ts` runs at module load and refuses any record that violates the schema. Existing checks cover: country slug, iso2 match, source id registration, dataset id match, indicator key membership, finite non-negative value, percentages within 0–100 (excluding `digital_access`, which is per 100 people and can legitimately exceed 100), life expectancy ≤ 130, verified records without a numeric value, and duplicate `(countrySlug, indicatorKey)` pairs.
 
 ## How values are presented
 

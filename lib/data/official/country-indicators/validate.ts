@@ -13,11 +13,15 @@ import {
 } from "@/lib/data/official/validation";
 import type { CountryIndicatorKey, CountryIndicatorRecord } from "@/types";
 
+// Percent-of-population indicators that must fall within [0, 100].
+// `digital_access` is intentionally excluded: it is sourced from the
+// World Bank "Fixed broadband subscriptions (per 100 people)"
+// indicator (IT.NET.BBND.P2), which is a rate per 100 people and
+// can exceed 100 in countries with multi-subscription households.
 const PERCENT_KEYS: ReadonlySet<CountryIndicatorKey> = new Set([
   "unemployment_rate",
   "internet_usage",
   "urban_population_share",
-  "digital_access",
 ]);
 
 const LIFE_EXPECTANCY_MAX = 130;

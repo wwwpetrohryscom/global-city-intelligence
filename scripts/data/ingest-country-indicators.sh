@@ -41,6 +41,13 @@ declare -a INDICATORS=(
   "NY.GDP.PCAP.CD:gdp_per_capita:GDP per capita:current US\$"
   "SP.DYN.LE00.IN:life_expectancy:Life expectancy:years"
   "SH.XPD.CHEX.PC.CD:health_expenditure:Health expenditure per capita:current US\$"
+  "SL.UEM.TOTL.ZS:unemployment_rate:Unemployment rate:percent"
+  # The legacy indicator EN.ATM.CO2E.PC was archived by the World
+  # Bank; the current published replacement is the AR5-based
+  # EN.GHG.CO2.PC.CE.AR5 (Carbon dioxide emissions excluding LULUCF
+  # per capita, t CO2e/capita).
+  "EN.GHG.CO2.PC.CE.AR5:co2_emissions_per_capita:CO₂ emissions per capita:metric tons per capita"
+  "IT.NET.BBND.P2:digital_access:Fixed broadband subscriptions:per 100 people"
 )
 
 # Optional indicator filter: set INDICATOR_FILTER to a colon-separated
