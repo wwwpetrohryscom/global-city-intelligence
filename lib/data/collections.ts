@@ -37,6 +37,9 @@ export const cityCollections: CityCollection[] = [
       "buenos-aires",
       "prague",
       "warsaw",
+      "tallinn",
+      "riga",
+      "chiang-mai",
     ],
     criteria: [
       {
@@ -112,6 +115,9 @@ export const cityCollections: CityCollection[] = [
       "melbourne",
       "auckland",
       "amsterdam",
+      "adelaide",
+      "christchurch",
+      "montreal",
     ],
     criteria: [
       {
@@ -181,6 +187,9 @@ export const cityCollections: CityCollection[] = [
       "stockholm",
       "tel-aviv",
       "bangalore",
+      "boston",
+      "austin",
+      "washington-dc",
     ],
     criteria: [
       {
@@ -256,6 +265,9 @@ export const cityCollections: CityCollection[] = [
       "wellington",
       "sydney",
       "melbourne",
+      "tallinn",
+      "riga",
+      "ljubljana",
     ],
     criteria: [
       {
@@ -325,6 +337,9 @@ export const cityCollections: CityCollection[] = [
       "zurich",
       "copenhagen",
       "new-york",
+      "busan",
+      "fukuoka",
+      "montreal",
     ],
     criteria: [
       {

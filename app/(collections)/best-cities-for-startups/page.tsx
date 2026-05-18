@@ -29,6 +29,12 @@ const comparisonNotes: Record<string, string> = {
     "Useful comparison anchor in the platform's startup-context shortlist with structured intelligence.",
   bangalore:
     "Structured connectivity and country-level intelligence support South-Asian comparison.",
+  boston:
+    "Frequently included in startup-hub comparisons through structured connectivity and US country-level context.",
+  austin:
+    "Texas metro often considered for tech-economy comparison through cost framing and structured intelligence.",
+  "washington-dc":
+    "US capital region useful for policy-and-services-oriented startup comparison alongside structured country context.",
 };
 
 export const metadata: Metadata = (() => {

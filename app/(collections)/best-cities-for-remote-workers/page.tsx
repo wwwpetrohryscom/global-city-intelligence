@@ -29,6 +29,12 @@ const comparisonNotes: Record<string, string> = {
     "Central-European comparison anchor with structured cost and connectivity context.",
   warsaw:
     "Central-European comparison anchor with structured connectivity and cost intelligence.",
+  tallinn:
+    "Baltic EU comparison anchor often cited for digital-services context and remote-work relocation.",
+  riga:
+    "Baltic EU comparison anchor with compact services-economy framing and country-level intelligence.",
+  "chiang-mai":
+    "Northern-Thai comparison anchor frequently included in remote-work shortlists for cost framing.",
 };
 
 export const metadata: Metadata = (() => {

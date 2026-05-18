@@ -27,6 +27,12 @@ const comparisonNotes: Record<string, string> = {
     "Pacific comparison anchor with verified emergency and country-level transport context.",
   amsterdam:
     "Compact, transit-rich city with verified transport context for family orientation.",
+  adelaide:
+    "Compact Australian metro often cited for quality-of-life context and country-level public-service references.",
+  christchurch:
+    "New Zealand South-Island metro with active urban-renewal context and family-relevant comparison framing.",
+  montreal:
+    "Canadian metro with structured cultural and public-services context for family-relevant comparison.",
 };
 
 export const metadata: Metadata = (() => {

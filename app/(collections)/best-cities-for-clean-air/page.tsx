@@ -33,6 +33,12 @@ const comparisonNotes: Record<string, string> = {
     "Australian comparison anchor with structured air-quality and climate-risk context.",
   melbourne:
     "Australian comparison anchor with structured air-quality and climate-risk context.",
+  tallinn:
+    "Baltic EU comparison anchor with structured air-quality module context and pending verified-data integration.",
+  riga:
+    "Baltic EU comparison anchor with structured air-quality context and EU monitoring framing.",
+  ljubljana:
+    "Alpine-adjacent EU comparison anchor with structured air-quality context and pending verified-data integration.",
 };
 
 export const metadata: Metadata = (() => {

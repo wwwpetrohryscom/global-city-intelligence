@@ -29,6 +29,12 @@ const comparisonNotes: Record<string, string> = {
     "Verified Metroselskabet, DSB, and CPH context support compact-city mobility comparison.",
   "new-york":
     "Verified MTA and Port Authority of New York and New Jersey context support metro-system comparison.",
+  busan:
+    "Korean port metro included as a public-transport comparison anchor alongside Seoul.",
+  fukuoka:
+    "Compact Kyushu metro with structured transport context for cross-Japan mobility comparison.",
+  montreal:
+    "Canadian bilingual metro with structured transport context for cross-Canada mobility comparison.",
 };
 
 export const metadata: Metadata = (() => {
