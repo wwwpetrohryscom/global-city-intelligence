@@ -20,13 +20,13 @@ interface CountryIndicatorsSectionProps {
 }
 
 const BASELINE_PROVENANCE_NOTE =
-  "The country indicators dataset begins empty by design. Verified values appear here once integrated from accepted publishers (World Bank, OECD, UN Data, WHO, IMF, Eurostat, EEA, or official national statistical offices).";
+  "Verified country indicators for this country are not yet integrated. The first verified batch covers 10 supported countries from the World Bank Development Indicators (population, internet usage, urban-population share); additional batches will follow.";
 
 function buildBaselineProvenance(country: Country): DataProvenance {
   return {
     datasetId: "global-country-indicators",
-    sourceIds: ["un-habitat"],
-    publisher: "Global City Intelligence",
+    sourceIds: ["world-bank-wdi"],
+    publisher: "World Bank — World Development Indicators",
     lastVerified: country.lastUpdated,
     verificationStatus: "unavailable",
     transformationNotes: BASELINE_PROVENANCE_NOTE,

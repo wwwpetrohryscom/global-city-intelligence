@@ -821,6 +821,16 @@ export const dataSources: DataSource[] = [
     reliabilityNote:
       "Used as the official attribution for London Heathrow Airport.",
   },
+  {
+    id: "world-bank-wdi",
+    name: "World Development Indicators",
+    organization: "World Bank",
+    url: "https://data.worldbank.org/",
+    description:
+      "World Bank open-data programme that compiles cross-country development indicators from official statistical sources.",
+    reliabilityNote:
+      "Used as the primary attribution for country-level indicator values such as population, internet usage, and urban-population share.",
+  },
 ];
 
 export function getSourceById(sourceId: string) {

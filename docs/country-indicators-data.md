@@ -5,11 +5,35 @@ The country-indicators layer is the second verified dataset to ride on the platf
 ## Status
 
 - Dataset ID: `global-country-indicators`
-- Publisher: Global City Intelligence
-- Records at launch: 0
-- Verification status: `unavailable`
+- Publisher: World Bank — World Development Indicators
+- Verification status: `partial`
+- First batch: 10 countries × 3 indicators = 30 verified records (data year 2024)
+- Source: World Bank Data API (https://data.worldbank.org/), `lastupdated: 2026-04-08`
 
-The dataset begins empty by design. Country hubs and the `/countries` directory show transparent fallback states until verified records land from accepted publishers.
+The first verified batch covers Australia, Canada, Denmark, France, Germany, Japan, Netherlands, Singapore, United Kingdom, and United States with World Bank indicators `SP.POP.TOTL`, `IT.NET.USER.ZS`, and `SP.URB.TOTL.IN.ZS`. Other supported countries continue to render transparent fallback until later batches integrate additional records.
+
+## First World Bank batch
+
+| Indicator | World Bank code | Unit |
+| --- | --- | --- |
+| `population` | `SP.POP.TOTL` | people |
+| `internet_usage` | `IT.NET.USER.ZS` | percent |
+| `urban_population_share` | `SP.URB.TOTL.IN.ZS` | percent |
+
+Every record carries `verificationStatus: "verified"`, cites `world-bank-wdi`, and uses `datasetId: "global-country-indicators"`. Values are stored as the raw numbers returned by the World Bank API — no rounding, scaling, or interpolation is performed.
+
+### Refreshing the batch
+
+`scripts/data/ingest-country-indicators.sh` is a build-time/manual helper that fetches the latest non-null observation per `(country, indicator)` from the World Bank API and prints a TypeScript record literal. The script is **never** invoked during page rendering. Typical workflow:
+
+```
+./scripts/data/ingest-country-indicators.sh > /tmp/records.ts
+# review /tmp/records.ts, paste records into
+# lib/data/official/country-indicators/dataset.ts, then
+npm run typecheck && npm run lint && npm run build
+```
+
+The validator in `lib/data/official/country-indicators/validate.ts` runs at module load and refuses any record that violates the schema. Existing checks already cover the new batch (country slug, iso2 match, source id registration, dataset id match, indicator key membership, finite non-negative value, percentages within 0–100, life expectancy ≤ 130, duplicate `(countrySlug, indicatorKey)` pairs).
 
 ## Indicator model
 

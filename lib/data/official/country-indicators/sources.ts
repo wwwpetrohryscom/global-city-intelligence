@@ -8,6 +8,7 @@ import type { DataSource } from "@/types";
  * resolve in `lib/data/sources/index.ts`.
  */
 const COUNTRY_INDICATOR_BASELINE_SOURCE_IDS = [
+  "world-bank-wdi",
   "un-habitat",
   "who",
   "oecd-health",
