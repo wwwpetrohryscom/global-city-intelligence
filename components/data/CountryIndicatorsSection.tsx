@@ -20,7 +20,7 @@ interface CountryIndicatorsSectionProps {
 }
 
 const BASELINE_PROVENANCE_NOTE =
-  "Verified country indicators for this country are not yet integrated. The first verified batch covers 10 supported countries from the World Bank Development Indicators (population, internet usage, urban-population share); additional batches will follow.";
+  "Verified country indicators for this country are not yet integrated. Verified batches currently cover 10 supported countries across 6 World Bank Development Indicators (population, internet usage, urban-population share, GDP per capita, life expectancy, current health expenditure per capita); additional batches will follow.";
 
 function buildBaselineProvenance(country: Country): DataProvenance {
   return {
@@ -43,21 +43,34 @@ export function CountryIndicatorsSection({
   const status = profile?.verificationStatus ?? "unavailable";
   const provenance = profile?.provenance ?? [buildBaselineProvenance(country)];
 
+  const sectionIntro = verified
+    ? `Source-attributed country-level indicators for ${country.name}, drawn from the World Bank Development Indicators. Use the cards and table together to compare scale, unit, and data year for each metric.`
+    : `Source-attributed country-level indicators for ${country.name} will appear here once the platform integrates the relevant World Bank batch. The fallback below is intentional — the platform does not show placeholder numbers.`;
+
   return (
     <section aria-labelledby={`${SECTION_ID}-heading`} id={SECTION_ID}>
       <SectionHeading
-        description={`Source-attributed country indicators for ${country.name}. Verified values are surfaced once integrated from accepted official publishers; transparent fallback is shown otherwise.`}
+        description={sectionIntro}
         title="Country indicators"
       />
       <h2 className="sr-only" id={`${SECTION_ID}-heading`}>
         Country indicators for {country.name}
       </h2>
 
-      <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-text-secondary">
+      <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-text-secondary">
         <DataVerificationBadge status={status} />
-        <span>
-          Last updated {profile?.lastUpdated ?? country.lastUpdated} / data
-          year {profile?.dataYear ?? country.dataYear}
+        {verified ? (
+          <span
+            className="inline-flex items-center rounded-full border border-neutral-border bg-surface-soft px-2.5 py-0.5 text-xs font-semibold text-text-secondary"
+            title="Values published by an accepted official publisher"
+          >
+            Official data
+          </span>
+        ) : null}
+        <span className="text-xs text-text-muted sm:text-sm">
+          Last updated {profile?.lastUpdated ?? country.lastUpdated}
+          {" · "}
+          data year {profile?.dataYear ?? country.dataYear}
         </span>
       </div>
 
@@ -70,19 +83,21 @@ export function CountryIndicatorsSection({
           />
         </div>
       ) : (
-        <Card as="article" className="mt-6">
+        <Card as="article" className="mt-6 border-dashed">
           <h3 className="text-base font-semibold text-text-primary">
-            Verified country indicator values are not yet published for this
-            country
+            Verified country indicator values are not yet published for{" "}
+            {country.name}
           </h3>
           <p className="mt-3 text-sm leading-6 text-text-secondary">
             {fallbackCopy ??
               `The platform will display source-attributed values for ${country.name} once verified records are integrated from accepted official publishers. Existing public-service layers (emergency, healthcare, transport) remain available above.`}
           </p>
-          <CountryIndicatorsTable
-            caption={`${country.name} country indicator dataset coverage`}
-            indicators={[]}
-          />
+          <div className="mt-4">
+            <CountryIndicatorsTable
+              caption={`${country.name} country indicator dataset coverage`}
+              indicators={[]}
+            />
+          </div>
         </Card>
       )}
 

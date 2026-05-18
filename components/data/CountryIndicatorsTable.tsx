@@ -1,11 +1,13 @@
 import type { CountryIndicatorRecord } from "@/types";
 
-function formatValue(indicator: CountryIndicatorRecord): string {
-  if (indicator.value === undefined) {
-    return "—";
+function formatNumeric(value: number): string {
+  if (Number.isInteger(value)) {
+    return value.toLocaleString("en-US");
   }
-  const formatted = indicator.value.toLocaleString("en-US");
-  return indicator.unit ? `${formatted} ${indicator.unit}` : formatted;
+  return value.toLocaleString("en-US", {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 2,
+  });
 }
 
 const STATUS_LABEL = {
@@ -22,7 +24,12 @@ export function CountryIndicatorsTable({
   indicators: CountryIndicatorRecord[];
 }) {
   return (
-    <div className="overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm">
+    <div
+      className="overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm"
+      role="region"
+      aria-label={caption}
+      tabIndex={0}
+    >
       <table className="min-w-full border-collapse text-left text-sm">
         <caption className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-text-secondary">
           {caption}
@@ -36,10 +43,16 @@ export function CountryIndicatorsTable({
               Indicator
             </th>
             <th
-              className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+              className="px-4 py-3 text-right text-xs font-semibold uppercase tracking-wide"
               scope="col"
             >
               Value
+            </th>
+            <th
+              className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+              scope="col"
+            >
+              Unit
             </th>
             <th
               className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
@@ -66,7 +79,7 @@ export function CountryIndicatorsTable({
               </th>
               <td
                 className="border-l-2 border-brand-500 px-4 py-4 text-text-secondary"
-                colSpan={3}
+                colSpan={4}
               >
                 Verified country indicator values are not yet published for
                 this location.
@@ -75,7 +88,7 @@ export function CountryIndicatorsTable({
           ) : (
             indicators.map((indicator) => (
               <tr
-                className="odd:bg-white even:bg-neutral-soft/60 hover:bg-orange-50/60"
+                className="odd:bg-white even:bg-neutral-soft/60 hover:bg-orange-50/60 focus-within:bg-orange-50/60"
                 key={`${indicator.countrySlug}-${indicator.indicatorKey}`}
               >
                 <th
@@ -84,10 +97,15 @@ export function CountryIndicatorsTable({
                 >
                   {indicator.label}
                 </th>
-                <td className="border-l-2 border-brand-500 px-4 py-4 font-semibold text-text-primary">
-                  {formatValue(indicator)}
+                <td className="whitespace-nowrap border-l-2 border-brand-500 px-4 py-4 text-right font-semibold tabular-nums text-text-primary">
+                  {indicator.value === undefined
+                    ? "—"
+                    : formatNumeric(indicator.value)}
                 </td>
                 <td className="px-4 py-4 text-text-secondary">
+                  {indicator.unit ?? "—"}
+                </td>
+                <td className="px-4 py-4 text-text-secondary tabular-nums">
                   {indicator.dataYear}
                 </td>
                 <td className="px-4 py-4 text-text-secondary">
@@ -101,3 +119,4 @@ export function CountryIndicatorsTable({
     </div>
   );
 }
+

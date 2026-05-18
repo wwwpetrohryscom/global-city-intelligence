@@ -38,7 +38,15 @@ declare -a INDICATORS=(
   "SP.POP.TOTL:population:Population:people"
   "IT.NET.USER.ZS:internet_usage:Internet usage:percent"
   "SP.URB.TOTL.IN.ZS:urban_population_share:Urban population share:percent"
+  "NY.GDP.PCAP.CD:gdp_per_capita:GDP per capita:current US\$"
+  "SP.DYN.LE00.IN:life_expectancy:Life expectancy:years"
+  "SH.XPD.CHEX.PC.CD:health_expenditure:Health expenditure per capita:current US\$"
 )
+
+# Optional indicator filter: set INDICATOR_FILTER to a colon-separated
+# list of indicatorKey values to limit emission. Useful when refreshing
+# a single batch without touching the rest.
+INDICATOR_FILTER="${INDICATOR_FILTER:-}"
 
 last_observation() {
   local iso3="$1"
@@ -113,6 +121,14 @@ for country in "${COUNTRIES[@]}"; do
   IFS=":" read -r slug iso2 iso3 _name <<<"$country"
   for indicator in "${INDICATORS[@]}"; do
     IFS=":" read -r wbCode key label unit <<<"$indicator"
+    if [ -n "$INDICATOR_FILTER" ]; then
+      case ":${INDICATOR_FILTER}:" in
+        *":${key}:"*) ;;
+        *)
+          continue
+          ;;
+      esac
+    fi
     obs=$(last_observation "$iso3" "$wbCode")
     if [ -z "$obs" ] || [ "$obs" = "null" ]; then
       echo "// skipped ${slug}/${key}: no value returned" >&2

@@ -16,7 +16,6 @@ import type { CountryIndicatorKey, CountryIndicatorRecord } from "@/types";
 const PERCENT_KEYS: ReadonlySet<CountryIndicatorKey> = new Set([
   "unemployment_rate",
   "internet_usage",
-  "health_expenditure",
   "urban_population_share",
   "digital_access",
 ]);
@@ -64,6 +63,15 @@ function validateRecord(
   assertSourceIdsExist(record.sourceIds, report);
 
   assertVerificationStatus(record.verificationStatus, report);
+
+  if (
+    record.verificationStatus === "verified" &&
+    record.value === undefined
+  ) {
+    report.addError(
+      `Record for "${record.countrySlug}/${record.indicatorKey}" is marked verified but has no numeric value`,
+    );
+  }
 
   assertFinitePositive(
     record.value,

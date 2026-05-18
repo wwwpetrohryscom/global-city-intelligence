@@ -7,33 +7,57 @@ The country-indicators layer is the second verified dataset to ride on the platf
 - Dataset ID: `global-country-indicators`
 - Publisher: World Bank — World Development Indicators
 - Verification status: `partial`
-- First batch: 10 countries × 3 indicators = 30 verified records (data year 2024)
+- Verified batches: **6 indicators × 10 countries = 60 verified records**
 - Source: World Bank Data API (https://data.worldbank.org/), `lastupdated: 2026-04-08`
 
-The first verified batch covers Australia, Canada, Denmark, France, Germany, Japan, Netherlands, Singapore, United Kingdom, and United States with World Bank indicators `SP.POP.TOTL`, `IT.NET.USER.ZS`, and `SP.URB.TOTL.IN.ZS`. Other supported countries continue to render transparent fallback until later batches integrate additional records.
+Verified batches cover Australia, Canada, Denmark, France, Germany, Japan, Netherlands, Singapore, United Kingdom, and United States. Other supported countries continue to render transparent fallback until later batches integrate additional records.
 
-## First World Bank batch
+## Indicators
 
-| Indicator | World Bank code | Unit |
-| --- | --- | --- |
-| `population` | `SP.POP.TOTL` | people |
-| `internet_usage` | `IT.NET.USER.ZS` | percent |
-| `urban_population_share` | `SP.URB.TOTL.IN.ZS` | percent |
+| Indicator | World Bank code | Unit | Batch |
+| --- | --- | --- | --- |
+| `population` | `SP.POP.TOTL` | people | 1 |
+| `internet_usage` | `IT.NET.USER.ZS` | percent | 1 |
+| `urban_population_share` | `SP.URB.TOTL.IN.ZS` | percent | 1 |
+| `gdp_per_capita` | `NY.GDP.PCAP.CD` | current US$ | 2 |
+| `life_expectancy` | `SP.DYN.LE00.IN` | years | 2 |
+| `health_expenditure` | `SH.XPD.CHEX.PC.CD` | current US$ | 2 |
 
 Every record carries `verificationStatus: "verified"`, cites `world-bank-wdi`, and uses `datasetId: "global-country-indicators"`. Values are stored as the raw numbers returned by the World Bank API — no rounding, scaling, or interpolation is performed.
 
-### Refreshing the batch
+Different indicators may have different latest-available years. For the current batches, `population`, `internet_usage`, `urban_population_share`, `gdp_per_capita`, and `life_expectancy` are mostly available for 2024; `health_expenditure` lags by roughly one year for several countries and uses 2023 where 2024 is not yet published. Each record carries its own `dataYear`, so the surface UI surfaces the year alongside the value.
 
-`scripts/data/ingest-country-indicators.sh` is a build-time/manual helper that fetches the latest non-null observation per `(country, indicator)` from the World Bank API and prints a TypeScript record literal. The script is **never** invoked during page rendering. Typical workflow:
+## Refreshing a batch
+
+`scripts/data/ingest-country-indicators.sh` is a build-time/manual helper that fetches the latest non-null observation per `(country, indicator)` from the World Bank API and prints a TypeScript record literal. The script is **never** invoked during page rendering. Typical workflows:
 
 ```
+# refresh every supported indicator
 ./scripts/data/ingest-country-indicators.sh > /tmp/records.ts
-# review /tmp/records.ts, paste records into
-# lib/data/official/country-indicators/dataset.ts, then
+
+# refresh only batch 2 (used when adding the second World Bank batch)
+INDICATOR_FILTER="gdp_per_capita:life_expectancy:health_expenditure" \
+  ./scripts/data/ingest-country-indicators.sh > /tmp/batch2.ts
+```
+
+After reviewing the generated file, paste the records into `lib/data/official/country-indicators/dataset.ts` (between the existing array brackets), then run:
+
+```
 npm run typecheck && npm run lint && npm run build
 ```
 
-The validator in `lib/data/official/country-indicators/validate.ts` runs at module load and refuses any record that violates the schema. Existing checks already cover the new batch (country slug, iso2 match, source id registration, dataset id match, indicator key membership, finite non-negative value, percentages within 0–100, life expectancy ≤ 130, duplicate `(countrySlug, indicatorKey)` pairs).
+The validator in `lib/data/official/country-indicators/validate.ts` runs at module load and refuses any record that violates the schema. Existing checks cover: country slug, iso2 match, source id registration, dataset id match, indicator key membership, finite non-negative value, percentages within 0–100, life expectancy ≤ 130, verified records without a numeric value, and duplicate `(countrySlug, indicatorKey)` pairs.
+
+## How values are presented
+
+- `CountryIndicatorCards` renders one card per indicator. Integer values (population) keep their full digit count; decimal values are rounded to two places visually. The underlying record always preserves the raw source value.
+- `CountryIndicatorsTable` is a real HTML table with caption, scoped headers, tabular numerals on the value column, and zebra/hover rows from Tailwind only.
+- `DataProvenanceBlock` shows publisher, dataset name, last-verified date, transformation note (when present), and the source link in a compact layout.
+- Country hubs without a verified profile render a dashed-border fallback card that explicitly says the dataset is not yet integrated for that country — never a placeholder value.
+
+## Missing values
+
+If a `(country, indicator)` tuple returns no non-null observation from the World Bank API, the ingestion script skips the record (and writes a `// skipped …` comment to stderr). The profile-level status helper (`resolveAggregateStatus`) then resolves the country profile to `partial`, and the cards/table render only the indicators that exist.
 
 ## Indicator model
 

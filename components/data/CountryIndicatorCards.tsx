@@ -2,12 +2,28 @@ import { Card } from "@/components/ui/Card";
 import { DataVerificationBadge } from "@/components/data/DataVerificationBadge";
 import type { CountryIndicatorRecord } from "@/types";
 
-function formatValue(indicator: CountryIndicatorRecord): string {
-  if (indicator.value === undefined) {
+function formatNumber(value: number): string {
+  if (Number.isInteger(value)) {
+    return value.toLocaleString("en-US");
+  }
+  // Two decimal places strikes a balance between precision and scan-ability
+  // while preserving the source value in the underlying record.
+  return value.toLocaleString("en-US", {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 2,
+  });
+}
+
+function formatValueLong(value: number): string {
+  // Used for very large integer values like population.
+  if (!Number.isFinite(value)) {
     return "—";
   }
-  const formatted = indicator.value.toLocaleString("en-US");
-  return indicator.unit ? `${formatted} ${indicator.unit}` : formatted;
+  return value.toLocaleString("en-US");
+}
+
+function isLargeInteger(value: number): boolean {
+  return Number.isInteger(value) && Math.abs(value) >= 1_000_000;
 }
 
 export function CountryIndicatorCards({
@@ -21,29 +37,43 @@ export function CountryIndicatorCards({
 
   return (
     <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {indicators.map((indicator) => (
-        <li key={`${indicator.countrySlug}-${indicator.indicatorKey}`}>
-          <Card as="article" className="h-full">
-            <div className="flex items-start justify-between gap-3">
-              <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                {indicator.label}
+      {indicators.map((indicator) => {
+        const valueText =
+          indicator.value === undefined
+            ? "—"
+            : isLargeInteger(indicator.value)
+              ? formatValueLong(indicator.value)
+              : formatNumber(indicator.value);
+
+        return (
+          <li key={`${indicator.countrySlug}-${indicator.indicatorKey}`}>
+            <Card as="article" className="flex h-full flex-col gap-3">
+              <div className="flex items-start justify-between gap-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                  {indicator.label}
+                </p>
+                <DataVerificationBadge status={indicator.verificationStatus} />
+              </div>
+              <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                <span className="break-words text-2xl font-semibold leading-tight text-text-primary">
+                  {valueText}
+                </span>
+                {indicator.unit ? (
+                  <span className="text-xs font-medium uppercase tracking-wide text-text-secondary">
+                    {indicator.unit}
+                  </span>
+                ) : null}
+              </div>
+              <p className="mt-auto text-xs leading-5 text-text-muted">
+                Data year {indicator.dataYear}
+                {" "}
+                <span aria-hidden="true">/</span> updated{" "}
+                {indicator.lastUpdated}
               </p>
-              <DataVerificationBadge status={indicator.verificationStatus} />
-            </div>
-            <p className="mt-2 text-2xl font-semibold text-text-primary">
-              {formatValue(indicator)}
-            </p>
-            <p className="mt-2 text-xs leading-5 text-text-muted">
-              Data year {indicator.dataYear} / updated {indicator.lastUpdated}
-            </p>
-            {indicator.notes ? (
-              <p className="mt-2 text-sm leading-6 text-text-secondary">
-                {indicator.notes}
-              </p>
-            ) : null}
-          </Card>
-        </li>
-      ))}
+            </Card>
+          </li>
+        );
+      })}
     </ul>
   );
 }
