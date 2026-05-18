@@ -269,6 +269,22 @@ export default async function ComparisonPage({ params }: PageProps) {
               <li>
                 <Link
                   className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.cities}
+                >
+                  Cities directory
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.countries}
+                >
+                  Country directory
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
                   href={staticRoutes.rankings}
                 >
                   Browse global city rankings
