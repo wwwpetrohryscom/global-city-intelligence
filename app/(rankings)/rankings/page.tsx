@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { LinkCard } from "@/components/cards/link-card";
+import { HubNav } from "@/components/navigation/HubNav";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
@@ -51,6 +52,7 @@ export default function RankingsPage() {
       <PageHeader eyebrow="Rankings" intro={description} title={title} />
       <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
         <BreadcrumbNav items={breadcrumbs} />
+        <HubNav activeHref={staticRoutes.rankings} />
         <FactList
           facts={[
             { label: "Last updated", value: LAST_UPDATED },

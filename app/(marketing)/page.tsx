@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
 import { DataTable } from "@/components/tables/DataTable";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { HubNav } from "@/components/navigation/HubNav";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Divider } from "@/components/ui/Divider";
@@ -103,6 +104,8 @@ export default function HomePage() {
       </PageHeader>
 
       <Section className="bg-white" containerClassName="space-y-14">
+        <HubNav activeHref={staticRoutes.home} />
+
         <section>
           <SectionHeading
             description="Start with cities, then move into modules and rankings. Every link is crawlable and every data block has text and table equivalents."

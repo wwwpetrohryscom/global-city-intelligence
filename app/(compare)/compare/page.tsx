@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { HubNav } from "@/components/navigation/HubNav";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -92,6 +93,7 @@ export default function CompareIndexPage() {
 
       <Container className="space-y-12 py-12">
         <BreadcrumbNav items={breadcrumbs} />
+        <HubNav activeHref={staticRoutes.compare} />
 
         <section>
           <SectionHeading

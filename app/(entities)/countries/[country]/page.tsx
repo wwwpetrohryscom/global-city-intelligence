@@ -11,6 +11,7 @@ import {
   type OverviewCard,
 } from "@/components/country/CountryOverviewCards";
 import { CountryRankingsSection } from "@/components/country/CountryRankingsSection";
+import { CountryIndicatorsSection } from "@/components/data/CountryIndicatorsSection";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
@@ -203,6 +204,7 @@ export default async function CountryPage({ params }: PageProps) {
   const hubNavItems: { href: string; label: string }[] = [
     { href: "#country-overview", label: "Overview" },
     { href: "#country-cities", label: "Cities" },
+    { href: "#country-indicators", label: "Indicators" },
   ];
 
   if (emergencyProfile) {
@@ -365,6 +367,8 @@ export default async function CountryPage({ params }: PageProps) {
         </section>
 
         <CountryCitiesSection countryName={country.name} cities={cities} />
+
+        <CountryIndicatorsSection country={country} />
 
         <PublicSafetySection
           countryName={country.name}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { HubNav } from "@/components/navigation/HubNav";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -11,6 +12,7 @@ import {
   getCitiesByCountrySlug,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
+  hasVerifiedCountryIndicators,
 } from "@/lib/data/queries";
 import { staticBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
@@ -47,12 +49,14 @@ export default function CountriesIndexPage() {
       cityNames: countryCities.map((city) => city.name).join(", "),
       hasEmergency: emergency?.verificationStatus === "verified",
       hasHealthcare: healthcare?.verificationStatus === "verified",
+      hasIndicators: hasVerifiedCountryIndicators(country.slug),
     };
   });
 
   const totalCities = rows.reduce((sum, row) => sum + row.cityCount, 0);
   const verifiedEmergency = rows.filter((row) => row.hasEmergency).length;
   const verifiedHealthcare = rows.filter((row) => row.hasHealthcare).length;
+  const verifiedIndicators = rows.filter((row) => row.hasIndicators).length;
 
   return (
     <main>
@@ -103,10 +107,11 @@ export default function CountriesIndexPage() {
 
       <Container className="space-y-12 py-12">
         <BreadcrumbNav items={breadcrumbs} />
+        <HubNav activeHref={staticRoutes.countries} />
 
         <section>
           <SectionHeading
-            description={`${verifiedEmergency} of ${countries.length} countries have verified emergency contact profiles and ${verifiedHealthcare} have verified healthcare access profiles. Indicators below show which verified layers are available per country.`}
+            description={`${verifiedEmergency} of ${countries.length} countries have verified emergency contact profiles, ${verifiedHealthcare} have verified healthcare access profiles, and ${verifiedIndicators} have verified country indicators. Indicators below show which verified layers are available per country.`}
             title="All indexed countries"
           />
           <div className="mt-6 overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm">
@@ -182,6 +187,10 @@ export default function CountriesIndexPage() {
                         <LayerIndicator
                           available={row.hasHealthcare}
                           label="Healthcare"
+                        />
+                        <LayerIndicator
+                          available={row.hasIndicators}
+                          label="Indicators"
                         />
                       </ul>
                     </td>

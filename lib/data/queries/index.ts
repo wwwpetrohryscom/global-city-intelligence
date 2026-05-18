@@ -158,6 +158,20 @@ export {
 
 export { listOfficialDatasets } from "@/lib/data/official/registry";
 
+export {
+  getCountriesWithVerifiedIndicators,
+  getCountryIndicatorDatasetMetadata,
+  getCountryIndicatorProfile,
+  getCountryIndicatorSources,
+  getCountryIndicatorsForCountry,
+  hasVerifiedCountryIndicators,
+} from "@/lib/data/official/country-indicators/queries";
+
+export {
+  getCountryIndicatorBaselineSourceIds,
+  getCountryIndicatorBaselineSources,
+} from "@/lib/data/official/country-indicators/sources";
+
 export type {
   CountryCollectionMatch,
   CountryRankingMatch,

@@ -55,6 +55,11 @@ export type {
   AirQualityDatasetRecord,
   AirQualityMetricKey,
 } from "./air-quality";
+export type {
+  CountryIndicatorKey,
+  CountryIndicatorProfile,
+  CountryIndicatorRecord,
+} from "./country-indicators";
 export type { IntelligenceModule, ModuleSlug } from "./module";
 export type { Ranking, RankingEntry } from "./ranking";
 export type {

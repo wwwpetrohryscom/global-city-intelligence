@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { HubNav } from "@/components/navigation/HubNav";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Card } from "@/components/ui/Card";
@@ -77,6 +78,7 @@ export default function CollectionsIndexPage() {
 
       <Container className="space-y-12 py-12">
         <BreadcrumbNav items={breadcrumbs} />
+        <HubNav activeHref={staticRoutes.collections} />
 
         <FactList
           facts={[
