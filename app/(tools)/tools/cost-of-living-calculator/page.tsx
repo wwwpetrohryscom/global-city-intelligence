@@ -14,7 +14,7 @@ import { CostOfLivingExampleTable } from "@/components/tools/CostOfLivingExample
 import { CalculatorMethodology } from "@/components/tools/CalculatorMethodology";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
 import { getAllComparisons, getCities } from "@/lib/data/queries";
-import { staticBreadcrumbs } from "@/lib/seo/breadcrumbs";
+import { toolsBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
 import {
   absoluteUrl,
@@ -56,7 +56,7 @@ function softwareApplicationSchema() {
 
 export default function CostOfLivingCalculatorPage() {
   const cities = getCities();
-  const breadcrumbs = staticBreadcrumbs(
+  const breadcrumbs = toolsBreadcrumbs(
     "Cost of Living Calculator",
     staticRoutes.costOfLivingCalculator,
   );

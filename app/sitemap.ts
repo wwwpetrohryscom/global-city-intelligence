@@ -76,6 +76,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: absoluteUrl(staticRoutes.tools),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly",
+      priority: 0.72,
+    },
+    {
       url: absoluteUrl(staticRoutes.costOfLivingCalculator),
       lastModified: staticFreshness,
       changeFrequency: "monthly",

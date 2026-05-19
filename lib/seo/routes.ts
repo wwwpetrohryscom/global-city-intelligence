@@ -21,6 +21,7 @@ export const staticRoutes = {
   rankings: "/rankings",
   compare: "/compare",
   collections: "/best-cities",
+  tools: "/tools",
   costOfLivingCalculator: "/tools/cost-of-living-calculator",
   travelBudgetCalculator: "/tools/travel-budget-calculator",
 } as const;
@@ -78,6 +79,7 @@ export function getAllIndexableRoutes() {
     staticRoutes.rankings,
     staticRoutes.compare,
     staticRoutes.collections,
+    staticRoutes.tools,
     staticRoutes.costOfLivingCalculator,
     staticRoutes.travelBudgetCalculator,
     ...cities.map((city) => cityRoute(city.slug)),

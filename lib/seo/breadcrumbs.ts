@@ -103,6 +103,17 @@ export function staticBreadcrumbs(
   return [homeCrumb, { name: label, href }];
 }
 
+export function toolsBreadcrumbs(
+  label: string,
+  href: string,
+): BreadcrumbItem[] {
+  return [
+    homeCrumb,
+    { name: "Tools", href: staticRoutes.tools },
+    { name: label, href },
+  ];
+}
+
 export function cityIntentBreadcrumbs(
   citySlug: string,
   intentSlug: string,

@@ -14,7 +14,7 @@ import { TravelBudgetExampleTable } from "@/components/tools/TravelBudgetExample
 import { TravelBudgetMethodology } from "@/components/tools/TravelBudgetMethodology";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
 import { getCities } from "@/lib/data/queries";
-import { staticBreadcrumbs } from "@/lib/seo/breadcrumbs";
+import { toolsBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
 import {
   absoluteUrl,
@@ -53,7 +53,7 @@ function softwareApplicationSchema() {
 
 export default function TravelBudgetCalculatorPage() {
   const cities = getCities();
-  const breadcrumbs = staticBreadcrumbs(
+  const breadcrumbs = toolsBreadcrumbs(
     "Travel Budget Calculator",
     staticRoutes.travelBudgetCalculator,
   );
