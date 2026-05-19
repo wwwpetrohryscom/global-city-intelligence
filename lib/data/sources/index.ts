@@ -52,6 +52,16 @@ export const dataSources: DataSource[] = [
       "Used where United States city comparisons need air-quality benchmark context.",
   },
   {
+    id: "us-epa-airdata",
+    name: "US EPA AirData — annual AQI summary",
+    organization: "US Environmental Protection Agency",
+    url: "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+    description:
+      "EPA AirData publishes annual AQI summary statistics per US county, including Median AQI, 90th percentile AQI, and the number of days in each AQI category. Values are computed from official monitoring data submitted to AQS.",
+    reliabilityNote:
+      "Used as the city-level source for US air-quality records where a single county clearly maps to the city. Records that span multiple counties must disclose the borough/county selection in record notes.",
+  },
+  {
     id: "ipcc-urban",
     name: "AR6 WGII Chapter 6: Cities, settlements and key infrastructure",
     organization: "IPCC",
