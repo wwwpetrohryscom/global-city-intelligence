@@ -342,6 +342,11 @@ export default async function CityPage({ params }: PageProps) {
               href={staticRoutes.costOfLivingCalculator}
               title={`Estimate a monthly budget for ${city.name}`}
             />
+            <LinkCard
+              description={`Plan a trip budget for ${city.name} using your own accommodation, food, local transport, activities, travel, healthcare buffer, and emergency buffer inputs. Planning estimator only — not an official travel cost estimate.`}
+              href={staticRoutes.travelBudgetCalculator}
+              title={`Plan a trip budget for ${city.name}`}
+            />
           </div>
         </section>
 

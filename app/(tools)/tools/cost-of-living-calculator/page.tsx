@@ -263,6 +263,23 @@ export default function CostOfLivingCalculatorPage() {
             </Card>
             <Card as="article">
               <h3 className="text-base font-semibold text-text-primary">
+                Travel budget calculator
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-text-secondary">
+                Planning a shorter trip? Use the travel budget calculator with
+                your own accommodation, food, transport, activity, travel, and
+                buffer inputs. Planning estimator only, not an official travel
+                cost estimate.
+              </p>
+              <Link
+                className="mt-3 inline-flex font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={staticRoutes.travelBudgetCalculator}
+              >
+                Open travel budget calculator
+              </Link>
+            </Card>
+            <Card as="article">
+              <h3 className="text-base font-semibold text-text-primary">
                 Methodology and sources
               </h3>
               <p className="mt-2 text-sm leading-6 text-text-secondary">

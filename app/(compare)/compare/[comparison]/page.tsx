@@ -312,6 +312,21 @@ export default async function ComparisonPage({ params }: PageProps) {
                   not an official cost-of-living measurement.
                 </span>
               </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.travelBudgetCalculator}
+                >
+                  Open the travel budget calculator
+                </Link>
+                <span className="text-text-secondary">
+                  {" "}
+                  — use your own trip inputs to estimate a travel budget for
+                  either city. Then review the city profiles, safety,
+                  healthcare, and transport context. Planning estimator only,
+                  not an official travel cost estimate.
+                </span>
+              </li>
             </ul>
           </article>
           <SourceBlock sources={sources} />

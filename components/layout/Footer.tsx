@@ -79,6 +79,9 @@ export function Footer() {
           <FooterLink href={staticRoutes.costOfLivingCalculator}>
             Cost of living calculator
           </FooterLink>
+          <FooterLink href={staticRoutes.travelBudgetCalculator}>
+            Travel budget calculator
+          </FooterLink>
           <FooterLink href={staticRoutes.methodology}>Methodology</FooterLink>
           <FooterLink href={staticRoutes.dataSources}>Data sources</FooterLink>
         </FooterColumn>

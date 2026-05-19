@@ -308,6 +308,20 @@ export default function CountriesIndexPage() {
                 — the official registry behind verified layers.
               </span>
             </li>
+            <li>
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={staticRoutes.travelBudgetCalculator}
+              >
+                Travel budget calculator
+              </Link>
+              <span className="text-text-secondary">
+                {" "}
+                — review country hubs, then estimate a trip budget using your
+                own inputs. Planning estimator only, not an official travel
+                cost estimate.
+              </span>
+            </li>
           </ul>
         </section>
       </Container>

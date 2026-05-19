@@ -242,6 +242,21 @@ export default function CitiesIndexPage() {
                 cost-of-living measurement.
               </span>
             </li>
+            <li>
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={staticRoutes.travelBudgetCalculator}
+              >
+                Travel budget calculator
+              </Link>
+              <span className="text-text-secondary">
+                {" "}
+                — planning a visit or shorter stay? Use your own trip inputs
+                to estimate accommodation, food, transport, activities,
+                travel, and emergency buffer. Not an official travel cost
+                estimate.
+              </span>
+            </li>
           </ul>
         </section>
       </Container>

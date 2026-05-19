@@ -161,7 +161,7 @@ export default function HomePage() {
           </p>
         </section>
 
-        <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
+        <section className="grid gap-5 lg:grid-cols-3">
           <Card as="article" className="p-6">
             <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
               Planning tool
@@ -175,7 +175,7 @@ export default function HomePage() {
               continue to city profiles and structured comparisons.
             </p>
             <p className="mt-3 text-sm leading-6 text-text-secondary">
-              This is a planning estimator based on your inputs, not an official
+              Planning estimator based on your inputs, not an official
               cost-of-living measurement.
             </p>
             <Link
@@ -186,8 +186,32 @@ export default function HomePage() {
             </Link>
           </Card>
           <Card as="article" className="p-6">
+            <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
+              Planning tool
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold text-text-primary">
+              Travel Budget Calculator
+            </h2>
+            <p className="mt-3 leading-7 text-text-secondary">
+              Plan a trip budget with your own inputs. Estimate accommodation,
+              food, local transport, activities, travel, healthcare buffer, and
+              emergency buffer, then use city profiles for safety, healthcare,
+              and transport context.
+            </p>
+            <p className="mt-3 text-sm leading-6 text-text-secondary">
+              Planning estimator based on your inputs, not an official travel
+              cost estimate.
+            </p>
+            <Link
+              className="mt-4 inline-flex font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+              href={staticRoutes.travelBudgetCalculator}
+            >
+              Open the travel budget calculator
+            </Link>
+          </Card>
+          <Card as="article" className="p-6">
             <h2 className="text-2xl font-semibold text-text-primary">
-              Pair the calculator with city intelligence
+              Pair the calculators with city intelligence
             </h2>
             <p className="mt-3 leading-7 text-text-secondary">
               After estimating a budget, open a city profile to read structured

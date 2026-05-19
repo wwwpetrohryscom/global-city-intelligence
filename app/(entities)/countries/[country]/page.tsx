@@ -514,6 +514,21 @@ export default async function CountryPage({ params }: PageProps) {
                   for the source registry behind verified layers.
                 </span>
               </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.travelBudgetCalculator}
+                >
+                  Travel budget calculator
+                </Link>
+                <span className="text-text-secondary">
+                  {" "}
+                  — plan a trip budget for cities in {country.name}. Use your
+                  own trip inputs and then review city, public safety,
+                  healthcare, and transport context. Planning estimator only,
+                  not an official travel cost estimate.
+                </span>
+              </li>
             </ul>
             <p className="mt-4 text-xs leading-6 text-text-secondary">
               {demoDataNotice()}
