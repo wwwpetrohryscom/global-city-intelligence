@@ -298,6 +298,20 @@ export default async function ComparisonPage({ params }: PageProps) {
                   Back to all comparisons
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={staticRoutes.costOfLivingCalculator}
+                >
+                  Open the cost of living calculator
+                </Link>
+                <span className="text-text-secondary">
+                  {" "}
+                  — use your own monthly budget inputs to estimate the cost
+                  difference between these cities. Planning estimator only,
+                  not an official cost-of-living measurement.
+                </span>
+              </li>
             </ul>
           </article>
           <SourceBlock sources={sources} />

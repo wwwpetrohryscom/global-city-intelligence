@@ -50,6 +50,7 @@ import {
   getCollectionUrl,
   moduleRoute,
   rankingRoute,
+  staticRoutes,
 } from "@/lib/seo/routes";
 import {
   airportSchema,
@@ -335,6 +336,11 @@ export default async function CityPage({ params }: PageProps) {
               description="Compare this city against other indexed cities in crawlable ranking tables."
               href={rankingRoute("overall-city-intelligence")}
               title="City rankings"
+            />
+            <LinkCard
+              description={`Estimate a monthly budget for ${city.name} using your own housing, food, transport, healthcare, and lifestyle inputs. Planning estimator only — not an official cost-of-living measurement.`}
+              href={staticRoutes.costOfLivingCalculator}
+              title={`Estimate a monthly budget for ${city.name}`}
             />
           </div>
         </section>

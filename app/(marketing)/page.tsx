@@ -161,6 +161,57 @@ export default function HomePage() {
           </p>
         </section>
 
+        <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
+          <Card as="article" className="p-6">
+            <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
+              Planning tool
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold text-text-primary">
+              Cost of Living Comparison Calculator
+            </h2>
+            <p className="mt-3 leading-7 text-text-secondary">
+              Estimate your own monthly budget between two cities. Use your own
+              housing, food, transport, healthcare, and lifestyle inputs, then
+              continue to city profiles and structured comparisons.
+            </p>
+            <p className="mt-3 text-sm leading-6 text-text-secondary">
+              This is a planning estimator based on your inputs, not an official
+              cost-of-living measurement.
+            </p>
+            <Link
+              className="mt-4 inline-flex font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+              href={staticRoutes.costOfLivingCalculator}
+            >
+              Open the cost of living calculator
+            </Link>
+          </Card>
+          <Card as="article" className="p-6">
+            <h2 className="text-2xl font-semibold text-text-primary">
+              Pair the calculator with city intelligence
+            </h2>
+            <p className="mt-3 leading-7 text-text-secondary">
+              After estimating a budget, open a city profile to read structured
+              indicators across affordability, air quality, energy, healthcare,
+              and transport, or compare two cities through curated comparison
+              pages.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3 text-sm">
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={staticRoutes.cities}
+              >
+                Browse cities
+              </Link>
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={staticRoutes.compare}
+              >
+                Open comparisons
+              </Link>
+            </div>
+          </Card>
+        </section>
+
         <section>
           <SectionHeading
             description="Rankings are built from the same typed data layer used by city and module pages, so new cities can scale into every crawl path."

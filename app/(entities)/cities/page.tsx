@@ -228,6 +228,20 @@ export default function CitiesIndexPage() {
                 — curated city shortlists by intent.
               </span>
             </li>
+            <li>
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={staticRoutes.costOfLivingCalculator}
+              >
+                Cost of living calculator
+              </Link>
+              <span className="text-text-secondary">
+                {" "}
+                — planning a move or longer stay? Use your own budget inputs
+                to compare monthly costs between cities. Not an official
+                cost-of-living measurement.
+              </span>
+            </li>
           </ul>
         </section>
       </Container>

@@ -213,6 +213,19 @@ export default function CompareIndexPage() {
                 — the official registry behind verified layers.
               </span>
             </li>
+            <li>
+              <Link
+                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                href={staticRoutes.costOfLivingCalculator}
+              >
+                Cost of living calculator
+              </Link>
+              <span className="text-text-secondary">
+                {" "}
+                — after choosing cities to compare, estimate your own monthly
+                budget. Planning estimator based on your inputs only.
+              </span>
+            </li>
           </ul>
         </section>
       </Container>
