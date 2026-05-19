@@ -83,6 +83,9 @@ export function Footer() {
           <FooterLink href={staticRoutes.travelBudgetCalculator}>
             Travel budget calculator
           </FooterLink>
+          <FooterLink href={staticRoutes.relocationChecklist}>
+            Relocation checklist
+          </FooterLink>
           <FooterLink href={staticRoutes.methodology}>Methodology</FooterLink>
           <FooterLink href={staticRoutes.dataSources}>Data sources</FooterLink>
         </FooterColumn>

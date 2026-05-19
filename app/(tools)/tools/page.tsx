@@ -77,6 +77,27 @@ const TOOLS: ToolEntry[] = [
       { label: "Cities directory", href: staticRoutes.cities },
     ],
   },
+  {
+    name: "Relocation Checklist",
+    href: staticRoutes.relocationChecklist,
+    description:
+      "Organize city research, budgeting, documents, housing, healthcare, transport, safety, and first-week planning. Planning checklist only — not legal, immigration, tax, medical, insurance, or financial advice.",
+    helpsWith: [
+      "Structuring relocation preparation into manageable sections",
+      "Pairing planning calculators with destination context",
+      "Tracking what to verify with official sources before moving",
+    ],
+    doesNotDo: [
+      "Provide country-specific visa, residence, or work requirements",
+      "Replace official government, medical, or insurance guidance",
+      "Provide legal, tax, immigration, medical, insurance, or financial advice",
+    ],
+    primaryAnchor: "Open the relocation checklist",
+    relatedLinks: [
+      { label: "Country hubs", href: staticRoutes.countries },
+      { label: "Methodology", href: staticRoutes.methodology },
+    ],
+  },
 ];
 
 function itemListSchema() {
