@@ -81,6 +81,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: absoluteUrl(staticRoutes.travelBudgetCalculator),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
   const cityItems = cities.map((city) => ({
