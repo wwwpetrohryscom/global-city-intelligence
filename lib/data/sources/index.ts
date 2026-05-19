@@ -831,6 +831,16 @@ export const dataSources: DataSource[] = [
     reliabilityNote:
       "Used as the primary attribution for country-level indicator values such as population, internet usage, and urban-population share.",
   },
+  {
+    id: "openaq",
+    name: "OpenAQ open air-quality platform",
+    organization: "OpenAQ",
+    url: "https://openaq.org/",
+    description:
+      "Open-source aggregator of air-quality monitoring data sourced from government, research, and intergovernmental publishers worldwide.",
+    reliabilityNote:
+      "Used as a primary aggregator of station-level air-quality measurements; every record cites the underlying official publisher through OpenAQ's provider attribution. Ingestion requires the OpenAQ v3 API key (OPENAQ_API_KEY) at build time.",
+  },
 ];
 
 export function getSourceById(sourceId: string) {

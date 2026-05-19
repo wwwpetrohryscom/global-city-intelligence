@@ -6,10 +6,65 @@ The air-quality dataset is the first verified dataset published through the plat
 
 - Dataset ID: `global-city-air-quality`
 - Publisher: Global City Intelligence
-- Records at launch: 0
+- Records currently shipped: **0**
 - Verification status: `unavailable`
+- Accepted citations: WHO Global Air Quality Database (`who-air`), European Environment Agency (`eea-air`), US EPA NAAQS (`epa-naaqs`), OpenAQ open air-quality platform (`openaq`)
 
-The dataset begins empty by design. Every page that surfaces the air-quality dataset shows a transparent fallback until verified measurements are integrated from accepted publishers.
+The dataset begins empty by design. Every page that surfaces the air-quality dataset shows a transparent fallback until verified measurements are integrated from accepted publishers. The platform never fabricates AQI, PM2.5, PM10, NO₂, or O₃ values to fill the gap — empty is the honest answer when no accepted publisher value is available locally.
+
+## Why the dataset is still empty
+
+A verified air-quality batch needs values published by an accepted official publisher, with provenance preserved at the record level. The accepted publishers each impose a different access path:
+
+- **WHO Global Air Quality Database** is distributed as an Excel workbook updated on an irregular cadence; it is not exposed over a public JSON API.
+- **EEA national air-quality feeds** publish daily/hourly values per station, but the city-level aggregation is left to the consumer.
+- **US EPA NAAQS / AirNow** publish station-level measurements for US monitors, not city-level summaries.
+- **OpenAQ** aggregates the above (and many other national feeds) and is the only publisher that exposes a unified, station-level JSON API across countries. OpenAQ v3 requires an API key (`OPENAQ_API_KEY`) and gates anonymous traffic.
+
+The platform integrates OpenAQ as the primary station-level aggregator and preserves the underlying publisher attribution that OpenAQ exposes (provider/owner metadata) on every record. Anonymous, unattributed measurements are skipped rather than published.
+
+## Ingestion workflow
+
+`scripts/data/ingest-air-quality.sh` is a build-time/manual helper that fetches the latest measurement per `(city, parameter)` tuple from OpenAQ v3 and prints a TypeScript record literal. The script is **never** invoked during page rendering — and never imported by any module under `app/`, `lib/`, or `components/`.
+
+```
+OPENAQ_API_KEY=your-openaq-key \
+  ./scripts/data/ingest-air-quality.sh > /tmp/air-quality.ts
+```
+
+Without `OPENAQ_API_KEY`, the script writes a noisy stderr warning, emits a header-only TypeScript file, and exits 0. It never silently substitutes another data source.
+
+Optional filters compose as the intersection of two sets:
+
+```
+# refresh a single city
+CITY_FILTER="copenhagen" OPENAQ_API_KEY=... ./scripts/data/ingest-air-quality.sh
+
+# refresh PM-only metrics across all cities
+METRIC_FILTER="pm25:pm10" OPENAQ_API_KEY=... ./scripts/data/ingest-air-quality.sh
+
+# combine — PM2.5 for Copenhagen and Stockholm only
+CITY_FILTER="copenhagen:stockholm" METRIC_FILTER="pm25" OPENAQ_API_KEY=... \
+  ./scripts/data/ingest-air-quality.sh
+```
+
+The script never produces an `aqi` field: OpenAQ does not compute AQI, and AQI must not be derived locally from PM measurements. Records emitted by the script carry only the parameters OpenAQ reports.
+
+After reviewing the generated file, paste the records into `airQualityDatasetRecords` in `lib/data/official/air-quality/dataset.ts`, then run:
+
+```
+npm run typecheck && npm run lint && npm run build
+```
+
+`validate.ts` runs at module load and refuses any record that fails the schema.
+
+## Source attribution policy
+
+OpenAQ is registered as an accepted source (`openaq` in `lib/data/sources/index.ts`) but **only** as the aggregator. Every record emitted by `ingest-air-quality.sh` includes the underlying publisher name in `notes`. Before committing the generated records:
+
+- Confirm the underlying publisher (national environment agency, EEA feed, EPA AirNow, etc.) is itself listed in `lib/data/sources/index.ts`. If it is missing, add it first.
+- Extend `sourceIds` from `["openaq"]` to `["openaq", "<underlying-publisher>"]`. A bare `["openaq"]` citation is acceptable only when the underlying publisher is itself OpenAQ-managed and no other registry exists.
+- If the OpenAQ provider/owner metadata is empty, skip the record. The platform does not publish a measurement it cannot attribute.
 
 ## Metric model
 
@@ -68,5 +123,6 @@ The validator runs at module load, so a malformed record blocks the build instea
 
 ## Future work (not in this task)
 
-- A `scripts/data/ingest-air-quality.ts` script can read publisher output and emit `AirQualityDatasetRecord` objects locally, then run the validator before writing.
-- A `validate:air-quality` npm script can be added once an ingest pipeline exists.
+- A `validate:air-quality` npm script that runs the validator without booting Next.js.
+- A WHO-air ingestion helper for the Global Air Quality Database (Excel) once a stable parser is in place.
+- EEA per-country city-level aggregation helpers for European cities lacking OpenAQ coverage.
