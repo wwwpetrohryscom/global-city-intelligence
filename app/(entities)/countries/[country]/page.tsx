@@ -14,6 +14,7 @@ import { CountryRankingsSection } from "@/components/country/CountryRankingsSect
 import { CountryIndicatorsSection } from "@/components/data/CountryIndicatorsSection";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -314,6 +315,15 @@ export default async function CountryPage({ params }: PageProps) {
 
       <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
         <BreadcrumbNav items={breadcrumbs} />
+
+        <section aria-label={`${country.name} visual context`}>
+          <PlaceHeroImage
+            placeName={country.name}
+            placeSlug={country.slug}
+            placeType="country"
+            priority
+          />
+        </section>
 
         <CountryHubNavigation items={hubNavItems} />
 

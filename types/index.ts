@@ -70,3 +70,9 @@ export type {
   PageFreshness,
 } from "./seo";
 export type { DataSource } from "./source";
+export type {
+  PlaceImage,
+  PlaceImageSource,
+  PlaceImageType,
+  PlaceType,
+} from "./media";

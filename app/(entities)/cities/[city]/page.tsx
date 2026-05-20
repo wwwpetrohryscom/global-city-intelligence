@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
+import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
 import { RelatedComparisons } from "@/components/comparison/RelatedComparisons";
 import { AirQualityProfileSection } from "@/components/data/AirQualityProfileSection";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
@@ -171,6 +172,15 @@ export default async function CityPage({ params }: PageProps) {
 
       <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
         <BreadcrumbNav items={breadcrumbs} />
+
+        <section aria-label={`${city.name} visual context`}>
+          <PlaceHeroImage
+            placeName={`${city.name}, ${city.countryName}`}
+            placeSlug={city.slug}
+            placeType="city"
+            priority
+          />
+        </section>
 
         <section className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr]">
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
