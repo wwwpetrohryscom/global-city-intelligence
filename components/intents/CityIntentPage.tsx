@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AirQualityProfileSection } from "@/components/data/AirQualityProfileSection";
+import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
 import { CityIntentCriteria } from "@/components/intents/CityIntentCriteria";
 import {
   CityIntentOverviewCards,
@@ -196,6 +197,17 @@ export function CityIntentPage({
 
       <Container className="space-y-14 py-12">
         <BreadcrumbNav items={breadcrumbs} />
+
+        <section
+          aria-label={`${city.name} visual context for ${intent.shortTitle.toLowerCase()}`}
+          className="max-w-2xl"
+        >
+          <PlaceHeroImage
+            placeName={`${city.name}${country ? `, ${country.name}` : ""}`}
+            placeSlug={city.slug}
+            placeType="city"
+          />
+        </section>
 
         <section aria-labelledby="intent-overview-heading">
           <SectionHeading

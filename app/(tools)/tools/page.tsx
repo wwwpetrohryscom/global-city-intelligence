@@ -32,6 +32,12 @@ interface ToolEntry {
   doesNotDo: string[];
   primaryAnchor: string;
   relatedLinks: { label: string; href: string }[];
+  /**
+   * Short two-letter glyph rendered inside a CSS-only brand badge. Used
+   * for visual differentiation on the tools directory page. No icon
+   * library, no external SVG asset.
+   */
+  glyph: string;
 }
 
 const TOOLS: ToolEntry[] = [
@@ -55,6 +61,7 @@ const TOOLS: ToolEntry[] = [
       { label: "Cities directory", href: staticRoutes.cities },
       { label: "City comparisons", href: staticRoutes.compare },
     ],
+    glyph: "CL",
   },
   {
     name: "Travel Budget Calculator",
@@ -76,6 +83,7 @@ const TOOLS: ToolEntry[] = [
       { label: "Country hubs", href: staticRoutes.countries },
       { label: "Cities directory", href: staticRoutes.cities },
     ],
+    glyph: "TB",
   },
   {
     name: "Relocation Checklist",
@@ -97,6 +105,7 @@ const TOOLS: ToolEntry[] = [
       { label: "Country hubs", href: staticRoutes.countries },
       { label: "Methodology", href: staticRoutes.methodology },
     ],
+    glyph: "RC",
   },
 ];
 
@@ -164,13 +173,23 @@ export default function ToolsIndexPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {TOOLS.map((tool) => (
               <Card as="article" className="flex flex-col p-6" key={tool.href}>
-                <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
-                  Planning tool
-                </p>
-                <h2 className="mt-2 text-2xl font-semibold text-text-primary">
-                  {tool.name}
-                </h2>
-                <p className="mt-3 leading-7 text-text-secondary">
+                <div className="flex items-start gap-4">
+                  <span
+                    aria-hidden="true"
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-400 text-base font-semibold tracking-wide text-text-inverse shadow-sm"
+                  >
+                    {tool.glyph}
+                  </span>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
+                      Planning tool
+                    </p>
+                    <h2 className="mt-1 text-2xl font-semibold text-text-primary">
+                      {tool.name}
+                    </h2>
+                  </div>
+                </div>
+                <p className="mt-4 leading-7 text-text-secondary">
                   {tool.description}
                 </p>
 

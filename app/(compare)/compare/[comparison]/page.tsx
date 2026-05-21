@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ComparisonBarSummary } from "@/components/charts/ComparisonBarSummary";
 import { ComparisonSummaryCards } from "@/components/comparison/ComparisonSummaryCards";
 import { ComparisonTable } from "@/components/comparison/ComparisonTable";
 import { RelatedComparisons } from "@/components/comparison/RelatedComparisons";
@@ -162,6 +163,19 @@ export default async function ComparisonPage({ params }: PageProps) {
           layersA={layersA}
           layersB={layersB}
         />
+
+        <section aria-labelledby="comparison-visual-summary-heading">
+          <SectionHeading
+            description="Lightweight visual summary using directional module scores from the underlying city profiles. The comparison table below remains the source of truth."
+            title="Visual summary"
+          />
+          <h2 className="sr-only" id="comparison-visual-summary-heading">
+            {cityA.name} and {cityB.name} visual summary
+          </h2>
+          <div className="mt-6">
+            <ComparisonBarSummary cityA={cityA} cityB={cityB} />
+          </div>
+        </section>
 
         <section>
           <SectionHeading

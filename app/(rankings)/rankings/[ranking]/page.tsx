@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
+import { RankingBarChart } from "@/components/charts/RankingBarChart";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
@@ -98,6 +99,25 @@ export default async function RankingDetailPage({ params }: PageProps) {
             { label: "Ranking type", value: ranking.shortTitle },
           ]}
         />
+
+        {entries.length > 0 ? (
+          <section aria-labelledby="ranking-visual-summary-heading">
+            <SectionHeading
+              description="Lightweight visual summary of the top entries in this ranking. The full table below stays the source of truth and links into every city profile."
+              title="Visual summary"
+            />
+            <h2 className="sr-only" id="ranking-visual-summary-heading">
+              Visual summary of {ranking.title}
+            </h2>
+            <div className="mt-6">
+              <RankingBarChart
+                caption={`${ranking.title} visual summary`}
+                entries={entries}
+                title={ranking.shortTitle}
+              />
+            </div>
+          </section>
+        ) : null}
 
         <section>
           <SectionHeading
