@@ -44,7 +44,8 @@ import {
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
-import { createMetadata } from "@/lib/seo/metadata";
+import { createMetadata, ogImageFromPlaceImage } from "@/lib/seo/metadata";
+import { getCityHeroImage } from "@/lib/data/media/queries";
 import {
   cityRoute,
   countryRoute,
@@ -82,6 +83,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: `${city.name} city intelligence profile with affordability, air quality, energy, resilience, sources, tables, and rankings.`,
     path: cityRoute(city.slug),
     type: "article",
+    image: ogImageFromPlaceImage(getCityHeroImage(city.slug)),
   });
 }
 

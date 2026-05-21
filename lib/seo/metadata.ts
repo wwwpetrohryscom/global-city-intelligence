@@ -11,7 +11,15 @@ import type {
   CityIntent,
   CityIntentPage,
   Country,
+  PlaceImage,
 } from "@/types";
+
+interface MetadataOgImage {
+  url: string;
+  width?: number;
+  height?: number;
+  alt: string;
+}
 
 interface MetadataInput {
   title: string;
@@ -19,6 +27,14 @@ interface MetadataInput {
   path: string;
   lastModified?: string;
   type?: "website" | "article";
+  /**
+   * Optional verified hero image used for Open Graph + Twitter
+   * previews. Pass only verified records — when undefined, the
+   * resulting Metadata has no `openGraph.images` / `twitter.images`
+   * so link previews quietly fall back to the platform's default
+   * card rather than rendering a broken or placeholder asset.
+   */
+  image?: MetadataOgImage;
 }
 
 export const siteName = "Global City Intelligence";
@@ -29,6 +45,7 @@ export function createMetadata({
   path,
   lastModified = LAST_UPDATED,
   type = "website",
+  image,
 }: MetadataInput): Metadata {
   const url = absoluteUrl(path);
 
@@ -44,16 +61,50 @@ export function createMetadata({
       url,
       siteName,
       type,
+      ...(image
+        ? {
+            images: [
+              {
+                url: image.url,
+                width: image.width,
+                height: image.height,
+                alt: image.alt,
+              },
+            ],
+          }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      ...(image ? { images: [image.url] } : {}),
     },
     other: {
       dateModified: lastModified,
       updatedDate: lastModified,
     },
+  };
+}
+
+/**
+ * Build the optional OG-image input for `createMetadata` from a
+ * verified `PlaceImage` (city or country hero). Returns undefined for
+ * any record that is not verified, has no src, or has no alt — so
+ * callers can pipe the value straight in without an extra guard and
+ * unverified records never leak into link-preview metadata.
+ */
+export function ogImageFromPlaceImage(
+  image: PlaceImage | undefined,
+): MetadataOgImage | undefined {
+  if (!image || !image.verified || !image.src || !image.alt) {
+    return undefined;
+  }
+  return {
+    url: image.src,
+    width: image.width,
+    height: image.height,
+    alt: image.alt,
   };
 }
 

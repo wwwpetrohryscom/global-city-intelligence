@@ -50,7 +50,8 @@ import {
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { countryBreadcrumbs } from "@/lib/seo/breadcrumbs";
-import { createMetadata } from "@/lib/seo/metadata";
+import { createMetadata, ogImageFromPlaceImage } from "@/lib/seo/metadata";
+import { getCountryHeroImage } from "@/lib/data/media/queries";
 import { countryRoute, staticRoutes } from "@/lib/seo/routes";
 import {
   breadcrumbSchema,
@@ -91,6 +92,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     path: countryRoute(country.slug),
     lastModified: country.lastUpdated,
     type: "article",
+    image: ogImageFromPlaceImage(getCountryHeroImage(country.slug)),
   });
 }
 
