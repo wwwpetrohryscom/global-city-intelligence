@@ -2898,26 +2898,6 @@
     "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Alakasam&amp;action=edit&amp;redlink=1"
   },
   {
-    "id": "city-nagoya-hero",
-    "placeSlug": "nagoya",
-    "placeType": "city",
-    "imageType": "hero",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Japan_Nagoya.png",
-    "width": 1220,
-    "height": 1669,
-    "alt": "View of Nagoya, Japan",
-    "source": "wikimedia",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japan_Nagoya.png",
-    "author": "File:Ferris Wheel - Port of Nagoya.JPG by Gnsin File:Higashiyama botanical gardens-01.jpg by KAMUI File:Nagoya (2015-11-03).JPG by Alpsdake File:Nagoya TV Tower.jpg by Benjamin Hollis upload by File Upload Bot (Magnus Manske) File:Nagoya csl snow piled up.jpg by \u540d\u53e4\u5c4b\u592a\u90ce Composition by ASDFGH",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "attributionText": "File:Ferris Wheel - Port of Nagoya.JPG by Gnsin File:Higashiyama botanical gardens-01.jpg by KAMUI File:Nagoya (2015-11-03).JPG by Alpsdake File:Nagoya TV Tower.jpg by Benjamin Hollis upload by File Upload Bot (Magnus Manske) File:Nagoya csl snow piled up.jpg by \u540d\u53e4\u5c4b\u592a\u90ce Composition by ASDFGH / Wikimedia Commons, CC BY-SA 3.0",
-    "verified": true,
-    "verifiedAt": "2026-05-20",
-    "notes": "Resolved via Wikidata Q11751 \u2192 Commons file 'Japan Nagoya.png'.",
-    "authorUrl": "https://commons.wikimedia.org/wiki/File:Ferris_Wheel_-_Port_of_Nagoya.JPG"
-  },
-  {
     "id": "city-sapporo-hero",
     "placeSlug": "sapporo",
     "placeType": "city",
@@ -3367,5 +3347,26 @@
     "verified": true,
     "verifiedAt": "2026-05-21",
     "notes": "Resolved via landmark article 'Castel Nuovo' \u2192 Wikidata Q781219 \u2192 Commons file 'Naples-Castel Nuovo.jpg'."
+  },
+  {
+    "id": "city-nagoya-hero",
+    "placeSlug": "nagoya",
+    "placeType": "city",
+    "imageType": "hero",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Nagoya_Castle%28Larger%29.jpg/1920px-Nagoya_Castle%28Larger%29.jpg",
+    "width": 1600,
+    "height": 900,
+    "alt": "View of Nagoya Castle in Nagoya, Japan",
+    "caption": "Nagoya Castle",
+    "source": "wikimedia",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nagoya_Castle(Larger).jpg",
+    "author": "Base64",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attributionText": "Base64 / Wikimedia Commons, CC BY-SA 3.0",
+    "verified": true,
+    "verifiedAt": "2026-05-21",
+    "notes": "Resolved via landmark article 'Nagoya Castle' \u2192 Wikidata Q648629 \u2192 Commons file 'Nagoya Castle(Larger).jpg'.",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Base64"
   }
 ]

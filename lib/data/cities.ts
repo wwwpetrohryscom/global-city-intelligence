@@ -9223,7 +9223,7 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Curitiba profile to compare cost framing, mobility, and urban-planning signals alongside São Paulo and other Brazilian metros.",
     scores: { overall: 75, affordability: 72, airQuality: 74, energy: 72, resilience: 72 },
-    relatedCitySlugs: ["sao-paulo", "porto-alegre", "rio-de-janeiro"],
+    relatedCitySlugs: ["sao-paulo", "rio-de-janeiro", "brasilia"],
   }),
   buildNeutralCitySeed({
     slug: "brasilia",

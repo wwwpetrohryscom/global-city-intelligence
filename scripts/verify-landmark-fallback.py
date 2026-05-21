@@ -136,6 +136,11 @@ CITY_LANDMARKS: dict[str, list[str]] = {
         "Castel dell'Ovo",
         "Royal Palace of Naples",
     ],
+    "nagoya": [
+        "Nagoya Castle",
+        "Atsuta Shrine",
+        "Osu Kannon",
+    ],
 }
 
 COUNTRY_LANDMARKS: dict[str, list[str]] = {
