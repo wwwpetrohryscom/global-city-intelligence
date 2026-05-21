@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { LAST_UPDATED } from "@/lib/data/constants";
 import {
   absoluteUrl,
+  arrivalRoute,
   getCityIntentUrl,
   getCollectionUrl,
 } from "@/lib/seo/routes";
 import type {
+  ArrivalPage,
   City,
   CityCollection,
   CityIntent,
@@ -117,6 +119,31 @@ export function generateCollectionMetadata(
     path: getCollectionUrl(collection.slug),
     lastModified: collection.updatedDate,
     type: "article",
+  });
+}
+
+export function generateArrivalMetadata({
+  arrivalPage,
+  city,
+  country,
+  image,
+}: {
+  arrivalPage: ArrivalPage;
+  city: City;
+  country: Country | undefined;
+  image?: MetadataOgImage;
+}): Metadata {
+  const countryFragment = country ? `, ${country.name}` : "";
+  const title = `Arriving in ${city.name}: City Arrival Planning Guide`;
+  const description = `Plan your arrival in ${city.name}${countryFragment} with city intelligence links, transport context, public-safety references, healthcare access notes, budget tools, relocation checklist, sources, and methodology — not an official airport or travel instruction service.`;
+
+  return createMetadata({
+    title,
+    description,
+    path: arrivalRoute(arrivalPage.citySlug),
+    lastModified: arrivalPage.updatedDate,
+    type: "article",
+    image,
   });
 }
 

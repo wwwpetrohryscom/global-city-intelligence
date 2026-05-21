@@ -41,12 +41,14 @@ import {
   getCountryTransportProfile,
   getHospitalRegistryProfile,
   getVerifiedHospitalsForCity,
+  hasArrivalPage,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata, ogImageFromPlaceImage } from "@/lib/seo/metadata";
 import { getCityHeroImage } from "@/lib/data/media/queries";
 import {
+  arrivalRoute,
   cityRoute,
   countryRoute,
   getCityIntentUrl,
@@ -357,6 +359,13 @@ export default async function CityPage({ params }: PageProps) {
               href={rankingRoute("overall-city-intelligence")}
               title="City rankings"
             />
+            {hasArrivalPage(city.slug) ? (
+              <LinkCard
+                description={`Practical arrival planning context for ${city.name} — links into transport, public-safety, healthcare, budgeting tools, and methodology. Not an official airport or travel instruction service.`}
+                href={arrivalRoute(city.slug)}
+                title={`Arrival planning guide for ${city.name}`}
+              />
+            ) : null}
             <LinkCard
               description={`Estimate a monthly budget for ${city.name} using your own housing, food, transport, healthcare, and lifestyle inputs. Planning estimator only — not an official cost-of-living measurement.`}
               href={staticRoutes.costOfLivingCalculator}

@@ -140,6 +140,16 @@ export {
   getIntentPagesForIntent,
 } from "@/lib/data/queries/city-intents";
 
+export {
+  getAllArrivalPages,
+  getArrivalChecklist,
+  getArrivalPageByCitySlug,
+  getArrivalPagesForCountry,
+  hasArrivalPage,
+} from "@/lib/data/queries/arrival";
+
+export { getArrivalFocusLabel } from "@/lib/data/arrival";
+
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
 export {

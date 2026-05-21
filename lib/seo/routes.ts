@@ -1,4 +1,5 @@
 import {
+  getAllArrivalPages,
   getAllCityIntentPages,
   getAllCollections,
   getCities,
@@ -59,6 +60,10 @@ export function rankingRoute(rankingSlug: string) {
   return `/rankings/${rankingSlug}`;
 }
 
+export function arrivalRoute(citySlug: string) {
+  return `/arrival/${citySlug}`;
+}
+
 export function getCollectionUrl(slug: string) {
   return `/${slug}`;
 }
@@ -94,5 +99,6 @@ export function getAllIndexableRoutes() {
     ...getAllCityIntentPages().map((page) =>
       getCityIntentUrl(page.citySlug, page.intentSlug),
     ),
+    ...getAllArrivalPages().map((page) => arrivalRoute(page.citySlug)),
   ];
 }

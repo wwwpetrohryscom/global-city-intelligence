@@ -8,6 +8,7 @@ import {
   getRankingBySlug,
 } from "@/lib/data/queries";
 import {
+  arrivalRoute,
   cityRoute,
   comparisonRoute,
   countryRoute,
@@ -111,6 +112,26 @@ export function toolsBreadcrumbs(
     homeCrumb,
     { name: "Tools", href: staticRoutes.tools },
     { name: label, href },
+  ];
+}
+
+export function arrivalBreadcrumbs(citySlug: string): BreadcrumbItem[] {
+  const city = getCityBySlug(citySlug);
+
+  return [
+    homeCrumb,
+    {
+      name: "Cities",
+      href: staticRoutes.cities,
+    },
+    {
+      name: city?.name || "City",
+      href: cityRoute(citySlug),
+    },
+    {
+      name: "Arrival planning",
+      href: arrivalRoute(citySlug),
+    },
   ];
 }
 

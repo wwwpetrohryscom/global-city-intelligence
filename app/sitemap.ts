@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { LAST_UPDATED } from "@/lib/data/constants";
 import {
+  getAllArrivalPages,
   getAllCityIntentPages,
   getAllCollections,
   getAllComparisons,
@@ -11,6 +12,7 @@ import {
 } from "@/lib/data/queries";
 import {
   absoluteUrl,
+  arrivalRoute,
   cityRoute,
   comparisonRoute,
   countryRoute,
@@ -152,6 +154,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.83,
   }));
 
+  const arrivalItems = getAllArrivalPages().map((page) => ({
+    url: absoluteUrl(arrivalRoute(page.citySlug)),
+    lastModified: new Date(page.updatedDate),
+    changeFrequency: "monthly" as const,
+    priority: 0.74,
+  }));
+
   return [
     ...staticItems,
     ...cityItems,
@@ -161,5 +170,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...comparisonItems,
     ...collectionItems,
     ...cityIntentItems,
+    ...arrivalItems,
   ];
 }

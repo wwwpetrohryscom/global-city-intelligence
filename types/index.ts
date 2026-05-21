@@ -43,6 +43,12 @@ export type {
   CityIntentSlug,
 } from "./intent";
 export type {
+  ArrivalChecklistCategory,
+  ArrivalChecklistItem,
+  ArrivalFocus,
+  ArrivalPage,
+} from "./arrival";
+export type {
   DataProvenance,
   DatasetCoverage,
   MetricVerificationStatus,
