@@ -211,3 +211,41 @@ The static page count grew from 1,079 to 1,434 (50 city pages + 300
 module pages [50 × 6 modules] + 5 country pages = +355 pages on the
 existing 1,079 baseline). `npm run validate:media` reports 171 / 171
 city hero coverage and 84 / 84 country hero coverage after this batch.
+
+## 2026-05-21 batch: arrival planning cluster — second wave
+
+The first arrival batch added 41 curated `/arrival/[city]` static
+pages. This second wave adds **41 more** through `lib/data/arrival.ts`
+only — no new images, no new cities, no new countries, no new route
+files. Arrival pages 41 → 82.
+
+Second-batch cities (41):
+
+- **Europe (20)**: Valencia, Seville, Bilbao, Bologna, Florence,
+  Naples, Kraków, Gdańsk, Wrocław, Antwerp, Rotterdam, Utrecht,
+  Geneva, Basel, Athens, Budapest, Prague, Warsaw, Helsinki, Oslo.
+- **United States (6)**: Philadelphia, Atlanta, Phoenix, San Diego,
+  Portland, Dallas.
+- **Canada / Commonwealth (7)**: Calgary, Gold Coast, Hobart,
+  Adelaide, Canberra, Christchurch, Dunedin.
+- **Asia / global hubs (8)**: Osaka, Fukuoka, Busan, Incheon,
+  Kaohsiung, Da Nang, Kuala Lumpur, Bangkok.
+
+Skipped from the suggested batch:
+
+- **Already covered in batch 1**: Porto, Denver.
+- **Not in city registry**: Nashville, Charlotte, Quebec City.
+
+Safety rules continue to apply to every arrival record:
+
+- No airport names, no IATA codes, no terminals, no transfer routes,
+  no fares, no schedules, no travel times.
+- No fabricated transport operator names or emergency contacts.
+- No visa, immigration, legal, or medical advice — every record
+  includes only neutral arrival planning context that defers
+  time-sensitive details to official sources via the existing
+  transport, public-safety, and healthcare layers.
+
+The static page count grew from 1,434 (post-50-city expansion) to
+1,475 (post-first-arrival-batch) to **1,516** after this second
+arrival wave (+41).
