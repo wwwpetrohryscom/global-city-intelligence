@@ -158,3 +158,56 @@ render the transparent fallback until each field can be attributed to
 an official publisher. The static page count grew from 712 to 1,030
 (42 city pages + 252 module pages + 24 country pages + the existing
 712 baseline).
+
+## 2026-05-21 batch: 50 cities, 5 countries, full verified media
+
+Cities added (50):
+
+- **Europe (15)**: Porto, Valencia, Seville, Bilbao, Bologna,
+  Florence, Naples, Kraków, Gdańsk, Wrocław, Antwerp, Rotterdam,
+  Utrecht, Geneva, Basel.
+- **North America (7)**: Philadelphia, Atlanta, Denver, Phoenix,
+  San Diego, Portland, Ottawa.
+- **Latin America (6)**: Curitiba, Brasília, Monterrey, Guadalajara,
+  Valparaíso, Córdoba.
+- **Asia (9)**: Nagoya, Sapporo, Daegu, Incheon, Kaohsiung, Cebu,
+  Da Nang, Lahore, Karachi.
+- **Middle East (4)**: Jeddah, Medina, Sharjah, Beirut.
+- **Africa (6)**: Alexandria, Marrakesh, Durban, Windhoek, Lusaka,
+  Maputo.
+- **Oceania (3)**: Hobart, Gold Coast, Dunedin.
+
+Quebec City, Recife, Puebla, Yokohama, Kobe, Tainan, Fes, and Pretoria
+were intentionally trimmed from the suggested batch to stay within the
+50-city cap while preserving geographic balance. Porto Alegre was
+trimmed after build to keep the cap exact at 50.
+
+Countries added (5): **Lebanon, Pakistan, Namibia, Zambia,
+Mozambique**. Pakistan was added because Lahore and Karachi belong to
+it and the country registry did not yet include it; the other four
+match the cities Beirut, Windhoek, Lusaka, and Maputo. Each new
+country uses the existing directional country profile and the
+transparent fallback for verified emergency / healthcare / transport
+layers — no fake official metrics were introduced.
+
+Existing country `citySlugs` arrays were extended in lockstep with the
+new cities for: United States, Canada, Australia, Japan, South Korea,
+Spain, Italy, Portugal, Netherlands, Switzerland, Belgium, Poland,
+Brazil, Mexico, Chile, Argentina, Taiwan, Philippines, Vietnam,
+United Arab Emirates, Saudi Arabia, Egypt, Morocco, South Africa,
+New Zealand.
+
+Verified Wikimedia Commons hero images were added for **all 50 new
+cities and all 5 new countries** via the existing
+`scripts/verify-missing-places.py` and `scripts/verify-landmark-fallback.py`
+pipelines. The landmark fallback covered Valparaíso, Cebu, Ottawa,
+Daegu, Naples, Zambia, and Mozambique where the place's primary
+Wikidata `P18` was a montage, location map, or a record with a
+non-clean author field. `SLUG_OVERRIDES` was extended in the verifier
+to disambiguate names like Phoenix, Portland, Valencia, Cordoba, and
+others that share their plain name with other articles.
+
+The static page count grew from 1,079 to 1,434 (50 city pages + 300
+module pages [50 × 6 modules] + 5 country pages = +355 pages on the
+existing 1,079 baseline). `npm run validate:media` reports 171 / 171
+city hero coverage and 84 / 84 country hero coverage after this batch.

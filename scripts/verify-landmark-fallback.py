@@ -110,6 +110,32 @@ CITY_LANDMARKS: dict[str, list[str]] = {
         "Azania Front Lutheran Church",
         "St. Joseph's Cathedral, Dar es Salaam",
     ],
+    # ===== Expansion-batch fallbacks =====
+    "valparaiso": [
+        "Cerro Concepción",
+        "Valparaíso funiculars",
+        "Plaza Sotomayor",
+    ],
+    "cebu": [
+        "Basilica del Santo Niño",
+        "Magellan's Cross",
+        "Fort San Pedro",
+    ],
+    "ottawa": [
+        "Parliament Hill",
+        "Centre Block",
+        "Rideau Canal",
+    ],
+    "daegu": [
+        "Donghwasa",
+        "Apsan",
+        "Daegu Stadium",
+    ],
+    "naples": [
+        "Castel Nuovo",
+        "Castel dell'Ovo",
+        "Royal Palace of Naples",
+    ],
 }
 
 COUNTRY_LANDMARKS: dict[str, list[str]] = {
@@ -236,6 +262,16 @@ COUNTRY_LANDMARKS: dict[str, list[str]] = {
     "uganda": [
         "Bwindi Impenetrable Forest",
         "Murchison Falls",
+    ],
+    # ===== Expansion-batch fallbacks =====
+    "zambia": [
+        "Victoria Falls",
+        "South Luangwa National Park",
+    ],
+    "mozambique": [
+        "Bazaruto Archipelago",
+        "Quirimbas Archipelago",
+        "Ilha de Moçambique",
     ],
 }
 

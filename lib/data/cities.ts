@@ -8900,6 +8900,713 @@ const seeds: CitySeed[] = [
     scores: { overall: 76, affordability: 70, airQuality: 80, energy: 72, resilience: 68 },
     relatedCitySlugs: ["auckland", "wellington", "melbourne"],
   }),
+  // ===== Expansion batch: Europe (15) =====
+  buildNeutralCitySeed({
+    slug: "porto",
+    name: "Porto",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "~1.7M metro",
+    intro:
+      "Porto is Portugal's second-largest metro, with riverfront historic architecture and active digital-services and remote-work activity that pair well with Lisbon for cross-region comparison.",
+    outlook:
+      "Use the Porto profile to compare cost framing, country-level context, and connectivity signals alongside Lisbon and other Southern-European metros.",
+    scores: { overall: 79, affordability: 74, airQuality: 78, energy: 74, resilience: 72 },
+    relatedCitySlugs: ["lisbon", "barcelona", "madrid"],
+  }),
+  buildNeutralCitySeed({
+    slug: "valencia",
+    name: "Valencia",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~1.6M metro",
+    intro:
+      "Valencia is a Mediterranean Spanish metro with a compact urban core, mild climate, and growing remote-work and design economy useful for cross-region comparison.",
+    outlook:
+      "Use the Valencia profile to compare cost framing, mobility context, and quality-of-life signals alongside Barcelona, Madrid, and other Mediterranean metros.",
+    scores: { overall: 78, affordability: 72, airQuality: 76, energy: 74, resilience: 72 },
+    relatedCitySlugs: ["barcelona", "madrid", "lisbon"],
+  }),
+  buildNeutralCitySeed({
+    slug: "seville",
+    name: "Seville",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~1.5M metro",
+    intro:
+      "Seville is the largest Andalusian metro, known for historic urban form, walkable centre, and heat-adaptation pressure that shapes summer urban planning conversations.",
+    outlook:
+      "Use the Seville profile to compare cost framing, mobility, and heat-adaptation signals alongside other Southern-European metros.",
+    scores: { overall: 75, affordability: 74, airQuality: 72, energy: 72, resilience: 66 },
+    relatedCitySlugs: ["madrid", "barcelona", "valencia"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bilbao",
+    name: "Bilbao",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Western Europe",
+    population: "~1.0M metro",
+    intro:
+      "Bilbao is the largest Basque-region metro, with a regenerated post-industrial waterfront and compact transit network useful for cross-region Spanish and European comparison.",
+    outlook:
+      "Use the Bilbao profile to compare cost framing, mobility, and regeneration signals alongside Barcelona, Madrid, and other compact European metros.",
+    scores: { overall: 79, affordability: 72, airQuality: 78, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["barcelona", "madrid", "valencia"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bologna",
+    name: "Bologna",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~1.0M metro",
+    intro:
+      "Bologna is a mid-sized northern Italian metro with strong university and food-economy density, used for cross-region Italian and European comparison.",
+    outlook:
+      "Use the Bologna profile to compare cost framing, mobility, and quality-of-life signals alongside Milan, Florence, and other northern Italian metros.",
+    scores: { overall: 78, affordability: 70, airQuality: 72, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["milan", "florence", "rome"],
+  }),
+  buildNeutralCitySeed({
+    slug: "florence",
+    name: "Florence",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~1.0M metro",
+    intro:
+      "Florence is a compact Tuscan metro with dense historic architecture, strong arts and design economy, and visitor pressure that shapes urban planning conversations.",
+    outlook:
+      "Use the Florence profile to compare cost framing, mobility, and heritage-management signals alongside other Italian and Mediterranean metros.",
+    scores: { overall: 77, affordability: 68, airQuality: 72, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["rome", "milan", "bologna"],
+  }),
+  buildNeutralCitySeed({
+    slug: "naples",
+    name: "Naples",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~3.0M metro",
+    intro:
+      "Naples is the largest Southern-Italian metro, with dense historic urban form, Mediterranean climate, and volcanic-region context that shapes adaptation planning.",
+    outlook:
+      "Use the Naples profile to compare cost framing, mobility, and resilience signals alongside other Italian and Mediterranean metros.",
+    scores: { overall: 72, affordability: 74, airQuality: 66, energy: 66, resilience: 64 },
+    relatedCitySlugs: ["rome", "milan", "florence"],
+  }),
+  buildNeutralCitySeed({
+    slug: "krakow",
+    name: "Krakow",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~1.1M metro",
+    intro:
+      "Krakow is southern Poland's largest metro, with a compact historic core and growing services and digital-economy activity, useful for Central-European comparison.",
+    outlook:
+      "Use the Krakow profile to compare cost framing, mobility, and connectivity signals alongside Warsaw and other Central-European metros.",
+    scores: { overall: 77, affordability: 76, airQuality: 64, energy: 70, resilience: 72 },
+    relatedCitySlugs: ["warsaw", "prague", "wroclaw"],
+  }),
+  buildNeutralCitySeed({
+    slug: "gdansk",
+    name: "Gdansk",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~1.5M tricity",
+    intro:
+      "Gdansk anchors the Tricity Baltic-coast metro in northern Poland, with port and services activity, useful for Northern-European and Baltic comparison.",
+    outlook:
+      "Use the Gdansk profile to compare cost framing, mobility, and coastal-resilience signals alongside other Polish and Baltic metros.",
+    scores: { overall: 76, affordability: 74, airQuality: 72, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["warsaw", "krakow", "riga"],
+  }),
+  buildNeutralCitySeed({
+    slug: "wroclaw",
+    name: "Wroclaw",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~1.3M metro",
+    intro:
+      "Wroclaw is south-western Poland's largest metro, with a walkable historic centre and active business-services and tech-employer activity used for Central-European comparison.",
+    outlook:
+      "Use the Wroclaw profile to compare cost framing, mobility, and connectivity signals alongside Warsaw, Krakow, and other Central-European metros.",
+    scores: { overall: 77, affordability: 74, airQuality: 68, energy: 70, resilience: 72 },
+    relatedCitySlugs: ["warsaw", "krakow", "prague"],
+  }),
+  buildNeutralCitySeed({
+    slug: "antwerp",
+    name: "Antwerp",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~1.2M metro",
+    intro:
+      "Antwerp is Belgium's second-largest metro, with port and logistics density, design and diamond-trade activity, and compact urban form used for Western-European comparison.",
+    outlook:
+      "Use the Antwerp profile to compare cost framing, mobility, and port-economy signals alongside Brussels and other Northwest-European metros.",
+    scores: { overall: 80, affordability: 70, airQuality: 74, energy: 76, resilience: 74 },
+    relatedCitySlugs: ["brussels", "amsterdam", "rotterdam"],
+  }),
+  buildNeutralCitySeed({
+    slug: "rotterdam",
+    name: "Rotterdam",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~1.2M metro",
+    intro:
+      "Rotterdam is the largest Dutch port metro, with modern architecture, climate-adaptation pilots, and delta-region context that shapes long-run urban planning.",
+    outlook:
+      "Use the Rotterdam profile to compare cost framing, mobility, and delta-resilience signals alongside Amsterdam and other Northwest-European metros.",
+    scores: { overall: 82, affordability: 70, airQuality: 76, energy: 80, resilience: 78 },
+    relatedCitySlugs: ["amsterdam", "utrecht", "antwerp"],
+  }),
+  buildNeutralCitySeed({
+    slug: "utrecht",
+    name: "Utrecht",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~0.7M metro",
+    intro:
+      "Utrecht is a compact central-Dutch metro with strong cycling infrastructure, a major rail hub, and an active university and services economy.",
+    outlook:
+      "Use the Utrecht profile to compare cost framing, mobility, and quality-of-life signals alongside Amsterdam and Rotterdam.",
+    scores: { overall: 84, affordability: 70, airQuality: 80, energy: 80, resilience: 78 },
+    relatedCitySlugs: ["amsterdam", "rotterdam", "brussels"],
+  }),
+  buildNeutralCitySeed({
+    slug: "geneva",
+    name: "Geneva",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~1.0M cross-border metro",
+    intro:
+      "Geneva is a cross-border Lake-Geneva metro with international-organisation density, multilingual workforce, and high-cost daily-life framing used for European comparison.",
+    outlook:
+      "Use the Geneva profile to compare cost framing, mobility, and quality-of-life signals alongside Zurich and other Western-European metros.",
+    scores: { overall: 87, affordability: 60, airQuality: 84, energy: 82, resilience: 86 },
+    relatedCitySlugs: ["zurich", "basel", "paris"],
+  }),
+  buildNeutralCitySeed({
+    slug: "basel",
+    name: "Basel",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~0.8M tri-national metro",
+    intro:
+      "Basel is a Rhine-side tri-national metro with pharma and life-sciences density, walkable cultural districts, and reliable cross-border transit used for European comparison.",
+    outlook:
+      "Use the Basel profile to compare cost framing, mobility, and quality-of-life signals alongside Zurich and Geneva.",
+    scores: { overall: 86, affordability: 62, airQuality: 84, energy: 82, resilience: 84 },
+    relatedCitySlugs: ["zurich", "geneva", "vienna"],
+  }),
+  // ===== Expansion batch: North America (7) =====
+  buildNeutralCitySeed({
+    slug: "philadelphia",
+    name: "Philadelphia",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~6.2M metro",
+    intro:
+      "Philadelphia is a Mid-Atlantic US metro with dense historic neighborhoods, education and healthcare anchors, and rail connectivity to the Northeast Corridor.",
+    outlook:
+      "Use the Philadelphia profile to compare cost framing, mobility, and healthcare-anchor signals alongside other US-East metros.",
+    scores: { overall: 76, affordability: 70, airQuality: 70, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["new-york", "washington-dc", "boston"],
+  }),
+  buildNeutralCitySeed({
+    slug: "atlanta",
+    name: "Atlanta",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~6.3M metro",
+    intro:
+      "Atlanta is the largest US-Southeast metro, with airline-hub connectivity, dispersed urban form, and major film, healthcare, and corporate employer presence.",
+    outlook:
+      "Use the Atlanta profile to compare cost framing, mobility, and climate-exposure signals alongside other US-South metros.",
+    scores: { overall: 74, affordability: 70, airQuality: 68, energy: 70, resilience: 66 },
+    relatedCitySlugs: ["dallas", "miami", "austin"],
+  }),
+  buildNeutralCitySeed({
+    slug: "denver",
+    name: "Denver",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~3.0M metro",
+    intro:
+      "Denver is the US Mountain-West gateway metro, with elevation, dry climate, and active outdoor-economy framing useful for cross-region US comparison.",
+    outlook:
+      "Use the Denver profile to compare cost framing, mobility, and climate-exposure signals alongside other US-West metros.",
+    scores: { overall: 78, affordability: 70, airQuality: 72, energy: 76, resilience: 72 },
+    relatedCitySlugs: ["seattle", "san-francisco", "phoenix"],
+  }),
+  buildNeutralCitySeed({
+    slug: "phoenix",
+    name: "Phoenix",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~5.0M metro",
+    intro:
+      "Phoenix is the largest US-Southwest desert metro, with sustained summer heat, water-resource pressure, and large solar potential shaping the energy and resilience conversation.",
+    outlook:
+      "Use the Phoenix profile to compare cost framing, energy, and heat-adaptation signals alongside other US-West metros.",
+    scores: { overall: 72, affordability: 72, airQuality: 64, energy: 76, resilience: 60 },
+    relatedCitySlugs: ["los-angeles", "san-diego", "denver"],
+  }),
+  buildNeutralCitySeed({
+    slug: "san-diego",
+    name: "San Diego",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~3.3M metro",
+    intro:
+      "San Diego is a Pacific-coastal US metro with mild climate, naval and life-sciences density, and water-resource and wildfire-adaptation considerations.",
+    outlook:
+      "Use the San Diego profile to compare cost framing, mobility, and coastal-adaptation signals alongside Los Angeles and San Francisco.",
+    scores: { overall: 80, affordability: 66, airQuality: 76, energy: 76, resilience: 72 },
+    relatedCitySlugs: ["los-angeles", "san-francisco", "phoenix"],
+  }),
+  buildNeutralCitySeed({
+    slug: "portland",
+    name: "Portland",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~2.5M metro",
+    intro:
+      "Portland is a Pacific-Northwest US metro with active land-use planning, transit and cycling infrastructure, and forest and wildfire-adaptation context.",
+    outlook:
+      "Use the Portland profile to compare cost framing, mobility, and climate-adaptation signals alongside Seattle and San Francisco.",
+    scores: { overall: 80, affordability: 68, airQuality: 76, energy: 78, resilience: 72 },
+    relatedCitySlugs: ["seattle", "san-francisco", "vancouver"],
+  }),
+  buildNeutralCitySeed({
+    slug: "ottawa",
+    name: "Ottawa",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~1.5M metro",
+    intro:
+      "Ottawa is Canada's national-capital metro, with stable public-sector employment, bilingual workforce, and continental-cold climate framing used for cross-region Canadian comparison.",
+    outlook:
+      "Use the Ottawa profile to compare cost framing, mobility, and public-services signals alongside Toronto and Montreal.",
+    scores: { overall: 81, affordability: 72, airQuality: 80, energy: 76, resilience: 76 },
+    relatedCitySlugs: ["toronto", "montreal", "vancouver"],
+  }),
+  // ===== Expansion batch: Latin America (7) =====
+  buildNeutralCitySeed({
+    slug: "curitiba",
+    name: "Curitiba",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "Latin America",
+    population: "~3.6M metro",
+    intro:
+      "Curitiba is a Southern-Brazilian metro known for bus-rapid-transit pioneering, planned parks system, and active services economy used for Latin-American comparison.",
+    outlook:
+      "Use the Curitiba profile to compare cost framing, mobility, and urban-planning signals alongside São Paulo and other Brazilian metros.",
+    scores: { overall: 75, affordability: 72, airQuality: 74, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["sao-paulo", "porto-alegre", "rio-de-janeiro"],
+  }),
+  buildNeutralCitySeed({
+    slug: "brasilia",
+    name: "Brasilia",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "Latin America",
+    population: "~4.7M metro",
+    intro:
+      "Brasilia is Brazil's planned federal-capital metro, with modernist urban design, dispersed form, and central-plateau climate framing used for cross-region comparison.",
+    outlook:
+      "Use the Brasilia profile to compare cost framing, mobility, and public-services signals alongside other Brazilian metros.",
+    scores: { overall: 76, affordability: 70, airQuality: 76, energy: 74, resilience: 72 },
+    relatedCitySlugs: ["sao-paulo", "rio-de-janeiro", "buenos-aires"],
+  }),
+  buildNeutralCitySeed({
+    slug: "monterrey",
+    name: "Monterrey",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "Latin America",
+    population: "~5.3M metro",
+    intro:
+      "Monterrey is Mexico's largest northern metro, with heavy industry, manufacturing, and trade-corridor activity, and water-resource pressure that shapes adaptation planning.",
+    outlook:
+      "Use the Monterrey profile to compare cost framing, mobility, and water-adaptation signals alongside Mexico City and Guadalajara.",
+    scores: { overall: 72, affordability: 74, airQuality: 64, energy: 70, resilience: 64 },
+    relatedCitySlugs: ["mexico-city", "guadalajara", "dallas"],
+  }),
+  buildNeutralCitySeed({
+    slug: "guadalajara",
+    name: "Guadalajara",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "Latin America",
+    population: "~5.3M metro",
+    intro:
+      "Guadalajara anchors Mexico's western Bajío region, with growing tech-employer presence, walkable historic core, and cultural industries used for Latin-American comparison.",
+    outlook:
+      "Use the Guadalajara profile to compare cost framing, mobility, and connectivity signals alongside Mexico City and Monterrey.",
+    scores: { overall: 75, affordability: 76, airQuality: 68, energy: 72, resilience: 68 },
+    relatedCitySlugs: ["mexico-city", "monterrey", "bogota"],
+  }),
+  buildNeutralCitySeed({
+    slug: "valparaiso",
+    name: "Valparaiso",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "Latin America",
+    population: "~1.0M metro",
+    intro:
+      "Valparaiso is Chile's main Pacific-coast port metro, with hillside historic neighborhoods, cultural districts, and seismic and coastal-resilience considerations.",
+    outlook:
+      "Use the Valparaiso profile to compare cost framing, mobility, and seismic-coastal-resilience signals alongside Santiago and other Pacific-coast metros.",
+    scores: { overall: 71, affordability: 72, airQuality: 72, energy: 68, resilience: 64 },
+    relatedCitySlugs: ["santiago", "lima", "buenos-aires"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cordoba",
+    name: "Cordoba",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "Latin America",
+    population: "~1.5M metro",
+    intro:
+      "Cordoba is Argentina's second-largest metro, with a strong university base, automotive industry, and central-Argentine geography used for cross-region comparison.",
+    outlook:
+      "Use the Cordoba profile to compare cost framing, mobility, and education-economy signals alongside Buenos Aires and other Southern-Cone metros.",
+    scores: { overall: 72, affordability: 76, airQuality: 70, energy: 70, resilience: 68 },
+    relatedCitySlugs: ["buenos-aires", "santiago", "montevideo"],
+  }),
+  // ===== Expansion batch: Asia (9) =====
+  buildNeutralCitySeed({
+    slug: "nagoya",
+    name: "Nagoya",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~9.5M Chukyo metro",
+    intro:
+      "Nagoya is the core of Japan's Chukyo metropolitan region, with automotive-manufacturing density, rail-network anchor, and resilient infrastructure context.",
+    outlook:
+      "Use the Nagoya profile to compare cost framing, mobility, and industrial-economy signals alongside Tokyo and Osaka.",
+    scores: { overall: 82, affordability: 70, airQuality: 76, energy: 76, resilience: 76 },
+    relatedCitySlugs: ["tokyo", "osaka", "kyoto"],
+  }),
+  buildNeutralCitySeed({
+    slug: "sapporo",
+    name: "Sapporo",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~2.6M metro",
+    intro:
+      "Sapporo is Hokkaido's largest metro, with cold-climate planning, winter-economy activity, and rail-grid form used for cross-region Japanese comparison.",
+    outlook:
+      "Use the Sapporo profile to compare cost framing, mobility, and cold-climate-resilience signals alongside Tokyo and other Japanese metros.",
+    scores: { overall: 79, affordability: 74, airQuality: 80, energy: 72, resilience: 74 },
+    relatedCitySlugs: ["tokyo", "osaka", "fukuoka"],
+  }),
+  buildNeutralCitySeed({
+    slug: "daegu",
+    name: "Daegu",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~2.4M metro",
+    intro:
+      "Daegu is a southeastern Korean metro, with textile and manufacturing heritage, dense urban form, and rail-link to Seoul used for cross-region comparison.",
+    outlook:
+      "Use the Daegu profile to compare cost framing, mobility, and connectivity signals alongside Seoul and Busan.",
+    scores: { overall: 77, affordability: 76, airQuality: 70, energy: 74, resilience: 72 },
+    relatedCitySlugs: ["seoul", "busan", "incheon"],
+  }),
+  buildNeutralCitySeed({
+    slug: "incheon",
+    name: "Incheon",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~3.0M metro",
+    intro:
+      "Incheon is the Seoul Capital Area's port and aviation gateway, with Songdo planned-district context and active logistics and trade economy.",
+    outlook:
+      "Use the Incheon profile to compare cost framing, mobility, and aviation-port signals alongside Seoul and Busan.",
+    scores: { overall: 80, affordability: 74, airQuality: 70, energy: 76, resilience: 74 },
+    relatedCitySlugs: ["seoul", "busan", "daegu"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kaohsiung",
+    name: "Kaohsiung",
+    countrySlug: "taiwan",
+    countryName: "Taiwan",
+    region: "East Asia",
+    population: "~2.7M city",
+    intro:
+      "Kaohsiung is southern Taiwan's largest port metro, with heavy-industry transition, harbour regeneration, and active light-rail expansion used for regional comparison.",
+    outlook:
+      "Use the Kaohsiung profile to compare cost framing, mobility, and port-economy-transition signals alongside Taipei and other East-Asian metros.",
+    scores: { overall: 76, affordability: 76, airQuality: 68, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["taipei", "hong-kong", "busan"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cebu",
+    name: "Cebu",
+    countrySlug: "philippines",
+    countryName: "Philippines",
+    region: "Southeast Asia",
+    population: "~3.0M metro",
+    intro:
+      "Cebu is the largest Visayan metro in the Philippines, with island-economy logistics, business-process-outsourcing density, and active tourism flows used for Southeast-Asian comparison.",
+    outlook:
+      "Use the Cebu profile to compare cost framing, mobility, and coastal-resilience signals alongside Manila and other Southeast-Asian metros.",
+    scores: { overall: 70, affordability: 76, airQuality: 70, energy: 66, resilience: 62 },
+    relatedCitySlugs: ["manila", "bangkok", "ho-chi-minh-city"],
+  }),
+  buildNeutralCitySeed({
+    slug: "da-nang",
+    name: "Da Nang",
+    countrySlug: "vietnam",
+    countryName: "Vietnam",
+    region: "Southeast Asia",
+    population: "~1.2M metro",
+    intro:
+      "Da Nang is central Vietnam's main coastal metro, with growing services, tourism, and remote-work activity, and active typhoon and coastal-resilience planning.",
+    outlook:
+      "Use the Da Nang profile to compare cost framing, mobility, and coastal-resilience signals alongside Ho Chi Minh City and Hanoi.",
+    scores: { overall: 73, affordability: 78, airQuality: 70, energy: 68, resilience: 64 },
+    relatedCitySlugs: ["ho-chi-minh-city", "hanoi", "chiang-mai"],
+  }),
+  buildNeutralCitySeed({
+    slug: "lahore",
+    name: "Lahore",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~13M metro",
+    intro:
+      "Lahore is Pakistan's cultural and historic Punjab metro, with dense urban form, education and services anchors, and persistent air-quality and heat-adaptation pressure.",
+    outlook:
+      "Use the Lahore profile to compare cost framing, mobility, and air-quality signals alongside Karachi, Delhi, and other South-Asian metros.",
+    scores: { overall: 64, affordability: 78, airQuality: 50, energy: 58, resilience: 58 },
+    relatedCitySlugs: ["karachi", "delhi", "mumbai"],
+  }),
+  buildNeutralCitySeed({
+    slug: "karachi",
+    name: "Karachi",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~17M metro",
+    intro:
+      "Karachi is Pakistan's largest coastal megacity and main port, with dense urban form, heavy trade and finance activity, and meaningful heat, coastal, and air-quality pressures.",
+    outlook:
+      "Use the Karachi profile to compare cost framing, mobility, and coastal-air-quality signals alongside Lahore, Mumbai, and other South-Asian metros.",
+    scores: { overall: 64, affordability: 78, airQuality: 50, energy: 58, resilience: 58 },
+    relatedCitySlugs: ["lahore", "mumbai", "delhi"],
+  }),
+  // ===== Expansion batch: Middle East (4) =====
+  buildNeutralCitySeed({
+    slug: "jeddah",
+    name: "Jeddah",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~4.7M metro",
+    intro:
+      "Jeddah is Saudi Arabia's main Red-Sea coastal metro, with port economy, historic Al-Balad district, and active service and tourism investment used for regional comparison.",
+    outlook:
+      "Use the Jeddah profile to compare cost framing, mobility, and coastal-economy signals alongside Riyadh and other Gulf metros.",
+    scores: { overall: 72, affordability: 70, airQuality: 64, energy: 76, resilience: 64 },
+    relatedCitySlugs: ["riyadh", "medina", "dubai"],
+  }),
+  buildNeutralCitySeed({
+    slug: "medina",
+    name: "Medina",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~1.5M metro",
+    intro:
+      "Medina is a major religious-pilgrimage city in western Saudi Arabia, with seasonal visitor flows that shape transport, services, and urban-management priorities.",
+    outlook:
+      "Use the Medina profile to compare cost framing, mobility, and pilgrimage-flow services signals alongside Jeddah and Mecca-region context.",
+    scores: { overall: 70, affordability: 72, airQuality: 64, energy: 74, resilience: 64 },
+    relatedCitySlugs: ["jeddah", "riyadh", "dubai"],
+  }),
+  buildNeutralCitySeed({
+    slug: "sharjah",
+    name: "Sharjah",
+    countrySlug: "united-arab-emirates",
+    countryName: "United Arab Emirates",
+    region: "Middle East",
+    population: "~1.8M city",
+    intro:
+      "Sharjah is the third-largest UAE emirate metro, with cultural-heritage focus, family-oriented residential context, and dense Dubai-region commuting links.",
+    outlook:
+      "Use the Sharjah profile to compare cost framing, mobility, and cross-emirate signals alongside Dubai and Abu Dhabi.",
+    scores: { overall: 76, affordability: 72, airQuality: 64, energy: 76, resilience: 70 },
+    relatedCitySlugs: ["dubai", "abu-dhabi", "doha"],
+  }),
+  buildNeutralCitySeed({
+    slug: "beirut",
+    name: "Beirut",
+    countrySlug: "lebanon",
+    countryName: "Lebanon",
+    region: "Middle East",
+    population: "~2.2M metro",
+    intro:
+      "Beirut is Lebanon's coastal Mediterranean capital metro, with dense historic neighborhoods, banking and services heritage, and a strongly diaspora-linked economy.",
+    outlook:
+      "Use the Beirut profile to compare cost framing, mobility, and coastal-Mediterranean signals alongside other Levantine and Mediterranean metros — confirm current operating conditions via official Lebanese publishers.",
+    scores: { overall: 64, affordability: 70, airQuality: 60, energy: 56, resilience: 56 },
+    relatedCitySlugs: ["amman", "istanbul", "tel-aviv"],
+  }),
+  // ===== Expansion batch: Africa (6) =====
+  buildNeutralCitySeed({
+    slug: "alexandria",
+    name: "Alexandria",
+    countrySlug: "egypt",
+    countryName: "Egypt",
+    region: "North Africa",
+    population: "~5.5M metro",
+    intro:
+      "Alexandria is Egypt's main Mediterranean coastal metro, with port economy, historic university and cultural anchors, and active coastal-erosion and sea-level adaptation work.",
+    outlook:
+      "Use the Alexandria profile to compare cost framing, mobility, and coastal-resilience signals alongside Cairo and other Mediterranean metros.",
+    scores: { overall: 68, affordability: 74, airQuality: 60, energy: 64, resilience: 60 },
+    relatedCitySlugs: ["cairo", "tunis", "casablanca"],
+  }),
+  buildNeutralCitySeed({
+    slug: "marrakesh",
+    name: "Marrakesh",
+    countrySlug: "morocco",
+    countryName: "Morocco",
+    region: "North Africa",
+    population: "~1.5M metro",
+    intro:
+      "Marrakesh is a historic central-Moroccan metro at the foot of the Atlas Mountains, with dense medina form, tourism-led services, and persistent heat-adaptation context.",
+    outlook:
+      "Use the Marrakesh profile to compare cost framing, mobility, and heritage-and-heat signals alongside Casablanca, Rabat, and other North-African metros.",
+    scores: { overall: 70, affordability: 74, airQuality: 66, energy: 68, resilience: 62 },
+    relatedCitySlugs: ["casablanca", "rabat", "tunis"],
+  }),
+  buildNeutralCitySeed({
+    slug: "durban",
+    name: "Durban",
+    countrySlug: "south-africa",
+    countryName: "South Africa",
+    region: "Southern Africa",
+    population: "~3.7M metro",
+    intro:
+      "Durban is South Africa's main Indian-Ocean port metro, with subtropical climate, manufacturing and logistics anchors, and active coastal-flood and climate-resilience work.",
+    outlook:
+      "Use the Durban profile to compare cost framing, mobility, and coastal-resilience signals alongside Cape Town and Johannesburg.",
+    scores: { overall: 70, affordability: 72, airQuality: 66, energy: 64, resilience: 62 },
+    relatedCitySlugs: ["cape-town", "johannesburg", "maputo"],
+  }),
+  buildNeutralCitySeed({
+    slug: "windhoek",
+    name: "Windhoek",
+    countrySlug: "namibia",
+    countryName: "Namibia",
+    region: "Southern Africa",
+    population: "~0.4M city",
+    intro:
+      "Windhoek is Namibia's capital and largest city, in a semi-arid central-plateau setting, with national-services anchor role and active water-resource planning.",
+    outlook:
+      "Use the Windhoek profile to compare cost framing, country-level context, and arid-resilience signals alongside other Southern-African capitals.",
+    scores: { overall: 66, affordability: 70, airQuality: 76, energy: 64, resilience: 60 },
+    relatedCitySlugs: ["gaborone", "cape-town", "johannesburg"],
+  }),
+  buildNeutralCitySeed({
+    slug: "lusaka",
+    name: "Lusaka",
+    countrySlug: "zambia",
+    countryName: "Zambia",
+    region: "Southern Africa",
+    population: "~3.2M metro",
+    intro:
+      "Lusaka is Zambia's inland-plateau capital metro, with national-services anchor role, growing services activity, and hydro-grid context that shapes the energy conversation.",
+    outlook:
+      "Use the Lusaka profile to compare cost framing, country-level context, and hydro-energy signals alongside other Southern-African metros.",
+    scores: { overall: 64, affordability: 74, airQuality: 70, energy: 60, resilience: 58 },
+    relatedCitySlugs: ["gaborone", "nairobi", "johannesburg"],
+  }),
+  buildNeutralCitySeed({
+    slug: "maputo",
+    name: "Maputo",
+    countrySlug: "mozambique",
+    countryName: "Mozambique",
+    region: "Southern Africa",
+    population: "~2.5M metro",
+    intro:
+      "Maputo is Mozambique's coastal capital metro on the Indian Ocean, with port economy, growing services activity, and active tropical-cyclone and flood-adaptation work.",
+    outlook:
+      "Use the Maputo profile to compare cost framing, country-level context, and coastal-cyclone-resilience signals alongside other Southern-African coastal metros.",
+    scores: { overall: 62, affordability: 74, airQuality: 70, energy: 58, resilience: 54 },
+    relatedCitySlugs: ["durban", "dar-es-salaam", "cape-town"],
+  }),
+  // ===== Expansion batch: Oceania (2) =====
+  buildNeutralCitySeed({
+    slug: "hobart",
+    name: "Hobart",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~0.25M metro",
+    intro:
+      "Hobart is the Tasmanian capital metro, with compact urban form, cool-temperate climate, and a research, food, and tourism mix used for cross-region Australian comparison.",
+    outlook:
+      "Use the Hobart profile to compare cost framing, mobility, and quality-of-life signals alongside Melbourne, Adelaide, and other Australian metros.",
+    scores: { overall: 78, affordability: 72, airQuality: 84, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["melbourne", "adelaide", "christchurch"],
+  }),
+  buildNeutralCitySeed({
+    slug: "gold-coast",
+    name: "Gold Coast",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~0.7M metro",
+    intro:
+      "Gold Coast is the largest non-capital Australian metro, with coastal subtropical geography, tourism-led economy, and active coastal and flood-adaptation conversations.",
+    outlook:
+      "Use the Gold Coast profile to compare cost framing, mobility, and coastal-resilience signals alongside Brisbane and other Australian metros.",
+    scores: { overall: 76, affordability: 70, airQuality: 80, energy: 74, resilience: 70 },
+    relatedCitySlugs: ["brisbane", "sydney", "auckland"],
+  }),
+  buildNeutralCitySeed({
+    slug: "dunedin",
+    name: "Dunedin",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "~0.13M metro",
+    intro:
+      "Dunedin is a Southern-NZ university metro, with compact historic centre, cool-temperate climate, and active student and research economy used for cross-region NZ comparison.",
+    outlook:
+      "Use the Dunedin profile to compare cost framing, mobility, and education-economy signals alongside Auckland, Wellington, and Christchurch.",
+    scores: { overall: 75, affordability: 72, airQuality: 82, energy: 70, resilience: 68 },
+    relatedCitySlugs: ["christchurch", "wellington", "auckland"],
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);
