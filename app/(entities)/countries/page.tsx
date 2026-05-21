@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { ImageAttribution } from "@/components/media/ImageAttribution";
 import { HubNav } from "@/components/navigation/HubNav";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
+import { getCountryHeroImage } from "@/lib/data/media/queries";
 import {
   getAllCountries,
   getCitiesByCountrySlug,
@@ -207,42 +209,70 @@ export default function CountriesIndexPage() {
             title="Browse by country"
           />
           <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {rows.map((row) => (
-              <article
-                className="rounded-2xl border border-neutral-border bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-400 hover:shadow-md"
-                key={row.country.slug}
-              >
-                <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                  {row.country.region}
-                </p>
-                <h3 className="mt-1 text-xl font-semibold text-text-primary">
-                  <Link
-                    className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
-                    href={countryRoute(row.country.slug)}
-                  >
-                    {row.country.name}
-                  </Link>
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-text-secondary">
-                  {row.country.intro}
-                </p>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                  {row.cityCount} indexed cit{row.cityCount === 1 ? "y" : "ies"}
-                </p>
-                <ul className="mt-2 flex flex-wrap gap-2 text-sm">
-                  {getCitiesByCountrySlug(row.country.slug).map((city) => (
-                    <li key={city.slug}>
+            {rows.map((row) => {
+              const hero = getCountryHeroImage(row.country.slug);
+              const aspectStyle =
+                hero?.width && hero.height
+                  ? { aspectRatio: `${hero.width} / ${hero.height}` }
+                  : { aspectRatio: "16 / 9" };
+              return (
+                <article
+                  className="overflow-hidden rounded-2xl border border-neutral-border bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-brand-400 hover:shadow-md"
+                  key={row.country.slug}
+                >
+                  {hero ? (
+                    <figure className="border-b border-neutral-border bg-neutral-soft">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        alt={hero.alt}
+                        className="block h-auto w-full object-cover"
+                        decoding="async"
+                        height={hero.height}
+                        loading="lazy"
+                        sizes="(min-width: 1280px) 24rem, (min-width: 768px) 50vw, 100vw"
+                        src={hero.src}
+                        style={aspectStyle}
+                        width={hero.width}
+                      />
+                      <figcaption className="px-4 py-2">
+                        <ImageAttribution image={hero} />
+                      </figcaption>
+                    </figure>
+                  ) : null}
+                  <div className="p-5">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                      {row.country.region}
+                    </p>
+                    <h3 className="mt-1 text-xl font-semibold text-text-primary">
                       <Link
-                        className="rounded-full border border-neutral-border bg-surface-soft px-3 py-1 text-text-secondary transition hover:border-brand-400 hover:text-brand-500"
-                        href={cityRoute(city.slug)}
+                        className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
+                        href={countryRoute(row.country.slug)}
                       >
-                        {city.name}
+                        {row.country.name}
                       </Link>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-text-secondary">
+                      {row.country.intro}
+                    </p>
+                    <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                      {row.cityCount} indexed cit{row.cityCount === 1 ? "y" : "ies"}
+                    </p>
+                    <ul className="mt-2 flex flex-wrap gap-2 text-sm">
+                      {getCitiesByCountrySlug(row.country.slug).map((city) => (
+                        <li key={city.slug}>
+                          <Link
+                            className="rounded-full border border-neutral-border bg-surface-soft px-3 py-1 text-text-secondary transition hover:border-brand-400 hover:text-brand-500"
+                            href={cityRoute(city.slug)}
+                          >
+                            {city.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </section>
 
