@@ -1,9 +1,15 @@
-import type { PlaceImage, PlaceType } from "@/types";
+import type { PlaceImage, PlaceImageType, PlaceType } from "@/types";
 import { cityImages } from "./city-images";
 import { countryImages } from "./country-images";
 
 const cityHeroIndex: ReadonlyMap<string, PlaceImage> = buildHeroIndex(cityImages);
 const countryHeroIndex: ReadonlyMap<string, PlaceImage> = buildHeroIndex(
+  countryImages,
+);
+const cityAllIndex: ReadonlyMap<string, readonly PlaceImage[]> = buildAllIndex(
+  cityImages,
+);
+const countryAllIndex: ReadonlyMap<string, readonly PlaceImage[]> = buildAllIndex(
   countryImages,
 );
 
@@ -17,6 +23,24 @@ function buildHeroIndex(images: PlaceImage[]): ReadonlyMap<string, PlaceImage> {
       continue;
     }
     map.set(image.placeSlug, image);
+  }
+  return map;
+}
+
+function buildAllIndex(
+  images: PlaceImage[],
+): ReadonlyMap<string, readonly PlaceImage[]> {
+  const map = new Map<string, PlaceImage[]>();
+  for (const image of images) {
+    if (!image.verified) {
+      continue;
+    }
+    const bucket = map.get(image.placeSlug);
+    if (bucket) {
+      bucket.push(image);
+    } else {
+      map.set(image.placeSlug, [image]);
+    }
   }
   return map;
 }
@@ -45,6 +69,33 @@ export function hasVerifiedHeroImage(
   slug: string,
 ): boolean {
   return getPlaceHeroImage(placeType, slug) !== undefined;
+}
+
+export function getPlaceImages(
+  placeType: PlaceType,
+  slug: string,
+): readonly PlaceImage[] {
+  const index = placeType === "city" ? cityAllIndex : countryAllIndex;
+  return index.get(slug) ?? [];
+}
+
+export function getPlaceImagesByType(
+  placeType: PlaceType,
+  slug: string,
+  imageType: PlaceImageType,
+): readonly PlaceImage[] {
+  return getPlaceImages(placeType, slug).filter(
+    (image) => image.imageType === imageType,
+  );
+}
+
+export function getPlaceSecondaryImages(
+  placeType: PlaceType,
+  slug: string,
+): readonly PlaceImage[] {
+  return getPlaceImages(placeType, slug).filter(
+    (image) => image.imageType !== "hero",
+  );
 }
 
 export function getAllVerifiedCityHeroImages(): PlaceImage[] {

@@ -15,6 +15,7 @@ import { CountryIndicatorsSection } from "@/components/data/CountryIndicatorsSec
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
+import { PlaceSecondaryImages } from "@/components/media/PlaceSecondaryImages";
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -324,6 +325,13 @@ export default async function CountryPage({ params }: PageProps) {
             priority
           />
         </section>
+
+        <PlaceSecondaryImages
+          headingId="country-visual-context-heading"
+          placeName={country.name}
+          placeSlug={country.slug}
+          placeType="country"
+        />
 
         <CountryHubNavigation items={hubNavItems} />
 

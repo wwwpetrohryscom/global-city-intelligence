@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
 import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
+import { PlaceSecondaryImages } from "@/components/media/PlaceSecondaryImages";
 import { RelatedComparisons } from "@/components/comparison/RelatedComparisons";
 import { AirQualityProfileSection } from "@/components/data/AirQualityProfileSection";
 import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAccessSection";
@@ -181,6 +182,13 @@ export default async function CityPage({ params }: PageProps) {
             priority
           />
         </section>
+
+        <PlaceSecondaryImages
+          headingId="city-visual-context-heading"
+          placeName={`${city.name}, ${city.countryName}`}
+          placeSlug={city.slug}
+          placeType="city"
+        />
 
         <section className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr]">
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">

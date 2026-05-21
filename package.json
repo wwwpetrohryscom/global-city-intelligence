@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate:media": "python3 scripts/validate-media-catalogs.py"
   },
   "dependencies": {
     "next": "^15.5.0",

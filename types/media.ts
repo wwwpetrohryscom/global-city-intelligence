@@ -4,6 +4,9 @@ export type PlaceImageType =
   | "hero"
   | "architecture"
   | "landmark"
+  | "skyline"
+  | "cityscape"
+  | "landscape"
   | "street"
   | "transport";
 

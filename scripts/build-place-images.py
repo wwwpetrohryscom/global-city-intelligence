@@ -131,14 +131,16 @@ def process(input_path: str, place_label: str) -> list[dict]:
     for r in records:
         if file_is_unsuitable(r.get("src", "")):
             print(
-                f"  drop {place_label}/{r.get('placeSlug')}: unsuitable file ({r['src'].rsplit('/', 1)[-1]})",
+                f"  drop {place_label}/{r.get('placeSlug')}/{r.get('imageType','?')}: "
+                f"unsuitable file ({r['src'].rsplit('/', 1)[-1]})",
                 file=sys.stderr,
             )
             continue
         author = clean_author(r.get("author", ""))
         if not author:
             print(
-                f"  drop {place_label}/{r.get('placeSlug')}: empty author after cleanup",
+                f"  drop {place_label}/{r.get('placeSlug')}/{r.get('imageType','?')}: "
+                f"empty author after cleanup",
                 file=sys.stderr,
             )
             continue
@@ -151,6 +153,46 @@ def process(input_path: str, place_label: str) -> list[dict]:
     return cleaned
 
 
+def load_secondary_records() -> list[dict]:
+    path = os.path.join(MEDIA_DIR, "secondary-images.generated.json")
+    if not os.path.exists(path):
+        return []
+    with open(path) as f:
+        return json.load(f)
+
+
+def dedupe_by_id(records: list[dict]) -> list[dict]:
+    seen: set[str] = set()
+    out: list[dict] = []
+    for r in records:
+        rid = r.get("id")
+        if rid in seen:
+            continue
+        if rid:
+            seen.add(rid)
+        out.append(r)
+    return out
+
+
+def sort_for_output(records: list[dict]) -> list[dict]:
+    # hero first per place, then other image types — keeps the catalog
+    # readable and makes queries.ts's hero index deterministic.
+    type_rank = {
+        "hero": 0,
+        "skyline": 1,
+        "cityscape": 1,
+        "landscape": 1,
+        "landmark": 2,
+        "architecture": 3,
+        "street": 4,
+        "transport": 5,
+    }
+    return sorted(
+        records,
+        key=lambda r: (r.get("placeSlug", ""), type_rank.get(r.get("imageType"), 9)),
+    )
+
+
 def main():
     city_records = process(
         os.path.join(MEDIA_DIR, "city-images.generated.json"), "city"
@@ -158,6 +200,18 @@ def main():
     country_records = process(
         os.path.join(MEDIA_DIR, "country-images.generated.json"), "country"
     )
+
+    secondary = load_secondary_records()
+    if secondary:
+        secondary = process_in_memory(secondary, "secondary")
+        for r in secondary:
+            if r["placeType"] == "city":
+                city_records.append(r)
+            elif r["placeType"] == "country":
+                country_records.append(r)
+
+    city_records = dedupe_by_id(sort_for_output(city_records))
+    country_records = dedupe_by_id(sort_for_output(country_records))
 
     emit_ts(
         city_records,
@@ -172,7 +226,42 @@ def main():
         "countries",
     )
 
-    print(f"\nFinal: {len(city_records)} city records, {len(country_records)} country records")
+    n_hero_city = sum(1 for r in city_records if r["imageType"] == "hero")
+    n_sec_city = len(city_records) - n_hero_city
+    n_hero_ctry = sum(1 for r in country_records if r["imageType"] == "hero")
+    n_sec_ctry = len(country_records) - n_hero_ctry
+    print(
+        f"\nFinal: {len(city_records)} city records ({n_hero_city} hero, "
+        f"{n_sec_city} secondary), {len(country_records)} country records "
+        f"({n_hero_ctry} hero, {n_sec_ctry} secondary)"
+    )
+
+
+def process_in_memory(records: list[dict], place_label: str) -> list[dict]:
+    cleaned: list[dict] = []
+    for r in records:
+        if file_is_unsuitable(r.get("src", "")):
+            print(
+                f"  drop {place_label}/{r.get('placeSlug')}/{r.get('imageType','?')}: "
+                f"unsuitable file ({r['src'].rsplit('/', 1)[-1]})",
+                file=sys.stderr,
+            )
+            continue
+        author = clean_author(r.get("author", ""))
+        if not author:
+            print(
+                f"  drop {place_label}/{r.get('placeSlug')}/{r.get('imageType','?')}: "
+                f"empty author after cleanup",
+                file=sys.stderr,
+            )
+            continue
+        r["author"] = author
+        if r.get("license"):
+            r["attributionText"] = f"{author} / Wikimedia Commons, {r['license']}"
+        else:
+            r["attributionText"] = f"{author} / Wikimedia Commons"
+        cleaned.append(r)
+    return cleaned
 
 
 if __name__ == "__main__":
