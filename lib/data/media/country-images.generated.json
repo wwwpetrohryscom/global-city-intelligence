@@ -1664,5 +1664,25 @@
     "verified": true,
     "verifiedAt": "2026-05-21",
     "notes": "Resolved via landmark article 'Bazaruto Archipelago' \u2192 Wikidata Q2860206 \u2192 Commons file 'Bazaruto island.jpg'."
+  },
+  {
+    "id": "country-luxembourg-hero",
+    "placeSlug": "luxembourg",
+    "placeType": "country",
+    "imageType": "hero",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Greinskapell%2C_Luxembourg_City_6.JPG/1920px-Greinskapell%2C_Luxembourg_City_6.JPG",
+    "width": 1600,
+    "height": 2400,
+    "alt": "Landscape or landmark of Luxembourg",
+    "source": "wikimedia",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greinskapell,_Luxembourg_City_6.JPG",
+    "author": "Aidaverri",
+    "license": "CC BY-SA 3.0 lu",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/lu/deed.en",
+    "attributionText": "Aidaverri / Wikimedia Commons, CC BY-SA 3.0 lu",
+    "verified": true,
+    "verifiedAt": "2026-05-20",
+    "notes": "Resolved via Wikidata Q32 \u2192 Commons file 'Greinskapell, Luxembourg City 6.JPG'.",
+    "authorUrl": "https://commons.wikimedia.org/w/index.php?title=User:Aidaverri&amp;action=edit&amp;redlink=1"
   }
 ]

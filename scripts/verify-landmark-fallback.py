@@ -141,6 +141,37 @@ CITY_LANDMARKS: dict[str, list[str]] = {
         "Atsuta Shrine",
         "Osu Kannon",
     ],
+    # ===== Expansion batch 3 fallbacks =====
+    "aarhus": [
+        "ARoS Aarhus Kunstmuseum",
+        "Aarhus Cathedral",
+        "Den Gamle By",
+    ],
+    "leeds": [
+        "Leeds Town Hall",
+        "Leeds Civic Hall",
+        "Leeds Corn Exchange",
+    ],
+    "turin": [
+        "Mole Antonelliana",
+        "Palazzo Madama, Turin",
+        "Royal Palace of Turin",
+    ],
+    "the-hague": [
+        "Binnenhof",
+        "Peace Palace",
+        "Ridderzaal",
+    ],
+    "tampa": [
+        "Tampa Theatre",
+        "Tampa Bay History Center",
+        "Henry B. Plant Museum",
+    ],
+    "houston": [
+        "JPMorgan Chase Tower (Houston)",
+        "Williams Tower",
+        "Houston City Hall",
+    ],
 }
 
 COUNTRY_LANDMARKS: dict[str, list[str]] = {

@@ -9607,6 +9607,868 @@ const seeds: CitySeed[] = [
     scores: { overall: 75, affordability: 72, airQuality: 82, energy: 70, resilience: 68 },
     relatedCitySlugs: ["christchurch", "wellington", "auckland"],
   }),
+  // ===== Expansion batch 3 (2026-05-22): EU, UK/Ireland, US, Commonwealth =====
+  // 61 cities added across UK/Ireland, France, Germany, Spain, Italy,
+  // Benelux + Luxembourg, Nordics, Central/Eastern Europe, the United
+  // States, Canada, Australia, and New Zealand. Every entry uses the
+  // existing `buildNeutralCitySeed` helper with hand-written neutral
+  // intro/outlook copy and directional scores; module data is generated
+  // by the helper and rendered as a directional indicator with the
+  // existing transparent fallback for verified utility layers.
+  buildNeutralCitySeed({
+    slug: "manchester",
+    name: "Manchester",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~2.9M metro",
+    intro:
+      "Manchester is a Northern-English metro with a digital-services and creative-industries anchor, useful for comparing relocation and remote-work contexts against London at a different cost framing.",
+    outlook:
+      "Use the Manchester profile to compare structured indicators across cost, transport, healthcare context, and country-level signals alongside other major UK cities.",
+    scores: { overall: 76, affordability: 70, airQuality: 74, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["london", "edinburgh", "leeds"],
+  }),
+  buildNeutralCitySeed({
+    slug: "birmingham",
+    name: "Birmingham",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~4.3M metro",
+    intro:
+      "Birmingham is England's second-largest metro, with a manufacturing-to-services transition profile and active transport investment used for cross-UK relocation comparison.",
+    outlook:
+      "Use the Birmingham profile to compare cost framing, transport access, and country-level context against London, Manchester, and other UK cities.",
+    scores: { overall: 74, affordability: 72, airQuality: 72, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["london", "manchester", "leeds"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bristol",
+    name: "Bristol",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~0.7M metro",
+    intro:
+      "Bristol is a compact South-West English metro with a strong creative-industries and aerospace mix, often considered for relocation by remote workers and families.",
+    outlook:
+      "Use the Bristol profile to compare cost framing, transport access, and country-level intelligence alongside other mid-size UK cities.",
+    scores: { overall: 76, affordability: 70, airQuality: 76, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["london", "manchester", "cardiff"],
+  }),
+  buildNeutralCitySeed({
+    slug: "leeds",
+    name: "Leeds",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~1.9M metro",
+    intro:
+      "Leeds is a Northern-English financial and digital-services hub, used for cross-region UK relocation comparison alongside Manchester and Sheffield.",
+    outlook:
+      "Use the Leeds profile to compare cost framing, transport access, and country-level context across the UK's Northern metro cluster.",
+    scores: { overall: 75, affordability: 72, airQuality: 74, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["manchester", "birmingham", "london"],
+  }),
+  buildNeutralCitySeed({
+    slug: "glasgow",
+    name: "Glasgow",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~1.8M metro",
+    intro:
+      "Glasgow is Scotland's largest metro, with a strong cultural-economy and engineering tradition, useful for cross-region UK and Scottish comparison.",
+    outlook:
+      "Use the Glasgow profile to compare cost framing, transport access, and country-level context alongside Edinburgh and other Scottish-region cities.",
+    scores: { overall: 74, affordability: 74, airQuality: 74, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["edinburgh", "manchester", "london"],
+  }),
+  buildNeutralCitySeed({
+    slug: "belfast",
+    name: "Belfast",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~0.66M metro",
+    intro:
+      "Belfast is Northern Ireland's capital metro, with growing professional-services activity and post-industrial regeneration relevant to relocation comparison.",
+    outlook:
+      "Use the Belfast profile to compare cost framing, transport access, and country-level context against other UK and Irish metros.",
+    scores: { overall: 72, affordability: 76, airQuality: 74, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["dublin", "edinburgh", "cardiff"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cardiff",
+    name: "Cardiff",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~0.49M metro",
+    intro:
+      "Cardiff is Wales' capital metro, with a compact urban core, public-sector and media employment, and active waterfront regeneration.",
+    outlook:
+      "Use the Cardiff profile to compare cost framing, transport access, and country-level context alongside Bristol and other UK mid-size cities.",
+    scores: { overall: 74, affordability: 74, airQuality: 76, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["bristol", "london", "belfast"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cork",
+    name: "Cork",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Western Europe",
+    population: "~0.34M metro",
+    intro:
+      "Cork is Ireland's second metro, with a pharmaceutical, tech, and services mix on the south coast, used for cross-region Irish relocation comparison.",
+    outlook:
+      "Use the Cork profile to compare cost framing, transport access, and country-level context alongside Dublin and other Western-European mid-size cities.",
+    scores: { overall: 74, affordability: 70, airQuality: 78, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["dublin", "belfast", "galway"],
+  }),
+  buildNeutralCitySeed({
+    slug: "lyon",
+    name: "Lyon",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~2.3M metro",
+    intro:
+      "Lyon is France's third-largest metro with a strong life-sciences, finance, and gastronomy mix, used for cross-region French comparison beyond Paris.",
+    outlook:
+      "Use the Lyon profile to compare cost framing, transport access, healthcare context, and country-level signals against other large European metros.",
+    scores: { overall: 78, affordability: 70, airQuality: 74, energy: 76, resilience: 76 },
+    relatedCitySlugs: ["paris", "geneva", "marseille"],
+  }),
+  buildNeutralCitySeed({
+    slug: "marseille",
+    name: "Marseille",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~1.6M metro",
+    intro:
+      "Marseille is France's Mediterranean port metro, with a multicultural services and logistics economy and active climate-adaptation work along the coast.",
+    outlook:
+      "Use the Marseille profile to compare cost framing, transport access, and heat-and-coastal resilience context alongside other Mediterranean cities.",
+    scores: { overall: 72, affordability: 74, airQuality: 70, energy: 72, resilience: 68 },
+    relatedCitySlugs: ["lyon", "barcelona", "nice"],
+  }),
+  buildNeutralCitySeed({
+    slug: "toulouse",
+    name: "Toulouse",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~1.4M metro",
+    intro:
+      "Toulouse is an aerospace and research metro in southwestern France, useful for comparing tech-relocation context inside the EU regulatory frame.",
+    outlook:
+      "Use the Toulouse profile to compare cost framing, transport access, and country-level intelligence alongside Bordeaux, Lyon, and Spanish peers.",
+    scores: { overall: 76, affordability: 72, airQuality: 74, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["lyon", "bordeaux", "barcelona"],
+  }),
+  buildNeutralCitySeed({
+    slug: "nice",
+    name: "Nice",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~1.0M metro",
+    intro:
+      "Nice is a Mediterranean French metro on the Côte d'Azur, with tourism, services, and active coastal-resilience work used in regional comparison.",
+    outlook:
+      "Use the Nice profile to compare cost framing, transport access, and coastal-resilience signals alongside other Mediterranean cities.",
+    scores: { overall: 74, affordability: 64, airQuality: 74, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["marseille", "lyon", "barcelona"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bordeaux",
+    name: "Bordeaux",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~1.0M metro",
+    intro:
+      "Bordeaux is a southwestern French metro known for compact urban form and a wine, services, and aerospace mix, frequently cited in remote-work relocation comparisons.",
+    outlook:
+      "Use the Bordeaux profile to compare cost framing, transport access, and country-level intelligence alongside other mid-size French and Iberian cities.",
+    scores: { overall: 78, affordability: 70, airQuality: 76, energy: 76, resilience: 76 },
+    relatedCitySlugs: ["lyon", "toulouse", "porto"],
+  }),
+  buildNeutralCitySeed({
+    slug: "strasbourg",
+    name: "Strasbourg",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~0.79M metro",
+    intro:
+      "Strasbourg is a cross-border French metro on the Rhine with EU-institution presence, used for relocation comparison and cross-regional French-German comparison.",
+    outlook:
+      "Use the Strasbourg profile to compare cost framing, transport access, and country-level intelligence alongside Lyon, Frankfurt, and other Rhine metros.",
+    scores: { overall: 76, affordability: 72, airQuality: 74, energy: 76, resilience: 76 },
+    relatedCitySlugs: ["lyon", "frankfurt", "basel"],
+  }),
+  buildNeutralCitySeed({
+    slug: "frankfurt",
+    name: "Frankfurt",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Western Europe",
+    population: "~5.7M metro",
+    intro:
+      "Frankfurt is Germany's financial centre with an international-services and aviation-hub profile, used for European-wide financial-services relocation comparison.",
+    outlook:
+      "Use the Frankfurt profile to compare cost framing, transport access, and country-level context across German and Western-European metros.",
+    scores: { overall: 80, affordability: 64, airQuality: 76, energy: 76, resilience: 78 },
+    relatedCitySlugs: ["berlin", "munich", "luxembourg-city"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cologne",
+    name: "Cologne",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Western Europe",
+    population: "~3.6M metro",
+    intro:
+      "Cologne is a Rhine-region German metro with media, chemicals, and trade-fair activity, used for cross-region German comparison alongside Düsseldorf and Frankfurt.",
+    outlook:
+      "Use the Cologne profile to compare cost framing, transport access, and country-level intelligence against other Rhine and German metros.",
+    scores: { overall: 76, affordability: 70, airQuality: 74, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["dusseldorf", "frankfurt", "berlin"],
+  }),
+  buildNeutralCitySeed({
+    slug: "stuttgart",
+    name: "Stuttgart",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Western Europe",
+    population: "~2.8M metro",
+    intro:
+      "Stuttgart is a southwestern German metro with an automotive and engineering anchor, used for comparing engineering-relocation context inside the EU.",
+    outlook:
+      "Use the Stuttgart profile to compare cost framing, transport access, and country-level signals alongside other engineering-led European metros.",
+    scores: { overall: 78, affordability: 68, airQuality: 74, energy: 76, resilience: 76 },
+    relatedCitySlugs: ["munich", "frankfurt", "zurich"],
+  }),
+  buildNeutralCitySeed({
+    slug: "dusseldorf",
+    name: "Düsseldorf",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Western Europe",
+    population: "~1.5M metro",
+    intro:
+      "Düsseldorf is a Rhine-region German metro with media, fashion, and corporate-services activity, used for cross-region German and Benelux comparison.",
+    outlook:
+      "Use the Düsseldorf profile to compare cost framing, transport access, and country-level context against Cologne, Frankfurt, and Benelux peers.",
+    scores: { overall: 76, affordability: 70, airQuality: 74, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["cologne", "frankfurt", "amsterdam"],
+  }),
+  buildNeutralCitySeed({
+    slug: "leipzig",
+    name: "Leipzig",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~1.1M metro",
+    intro:
+      "Leipzig is an eastern-German metro with a creative-industries and logistics profile, frequently used for cost-friendly German relocation comparison.",
+    outlook:
+      "Use the Leipzig profile to compare cost framing, transport access, and country-level intelligence alongside Berlin, Dresden, and other German metros.",
+    scores: { overall: 76, affordability: 76, airQuality: 74, energy: 74, resilience: 72 },
+    relatedCitySlugs: ["berlin", "dresden", "prague"],
+  }),
+  buildNeutralCitySeed({
+    slug: "dresden",
+    name: "Dresden",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~0.8M metro",
+    intro:
+      "Dresden is an eastern-German metro with a research, microelectronics, and culture mix, used for cross-region German and Czech relocation comparison.",
+    outlook:
+      "Use the Dresden profile to compare cost framing, transport access, and country-level context alongside Leipzig, Prague, and Berlin.",
+    scores: { overall: 75, affordability: 76, airQuality: 74, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["leipzig", "prague", "berlin"],
+  }),
+  buildNeutralCitySeed({
+    slug: "malaga",
+    name: "Malaga",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~1.7M metro",
+    intro:
+      "Malaga is a southern Spanish coastal metro with a growing tech, tourism, and remote-work mix on the Costa del Sol, useful for relocation comparison.",
+    outlook:
+      "Use the Malaga profile to compare cost framing, transport access, and country-level intelligence alongside other southern-European coastal metros.",
+    scores: { overall: 76, affordability: 74, airQuality: 76, energy: 74, resilience: 70 },
+    relatedCitySlugs: ["seville", "valencia", "lisbon"],
+  }),
+  buildNeutralCitySeed({
+    slug: "zaragoza",
+    name: "Zaragoza",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~0.95M metro",
+    intro:
+      "Zaragoza is a north-eastern Spanish metro on the Madrid-Barcelona corridor, with logistics and services activity used for cross-region Spanish comparison.",
+    outlook:
+      "Use the Zaragoza profile to compare cost framing, transport access, and country-level context against Madrid, Barcelona, and Valencia.",
+    scores: { overall: 74, affordability: 76, airQuality: 74, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["madrid", "barcelona", "valencia"],
+  }),
+  buildNeutralCitySeed({
+    slug: "granada",
+    name: "Granada",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~0.5M metro",
+    intro:
+      "Granada is a southern Spanish metro at the foot of the Sierra Nevada, with a university and culture-led economy useful for compact-city comparison.",
+    outlook:
+      "Use the Granada profile to compare cost framing, transport access, and country-level intelligence alongside other southern-Spanish and Mediterranean cities.",
+    scores: { overall: 74, affordability: 76, airQuality: 74, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["seville", "malaga", "valencia"],
+  }),
+  buildNeutralCitySeed({
+    slug: "turin",
+    name: "Turin",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~2.2M metro",
+    intro:
+      "Turin is a north-western Italian metro with an automotive, aerospace, and design economy, used for cross-region Italian and Alpine comparison.",
+    outlook:
+      "Use the Turin profile to compare cost framing, transport access, and country-level intelligence alongside Milan, Genoa, and Lyon.",
+    scores: { overall: 74, affordability: 72, airQuality: 68, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["milan", "genoa", "lyon"],
+  }),
+  buildNeutralCitySeed({
+    slug: "genoa",
+    name: "Genoa",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~0.83M metro",
+    intro:
+      "Genoa is an Italian port metro on the Ligurian coast, with maritime, logistics, and tourism activity used for coastal-resilience and Mediterranean comparison.",
+    outlook:
+      "Use the Genoa profile to compare cost framing, transport access, and coastal-resilience signals alongside other Mediterranean metros.",
+    scores: { overall: 72, affordability: 74, airQuality: 70, energy: 70, resilience: 66 },
+    relatedCitySlugs: ["milan", "turin", "marseille"],
+  }),
+  buildNeutralCitySeed({
+    slug: "palermo",
+    name: "Palermo",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~1.2M metro",
+    intro:
+      "Palermo is the Sicilian capital metro on the Mediterranean, with a culture, services, and tourism mix used for southern-Italian comparison.",
+    outlook:
+      "Use the Palermo profile to compare cost framing, transport access, and country-level context alongside Naples and other southern-Italian cities.",
+    scores: { overall: 68, affordability: 76, airQuality: 68, energy: 68, resilience: 64 },
+    relatedCitySlugs: ["naples", "rome", "catania"],
+  }),
+  buildNeutralCitySeed({
+    slug: "verona",
+    name: "Verona",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~0.71M metro",
+    intro:
+      "Verona is a north-eastern Italian metro on the Verona–Brenner corridor, with tourism, agriculture, and logistics activity used in regional comparison.",
+    outlook:
+      "Use the Verona profile to compare cost framing, transport access, and country-level context alongside Milan, Venice, and other northern Italian cities.",
+    scores: { overall: 74, affordability: 74, airQuality: 70, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["milan", "turin", "bologna"],
+  }),
+  buildNeutralCitySeed({
+    slug: "the-hague",
+    name: "The Hague",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~1.1M metro",
+    intro:
+      "The Hague is the Netherlands' administrative and international-justice metro on the North Sea coast, used for cross-region Dutch and international-organisations comparison.",
+    outlook:
+      "Use The Hague profile to compare cost framing, transport access, and country-level intelligence alongside Amsterdam and Rotterdam.",
+    scores: { overall: 80, affordability: 66, airQuality: 80, energy: 78, resilience: 76 },
+    relatedCitySlugs: ["amsterdam", "rotterdam", "utrecht"],
+  }),
+  buildNeutralCitySeed({
+    slug: "eindhoven",
+    name: "Eindhoven",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~0.78M metro",
+    intro:
+      "Eindhoven is a southern-Dutch metro and Brainport hub, with semiconductors and design industries used for tech-relocation comparison inside the EU.",
+    outlook:
+      "Use the Eindhoven profile to compare cost framing, transport access, and country-level context alongside Amsterdam, Antwerp, and other Western-European tech metros.",
+    scores: { overall: 78, affordability: 70, airQuality: 78, energy: 78, resilience: 76 },
+    relatedCitySlugs: ["amsterdam", "antwerp", "rotterdam"],
+  }),
+  buildNeutralCitySeed({
+    slug: "ghent",
+    name: "Ghent",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~0.55M metro",
+    intro:
+      "Ghent is a Belgian Flemish metro with a port, university, and creative-industries mix, used for cross-region Belgian and Benelux comparison.",
+    outlook:
+      "Use the Ghent profile to compare cost framing, transport access, and country-level context alongside Brussels, Antwerp, and other Flemish cities.",
+    scores: { overall: 78, affordability: 72, airQuality: 76, energy: 76, resilience: 74 },
+    relatedCitySlugs: ["brussels", "antwerp", "leuven"],
+  }),
+  buildNeutralCitySeed({
+    slug: "luxembourg-city",
+    name: "Luxembourg City",
+    countrySlug: "luxembourg",
+    countryName: "Luxembourg",
+    region: "Western Europe",
+    population: "~0.13M metro",
+    intro:
+      "Luxembourg City is the EU-institution and financial-services capital of Luxembourg, with high cross-border commuter integration used for relocation comparison inside the EU.",
+    outlook:
+      "Use the Luxembourg City profile to compare cost framing, transport access, and country-level context alongside Brussels, Frankfurt, and other Western-European hubs.",
+    scores: { overall: 82, affordability: 56, airQuality: 78, energy: 76, resilience: 78 },
+    relatedCitySlugs: ["brussels", "frankfurt", "strasbourg"],
+  }),
+  buildNeutralCitySeed({
+    slug: "aarhus",
+    name: "Aarhus",
+    countrySlug: "denmark",
+    countryName: "Denmark",
+    region: "Northern Europe",
+    population: "~0.35M metro",
+    intro:
+      "Aarhus is Denmark's second metro on the Jutland east coast, with university, life-sciences, and design activity used for cross-region Danish comparison.",
+    outlook:
+      "Use the Aarhus profile to compare cost framing, transport access, and country-level context alongside Copenhagen and Scandinavian peers.",
+    scores: { overall: 82, affordability: 68, airQuality: 84, energy: 86, resilience: 82 },
+    relatedCitySlugs: ["copenhagen", "oslo", "stockholm"],
+  }),
+  buildNeutralCitySeed({
+    slug: "malmo",
+    name: "Malmö",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Northern Europe",
+    population: "~0.74M metro",
+    intro:
+      "Malmö is southern Sweden's metro on the Öresund strait, with tech, design, and cross-border integration with Copenhagen used for relocation comparison.",
+    outlook:
+      "Use the Malmö profile to compare cost framing, transport access, and country-level context alongside Copenhagen and other Scandinavian metros.",
+    scores: { overall: 80, affordability: 70, airQuality: 82, energy: 84, resilience: 80 },
+    relatedCitySlugs: ["copenhagen", "stockholm", "gothenburg"],
+  }),
+  buildNeutralCitySeed({
+    slug: "gothenburg",
+    name: "Gothenburg",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Northern Europe",
+    population: "~1.0M metro",
+    intro:
+      "Gothenburg is Sweden's west-coast port metro with automotive and life-sciences activity, used for cross-region Swedish and Scandinavian comparison.",
+    outlook:
+      "Use the Gothenburg profile to compare cost framing, transport access, and country-level intelligence alongside Stockholm, Oslo, and other Scandinavian cities.",
+    scores: { overall: 80, affordability: 70, airQuality: 82, energy: 84, resilience: 80 },
+    relatedCitySlugs: ["stockholm", "oslo", "malmo"],
+  }),
+  buildNeutralCitySeed({
+    slug: "tampere",
+    name: "Tampere",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Northern Europe",
+    population: "~0.4M metro",
+    intro:
+      "Tampere is Finland's largest inland metro with a tech and university anchor, used for cross-region Finnish and Nordic relocation comparison.",
+    outlook:
+      "Use the Tampere profile to compare cost framing, transport access, and country-level context alongside Helsinki and other Nordic mid-size cities.",
+    scores: { overall: 80, affordability: 72, airQuality: 84, energy: 80, resilience: 78 },
+    relatedCitySlugs: ["helsinki", "stockholm", "tallinn"],
+  }),
+  buildNeutralCitySeed({
+    slug: "brno",
+    name: "Brno",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Central Europe",
+    population: "~0.66M metro",
+    intro:
+      "Brno is the Czech Republic's second metro in Moravia, with research, software, and life-sciences activity used for cross-region Czech and Central-European comparison.",
+    outlook:
+      "Use the Brno profile to compare cost framing, transport access, and country-level intelligence alongside Prague and Bratislava.",
+    scores: { overall: 76, affordability: 78, airQuality: 74, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["prague", "bratislava", "vienna"],
+  }),
+  buildNeutralCitySeed({
+    slug: "lodz",
+    name: "Łódź",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~1.1M metro",
+    intro:
+      "Łódź is a central Polish metro with a creative-industries, services, and logistics mix, useful for cross-region Polish relocation comparison.",
+    outlook:
+      "Use the Łódź profile to compare cost framing, transport access, and country-level intelligence alongside Warsaw, Kraków, and other Polish cities.",
+    scores: { overall: 72, affordability: 80, airQuality: 68, energy: 68, resilience: 70 },
+    relatedCitySlugs: ["warsaw", "krakow", "poznan"],
+  }),
+  buildNeutralCitySeed({
+    slug: "poznan",
+    name: "Poznań",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~1.0M metro",
+    intro:
+      "Poznań is a western Polish metro with services, logistics, and trade-fair activity, used for cross-region Polish and EU comparison.",
+    outlook:
+      "Use the Poznań profile to compare cost framing, transport access, and country-level context alongside Warsaw, Wrocław, and Berlin.",
+    scores: { overall: 74, affordability: 78, airQuality: 70, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["warsaw", "wroclaw", "berlin"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cluj-napoca",
+    name: "Cluj-Napoca",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "~0.4M metro",
+    intro:
+      "Cluj-Napoca is Romania's Transylvanian metro, with software services, university, and life-sciences activity used for cross-region Romanian comparison.",
+    outlook:
+      "Use the Cluj-Napoca profile to compare cost framing, transport access, and country-level intelligence alongside Bucharest and other Central-European mid-size cities.",
+    scores: { overall: 74, affordability: 80, airQuality: 72, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["bucharest", "budapest", "warsaw"],
+  }),
+  buildNeutralCitySeed({
+    slug: "split",
+    name: "Split",
+    countrySlug: "croatia",
+    countryName: "Croatia",
+    region: "Southern Europe",
+    population: "~0.35M metro",
+    intro:
+      "Split is a Croatian Adriatic-coast metro with tourism, services, and active coastal-adaptation work used for Mediterranean comparison.",
+    outlook:
+      "Use the Split profile to compare cost framing, transport access, and coastal-resilience signals alongside Zagreb, Ljubljana, and other Adriatic cities.",
+    scores: { overall: 72, affordability: 76, airQuality: 76, energy: 70, resilience: 68 },
+    relatedCitySlugs: ["zagreb", "ljubljana", "naples"],
+  }),
+  buildNeutralCitySeed({
+    slug: "nashville",
+    name: "Nashville",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~2.0M metro",
+    intro:
+      "Nashville is a Tennessee metro with healthcare, music, and services growth, used for relocation comparison against other Sun Belt US cities.",
+    outlook:
+      "Use the Nashville profile to compare cost framing, transport access, and country-level intelligence alongside Charlotte, Atlanta, and other Southeast metros.",
+    scores: { overall: 74, affordability: 70, airQuality: 72, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["atlanta", "charlotte", "austin"],
+  }),
+  buildNeutralCitySeed({
+    slug: "charlotte",
+    name: "Charlotte",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~2.7M metro",
+    intro:
+      "Charlotte is a North-Carolina financial-services and energy metro, used for relocation comparison across the US Southeast.",
+    outlook:
+      "Use the Charlotte profile to compare cost framing, transport access, and country-level intelligence alongside Atlanta, Nashville, and other Southeast US metros.",
+    scores: { overall: 74, affordability: 70, airQuality: 74, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["atlanta", "nashville", "raleigh"],
+  }),
+  buildNeutralCitySeed({
+    slug: "minneapolis",
+    name: "Minneapolis",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~3.7M metro",
+    intro:
+      "Minneapolis is the larger of the Twin Cities and a Midwestern US metro, with healthcare, services, and active cycling infrastructure used in comparison.",
+    outlook:
+      "Use the Minneapolis profile to compare cost framing, transport access, and country-level context alongside Chicago and other Midwestern US metros.",
+    scores: { overall: 76, affordability: 70, airQuality: 78, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["chicago", "denver", "boston"],
+  }),
+  buildNeutralCitySeed({
+    slug: "salt-lake-city",
+    name: "Salt Lake City",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1.3M metro",
+    intro:
+      "Salt Lake City is a Utah metro with services growth and outdoor-recreation context, used for inland-West US relocation comparison.",
+    outlook:
+      "Use the Salt Lake City profile to compare cost framing, transport access, and country-level intelligence alongside Denver and other Mountain-West US metros.",
+    scores: { overall: 74, affordability: 70, airQuality: 68, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["denver", "boulder", "portland"],
+  }),
+  buildNeutralCitySeed({
+    slug: "raleigh",
+    name: "Raleigh",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1.5M metro",
+    intro:
+      "Raleigh is part of the North Carolina Research Triangle, with university, life-sciences, and tech-services activity used in Southeast US comparison.",
+    outlook:
+      "Use the Raleigh profile to compare cost framing, transport access, and country-level context alongside Charlotte, Atlanta, and other Southeast US metros.",
+    scores: { overall: 76, affordability: 72, airQuality: 76, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["charlotte", "atlanta", "nashville"],
+  }),
+  buildNeutralCitySeed({
+    slug: "tampa",
+    name: "Tampa",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~3.3M metro",
+    intro:
+      "Tampa is a Florida Gulf Coast metro, with services, healthcare, and active coastal-resilience and hurricane-adaptation work used in regional comparison.",
+    outlook:
+      "Use the Tampa profile to compare cost framing, transport access, and coastal-resilience signals alongside Miami and other Southeast US coastal metros.",
+    scores: { overall: 72, affordability: 70, airQuality: 74, energy: 70, resilience: 62 },
+    relatedCitySlugs: ["miami", "orlando", "atlanta"],
+  }),
+  buildNeutralCitySeed({
+    slug: "orlando",
+    name: "Orlando",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~2.7M metro",
+    intro:
+      "Orlando is a central Florida metro with tourism, simulation, and services activity, used for relocation comparison across Florida.",
+    outlook:
+      "Use the Orlando profile to compare cost framing, transport access, and country-level intelligence alongside Tampa, Miami, and other Southeast US metros.",
+    scores: { overall: 72, affordability: 72, airQuality: 74, energy: 70, resilience: 66 },
+    relatedCitySlugs: ["tampa", "miami", "atlanta"],
+  }),
+  buildNeutralCitySeed({
+    slug: "pittsburgh",
+    name: "Pittsburgh",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~2.4M metro",
+    intro:
+      "Pittsburgh is a Western-Pennsylvania metro with a post-industrial transition into healthcare, robotics, and education, used in Rust-Belt comparison.",
+    outlook:
+      "Use the Pittsburgh profile to compare cost framing, transport access, and country-level intelligence alongside other Northeast US metros.",
+    scores: { overall: 74, affordability: 76, airQuality: 70, energy: 70, resilience: 72 },
+    relatedCitySlugs: ["philadelphia", "boston", "chicago"],
+  }),
+  buildNeutralCitySeed({
+    slug: "houston",
+    name: "Houston",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~7.3M metro",
+    intro:
+      "Houston is the largest Texas metro, with energy, healthcare, and aerospace activity, used for Gulf-Coast and energy-sector comparison.",
+    outlook:
+      "Use the Houston profile to compare cost framing, transport access, and country-level context alongside Dallas, Austin, and other Gulf-Coast metros.",
+    scores: { overall: 72, affordability: 70, airQuality: 66, energy: 70, resilience: 60 },
+    relatedCitySlugs: ["dallas", "austin", "atlanta"],
+  }),
+  buildNeutralCitySeed({
+    slug: "las-vegas",
+    name: "Las Vegas",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~2.3M metro",
+    intro:
+      "Las Vegas is a Mojave-desert US metro with tourism, services, and active heat-and-water resilience conversations used in arid-city comparison.",
+    outlook:
+      "Use the Las Vegas profile to compare cost framing, transport access, and heat-and-water resilience signals alongside Phoenix and other arid-region cities.",
+    scores: { overall: 70, affordability: 70, airQuality: 68, energy: 68, resilience: 60 },
+    relatedCitySlugs: ["phoenix", "los-angeles", "san-diego"],
+  }),
+  buildNeutralCitySeed({
+    slug: "madison",
+    name: "Madison",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~0.68M metro",
+    intro:
+      "Madison is a Wisconsin university metro with biotech, public-sector, and lake-front character, used for compact-city Midwestern US comparison.",
+    outlook:
+      "Use the Madison profile to compare cost framing, transport access, and country-level intelligence alongside Minneapolis and other Midwestern US cities.",
+    scores: { overall: 76, affordability: 74, airQuality: 80, energy: 72, resilience: 74 },
+    relatedCitySlugs: ["minneapolis", "chicago", "boulder"],
+  }),
+  buildNeutralCitySeed({
+    slug: "boulder",
+    name: "Boulder",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~0.33M metro",
+    intro:
+      "Boulder is a Colorado Front-Range university metro with climate-research and outdoor-economy activity, used for inland-West US compact-city comparison.",
+    outlook:
+      "Use the Boulder profile to compare cost framing, transport access, and country-level context alongside Denver and other Mountain-West US metros.",
+    scores: { overall: 76, affordability: 64, airQuality: 76, energy: 74, resilience: 70 },
+    relatedCitySlugs: ["denver", "salt-lake-city", "madison"],
+  }),
+  buildNeutralCitySeed({
+    slug: "quebec-city",
+    name: "Quebec City",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~0.84M metro",
+    intro:
+      "Quebec City is the French-speaking capital of Québec province in eastern Canada, with public-sector, tourism, and heritage-economy character used in cross-region Canadian comparison.",
+    outlook:
+      "Use the Quebec City profile to compare cost framing, transport access, and country-level context alongside Montreal and other Canadian metros.",
+    scores: { overall: 78, affordability: 76, airQuality: 82, energy: 76, resilience: 76 },
+    relatedCitySlugs: ["montreal", "ottawa", "halifax"],
+  }),
+  buildNeutralCitySeed({
+    slug: "edmonton",
+    name: "Edmonton",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~1.5M metro",
+    intro:
+      "Edmonton is Alberta's northern metro and provincial capital, with energy, public-sector, and university activity used for cross-region Canadian comparison.",
+    outlook:
+      "Use the Edmonton profile to compare cost framing, transport access, and country-level context alongside Calgary, Winnipeg, and other Canadian metros.",
+    scores: { overall: 74, affordability: 74, airQuality: 78, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["calgary", "winnipeg", "saskatoon"],
+  }),
+  buildNeutralCitySeed({
+    slug: "winnipeg",
+    name: "Winnipeg",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~0.83M metro",
+    intro:
+      "Winnipeg is Manitoba's prairie metro and provincial capital, with insurance, manufacturing, and culture activity used in cross-region Canadian comparison.",
+    outlook:
+      "Use the Winnipeg profile to compare cost framing, transport access, and country-level intelligence alongside Edmonton, Saskatoon, and other Canadian metros.",
+    scores: { overall: 72, affordability: 78, airQuality: 80, energy: 68, resilience: 68 },
+    relatedCitySlugs: ["edmonton", "calgary", "ottawa"],
+  }),
+  buildNeutralCitySeed({
+    slug: "halifax",
+    name: "Halifax",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~0.49M metro",
+    intro:
+      "Halifax is the Atlantic-Canadian metro and Nova Scotia capital, with port, defence, and university activity used for Atlantic-coast Canadian comparison.",
+    outlook:
+      "Use the Halifax profile to compare cost framing, transport access, and coastal-resilience signals alongside other Atlantic-Canadian and US metros.",
+    scores: { overall: 75, affordability: 72, airQuality: 82, energy: 70, resilience: 70 },
+    relatedCitySlugs: ["ottawa", "quebec-city", "montreal"],
+  }),
+  buildNeutralCitySeed({
+    slug: "newcastle",
+    name: "Newcastle",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~0.5M metro",
+    intro:
+      "Newcastle is a coastal New South Wales metro north of Sydney, with port, energy-transition, and services activity used for cross-region Australian comparison.",
+    outlook:
+      "Use the Newcastle profile to compare cost framing, transport access, and coastal-resilience signals alongside Sydney, Wollongong, and other Australian metros.",
+    scores: { overall: 76, affordability: 70, airQuality: 80, energy: 74, resilience: 70 },
+    relatedCitySlugs: ["sydney", "brisbane", "adelaide"],
+  }),
+  buildNeutralCitySeed({
+    slug: "darwin",
+    name: "Darwin",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~0.15M metro",
+    intro:
+      "Darwin is a Top-End Australian metro on the Timor Sea, with tropical climate, port, and defence activity used in cross-region Australian and Southeast-Asian comparison.",
+    outlook:
+      "Use the Darwin profile to compare cost framing, transport access, and tropical-resilience signals alongside other Australian and equatorial-region metros.",
+    scores: { overall: 70, affordability: 68, airQuality: 78, energy: 68, resilience: 64 },
+    relatedCitySlugs: ["brisbane", "perth", "cairns"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cairns",
+    name: "Cairns",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~0.16M metro",
+    intro:
+      "Cairns is a tropical north-Queensland metro adjacent to the Great Barrier Reef, with tourism, agriculture, and active cyclone-and-reef-resilience work in regional comparison.",
+    outlook:
+      "Use the Cairns profile to compare cost framing, transport access, and tropical-resilience signals alongside Darwin, Brisbane, and other Australian metros.",
+    scores: { overall: 70, affordability: 70, airQuality: 80, energy: 70, resilience: 64 },
+    relatedCitySlugs: ["brisbane", "darwin", "gold-coast"],
+  }),
+  buildNeutralCitySeed({
+    slug: "tauranga",
+    name: "Tauranga",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "~0.16M metro",
+    intro:
+      "Tauranga is a Bay-of-Plenty New Zealand metro on the North Island east coast, with port, horticulture, and lifestyle-migration activity used for cross-region NZ comparison.",
+    outlook:
+      "Use the Tauranga profile to compare cost framing, transport access, and coastal-resilience signals alongside Auckland, Wellington, and other NZ metros.",
+    scores: { overall: 75, affordability: 70, airQuality: 82, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["auckland", "wellington", "christchurch"],
+  }),
+  buildNeutralCitySeed({
+    slug: "galway",
+    name: "Galway",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Western Europe",
+    population: "~0.27M metro",
+    intro:
+      "Galway is a western Irish metro on the Atlantic coast, with university, medtech, and creative-industries activity used for cross-region Irish comparison.",
+    outlook:
+      "Use the Galway profile to compare cost framing, transport access, and country-level context alongside Dublin and Cork.",
+    scores: { overall: 74, affordability: 70, airQuality: 80, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["dublin", "cork", "belfast"],
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);

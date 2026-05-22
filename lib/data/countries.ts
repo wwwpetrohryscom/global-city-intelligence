@@ -12,7 +12,9 @@ export const countries: Country[] = [
     intro:
       "Denmark's country profile emphasizes clean-energy governance, high public trust, and urban systems that support healthy daily life.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["copenhagen"],
+    citySlugs: ["copenhagen",
+      "aarhus",
+    ],
     metrics: [
       { label: "Urban resilience context", value: "Advanced", description: "Strong public institutions and climate policy improve city implementation capacity." },
       { label: "Energy transition context", value: "Very strong", description: "Clean-energy planning gives cities a favorable national operating environment." },
@@ -46,6 +48,18 @@ export const countries: Country[] = [
       "phoenix",
       "san-diego",
       "portland",
+      "nashville",
+      "charlotte",
+      "minneapolis",
+      "salt-lake-city",
+      "raleigh",
+      "tampa",
+      "orlando",
+      "pittsburgh",
+      "houston",
+      "las-vegas",
+      "madison",
+      "boulder",
     ],
     metrics: [
       { label: "Urban variation", value: "Very high", description: "Large metropolitan differences make city-level pages more useful than national averages." },
@@ -80,7 +94,14 @@ export const countries: Country[] = [
     intro:
       "France's city profile benefits from European air-quality reporting, transit-rich urban regions, and strong policy pressure toward lower-emission mobility.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["paris"],
+    citySlugs: ["paris",
+      "lyon",
+      "marseille",
+      "toulouse",
+      "nice",
+      "bordeaux",
+      "strasbourg",
+    ],
     metrics: [
       { label: "Urban policy context", value: "Strong", description: "Mobility, climate, and public-space reform provide useful city-level comparison signals." },
       { label: "Air-quality context", value: "High transparency", description: "European monitoring supports pollutant comparison and health framing." },
@@ -97,7 +118,15 @@ export const countries: Country[] = [
     intro:
       "The United Kingdom's profile combines strong financial and creative industries with mature climate policy, transit reach, and rising housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "itu-connectivity"],
-    citySlugs: ["london", "edinburgh"],
+    citySlugs: ["london", "edinburgh",
+      "manchester",
+      "birmingham",
+      "bristol",
+      "leeds",
+      "glasgow",
+      "belfast",
+      "cardiff",
+    ],
     metrics: [
       { label: "Urban policy context", value: "Strong", description: "Clean-air zones and net-zero targets shape major-city implementation." },
       { label: "Air-quality context", value: "High transparency", description: "Public monitoring supports pollutant comparison and health framing." },
@@ -131,7 +160,14 @@ export const countries: Country[] = [
     intro:
       "Germany's profile combines strong public services, progressive clean-energy policy, and varied affordability across major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["berlin", "munich", "hamburg"],
+    citySlugs: ["berlin", "munich", "hamburg",
+      "frankfurt",
+      "cologne",
+      "stuttgart",
+      "dusseldorf",
+      "leipzig",
+      "dresden",
+    ],
     metrics: [
       { label: "Energy transition context", value: "Very strong", description: "National renewable-electricity progress supports city-level transition." },
       { label: "Affordability context", value: "Mixed-favorable", description: "Major cities are more affordable than other Western European peers." },
@@ -148,7 +184,12 @@ export const countries: Country[] = [
     intro:
       "Canada's profile combines strong public services, low-carbon electricity in many provinces, and rising housing-cost pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities"],
-    citySlugs: ["toronto", "vancouver", "montreal", "calgary", "ottawa"],
+    citySlugs: ["toronto", "vancouver", "montreal", "calgary", "ottawa",
+      "quebec-city",
+      "edmonton",
+      "winnipeg",
+      "halifax",
+    ],
     metrics: [
       { label: "Service depth", value: "High", description: "Public health and education services support strong daily life." },
       { label: "Energy transition context", value: "Favorable grid", description: "Low-carbon electricity in major provinces supports city-level transition." },
@@ -174,6 +215,9 @@ export const countries: Country[] = [
       "canberra",
       "gold-coast",
       "hobart",
+      "newcastle",
+      "darwin",
+      "cairns",
     ],
     metrics: [
       { label: "Outdoor amenity", value: "Very high", description: "Coastal and outdoor amenity supports a high quality of daily life." },
@@ -191,7 +235,10 @@ export const countries: Country[] = [
     intro:
       "The Netherlands combines compact transit-oriented cities, advanced water-management engineering, and steady renewable-energy progress into a stable urban operating environment.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["amsterdam", "rotterdam", "utrecht"],
+    citySlugs: ["amsterdam", "rotterdam", "utrecht",
+      "the-hague",
+      "eindhoven",
+    ],
     metrics: [
       { label: "Water adaptation", value: "World-class", description: "Long-horizon flood and water-management programs shape national resilience." },
       { label: "Cycling infrastructure", value: "Mature", description: "Urban form and policy support car-light daily life across major metros." },
@@ -208,7 +255,11 @@ export const countries: Country[] = [
     intro:
       "Spain's profile blends walkable, transit-rich cities, strong renewable resources, and growing climate-adaptation work focused on heat and water stress.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["barcelona", "madrid", "valencia", "seville", "bilbao"],
+    citySlugs: ["barcelona", "madrid", "valencia", "seville", "bilbao",
+      "malaga",
+      "zaragoza",
+      "granada",
+    ],
     metrics: [
       { label: "Renewable resource", value: "Very strong", description: "Solar and wind potential support a steady national clean-energy build-out." },
       { label: "Urban walkability", value: "High", description: "Compact urban form and street-level life reduce mobility friction." },
@@ -395,7 +446,9 @@ export const countries: Country[] = [
     intro:
       "New Zealand's profile combines high quality of life, low-carbon electricity, and outdoor amenity, balanced by housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities"],
-    citySlugs: ["auckland", "wellington", "christchurch", "dunedin"],
+    citySlugs: ["auckland", "wellington", "christchurch", "dunedin",
+      "tauranga",
+    ],
     metrics: [
       { label: "Energy mix", value: "Low-carbon", description: "Hydropower and geothermal generation support a favorable baseline." },
       { label: "Outdoor amenity", value: "Very high", description: "Coastal and natural amenity supports a strong quality of daily life." },
@@ -412,7 +465,12 @@ export const countries: Country[] = [
     intro:
       "Italy's profile combines deep cultural heritage, walkable historic cities, growing renewable build-out, and active climate-adaptation work in heat-exposed regions.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["rome", "milan", "bologna", "florence", "naples"],
+    citySlugs: ["rome", "milan", "bologna", "florence", "naples",
+      "turin",
+      "genoa",
+      "palermo",
+      "verona",
+    ],
     metrics: [
       { label: "Cultural heritage", value: "Globally leading", description: "Heritage and creative industries shape city identities." },
       { label: "Energy transition context", value: "Accelerating", description: "Renewable build-out and EU funds support city-level transition." },
@@ -446,7 +504,9 @@ export const countries: Country[] = [
     intro:
       "Czechia's profile combines compact historic cities, mature public transit, and an active energy transition supported by EU framing and city-level programs.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["prague"],
+    citySlugs: ["prague",
+      "brno",
+    ],
     metrics: [
       { label: "Public transit", value: "Strong", description: "Metro, tram, and bus reach support car-light daily life in major cities." },
       { label: "Cultural heritage", value: "Deep", description: "Long-standing cultural and creative ecosystems shape urban identity." },
@@ -463,7 +523,10 @@ export const countries: Country[] = [
     intro:
       "Poland's profile features fast-growing tech and services activity, expanding transit networks, and an active energy transition supported by EU funds.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["warsaw", "krakow", "gdansk", "wroclaw"],
+    citySlugs: ["warsaw", "krakow", "gdansk", "wroclaw",
+      "lodz",
+      "poznan",
+    ],
     metrics: [
       { label: "Tech-sector activity", value: "Growing", description: "Software, services, and finance expand opportunity in major cities." },
       { label: "Energy transition context", value: "In progress", description: "Heating and grid decarbonization are central transition levers." },
@@ -708,7 +771,10 @@ export const countries: Country[] = [
     intro:
       "Sweden's profile combines stable public institutions, low-carbon electricity, and transit-oriented cities with mature climate and digital-readiness policy.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["stockholm"],
+    citySlugs: ["stockholm",
+      "malmo",
+      "gothenburg",
+    ],
     metrics: [
       { label: "Energy mix", value: "Low-carbon", description: "Hydro, nuclear, and wind generation support a favorable electricity baseline." },
       { label: "Service depth", value: "High", description: "Public health, education, and digital services reach broad coverage." },
@@ -742,7 +808,9 @@ export const countries: Country[] = [
     intro:
       "Finland's profile combines strong public services, an advanced digital and education sector, and steady progress on clean-energy and adaptation policy.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "itu-connectivity"],
-    citySlugs: ["helsinki"],
+    citySlugs: ["helsinki",
+      "tampere",
+    ],
     metrics: [
       { label: "Digital readiness", value: "Top-tier", description: "Fiber and 5G coverage support remote work and public-service delivery." },
       { label: "Education context", value: "Globally cited", description: "Education systems support workforce quality across major cities." },
@@ -759,7 +827,9 @@ export const countries: Country[] = [
     intro:
       "Belgium's profile combines dense transit networks, European institutional context, and mature public health, with rising housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["brussels", "antwerp"],
+    citySlugs: ["brussels", "antwerp",
+      "ghent",
+    ],
     metrics: [
       { label: "Transit reach", value: "Strong", description: "Rail and tram systems support car-light daily life in major metros." },
       { label: "Institutional context", value: "European hub", description: "EU institutional presence shapes urban services and labor markets." },
@@ -776,7 +846,10 @@ export const countries: Country[] = [
     intro:
       "Ireland's profile combines strong technology services, growing renewable wind capacity, and high housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["dublin"],
+    citySlugs: ["dublin",
+      "cork",
+      "galway",
+    ],
     metrics: [
       { label: "Tech-services depth", value: "Globally cited", description: "Software and finance ecosystems shape opportunity in major cities." },
       { label: "Renewable resource", value: "Wind-led", description: "Onshore and offshore wind support transition direction." },
@@ -1014,7 +1087,9 @@ export const countries: Country[] = [
     intro:
       "Romania's profile combines EU membership with rapid digital-services growth, useful for users comparing Eastern European cost context and remote-work relocation.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["bucharest"],
+    citySlugs: ["bucharest",
+      "cluj-napoca",
+    ],
     metrics: [
       { label: "Regional context", value: "Eastern EU", description: "EU membership with Eastern-European cost and labor-market context." },
       { label: "Digital services", value: "Growing", description: "Tech and digital-services growth shapes city-level intelligence." },
@@ -1048,7 +1123,9 @@ export const countries: Country[] = [
     intro:
       "Croatia's profile blends Mediterranean coastal context with EU membership, useful for users comparing relocation, tourism-economy, and regional-hub contexts.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["zagreb"],
+    citySlugs: ["zagreb",
+      "split",
+    ],
     metrics: [
       { label: "Regional context", value: "Adriatic EU", description: "Adriatic coastline within the EU regulatory and monitoring frame." },
       { label: "Climate exposure", value: "Coastal and heat", description: "Mediterranean exposure shapes resilience priorities." },
@@ -1461,6 +1538,23 @@ export const countries: Country[] = [
       { label: "Regional context", value: "Southern Africa", description: "Long Indian-Ocean coastline with coastal-capital urban geography." },
       { label: "Climate exposure", value: "Cyclones, flood, sea-level", description: "Tropical-cyclone exposure and flood risk dominate adaptation priorities." },
       { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively." },
+    ],
+  },
+  {
+    slug: "luxembourg",
+    name: "Luxembourg",
+    iso2: "LU",
+    region: "Western Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Luxembourg's country profile combines a small geographic footprint with deep EU-institution and financial-services integration, useful for cross-border relocation comparison inside the EU.",
+    sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
+    citySlugs: ["luxembourg-city"],
+    metrics: [
+      { label: "Urban policy context", value: "EU-anchored", description: "EU regulatory and financial-services framing shapes urban policy." },
+      { label: "Cross-border integration", value: "High", description: "Daily commuter flows from Belgium, France, and Germany shape the metro." },
+      { label: "Data confidence", value: "High", description: "European monitoring and reporting systems support indexable, comparable pages." },
     ],
   },
 ];
