@@ -101,6 +101,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: absoluteUrl(staticRoutes.arrival),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
   ];
 
   const cityItems = cities.map((city) => ({
