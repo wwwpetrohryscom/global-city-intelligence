@@ -10532,7 +10532,7 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Sheffield profile to compare cost framing, transport access, and country-level context alongside Leeds and Manchester.",
     scores: { overall: 71, affordability: 73, airQuality: 76, energy: 70, resilience: 68 },
-    relatedCitySlugs: ["leeds", "manchester", "nottingham"],
+    relatedCitySlugs: ["leeds", "manchester", "bristol"],
   }),
   buildNeutralCitySeed({
     slug: "brighton",
@@ -10576,7 +10576,7 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Rennes profile to compare cost framing, transport access, and country-level context alongside other French regional capitals.",
     scores: { overall: 73, affordability: 72, airQuality: 78, energy: 72, resilience: 72 },
-    relatedCitySlugs: ["nantes", "bordeaux", "lyon"],
+    relatedCitySlugs: ["bordeaux", "toulouse", "lyon"],
   }),
   buildNeutralCitySeed({
     slug: "grenoble",
@@ -10604,7 +10604,7 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Dijon profile to compare cost framing, transport access, and country-level context alongside other French regional metros.",
     scores: { overall: 71, affordability: 72, airQuality: 76, energy: 72, resilience: 70 },
-    relatedCitySlugs: ["lyon", "strasbourg", "reims"],
+    relatedCitySlugs: ["lyon", "strasbourg", "paris"],
   }),
   buildNeutralCitySeed({
     slug: "aix-en-provence",
@@ -11034,7 +11034,7 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Brașov profile to compare cost framing, transport access, and country-level context alongside Cluj-Napoca and Bucharest.",
     scores: { overall: 70, affordability: 78, airQuality: 72, energy: 70, resilience: 68 },
-    relatedCitySlugs: ["cluj-napoca", "bucharest", "sofia"],
+    relatedCitySlugs: ["cluj-napoca", "bucharest", "belgrade"],
   }),
 
   // Bulgaria
@@ -11050,7 +11050,7 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Plovdiv profile to compare cost framing, transport access, and country-level context inside the Balkans and Southeastern Europe.",
     scores: { overall: 68, affordability: 80, airQuality: 68, energy: 68, resilience: 66 },
-    relatedCitySlugs: ["sofia", "bucharest", "belgrade"],
+    relatedCitySlugs: ["bucharest", "belgrade", "athens"],
   }),
 
   // United States
@@ -11080,7 +11080,7 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Indianapolis profile to compare cost framing, transport access, and country-level context alongside Columbus and Cincinnati.",
     scores: { overall: 71, affordability: 77, airQuality: 73, energy: 68, resilience: 70 },
-    relatedCitySlugs: ["columbus", "cincinnati", "louisville"],
+    relatedCitySlugs: ["columbus", "cincinnati", "cleveland"],
   }),
   buildNeutralCitySeed({
     slug: "detroit",
@@ -11192,7 +11192,7 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Cincinnati profile to compare cost framing, transport access, and country-level context alongside Columbus and Indianapolis.",
     scores: { overall: 71, affordability: 77, airQuality: 73, energy: 68, resilience: 70 },
-    relatedCitySlugs: ["columbus", "indianapolis", "louisville"],
+    relatedCitySlugs: ["columbus", "indianapolis", "cleveland"],
   }),
   buildNeutralCitySeed({
     slug: "cleveland",

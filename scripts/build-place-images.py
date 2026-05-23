@@ -36,6 +36,8 @@ BAD_FILE_TOKENS = (
     "_cover",
     "_culture.",       # cultural montages may include identifiable people
     "_montage",
+    "montage_",        # composites where 'Montage' is the leading token
+    "photomontage",    # 'PhotoMontage_*' composites
 )
 
 

@@ -589,15 +589,20 @@ The pipeline ran in three passes:
 - **Existing cities**: 232 / 232 retain their hero image — no
   regression. Existing-city hero records were either re-verified
   unchanged or recovered through the landmark fallback.
-- **New cities with verified hero image**: 56 / 66.
-- **New cities rendering the existing `ImageFallback` block**: 10 —
-  Aix-en-Provence, Detroit, Hyderabad, Jaipur, Liverpool, Napier,
-  San Antonio, Saskatoon, Victoria, Wollongong. The upstream Wikidata
-  P18 for each is either a "City Montage" composite or another file
-  the catalog rejects as unsuitable, and no curated landmark fallback
-  is on file for them yet. These pages remain fully functional; the
-  page renders the designed fallback component as documented in
-  `docs/image-sourcing.md`.
+- **New cities with verified hero image**: 54 / 66.
+- **New cities rendering the existing `ImageFallback` block**: 12 —
+  Aix-en-Provence, Columbus, Detroit, Hyderabad, Jaipur, Liverpool,
+  Montpellier, Napier, San Antonio, Saskatoon, Victoria, Wollongong.
+  The upstream Wikidata P18 for each is a "City Montage" /
+  "PhotoMontage" composite or another file the catalog rejects as
+  unsuitable, and no curated landmark fallback is on file for them
+  yet. These pages remain fully functional; the page renders the
+  designed fallback component as documented in
+  `docs/image-sourcing.md`. (Columbus and Montpellier were initially
+  let through because the early-batch-three filter only matched
+  `_montage` — the audit pass tightened `BAD_FILE_TOKENS` in
+  `scripts/build-place-images.py` to also reject leading-`Montage_`
+  and `PhotoMontage` composites.)
 - **Bulgaria country hero**: verified (`Raggatt2000 / CC BY-SA 3.0`).
 
 Every new hero record carries `source`, `sourceUrl`, `author`,
@@ -644,7 +649,7 @@ pipeline.
 
 ### Verification results
 
-- `npm run validate:media` — **pass** (288 city hero / 86 country hero
+- `npm run validate:media` — **pass** (286 city hero / 86 country hero
   records, all license + author + attribution fields valid).
 - `npm run typecheck` — clean.
 - `npm run lint` — clean.
