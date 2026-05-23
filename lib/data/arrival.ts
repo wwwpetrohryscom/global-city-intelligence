@@ -17,6 +17,7 @@ import type { ArrivalChecklistItem, ArrivalPage } from "@/types";
  */
 
 const UPDATED_DATE = "2026-05-21";
+const BATCH_3_UPDATED_DATE = "2026-05-23";
 
 const COMMON_SOURCES: readonly string[] = [
   "un-habitat",
@@ -857,6 +858,220 @@ export const arrivalPages: ArrivalPage[] = [
     updatedDate: UPDATED_DATE,
     dataYear: DATA_YEAR,
     sourceIds: arrivalSources(["who-air"]),
+  },
+  // ===== Third arrival batch (2026-05-23): UK / Ireland (6) =====
+  {
+    citySlug: "manchester",
+    title: "Arriving in Manchester: City Arrival Planning Guide",
+    summary:
+      "Manchester arrival context covering city intelligence, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the North-West-English metropolitan region.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air", "itu-connectivity"]),
+  },
+  {
+    citySlug: "birmingham",
+    title: "Arriving in Birmingham: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Birmingham using the city intelligence profile, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the West-Midlands metropolitan region.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "bristol",
+    title: "Arriving in Bristol: City Arrival Planning Guide",
+    summary:
+      "Bristol arrival context covering city intelligence, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the South-West-English metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "glasgow",
+    title: "Arriving in Glasgow: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Glasgow using the city intelligence profile, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the West-Central-Scottish region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "belfast",
+    title: "Arriving in Belfast: City Arrival Planning Guide",
+    summary:
+      "Belfast arrival context covering city intelligence, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the Northern-Irish metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "cardiff",
+    title: "Arriving in Cardiff: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Cardiff using the city intelligence profile, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the South-Wales metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  // ===== Third arrival batch: France / Germany (4) =====
+  {
+    citySlug: "lyon",
+    title: "Arriving in Lyon: City Arrival Planning Guide",
+    summary:
+      "Lyon arrival context covering city intelligence, French country hub, public-safety references, healthcare access notes, and verified mobility context for the Rhône-Alpes metropolitan region.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "marseille",
+    title: "Arriving in Marseille: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Marseille using the city intelligence profile, French country hub, public-safety references, healthcare access notes, and verified mobility context for the Mediterranean-French metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "frankfurt",
+    title: "Arriving in Frankfurt: City Arrival Planning Guide",
+    summary:
+      "Frankfurt arrival context covering city intelligence, German country hub, public-safety references, healthcare access notes, and verified mobility-authority context for the Rhine-Main metropolitan region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air", "itu-connectivity"]),
+  },
+  {
+    citySlug: "cologne",
+    title: "Arriving in Cologne: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Cologne using the city intelligence profile, German country hub, public-safety references, healthcare access notes, and verified mobility context for the Rhineland metropolitan region.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  // ===== Third arrival batch: United States (7) =====
+  {
+    citySlug: "nashville",
+    title: "Arriving in Nashville: City Arrival Planning Guide",
+    summary:
+      "Nashville arrival context covering city intelligence, United States country hub, public-safety references, healthcare access notes, and verified mobility-authority context for the Middle-Tennessee metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "charlotte",
+    title: "Arriving in Charlotte: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Charlotte using the city intelligence profile, United States country hub, public-safety references, healthcare access notes, and verified mobility context for the Carolinas metropolitan region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "minneapolis",
+    title: "Arriving in Minneapolis: City Arrival Planning Guide",
+    summary:
+      "Minneapolis arrival context covering city intelligence, United States country hub, public-safety references, healthcare access notes, and verified mobility context for the Twin-Cities metropolitan region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "salt-lake-city",
+    title: "Arriving in Salt Lake City: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Salt Lake City using the city intelligence profile, United States country hub, public-safety references, healthcare access notes, and verified mobility context for the Wasatch-Front metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "raleigh",
+    title: "Arriving in Raleigh: City Arrival Planning Guide",
+    summary:
+      "Raleigh arrival context covering city intelligence, United States country hub, public-safety references, healthcare access notes, and verified mobility context for the Research-Triangle metropolitan region.",
+    arrivalFocus: "remote_work_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs", "itu-connectivity"]),
+  },
+  {
+    citySlug: "tampa",
+    title: "Arriving in Tampa: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Tampa using the city intelligence profile, United States country hub, public-safety references, healthcare access notes, and verified mobility context for the Florida-Gulf-Coast metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "orlando",
+    title: "Arriving in Orlando: City Arrival Planning Guide",
+    summary:
+      "Orlando arrival context covering city intelligence, United States country hub, public-safety references, healthcare access notes, and verified mobility context for the Central-Florida metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  // ===== Third arrival batch: Canada (4) =====
+  {
+    citySlug: "quebec-city",
+    title: "Arriving in Quebec City: City Arrival Planning Guide",
+    summary:
+      "Quebec City arrival context covering city intelligence, Canadian country hub, public-safety references, healthcare access notes, and verified mobility context for the eastern-Québec metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["canada-emergency"]),
+  },
+  {
+    citySlug: "edmonton",
+    title: "Arriving in Edmonton: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Edmonton using the city intelligence profile, Canadian country hub, public-safety references, healthcare access notes, and verified mobility context for the northern-Alberta metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["canada-emergency"]),
+  },
+  {
+    citySlug: "winnipeg",
+    title: "Arriving in Winnipeg: City Arrival Planning Guide",
+    summary:
+      "Winnipeg arrival context covering city intelligence, Canadian country hub, public-safety references, healthcare access notes, and verified mobility context for the Manitoba prairie metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["canada-emergency"]),
+  },
+  {
+    citySlug: "halifax",
+    title: "Arriving in Halifax: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Halifax using the city intelligence profile, Canadian country hub, public-safety references, healthcare access notes, and verified mobility context for the Atlantic-Canadian metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_3_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["canada-emergency"]),
   },
 ];
 
