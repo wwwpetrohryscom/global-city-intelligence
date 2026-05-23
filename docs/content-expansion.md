@@ -355,3 +355,57 @@ No new route files, schema types, client components, runtime fetches,
 external API calls, map / chart / carousel dependencies were
 introduced. Arrival pages were not changed in this batch — the new
 cities are candidates for a future arrival expansion.
+
+## 2026-05-23 batch: arrival planning cluster — priority third wave
+
+The second arrival wave brought the curated `/arrival/[city]` set
+from 41 to 82. This third wave adds **21 more** priority arrival
+pages through `lib/data/arrival.ts` only — no new images, no new
+cities, no new countries, no new routes, no new schema types, and no
+new source ids. A new `BATCH_3_UPDATED_DATE = "2026-05-23"` constant
+was introduced so the freshness of the new records is traceable
+without disturbing the `updatedDate` on earlier batches. Arrival
+pages 82 → 103.
+
+Third-batch cities (21):
+
+- **United Kingdom (6)**: Manchester, Birmingham, Bristol, Glasgow,
+  Belfast, Cardiff.
+- **France (2)**: Lyon, Marseille.
+- **Germany (2)**: Frankfurt, Cologne.
+- **United States (7)**: Nashville, Charlotte, Minneapolis, Salt
+  Lake City, Raleigh, Tampa, Orlando.
+- **Canada (4)**: Quebec City, Edmonton, Winnipeg, Halifax.
+
+Arrival-focus assignments follow the existing `ArrivalFocus` enum:
+`rail_arrival` for Manchester, Birmingham, Lyon, and Cologne;
+`business_travel` for Frankfurt, Charlotte, and Minneapolis;
+`remote_work_arrival` for Raleigh; `general_arrival` for the rest.
+`sourceIds` reuse existing registry entries — `eea-air` (Europe),
+`epa-naaqs` (United States), `canada-emergency` (Canada), and
+`itu-connectivity` where the focus is rail / business / remote-work
+relocation. No new source ids were introduced.
+
+Safety rules continue to apply to every arrival record:
+
+- No airport names, no IATA codes, no terminals, no transfer routes,
+  no fares, no schedules, no travel times, no transport operator
+  names, no taxi prices, no airport emergency contacts.
+- No fastest-route, cheapest-route, or guaranteed-travel-time claims.
+- No visa, immigration, legal, or medical advice — every record
+  includes only neutral arrival planning context that defers
+  time-sensitive details to official sources via the existing
+  transport, public-safety, and healthcare layers.
+
+After this batch:
+
+- arrival page count: 82 → 103 (+21)
+- static page count: 1,945 → 1,966 (+21)
+- `/arrival` directory ItemList: 82 → 103 items (still
+  `ItemListUnordered`)
+- sitemap `/arrival/[city]` entries: 82 → 103 (priority 0.74, monthly)
+
+City reverse-link cards (`hasArrivalPage(city.slug)`) automatically
+appear on the 21 newly covered city profile pages with no manual
+wiring. No client components, no runtime fetches, no external API
+calls, and no new dependencies were introduced.
