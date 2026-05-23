@@ -467,9 +467,9 @@ Safety rules applied to every comparison record:
 
 After this batch:
 
-- comparison record count: 70 → 105 (+35)
+- comparison record count: 67 → 102 (+35)
 - static page count: 1,966 → 2,001 (+35)
-- sitemap `/compare/[comparison]` entries: 70 → 105
+- sitemap `/compare/[comparison]` entries: 67 → 102
   (priority 0.85, weekly — unchanged formula)
 - `/compare` index automatically lists the new pairs via
   `getAllComparisons()`
