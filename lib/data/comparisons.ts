@@ -724,6 +724,373 @@ const seeds: ComparisonSeed[] = [
     description:
       "Compare Christchurch and Auckland across cost framing, transport access, and country-level public-service context for New Zealand cross-island relocation review.",
   },
+
+  // Batch two: curated comparison pairs that lean on cities added in
+  // the second city-expansion wave. Each pair is a naturally compared
+  // metro grouping (regional alternative, intra-country relocation, or
+  // remote-work-oriented review) using only existing city records and
+  // existing utility layers — no new scores, no winners, no invented
+  // metrics.
+
+  // UK / Ireland
+  {
+    cityASlug: "manchester",
+    cityBSlug: "birmingham",
+    cityAName: "Manchester",
+    cityBName: "Birmingham",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Manchester and Birmingham as English regional cores through structured city indicators, country context, verified media, and methodology notes. Use this comparison as a directional planning view, not an official ranking.",
+  },
+  {
+    cityASlug: "manchester",
+    cityBSlug: "leeds",
+    cityAName: "Manchester",
+    cityBName: "Leeds",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Manchester and Leeds for a Northern-England comparison across cost framing, transport access, healthcare and emergency context, and country-level indicators.",
+  },
+  {
+    cityASlug: "manchester",
+    cityBSlug: "glasgow",
+    cityAName: "Manchester",
+    cityBName: "Glasgow",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Review Manchester and Glasgow side by side across cost framing, transport access, and country-level public-service context for UK cross-region relocation planning.",
+  },
+  {
+    cityASlug: "birmingham",
+    cityBSlug: "bristol",
+    cityAName: "Birmingham",
+    cityBName: "Bristol",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Birmingham and Bristol across cost framing, transport access, and country-level intelligence for users weighing two English regional metros.",
+  },
+  {
+    cityASlug: "glasgow",
+    cityBSlug: "edinburgh",
+    cityAName: "Glasgow",
+    cityBName: "Edinburgh",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Glasgow and Edinburgh for a Scottish intra-country comparison across cost framing, transport access, healthcare context, and country-level indicators.",
+  },
+  {
+    cityASlug: "cardiff",
+    cityBSlug: "bristol",
+    cityAName: "Cardiff",
+    cityBName: "Bristol",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Cardiff and Bristol as adjacent Severn-corridor metros across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "belfast",
+    cityBSlug: "dublin",
+    cityAName: "Belfast",
+    cityBName: "Dublin",
+    intent: "relocation",
+    region: "Europe",
+    description:
+      "Pair Belfast and Dublin for a cross-border Ireland comparison across cost framing, transport access, healthcare context, and country-level intelligence — useful for English-speaking European relocation review.",
+  },
+  {
+    cityASlug: "cork",
+    cityBSlug: "galway",
+    cityAName: "Cork",
+    cityBName: "Galway",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Cork and Galway as Irish regional cities across cost framing, transport access, and country-level public-service context.",
+  },
+
+  // France / Germany
+  {
+    cityASlug: "lyon",
+    cityBSlug: "marseille",
+    cityAName: "Lyon",
+    cityBName: "Marseille",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Lyon and Marseille for a southern-France comparison across cost framing, transport access, healthcare and emergency context, and country-level indicators.",
+  },
+  {
+    cityASlug: "lyon",
+    cityBSlug: "toulouse",
+    cityAName: "Lyon",
+    cityBName: "Toulouse",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Lyon and Toulouse as French regional cores across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "lyon",
+    cityBSlug: "bordeaux",
+    cityAName: "Lyon",
+    cityBName: "Bordeaux",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Review Lyon and Bordeaux side by side across cost framing, transport access, and country-level intelligence for French cross-region relocation planning.",
+  },
+  {
+    cityASlug: "marseille",
+    cityBSlug: "nice",
+    cityAName: "Marseille",
+    cityBName: "Nice",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Marseille and Nice for a Mediterranean-France comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "frankfurt",
+    cityBSlug: "cologne",
+    cityAName: "Frankfurt",
+    cityBName: "Cologne",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Frankfurt and Cologne across cost framing, transport access, and country-level indicators for users weighing two western-German metros.",
+  },
+  {
+    cityASlug: "frankfurt",
+    cityBSlug: "dusseldorf",
+    cityAName: "Frankfurt",
+    cityBName: "Düsseldorf",
+    intent: "business",
+    region: "Europe",
+    description:
+      "Pair Frankfurt and Düsseldorf for a Rhine-Main-and-Rhineland business comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "cologne",
+    cityBSlug: "dusseldorf",
+    cityAName: "Cologne",
+    cityBName: "Düsseldorf",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Cologne and Düsseldorf as neighbouring Rhineland metros across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "leipzig",
+    cityBSlug: "dresden",
+    cityAName: "Leipzig",
+    cityBName: "Dresden",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Leipzig and Dresden for an eastern-Germany comparison across cost framing, transport access, and country-level indicators.",
+  },
+
+  // Spain / Italy
+  {
+    cityASlug: "malaga",
+    cityBSlug: "valencia",
+    cityAName: "Málaga",
+    cityBName: "Valencia",
+    intent: "remote_work",
+    region: "Europe",
+    description:
+      "Compare Málaga and Valencia for a Mediterranean-Spain remote-work-oriented review across cost framing, connectivity context, climate-adaptation considerations, and country-level signals.",
+  },
+  {
+    cityASlug: "zaragoza",
+    cityBSlug: "valencia",
+    cityAName: "Zaragoza",
+    cityBName: "Valencia",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Zaragoza and Valencia for a Spanish cross-region comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "granada",
+    cityBSlug: "seville",
+    cityAName: "Granada",
+    cityBName: "Seville",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Granada and Seville as Andalusian cities across cost framing, transport access, and country-level indicators.",
+  },
+  {
+    cityASlug: "turin",
+    cityBSlug: "milan",
+    cityAName: "Turin",
+    cityBName: "Milan",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Turin and Milan for a northern-Italy comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "genoa",
+    cityBSlug: "turin",
+    cityAName: "Genoa",
+    cityBName: "Turin",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Genoa and Turin across cost framing, transport access, and country-level intelligence for users weighing two northwestern-Italy regional centres.",
+  },
+  {
+    cityASlug: "palermo",
+    cityBSlug: "naples",
+    cityAName: "Palermo",
+    cityBName: "Naples",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Palermo and Naples for a southern-Italy comparison across cost framing, transport access, healthcare and emergency context, and country-level indicators.",
+  },
+  {
+    cityASlug: "verona",
+    cityBSlug: "bologna",
+    cityAName: "Verona",
+    cityBName: "Bologna",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Verona and Bologna as north-central Italian cities across cost framing, transport access, and country-level public-service context.",
+  },
+
+  // Netherlands / Belgium / Luxembourg
+  {
+    cityASlug: "the-hague",
+    cityBSlug: "rotterdam",
+    cityAName: "The Hague",
+    cityBName: "Rotterdam",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair The Hague and Rotterdam for a Randstad comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "eindhoven",
+    cityBSlug: "utrecht",
+    cityAName: "Eindhoven",
+    cityBName: "Utrecht",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Eindhoven and Utrecht as Dutch regional cores across cost framing, transport access, and country-level indicators.",
+  },
+  {
+    cityASlug: "ghent",
+    cityBSlug: "antwerp",
+    cityAName: "Ghent",
+    cityBName: "Antwerp",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Ghent and Antwerp for a Flemish-Belgium comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "luxembourg-city",
+    cityBSlug: "brussels",
+    cityAName: "Luxembourg City",
+    cityBName: "Brussels",
+    intent: "business",
+    region: "Europe",
+    description:
+      "Compare Luxembourg City and Brussels for a small-capital-versus-EU-capital business review across cost framing, transport access, and country-level indicators.",
+  },
+
+  // Nordics / Central Europe
+  {
+    cityASlug: "aarhus",
+    cityBSlug: "copenhagen",
+    cityAName: "Aarhus",
+    cityBName: "Copenhagen",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Aarhus and Copenhagen for a Danish intra-country comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "malmo",
+    cityBSlug: "gothenburg",
+    cityAName: "Malmö",
+    cityBName: "Gothenburg",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Malmö and Gothenburg as southern-Sweden regional centres across cost framing, transport access, and country-level indicators.",
+  },
+  {
+    cityASlug: "gothenburg",
+    cityBSlug: "stockholm",
+    cityAName: "Gothenburg",
+    cityBName: "Stockholm",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Gothenburg and Stockholm for a Swedish cross-region comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "tampere",
+    cityBSlug: "helsinki",
+    cityAName: "Tampere",
+    cityBName: "Helsinki",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Tampere and Helsinki across cost framing, transport access, and country-level indicators for Finnish cross-region relocation review.",
+  },
+  {
+    cityASlug: "brno",
+    cityBSlug: "prague",
+    cityAName: "Brno",
+    cityBName: "Prague",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Brno and Prague for a Czech intra-country comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "lodz",
+    cityBSlug: "warsaw",
+    cityAName: "Łódź",
+    cityBName: "Warsaw",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Łódź and Warsaw across cost framing, transport access, and country-level indicators for Polish cross-region relocation review.",
+  },
+  {
+    cityASlug: "poznan",
+    cityBSlug: "wroclaw",
+    cityAName: "Poznań",
+    cityBName: "Wrocław",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Pair Poznań and Wrocław for a western-Poland comparison across cost framing, transport access, and country-level public-service context.",
+  },
+  {
+    cityASlug: "split",
+    cityBSlug: "zagreb",
+    cityAName: "Split",
+    cityBName: "Zagreb",
+    intent: "regional_alternative",
+    region: "Europe",
+    description:
+      "Compare Split and Zagreb across cost framing, transport access, and country-level indicators for Croatian cross-region relocation review.",
+  },
 ];
 
 function buildSlug(a: string, b: string): string {

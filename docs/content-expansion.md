@@ -409,3 +409,76 @@ City reverse-link cards (`hasArrivalPage(city.slug)`) automatically
 appear on the 21 newly covered city profile pages with no manual
 wiring. No client components, no runtime fetches, no external API
 calls, and no new dependencies were introduced.
+
+## 2026-05-23 batch: curated comparisons for batch-two cities
+
+This batch adds **35 curated `/compare/[comparison]` pages** that pair
+cities introduced in the second city-expansion wave with each other
+and with established peers. Records were added only to
+`lib/data/comparisons.ts` (the existing `ComparisonSeed` shape) — no
+new fields, no new schema types, no new routes, no new images, no new
+cities, no new countries, and no new source ids were introduced. All
+new records reuse `LAST_UPDATED` (`2026-05-16`), `DATA_YEAR`
+(`2025`), and the existing `sourceIds` quartet (`un-habitat`,
+`who-air`, `nasa-power`, `ipcc-urban`).
+
+Pairs added (35):
+
+- **UK / Ireland (8)**: manchester-vs-birmingham, manchester-vs-leeds,
+  manchester-vs-glasgow, birmingham-vs-bristol, glasgow-vs-edinburgh,
+  cardiff-vs-bristol, belfast-vs-dublin, cork-vs-galway.
+- **France / Germany (8)**: lyon-vs-marseille, lyon-vs-toulouse,
+  lyon-vs-bordeaux, marseille-vs-nice, frankfurt-vs-cologne,
+  frankfurt-vs-dusseldorf, cologne-vs-dusseldorf, leipzig-vs-dresden.
+- **Spain / Italy (7)**: malaga-vs-valencia, zaragoza-vs-valencia,
+  granada-vs-seville, turin-vs-milan, genoa-vs-turin,
+  palermo-vs-naples, verona-vs-bologna.
+- **Netherlands / Belgium / Luxembourg (4)**: the-hague-vs-rotterdam,
+  eindhoven-vs-utrecht, ghent-vs-antwerp, luxembourg-city-vs-brussels.
+- **Nordics / Central Europe (8)**: aarhus-vs-copenhagen,
+  malmo-vs-gothenburg, gothenburg-vs-stockholm, tampere-vs-helsinki,
+  brno-vs-prague, lodz-vs-warsaw, poznan-vs-wroclaw, split-vs-zagreb.
+
+Intent assignments use the existing `ComparisonIntent` union:
+`regional_alternative` is the dominant pattern (intra-country and
+neighbouring-metro pairs), with `business` for
+`frankfurt-vs-dusseldorf` and `luxembourg-city-vs-brussels`,
+`remote_work` for `malaga-vs-valencia`, and `relocation` for
+`belfast-vs-dublin`. All 35 records use `region: "Europe"` —
+no batch-two pair crosses regions.
+
+Skipped candidates (cities not present in `lib/data/cities.ts` after
+batch two, so the pair is deferred rather than fabricated): braga,
+coimbra, alicante, bruges, turku, tartu, klaipeda, cluj-napoca (the
+city slug exists but `cluj-napoca-vs-bucharest` was reserved for a
+later iteration to keep this batch focused on the 35-pair target).
+
+Safety rules applied to every comparison record:
+
+- No winner, "better than", "best city", "safest", "cheapest", or
+  "official ranking" wording.
+- No invented scores, no fabricated rents / salaries / crime rates,
+  no hospital names, no emergency numbers, no transport operators,
+  no airport information, no travel times, no visa rules, no legal
+  or medical advice.
+- Summaries stay neutral and directional, deferring to the existing
+  city / country / healthcare / transport / public-safety layers and
+  to methodology and data-sources pages.
+
+After this batch:
+
+- comparison record count: 70 → 105 (+35)
+- static page count: 1,966 → 2,001 (+35)
+- sitemap `/compare/[comparison]` entries: 70 → 105
+  (priority 0.85, weekly — unchanged formula)
+- `/compare` index automatically lists the new pairs via
+  `getAllComparisons()`
+- related-comparison rails on the affected city pages surface the
+  new pairs via the existing `getComparisonsForCity()` helper
+
+No new schema types were introduced. The `/compare/[comparison]`
+template continues to emit `WebPage`, `BreadcrumbList`, and `Dataset`
+JSON-LD only. No new OG image logic was added — comparison pages
+inherit the existing `createMetadata` behaviour. No client
+components, no runtime fetches, no external API calls, and no new
+dependencies were introduced.
