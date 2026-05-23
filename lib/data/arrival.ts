@@ -18,6 +18,7 @@ import type { ArrivalChecklistItem, ArrivalPage } from "@/types";
 
 const UPDATED_DATE = "2026-05-21";
 const BATCH_3_UPDATED_DATE = "2026-05-23";
+const BATCH_4_UPDATED_DATE = "2026-05-23";
 
 const COMMON_SOURCES: readonly string[] = [
   "un-habitat",
@@ -1072,6 +1073,330 @@ export const arrivalPages: ArrivalPage[] = [
     updatedDate: BATCH_3_UPDATED_DATE,
     dataYear: DATA_YEAR,
     sourceIds: arrivalSources(["canada-emergency"]),
+  },
+
+  // ===== Batch four: 30 additional arrival pages =====
+  // Cities added in the batch-three expansion (and Johannesburg /
+  // Pretoria, where Johannesburg pre-existed). Same neutral framing:
+  // routes back to structured city / country / public-safety /
+  // healthcare / transport / tools layers — no airport names, no
+  // IATA codes, no transfer routes, no fares, no schedules, no
+  // travel times, no transport operators, no visa or medical advice.
+
+  // UK
+  {
+    citySlug: "oxford",
+    title: "Arriving in Oxford: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Oxford using the city intelligence profile, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the Oxfordshire region.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "cambridge",
+    title: "Arriving in Cambridge: City Arrival Planning Guide",
+    summary:
+      "Cambridge arrival context covering city intelligence, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the Cambridgeshire research metro.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air", "itu-connectivity"]),
+  },
+  {
+    citySlug: "liverpool",
+    title: "Arriving in Liverpool: City Arrival Planning Guide",
+    summary:
+      "Liverpool arrival context covering city intelligence, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the Merseyside metropolitan region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "sheffield",
+    title: "Arriving in Sheffield: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Sheffield using the city intelligence profile, United Kingdom country hub, public-safety references, healthcare access notes, and verified mobility context for the South-Yorkshire region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+
+  // France
+  {
+    citySlug: "montpellier",
+    title: "Arriving in Montpellier: City Arrival Planning Guide",
+    summary:
+      "Montpellier arrival context covering city intelligence, French country hub, public-safety references, healthcare access notes, and verified mobility context for the Occitanie Mediterranean metro region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "rennes",
+    title: "Arriving in Rennes: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Rennes using the city intelligence profile, French country hub, public-safety references, healthcare access notes, and verified mobility context for the Brittany regional capital.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+
+  // Germany
+  {
+    citySlug: "hanover",
+    title: "Arriving in Hanover: City Arrival Planning Guide",
+    summary:
+      "Hanover arrival context covering city intelligence, German country hub, public-safety references, healthcare access notes, and verified mobility context for the Lower-Saxony regional capital.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "nuremberg",
+    title: "Arriving in Nuremberg: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Nuremberg using the city intelligence profile, German country hub, public-safety references, healthcare access notes, and verified mobility context for the Northern-Bavarian metro region.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "bremen",
+    title: "Arriving in Bremen: City Arrival Planning Guide",
+    summary:
+      "Bremen arrival context covering city intelligence, German country hub, public-safety references, healthcare access notes, and verified mobility context for the Lower-Weser city-state region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "bonn",
+    title: "Arriving in Bonn: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Bonn using the city intelligence profile, German country hub, public-safety references, healthcare access notes, and verified mobility context for the Rhineland-Bonn region.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+
+  // Spain / Italy / Belgium / Sweden
+  {
+    citySlug: "alicante",
+    title: "Arriving in Alicante: City Arrival Planning Guide",
+    summary:
+      "Alicante arrival context covering city intelligence, Spanish country hub, public-safety references, healthcare access notes, and verified mobility context for the Mediterranean Costa-Blanca region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "pisa",
+    title: "Arriving in Pisa: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Pisa using the city intelligence profile, Italian country hub, public-safety references, healthcare access notes, and verified mobility context for the Tuscan regional metro.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "bari",
+    title: "Arriving in Bari: City Arrival Planning Guide",
+    summary:
+      "Bari arrival context covering city intelligence, Italian country hub, public-safety references, healthcare access notes, and verified mobility context for the Puglian Adriatic metro region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "bruges",
+    title: "Arriving in Bruges: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Bruges using the city intelligence profile, Belgian country hub, public-safety references, healthcare access notes, and verified mobility context for the West-Flanders heritage region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+  {
+    citySlug: "uppsala",
+    title: "Arriving in Uppsala: City Arrival Planning Guide",
+    summary:
+      "Uppsala arrival context covering city intelligence, Swedish country hub, public-safety references, healthcare access notes, and verified mobility context for the Uppland regional university metro.",
+    arrivalFocus: "rail_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["eea-air"]),
+  },
+
+  // United States
+  {
+    citySlug: "columbus",
+    title: "Arriving in Columbus: City Arrival Planning Guide",
+    summary:
+      "Columbus arrival context covering city intelligence, United States country hub, public-safety references, healthcare access notes, and verified mobility-authority context for the Central-Ohio metro region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "indianapolis",
+    title: "Arriving in Indianapolis: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Indianapolis using the city intelligence profile, United States country hub, public-safety references, healthcare access notes, and verified mobility-authority context for the Central-Indiana metro region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "detroit",
+    title: "Arriving in Detroit: City Arrival Planning Guide",
+    summary:
+      "Detroit arrival context covering city intelligence, United States country hub, public-safety references, healthcare access notes, and verified mobility-authority context for the South-East-Michigan metro region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "baltimore",
+    title: "Arriving in Baltimore: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Baltimore using the city intelligence profile, United States country hub, public-safety references, healthcare access notes, and verified mobility-authority context for the Mid-Atlantic metro region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+  {
+    citySlug: "san-antonio",
+    title: "Arriving in San Antonio: City Arrival Planning Guide",
+    summary:
+      "San Antonio arrival context covering city intelligence, United States country hub, public-safety references, healthcare access notes, and verified mobility-authority context for the South-Central-Texas metro region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["epa-naaqs"]),
+  },
+
+  // Canada / Australia / New Zealand
+  {
+    citySlug: "victoria",
+    title: "Arriving in Victoria: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Victoria using the city intelligence profile, Canadian country hub, public-safety references, healthcare access notes, and verified mobility context for the Vancouver-Island regional capital.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["canada-emergency"]),
+  },
+  {
+    citySlug: "saskatoon",
+    title: "Arriving in Saskatoon: City Arrival Planning Guide",
+    summary:
+      "Saskatoon arrival context covering city intelligence, Canadian country hub, public-safety references, healthcare access notes, and verified mobility context for the Prairie-Saskatchewan metro region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["canada-emergency"]),
+  },
+  {
+    citySlug: "wollongong",
+    title: "Arriving in Wollongong: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Wollongong using the city intelligence profile, Australian country hub, public-safety references, healthcare access notes, and verified mobility context for the Illawarra coastal region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["triple-zero-au"]),
+  },
+  {
+    citySlug: "queenstown",
+    title: "Arriving in Queenstown: City Arrival Planning Guide",
+    summary:
+      "Queenstown arrival context covering city intelligence, New Zealand country hub, public-safety references, healthcare access notes, and verified mobility context for the Otago alpine-lakeside region.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["nz-police-111"]),
+  },
+
+  // India
+  {
+    citySlug: "chennai",
+    title: "Arriving in Chennai: City Arrival Planning Guide",
+    summary:
+      "Chennai arrival context covering city intelligence, Indian country hub, public-safety references, healthcare access notes, and verified mobility context for the Tamil-Nadu Bay-of-Bengal metro region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["who-air", "itu-connectivity"]),
+  },
+  {
+    citySlug: "hyderabad",
+    title: "Arriving in Hyderabad: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Hyderabad using the city intelligence profile, Indian country hub, public-safety references, healthcare access notes, and verified mobility context for the Telangana metro region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["who-air", "itu-connectivity"]),
+  },
+  {
+    citySlug: "pune",
+    title: "Arriving in Pune: City Arrival Planning Guide",
+    summary:
+      "Pune arrival context covering city intelligence, Indian country hub, public-safety references, healthcare access notes, and verified mobility context for the Maharashtra Western-Ghats metro region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["who-air", "itu-connectivity"]),
+  },
+  {
+    citySlug: "jaipur",
+    title: "Arriving in Jaipur: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Jaipur using the city intelligence profile, Indian country hub, public-safety references, healthcare access notes, and verified mobility context for the Rajasthan regional capital.",
+    arrivalFocus: "general_arrival",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["who-air"]),
+  },
+
+  // South Africa
+  {
+    citySlug: "johannesburg",
+    title: "Arriving in Johannesburg: City Arrival Planning Guide",
+    summary:
+      "Johannesburg arrival context covering city intelligence, South-African country hub, public-safety references, healthcare access notes, and verified mobility context for the Gauteng metropolitan region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["who-air", "itu-connectivity"]),
+  },
+  {
+    citySlug: "pretoria",
+    title: "Arriving in Pretoria: City Arrival Planning Guide",
+    summary:
+      "Plan your first day in Pretoria using the city intelligence profile, South-African country hub, public-safety references, healthcare access notes, and verified mobility context for the Tshwane metropolitan region.",
+    arrivalFocus: "business_travel",
+    updatedDate: BATCH_4_UPDATED_DATE,
+    dataYear: DATA_YEAR,
+    sourceIds: arrivalSources(["who-air", "itu-connectivity"]),
   },
 ];
 

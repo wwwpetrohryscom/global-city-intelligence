@@ -657,3 +657,76 @@ pipeline.
 - `npm run validate:data` / `npm run validate:country-indicators` —
   these scripts are not defined in `package.json` (only
   `validate:media` exists).
+
+## 2026-05-23 batch: arrival planning cluster — fourth wave
+
+This batch adds **30 curated `/arrival/[city]` pages** for priority
+cities introduced in the batch-three expansion (plus Johannesburg and
+Pretoria, where Johannesburg pre-existed). Records were added only
+to `lib/data/arrival.ts` — no new images, no new cities, no new
+countries, no new routes, no new schema types, and no new source ids
+were introduced. A new `BATCH_4_UPDATED_DATE = "2026-05-23"`
+constant was added so the freshness of the new records is traceable
+without disturbing the `updatedDate` on earlier batches. Arrival
+pages 103 → 133.
+
+Fourth-batch cities (30):
+
+- **United Kingdom (4)**: Oxford, Cambridge, Liverpool, Sheffield.
+- **France (2)**: Montpellier, Rennes.
+- **Germany (4)**: Hanover, Nuremberg, Bremen, Bonn.
+- **Spain / Italy / Belgium / Sweden (5)**: Alicante, Pisa, Bari,
+  Bruges, Uppsala.
+- **United States (5)**: Columbus, Indianapolis, Detroit, Baltimore,
+  San Antonio.
+- **Canada / Australia / New Zealand (4)**: Victoria, Saskatoon,
+  Wollongong, Queenstown.
+- **India (4)**: Chennai, Hyderabad, Pune, Jaipur.
+- **South Africa (2)**: Johannesburg, Pretoria.
+
+Arrival-focus assignments follow the existing `ArrivalFocus` enum:
+
+- `rail_arrival` for Oxford, Cambridge, Rennes, Hanover, Nuremberg,
+  Bonn, Uppsala.
+- `business_travel` for Columbus, Indianapolis, Detroit, Baltimore,
+  Chennai, Hyderabad, Pune, Johannesburg, Pretoria.
+- `general_arrival` for the rest.
+
+`sourceIds` reuse existing registry entries — `eea-air` (Europe),
+`epa-naaqs` (United States), `canada-emergency` (Canada),
+`triple-zero-au` (Australia), `nz-police-111` (New Zealand),
+`who-air` and `itu-connectivity` (India / South Africa). No new
+source ids were introduced.
+
+The 10 cities in this batch that use the existing `ImageFallback`
+component (Liverpool, Montpellier, Columbus, Detroit, San Antonio,
+Victoria, Saskatoon, Wollongong, Hyderabad, Jaipur) get arrival
+pages on the same terms as verified-hero cities — fallback-image
+status does not block arrival page creation. Arrival pages do not
+emit a hero `ImageObject` schema, so this has no structured-data
+effect.
+
+Safety rules continue to apply to every arrival record:
+
+- No airport names, no IATA codes, no terminals, no transfer routes,
+  no fares, no schedules, no travel times, no transport operator
+  names, no taxi prices, no airport emergency contacts.
+- No fastest-route, cheapest-route, or guaranteed-travel-time claims.
+- No visa, immigration, legal, or medical advice — every record
+  includes only neutral arrival planning context that defers
+  time-sensitive details to official sources via the existing
+  transport, public-safety, and healthcare layers.
+
+After this batch:
+
+- arrival page count: 103 → 133 (+30)
+- static page count: 2,464 → 2,494 (+30)
+- `/arrival` directory ItemList: 103 → 133 items (still
+  `ItemListUnordered`)
+- sitemap `/arrival/[city]` entries: 103 → 133 (priority 0.74,
+  monthly)
+
+City reverse-link cards (`hasArrivalPage(city.slug)`) automatically
+appear on the 30 newly covered city profile pages with no manual
+wiring. No client components, no runtime fetches, no external API
+calls, and no new dependencies were introduced.
