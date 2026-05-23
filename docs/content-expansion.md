@@ -482,3 +482,173 @@ JSON-LD only. No new OG image logic was added — comparison pages
 inherit the existing `createMetadata` behaviour. No client
 components, no runtime fetches, no external API calls, and no new
 dependencies were introduced.
+
+## 2026-05-23 batch: city and country expansion batch three
+
+This batch adds **66 new cities** and **1 new country** (Bulgaria) by
+appending `buildNeutralCitySeed` calls to `lib/data/cities.ts` and a
+new country record to `lib/data/countries.ts`. Existing-country
+`citySlugs` arrays are updated so the new cities surface on the
+matching country hubs. No new routes, no new schema types, no new
+score formulas, and no new source ids were introduced. Image
+catalogs were re-verified end-to-end through the existing pipeline:
+
+```
+scripts/verify-place-images.py        # P18 hero pass
+scripts/verify-landmark-fallback.py   # landmark fallback for places
+                                      # where P18 is a montage/flag
+scripts/build-place-images.py         # final TS catalogs
+```
+
+### Cities added (66)
+
+- **United Kingdom (5)**: Oxford, Cambridge, Liverpool, Sheffield,
+  Brighton.
+- **France (5)**: Montpellier, Rennes, Grenoble, Dijon,
+  Aix-en-Provence.
+- **Germany (7)**: Hanover, Nuremberg, Bremen, Bonn, Freiburg,
+  Heidelberg, Dortmund.
+- **Spain (3)**: Alicante, Murcia, Valladolid.
+- **Portugal (2)**: Braga, Coimbra.
+- **Italy (5)**: Pisa, Bari, Catania, Padua, Bergamo.
+- **Netherlands (2)**: Groningen, Maastricht.
+- **Belgium (2)**: Bruges, Leuven.
+- **Denmark (1)**: Odense.
+- **Sweden (2)**: Uppsala, Lund.
+- **Finland (1)**: Turku.
+- **Czechia (1)**: Ostrava.
+- **Poland (1)**: Katowice.
+- **Romania (1)**: Brașov.
+- **Bulgaria (1)**: Plovdiv.
+- **United States (12)**: Columbus, Indianapolis, Detroit, Baltimore,
+  St. Louis, Kansas City, San Antonio, Sacramento, Milwaukee,
+  Cincinnati, Cleveland, Memphis.
+- **Canada (4)**: Victoria, Saskatoon, Waterloo (Ontario, slug
+  `waterloo-ontario`), Kelowna.
+- **Australia (3)**: Wollongong, Geelong, Sunshine Coast.
+- **New Zealand (2)**: Queenstown, Napier.
+- **South Africa (2)**: Pretoria, Stellenbosch.
+- **India (4)**: Chennai, Hyderabad, Pune, Jaipur.
+
+### Countries added (1)
+
+- **Bulgaria** (`slug: bulgaria`, `iso2: BG`, `region: Southeastern
+  Europe`) — required by the new Plovdiv city profile. Uses the
+  existing `un-habitat`, `nasa-power`, `eea-air`, and `ipcc-urban`
+  source ids; no new official layers (emergency / healthcare /
+  transport) were added — Bulgaria-area pages render the transparent
+  fallback until verified national profiles are integrated.
+
+### Skipped candidates
+
+- **San Jose, California** — slug `san-jose` is already owned by
+  San José, Costa Rica. Slug-disambiguation for US San Jose was not
+  introduced in this task; the city is deferred to a later batch.
+- **London (Ontario), Kingston (Ontario), St. John's, Hamilton (NZ)**
+  — ambiguous slugs that would collide with existing or future cities
+  in other countries. `waterloo-ontario` was disambiguated explicitly;
+  the rest are deferred to a later batch with the same approach.
+- **Southampton, Aberdeen, Dundee, Limerick, Waterford** (UK / IE);
+  **Rouen, Reims, Tours** (FR); **Münster, Karlsruhe, Essen** (DE);
+  **Vigo, Santander, Faro, Aveiro** (ES / PT); **Siena, Trieste,
+  Parma, Lecce** (IT); **Namur, Liege, Tilburg, Breda** (BE / NL);
+  **Oulu, Aalborg, Tartu, Klaipėda** (Nordics / Baltics);
+  **Kosice, Lublin, Timisoara, Oradea, Varna, Novi Sad** (CEE);
+  **Ann Arbor, New Orleans, Louisville, Oklahoma City, Omaha, Boise,
+  Tucson** (US); **Regina, London Ontario, St. John's** (CA);
+  **Townsville, Toowoomba, Ballarat, Bendigo, Launceston** (AU);
+  **Hamilton, Palmerston North, Nelson** (NZ); **Port Elizabeth,
+  Bloemfontein** (ZA); **Ahmedabad, Kochi, Chandigarh, Surat,
+  Lucknow, Coimbatore** (IN); **George Town, Johor Bahru, Kuching,
+  Kota Kinabalu, Ipoh, Malacca** (MY) — trimmed to keep the batch
+  inside the 60-80 cap. Candidates remain available for batch four.
+- **Global-diversity bonus list** (Yokohama, Kobe, Nara, Tainan,
+  Chiang Rai, Phuket) — deferred to keep the batch tightly focused
+  on the stated EU / US / Commonwealth priorities.
+
+### Image verification
+
+The pipeline ran in three passes:
+
+1. `verify-place-images.py` resolved 232 + 66 = 298 cities and 85 + 1
+   = 86 countries against Wikipedia → Wikidata P18 → Wikimedia
+   Commons. New `SLUG_OVERRIDES` entries were added for ambiguous
+   names (Columbus → "Columbus, Ohio", Waterloo (Ontario), Memphis →
+   "Memphis, Tennessee", Stellenbosch, etc.) so the resolver picks
+   the intended city.
+2. `verify-landmark-fallback.py` filled in places where Wikidata P18
+   points to a montage / flag / dictionary cover that the catalog
+   rejects as unsuitable. This recovered hero images for several
+   existing cities whose P18 was updated upstream since the previous
+   verifier run.
+3. `build-place-images.py` produced the final
+   `lib/data/media/city-images.ts` and `country-images.ts` catalogs.
+
+**Coverage after this batch:**
+
+- **Existing cities**: 232 / 232 retain their hero image — no
+  regression. Existing-city hero records were either re-verified
+  unchanged or recovered through the landmark fallback.
+- **New cities with verified hero image**: 56 / 66.
+- **New cities rendering the existing `ImageFallback` block**: 10 —
+  Aix-en-Provence, Detroit, Hyderabad, Jaipur, Liverpool, Napier,
+  San Antonio, Saskatoon, Victoria, Wollongong. The upstream Wikidata
+  P18 for each is either a "City Montage" composite or another file
+  the catalog rejects as unsuitable, and no curated landmark fallback
+  is on file for them yet. These pages remain fully functional; the
+  page renders the designed fallback component as documented in
+  `docs/image-sourcing.md`.
+- **Bulgaria country hero**: verified (`Raggatt2000 / CC BY-SA 3.0`).
+
+Every new hero record carries `source`, `sourceUrl`, `author`,
+`license`, `licenseUrl`, `attributionText`, `verified: true`, and
+`verifiedAt` — no fields were invented, no images were hand-picked,
+no licenses were widened. Only `CC0`, `Public domain`, `CC BY`, and
+`CC BY-SA` files were accepted; `NC` / `ND` / `GFDL` / `FAL` /
+ambiguous-license / unknown-author files are rejected by the
+pipeline.
+
+### Safety rules applied
+
+- No invented official metrics: population is the only quantitative
+  field on a new city and uses the existing `~N metro` framing
+  (directional approximation, not an official measurement).
+- No invented scores: directional `overall / affordability /
+  airQuality / energy / resilience` scores follow the existing
+  batch-two range (60-78 for European peers, 65-75 for North-American
+  peers, 60-70 for emerging-market peers). Every score is a planning
+  signal, not an official ranking.
+- No invented rents, salaries, crime rates, hospital names, emergency
+  numbers, transport operators, airports, IATA codes, fares,
+  schedules, travel times, visa rules, or legal/medical advice.
+- Every new intro and outlook is unique, neutral, and written in the
+  existing voice — no winner / best / cheapest / safest /
+  official-ranking wording.
+
+### Page-count delta
+
+- **City count**: 232 → **298** (+66).
+- **Country count**: 85 → **86** (+1 — Bulgaria).
+- **Static page count**: 2,001 → **2,464** (+463 = 66 city profiles +
+  66 × 6 module pages + 1 country hub). Verified by `next build`:
+  `Generating static pages (2464/2464)`.
+- **Sitemap entries**: `/cities/[city]`, `/countries/[country]`, and
+  six `/{module}/[city]` routes are emitted automatically through
+  the existing `app/sitemap.ts` iteration over `getCities()`,
+  `getCountries()`, and the module-x-city Cartesian product.
+- **`/cities` and `/countries` directories**: automatically include
+  the new entries via `getCities()` / `getCountries()` iteration.
+- **`/compare`, `/arrival`, `/collections`, `/city-intents`**: not
+  affected — no comparison, arrival, collection, or intent records
+  were added in this batch.
+
+### Verification results
+
+- `npm run validate:media` — **pass** (288 city hero / 86 country hero
+  records, all license + author + attribution fields valid).
+- `npm run typecheck` — clean.
+- `npm run lint` — clean.
+- `npm run build` — succeeded, 2,464 / 2,464 static pages generated.
+- `npm run validate:data` / `npm run validate:country-indicators` —
+  these scripts are not defined in `package.json` (only
+  `validate:media` exists).
