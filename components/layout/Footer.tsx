@@ -82,6 +82,9 @@ export function Footer() {
           <FooterLink href={staticRoutes.movingTo}>
             Moving to city guides
           </FooterLink>
+          <FooterLink href={staticRoutes.visualGuides}>
+            Visual city guides
+          </FooterLink>
           <FooterLink href={staticRoutes.tools}>Tools and calculators</FooterLink>
           <FooterLink href={staticRoutes.costOfLivingCalculator}>
             Cost of living calculator

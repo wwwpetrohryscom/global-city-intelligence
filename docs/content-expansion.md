@@ -1367,3 +1367,99 @@ schemas added.
 - `npm run typecheck` — clean
 - `npm run lint` — clean
 - `npm run build` — succeeded, 2715/2715 static pages
+
+## 2026-05-25: /visual-guides directory page
+
+Adds a single central directory page at `/visual-guides`. Mirrors
+the `/arrival` and `/moving-to` directory patterns: server-rendered
+card grid for all 100 visual-guide pages, country-grouped index,
+`ItemList` JSON-LD, breadcrumbs, hub nav, and a related-tools rail.
+
+### Files created
+
+- `app/(visual-guides)/visual-guides/page.tsx` — server-rendered
+  directory
+
+### Files updated
+
+- `lib/seo/routes.ts` — adds `staticRoutes.visualGuides = "/visual-guides"`
+  and includes it in `getAllIndexableRoutes()`
+- `app/sitemap.ts` — emits the new directory URL at `priority: 0.75`,
+  `changeFrequency: "monthly"`
+- `components/layout/Footer.tsx` — adds a "Visual city guides" link
+  under "Moving to city guides" in the Reference column
+- `docs/content-expansion.md` — this section
+
+### Page content
+
+- H1 `Visual City Guides`, unique intro paragraph
+- `Last updated` and `Data year` chips, plus `Visual guides` count
+  and `Countries represented` count from live data
+- Sources / methodology disclaimer block (no tourism / attractions
+  ranking / best / safest / cheapest claims)
+- Card grid for all **100** visual guides, sorted alphabetically by
+  city name. Each card shows: country tag, `Visual Guide to {City}`
+  link, `visualFocus` label, page summary, plus 5 contextual links —
+  city profile, country hub, arrival guide (when present),
+  neighborhood guide (when present), moving-to guide (when present)
+- Country-grouped index (alphabetical) with every guide also linked
+  here for crawler density
+- "Continue exploring" related-tools rail: cities, countries,
+  compare, arrival, moving-to, cost calc, travel-budget calc,
+  relocation checklist, methodology, data sources
+
+### Image / thumbnail decision
+
+**No thumbnails on `/visual-guides`.** Per the audit spec's default
+recommendation: text-card directory only. The 100 cards already
+provide dense navigation, and each per-city visual guide carries the
+verified hero plus optional secondary images. Keeping the directory
+text-only avoids gallery weight and keeps the hub fast.
+
+No `og:image` is emitted for the directory itself — `createMetadata`
+omits OG image when no `image` is passed.
+
+### Structured data
+
+- `WebPage` JSON-LD for the directory
+- `BreadcrumbList` JSON-LD via `staticBreadcrumbs("Visual guides", "/visual-guides")`
+- `ItemList` JSON-LD with `numberOfItems: 100`,
+  `itemListOrder: ItemListUnordered`, absolute `url` per visual guide
+
+No `ImageObject`, `TouristAttraction`, `TravelAction`, `Place`,
+`LocalBusiness`, `School`, `Review`, `Rating`, `Offer`, `FAQPage`,
+fake `Dataset`, or other schemas added.
+
+### Footer / internal linking
+
+Footer "Reference" column now reads:
+
+```
+City comparisons
+Arrival planning guides
+Moving to city guides
+Visual city guides          ← new
+Tools and calculators
+Cost of living calculator
+Travel budget calculator
+Relocation checklist
+Methodology
+Data sources
+```
+
+No broad city-by-city footer additions in this task.
+
+### Page-count delta
+
+- static page count: 2,715 → **2,716** (+1). Verified by `next build`:
+  `Generating static pages (2716/2716)`.
+- New route appears as `○ /visual-guides` (Static) in the build manifest.
+
+### Validation
+
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2716/2716 static pages
+- 0 client components, 0 runtime fetch, 0 new dependencies, 0 images
+  added on the directory itself

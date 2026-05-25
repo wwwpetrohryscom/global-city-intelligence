@@ -31,6 +31,7 @@ export const staticRoutes = {
   relocationChecklist: "/tools/relocation-checklist",
   arrival: "/arrival",
   movingTo: "/moving-to",
+  visualGuides: "/visual-guides",
 } as const;
 
 export function comparisonRoute(comparisonSlug: string) {
@@ -108,6 +109,7 @@ export function getAllIndexableRoutes() {
     staticRoutes.relocationChecklist,
     staticRoutes.arrival,
     staticRoutes.movingTo,
+    staticRoutes.visualGuides,
     ...cities.map((city) => cityRoute(city.slug)),
     ...getCountries().map((country) => countryRoute(country.slug)),
     ...modules.flatMap((moduleItem) =>
