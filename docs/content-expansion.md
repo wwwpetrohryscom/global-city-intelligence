@@ -1067,3 +1067,95 @@ exactly once on covered cities and not at all on uncovered cities.
 - 0 new dependencies; no map / chart / image / carousel libraries
 - All 60 pages SSG; route bundle: 224 B / 106 kB First Load JS
 - `validate:media`, `typecheck`, `lint`, `build` all clean
+
+## 2026-05-25: /moving-to directory page
+
+Adds a single central directory page for the moving-to SEO cluster
+at `/moving-to`. Mirrors the existing `/arrival` directory pattern:
+crawlable card grid for all 60 moving-to guides, country-grouped
+index, `ItemList` JSON-LD, breadcrumbs, hub nav, related-tools rail.
+
+### Files created
+
+- `app/(moving)/moving-to/page.tsx` — server-rendered directory page
+
+### Files updated
+
+- `lib/seo/routes.ts` — adds `staticRoutes.movingTo = "/moving-to"`
+  and includes it in `getAllIndexableRoutes()`
+- `app/sitemap.ts` — emits the new directory URL at `priority: 0.75`,
+  `changeFrequency: "monthly"`
+- `components/layout/Footer.tsx` — adds a "Moving to city guides"
+  link next to the existing "Arrival planning guides" entry in the
+  Reference column
+- `docs/content-expansion.md` — this section
+
+### Page content
+
+- H1 `Moving to City Planning Guides`, unique intro paragraph
+- `Last updated` and `Data year` chips
+- Sources / methodology disclaimer block (no visa, immigration, tax,
+  legal, financial, medical, rental, or property advice)
+- Card grid for all **60** moving-to guides, sorted alphabetically by
+  city name. Each card shows: country tag, `Moving to {City}` link,
+  `movingFocus` label, page summary, plus contextual links — city
+  profile, country hub, neighborhood guide (when present), arrival
+  guide (when present)
+- Country-grouped index (alphabetical) with every guide also linked
+  here for crawler density
+- "Continue exploring" related-tools rail: cities, countries,
+  compare, arrival, cost calc, travel-budget calc, relocation
+  checklist, methodology, data sources
+
+### Structured data
+
+- `WebPage` JSON-LD for the directory itself
+- `BreadcrumbList` JSON-LD via `staticBreadcrumbs("Moving to", "/moving-to")`
+- `ItemList` JSON-LD with `numberOfItems: 60`, `itemListOrder: ItemListUnordered`,
+  and absolute `url` for each moving-to guide
+
+No `HowTo`, `RealEstateListing`, `Place`, `LocalBusiness`, `School`,
+`Review`, `Rating`, `Offer`, `FAQPage`, fake `Dataset`, or
+`ImageObject` schemas added.
+
+### Image / thumbnail decision
+
+**No images on `/moving-to`.** The 60-card grid already provides
+dense navigation, and the per-guide pages carry the visual hero or
+fallback. Skipping thumbnails keeps the directory fast and clean.
+No `og:image` is emitted for the directory itself — `createMetadata`
+omits OG image when no `image` is passed, matching the existing
+behaviour for arrival / neighborhood / moving-to pages without
+verified heroes.
+
+### Footer / internal linking
+
+Footer "Reference" column now reads:
+
+```
+City comparisons
+Arrival planning guides
+Moving to city guides       ← new
+Tools and calculators
+Cost of living calculator
+Travel budget calculator
+Relocation checklist
+Methodology
+Data sources
+```
+
+No broad city-by-city footer additions in this task.
+
+### Page-count delta
+
+- static page count: 2,614 → **2,615** (+1). Verified by `next build`:
+  `Generating static pages (2615/2615)`.
+- New route appears as `○ /moving-to` (Static) in the build manifest.
+
+### Validation
+
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2615/2615 static pages
+- 0 client components, 0 runtime fetch, 0 new dependencies

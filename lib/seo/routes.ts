@@ -29,6 +29,7 @@ export const staticRoutes = {
   travelBudgetCalculator: "/tools/travel-budget-calculator",
   relocationChecklist: "/tools/relocation-checklist",
   arrival: "/arrival",
+  movingTo: "/moving-to",
 } as const;
 
 export function comparisonRoute(comparisonSlug: string) {
@@ -101,6 +102,7 @@ export function getAllIndexableRoutes() {
     staticRoutes.travelBudgetCalculator,
     staticRoutes.relocationChecklist,
     staticRoutes.arrival,
+    staticRoutes.movingTo,
     ...cities.map((city) => cityRoute(city.slug)),
     ...getCountries().map((country) => countryRoute(country.slug)),
     ...modules.flatMap((moduleItem) =>
