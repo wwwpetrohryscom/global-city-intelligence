@@ -42,6 +42,7 @@ import {
   getHospitalRegistryProfile,
   getVerifiedHospitalsForCity,
   hasArrivalPage,
+  hasMovingToCityPage,
   hasNeighborhoodPlanningPage,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
@@ -55,6 +56,7 @@ import {
   getCityIntentUrl,
   getCollectionUrl,
   moduleRoute,
+  movingToCityRoute,
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
@@ -373,6 +375,13 @@ export default async function CityPage({ params }: PageProps) {
                 description={`Structured neighborhood research checklist for ${city.name} — links into transport, public-safety, healthcare, arrival planning, and budgeting tools. Not a real-estate, rental, or safety-ranking service.`}
                 href={neighborhoodPlanningRoute(city.slug)}
                 title={`Neighborhood planning guide for ${city.name}`}
+              />
+            ) : null}
+            {hasMovingToCityPage(city.slug) ? (
+              <LinkCard
+                description={`Structured relocation research checklist for ${city.name} — links into country context, arrival planning, neighborhood research, cost tools, healthcare, public safety, and transport. Not immigration, visa, tax, legal, financial, medical, or property advice.`}
+                href={movingToCityRoute(city.slug)}
+                title={`Moving to ${city.name} planning guide`}
               />
             ) : null}
             <LinkCard

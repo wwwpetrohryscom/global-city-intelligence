@@ -55,6 +55,12 @@ export type {
   NeighborhoodPlanningPage,
 } from "./neighborhoods";
 export type {
+  MovingChecklistCategory,
+  MovingChecklistItem,
+  MovingFocus,
+  MovingToCityPage,
+} from "./moving";
+export type {
   DataProvenance,
   DatasetCoverage,
   MetricVerificationStatus,

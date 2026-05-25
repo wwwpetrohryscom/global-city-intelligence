@@ -15,6 +15,7 @@ import {
   getCityIntentUrl,
   getCollectionUrl,
   moduleRoute,
+  movingToCityRoute,
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
@@ -154,6 +155,26 @@ export function neighborhoodPlanningBreadcrumbs(
     {
       name: "Neighborhood planning",
       href: neighborhoodPlanningRoute(citySlug),
+    },
+  ];
+}
+
+export function movingToCityBreadcrumbs(citySlug: string): BreadcrumbItem[] {
+  const city = getCityBySlug(citySlug);
+
+  return [
+    homeCrumb,
+    {
+      name: "Cities",
+      href: staticRoutes.cities,
+    },
+    {
+      name: city?.name || "City",
+      href: cityRoute(citySlug),
+    },
+    {
+      name: "Moving to",
+      href: movingToCityRoute(citySlug),
     },
   ];
 }

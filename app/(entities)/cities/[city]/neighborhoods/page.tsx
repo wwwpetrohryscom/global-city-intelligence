@@ -33,6 +33,7 @@ import {
   getNeighborhoodPlanningPageByCitySlug,
   getSourcesByIds,
   hasArrivalPage,
+  hasMovingToCityPage,
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
@@ -47,6 +48,7 @@ import {
   cityRoute,
   comparisonRoute,
   countryRoute,
+  movingToCityRoute,
   neighborhoodPlanningRoute,
   staticRoutes,
 } from "@/lib/seo/routes";
@@ -108,6 +110,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
 
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
   const cityHasArrival = hasArrivalPage(city.slug);
+  const cityHasMovingTo = hasMovingToCityPage(city.slug);
 
   const title = `Neighborhood Planning Guide for ${city.name}`;
   const description = `Plan neighborhood research in ${city.name}${country ? `, ${country.name}` : ""} with transport context, public-safety context, healthcare access, arrival planning, budgeting tools, methodology notes, and source transparency.`;
@@ -168,6 +171,16 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
             href: arrivalRoute(city.slug),
             description:
               "First-day arrival planning context — pairs with neighborhood research.",
+          },
+        ]
+      : []),
+    ...(cityHasMovingTo
+      ? [
+          {
+            label: `Moving to ${city.name} planning guide`,
+            href: movingToCityRoute(city.slug),
+            description:
+              "Structured relocation research checklist — pairs with neighborhood planning.",
           },
         ]
       : []),

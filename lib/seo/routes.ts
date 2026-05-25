@@ -2,6 +2,7 @@ import {
   getAllArrivalPages,
   getAllCityIntentPages,
   getAllCollections,
+  getAllMovingToCityPages,
   getAllNeighborhoodPlanningPages,
   getCities,
   getCountries,
@@ -70,6 +71,10 @@ export function neighborhoodPlanningRoute(citySlug: string) {
   return `/cities/${citySlug}/neighborhoods`;
 }
 
+export function movingToCityRoute(citySlug: string) {
+  return `/cities/${citySlug}/moving-to`;
+}
+
 export function getCollectionUrl(slug: string) {
   return `/${slug}`;
 }
@@ -109,6 +114,9 @@ export function getAllIndexableRoutes() {
     ...getAllArrivalPages().map((page) => arrivalRoute(page.citySlug)),
     ...getAllNeighborhoodPlanningPages().map((page) =>
       neighborhoodPlanningRoute(page.citySlug),
+    ),
+    ...getAllMovingToCityPages().map((page) =>
+      movingToCityRoute(page.citySlug),
     ),
   ];
 }

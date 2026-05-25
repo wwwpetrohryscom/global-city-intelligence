@@ -890,3 +890,180 @@ cards on covered cities.
 - 0 new dependencies; no map / chart / image / carousel libraries
 - All 60 pages SSG; route bundle: 223 B / 106 kB First Load JS
 - `validate:media`, `typecheck`, `lint`, `build` all clean
+
+## 2026-05-25 batch: moving-to city planning cluster — first wave
+
+This batch adds a second new SEO cluster: **"Moving to {City}" planning
+pages** under `/cities/[city]/moving-to`. The pages are a structured
+relocation **research checklist** — not immigration / visa advice, not
+tax advice, not legal advice, not medical advice, not a rental-price
+guide, not a property-buying guide, not an official relocation
+service, and not a city ranking page. They do not publish visa rules,
+tax rules, rental law, rent or sale prices, salary expectations,
+exact cost estimates, crime rates, school rankings, hospital
+proximities, transit operators, neighborhood names, or area "best" /
+"safest" / "cheapest" claims.
+
+### Geographic scope (strict)
+
+First batch is restricted to the EU, UK / Ireland, United States,
+Canada, Australia, and Switzerland (per spec "Austria / Switzerland /
+Nordics"). The same 60 cities as the neighborhood-planning batch
+were chosen to maximise internal-linking density: every moving-to
+page links to its matching neighborhood page, and 50 of the 60 also
+link to an existing arrival page. Cities in India, South Africa,
+Malaysia, the Middle East, Africa, Latin America, broader Asia, and
+global-diversity lists are out of scope for this batch.
+
+### Files created
+
+- `types/moving.ts` — `MovingFocus`, `MovingChecklistCategory`,
+  `MovingChecklistItem`, and `MovingToCityPage` types
+- `lib/data/moving.ts` — 60 curated `MovingToCityPage` records and
+  the shared 26-item relocation research checklist
+- `lib/data/queries/moving.ts` — `getAllMovingToCityPages`,
+  `getMovingToCityPageByCitySlug`, `getMovingToCityPagesForCountry`,
+  `hasMovingToCityPage`, `getMovingToCityChecklist`
+- `components/moving/MovingOverviewCards.tsx`
+- `components/moving/MovingChecklist.tsx`
+- `components/moving/MovingRelatedLinks.tsx`
+- `app/(entities)/cities/[city]/moving-to/page.tsx`
+
+### Files updated
+
+- `types/index.ts` — re-exports the new types
+- `lib/data/queries/index.ts` — re-exports the new query helpers and
+  the `getMovingFocusLabel` helper
+- `lib/seo/routes.ts` — adds `movingToCityRoute(citySlug)` and
+  includes the new pages in `getAllIndexableRoutes()`
+- `lib/seo/breadcrumbs.ts` — adds `movingToCityBreadcrumbs`
+- `lib/seo/metadata.ts` — adds `generateMovingToCityMetadata`
+- `app/sitemap.ts` — emits all 60 new pages at `priority: 0.74`,
+  `changeFrequency: "monthly"`
+- `app/(entities)/cities/[city]/page.tsx` — reverse-link `LinkCard`
+  gated by `hasMovingToCityPage(city.slug)`
+- `app/(entities)/cities/[city]/neighborhoods/page.tsx` — adds a
+  reverse link to the moving-to guide when present
+- `app/(arrival)/arrival/[city]/page.tsx` — adds reverse links to
+  both the neighborhood planning guide and the moving-to guide when
+  present
+- `docs/content-expansion.md` — this section
+
+### Cities included (60)
+
+Same 60 cities as the neighborhood-planning batch:
+
+- **United Kingdom / Ireland (10)**: London, Manchester, Birmingham,
+  Bristol, Glasgow, Edinburgh, Oxford, Cambridge, Liverpool, Dublin.
+- **France (5)**: Paris, Lyon, Marseille, Toulouse, Bordeaux.
+- **Germany (8)**: Berlin, Hamburg, Munich, Frankfurt, Cologne,
+  Düsseldorf, Stuttgart, Leipzig.
+- **Netherlands / Belgium / Luxembourg (5)**: Amsterdam, Rotterdam,
+  The Hague, Brussels, Luxembourg City.
+- **Spain / Portugal / Italy (8)**: Madrid, Barcelona, Valencia,
+  Lisbon, Porto, Rome, Milan, Florence.
+- **Austria / Switzerland / Nordics (5)**: Vienna, Zürich, Stockholm,
+  Copenhagen, Helsinki.
+- **United States (12)**: New York, Los Angeles, Chicago, Boston,
+  Washington DC, San Francisco, Seattle, Austin, Denver, Miami,
+  Nashville, Philadelphia.
+- **Canada (4)**: Toronto, Vancouver, Montréal, Ottawa.
+- **Australia (3)**: Sydney, Melbourne, Brisbane.
+
+### Trimmed from the candidate list
+
+Cities in the original candidate list that were trimmed to stay at
+the 60-page target (deferred to a future wave): Cardiff, Belfast,
+Nice, Montpellier, Rennes, Hanover, Nuremberg, Utrecht, Eindhoven,
+Antwerp, Ghent, Bruges, Seville, Bologna, Turin, Pisa, Bari, Uppsala,
+Charlotte, Minneapolis, Tampa, Orlando, Atlanta, Phoenix, San Diego,
+Portland, Columbus, Indianapolis, Detroit, Baltimore, San Antonio,
+Calgary, Edmonton, Quebec City, Halifax, Victoria, Saskatoon, Perth,
+Adelaide, Auckland, Wellington, Christchurch, Queenstown, Wollongong.
+
+### Skipped candidates
+
+None — every selected slug exists in the registry.
+
+### Moving focus assignments
+
+`movingFocus` uses a typed `MovingFocus` enum
+(`relocation_research`, `family_move`, `remote_work_move`,
+`career_move`, `student_move`, `general_move`). Used as editorial
+framing only — no rankings or claims attached. Distribution: see the
+sealed enum values in `types/moving.ts`.
+
+### Safety rules applied
+
+- No invented visa rules, immigration steps, tax rules, legal
+  requirements, rental law, rent / sale prices, salary expectations,
+  exact cost estimates, crime rates, school rankings, hospital
+  proximities, transit operators, neighborhood names, district
+  boundaries, or property purchase / mortgage advice.
+- No "best" / "cheapest" / "safest" / "guaranteed" / "investment hot
+  spot" wording — only as negative disclaimers on the page itself.
+- No legal, immigration, tax, financial, medical, or property advice.
+- All copy is unique per page (60 unique summaries) and points back
+  to existing city / country / neighborhood / arrival / transport /
+  public-safety / healthcare / tools / methodology / data-sources
+  layers.
+
+### Structured data
+
+`/cities/[city]/moving-to` pages emit only `WebPage` and
+`BreadcrumbList` JSON-LD. No `HowTo`, `RealEstateListing`, `Place`,
+`LocalBusiness`, `School`, `Review`, `Rating`, `Offer`, `FAQPage`,
+fake `Dataset`, or `ImageObject` schemas were added.
+
+### Metadata / OG
+
+`generateMovingToCityMetadata` produces unique `title`,
+`description`, canonical, OG `title` / `description` / `url`, and
+`lastModified` for each new page. OG image uses the verified city
+hero only when `getCityHeroImage()` returns a verified record;
+otherwise OG image is omitted entirely (no fallback image emitted
+as OG). This matches the existing arrival- and neighborhood-page
+contract.
+
+### Sitemap
+
+`app/sitemap.ts` automatically emits all 60 new pages via
+`getAllMovingToCityPages()`. Each entry includes `url`,
+`lastModified`, `changeFrequency: "monthly"`, `priority: 0.74`
+(slightly higher than neighborhoods because relocation pages serve
+deeper user intent).
+
+### Internal linking and reverse links
+
+Each moving-to page links to: city profile, country hub,
+`arrivalRoute(city.slug)` (when present), `neighborhoodPlanningRoute(city.slug)`
+(present for all 60 in this batch), cost-of-living calculator,
+travel-budget calculator, relocation checklist, `/cities`,
+`/countries`, `/compare`, methodology, data sources, up to 4 related
+comparisons via `getComparisonsForCity()`. No broad header/footer
+additions (no `/moving-to` index yet).
+
+Three reverse-link surfaces gated by `hasMovingToCityPage(city.slug)`:
+
+- **City profile** — new `LinkCard` next to the existing arrival /
+  neighborhood cards
+- **Neighborhood planning guide** — new related-link entry
+- **Arrival planning guide** — new related-link entry alongside a
+  newly added neighborhood-planning reverse link
+
+All three gates use set membership (Map-backed), so the cards appear
+exactly once on covered cities and not at all on uncovered cities.
+
+### Page-count delta
+
+- moving-to pages: 0 → **60**
+- static page count: 2,554 → **2,614** (+60). Verified by
+  `next build`: `Generating static pages (2614/2614)`.
+
+### Performance / runtime
+
+- 0 client components, 0 `useEffect` / `useState`, 0 `fetch` / `axios`
+  in any new or modified file
+- 0 new dependencies; no map / chart / image / carousel libraries
+- All 60 pages SSG; route bundle: 224 B / 106 kB First Load JS
+- `validate:media`, `typecheck`, `lint`, `build` all clean

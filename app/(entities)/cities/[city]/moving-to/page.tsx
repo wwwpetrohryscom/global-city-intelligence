@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import {
-  ArrivalChecklist,
-} from "@/components/arrival/ArrivalChecklist";
-import {
-  ArrivalOverviewCards,
-  type ArrivalOverviewCard,
-} from "@/components/arrival/ArrivalOverviewCards";
-import {
-  ArrivalRelatedLinks,
-  type ArrivalRelatedLink,
-} from "@/components/arrival/ArrivalRelatedLinks";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
+import { MovingChecklist } from "@/components/moving/MovingChecklist";
+import {
+  MovingOverviewCards,
+  type MovingOverviewCard,
+} from "@/components/moving/MovingOverviewCards";
+import {
+  MovingRelatedLinks,
+  type MovingRelatedLink,
+} from "@/components/moving/MovingRelatedLinks";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
@@ -23,26 +21,26 @@ import { FactList } from "@/components/ui/fact-list";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { getCityHeroImage } from "@/lib/data/media/queries";
 import {
-  getAllArrivalPages,
-  getArrivalChecklist,
-  getArrivalFocusLabel,
-  getArrivalPageByCitySlug,
+  getAllMovingToCityPages,
   getCityBySlug,
   getComparisonsForCity,
   getCountryBySlug,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
   getCountryTransportProfile,
+  getMovingFocusLabel,
+  getMovingToCityChecklist,
+  getMovingToCityPageByCitySlug,
   getSourcesByIds,
-  hasMovingToCityPage,
+  hasArrivalPage,
   hasNeighborhoodPlanningPage,
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
 } from "@/lib/data/queries";
-import { arrivalBreadcrumbs } from "@/lib/seo/breadcrumbs";
+import { movingToCityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
-  generateArrivalMetadata,
+  generateMovingToCityMetadata,
   ogImageFromPlaceImage,
 } from "@/lib/seo/metadata";
 import {
@@ -63,43 +61,43 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getAllArrivalPages().map((page) => ({ city: page.citySlug }));
+  return getAllMovingToCityPages().map((page) => ({ city: page.citySlug }));
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { city: citySlug } = await params;
-  const arrivalPage = getArrivalPageByCitySlug(citySlug);
-  const city = arrivalPage ? getCityBySlug(arrivalPage.citySlug) : undefined;
+  const movingPage = getMovingToCityPageByCitySlug(citySlug);
+  const city = movingPage ? getCityBySlug(movingPage.citySlug) : undefined;
 
-  if (!arrivalPage || !city) {
+  if (!movingPage || !city) {
     return {};
   }
 
   const country = getCountryBySlug(city.countrySlug);
 
-  return generateArrivalMetadata({
-    arrivalPage,
+  return generateMovingToCityMetadata({
+    movingPage,
     city,
     country,
     image: ogImageFromPlaceImage(getCityHeroImage(city.slug)),
   });
 }
 
-export default async function ArrivalCityPage({ params }: PageProps) {
+export default async function MovingToCityPage({ params }: PageProps) {
   const { city: citySlug } = await params;
-  const arrivalPage = getArrivalPageByCitySlug(citySlug);
-  const city = arrivalPage ? getCityBySlug(arrivalPage.citySlug) : undefined;
+  const movingPage = getMovingToCityPageByCitySlug(citySlug);
+  const city = movingPage ? getCityBySlug(movingPage.citySlug) : undefined;
 
-  if (!arrivalPage || !city) {
+  if (!movingPage || !city) {
     notFound();
   }
 
   const country = getCountryBySlug(city.countrySlug);
-  const breadcrumbs = arrivalBreadcrumbs(city.slug);
-  const sources = getSourcesByIds(arrivalPage.sourceIds);
-  const checklist = getArrivalChecklist();
+  const breadcrumbs = movingToCityBreadcrumbs(city.slug);
+  const sources = getSourcesByIds(movingPage.sourceIds);
+  const checklist = getMovingToCityChecklist();
 
   const emergencyProfile = getCountryEmergencyProfile(city.countrySlug);
   const healthcareProfile = getCountryHealthcareProfile(city.countrySlug);
@@ -109,11 +107,13 @@ export default async function ArrivalCityPage({ params }: PageProps) {
   const transportVerified = hasVerifiedTransportData(transportProfile);
 
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
+  const cityHasArrival = hasArrivalPage(city.slug);
+  const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
 
-  const title = `Arriving in ${city.name}: City Arrival Planning Guide`;
-  const description = `Plan your arrival in ${city.name}${country ? `, ${country.name}` : ""} with city intelligence links, transport context, public-safety references, healthcare access notes, budget tools, sources, and methodology — not an official airport or travel instruction service.`;
+  const title = `Moving to ${city.name}: Planning Guide`;
+  const description = `Plan relocation research for ${city.name}${country ? `, ${country.name}` : ""} with city context, country context, arrival planning, neighborhood research, cost tools, healthcare access, public-safety context, transport notes, and source transparency. Not immigration, visa, tax, legal, financial, medical, or property advice.`;
 
-  const overviewCards: ArrivalOverviewCard[] = [
+  const overviewCards: MovingOverviewCard[] = [
     {
       label: "City",
       value: city.name,
@@ -128,10 +128,10 @@ export default async function ArrivalCityPage({ params }: PageProps) {
         "Open the country hub for verified emergency, healthcare, and transport-authority context where available.",
     },
     {
-      label: "Arrival focus",
-      value: getArrivalFocusLabel(arrivalPage.arrivalFocus),
+      label: "Relocation focus",
+      value: getMovingFocusLabel(movingPage.movingFocus),
       description:
-        "Editorial framing for this arrival guide. The full content covers general planning, not airport-specific instructions.",
+        "Editorial framing for this relocation planning guide. The page does not give visa, tax, legal, or property advice.",
     },
     {
       label: "Verified context layers",
@@ -145,7 +145,7 @@ export default async function ArrivalCityPage({ params }: PageProps) {
     },
   ];
 
-  const relatedLinks: ArrivalRelatedLink[] = [
+  const relatedLinks: MovingRelatedLink[] = [
     {
       label: `${city.name} city intelligence profile`,
       href: cityRoute(city.slug),
@@ -162,37 +162,37 @@ export default async function ArrivalCityPage({ params }: PageProps) {
           },
         ]
       : []),
-    ...(hasNeighborhoodPlanningPage(city.slug)
+    ...(cityHasArrival
+      ? [
+          {
+            label: `Arrival planning guide for ${city.name}`,
+            href: arrivalRoute(city.slug),
+            description:
+              "First-day arrival planning context — pairs with relocation research.",
+          },
+        ]
+      : []),
+    ...(cityHasNeighborhood
       ? [
           {
             label: `Neighborhood planning guide for ${city.name}`,
             href: neighborhoodPlanningRoute(city.slug),
             description:
-              "Structured neighborhood research checklist — pairs with arrival planning.",
+              "Structured neighborhood research checklist — pairs with relocation planning.",
           },
         ]
       : []),
-    ...(hasMovingToCityPage(city.slug)
-      ? [
-          {
-            label: `Moving to ${city.name} planning guide`,
-            href: movingToCityRoute(city.slug),
-            description:
-              "Structured relocation research checklist — pairs with arrival planning.",
-          },
-        ]
-      : []),
-    {
-      label: "Travel budget calculator",
-      href: staticRoutes.travelBudgetCalculator,
-      description:
-        "Estimate a trip budget using your own inputs. Planning estimator only.",
-    },
     {
       label: "Cost of living calculator",
       href: staticRoutes.costOfLivingCalculator,
       description:
         "Compare monthly costs between cities using your own inputs.",
+    },
+    {
+      label: "Travel budget calculator",
+      href: staticRoutes.travelBudgetCalculator,
+      description:
+        "Estimate a trip and arrival budget using your own inputs. Planning estimator only.",
     },
     {
       label: "Relocation checklist",
@@ -231,14 +231,18 @@ export default async function ArrivalCityPage({ params }: PageProps) {
     <main>
       <JsonLd
         data={webpageSchema({
-          path: arrivalRoute(city.slug),
+          path: movingToCityRoute(city.slug),
           title,
           description,
         })}
       />
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
 
-      <PageHeader eyebrow="Arrival planning" intro={arrivalPage.summary} title={title}>
+      <PageHeader
+        eyebrow="Moving to"
+        intro={movingPage.summary}
+        title={title}
+      >
         <dl className="grid gap-4">
           <div>
             <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
@@ -273,7 +277,7 @@ export default async function ArrivalCityPage({ params }: PageProps) {
               Last updated
             </dt>
             <dd className="mt-1 text-lg font-semibold text-text-primary">
-              {arrivalPage.updatedDate}
+              {movingPage.updatedDate}
             </dd>
           </div>
           <div>
@@ -281,7 +285,7 @@ export default async function ArrivalCityPage({ params }: PageProps) {
               Data year
             </dt>
             <dd className="mt-1 text-lg font-semibold text-text-primary">
-              {arrivalPage.dataYear}
+              {movingPage.dataYear}
             </dd>
           </div>
         </dl>
@@ -291,7 +295,7 @@ export default async function ArrivalCityPage({ params }: PageProps) {
         <BreadcrumbNav items={breadcrumbs} />
 
         <section
-          aria-label={`${city.name} visual context for arrival planning`}
+          aria-label={`${city.name} visual context for relocation planning`}
           className="max-w-2xl"
         >
           <PlaceHeroImage
@@ -305,7 +309,8 @@ export default async function ArrivalCityPage({ params }: PageProps) {
           facts={[
             {
               label: "Page style",
-              value: "Comparison-oriented arrival guide (not an official airport or travel service)",
+              value:
+                "Relocation research checklist (not immigration, visa, tax, legal, financial, medical, or property advice)",
             },
             {
               label: "Sources referenced",
@@ -325,38 +330,38 @@ export default async function ArrivalCityPage({ params }: PageProps) {
           ]}
         />
 
-        <section aria-labelledby="arrival-overview-heading">
+        <section aria-labelledby="moving-overview-heading">
           <SectionHeading
-            description={`Snapshot for arriving in ${city.name}. Each card connects to the structured profile, country hub, and verified context layers behind the indicators.`}
-            title={`${city.name} arrival overview`}
+            description={`Snapshot for planning a move to ${city.name}. Each card connects to the structured profile, country hub, and verified context layers behind the indicators. This page does not provide visa, tax, legal, or property advice.`}
+            title={`${city.name} relocation planning overview`}
           />
-          <h2 className="sr-only" id="arrival-overview-heading">
-            {city.name} arrival overview
+          <h2 className="sr-only" id="moving-overview-heading">
+            {city.name} relocation planning overview
           </h2>
           <div className="mt-6">
-            <ArrivalOverviewCards cards={overviewCards} />
+            <MovingOverviewCards cards={overviewCards} />
           </div>
         </section>
 
-        <section aria-labelledby="arrival-checklist-heading">
+        <section aria-labelledby="moving-checklist-heading">
           <SectionHeading
-            description="Practical, neutral checklist organised by category. Items reference structured platform sections and official sources — they do not provide schedules, fares, transfer routes, visa instructions, or medical advice."
-            title="Arrival planning checklist"
+            description="Practical, neutral checklist organised by relocation category. Items reference structured platform sections and official sources — they do not publish visa rules, tax rules, rent prices, salary expectations, crime rates, school rankings, or property advice."
+            title="Relocation research checklist"
           />
-          <h2 className="sr-only" id="arrival-checklist-heading">
-            Arrival planning checklist
+          <h2 className="sr-only" id="moving-checklist-heading">
+            Relocation research checklist
           </h2>
           <div className="mt-6">
-            <ArrivalChecklist items={checklist} />
+            <MovingChecklist items={checklist} />
           </div>
         </section>
 
-        <section aria-labelledby="arrival-context-heading">
+        <section aria-labelledby="moving-context-heading">
           <SectionHeading
-            description="Which platform-side context layers are available for the country and city around arrival. Where verified data is not on file, the platform shows a transparent fallback rather than fabricated information."
+            description="Which platform-side context layers are available for the country and city behind relocation research. Where verified data is not on file, the platform shows a transparent fallback rather than fabricated information."
             title="Context-layer availability"
           />
-          <h2 className="sr-only" id="arrival-context-heading">
+          <h2 className="sr-only" id="moving-context-heading">
             Context-layer availability for {city.name}
           </h2>
           <ul className="mt-6 grid gap-4 md:grid-cols-3">
@@ -368,7 +373,7 @@ export default async function ArrivalCityPage({ params }: PageProps) {
                 <p className="mt-2 text-sm leading-6 text-text-primary">
                   {transportVerified
                     ? `Verified country-level transport-authority context is on file for ${country?.name ?? "this country"}. Confirm routes, fares, and schedules through the official authorities cited on the country hub.`
-                    : `No verified country-level transport-authority context is on file yet. Use the city transport / mobility profile for structured context and confirm details through official authorities.`}
+                    : `No verified country-level transport-authority context is on file yet. Use the city transport / mobility profile for structured framing and confirm details through official authorities.`}
                 </p>
                 <Link
                   className="mt-3 inline-block text-sm font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
@@ -405,8 +410,8 @@ export default async function ArrivalCityPage({ params }: PageProps) {
                 </p>
                 <p className="mt-2 text-sm leading-6 text-text-primary">
                   {healthcareVerified
-                    ? `Verified country-level healthcare access context is on file for ${country?.name ?? "this country"}. Use it alongside official insurance and access documentation.`
-                    : `No verified country-level healthcare access context is on file yet. Confirm access and coverage with official sources.`}
+                    ? `Verified country-level healthcare access context is on file for ${country?.name ?? "this country"}. Confirm registration, insurance, and access through official local sources.`
+                    : `No verified country-level healthcare access context is on file yet. Confirm registration, insurance, and access through official local sources.`}
                 </p>
                 {country ? (
                   <Link
@@ -421,128 +426,41 @@ export default async function ArrivalCityPage({ params }: PageProps) {
           </ul>
         </section>
 
-        <section aria-labelledby="arrival-budget-heading">
+        <section aria-labelledby="moving-related-heading">
           <SectionHeading
-            description="Planning estimators that use your own inputs. They do not query airport, flight, hotel, or transport providers and do not provide live prices."
-            title="Budget and relocation tools"
+            description="Open the related platform layers behind relocation research. Verify legal, immigration, tax, housing, and healthcare details directly with official or qualified sources."
+            title="Related context and tools"
           />
-          <h2 className="sr-only" id="arrival-budget-heading">
-            Budget and relocation tools
+          <h2 className="sr-only" id="moving-related-heading">
+            Related context and tools for moving to {city.name}
           </h2>
-          <ul className="mt-6 grid gap-4 md:grid-cols-3">
-            <li>
-              <Card as="article" className="h-full">
-                <h3 className="text-base font-semibold text-text-primary">
-                  Travel budget calculator
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-text-secondary">
-                  Estimate accommodation, food, local transport, activities,
-                  travel, healthcare buffer, and emergency buffer using your
-                  own inputs.
-                </p>
-                <Link
-                  className="mt-3 inline-block text-sm font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
-                  href={staticRoutes.travelBudgetCalculator}
-                >
-                  Open the travel budget calculator
-                </Link>
-              </Card>
-            </li>
-            <li>
-              <Card as="article" className="h-full">
-                <h3 className="text-base font-semibold text-text-primary">
-                  Cost of living calculator
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-text-secondary">
-                  Compare monthly living budgets between cities using your own
-                  housing, food, transport, healthcare, and lifestyle inputs.
-                </p>
-                <Link
-                  className="mt-3 inline-block text-sm font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
-                  href={staticRoutes.costOfLivingCalculator}
-                >
-                  Open the cost of living calculator
-                </Link>
-              </Card>
-            </li>
-            <li>
-              <Card as="article" className="h-full">
-                <h3 className="text-base font-semibold text-text-primary">
-                  Relocation checklist
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-text-secondary">
-                  Organise city research, budgeting, documents, housing,
-                  healthcare, transport, and first-week planning.
-                </p>
-                <Link
-                  className="mt-3 inline-block text-sm font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
-                  href={staticRoutes.relocationChecklist}
-                >
-                  Open the relocation checklist
-                </Link>
-              </Card>
-            </li>
-          </ul>
-        </section>
-
-        <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
-          <Card as="article" className="p-6">
-            <h2 className="text-2xl font-semibold text-text-primary">
-              Methodology and limitations
-            </h2>
-            <p className="mt-3 text-sm leading-6 text-text-secondary">
-              Arrival planning guides are comparison-oriented and link back to
-              the structured city, country, transport, safety, and healthcare
-              layers on the platform. This page does not publish airport names,
-              transfer routes, fares, schedules, taxi prices, or visa
-              requirements. For time-sensitive details — flights, official
-              transport disruptions, emergency numbers, healthcare coverage,
-              and visa or immigration rules — always verify with the official
-              source. Read the{" "}
-              <Link
-                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
-                href={staticRoutes.methodology}
-              >
-                scoring methodology
-              </Link>{" "}
-              for how indicators are constructed, and the{" "}
-              <Link
-                className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
-                href={staticRoutes.dataSources}
-              >
-                data sources
-              </Link>{" "}
-              registry for the official publishers cited across the site.
-            </p>
-            <ArrivalRelatedLinks links={relatedLinks} />
-          </Card>
-          <SourceBlock sources={sources} />
+          <MovingRelatedLinks links={relatedLinks} />
         </section>
 
         {relatedComparisons.length > 0 ? (
-          <section aria-labelledby="arrival-related-comparisons-heading">
+          <section aria-labelledby="moving-comparisons-heading">
             <SectionHeading
-              description={`City comparisons that include ${city.name}. Comparisons reuse the structured city and country indicators behind this arrival guide.`}
-              title={`Related comparisons including ${city.name}`}
+              description={`City-vs-city comparisons that include ${city.name}. Use these to weigh relocation research against other cities you are considering.`}
+              title="Related comparisons"
             />
-            <h2 className="sr-only" id="arrival-related-comparisons-heading">
-              Related comparisons including {city.name}
+            <h2 className="sr-only" id="moving-comparisons-heading">
+              Related comparisons for {city.name}
             </h2>
             <ul className="mt-6 grid gap-4 md:grid-cols-2">
               {relatedComparisons.map((comparison) => (
                 <li key={comparison.slug}>
-                  <Card as="article" interactive>
+                  <Card as="article" className="h-full p-5">
                     <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                      {comparison.region}
+                      Comparison
                     </p>
-                    <h3 className="mt-2 text-base font-semibold text-text-primary">
+                    <p className="mt-2 text-base font-semibold text-text-primary">
                       <Link
-                        className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
+                        className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
                         href={comparisonRoute(comparison.slug)}
                       >
                         {comparison.title}
                       </Link>
-                    </h3>
+                    </p>
                     <p className="mt-2 text-sm leading-6 text-text-secondary">
                       {comparison.description}
                     </p>
@@ -552,6 +470,35 @@ export default async function ArrivalCityPage({ params }: PageProps) {
             </ul>
           </section>
         ) : null}
+
+        <section aria-labelledby="moving-disclaimer-heading">
+          <SectionHeading
+            description="What this page is and is not. Read this before treating any relocation decision as final."
+            title="Scope and limitations"
+          />
+          <h2 className="sr-only" id="moving-disclaimer-heading">
+            Scope and limitations
+          </h2>
+          <div className="mt-6 rounded-2xl border border-neutral-border bg-surface-soft p-6">
+            <p className="text-sm leading-7 text-text-primary">
+              This page is a relocation <strong>research checklist</strong> for
+              {" "}
+              {city.name}
+              {country ? `, ${country.name}` : ""}. It does not publish visa or
+              immigration steps, tax rules, rental law, rent or sale prices,
+              salary expectations, exact cost estimates, crime rates, school
+              rankings, hospital proximities, transit operators, or area
+              &ldquo;best&rdquo; / &ldquo;safest&rdquo; / &ldquo;cheapest&rdquo;
+              claims. Confirm immigration, residency, registration, tax,
+              housing, healthcare, and family-service details directly with the
+              official government source, landlord, agent, or qualified
+              professional. This is not immigration, visa, tax, legal,
+              financial, medical, or property advice.
+            </p>
+          </div>
+        </section>
+
+        <SourceBlock sources={sources} />
       </Container>
     </main>
   );

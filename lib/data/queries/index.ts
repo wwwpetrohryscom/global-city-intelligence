@@ -160,6 +160,16 @@ export {
 
 export { getNeighborhoodPlanningFocusLabel } from "@/lib/data/neighborhoods";
 
+export {
+  getAllMovingToCityPages,
+  getMovingToCityChecklist,
+  getMovingToCityPageByCitySlug,
+  getMovingToCityPagesForCountry,
+  hasMovingToCityPage,
+} from "@/lib/data/queries/moving";
+
+export { getMovingFocusLabel } from "@/lib/data/moving";
+
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
 export {

@@ -5,6 +5,7 @@ import {
   arrivalRoute,
   getCityIntentUrl,
   getCollectionUrl,
+  movingToCityRoute,
   neighborhoodPlanningRoute,
 } from "@/lib/seo/routes";
 import type {
@@ -14,6 +15,7 @@ import type {
   CityIntent,
   CityIntentPage,
   Country,
+  MovingToCityPage,
   NeighborhoodPlanningPage,
   PlaceImage,
 } from "@/types";
@@ -169,6 +171,31 @@ export function generateNeighborhoodPlanningMetadata({
     description,
     path: neighborhoodPlanningRoute(planningPage.citySlug),
     lastModified: planningPage.updatedDate,
+    type: "article",
+    image,
+  });
+}
+
+export function generateMovingToCityMetadata({
+  movingPage,
+  city,
+  country,
+  image,
+}: {
+  movingPage: MovingToCityPage;
+  city: City;
+  country: Country | undefined;
+  image?: MetadataOgImage;
+}): Metadata {
+  const countryFragment = country ? `, ${country.name}` : "";
+  const title = `Moving to ${city.name}: Planning Guide`;
+  const description = `Plan relocation research for ${city.name}${countryFragment} with city context, country context, arrival planning, neighborhood research, cost tools, healthcare access, public-safety context, transport notes, methodology, and source transparency. Not immigration, visa, tax, legal, financial, medical, or property advice.`;
+
+  return createMetadata({
+    title,
+    description,
+    path: movingToCityRoute(movingPage.citySlug),
+    lastModified: movingPage.updatedDate,
     type: "article",
     image,
   });
