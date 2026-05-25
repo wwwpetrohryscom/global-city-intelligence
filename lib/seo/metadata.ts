@@ -7,6 +7,7 @@ import {
   getCollectionUrl,
   movingToCityRoute,
   neighborhoodPlanningRoute,
+  visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import type {
   ArrivalPage,
@@ -18,6 +19,7 @@ import type {
   MovingToCityPage,
   NeighborhoodPlanningPage,
   PlaceImage,
+  VisualCityGuidePage,
 } from "@/types";
 
 interface MetadataOgImage {
@@ -196,6 +198,31 @@ export function generateMovingToCityMetadata({
     description,
     path: movingToCityRoute(movingPage.citySlug),
     lastModified: movingPage.updatedDate,
+    type: "article",
+    image,
+  });
+}
+
+export function generateVisualCityGuideMetadata({
+  visualPage,
+  city,
+  country,
+  image,
+}: {
+  visualPage: VisualCityGuidePage;
+  city: City;
+  country: Country | undefined;
+  image?: MetadataOgImage;
+}): Metadata {
+  const countryFragment = country ? `, ${country.name}` : "";
+  const title = `Visual Guide to ${city.name}`;
+  const description = `Explore source-attributed visual context for ${city.name}${countryFragment} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency. Not a tourism guide and not an attractions ranking.`;
+
+  return createMetadata({
+    title,
+    description,
+    path: visualCityGuideRoute(visualPage.citySlug),
+    lastModified: visualPage.updatedDate,
     type: "article",
     image,
   });

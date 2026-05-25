@@ -61,6 +61,12 @@ export type {
   MovingToCityPage,
 } from "./moving";
 export type {
+  VisualCityGuidePage,
+  VisualGuideFocus,
+  VisualGuideSection,
+  VisualGuideSectionCategory,
+} from "./visual-guides";
+export type {
   DataProvenance,
   DatasetCoverage,
   MetricVerificationStatus,

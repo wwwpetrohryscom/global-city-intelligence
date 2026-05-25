@@ -39,6 +39,7 @@ import {
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
+  hasVisualCityGuidePage,
 } from "@/lib/data/queries";
 import { arrivalBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
@@ -53,6 +54,7 @@ import {
   movingToCityRoute,
   neighborhoodPlanningRoute,
   staticRoutes,
+  visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
 
@@ -179,6 +181,16 @@ export default async function ArrivalCityPage({ params }: PageProps) {
             href: movingToCityRoute(city.slug),
             description:
               "Structured relocation research checklist — pairs with arrival planning.",
+          },
+        ]
+      : []),
+    ...(hasVisualCityGuidePage(city.slug)
+      ? [
+          {
+            label: `Visual guide to ${city.name}`,
+            href: visualCityGuideRoute(city.slug),
+            description:
+              "Source-attributed verified imagery alongside structured city intelligence.",
           },
         ]
       : []),

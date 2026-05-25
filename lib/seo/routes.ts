@@ -4,6 +4,7 @@ import {
   getAllCollections,
   getAllMovingToCityPages,
   getAllNeighborhoodPlanningPages,
+  getAllVisualCityGuidePages,
   getCities,
   getCountries,
   getModules,
@@ -76,6 +77,10 @@ export function movingToCityRoute(citySlug: string) {
   return `/cities/${citySlug}/moving-to`;
 }
 
+export function visualCityGuideRoute(citySlug: string) {
+  return `/cities/${citySlug}/visual-guide`;
+}
+
 export function getCollectionUrl(slug: string) {
   return `/${slug}`;
 }
@@ -119,6 +124,9 @@ export function getAllIndexableRoutes() {
     ),
     ...getAllMovingToCityPages().map((page) =>
       movingToCityRoute(page.citySlug),
+    ),
+    ...getAllVisualCityGuidePages().map((page) =>
+      visualCityGuideRoute(page.citySlug),
     ),
   ];
 }

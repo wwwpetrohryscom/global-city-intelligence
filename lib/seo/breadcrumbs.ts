@@ -19,6 +19,7 @@ import {
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
+  visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import type { BreadcrumbItem, ModuleSlug } from "@/types";
 
@@ -175,6 +176,26 @@ export function movingToCityBreadcrumbs(citySlug: string): BreadcrumbItem[] {
     {
       name: "Moving to",
       href: movingToCityRoute(citySlug),
+    },
+  ];
+}
+
+export function visualCityGuideBreadcrumbs(citySlug: string): BreadcrumbItem[] {
+  const city = getCityBySlug(citySlug);
+
+  return [
+    homeCrumb,
+    {
+      name: "Cities",
+      href: staticRoutes.cities,
+    },
+    {
+      name: city?.name || "City",
+      href: cityRoute(citySlug),
+    },
+    {
+      name: "Visual guide",
+      href: visualCityGuideRoute(citySlug),
     },
   ];
 }

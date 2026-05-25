@@ -4,44 +4,49 @@ import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
-import {
-  NeighborhoodOverviewCards,
-  type NeighborhoodOverviewCard,
-} from "@/components/neighborhoods/NeighborhoodOverviewCards";
-import { NeighborhoodPlanningChecklist } from "@/components/neighborhoods/NeighborhoodPlanningChecklist";
-import {
-  NeighborhoodRelatedLinks,
-  type NeighborhoodRelatedLink,
-} from "@/components/neighborhoods/NeighborhoodRelatedLinks";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
 import { Card } from "@/components/ui/Card";
 import { FactList } from "@/components/ui/fact-list";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { getCityHeroImage } from "@/lib/data/media/queries";
 import {
-  getAllNeighborhoodPlanningPages,
+  VisualGuideMediaSection,
+} from "@/components/visual-guides/VisualGuideMediaSection";
+import {
+  VisualGuideOverviewCards,
+  type VisualGuideOverviewCard,
+} from "@/components/visual-guides/VisualGuideOverviewCards";
+import {
+  VisualGuideRelatedLinks,
+  type VisualGuideRelatedLink,
+} from "@/components/visual-guides/VisualGuideRelatedLinks";
+import {
+  getCityHeroImage,
+  getPlaceSecondaryImages,
+} from "@/lib/data/media/queries";
+import {
+  getAllVisualCityGuidePages,
   getCityBySlug,
   getComparisonsForCity,
   getCountryBySlug,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
   getCountryTransportProfile,
-  getNeighborhoodPlanningChecklist,
-  getNeighborhoodPlanningFocusLabel,
-  getNeighborhoodPlanningPageByCitySlug,
   getSourcesByIds,
+  getVisualCityGuidePageByCitySlug,
+  getVisualGuideFocusLabel,
+  getVisualGuideSections,
   hasArrivalPage,
   hasMovingToCityPage,
+  hasNeighborhoodPlanningPage,
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
-  hasVisualCityGuidePage,
 } from "@/lib/data/queries";
-import { neighborhoodPlanningBreadcrumbs } from "@/lib/seo/breadcrumbs";
+import { visualCityGuideBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
-  generateNeighborhoodPlanningMetadata,
+  generateVisualCityGuideMetadata,
   ogImageFromPlaceImage,
 } from "@/lib/seo/metadata";
 import {
@@ -63,7 +68,7 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getAllNeighborhoodPlanningPages().map((page) => ({
+  return getAllVisualCityGuidePages().map((page) => ({
     city: page.citySlug,
   }));
 }
@@ -72,36 +77,38 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { city: citySlug } = await params;
-  const planningPage = getNeighborhoodPlanningPageByCitySlug(citySlug);
-  const city = planningPage ? getCityBySlug(planningPage.citySlug) : undefined;
+  const visualPage = getVisualCityGuidePageByCitySlug(citySlug);
+  const city = visualPage ? getCityBySlug(visualPage.citySlug) : undefined;
 
-  if (!planningPage || !city) {
+  if (!visualPage || !city) {
     return {};
   }
 
   const country = getCountryBySlug(city.countrySlug);
 
-  return generateNeighborhoodPlanningMetadata({
-    planningPage,
+  return generateVisualCityGuideMetadata({
+    visualPage,
     city,
     country,
     image: ogImageFromPlaceImage(getCityHeroImage(city.slug)),
   });
 }
 
-export default async function CityNeighborhoodsPage({ params }: PageProps) {
+export default async function VisualCityGuidePage({ params }: PageProps) {
   const { city: citySlug } = await params;
-  const planningPage = getNeighborhoodPlanningPageByCitySlug(citySlug);
-  const city = planningPage ? getCityBySlug(planningPage.citySlug) : undefined;
+  const visualPage = getVisualCityGuidePageByCitySlug(citySlug);
+  const city = visualPage ? getCityBySlug(visualPage.citySlug) : undefined;
 
-  if (!planningPage || !city) {
+  if (!visualPage || !city) {
     notFound();
   }
 
   const country = getCountryBySlug(city.countrySlug);
-  const breadcrumbs = neighborhoodPlanningBreadcrumbs(city.slug);
-  const sources = getSourcesByIds(planningPage.sourceIds);
-  const checklist = getNeighborhoodPlanningChecklist();
+  const breadcrumbs = visualCityGuideBreadcrumbs(city.slug);
+  const sources = getSourcesByIds(visualPage.sourceIds);
+  const sections = getVisualGuideSections();
+  const heroImage = getCityHeroImage(city.slug);
+  const secondaryImages = getPlaceSecondaryImages("city", city.slug);
 
   const emergencyProfile = getCountryEmergencyProfile(city.countrySlug);
   const healthcareProfile = getCountryHealthcareProfile(city.countrySlug);
@@ -112,13 +119,13 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
 
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
   const cityHasArrival = hasArrivalPage(city.slug);
+  const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
-  const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
 
-  const title = `Neighborhood Planning Guide for ${city.name}`;
-  const description = `Plan neighborhood research in ${city.name}${country ? `, ${country.name}` : ""} with transport context, public-safety context, healthcare access, arrival planning, budgeting tools, methodology notes, and source transparency.`;
+  const title = `Visual Guide to ${city.name}`;
+  const description = `Explore source-attributed visual context for ${city.name}${country ? `, ${country.name}` : ""} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency.`;
 
-  const overviewCards: NeighborhoodOverviewCard[] = [
+  const overviewCards: VisualGuideOverviewCard[] = [
     {
       label: "City",
       value: city.name,
@@ -133,24 +140,24 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
         "Open the country hub for verified emergency, healthcare, and transport-authority context where available.",
     },
     {
-      label: "Planning focus",
-      value: getNeighborhoodPlanningFocusLabel(planningPage.planningFocus),
+      label: "Visual focus",
+      value: getVisualGuideFocusLabel(visualPage.visualFocus),
       description:
-        "Editorial framing for this neighborhood planning guide. The page does not name or rank neighborhoods.",
+        "Editorial framing for this visual guide. Images are orientation, not evidence — pair with structured context layers.",
     },
     {
-      label: "Verified context layers",
-      value: String(
-        [emergencyVerified, healthcareVerified, transportVerified].filter(
-          Boolean,
-        ).length,
-      ),
+      label: "Verified imagery",
+      value: heroImage
+        ? secondaryImages.length > 0
+          ? `Hero + ${secondaryImages.length} secondary`
+          : "Hero only"
+        : "Fallback (no verified hero)",
       description:
-        "Count of verified emergency, healthcare, and transport profiles available for the country / city.",
+        "Imagery comes from the existing verified media catalog with source, author, and license metadata. Fallback cities render the designed fallback block instead.",
     },
   ];
 
-  const relatedLinks: NeighborhoodRelatedLink[] = [
+  const relatedLinks: VisualGuideRelatedLink[] = [
     {
       label: `${city.name} city intelligence profile`,
       href: cityRoute(city.slug),
@@ -173,7 +180,17 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
             label: `Arrival planning guide for ${city.name}`,
             href: arrivalRoute(city.slug),
             description:
-              "First-day arrival planning context — pairs with neighborhood research.",
+              "First-day arrival planning context — pairs with visual orientation.",
+          },
+        ]
+      : []),
+    ...(cityHasNeighborhood
+      ? [
+          {
+            label: `Neighborhood planning guide for ${city.name}`,
+            href: neighborhoodPlanningRoute(city.slug),
+            description:
+              "Structured neighborhood research checklist — pairs with visual orientation.",
           },
         ]
       : []),
@@ -183,17 +200,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
             label: `Moving to ${city.name} planning guide`,
             href: movingToCityRoute(city.slug),
             description:
-              "Structured relocation research checklist — pairs with neighborhood planning.",
-          },
-        ]
-      : []),
-    ...(cityHasVisualGuide
-      ? [
-          {
-            label: `Visual guide to ${city.name}`,
-            href: visualCityGuideRoute(city.slug),
-            description:
-              "Source-attributed verified imagery alongside structured city intelligence.",
+              "Relocation research checklist — pairs with visual orientation.",
           },
         ]
       : []),
@@ -231,6 +238,16 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
       description: "Side-by-side directional comparisons between cities.",
     },
     {
+      label: "Arrival planning directory",
+      href: staticRoutes.arrival,
+      description: "Browse every curated city arrival planning guide.",
+    },
+    {
+      label: "Moving-to directory",
+      href: staticRoutes.movingTo,
+      description: "Browse every curated moving-to city planning guide.",
+    },
+    {
       label: "Scoring methodology",
       href: staticRoutes.methodology,
       description: "How structured indicators are constructed and read.",
@@ -246,7 +263,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
     <main>
       <JsonLd
         data={webpageSchema({
-          path: neighborhoodPlanningRoute(city.slug),
+          path: visualCityGuideRoute(city.slug),
           title,
           description,
         })}
@@ -254,8 +271,8 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
 
       <PageHeader
-        eyebrow="Neighborhood planning"
-        intro={planningPage.summary}
+        eyebrow="Visual guide"
+        intro={visualPage.summary}
         title={title}
       >
         <dl className="grid gap-4">
@@ -292,7 +309,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
               Last updated
             </dt>
             <dd className="mt-1 text-lg font-semibold text-text-primary">
-              {planningPage.updatedDate}
+              {visualPage.updatedDate}
             </dd>
           </div>
           <div>
@@ -300,7 +317,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
               Data year
             </dt>
             <dd className="mt-1 text-lg font-semibold text-text-primary">
-              {planningPage.dataYear}
+              {visualPage.dataYear}
             </dd>
           </div>
         </dl>
@@ -310,8 +327,8 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
         <BreadcrumbNav items={breadcrumbs} />
 
         <section
-          aria-label={`${city.name} visual context for neighborhood planning`}
-          className="max-w-2xl"
+          aria-label={`${city.name} verified hero imagery`}
+          className="max-w-3xl"
         >
           <PlaceHeroImage
             placeName={`${city.name}${country ? `, ${country.name}` : ""}`}
@@ -325,7 +342,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
             {
               label: "Page style",
               value:
-                "Neighborhood research checklist (not a real-estate, rental, or safety-ranking service)",
+                "Visual orientation guide (not a tourism guide, attractions ranking, or official tourism information)",
             },
             {
               label: "Sources referenced",
@@ -345,38 +362,62 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
           ]}
         />
 
-        <section aria-labelledby="neighborhood-overview-heading">
+        <section aria-labelledby="visual-overview-heading">
           <SectionHeading
-            description={`Snapshot for neighborhood research in ${city.name}. Each card connects to the structured profile, country hub, and verified context layers behind the indicators. This page does not name or rank neighborhoods.`}
-            title={`${city.name} neighborhood planning overview`}
+            description={`Snapshot for orienting visually around ${city.name}. Cards link to the structured profile, country hub, and verified context layers behind the indicators. Imagery is orientation, not evidence.`}
+            title={`${city.name} visual overview`}
           />
-          <h2 className="sr-only" id="neighborhood-overview-heading">
-            {city.name} neighborhood planning overview
+          <h2 className="sr-only" id="visual-overview-heading">
+            {city.name} visual overview
           </h2>
           <div className="mt-6">
-            <NeighborhoodOverviewCards cards={overviewCards} />
+            <VisualGuideOverviewCards cards={overviewCards} />
           </div>
         </section>
 
-        <section aria-labelledby="neighborhood-checklist-heading">
+        {secondaryImages.length > 0 ? (
+          <section aria-labelledby="visual-secondary-heading">
+            <SectionHeading
+              description={`Up to three additional verified images from the existing media catalog, each with source and license attribution. Use these as orientation only — they capture single moments and are not evidence of current conditions.`}
+              title="More verified imagery"
+            />
+            <h2 className="sr-only" id="visual-secondary-heading">
+              More verified imagery of {city.name}
+            </h2>
+            <VisualGuideMediaSection images={secondaryImages} />
+          </section>
+        ) : null}
+
+        <section aria-labelledby="visual-reading-heading">
           <SectionHeading
-            description="Practical, neutral checklist organised by research category. Items reference structured platform sections and official sources — they do not name neighborhoods, publish rent or crime data, school rankings, or legal / rental / immigration advice."
-            title="Neighborhood research checklist"
+            description="How to read a city visually using the platform. Each prompt connects imagery to structured indicators and official sources — imagery is orientation, not evidence."
+            title={`How to read ${city.name} visually`}
           />
-          <h2 className="sr-only" id="neighborhood-checklist-heading">
-            Neighborhood research checklist
+          <h2 className="sr-only" id="visual-reading-heading">
+            How to read {city.name} visually
           </h2>
-          <div className="mt-6">
-            <NeighborhoodPlanningChecklist items={checklist} />
-          </div>
+          <ul className="mt-6 grid gap-4 md:grid-cols-2">
+            {sections.map((section) => (
+              <li key={section.label}>
+                <Card as="article" className="h-full p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                    {section.label}
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-text-primary">
+                    {section.description}
+                  </p>
+                </Card>
+              </li>
+            ))}
+          </ul>
         </section>
 
-        <section aria-labelledby="neighborhood-context-heading">
+        <section aria-labelledby="visual-context-heading">
           <SectionHeading
-            description="Which platform-side context layers are available for the country and city behind neighborhood research. Where verified data is not on file, the platform shows a transparent fallback rather than fabricated information."
+            description="Which platform-side context layers are available for the country and city behind the imagery. Where verified data is not on file, the platform shows a transparent fallback rather than fabricated information."
             title="Context-layer availability"
           />
-          <h2 className="sr-only" id="neighborhood-context-heading">
+          <h2 className="sr-only" id="visual-context-heading">
             Context-layer availability for {city.name}
           </h2>
           <ul className="mt-6 grid gap-4 md:grid-cols-3">
@@ -405,8 +446,8 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
                 </p>
                 <p className="mt-2 text-sm leading-6 text-text-primary">
                   {emergencyVerified
-                    ? `Verified country-level emergency contact context is on file for ${country?.name ?? "this country"}. Always confirm current numbers with the official local emergency service. This page does not publish crime rates or area safety rankings.`
-                    : `No verified country-level emergency contact context is on file yet. Confirm current emergency numbers with the official local service. This page does not publish crime rates or area safety rankings.`}
+                    ? `Verified country-level emergency contact context is on file for ${country?.name ?? "this country"}. Always confirm current numbers with the official local emergency service.`
+                    : `No verified country-level emergency contact context is on file yet. Confirm current emergency numbers with the official local service.`}
                 </p>
                 {country ? (
                   <Link
@@ -425,8 +466,8 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
                 </p>
                 <p className="mt-2 text-sm leading-6 text-text-primary">
                   {healthcareVerified
-                    ? `Verified country-level healthcare access context is on file for ${country?.name ?? "this country"}. Confirm registration, insurance, and access through official local sources. This page does not publish school or hospital rankings.`
-                    : `No verified country-level healthcare access context is on file yet. Confirm registration, insurance, and access through official local sources. This page does not publish school or hospital rankings.`}
+                    ? `Verified country-level healthcare access context is on file for ${country?.name ?? "this country"}. Confirm registration, insurance, and access through official local sources.`
+                    : `No verified country-level healthcare access context is on file yet. Confirm registration, insurance, and access through official local sources.`}
                 </p>
                 {country ? (
                   <Link
@@ -441,24 +482,24 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
           </ul>
         </section>
 
-        <section aria-labelledby="neighborhood-related-heading">
+        <section aria-labelledby="visual-related-heading">
           <SectionHeading
-            description="Open the related platform layers behind neighborhood research. Verify housing, safety, and local information directly with official and local sources."
+            description="Open the related platform layers behind the visual orientation. Use city, country, arrival, neighborhood, and moving-to planning pages alongside the imagery."
             title="Related context and tools"
           />
-          <h2 className="sr-only" id="neighborhood-related-heading">
-            Related context and tools for {city.name} neighborhood planning
+          <h2 className="sr-only" id="visual-related-heading">
+            Related context and tools for the {city.name} visual guide
           </h2>
-          <NeighborhoodRelatedLinks links={relatedLinks} />
+          <VisualGuideRelatedLinks links={relatedLinks} />
         </section>
 
         {relatedComparisons.length > 0 ? (
-          <section aria-labelledby="neighborhood-comparisons-heading">
+          <section aria-labelledby="visual-comparisons-heading">
             <SectionHeading
-              description={`City-vs-city comparisons that include ${city.name}. Use these to weigh neighborhood research against other cities you are considering.`}
+              description={`City-vs-city comparisons that include ${city.name}. Use these alongside the visual orientation to weigh other cities you are considering.`}
               title="Related comparisons"
             />
-            <h2 className="sr-only" id="neighborhood-comparisons-heading">
+            <h2 className="sr-only" id="visual-comparisons-heading">
               Related comparisons for {city.name}
             </h2>
             <ul className="mt-6 grid gap-4 md:grid-cols-2">
@@ -486,27 +527,29 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
           </section>
         ) : null}
 
-        <section aria-labelledby="neighborhood-disclaimer-heading">
+        <section aria-labelledby="visual-disclaimer-heading">
           <SectionHeading
-            description="What this page is and is not. Read this before treating any neighborhood-related decision as final."
+            description="What this page is and is not. Read this before treating any image as evidence."
             title="Scope and limitations"
           />
-          <h2 className="sr-only" id="neighborhood-disclaimer-heading">
+          <h2 className="sr-only" id="visual-disclaimer-heading">
             Scope and limitations
           </h2>
           <div className="mt-6 rounded-2xl border border-neutral-border bg-surface-soft p-6">
             <p className="text-sm leading-7 text-text-primary">
-              This page is a neighborhood <strong>research checklist</strong>{" "}
-              for {city.name}
-              {country ? `, ${country.name}` : ""}. It does not name
-              neighborhoods, publish rent or sale prices, crime rates, school
-              rankings, hospital proximities, walkability scores, transit
-              operators, or area &ldquo;best&rdquo; / &ldquo;safest&rdquo; /
-              &ldquo;cheapest&rdquo; claims. Confirm
-              housing, lease, safety, healthcare, school, transport, and visa
-              details directly with the landlord, agent, official local
-              authority, or qualified professional. This is not real-estate,
-              rental, legal, immigration, financial, or medical advice.
+              This page is a <strong>visual orientation guide</strong> for
+              {" "}
+              {city.name}
+              {country ? `, ${country.name}` : ""}. Imagery comes from the
+              existing verified media catalog with source, author, and license
+              attribution. It is not a tourism guide, not an attractions
+              ranking, not an official tourism page, and not evidence of
+              current local conditions. The page does not publish neighborhood
+              names, district boundaries, rent or sale prices, crime rates,
+              school rankings, hospital proximities, transit operators,
+              commute times, or any &ldquo;best&rdquo; / &ldquo;must-see&rdquo;
+              / &ldquo;safest&rdquo; / &ldquo;cheapest&rdquo; claims. For
+              time-sensitive details, confirm with the official local source.
             </p>
           </div>
         </section>

@@ -44,6 +44,7 @@ import {
   hasArrivalPage,
   hasMovingToCityPage,
   hasNeighborhoodPlanningPage,
+  hasVisualCityGuidePage,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -60,6 +61,7 @@ import {
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
+  visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import {
   airportSchema,
@@ -382,6 +384,13 @@ export default async function CityPage({ params }: PageProps) {
                 description={`Structured relocation research checklist for ${city.name} — links into country context, arrival planning, neighborhood research, cost tools, healthcare, public safety, and transport. Not immigration, visa, tax, legal, financial, medical, or property advice.`}
                 href={movingToCityRoute(city.slug)}
                 title={`Moving to ${city.name} planning guide`}
+              />
+            ) : null}
+            {hasVisualCityGuidePage(city.slug) ? (
+              <LinkCard
+                description={`Source-attributed visual context for ${city.name} using verified Wikimedia imagery from the existing media catalog, alongside structured city intelligence and planning links. Not a tourism guide or attractions ranking.`}
+                href={visualCityGuideRoute(city.slug)}
+                title={`Visual guide to ${city.name}`}
               />
             ) : null}
             <LinkCard

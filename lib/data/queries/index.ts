@@ -170,6 +170,16 @@ export {
 
 export { getMovingFocusLabel } from "@/lib/data/moving";
 
+export {
+  getAllVisualCityGuidePages,
+  getVisualCityGuidePageByCitySlug,
+  getVisualCityGuidePagesForCountry,
+  getVisualGuideSections,
+  hasVisualCityGuidePage,
+} from "@/lib/data/queries/visual-guides";
+
+export { getVisualGuideFocusLabel } from "@/lib/data/visual-guides";
+
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
 export {

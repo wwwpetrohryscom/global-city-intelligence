@@ -1159,3 +1159,211 @@ No broad city-by-city footer additions in this task.
 - `npm run lint` — clean
 - `npm run build` — succeeded, 2615/2615 static pages
 - 0 client components, 0 runtime fetch, 0 new dependencies
+
+## 2026-05-25 batch: visual city guide cluster — first wave
+
+This batch adds a new visual SEO cluster: **`/cities/[city]/visual-guide`**.
+100 curated pages combine source-attributed verified Wikimedia
+imagery from the existing media catalog with structured city
+intelligence, arrival / neighborhood / moving-to planning links,
+comparisons, and budgeting tools. The pages are **not** a tourist
+attraction guide, travel blog, photo dump, official tourism page,
+ranking page, or page with invented visual facts.
+
+### Geographic scope (strict)
+
+EU, UK / Ireland, US, Canada, Australia, New Zealand, and
+Switzerland only. Cities in India, South Africa, Malaysia, the
+Middle East, Africa, Latin America, broader Asia, and global-
+diversity lists are out of scope for this batch.
+
+### Files created
+
+- `types/visual-guides.ts` — `VisualGuideFocus`,
+  `VisualGuideSectionCategory`, `VisualGuideSection`, and
+  `VisualCityGuidePage` types
+- `lib/data/visual-guides.ts` — 100 curated records (seeded with a
+  shared summary template) + a 5-item shared "How to read this city
+  visually" section list
+- `lib/data/queries/visual-guides.ts` — `getAllVisualCityGuidePages`,
+  `getVisualCityGuidePageByCitySlug`,
+  `getVisualCityGuidePagesForCountry`, `hasVisualCityGuidePage`,
+  `getVisualGuideSections`
+- `components/visual-guides/VisualGuideOverviewCards.tsx`
+- `components/visual-guides/VisualGuideMediaSection.tsx`
+- `components/visual-guides/VisualGuideRelatedLinks.tsx`
+- `app/(entities)/cities/[city]/visual-guide/page.tsx`
+
+### Files updated
+
+- `types/index.ts` — re-exports new types
+- `lib/data/queries/index.ts` — re-exports new query helpers and
+  `getVisualGuideFocusLabel`
+- `lib/seo/routes.ts` — adds `visualCityGuideRoute(citySlug)` and
+  includes the new pages in `getAllIndexableRoutes()`
+- `lib/seo/breadcrumbs.ts` — adds `visualCityGuideBreadcrumbs`
+- `lib/seo/metadata.ts` — adds `generateVisualCityGuideMetadata`
+- `app/sitemap.ts` — emits all 100 new pages at `priority: 0.72`,
+  `changeFrequency: "monthly"`
+- `app/(entities)/cities/[city]/page.tsx` — new `LinkCard` reverse
+  link gated by `hasVisualCityGuidePage(city.slug)`
+- `app/(arrival)/arrival/[city]/page.tsx` — new related-link entry
+  to the visual guide when present
+- `app/(entities)/cities/[city]/neighborhoods/page.tsx` — new
+  related-link entry to the visual guide when present
+- `app/(entities)/cities/[city]/moving-to/page.tsx` — new
+  related-link entry to the visual guide when present
+
+### Cities included (100)
+
+A 100-city selection that fully covers the 60 baseline neighborhood
+and moving-to cities (so the visual guide reverse-links into both
+clusters for every page in those clusters) plus 40 additional major
+metros from the allowed regions:
+
+- **UK / Ireland (14)**: London, Manchester, Birmingham, Bristol,
+  Glasgow, Edinburgh, Oxford, Cambridge, Liverpool, Dublin, Cardiff,
+  Belfast, Leeds, Brighton.
+- **France (8)**: Paris, Lyon, Marseille, Toulouse, Bordeaux, Nice,
+  Strasbourg, Rennes.
+- **Germany (9)**: Berlin, Hamburg, Munich, Frankfurt, Cologne,
+  Düsseldorf, Stuttgart, Leipzig, Dresden.
+- **Netherlands / Belgium / Luxembourg (8)**: Amsterdam, Rotterdam,
+  The Hague, Utrecht, Brussels, Antwerp, Ghent, Luxembourg City.
+- **Spain / Portugal / Italy (12)**: Madrid, Barcelona, Valencia,
+  Seville, Málaga, Lisbon, Porto, Rome, Milan, Florence, Bologna,
+  Turin.
+- **Austria / Switzerland / Nordics (7)**: Vienna, Zürich,
+  Stockholm, Gothenburg, Copenhagen, Aarhus, Helsinki.
+- **Central / Eastern Europe (5)**: Prague, Warsaw, Kraków,
+  Budapest, Athens.
+- **United States (20)**: New York, Los Angeles, Chicago, Boston,
+  Washington DC, San Francisco, Seattle, Austin, Denver, Miami,
+  Nashville, Philadelphia, Atlanta, Phoenix, San Diego, Portland,
+  Dallas, Houston, Pittsburgh, Salt Lake City.
+- **Canada (8)**: Toronto, Vancouver, Montréal, Ottawa, Calgary,
+  Edmonton, Québec City, Halifax.
+- **Australia / New Zealand (9)**: Sydney, Melbourne, Brisbane,
+  Perth, Adelaide, Canberra, Auckland, Wellington, Christchurch.
+
+### Cities skipped
+
+- **Lille** (recommended list) — slug not present in `lib/data/cities.ts`.
+  Replaced with **Rennes** (existing slug with a verified hero
+  image and an existing arrival page).
+- **Montpellier**, **aix-en-provence**, **reims**, and other French
+  candidates considered as the Lille replacement — Wikidata P18 is
+  a montage / unsuitable, so they would render the fallback block.
+  Rennes was chosen instead because it has a verified hero.
+
+### Wikimedia / verified media usage
+
+- Hero imagery rendered via the existing `PlaceHeroImage` component
+  → `getCityHeroImage(slug)` → existing verified media catalog
+- Optional secondary images rendered via the new
+  `VisualGuideMediaSection` → `getPlaceSecondaryImages("city", slug)`
+  → existing verified media catalog. The component caps at 3 images,
+  lazy-loads every image (`loading="lazy"`, `decoding="async"`),
+  emits explicit `width` / `height`, and renders the existing
+  `ImageAttribution` component for each.
+- **No new images added.** No random URLs, no AI-generated images,
+  no unverified attribution, no fallback used as OG.
+
+### Fallback-image city handling
+
+- **99 / 100** cities have a verified hero record → `og:image` set
+  via `ogImageFromPlaceImage(getCityHeroImage(city.slug))`
+- **1 / 100** (Liverpool) renders the fallback `ImageFallback` block;
+  `ogImageFromPlaceImage` returns `undefined`, so `createMetadata`
+  omits `openGraph.images` and `twitter.images` entirely
+- No `ImageObject` schema emitted for the fallback case
+- The visual guide page still renders fully for Liverpool — the
+  overview card surfaces "Fallback (no verified hero)" rather than
+  an image count
+
+### Data / content safety
+
+- **0 invented** image facts, landmark names, district names,
+  tourist attraction claims, official tourism claims, neighborhood
+  names, safety claims, crime rates, transport times, rent or sale
+  prices, salary expectations, exact cost estimates, school
+  rankings, hospital proximity claims, transit operators, or any
+  "best" / "must-see" / "most beautiful" / "safest" / "cheapest"
+  claims
+- All 100 summaries follow a single neutral template
+- 5-item shared "How to read" section list reframes imagery as
+  orientation, not evidence
+- Scope-and-limitations disclaimer block on every page reads in
+  part: "Imagery comes from the existing verified media catalog
+  with source, author, and license attribution. It is not a tourism
+  guide, not an attractions ranking, not an official tourism page,
+  and not evidence of current local conditions."
+
+### Route / sitemap / metadata
+
+- New route helper `visualCityGuideRoute(citySlug)` →
+  `/cities/${citySlug}/visual-guide`
+- `getAllIndexableRoutes()` includes the 100 new pages
+- Sitemap auto-emits via `getAllVisualCityGuidePages()`:
+  `priority: 0.72`, `changeFrequency: monthly`, `lastModified` per
+  record
+- `generateVisualCityGuideMetadata` produces unique `title`
+  (`Visual Guide to {City}`), unique `description`, canonical, OG
+  title/description/url, `lastModified` per page
+- OG image populated from verified hero only
+
+### Internal linking
+
+Each visual-guide page links to: city profile, country hub,
+arrival page (when present), neighborhood page (when present),
+moving-to page (when present), cost-of-living calculator,
+travel-budget calculator, relocation checklist, `/cities`,
+`/countries`, `/compare`, `/arrival` directory, `/moving-to`
+directory, methodology, data sources, up to 4 related comparisons.
+
+### Reverse-link impact
+
+Four reverse-link surfaces, each gated by `hasVisualCityGuidePage(city.slug)`:
+
+1. **City profile** — new `LinkCard` next to existing arrival /
+   neighborhood / moving-to cards
+2. **Arrival page** — new related-link entry alongside existing
+   neighborhood and moving-to entries
+3. **Neighborhood page** — new related-link entry alongside
+   existing moving-to entry
+4. **Moving-to page** — new related-link entry alongside existing
+   neighborhood / arrival entries
+
+All four gates use Map-backed set membership: exactly-once render,
+no duplicate links possible, cards correctly skip for cities outside
+the 100-city set.
+
+### Structured data
+
+Only `WebPage` and `BreadcrumbList` JSON-LD emitted per visual-
+guide page. No `ImageObject`, `TouristAttraction`, `TravelAction`,
+`Place`, `Review`, `Rating`, `Offer`, `FAQPage`, or fake `Dataset`
+schemas added.
+
+### Accessibility / performance
+
+- One `<h1>` per page (`Visual Guide to {City}`), `aria-labelledby`
+  on every section with visually-hidden `<h2>`
+- Imagery carries descriptive alt text + `ImageAttribution`
+- All thumbnails lazy-loaded with explicit dimensions
+- 0 client components, 0 `useEffect` / `useState`, 0 runtime fetch,
+  0 new dependencies, no carousels, no galleries, no maps
+- All 100 pages SSG; route bundle 230 B / 106 kB First Load JS
+
+### Page-count delta
+
+- visual-guide pages: 0 → **100**
+- static page count: 2,615 → **2,715** (+100). Verified by
+  `next build`: `Generating static pages (2715/2715)`
+
+### Validation
+
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2715/2715 static pages

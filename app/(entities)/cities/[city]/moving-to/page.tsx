@@ -37,6 +37,7 @@ import {
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
+  hasVisualCityGuidePage,
 } from "@/lib/data/queries";
 import { movingToCityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
@@ -51,6 +52,7 @@ import {
   movingToCityRoute,
   neighborhoodPlanningRoute,
   staticRoutes,
+  visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
 
@@ -109,6 +111,7 @@ export default async function MovingToCityPage({ params }: PageProps) {
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
   const cityHasArrival = hasArrivalPage(city.slug);
   const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
+  const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
 
   const title = `Moving to ${city.name}: Planning Guide`;
   const description = `Plan relocation research for ${city.name}${country ? `, ${country.name}` : ""} with city context, country context, arrival planning, neighborhood research, cost tools, healthcare access, public-safety context, transport notes, and source transparency. Not immigration, visa, tax, legal, financial, medical, or property advice.`;
@@ -179,6 +182,16 @@ export default async function MovingToCityPage({ params }: PageProps) {
             href: neighborhoodPlanningRoute(city.slug),
             description:
               "Structured neighborhood research checklist — pairs with relocation planning.",
+          },
+        ]
+      : []),
+    ...(cityHasVisualGuide
+      ? [
+          {
+            label: `Visual guide to ${city.name}`,
+            href: visualCityGuideRoute(city.slug),
+            description:
+              "Source-attributed verified imagery alongside structured city intelligence.",
           },
         ]
       : []),

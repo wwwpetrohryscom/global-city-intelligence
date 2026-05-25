@@ -7,6 +7,7 @@ import {
   getAllComparisons,
   getAllMovingToCityPages,
   getAllNeighborhoodPlanningPages,
+  getAllVisualCityGuidePages,
   getCities,
   getCountries,
   getModules,
@@ -25,6 +26,7 @@ import {
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
+  visualCityGuideRoute,
 } from "@/lib/seo/routes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -193,6 +195,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.74,
   }));
 
+  const visualCityGuideItems = getAllVisualCityGuidePages().map((page) => ({
+    url: absoluteUrl(visualCityGuideRoute(page.citySlug)),
+    lastModified: new Date(page.updatedDate),
+    changeFrequency: "monthly" as const,
+    priority: 0.72,
+  }));
+
   return [
     ...staticItems,
     ...cityItems,
@@ -205,5 +214,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...arrivalItems,
     ...neighborhoodPlanningItems,
     ...movingToCityItems,
+    ...visualCityGuideItems,
   ];
 }
