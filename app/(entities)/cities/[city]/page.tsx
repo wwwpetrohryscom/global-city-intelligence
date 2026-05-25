@@ -42,6 +42,7 @@ import {
   getHospitalRegistryProfile,
   getVerifiedHospitalsForCity,
   hasArrivalPage,
+  hasNeighborhoodPlanningPage,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -54,6 +55,7 @@ import {
   getCityIntentUrl,
   getCollectionUrl,
   moduleRoute,
+  neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
 } from "@/lib/seo/routes";
@@ -364,6 +366,13 @@ export default async function CityPage({ params }: PageProps) {
                 description={`Practical arrival planning context for ${city.name} — links into transport, public-safety, healthcare, budgeting tools, and methodology. Not an official airport or travel instruction service.`}
                 href={arrivalRoute(city.slug)}
                 title={`Arrival planning guide for ${city.name}`}
+              />
+            ) : null}
+            {hasNeighborhoodPlanningPage(city.slug) ? (
+              <LinkCard
+                description={`Structured neighborhood research checklist for ${city.name} — links into transport, public-safety, healthcare, arrival planning, and budgeting tools. Not a real-estate, rental, or safety-ranking service.`}
+                href={neighborhoodPlanningRoute(city.slug)}
+                title={`Neighborhood planning guide for ${city.name}`}
               />
             ) : null}
             <LinkCard

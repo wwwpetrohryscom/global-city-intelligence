@@ -150,6 +150,16 @@ export {
 
 export { getArrivalFocusLabel } from "@/lib/data/arrival";
 
+export {
+  getAllNeighborhoodPlanningPages,
+  getNeighborhoodPlanningChecklist,
+  getNeighborhoodPlanningPageByCitySlug,
+  getNeighborhoodPlanningPagesForCountry,
+  hasNeighborhoodPlanningPage,
+} from "@/lib/data/queries/neighborhoods";
+
+export { getNeighborhoodPlanningFocusLabel } from "@/lib/data/neighborhoods";
+
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
 export {

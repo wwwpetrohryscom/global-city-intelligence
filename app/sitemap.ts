@@ -5,6 +5,7 @@ import {
   getAllCityIntentPages,
   getAllCollections,
   getAllComparisons,
+  getAllNeighborhoodPlanningPages,
   getCities,
   getCountries,
   getModules,
@@ -19,6 +20,7 @@ import {
   getCityIntentUrl,
   getCollectionUrl,
   moduleRoute,
+  neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
 } from "@/lib/seo/routes";
@@ -167,6 +169,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.74,
   }));
 
+  const neighborhoodPlanningItems = getAllNeighborhoodPlanningPages().map(
+    (page) => ({
+      url: absoluteUrl(neighborhoodPlanningRoute(page.citySlug)),
+      lastModified: new Date(page.updatedDate),
+      changeFrequency: "monthly" as const,
+      priority: 0.73,
+    }),
+  );
+
   return [
     ...staticItems,
     ...cityItems,
@@ -177,5 +188,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...collectionItems,
     ...cityIntentItems,
     ...arrivalItems,
+    ...neighborhoodPlanningItems,
   ];
 }

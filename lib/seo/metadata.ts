@@ -5,6 +5,7 @@ import {
   arrivalRoute,
   getCityIntentUrl,
   getCollectionUrl,
+  neighborhoodPlanningRoute,
 } from "@/lib/seo/routes";
 import type {
   ArrivalPage,
@@ -13,6 +14,7 @@ import type {
   CityIntent,
   CityIntentPage,
   Country,
+  NeighborhoodPlanningPage,
   PlaceImage,
 } from "@/types";
 
@@ -142,6 +144,31 @@ export function generateArrivalMetadata({
     description,
     path: arrivalRoute(arrivalPage.citySlug),
     lastModified: arrivalPage.updatedDate,
+    type: "article",
+    image,
+  });
+}
+
+export function generateNeighborhoodPlanningMetadata({
+  planningPage,
+  city,
+  country,
+  image,
+}: {
+  planningPage: NeighborhoodPlanningPage;
+  city: City;
+  country: Country | undefined;
+  image?: MetadataOgImage;
+}): Metadata {
+  const countryFragment = country ? `, ${country.name}` : "";
+  const title = `Neighborhood Planning Guide for ${city.name}`;
+  const description = `Plan neighborhood research in ${city.name}${countryFragment} with transport context, public-safety context, healthcare access, arrival planning, budgeting tools, methodology notes, and source transparency. Not a real-estate, rental, or safety-ranking service.`;
+
+  return createMetadata({
+    title,
+    description,
+    path: neighborhoodPlanningRoute(planningPage.citySlug),
+    lastModified: planningPage.updatedDate,
     type: "article",
     image,
   });

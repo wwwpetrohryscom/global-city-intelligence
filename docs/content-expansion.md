@@ -730,3 +730,163 @@ City reverse-link cards (`hasArrivalPage(city.slug)`) automatically
 appear on the 30 newly covered city profile pages with no manual
 wiring. No client components, no runtime fetches, no external API
 calls, and no new dependencies were introduced.
+
+## 2026-05-25 batch: neighborhood planning cluster — first wave
+
+This batch adds a brand-new SEO cluster: **city neighborhood planning
+pages** under `/cities/[city]/neighborhoods`. The pages are a
+structured **research checklist** — not a real-estate listing service,
+not a rental-price guide, not a neighborhood ranking page, not a
+crime / safety ranking page, not a school ranking page, and not
+legal, rental, immigration, financial, or medical advice. They do
+not name neighborhoods, publish prices, crime rates, school
+rankings, hospital proximities, transit operators, or walkability
+scores.
+
+### Geographic scope (strict)
+
+First batch is restricted to the EU, UK / Ireland, United States,
+Canada, Australia, and New Zealand. Cities in India, South Africa,
+Malaysia, the Middle East, Africa, Latin America, broader Asia, and
+global-diversity lists are out of scope for this batch — even where
+those cities exist in the registry.
+
+### Files created
+
+- `types/neighborhoods.ts` — `NeighborhoodPlanningFocus`,
+  `NeighborhoodChecklistCategory`, `NeighborhoodChecklistItem`, and
+  `NeighborhoodPlanningPage` types
+- `lib/data/neighborhoods.ts` — 60 curated `NeighborhoodPlanningPage`
+  records and the shared 21-item research checklist
+- `lib/data/queries/neighborhoods.ts` — `getAllNeighborhoodPlanningPages`,
+  `getNeighborhoodPlanningPageByCitySlug`,
+  `getNeighborhoodPlanningPagesForCountry`, `hasNeighborhoodPlanningPage`,
+  `getNeighborhoodPlanningChecklist`
+- `components/neighborhoods/NeighborhoodOverviewCards.tsx`
+- `components/neighborhoods/NeighborhoodPlanningChecklist.tsx`
+- `components/neighborhoods/NeighborhoodRelatedLinks.tsx`
+- `app/(entities)/cities/[city]/neighborhoods/page.tsx`
+
+### Files updated
+
+- `types/index.ts` — re-exports the new types
+- `lib/data/queries/index.ts` — re-exports the new query helpers and
+  the `getNeighborhoodPlanningFocusLabel` helper
+- `lib/seo/routes.ts` — adds `neighborhoodPlanningRoute(citySlug)` and
+  includes the new pages in `getAllIndexableRoutes()`
+- `lib/seo/breadcrumbs.ts` — adds `neighborhoodPlanningBreadcrumbs`
+- `lib/seo/metadata.ts` — adds `generateNeighborhoodPlanningMetadata`
+- `app/sitemap.ts` — emits all 60 new pages at `priority: 0.73`,
+  `changeFrequency: "monthly"`
+- `app/(entities)/cities/[city]/page.tsx` — adds a reverse-link
+  `LinkCard` gated by `hasNeighborhoodPlanningPage(city.slug)`
+- `docs/content-expansion.md` — this section
+
+### Cities included (60)
+
+- **United Kingdom / Ireland (10)**: London, Manchester, Birmingham,
+  Bristol, Glasgow, Edinburgh, Oxford, Cambridge, Liverpool, Dublin.
+- **France (5)**: Paris, Lyon, Marseille, Toulouse, Bordeaux.
+- **Germany (8)**: Berlin, Hamburg, Munich, Frankfurt, Cologne,
+  Düsseldorf, Stuttgart, Leipzig.
+- **Netherlands / Belgium / Luxembourg (5)**: Amsterdam, Rotterdam,
+  The Hague, Brussels, Luxembourg City.
+- **Spain / Portugal / Italy (8)**: Madrid, Barcelona, Valencia,
+  Lisbon, Porto, Rome, Milan, Florence.
+- **Austria / Switzerland / Nordics (5)**: Vienna, Zürich, Stockholm,
+  Copenhagen, Helsinki.
+- **United States (12)**: New York, Los Angeles, Chicago, Boston,
+  Washington DC, San Francisco, Seattle, Austin, Denver, Miami,
+  Nashville, Philadelphia.
+- **Canada (4)**: Toronto, Vancouver, Montréal, Ottawa.
+- **Australia (3)**: Sydney, Melbourne, Brisbane.
+
+### Trimmed from the candidate list
+
+Trimmed to stay inside the 50-65 cap and to keep batch-one
+EU / US / Commonwealth focused:
+
+- UK / Ireland: Cardiff, Belfast, Cork, Galway.
+- France: Nice, Montpellier, Rennes.
+- Germany: Hanover, Nuremberg.
+- Netherlands / Belgium: Utrecht, Eindhoven, Antwerp, Ghent, Bruges.
+- Spain / Portugal / Italy: Seville, Bologna, Turin.
+- US: Charlotte, Minneapolis, Tampa, Orlando, Atlanta, Phoenix,
+  San Diego, Portland.
+- Canada: Calgary, Edmonton, Quebec City, Halifax, Victoria.
+- Australia / NZ: Perth, Adelaide, Auckland, Wellington,
+  Christchurch, Queenstown.
+
+Candidates remain available for a future wave.
+
+### Skipped candidates
+
+None of the candidate cities were missing from the registry. The
+San Jose (California) slug-disambiguation issue does not apply here
+because the candidate list excludes US San Jose.
+
+### Planning focus assignments
+
+`planningFocus` uses a typed `NeighborhoodPlanningFocus` enum
+(`relocation_research`, `family_research`, `remote_work_research`,
+`transport_access`, `arrival_shortlist`, `general_research`). The
+distribution across the 60 pages: `general_research` 28,
+`relocation_research` 22, `family_research` 5, `remote_work_research`
+5. Used as editorial framing only — no rankings or claims attached.
+
+### Safety rules applied
+
+- No invented neighborhood names, district boundaries, rent or sale
+  prices, crime rates, school rankings, hospital proximities,
+  walkability scores, transit operators, commute times.
+- No "best" / "safest" / "cheapest" / "dangerous" / "investment hot
+  spot" wording — only as negative disclaimers on the page itself.
+- No legal, rental, immigration, visa, financial, or medical advice.
+- All copy is unique per page (60 unique summaries) and points back
+  to existing city / country / transport / public-safety / healthcare
+  / arrival / tools / methodology / data-sources layers.
+
+### Structured data
+
+`/cities/[city]/neighborhoods` pages emit only `WebPage` and
+`BreadcrumbList` JSON-LD. No `HowTo`, `RealEstateListing`,
+`Place`/neighborhood schema with invented boundaries, `LocalBusiness`,
+`School`, `Review`, `Rating`, `Offer`, `FAQPage`, fake `Dataset`, or
+`ImageObject` schemas were added.
+
+### Metadata / OG
+
+`generateNeighborhoodPlanningMetadata` produces unique
+`title`, `description`, canonical, OG `title` / `description` /
+`url`, and `lastModified` for each new page. OG image uses the
+verified city hero only when `getCityHeroImage()` returns a verified
+record; otherwise OG image is omitted entirely (no fallback image
+emitted as OG). This matches the existing arrival-page contract.
+
+### Sitemap
+
+`app/sitemap.ts` automatically emits all 60 new pages via
+`getAllNeighborhoodPlanningPages()`. Each entry includes `url`,
+`lastModified`, `changeFrequency: "monthly"`, `priority: 0.73`.
+
+### City reverse links
+
+`hasNeighborhoodPlanningPage(city.slug)` (set-membership lookup,
+deterministic, server-safe) gates a new `LinkCard` on the city
+profile page. The 60 covered cities surface the card; the remaining
+238 cities do not — no extra cards on uncovered cities, no duplicate
+cards on covered cities.
+
+### Page-count delta
+
+- neighborhood planning pages: 0 → **60**
+- static page count: 2,494 → **2,554** (+60). Verified by
+  `next build`: `Generating static pages (2554/2554)`.
+
+### Performance / runtime
+
+- 0 client components, 0 `useEffect` / `useState`, 0 `fetch` / `axios`
+  in any new or modified file
+- 0 new dependencies; no map / chart / image / carousel libraries
+- All 60 pages SSG; route bundle: 223 B / 106 kB First Load JS
+- `validate:media`, `typecheck`, `lint`, `build` all clean

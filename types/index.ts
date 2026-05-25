@@ -49,6 +49,12 @@ export type {
   ArrivalPage,
 } from "./arrival";
 export type {
+  NeighborhoodChecklistCategory,
+  NeighborhoodChecklistItem,
+  NeighborhoodPlanningFocus,
+  NeighborhoodPlanningPage,
+} from "./neighborhoods";
+export type {
   DataProvenance,
   DatasetCoverage,
   MetricVerificationStatus,
