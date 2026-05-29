@@ -36,6 +36,7 @@ import {
   getSourcesByIds,
   hasMovingToCityPage,
   hasNeighborhoodPlanningPage,
+  hasSummerTravelPage,
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
@@ -54,6 +55,7 @@ import {
   movingToCityRoute,
   neighborhoodPlanningRoute,
   staticRoutes,
+  summerTravelRoute,
   visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
@@ -191,6 +193,16 @@ export default async function ArrivalCityPage({ params }: PageProps) {
             href: visualCityGuideRoute(city.slug),
             description:
               "Source-attributed verified imagery alongside structured city intelligence.",
+          },
+        ]
+      : []),
+    ...(hasSummerTravelPage(city.slug)
+      ? [
+          {
+            label: `Summer travel planning guide for ${city.name}`,
+            href: summerTravelRoute(city.slug),
+            description:
+              "Seasonal planning checklist — pairs with arrival research.",
           },
         ]
       : []),

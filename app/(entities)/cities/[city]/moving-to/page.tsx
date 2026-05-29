@@ -34,6 +34,7 @@ import {
   getSourcesByIds,
   hasArrivalPage,
   hasNeighborhoodPlanningPage,
+  hasSummerTravelPage,
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
@@ -52,6 +53,7 @@ import {
   movingToCityRoute,
   neighborhoodPlanningRoute,
   staticRoutes,
+  summerTravelRoute,
   visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
@@ -112,6 +114,7 @@ export default async function MovingToCityPage({ params }: PageProps) {
   const cityHasArrival = hasArrivalPage(city.slug);
   const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
   const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
+  const cityHasSummerTravel = hasSummerTravelPage(city.slug);
 
   const title = `Moving to ${city.name}: Planning Guide`;
   const description = `Plan relocation research for ${city.name}${country ? `, ${country.name}` : ""} with city context, country context, arrival planning, neighborhood research, cost tools, healthcare access, public-safety context, transport notes, and source transparency. Not immigration, visa, tax, legal, financial, medical, or property advice.`;
@@ -192,6 +195,16 @@ export default async function MovingToCityPage({ params }: PageProps) {
             href: visualCityGuideRoute(city.slug),
             description:
               "Source-attributed verified imagery alongside structured city intelligence.",
+          },
+        ]
+      : []),
+    ...(cityHasSummerTravel
+      ? [
+          {
+            label: `Summer travel planning guide for ${city.name}`,
+            href: summerTravelRoute(city.slug),
+            description:
+              "Seasonal planning checklist — pairs with relocation research.",
           },
         ]
       : []),

@@ -7,6 +7,7 @@ import {
   getCollectionUrl,
   movingToCityRoute,
   neighborhoodPlanningRoute,
+  summerTravelRoute,
   visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import type {
@@ -19,6 +20,7 @@ import type {
   MovingToCityPage,
   NeighborhoodPlanningPage,
   PlaceImage,
+  SummerTravelCityPage,
   VisualCityGuidePage,
 } from "@/types";
 
@@ -223,6 +225,31 @@ export function generateVisualCityGuideMetadata({
     description,
     path: visualCityGuideRoute(visualPage.citySlug),
     lastModified: visualPage.updatedDate,
+    type: "article",
+    image,
+  });
+}
+
+export function generateSummerTravelMetadata({
+  summerPage,
+  city,
+  country,
+  image,
+}: {
+  summerPage: SummerTravelCityPage;
+  city: City;
+  country: Country | undefined;
+  image?: MetadataOgImage;
+}): Metadata {
+  const countryFragment = country ? `, ${country.name}` : "";
+  const title = `Summer Travel Planning Guide for ${city.name}`;
+  const description = `Plan summer travel research for ${city.name}${countryFragment} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency. Not a weather forecast, events calendar, hotel-price guide, or tourism ranking.`;
+
+  return createMetadata({
+    title,
+    description,
+    path: summerTravelRoute(summerPage.citySlug),
+    lastModified: summerPage.updatedDate,
     type: "article",
     image,
   });

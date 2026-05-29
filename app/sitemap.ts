@@ -7,6 +7,7 @@ import {
   getAllComparisons,
   getAllMovingToCityPages,
   getAllNeighborhoodPlanningPages,
+  getAllSummerTravelPages,
   getAllVisualCityGuidePages,
   getCities,
   getCountries,
@@ -26,6 +27,7 @@ import {
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
+  summerTravelRoute,
   visualCityGuideRoute,
 } from "@/lib/seo/routes";
 
@@ -208,6 +210,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.72,
   }));
 
+  const summerTravelItems = getAllSummerTravelPages().map((page) => ({
+    url: absoluteUrl(summerTravelRoute(page.citySlug)),
+    lastModified: new Date(page.updatedDate),
+    changeFrequency: "monthly" as const,
+    priority: 0.76,
+  }));
+
   return [
     ...staticItems,
     ...cityItems,
@@ -221,5 +230,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...neighborhoodPlanningItems,
     ...movingToCityItems,
     ...visualCityGuideItems,
+    ...summerTravelItems,
   ];
 }

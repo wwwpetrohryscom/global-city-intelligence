@@ -1463,3 +1463,172 @@ No broad city-by-city footer additions in this task.
 - `npm run build` — succeeded, 2716/2716 static pages
 - 0 client components, 0 runtime fetch, 0 new dependencies, 0 images
   added on the directory itself
+
+## 2026-05-25 batch: summer city travel planning cluster — first wave
+
+A seasonal SEO cluster for the active 2026 summer travel cycle:
+**`/cities/[city]/summer-travel`**. 100 curated pages combine
+verified Wikimedia hero imagery (and where available, secondary
+images) with structured city intelligence, arrival / visual /
+neighborhood / moving-to planning links, comparisons, and budgeting
+tools. The pages are **not** a tourism attractions guide, "things to
+do" page, live events page, weather forecast, hotel/flight price
+page, itinerary generator, official tourism page, or a page with
+invented local facts.
+
+### Geographic scope (strict)
+
+EU, UK / Ireland, US, Canada, Australia, New Zealand, and
+Switzerland only. Same 100 cities as the visual-guide cluster — so
+the full 6-cluster reverse-link mesh (city ↔ arrival ↔ neighborhood
+↔ moving-to ↔ visual-guide ↔ summer-travel) is wired for every city
+that participates in the visual-guide cluster.
+
+Australia and New Zealand cities receive a `general_summer_planning`
+focus by default, with a code comment noting that Northern-Hemisphere
+summer = Southern-Hemisphere winter; the pages still serve travel-
+research intent for both Northern-Hemisphere arrivals and Southern-
+Hemisphere local visitors.
+
+### Files created
+
+- `types/summer-travel.ts` — `SummerTravelFocus`,
+  `SummerTravelChecklistCategory`, `SummerTravelChecklistItem`, and
+  `SummerTravelCityPage` types
+- `lib/data/summer-travel.ts` — 100 curated records via a
+  seed-template pattern + 18-item shared seasonal-planning checklist
+- `lib/data/queries/summer-travel.ts` — `getAllSummerTravelPages`,
+  `getSummerTravelPageByCitySlug`, `getSummerTravelPagesForCountry`,
+  `hasSummerTravelPage`, `getSummerTravelChecklist`
+- `components/summer-travel/SummerTravelOverviewCards.tsx`
+- `components/summer-travel/SummerTravelChecklist.tsx`
+- `components/summer-travel/SummerTravelRelatedLinks.tsx`
+- `app/(entities)/cities/[city]/summer-travel/page.tsx`
+
+### Files updated
+
+- `types/index.ts`, `lib/data/queries/index.ts` — re-exports
+- `lib/seo/routes.ts` — adds `summerTravelRoute(citySlug)` and
+  includes the new pages in `getAllIndexableRoutes()`
+- `lib/seo/breadcrumbs.ts` — adds `summerTravelBreadcrumbs`
+- `lib/seo/metadata.ts` — adds `generateSummerTravelMetadata`
+- `app/sitemap.ts` — emits 100 new pages at `priority: 0.76`,
+  `changeFrequency: "monthly"`
+- `app/(entities)/cities/[city]/page.tsx` — new `LinkCard` reverse
+  link gated by `hasSummerTravelPage(city.slug)`
+- `app/(arrival)/arrival/[city]/page.tsx`,
+  `app/(entities)/cities/[city]/visual-guide/page.tsx`,
+  `app/(entities)/cities/[city]/neighborhoods/page.tsx`,
+  `app/(entities)/cities/[city]/moving-to/page.tsx` — new
+  related-link entries gated by `hasSummerTravelPage(city.slug)`
+
+### Cities included (100)
+
+Same 100 cities as the visual-guide cluster: UK/IE 14, FR 8, DE 9,
+NL/BE/LU 8, ES/PT/IT 12, AT/CH/Nordics 7, CEE 5, US 20, CA 8, AU/NZ
+9. Full list in the visual-guide batch documentation above.
+
+### Cities skipped
+
+None — every selected slug exists in the registry. Liverpool is the
+one fallback-image city (same as the visual-guide cluster): hero
+falls back, OG image omitted entirely.
+
+### Wikimedia / verified media usage
+
+- Hero imagery via existing `PlaceHeroImage` → `getCityHeroImage(slug)`
+- No new images added; no random URLs, no AI-generated images, no
+  unverified attribution
+
+### Fallback-image city handling
+
+- **99 / 100** cities have a verified hero → `og:image` set with
+  absolute Wikimedia URL, `og:image:alt`, matching `twitter:image`
+- **1 / 100** (Liverpool) → fallback `ImageFallback` block on the
+  page; `ogImageFromPlaceImage` returns `undefined`, so
+  `createMetadata` omits `openGraph.images` and `twitter.images`
+  entirely. No `ImageObject` schema. Page remains fully indexable.
+
+### Data / content safety
+
+- **0 invented** weather forecasts, exact temperatures, heatwave
+  claims, event or festival dates, ticket prices, hotel or flight
+  prices, opening hours, transport schedules, airport routes,
+  attraction rankings, crime / safety claims, medical or visa advice,
+  immigration advice, or any "best" / "must-see" / "safest" /
+  "cheapest" claims
+- All 100 summaries built from a neutral template parameterised by
+  `cityName` + `countryName` → 100 unique summaries
+- 18-item shared checklist reframes summer travel as a research
+  checklist that defers time-sensitive details to official sources
+- Scope-and-limitations disclaimer block on every page reads in
+  part: "Verify weather, events, transport, health, and safety
+  details with official or trusted current sources before
+  departure. This is not medical, legal, visa, or immigration advice."
+
+### Route / sitemap / metadata
+
+- `summerTravelRoute(citySlug)` → `/cities/${citySlug}/summer-travel`
+- `getAllIndexableRoutes()` includes the 100 new pages
+- Sitemap auto-emits via `getAllSummerTravelPages()`: `priority: 0.76`,
+  `changeFrequency: monthly`, `lastModified` per record
+- `generateSummerTravelMetadata` produces unique `title`
+  (`Summer Travel Planning Guide for {City}`), `description`,
+  canonical, OG metadata, `lastModified` per page
+- OG image emitted only from verified hero via `ogImageFromPlaceImage`
+
+### Internal linking
+
+Each summer-travel page links to: city profile, country hub, arrival
+page (when present), visual guide (when present), neighborhood page
+(when present), moving-to page (when present), travel-budget calc,
+cost-of-living calc, relocation checklist, `/cities`, `/countries`,
+`/compare`, `/arrival` directory, `/moving-to` directory,
+`/visual-guides` directory, methodology, data sources, up to 4
+related comparisons.
+
+### Reverse-link impact
+
+Five reverse-link surfaces, each gated by `hasSummerTravelPage(city.slug)`:
+
+| Surface | Hook |
+|---|---|
+| City profile | new `LinkCard` next to existing planning-cluster cards |
+| Arrival page | new related-link entry |
+| Visual-guide page | new related-link entry |
+| Neighborhood page | new related-link entry |
+| Moving-to page | new related-link entry |
+
+All five gates use Map-backed set membership (Liverpool example: all
+five gates return true, so the full link mesh appears on every cluster
+page).
+
+### Structured data
+
+Only `WebPage` and `BreadcrumbList` JSON-LD emitted per summer-travel
+page. No `Event`, `TouristAttraction`, `TravelAction`,
+`WeatherForecast`, `Place`, `LocalBusiness`, `Review`, `Rating`,
+`Offer`, `FAQPage`, fake `Dataset`, or `ImageObject` schemas added.
+
+### Accessibility / performance
+
+- One `<h1>` per page (`Summer Travel Planning Guide for {City}`),
+  `aria-labelledby` on every section with visually-hidden `<h2>`
+- Hero imagery carries descriptive alt text + `ImageAttribution`
+- 0 client components, 0 `useEffect` / `useState`, 0 runtime fetch
+  (no weather APIs, no event APIs), 0 new dependencies, no carousels,
+  no maps, no booking widgets
+- All 100 pages SSG; route bundle 233 B / 106 kB First Load JS
+
+### Page-count delta
+
+- summer-travel pages: 0 → **100**
+- static page count: 2,716 → **2,816** (+100). Verified by
+  `next build`: `Generating static pages (2816/2816)`.
+
+### Validation
+
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2816/2816 static pages

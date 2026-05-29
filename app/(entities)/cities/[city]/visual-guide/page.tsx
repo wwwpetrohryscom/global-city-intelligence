@@ -40,6 +40,7 @@ import {
   hasArrivalPage,
   hasMovingToCityPage,
   hasNeighborhoodPlanningPage,
+  hasSummerTravelPage,
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
@@ -57,6 +58,7 @@ import {
   movingToCityRoute,
   neighborhoodPlanningRoute,
   staticRoutes,
+  summerTravelRoute,
   visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
@@ -121,6 +123,7 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
   const cityHasArrival = hasArrivalPage(city.slug);
   const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
+  const cityHasSummerTravel = hasSummerTravelPage(city.slug);
 
   const title = `Visual Guide to ${city.name}`;
   const description = `Explore source-attributed visual context for ${city.name}${country ? `, ${country.name}` : ""} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency.`;
@@ -201,6 +204,16 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
             href: movingToCityRoute(city.slug),
             description:
               "Relocation research checklist — pairs with visual orientation.",
+          },
+        ]
+      : []),
+    ...(cityHasSummerTravel
+      ? [
+          {
+            label: `Summer travel planning guide for ${city.name}`,
+            href: summerTravelRoute(city.slug),
+            description:
+              "Seasonal planning checklist — pairs with visual orientation.",
           },
         ]
       : []),

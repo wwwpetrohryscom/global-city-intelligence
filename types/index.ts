@@ -67,6 +67,12 @@ export type {
   VisualGuideSectionCategory,
 } from "./visual-guides";
 export type {
+  SummerTravelChecklistCategory,
+  SummerTravelChecklistItem,
+  SummerTravelCityPage,
+  SummerTravelFocus,
+} from "./summer-travel";
+export type {
   DataProvenance,
   DatasetCoverage,
   MetricVerificationStatus,

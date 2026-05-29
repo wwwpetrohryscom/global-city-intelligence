@@ -44,6 +44,7 @@ import {
   hasArrivalPage,
   hasMovingToCityPage,
   hasNeighborhoodPlanningPage,
+  hasSummerTravelPage,
   hasVisualCityGuidePage,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
@@ -61,6 +62,7 @@ import {
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
+  summerTravelRoute,
   visualCityGuideRoute,
 } from "@/lib/seo/routes";
 import {
@@ -391,6 +393,13 @@ export default async function CityPage({ params }: PageProps) {
                 description={`Source-attributed visual context for ${city.name} using verified Wikimedia imagery from the existing media catalog, alongside structured city intelligence and planning links. Not a tourism guide or attractions ranking.`}
                 href={visualCityGuideRoute(city.slug)}
                 title={`Visual guide to ${city.name}`}
+              />
+            ) : null}
+            {hasSummerTravelPage(city.slug) ? (
+              <LinkCard
+                description={`Summer 2026 travel planning checklist for ${city.name} — links into arrival planning, visual orientation, budget tools, transport, public safety, and healthcare context. Not a weather forecast, events calendar, hotel-price guide, or tourism ranking.`}
+                href={summerTravelRoute(city.slug)}
+                title={`Summer travel planning guide for ${city.name}`}
               />
             ) : null}
             <LinkCard

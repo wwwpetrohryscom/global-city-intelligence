@@ -4,45 +4,45 @@ import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
-import {
-  NeighborhoodOverviewCards,
-  type NeighborhoodOverviewCard,
-} from "@/components/neighborhoods/NeighborhoodOverviewCards";
-import { NeighborhoodPlanningChecklist } from "@/components/neighborhoods/NeighborhoodPlanningChecklist";
-import {
-  NeighborhoodRelatedLinks,
-  type NeighborhoodRelatedLink,
-} from "@/components/neighborhoods/NeighborhoodRelatedLinks";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
+import { SummerTravelChecklist } from "@/components/summer-travel/SummerTravelChecklist";
+import {
+  SummerTravelOverviewCards,
+  type SummerTravelOverviewCard,
+} from "@/components/summer-travel/SummerTravelOverviewCards";
+import {
+  SummerTravelRelatedLinks,
+  type SummerTravelRelatedLink,
+} from "@/components/summer-travel/SummerTravelRelatedLinks";
 import { Card } from "@/components/ui/Card";
 import { FactList } from "@/components/ui/fact-list";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { getCityHeroImage } from "@/lib/data/media/queries";
 import {
-  getAllNeighborhoodPlanningPages,
+  getAllSummerTravelPages,
   getCityBySlug,
   getComparisonsForCity,
   getCountryBySlug,
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
   getCountryTransportProfile,
-  getNeighborhoodPlanningChecklist,
-  getNeighborhoodPlanningFocusLabel,
-  getNeighborhoodPlanningPageByCitySlug,
   getSourcesByIds,
+  getSummerTravelChecklist,
+  getSummerTravelFocusLabel,
+  getSummerTravelPageByCitySlug,
   hasArrivalPage,
   hasMovingToCityPage,
-  hasSummerTravelPage,
+  hasNeighborhoodPlanningPage,
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
   hasVisualCityGuidePage,
 } from "@/lib/data/queries";
-import { neighborhoodPlanningBreadcrumbs } from "@/lib/seo/breadcrumbs";
+import { summerTravelBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
-  generateNeighborhoodPlanningMetadata,
+  generateSummerTravelMetadata,
   ogImageFromPlaceImage,
 } from "@/lib/seo/metadata";
 import {
@@ -65,45 +65,43 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getAllNeighborhoodPlanningPages().map((page) => ({
-    city: page.citySlug,
-  }));
+  return getAllSummerTravelPages().map((page) => ({ city: page.citySlug }));
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { city: citySlug } = await params;
-  const planningPage = getNeighborhoodPlanningPageByCitySlug(citySlug);
-  const city = planningPage ? getCityBySlug(planningPage.citySlug) : undefined;
+  const summerPage = getSummerTravelPageByCitySlug(citySlug);
+  const city = summerPage ? getCityBySlug(summerPage.citySlug) : undefined;
 
-  if (!planningPage || !city) {
+  if (!summerPage || !city) {
     return {};
   }
 
   const country = getCountryBySlug(city.countrySlug);
 
-  return generateNeighborhoodPlanningMetadata({
-    planningPage,
+  return generateSummerTravelMetadata({
+    summerPage,
     city,
     country,
     image: ogImageFromPlaceImage(getCityHeroImage(city.slug)),
   });
 }
 
-export default async function CityNeighborhoodsPage({ params }: PageProps) {
+export default async function SummerTravelPage({ params }: PageProps) {
   const { city: citySlug } = await params;
-  const planningPage = getNeighborhoodPlanningPageByCitySlug(citySlug);
-  const city = planningPage ? getCityBySlug(planningPage.citySlug) : undefined;
+  const summerPage = getSummerTravelPageByCitySlug(citySlug);
+  const city = summerPage ? getCityBySlug(summerPage.citySlug) : undefined;
 
-  if (!planningPage || !city) {
+  if (!summerPage || !city) {
     notFound();
   }
 
   const country = getCountryBySlug(city.countrySlug);
-  const breadcrumbs = neighborhoodPlanningBreadcrumbs(city.slug);
-  const sources = getSourcesByIds(planningPage.sourceIds);
-  const checklist = getNeighborhoodPlanningChecklist();
+  const breadcrumbs = summerTravelBreadcrumbs(city.slug);
+  const sources = getSourcesByIds(summerPage.sourceIds);
+  const checklist = getSummerTravelChecklist();
 
   const emergencyProfile = getCountryEmergencyProfile(city.countrySlug);
   const healthcareProfile = getCountryHealthcareProfile(city.countrySlug);
@@ -114,14 +112,14 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
 
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
   const cityHasArrival = hasArrivalPage(city.slug);
+  const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
   const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
-  const cityHasSummerTravel = hasSummerTravelPage(city.slug);
 
-  const title = `Neighborhood Planning Guide for ${city.name}`;
-  const description = `Plan neighborhood research in ${city.name}${country ? `, ${country.name}` : ""} with transport context, public-safety context, healthcare access, arrival planning, budgeting tools, methodology notes, and source transparency.`;
+  const title = `Summer Travel Planning Guide for ${city.name}`;
+  const description = `Plan summer travel research for ${city.name}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency.`;
 
-  const overviewCards: NeighborhoodOverviewCard[] = [
+  const overviewCards: SummerTravelOverviewCard[] = [
     {
       label: "City",
       value: city.name,
@@ -136,10 +134,10 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
         "Open the country hub for verified emergency, healthcare, and transport-authority context where available.",
     },
     {
-      label: "Planning focus",
-      value: getNeighborhoodPlanningFocusLabel(planningPage.planningFocus),
+      label: "Summer focus",
+      value: getSummerTravelFocusLabel(summerPage.summerFocus),
       description:
-        "Editorial framing for this neighborhood planning guide. The page does not name or rank neighborhoods.",
+        "Editorial framing for this summer travel planning guide. The page does not publish weather forecasts, event dates, or tourism rankings.",
     },
     {
       label: "Verified context layers",
@@ -153,7 +151,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
     },
   ];
 
-  const relatedLinks: NeighborhoodRelatedLink[] = [
+  const relatedLinks: SummerTravelRelatedLink[] = [
     {
       label: `${city.name} city intelligence profile`,
       href: cityRoute(city.slug),
@@ -176,17 +174,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
             label: `Arrival planning guide for ${city.name}`,
             href: arrivalRoute(city.slug),
             description:
-              "First-day arrival planning context — pairs with neighborhood research.",
-          },
-        ]
-      : []),
-    ...(cityHasMovingTo
-      ? [
-          {
-            label: `Moving to ${city.name} planning guide`,
-            href: movingToCityRoute(city.slug),
-            description:
-              "Structured relocation research checklist — pairs with neighborhood planning.",
+              "First-day arrival planning context — pairs with summer planning.",
           },
         ]
       : []),
@@ -196,31 +184,41 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
             label: `Visual guide to ${city.name}`,
             href: visualCityGuideRoute(city.slug),
             description:
-              "Source-attributed verified imagery alongside structured city intelligence.",
+              "Source-attributed verified imagery — pairs with summer planning.",
           },
         ]
       : []),
-    ...(cityHasSummerTravel
+    ...(cityHasNeighborhood
       ? [
           {
-            label: `Summer travel planning guide for ${city.name}`,
-            href: summerTravelRoute(city.slug),
+            label: `Neighborhood planning guide for ${city.name}`,
+            href: neighborhoodPlanningRoute(city.slug),
             description:
-              "Seasonal planning checklist — pairs with neighborhood research.",
+              "Neighborhood research checklist — pairs with summer planning.",
           },
         ]
       : []),
-    {
-      label: "Cost of living calculator",
-      href: staticRoutes.costOfLivingCalculator,
-      description:
-        "Compare monthly costs between cities using your own inputs.",
-    },
+    ...(cityHasMovingTo
+      ? [
+          {
+            label: `Moving to ${city.name} planning guide`,
+            href: movingToCityRoute(city.slug),
+            description:
+              "Relocation research checklist — pairs with summer planning.",
+          },
+        ]
+      : []),
     {
       label: "Travel budget calculator",
       href: staticRoutes.travelBudgetCalculator,
       description:
         "Estimate a trip and arrival budget using your own inputs. Planning estimator only.",
+    },
+    {
+      label: "Cost of living calculator",
+      href: staticRoutes.costOfLivingCalculator,
+      description:
+        "Compare monthly costs between cities using your own inputs.",
     },
     {
       label: "Relocation checklist",
@@ -244,6 +242,21 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
       description: "Side-by-side directional comparisons between cities.",
     },
     {
+      label: "Arrival planning directory",
+      href: staticRoutes.arrival,
+      description: "Browse every curated city arrival planning guide.",
+    },
+    {
+      label: "Moving-to directory",
+      href: staticRoutes.movingTo,
+      description: "Browse every curated moving-to city planning guide.",
+    },
+    {
+      label: "Visual city guides directory",
+      href: staticRoutes.visualGuides,
+      description: "Browse every curated source-attributed visual city guide.",
+    },
+    {
       label: "Scoring methodology",
       href: staticRoutes.methodology,
       description: "How structured indicators are constructed and read.",
@@ -259,7 +272,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
     <main>
       <JsonLd
         data={webpageSchema({
-          path: neighborhoodPlanningRoute(city.slug),
+          path: summerTravelRoute(city.slug),
           title,
           description,
         })}
@@ -267,8 +280,8 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
 
       <PageHeader
-        eyebrow="Neighborhood planning"
-        intro={planningPage.summary}
+        eyebrow="Summer travel"
+        intro={summerPage.summary}
         title={title}
       >
         <dl className="grid gap-4">
@@ -305,7 +318,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
               Last updated
             </dt>
             <dd className="mt-1 text-lg font-semibold text-text-primary">
-              {planningPage.updatedDate}
+              {summerPage.updatedDate}
             </dd>
           </div>
           <div>
@@ -313,7 +326,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
               Data year
             </dt>
             <dd className="mt-1 text-lg font-semibold text-text-primary">
-              {planningPage.dataYear}
+              {summerPage.dataYear}
             </dd>
           </div>
         </dl>
@@ -323,7 +336,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
         <BreadcrumbNav items={breadcrumbs} />
 
         <section
-          aria-label={`${city.name} visual context for neighborhood planning`}
+          aria-label={`${city.name} visual context for summer travel planning`}
           className="max-w-2xl"
         >
           <PlaceHeroImage
@@ -338,7 +351,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
             {
               label: "Page style",
               value:
-                "Neighborhood research checklist (not a real-estate, rental, or safety-ranking service)",
+                "Summer travel planning checklist (not a weather forecast, events calendar, hotel-price guide, or tourism ranking)",
             },
             {
               label: "Sources referenced",
@@ -358,38 +371,38 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
           ]}
         />
 
-        <section aria-labelledby="neighborhood-overview-heading">
+        <section aria-labelledby="summer-overview-heading">
           <SectionHeading
-            description={`Snapshot for neighborhood research in ${city.name}. Each card connects to the structured profile, country hub, and verified context layers behind the indicators. This page does not name or rank neighborhoods.`}
-            title={`${city.name} neighborhood planning overview`}
+            description={`Snapshot for planning summer 2026 travel to ${city.name}. Cards link to the structured profile, country hub, and verified context layers behind the indicators. This page does not publish weather forecasts, event dates, or tourism rankings.`}
+            title={`${city.name} summer travel overview`}
           />
-          <h2 className="sr-only" id="neighborhood-overview-heading">
-            {city.name} neighborhood planning overview
+          <h2 className="sr-only" id="summer-overview-heading">
+            {city.name} summer travel overview
           </h2>
           <div className="mt-6">
-            <NeighborhoodOverviewCards cards={overviewCards} />
+            <SummerTravelOverviewCards cards={overviewCards} />
           </div>
         </section>
 
-        <section aria-labelledby="neighborhood-checklist-heading">
+        <section aria-labelledby="summer-checklist-heading">
           <SectionHeading
-            description="Practical, neutral checklist organised by research category. Items reference structured platform sections and official sources — they do not name neighborhoods, publish rent or crime data, school rankings, or legal / rental / immigration advice."
-            title="Neighborhood research checklist"
+            description="Practical, neutral summer 2026 planning checklist organised by category. Items reference structured platform sections and official sources — they do not publish weather forecasts, event dates, ticket prices, hotel prices, transport schedules, airport routes, or attraction rankings."
+            title="Summer 2026 planning checklist"
           />
-          <h2 className="sr-only" id="neighborhood-checklist-heading">
-            Neighborhood research checklist
+          <h2 className="sr-only" id="summer-checklist-heading">
+            Summer 2026 planning checklist
           </h2>
           <div className="mt-6">
-            <NeighborhoodPlanningChecklist items={checklist} />
+            <SummerTravelChecklist items={checklist} />
           </div>
         </section>
 
-        <section aria-labelledby="neighborhood-context-heading">
+        <section aria-labelledby="summer-context-heading">
           <SectionHeading
-            description="Which platform-side context layers are available for the country and city behind neighborhood research. Where verified data is not on file, the platform shows a transparent fallback rather than fabricated information."
+            description="Which platform-side context layers are available for the country and city behind summer travel planning. Where verified data is not on file, the platform shows a transparent fallback rather than fabricated information."
             title="Context-layer availability"
           />
-          <h2 className="sr-only" id="neighborhood-context-heading">
+          <h2 className="sr-only" id="summer-context-heading">
             Context-layer availability for {city.name}
           </h2>
           <ul className="mt-6 grid gap-4 md:grid-cols-3">
@@ -418,8 +431,8 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
                 </p>
                 <p className="mt-2 text-sm leading-6 text-text-primary">
                   {emergencyVerified
-                    ? `Verified country-level emergency contact context is on file for ${country?.name ?? "this country"}. Always confirm current numbers with the official local emergency service. This page does not publish crime rates or area safety rankings.`
-                    : `No verified country-level emergency contact context is on file yet. Confirm current emergency numbers with the official local service. This page does not publish crime rates or area safety rankings.`}
+                    ? `Verified country-level emergency contact context is on file for ${country?.name ?? "this country"}. Always confirm current numbers with the official local emergency service.`
+                    : `No verified country-level emergency contact context is on file yet. Confirm current emergency numbers with the official local service.`}
                 </p>
                 {country ? (
                   <Link
@@ -438,8 +451,8 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
                 </p>
                 <p className="mt-2 text-sm leading-6 text-text-primary">
                   {healthcareVerified
-                    ? `Verified country-level healthcare access context is on file for ${country?.name ?? "this country"}. Confirm registration, insurance, and access through official local sources. This page does not publish school or hospital rankings.`
-                    : `No verified country-level healthcare access context is on file yet. Confirm registration, insurance, and access through official local sources. This page does not publish school or hospital rankings.`}
+                    ? `Verified country-level healthcare access context is on file for ${country?.name ?? "this country"}. Confirm registration, insurance, and access through official local sources. This guide is not medical advice.`
+                    : `No verified country-level healthcare access context is on file yet. Confirm registration, insurance, and access through official local sources. This guide is not medical advice.`}
                 </p>
                 {country ? (
                   <Link
@@ -454,24 +467,24 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
           </ul>
         </section>
 
-        <section aria-labelledby="neighborhood-related-heading">
+        <section aria-labelledby="summer-related-heading">
           <SectionHeading
-            description="Open the related platform layers behind neighborhood research. Verify housing, safety, and local information directly with official and local sources."
+            description="Open the related platform layers behind summer travel planning. Verify weather, events, transport, health, and safety details with official or trusted current sources before departure."
             title="Related context and tools"
           />
-          <h2 className="sr-only" id="neighborhood-related-heading">
-            Related context and tools for {city.name} neighborhood planning
+          <h2 className="sr-only" id="summer-related-heading">
+            Related context and tools for {city.name} summer travel
           </h2>
-          <NeighborhoodRelatedLinks links={relatedLinks} />
+          <SummerTravelRelatedLinks links={relatedLinks} />
         </section>
 
         {relatedComparisons.length > 0 ? (
-          <section aria-labelledby="neighborhood-comparisons-heading">
+          <section aria-labelledby="summer-comparisons-heading">
             <SectionHeading
-              description={`City-vs-city comparisons that include ${city.name}. Use these to weigh neighborhood research against other cities you are considering.`}
+              description={`City-vs-city comparisons that include ${city.name}. Use these alongside summer travel planning to weigh other cities you are considering.`}
               title="Related comparisons"
             />
-            <h2 className="sr-only" id="neighborhood-comparisons-heading">
+            <h2 className="sr-only" id="summer-comparisons-heading">
               Related comparisons for {city.name}
             </h2>
             <ul className="mt-6 grid gap-4 md:grid-cols-2">
@@ -499,27 +512,28 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
           </section>
         ) : null}
 
-        <section aria-labelledby="neighborhood-disclaimer-heading">
+        <section aria-labelledby="summer-disclaimer-heading">
           <SectionHeading
-            description="What this page is and is not. Read this before treating any neighborhood-related decision as final."
+            description="What this page is and is not. Read this before treating any summer travel detail as final."
             title="Scope and limitations"
           />
-          <h2 className="sr-only" id="neighborhood-disclaimer-heading">
+          <h2 className="sr-only" id="summer-disclaimer-heading">
             Scope and limitations
           </h2>
           <div className="mt-6 rounded-2xl border border-neutral-border bg-surface-soft p-6">
             <p className="text-sm leading-7 text-text-primary">
-              This page is a neighborhood <strong>research checklist</strong>{" "}
-              for {city.name}
-              {country ? `, ${country.name}` : ""}. It does not name
-              neighborhoods, publish rent or sale prices, crime rates, school
-              rankings, hospital proximities, walkability scores, transit
-              operators, or area &ldquo;best&rdquo; / &ldquo;safest&rdquo; /
-              &ldquo;cheapest&rdquo; claims. Confirm
-              housing, lease, safety, healthcare, school, transport, and visa
-              details directly with the landlord, agent, official local
-              authority, or qualified professional. This is not real-estate,
-              rental, legal, immigration, financial, or medical advice.
+              This page supports summer 2026 city travel planning for
+              {" "}
+              {city.name}
+              {country ? `, ${country.name}` : ""}. It does not publish weather
+              forecasts, exact temperatures, heatwave claims, event or festival
+              dates, ticket prices, hotel or flight prices, opening hours,
+              transport schedules, airport routes, attraction rankings, crime
+              rates, or any &ldquo;best&rdquo; / &ldquo;must-see&rdquo; /
+              &ldquo;safest&rdquo; / &ldquo;cheapest&rdquo; claims. Verify
+              weather, events, transport, health, and safety details with
+              official or trusted current sources before departure. This is not
+              medical, legal, visa, or immigration advice.
             </p>
           </div>
         </section>

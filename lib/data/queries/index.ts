@@ -180,6 +180,16 @@ export {
 
 export { getVisualGuideFocusLabel } from "@/lib/data/visual-guides";
 
+export {
+  getAllSummerTravelPages,
+  getSummerTravelChecklist,
+  getSummerTravelPageByCitySlug,
+  getSummerTravelPagesForCountry,
+  hasSummerTravelPage,
+} from "@/lib/data/queries/summer-travel";
+
+export { getSummerTravelFocusLabel } from "@/lib/data/summer-travel";
+
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
 export {
