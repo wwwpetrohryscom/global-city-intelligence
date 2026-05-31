@@ -1988,7 +1988,7 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
   },
   "pentland-hills-edinburgh": {
     src:
-      "https://upload.wikimedia.org/wikipedia/commons/3/30/Bonaly%2C_Pentland_Hills_Regional_Park_-_geograph.org.uk_-_405803.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bonaly%2C_Pentland_Hills_Regional_Park_-_geograph.org.uk_-_405803.jpg/640px-Bonaly%2C_Pentland_Hills_Regional_Park_-_geograph.org.uk_-_405803.jpg",
     width: 640,
     height: 480,
     alt:
@@ -2020,7 +2020,7 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
   },
   "phoenix-park-dublin": {
     src:
-      "https://upload.wikimedia.org/wikipedia/commons/2/27/Chesterfield_Avenue%2C_Phoenix_Park_-_geograph.org.uk_-_6004578.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Chesterfield_Avenue%2C_Phoenix_Park_-_geograph.org.uk_-_6004578.jpg/1024px-Chesterfield_Avenue%2C_Phoenix_Park_-_geograph.org.uk_-_6004578.jpg",
     width: 1024,
     height: 681,
     alt: "Verified Wikimedia Commons image of Phoenix Park, Ireland",
