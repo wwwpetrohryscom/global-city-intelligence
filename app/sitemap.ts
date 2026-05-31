@@ -9,6 +9,7 @@ import {
   getAllNeighborhoodPlanningPages,
   getAllSummerTravelPages,
   getAllVisualCityGuidePages,
+  getAllWeekendTripPages,
   getCities,
   getCountries,
   getModules,
@@ -29,6 +30,7 @@ import {
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
+  weekendTripRoute,
 } from "@/lib/seo/routes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -223,6 +225,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.76,
   }));
 
+  const weekendTripItems = getAllWeekendTripPages().map((page) => ({
+    url: absoluteUrl(weekendTripRoute(page.citySlug)),
+    lastModified: new Date(page.updatedDate),
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
   return [
     ...staticItems,
     ...cityItems,
@@ -237,5 +246,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...movingToCityItems,
     ...visualCityGuideItems,
     ...summerTravelItems,
+    ...weekendTripItems,
   ];
 }

@@ -190,6 +190,16 @@ export {
 
 export { getSummerTravelFocusLabel } from "@/lib/data/summer-travel";
 
+export {
+  getAllWeekendTripPages,
+  getWeekendTripChecklist,
+  getWeekendTripPageByCitySlug,
+  getWeekendTripPagesForCountry,
+  hasWeekendTripPage,
+} from "@/lib/data/queries/weekend-trip";
+
+export { getWeekendTripFocusLabel } from "@/lib/data/weekend-trip";
+
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
 export {

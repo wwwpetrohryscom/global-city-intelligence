@@ -73,6 +73,12 @@ export type {
   SummerTravelFocus,
 } from "./summer-travel";
 export type {
+  WeekendTripChecklistCategory,
+  WeekendTripChecklistItem,
+  WeekendTripCityPage,
+  WeekendTripFocus,
+} from "./weekend-trip";
+export type {
   DataProvenance,
   DatasetCoverage,
   MetricVerificationStatus,

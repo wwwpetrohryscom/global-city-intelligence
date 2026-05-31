@@ -39,6 +39,7 @@ import {
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
   hasVisualCityGuidePage,
+  hasWeekendTripPage,
 } from "@/lib/data/queries";
 import { neighborhoodPlanningBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
@@ -55,6 +56,7 @@ import {
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
+  weekendTripRoute,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
 
@@ -117,6 +119,7 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
   const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
   const cityHasSummerTravel = hasSummerTravelPage(city.slug);
+  const cityHasWeekendTrip = hasWeekendTripPage(city.slug);
 
   const title = `Neighborhood Planning Guide for ${city.name}`;
   const description = `Plan neighborhood research in ${city.name}${country ? `, ${country.name}` : ""} with transport context, public-safety context, healthcare access, arrival planning, budgeting tools, methodology notes, and source transparency.`;
@@ -207,6 +210,16 @@ export default async function CityNeighborhoodsPage({ params }: PageProps) {
             href: summerTravelRoute(city.slug),
             description:
               "Seasonal planning checklist — pairs with neighborhood research.",
+          },
+        ]
+      : []),
+    ...(cityHasWeekendTrip
+      ? [
+          {
+            label: `Weekend trip planning guide for ${city.name}`,
+            href: weekendTripRoute(city.slug),
+            description:
+              "Short-trip planning checklist — pairs with neighborhood research.",
           },
         ]
       : []),

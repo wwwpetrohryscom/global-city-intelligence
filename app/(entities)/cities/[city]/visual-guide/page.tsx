@@ -44,6 +44,7 @@ import {
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
+  hasWeekendTripPage,
 } from "@/lib/data/queries";
 import { visualCityGuideBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
@@ -60,6 +61,7 @@ import {
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
+  weekendTripRoute,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
 
@@ -124,6 +126,7 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
   const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
   const cityHasSummerTravel = hasSummerTravelPage(city.slug);
+  const cityHasWeekendTrip = hasWeekendTripPage(city.slug);
 
   const title = `Visual Guide to ${city.name}`;
   const description = `Explore source-attributed visual context for ${city.name}${country ? `, ${country.name}` : ""} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency.`;
@@ -214,6 +217,16 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
             href: summerTravelRoute(city.slug),
             description:
               "Seasonal planning checklist — pairs with visual orientation.",
+          },
+        ]
+      : []),
+    ...(cityHasWeekendTrip
+      ? [
+          {
+            label: `Weekend trip planning guide for ${city.name}`,
+            href: weekendTripRoute(city.slug),
+            description:
+              "Short-trip planning checklist — pairs with visual orientation.",
           },
         ]
       : []),

@@ -9,6 +9,7 @@ import {
   neighborhoodPlanningRoute,
   summerTravelRoute,
   visualCityGuideRoute,
+  weekendTripRoute,
 } from "@/lib/seo/routes";
 import type {
   ArrivalPage,
@@ -22,6 +23,7 @@ import type {
   PlaceImage,
   SummerTravelCityPage,
   VisualCityGuidePage,
+  WeekendTripCityPage,
 } from "@/types";
 
 interface MetadataOgImage {
@@ -250,6 +252,31 @@ export function generateSummerTravelMetadata({
     description,
     path: summerTravelRoute(summerPage.citySlug),
     lastModified: summerPage.updatedDate,
+    type: "article",
+    image,
+  });
+}
+
+export function generateWeekendTripMetadata({
+  weekendPage,
+  city,
+  country,
+  image,
+}: {
+  weekendPage: WeekendTripCityPage;
+  city: City;
+  country: Country | undefined;
+  image?: MetadataOgImage;
+}): Metadata {
+  const countryFragment = country ? `, ${country.name}` : "";
+  const title = `Weekend Trip Planning Guide for ${city.name}`;
+  const description = `Plan a weekend city trip to ${city.name}${countryFragment} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency. Not an itinerary, events calendar, hotel-price guide, restaurant guide, or tourism ranking.`;
+
+  return createMetadata({
+    title,
+    description,
+    path: weekendTripRoute(weekendPage.citySlug),
+    lastModified: weekendPage.updatedDate,
     type: "article",
     image,
   });

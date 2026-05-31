@@ -46,6 +46,7 @@ import {
   hasNeighborhoodPlanningPage,
   hasSummerTravelPage,
   hasVisualCityGuidePage,
+  hasWeekendTripPage,
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -64,6 +65,7 @@ import {
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
+  weekendTripRoute,
 } from "@/lib/seo/routes";
 import {
   airportSchema,
@@ -400,6 +402,13 @@ export default async function CityPage({ params }: PageProps) {
                 description={`Summer 2026 travel planning checklist for ${city.name} — links into arrival planning, visual orientation, budget tools, transport, public safety, and healthcare context. Not a weather forecast, events calendar, hotel-price guide, or tourism ranking.`}
                 href={summerTravelRoute(city.slug)}
                 title={`Summer 2026 travel planning guide for ${city.name}`}
+              />
+            ) : null}
+            {hasWeekendTripPage(city.slug) ? (
+              <LinkCard
+                description={`Weekend trip planning checklist for ${city.name} — links into arrival planning, Summer 2026 travel context, visual orientation, budget tools, transport, public safety, and healthcare context. Not an itinerary, events calendar, hotel-price guide, restaurant guide, or tourism ranking.`}
+                href={weekendTripRoute(city.slug)}
+                title={`Weekend trip planning guide for ${city.name}`}
               />
             ) : null}
             <LinkCard

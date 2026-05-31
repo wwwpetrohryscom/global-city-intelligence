@@ -1766,3 +1766,169 @@ No broad city-by-city footer additions in this task.
 - `npm run build` — succeeded, 2817/2817 static pages
 - 0 client components, 0 runtime fetch, 0 new dependencies, 0 images
   added on the directory itself
+
+## 2026-05-31 batch: weekend city trip planning cluster — first wave
+
+A travel-intent SEO cluster for short-trip planning research:
+**`/cities/[city]/weekend-trip`**. 100 curated pages combine
+verified Wikimedia hero imagery (where available) with structured
+city intelligence, arrival / visual / Summer 2026 / neighborhood /
+moving-to planning links, comparisons, and budgeting tools. The
+pages are **not** a fixed itinerary, "things to do" page, top
+attractions page, live events page, restaurant or hotel
+recommendation page, weather forecast, ticket-price page, official
+tourism page, or a page with invented local facts.
+
+### Geographic scope (strict)
+
+EU, UK / Ireland, US, Canada, Australia, New Zealand, and
+Switzerland only. Same 100 cities as the visual-guide and
+summer-travel clusters — so the full 7-cluster reverse-link mesh
+(city ↔ arrival ↔ neighborhood ↔ moving-to ↔ visual-guide ↔
+summer-travel ↔ weekend-trip) is wired for every city that
+participates in those clusters.
+
+### Files created
+
+- `types/weekend-trip.ts` — `WeekendTripFocus`,
+  `WeekendTripChecklistCategory`, `WeekendTripChecklistItem`, and
+  `WeekendTripCityPage` types
+- `lib/data/weekend-trip.ts` — 100 curated records via a
+  seed-template pattern + 18-item shared short-trip checklist
+- `lib/data/queries/weekend-trip.ts` — `getAllWeekendTripPages`,
+  `getWeekendTripPageByCitySlug`,
+  `getWeekendTripPagesForCountry`, `hasWeekendTripPage`,
+  `getWeekendTripChecklist`
+- `components/weekend-trip/WeekendTripOverviewCards.tsx`
+- `components/weekend-trip/WeekendTripChecklist.tsx`
+- `components/weekend-trip/WeekendTripRelatedLinks.tsx`
+- `app/(entities)/cities/[city]/weekend-trip/page.tsx`
+
+### Files updated
+
+- `types/index.ts`, `lib/data/queries/index.ts` — re-exports
+- `lib/seo/routes.ts` — adds `weekendTripRoute(citySlug)` and
+  includes the new pages in `getAllIndexableRoutes()`
+- `lib/seo/breadcrumbs.ts` — adds `weekendTripBreadcrumbs`
+- `lib/seo/metadata.ts` — adds `generateWeekendTripMetadata`
+- `app/sitemap.ts` — emits 100 new pages at `priority: 0.75`,
+  `changeFrequency: "monthly"`
+- `app/(entities)/cities/[city]/page.tsx` — new `LinkCard` reverse
+  link gated by `hasWeekendTripPage(city.slug)`
+- `app/(arrival)/arrival/[city]/page.tsx`,
+  `app/(entities)/cities/[city]/summer-travel/page.tsx`,
+  `app/(entities)/cities/[city]/visual-guide/page.tsx`,
+  `app/(entities)/cities/[city]/neighborhoods/page.tsx`,
+  `app/(entities)/cities/[city]/moving-to/page.tsx` — new
+  related-link entries gated by `hasWeekendTripPage(city.slug)`
+
+### Cities included (100)
+
+Same 100 cities as the visual-guide and summer-travel clusters:
+UK/IE 14, FR 8, DE 9, NL/BE/LU 8, ES/PT/IT 12, AT/CH/Nordics 7,
+CEE 5, US 20, CA 8, AU/NZ 9.
+
+### Cities skipped
+
+None — every selected slug exists in the registry. Liverpool is
+the one fallback-image city (same as visual-guide and summer-travel
+clusters).
+
+### Wikimedia / verified media usage
+
+- Hero imagery via existing `PlaceHeroImage` → `getCityHeroImage(slug)`
+- No new images added; no random URLs, no AI-generated images, no
+  unverified attribution
+
+### Fallback-image city handling
+
+- **99 / 100** verified hero → `og:image` set
+- **1 / 100** (Liverpool) → fallback `ImageFallback` block on page;
+  `og:image` and `twitter:image` omitted entirely by `createMetadata`;
+  no `ImageObject` schema; page remains indexable
+
+### Data / content safety
+
+- **0 invented** fixed itineraries, day-by-day schedules, attraction
+  rankings, "things to do" lists, "must-see" / "top attractions"
+  claims, restaurant or hotel recommendations, nightlife
+  recommendations, event or festival dates, ticket prices, hotel or
+  flight prices, opening hours, transport schedules, airport routes,
+  exact travel times, weather forecasts, exact temperatures, crime
+  rates, medical advice, or visa rules
+- All 100 summaries built from a neutral template parameterised by
+  `cityName` + `countryName` → 100 unique summaries
+- 18-item shared checklist reframes weekend travel as a research
+  checklist deferring time-sensitive details to official sources
+- Scope-and-limitations disclaimer block on every page reads in
+  part: "Verify events, opening hours, transport, weather, health,
+  and safety details with official or trusted current sources
+  before departure. This is not medical, legal, visa, or
+  immigration advice."
+
+### Route / sitemap / metadata
+
+- `weekendTripRoute(citySlug)` → `/cities/${citySlug}/weekend-trip`
+- `getAllIndexableRoutes()` includes the 100 new pages
+- Sitemap auto-emits via `getAllWeekendTripPages()`: `priority: 0.75`,
+  `changeFrequency: monthly`, `lastModified` per record
+- `generateWeekendTripMetadata` produces unique `title`
+  (`Weekend Trip Planning Guide for {City}`), `description`,
+  canonical, OG metadata, `lastModified` per page
+- OG image populated from verified hero only
+
+### Internal linking
+
+Each weekend-trip page links to: city profile, country hub, arrival
+page (when present), Summer 2026 travel guide (when present),
+visual guide (when present), neighborhood page (when present),
+moving-to page (when present), travel-budget calc, cost-of-living
+calc, relocation checklist, `/cities`, `/countries`, `/compare`,
+`/arrival` directory, `/summer-travel` directory, `/visual-guides`
+directory, `/moving-to` directory, methodology, data sources, up to
+4 related comparisons.
+
+### Reverse-link impact
+
+Six reverse-link surfaces, each gated by `hasWeekendTripPage(city.slug)`:
+
+| Surface | Hook |
+|---|---|
+| City profile | new `LinkCard` next to existing planning-cluster cards |
+| Arrival page | new related-link entry |
+| Summer-travel page | new related-link entry |
+| Visual-guide page | new related-link entry |
+| Neighborhood page | new related-link entry |
+| Moving-to page | new related-link entry |
+
+All six gates use Map-backed set membership.
+
+### Structured data
+
+Only `WebPage` and `BreadcrumbList` JSON-LD emitted per weekend-trip
+page. No `Event`, `TouristAttraction`, `TravelAction`, `Itinerary`,
+`Place`, `WeatherForecast`, `Review`, `Rating`, `Offer`, `FAQPage`,
+fake `Dataset`, or `ImageObject` schemas added.
+
+### Accessibility / performance
+
+- One `<h1>` per page (`Weekend Trip Planning Guide for {City}`),
+  `aria-labelledby` on every section with visually-hidden `<h2>`
+- Hero imagery carries descriptive alt text + `ImageAttribution`
+- 0 client components, 0 `useEffect` / `useState`, 0 runtime fetch
+  (no weather APIs, no event APIs), 0 new dependencies, no carousels,
+  no maps, no booking widgets
+- All 100 pages SSG; route bundle 262 B / 106 kB First Load JS
+
+### Page-count delta
+
+- weekend-trip pages: 0 → **100**
+- static page count: 2,817 → **2,917** (+100). Verified by
+  `next build`: `Generating static pages (2917/2917)`.
+
+### Validation
+
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2917/2917 static pages

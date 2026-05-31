@@ -7,21 +7,21 @@ import { PlaceHeroImage } from "@/components/media/PlaceHeroImage";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
-import { SummerTravelChecklist } from "@/components/summer-travel/SummerTravelChecklist";
-import {
-  SummerTravelOverviewCards,
-  type SummerTravelOverviewCard,
-} from "@/components/summer-travel/SummerTravelOverviewCards";
-import {
-  SummerTravelRelatedLinks,
-  type SummerTravelRelatedLink,
-} from "@/components/summer-travel/SummerTravelRelatedLinks";
 import { Card } from "@/components/ui/Card";
 import { FactList } from "@/components/ui/fact-list";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { WeekendTripChecklist } from "@/components/weekend-trip/WeekendTripChecklist";
+import {
+  WeekendTripOverviewCards,
+  type WeekendTripOverviewCard,
+} from "@/components/weekend-trip/WeekendTripOverviewCards";
+import {
+  WeekendTripRelatedLinks,
+  type WeekendTripRelatedLink,
+} from "@/components/weekend-trip/WeekendTripRelatedLinks";
 import { getCityHeroImage } from "@/lib/data/media/queries";
 import {
-  getAllSummerTravelPages,
+  getAllWeekendTripPages,
   getCityBySlug,
   getComparisonsForCity,
   getCountryBySlug,
@@ -29,21 +29,21 @@ import {
   getCountryHealthcareProfile,
   getCountryTransportProfile,
   getSourcesByIds,
-  getSummerTravelChecklist,
-  getSummerTravelFocusLabel,
-  getSummerTravelPageByCitySlug,
+  getWeekendTripChecklist,
+  getWeekendTripFocusLabel,
+  getWeekendTripPageByCitySlug,
   hasArrivalPage,
   hasMovingToCityPage,
   hasNeighborhoodPlanningPage,
+  hasSummerTravelPage,
   hasVerifiedEmergencyData,
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
   hasVisualCityGuidePage,
-  hasWeekendTripPage,
 } from "@/lib/data/queries";
-import { summerTravelBreadcrumbs } from "@/lib/seo/breadcrumbs";
+import { weekendTripBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
-  generateSummerTravelMetadata,
+  generateWeekendTripMetadata,
   ogImageFromPlaceImage,
 } from "@/lib/seo/metadata";
 import {
@@ -67,43 +67,43 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getAllSummerTravelPages().map((page) => ({ city: page.citySlug }));
+  return getAllWeekendTripPages().map((page) => ({ city: page.citySlug }));
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { city: citySlug } = await params;
-  const summerPage = getSummerTravelPageByCitySlug(citySlug);
-  const city = summerPage ? getCityBySlug(summerPage.citySlug) : undefined;
+  const weekendPage = getWeekendTripPageByCitySlug(citySlug);
+  const city = weekendPage ? getCityBySlug(weekendPage.citySlug) : undefined;
 
-  if (!summerPage || !city) {
+  if (!weekendPage || !city) {
     return {};
   }
 
   const country = getCountryBySlug(city.countrySlug);
 
-  return generateSummerTravelMetadata({
-    summerPage,
+  return generateWeekendTripMetadata({
+    weekendPage,
     city,
     country,
     image: ogImageFromPlaceImage(getCityHeroImage(city.slug)),
   });
 }
 
-export default async function SummerTravelPage({ params }: PageProps) {
+export default async function WeekendTripPage({ params }: PageProps) {
   const { city: citySlug } = await params;
-  const summerPage = getSummerTravelPageByCitySlug(citySlug);
-  const city = summerPage ? getCityBySlug(summerPage.citySlug) : undefined;
+  const weekendPage = getWeekendTripPageByCitySlug(citySlug);
+  const city = weekendPage ? getCityBySlug(weekendPage.citySlug) : undefined;
 
-  if (!summerPage || !city) {
+  if (!weekendPage || !city) {
     notFound();
   }
 
   const country = getCountryBySlug(city.countrySlug);
-  const breadcrumbs = summerTravelBreadcrumbs(city.slug);
-  const sources = getSourcesByIds(summerPage.sourceIds);
-  const checklist = getSummerTravelChecklist();
+  const breadcrumbs = weekendTripBreadcrumbs(city.slug);
+  const sources = getSourcesByIds(weekendPage.sourceIds);
+  const checklist = getWeekendTripChecklist();
 
   const emergencyProfile = getCountryEmergencyProfile(city.countrySlug);
   const healthcareProfile = getCountryHealthcareProfile(city.countrySlug);
@@ -114,15 +114,15 @@ export default async function SummerTravelPage({ params }: PageProps) {
 
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
   const cityHasArrival = hasArrivalPage(city.slug);
+  const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
   const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
-  const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
-  const cityHasWeekendTrip = hasWeekendTripPage(city.slug);
+  const cityHasSummerTravel = hasSummerTravelPage(city.slug);
 
-  const title = `Summer 2026 Travel Planning Guide for ${city.name}`;
-  const description = `Plan summer 2026 travel research for ${city.name}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency.`;
+  const title = `Weekend Trip Planning Guide for ${city.name}`;
+  const description = `Plan a weekend city trip to ${city.name}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency.`;
 
-  const overviewCards: SummerTravelOverviewCard[] = [
+  const overviewCards: WeekendTripOverviewCard[] = [
     {
       label: "City",
       value: city.name,
@@ -137,10 +137,10 @@ export default async function SummerTravelPage({ params }: PageProps) {
         "Open the country hub for verified emergency, healthcare, and transport-authority context where available.",
     },
     {
-      label: "Summer focus",
-      value: getSummerTravelFocusLabel(summerPage.summerFocus),
+      label: "Weekend focus",
+      value: getWeekendTripFocusLabel(weekendPage.weekendFocus),
       description:
-        "Editorial framing for this summer travel planning guide. The page does not publish weather forecasts, event dates, or tourism rankings.",
+        "Editorial framing for this weekend trip planning guide. The page does not publish itineraries, attraction rankings, or restaurant / hotel recommendations.",
     },
     {
       label: "Verified context layers",
@@ -154,7 +154,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
     },
   ];
 
-  const relatedLinks: SummerTravelRelatedLink[] = [
+  const relatedLinks: WeekendTripRelatedLink[] = [
     {
       label: `${city.name} city intelligence profile`,
       href: cityRoute(city.slug),
@@ -177,7 +177,17 @@ export default async function SummerTravelPage({ params }: PageProps) {
             label: `Arrival planning guide for ${city.name}`,
             href: arrivalRoute(city.slug),
             description:
-              "First-day arrival planning context — pairs with summer planning.",
+              "First-day arrival planning context — pairs with weekend planning.",
+          },
+        ]
+      : []),
+    ...(cityHasSummerTravel
+      ? [
+          {
+            label: `Summer 2026 travel planning guide for ${city.name}`,
+            href: summerTravelRoute(city.slug),
+            description:
+              "Seasonal planning checklist — pairs with weekend planning.",
           },
         ]
       : []),
@@ -187,7 +197,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
             label: `Visual guide to ${city.name}`,
             href: visualCityGuideRoute(city.slug),
             description:
-              "Source-attributed verified imagery — pairs with summer planning.",
+              "Source-attributed verified imagery — pairs with weekend planning.",
           },
         ]
       : []),
@@ -197,7 +207,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
             label: `Neighborhood planning guide for ${city.name}`,
             href: neighborhoodPlanningRoute(city.slug),
             description:
-              "Neighborhood research checklist — pairs with summer planning.",
+              "Neighborhood research checklist — pairs with weekend planning.",
           },
         ]
       : []),
@@ -207,17 +217,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
             label: `Moving to ${city.name} planning guide`,
             href: movingToCityRoute(city.slug),
             description:
-              "Relocation research checklist — pairs with summer planning.",
-          },
-        ]
-      : []),
-    ...(cityHasWeekendTrip
-      ? [
-          {
-            label: `Weekend trip planning guide for ${city.name}`,
-            href: weekendTripRoute(city.slug),
-            description:
-              "Short-trip planning checklist — pairs with summer planning.",
+              "Relocation research checklist — pairs with weekend planning.",
           },
         ]
       : []),
@@ -260,14 +260,19 @@ export default async function SummerTravelPage({ params }: PageProps) {
       description: "Browse every curated city arrival planning guide.",
     },
     {
-      label: "Moving-to directory",
-      href: staticRoutes.movingTo,
-      description: "Browse every curated moving-to city planning guide.",
+      label: "Summer 2026 travel directory",
+      href: staticRoutes.summerTravel,
+      description: "Browse every curated Summer 2026 city travel guide.",
     },
     {
       label: "Visual city guides directory",
       href: staticRoutes.visualGuides,
       description: "Browse every curated source-attributed visual city guide.",
+    },
+    {
+      label: "Moving-to directory",
+      href: staticRoutes.movingTo,
+      description: "Browse every curated moving-to city planning guide.",
     },
     {
       label: "Scoring methodology",
@@ -285,7 +290,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
     <main>
       <JsonLd
         data={webpageSchema({
-          path: summerTravelRoute(city.slug),
+          path: weekendTripRoute(city.slug),
           title,
           description,
         })}
@@ -293,8 +298,8 @@ export default async function SummerTravelPage({ params }: PageProps) {
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
 
       <PageHeader
-        eyebrow="Summer travel"
-        intro={summerPage.summary}
+        eyebrow="Weekend trip"
+        intro={weekendPage.summary}
         title={title}
       >
         <dl className="grid gap-4">
@@ -331,7 +336,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
               Last updated
             </dt>
             <dd className="mt-1 text-lg font-semibold text-text-primary">
-              {summerPage.updatedDate}
+              {weekendPage.updatedDate}
             </dd>
           </div>
           <div>
@@ -339,7 +344,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
               Data year
             </dt>
             <dd className="mt-1 text-lg font-semibold text-text-primary">
-              {summerPage.dataYear}
+              {weekendPage.dataYear}
             </dd>
           </div>
         </dl>
@@ -349,7 +354,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
         <BreadcrumbNav items={breadcrumbs} />
 
         <section
-          aria-label={`${city.name} visual context for summer travel planning`}
+          aria-label={`${city.name} visual context for weekend trip planning`}
           className="max-w-2xl"
         >
           <PlaceHeroImage
@@ -364,7 +369,7 @@ export default async function SummerTravelPage({ params }: PageProps) {
             {
               label: "Page style",
               value:
-                "Summer travel planning checklist (not a weather forecast, events calendar, hotel-price guide, or tourism ranking)",
+                "Weekend trip planning checklist (not an itinerary, events calendar, hotel-price guide, restaurant guide, or tourism ranking)",
             },
             {
               label: "Sources referenced",
@@ -384,38 +389,38 @@ export default async function SummerTravelPage({ params }: PageProps) {
           ]}
         />
 
-        <section aria-labelledby="summer-overview-heading">
+        <section aria-labelledby="weekend-overview-heading">
           <SectionHeading
-            description={`Snapshot for planning summer 2026 travel to ${city.name}. Cards link to the structured profile, country hub, and verified context layers behind the indicators. This page does not publish weather forecasts, event dates, or tourism rankings.`}
-            title={`${city.name} summer travel overview`}
+            description={`Snapshot for planning a weekend city trip to ${city.name}. Cards link to the structured profile, country hub, and verified context layers behind the indicators. This page does not publish itineraries, attraction rankings, or restaurant / hotel recommendations.`}
+            title={`${city.name} weekend planning overview`}
           />
-          <h2 className="sr-only" id="summer-overview-heading">
-            {city.name} summer travel overview
+          <h2 className="sr-only" id="weekend-overview-heading">
+            {city.name} weekend planning overview
           </h2>
           <div className="mt-6">
-            <SummerTravelOverviewCards cards={overviewCards} />
+            <WeekendTripOverviewCards cards={overviewCards} />
           </div>
         </section>
 
-        <section aria-labelledby="summer-checklist-heading">
+        <section aria-labelledby="weekend-checklist-heading">
           <SectionHeading
-            description="Practical, neutral summer 2026 planning checklist organised by category. Items reference structured platform sections and official sources — they do not publish weather forecasts, event dates, ticket prices, hotel prices, transport schedules, airport routes, or attraction rankings."
-            title="Summer 2026 planning checklist"
+            description="Practical, neutral weekend trip research checklist organised by category. Items reference structured platform sections and official sources — they do not publish itineraries, day-by-day schedules, attraction rankings, restaurant or hotel recommendations, event dates, ticket prices, opening hours, transport schedules, airport routes, or weather forecasts."
+            title="Weekend trip research checklist"
           />
-          <h2 className="sr-only" id="summer-checklist-heading">
-            Summer 2026 planning checklist
+          <h2 className="sr-only" id="weekend-checklist-heading">
+            Weekend trip research checklist
           </h2>
           <div className="mt-6">
-            <SummerTravelChecklist items={checklist} />
+            <WeekendTripChecklist items={checklist} />
           </div>
         </section>
 
-        <section aria-labelledby="summer-context-heading">
+        <section aria-labelledby="weekend-context-heading">
           <SectionHeading
-            description="Which platform-side context layers are available for the country and city behind summer travel planning. Where verified data is not on file, the platform shows a transparent fallback rather than fabricated information."
+            description="Which platform-side context layers are available for the country and city behind weekend trip planning. Where verified data is not on file, the platform shows a transparent fallback rather than fabricated information."
             title="Context-layer availability"
           />
-          <h2 className="sr-only" id="summer-context-heading">
+          <h2 className="sr-only" id="weekend-context-heading">
             Context-layer availability for {city.name}
           </h2>
           <ul className="mt-6 grid gap-4 md:grid-cols-3">
@@ -480,24 +485,24 @@ export default async function SummerTravelPage({ params }: PageProps) {
           </ul>
         </section>
 
-        <section aria-labelledby="summer-related-heading">
+        <section aria-labelledby="weekend-related-heading">
           <SectionHeading
-            description="Open the related platform layers behind summer travel planning. Verify weather, events, transport, health, and safety details with official or trusted current sources before departure."
+            description="Open the related platform layers behind weekend trip planning. Verify events, opening hours, transport, weather, health, and safety details with official or trusted current sources before departure."
             title="Related context and tools"
           />
-          <h2 className="sr-only" id="summer-related-heading">
-            Related context and tools for {city.name} summer travel
+          <h2 className="sr-only" id="weekend-related-heading">
+            Related context and tools for the {city.name} weekend trip
           </h2>
-          <SummerTravelRelatedLinks links={relatedLinks} />
+          <WeekendTripRelatedLinks links={relatedLinks} />
         </section>
 
         {relatedComparisons.length > 0 ? (
-          <section aria-labelledby="summer-comparisons-heading">
+          <section aria-labelledby="weekend-comparisons-heading">
             <SectionHeading
-              description={`City-vs-city comparisons that include ${city.name}. Use these alongside summer travel planning to weigh other cities you are considering.`}
+              description={`City-vs-city comparisons that include ${city.name}. Use these alongside weekend trip planning to weigh other cities you are considering.`}
               title="Related comparisons"
             />
-            <h2 className="sr-only" id="summer-comparisons-heading">
+            <h2 className="sr-only" id="weekend-comparisons-heading">
               Related comparisons for {city.name}
             </h2>
             <ul className="mt-6 grid gap-4 md:grid-cols-2">
@@ -525,28 +530,31 @@ export default async function SummerTravelPage({ params }: PageProps) {
           </section>
         ) : null}
 
-        <section aria-labelledby="summer-disclaimer-heading">
+        <section aria-labelledby="weekend-disclaimer-heading">
           <SectionHeading
-            description="What this page is and is not. Read this before treating any summer travel detail as final."
+            description="What this page is and is not. Read this before treating any weekend trip detail as final."
             title="Scope and limitations"
           />
-          <h2 className="sr-only" id="summer-disclaimer-heading">
+          <h2 className="sr-only" id="weekend-disclaimer-heading">
             Scope and limitations
           </h2>
           <div className="mt-6 rounded-2xl border border-neutral-border bg-surface-soft p-6">
             <p className="text-sm leading-7 text-text-primary">
-              This page supports summer 2026 city travel planning for
+              This page is a weekend trip <strong>research checklist</strong>
               {" "}
-              {city.name}
-              {country ? `, ${country.name}` : ""}. It does not publish weather
-              forecasts, exact temperatures, heatwave claims, event or festival
-              dates, ticket prices, hotel or flight prices, opening hours,
-              transport schedules, airport routes, attraction rankings, crime
-              rates, or any &ldquo;best&rdquo; / &ldquo;must-see&rdquo; /
+              for {city.name}
+              {country ? `, ${country.name}` : ""}. It does not publish
+              day-by-day itineraries, attraction rankings, restaurant or hotel
+              recommendations, event or festival dates, ticket prices, hotel
+              or flight prices, opening hours, transport schedules, airport
+              routes, exact travel times, weather forecasts, exact
+              temperatures, crime rates, or any &ldquo;best&rdquo; /
+              &ldquo;must-see&rdquo; / &ldquo;top&rdquo; /
               &ldquo;safest&rdquo; / &ldquo;cheapest&rdquo; claims. Verify
-              weather, events, transport, health, and safety details with
-              official or trusted current sources before departure. This is not
-              medical, legal, visa, or immigration advice.
+              events, opening hours, transport, weather, health, and safety
+              details with official or trusted current sources before
+              departure. This is not medical, legal, visa, or immigration
+              advice.
             </p>
           </div>
         </section>

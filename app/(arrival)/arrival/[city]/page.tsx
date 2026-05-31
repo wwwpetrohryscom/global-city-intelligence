@@ -41,6 +41,7 @@ import {
   hasVerifiedHealthcareData,
   hasVerifiedTransportData,
   hasVisualCityGuidePage,
+  hasWeekendTripPage,
 } from "@/lib/data/queries";
 import { arrivalBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import {
@@ -57,6 +58,7 @@ import {
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
+  weekendTripRoute,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
 
@@ -203,6 +205,16 @@ export default async function ArrivalCityPage({ params }: PageProps) {
             href: summerTravelRoute(city.slug),
             description:
               "Seasonal planning checklist — pairs with arrival research.",
+          },
+        ]
+      : []),
+    ...(hasWeekendTripPage(city.slug)
+      ? [
+          {
+            label: `Weekend trip planning guide for ${city.name}`,
+            href: weekendTripRoute(city.slug),
+            description:
+              "Short-trip planning checklist — pairs with arrival research.",
           },
         ]
       : []),

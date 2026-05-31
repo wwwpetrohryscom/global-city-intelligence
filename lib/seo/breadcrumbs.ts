@@ -21,6 +21,7 @@ import {
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
+  weekendTripRoute,
 } from "@/lib/seo/routes";
 import type { BreadcrumbItem, ModuleSlug } from "@/types";
 
@@ -217,6 +218,26 @@ export function summerTravelBreadcrumbs(citySlug: string): BreadcrumbItem[] {
     {
       name: "Summer travel",
       href: summerTravelRoute(citySlug),
+    },
+  ];
+}
+
+export function weekendTripBreadcrumbs(citySlug: string): BreadcrumbItem[] {
+  const city = getCityBySlug(citySlug);
+
+  return [
+    homeCrumb,
+    {
+      name: "Cities",
+      href: staticRoutes.cities,
+    },
+    {
+      name: city?.name || "City",
+      href: cityRoute(citySlug),
+    },
+    {
+      name: "Weekend trip",
+      href: weekendTripRoute(citySlug),
     },
   ];
 }

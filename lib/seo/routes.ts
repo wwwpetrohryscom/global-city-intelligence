@@ -6,6 +6,7 @@ import {
   getAllNeighborhoodPlanningPages,
   getAllSummerTravelPages,
   getAllVisualCityGuidePages,
+  getAllWeekendTripPages,
   getCities,
   getCountries,
   getModules,
@@ -88,6 +89,10 @@ export function summerTravelRoute(citySlug: string) {
   return `/cities/${citySlug}/summer-travel`;
 }
 
+export function weekendTripRoute(citySlug: string) {
+  return `/cities/${citySlug}/weekend-trip`;
+}
+
 export function getCollectionUrl(slug: string) {
   return `/${slug}`;
 }
@@ -139,6 +144,9 @@ export function getAllIndexableRoutes() {
     ),
     ...getAllSummerTravelPages().map((page) =>
       summerTravelRoute(page.citySlug),
+    ),
+    ...getAllWeekendTripPages().map((page) =>
+      weekendTripRoute(page.citySlug),
     ),
   ];
 }
