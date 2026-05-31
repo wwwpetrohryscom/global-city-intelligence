@@ -1932,3 +1932,142 @@ fake `Dataset`, or `ImageObject` schemas added.
 - `npm run typecheck` — clean
 - `npm run lint` — clean
 - `npm run build` — succeeded, 2917/2917 static pages
+
+## 2026-05-31: /weekend-trips directory page
+
+Adds a single central directory page at `/weekend-trips`. Mirrors
+the existing `/arrival`, `/moving-to`, `/visual-guides`, and
+`/summer-travel` directory patterns: server-rendered text-card grid
+for all 100 weekend trip planning guides, country-grouped index,
+`ItemList` JSON-LD, breadcrumbs, hub nav, and a related-tools rail.
+
+**New "local-first" framing**: the directory leads with a "Plan a
+weekend close to your city" section that reframes weekend travel
+research toward short-distance, close-to-home planning. The framing
+is text-only — it does not name specific nearby places, claim
+distances, publish travel times, or rank destinations. The site has
+no verified nearby-place model yet, so the section sticks to general
+research-practice guidance that defers time-sensitive details to
+official sources.
+
+### Files created
+
+- `app/(weekend-trips)/weekend-trips/page.tsx` — server-rendered
+  directory
+
+### Files updated
+
+- `lib/seo/routes.ts` — adds `staticRoutes.weekendTrips = "/weekend-trips"`
+  and includes it in `getAllIndexableRoutes()`
+- `app/sitemap.ts` — emits the new directory URL at `priority: 0.75`,
+  `changeFrequency: "monthly"`
+- `components/layout/Footer.tsx` — adds a "Weekend trip guides" link
+  under "Summer 2026 travel guides" in the Reference column
+- `docs/content-expansion.md` — this section
+
+### Page content
+
+- H1 `Weekend City Trip Planning Guides`, unique intro paragraph
+- `Last updated` and `Data year` chips, plus `Weekend guides` count
+  and `Countries represented` count from live data
+- **Local-first section** ("Plan a weekend close to your city"): 6
+  short-trip research prompts that lead with using the user's own
+  city as the starting point and link inward to `/cities`,
+  `/compare`, `/arrival`, `/visual-guides`, and the travel-budget
+  calculator. No named nearby places, no distances, no travel times,
+  no route advice.
+- Sources / methodology disclaimer block (no fixed itineraries,
+  attraction rankings, restaurant or hotel recommendations, event
+  dates, ticket prices, hotel / flight prices, opening hours,
+  transport schedules, airport routes, exact travel times, exact
+  distances, weather forecasts, crime rates, or any "best" /
+  "must-see" / "safest" / "cheapest" claims)
+- Card grid for all **100** weekend guides, sorted alphabetically by
+  city name. Each card shows: country tag, `Weekend trip in {City}`
+  link, `weekendFocus` label, page summary, plus 7 contextual links
+  — city profile, country hub, arrival guide, Summer 2026 guide,
+  visual guide, neighborhood guide, moving-to guide (each shown only
+  when the city has the underlying page)
+- Country-grouped index (alphabetical) with every guide also linked
+  here for crawler density
+- "Continue exploring" related-tools rail: cities, countries,
+  compare, arrival, Summer 2026, visual guides, moving-to,
+  travel-budget calc, cost calc, relocation checklist, methodology,
+  data sources
+
+### Image / thumbnail decision
+
+**No thumbnails on `/weekend-trips`.** Per the audit spec's default
+recommendation: text-card directory only. The 100 cards already
+provide dense navigation, per-city weekend pages carry the verified
+hero, and the directory stays fast and crawlable. No `og:image` is
+emitted for the directory itself — `createMetadata` omits OG image
+when no `image` is passed.
+
+### Structured data
+
+- `WebPage` JSON-LD for the directory
+- `BreadcrumbList` JSON-LD via `staticBreadcrumbs("Weekend trips", "/weekend-trips")`
+- `ItemList` JSON-LD with `numberOfItems: 100`,
+  `itemListOrder: ItemListUnordered`, absolute `url` per guide,
+  each `name` set to `Weekend Trip Planning Guide for {City}`
+
+No `Event`, `TouristAttraction`, `TravelAction`, `Itinerary`,
+`Place`, `WeatherForecast`, `Review`, `Rating`, `Offer`, `FAQPage`,
+fake `Dataset`, or `ImageObject` schemas added.
+
+### Footer / internal linking
+
+Footer "Reference" column now reads:
+
+```
+City comparisons
+Arrival planning guides
+Moving to city guides
+Visual city guides
+Summer 2026 travel guides
+Weekend trip guides         ← new
+Tools and calculators
+Cost of living calculator
+Travel budget calculator
+Relocation checklist
+Methodology
+Data sources
+```
+
+No broad city-by-city footer additions in this task.
+
+### Local-first / nearby rest positioning
+
+The "Plan a weekend close to your city" section uses **only generic
+research-practice language** — no nearby place names, no distances,
+no travel times, no route advice, no transport operators, no
+destination rankings. The platform has no verified nearby-place
+helper today, so the section sticks to:
+
+- "Use your city as the starting point" → `/cities`
+- "Look for short-distance options before planning a flight" →
+  verify with official transport sources
+- "Compare nearby city profiles where available" → `/compare`
+- "Use the calculators with your own inputs" → travel-budget calc
+- "Open arrival and visual guides where available" → `/arrival`,
+  `/visual-guides`
+- "Verify transport and access with official sources"
+
+When a verified nearby-place model is added later, the section can
+be extended without breaking the disclaimer contract.
+
+### Page-count delta
+
+- static page count: 2,917 → **2,918** (+1). Verified by `next build`:
+  `Generating static pages (2918/2918)`.
+- New route appears as `○ /weekend-trips` (Static) in the build manifest.
+
+### Validation
+
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2918/2918 static pages
+- 0 client components, 0 runtime fetch, 0 new dependencies, 0 images
+  added on the directory itself
