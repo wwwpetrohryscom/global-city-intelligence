@@ -18,6 +18,11 @@
   - Policy + validation helpers added (pure, synchronous, server-safe)
   - No upload UI, no API routes, no storage, no auth, no public rendering
   - Verified-source media catalog left completely untouched
+  - Target validation is shape-only — `validateCommunityPhotoTarget` checks
+    the target-type allow-list and that `targetSlug` is non-empty, but does
+    NOT resolve `targetSlug` against actual project content (nearby places /
+    cities / countries). That resolution is deferred to the future
+    server-side submission endpoint.
 
 ## Next phase
   - Allow user submissions

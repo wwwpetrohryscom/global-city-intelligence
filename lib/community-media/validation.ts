@@ -1,6 +1,7 @@
 import type {
   CommunityPhotoPolicy,
   CommunityPhotoPublicRecord,
+  CommunityPhotoSafetyFlag,
   CommunityPhotoSourceType,
   CommunityPhotoSubmission,
   CommunityPhotoSubmissionStatus,
@@ -66,6 +67,19 @@ export function validateCommunityPhotoSubmissionDraft(
   if (shouldBlockAutoApproval(input.safetyFlags)) {
     warnings.push(
       "submission carries high-risk safety flags; moderation cannot auto-approve",
+    );
+  }
+  // Per the roadmap trust-rule: a user_uploaded submission declaring an
+  // "unknown" licenseIntent should trigger the copyright_risk safety flag at
+  // intake. The draft validator surfaces a warning so the upstream caller can
+  // attach copyright_risk before persisting the submission.
+  if (
+    isUserUploadedSource(input.sourceType) &&
+    input.licenseIntent === "unknown" &&
+    !input.safetyFlags.includes("copyright_risk")
+  ) {
+    warnings.push(
+      "user_uploaded submission with licenseIntent=\"unknown\" should attach the copyright_risk safety flag before review",
     );
   }
   return errors.length === 0 ? ok(warnings) : fail(errors, warnings);
@@ -156,7 +170,7 @@ export function validateCommunityPhotoRightsConfirmation(input: {
 export function validateCommunityPhotoModerationReadiness(input: {
   sourceType: CommunityPhotoSourceType;
   status: CommunityPhotoSubmissionStatus;
-  safetyFlags: readonly CommunityPhotoSubmission["safetyFlags"][number][];
+  safetyFlags: readonly CommunityPhotoSafetyFlag[];
 }): CommunityPhotoValidationResult {
   const errors: string[] = [];
   if (requiresModeration(input.sourceType) && input.status !== "approved") {

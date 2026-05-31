@@ -56,9 +56,16 @@ def parse_union(src: str, type_name: str) -> list[str]:
 
 
 def parse_record_keys(src: str, const_name: str) -> list[str]:
-    """Extract the string-literal keys from a `const NAME: Record<...> = { ... };` map."""
+    """Extract the string-literal keys from a `const NAME: Record<...> = { ... };` map.
+
+    The Record<...> type annotation is matched non-greedily and DOTALL so a
+    future multi-line `Record<\\n  Foo,\\n  Bar\\n>` declaration (or nested
+    generics that introduce a newline) does not silently produce an empty key
+    list. The `[^=]+?` cap ensures we still terminate at the first `= {` rather
+    than running past a sibling declaration.
+    """
     pattern = re.compile(
-        rf"const\s+{re.escape(const_name)}\s*:\s*Record<[^>]+>\s*=\s*\{{(.*?)\n\}};",
+        rf"const\s+{re.escape(const_name)}\s*:\s*Record<[^=]+?>\s*=\s*\{{(.*?)\n\}};",
         re.DOTALL,
     )
     m = pattern.search(src)
