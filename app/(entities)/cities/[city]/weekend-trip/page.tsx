@@ -502,7 +502,7 @@ export default async function WeekendTripPage({ params }: PageProps) {
         {nearbyPlaces.length > 0 ? (
           <section aria-labelledby="weekend-nearby-heading">
             <SectionHeading
-              description={`Verified public places connected to ${city.name} as starting points for short-trip research. Each record names a real, source-documented place — a park, national park, historic town, waterfront, lake, island, cultural heritage site, or regional city. Verify access, opening, transport, weather, and seasonal conditions with official sources before departure. This is not a ranking, an itinerary, or a tourism guide.`}
+              description={`Source-backed candidate places connected to ${city.name} as starting points for short-trip research. Each record names a real, well-known public place — a park, national park, historic town, waterfront, lake, island, cultural heritage site, or regional city. Records are pending detailed source verification (Wikidata QID and official URL resolution); the per-card status line reflects that. Verify access, opening, transport, weather, and seasonal conditions with official sources before departure. This is not a ranking, an itinerary, or a tourism guide.`}
               title="Nearby weekend places to research"
             />
             <h2 className="sr-only" id="weekend-nearby-heading">
