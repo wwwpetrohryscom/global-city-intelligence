@@ -2888,3 +2888,126 @@ fails and the build is blocked.
   blocked until a license-clean, safety-clean Commons image is
   available
 
+## 2026-05-31: verified nearby weekend place detail pages — batch two
+
+This batch promotes the 19 previously deferred eligible records
+into rendered detail pages at `/nearby-weekend-places/[slug]`,
+bringing the total curated detail-page count from **25 to 44**.
+
+### Scope of this batch
+
+- 19 new detail pages added at `/nearby-weekend-places/[slug]`
+- Detail-page count: **25 -> 44**
+- No new nearby records, no new images, no new routes, no new
+  schemas, no new cities, no new countries
+- No new client components, no `fetch`, no new dependencies
+
+### Added slugs (alphabetical)
+
+1. `bergamo-near-milan`
+2. `chantilly-near-paris`
+3. `delft-near-rotterdam`
+4. `drottningholm-near-stockholm`
+5. `el-escorial-near-madrid`
+6. `everglades-near-miami`
+7. `gatineau-park-near-ottawa`
+8. `haarlem-near-amsterdam`
+9. `lubeck-near-hamburg`
+10. `olympic-near-seattle`
+11. `point-reyes-near-san-francisco`
+12. `rocky-mountain-near-denver`
+13. `roskilde-near-copenhagen`
+14. `rottnest-island-near-perth`
+15. `royal-national-park-sydney`
+16. `segovia-near-madrid`
+17. `stanley-park-vancouver`
+18. `uppsala-near-stockholm`
+19. `wachau-valley-near-vienna`
+
+### Eligibility criteria
+
+The eligibility criteria are unchanged from batch one: a record
+qualifies for a detail page only when it carries
+`verificationStatus === "verified"` together with a non-empty
+`officialUrl`, a non-empty `wikidataId`, resolvable coordinates,
+a verified Wikimedia Commons image that passes the license and
+safety filter, a resolvable country, a resolvable connected city,
+resolvable outbound sources, and a neutral summary derived from
+record fields plus safe-template strings.
+
+All 19 slugs in this batch were re-verified against those criteria
+before inclusion. None were promoted on the basis of the earlier
+deferred-list snapshot alone.
+
+### Records still excluded
+
+The same two classes of records remain excluded from detail-page
+rendering after batch two:
+
+- **16 partial records** — these carry
+  `verificationStatus === "partial"` because Wikidata does not
+  publish an `officialUrl` for the place; without an authoritative
+  outbound source the detail-page template cannot anchor a
+  "Sources and identity" block, so they are excluded
+- **8 verified-but-image-free records** — these are verified on
+  Wikidata + officialUrl + wikidataId + coordinates but do not yet
+  have a `VERIFIED_IMAGES` entry that passes the license + safety
+  filter, so they cannot satisfy the "verified image" requirement
+  of the detail-page template:
+  - `richmond-park-london`
+  - `phoenix-park-dublin`
+  - `cascais-near-lisbon`
+  - `muir-woods-near-san-francisco`
+  - `pentland-hills-edinburgh`
+  - `sitges-near-barcelona`
+  - `indiana-dunes-near-chicago`
+  - `fiordland-near-queenstown`
+
+### No code changes required per slug
+
+The detail-page template, the `/nearby-weekend-places/[slug]`
+route, the sitemap generator, the `/nearby-weekend-places`
+directory integration, the `/cities/[city]/weekend-trip` nearby
+integration, and the `validate:nearby-places` validator are all
+generic. They read from the curated slug list at build time and
+require no per-slug code changes. Appending the 19 slugs to
+`NEARBY_WEEKEND_PLACE_DETAIL_SLUGS` is the only code change made
+in this batch.
+
+### Sitemap delta
+
+- +19 detail entries appended to the sitemap, one per new
+  detail page
+- each entry uses priority `0.7` and `changefreq` `monthly`,
+  matching the batch-one entries
+- total nearby-weekend-place detail entries in the sitemap:
+  **25 -> 44**
+- no other sitemap entry's priority or `changefreq` was changed
+
+### Static page-count delta
+
+- static page count: **2,944 -> 2,963** (+19)
+- no new cities, no new countries, no new place records, no new
+  images
+- no new schemas beyond the existing `WebPage` + `BreadcrumbList`
+  blocks already emitted by the detail-page template
+
+### Validation results
+
+- `npm run validate:nearby-places` — **PASS**; 68 records plus
+  the 44 curated detail-page rules all clean
+- `npm run validate:media` — **PASS**
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — emits `/nearby-weekend-places/[slug]` as
+  Static-prerendered for all 44 slugs
+
+### Next steps
+
+- audit batch two against the same 16-dimension framework used
+  for batch one, once the live build is observed
+- partial records remain ineligible until Wikidata publishes an
+  `officialUrl` for the place
+- image-free verified records remain ineligible until a
+  license-clean, safety-clean Wikimedia Commons image is found
+
