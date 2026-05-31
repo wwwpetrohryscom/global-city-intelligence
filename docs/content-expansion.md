@@ -1573,7 +1573,7 @@ falls back, OG image omitted entirely.
 - Sitemap auto-emits via `getAllSummerTravelPages()`: `priority: 0.76`,
   `changeFrequency: monthly`, `lastModified` per record
 - `generateSummerTravelMetadata` produces unique `title`
-  (`Summer Travel Planning Guide for {City}`), `description`,
+  (`Summer 2026 Travel Planning Guide for {City}`), `description`,
   canonical, OG metadata, `lastModified` per page
 - OG image emitted only from verified hero via `ogImageFromPlaceImage`
 
@@ -1612,7 +1612,7 @@ page. No `Event`, `TouristAttraction`, `TravelAction`,
 
 ### Accessibility / performance
 
-- One `<h1>` per page (`Summer Travel Planning Guide for {City}`),
+- One `<h1>` per page (`Summer 2026 Travel Planning Guide for {City}`),
   `aria-labelledby` on every section with visually-hidden `<h2>`
 - Hero imagery carries descriptive alt text + `ImageAttribution`
 - 0 client components, 0 `useEffect` / `useState`, 0 runtime fetch
@@ -1625,6 +1625,37 @@ page. No `Event`, `TouristAttraction`, `TravelAction`,
 - summer-travel pages: 0 → **100**
 - static page count: 2,716 → **2,816** (+100). Verified by
   `next build`: `Generating static pages (2816/2816)`.
+
+### Validation
+
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2816/2816 static pages
+
+## 2026-05-31: summer-travel cluster — explicit "Summer 2026" naming pass
+
+Renamed user-facing titles and reverse-link labels for the existing
+summer-travel cluster to include the explicit "Summer 2026" year token
+per the seasonal-naming spec. No new pages, no new cities, no new
+images, no schema changes, no behavior changes — only string updates.
+
+### Renamed surfaces
+
+- `lib/data/summer-travel.ts` — record title template now reads
+  `Summer 2026 Travel Planning Guide for ${cityName}`
+- `lib/seo/metadata.ts` — `generateSummerTravelMetadata` now produces
+  `Summer 2026 Travel Planning Guide for ${city.name}` and a matching
+  description starting with "Plan summer 2026 travel research…"
+- `app/(entities)/cities/[city]/summer-travel/page.tsx` — H1 now reads
+  `Summer 2026 Travel Planning Guide for ${city.name}`
+- City profile, arrival page, visual-guide page, neighborhood page,
+  and moving-to page reverse-link cards/entries now read
+  "Summer 2026 travel planning guide for {City}"
+
+### Page-count delta
+
+- static page count: **2,816 → 2,816** (unchanged — naming pass only)
 
 ### Validation
 

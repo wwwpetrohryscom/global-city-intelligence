@@ -116,8 +116,8 @@ export default async function SummerTravelPage({ params }: PageProps) {
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
   const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
 
-  const title = `Summer Travel Planning Guide for ${city.name}`;
-  const description = `Plan summer travel research for ${city.name}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency.`;
+  const title = `Summer 2026 Travel Planning Guide for ${city.name}`;
+  const description = `Plan summer 2026 travel research for ${city.name}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency.`;
 
   const overviewCards: SummerTravelOverviewCard[] = [
     {

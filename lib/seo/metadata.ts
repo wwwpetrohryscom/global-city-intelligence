@@ -242,8 +242,8 @@ export function generateSummerTravelMetadata({
   image?: MetadataOgImage;
 }): Metadata {
   const countryFragment = country ? `, ${country.name}` : "";
-  const title = `Summer Travel Planning Guide for ${city.name}`;
-  const description = `Plan summer travel research for ${city.name}${countryFragment} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency. Not a weather forecast, events calendar, hotel-price guide, or tourism ranking.`;
+  const title = `Summer 2026 Travel Planning Guide for ${city.name}`;
+  const description = `Plan summer 2026 travel research for ${city.name}${countryFragment} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency. Not a weather forecast, events calendar, hotel-price guide, or tourism ranking.`;
 
   return createMetadata({
     title,

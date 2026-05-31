@@ -199,7 +199,7 @@ export default async function ArrivalCityPage({ params }: PageProps) {
     ...(hasSummerTravelPage(city.slug)
       ? [
           {
-            label: `Summer travel planning guide for ${city.name}`,
+            label: `Summer 2026 travel planning guide for ${city.name}`,
             href: summerTravelRoute(city.slug),
             description:
               "Seasonal planning checklist — pairs with arrival research.",

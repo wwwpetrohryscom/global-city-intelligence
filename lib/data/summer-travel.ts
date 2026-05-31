@@ -201,7 +201,7 @@ const seeds: readonly Seed[] = [
 
 export const summerTravelPages: SummerTravelCityPage[] = seeds.map((seed) => ({
   citySlug: seed.citySlug,
-  title: `Summer Travel Planning Guide for ${seed.cityName}`,
+  title: `Summer 2026 Travel Planning Guide for ${seed.cityName}`,
   summary: summary(seed.cityName, seed.countryName),
   summerFocus: seed.summerFocus,
   updatedDate: BATCH_1_UPDATED_DATE,

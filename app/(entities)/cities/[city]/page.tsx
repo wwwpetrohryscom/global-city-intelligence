@@ -399,7 +399,7 @@ export default async function CityPage({ params }: PageProps) {
               <LinkCard
                 description={`Summer 2026 travel planning checklist for ${city.name} — links into arrival planning, visual orientation, budget tools, transport, public safety, and healthcare context. Not a weather forecast, events calendar, hotel-price guide, or tourism ranking.`}
                 href={summerTravelRoute(city.slug)}
-                title={`Summer travel planning guide for ${city.name}`}
+                title={`Summer 2026 travel planning guide for ${city.name}`}
               />
             ) : null}
             <LinkCard
