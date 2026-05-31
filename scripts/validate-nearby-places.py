@@ -271,10 +271,13 @@ def _validate_image_block(block: str, *, label: str) -> list[str]:
                 f"{license_val}"
             )
 
-    # src must be HTTPS.
+    # src must be HTTPS upload.wikimedia.org (the canonical Commons CDN).
     src_val = _string_field(block, "src")
-    if src_val and not src_val.startswith("https://"):
-        out.append(f"{label}: `src` must use HTTPS (got: {src_val})")
+    if src_val and not src_val.startswith("https://upload.wikimedia.org/"):
+        out.append(
+            f"{label}: `src` must be served from "
+            f"https://upload.wikimedia.org/ (got: {src_val})"
+        )
 
     # source must be the literal "wikimedia-commons".
     source_val = _string_field(block, "source")

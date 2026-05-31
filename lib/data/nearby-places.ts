@@ -1990,12 +1990,10 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     source: "wikimedia-commons",
     sourceUrl:
       "https://commons.wikimedia.org/wiki/File:Skyline_drive_20050521_123518_2.jpg",
-    author:
-      "Image copyright 2005 by user G. Edward Johnson (user Lorax) and released under the terms of the GFDL",
+    author: "G. Edward Johnson",
     license: "CC BY-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
-    attributionText:
-      "Image copyright 2005 by user G. Edward Johnson (user Lorax) and released under the terms of the GFDL / Wikimedia Commons, CC BY-SA 3.0",
+    attributionText: "G. Edward Johnson / Wikimedia Commons, CC BY-SA 3.0",
     verified: true,
     verifiedAt: "2026-05-31",
   },
@@ -2097,12 +2095,10 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     source: "wikimedia-commons",
     sourceUrl:
       "https://commons.wikimedia.org/wiki/File:Domkyrkan_i_Uppsalas_stadsbild.jpg",
-    author:
-      "This image was produced by David Castor (user:dcastor). Pictures submitted to Wikipedia are released to the public domain for unrestricted use.",
+    author: "David Castor",
     license: "Public domain",
     licenseUrl: "https://en.wikipedia.org/wiki/Public_domain",
-    attributionText:
-      "This image was produced by David Castor (user:dcastor). Pictures submitted to Wikipedia are released to the public domain for unrestricted use. / Wikimedia Commons, Public domain",
+    attributionText: "David Castor / Wikimedia Commons, Public domain",
     verified: true,
     verifiedAt: "2026-05-31",
   },
