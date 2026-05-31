@@ -21,6 +21,12 @@ established safety rules:
     structure is present AND `verified: true` with a non-empty
     `verifiedAt` value (no images shipped in MVP; this is a
     forward-compatible check)
+  - NEARBY_WEEKEND_PLACE_DETAIL_SLUGS (from
+    lib/data/nearby-place-detail-pages.ts) — every curated slug
+    must be unique, must resolve to a seed record whose
+    verificationStatus is "verified", and the underlying seed
+    must declare both a wikidataId and an officialUrl field plus
+    have an entry in VERIFIED_IMAGES.
   - VERIFIED_IMAGES entries (sourced from Wikidata P18 + Wikimedia
     Commons API) must carry every required field, the `sourceUrl`
     must point at commons.wikimedia.org, the `author` must be a
@@ -46,6 +52,7 @@ NEARBY_PATH = ROOT / "lib/data/nearby-places.ts"
 CITIES_PATH = ROOT / "lib/data/cities.ts"
 COUNTRIES_PATH = ROOT / "lib/data/countries.ts"
 SOURCES_PATH = ROOT / "lib/data/sources/index.ts"
+DETAIL_SLUGS_PATH = ROOT / "lib/data/nearby-place-detail-pages.ts"
 
 # Wording rules — every match in a summary or cautionNotes is a
 # positive claim and must be flagged. Negative-disclaimer matches in
@@ -557,6 +564,100 @@ def main() -> int:
                 errors.append(
                     f"{slug}: latitude/longitude declared without "
                     f"non-empty coordinateSource"
+                )
+
+    # Curated detail-slug allow-list validation.
+    # The file lib/data/nearby-place-detail-pages.ts exports an
+    # ordered tuple NEARBY_WEEKEND_PLACE_DETAIL_SLUGS naming the
+    # subset of seeds that have a dedicated detail route. Every
+    # entry must:
+    #   (a) exist as a seed slug in nearby-places.ts
+    #   (b) carry verificationStatus === "verified"
+    #   (c) declare a wikidataId field
+    #   (d) declare an officialUrl field
+    #   (e) appear as a key in VERIFIED_IMAGES
+    # The list must also be free of duplicates. An empty / missing
+    # tuple is tolerated (the file may not have landed yet).
+    if DETAIL_SLUGS_PATH.exists():
+        detail_src = load(DETAIL_SLUGS_PATH)
+        tuple_match = re.search(
+            r"NEARBY_WEEKEND_PLACE_DETAIL_SLUGS"
+            r"[^=]*=\s*\[(.*?)\]\s*as\s+const\s*;",
+            detail_src,
+            re.DOTALL,
+        )
+        curated_slugs: list[str] = []
+        if tuple_match:
+            curated_slugs = re.findall(
+                r'"([a-z][a-z0-9-]*)"', tuple_match.group(1)
+            )
+
+        # Duplicate check.
+        seen_curated: set[str] = set()
+        for cs in curated_slugs:
+            if cs in seen_curated:
+                errors.append(
+                    f"NEARBY_WEEKEND_PLACE_DETAIL_SLUGS: duplicate slug: {cs}"
+                )
+            seen_curated.add(cs)
+
+        # Re-collect VERIFIED_IMAGES keys for the image-presence check.
+        verified_image_keys: set[str] = set()
+        vi_match = re.search(
+            r"VERIFIED_IMAGES\s*:[^=]*=\s*\{(.*?)\n\}\s*(?:as\s+const\s*)?;",
+            nearby_src,
+            re.DOTALL,
+        )
+        if vi_match:
+            verified_image_keys = set(
+                re.findall(
+                    r'"([a-z][a-z0-9-]*)"\s*:\s*\{',
+                    vi_match.group(1),
+                )
+            )
+
+        seed_slug_set = {seed["slug"] for seed in seeds}
+
+        for cs in curated_slugs:
+            # (a) Must exist in the seed list.
+            if cs not in seed_slug_set:
+                errors.append(
+                    f"NEARBY_WEEKEND_PLACE_DETAIL_SLUGS[{cs}]: "
+                    f"slug not present in nearby-places.ts seeds"
+                )
+                continue
+
+            block = seed_blocks.get(cs, "")
+
+            # (b) verificationStatus must be exactly "verified".
+            vs_match = re.search(
+                r'\bverificationStatus\s*:\s*"([^"]*)"', block
+            )
+            if not vs_match or vs_match.group(1) != "verified":
+                errors.append(
+                    f"NEARBY_WEEKEND_PLACE_DETAIL_SLUGS[{cs}]: "
+                    f"verificationStatus is not 'verified'"
+                )
+
+            # (c) Must declare a wikidataId field.
+            if not re.search(r'\bwikidataId\s*:\s*"Q\d+"', block):
+                errors.append(
+                    f"NEARBY_WEEKEND_PLACE_DETAIL_SLUGS[{cs}]: "
+                    f"missing wikidataId field"
+                )
+
+            # (d) Must declare an officialUrl field.
+            if not re.search(r'\bofficialUrl\s*:\s*"[^"]+"', block):
+                errors.append(
+                    f"NEARBY_WEEKEND_PLACE_DETAIL_SLUGS[{cs}]: "
+                    f"missing officialUrl field"
+                )
+
+            # (e) Must have an entry in VERIFIED_IMAGES.
+            if cs not in verified_image_keys:
+                errors.append(
+                    f"NEARBY_WEEKEND_PLACE_DETAIL_SLUGS[{cs}]: "
+                    f"no matching VERIFIED_IMAGES entry"
                 )
 
     return print_results(errors, count=len(seeds))

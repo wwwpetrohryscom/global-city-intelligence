@@ -1,3 +1,4 @@
+import { NEARBY_WEEKEND_PLACE_DETAIL_SLUGS } from "@/lib/data/nearby-place-detail-pages";
 import {
   getAllArrivalPages,
   getAllCityIntentPages,
@@ -95,6 +96,10 @@ export function weekendTripRoute(citySlug: string) {
   return `/cities/${citySlug}/weekend-trip`;
 }
 
+export function nearbyWeekendPlaceRoute(slug: string) {
+  return `/nearby-weekend-places/${slug}`;
+}
+
 export function getCollectionUrl(slug: string) {
   return `/${slug}`;
 }
@@ -151,6 +156,9 @@ export function getAllIndexableRoutes() {
     ),
     ...getAllWeekendTripPages().map((page) =>
       weekendTripRoute(page.citySlug),
+    ),
+    ...NEARBY_WEEKEND_PLACE_DETAIL_SLUGS.map((slug) =>
+      nearbyWeekendPlaceRoute(slug),
     ),
   ];
 }

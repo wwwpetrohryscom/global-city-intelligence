@@ -2633,3 +2633,258 @@ image-record invariants:
 - future place detail pages remain deferred until image and source
   maturity are higher; this pass does not unlock them
 
+## 2026-05-31: verified nearby weekend place detail pages
+
+This pass introduces the first set of per-place detail pages for
+the nearby weekend places dataset. The pages are statically
+generated, source-backed, and deliberately scoped to records that
+already carry every required attribute. No new place records, no
+new images, no new schemas beyond `WebPage` + `BreadcrumbList`,
+and no new cities or countries were introduced.
+
+### Scope
+
+- 25 detail pages were added, one per curated slug, at the route
+  `/nearby-weekend-places/[slug]`
+- the route is fully SSG: `dynamicParams = false` and
+  `generateStaticParams()` returns only the 25 curated slugs
+- every detail page is positioned as a "source-backed nearby
+  weekend place to research", oriented toward local-first
+  planning, and tells the reader to verify current access and
+  conditions with official sources — it is explicitly not a route
+  planner, not a live schedule, and not a tourism ranking
+
+### Eligibility criteria
+
+A nearby place record qualifies for a detail page only when every
+one of the following holds:
+
+- `verificationStatus === "verified"`
+- a non-empty `officialUrl` (sourced from Wikidata)
+- a non-empty `wikidataId`
+- a verified image entry in `VERIFIED_IMAGES` (with full
+  attribution, a safe Wikimedia Commons license, and the safety
+  filename filter passed)
+- non-null `coordinates` (latitude + longitude)
+- a populated `countrySlug` that resolves to a known country
+- a populated `connectedCitySlug` that resolves to a known city in
+  the cities dataset
+
+Records that fail any single one of those checks do not get a
+detail page in this batch.
+
+### Curated slugs (25, alphabetical)
+
+1. `blue-mountains-near-sydney`
+2. `brighton-near-london`
+3. `bruges-near-brussels`
+4. `calanques-near-marseille`
+5. `englischer-garten-munich`
+6. `fontainebleau-near-paris`
+7. `greenwich-london`
+8. `heidelberg-near-frankfurt`
+9. `holyrood-park-edinburgh`
+10. `hyde-park-london`
+11. `karlstejn-near-prague`
+12. `kew-gardens-london`
+13. `lake-como-near-milan`
+14. `mount-rainier-near-seattle`
+15. `peak-district-near-manchester`
+16. `schonbrunn-vienna`
+17. `shenandoah-near-washington-dc`
+18. `sintra-near-lisbon`
+19. `suomenlinna-helsinki`
+20. `tivoli-near-rome`
+21. `toledo-near-madrid`
+22. `versailles-near-paris`
+23. `wicklow-mountains-near-dublin`
+24. `windsor-near-london`
+25. `zaanse-schans-near-amsterdam`
+
+### Eligible-but-deferred verified+imaged records (19)
+
+The following 19 records satisfy every eligibility criterion above
+but were intentionally held back from this batch to keep the first
+detail-page release small and reviewable. They are deferred to a
+future batch — they were not skipped because they were
+ineligible:
+
+- `chantilly-near-paris`
+- `lubeck-near-hamburg`
+- `haarlem-near-amsterdam`
+- `delft-near-rotterdam`
+- `segovia-near-madrid`
+- `el-escorial-near-madrid`
+- `bergamo-near-milan`
+- `wachau-valley-near-vienna`
+- `drottningholm-near-stockholm`
+- `uppsala-near-stockholm`
+- `roskilde-near-copenhagen`
+- `point-reyes-near-san-francisco`
+- `olympic-near-seattle`
+- `rocky-mountain-near-denver`
+- `everglades-near-miami`
+- `stanley-park-vancouver`
+- `gatineau-park-near-ottawa`
+- `royal-national-park-sydney`
+
+### Records not eligible for a detail page
+
+Two classes of records were excluded by the eligibility filter and
+are not part of this pass:
+
+- **16 partial records** — these carry
+  `verificationStatus === "partial"` because Wikidata does not
+  publish an `officialUrl` for the place; without an authoritative
+  outbound source the detail-page template cannot anchor a
+  "Sources and identity" block, so they are excluded
+- **8 verified records that are image-free** — these are verified
+  on Wikidata + officialUrl + wikidataId + coordinates but do not
+  yet have a `VERIFIED_IMAGES` entry that passes the license +
+  safety filter, so they cannot satisfy the "verified image"
+  requirement of the detail-page template:
+  - `richmond-park-london`
+  - `phoenix-park-dublin`
+  - `cascais-near-lisbon`
+  - `muir-woods-near-san-francisco`
+  - `pentland-hills-edinburgh`
+  - `sitges-near-barcelona`
+  - `indiana-dunes-near-chicago`
+  - `fiordland-near-queenstown`
+
+### Page structure
+
+Every detail page renders the same fixed, server-rendered layout:
+
+- **`PageHeader`** — place name, country, and the verification
+  status label "Verified source record"
+- **4-cell stats `<dl>`** — country, connected city, verification
+  status, and the source identifier (Wikidata QID) — populated
+  exclusively from existing record fields
+- **Visual context** — the verified Wikimedia Commons image with
+  full inline attribution (author, license, license URL, source
+  file page); rendered as a plain `<img>` with explicit `width`,
+  `height`, and `aspectRatio`, no `next/image`, no client
+  components
+- **Overview** — neutral prose derived from existing record
+  fields and safe templates; no invented distances, travel times,
+  ticket prices, opening hours, weather, hotel prices, attraction
+  rankings, or accessibility claims
+- **Connected cities** — links back to the connected city page
+  and the country page using existing slugs
+- **Sources and identity** — outbound links to the Wikidata
+  entity, the `officialUrl`, and the Wikimedia Commons category
+  (when present), each rendered as plain anchors
+- **"What to verify before departure" checklist** — a fixed,
+  non-promotional checklist that names the categories the reader
+  must check with official sources before they travel; the list
+  itself does not state any specific distance, time, price,
+  schedule, or access claim
+- **Planning tools** — internal links to the relevant connected
+  city page and the country index, so the page is a planning
+  anchor rather than a terminal page
+- **Continue exploring** — internal links back to the
+  `/nearby-weekend-places` directory and to the connected city's
+  `weekend-trip` page
+
+### Frozen disclaimer
+
+Every detail page renders the frozen disclaimer:
+
+> Records do not publish exact distances, travel times, transport
+> schedules, opening hours, ticket prices, restaurant or hotel
+> recommendations, attraction rankings, or live access status.
+
+### Safety policy
+
+Detail pages do not publish:
+
+- exact distances or travel times from the connected city
+- transport routes, schedules, ticket prices, or operator names
+- opening hours or live access status
+- weather, climate guidance, or seasonal recommendations
+- hotel prices, hotel recommendations, or restaurant
+  recommendations
+- attraction rankings or tourism rankings
+- safety claims or accessibility claims
+
+All page copy is derived from existing record fields plus fixed
+safe-template strings. Promotional wording ("best", "top",
+"must-see", "hidden gem", "perfect", "safest", "cheapest",
+"guaranteed", "exact distance", "exact travel time") is excluded
+from the template.
+
+### Structured data
+
+Each page emits exactly two JSON-LD blocks:
+
+- `WebPage`
+- `BreadcrumbList`
+
+No `Place`, `TouristAttraction`, `Event`, `Itinerary`, or `Offer`
+schema is emitted. This keeps the pages aligned with the
+source-record framing and avoids implying first-party place
+authority.
+
+### Directory integration
+
+On the `/nearby-weekend-places` directory, every card whose slug
+is in the curated 25 now has its card title linked to the
+internal detail page at `/nearby-weekend-places/[slug]`. The
+external "Official source" link is preserved as a separate
+secondary link on the same card — it is not replaced. Cards whose
+slug is not in the curated 25 continue to render with the
+previous text-only title (no internal detail-page link).
+
+### Weekend-trip integration
+
+The same internal-link substitution is applied on the nearby
+cards rendered inside `/cities/[city]/weekend-trip`. When a
+nearby card's slug is in the curated 25, the card title links to
+the internal detail page; otherwise the card renders exactly as
+before, including its external official source link. The
+existing max-6-cards cap on the weekend-trip nearby section is
+unchanged.
+
+### Sitemap
+
+- +25 entries appended to the sitemap, one per detail page
+- each entry uses priority `0.7` and `changefreq` `monthly`
+- no other sitemap entry's priority or `changefreq` was changed
+
+### Static page-count delta
+
+- static page count: **2,919 -> 2,944** (+25)
+- no new cities, no new countries, no new place records, no new
+  images
+- no new schemas beyond `WebPage` + `BreadcrumbList`
+- no client components, no `fetch`, no new dependencies
+
+### Validation script changes
+
+`npm run validate:nearby-places` was extended to enforce the
+detail-page eligibility invariant for every curated slug:
+
+- each curated slug must exist in the nearby places dataset
+- each curated slug's record must have
+  `verificationStatus === "verified"`
+- each curated slug's record must have a non-empty `wikidataId`
+- each curated slug's record must have a non-empty `officialUrl`
+- each curated slug must have a corresponding entry in
+  `VERIFIED_IMAGES`
+
+If any one of those checks fails for any curated slug, validation
+fails and the build is blocked.
+
+### Next steps
+
+- expand to the remaining 19 eligible verified+imaged records in
+  a future batch, after auditing this first 25-page release
+  against the live build
+- consider partial records only after Wikidata publishes an
+  `officialUrl` for the place; until then they remain
+  detail-page-ineligible by design
+- for the 8 verified image-free records, detail pages remain
+  blocked until a license-clean, safety-clean Commons image is
+  available
+

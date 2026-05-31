@@ -14,6 +14,7 @@ import {
   getCityBySlug,
   getCountryBySlug,
   getNearbyPlaceCategoryLabel,
+  hasNearbyWeekendPlaceDetailPage,
 } from "@/lib/data/queries";
 import { staticBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
@@ -21,6 +22,7 @@ import {
   absoluteUrl,
   cityRoute,
   countryRoute,
+  nearbyWeekendPlaceRoute,
   staticRoutes,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
@@ -431,7 +433,14 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                     {`${entry.country?.name ?? "Indexed place"}${entry.place.regionName ? ` · ${entry.place.regionName}` : ""}`}
                   </p>
                   <h3 className="mt-2 text-lg font-semibold text-text-primary">
-                    {entry.place.officialUrl ? (
+                    {hasNearbyWeekendPlaceDetailPage(entry.place.slug) ? (
+                      <Link
+                        className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
+                        href={nearbyWeekendPlaceRoute(entry.place.slug)}
+                      >
+                        {entry.place.name}
+                      </Link>
+                    ) : entry.place.officialUrl ? (
                       <Link
                         className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
                         href={entry.place.officialUrl}
@@ -444,6 +453,11 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                       entry.place.name
                     )}
                   </h3>
+                  {hasNearbyWeekendPlaceDetailPage(entry.place.slug) ? (
+                    <p className="mt-1 text-xs font-medium text-text-secondary">
+                      Detailed research page available
+                    </p>
+                  ) : null}
                   <p className="mt-1 text-xs font-medium text-text-secondary">
                     {getNearbyPlaceCategoryLabel(entry.place.category)}
                   </p>

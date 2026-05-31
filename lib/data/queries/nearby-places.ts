@@ -1,4 +1,8 @@
 import { nearbyWeekendPlaces } from "@/lib/data/nearby-places";
+import {
+  NEARBY_WEEKEND_PLACE_DETAIL_SLUGS,
+  isNearbyWeekendPlaceDetailSlug,
+} from "@/lib/data/nearby-place-detail-pages";
 import type {
   NearbyPlaceCategory,
   NearbyWeekendPlace,
@@ -83,4 +87,21 @@ export function getNearbyWeekendPlacesForWeekendTrip(
     return list;
   }
   return list.slice(0, limit);
+}
+
+export function getAllNearbyWeekendPlaceDetailPages(): NearbyWeekendPlace[] {
+  return NEARBY_WEEKEND_PLACE_DETAIL_SLUGS.map((slug) => bySlug.get(slug)).filter(
+    (place): place is NearbyWeekendPlace => Boolean(place),
+  );
+}
+
+export function getNearbyWeekendPlaceDetailPageBySlug(
+  slug: string,
+): NearbyWeekendPlace | undefined {
+  if (!isNearbyWeekendPlaceDetailSlug(slug)) return undefined;
+  return bySlug.get(slug);
+}
+
+export function hasNearbyWeekendPlaceDetailPage(slug: string): boolean {
+  return isNearbyWeekendPlaceDetailSlug(slug) && bySlug.has(slug);
 }

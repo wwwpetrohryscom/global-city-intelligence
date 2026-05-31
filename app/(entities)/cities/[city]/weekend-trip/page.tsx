@@ -36,6 +36,7 @@ import {
   getWeekendTripPageByCitySlug,
   hasArrivalPage,
   hasMovingToCityPage,
+  hasNearbyWeekendPlaceDetailPage,
   hasNeighborhoodPlanningPage,
   hasSummerTravelPage,
   hasVerifiedEmergencyData,
@@ -54,6 +55,7 @@ import {
   comparisonRoute,
   countryRoute,
   movingToCityRoute,
+  nearbyWeekendPlaceRoute,
   neighborhoodPlanningRoute,
   staticRoutes,
   summerTravelRoute,
@@ -574,7 +576,14 @@ export default async function WeekendTripPage({ params }: PageProps) {
                         {place.regionName ? ` · ${place.regionName}` : ""}
                       </p>
                       <h3 className="mt-2 text-base font-semibold text-text-primary">
-                        {place.officialUrl ? (
+                        {hasNearbyWeekendPlaceDetailPage(place.slug) ? (
+                          <Link
+                            className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                            href={nearbyWeekendPlaceRoute(place.slug)}
+                          >
+                            {place.name}
+                          </Link>
+                        ) : place.officialUrl ? (
                           <Link
                             className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
                             href={place.officialUrl}

@@ -201,12 +201,15 @@ export {
 export { getWeekendTripFocusLabel } from "@/lib/data/weekend-trip";
 
 export {
+  getAllNearbyWeekendPlaceDetailPages,
   getAllNearbyWeekendPlaces,
   getNearbyWeekendPlaceBySlug,
+  getNearbyWeekendPlaceDetailPageBySlug,
   getNearbyWeekendPlacesByCategory,
   getNearbyWeekendPlacesForCity,
   getNearbyWeekendPlacesForCountry,
   getNearbyWeekendPlacesForWeekendTrip,
+  hasNearbyWeekendPlaceDetailPage,
   hasNearbyWeekendPlacesForCity,
 } from "@/lib/data/queries/nearby-places";
 

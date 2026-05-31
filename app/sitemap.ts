@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { LAST_UPDATED } from "@/lib/data/constants";
+import { NEARBY_WEEKEND_PLACE_DETAIL_SLUGS } from "@/lib/data/nearby-place-detail-pages";
 import {
   getAllArrivalPages,
   getAllCityIntentPages,
@@ -25,6 +26,7 @@ import {
   getCollectionUrl,
   moduleRoute,
   movingToCityRoute,
+  nearbyWeekendPlaceRoute,
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
@@ -147,6 +149,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.75,
     },
+    ...NEARBY_WEEKEND_PLACE_DETAIL_SLUGS.map((slug) => ({
+      url: absoluteUrl(nearbyWeekendPlaceRoute(slug)),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
   ];
 
   const cityItems = cities.map((city) => ({
