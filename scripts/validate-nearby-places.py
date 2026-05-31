@@ -8,9 +8,18 @@ established safety rules:
   - every countrySlug exists in lib/data/countries.ts
   - every sourceId resolves to an existing source
   - no exact distance / travel-time / price / opening-hour fields
+    (also no liveSchedule / routeDetails / currentWeather /
+    eventDate / hotelPrice / flightPrice fields)
   - no unsafe positive wording in summary or cautionNotes
+  - every record's verificationStatus is exactly one of
+    "verified", "partial", or "needs_review"
+  - records flagged "verified" must carry a wikidataId and/or
+    officialUrl (preferably both)
+  - if a record declares latitude OR longitude, both must be
+    present alongside a non-empty coordinateSource
   - records with image: ensure source/author/license/attribution
-    structure is present (no images shipped in MVP; this is a
+    structure is present AND `verified: true` with a non-empty
+    `verifiedAt` value (no images shipped in MVP; this is a
     forward-compatible check)
 
 Run:   python3 scripts/validate-nearby-places.py
@@ -57,7 +66,16 @@ BANNED_FIELDS = (
     "exactDistanceKm",
     "ticketPrice",
     "openingHours",
+    "liveSchedule",
+    "routeDetails",
+    "currentWeather",
+    "eventDate",
+    "hotelPrice",
+    "flightPrice",
 )
+
+# Allowed verificationStatus literal values.
+ALLOWED_VERIFICATION_STATUSES = ("verified", "partial", "needs_review")
 
 
 def load(path: Path) -> str:
@@ -204,6 +222,104 @@ def main() -> int:
             if not re.search(rf"\b{required}\s*:", block):
                 errors.append(
                     f"image record missing required field: {required}"
+                )
+        # Stronger image rules: `verified` must literally be `true`
+        # and `verifiedAt` must be a non-empty string.
+        if not re.search(r"\bverified\s*:\s*true\b", block):
+            errors.append(
+                "image record must declare `verified: true`"
+            )
+        verified_at_match = re.search(
+            r'\bverifiedAt\s*:\s*"([^"]*)"', block
+        )
+        if not verified_at_match or not verified_at_match.group(1).strip():
+            errors.append(
+                "image record must declare a non-empty `verifiedAt`"
+            )
+
+    # Per-seed block scans for verificationStatus / wikidataId /
+    # officialUrl / coordinate enforcement. We walk the file and
+    # carve out each `{ slug: "...", ... }` record block by tracking
+    # brace depth from the slug declaration onward.
+    seed_blocks: dict[str, str] = {}
+    for slug_match in re.finditer(r'\{\s*slug:\s*"([^"]+)"', nearby_src):
+        slug = slug_match.group(1)
+        start = slug_match.start()
+        # Walk forward to find the matching closing brace for this
+        # record. Start one char after the opening `{`.
+        depth = 0
+        i = start
+        end = -1
+        while i < len(nearby_src):
+            ch = nearby_src[i]
+            if ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    end = i + 1
+                    break
+            i += 1
+        if end > start:
+            seed_blocks[slug] = nearby_src[start:end]
+
+    for seed in seeds:
+        slug = seed["slug"]
+        assert isinstance(slug, str)
+        block = seed_blocks.get(slug, "")
+
+        # verificationStatus literal must be one of the allowed values
+        vs_match = re.search(
+            r'\bverificationStatus\s*:\s*"([^"]*)"', block
+        )
+        if not vs_match:
+            errors.append(
+                f"{slug}: missing verificationStatus literal"
+            )
+            verification_status = None
+        else:
+            verification_status = vs_match.group(1)
+            if verification_status not in ALLOWED_VERIFICATION_STATUSES:
+                errors.append(
+                    f"{slug}: invalid verificationStatus "
+                    f"'{verification_status}' (expected one of "
+                    f"{', '.join(ALLOWED_VERIFICATION_STATUSES)})"
+                )
+
+        # When verified — must have wikidataId or officialUrl
+        if verification_status == "verified":
+            wd_match = re.search(
+                r'\bwikidataId\s*:\s*"([^"]+)"', block
+            )
+            ou_match = re.search(
+                r'\bofficialUrl\s*:\s*"([^"]+)"', block
+            )
+            if not wd_match and not ou_match:
+                errors.append(
+                    f"{slug}: verificationStatus 'verified' requires "
+                    f"wikidataId and/or officialUrl"
+                )
+
+        # Coordinate enforcement: if latitude or longitude declared,
+        # both must be present and coordinateSource must be non-empty.
+        lat_match = re.search(r'\blatitude\s*:\s*([^,\n}]+)', block)
+        lon_match = re.search(r'\blongitude\s*:\s*([^,\n}]+)', block)
+        if lat_match or lon_match:
+            if not lat_match:
+                errors.append(
+                    f"{slug}: longitude declared without latitude"
+                )
+            if not lon_match:
+                errors.append(
+                    f"{slug}: latitude declared without longitude"
+                )
+            cs_match = re.search(
+                r'\bcoordinateSource\s*:\s*"([^"]*)"', block
+            )
+            if not cs_match or not cs_match.group(1).strip():
+                errors.append(
+                    f"{slug}: latitude/longitude declared without "
+                    f"non-empty coordinateSource"
                 )
 
     return print_results(errors, count=len(seeds))

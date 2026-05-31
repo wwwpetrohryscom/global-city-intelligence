@@ -502,46 +502,52 @@ export default async function WeekendTripPage({ params }: PageProps) {
         {nearbyPlaces.length > 0 ? (
           <section aria-labelledby="weekend-nearby-heading">
             <SectionHeading
-              description={`Source-backed candidate places connected to ${city.name} as starting points for short-trip research. Each record names a real, well-known public place — a park, national park, historic town, waterfront, lake, island, cultural heritage site, or regional city. Records are pending detailed source verification (Wikidata QID and official URL resolution); the per-card status line reflects that. Verify access, opening, transport, weather, and seasonal conditions with official sources before departure. This is not a ranking, an itinerary, or a tourism guide.`}
+              description={`Source-backed candidate places connected to ${city.name} as starting points for short-trip research. The status shown on each card reflects the level of source verification: a matched Wikidata identity together with an official URL is shown as verified, an identity match without a confirmed official URL is shown as partially verified, and records not yet matched to a stable identifier are shown as pending review. Verify access, opening, transport, weather, and seasonal conditions with official sources before departure. This is not a ranking, an itinerary, or a tourism guide.`}
               title="Nearby weekend places to research"
             />
             <h2 className="sr-only" id="weekend-nearby-heading">
               Nearby weekend places to research from {city.name}
             </h2>
             <ul className="mt-6 grid gap-4 md:grid-cols-2">
-              {nearbyPlaces.map((place) => (
-                <li key={place.slug}>
-                  <Card as="article" className="h-full p-5">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                      {getNearbyPlaceCategoryLabel(place.category)}
-                      {place.regionName ? ` · ${place.regionName}` : ""}
-                    </p>
-                    <h3 className="mt-2 text-base font-semibold text-text-primary">
-                      {place.officialUrl ? (
-                        <Link
-                          className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
-                          href={place.officialUrl}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          {place.name}
-                        </Link>
-                      ) : (
-                        place.name
-                      )}
-                    </h3>
-                    <p className="mt-2 text-sm leading-6 text-text-secondary">
-                      {place.summary}
-                    </p>
-                    <p className="mt-3 text-xs text-text-secondary">
-                      Verification status: {place.verificationStatus}.
-                      {place.wikidataId
-                        ? ` Wikidata: ${place.wikidataId}.`
-                        : " Wikidata identifier pending."}
-                    </p>
-                  </Card>
-                </li>
-              ))}
+              {nearbyPlaces.map((place) => {
+                const statusLabel =
+                  place.verificationStatus === "verified"
+                    ? "Verified source record"
+                    : place.verificationStatus === "partial"
+                      ? "Partially verified source record"
+                      : "Pending detailed verification";
+                return (
+                  <li key={place.slug}>
+                    <Card as="article" className="h-full p-5">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                        {getNearbyPlaceCategoryLabel(place.category)}
+                        {place.regionName ? ` · ${place.regionName}` : ""}
+                      </p>
+                      <h3 className="mt-2 text-base font-semibold text-text-primary">
+                        {place.officialUrl ? (
+                          <Link
+                            className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                            href={place.officialUrl}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            {place.name}
+                          </Link>
+                        ) : (
+                          place.name
+                        )}
+                      </h3>
+                      <p className="mt-2 text-sm leading-6 text-text-secondary">
+                        {place.summary}
+                      </p>
+                      <p className="mt-3 text-xs text-text-secondary">
+                        {statusLabel}.
+                        {place.wikidataId ? ` Wikidata: ${place.wikidataId}.` : ""}
+                      </p>
+                    </Card>
+                  </li>
+                );
+              })}
             </ul>
             <p className="mt-4 text-xs leading-5 text-text-secondary">
               Records do not publish exact distances, travel times, transport

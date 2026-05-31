@@ -2269,3 +2269,116 @@ emit only `WebPage` + `BreadcrumbList` JSON-LD. No `Place`,
   nearby places
 - Place detail pages should be added **only after** the source model
   matures — empty pages with no verified URL / image would be thin
+
+## 2026-05-31: nearby weekend places verification pass (Wikidata + official sources)
+
+This pass lifts every record in the nearby-weekend-places dataset
+from `needs_review` to a confident verification state by sourcing
+identifiers and URLs from Wikidata and the small whitelist of
+authoritative bodies listed below. The work is strictly metadata —
+no summaries were rewritten and no images were shipped.
+
+### Scope
+
+- **68 records reviewed** — the full nearby-weekend-places dataset
+  introduced in the previous section
+- **52 records marked `verified`** — each carries both a stable
+  Wikidata QID and an `officialUrl` sourced from Wikidata property
+  P856 (official website)
+- **16 records marked `partial`** — Wikidata QID is confirmed, but
+  the Wikidata entity does not currently expose a P856 official URL,
+  so no `officialUrl` was set
+- **0 records remain `needs_review`** — every record in the dataset
+  now has a confirmed QID
+
+### Field-level deltas
+
+- **68 records gained a `wikidataId`** (every record in the dataset)
+- **52 records gained an `officialUrl`**, populated exclusively from
+  Wikidata property P856 — no URL was inferred, guessed, or copied
+  from search results
+- **68 records gained `latitude` and `longitude`** from Wikidata
+  property P625, with `coordinateSource` set to exactly the string
+  `"wikidata"` on every record
+- **~60 records gained a `commonsCategory`** where the linked
+  Wikidata entity exposes a Wikimedia Commons category — this is a
+  prerequisite for the future image pass, but no images were
+  ingested or rendered in this task
+
+### Source rules
+
+The verification process followed a strict priority order. No source
+outside this list was used:
+
+1. **Wikidata** — primary identifier (QID), coordinates (P625),
+   official website (P856), Commons category
+2. **Official park / municipality / heritage body** — only consulted
+   to confirm that the URL returned by Wikidata P856 still resolves
+   to the operator's own site
+3. **UNESCO official** — only for World Heritage entries, and only
+   to confirm the inscription matches the QID
+4. **Public-authority tourism boards** — used only when Wikidata's
+   P856 explicitly points at a municipal or national tourism authority
+   that is the de-facto operator
+
+Commercial travel sites, aggregators, review platforms, OTAs, and
+user-generated content sources were not used as evidence for any
+field.
+
+### Safety / content rules retained
+
+No summaries were rewritten and no banned content was introduced:
+
+- **0** travel times, exact distances, ticket prices, opening hours,
+  weather statements, hotel prices, or attraction rankings were
+  added to any record
+- The existing ban on positive marketing wording in summaries remains
+  in force; all 68 summaries are byte-identical to the previous pass
+- No restaurants, hotels, nightlife venues, tour operators, or
+  scheduled events were named
+
+### UI surface
+
+The weekend-trip place card now renders human-readable status labels
+in place of the raw enum value:
+
+- `verified` -> **"Verified source record"**
+- `partial` -> **"Partially verified source record"**
+- `needs_review` -> **"Pending detailed verification"**
+
+The disclaimer paragraph and the deferral of time-sensitive details
+to the official source are unchanged.
+
+### Validation script changes
+
+`npm run validate:nearby-places` was extended to enforce the
+verification invariants:
+
+- `verificationStatus` must be one of the valid enum values
+  (`verified`, `partial`, `needs_review`)
+- Any record with `verificationStatus === "verified"` must have at
+  least one of `wikidataId` or `officialUrl` populated
+- Any record that sets coordinates must set **all three** of
+  `latitude`, `longitude`, and `coordinateSource` together
+- `BANNED_FIELDS` was expanded to keep blocking distance, time,
+  price, and hours fields from ever entering the dataset
+- Any image record must have `verified: true` — image rendering is
+  gated on explicit per-record verification (and no image records
+  exist yet in this pass)
+
+### Page-count delta
+
+- static page count: **2,918 -> 2,918** (unchanged — verification is
+  a metadata pass, no new routes)
+- sitemap unchanged
+- no new routes added
+- no client-side fetching introduced; all verification data is
+  embedded at build time
+
+### Future next step
+
+- **`feat: add nearby weekend places directory page`** — surface the
+  verified dataset on a dedicated directory page grouping records by
+  category and country; image verification remains a separate,
+  future pass
+
