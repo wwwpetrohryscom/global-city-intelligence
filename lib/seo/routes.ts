@@ -33,6 +33,7 @@ export const staticRoutes = {
   arrival: "/arrival",
   movingTo: "/moving-to",
   visualGuides: "/visual-guides",
+  summerTravel: "/summer-travel",
 } as const;
 
 export function comparisonRoute(comparisonSlug: string) {
@@ -115,6 +116,7 @@ export function getAllIndexableRoutes() {
     staticRoutes.arrival,
     staticRoutes.movingTo,
     staticRoutes.visualGuides,
+    staticRoutes.summerTravel,
     ...cities.map((city) => cityRoute(city.slug)),
     ...getCountries().map((country) => countryRoute(country.slug)),
     ...modules.flatMap((moduleItem) =>

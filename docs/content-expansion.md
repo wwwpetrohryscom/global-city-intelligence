@@ -1663,3 +1663,106 @@ images, no schema changes, no behavior changes — only string updates.
 - `npm run typecheck` — clean
 - `npm run lint` — clean
 - `npm run build` — succeeded, 2816/2816 static pages
+
+## 2026-05-31: /summer-travel directory page
+
+Adds a single central directory page at `/summer-travel`. Mirrors the
+existing `/arrival`, `/moving-to`, and `/visual-guides` directory
+patterns: server-rendered text-card grid for all 100 Summer 2026
+travel planning guides, country-grouped index, `ItemList` JSON-LD,
+breadcrumbs, hub nav, and a related-tools rail.
+
+### Files created
+
+- `app/(summer-travel)/summer-travel/page.tsx` — server-rendered
+  directory
+
+### Files updated
+
+- `lib/seo/routes.ts` — adds `staticRoutes.summerTravel = "/summer-travel"`
+  and includes it in `getAllIndexableRoutes()`
+- `app/sitemap.ts` — emits the new directory URL at `priority: 0.75`,
+  `changeFrequency: "monthly"`
+- `components/layout/Footer.tsx` — adds a "Summer 2026 travel guides"
+  link under "Visual city guides" in the Reference column
+- `docs/content-expansion.md` — this section
+
+### Page content
+
+- H1 `Summer 2026 City Travel Planning Guides`, unique intro paragraph
+  framed for the active summer 2026 cycle
+- `Last updated` and `Data year` chips, plus `Summer 2026 guides`
+  count and `Countries represented` count from live data
+- Sources / methodology disclaimer block (no weather forecasts,
+  events calendars, ticket prices, hotel / flight prices, transport
+  schedules, attraction rankings, or best / must-see / safest /
+  cheapest claims)
+- Card grid for all **100** Summer 2026 guides, sorted alphabetically
+  by city name. Each card shows: country tag, `Summer 2026 travel in
+  {City}` link, `summerFocus` label, page summary, plus 6 contextual
+  links — city profile, country hub, arrival guide, visual guide,
+  neighborhood guide, moving-to guide (each shown only when the city
+  has the underlying page)
+- Country-grouped index (alphabetical) with every guide also linked
+  here for crawler density
+- "Continue exploring" related-tools rail: cities, countries,
+  compare, arrival, visual guides, moving-to, travel-budget calc,
+  cost calc, relocation checklist, methodology, data sources
+
+### Image / thumbnail decision
+
+**No thumbnails on `/summer-travel`.** Per the audit spec's default
+recommendation: text-card directory only. The 100 cards already
+provide dense navigation, and each per-city Summer 2026 guide
+carries the verified hero. Keeping the directory text-only avoids
+gallery weight and keeps the hub fast.
+
+No `og:image` is emitted for the directory itself — `createMetadata`
+omits OG image when no `image` is passed.
+
+### Structured data
+
+- `WebPage` JSON-LD for the directory
+- `BreadcrumbList` JSON-LD via `staticBreadcrumbs("Summer travel", "/summer-travel")`
+- `ItemList` JSON-LD with `numberOfItems: 100`,
+  `itemListOrder: ItemListUnordered`, absolute `url` per guide,
+  each `name` set to `Summer 2026 Travel Planning Guide for {City}`
+
+No `Event`, `TouristAttraction`, `TravelAction`, `WeatherForecast`,
+`Place`, `LocalBusiness`, `Review`, `Rating`, `Offer`, `FAQPage`,
+fake `Dataset`, or `ImageObject` schemas added.
+
+### Footer / internal linking
+
+Footer "Reference" column now reads:
+
+```
+City comparisons
+Arrival planning guides
+Moving to city guides
+Visual city guides
+Summer 2026 travel guides   ← new
+Tools and calculators
+Cost of living calculator
+Travel budget calculator
+Relocation checklist
+Methodology
+Data sources
+```
+
+No broad city-by-city footer additions in this task.
+
+### Page-count delta
+
+- static page count: 2,816 → **2,817** (+1). Verified by `next build`:
+  `Generating static pages (2817/2817)`.
+- New route appears as `○ /summer-travel` (Static) in the build manifest.
+
+### Validation
+
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2817/2817 static pages
+- 0 client components, 0 runtime fetch, 0 new dependencies, 0 images
+  added on the directory itself
