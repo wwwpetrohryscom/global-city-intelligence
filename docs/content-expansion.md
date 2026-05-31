@@ -2071,3 +2071,201 @@ be extended without breaking the disclaimer contract.
 - `npm run build` — succeeded, 2918/2918 static pages
 - 0 client components, 0 runtime fetch, 0 new dependencies, 0 images
   added on the directory itself
+
+## 2026-05-31: nearby weekend places model (data foundation)
+
+This is a **data foundation** task — not a mass page generation. It
+establishes a structured registry of verified nearby weekend places
+connected to existing city profiles so the platform can support
+**close-to-home rest** and **local-first weekend planning** without
+inventing distances, routes, schedules, attraction rankings, or
+prices.
+
+### Purpose / product direction
+
+- short breaks near the user's home city
+- local-first weekend planning
+- close-to-home rest without flights required
+- nearby nature, waterfronts, small towns, historic areas, and
+  regional cities (parks, national parks, UNESCO sites, lakes,
+  islands, well-known regional destinations)
+- verified sources only; no fake "best places" lists; no invented
+  routes, distances, prices, or opening hours
+
+### Files created
+
+- `types/nearby-places.ts` — `NearbyWeekendPlace`,
+  `NearbyPlaceCategory` (12 categories: nature, waterfront,
+  historic_town, park, beach, lake, mountain, island, cultural_site,
+  regional_city, family_outdoor, general_weekend_place),
+  `NearbyPlaceTravelMode`, `DistanceBand`,
+  `NearbyPlaceVerificationStatus`, `NearbyPlaceImage`
+- `lib/data/nearby-places.ts` — **68 curated records** connected to
+  **24 priority cities** + `getNearbyPlaceCategoryLabel` helper
+- `lib/data/queries/nearby-places.ts` — `getAllNearbyWeekendPlaces`,
+  `getNearbyWeekendPlaceBySlug`, `getNearbyWeekendPlacesForCity`,
+  `getNearbyWeekendPlacesForCountry`,
+  `getNearbyWeekendPlacesByCategory`, `hasNearbyWeekendPlacesForCity`,
+  `getNearbyWeekendPlacesForWeekendTrip(citySlug, limit = 6)`
+- `scripts/validate-nearby-places.py` — slug uniqueness, city /
+  country / source reference resolution, banned-field check,
+  positive-wording check on summaries and cautionNotes, image
+  attribution check (forward-compatible)
+
+### Files updated
+
+- `types/index.ts`, `lib/data/queries/index.ts` — re-exports
+- `lib/data/sources/index.ts` — adds `wikidata` and
+  `wikimedia-commons` source registry entries; every nearby-place
+  record cites these alongside the urban-data baseline
+- `package.json` — adds `validate:nearby-places` npm script
+- `app/(entities)/cities/[city]/weekend-trip/page.tsx` — adds a
+  restrained "Nearby weekend places to research" section gated by
+  `nearbyPlaces.length > 0`; the section renders the first 6 places
+  for the city using `getNearbyWeekendPlacesForWeekendTrip`
+- `docs/content-expansion.md` — this section
+
+### Records added (68)
+
+Distribution by region:
+
+- **UK / Ireland (12)**: Hyde Park, Richmond Park, Kew Gardens,
+  Maritime Greenwich, Windsor, Brighton (regional city), Peak
+  District National Park, Holyrood Park, Pentland Hills Regional
+  Park, Phoenix Park, Wicklow Mountains National Park, Cotswolds
+- **France (6)**: Versailles, Fontainebleau, Chantilly, Calanques
+  National Park, Beaujolais
+- **Germany (7)**: Potsdam Palaces and Parks, Wannsee, Spreewald,
+  Englischer Garten, Lübeck, Rheingau, Heidelberg
+- **Netherlands / Belgium (6)**: Zaanse Schans, Haarlem,
+  Kinderdijk, Delft, Bruges, Ghent
+- **Spain / Portugal / Italy (12)**: Toledo, Segovia, Escurial,
+  Montserrat, Sitges, Sintra, Cascais, Alto Douro Wine Region,
+  Tivoli, Lake Como, Bergamo
+- **Austria / Sweden / Finland / Denmark / Czechia (7)**: Schönbrunn,
+  Wachau, Drottningholm, Uppsala, Suomenlinna, Roskilde, Karlštejn
+- **United States (10)**: Hudson Valley, Cape Cod, Shenandoah NP,
+  Muir Woods NM, Point Reyes NS, Olympic NP, Mount Rainier NP,
+  Indiana Dunes NP, Rocky Mountain NP, Everglades NP
+- **Canada (4)**: Niagara Falls, Stanley Park, Gatineau Park,
+  Île d'Orléans
+- **Australia / New Zealand (6)**: Blue Mountains NP, Royal NP,
+  Phillip Island, Rottnest Island, Waiheke Island, Fiordland NP
+
+### Connected cities (24)
+
+UK / IE: london, manchester, edinburgh, dublin, oxford  ·
+FR: paris, lyon, marseille  ·  DE: berlin, munich, hamburg,
+frankfurt  ·  NL: amsterdam, rotterdam, the-hague  ·  BE: brussels
+·  ES: madrid, barcelona  ·  PT: lisbon, porto  ·  IT: rome, milan
+·  AT: vienna  ·  CZ: prague  ·  SE: stockholm  ·  FI: helsinki  ·
+DK: copenhagen  ·  US: new-york, boston, washington-dc,
+san-francisco, seattle, chicago, denver, miami  ·  CA: toronto,
+vancouver, ottawa, quebec-city  ·  AU: sydney, melbourne, perth  ·
+NZ: auckland, queenstown
+
+(Counts above sum across overlapping connections — the `byCity`
+index in queries handles fan-out for places connected to multiple
+cities, e.g. Cotswolds → oxford + london.)
+
+### Source / verification strategy
+
+Each record cites the urban-data baseline (`un-habitat`,
+`ipcc-urban`) and the two new identifier-registry sources
+(`wikidata`, `wikimedia-commons`). Every record's
+`verificationStatus` is **`needs_review`** in this batch — the
+optional fields (`wikidataId`, `officialUrl`, `commonsCategory`,
+`latitude`, `longitude`, `image`) are deliberately left empty so a
+follow-up verification pass can resolve QIDs against Wikidata and
+populate the URL / image / coordinate fields under the existing
+verify-place-images pipeline.
+
+### Image usage
+
+**No images added in this batch.** Records simply omit the optional
+`image` field. When a future verification pass populates images, the
+existing media-attribution / verification rules apply through the
+`NearbyPlaceImage` type and the validation script's image-block
+check.
+
+### Weekend-trip page integration
+
+Restrained section added to `/cities/[city]/weekend-trip` pages:
+
+- Gated on `nearbyPlaces.length > 0` — pages for cities without any
+  connected places render unchanged
+- Renders the first 6 places via `getNearbyWeekendPlacesForWeekendTrip`
+- Each card shows: category label + region tag, place name (linked
+  to `officialUrl` when present), summary, and a footer line
+  surfacing verification status and Wikidata identifier (or
+  "pending")
+- No travel time, no exact distance, no "best nearby" wording — the
+  card explicitly defers time-sensitive details to the official
+  source
+- The disclaimer paragraph at the bottom of the section reads:
+  "Records do not publish exact distances, travel times, transport
+  schedules, opening hours, ticket prices, restaurant or hotel
+  recommendations, attraction rankings, or live access status."
+
+### Safety / content
+
+- **0 invented** distances, travel times, transport routes, ticket
+  prices, opening hours, event dates, hotel prices, safety claims,
+  weather claims, accessibility claims, or official tourism
+  information
+- **0 named** restaurants, hotels, nightlife venues, tour operators,
+  or scheduled events
+- All 68 record summaries follow the same neutral template
+- `npm run validate:nearby-places` passes with **0 errors**:
+  - 68 unique slugs
+  - every `connectedCitySlug` resolves to a city in `cities.ts`
+  - every `countrySlug` resolves to a country in `countries.ts`
+  - every `sourceId` resolves to a source in
+    `lib/data/sources/index.ts`
+  - no banned field (`travelTimeMinutes`, `exactDistanceKm`,
+    `ticketPrice`, `openingHours`)
+  - no banned positive wording in any summary
+
+### Structured data impact
+
+No new schema types in this task. Weekend-trip pages continue to
+emit only `WebPage` + `BreadcrumbList` JSON-LD. No `Place`,
+`TouristAttraction`, `TravelAction`, `Itinerary`, `Review`, `Rating`,
+`Offer`, or `Event` schema for nearby places.
+
+### Internal linking impact
+
+- Place cards on weekend-trip pages link **outward** to each place's
+  `officialUrl` only when present (currently 0 of 68 records — all
+  are pending source-URL verification)
+- No sitemap routes added for nearby places
+- No new static routes; no new pages
+
+### Page-count delta
+
+- static page count: **2,918 → 2,918** (unchanged — data foundation
+  only, no new routes)
+- Weekend-trip pages may render a new conditional section but route
+  count is identical
+
+### Validation results
+
+- `npm run validate:nearby-places` — pass (68 / 68 records clean)
+- `npm run validate:media` — pass
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — succeeded, 2918/2918 static pages
+
+### Future next step
+
+- **`feat: add nearby weekend places directory page`** — a
+  `/weekend-places` (or similar) directory page that lists all 68
+  records grouped by category and country
+- **`feat: populate Wikidata QIDs and official URLs for nearby
+  weekend places`** — a verification pass that lifts every record's
+  `verificationStatus` from `needs_review` to `verified`, populates
+  `wikidataId` and `officialUrl`, and (where Commons has a verified
+  CC-licensed file) extends the existing image pipeline to cover
+  nearby places
+- Place detail pages should be added **only after** the source model
+  matures — empty pages with no verified URL / image would be thin

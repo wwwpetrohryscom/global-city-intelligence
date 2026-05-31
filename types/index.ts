@@ -79,6 +79,14 @@ export type {
   WeekendTripFocus,
 } from "./weekend-trip";
 export type {
+  DistanceBand,
+  NearbyPlaceCategory,
+  NearbyPlaceImage,
+  NearbyPlaceTravelMode,
+  NearbyPlaceVerificationStatus,
+  NearbyWeekendPlace,
+} from "./nearby-places";
+export type {
   DataProvenance,
   DatasetCoverage,
   MetricVerificationStatus,

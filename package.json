@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "validate:media": "python3 scripts/validate-media-catalogs.py"
+    "validate:media": "python3 scripts/validate-media-catalogs.py",
+    "validate:nearby-places": "python3 scripts/validate-nearby-places.py"
   },
   "dependencies": {
     "next": "^15.5.0",

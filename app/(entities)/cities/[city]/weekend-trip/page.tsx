@@ -28,6 +28,8 @@ import {
   getCountryEmergencyProfile,
   getCountryHealthcareProfile,
   getCountryTransportProfile,
+  getNearbyPlaceCategoryLabel,
+  getNearbyWeekendPlacesForWeekendTrip,
   getSourcesByIds,
   getWeekendTripChecklist,
   getWeekendTripFocusLabel,
@@ -118,6 +120,7 @@ export default async function WeekendTripPage({ params }: PageProps) {
   const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
   const cityHasSummerTravel = hasSummerTravelPage(city.slug);
+  const nearbyPlaces = getNearbyWeekendPlacesForWeekendTrip(city.slug, 6);
 
   const title = `Weekend Trip Planning Guide for ${city.name}`;
   const description = `Plan a weekend city trip to ${city.name}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency.`;
@@ -495,6 +498,60 @@ export default async function WeekendTripPage({ params }: PageProps) {
           </h2>
           <WeekendTripRelatedLinks links={relatedLinks} />
         </section>
+
+        {nearbyPlaces.length > 0 ? (
+          <section aria-labelledby="weekend-nearby-heading">
+            <SectionHeading
+              description={`Verified public places connected to ${city.name} as starting points for short-trip research. Each record names a real, source-documented place — a park, national park, historic town, waterfront, lake, island, cultural heritage site, or regional city. Verify access, opening, transport, weather, and seasonal conditions with official sources before departure. This is not a ranking, an itinerary, or a tourism guide.`}
+              title="Nearby weekend places to research"
+            />
+            <h2 className="sr-only" id="weekend-nearby-heading">
+              Nearby weekend places to research from {city.name}
+            </h2>
+            <ul className="mt-6 grid gap-4 md:grid-cols-2">
+              {nearbyPlaces.map((place) => (
+                <li key={place.slug}>
+                  <Card as="article" className="h-full p-5">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                      {getNearbyPlaceCategoryLabel(place.category)}
+                      {place.regionName ? ` · ${place.regionName}` : ""}
+                    </p>
+                    <h3 className="mt-2 text-base font-semibold text-text-primary">
+                      {place.officialUrl ? (
+                        <Link
+                          className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                          href={place.officialUrl}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          {place.name}
+                        </Link>
+                      ) : (
+                        place.name
+                      )}
+                    </h3>
+                    <p className="mt-2 text-sm leading-6 text-text-secondary">
+                      {place.summary}
+                    </p>
+                    <p className="mt-3 text-xs text-text-secondary">
+                      Verification status: {place.verificationStatus}.
+                      {place.wikidataId
+                        ? ` Wikidata: ${place.wikidataId}.`
+                        : " Wikidata identifier pending."}
+                    </p>
+                  </Card>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-xs leading-5 text-text-secondary">
+              Records do not publish exact distances, travel times, transport
+              schedules, opening hours, ticket prices, restaurant or hotel
+              recommendations, attraction rankings, or live access status.
+              Confirm time-sensitive details with the official park, museum,
+              transport authority, or municipal source for each place.
+            </p>
+          </section>
+        ) : null}
 
         {relatedComparisons.length > 0 ? (
           <section aria-labelledby="weekend-comparisons-heading">

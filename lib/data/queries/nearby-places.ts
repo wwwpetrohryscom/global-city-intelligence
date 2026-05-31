@@ -1,0 +1,86 @@
+import { nearbyWeekendPlaces } from "@/lib/data/nearby-places";
+import type {
+  NearbyPlaceCategory,
+  NearbyWeekendPlace,
+} from "@/types";
+
+const bySlug: ReadonlyMap<string, NearbyWeekendPlace> = (() => {
+  const map = new Map<string, NearbyWeekendPlace>();
+  for (const place of nearbyWeekendPlaces) {
+    if (!map.has(place.slug)) {
+      map.set(place.slug, place);
+    }
+  }
+  return map;
+})();
+
+const byCity: ReadonlyMap<string, readonly NearbyWeekendPlace[]> = (() => {
+  const map = new Map<string, NearbyWeekendPlace[]>();
+  for (const place of nearbyWeekendPlaces) {
+    for (const citySlug of place.connectedCitySlugs) {
+      const list = map.get(citySlug);
+      if (list) {
+        list.push(place);
+      } else {
+        map.set(citySlug, [place]);
+      }
+    }
+  }
+  return map;
+})();
+
+const byCountry: ReadonlyMap<string, readonly NearbyWeekendPlace[]> = (() => {
+  const map = new Map<string, NearbyWeekendPlace[]>();
+  for (const place of nearbyWeekendPlaces) {
+    const list = map.get(place.countrySlug);
+    if (list) {
+      list.push(place);
+    } else {
+      map.set(place.countrySlug, [place]);
+    }
+  }
+  return map;
+})();
+
+export function getAllNearbyWeekendPlaces(): NearbyWeekendPlace[] {
+  return nearbyWeekendPlaces;
+}
+
+export function getNearbyWeekendPlaceBySlug(
+  slug: string,
+): NearbyWeekendPlace | undefined {
+  return bySlug.get(slug);
+}
+
+export function getNearbyWeekendPlacesForCity(
+  citySlug: string,
+): readonly NearbyWeekendPlace[] {
+  return byCity.get(citySlug) ?? [];
+}
+
+export function getNearbyWeekendPlacesForCountry(
+  countrySlug: string,
+): readonly NearbyWeekendPlace[] {
+  return byCountry.get(countrySlug) ?? [];
+}
+
+export function getNearbyWeekendPlacesByCategory(
+  category: NearbyPlaceCategory,
+): NearbyWeekendPlace[] {
+  return nearbyWeekendPlaces.filter((place) => place.category === category);
+}
+
+export function hasNearbyWeekendPlacesForCity(citySlug: string): boolean {
+  return byCity.has(citySlug);
+}
+
+export function getNearbyWeekendPlacesForWeekendTrip(
+  citySlug: string,
+  limit = 6,
+): readonly NearbyWeekendPlace[] {
+  const list = getNearbyWeekendPlacesForCity(citySlug);
+  if (limit <= 0 || list.length <= limit) {
+    return list;
+  }
+  return list.slice(0, limit);
+}

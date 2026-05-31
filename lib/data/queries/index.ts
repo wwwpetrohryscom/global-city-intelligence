@@ -200,6 +200,18 @@ export {
 
 export { getWeekendTripFocusLabel } from "@/lib/data/weekend-trip";
 
+export {
+  getAllNearbyWeekendPlaces,
+  getNearbyWeekendPlaceBySlug,
+  getNearbyWeekendPlacesByCategory,
+  getNearbyWeekendPlacesForCity,
+  getNearbyWeekendPlacesForCountry,
+  getNearbyWeekendPlacesForWeekendTrip,
+  hasNearbyWeekendPlacesForCity,
+} from "@/lib/data/queries/nearby-places";
+
+export { getNearbyPlaceCategoryLabel } from "@/lib/data/nearby-places";
+
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
 export {

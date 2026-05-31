@@ -851,6 +851,26 @@ export const dataSources: DataSource[] = [
     reliabilityNote:
       "Used as a primary aggregator of station-level air-quality measurements; every record cites the underlying official publisher through OpenAQ's provider attribution. Ingestion requires the OpenAQ v3 API key (OPENAQ_API_KEY) at build time.",
   },
+  {
+    id: "wikidata",
+    name: "Wikidata",
+    organization: "Wikimedia Foundation",
+    url: "https://www.wikidata.org/",
+    description:
+      "Free knowledge base providing stable QIDs and structured properties for places, monuments, parks, heritage sites, and administrative entities.",
+    reliabilityNote:
+      "Used as a stable identifier registry for nearby-weekend-place records. Each record's `wikidataId` resolves to a Wikidata QID where verification has been completed; records still pending QID resolution are marked `verificationStatus: \"needs_review\"`.",
+  },
+  {
+    id: "wikimedia-commons",
+    name: "Wikimedia Commons",
+    organization: "Wikimedia Foundation",
+    url: "https://commons.wikimedia.org/",
+    description:
+      "Free media repository providing source-attributed images with author and license metadata. Used by the existing place-image verification pipeline.",
+    reliabilityNote:
+      "Used for verified place imagery only when source, author, and license can be confirmed against the original Commons file page; no Commons images are added in this nearby-places MVP — images remain pending the existing verify/build-place-images pipeline.",
+  },
 ];
 
 export function getSourceById(sourceId: string) {
