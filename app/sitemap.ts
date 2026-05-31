@@ -3,6 +3,7 @@ import { LAST_UPDATED } from "@/lib/data/constants";
 import { NEARBY_WEEKEND_PLACE_DETAIL_SLUGS } from "@/lib/data/nearby-place-detail-pages";
 import {
   getAllArrivalPages,
+  getAllCitiesWithNearbyWeekendPlaces,
   getAllCityIntentPages,
   getAllCollections,
   getAllComparisons,
@@ -27,6 +28,7 @@ import {
   moduleRoute,
   movingToCityRoute,
   nearbyWeekendPlaceRoute,
+  nearbyWeekendPlacesCityRoute,
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
@@ -154,6 +156,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: staticFreshness,
       changeFrequency: "monthly" as const,
       priority: 0.7,
+    })),
+    ...getAllCitiesWithNearbyWeekendPlaces().map((city) => ({
+      url: absoluteUrl(nearbyWeekendPlacesCityRoute(city.slug)),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.72,
     })),
   ];
 

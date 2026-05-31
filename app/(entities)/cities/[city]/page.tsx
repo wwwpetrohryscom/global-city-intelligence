@@ -43,6 +43,7 @@ import {
   getVerifiedHospitalsForCity,
   hasArrivalPage,
   hasMovingToCityPage,
+  hasNearbyWeekendPlacesCityPage,
   hasNeighborhoodPlanningPage,
   hasSummerTravelPage,
   hasVisualCityGuidePage,
@@ -60,6 +61,7 @@ import {
   getCollectionUrl,
   moduleRoute,
   movingToCityRoute,
+  nearbyWeekendPlacesCityRoute,
   neighborhoodPlanningRoute,
   rankingRoute,
   staticRoutes,
@@ -409,6 +411,13 @@ export default async function CityPage({ params }: PageProps) {
                 description={`Weekend trip planning checklist for ${city.name} — links into arrival planning, Summer 2026 travel context, visual orientation, budget tools, transport, public safety, and healthcare context. Not an itinerary, events calendar, hotel-price guide, restaurant guide, or tourism ranking.`}
                 href={weekendTripRoute(city.slug)}
                 title={`Weekend trip planning guide for ${city.name}`}
+              />
+            ) : null}
+            {hasNearbyWeekendPlacesCityPage(city.slug) ? (
+              <LinkCard
+                description="Source-backed nearby place records for local-first weekend planning, with verification status, official source links, Wikidata identity, and visual context."
+                href={nearbyWeekendPlacesCityRoute(city.slug)}
+                title={`Nearby weekend places from ${city.name}`}
               />
             ) : null}
             <LinkCard

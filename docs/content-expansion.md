@@ -3011,3 +3011,222 @@ in this batch.
 - image-free verified records remain ineligible until a
   license-clean, safety-clean Wikimedia Commons image is found
 
+## 2026-05-31: nearby weekend places by city pages
+
+This section documents a new per-city index surface that sits
+between the city profile page and the existing global
+`/nearby-weekend-places` directory. The new surface re-uses the
+existing curated nearby-weekend-place dataset and adds no new
+records, no new images, no new cities, and no new countries.
+
+### Route pattern
+
+- New route: `/cities/[city]/nearby-weekend-places`
+- One page is generated per connected city that has at least one
+  nearby-weekend-place record in the curated dataset
+- The route is fully static. `dynamicParams = false` and
+  `generateStaticParams()` returns the full list of eligible
+  city slugs at build time
+
+### Page count
+
+- 45 city pages added — one per connected city with at least
+  one nearby place record
+- No partial-record city pages are emitted in this batch; a
+  city only becomes eligible once at least one record resolves
+  through `getNearbyWeekendPlacesForCity` against the curated
+  dataset
+
+### Eligibility rules
+
+A city qualifies for a per-city index page only when both of
+these conditions hold:
+
+- the city slug resolves through `getCityBySlug` against the
+  curated `cities.ts` registry
+- the city slug has at least one nearby-weekend-place record
+  attached via `getNearbyWeekendPlacesForCity(citySlug)`, which
+  is gated by the `hasNearbyWeekendPlacesForCity(citySlug)`
+  helper used in `generateStaticParams`
+
+Cities that exist in `cities.ts` but have no nearby-place
+records do not get a page. Nearby records that exist in the
+dataset but whose connected city slug does not resolve through
+`getCityBySlug` are not exposed by this route.
+
+### Eligible city slugs (alphabetical)
+
+1. `amsterdam`
+2. `auckland`
+3. `barcelona`
+4. `berlin`
+5. `boston`
+6. `brussels`
+7. `chicago`
+8. `copenhagen`
+9. `denver`
+10. `dublin`
+11. `edinburgh`
+12. `frankfurt`
+13. `hamburg`
+14. `helsinki`
+15. `lisbon`
+16. `london`
+17. `lyon`
+18. `madrid`
+19. `manchester`
+20. `marseille`
+21. `melbourne`
+22. `miami`
+23. `milan`
+24. `munich`
+25. `new-york`
+26. `ottawa`
+27. `oxford`
+28. `paris`
+29. `perth`
+30. `porto`
+31. `prague`
+32. `quebec-city`
+33. `queenstown`
+34. `rome`
+35. `rotterdam`
+36. `san-francisco`
+37. `seattle`
+38. `sheffield`
+39. `stockholm`
+40. `sydney`
+41. `the-hague`
+42. `toronto`
+43. `vancouver`
+44. `vienna`
+45. `washington-dc`
+
+### Local-first positioning
+
+The per-city pages are positioned as a research checklist for
+readers planning a short break from their own home city, not
+as a tourism guide or itinerary builder. The framing follows
+the platform's local-first stance:
+
+- start from your own city — each page is anchored at the
+  connected city, not at the destination
+- short breaks close to home — the surface frames the records
+  as planning candidates for short trips out of the anchor city
+- planning candidates not route instructions — the page
+  surfaces candidate places to research, not how to get there
+- verify with official sources — every record links out to its
+  `officialUrl` plus the Wikidata identifier so the reader can
+  confirm operating details against the authoritative source
+  before booking or travelling
+
+### Safety policy
+
+The per-city pages inherit the platform's standard nearby-place
+safety policy and do not publish any of the following:
+
+- exact distances between the anchor city and the candidate
+  places
+- travel times by car, train, bus, ferry, or any other mode
+- transport routes, schedules, ticket prices, or operator
+  recommendations
+- opening hours, seasonal closure dates, or last-entry times
+- weather, climate-window, or "best time to visit" claims
+- hotel prices, hotel recommendations, restaurant prices, or
+  restaurant recommendations
+- attraction rankings, "top day trip" lists, "must-see" claims,
+  or other promotional framing
+- route advice or driving directions
+
+The page includes the platform's standard negative disclaimer
+block making each of these exclusions explicit, in line with
+the disclaimer pattern already used on the weekend-trip page.
+
+### Structured data policy
+
+Each per-city page emits exactly two JSON-LD blocks alongside
+the page-level content:
+
+- a `WebPage` block pointing at the canonical per-city URL
+- a `BreadcrumbList` block following the canonical breadcrumb
+  shape Home -> Cities -> {city.name} -> Nearby weekend places
+
+The record list itself is emitted as an unordered `ItemList`,
+where each `ListItem` points at `/nearby-weekend-places/<slug>`
+when a curated detail page exists for the record and otherwise
+at the `/nearby-weekend-places#<slug>` fragment on the global
+directory. No additional schema types are emitted: no `Place`,
+no `TouristAttraction`, no `Event`, no `Itinerary`, no `Offer`,
+no `ImageObject`. The per-card status label is restricted to
+the three frozen verification labels already used elsewhere
+on the platform: "Verified source record", "Partially verified
+source record", and "Pending detailed verification".
+
+### Reverse links added
+
+To make the new surface reachable from existing pages without
+introducing any new navigation components, three reverse links
+were added. Each reverse link is gated by
+`hasNearbyWeekendPlacesCityPage` so it only renders when the
+target city has a per-city page:
+
+- **City profile page** (`/cities/[city]`) — a new `LinkCard`
+  is rendered between the existing weekend-trip card and the
+  cost-of-living card, with neutral copy that describes the
+  target as a research checklist rather than a distance,
+  transport, or ranking guide
+- **Weekend-trip page** (`/cities/[city]/weekend-trip`) — a
+  single clear link is added inside the existing
+  "Nearby weekend places to research" section, gated by the
+  same `nearbyPlaces.length > 0` condition that already
+  guards that section
+- **Global directory** (`/nearby-weekend-places`) — a small
+  secondary link is added inside each "Nearby places by
+  connected city" article, immediately under the existing
+  `cityRoute` heading, pointing to the new per-city route
+
+No other navigation surface was modified.
+
+### Sitemap delta
+
+- +45 entries appended to the sitemap, one per eligible city
+- each entry uses priority `0.72` and `changeFrequency`
+  `monthly`, matching the visual-guide priority used elsewhere
+  on the platform
+- each entry's `lastModified` is taken from the connected
+  city's `lastUpdated` field
+- no other sitemap entry's priority or `changeFrequency` was
+  changed
+
+### Static page-count delta
+
+- static page count: **2,963 -> 3008** (+45)
+- no new cities, no new countries, no new place records, no
+  new images, no new client components, no new dependencies
+- no new schemas beyond the `WebPage` + `BreadcrumbList` +
+  unordered `ItemList` blocks described above
+
+### Validation results
+
+- `npm run validate:nearby-places` — **PASS**
+- `npm run validate:media` — **PASS**
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — emits
+  `/cities/[city]/nearby-weekend-places` as Static-prerendered
+  for each of the 45 eligible city slugs
+
+### Next steps
+
+- audit the per-city pages against the same audit framework
+  already applied to the global directory and the curated
+  detail pages
+- expand nearby records to additional cities only after source
+  verification on Wikidata, including a resolvable
+  `officialUrl` and a license-clean, safety-clean image where
+  the platform's detail-page template is the eventual target
+- consider partial-record city pages only after `officialUrl`
+  resolution for the underlying records, so each per-city
+  page can continue to anchor every card against an
+  authoritative outbound source
+

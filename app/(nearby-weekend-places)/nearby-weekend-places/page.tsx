@@ -15,6 +15,7 @@ import {
   getCountryBySlug,
   getNearbyPlaceCategoryLabel,
   hasNearbyWeekendPlaceDetailPage,
+  hasNearbyWeekendPlacesCityPage,
 } from "@/lib/data/queries";
 import { staticBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
@@ -23,6 +24,7 @@ import {
   cityRoute,
   countryRoute,
   nearbyWeekendPlaceRoute,
+  nearbyWeekendPlacesCityRoute,
   staticRoutes,
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
@@ -625,6 +627,16 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                       {city.name}
                     </Link>
                   </h3>
+                  {hasNearbyWeekendPlacesCityPage(city.slug) ? (
+                    <p className="mt-1 text-xs text-text-secondary">
+                      <Link
+                        className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                        href={nearbyWeekendPlacesCityRoute(city.slug)}
+                      >
+                        Nearby weekend places from {city.name}
+                      </Link>
+                    </p>
+                  ) : null}
                   <ul className="mt-3 grid grid-cols-1 gap-1 text-sm">
                     {items.map((place) => (
                       <li key={place.slug}>

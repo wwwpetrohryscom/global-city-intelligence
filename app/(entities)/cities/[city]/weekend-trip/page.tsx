@@ -37,6 +37,7 @@ import {
   hasArrivalPage,
   hasMovingToCityPage,
   hasNearbyWeekendPlaceDetailPage,
+  hasNearbyWeekendPlacesCityPage,
   hasNeighborhoodPlanningPage,
   hasSummerTravelPage,
   hasVerifiedEmergencyData,
@@ -56,6 +57,7 @@ import {
   countryRoute,
   movingToCityRoute,
   nearbyWeekendPlaceRoute,
+  nearbyWeekendPlacesCityRoute,
   neighborhoodPlanningRoute,
   staticRoutes,
   summerTravelRoute,
@@ -608,6 +610,16 @@ export default async function WeekendTripPage({ params }: PageProps) {
                 );
               })}
             </ul>
+            {hasNearbyWeekendPlacesCityPage(city.slug) ? (
+              <p className="mt-4 text-sm leading-6 text-text-primary">
+                <Link
+                  className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+                  href={nearbyWeekendPlacesCityRoute(city.slug)}
+                >
+                  Browse all source-backed nearby weekend places from {city.name}
+                </Link>
+              </p>
+            ) : null}
             <p className="mt-4 text-xs leading-5 text-text-secondary">
               Records do not publish exact distances, travel times, transport
               schedules, opening hours, ticket prices, restaurant or hotel
