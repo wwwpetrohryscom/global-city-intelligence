@@ -519,6 +519,56 @@ export default async function WeekendTripPage({ params }: PageProps) {
                 return (
                   <li key={place.slug}>
                     <Card as="article" className="h-full p-5">
+                      {place.image ? (
+                        <figure className="mb-3 -mx-5 -mt-5 overflow-hidden rounded-t-2xl border-b border-neutral-border bg-surface-soft">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            alt={place.image.alt}
+                            className="block h-auto w-full object-cover"
+                            decoding="async"
+                            height={place.image.height}
+                            loading="lazy"
+                            sizes="(min-width: 768px) 384px, 100vw"
+                            src={place.image.src}
+                            style={{ aspectRatio: `${place.image.width} / ${place.image.height}` }}
+                            width={place.image.width}
+                          />
+                          <figcaption className="border-t border-neutral-border bg-white px-3 py-2 text-xs leading-5 text-text-secondary">
+                            Image:{" "}
+                            {place.image.authorUrl ? (
+                              <a
+                                className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                                href={place.image.authorUrl}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                {place.image.author}
+                              </a>
+                            ) : (
+                              place.image.author
+                            )}{" "}
+                            /{" "}
+                            <a
+                              className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                              href={place.image.sourceUrl}
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              Wikimedia Commons
+                            </a>
+                            ,{" "}
+                            <a
+                              className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                              href={place.image.licenseUrl}
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              {place.image.license}
+                            </a>
+                            . Visual context only.
+                          </figcaption>
+                        </figure>
+                      ) : null}
                       <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
                         {getNearbyPlaceCategoryLabel(place.category)}
                         {place.regionName ? ` · ${place.regionName}` : ""}

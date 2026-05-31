@@ -377,6 +377,56 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                   id={entry.place.slug}
                   interactive
                 >
+                  {entry.place.image ? (
+                    <figure className="mb-4 -mx-5 -mt-5 overflow-hidden rounded-t-2xl border-b border-neutral-border bg-surface-soft">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        alt={entry.place.image.alt}
+                        className="block h-auto w-full object-cover"
+                        decoding="async"
+                        height={entry.place.image.height}
+                        loading="lazy"
+                        sizes="(min-width: 1280px) 384px, (min-width: 768px) 50vw, 100vw"
+                        src={entry.place.image.src}
+                        style={{ aspectRatio: `${entry.place.image.width} / ${entry.place.image.height}` }}
+                        width={entry.place.image.width}
+                      />
+                      <figcaption className="border-t border-neutral-border bg-white px-4 py-2 text-xs leading-5 text-text-secondary">
+                        Image:{" "}
+                        {entry.place.image.authorUrl ? (
+                          <a
+                            className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                            href={entry.place.image.authorUrl}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            {entry.place.image.author}
+                          </a>
+                        ) : (
+                          entry.place.image.author
+                        )}{" "}
+                        /{" "}
+                        <a
+                          className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                          href={entry.place.image.sourceUrl}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Wikimedia Commons
+                        </a>
+                        ,{" "}
+                        <a
+                          className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                          href={entry.place.image.licenseUrl}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          {entry.place.image.license}
+                        </a>
+                        . Visual context only.
+                      </figcaption>
+                    </figure>
+                  ) : null}
                   <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
                     {`${entry.country?.name ?? "Indexed place"}${entry.place.regionName ? ` · ${entry.place.regionName}` : ""}`}
                   </p>

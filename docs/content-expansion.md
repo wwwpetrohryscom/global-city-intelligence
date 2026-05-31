@@ -2488,3 +2488,148 @@ All required checks pass on the change:
 - **build** — **2,919 / 2,919** routes generated, matching the
   expected post-change page count
 
+## 2026-05-31: nearby weekend places Wikimedia image pass
+
+This change attaches verified Wikimedia Commons images to a subset
+of the existing nearby-weekend-places dataset. No new records, no
+new routes, and no place detail pages were added. Images are visual
+context only and are not used to support any travel, ranking, or
+time-sensitive claim.
+
+### Coverage
+
+- **68 records attempted**
+- **54 images added** (records that resolved cleanly to a Wikidata
+  P18 file with an accepted license and attribution)
+- **14 records skipped** — these records keep their existing
+  `verificationStatus` untouched and render text-only as before
+
+### Skip-reason breakdown
+
+The 14 skips fall into three buckets, and the per-record reasons
+are recorded so a later pass can revisit them:
+
+- **8 `missing_attribution`** — the Commons file resolved but
+  lacked Artist metadata in `imageinfo`, so an attribution string
+  could not be constructed without inventing data:
+  `richmond-park-london`, `phoenix-park-dublin`,
+  `rheingau-near-frankfurt`, `ghent-near-brussels`,
+  `cascais-near-lisbon`, `muir-woods-near-san-francisco`,
+  `waiheke-island-near-auckland`, `fiordland-near-queenstown`
+- **5 `no_p18_on_wikidata`** — the linked Wikidata entity does not
+  declare a P18 image at all, so there is no canonical file to
+  resolve: `pentland-hills-edinburgh`, `beaujolais-near-lyon`,
+  `sitges-near-barcelona`, `hudson-valley-near-new-york`,
+  `cape-cod-near-boston`
+- **1 `incompatible_license`** — the Commons file declares a
+  generic `"Attribution"` license without a CC version, which is
+  not on the accepted-license list:
+  `indiana-dunes-near-chicago`
+
+### Source policy
+
+Image candidates were resolved through a single pipeline with no
+fallback to ad-hoc sources:
+
+- **Wikidata P18** -> **Wikimedia Commons `imageinfo` API** only
+- no Google Images, no general web search, no random URLs
+- no tourism-board, OTA, or commercial-travel imagery
+- no AI-generated images
+- no manually curated or hand-picked files outside the P18 path
+
+### License policy
+
+Only the following licenses were accepted:
+
+- Public domain / **PD** / **CC0**
+- **CC BY** (any version)
+- **CC BY-SA** (any version)
+
+The following were explicitly rejected:
+
+- NC (non-commercial), ND (no-derivatives), FAL, GFDL
+- unknown / unparseable license strings
+- a bare `"Attribution"` declaration without a CC version
+  (this is what skipped `indiana-dunes-near-chicago`)
+
+### Safety policy
+
+Files that resolved with the right license were still discarded if
+the filename or main subject suggested unsafe or unsuitable content
+for a place card. Specifically:
+
+- filenames containing tokens like `montage`, `collage`, `flag`,
+  `coat_of_arms`, `emblem`, `logo`, `map`, `protest`, `military`,
+  `disaster`, or `postcard` were rejected
+- images whose apparent main subject is an identifiable person
+  were rejected, since a weekend-place card should depict the
+  place itself
+
+### UI impact
+
+The image is surfaced on two existing surfaces only. No new
+surface, route, gallery, carousel, or place detail page was added.
+
+- **`/nearby-weekend-places` directory** — cards that have a
+  verified image now render a leading image inside the card using
+  a `-mx-5 -mt-5` negative-space `<figure>` with an inline
+  `<figcaption>` for attribution; cards without a verified image
+  render text-only exactly as before
+- **`/cities/[city]/weekend-trip` nearby section** — the same
+  `<figure>` is rendered when `place.image` is set, within the
+  existing max-6-cards layout (the cap is unchanged)
+- both surfaces use a plain
+  `<img loading="lazy" decoding="async">` tag with explicit
+  `width` and `height` attributes and an `aspectRatio` style; no
+  `next/image`, no client components, no new dependencies, and no
+  carousel / gallery / masonry component was introduced
+- attribution is rendered inline in the `<figcaption>` as
+  `author / Wikimedia Commons, license`, with separate links to
+  `authorUrl` (when available), `sourceUrl` (the Commons file
+  page), and `licenseUrl`
+
+### Verification status policy
+
+Adding an image does **not** change any record's
+`verificationStatus`:
+
+- `partial` records that gained an image remain `partial`
+- `verified` records that gained an image remain `verified`
+- the 14 skipped records keep whatever `verificationStatus` they
+  already had — none were promoted to `verified` or demoted to
+  `needs_review` as a side effect of this pass
+
+### Static page-count delta
+
+- static page count: **2,919 -> 2,919** (unchanged)
+- no new routes
+- no sitemap growth
+- no client-side fetching introduced; all image metadata is
+  embedded at build time
+- no place detail pages were added
+
+### Validation script changes
+
+`npm run validate:nearby-places` was extended to enforce the
+image-record invariants:
+
+- when a record carries an `image`, the required fields are
+  `src`, `width`, `height`, `alt`, `source`, `sourceUrl`,
+  `author`, `license`, `licenseUrl`, `attributionText`,
+  `verified: true`, and `verifiedAt`
+- `license` must not be NC, ND, FAL, GFDL, unknown, or a bare
+  `"Attribution"` without a CC version
+- `src` (and the file referenced by `sourceUrl`) must not contain
+  any of the suspicious filename tokens listed under the safety
+  policy
+- `sourceUrl` must use the Wikimedia Commons file-page prefix, so
+  that off-Commons URLs cannot enter the dataset
+
+### Next steps
+
+- audit the nearby weekend places image pass against the live
+  build, including the 14 skipped records, to confirm the
+  text-only fallback renders cleanly on both surfaces
+- future place detail pages remain deferred until image and source
+  maturity are higher; this pass does not unlock them
+
