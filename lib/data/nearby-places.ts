@@ -1369,6 +1369,22 @@ const seeds: readonly PlaceSeed[] = [
 ];
 
 const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
+  "beaujolais-near-lyon": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/2016_PAYSAGE_BEAUJOLAIS.02_%C2%A9Fibois69.jpg/1280px-2016_PAYSAGE_BEAUJOLAIS.02_%C2%A9Fibois69.jpg",
+    width: 1200,
+    height: 900,
+    alt: "Verified Wikimedia Commons image of Beaujolais, France",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:2016_PAYSAGE_BEAUJOLAIS.02_%C2%A9Fibois69.jpg",
+    author: "Fibois 69",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    attributionText: "Fibois 69 / Wikimedia Commons, CC BY-SA 4.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
   "bergamo-near-milan": {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/The_Upper_City_of_Bergamo._View_from_Via_al_Castello._Italy.jpg/1280px-The_Upper_City_of_Bergamo._View_from_Via_al_Castello._Italy.jpg",
     width: 1200,
@@ -1446,6 +1462,40 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     license: "CC BY-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
     attributionText: "kallerna / Wikimedia Commons, CC BY-SA 4.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
+  "cape-cod-near-boston": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Cape_Cod%2C_Massachusetts_-_ISS_-_April_14_2020_%2855248791328%29.jpg/1280px-Cape_Cod%2C_Massachusetts_-_ISS_-_April_14_2020_%2855248791328%29.jpg",
+    width: 1200,
+    height: 800,
+    alt: "Verified Wikimedia Commons image of Cape Cod, United States",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Cape_Cod,_Massachusetts_-_ISS_-_April_14_2020_(55248791328).jpg",
+    author: "Kevin M. Gill",
+    authorUrl: "https://www.flickr.com/people/kevinmgill/",
+    license: "CC BY 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/4.0",
+    attributionText: "Kevin M. Gill / Wikimedia Commons, CC BY 4.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
+  "cascais-near-lisbon": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/2016-10-18_Cascais_6029_%2830841872662%29.jpg/1280px-2016-10-18_Cascais_6029_%2830841872662%29.jpg",
+    width: 1200,
+    height: 900,
+    alt: "Verified Wikimedia Commons image of Cascais, Portugal",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:2016-10-18_Cascais_6029_(30841872662).jpg",
+    author: "swissbert from Switzerland",
+    authorUrl: "https://www.flickr.com/people/42933506@N00",
+    license: "CC0",
+    licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
+    attributionText: "swissbert from Switzerland / Wikimedia Commons, CC0",
     verified: true,
     verifiedAt: "2026-05-31",
   },
@@ -1572,6 +1622,25 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     verified: true,
     verifiedAt: "2026-05-31",
   },
+  "fiordland-near-queenstown": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Eglington_Valley%2C_Fiordland%2C_South_Island_%288604786535%29.jpg/1280px-Eglington_Valley%2C_Fiordland%2C_South_Island_%288604786535%29.jpg",
+    width: 1200,
+    height: 900,
+    alt:
+      "Verified Wikimedia Commons image of Fiordland National Park, New Zealand",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Eglington_Valley,_Fiordland,_South_Island_(8604786535).jpg",
+    author: "Ron Knight from Seaford, East Sussex, United Kingdom",
+    authorUrl: "https://www.flickr.com/people/9919745@N03",
+    license: "CC BY 2.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/2.0",
+    attributionText:
+      "Ron Knight from Seaford, East Sussex, United Kingdom / Wikimedia Commons, CC BY 2.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
   "fontainebleau-near-paris": {
     src: "https://upload.wikimedia.org/wikipedia/commons/8/85/Le_Grand_Escalier_%C3%A0_Fer_de_Cheval.jpg",
     width: 1205,
@@ -1600,6 +1669,23 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     license: "Public domain",
     licenseUrl: "https://en.wikipedia.org/wiki/Public_domain",
     attributionText: "en:User:Ahunt / Wikimedia Commons, Public domain",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
+  "ghent-near-brussels": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Belgio_-_Gand_-_ponte_San_Michele%2C_chiesa_San_Michele_e_fiume_Lys.jpg/1280px-Belgio_-_Gand_-_ponte_San_Michele%2C_chiesa_San_Michele_e_fiume_Lys.jpg",
+    width: 1200,
+    height: 899,
+    alt: "Verified Wikimedia Commons image of Ghent, Belgium",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Belgio_-_Gand_-_ponte_San_Michele,_chiesa_San_Michele_e_fiume_Lys.jpg",
+    author: "Mario Falcetti",
+    authorUrl: "https://commons.wikimedia.org/wiki/User:Mario_Falcetti",
+    license: "CC BY 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+    attributionText: "Mario Falcetti / Wikimedia Commons, CC BY 4.0",
     verified: true,
     verifiedAt: "2026-05-31",
   },
@@ -1663,6 +1749,22 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     verified: true,
     verifiedAt: "2026-05-31",
   },
+  "hudson-valley-near-new-york": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bonticou_Crag_from_the_scramble_base.jpg/1280px-Bonticou_Crag_from_the_scramble_base.jpg",
+    width: 1200,
+    height: 900,
+    alt: "Verified Wikimedia Commons image of Hudson Valley, United States",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Bonticou_Crag_from_the_scramble_base.jpg",
+    author: "Levineuwirth",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    attributionText: "Levineuwirth / Wikimedia Commons, CC BY-SA 4.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
   "hyde-park-london": {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hyde_Park_July_2015-1.jpg/1280px-Hyde_Park_July_2015-1.jpg",
     width: 1200,
@@ -1690,6 +1792,23 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     license: "CC BY-SA 3.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
     attributionText: "P199 / Wikimedia Commons, CC BY-SA 3.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
+  "indiana-dunes-near-chicago": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Dune_Succession_Trail_at_West_Beach%2C_Indiana_Dunes_National_Park.jpg/1280px-Dune_Succession_Trail_at_West_Beach%2C_Indiana_Dunes_National_Park.jpg",
+    width: 1200,
+    height: 800,
+    alt:
+      "Verified Wikimedia Commons image of Indiana Dunes National Park, United States",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Dune_Succession_Trail_at_West_Beach,_Indiana_Dunes_National_Park.jpg",
+    author: "Indianadunes",
+    license: "CC BY 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/4.0",
+    attributionText: "Indianadunes / Wikimedia Commons, CC BY 4.0",
     verified: true,
     verifiedAt: "2026-05-31",
   },
@@ -1804,6 +1923,24 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     verified: true,
     verifiedAt: "2026-05-31",
   },
+  "muir-woods-near-san-francisco": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fern_under_Redwood_MG_2640.jpg/1280px-Fern_under_Redwood_MG_2640.jpg",
+    width: 1200,
+    height: 800,
+    alt:
+      "Verified Wikimedia Commons image of Muir Woods National Monument, United States",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Fern_under_Redwood_MG_2640.jpg",
+    author: "PeteBobb",
+    authorUrl: "https://commons.wikimedia.org/wiki/User:PeteBobb",
+    license: "CC BY-SA 3.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+    attributionText: "PeteBobb / Wikimedia Commons, CC BY-SA 3.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
   "niagara-falls-near-toronto": {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Niagara_Falls_USA_Canada_from_Skylon_Tower_on_2002-05-28%2C_full_size.jpg/1280px-Niagara_Falls_USA_Canada_from_Skylon_Tower_on_2002-05-28%2C_full_size.jpg",
     width: 1200,
@@ -1849,6 +1986,24 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     verified: true,
     verifiedAt: "2026-05-31",
   },
+  "pentland-hills-edinburgh": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/3/30/Bonaly%2C_Pentland_Hills_Regional_Park_-_geograph.org.uk_-_405803.jpg",
+    width: 640,
+    height: 480,
+    alt:
+      "Verified Wikimedia Commons image of Pentland Hills Regional Park, United Kingdom",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Bonaly,_Pentland_Hills_Regional_Park_-_geograph.org.uk_-_405803.jpg",
+    author: "Sandy Gemmill",
+    authorUrl: "https://www.geograph.org.uk/profile/8181",
+    license: "CC BY-SA 2.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
+    attributionText: "Sandy Gemmill / Wikimedia Commons, CC BY-SA 2.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
   "phillip-island-near-melbourne": {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nobbies_zz.JPG/1280px-Nobbies_zz.JPG",
     width: 1200,
@@ -1860,6 +2015,23 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     license: "CC BY-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
     attributionText: "Chensiyuan / Wikimedia Commons, CC BY-SA 4.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
+  "phoenix-park-dublin": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/2/27/Chesterfield_Avenue%2C_Phoenix_Park_-_geograph.org.uk_-_6004578.jpg",
+    width: 1024,
+    height: 681,
+    alt: "Verified Wikimedia Commons image of Phoenix Park, Ireland",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Chesterfield_Avenue,_Phoenix_Park_-_geograph.org.uk_-_6004578.jpg",
+    author: "N Chadwick",
+    authorUrl: "https://www.geograph.org.uk/profile/3101",
+    license: "CC BY-SA 2.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+    attributionText: "N Chadwick / Wikimedia Commons, CC BY-SA 2.0",
     verified: true,
     verifiedAt: "2026-05-31",
   },
@@ -1890,6 +2062,40 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     license: "CC BY-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
     attributionText: "Angel Miklashevsky / Wikimedia Commons, CC BY-SA 4.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
+  "rheingau-near-frankfurt": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Panoramic_view_of_eastern_Rheingau_from_Schloss_Johannisberg_20150415_1.jpg/1280px-Panoramic_view_of_eastern_Rheingau_from_Schloss_Johannisberg_20150415_1.jpg",
+    width: 1200,
+    height: 236,
+    alt: "Verified Wikimedia Commons image of Rheingau, Germany",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_eastern_Rheingau_from_Schloss_Johannisberg_20150415_1.jpg",
+    author: "DXR",
+    authorUrl: "https://commons.wikimedia.org/wiki/User:DXR",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+    attributionText: "DXR / Wikimedia Commons, CC BY-SA 4.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
+  "richmond-park-london": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Isabella_Plantation%2C_Richmond_Park%2C_London_-_April_2011.jpg/1280px-Isabella_Plantation%2C_Richmond_Park%2C_London_-_April_2011.jpg",
+    width: 1200,
+    height: 1577,
+    alt: "Verified Wikimedia Commons image of Richmond Park, United Kingdom",
+    source: "wikimedia-commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Isabella_Plantation,_Richmond_Park,_London_-_April_2011.jpg",
+    author: "Diliff",
+    authorUrl: "https://commons.wikimedia.org/wiki/User:Diliff",
+    license: "CC BY-SA 3.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+    attributionText: "Diliff / Wikimedia Commons, CC BY-SA 3.0",
     verified: true,
     verifiedAt: "2026-05-31",
   },
@@ -2013,6 +2219,21 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     verified: true,
     verifiedAt: "2026-05-31",
   },
+  "sitges-near-barcelona": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sitges_banner.jpg/1280px-Sitges_banner.jpg",
+    width: 1200,
+    height: 171,
+    alt: "Verified Wikimedia Commons image of Sitges, Spain",
+    source: "wikimedia-commons",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Sitges_banner.jpg",
+    author: "Werner Lang / Wela49",
+    license: "CC BY-SA 3.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+    attributionText: "Werner Lang / Wela49 / Wikimedia Commons, CC BY-SA 3.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
   "spreewald-near-berlin": {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2018_Spreewald_02.jpg/1280px-2018_Spreewald_02.jpg",
     width: 1200,
@@ -2129,6 +2350,22 @@ const VERIFIED_IMAGES: Record<string, NearbyPlaceImage> = {
     license: "CC BY-SA 4.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
     attributionText: "C.Stadler/Bwag / Wikimedia Commons, CC BY-SA 4.0",
+    verified: true,
+    verifiedAt: "2026-05-31",
+  },
+  "waiheke-island-near-auckland": {
+    src:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Enclosure_Bay.jpg/1280px-Enclosure_Bay.jpg",
+    width: 1200,
+    height: 900,
+    alt: "Verified Wikimedia Commons image of Waiheke Island, New Zealand",
+    source: "wikimedia-commons",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Enclosure_Bay.jpg",
+    author: "ShakyIsles",
+    authorUrl: "https://commons.wikimedia.org/wiki/User:ShakyIsles",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+    attributionText: "ShakyIsles / Wikimedia Commons, CC BY-SA 4.0",
     verified: true,
     verifiedAt: "2026-05-31",
   },

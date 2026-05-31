@@ -3230,3 +3230,169 @@ No other navigation surface was modified.
   page can continue to anchor every card against an
   authoritative outbound source
 
+## 2026-05-31: nearby weekend places local recreation photo coverage
+
+This pass closes the remaining image gap on the nearby weekend
+places dataset by adding verified imagery for every record that
+was previously text-only. The scope is strictly imagery: no new
+records, no new routes, no sitemap growth, no schema changes,
+no client-side fetching, and no promotion of any record's
+`verificationStatus`.
+
+### Coverage delta
+
+- records attempted: 14 (the previously image-free records)
+- images added: 14 of 14 (full coverage)
+- records still image-free: 0
+- skip reasons: 0 (no records remain image-free)
+
+The `VERIFIED_IMAGES` dictionary now holds 68 entries, matching
+the full 68-record nearby-weekend-places dataset one-for-one.
+
+### Resolution strategy
+
+The resolution loop followed the same source policy already in
+force for the surrounding nearby-place imagery:
+
+- the first attempt for each record fetched the Wikidata `P18`
+  image and ran the standard attribution / license / safety
+  filter; the candidate was rejected and replaced whenever any
+  filter failed
+- when the `P18` candidate was rejected, the loop fell back to
+  the record's Commons category via Wikidata `P373` and
+  iterated up to 8 candidates per record under the same strict
+  filter
+- 9 of the 14 newly imaged records were resolved through the
+  Commons-category fallback (the original `P18` candidate did
+  not pass the filter); the remaining 5 resolved on the first
+  `P18` candidate
+
+### Source policy (unchanged)
+
+Source acceptance was restricted to:
+
+- Wikidata `P18`
+- Commons category `P373`
+- Commons `imageinfo` API
+
+No Google Images, no AI-generated imagery, no random URLs, no
+tourism-board substitutes, no blogs, no review platforms, and
+no social media were accepted at any point in the loop.
+
+### License policy (unchanged)
+
+License acceptance was restricted to Public domain, CC0,
+CC BY, and CC BY-SA, with regional suffixes permitted. The
+following were rejected on sight: NC, ND, FAL, GFDL, generic
+"Attribution", and any candidate whose license could not be
+resolved against the Commons `imageinfo` payload.
+
+### License distribution across the 14 new entries
+
+- CC BY-SA 4.0 ×4
+- CC BY-SA 3.0 ×3
+- CC BY 4.0 ×3
+- CC BY-SA 2.0 ×2
+- CC BY 2.0 ×1
+- CC0 ×1
+
+### Image subject distribution across the 14 new entries
+
+Subjects were selected against the recreation-priority list
+already used elsewhere in the nearby-weekend-places dataset:
+
+- national park landscape ×2
+- regional park landscape ×1
+- public park ×1
+- public garden ×1
+- forest trail ×2
+- waterfront ×2
+- beach ×1
+- sea coast ×1
+- mountain ×1
+- historic town exterior ×1
+- scenic public space ×1
+
+### Per-slug summary
+
+| slug | subject | author | license |
+| --- | --- | --- | --- |
+| richmond-park-london | public garden | Diliff | CC BY-SA 3.0 |
+| phoenix-park-dublin | public park | N Chadwick | CC BY-SA 2.0 |
+| rheingau-near-frankfurt | scenic public space | DXR | CC BY-SA 4.0 |
+| ghent-near-brussels | historic town exterior | Mario Falcetti | CC BY 4.0 |
+| cascais-near-lisbon | waterfront | swissbert from Switzerland | CC0 |
+| muir-woods-near-san-francisco | forest trail | PeteBobb | CC BY-SA 3.0 |
+| waiheke-island-near-auckland | beach | ShakyIsles | CC BY-SA 4.0 |
+| fiordland-near-queenstown | national park landscape | Ron Knight | CC BY 2.0 |
+| pentland-hills-edinburgh | regional park landscape | Sandy Gemmill | CC BY-SA 2.0 |
+| beaujolais-near-lyon | forest trail | Fibois 69 | CC BY-SA 4.0 |
+| sitges-near-barcelona | waterfront | Werner Lang / Wela49 | CC BY-SA 3.0 |
+| hudson-valley-near-new-york | mountain | Levineuwirth | CC BY-SA 4.0 |
+| cape-cod-near-boston | sea coast | Kevin M. Gill | CC BY 4.0 |
+| indiana-dunes-near-chicago | national park landscape | Indianadunes | CC BY 4.0 |
+
+### UI impact
+
+The existing conditional `<figure>` render on every
+nearby-weekend-place surface now automatically renders the new
+images on the 14 previously text-only cards. No UI code change
+was required because every surface was already
+image-conditional:
+
+- `/nearby-weekend-places` — global directory
+- `/nearby-weekend-places/[slug]` — curated detail pages
+- `/cities/[city]/weekend-trip` — the nearby section inside the
+  weekend-trip page
+- `/cities/[city]/nearby-weekend-places` — the per-city page
+
+### Verification status policy
+
+No record's `verificationStatus` changed in this pass. Partial
+records that gained an image remain partial. Verified records
+that gained an image remain verified. Image presence is not a
+substitute for source verification and is not used as a signal
+for promoting a record's status.
+
+### Detail-page policy
+
+`NEARBY_WEEKEND_PLACE_DETAIL_SLUGS` is unchanged in this task.
+Newly imaged verified records may become detail-page candidates
+in a future expansion, but partial records — including
+`rheingau-near-frankfurt`, `ghent-near-brussels`,
+`beaujolais-near-lyon`, `hudson-valley-near-new-york`,
+`cape-cod-near-boston`, and `waiheke-island-near-auckland` —
+remain ineligible regardless of image presence until their
+underlying `officialUrl` resolves on Wikidata.
+
+### Surface delta
+
+- no new routes
+- no sitemap growth
+- no schema changes
+- no client-side fetching
+- static page count unchanged
+
+### Validation results
+
+- `npm run validate:nearby-places` — **PASS** (68 records,
+  68 `VERIFIED_IMAGES` entries, 44 curated detail rules clean)
+- `npm run validate:media` — **PASS**
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean
+
+### Next steps
+
+- audit the expanded nearby-place photo coverage against the
+  same audit framework already applied to the rest of the
+  nearby-weekend-places dataset
+- optionally expand detail pages to the 8 newly imaged verified
+  candidates after that audit:
+  `richmond-park-london`, `phoenix-park-dublin`,
+  `cascais-near-lisbon`, `muir-woods-near-san-francisco`,
+  `pentland-hills-edinburgh`, `sitges-near-barcelona`,
+  `indiana-dunes-near-chicago`, `fiordland-near-queenstown`
+- partial records remain ineligible for detail pages until
+  `officialUrl` resolves on Wikidata
+
