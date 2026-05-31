@@ -91,6 +91,9 @@ export function Footer() {
           <FooterLink href={staticRoutes.weekendTrips}>
             Weekend trip guides
           </FooterLink>
+          <FooterLink href={staticRoutes.nearbyWeekendPlaces}>
+            Nearby weekend places
+          </FooterLink>
           <FooterLink href={staticRoutes.tools}>Tools and calculators</FooterLink>
           <FooterLink href={staticRoutes.costOfLivingCalculator}>
             Cost of living calculator

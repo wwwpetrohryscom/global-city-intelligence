@@ -2382,3 +2382,109 @@ verification invariants:
   category and country; image verification remains a separate,
   future pass
 
+## 2026-05-31: nearby weekend places directory page
+
+This change adds a single top-level static directory page that
+surfaces the existing nearby-weekend-places dataset. It is a
+read-only listing of the records already verified in the previous
+pass and does not introduce any new place records, images, or
+detail pages.
+
+### Route added
+
+- **`/nearby-weekend-places`** — a top-level static directory route.
+  No place-level detail routes were added; each record is anchored
+  on the directory via a `#slug` fragment, and in-page navigation
+  scrolls to the matching card.
+
+### What the page is, and what it deliberately is not
+
+The page lists **68 records** from the existing dataset, broken
+down exactly as:
+
+- **52 verified** (Verified source record)
+- **16 partial** (Partially verified source record)
+- **0 needs_review** (Pending detailed verification)
+
+Positioning is intentionally narrow:
+
+- it is a **local-first weekend rest** directory, oriented toward
+  source-backed planning candidates near the listed origin cities
+- it is **not** a tourism ranking, a curated itinerary, a route
+  planner, a distance or travel-time calculator, or a live
+  availability page
+- it does **not** claim &ldquo;best&rdquo;, &ldquo;must-see&rdquo;,
+  &ldquo;safest&rdquo;, or &ldquo;cheapest&rdquo; for any record,
+  and the existing ban on promotional wording in summaries remains
+  in force
+
+### Content boundaries
+
+The directory inherits the dataset's existing content rules without
+relaxation:
+
+- no place detail pages were added; records use `#slug` fragments on
+  the directory page itself
+- no images were added; the text-only card layout retains the
+  no-image policy, and the future image pass is still gated on
+  per-record `verified: true`
+- no exact distances, no travel times, no transport routes, no
+  ticket prices, no opening hours, no weather statements, no hotel
+  prices, and no attraction-ranking claims are rendered for any
+  record
+- time-sensitive details continue to be deferred to the official
+  source linked on each card
+
+### Structured data
+
+The page emits three JSON-LD blocks, all derived from the existing
+dataset and the existing route helpers:
+
+- **`WebPage`** JSON-LD describing the directory page itself
+- **`BreadcrumbList`** JSON-LD linking Home -> Nearby weekend places
+- **`ItemList`** JSON-LD with `itemListOrder: "ItemListUnordered"`,
+  where every entry carries a `name` and a `url` of the form
+  `/nearby-weekend-places#<slug>`; the unordered ordering is
+  deliberate, because the page is not a ranking
+
+### Sitemap delta
+
+- **+1 entry**: `/nearby-weekend-places` at **priority 0.75**,
+  **monthly** changefreq
+- no other sitemap entries were modified
+
+### Static page-count delta
+
+- static page count: **2,918 -> 2,919** (**+1**, the new directory
+  route)
+- no detail pages were generated, so the delta is exactly +1
+
+### Footer
+
+- a **"Nearby weekend places"** link was added to the **Reference**
+  column of the footer, placed immediately after **Weekend trip
+  guides**; column ordering and the other footer links are unchanged
+
+### routes.ts
+
+- `staticRoutes.nearbyWeekendPlaces` was added and is set to
+  `"/nearby-weekend-places"` (the value was already defined in the
+  route map and is reused, not re-declared)
+- the new route is included in `getAllIndexableRoutes()`, so the
+  sitemap, breadcrumb helpers, and link-validation tooling all see
+  it through the existing single source of truth
+
+### Validations
+
+All required checks pass on the change:
+
+- **`npm run validate:nearby-places`** — PASS (record count,
+  verification-status enum, banned-field guard, and coordinate
+  triple invariant all hold)
+- **`npm run validate:media`** — PASS (no new images were added,
+  and the no-image policy on this page is enforced)
+- **typecheck** — clean
+- **lint** — clean
+- **build** — **2,919 / 2,919** routes generated, matching the
+  expected post-change page count
+
