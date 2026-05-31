@@ -37,6 +37,21 @@ export type {
   CollectionIntent,
 } from "./collection";
 export type {
+  CommunityPhotoAttachmentTargetType,
+  CommunityPhotoLicenseIntent,
+  CommunityPhotoModerationDecision,
+  CommunityPhotoModerationRecord,
+  CommunityPhotoPolicy,
+  CommunityPhotoPublicRecord,
+  CommunityPhotoReviewPriority,
+  CommunityPhotoSafetyFlag,
+  CommunityPhotoSourceType,
+  CommunityPhotoSubmission,
+  CommunityPhotoSubmissionStatus,
+  CommunityPhotoValidationResult,
+  CommunityPhotoVisibility,
+} from "./community-media";
+export type {
   CityIntent,
   CityIntentCriterion,
   CityIntentPage,

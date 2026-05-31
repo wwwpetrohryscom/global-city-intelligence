@@ -3396,3 +3396,44 @@ underlying `officialUrl` resolves on Wikidata.
 - partial records remain ineligible for detail pages until
   `officialUrl` resolves on Wikidata
 
+## 2026-05-31: community photo submission model (foundation only)
+
+- No upload UI added. No public community photos rendered. No API routes
+  added. No storage / auth / DB integration. No new package dependencies.
+- Types defined in /types/community-media.ts: CommunityPhotoSourceType,
+  CommunityPhotoSubmissionStatus, CommunityPhotoModerationDecision,
+  CommunityPhotoSafetyFlag (18 values), CommunityPhotoVisibility,
+  CommunityPhotoAttachmentTargetType, CommunityPhotoLicenseIntent,
+  CommunityPhotoReviewPriority, plus CommunityPhotoSubmission,
+  CommunityPhotoPublicRecord, CommunityPhotoModerationRecord,
+  CommunityPhotoPolicy, CommunityPhotoValidationResult interfaces.
+- Policy helpers in /lib/community-media/policy.ts: getCommunityPhotoPolicy,
+  getCommunityPhotoStatusLabel, getCommunityPhotoSourceLabel,
+  getCommunityPhotoSafetyFlagLabel,
+  getCommunityPhotoVisibilityForStatus, canCommunityPhotoBePublic,
+  requiresModeration, isUserUploadedSource, isVerifiedSource,
+  getDefaultCommunityPhotoReviewPriority, shouldBlockAutoApproval,
+  getCommunityPhotoHighRiskFlags. All pure / synchronous / server-safe.
+- Validation helpers in /lib/community-media/validation.ts:
+  validateCommunityPhotoSubmissionDraft, validateCommunityPhotoTarget,
+  validateCommunityPhotoFileMetadata,
+  validateCommunityPhotoRightsConfirmation,
+  validateCommunityPhotoModerationReadiness, and
+  validateCommunityPhotoPublicRecord. Each returns
+  { ok, errors[], warnings[] }.
+- Verified-source media (NearbyPlaceImage, VERIFIED_IMAGES,
+  PlaceHeroImage, etc.) untouched. The new "verified_source" tag in
+  CommunityPhotoSourceType is for future-UI tab parity only and does NOT
+  bridge to the existing verified media catalog.
+- High-risk flag set: child_visible, private_person_main_subject,
+  personal_information, violence_or_disturbing, hate_or_extremism,
+  nudity_or_sexual_content, copyright_risk, manipulated_or_ai_generated.
+  These block auto-approval.
+- Public visibility derives from status (only "approved" -> "public").
+- Static page count unchanged.
+- Validation results: npm run validate:nearby-places PASS;
+  npm run validate:media PASS; npm run typecheck clean; npm run lint clean;
+  npm run build produces the prior 3,008 static pages with no additions.
+- Roadmap detail in /docs/community-media-roadmap.md.
+- Next step: design the upload + moderation API surface in a separate task.
+
