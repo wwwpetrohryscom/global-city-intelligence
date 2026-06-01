@@ -4126,4 +4126,184 @@ All source IDs are pre-registered in
   for the most local-first-relevant batch-four entries in a
   future curated batch.
 
+## 2026-06-01: visual guides for batch four cities
+
+This pass extends the visual-guide cluster to cover every
+batch-four city. Forty-nine new visual-guide pages were seeded
+in `lib/data/visual-guides.ts`, one per batch-four city.
+Before this commit, none of the 49 batch-four cities had a
+visual-guide page (0 / 49 coverage). After this commit, every
+batch-four city has a visual-guide entry (49 / 49 coverage).
+The total visual-guide page count moves from 100 to 149.
+
+### Coverage scope
+
+- 49 new visual-guide pages — one per batch-four city.
+- Pre-existing batch-four visual-guide pages: 0. None of the
+  49 batch-four cities carried a visual-guide entry before
+  this commit.
+- Visual-guide total: 100 -> 149.
+
+### Cities covered
+
+The 49 new visual-guide pages, alphabetical:
+
+aalborg, aberdeen, ann-arbor, aveiro, ballarat, bendigo,
+boise, breda, dundee, essen, faro, karlsruhe, klaipeda,
+kosice, launceston, lecce, liege, lille, limerick, louisville,
+lublin, namur, nantes, nelson, new-orleans, oklahoma-city,
+omaha, oradea, oulu, palmerston-north, parma, regina, reims,
+rouen, santander, siena, southampton, tartu, tilburg,
+timisoara, toowoomba, tours, townsville, trieste, tucson,
+varna, vigo, waterford, york.
+
+### VisualGuideFocus distribution
+
+Every seed uses one of the seven existing `VisualGuideFocus`
+enum values; no new enum members were introduced.
+
+- `neighborhood_visual_context`: 14 — york, limerick, rouen,
+  siena, parma, lecce, breda, kosice, lublin, timisoara,
+  oradea, new-orleans, ballarat, bendigo
+- `arrival_visual_context`: 13 — southampton, aberdeen,
+  waterford, vigo, santander, faro, aveiro, trieste,
+  klaipeda, varna, townsville, launceston, nelson
+- `general_city_context`: 9 — reims, essen, tilburg,
+  louisville, oklahoma-city, omaha, boise, tucson, regina
+- `relocation_visual_context`: 7 — dundee, nantes, tours,
+  karlsruhe, namur, liege, aalborg
+- `remote_work_visual_context`: 4 — oulu, tartu, ann-arbor,
+  palmerston-north
+- `transport_visual_context`: 1 — lille
+- `family_visual_context`: 1 — toowoomba
+- Total: 49
+
+### Local-first visual positioning
+
+Every page is positioned as visual orientation rather than as
+an attractions ranking or a live tourism guide. The existing
+template's safe wording — directing readers to "verify access,
+opening status, transport, weather, health, and safety details
+with official or trusted current sources before departure" —
+applies uniformly to all 49 new entries. No promotional
+language, no exact distances, travel times, routes, prices,
+opening hours, weather, event dates, safety rankings, or
+accessibility claims appear in the seeds.
+
+### Verified city hero image reuse
+
+Every batch-four city already received a verified Wikimedia
+Commons city hero during the earlier batch-four city
+expansion (335 / 347 hero coverage). No new images were added
+in this pass. The existing `PlaceHeroImage` flow renders the
+verified hero automatically on each new visual-guide page.
+
+### Nearby-place and weekend-trip integration
+
+Because the prior batch-four passes added (a) at least one
+nearby weekend place per batch-four city and (b) a
+weekend-trip page per batch-four city, every one of the 49
+new visual-guide pages will auto-link to
+`/cities/[city]/nearby-weekend-places` (via
+`hasNearbyWeekendPlacesCityPage`) and to
+`/cities/[city]/weekend-trip` (via `hasWeekendTripPage`).
+Cross-cluster linking is now complete for every batch-four
+city.
+
+### City profile reverse-link
+
+The existing city-profile page's `hasVisualCityGuidePage`
+conditional `LinkCard` for "Visual Guide to {City}" now
+auto-renders on each of the 49 batch-four city profiles.
+Zero code change was required.
+
+### Visual-guides directory
+
+The directory at `/visual-guides` keeps its existing layout.
+- The `ItemList` JSON-LD `numberOfItems` rises 100 -> 149.
+- The by-country grouped index automatically lists the new
+  49 entries.
+- The stats `dl` will read "Visual guides: 149" after this
+  commit.
+
+### Sitemap delta
+
+- +49 `/cities/[city]/visual-guide` entries flow from the
+  existing per-page iteration in `app/sitemap.ts`.
+- No edit to `app/sitemap.ts` was required.
+
+### Structured data
+
+- No new structured-data types were introduced.
+- Each new visual-guide page continues to emit `WebPage` plus
+  `BreadcrumbList`.
+- The directory continues to emit `WebPage` plus
+  `BreadcrumbList` plus an unordered `ItemList`.
+
+### Image policy
+
+- No new images.
+- Each visual-guide page reuses the existing verified city
+  hero image.
+- Nearby-place sections reuse the existing nearby image
+  catalog.
+- Zero placeholders, fallback images, or city-hero
+  substitutes were added.
+
+### Date convention
+
+- A new `BATCH_4_UPDATED_DATE = "2026-06-01"` constant was
+  introduced in `lib/data/visual-guides.ts`, alongside the
+  existing `BATCH_1_UPDATED_DATE = "2026-05-25"`.
+- The `Seed` interface now accepts an optional per-seed
+  `updatedDate` override (additive field). When absent, the
+  seeds-to-pages map falls back to `BATCH_1_UPDATED_DATE`,
+  preserving the existing 100 records' resolved dates without
+  edits.
+- The 49 new seeds carry
+  `updatedDate: BATCH_4_UPDATED_DATE`. The original 100
+  seeds are unchanged and continue to resolve to
+  `BATCH_1_UPDATED_DATE` through the fallback.
+
+### Source convention
+
+Each new seed inherits the existing `COMMON_SOURCES`
+(`un-habitat`, `nasa-power`, `ipcc-urban`) plus one regional
+extra. Tally across the 49:
+
+- `eea-air` for UK, Ireland, and EU cities (34 new pages — UK
+  4 + Ireland 2 + EU 28)
+- `epa-naaqs` for United States cities (7 new pages)
+- `canada-emergency` for Canada (1 new page)
+- `triple-zero-au` for Australia (5 new pages)
+- `nz-police-111` for New Zealand (2 new pages)
+
+All source IDs are pre-registered in
+`lib/data/sources/index.ts`. No new sources were added.
+
+### Static page count delta
+
+- previous baseline: 3,482
+- new total: 3,531 (+49 from the 49 new
+  `/cities/[city]/visual-guide` routes auto-generated by the
+  existing `generateStaticParams` iteration)
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (117 records and 77
+  curated detail-slug rules unchanged)
+- `npm run validate:media` -- PASS
+- `npm run validate:community-media` -- PASS
+- `npm run typecheck` -- clean
+- `npm run lint` -- clean
+- `npm run build` -- emits 3,531 / 3,531 pages
+
+### Future steps
+
+- Audit the batch-four visual-guide pages once live for any
+  rendering or metadata regressions.
+- Consider arrival, moving-to, or summer-travel clusters for
+  the most local-first-relevant batch-four entries in a
+  future curated batch.
+
 

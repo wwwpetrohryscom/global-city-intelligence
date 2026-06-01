@@ -33,6 +33,7 @@ import type {
  */
 
 const BATCH_1_UPDATED_DATE = "2026-05-25";
+const BATCH_4_UPDATED_DATE = "2026-06-01";
 
 const COMMON_SOURCES: readonly string[] = [
   "un-habitat",
@@ -73,6 +74,7 @@ interface Seed {
   visualFocus: VisualGuideFocus;
   extra?: readonly string[];
   context: string;
+  updatedDate?: string;  // NEW — optional override; falls back to BATCH_1_UPDATED_DATE
 }
 
 const seeds: readonly Seed[] = [
@@ -195,6 +197,57 @@ const seeds: readonly Seed[] = [
   { citySlug: "wellington", cityName: "Wellington", countryName: "New Zealand", visualFocus: "general_city_context", extra: ["nz-police-111"], context: "arrival planning links" },
   { citySlug: "christchurch", cityName: "Christchurch", countryName: "New Zealand", visualFocus: "general_city_context", extra: ["nz-police-111"], context: "arrival planning links" },
   { citySlug: "canberra", cityName: "Canberra", countryName: "Australia", visualFocus: "general_city_context", extra: ["triple-zero-au"], context: "city context" },
+
+  // === Batch four (2026-06-01): +49 visual-guide pages ===
+  { citySlug: "york", cityName: "York", countryName: "United Kingdom", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "historic streets and city walls visual context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "southampton", cityName: "Southampton", countryName: "United Kingdom", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "port and ferry arrival visual context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "aberdeen", cityName: "Aberdeen", countryName: "United Kingdom", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "harbour and coastal arrival visual context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "dundee", cityName: "Dundee", countryName: "United Kingdom", visualFocus: "relocation_visual_context", extra: ["eea-air"], context: "riverside redevelopment and relocation context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "limerick", cityName: "Limerick", countryName: "Ireland", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Georgian streets and riverside neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "waterford", cityName: "Waterford", countryName: "Ireland", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "river harbour arrival visual context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "nantes", cityName: "Nantes", countryName: "France", visualFocus: "relocation_visual_context", extra: ["eea-air"], context: "Loire-side regional relocation context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "lille", cityName: "Lille", countryName: "France", visualFocus: "transport_visual_context", extra: ["eea-air"], context: "cross-border rail and transport visual context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "rouen", cityName: "Rouen", countryName: "France", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Norman old-town neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "reims", cityName: "Reims", countryName: "France", visualFocus: "general_city_context", extra: ["eea-air"], context: "regional city and cathedral context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "tours", cityName: "Tours", countryName: "France", visualFocus: "relocation_visual_context", extra: ["eea-air"], context: "Loire valley regional relocation context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "karlsruhe", cityName: "Karlsruhe", countryName: "Germany", visualFocus: "relocation_visual_context", extra: ["eea-air"], context: "planned-city civic and relocation context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "essen", cityName: "Essen", countryName: "Germany", visualFocus: "general_city_context", extra: ["eea-air"], context: "Ruhr industrial heritage and city context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "vigo", cityName: "Vigo", countryName: "Spain", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "Atlantic port and ria arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "santander", cityName: "Santander", countryName: "Spain", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "Cantabrian coast arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "faro", cityName: "Faro", countryName: "Portugal", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "Algarve airport and ria arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "aveiro", cityName: "Aveiro", countryName: "Portugal", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "lagoon-side visual arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "siena", cityName: "Siena", countryName: "Italy", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "medieval old-town neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "trieste", cityName: "Trieste", countryName: "Italy", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "Adriatic port arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "parma", cityName: "Parma", countryName: "Italy", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "historic regional neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "lecce", cityName: "Lecce", countryName: "Italy", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Baroque Salento neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "namur", cityName: "Namur", countryName: "Belgium", visualFocus: "relocation_visual_context", extra: ["eea-air"], context: "Walloon regional capital relocation context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "liege", cityName: "Liège", countryName: "Belgium", visualFocus: "relocation_visual_context", extra: ["eea-air"], context: "Meuse regional relocation context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "tilburg", cityName: "Tilburg", countryName: "Netherlands", visualFocus: "general_city_context", extra: ["eea-air"], context: "regional university city context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "breda", cityName: "Breda", countryName: "Netherlands", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "historic regional neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "oulu", cityName: "Oulu", countryName: "Finland", visualFocus: "remote_work_visual_context", extra: ["eea-air"], context: "northern university and remote-work context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "aalborg", cityName: "Aalborg", countryName: "Denmark", visualFocus: "relocation_visual_context", extra: ["eea-air"], context: "northern Jutland regional relocation context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "tartu", cityName: "Tartu", countryName: "Estonia", visualFocus: "remote_work_visual_context", extra: ["eea-air"], context: "university city remote-work context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "klaipeda", cityName: "Klaipėda", countryName: "Lithuania", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "Baltic ferry port arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "kosice", cityName: "Košice", countryName: "Slovakia", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "old-town and main-street neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "lublin", cityName: "Lublin", countryName: "Poland", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Old Town and castle neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "timisoara", cityName: "Timișoara", countryName: "Romania", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Habsburg quarter neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "oradea", cityName: "Oradea", countryName: "Romania", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Art Nouveau old-town neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "varna", cityName: "Varna", countryName: "Bulgaria", visualFocus: "arrival_visual_context", extra: ["eea-air"], context: "Black Sea arrival and coast context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "ann-arbor", cityName: "Ann Arbor", countryName: "United States", visualFocus: "remote_work_visual_context", extra: ["epa-naaqs"], context: "university and tech remote-work context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "new-orleans", cityName: "New Orleans", countryName: "United States", visualFocus: "neighborhood_visual_context", extra: ["epa-naaqs"], context: "French Quarter and neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "louisville", cityName: "Louisville", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "Ohio River regional city context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "oklahoma-city", cityName: "Oklahoma City", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "plains regional city context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "omaha", cityName: "Omaha", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "Missouri River regional city context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "boise", cityName: "Boise", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "foothills regional city context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "tucson", cityName: "Tucson", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "desert valley regional city context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "regina", cityName: "Regina", countryName: "Canada", visualFocus: "general_city_context", extra: ["canada-emergency"], context: "Saskatchewan prairie regional city context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "townsville", cityName: "Townsville", countryName: "Australia", visualFocus: "arrival_visual_context", extra: ["triple-zero-au"], context: "tropical coast arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "toowoomba", cityName: "Toowoomba", countryName: "Australia", visualFocus: "family_visual_context", extra: ["triple-zero-au"], context: "Garden City and family visual context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "ballarat", cityName: "Ballarat", countryName: "Australia", visualFocus: "neighborhood_visual_context", extra: ["triple-zero-au"], context: "gold-rush heritage neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "bendigo", cityName: "Bendigo", countryName: "Australia", visualFocus: "neighborhood_visual_context", extra: ["triple-zero-au"], context: "gold-rush heritage neighborhood context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "launceston", cityName: "Launceston", countryName: "Australia", visualFocus: "arrival_visual_context", extra: ["triple-zero-au"], context: "Tamar river arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "palmerston-north", cityName: "Palmerston North", countryName: "New Zealand", visualFocus: "remote_work_visual_context", extra: ["nz-police-111"], context: "university and remote-work visual context", updatedDate: BATCH_4_UPDATED_DATE },
+  { citySlug: "nelson", cityName: "Nelson", countryName: "New Zealand", visualFocus: "arrival_visual_context", extra: ["nz-police-111"], context: "Tasman bay arrival context", updatedDate: BATCH_4_UPDATED_DATE },
 ];
 
 export const visualCityGuidePages: VisualCityGuidePage[] = seeds.map((seed) => ({
@@ -202,7 +255,7 @@ export const visualCityGuidePages: VisualCityGuidePage[] = seeds.map((seed) => (
   title: `Visual Guide to ${seed.cityName}`,
   summary: summary(seed.cityName, seed.countryName, seed.context),
   visualFocus: seed.visualFocus,
-  updatedDate: BATCH_1_UPDATED_DATE,
+  updatedDate: seed.updatedDate ?? BATCH_1_UPDATED_DATE,
   dataYear: DATA_YEAR,
   sourceIds: visualSources(seed.extra),
 }));
