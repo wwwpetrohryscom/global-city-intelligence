@@ -3567,19 +3567,53 @@ further base-city expansion.
 
 ### Validation results
 
-- `npm run validate:nearby-places` -- PASS
-- `npm run validate:media` -- PASS (100% city hero coverage on the
-  new batch)
-- `npm run validate:community-media` -- PASS
+- `npm run validate:nearby-places` -- PASS (68 records, 68/68 image
+  coverage unchanged)
+- `npm run validate:media` -- PASS (cities: 335 hero / 367 total
+  on 347 known slugs, project-wide hero coverage rose from
+  286 / 298 to 335 / 347; countries: 86 hero / 106 total unchanged)
+- `npm run validate:community-media` -- PASS (28 enum values
+  labeled, unchanged)
 - `npm run typecheck` -- clean
 - `npm run lint` -- clean
-- `npm run build` -- clean
+- `npm run build` -- clean (3,351 / 3,351 static pages)
 
 ### Static page count delta
 
 - previous baseline: 3,008
-- new total: `exact_new_count` once build completes (to be backfilled
-  from build output)
+- new total: 3,351 (+343 = 49 new `/cities/[city]` profile pages
+  + 294 `/{moduleSlug}/[city]` module pages via the existing
+  6-module flatMap in `getAllIndexableRoutes()`)
+
+### City hero coverage delta
+
+- before batch four: 286 / 298 city hero records
+- after batch four: 335 / 347 city hero records
+- per-batch additions: 49 / 49 new cities ship with a verified
+  Wikimedia hero (100% of the new slugs)
+
+### Out-of-scope skipped candidates (21)
+
+The user-recommended pool included 21 candidates from countries
+outside the strict batch-four scope. They were dropped in the
+eligibility funnel and are NOT in the registry. Listed
+alphabetically by country, slug:
+
+- **India**: ahmedabad, chandigarh, coimbatore, kochi, lucknow,
+  surat
+- **Japan**: kobe, nara, yokohama
+- **Malaysia**: george-town, ipoh, johor-bahru, kota-kinabalu,
+  kuching, malacca
+- **Serbia**: novi-sad
+- **South Africa**: bloemfontein, port-elizabeth
+- **Taiwan**: tainan
+- **Thailand**: chiang-rai, phuket
+
+Additionally these ambiguous / typo slugs were dropped without
+being added: `erfurth` (typo of `erfurt`; skipped pending
+clarification), `munster` (ambiguous Münster DE vs Munster IN),
+`hamilton-nz` (ambiguous with `hamilton`/`london-ontario`-style
+disambiguation policy; deferred).
 
 ### Next steps
 
