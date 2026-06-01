@@ -3622,3 +3622,202 @@ disambiguation policy; deferred).
 - Plan a future curated batch of nearby weekend places anchored to
   the 49 new city slugs added here.
 
+## 2026-05-31: nearby weekend places for batch four cities
+
+### Scope
+
+This task adds exactly 49 new nearby weekend place records to
+`lib/data/nearby-places.ts`, one per batch-four city. Every
+batch-four city now returns at least one place from
+`getNearbyWeekendPlacesForCity`. The 68 pre-existing nearby place
+records are preserved unchanged. The curated detail-slug list
+`NEARBY_WEEKEND_PLACE_DETAIL_SLUGS` is UNCHANGED in this task.
+
+### Counts
+
+- nearby place records total: 68 -> 117 (+49)
+- VERIFIED_IMAGES entries: 68 -> 117 (+49, one per new record)
+- image coverage on the new batch: 49 / 49 = 100%
+- batch-four cities covered: 49 / 49
+
+### VerificationStatus distribution (new batch only)
+
+- verified: 33 (Wikidata QID + officialUrl from P856 + coordinates
+  from P625 + verified Commons image all present)
+- partial: 16 (QID + coordinates + verified image, but no P856
+  officialUrl on Wikidata)
+- needs_review: 0
+
+This follows the existing nearby-place model rules. No
+needs_review records were added.
+
+### Full alphabetical list of the 49 batch-four cities covered
+
+aalborg, aberdeen, ann-arbor, aveiro, ballarat, bendigo, boise,
+breda, dundee, essen, faro, karlsruhe, klaipeda, kosice, launceston,
+lecce, liege, lille, limerick, louisville, lublin, namur, nantes,
+nelson, new-orleans, oklahoma-city, omaha, oradea, oulu,
+palmerston-north, parma, regina, reims, rouen, santander, siena,
+southampton, tartu, tilburg, timisoara, toowoomba, tours, townsville,
+trieste, tucson, varna, vigo, waterford, york.
+
+### Per-country distribution of the 49 new nearby places
+
+- united-states 7
+- france 5
+- australia 5
+- united-kingdom 4
+- italy 4
+- ireland 2
+- germany 2
+- spain 2
+- portugal 2
+- belgium 2
+- netherlands 2
+- romania 2
+- new-zealand 2
+- finland 1
+- denmark 1
+- estonia 1
+- lithuania 1
+- slovakia 1
+- poland 1
+- bulgaria 1
+- canada 1
+
+Total: 49.
+
+### License distribution of the 49 new verified images
+
+- CC BY-SA 3.0 x17
+- CC BY-SA 4.0 x11
+- Public domain x9
+- CC BY 2.0 x7
+- CC BY-SA 3.0 de x1
+- CC0 x1
+- CC BY 4.0 x1
+- CC BY-SA 3.0 RO x1
+- CC BY-SA 2.0 x1
+
+Zero entries used NC, ND, FAL, GFDL, "Attribution"-only, or
+unknown licenses.
+
+### Subject distribution of the 49 new image subjects
+
+All 49 images are scenic outdoor public subjects: national park
+landscapes, regional park landscapes, cultural sites, waterfronts,
+lakes, mountains, forests, historic town exteriors, and scenic
+public spaces. Zero portraits, hotel interiors, restaurant
+interiors, private interiors, identifiable crowds, or political
+content.
+
+### Source strategy
+
+The Wikimedia image resolution pipeline mirrors the existing
+nearby-place verification pass exactly:
+
+1. Wikidata QID lookup for the candidate place.
+2. Wikidata P18 (image) on the place item.
+3. Commons category P373 fallback if P18 is missing or unsuitable.
+4. Commons imageinfo API for canonical file metadata.
+5. Strict filter for license, attribution, and subject safety.
+
+For each new VERIFIED_IMAGES entry:
+
+- `src` always starts with `https://upload.wikimedia.org/`.
+- `sourceUrl` always starts with
+  `https://commons.wikimedia.org/wiki/File:`.
+- `source` literal is `"wikimedia-commons"` (matches the existing
+  nearby-places convention).
+- `alt` follows the template:
+  `Verified Wikimedia Commons image of {placeName}, {countryName}`.
+- `attributionText` follows the template:
+  `{author} / Wikimedia Commons, {license}`.
+- `verifiedAt` is `"2026-05-31"`.
+
+### Bendigo resolution note
+
+One bendigo record was resolved on retry. The primary candidate
+Mount Alexander Regional Park had no clear Wikidata entity that
+matched the "regional park" framing. Hepburn Regional Park was
+also considered but lacked Wikidata P18, P373, P625, and P856.
+The retry pass identified Castlemaine Diggings National Heritage
+Park (Q5050535) with a CC BY-SA 3.0 Commons-category image and
+an `officialUrl` taken from Parks Victoria (the canonical
+management agency).
+
+### PlaceSeed shape and safety conventions
+
+- Each new seed uses the existing `PlaceSeed` shape exactly. If
+  a field in the source JSON is null, it is omitted from the seed
+  (no invented data).
+- `coordinateSource = "wikidata"` for every record where lat/lon
+  is present (all 49).
+- `distanceBand = "regional"` (a qualitative bucket per the
+  existing convention, NOT an exact distance).
+- `travelModeHint = "mixed"` (a qualitative bucket per the
+  existing convention, NOT an exact travel time).
+- Each `summary` is the per-record sentence pre-verified in
+  `/tmp/batch-four-nearby-resolved.json` -- safe wording, one
+  neutral sentence per record, each ending with the canonical
+  disclaimer: "Verify access, opening status, transport, and
+  seasonal conditions with official sources before departure."
+
+### Safety policy
+
+The new records contain ZERO fake distances, travel times,
+routes, ticket prices, opening hours, weather data, hotel prices,
+attraction rankings, restaurant or hotel recommendations,
+accessibility claims, or official-tourism claims.
+
+### UI impact (no code change required)
+
+Every nearby-places UI surface is already image-conditional and
+gated on `getNearbyWeekendPlacesForCity`, so no code changes are
+needed for the new records to surface:
+
+- `/nearby-weekend-places` directory: the 49 new records now
+  appear in the by-city, by-country, and by-category sub-indexes.
+- `/cities/[city]/weekend-trip` nearby section: each of the 49
+  batch-four cities now has nearby cards.
+- `/cities/[city]/nearby-weekend-places` city hubs: 49 new pages
+  are auto-generated by the existing
+  `getAllCitiesWithNearbyWeekendPlaces` helper, because each
+  batch-four city now has at least one connected nearby place.
+  The route already exists.
+- `/nearby-weekend-places/[slug]` curated detail pages:
+  `NEARBY_WEEKEND_PLACE_DETAIL_SLUGS` is UNCHANGED in this task
+  (still 44 entries). None of the 49 new records were added to
+  the curated detail list.
+
+### Detail-page candidates for a future controlled batch
+
+33 verified records meet the eligibility criteria for the curated
+detail-page list (QID + officialUrl + coordinates + verified
+image). These are listed by city and deferred to a future
+controlled task. They are intentionally NOT added in this batch
+to keep this task narrowly scoped.
+
+### Sitemap impact
+
+- +49 city-hub sitemap entries. The existing per-city iteration
+  in `app/sitemap.ts` auto-picks them up because each new
+  batch-four city now resolves true via
+  `hasNearbyWeekendPlacesCityPage`.
+- No new detail-page sitemap entries this task.
+
+### Static page count delta
+
+- previous baseline: 3,351
+- new total: 3,400 (+49 from the 49 newly-eligible city-specific
+  `/cities/[city]/nearby-weekend-places` hub pages)
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (117 records clean)
+- `npm run validate:media` -- PASS (unchanged)
+- `npm run validate:community-media` -- PASS (unchanged)
+- `npm run typecheck` -- clean
+- `npm run lint` -- clean
+- `npm run build` -- clean
+
