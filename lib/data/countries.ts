@@ -15,6 +15,7 @@ export const countries: Country[] = [
     citySlugs: ["copenhagen",
       "aarhus",
       "odense",
+      "aalborg",
     ],
     metrics: [
       { label: "Urban resilience context", value: "Advanced", description: "Strong public institutions and climate policy improve city implementation capacity." },
@@ -73,6 +74,13 @@ export const countries: Country[] = [
       "cincinnati",
       "cleveland",
       "memphis",
+      "ann-arbor",
+      "new-orleans",
+      "louisville",
+      "oklahoma-city",
+      "omaha",
+      "boise",
+      "tucson",
     ],
     metrics: [
       { label: "Urban variation", value: "Very high", description: "Large metropolitan differences make city-level pages more useful than national averages." },
@@ -119,6 +127,11 @@ export const countries: Country[] = [
       "grenoble",
       "dijon",
       "aix-en-provence",
+      "nantes",
+      "lille",
+      "rouen",
+      "reims",
+      "tours",
     ],
     metrics: [
       { label: "Urban policy context", value: "Strong", description: "Mobility, climate, and public-space reform provide useful city-level comparison signals." },
@@ -149,6 +162,10 @@ export const countries: Country[] = [
       "liverpool",
       "sheffield",
       "brighton",
+      "york",
+      "southampton",
+      "aberdeen",
+      "dundee",
     ],
     metrics: [
       { label: "Urban policy context", value: "Strong", description: "Clean-air zones and net-zero targets shape major-city implementation." },
@@ -197,6 +214,8 @@ export const countries: Country[] = [
       "freiburg",
       "heidelberg",
       "dortmund",
+      "karlsruhe",
+      "essen",
     ],
     metrics: [
       { label: "Energy transition context", value: "Very strong", description: "National renewable-electricity progress supports city-level transition." },
@@ -223,6 +242,7 @@ export const countries: Country[] = [
       "saskatoon",
       "waterloo-ontario",
       "kelowna",
+      "regina",
     ],
     metrics: [
       { label: "Service depth", value: "High", description: "Public health and education services support strong daily life." },
@@ -255,6 +275,11 @@ export const countries: Country[] = [
       "wollongong",
       "geelong",
       "sunshine-coast",
+      "townsville",
+      "toowoomba",
+      "ballarat",
+      "bendigo",
+      "launceston",
     ],
     metrics: [
       { label: "Outdoor amenity", value: "Very high", description: "Coastal and outdoor amenity supports a high quality of daily life." },
@@ -277,6 +302,8 @@ export const countries: Country[] = [
       "eindhoven",
       "groningen",
       "maastricht",
+      "tilburg",
+      "breda",
     ],
     metrics: [
       { label: "Water adaptation", value: "World-class", description: "Long-horizon flood and water-management programs shape national resilience." },
@@ -301,6 +328,8 @@ export const countries: Country[] = [
       "alicante",
       "murcia",
       "valladolid",
+      "vigo",
+      "santander",
     ],
     metrics: [
       { label: "Renewable resource", value: "Very strong", description: "Solar and wind potential support a steady national clean-energy build-out." },
@@ -492,6 +521,8 @@ export const countries: Country[] = [
       "tauranga",
       "queenstown",
       "napier",
+      "palmerston-north",
+      "nelson",
     ],
     metrics: [
       { label: "Energy mix", value: "Low-carbon", description: "Hydropower and geothermal generation support a favorable baseline." },
@@ -519,6 +550,10 @@ export const countries: Country[] = [
       "catania",
       "padua",
       "bergamo",
+      "siena",
+      "trieste",
+      "parma",
+      "lecce",
     ],
     metrics: [
       { label: "Cultural heritage", value: "Globally leading", description: "Heritage and creative industries shape city identities." },
@@ -536,7 +571,7 @@ export const countries: Country[] = [
     intro:
       "Portugal's profile blends mild Atlantic climate, strong renewable resources, and rising remote-work and digital-services activity in major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["lisbon", "porto", "braga", "coimbra"],
+    citySlugs: ["lisbon", "porto", "braga", "coimbra", "faro", "aveiro"],
     metrics: [
       { label: "Renewable resource", value: "Very strong", description: "Wind and solar potential support a steady national clean-energy build-out." },
       { label: "Climate context", value: "Mild Atlantic", description: "Coastal moderation supports a comfortable urban operating environment." },
@@ -577,6 +612,7 @@ export const countries: Country[] = [
       "lodz",
       "poznan",
       "katowice",
+      "lublin",
     ],
     metrics: [
       { label: "Tech-sector activity", value: "Growing", description: "Software, services, and finance expand opportunity in major cities." },
@@ -864,6 +900,7 @@ export const countries: Country[] = [
     citySlugs: ["helsinki",
       "tampere",
       "turku",
+      "oulu",
     ],
     metrics: [
       { label: "Digital readiness", value: "Top-tier", description: "Fiber and 5G coverage support remote work and public-service delivery." },
@@ -885,6 +922,8 @@ export const countries: Country[] = [
       "ghent",
       "bruges",
       "leuven",
+      "namur",
+      "liege",
     ],
     metrics: [
       { label: "Transit reach", value: "Strong", description: "Rail and tram systems support car-light daily life in major metros." },
@@ -905,6 +944,8 @@ export const countries: Country[] = [
     citySlugs: ["dublin",
       "cork",
       "galway",
+      "limerick",
+      "waterford",
     ],
     metrics: [
       { label: "Tech-services depth", value: "Globally cited", description: "Software and finance ecosystems shape opportunity in major cities." },
@@ -1146,6 +1187,8 @@ export const countries: Country[] = [
     citySlugs: ["bucharest",
       "cluj-napoca",
       "brasov",
+      "timisoara",
+      "oradea",
     ],
     metrics: [
       { label: "Regional context", value: "Eastern EU", description: "EU membership with Eastern-European cost and labor-market context." },
@@ -1216,7 +1259,7 @@ export const countries: Country[] = [
     intro:
       "Slovakia's profile sits in the Central-European industrial and services corridor, useful for users comparing relocation and remote-work options in the Visegrád region.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["bratislava"],
+    citySlugs: ["bratislava", "kosice"],
     metrics: [
       { label: "Regional context", value: "Central Europe", description: "Visegrád context with manufacturing and services activity." },
       { label: "Data confidence", value: "Moderate", description: "European monitoring supports comparable indicators." },
@@ -1233,7 +1276,7 @@ export const countries: Country[] = [
     intro:
       "Estonia's profile is widely cited for digital-government infrastructure and remote-work relocation, useful for comparing Baltic and EU contexts.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "itu-connectivity"],
-    citySlugs: ["tallinn"],
+    citySlugs: ["tallinn", "tartu"],
     metrics: [
       { label: "Regional context", value: "Baltic EU", description: "Baltic geography within the EU regulatory and monitoring frame." },
       { label: "Digital services", value: "Notably strong", description: "Digital-government infrastructure shapes city-level intelligence." },
@@ -1267,7 +1310,7 @@ export const countries: Country[] = [
     intro:
       "Lithuania's profile reflects a Baltic EU context with growing financial-services activity, useful for users comparing relocation and regional-hub contexts.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["vilnius"],
+    citySlugs: ["vilnius", "klaipeda"],
     metrics: [
       { label: "Regional context", value: "Baltic EU", description: "Baltic geography within the EU regulatory and monitoring frame." },
       { label: "Services growth", value: "Notable", description: "Financial and digital services expand activity." },
@@ -1624,7 +1667,7 @@ export const countries: Country[] = [
     intro:
       "Bulgaria's country profile combines EU membership with a Balkan-Black-Sea urban geography; city pages benefit from European monitoring frameworks paired with a transparent fallback for emerging local datasets.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["plovdiv"],
+    citySlugs: ["plovdiv", "varna"],
     metrics: [
       { label: "Regional context", value: "Southeastern Europe", description: "Balkan urban geography with growing EU integration." },
       { label: "Urban policy context", value: "EU-aligned", description: "EU air-quality and adaptation reporting shapes city-level framing." },

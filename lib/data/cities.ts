@@ -11442,6 +11442,686 @@ const seeds: CitySeed[] = [
     scores: { overall: 63, affordability: 80, airQuality: 55, energy: 60, resilience: 55 },
     relatedCitySlugs: ["delhi", "mumbai", "hyderabad"],
   }),
+
+  // === Batch four (2026-05-31): +49 cities across EU/UK/IE/US/CA/AU/NZ ===
+  // United Kingdom
+  buildNeutralCitySeed({
+    slug: "york",
+    name: "York",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "North Yorkshire",
+    population: "Pending integration",
+    intro:
+      "York is a Northern Europe city in United Kingdom. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "southampton",
+    name: "Southampton",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Hampshire",
+    population: "Pending integration",
+    intro:
+      "Southampton is a Northern Europe city in United Kingdom. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aberdeen",
+    name: "Aberdeen",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Aberdeenshire",
+    population: "Pending integration",
+    intro:
+      "Aberdeen is a Northern Europe city in United Kingdom. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dundee",
+    name: "Dundee",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Northern Europe",
+    population: "Pending integration",
+    intro:
+      "Dundee is a Northern Europe city in United Kingdom. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Ireland
+  buildNeutralCitySeed({
+    slug: "limerick",
+    name: "Limerick",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Northern Europe",
+    population: "Pending integration",
+    intro:
+      "Limerick is a Northern Europe city in Ireland. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "waterford",
+    name: "Waterford",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Northern Europe",
+    population: "Pending integration",
+    intro:
+      "Waterford is a Northern Europe city in Ireland. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // France
+  buildNeutralCitySeed({
+    slug: "nantes",
+    name: "Nantes",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Nantes is a Western Europe city in France. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lille",
+    name: "Lille",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Lille is a Western Europe city in France. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rouen",
+    name: "Rouen",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Rouen is a Western Europe city in France. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "reims",
+    name: "Reims",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Reims is a Western Europe city in France. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tours",
+    name: "Tours",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Tours is a Western Europe city in France. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Germany
+  buildNeutralCitySeed({
+    slug: "karlsruhe",
+    name: "Karlsruhe",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "Pending integration",
+    intro:
+      "Karlsruhe is a Central Europe city in Germany. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "essen",
+    name: "Essen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "Pending integration",
+    intro:
+      "Essen is a Central Europe city in Germany. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Spain
+  buildNeutralCitySeed({
+    slug: "vigo",
+    name: "Vigo",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "Pending integration",
+    intro:
+      "Vigo is a Southern Europe city in Spain. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santander",
+    name: "Santander",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "Pending integration",
+    intro:
+      "Santander is a Southern Europe city in Spain. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Portugal
+  buildNeutralCitySeed({
+    slug: "faro",
+    name: "Faro",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "Pending integration",
+    intro:
+      "Faro is a Southern Europe city in Portugal. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aveiro",
+    name: "Aveiro",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "Pending integration",
+    intro:
+      "Aveiro is a Southern Europe city in Portugal. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Italy
+  buildNeutralCitySeed({
+    slug: "siena",
+    name: "Siena",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Tuscany",
+    population: "Pending integration",
+    intro:
+      "Siena is a Southern Europe city in Italy. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "trieste",
+    name: "Trieste",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "Pending integration",
+    intro:
+      "Trieste is a Southern Europe city in Italy. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "parma",
+    name: "Parma",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Emilia-Romagna",
+    population: "Pending integration",
+    intro:
+      "Parma is a Southern Europe city in Italy. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lecce",
+    name: "Lecce",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Apulia",
+    population: "Pending integration",
+    intro:
+      "Lecce is a Southern Europe city in Italy. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Belgium
+  buildNeutralCitySeed({
+    slug: "namur",
+    name: "Namur",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Namur is a Western Europe city in Belgium. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "liege",
+    name: "Liege",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Liege is a Western Europe city in Belgium. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Netherlands
+  buildNeutralCitySeed({
+    slug: "tilburg",
+    name: "Tilburg",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Tilburg is a Western Europe city in Netherlands. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "breda",
+    name: "Breda",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "Pending integration",
+    intro:
+      "Breda is a Western Europe city in Netherlands. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Finland
+  buildNeutralCitySeed({
+    slug: "oulu",
+    name: "Oulu",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Northern Europe",
+    population: "Pending integration",
+    intro:
+      "Oulu is a Northern Europe city in Finland. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Denmark
+  buildNeutralCitySeed({
+    slug: "aalborg",
+    name: "Aalborg",
+    countrySlug: "denmark",
+    countryName: "Denmark",
+    region: "Northern Europe",
+    population: "Pending integration",
+    intro:
+      "Aalborg is a Northern Europe city in Denmark. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Estonia
+  buildNeutralCitySeed({
+    slug: "tartu",
+    name: "Tartu",
+    countrySlug: "estonia",
+    countryName: "Estonia",
+    region: "Baltic Europe",
+    population: "Pending integration",
+    intro:
+      "Tartu is a Baltic Europe city in Estonia. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Lithuania
+  buildNeutralCitySeed({
+    slug: "klaipeda",
+    name: "Klaipeda",
+    countrySlug: "lithuania",
+    countryName: "Lithuania",
+    region: "Baltic Europe",
+    population: "Pending integration",
+    intro:
+      "Klaipeda is a Baltic Europe city in Lithuania. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Slovakia
+  buildNeutralCitySeed({
+    slug: "kosice",
+    name: "Kosice",
+    countrySlug: "slovakia",
+    countryName: "Slovakia",
+    region: "Central Europe",
+    population: "Pending integration",
+    intro:
+      "Kosice is a Central Europe city in Slovakia. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Poland
+  buildNeutralCitySeed({
+    slug: "lublin",
+    name: "Lublin",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "Pending integration",
+    intro:
+      "Lublin is a Central Europe city in Poland. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Romania
+  buildNeutralCitySeed({
+    slug: "timisoara",
+    name: "Timisoara",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "Pending integration",
+    intro:
+      "Timisoara is a Eastern Europe city in Romania. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "oradea",
+    name: "Oradea",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "Pending integration",
+    intro:
+      "Oradea is a Eastern Europe city in Romania. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Bulgaria
+  buildNeutralCitySeed({
+    slug: "varna",
+    name: "Varna",
+    countrySlug: "bulgaria",
+    countryName: "Bulgaria",
+    region: "Southeastern Europe",
+    population: "Pending integration",
+    intro:
+      "Varna is a Southeastern Europe city in Bulgaria. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // United States
+  buildNeutralCitySeed({
+    slug: "ann-arbor",
+    name: "Ann Arbor",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Michigan",
+    population: "Pending integration",
+    intro:
+      "Ann Arbor is a North America city in United States. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "new-orleans",
+    name: "New Orleans",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Louisiana",
+    population: "Pending integration",
+    intro:
+      "New Orleans is a North America city in United States. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "louisville",
+    name: "Louisville",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Kentucky",
+    population: "Pending integration",
+    intro:
+      "Louisville is a North America city in United States. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "oklahoma-city",
+    name: "Oklahoma City",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Oklahoma",
+    population: "Pending integration",
+    intro:
+      "Oklahoma City is a North America city in United States. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "omaha",
+    name: "Omaha",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Nebraska",
+    population: "Pending integration",
+    intro:
+      "Omaha is a North America city in United States. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "boise",
+    name: "Boise",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Idaho",
+    population: "Pending integration",
+    intro:
+      "Boise is a North America city in United States. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tucson",
+    name: "Tucson",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Arizona",
+    population: "Pending integration",
+    intro:
+      "Tucson is a North America city in United States. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Canada
+  buildNeutralCitySeed({
+    slug: "regina",
+    name: "Regina",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Saskatchewan",
+    population: "Pending integration",
+    intro:
+      "Regina is a North America city in Canada. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // Australia
+  buildNeutralCitySeed({
+    slug: "townsville",
+    name: "Townsville",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Queensland",
+    population: "Pending integration",
+    intro:
+      "Townsville is a Oceania city in Australia. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "toowoomba",
+    name: "Toowoomba",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Queensland",
+    population: "Pending integration",
+    intro:
+      "Toowoomba is a Oceania city in Australia. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ballarat",
+    name: "Ballarat",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Victoria",
+    population: "Pending integration",
+    intro:
+      "Ballarat is a Oceania city in Australia. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bendigo",
+    name: "Bendigo",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Victoria",
+    population: "Pending integration",
+    intro:
+      "Bendigo is a Oceania city in Australia. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "launceston",
+    name: "Launceston",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Tasmania",
+    population: "Pending integration",
+    intro:
+      "Launceston is a Oceania city in Australia. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+
+  // New Zealand
+  buildNeutralCitySeed({
+    slug: "palmerston-north",
+    name: "Palmerston North",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "Pending integration",
+    intro:
+      "Palmerston North is a Oceania city in New Zealand. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nelson",
+    name: "Nelson",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "Pending integration",
+    intro:
+      "Nelson is a Oceania city in New Zealand. The platform uses it as a planning anchor for local-first research and nearby weekend-rest discovery; verified scoring and source integration are pending deeper data work.",
+    outlook:
+      "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);
