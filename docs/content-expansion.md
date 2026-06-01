@@ -3821,3 +3821,141 @@ to keep this task narrowly scoped.
 - `npm run lint` -- clean
 - `npm run build` -- clean
 
+## 2026-05-31: verified nearby place detail pages for batch four records
+
+This task promotes the 33 batch-four nearby weekend place records
+that meet the curated detail-page eligibility criteria into
+`NEARBY_WEEKEND_PLACE_DETAIL_SLUGS`, expanding the curated
+detail-page roster from 44 to 77 entries.
+
+### Scope
+
+- 33 new curated detail pages are now rendered at
+  `/nearby-weekend-places/[slug]`.
+- Total curated detail-page count: 44 -> 77.
+- The detail-page template, route, sitemap integration, and
+  validator are already generic. Appending slugs to
+  `NEARBY_WEEKEND_PLACE_DETAIL_SLUGS` is the only change.
+- No new nearby records were added in this task.
+- No new images were added in this task.
+- No new structured-data types were introduced; detail pages
+  continue to emit only `WebPage` + `BreadcrumbList`.
+
+### Eligibility criteria (unchanged)
+
+A nearby weekend place is eligible for a curated detail page only
+when ALL of the following hold:
+
+- `verified === true`
+- `officialUrl` is set (from a stable public-authority Wikidata
+  source or equivalent)
+- `wikidataId` is set
+- coordinates are present
+- a verified image entry exists in `VERIFIED_IMAGES`
+- the country resolves through the country index
+- the connected city resolves through the cities index
+
+Each of the 33 promoted slugs was re-verified against all seven
+criteria before inclusion in this batch. They are the verified 33
+of the 49 batch-four nearby records added in the previous feat
+commit.
+
+### Slugs promoted in this batch (alphabetical, 33)
+
+- apuseni-natural-park-near-oradea
+- atlantic-islands-of-galicia-national-park-near-vigo
+- black-forest-national-park-near-karlsruhe
+- boise-national-forest-near-boise
+- bunya-mountains-national-park-near-toowoomba
+- cairngorms-national-park-near-aberdeen
+- castello-di-torrechiara-near-parma
+- castlemaine-diggings-national-heritage-park-near-bendigo
+- champagne-hillsides-houses-and-cellars-near-reims
+- chateau-de-chenonceau-near-tours
+- citadel-of-namur-near-namur
+- cliffs-of-moher-near-limerick
+- curonian-spit-national-park-near-klaipeda
+- etretat-near-rouen
+- glamis-castle-near-dundee
+- grampians-national-park-near-ballarat
+- hailuoto-near-oulu
+- jean-lafitte-national-historical-park-near-new-orleans
+- last-mountain-lake-national-wildlife-area-near-regina
+- loonse-en-drunense-duinen-national-park-near-tilburg
+- mammoth-cave-national-park-near-louisville
+- nesebar-near-varna
+- new-forest-national-park-near-southampton
+- north-york-moors-national-park-near-york
+- otranto-near-lecce
+- parc-naturel-regional-de-briere-near-nantes
+- picos-de-europa-national-park-near-santander
+- roztocze-national-park-near-lublin
+- saguaro-national-park-near-tucson
+- slovak-paradise-national-park-near-kosice
+- val-d-orcia-near-siena
+- wichita-mountains-wildlife-refuge-near-oklahoma-city
+- zollverein-coal-mine-industrial-complex-near-essen
+
+### Records still excluded
+
+- The 16 batch-four partial records (the difference between the
+  49 batch-four nearby records and the 33 verified slugs promoted
+  here) remain excluded from the curated detail list because they
+  do not yet satisfy all seven eligibility criteria (most commonly
+  missing a stable `officialUrl` from a public-authority Wikidata
+  source).
+- Older partial records from the original 68-record cohort (the
+  previously documented 16 partials) remain excluded.
+- The 8 previously identified verified-but-image-free records
+  remain excluded.
+
+### Safety policy (unchanged)
+
+The detail pages introduced in this batch contain no fake
+distances, travel times, routes, ticket prices, opening hours,
+weather data, hotel prices, attraction rankings, restaurant or
+hotel recommendations, accessibility claims, or official-tourism
+claims. All content is sourced from the existing verified record
+fields surfaced through the generic detail template.
+
+### Sitemap impact
+
+- +33 detail-route URLs at priority 0.7, monthly change frequency.
+- Total `/nearby-weekend-places/[slug]` entries in the sitemap:
+  44 -> 77.
+
+### Static page count delta
+
+- previous baseline: 3,400
+- new total: 3,433 (+33 from the 33 newly promoted curated
+  detail pages)
+
+### Validator
+
+The existing curated-slug rules in
+`scripts/validate-nearby-places.py` automatically cover the 33
+new entries. Each curated slug must be verified, must declare a
+`wikidataId`, must declare an `officialUrl`, and must have an
+entry in `VERIFIED_IMAGES`. All 33 promoted slugs satisfy these
+four invariants, so no validator code change is required.
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (117 records and 77
+  curated detail-slug rules clean)
+- `npm run validate:media` -- PASS
+- `npm run validate:community-media` -- PASS
+- `npm run typecheck` -- clean
+- `npm run lint` -- clean
+- `npm run build` -- emits `/nearby-weekend-places/[slug]` as
+  Static for all 77 slugs
+
+### Future steps
+
+- Audit the batch-four detail promotion once live for any
+  rendering or metadata regressions.
+- Revisit the partial records (batch-four and older) only after
+  an `officialUrl` is verified from a stable public-authority
+  source on Wikidata or equivalent. No partial record will be
+  promoted before that condition is met.
+
