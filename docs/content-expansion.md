@@ -3992,16 +3992,16 @@ waterford, york.
 
 ### WeekendTripFocus distribution across the 49 new pages
 
-- `culture_context`: 21 pages. Regional historic and cultural-
+- `culture_context`: 22 pages. Regional historic and cultural-
   context cities such as York, Reims, Siena, Limerick, Tartu,
   Kosice, Lublin, Timisoara, Oradea, Bendigo, and Ballarat.
-- `visual_orientation`: 11 pages. Coastal and waterfront or
+- `visual_orientation`: 10 pages. Coastal and waterfront or
   otherwise scenic cities such as Aveiro, Faro, Klaipeda, Vigo,
   Santander, Oulu, Varna, Nelson, Townsville, and Launceston.
-- `city_break`: 9 pages. Mid-sized city-break cities such as
+- `city_break`: 8 pages. Mid-sized city-break cities such as
   Trieste, Southampton, Dundee, Nantes, Lille, Karlsruhe, Ann
   Arbor, and Louisville.
-- `general_weekend_planning`: 8 pages. Regional planning bases
+- `general_weekend_planning`: 9 pages. Regional planning bases
   such as Tilburg, Aalborg, Boise, Oklahoma City, Omaha, Tucson,
   Regina, Toowoomba, and Palmerston North.
 - `family_weekend`, `arrival_and_transport`, and
@@ -4091,7 +4091,8 @@ Each new seed inherits the existing `COMMON_SOURCES`
 (`un-habitat`, `nasa-power`, `ipcc-urban`) plus one regional
 extra:
 
-- `eea-air` for UK, Ireland, and EU cities (37 new pages)
+- `eea-air` for UK, Ireland, and EU cities (34 new pages — UK 4
+  + Ireland 2 + EU 28)
 - `epa-naaqs` for United States cities (7 new pages)
 - `canada-emergency` for Canada (1 new page)
 - `triple-zero-au` for Australia (5 new pages)
