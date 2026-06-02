@@ -4699,3 +4699,29 @@ records with zero false positives.
 - `npm run typecheck` -- clean
 - `npm run lint` -- clean
 - `npm run build` -- emits 3,920 / 3,920 pages
+
+## 2026-06-02: official-URL liveness audit (batch five / six)
+
+Ran an HTTP liveness check over every new `officialUrl` (the
+Wikidata `P856` values that drive detail-page "official source"
+links). 12 of 91 were stale — dead domains (Queensland's renamed
+`nprsr.qld.gov.au`, ACT's `tams.act.gov.au`), timeouts, or moved
+404 paths.
+
+- 10 were repointed to verified-working official URLs (HTTP 200):
+  alta-murgia (parks.it), belle-isle (Belle Isle Conservancy),
+  kemeri (kemerunacionalaisparks.lv), mols-bjerge
+  (nationalparkmolsbjerge.dk), montagne-sainte-victoire (https),
+  namadgi (parks.act.gov.au), piatra-craiului (pcrai.ro root),
+  trakai (tinp.lt root), d'aguilar (parks.des.qld.gov.au), noosa
+  (parks.qld.gov.au).
+- 2 (hocking-hills, hueston-woods — both Ohio DNR) could not be
+  re-verified to a 200, so they were downgraded from `verified`
+  to `partial` and removed from the detail-slug list rather than
+  ship a broken link. Both remain nearby places with a verified
+  image and coordinates.
+
+Detail pages: 168 -> 166. Static pages: 3,920 -> 3,918. Image
+`src` values were also spot-checked and all resolve (200; the
+occasional 429 is Wikimedia rate-limiting the checker, not a dead
+asset). `validate:nearby-places` PASS (250) · build 3,918 pages.
