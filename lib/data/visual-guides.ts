@@ -34,6 +34,7 @@ import type {
 
 const BATCH_1_UPDATED_DATE = "2026-05-25";
 const BATCH_4_UPDATED_DATE = "2026-06-01";
+const BATCH_5_UPDATED_DATE = "2026-06-02";
 
 const COMMON_SOURCES: readonly string[] = [
   "un-habitat",
@@ -248,6 +249,55 @@ const seeds: readonly Seed[] = [
   { citySlug: "launceston", cityName: "Launceston", countryName: "Australia", visualFocus: "arrival_visual_context", extra: ["triple-zero-au"], context: "Tamar river arrival context", updatedDate: BATCH_4_UPDATED_DATE },
   { citySlug: "palmerston-north", cityName: "Palmerston North", countryName: "New Zealand", visualFocus: "remote_work_visual_context", extra: ["nz-police-111"], context: "university and remote-work visual context", updatedDate: BATCH_4_UPDATED_DATE },
   { citySlug: "nelson", cityName: "Nelson", countryName: "New Zealand", visualFocus: "arrival_visual_context", extra: ["nz-police-111"], context: "Tasman bay arrival context", updatedDate: BATCH_4_UPDATED_DATE },
+
+  // === Batch five (2026-06-02): +47 visual-guide pages (batch-five nearby cities) ===
+  { citySlug: "aix-en-provence", cityName: "Aix-en-Provence", countryName: "France", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "historic old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "baltimore", cityName: "Baltimore", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "harbour regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "bari", cityName: "Bari", countryName: "Italy", visualFocus: "general_city_context", extra: ["eea-air"], context: "Adriatic port city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "bonn", cityName: "Bonn", countryName: "Germany", visualFocus: "general_city_context", extra: ["eea-air"], context: "Rhine-side regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "boulder", cityName: "Boulder", countryName: "United States", visualFocus: "remote_work_visual_context", extra: ["epa-naaqs"], context: "foothills university-city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "braga", cityName: "Braga", countryName: "Portugal", visualFocus: "general_city_context", extra: ["eea-air"], context: "northern regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "brasov", cityName: "Brașov", countryName: "Romania", visualFocus: "general_city_context", extra: ["eea-air"], context: "Carpathian regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "bruges", cityName: "Bruges", countryName: "Belgium", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "historic canal old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "bucharest", cityName: "Bucharest", countryName: "Romania", visualFocus: "relocation_visual_context", extra: ["eea-air"], context: "capital-city relocation context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "cairns", cityName: "Cairns", countryName: "Australia", visualFocus: "general_city_context", extra: ["triple-zero-au"], context: "tropical coastal gateway city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "catania", cityName: "Catania", countryName: "Italy", visualFocus: "general_city_context", extra: ["eea-air"], context: "Sicilian coastal city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "charlotte", cityName: "Charlotte", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "columbus", cityName: "Columbus", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "regional capital city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "darwin", cityName: "Darwin", countryName: "Australia", visualFocus: "general_city_context", extra: ["triple-zero-au"], context: "tropical northern city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "detroit", cityName: "Detroit", countryName: "United States", visualFocus: "neighborhood_visual_context", extra: ["epa-naaqs"], context: "riverfront neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "dijon", cityName: "Dijon", countryName: "France", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "historic old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "dortmund", cityName: "Dortmund", countryName: "Germany", visualFocus: "general_city_context", extra: ["eea-air"], context: "Ruhr regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "eindhoven", cityName: "Eindhoven", countryName: "Netherlands", visualFocus: "remote_work_visual_context", extra: ["eea-air"], context: "technology-hub regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "freiburg", cityName: "Freiburg", countryName: "Germany", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "old-town and Black Forest edge neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "galway", cityName: "Galway", countryName: "Ireland", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "bayside old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "gdansk", cityName: "Gdansk", countryName: "Poland", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Baltic port old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "gold-coast", cityName: "Gold Coast", countryName: "Australia", visualFocus: "family_visual_context", extra: ["triple-zero-au"], context: "coastal family city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "granada", cityName: "Granada", countryName: "Spain", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "historic old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "groningen", cityName: "Groningen", countryName: "Netherlands", visualFocus: "remote_work_visual_context", extra: ["eea-air"], context: "university regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "hobart", cityName: "Hobart", countryName: "Australia", visualFocus: "general_city_context", extra: ["triple-zero-au"], context: "harbour and riverside city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "las-vegas", cityName: "Las Vegas", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "desert valley city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "ljubljana", cityName: "Ljubljana", countryName: "Slovenia", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "riverside old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "lund", cityName: "Lund", countryName: "Sweden", visualFocus: "family_visual_context", extra: ["eea-air"], context: "university-city neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "madison", cityName: "Madison", countryName: "United States", visualFocus: "remote_work_visual_context", extra: ["epa-naaqs"], context: "lakeside university-city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "minneapolis", cityName: "Minneapolis", countryName: "United States", visualFocus: "neighborhood_visual_context", extra: ["epa-naaqs"], context: "riverside and lakes neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "montpellier", cityName: "Montpellier", countryName: "France", visualFocus: "general_city_context", extra: ["eea-air"], context: "southern regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "naples", cityName: "Naples", countryName: "Italy", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "bayside old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "orlando", cityName: "Orlando", countryName: "United States", visualFocus: "family_visual_context", extra: ["epa-naaqs"], context: "inland family city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "ostrava", cityName: "Ostrava", countryName: "Czechia", visualFocus: "general_city_context", extra: ["eea-air"], context: "regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "palermo", cityName: "Palermo", countryName: "Italy", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Mediterranean old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "poznan", cityName: "Poznań", countryName: "Poland", visualFocus: "general_city_context", extra: ["eea-air"], context: "central regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "raleigh", cityName: "Raleigh", countryName: "United States", visualFocus: "remote_work_visual_context", extra: ["epa-naaqs"], context: "research-triangle regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "riga", cityName: "Riga", countryName: "Latvia", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Baltic old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "san-antonio", cityName: "San Antonio", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "riverwalk regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "saskatoon", cityName: "Saskatoon", countryName: "Canada", visualFocus: "general_city_context", extra: ["canada-emergency"], context: "prairie riverside city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "split", cityName: "Split", countryName: "Croatia", visualFocus: "general_city_context", extra: ["eea-air"], context: "Adriatic coastal city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "sunshine-coast", cityName: "Sunshine Coast", countryName: "Australia", visualFocus: "family_visual_context", extra: ["triple-zero-au"], context: "coastal family city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "tampere", cityName: "Tampere", countryName: "Finland", visualFocus: "remote_work_visual_context", extra: ["eea-air"], context: "lakeside regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "turku", cityName: "Turku", countryName: "Finland", visualFocus: "general_city_context", extra: ["eea-air"], context: "riverside regional city context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "uppsala", cityName: "Uppsala", countryName: "Sweden", visualFocus: "family_visual_context", extra: ["eea-air"], context: "university-city neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "vilnius", cityName: "Vilnius", countryName: "Lithuania", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "Baltic old-town neighborhood context", updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "winnipeg", cityName: "Winnipeg", countryName: "Canada", visualFocus: "general_city_context", extra: ["canada-emergency"], context: "prairie regional city context", updatedDate: BATCH_5_UPDATED_DATE },
 ];
 
 export const visualCityGuidePages: VisualCityGuidePage[] = seeds.map((seed) => ({

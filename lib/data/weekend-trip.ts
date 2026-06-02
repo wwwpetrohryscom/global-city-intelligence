@@ -39,6 +39,7 @@ import type {
 
 const BATCH_1_UPDATED_DATE = "2026-05-31";
 const BATCH_4_UPDATED_DATE = "2026-06-01";
+const BATCH_5_UPDATED_DATE = "2026-06-02";
 
 const COMMON_SOURCES: readonly string[] = [
   "un-habitat",
@@ -248,6 +249,55 @@ const seeds: readonly Seed[] = [
   { citySlug: "launceston", cityName: "Launceston", countryName: "Australia", weekendFocus: "visual_orientation", extra: ["triple-zero-au"], updatedDate: BATCH_4_UPDATED_DATE },
   { citySlug: "palmerston-north", cityName: "Palmerston North", countryName: "New Zealand", weekendFocus: "general_weekend_planning", extra: ["nz-police-111"], updatedDate: BATCH_4_UPDATED_DATE },
   { citySlug: "nelson", cityName: "Nelson", countryName: "New Zealand", weekendFocus: "visual_orientation", extra: ["nz-police-111"], updatedDate: BATCH_4_UPDATED_DATE },
+
+  // === Batch five (2026-06-02): +47 weekend-trip pages (batch-five nearby cities) ===
+  { citySlug: "aix-en-provence", cityName: "Aix-en-Provence", countryName: "France", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "baltimore", cityName: "Baltimore", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "bari", cityName: "Bari", countryName: "Italy", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "bonn", cityName: "Bonn", countryName: "Germany", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "boulder", cityName: "Boulder", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "braga", cityName: "Braga", countryName: "Portugal", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "brasov", cityName: "Brașov", countryName: "Romania", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "bruges", cityName: "Bruges", countryName: "Belgium", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "bucharest", cityName: "Bucharest", countryName: "Romania", weekendFocus: "city_break", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "cairns", cityName: "Cairns", countryName: "Australia", weekendFocus: "city_break", extra: ["triple-zero-au"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "catania", cityName: "Catania", countryName: "Italy", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "charlotte", cityName: "Charlotte", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "columbus", cityName: "Columbus", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "darwin", cityName: "Darwin", countryName: "Australia", weekendFocus: "general_weekend_planning", extra: ["triple-zero-au"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "detroit", cityName: "Detroit", countryName: "United States", weekendFocus: "culture_context", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "dijon", cityName: "Dijon", countryName: "France", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "dortmund", cityName: "Dortmund", countryName: "Germany", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "eindhoven", cityName: "Eindhoven", countryName: "Netherlands", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "freiburg", cityName: "Freiburg", countryName: "Germany", weekendFocus: "city_break", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "galway", cityName: "Galway", countryName: "Ireland", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "gdansk", cityName: "Gdansk", countryName: "Poland", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "gold-coast", cityName: "Gold Coast", countryName: "Australia", weekendFocus: "family_weekend", extra: ["triple-zero-au"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "granada", cityName: "Granada", countryName: "Spain", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "groningen", cityName: "Groningen", countryName: "Netherlands", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "hobart", cityName: "Hobart", countryName: "Australia", weekendFocus: "culture_context", extra: ["triple-zero-au"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "las-vegas", cityName: "Las Vegas", countryName: "United States", weekendFocus: "city_break", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "ljubljana", cityName: "Ljubljana", countryName: "Slovenia", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "lund", cityName: "Lund", countryName: "Sweden", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "madison", cityName: "Madison", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "minneapolis", cityName: "Minneapolis", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "montpellier", cityName: "Montpellier", countryName: "France", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "naples", cityName: "Naples", countryName: "Italy", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "orlando", cityName: "Orlando", countryName: "United States", weekendFocus: "family_weekend", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "ostrava", cityName: "Ostrava", countryName: "Czechia", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "palermo", cityName: "Palermo", countryName: "Italy", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "poznan", cityName: "Poznań", countryName: "Poland", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "raleigh", cityName: "Raleigh", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "riga", cityName: "Riga", countryName: "Latvia", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "san-antonio", cityName: "San Antonio", countryName: "United States", weekendFocus: "culture_context", extra: ["epa-naaqs"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "saskatoon", cityName: "Saskatoon", countryName: "Canada", weekendFocus: "general_weekend_planning", extra: ["canada-emergency"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "split", cityName: "Split", countryName: "Croatia", weekendFocus: "city_break", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "sunshine-coast", cityName: "Sunshine Coast", countryName: "Australia", weekendFocus: "family_weekend", extra: ["triple-zero-au"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "tampere", cityName: "Tampere", countryName: "Finland", weekendFocus: "visual_orientation", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "turku", cityName: "Turku", countryName: "Finland", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "uppsala", cityName: "Uppsala", countryName: "Sweden", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "vilnius", cityName: "Vilnius", countryName: "Lithuania", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_5_UPDATED_DATE },
+  { citySlug: "winnipeg", cityName: "Winnipeg", countryName: "Canada", weekendFocus: "general_weekend_planning", extra: ["canada-emergency"], updatedDate: BATCH_5_UPDATED_DATE },
 ];
 
 export const weekendTripPages: WeekendTripCityPage[] = seeds.map((seed) => ({
