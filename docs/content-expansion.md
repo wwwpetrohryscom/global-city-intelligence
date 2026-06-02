@@ -4307,3 +4307,146 @@ All source IDs are pre-registered in
   future curated batch.
 
 
+
+
+## 2026-06-02: batch five nearby weekend place expansion
+
+This batch expands verified nearby weekend place coverage to 78
+previously uncovered cities across the EU, UK, Ireland, USA,
+Canada, Australia, and New Zealand. Each city already had a
+city profile and a verified hero image; this pass gives every
+one of them at least one local-first nearby place to anchor
+weekend rest, day trips, and outdoor recreation. Coverage
+breadth was prioritised over clustering: exactly one strong
+place per city.
+
+Every record is sourced the same way: a stable Wikidata QID,
+the official-website URL from Wikidata `P856` (official park,
+conservation, or government agency), `P625` coordinates, and a
+verified Wikimedia Commons image resolved from the entity's
+`P18` claim (or its `P373` Commons category) and checked
+against the `validate:nearby-places` image rules. No image was
+hand-picked without confirming author, license, dimensions,
+and Commons provenance through the MediaWiki API.
+
+### Places added
+
+- Nearby weekend places: 117 -> 195 (+78).
+- All 78 reach `verificationStatus: "verified"` (QID +
+  `officialUrl` + coordinates + verified image).
+- New connected cities: 78 (one place each). Cities with at
+  least one nearby place: 94 -> 172.
+
+### Detail pages added
+
+- Curated detail slugs in
+  [`lib/data/nearby-place-detail-pages.ts`](../lib/data/nearby-place-detail-pages.ts):
+  77 -> 155 (+78).
+- Every new slug satisfies the existing eligibility audit:
+  `verificationStatus === "verified"`, a `wikidataId`, an
+  `officialUrl`, `latitude`/`longitude`/`coordinateSource`, and
+  a passing `VERIFIED_IMAGES` entry.
+
+### Image coverage
+
+- 100% of the 78 new places carry a verified Wikimedia Commons
+  image (78 / 78). All `src` values are served from
+  `upload.wikimedia.org`, all `sourceUrl` values point at
+  `commons.wikimedia.org`, and all licenses are on the
+  public-domain / CC0 / CC BY / CC BY-SA accept-list.
+
+### Source coverage
+
+- Wikidata QID: 78 / 78.
+- `officialUrl` from Wikidata `P856`: 78 / 78 (national-park,
+  state-park, regional-park, and conservation-agency sites such
+  as the U.S. National Park Service, Parks Canada, SEPAQ,
+  Queensland / NT / Tasmania park services, the UK national
+  park authorities, ICNF, MITECO, and national park boards
+  across the EU).
+- `P625` coordinates: 78 / 78, `coordinateSource: "wikidata"`.
+
+### City coverage impact
+
+The 78 newly covered cities, alphabetical:
+
+aarhus, aix-en-provence, atlanta, austin, baltimore, bari,
+birmingham, bonn, bordeaux, boulder, braga, brasov, bruges,
+bucharest, budapest, cairns, calgary, cambridge, canberra,
+cardiff, catania, charlotte, columbus, dallas, darwin,
+detroit, dijon, dortmund, dresden, edmonton, eindhoven,
+freiburg, galway, gdansk, glasgow, gold-coast, gothenburg,
+granada, groningen, halifax, hobart, houston, krakow, las-
+vegas, ljubljana, los-angeles, lund, madison, minneapolis,
+montpellier, montreal, naples, nashville, nice, orlando,
+ostrava, palermo, phoenix, pittsburgh, poznan, raleigh, riga,
+salt-lake-city, san-antonio, san-diego, saskatoon, seville,
+split, sunshine-coast, tampere, toulouse, turin, turku,
+uppsala, utrecht, vilnius, warsaw, winnipeg.
+
+Country spread: United States 21, Australia 6, Canada 6, France
+6, Italy 5, Germany 4, Poland 4, United Kingdom 4, Netherlands
+3, Sweden 3, Finland 2, Romania 2, Spain 2, and one each for
+Belgium, Croatia, Czechia, Denmark, Hungary, Ireland, Latvia,
+Lithuania, Portugal, and Slovenia.
+
+Category spread: nature 42, mountain 19, park 11, island 3,
+lake 2, waterfront 1 — all drawn from existing
+`NearbyPlaceCategory` enum values; no new categories were
+introduced.
+
+### Sitemap impact
+
+- +78 `/nearby-weekend-places/[slug]` entries flow from the
+  existing `NEARBY_WEEKEND_PLACE_DETAIL_SLUGS.map(...)`
+  iteration in `app/sitemap.ts`.
+- +78 `/cities/[city]/nearby-weekend-places` entries flow from
+  the existing `getAllCitiesWithNearbyWeekendPlaces()`
+  iteration (94 -> 172 city pages).
+- No edit to `app/sitemap.ts` was required; no duplicate or
+  orphan URLs.
+
+### Structured data
+
+Detail and city pages keep their existing `WebPage`,
+`BreadcrumbList`, and `ItemList` structured data. No
+`TouristAttraction`, `Event`, `Review`, `Rating`, `Offer`,
+`TravelAction`, or `Itinerary` types were added.
+
+### Content safety
+
+Summaries use neutral wording and the standard "confirm access
+points, current conditions, and seasonal context with the
+official authority before departure" closing. No exact
+distances, travel times, routes, schedules, ticket prices,
+opening hours, weather, or safety/accessibility claims appear.
+No `best` / `top` / `must-see` / `hidden gem` /
+`world-class` / `bucket list` wording is present.
+
+### Static page delta
+
+- previous baseline: 3,531
+- new total: 3,687 (+156: 78 new
+  `/nearby-weekend-places/[slug]` detail routes and 78 new
+  `/cities/[city]/nearby-weekend-places` routes, both
+  auto-generated by existing `generateStaticParams` iterations)
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (195 records, 155
+  curated detail slugs)
+- `npm run validate:media` -- PASS
+- `npm run validate:community-media` -- PASS
+- `npm run typecheck` -- clean
+- `npm run lint` -- clean
+- `npm run build` -- emits 3,687 / 3,687 pages
+
+### Future steps
+
+- A further pass can cover the remaining uncovered
+  target-region cities (e.g. Hanover, Brisbane, Freiburg) once
+  a verified, high-quality Commons image and an official URL
+  are confirmed for a suitable local place.
+- Image quality on the new entries can be audited once live and
+  upgraded from each place's `P373` Commons category if a
+  better-licensed landscape becomes available.
