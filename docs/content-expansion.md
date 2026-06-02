@@ -4521,3 +4521,87 @@ hobart, las-vegas, ljubljana, lund, madison, minneapolis,
 montpellier, naples, orlando, ostrava, palermo, poznan,
 raleigh, riga, san-antonio, saskatoon, split, sunshine-coast,
 tampere, turku, uppsala, vilnius, winnipeg.
+
+
+## 2026-06-02: batch six nearby weekend places (closing the regional gap)
+
+Second nearby-places pass over the cities still uncovered after
+batch five. Of the 73 remaining target-region cities, 55 now
+receive a verified nearby place; 18 were deferred (14 whose
+best candidate did not resolve to a confident country-matched
+Wikidata entity or lacked coordinates, plus 4 — sacramento,
+leuven, ghent, maastricht — whose Commons category yielded no
+clean, relevant landscape image at the required quality bar).
+
+Two verification tiers are used, both carrying a verified
+Wikimedia Commons image, coordinates, and a Wikidata QID:
+
+- `verified` (13): also carry a Wikidata `P856` officialUrl, so
+  they additionally become curated detail pages.
+- `partial` (42): stable QID + coordinates + verified image but
+  no `officialUrl` present in Wikidata. These render as nearby
+  places only (no detail page), matching the dataset's existing
+  `partial` convention.
+
+### Places added
+
+- Nearby weekend places: 195 -> 250 (+55).
+- Detail pages: 155 -> 168 (+13, the `verified`-tier records).
+- Cities with at least one nearby place: 172 -> 227 (+55).
+
+### Image quality
+
+- 100% of the 55 new places carry a verified Wikimedia Commons
+  image (55 / 55), every license on the public-domain / CC0 /
+  CC BY / CC BY-SA accept-list. Each P18 image was re-checked
+  and, where it was a map, sign, building, macro (insect / fungus
+  / flower), or sub-800px crop, replaced with the largest clean
+  landscape from the place's `P373` Commons category. Cities
+  whose category held no clean landscape were dropped rather than
+  shipped with a weak image.
+
+### Country spread
+
+australia: 5, belgium: 1, bulgaria: 1, canada: 3, croatia: 1, czechia: 1, denmark: 1, estonia: 1, france: 2, germany: 7, ireland: 1, italy: 3, luxembourg: 1, new-zealand: 4, poland: 2, portugal: 1, romania: 1, slovakia: 1, spain: 4, united-kingdom: 5, united-states: 9.
+
+### Cities — verified tier (13)
+
+adelaide, brighton, brisbane, cincinnati, cleveland, grenoble,
+hanover, kansas-city, memphis, philadelphia, st-louis, tampa,
+verona.
+
+### Cities — partial tier (42)
+
+antwerp, belfast, bergamo, bilbao, bratislava, bremen,
+bristol, brno, christchurch, cluj-napoca, coimbra, cork,
+dunedin, dusseldorf, florence, geelong, heidelberg, kelowna,
+leeds, leipzig, liverpool, lodz, luxembourg-city, malaga,
+milwaukee, napier, newcastle, nuremberg, odense, plovdiv,
+portland, rennes, stuttgart, tallinn, valladolid, victoria,
+waterloo-ontario, wellington, wollongong, wroclaw, zagreb,
+zaragoza.
+
+### Static page delta
+
+- previous baseline: 3,781
+- new total: 3,849 (+68: 13 new `/nearby-weekend-places/[slug]`
+  detail routes and 55 new `/cities/[city]/nearby-weekend-places`
+  routes, auto-generated)
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (250 records, 168
+  curated detail slugs)
+- `npm run validate:media` -- PASS
+- `npm run validate:community-media` -- PASS
+- `npm run typecheck` -- clean
+- `npm run lint` -- clean
+- `npm run build` -- emits 3,849 / 3,849 pages
+
+### Deferred (future batch)
+
+18 target-region cities remain without a nearby place. Most need
+either a more precise Wikidata match (several Italian / French /
+Spanish regional parks whose English search term did not surface
+the native-language entity) or a clean landscape image; both are
+tractable in a focused follow-up.
