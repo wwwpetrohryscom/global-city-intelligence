@@ -4825,3 +4825,23 @@ cologne, indianapolis, katowice, malmo, tauranga.
 4 target-region cities deferred (pisa, leuven, maastricht, ghent).
 After this pass, 241 of 347 platform cities carry a nearby place and
 every target-region city is covered except these four.
+
+## 2026-06-02: weekend-trip + visual-guide cluster for batch-seven cities
+
+Closes the cluster for the batch-seven recoveries. 9 of the 14
+recovered cities lacked a weekend-trip and visual-guide page (the
+other 5 already had both); all 9 have a verified hero, so both layers
+were added.
+
+- weekend-trip pages: 232 -> 241 (+9)
+- visual-guide pages: 231 -> 240 (+9)
+- cities: alicante, genoa, indianapolis, katowice, malmo, murcia,
+  padua, sacramento, tauranga
+- static pages 3,941 -> 3,959
+
+Focus/source ids reuse existing enums and the per-country mapping;
+visual-guide context strings stay neutral; every visual guide renders
+an existing verified hero (no new images).
+
+validate:nearby-places PASS (264) · validate:media PASS · typecheck/lint
+clean · build 3,959 pages.

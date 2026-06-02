@@ -41,6 +41,7 @@ const BATCH_1_UPDATED_DATE = "2026-05-31";
 const BATCH_4_UPDATED_DATE = "2026-06-01";
 const BATCH_5_UPDATED_DATE = "2026-06-02";
 const BATCH_6_UPDATED_DATE = "2026-06-02";
+const BATCH_7_UPDATED_DATE = "2026-06-02";
 
 const COMMON_SOURCES: readonly string[] = [
   "un-habitat",
@@ -337,6 +338,17 @@ const seeds: readonly Seed[] = [
   { citySlug: "wroclaw", cityName: "Wroclaw", countryName: "Poland", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_6_UPDATED_DATE },
   { citySlug: "zagreb", cityName: "Zagreb", countryName: "Croatia", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_6_UPDATED_DATE },
   { citySlug: "zaragoza", cityName: "Zaragoza", countryName: "Spain", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_6_UPDATED_DATE },
+
+  // === Batch seven (2026-06-02): +9 weekend-trip pages (batch-seven nearby cities) ===
+  { citySlug: "alicante", cityName: "Alicante", countryName: "Spain", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "genoa", cityName: "Genoa", countryName: "Italy", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "indianapolis", cityName: "Indianapolis", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "katowice", cityName: "Katowice", countryName: "Poland", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "malmo", cityName: "Malmö", countryName: "Sweden", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "murcia", cityName: "Murcia", countryName: "Spain", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "padua", cityName: "Padua", countryName: "Italy", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "sacramento", cityName: "Sacramento", countryName: "United States", weekendFocus: "general_weekend_planning", extra: ["epa-naaqs"], updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "tauranga", cityName: "Tauranga", countryName: "New Zealand", weekendFocus: "general_weekend_planning", extra: ["nz-police-111"], updatedDate: BATCH_7_UPDATED_DATE },
 ];
 
 export const weekendTripPages: WeekendTripCityPage[] = seeds.map((seed) => ({

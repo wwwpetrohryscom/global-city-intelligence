@@ -36,6 +36,7 @@ const BATCH_1_UPDATED_DATE = "2026-05-25";
 const BATCH_4_UPDATED_DATE = "2026-06-01";
 const BATCH_5_UPDATED_DATE = "2026-06-02";
 const BATCH_6_UPDATED_DATE = "2026-06-02";
+const BATCH_7_UPDATED_DATE = "2026-06-02";
 
 const COMMON_SOURCES: readonly string[] = [
   "un-habitat",
@@ -336,6 +337,17 @@ const seeds: readonly Seed[] = [
   { citySlug: "wroclaw", cityName: "Wroclaw", countryName: "Poland", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "riverside old-town neighborhood context", updatedDate: BATCH_6_UPDATED_DATE },
   { citySlug: "zagreb", cityName: "Zagreb", countryName: "Croatia", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "central old-town neighborhood context", updatedDate: BATCH_6_UPDATED_DATE },
   { citySlug: "zaragoza", cityName: "Zaragoza", countryName: "Spain", visualFocus: "general_city_context", extra: ["eea-air"], context: "Ebro riverside city context", updatedDate: BATCH_6_UPDATED_DATE },
+
+  // === Batch seven (2026-06-02): +9 visual-guide pages (batch-seven nearby cities) ===
+  { citySlug: "alicante", cityName: "Alicante", countryName: "Spain", visualFocus: "general_city_context", extra: ["eea-air"], context: "Mediterranean coastal city context", updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "genoa", cityName: "Genoa", countryName: "Italy", visualFocus: "general_city_context", extra: ["eea-air"], context: "Ligurian port city context", updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "indianapolis", cityName: "Indianapolis", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "regional capital city context", updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "katowice", cityName: "Katowice", countryName: "Poland", visualFocus: "general_city_context", extra: ["eea-air"], context: "Silesian regional city context", updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "malmo", cityName: "Malmö", countryName: "Sweden", visualFocus: "general_city_context", extra: ["eea-air"], context: "Öresund coastal city context", updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "murcia", cityName: "Murcia", countryName: "Spain", visualFocus: "general_city_context", extra: ["eea-air"], context: "southern regional city context", updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "padua", cityName: "Padua", countryName: "Italy", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "historic old-town neighborhood context", updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "sacramento", cityName: "Sacramento", countryName: "United States", visualFocus: "general_city_context", extra: ["epa-naaqs"], context: "river capital city context", updatedDate: BATCH_7_UPDATED_DATE },
+  { citySlug: "tauranga", cityName: "Tauranga", countryName: "New Zealand", visualFocus: "general_city_context", extra: ["nz-police-111"], context: "Bay of Plenty coastal city context", updatedDate: BATCH_7_UPDATED_DATE },
 ];
 
 export const visualCityGuidePages: VisualCityGuidePage[] = seeds.map((seed) => ({
