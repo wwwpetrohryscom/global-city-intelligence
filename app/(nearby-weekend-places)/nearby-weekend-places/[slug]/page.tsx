@@ -13,6 +13,7 @@ import {
   getCityBySlug,
   getCountryBySlug,
   getNearbyPlaceCategoryLabel,
+  getNearbyPlaceFacts,
   getNearbyWeekendPlaceDetailPageBySlug,
   getSourcesByIds,
   hasArrivalPage,
@@ -81,6 +82,7 @@ export default async function NearbyWeekendPlaceDetailPage({
     .filter((c): c is NonNullable<typeof c> => Boolean(c));
   const sources = getSourcesByIds(place.sourceIds);
   const categoryLabel = getNearbyPlaceCategoryLabel(place.category);
+  const facts = getNearbyPlaceFacts(place.slug);
 
   const breadcrumbs = [
     { name: "Home", href: staticRoutes.home },
@@ -419,6 +421,58 @@ export default async function NearbyWeekendPlaceDetailPage({
             </p>
           ) : null}
         </section>
+
+        {facts ? (
+          <section
+            aria-labelledby="detail-facts-heading"
+            className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm"
+          >
+            <h2
+              className="text-2xl font-semibold text-text-primary"
+              id="detail-facts-heading"
+            >
+              Reference data
+            </h2>
+            <dl className="mt-5 grid gap-4 md:grid-cols-3">
+              {facts.designation ? (
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                    Designation
+                  </dt>
+                  <dd className="mt-1 text-base text-text-primary">
+                    {facts.designation}
+                  </dd>
+                </div>
+              ) : null}
+              {facts.iucnCategory ? (
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                    IUCN category
+                  </dt>
+                  <dd className="mt-1 text-base text-text-primary">
+                    {facts.iucnCategory}
+                  </dd>
+                </div>
+              ) : null}
+              {facts.established ? (
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                    Established
+                  </dt>
+                  <dd className="mt-1 text-base text-text-primary">
+                    {facts.established}
+                  </dd>
+                </div>
+              ) : null}
+            </dl>
+            <p className="mt-5 text-sm leading-6 text-text-secondary">
+              Reference attributes from the place&apos;s Wikidata entity
+              (designation, IUCN protected-area category, year established).
+              Verify current details with the official source before
+              departure.
+            </p>
+          </section>
+        ) : null}
 
         <section
           aria-labelledby="detail-verify-heading"

@@ -4725,3 +4725,57 @@ Detail pages: 168 -> 166. Static pages: 3,920 -> 3,918. Image
 `src` values were also spot-checked and all resolve (200; the
 occasional 429 is Wikimedia rate-limiting the checker, not a dead
 asset). `validate:nearby-places` PASS (250) · build 3,918 pages.
+
+## 2026-06-02: verified reference facts on nearby-place detail pages
+
+Step 5 of the post-batch-six roadmap. Detail pages now carry a
+"Reference data" block of verified, single-valued Wikidata facts:
+
+- designation — `P31` protected-area class label (e.g. "National
+  park", "Utah state park", "Regional natural park");
+- IUCN category — `P814` (e.g. II, V);
+- established — `P571` inception year (fallback `P1619`).
+
+### Data layer
+
+- New `lib/data/nearby-place-facts.ts` exports
+  `NEARBY_PLACE_FACTS` (slug → `NearbyPlaceFacts`) and
+  `getNearbyPlaceFacts(slug)`. 131 of the 166 detail places have at
+  least one fact (designation 110, IUCN 96, established 123). New
+  `NearbyPlaceFacts` type in `types/nearby-places.ts`.
+- Every key is a curated detail slug and every `wikidataId` matches
+  that slug's seed record (cross-checked by the validator).
+
+### Why no area
+
+`P2046` (area) is deliberately excluded. It is multi-valued with
+inconsistent units on Wikidata — sampling found hectare figures
+mislabelled as km² (e.g. a "36,422 km²" D'Aguilar value alongside
+the correct 392 km², and Roztocze stored as 8,483 "km²" for an
+85 km² park). Rather than ship unverifiable numbers on a panel
+labelled "verified", only single-valued, reliable properties are
+kept.
+
+### Rendering
+
+`/nearby-weekend-places/[slug]` renders a neutral "Reference data"
+`dl` after "Sources and identity"; a place with no facts omits the
+block entirely (confirmed: 131 prerendered detail pages contain the
+block). No new structured-data types were added (still WebPage /
+BreadcrumbList / ItemList only). No prices, hours, rankings, or
+marketing language.
+
+### Validator
+
+`scripts/validate-nearby-places.py` now also checks the facts file:
+every key is a curated detail slug, each `wikidataId` matches the
+seed, IUCN categories are valid classes, and established years are
+plausible.
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (250 records + facts)
+- `npm run validate:media` -- PASS
+- `npm run typecheck` -- clean
+- `npm run lint` -- clean
+- `npm run build` -- emits 3,918 / 3,918 pages

@@ -59,6 +59,7 @@ CITIES_PATH = ROOT / "lib/data/cities.ts"
 COUNTRIES_PATH = ROOT / "lib/data/countries.ts"
 SOURCES_PATH = ROOT / "lib/data/sources/index.ts"
 DETAIL_SLUGS_PATH = ROOT / "lib/data/nearby-place-detail-pages.ts"
+FACTS_PATH = ROOT / "lib/data/nearby-place-facts.ts"
 
 # Wording rules — every match in a summary or cautionNotes is a
 # positive claim and must be flagged. Negative-disclaimer matches in
@@ -705,6 +706,54 @@ def main() -> int:
                 errors.append(
                     f"NEARBY_WEEKEND_PLACE_DETAIL_SLUGS[{cs}]: "
                     f"no matching VERIFIED_IMAGES entry"
+                )
+
+    # NEARBY_PLACE_FACTS (lib/data/nearby-place-facts.ts) — optional
+    # verified reference facts keyed by detail-slug. Each key must be a
+    # curated detail slug, its wikidataId must match the seed's
+    # wikidataId, any iucnCategory must be a valid IUCN class, and any
+    # established year must be plausible.
+    if FACTS_PATH.exists():
+        facts_src = load(FACTS_PATH)
+        detail_slug_set = (
+            set(curated_slugs) if DETAIL_SLUGS_PATH.exists() else set()
+        )
+        valid_iucn = {"Ia", "Ib", "I", "II", "III", "IV", "V", "VI"}
+        for fm in re.finditer(
+            r'"([a-z0-9-]+)"\s*:\s*\{([^}]*)\}', facts_src
+        ):
+            fslug, fbody = fm.group(1), fm.group(2)
+            if detail_slug_set and fslug not in detail_slug_set:
+                errors.append(
+                    f"NEARBY_PLACE_FACTS[{fslug}]: not a curated detail slug"
+                )
+            wd = re.search(r'wikidataId:\s*"(Q\d+)"', fbody)
+            if not wd:
+                errors.append(
+                    f"NEARBY_PLACE_FACTS[{fslug}]: missing wikidataId"
+                )
+            else:
+                seed_block = seed_blocks.get(fslug, "")
+                seed_wd = re.search(
+                    r'\bwikidataId\s*:\s*"(Q\d+)"', seed_block
+                )
+                if seed_wd and seed_wd.group(1) != wd.group(1):
+                    errors.append(
+                        f"NEARBY_PLACE_FACTS[{fslug}]: wikidataId "
+                        f"{wd.group(1)} does not match seed "
+                        f"{seed_wd.group(1)}"
+                    )
+            iucn = re.search(r'iucnCategory:\s*"([^"]*)"', fbody)
+            if iucn and iucn.group(1) not in valid_iucn:
+                errors.append(
+                    f"NEARBY_PLACE_FACTS[{fslug}]: invalid IUCN category "
+                    f"'{iucn.group(1)}'"
+                )
+            est = re.search(r"established:\s*(\d+)", fbody)
+            if est and not (1000 <= int(est.group(1)) <= 2026):
+                errors.append(
+                    f"NEARBY_PLACE_FACTS[{fslug}]: implausible established "
+                    f"year {est.group(1)}"
                 )
 
     return print_results(errors, count=len(seeds))

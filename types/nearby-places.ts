@@ -74,3 +74,19 @@ export interface NearbyWeekendPlace {
   distanceBand?: DistanceBand;
   cautionNotes?: string;
 }
+
+/**
+ * Optional verified reference facts for a nearby-place detail page,
+ * sourced from the place's Wikidata entity:
+ *  - designation: instance-of (P31) protected-area class label
+ *  - iucnCategory: IUCN protected-area category (P814), e.g. "II", "V"
+ *  - established: inception year (P571, fallback P1619)
+ * Only single-valued, high-reliability properties are stored; noisy
+ * multi-valued properties (e.g. area) are intentionally excluded.
+ */
+export interface NearbyPlaceFacts {
+  designation?: string;
+  iucnCategory?: string;
+  established?: number;
+  wikidataId: string;
+}

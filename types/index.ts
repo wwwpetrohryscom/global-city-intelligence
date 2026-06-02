@@ -96,6 +96,7 @@ export type {
 export type {
   DistanceBand,
   NearbyPlaceCategory,
+  NearbyPlaceFacts,
   NearbyPlaceImage,
   NearbyPlaceTravelMode,
   NearbyPlaceVerificationStatus,

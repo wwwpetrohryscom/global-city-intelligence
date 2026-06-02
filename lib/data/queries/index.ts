@@ -218,6 +218,8 @@ export {
 
 export { getNearbyPlaceCategoryLabel } from "@/lib/data/nearby-places";
 
+export { getNearbyPlaceFacts } from "@/lib/data/nearby-place-facts";
+
 export { getCityIntentTitle } from "@/lib/data/city-intents";
 
 export {
