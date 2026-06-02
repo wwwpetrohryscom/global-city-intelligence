@@ -4605,3 +4605,43 @@ either a more precise Wikidata match (several Italian / French /
 Spanish regional parks whose English search term did not surface
 the native-language entity) or a clean landscape image; both are
 tractable in a focused follow-up.
+
+## 2026-06-02: weekend-trip + visual-guide cluster for batch-six cities
+
+Follow-up to batch six, same pattern as the batch-five cluster pass.
+Of the 55 batch-six cities, 36 lacked a weekend-trip and visual-guide
+page (the other 19 already had both from earlier batches). This pass
+adds the missing layers so their nearby -> weekend-trip ->
+visual-guide cross-linking resolves.
+
+### Pages added
+
+- Weekend-trip pages: 196 -> 232 (+36), under `BATCH_6_UPDATED_DATE`.
+- Visual-guide pages: 196 -> 231 (+35), under `BATCH_6_UPDATED_DATE`.
+- Napier receives a weekend-trip page only: it has no verified city
+  hero in the media catalog yet, so no visual-guide page was added
+  (visual guides require a verified hero). All other 35 cities hold a
+  verified hero and receive both layers.
+
+### Coverage / safety
+
+- `weekendFocus` / `visualFocus` reuse existing enum values; air
+  source ids follow the per-country mapping; visual-guide `context`
+  strings stay neutral (urban form / geographic character only).
+- No new images: every visual guide renders an existing verified
+  Wikimedia hero, so `validate:media` is unchanged.
+
+### Static page delta
+
+- previous baseline: 3,849
+- new total: 3,920 (+71: 36 `/cities/[city]/weekend-trip` and 35
+  `/cities/[city]/visual-guide` routes, auto-generated)
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (250 records)
+- `npm run validate:media` -- PASS
+- `npm run validate:community-media` -- PASS
+- `npm run typecheck` -- clean
+- `npm run lint` -- clean
+- `npm run build` -- emits 3,920 / 3,920 pages
