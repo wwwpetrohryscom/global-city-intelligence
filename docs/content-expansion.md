@@ -4779,3 +4779,49 @@ plausible.
 - `npm run typecheck` -- clean
 - `npm run lint` -- clean
 - `npm run build` -- emits 3,918 / 3,918 pages
+
+
+## 2026-06-02: batch seven — closing the target-region gap
+
+Final recovery pass over the 18 cities still uncovered after batch
+six. Most failed earlier because an English search term did not
+surface the native-language Wikidata entity; this pass resolves each
+via native-language search (it / fr / es / ca / pl / sv / el) with a
+coordinates-in-country fallback, and picks images with the hardened
+filter (maps, fauna, fungus, flower, town-centre, building tokens all
+excluded; landscape ratio + >=800px).
+
+14 of 18 recovered (9 verified -> detail pages, 5 partial -> nearby
+only). 4 stay deferred: migliarino-san-rossore (pisa) would not
+resolve to a confident entity; leuven / maastricht / ghent had no
+clean landscape in their Commons categories (fungus-dominated,
+canal-only, visitor-building) and were not shipped with a weak image.
+
+### Added
+
+- Nearby weekend places: 250 -> 264 (+14).
+- Detail pages: 166 -> 175 (+9 verified-tier).
+- Cities with nearby coverage: 227 -> 241.
+- Reference facts: 131 -> 139 (8 of the 9 new verified places).
+
+### Verified (9)
+
+alicante, athens, bologna, genoa, murcia, padua, sacramento,
+strasbourg, valencia.
+
+### Partial (5)
+
+cologne, indianapolis, katowice, malmo, tauranga.
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (264 records + facts)
+- `npm run validate:media` -- PASS
+- `npm run typecheck` / `npm run lint` -- clean
+- `npm run build` -- emits 3,941 / 3,941 pages
+
+### Remaining
+
+4 target-region cities deferred (pisa, leuven, maastricht, ghent).
+After this pass, 241 of 347 platform cities carry a nearby place and
+every target-region city is covered except these four.
