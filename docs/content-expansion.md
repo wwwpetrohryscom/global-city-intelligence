@@ -4645,3 +4645,57 @@ visual-guide cross-linking resolves.
 - `npm run typecheck` -- clean
 - `npm run lint` -- clean
 - `npm run build` -- emits 3,920 / 3,920 pages
+
+## 2026-06-02: image-quality audit + validator hardening
+
+A quality pass over the batch-five / batch-six imagery plus a
+strengthening of `scripts/validate-nearby-places.py` so the gaps
+that needed manual catching this round are caught automatically
+in future batches.
+
+### Image fixes (3)
+
+- `teufelsmoor-near-bremen`: replaced an 800×114 panorama sliver
+  with a 1280×853 moor landscape from the
+  `Naturschutzgebiet Teufelsmoor` Commons category.
+- `feldberg-near-freiburg`: replaced a village-centre ("ortskern")
+  shot — the place is the Black Forest summit, not the
+  municipality core — with a 1280×872 Feldberg landscape.
+- `archipelago-national-park-near-turku`: replaced a 1280×368
+  banner strip with a 1280×960 island scene.
+
+All three remain verified Wikimedia Commons images with
+acceptable licenses; `validate:media` and the build are
+unchanged.
+
+### Validator hardening
+
+`scripts/validate-nearby-places.py` now additionally rejects, for
+any image, `src` / `sourceUrl` filenames that look like:
+
+- cartographic / survey documents (Ordnance Survey, Ferraris
+  maps, topographic-map sheets, `mtn25`, `mapa` / `carte` /
+  `karte`);
+- fauna macro shots (butterfly, bee, wasp, beetle, moth, spider,
+  snail, dragonfly);
+- fungus / mushroom macro shots (incl. Dutch `zwam`, `koraal`,
+  `amanita`);
+- flower / moss / lichen macro shots;
+- town-centre / civic-core scenes (`town`, `rathaus`, `altstadt`,
+  `ortskern`, `downtown`).
+
+It also requires every image's larger side to be at least
+`MIN_IMAGE_MAX_DIMENSION` (600 px), and requires every `verified`
+record to carry latitude/longitude coordinates. All new gates
+were calibrated against the current dataset (smallest existing
+image is 600 px on its long side; every verified record already
+has coordinates) so the suite still reports PASS on all 250
+records with zero false positives.
+
+### Validation results
+
+- `npm run validate:nearby-places` -- PASS (250 records)
+- `npm run validate:media` -- PASS
+- `npm run typecheck` -- clean
+- `npm run lint` -- clean
+- `npm run build` -- emits 3,920 / 3,920 pages

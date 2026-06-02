@@ -17,6 +17,8 @@ established safety rules:
     officialUrl (preferably both)
   - if a record declares latitude OR longitude, both must be
     present alongside a non-empty coordinateSource
+  - records flagged "verified" must additionally declare
+    latitude/longitude coordinates (they must be geolocatable)
   - records with image: ensure source/author/license/attribution
     structure is present AND `verified: true` with a non-empty
     `verifiedAt` value (no images shipped in MVP; this is a
@@ -35,7 +37,11 @@ established safety rules:
     CC BY-SA — regional suffixes allowed) and must NOT contain any
     of the reject tokens (NC/ND/FAL/GFDL/etc.), and the src and
     sourceUrl must not point at montages, collages, flags, coats
-    of arms, logos, maps, protests, military or disaster imagery.
+    of arms, logos, maps, protests, military or disaster imagery,
+    cartographic / survey documents (Ordnance Survey, Ferraris,
+    topographic-map sheets), fauna / fungus / flower macro shots,
+    or town-centre / civic-core scenes. Each image's larger side
+    must also be at least MIN_IMAGE_MAX_DIMENSION (600) pixels.
 
 Run:   python3 scripts/validate-nearby-places.py
 Exit:  non-zero on any failure.
@@ -175,7 +181,32 @@ SUSPICIOUS_SRC_PATTERNS = (
     ("military", r"military"),
     ("disaster", r"disaster"),
     ("postcard", r"postcard"),
+    # Cartographic / survey documents (not photographs).
+    (
+        "cartography",
+        r"(?:ferraris|ordnance|topograf|mapa|\bcarte\b|\bkaart\b|\bkaarte\b"
+        r"|\bkarte\b|mtn25|mtn-|/Sheet_|_sheet\.)",
+    ),
+    # Insect / animal macro shots (not a place landscape).
+    (
+        "fauna_macro",
+        r"(?:butterfly|\badmiral\b|\binsect\b|beetle|\bmoth\b|\bbee\b"
+        r"|honey.?bee|\bwasp\b|spider|\bsnail\b|dragonfly)",
+    ),
+    # Fungus / mushroom macro shots.
+    (
+        "fungus_macro",
+        r"(?:fungus|fungi|mushroom|\bzwam\b|koraal|amanita|amaniet|toadstool)",
+    ),
+    # Flower / moss / lichen macro shots.
+    ("flora_macro", r"(?:\bflower\b|\bbloom\b|lichen|\bmoss\b)"),
+    # Town centre / civic-core shots (not the natural area itself).
+    ("urban_core", r"(?:\btown\b|rathaus|altstadt|ortskern|downtown)"),
 )
+
+# Minimum acceptable image resolution: the larger image side must be at
+# least this many pixels. Guards against tiny crops / thumbnail slivers.
+MIN_IMAGE_MAX_DIMENSION = 600
 
 
 def load(path: Path) -> str:
@@ -235,6 +266,16 @@ def _validate_image_block(block: str, *, label: str) -> list[str]:
         val = _numeric_field(block, dim)
         if val is not None and val <= 0:
             out.append(f"{label}: `{dim}` must be a positive integer")
+
+    # Minimum resolution: the larger side must clear MIN_IMAGE_MAX_DIMENSION.
+    w_val = _numeric_field(block, "width")
+    h_val = _numeric_field(block, "height")
+    if w_val is not None and h_val is not None and w_val > 0 and h_val > 0:
+        if max(w_val, h_val) < MIN_IMAGE_MAX_DIMENSION:
+            out.append(
+                f"{label}: image max dimension {max(w_val, h_val)}px is below "
+                f"the {MIN_IMAGE_MAX_DIMENSION}px minimum"
+            )
 
     # verified: true literal
     if re.search(r"\bverified\s*:", block) and not re.search(
@@ -542,6 +583,12 @@ def main() -> int:
                 errors.append(
                     f"{slug}: verificationStatus 'verified' requires "
                     f"wikidataId and/or officialUrl"
+                )
+            # Verified records must also be geolocatable.
+            if not re.search(r"\blatitude\s*:\s*-?\d", block):
+                errors.append(
+                    f"{slug}: verificationStatus 'verified' requires "
+                    f"latitude/longitude coordinates"
                 )
 
         # Coordinate enforcement: if latitude or longitude declared,
