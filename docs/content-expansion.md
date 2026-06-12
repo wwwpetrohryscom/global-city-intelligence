@@ -5265,3 +5265,104 @@ No runtime fetches, no new dependencies, no maps/weather/routing
 libraries; all pages static. New copy is neutral, factual, and
 source-grounded (no best/top/must-see/world-class wording, no prices,
 schedules, hours, or weather).
+
+## 2026-06-12: official-source expansion for nearby places
+
+### Scope
+
+A source-quality pass that resolves verified **official managing-authority
+URLs** for partial nearby places, upgrading them to `verified` and
+unlocking dedicated detail pages. No new cities, countries, places,
+route types, or images. Existing verified images are untouched.
+
+### Counts (before → after)
+
+- partial nearby places: **177 → 24 (−153)**
+- verified nearby places: **262 → 415 (+153)**
+- nearby detail pages: **262 → 415 (+153)**
+- reference facts: **226 → 379 (+153)**
+- static pages: **5,061 → 5,214 (+153 detail pages)**
+- nearby places total: 439 (unchanged); image coverage 439/439 = **100%** (unchanged)
+
+### Official-URL resolution (no guessing)
+
+Every URL is a verified official site belonging to the body that
+manages or governs the place — never a tourism portal, wiki, OTA,
+social network, or blog. Resolution tiers:
+
+1. **Wikidata P856** on the place (its official website) — 1.
+2. **Operator (P137/P126) → operator's P856** (the responsible
+   authority's official site) — 10.
+3. **Verified authority lookup** (search + page fetch confirming the
+   managing authority, then deterministic liveness-check + banned-domain
+   screen + manual domain review) — 142.
+
+Total resolved: **153**. 148 candidate URLs were proposed; rejects were
+dropped for dead links / banned domains. The 24 places left partial are
+genuinely multi-jurisdiction natural features with no single managing
+authority (e.g. Loch Ness, Øresund, Lake Champlain, the Rhodope
+Mountains, several trans-regional rivers and coastlines) — correctly
+kept partial rather than assigned a non-authoritative URL.
+
+### Source coverage
+
+Resolved URLs are all official authorities, spanning:
+- National agencies — NPS, US Forest Service, Fish & Wildlife,
+  Parks Canada / BC Parks / Ontario Parks, NZ DOC, Natural Resources
+  Wales, NatureScot/Forestry & Land Scotland, Forestry England,
+  NPWS Ireland (×6), Metsähallitus, Naturstyrelsen / Länsstyrelsen (SE),
+  Staatsbosbeheer, RMK & Keskkonnaamet (EE), ICNF (PT), MITECO (ES).
+- Regional / landscape / nature-park authorities — Parcs naturels
+  régionaux (FR), Enti Parco Regionale (IT), Naturparke /
+  Biosphärenreservate / Zweckverbände (DE), Landscape Parks Authorities
+  (PL), Catalan/Aragón/Galicia/Basque park services (ES), UNESCO geoparks.
+- County / municipal governments and official conservation trusts /
+  foundations that legally manage a site (National Trust, Natuurmonumenten,
+  RSPB, Phillip Island Nature Parks, SPSG, Te Mata Park Trust, etc.).
+
+After this pass, **415 / 439 (94.5%)** nearby places carry an official
+URL.
+
+### Reference facts
+
+153 fact records added (designation = Wikidata P31, IUCN category =
+P814, inception year = P571/P1619), fetched deterministically from each
+place's Wikidata entity — no fabrication. The detail-page "Reference
+data" block renders these via the existing template; the managing
+authority is conveyed through the official-URL link (the
+`NearbyPlaceFacts` schema is unchanged — no new fields).
+
+### Detail pages
+
+Every newly verified place satisfies the audited eligibility rules
+(verificationStatus "verified" + wikidataId + officialUrl + coordinates
++ verified image) and was promoted to
+`NEARBY_WEEKEND_PLACE_DETAIL_SLUGS`. Pages render via the existing
+detail template — full content (image + attribution, official link,
+coordinates, reference facts, connected-city context), no thin pages,
+no new route types.
+
+### Internal linking / SEO
+
+All linking flows through existing helpers (no hardcoded routes):
+nearby directory → detail, detail → connected city, city / weekend-trip
+/ visual-guide → nearby places. New detail URLs are emitted
+automatically in the sitemap (no duplicate or orphan URLs). Metadata
+(canonical + OpenGraph) and structured data (WebPage + BreadcrumbList,
+ItemList on directories) use the existing architecture unchanged — no
+TouristAttraction / Event / Review / Rating / Offer / TravelAction /
+Itinerary.
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (439 records)
+- `npm run validate:media` — PASS (cities 445 hero / 477 total)
+- `npm run validate:community-media` — PASS (28 values)
+- `npm run typecheck` — clean
+- `npm run lint` — clean (0 problems)
+- `npm run build` — clean (5,214 / 5,214 static pages)
+
+### Performance
+
+No runtime fetches, no new dependencies, no maps/APIs/routing; all pages
+remain static.
