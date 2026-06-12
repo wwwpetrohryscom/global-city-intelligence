@@ -256,3 +256,21 @@ export type {
   CountryCollectionMatch,
   CountryRankingMatch,
 } from "@/lib/data/queries/country-hub";
+
+// Community photo platform — render-layer data-access (foundation only).
+// Re-exported here so the photo referential-integrity guard in
+// lib/data/photo-galleries.ts runs during `next build`.
+export {
+  getAllPhotos,
+  getCityPhotoGallery,
+  getCityPhotos,
+  getNearbyPlacePhotoGallery,
+  getNearbyPlacePhotos,
+  getPhotoBySlug,
+  getPhotoSourceLabel,
+  getPhotoStatusLabel,
+  getPhotosBySourceType,
+  getPhotosByStatus,
+  hasCityPhotos,
+  hasNearbyPlacePhotos,
+} from "@/lib/data/photo-galleries";

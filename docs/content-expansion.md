@@ -5366,3 +5366,83 @@ Itinerary.
 
 No runtime fetches, no new dependencies, no maps/APIs/routing; all pages
 remain static.
+
+## 2026-06-12: community photo platform foundations
+
+### Scope
+
+Architecture-only foundation for future community photos — a render-layer
+photo + gallery model that sits alongside the existing community-media
+submission/moderation contract. No uploads, no auth, no accounts, no
+storage, no backend, no moderation UI, no routes, no gallery/photo pages,
+no sitemap or metadata changes. Everything stays static and build-safe.
+
+### Photo model (`types/photos.ts`)
+
+- `Photo`: id, slug, title, description, sourceType, status, attribution,
+  authorName, createdAt, updatedAt, optional citySlug / nearbyPlaceSlug,
+  plus a render payload (src, width, height, alt).
+- `PhotoSourceType` = `official | community`.
+- `PhotoStatus` = `pending | approved | rejected` (official ships
+  `approved`; future community defaults to `pending`).
+- `PhotoAttribution` = author, source, license, licenseUrl?, sourceUrl,
+  authorUrl?, attributionText? — compatible with existing Wikimedia records.
+- A photo may attach to a city, a nearby place, or both.
+
+### Gallery model (`lib/data/photo-galleries.ts`)
+
+- `PhotoGallery` (targetType `city | nearby_place`, photos, officialCount,
+  communityCount, total) — supports official, community, and mixed sets.
+- Data-access layer only (no UI): `getCityPhotos`, `getNearbyPlacePhotos`,
+  `getCityPhotoGallery`, `getNearbyPlacePhotoGallery`, `hasCityPhotos`,
+  `hasNearbyPlacePhotos`, plus moderation-tooling reads (`getAllPhotos`,
+  `getPhotosByStatus`, `getPhotosBySourceType`). Public galleries surface
+  ONLY `status: "approved"` photos. Re-exported from `lib/data/queries`.
+
+### Moderation model
+
+The render-layer `PhotoStatus` (pending/approved/rejected) composes with
+the richer submission lifecycle already in `types/community-media.ts`
+(`CommunityPhotoSubmission`: draft → pending_review → approved, safety
+flags, policy, pure validators in `lib/community-media/`). An approved
+submission maps onto a `Photo` with `sourceType: "community"`,
+`status: "approved"`. The existing foundation is untouched.
+
+### Validation model
+
+- Runtime guard (`assertPhotoReferentialIntegrity`, runs at module
+  evaluation): unique ids, unique slugs, valid `citySlug` (cities.ts),
+  valid `nearbyPlaceSlug` (nearby-places.ts), at-least-one target, valid
+  sourceType/status, official-not-pending, render-payload present. Because
+  the gallery module is re-exported from `lib/data/queries` (imported by
+  built pages), **`next build` fails on any invalid reference** (verified).
+- `scripts/validate-photos.py` (`npm run validate:photos`) enforces the
+  same rules as an explicit CI gate.
+
+### Sample dataset
+
+15 records (`lib/data/community-photos.ts`), all `sourceType: "official"`,
+`status: "approved"`, reusing verified Wikimedia Commons attribution from
+the existing catalog purely to exercise the architecture (5 city-only,
+5 nearby-only, 5 dual-attached). No invented users; not a content
+expansion.
+
+### Future roadmap
+
+- Phase 1 ✓ official photo records + galleries (this pass).
+- Phase 2 ✓ community photo records (model + status support ready).
+- Phase 3 — upload workflow (future; submission types already exist).
+- Phase 4 — moderation workflow (future; lifecycle + validators exist).
+- Phase 5 — community galleries surface (future; gallery layer ready).
+The architecture needs no rewrite to reach later phases.
+
+### Validation results
+
+- `npm run validate:photos` — PASS (15 records: 15 official, 0 community)
+- `npm run validate:nearby-places` — PASS (439)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28 values)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (5,214 / 5,214 static pages, unchanged — no new
+  routes or pages)

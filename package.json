@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "validate:community-media": "python3 scripts/validate-community-media.py",
     "validate:media": "python3 scripts/validate-media-catalogs.py",
-    "validate:nearby-places": "python3 scripts/validate-nearby-places.py"
+    "validate:nearby-places": "python3 scripts/validate-nearby-places.py",
+    "validate:photos": "python3 scripts/validate-photos.py"
   },
   "dependencies": {
     "next": "^15.5.0",

@@ -136,3 +136,11 @@ export type {
   PlaceImageType,
   PlaceType,
 } from "./media";
+export type {
+  Photo,
+  PhotoAttribution,
+  PhotoGallery,
+  PhotoGalleryTargetType,
+  PhotoSourceType,
+  PhotoStatus,
+} from "./photos";
