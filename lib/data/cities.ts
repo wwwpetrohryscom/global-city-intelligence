@@ -12122,6 +12122,1435 @@ const seeds: CitySeed[] = [
       "Use this record as a regional planning anchor while deeper source integration is pending. Verify access, transport, and seasonal context with official sources before relying on the page for travel decisions.",
     scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
   }),
+
+  // ---- City coverage batch five (2026-06) — 100 curated in-scope cities ----
+  // germany
+  buildNeutralCitySeed({
+    slug: "regensburg",
+    name: "Regensburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Bavaria",
+    population: "Pending integration",
+    intro:
+      "Regensburg is a city in eastern Bavaria, set at the confluence of the Danube, Naab, and Regen rivers, whose well-preserved medieval centre is a UNESCO World Heritage Site. Its riverside old town, Roman and imperial heritage, and position as the historic centre of the Upper Palatinate make it a grounded base for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "wurzburg",
+    name: "Würzburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Bavaria",
+    population: "Pending integration",
+    intro:
+      "Würzburg is a city in northern Bavaria spanning the banks of the Main river, serving as the administrative seat of Lower Franconia. Its reconstructed old town and the Würzburger Residenz, a UNESCO World Heritage palace, anchor a riverside setting well suited to local-first discovery and nearby weekend trips through surrounding Franconian wine country.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "lubeck",
+    name: "Lübeck",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Schleswig-Holstein",
+    population: "Pending integration",
+    intro:
+      "Lübeck is a city in northern Germany on the river Trave near the Baltic coast, historically the cradle and de facto capital of the Hanseatic League. Its densely built island old town, a UNESCO World Heritage Site of Brick Gothic churches and the Holstentor gate, sits close to Travemünde and Baltic seaside resorts, making it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "potsdam",
+    name: "Potsdam",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Brandenburg",
+    population: "Pending integration",
+    intro:
+      "Potsdam is the capital of the German state of Brandenburg, set on the River Havel in a hilly, lake-dotted landscape southwest of Berlin. Its palaces and parks, including the UNESCO-listed Sanssouci, together with the surrounding waterways and woodlands, make it a strong anchor for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "mainz",
+    name: "Mainz",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Rhineland-Palatinate",
+    population: "Pending integration",
+    intro:
+      "Mainz is the capital of the German state of Rhineland-Palatinate, located on the left bank of the Rhine at the northern end of the Upper Rhine Plain within the Rhine-Main region. As the birthplace of Johannes Gutenberg, a historic seat of the Archbishop-Electors, and a centre of Rhenish Hesse wine country, its rebuilt old town and riverside setting make it a grounded base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "augsburg",
+    name: "Augsburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Bavaria",
+    population: "Pending integration",
+    intro:
+      "Augsburg is a city in the Bavarian part of Swabia and the regional seat of the Regierungsbezirk Swabia, set west of Munich, with a well-preserved historical city centre. As one of Germany's oldest cities, home to the Fuggerei and a UNESCO-listed water management system, its old town and surrounding Swabian countryside make it a solid base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kiel",
+    name: "Kiel",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Schleswig-Holstein",
+    population: "Pending integration",
+    intro:
+      "Kiel is the capital of the northern German state of Schleswig-Holstein, set on the Kieler Förde inlet of the Bay of Kiel where the Schwentine river meets the Baltic Sea. As a major maritime centre at the terminus of the Kiel Canal, with ferry links across the Baltic and the Kiel Week sailing event, its coastal setting makes it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // france
+  buildNeutralCitySeed({
+    slug: "annecy",
+    name: "Annecy",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Auvergne-Rhône-Alpes",
+    population: "Pending integration",
+    intro:
+      "Annecy is the prefecture and largest city of the Haute-Savoie department in the Auvergne-Rhône-Alpes region of southeastern France, lying at the northern tip of Lake Annecy between lake and mountains. Its canal-laced old town, lakeshore, and position controlling the northern entrance to the lake gorge make it a strong anchor for local-first discovery and nearby weekend trips into the surrounding French Alps.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "avignon",
+    name: "Avignon",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Provence-Alpes-Côte d'Azur",
+    population: "Pending integration",
+    intro:
+      "Avignon is the prefecture of the Vaucluse department in the Provence-Alpes-Côte d'Azur region of southern France, set on the left bank of the river Rhône within its preserved medieval walls. Its UNESCO-listed historic centre, including the Palais des Papes and the Pont d'Avignon, makes it a grounded base for local-first discovery and nearby weekend trips through surrounding Provence.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "nancy",
+    name: "Nancy",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Grand Est",
+    population: "Pending integration",
+    intro:
+      "Nancy is the prefecture of the Meurthe-et-Moselle department in the Grand Est region of northeastern France, situated on the left bank of the Meurthe in the historical region of Lorraine. Its old town around the Ducal Palace, the UNESCO-listed Place Stanislas, and its Art Nouveau heritage make it a strong anchor for local-first discovery and nearby weekend trips across Lorraine.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "la-rochelle",
+    name: "La Rochelle",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Nouvelle-Aquitaine",
+    population: "Pending integration",
+    intro:
+      "La Rochelle is a city on the west coast of France and a seaport on the Bay of Biscay, the capital of the Charente-Maritime department in the Nouvelle-Aquitaine region. Its historic harbour fabric, with the Saint-Nicholas tower guarding the old port, and a bridge connection to the Île de Ré make it a natural base for coastal and island exploration nearby.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "nimes",
+    name: "Nîmes",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Occitanie",
+    population: "Pending integration",
+    intro:
+      "Nîmes is the prefecture of the Gard department in the Occitanie region of southern France, set between the Mediterranean Sea and the Cévennes mountain range. Known for its Roman heritage, including the Arena of Nîmes and the Maison Carrée, its compact historic centre makes it a grounded base for exploring the surrounding Mediterranean and uplands.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "clermont-ferrand",
+    name: "Clermont-Ferrand",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Auvergne-Rhône-Alpes",
+    population: "Pending integration",
+    intro:
+      "Clermont-Ferrand is a city in the Auvergne-Rhône-Alpes region of France, the prefecture of the Puy-de-Dôme department, set on the plain of Limagne in the Massif Central. Surrounded by the Chaîne des Puys chain of volcanoes and the dormant Puy de Dôme, and home to a large student and research community, it is a natural gateway for exploring the surrounding volcanic uplands.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // italy
+  buildNeutralCitySeed({
+    slug: "venice",
+    name: "Venice",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Veneto",
+    population: "Pending integration",
+    intro:
+      "Venice is a city in northeastern Italy and the capital of the Veneto region, built on a group of islands in the shallow Venetian Lagoon and linked by canals and bridges. Its lagoon and historic island city form a UNESCO World Heritage Site, and its position near the mainland cities of Padua and Treviso makes it an anchor for wider regional exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "como",
+    name: "Como",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Lombardy",
+    population: "Pending integration",
+    intro:
+      "Como is a city in Lombardy, Italy, and the administrative capital of its province, set on the southwestern branch of Lake Como close to the Alps. Its lakeside setting, historic core with the Duomo and medieval Broletto, and proximity to alpine terrain make it a practical base for lake and mountain exploration nearby.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bolzano",
+    name: "Bolzano",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "South Tyrol",
+    population: "Pending integration",
+    intro:
+      "Bolzano, also known as Bozen, is the capital city of South Tyrol in northern Italy and one of the urban centres within the Alps. As a multilingual bridge between Italian and German-Austrian cultures and a seat of alpine institutions, it serves as a natural gateway to the surrounding mountains and valleys for weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "ravenna",
+    name: "Ravenna",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Emilia-Romagna",
+    population: "Pending integration",
+    intro:
+      "Ravenna is the capital city of its province in the Emilia-Romagna region of northern Italy, an inland city connected to the Adriatic Sea by the Candiano Canal. Known for its well-preserved late Roman and Byzantine architecture and its Early Christian Monuments UNESCO World Heritage Site, its mosaic-rich old town anchors exploration of the surrounding Adriatic coast and plain.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "perugia",
+    name: "Perugia",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Umbria",
+    population: "Pending integration",
+    intro:
+      "Perugia is the capital city of Umbria in central Italy, set on a high hilltop above the valleys crossed by the River Tiber. As a historic Etruscan and university city with festivals and the National Gallery of Umbria, its hilltop old town is a strong base for exploring the surrounding central Italian countryside.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "lucca",
+    name: "Lucca",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Tuscany",
+    population: "Pending integration",
+    intro:
+      "Lucca is a city in Tuscany, central Italy, set on the Serchio River in a fertile plain. Known as a City of Art for its largely intact Renaissance-era city walls and well-preserved historic centre, with the Piazza dell'Anfiteatro and the Guinigi Tower, the walled old town makes it a natural base for exploring the surrounding Tuscan plain.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // spain
+  buildNeutralCitySeed({
+    slug: "san-sebastian",
+    name: "San Sebastián",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Basque Country",
+    population: "Pending integration",
+    intro:
+      "San Sebastián, also known as Donostia, is a coastal city in the Basque Autonomous Community of Spain, lying on the Bay of Biscay near the France-Spain border and serving as capital of the province of Gipuzkoa. As a long-established seaside destination and cultural centre, host of international film and jazz festivals, its bayside setting makes it a base for exploring the Basque coast and nearby border region.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "toledo",
+    name: "Toledo",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Castilla-La Mancha",
+    population: "Pending integration",
+    intro:
+      "Toledo is the capital of the province of Toledo and seat of the government of the Castilla-La Mancha region in central Spain, set on a hill within a bend of the Tagus river. Its preserved monumental old quarter, declared a UNESCO World Heritage Site, sits above the river gorge and anchors local-first exploration of the surrounding central Iberian plateau.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "salamanca",
+    name: "Salamanca",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Castile and León",
+    population: "Pending integration",
+    intro:
+      "Salamanca is the capital of its province in the Castile and Leon region of western Spain, lying on the Meseta Central and straddling the Tormes river. Home to one of Western Europe's oldest universities and a UNESCO-listed old city of plateresque architecture, it serves as a natural base for exploring the surrounding plains and hilltop settlements.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "a-coruna",
+    name: "A Coruña",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Galicia",
+    population: "Pending integration",
+    intro:
+      "A Coruna is a port city and provincial capital in Galicia, set on a promontory in the Golfo Artabro on the Atlantic coast of northern Spain. As the main industrial and financial centre of northern Galicia and home to its own university, the city's harbour and coastal setting make it a practical base for local-first exploration of the Atlantic shore and nearby gulf.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "girona",
+    name: "Girona",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Catalonia",
+    population: "Pending integration",
+    intro:
+      "Girona is the capital of its province in Catalonia, northeastern Spain, set at the confluence of the Ter, Onyar, Galligants, and Guell rivers. Its well-preserved ancient old quarter and riverside setting make it a strong base for local-first discovery of the surrounding comarca and the wider Catalan region toward the coast.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // poland
+  buildNeutralCitySeed({
+    slug: "torun",
+    name: "Toruń",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Kuyavia-Pomerania",
+    population: "Pending integration",
+    intro:
+      "Torun is a historic city on the Vistula river in north-central Poland and a UNESCO World Heritage Site, and serves as one of the two capitals of the Kuyavian-Pomeranian Voivodeship. With a fully preserved Old Town and central marketplace spanning Brick Gothic to Baroque architecture, it anchors local-first exploration of the river valley and the surrounding region.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "gdynia",
+    name: "Gdynia",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Pomerania",
+    population: "Pending integration",
+    intro:
+      "Gdynia is a seaport city on the Baltic Sea coast of northern Poland, forming part of the Tricity conurbation alongside the spa town of Sopot and the city of Gdansk. Its modernist downtown, the southern pier, and its place within the Tricity metropolitan area make it a convenient base for local-first discovery along the Pomeranian coast.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "szczecin",
+    name: "Szczecin",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "West Pomerania",
+    population: "Pending integration",
+    intro:
+      "Szczecin is the capital and largest city of the West Pomeranian Voivodeship in northwestern Poland, set on the Oder river near the Baltic Sea and the German border, and is a major seaport. Surrounded by dense forests, the Szczecin Landscape Park, and the waters of Dabie Lake and the Szczecin Lagoon, it anchors local-first exploration of the river delta and the wider cross-border region.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "olsztyn",
+    name: "Olsztyn",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Warmia-Masuria",
+    population: "Pending integration",
+    intro:
+      "Olsztyn is the capital of the Warmian-Masurian Voivodeship in northern Poland, set on the Lyna river and the largest city in the historical region of Warmia. With its medieval Old Town, Gothic castle, and lakeside setting, it is a natural base for local-first discovery of the surrounding lakes and woodlands of the Masurian region.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // netherlands
+  buildNeutralCitySeed({
+    slug: "leiden",
+    name: "Leiden",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "South Holland",
+    population: "Pending integration",
+    intro:
+      "Leiden is a historic university city in the province of South Holland, Netherlands, set on the Oude Rijn between The Hague to its south and Amsterdam to its north. Home to the oldest university in the Netherlands and a rich cultural heritage, with the Kaag Lakes recreational area just to its northeast, it anchors local-first exploration of the surrounding Randstad and nearby waterways.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "delft",
+    name: "Delft",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "South Holland",
+    population: "Pending integration",
+    intro:
+      "Delft is a historic city in the province of South Holland, Netherlands, lying between Rotterdam to the southeast and The Hague to the northwest within the Rotterdam-The Hague metropolitan area and the Randstad. Known for its old town, its blue pottery, and its university of technology, it offers a compact base for local-first discovery of the surrounding Randstad cities and canals.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "nijmegen",
+    name: "Nijmegen",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Gelderland",
+    population: "Pending integration",
+    intro:
+      "Nijmegen is a city in the Dutch province of Gelderland, set on the Waal River close to the German border, and is among the oldest cities in the Netherlands as well as a university city home to Radboud University. Its riverside setting, long history reaching back to Roman times, and position near the German frontier make it a grounded base for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // portugal
+  buildNeutralCitySeed({
+    slug: "funchal",
+    name: "Funchal",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Madeira",
+    population: "Pending integration",
+    intro:
+      "Funchal is the capital and largest city of Portugal's Autonomous Region of Madeira, an island municipality bordered by the Atlantic Ocean and serving as the region's leading port for cruise liner dockings. Its coastal Atlantic setting and role as Madeira's cultural and maritime hub make it a natural anchor for island-based exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "guimaraes",
+    name: "Guimarães",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Norte Region",
+    population: "Pending integration",
+    intro:
+      "Guimarães is a city in northern Portugal, in the historical Minho province, whose well-preserved historic town centre is a UNESCO World Heritage Site and which is commonly known as the birthplace of Portugal. Its medieval core, role in the foundation of the Portuguese kingdom, and setting within the Ave subregion make it a strong base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "evora",
+    name: "Évora",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Alentejo",
+    population: "Pending integration",
+    intro:
+      "Évora is a city in inland Portugal and the historic capital of the Alentejo region, with an old town still partially enclosed by medieval walls and monuments ranging from a Roman Temple onward that form a UNESCO World Heritage Site. Its preserved walled centre and position at the heart of the Alentejo make it a natural anchor for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // sweden
+  buildNeutralCitySeed({
+    slug: "helsingborg",
+    name: "Helsingborg",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Skåne",
+    population: "Pending integration",
+    intro:
+      "Helsingborg is a coastal city in Scania in southern Sweden, set on the Øresund at the country's closest point to Denmark, with the Danish city of Helsingør visible across the strait. Its scenic seafront, blend of old stone churches and a medieval fortress at its centre, and position on the Øresund make it a grounded base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "umea",
+    name: "Umeå",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Västerbotten",
+    population: "Pending integration",
+    intro:
+      "Umeå is a city in northeast Sweden, set on the Ume River as the seat of its municipality and the capital of Västerbotten County, and is the largest urban centre in Norrland. As a university town and centre of education and research in northern Sweden, with its riverside setting in the north, it offers a grounded base for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "linkoping",
+    name: "Linköping",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Östergötland",
+    population: "Pending integration",
+    intro:
+      "Linköping is a city in southern Sweden, seat of its municipality and capital of Östergötland County, set on the Östergötland Plain and known for its cathedral and university. Its historic cultural region, prominent cathedral skyline, and close links to nearby Norrköping toward the coast make it a natural anchor for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // romania
+  buildNeutralCitySeed({
+    slug: "sibiu",
+    name: "Sibiu",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Transylvania",
+    population: "Pending integration",
+    intro:
+      "Sibiu is a city in central Romania in the historical region of Transylvania, straddling the Cibin River and serving as the seat of Sibiu County and a historic centre of the Transylvanian Saxons. Its historic centre, surrounding fortified villages, and access toward the nearby Păltiniș mountain resort to the southwest make it a strong base for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "constanta",
+    name: "Constanța",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Dobruja",
+    population: "Pending integration",
+    intro:
+      "Constanța is a port city in the Northern Dobruja region of Romania, capital of Constanța County and the principal port on the Black Sea coast, and is the oldest continuously inhabited city in the country. Its Black Sea waterfront, ancient multicultural heritage, and surrounding metropolitan localities make it a natural anchor for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // czechia
+  buildNeutralCitySeed({
+    slug: "olomouc",
+    name: "Olomouc",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Moravia",
+    population: "Pending integration",
+    intro:
+      "Olomouc is a city in the Czech Republic, set on the Morava River as the administrative centre of the Olomouc Region and a historical co-capital of Moravia. Its well-preserved historic centre, protected as an urban monument reservation, together with its university and its UNESCO-listed Holy Trinity Column, make it a grounded base for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "karlovy-vary",
+    name: "Karlovy Vary",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Bohemia",
+    population: "Pending integration",
+    intro:
+      "Karlovy Vary is a spa city in the Bohemian region of Czechia, set at the confluence of the Ohre and Tepla rivers and known for its hot springs. Its well-preserved historic centre and spa cultural landscape, part of a transnational UNESCO World Heritage listing of European spa towns, make it a grounded base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // austria
+  buildNeutralCitySeed({
+    slug: "salzburg",
+    name: "Salzburg",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Salzburg State",
+    population: "Pending integration",
+    intro:
+      "Salzburg is a city in western Austria, lying on the Salzach River near the German border at the foot of the Alps, with a Baroque historic centre listed as a UNESCO World Heritage Site. Its preserved Altstadt, the hilltop Hohensalzburg fortress, and its position at the edge of the alpine ranges make it a natural anchor for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "innsbruck",
+    name: "Innsbruck",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Tyrol",
+    population: "Pending integration",
+    intro:
+      "Innsbruck is the capital of the Austrian state of Tyrol, set on the River Inn in a broad alpine valley where the Wipp Valley opens toward the Brenner Pass. Ringed by the Karwendel mountains to the north and surrounding peaks to the south, this renowned winter sports city offers ready alpine access alongside a historic centre, making it a strong base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // greece
+  buildNeutralCitySeed({
+    slug: "heraklion",
+    name: "Heraklion",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Crete",
+    population: "Pending integration",
+    intro:
+      "Heraklion is the administrative capital and largest city of the Greek island of Crete, a coastal port on the Mediterranean with a deep history reaching back to the Minoan civilization. With the nearby Knossos palace, its old harbour, and its position on the island's northern coast, it serves as a practical base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "ioannina",
+    name: "Ioannina",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Epirus",
+    population: "Pending integration",
+    intro:
+      "Ioannina is the capital of the Epirus region in northwestern Greece, a historic university city set on the western shore of Lake Pamvotis. Its lakefront, old town, and surrounding parks and green areas, along with its place in the late Byzantine and Ottoman past, make it a grounded anchor for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // finland
+  buildNeutralCitySeed({
+    slug: "rovaniemi",
+    name: "Rovaniemi",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Lapland",
+    population: "Pending integration",
+    intro:
+      "Rovaniemi is the regional capital of Lapland in northern Finland, located near the Arctic Circle at the confluence of the Kemijoki river and its tributary the Ounasjoki. Set between the hills of Ounasvaara and Korkalovaara in the country's northern interior, it is a significant arctic gateway and a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "jyvaskyla",
+    name: "Jyväskylä",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Central Finland",
+    population: "Pending integration",
+    intro:
+      "Jyvaskyla is the regional capital of Central Finland, a university city set within the Finnish Lakeland. Long known as an educational centre and home to works by the architect Alvar Aalto, its lakeland setting makes it a strong anchor for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // belgium
+  buildNeutralCitySeed({
+    slug: "ostend",
+    name: "Ostend",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "West Flanders",
+    population: "Pending integration",
+    intro:
+      "Ostend is a coastal city and municipality in the province of West Flanders, on the North Sea coast of Belgium. As the largest city on the Belgian coast, with its harbour and seafront boroughs, it serves as a practical base for local-first discovery and nearby weekend trips along the coast.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "mechelen",
+    name: "Mechelen",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Antwerp Province",
+    population: "Pending integration",
+    intro:
+      "Mechelen is a historic city in the province of Antwerp in the Flemish Region of Belgium, set on the river Dyle along the urban axis between Brussels and Antwerp. A prominent city of historical art and a centre of Northern Renaissance production, it sits within easy reach of Flanders' other art cities, making it a strong anchor for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // denmark
+  buildNeutralCitySeed({
+    slug: "roskilde",
+    name: "Roskilde",
+    countrySlug: "denmark",
+    countryName: "Denmark",
+    region: "Zealand",
+    population: "Pending integration",
+    intro:
+      "Roskilde is a historic city on the Danish island of Zealand, west of Copenhagen, set at the head of Roskilde Fjord and known for its UNESCO-listed Gothic cathedral. With its cathedral housing the tombs of Danish monarchs, its Viking Ship Museum, and its fjord setting, it is a grounded base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // croatia
+  buildNeutralCitySeed({
+    slug: "dubrovnik",
+    name: "Dubrovnik",
+    countrySlug: "croatia",
+    countryName: "Croatia",
+    region: "Dalmatia",
+    population: "Pending integration",
+    intro:
+      "Dubrovnik is a city in southern Dalmatia, Croatia, set on the Adriatic Sea and serving as the centre of the Dubrovnik-Neretva County. Its walled Old City, a UNESCO World Heritage Site of medieval architecture and fortifications, sits above the coast and makes a natural base for exploring the surrounding Adriatic seaport and nearby coastline.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // slovakia
+  buildNeutralCitySeed({
+    slug: "zilina",
+    name: "Žilina",
+    countrySlug: "slovakia",
+    countryName: "Slovakia",
+    region: "Žilina Region",
+    population: "Pending integration",
+    intro:
+      "Žilina is a city in north-western Slovakia on the Váh river, the seat of the Žilina Region and an important industrial centre close to the Czech and Polish borders. Lying within the Upper Váh region of tourism, it serves as a regional gateway to the surrounding river valley and mountain country for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // slovenia
+  buildNeutralCitySeed({
+    slug: "maribor",
+    name: "Maribor",
+    countrySlug: "slovenia",
+    countryName: "Slovenia",
+    region: "Lower Styria",
+    population: "Pending integration",
+    intro:
+      "Maribor is the largest city of the traditional region of Lower Styria in Slovenia, set on the Drava river and serving as the economic, administrative, educational, and cultural centre of the country's east. Its old centre and wine-growing surroundings, together with its position as a gateway toward nearby hills and mountains, make it a practical base for weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // hungary
+  buildNeutralCitySeed({
+    slug: "pecs",
+    name: "Pécs",
+    countrySlug: "hungary",
+    countryName: "Hungary",
+    region: "Southern Transdanubia",
+    population: "Pending integration",
+    intro:
+      "Pécs is a city in south-western Hungary on the slopes of the Mecsek mountains, close to the border with Croatia, and the administrative and economic centre of Baranya County with the country's oldest university. Its layered heritage, including a UNESCO-listed Roman-era Christian necropolis and a wealth of Ottoman-era buildings, together with the surrounding Mecsek hills, makes it a strong base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // bulgaria
+  buildNeutralCitySeed({
+    slug: "sofia",
+    name: "Sofia",
+    countrySlug: "bulgaria",
+    countryName: "Bulgaria",
+    region: "Sofia City Province",
+    population: "Pending integration",
+    intro:
+      "Sofia is the capital and largest city of Bulgaria, set in the Sofia Valley at the foot of Vitosha mountain in the western part of the country, west of the Iskar river. Surrounded by mountains and home to many mineral springs and major cultural institutions, it serves as a natural base for nearby weekend trips into the encircling ranges and historic sites.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // lithuania
+  buildNeutralCitySeed({
+    slug: "kaunas",
+    name: "Kaunas",
+    countrySlug: "lithuania",
+    countryName: "Lithuania",
+    region: "Kaunas County",
+    population: "Pending integration",
+    intro:
+      "Kaunas is a city in Lithuania at the confluence of the country's two largest rivers, the Nemunas and the Neris, and an important centre of economic, academic, and cultural life with several universities. Its interwar modernist core is a UNESCO World Heritage Site, and its riverside setting near the Kaunas Reservoir makes it a practical anchor for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // united-kingdom
+  buildNeutralCitySeed({
+    slug: "bath",
+    name: "Bath",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Somerset",
+    population: "Pending integration",
+    intro:
+      "Bath is a city in Somerset, England, set in the valley of the River Avon and known for and named after its Roman-built baths, a spa town inscribed as a UNESCO World Heritage Site. Its Georgian architecture in Bath stone, the Roman baths, and the surrounding valley and skyline make it a natural base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "newcastle-upon-tyne",
+    name: "Newcastle upon Tyne",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Tyne and Wear",
+    population: "Pending integration",
+    intro:
+      "Newcastle upon Tyne is a city in Tyne and Wear, England, set on the northern bank of the River Tyne opposite Gateshead and serving as the most populous settlement of the Tyneside conurbation and North East England. With a university and a riverside cultural quarter, and its position in the wider North East, it offers a practical base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "nottingham",
+    name: "Nottingham",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Nottinghamshire",
+    population: "Pending integration",
+    intro:
+      "Nottingham is a city and the county town of Nottinghamshire in the East Midlands of England, a UNESCO City of Literature with three universities and a long industrial and cultural heritage. Its historic centre and well-connected rail and tram links make it a practical base for nearby weekend exploration across the surrounding region.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "exeter",
+    name: "Exeter",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Devon",
+    population: "Pending integration",
+    intro:
+      "Exeter is a cathedral city and the county town of Devon in South West England, situated on the River Exe and home to two campuses of the University of Exeter. With its medieval cathedral, historic centre, and position as a gateway to the wider Devon countryside, it serves as a natural base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "plymouth",
+    name: "Plymouth",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Devon",
+    population: "Pending integration",
+    intro:
+      "Plymouth is a port city on the south coast of Devon in southwest England, set between the rivers Plym and Tamar where they reach the sea. Its working harbour, naval heritage, university, and position on the edge of Devon and Cornwall make it a practical base for exploring the surrounding coastline and estuaries on nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "norwich",
+    name: "Norwich",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Norfolk",
+    population: "Pending integration",
+    intro:
+      "Norwich is a cathedral city and the county town of Norfolk in eastern England, lying on the River Wensum and serving as the principal settlement of East Anglia. Its medieval core, cathedral, and surrounding low-lying Norfolk countryside make it a natural base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "swansea",
+    name: "Swansea",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Wales",
+    population: "Pending integration",
+    intro:
+      "Swansea is a port and coastal city in south-west Wales, set along Swansea Bay with the Gower Peninsula within its boundaries. Its bayfront, university, and ready access to the Gower coast and the wider Swansea Bay region make it a strong base for nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "inverness",
+    name: "Inverness",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Scottish Highlands",
+    population: "Pending integration",
+    intro:
+      "Inverness is a city in the Scottish Highlands, regarded as the capital of the Highlands and lying within the Great Glen where the River Ness reaches the Beauly Firth. Its riverside setting and gateway position to the surrounding Highland landscape, including nearby Culloden Moor, make it a practical base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "derry",
+    name: "Derry",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Northern Ireland",
+    population: "Pending integration",
+    intro:
+      "Derry, officially Londonderry, is a walled city in Northern Ireland set on both banks of the River Foyle, with its old walled core on the west bank and Waterside on the east. Its historic walls, riverfront, and closeness to the County Donegal border make it a natural base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // ireland
+  buildNeutralCitySeed({
+    slug: "killarney",
+    name: "Killarney",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Munster",
+    population: "Pending integration",
+    intro:
+      "Killarney is a town in County Kerry in southwestern Ireland, set on the shore of Lough Leane within Killarney National Park and beneath MacGillycuddy's Reeks. Its lakes, mountains, and sites such as Ross Castle, Muckross House, and the Gap of Dunloe, together with its place on the Ring of Kerry, make it a strong base for nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kilkenny",
+    name: "Kilkenny",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Leinster",
+    population: "Pending integration",
+    intro:
+      "Kilkenny is a medieval city in the province of Leinster in Ireland, built on both banks of the River Nore. Its castle, cathedrals, round tower, and craft and design workshops make its compact historic core a natural base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "sligo",
+    name: "Sligo",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Connacht",
+    population: "Pending integration",
+    intro:
+      "Sligo is a coastal seaport and the county town of County Sligo in the western province of Connacht, Ireland. Its position on the west coast, surrounding countryside, and cultural ties to the poet W. B. Yeats make it a practical base for nearby weekend exploration of coast and hills.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "athlone",
+    name: "Athlone",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Leinster",
+    population: "Pending integration",
+    intro:
+      "Athlone is a town on the River Shannon near the southern shore of Lough Ree, on the border of County Roscommon and County Westmeath in Ireland's Midlands. Its riverside setting near the geographical centre of the country makes it a central base for nearby weekend trips along the Shannon and its lakes.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "eea-air", "nasa-power", "ipcc-urban"],
+  }),
+  // united-states
+  buildNeutralCitySeed({
+    slug: "buffalo",
+    name: "Buffalo",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "New York",
+    population: "Pending integration",
+    intro:
+      "Buffalo is a city in Western New York on the eastern shore of Lake Erie, at the head of the Niagara River on the Canada–United States border. Its lakefront, architecture, university, and parks, together with its proximity to the Niagara River, make it a strong base for nearby weekend exploration.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "providence",
+    name: "Providence",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Rhode Island",
+    population: "Pending integration",
+    intro:
+      "Providence is the capital and largest city of Rhode Island, set at the mouth of the Providence River at the head of Narragansett Bay and home to several institutions of higher learning. Its historic port setting, university districts, and position on the bay make it a natural base for local-first discovery and nearby weekend trips along the New England coast.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "richmond",
+    name: "Richmond",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Virginia",
+    population: "Pending integration",
+    intro:
+      "Richmond is the capital of Virginia, located at the fall line of the James River and shaped by a long colonial, Revolutionary, and Civil War history. Its riverfront, historic neighborhoods such as Jackson Ward, and downtown civic core make it a strong anchor for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "savannah",
+    name: "Savannah",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Georgia",
+    population: "Pending integration",
+    intro:
+      "Savannah is a historic Atlantic seaport on the Savannah River in coastal Georgia, the oldest city in the state and once the capital of the colonial Province of Georgia. Its cobblestone streets, parklike squares, and large historic district, laid out on the original Oglethorpe Plan, make it a natural base for local-first discovery and nearby weekend trips along the coast.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "charleston",
+    name: "Charleston",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "South Carolina",
+    population: "Pending integration",
+    intro:
+      "Charleston is a historic port city on Charleston Harbor in South Carolina, an inlet of the Atlantic Ocean formed by the confluence of the Ashley, Cooper, and Wando rivers. Its well-preserved architecture, the City Market and the Battery, Gullah heritage, and harbor setting with Fort Sumter make it a strong anchor for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "asheville",
+    name: "Asheville",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North Carolina",
+    population: "Pending integration",
+    intro:
+      "Asheville is the largest city in Western North Carolina, set at the confluence of the French Broad and Swannanoa rivers within the surrounding Appalachian highlands. Its mountain setting and surrounding rivers and ranges make it a natural base for local-first discovery and nearby weekend trips into the surrounding countryside.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "knoxville",
+    name: "Knoxville",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Tennessee",
+    population: "Pending integration",
+    intro:
+      "Knoxville is a university city on the Tennessee River within the Appalachian Mountains, the first capital of Tennessee and home to the University of Tennessee's flagship campus. As a repository of Appalachian culture and a gateway to Great Smoky Mountains National Park, it is a strong anchor for local-first exploration and nearby weekend trips into the mountains.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "chattanooga",
+    name: "Chattanooga",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Tennessee",
+    population: "Pending integration",
+    intro:
+      "Chattanooga is a city on the Tennessee River in southeastern Tennessee, set at the transition between the ridge-and-valley Appalachians and the Cumberland Plateau and known as the Scenic City. Its river setting amid surrounding mountains, ridges, and valleys makes it a natural base for local-first discovery and nearby weekend trips into the Appalachian landscape.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "grand-rapids",
+    name: "Grand Rapids",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Michigan",
+    population: "Pending integration",
+    intro:
+      "Grand Rapids is a city on the Grand River in West Michigan, lying east of Lake Michigan and serving as the economic and cultural hub of its region. Its riverfront, museums and sculpture gardens, and proximity to the Lake Michigan shore make it a strong anchor for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "spokane",
+    name: "Spokane",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Washington",
+    population: "Pending integration",
+    intro:
+      "Spokane is the largest city in eastern Washington, set along the Spokane River adjacent to the Selkirk Mountains and west of the Rocky Mountain foothills, and serves as the economic and cultural center of the Inland Northwest. Its riverfront parks, historic downtown, and access to the surrounding mountains make it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "santa-fe",
+    name: "Santa Fe",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "New Mexico",
+    population: "Pending integration",
+    intro:
+      "Santa Fe is the capital of New Mexico, set at the foothills of the Sangre de Cristo Mountains and recognized as the oldest state capital in the United States and a cultural center of the Southwest. Its historic plaza and district, adobe-style Pueblo Revival architecture, museums and art galleries, and mountain setting make it a strong anchor for local-first exploration and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "albuquerque",
+    name: "Albuquerque",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "New Mexico",
+    population: "Pending integration",
+    intro:
+      "Albuquerque is the largest city in New Mexico, set in the Albuquerque Basin where the Rio Grande and its bosque flow through the middle of town, flanked by the Sandia Mountains to the east and the West Mesa to the west. Its high-desert setting, historic old town along the old Camino Real, and the surrounding river corridor and mountains make it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "burlington-vt",
+    name: "Burlington",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Vermont",
+    population: "Pending integration",
+    intro:
+      "Burlington is the largest city in Vermont and a regional college town on Lake Champlain, home to the University of Vermont and Champlain College. Its lakefront setting and position between the water and the surrounding New England countryside make it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "anchorage",
+    name: "Anchorage",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Alaska",
+    population: "Pending integration",
+    intro:
+      "Anchorage is the largest city in Alaska, set in Southcentral Alaska at the terminus of Cook Inlet on a peninsula formed by the Knik Arm to the north and the Turnagain Arm to the south. With nearly all of Chugach State Park within its boundaries and its coastal-and-mountain setting, it is a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "honolulu",
+    name: "Honolulu",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Hawaii",
+    population: "Pending integration",
+    intro:
+      "Honolulu is the capital and largest city of Hawaii, situated along the southeast coast of the island of Oahu in the Pacific Ocean, with a natural harbor that long made it a desirable port. Its coastal island setting, beaches, and surrounding natural scenery make it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "des-moines",
+    name: "Des Moines",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "Iowa",
+    population: "Pending integration",
+    intro:
+      "Des Moines is the capital and largest city of Iowa, named for and set on the Des Moines River, and a major center of the insurance and financial services industries. As the state capital at the heart of the surrounding region, it serves as a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  // canada
+  buildNeutralCitySeed({
+    slug: "hamilton-ontario",
+    name: "Hamilton",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Ontario",
+    population: "Pending integration",
+    intro:
+      "Hamilton is a port city in Ontario at the west end of Lake Ontario, within the Greater Toronto and Hamilton Area and the densely populated region known as the Golden Horseshoe. With the Royal Botanical Gardens, the Bruce Trail, and its lakeside and waterfall settings nearby, it is a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "st-johns",
+    name: "St. John's",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Newfoundland and Labrador",
+    population: "Pending integration",
+    intro:
+      "St. John's is the capital and largest city of Newfoundland and Labrador, located on the eastern tip of the Avalon Peninsula and counted among the oldest cities in North America. Its historic harbour, coastal setting on the easternmost edge of the continent, and rich maritime history make it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "charlottetown",
+    name: "Charlottetown",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Prince Edward Island",
+    population: "Pending integration",
+    intro:
+      "Charlottetown is the capital and largest city of Prince Edward Island and the site of the Charlottetown Conference, giving it the motto Birthplace of Confederation. Its coastal island setting and historic core make it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "thunder-bay",
+    name: "Thunder Bay",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Ontario",
+    population: "Pending integration",
+    intro:
+      "Thunder Bay is a port city in Northwestern Ontario on Lake Superior, sitting at the head of the bay for which it is named and at the end of Great Lakes navigation on the Canadian side. Its lakeside setting, port history, and position on the Kaministiquia River make it a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "gatineau",
+    name: "Gatineau",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Quebec",
+    population: "Pending integration",
+    intro:
+      "Gatineau is a city in southwestern Quebec on the northern bank of the Ottawa River, directly across from Ottawa and part of Canada's National Capital Region. As the largest city in the Outaouais region and a gateway toward the surrounding parkland, it is a natural base for local-first discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "windsor-ontario",
+    name: "Windsor",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Ontario",
+    population: "Pending integration",
+    intro:
+      "Windsor is a city in southwestern Ontario, Canada, set on the south bank of the Detroit River directly across from Detroit, Michigan, and marking the southwestern end of the Quebec City-Windsor Corridor. Its riverfront, border crossing, and place within the diverse, automotive-rooted communities of Essex County make it a practical base for exploring the surrounding region and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kitchener",
+    name: "Kitchener",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Ontario",
+    population: "Pending integration",
+    intro:
+      "Kitchener is a city in Ontario, Canada, that serves as the regional seat within the Regional Municipality of Waterloo and forms a twin-city pairing with neighbouring Waterloo. Its position west of Toronto and its close ties with the surrounding Waterloo Region towns make it a convenient base for local discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "sherbrooke",
+    name: "Sherbrooke",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "Quebec",
+    population: "Pending integration",
+    intro:
+      "Sherbrooke is a city in southern Quebec, Canada, at the confluence of the Saint-Francois and Magog rivers and the primary economic, cultural, and institutional centre of the Estrie region known as the Eastern Townships. Surrounded by mountains, rivers, and lakes with nearby ski hills and parks such as Mont-Bellevue, it is a natural base for local discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "epa-naaqs", "nasa-power", "ipcc-urban"],
+  }),
+  // australia
+  buildNeutralCitySeed({
+    slug: "mackay",
+    name: "Mackay",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Queensland",
+    population: "Pending integration",
+    intro:
+      "Mackay is a city on the Coral Sea coast of Queensland, Australia, set on the Pioneer River within the Mackay-Whitsunday region and long shaped by its sugar industry and South Sea Islander, Italian, and Maltese communities. With its harbour and riverfront, the Eungella National Park and Finch Hatton Gorge in its hinterland, and the Great Barrier Reef offshore, it is a strong base for local discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bunbury",
+    name: "Bunbury",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Western Australia",
+    population: "Pending integration",
+    intro:
+      "Bunbury is a coastal city in Western Australia, set at the southern end of the Leschenault Estuary and serving as the main port for the wider South West region. Its natural harbour, estuary setting, and role as a gateway to the surrounding South West make it a useful base for local discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "albury",
+    name: "Albury",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "New South Wales",
+    population: "Pending integration",
+    intro:
+      "Albury is a regional city in the Murray region of New South Wales, Australia, set on the northern side of the Murray River and forming the twin city of Albury-Wodonga across the Victoria-New South Wales border. Long a transport link between the two states and positioned on the Hume Highway, it is a practical base for local discovery and nearby weekend trips along the river country.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "port-macquarie",
+    name: "Port Macquarie",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "New South Wales",
+    population: "Pending integration",
+    intro:
+      "Port Macquarie is a coastal city on the Mid North Coast of New South Wales, Australia, set on the Tasman Sea at the mouth of the Hastings River and the eastern end of the Oxley Highway. Its river-mouth setting and coastal location between Sydney and Brisbane make it a convenient base for local discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "mildura",
+    name: "Mildura",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Victoria",
+    population: "Pending integration",
+    intro:
+      "Mildura is a regional city in north-west Victoria, Australia, set on the Victorian side of the Murray River and the largest settlement in the Sunraysia region, an irrigation district known for its grape and citrus horticulture. With a central business district close to the riverbanks and surrounding irrigated country described as an oasis in the desert, it is a useful base for local discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  }),
+  // new-zealand
+  buildNeutralCitySeed({
+    slug: "rotorua",
+    name: "Rotorua",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Bay of Plenty",
+    population: "Pending integration",
+    intro:
+      "Rotorua is a city in the Bay of Plenty region of New Zealand's North Island, set on the southern shores of Lake Rotorua within the Rotorua Caldera and long known for its geothermal activity and Maori cultural heritage. With nearby geysers, hot mud pools, lakes, and Maori cultural sites such as Ohinemutu and Whakarewarewa, it is a strong base for local discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  }),
+  buildNeutralCitySeed({
+    slug: "new-plymouth",
+    name: "New Plymouth",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Taranaki",
+    population: "Pending integration",
+    intro:
+      "New Plymouth is the major city of the Taranaki region on the west coast of New Zealand's North Island, serving as the region's service and financial centre on the Tasman Sea coast. With its coastal walkway, Pukekura Park, the Len Lye Centre, and views of Mount Taranaki nearby, it is a natural base for local discovery and nearby weekend trips.",
+    outlook:
+      "Use this record as a planning anchor for local-first research and nearby weekend-rest discovery, verifying access, transport, and seasonal context with official sources.",
+    scores: { overall: 50, affordability: 50, airQuality: 50, energy: 50, resilience: 50 },
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);
