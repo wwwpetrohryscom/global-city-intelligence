@@ -451,6 +451,14 @@ const seeds: readonly Seed[] = [
   { citySlug: "rotorua", cityName: "Rotorua", countryName: "New Zealand", visualFocus: "general_city_context", extra: ["nz-police-111"], context: "arrival and neighborhood planning links", updatedDate: BATCH_8_UPDATED_DATE },
   { citySlug: "new-plymouth", cityName: "New Plymouth", countryName: "New Zealand", visualFocus: "general_city_context", extra: ["nz-police-111"], context: "arrival and neighborhood planning links", updatedDate: BATCH_8_UPDATED_DATE },
 
+
+  // === Target-region completeness pass (2026-06-12): visual-guide gap closure ===
+  { citySlug: "leuven", cityName: "Leuven", countryName: "Belgium", visualFocus: "family_visual_context", extra: ["eea-air"], context: "arrival and neighborhood planning links, moving-to research", updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "maastricht", cityName: "Maastricht", countryName: "Netherlands", visualFocus: "neighborhood_visual_context", extra: ["eea-air"], context: "arrival and neighborhood planning links", updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "pisa", cityName: "Pisa", countryName: "Italy", visualFocus: "family_visual_context", extra: ["eea-air"], context: "arrival and neighborhood planning links, moving-to research", updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "queenstown", cityName: "Queenstown", countryName: "New Zealand", visualFocus: "general_city_context", extra: ["nz-police-111"], context: "arrival and neighborhood planning links", updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "sheffield", cityName: "Sheffield", countryName: "United Kingdom", visualFocus: "general_city_context", extra: ["eea-air"], context: "arrival and neighborhood planning links", updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "napier", cityName: "Napier", countryName: "New Zealand", visualFocus: "general_city_context", extra: ["nz-police-111"], context: "arrival and neighborhood planning links", updatedDate: BATCH_8_UPDATED_DATE },
 ];
 
 export const visualCityGuidePages: VisualCityGuidePage[] = seeds.map((seed) => ({

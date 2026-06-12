@@ -276,6 +276,16 @@ export const NEARBY_WEEKEND_PLACE_DETAIL_SLUGS: readonly NearbyWeekendPlace["slu
   "cape-hillsborough-national-park-near-mackay",
   "woomargama-national-park-near-albury",
   "egmont-national-park-near-new-plymouth",
+  // Target-region completeness pass (2026-06-12)
+  "richmond-park-london",
+  "pentland-hills-edinburgh",
+  "phoenix-park-dublin",
+  "sitges-near-barcelona",
+  "cascais-near-lisbon",
+  "muir-woods-near-san-francisco",
+  "indiana-dunes-near-chicago",
+  "fiordland-near-queenstown",
+  "hoge-kempen-national-park-near-maastricht",
 ] as const;
 
 const DETAIL_SLUG_SET: ReadonlySet<string> = new Set(
