@@ -5011,3 +5011,141 @@ statistics, or rankings.
 - Image-backed alternates held in reserve from the candidate pool
   (e.g. graz, lille-adjacent French regional cities, tarragona, burgas,
   debrecen) remain available for a future batch six.
+
+## 2026-06-12: local-first cluster for batch-five cities (nearby places, detail pages, weekend trips, visual guides)
+
+### Scope
+
+This batch turns the 100 batch-five cities (added the same day) from
+isolated city records into complete local-first discovery nodes. For
+every batch-five city it adds nearby weekend places, a weekend-trip
+page, and a visual-guide page, plus dedicated detail pages for the
+verified protected/natural areas. The geographic scope stays inside
+the supported regions (EU / UK / IE / US / CA / AU / NZ). No new
+cities, countries, restaurants, hotels, events, schedules, prices,
+weather data, or AI imagery were introduced.
+
+### Counts (before → after)
+
+- nearby weekend places: **264 → 432 (+168)**
+- nearby place detail pages: **175 → 253 (+78)**
+- nearby place reference facts: **139 → 217 (+78)**
+- weekend-trip pages: **241 → 341 (+100)**
+- visual-guide pages: **240 → 340 (+100)**
+
+### Batch-five city coverage achieved
+
+- nearby weekend places: **100 / 100** batch-five cities (≥1 each;
+  68 cities received 2 places, 32 received 1)
+- weekend-trip pages: **100 / 100**
+- visual-guide pages: **100 / 100**
+
+Every batch-five city now has the full cluster: `/cities/[city]`,
+`/cities/[city]/nearby-weekend-places`, `/cities/[city]/weekend-trip`,
+and `/cities/[city]/visual-guide`.
+
+### Local-first place selection
+
+Places were proposed per city (officially protected natural areas:
+national/regional/nature parks, nature reserves, protected landscapes,
+mountain ranges, lake districts, river valleys, coastlines, islands,
+wetlands, biosphere reserves), then verified deterministically against
+Wikidata + Wikimedia Commons:
+
+1. English Wikipedia title → Wikidata QID.
+2. Wikidata P625 coordinates on both the place and its connected city,
+   with a great-circle **proximity gate (≤170 km)** so only genuinely
+   reachable escapes are kept (resulting bands: 127 nearby, 38 regional,
+   3 longer-weekend).
+3. Wikidata P856 official URL (→ `verificationStatus: "verified"`;
+   places without an official URL are `"partial"`).
+4. Wikidata P18 image → Commons `imageinfo`, run through the repo's own
+   `validate-nearby-places.py` filters (license accept-list, reject
+   tokens, suspicious-filename patterns — montage/flag/map/town-core/
+   flora-fauna macro/etc. — and a 600px minimum).
+5. Wikidata P31 (designation), P814 (IUCN category), P571/P1619
+   (inception year) for reference facts.
+
+300 candidates were resolved; 213 passed all gates. The final 168 were
+selected to cover every city while keeping country breadth (round-robin
+second places). Two cities whose first candidates failed the image gate
+(`gdynia`, `constanta`) were re-resolved against alternate nearby
+protected areas.
+
+Category mix of the 168: nature 63, mountain 36, lake 28, waterfront
+20, beach 10, island 6, park 5.
+
+### Image coverage
+
+- **168 / 168 (100%)** new nearby places ship with a verified Wikimedia
+  Commons image (independently attributed; no city-image substitution,
+  no fallback, no placeholder).
+- License mix: CC BY-SA 3.0 ×73, CC BY-SA 4.0 ×35, CC BY-SA 2.0 ×14,
+  CC BY 3.0 ×12, CC BY 2.0 ×8, CC BY 2.5 ×7, CC BY-SA 2.5 ×5, CC0 ×2,
+  CC BY 4.0 ×2, plus regional CC ports. Zero NC/ND/FAL/GFDL/unknown.
+
+### Source coverage
+
+- Every place cites the shared registry sources (`un-habitat`,
+  `ipcc-urban`, `wikidata`, `wikimedia-commons`) and carries a
+  `wikidataId`. The 78 verified places additionally carry an
+  official-authority `officialUrl` (Wikidata P856).
+- 78 reference-fact records (designation / IUCN category / inception
+  year) were added, each keyed to a verified detail slug with a
+  matching `wikidataId`.
+
+### Detail pages
+
+The 78 new detail pages are exactly the new places that satisfy the
+audited eligibility rules (verificationStatus "verified" + wikidataId +
+officialUrl + coordinates + verified image). They render the existing
+detail template (image + attribution, official link, coordinates,
+reference facts, connected-city context) — no thin pages, no new route
+types.
+
+### Countries expanded (27)
+
+united-states 22, united-kingdom 16, germany 14, canada 13, france 12,
+australia 9, spain 9, italy 8, ireland 7, poland 7, sweden 6,
+netherlands 5, portugal 5, austria 4, finland 4, belgium 3, czechia 3,
+greece 3, new-zealand 3, romania 3, bulgaria 2, denmark 2, hungary 2,
+lithuania 2, slovakia 2, croatia 1, slovenia 1.
+
+### Internal linking
+
+All linking flows through existing helpers/templates (no hardcoded
+routes): city → nearby/weekend-trip/visual-guide, weekend-trip and
+visual-guide → nearby places, nearby directory → detail pages, detail →
+connected-city context. The new data appears automatically in
+`/nearby-weekend-places`, the per-city cluster pages, and the sitemap.
+
+### Sitemap impact
+
+- +78 `/nearby-weekend-places/[slug]` detail URLs (via
+  `NEARBY_WEEKEND_PLACE_DETAIL_SLUGS`).
+- +100 `/cities/[city]/nearby-weekend-places`, +100
+  `/cities/[city]/weekend-trip`, +100 `/cities/[city]/visual-guide`.
+- No duplicate or orphan URLs; emitted by the existing sitemap
+  iteration.
+
+### Static page count
+
+- before: **4,659**
+- after: **5,037 (+378 = 78 detail + 100 nearby-city + 100 weekend-trip
+  + 100 visual-guide)**
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (432 records)
+- `npm run validate:media` — PASS (cities 435/467, countries unchanged)
+- `npm run validate:community-media` — PASS (28 values)
+- `npm run typecheck` — clean
+- `npm run lint` — clean (0 problems)
+- `npm run build` — clean (5,037 / 5,037 static pages)
+
+### Structured data / performance
+
+Detail and cluster pages reuse the existing WebPage + BreadcrumbList +
+ItemList architecture only — no TouristAttraction/Event/Review/Offer
+schema, no maps, no runtime fetches, no new dependencies; all pages
+remain static.
