@@ -12,7 +12,9 @@ export const countries: Country[] = [
     intro:
       "Denmark's country profile emphasizes clean-energy governance, high public trust, and urban systems that support healthy daily life.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["copenhagen",
+    citySlugs: [
+      "roskilde",
+      "copenhagen",
       "aarhus",
       "odense",
       "aalborg",
@@ -34,6 +36,22 @@ export const countries: Country[] = [
       "The United States profile combines strong data transparency, large regional variation, and city-level contrasts in affordability, air quality, and climate risk.",
     sources: ["un-habitat", "nasa-power", "epa-naaqs", "ipcc-urban"],
     citySlugs: [
+      "buffalo",
+      "providence",
+      "richmond",
+      "savannah",
+      "charleston",
+      "asheville",
+      "knoxville",
+      "chattanooga",
+      "grand-rapids",
+      "spokane",
+      "santa-fe",
+      "albuquerque",
+      "burlington-vt",
+      "anchorage",
+      "honolulu",
+      "des-moines",
       "new-york",
       "san-francisco",
       "los-angeles",
@@ -115,7 +133,14 @@ export const countries: Country[] = [
     intro:
       "France's city profile benefits from European air-quality reporting, transit-rich urban regions, and strong policy pressure toward lower-emission mobility.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["paris",
+    citySlugs: [
+      "annecy",
+      "avignon",
+      "nancy",
+      "la-rochelle",
+      "nimes",
+      "clermont-ferrand",
+      "paris",
       "lyon",
       "marseille",
       "toulouse",
@@ -149,7 +174,18 @@ export const countries: Country[] = [
     intro:
       "The United Kingdom's profile combines strong financial and creative industries with mature climate policy, transit reach, and rising housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "itu-connectivity"],
-    citySlugs: ["london", "edinburgh",
+    citySlugs: [
+      "bath",
+      "newcastle-upon-tyne",
+      "nottingham",
+      "exeter",
+      "plymouth",
+      "norwich",
+      "swansea",
+      "inverness",
+      "derry",
+      "london",
+      "edinburgh",
       "manchester",
       "birmingham",
       "bristol",
@@ -200,7 +236,17 @@ export const countries: Country[] = [
     intro:
       "Germany's profile combines strong public services, progressive clean-energy policy, and varied affordability across major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["berlin", "munich", "hamburg",
+    citySlugs: [
+      "regensburg",
+      "wurzburg",
+      "lubeck",
+      "potsdam",
+      "mainz",
+      "augsburg",
+      "kiel",
+      "berlin",
+      "munich",
+      "hamburg",
       "frankfurt",
       "cologne",
       "stuttgart",
@@ -233,7 +279,20 @@ export const countries: Country[] = [
     intro:
       "Canada's profile combines strong public services, low-carbon electricity in many provinces, and rising housing-cost pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities"],
-    citySlugs: ["toronto", "vancouver", "montreal", "calgary", "ottawa",
+    citySlugs: [
+      "hamilton-ontario",
+      "st-johns",
+      "charlottetown",
+      "thunder-bay",
+      "gatineau",
+      "windsor-ontario",
+      "kitchener",
+      "sherbrooke",
+      "toronto",
+      "vancouver",
+      "montreal",
+      "calgary",
+      "ottawa",
       "quebec-city",
       "edmonton",
       "winnipeg",
@@ -261,6 +320,11 @@ export const countries: Country[] = [
       "Australia's profile combines high quality of life and outdoor amenity with elevated housing pressure and meaningful climate exposure from heat and bushfire.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban"],
     citySlugs: [
+      "mackay",
+      "bunbury",
+      "albury",
+      "port-macquarie",
+      "mildura",
       "sydney",
       "melbourne",
       "brisbane",
@@ -297,7 +361,13 @@ export const countries: Country[] = [
     intro:
       "The Netherlands combines compact transit-oriented cities, advanced water-management engineering, and steady renewable-energy progress into a stable urban operating environment.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["amsterdam", "rotterdam", "utrecht",
+    citySlugs: [
+      "leiden",
+      "delft",
+      "nijmegen",
+      "amsterdam",
+      "rotterdam",
+      "utrecht",
       "the-hague",
       "eindhoven",
       "groningen",
@@ -321,7 +391,17 @@ export const countries: Country[] = [
     intro:
       "Spain's profile blends walkable, transit-rich cities, strong renewable resources, and growing climate-adaptation work focused on heat and water stress.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["barcelona", "madrid", "valencia", "seville", "bilbao",
+    citySlugs: [
+      "san-sebastian",
+      "toledo",
+      "salamanca",
+      "a-coruna",
+      "girona",
+      "barcelona",
+      "madrid",
+      "valencia",
+      "seville",
+      "bilbao",
       "malaga",
       "zaragoza",
       "granada",
@@ -364,7 +444,11 @@ export const countries: Country[] = [
     intro:
       "Austria's profile is shaped by compact cultural cities, mature public-transit networks, and strong renewable electricity led by hydro generation.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["vienna"],
+    citySlugs: [
+      "salzburg",
+      "innsbruck",
+      "vienna",
+    ],
     metrics: [
       { label: "Public transit", value: "Very strong", description: "Reliable transit reduces private-vehicle dependence in major cities." },
       { label: "Energy mix", value: "Low-carbon", description: "Hydropower supports a favorable starting point for transition." },
@@ -517,7 +601,13 @@ export const countries: Country[] = [
     intro:
       "New Zealand's profile combines high quality of life, low-carbon electricity, and outdoor amenity, balanced by housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "ipcc-urban", "iea-cities"],
-    citySlugs: ["auckland", "wellington", "christchurch", "dunedin",
+    citySlugs: [
+      "rotorua",
+      "new-plymouth",
+      "auckland",
+      "wellington",
+      "christchurch",
+      "dunedin",
       "tauranga",
       "queenstown",
       "napier",
@@ -540,7 +630,18 @@ export const countries: Country[] = [
     intro:
       "Italy's profile combines deep cultural heritage, walkable historic cities, growing renewable build-out, and active climate-adaptation work in heat-exposed regions.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["rome", "milan", "bologna", "florence", "naples",
+    citySlugs: [
+      "venice",
+      "como",
+      "bolzano",
+      "ravenna",
+      "perugia",
+      "lucca",
+      "rome",
+      "milan",
+      "bologna",
+      "florence",
+      "naples",
       "turin",
       "genoa",
       "palermo",
@@ -571,7 +672,17 @@ export const countries: Country[] = [
     intro:
       "Portugal's profile blends mild Atlantic climate, strong renewable resources, and rising remote-work and digital-services activity in major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["lisbon", "porto", "braga", "coimbra", "faro", "aveiro"],
+    citySlugs: [
+      "funchal",
+      "guimaraes",
+      "evora",
+      "lisbon",
+      "porto",
+      "braga",
+      "coimbra",
+      "faro",
+      "aveiro",
+    ],
     metrics: [
       { label: "Renewable resource", value: "Very strong", description: "Wind and solar potential support a steady national clean-energy build-out." },
       { label: "Climate context", value: "Mild Atlantic", description: "Coastal moderation supports a comfortable urban operating environment." },
@@ -588,7 +699,10 @@ export const countries: Country[] = [
     intro:
       "Czechia's profile combines compact historic cities, mature public transit, and an active energy transition supported by EU framing and city-level programs.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["prague",
+    citySlugs: [
+      "olomouc",
+      "karlovy-vary",
+      "prague",
       "brno",
       "ostrava",
     ],
@@ -608,7 +722,15 @@ export const countries: Country[] = [
     intro:
       "Poland's profile features fast-growing tech and services activity, expanding transit networks, and an active energy transition supported by EU funds.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["warsaw", "krakow", "gdansk", "wroclaw",
+    citySlugs: [
+      "torun",
+      "gdynia",
+      "szczecin",
+      "olsztyn",
+      "warsaw",
+      "krakow",
+      "gdansk",
+      "wroclaw",
       "lodz",
       "poznan",
       "katowice",
@@ -858,7 +980,11 @@ export const countries: Country[] = [
     intro:
       "Sweden's profile combines stable public institutions, low-carbon electricity, and transit-oriented cities with mature climate and digital-readiness policy.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["stockholm",
+    citySlugs: [
+      "helsingborg",
+      "umea",
+      "linkoping",
+      "stockholm",
       "malmo",
       "gothenburg",
       "uppsala",
@@ -897,7 +1023,10 @@ export const countries: Country[] = [
     intro:
       "Finland's profile combines strong public services, an advanced digital and education sector, and steady progress on clean-energy and adaptation policy.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "itu-connectivity"],
-    citySlugs: ["helsinki",
+    citySlugs: [
+      "rovaniemi",
+      "jyvaskyla",
+      "helsinki",
       "tampere",
       "turku",
       "oulu",
@@ -918,7 +1047,11 @@ export const countries: Country[] = [
     intro:
       "Belgium's profile combines dense transit networks, European institutional context, and mature public health, with rising housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["brussels", "antwerp",
+    citySlugs: [
+      "ostend",
+      "mechelen",
+      "brussels",
+      "antwerp",
       "ghent",
       "bruges",
       "leuven",
@@ -941,7 +1074,12 @@ export const countries: Country[] = [
     intro:
       "Ireland's profile combines strong technology services, growing renewable wind capacity, and high housing pressure in major cities.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban", "iea-cities"],
-    citySlugs: ["dublin",
+    citySlugs: [
+      "killarney",
+      "kilkenny",
+      "sligo",
+      "athlone",
+      "dublin",
       "cork",
       "galway",
       "limerick",
@@ -1150,7 +1288,11 @@ export const countries: Country[] = [
     intro:
       "Greece's country profile combines a strategic Mediterranean location, EU policy alignment, and city-level contrasts shaped by tourism, services, and a growing remote-work scene.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["athens"],
+    citySlugs: [
+      "heraklion",
+      "ioannina",
+      "athens",
+    ],
     metrics: [
       { label: "Regional context", value: "Mediterranean EU", description: "EU alignment with strong Mediterranean climate and maritime context." },
       { label: "Data confidence", value: "Moderate", description: "European reporting supports indexable comparisons; verified layers are integrated progressively." },
@@ -1167,7 +1309,10 @@ export const countries: Country[] = [
     intro:
       "Hungary's profile pairs Central-European geographic positioning with a strong service-economy core, useful for comparing relocation, remote-work, and regional-hub contexts.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["budapest"],
+    citySlugs: [
+      "pecs",
+      "budapest",
+    ],
     metrics: [
       { label: "Regional context", value: "Central Europe", description: "Strategic position between Western and Eastern Europe." },
       { label: "Data confidence", value: "Moderate", description: "European monitoring supports comparable indicators; verified layers are added progressively." },
@@ -1184,7 +1329,10 @@ export const countries: Country[] = [
     intro:
       "Romania's profile combines EU membership with rapid digital-services growth, useful for users comparing Eastern European cost context and remote-work relocation.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["bucharest",
+    citySlugs: [
+      "sibiu",
+      "constanta",
+      "bucharest",
       "cluj-napoca",
       "brasov",
       "timisoara",
@@ -1223,7 +1371,9 @@ export const countries: Country[] = [
     intro:
       "Croatia's profile blends Mediterranean coastal context with EU membership, useful for users comparing relocation, tourism-economy, and regional-hub contexts.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["zagreb",
+    citySlugs: [
+      "dubrovnik",
+      "zagreb",
       "split",
     ],
     metrics: [
@@ -1242,7 +1392,10 @@ export const countries: Country[] = [
     intro:
       "Slovenia's profile combines Alpine geography with EU membership and a compact services-oriented economy, useful for comparing Central-European city contexts.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["ljubljana"],
+    citySlugs: [
+      "maribor",
+      "ljubljana",
+    ],
     metrics: [
       { label: "Regional context", value: "Alpine EU", description: "Alpine geography within the EU monitoring and reporting framework." },
       { label: "Data confidence", value: "Moderate to high", description: "European reporting supports comparable indicators." },
@@ -1259,7 +1412,11 @@ export const countries: Country[] = [
     intro:
       "Slovakia's profile sits in the Central-European industrial and services corridor, useful for users comparing relocation and remote-work options in the Visegrád region.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["bratislava", "kosice"],
+    citySlugs: [
+      "zilina",
+      "bratislava",
+      "kosice",
+    ],
     metrics: [
       { label: "Regional context", value: "Central Europe", description: "Visegrád context with manufacturing and services activity." },
       { label: "Data confidence", value: "Moderate", description: "European monitoring supports comparable indicators." },
@@ -1310,7 +1467,11 @@ export const countries: Country[] = [
     intro:
       "Lithuania's profile reflects a Baltic EU context with growing financial-services activity, useful for users comparing relocation and regional-hub contexts.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["vilnius", "klaipeda"],
+    citySlugs: [
+      "kaunas",
+      "vilnius",
+      "klaipeda",
+    ],
     metrics: [
       { label: "Regional context", value: "Baltic EU", description: "Baltic geography within the EU regulatory and monitoring frame." },
       { label: "Services growth", value: "Notable", description: "Financial and digital services expand activity." },
@@ -1667,7 +1828,11 @@ export const countries: Country[] = [
     intro:
       "Bulgaria's country profile combines EU membership with a Balkan-Black-Sea urban geography; city pages benefit from European monitoring frameworks paired with a transparent fallback for emerging local datasets.",
     sources: ["un-habitat", "nasa-power", "eea-air", "ipcc-urban"],
-    citySlugs: ["plovdiv", "varna"],
+    citySlugs: [
+      "sofia",
+      "plovdiv",
+      "varna",
+    ],
     metrics: [
       { label: "Regional context", value: "Southeastern Europe", description: "Balkan urban geography with growing EU integration." },
       { label: "Urban policy context", value: "EU-aligned", description: "EU air-quality and adaptation reporting shapes city-level framing." },

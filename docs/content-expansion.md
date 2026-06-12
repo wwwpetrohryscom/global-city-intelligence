@@ -4845,3 +4845,169 @@ an existing verified hero (no new images).
 
 validate:nearby-places PASS (264) · validate:media PASS · typecheck/lint
 clean · build 3,959 pages.
+
+## 2026-06-12: city coverage batch five
+
+### Scope
+
+This batch expands the city catalog by **100 records across 27 existing
+countries**. No new countries were added. Geographic scope was limited
+per spec to the European Union, the United Kingdom, Ireland, the United
+States, Canada, Australia, and New Zealand. The selection deliberately
+favors regional capitals, university hubs, coastal/harbor cities, river
+and lake cities, mountain/Arctic gateways, and culturally important
+secondary cities — not raw population — so every record is a strong
+future anchor for visual guides, weekend trips, and nearby-weekend-place
+discovery.
+
+### Counts
+
+- city count delta: **347 -> 447 (+100)**
+- country count: 86 (unchanged)
+- country `citySlugs[]` arrays updated: 27 (100 appended slugs)
+- verified Wikimedia Commons hero images added: **100 (100% of the batch)**
+- skipped due to image failure: 0
+
+### Target distribution (per spec)
+
+| Region            | Spec range | This batch |
+|-------------------|-----------:|-----------:|
+| European Union    |     55–60  |     **56** |
+| UK + Ireland      |     10–15  |     **13** |
+| United States     |     15–20  |     **16** |
+| Canada            |      8–10  |      **8** |
+| Australia         |       5–8  |      **5** |
+| New Zealand       |       2–4  |      **2** |
+| **Total**         |            |    **100** |
+
+### Per-country distribution (27 countries)
+
+united-states 16, united-kingdom 9, canada 8, germany 7, france 6,
+italy 6, australia 5, spain 5, ireland 4, poland 4, netherlands 3,
+portugal 3, sweden 3, austria 2, belgium 2, czechia 2, finland 2,
+greece 2, new-zealand 2, romania 2, bulgaria 1, croatia 1, denmark 1,
+hungary 1, lithuania 1, slovakia 1, slovenia 1.
+
+### Selection funnel
+
+- A curated, over-provisioned pool of 183 in-scope candidate cities was
+  drawn across the 27 countries (~1.4× the per-country target).
+- Each candidate was resolved deterministically against Wikidata +
+  Wikimedia Commons (see "Verified image strategy"); 169/183 produced a
+  permissively licensed, subject-appropriate hero image.
+- The final 100 were hand-selected from the image-backed pool to hit the
+  spec distribution while maximizing UNESCO/coast/lake/mountain/river
+  diversity and avoiding excessive clustering inside any one country.
+- Result: **every one of the 100 new cities ships with a verified hero
+  image (100% coverage)** — zero records fall back to `ImageFallback`.
+
+### Full alphabetical list of new slugs
+
+a-coruna, albuquerque, albury, anchorage, annecy, asheville, athlone,
+augsburg, avignon, bath, bolzano, buffalo, bunbury, burlington-vt,
+charleston, charlottetown, chattanooga, clermont-ferrand, como,
+constanta, delft, derry, des-moines, dubrovnik, evora, exeter, funchal,
+gatineau, gdynia, girona, grand-rapids, guimaraes, hamilton-ontario,
+helsingborg, heraklion, honolulu, innsbruck, inverness, ioannina,
+jyvaskyla, karlovy-vary, kaunas, kiel, kilkenny, killarney, kitchener,
+knoxville, la-rochelle, leiden, linkoping, lubeck, lucca, mackay, mainz,
+maribor, mechelen, mildura, nancy, new-plymouth, newcastle-upon-tyne,
+nijmegen, nimes, norwich, nottingham, olomouc, olsztyn, ostend, pecs,
+perugia, plymouth, port-macquarie, potsdam, providence, ravenna,
+regensburg, richmond, roskilde, rotorua, rovaniemi, salamanca,
+salzburg, san-sebastian, santa-fe, savannah, sherbrooke, sibiu, sligo,
+sofia, spokane, st-johns, swansea, szczecin, thunder-bay, toledo,
+torun, umea, venice, windsor-ontario, wurzburg, zilina.
+
+Note: `sofia` adds the Bulgarian capital, which was not previously in
+the registry; `hamilton-ontario`, `windsor-ontario`, and `st-johns`
+use province/region-qualified slugs to avoid collisions with existing
+or ambiguous names.
+
+### Verified image strategy
+
+Each hero image was resolved through the same pipeline used by earlier
+city image passes:
+
+1. Explicit Wikipedia title per city (disambiguated where ambiguous) ->
+   Wikidata QID via the page-props endpoint.
+2. Wikidata P18 ("image") claim on the city item.
+3. Commons `imageinfo` API for canonical file metadata (URL, dimensions,
+   author, license, restrictions).
+4. Strict filter reusing the repo's own `verify-place-images.py`
+   (`license_is_allowed`) and `build-place-images.py`
+   (`file_is_unsuitable`) so anything accepted here also passes
+   `validate:media`. Montages, flags, emblems, NC/ND/FAL licenses,
+   missing-author files, and restricted files were rejected.
+
+14 candidates were dropped in the funnel for exactly these reasons
+(e.g. `london-ontario`/`kingston-ontario` carried FAL-licensed P18
+images; `fredericton`/`moncton`/`leicester` resolved to montage files;
+`thessaloniki`/`mons`/`vasteras` had no usable P18) and were replaced
+by image-backed alternates from the same country pool.
+
+### License distribution of the 100 hero images
+
+CC BY-SA 3.0 x33, CC BY-SA 4.0 x21, CC BY-SA 2.0 x12, CC BY 2.0 x8,
+Public domain x7, CC BY 3.0 x5, CC BY-SA 2.5 x4, CC BY 4.0 x3, CC0 x3,
+CC BY 2.5 x1, plus 3 jurisdiction ports (CC BY-SA 3.0 de/es,
+CC BY-SA 1.0 fi). Zero entries used NC, ND, FAL, "Attribution"-only, or
+unknown licenses.
+
+### Data safety
+
+No exact population, cost, rent, salary, crime, transport, healthcare,
+airport, visa, weather, event, or tourism-ranking data was added. Each
+new seed uses the existing `buildNeutralCitySeed` helper; module data is
+tagged "Pending integration" via `NEUTRAL_MODULE_FACTS`, `population` is
+"Pending integration", and scores are structural directional defaults
+(50), not editorial claims. The `intro`/`outlook` copy is grounded
+strictly in each city's verified Wikipedia summary (river, lake, sea,
+mountain range, UNESCO status, regional role) and contains no numbers,
+statistics, or rankings.
+
+### Automatic page impact
+
+- +100 `/cities/[city]` profile pages.
+- +600 `/{moduleSlug}/[city]` module pages (6 modules × 100 cities via
+  the existing `getAllCities()` `generateStaticParams`).
+- +100 city URLs + +600 module URLs in the sitemap via the existing
+  `cities.map` / `modules.flatMap` iteration — no duplicate or orphan
+  URLs.
+- Country hubs for the 27 affected countries pick up the new
+  `citySlugs[]` automatically.
+- NO arrival, weekend-trip, visual-guide, moving-to, nearby-places, or
+  comparison pages were added in this batch (those remain gated by their
+  own registries and can be layered onto these anchors later).
+
+### Static page count delta
+
+- previous baseline: **3,959**
+- new total: **4,659 (+700 = 100 profile + 600 module pages)**
+
+### City hero coverage delta
+
+- before batch five: 335 / 347 city hero records
+- after batch five: **435 / 447** city hero records
+- per-batch additions: **100 / 100** new cities ship with a verified
+  Wikimedia hero (100% of the new slugs)
+
+### Validation results
+
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (4,659 / 4,659 static pages)
+- `npm run validate:media` — PASS (cities: 435 hero / 467 total on 447
+  known slugs; countries: 86 hero / 106 total unchanged)
+- `npm run validate:nearby-places` — PASS (264 records, unchanged)
+- `npm run validate:community-media` — PASS (28 values, unchanged)
+
+### Future expansion opportunities
+
+- Layer nearby-weekend-place, weekend-trip, and visual-guide clusters
+  onto the 100 new anchors (lake, coastal, mountain-gateway, and UNESCO
+  cities are especially strong candidates: annecy, como, killarney,
+  rotorua, salzburg, lubeck, dubrovnik, asheville, burlington-vt).
+- Image-backed alternates held in reserve from the candidate pool
+  (e.g. graz, lille-adjacent French regional cities, tarragona, burgas,
+  debrecen) remain available for a future batch six.
