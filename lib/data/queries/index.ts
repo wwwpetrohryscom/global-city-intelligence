@@ -289,3 +289,18 @@ export {
   getSubmissionsForCity,
   getSubmissionsForNearbyPlace,
 } from "@/lib/data/community-photo-submissions";
+
+// Community photo publication candidates — Phase 4 bridge data-access (foundation only).
+// Re-exported so the publication integrity guard in
+// lib/data/publication-candidates.ts runs during `next build`.
+export {
+  getArchivedCandidates,
+  getCandidateForSubmission,
+  getCandidatesByStatus,
+  getCandidatesForCity,
+  getCandidatesForNearbyPlace,
+  getPublicationCandidateById,
+  getPublicationCandidates,
+  getPublishedCandidates,
+  getReadyCandidates,
+} from "@/lib/data/publication-candidates";

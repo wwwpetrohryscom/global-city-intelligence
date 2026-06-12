@@ -5539,3 +5539,107 @@ nearby-place-targeted, one dual-target.
 - `npm run validate:media` — PASS
 - `npm run typecheck` / `npm run lint` — clean
 - `npm run build` — clean (5,214 / 5,214 static pages, unchanged)
+
+## 2026-06-12: community photo publication foundations
+
+### Scope
+
+Architecture-only Phase 4 — the bridge between an approved
+`CommunityPhotoSubmission` and a published `Photo`. Static, build-safe,
+validation-driven. No uploads, auth, storage, databases, backend, server
+actions, moderation UI, routes, pages, sitemap, or metadata changes; nothing
+is actually published.
+
+### Publication model (`types/publication.ts`)
+
+- `PublicationStatus` = `candidate | ready | published | archived`.
+- `PublicationCandidate` — id, submissionId, citySlug?, nearbyPlaceSlug?,
+  title, description, photographerName, `attribution` (the shared
+  `PhotoAttribution`), captureDate?, licenseIntent?, altText?, status,
+  createdAt, updatedAt.
+- `PublicationRule` (declarative rule descriptor), `PublicationValidationError`,
+  `PublicationValidationResult`, `PublicationResult` (the pure outcome of a
+  modeled publish — carries the would-be `Photo`).
+
+### Candidate model
+
+A candidate represents an APPROVED submission that is eligible to become a
+`Photo`. Its `attribution` is the same shape a community `Photo` uses, so a
+ready candidate maps directly onto the photo layer.
+
+### Validation rules (`lib/publication/`)
+
+`PUBLICATION_RULES` declares: submission approved, valid city/nearby target,
+title, description, photographer, complete attribution, valid status (+ an
+alt-text warning). Pure validators (`lib/publication/validation.ts`):
+`validatePublicationCandidate`, `validatePublicationRules`,
+`validatePublicationReadiness`, `validatePublicationTransition`. Status machine
+(`rules.ts`): `PUBLICATION_TRANSITIONS` + `canPublicationTransition`.
+
+### Submission → Publication bridge
+
+`submissionToPublicationCandidate(submission)` returns a candidate ONLY for
+approved submissions (else null), synthesising attribution from
+`photographerName` + `licenseIntent` (`licenseFromIntent`) with a
+`community-submission:<id>` source reference.
+
+### Publication → Photo bridge
+
+`candidateToPhotoMetadata(candidate)` returns the metadata portion of a
+community `Photo` (sourceType "community", status "approved",
+`sourceSubmissionId`). `buildPhotoFromCandidate(candidate, image)` combines it
+with an uploaded image's render payload (`src`/`width`/`height`) — supplied by
+a LATER upload phase. `publishCandidate(candidate, image)` models the publish
+attempt purely and returns a `PublicationResult` (no persistence).
+
+### Publication workflow
+
+`draft → submitted → under_review → approved → candidate → ready → published →
+(gallery)`. Documented and modeled; no automatic publishing.
+
+### Gallery integration
+
+A published candidate becomes a community `Photo` that flows into the EXISTING
+gallery layer (`lib/data/photo-galleries.ts`) — official and community photos
+share the same `Photo` model. No gallery UI or routes were changed.
+
+### Build safety (`lib/data/publication-candidates.ts`)
+
+`assertPublicationIntegrity` runs at module evaluation (re-exported from
+`lib/data/queries`) so **`next build` fails** on: duplicate candidate ids,
+duplicate submissionId, a submissionId that is missing or not approved, invalid
+city/nearby references, missing target, invalid status, or incomplete required
+fields/attribution. The `validate:publication` script enforces the same rules.
+
+### Data-access helpers
+
+`getPublicationCandidates`, `getPublicationCandidateById`,
+`getCandidatesByStatus`, `getReadyCandidates`, `getPublishedCandidates`,
+`getArchivedCandidates`, `getCandidatesForCity`, `getCandidatesForNearbyPlace`,
+`getCandidateForSubmission`. Static; re-exported from `lib/data/queries`.
+
+### Sample dataset
+
+6 fictional, clearly-marked (`isExample: true`) candidates, each derived from a
+distinct approved example submission, across all four statuses (2 candidate,
+2 ready, 1 published, 1 archived). 5 approved example submissions were added to
+the Phase-3 dataset (now 14 submissions, 6 approved) to seed them.
+
+### Future roadmap
+
+Phase 1-2 ✓ photos + galleries · Phase 3 ✓ submissions · **Phase 4 ✓
+publication foundations (this pass)** · Phase 5 → uploads · Phase 6 →
+moderation UI · Phase 7 → publishing pipeline · Phase 8 → community galleries.
+No rewrites required — `buildPhotoFromCandidate` already accepts the future
+upload payload.
+
+### Validation results
+
+- `npm run validate:publication` — PASS (6 candidates)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:nearby-places` — PASS (439)
+- `npm run validate:media` — PASS
+- `npm run typecheck` / `npm run lint` — clean
+- `npm run build` — clean (5,214 / 5,214 static pages, unchanged)

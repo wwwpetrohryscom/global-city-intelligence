@@ -156,3 +156,13 @@ export type {
   SubmissionValidationResult,
   SubmissionValidationSeverity,
 } from "./submissions";
+// Community photo publication bridge (Phase 4).
+export type {
+  PublicationCandidate,
+  PublicationResult,
+  PublicationRule,
+  PublicationStatus,
+  PublicationValidationError,
+  PublicationValidationResult,
+  PublicationValidationSeverity,
+} from "./publication";
