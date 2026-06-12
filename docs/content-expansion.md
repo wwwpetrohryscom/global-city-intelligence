@@ -5446,3 +5446,96 @@ The architecture needs no rewrite to reach later phases.
 - `npm run lint` — clean
 - `npm run build` — clean (5,214 / 5,214 static pages, unchanged — no new
   routes or pages)
+
+## 2026-06-12: community photo submission foundations
+
+### Scope
+
+Architecture-only Phase 3 — the draft → review → approval lifecycle a
+contributor's photo moves through BEFORE any upload, auth, account, storage,
+database, backend, moderation UI, or publishing exists. Static, build-safe,
+validation-driven. No routes, pages, sitemap, or metadata changes.
+
+### Submission model (`types/submissions.ts`)
+
+- `CommunityPhotoSubmissionDraft`: id, citySlug?, nearbyPlaceSlug?, title,
+  description, photographerName, sourceFileName, sourceFileSize, captureDate?,
+  notes?, createdAt, updatedAt, isExample? (`sourceFileName`/`sourceFileSize`
+  are metadata only — no real file).
+- `CommunityPhotoSubmission` extends the draft with `status`, `submittedAt?`,
+  and the review block (`reviewState`, `reviewedAt?`, `reviewReason?`,
+  `reviewNotes?`).
+- This is the PUBLIC, lightweight lifecycle record. It is deliberately
+  distinct from the heavier internal admin `CommunityPhotoSubmission` in
+  `types/community-media.ts` (which carries userId / storageKey / safetyFlags
+  for the Phase 4-5 moderation queue). To avoid a barrel name clash, the new
+  record is imported from `@/types/submissions`; the existing one is untouched.
+
+### Workflow model (`lib/submissions/workflow.ts`)
+
+- `SubmissionStatus` = `draft | submitted | under_review | approved | rejected`.
+- `SUBMISSION_TRANSITIONS` encodes allowed status moves; `canTransition(from,to)`
+  guards them.
+- `STATUS_REVIEW_CONSISTENCY` maps each status to its valid review states;
+  `isReviewStateConsistent` enforces no inconsistent state can exist.
+
+### Review model
+
+- `SubmissionReviewState` = `not_reviewed | in_review | accepted | declined |
+  changes_requested`, plus `reviewedAt?`, `reviewReason?`, `reviewNotes?` on
+  the submission. Future-moderation-compatible; no moderation implemented.
+
+### Validation model (`lib/submissions/validation.ts`)
+
+Pure, synchronous validators returning `SubmissionValidationResult`
+(`{ ok, errors, warnings }`) with detailed `SubmissionValidationError`
+(`{ field, code, message, severity }`): `validateSubmissionDraft` (empty
+guard, length limits, file metadata), `validateSubmissionReferences`,
+`validateSubmissionState` (enum + consistency), `validateSubmissionTransition`,
+`validateSubmissionRecord` (composes all), `findDuplicateSubmissionMetadata`.
+Content-safety preparation only — no AI, no image analysis.
+
+### Publication flow (documented, not implemented)
+
+`draft → submitted → under_review → approved → (future) Community Photo`.
+An approved submission becomes a published `Photo` (sourceType "community")
+only once a real upload exists — a later phase. No publishing implemented.
+
+### Build safety (`lib/data/community-photo-submissions.ts`)
+
+`assertSubmissionIntegrity` runs at module evaluation (the module is
+re-exported from `lib/data/queries`, imported by built pages) so **`next build`
+fails** on: duplicate ids, invalid city/nearby references, missing target,
+invalid status/reviewState, inconsistent state, empty or over-length text, or
+bad file metadata. The `validate:submissions` script enforces the same rules.
+
+### Data-access layer
+
+`getAllSubmissions`, `getSubmissionById`, `getSubmissionsByStatus`,
+`getDraftSubmissions`, `getApprovedSubmissions`, `getSubmissionsForCity`,
+`getSubmissionsForNearbyPlace`, `getApprovedSubmissionsForCity`,
+`getApprovedSubmissionsForNearbyPlace`. Static only; re-exported from
+`lib/data/queries`.
+
+### Sample dataset
+
+9 fictional, clearly-marked (`isExample: true`) example records — no real
+users, no uploads — covering all five statuses (3 draft, 2 submitted,
+2 under_review, 1 approved, 1 rejected), some city-targeted, some
+nearby-place-targeted, one dual-target.
+
+### Future roadmap
+
+- Phase 1-2 ✓ official photos + galleries · Phase 3 ✓ submission architecture
+  (this pass) · Phase 4 → uploads · Phase 5 → moderation · Phase 6 →
+  publishing · Phase 7 → community galleries. No rewrites required.
+
+### Validation results
+
+- `npm run validate:submissions` — PASS (9 records)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:nearby-places` — PASS (439)
+- `npm run validate:media` — PASS
+- `npm run typecheck` / `npm run lint` — clean
+- `npm run build` — clean (5,214 / 5,214 static pages, unchanged)

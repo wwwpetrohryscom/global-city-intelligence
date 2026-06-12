@@ -274,3 +274,18 @@ export {
   hasCityPhotos,
   hasNearbyPlacePhotos,
 } from "@/lib/data/photo-galleries";
+
+// Community photo submissions — Phase 3 lifecycle data-access (foundation only).
+// Re-exported so the submission integrity guard in
+// lib/data/community-photo-submissions.ts runs during `next build`.
+export {
+  getAllSubmissions,
+  getApprovedSubmissions,
+  getApprovedSubmissionsForCity,
+  getApprovedSubmissionsForNearbyPlace,
+  getDraftSubmissions,
+  getSubmissionById,
+  getSubmissionsByStatus,
+  getSubmissionsForCity,
+  getSubmissionsForNearbyPlace,
+} from "@/lib/data/community-photo-submissions";
