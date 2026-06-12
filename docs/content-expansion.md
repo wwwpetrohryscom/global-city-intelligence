@@ -5149,3 +5149,119 @@ Detail and cluster pages reuse the existing WebPage + BreadcrumbList +
 ItemList architecture only — no TouristAttraction/Event/Review/Offer
 schema, no maps, no runtime fetches, no new dependencies; all pages
 remain static.
+
+## 2026-06-12: target-region completeness pass
+
+### Scope
+
+A gap-closing pass that brings **target-region** local-first coverage
+to **100%** on every cluster dimension, following the platform
+completeness audit (which scored 98/100). No new cities, countries, or
+route types were introduced; only missing records were filled using the
+existing architecture and the established Wikidata → Wikimedia Commons
+verification pipeline.
+
+### Gaps closed
+
+The audit identified a small set of pre-existing target-region gaps
+(all outside the batch-five cohort, which was already 100% complete):
+
+- **Hero images (10 cities):** aix-en-provence, columbus, detroit,
+  liverpool, montpellier, napier, san-antonio, saskatoon, victoria,
+  wollongong.
+- **Nearby-place coverage (4 cities):** ghent, leuven, maastricht, pisa.
+- **Weekend-trip pages (5 cities):** leuven, maastricht, pisa,
+  queenstown, sheffield.
+- **Visual-guide pages (6 cities):** leuven, maastricht, napier, pisa,
+  queenstown, sheffield.
+- **Detail-page promotions (8 verified, eligible places):**
+  richmond-park-london, pentland-hills-edinburgh, phoenix-park-dublin,
+  sitges-near-barcelona, cascais-near-lisbon, muir-woods-near-san-francisco,
+  indiana-dunes-near-chicago, fiordland-near-queenstown.
+
+### Counts (before → after)
+
+- hero images: **435 → 445 (+10)**
+- nearby weekend places: **432 → 439 (+7)**
+- nearby detail pages: **253 → 262 (+9)**
+- reference facts: **217 → 226 (+9)**
+- weekend-trip pages: **341 → 346 (+5)**
+- visual-guide pages: **340 → 346 (+6)**
+- static pages: **5,037 → 5,061 (+24 = 4 nearby-city + 9 detail + 5 weekend + 6 visual)**
+
+### Target-region completeness (before → after)
+
+| Dimension | Before | After |
+|---|---|---|
+| Hero image | 335/345 (97.1%) | **345/345 (100%)** |
+| Nearby-place page | 341/345 (98.8%) | **345/345 (100%)** |
+| Weekend-trip page | 340/345 (98.6%) | **345/345 (100%)** |
+| Visual-guide page | 339/345 (98.3%) | **345/345 (100%)** |
+
+*(102 non-target-region cities remain outside the cluster by policy.)*
+
+### Hero images
+
+Resolved Wikidata QID → P18, with a **Commons-category (P373) fallback**
+for the 9 cities whose P18 was an unsuitable montage (the original cause
+of the gap); napier resolved directly from P18. The fallback picks the
+largest clean landscape file in the city's Commons category that passes
+the repo's own `file_is_unsuitable` + `license_is_allowed` filters.
+License mix: CC BY-SA 4.0 ×6, Public domain ×3, CC BY 2.0 ×1 — every
+record carries author, license, license URL, source URL, and
+attribution. No fallback/placeholder/AI/stock imagery.
+
+### Nearby places
+
+7 verified natural areas resolved through the standard nearby pipeline
+(Wikidata QID → P625 proximity gate ≤170 km, P856 official URL, P18 →
+Commons image with full filter parity): Bourgoyen-Ossemeersen and
+Donkmeer (ghent), the Dyle valley (leuven), Sint-Pietersberg and Hoge
+Kempen National Park (maastricht), the Apuan Alps and Lake Massaciuccoli
+(pisa). 1 reached `verified` (Hoge Kempen, with P856 official URL) and 6
+are `partial`. All 7 ship a verified Wikimedia image (100% coverage:
+CC BY-SA 3.0 ×6, CC BY 4.0 ×1). Cross-border note: Hoge Kempen National
+Park is in Belgium but anchored to Maastricht, so its `countrySlug` is
+`belgium`.
+
+### Detail pages
+
+The 8 audited eligible places were promoted to
+`NEARBY_WEEKEND_PLACE_DETAIL_SLUGS`, plus the newly verified Hoge Kempen
+National Park (9 total). Each already satisfies the audited criteria
+(verificationStatus "verified" + wikidataId + officialUrl + coordinates
++ verified image) and now carries reference facts (designation / IUCN
+category / inception year from Wikidata P31/P814/P571). No thin pages;
+same structure as existing detail pages.
+
+### Internal linking
+
+All new records flow through existing helpers/templates — city →
+nearby/weekend/visual, weekend & visual → nearby, nearby directory →
+detail, detail → connected-city context — and appear automatically in
+`/nearby-weekend-places`, the per-city cluster pages, and the sitemap.
+No routes hardcoded.
+
+### SEO / structured data
+
+Unchanged strategy: every route uses `createMetadata` (canonical +
+OpenGraph); detail/cluster pages emit WebPage + BreadcrumbList (+
+ItemList on directory/city-nearby) only. No TouristAttraction / Event /
+Review / Rating / Offer / TravelAction / Itinerary. Sitemap has no
+duplicate or orphan URLs.
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (439 records)
+- `npm run validate:media` — PASS (cities 445 hero / 477 total)
+- `npm run validate:community-media` — PASS (28 values)
+- `npm run typecheck` — clean
+- `npm run lint` — clean (0 problems)
+- `npm run build` — clean (5,061 / 5,061 static pages)
+
+### Performance / philosophy
+
+No runtime fetches, no new dependencies, no maps/weather/routing
+libraries; all pages static. New copy is neutral, factual, and
+source-grounded (no best/top/must-see/world-class wording, no prices,
+schedules, hours, or weather).

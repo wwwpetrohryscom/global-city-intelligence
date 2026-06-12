@@ -452,6 +452,13 @@ const seeds: readonly Seed[] = [
   { citySlug: "rotorua", cityName: "Rotorua", countryName: "New Zealand", weekendFocus: "culture_context", extra: ["nz-police-111"], updatedDate: BATCH_8_UPDATED_DATE },
   { citySlug: "new-plymouth", cityName: "New Plymouth", countryName: "New Zealand", weekendFocus: "city_break", extra: ["nz-police-111"], updatedDate: BATCH_8_UPDATED_DATE },
 
+
+  // === Target-region completeness pass (2026-06-12): weekend-trip gap closure ===
+  { citySlug: "leuven", cityName: "Leuven", countryName: "Belgium", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "maastricht", cityName: "Maastricht", countryName: "Netherlands", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "pisa", cityName: "Pisa", countryName: "Italy", weekendFocus: "culture_context", extra: ["eea-air"], updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "queenstown", cityName: "Queenstown", countryName: "New Zealand", weekendFocus: "general_weekend_planning", extra: ["nz-police-111"], updatedDate: BATCH_8_UPDATED_DATE },
+  { citySlug: "sheffield", cityName: "Sheffield", countryName: "United Kingdom", weekendFocus: "general_weekend_planning", extra: ["eea-air"], updatedDate: BATCH_8_UPDATED_DATE },
 ];
 
 export const weekendTripPages: WeekendTripCityPage[] = seeds.map((seed) => ({

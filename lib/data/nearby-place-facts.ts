@@ -235,6 +235,16 @@ export const NEARBY_PLACE_FACTS: Record<string, NearbyPlaceFacts> = {
   "cape-hillsborough-national-park-near-mackay": { designation: "national park of Australia", iucnCategory: "III", established: 1985, wikidataId: "Q1034237" },
   "woomargama-national-park-near-albury": { designation: "national park of Australia", iucnCategory: "III", established: 2001, wikidataId: "Q123161" },
   "egmont-national-park-near-new-plymouth": { designation: "national park", iucnCategory: "III", established: 1900, wikidataId: "Q1298247" },
+  // Target-region completeness pass (2026-06-12)
+  "richmond-park-london": { designation: "park", established: 1625, wikidataId: "Q1142072" },
+  "pentland-hills-edinburgh": { designation: "protected area", wikidataId: "Q104781845" },
+  "phoenix-park-dublin": { designation: "park", wikidataId: "Q377937" },
+  "sitges-near-barcelona": { designation: "municipality of Catalonia", wikidataId: "Q15551" },
+  "cascais-near-lisbon": { designation: "municipality of Portugal", wikidataId: "Q273059" },
+  "muir-woods-near-san-francisco": { designation: "National Monument of the United States", iucnCategory: "VI", established: 1908, wikidataId: "Q1195839" },
+  "indiana-dunes-near-chicago": { designation: "United States National Seashore", iucnCategory: "VI", established: 2019, wikidataId: "Q6023179" },
+  "fiordland-near-queenstown": { designation: "national park", iucnCategory: "III", established: 1952, wikidataId: "Q877719" },
+  "hoge-kempen-national-park-near-maastricht": { designation: "National Park Flanders", established: 2006, wikidataId: "Q1332374" },
 };
 
 export function getNearbyPlaceFacts(
