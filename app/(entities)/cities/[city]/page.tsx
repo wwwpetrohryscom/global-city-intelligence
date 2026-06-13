@@ -35,6 +35,10 @@ import {
   getCityRelationshipLabel,
   getCollectionIntentLabel,
   getCollectionsForCity,
+  getRegionalCollectionsForCity,
+  getRegionTypeLabel,
+  getThematicCollectionsForCity,
+  getThemeLabel,
   getRelatedCities,
   getComparisonsForCity,
   getIntentPagesForCity,
@@ -62,6 +66,8 @@ import {
   getCityIntentUrl,
   getCollectionUrl,
   moduleRoute,
+  regionalCollectionRoute,
+  thematicCollectionRoute,
   movingToCityRoute,
   nearbyWeekendPlacesCityRoute,
   neighborhoodPlanningRoute,
@@ -142,6 +148,8 @@ export default async function CityPage({ params }: PageProps) {
       return target ? { ...related, city: target } : null;
     })
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
+  const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
+  const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
 
   return (
     <main>
@@ -454,6 +462,44 @@ export default async function CityPage({ params }: PageProps) {
                   href={cityRoute(related.city.slug)}
                   key={related.citySlug}
                   title={`${related.city.name}, ${related.city.countryName}`}
+                />
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {relatedCollections.length > 0 ? (
+          <section>
+            <SectionHeading
+              description={`Regional discovery collections that include ${city.name} — named natural regions grouping nearby nature, parks, lakes, coasts, and mountains for local-first day and weekend planning.`}
+              title={`Related collections`}
+            />
+            <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+              {relatedCollections.map((collection) => (
+                <LinkCard
+                  description={`${getRegionTypeLabel(collection.regionType)} · ${collection.nearbyPlaces.length} places across ${collection.cities.length} cities.`}
+                  href={regionalCollectionRoute(collection.slug)}
+                  key={collection.slug}
+                  title={collection.title}
+                />
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {themedCollections.length > 0 ? (
+          <section>
+            <SectionHeading
+              description={`Theme-first discovery collections that include ${city.name} — grouped by outdoor interest (mountains, lakes, coasts, forests, national parks) rather than geography.`}
+              title={`Themed collections`}
+            />
+            <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+              {themedCollections.map((collection) => (
+                <LinkCard
+                  description={`${getThemeLabel(collection.themeType)} · ${collection.nearbyPlaces.length} places across ${collection.cities.length} cities.`}
+                  href={thematicCollectionRoute(collection.slug)}
+                  key={collection.slug}
+                  title={collection.title}
                 />
               ))}
             </div>

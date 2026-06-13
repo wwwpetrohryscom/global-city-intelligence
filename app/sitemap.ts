@@ -9,7 +9,9 @@ import {
   getAllComparisons,
   getAllMovingToCityPages,
   getAllNeighborhoodPlanningPages,
+  getAllRegionalCollections,
   getAllSummerTravelPages,
+  getAllThematicCollections,
   getAllVisualCityGuidePages,
   getAllWeekendTripPages,
   getCities,
@@ -31,7 +33,9 @@ import {
   nearbyWeekendPlacesCityRoute,
   neighborhoodPlanningRoute,
   rankingRoute,
+  regionalCollectionRoute,
   staticRoutes,
+  thematicCollectionRoute,
   summerTravelRoute,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -260,6 +264,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const regionalCollectionItems = [
+    {
+      url: absoluteUrl(staticRoutes.regionalCollections),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    ...getAllRegionalCollections().map((collection) => ({
+      url: absoluteUrl(regionalCollectionRoute(collection.slug)),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.74,
+    })),
+  ];
+
+  const thematicCollectionItems = [
+    {
+      url: absoluteUrl(staticRoutes.thematicCollections),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    ...getAllThematicCollections().map((collection) => ({
+      url: absoluteUrl(thematicCollectionRoute(collection.slug)),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.74,
+    })),
+  ];
+
   return [
     ...staticItems,
     ...cityItems,
@@ -275,5 +309,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...visualCityGuideItems,
     ...summerTravelItems,
     ...weekendTripItems,
+    ...regionalCollectionItems,
+    ...thematicCollectionItems,
   ];
 }

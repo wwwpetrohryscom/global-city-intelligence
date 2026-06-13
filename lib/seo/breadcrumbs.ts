@@ -6,6 +6,8 @@ import {
   getCountryBySlug,
   getModuleBySlug,
   getRankingBySlug,
+  getRegionalCollectionBySlug,
+  getThematicCollectionBySlug,
 } from "@/lib/data/queries";
 import {
   arrivalRoute,
@@ -18,7 +20,9 @@ import {
   movingToCityRoute,
   neighborhoodPlanningRoute,
   rankingRoute,
+  regionalCollectionRoute,
   staticRoutes,
+  thematicCollectionRoute,
   summerTravelRoute,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -304,4 +308,39 @@ export function comparisonBreadcrumbs(slug: string): BreadcrumbItem[] {
       href: comparisonRoute(slug),
     },
   ];
+}
+
+export function regionalCollectionBreadcrumbs(slug?: string): BreadcrumbItem[] {
+  const crumbs: BreadcrumbItem[] = [
+    homeCrumb,
+    {
+      name: "Regional collections",
+      href: staticRoutes.regionalCollections,
+    },
+  ];
+
+  if (slug) {
+    const collection = getRegionalCollectionBySlug(slug);
+    crumbs.push({
+      name: collection?.title || "Collection",
+      href: regionalCollectionRoute(slug),
+    });
+  }
+
+  return crumbs;
+}
+
+export function thematicCollectionBreadcrumbs(slug?: string): BreadcrumbItem[] {
+  const crumbs: BreadcrumbItem[] = [
+    homeCrumb,
+    { name: "Themes", href: staticRoutes.thematicCollections },
+  ];
+  if (slug) {
+    const collection = getThematicCollectionBySlug(slug);
+    crumbs.push({
+      name: collection?.title || "Theme",
+      href: thematicCollectionRoute(slug),
+    });
+  }
+  return crumbs;
 }

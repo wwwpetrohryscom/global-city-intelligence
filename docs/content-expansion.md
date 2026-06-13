@@ -5910,3 +5910,479 @@ count is unchanged at 6,443.
 - `npm run lint` — clean
 - `npm run build` — clean (6,443 / 6,443 static pages)
 - build-fails-on-invalid-graph — verified (self-reference → build error)
+
+## 2026-06 nearby place discovery graph
+
+### Scope
+
+A place-to-place discovery network over **all 899 nearby weekend places**
+so a visitor can answer "if I enjoyed this place, where else nearby would
+I plausibly spend a day or a weekend?" — *not* "what is famous?". It is a
+pure data layer plus one new section on the existing nearby-place detail
+page. **No new route families, schemas, or metadata.** Cities, countries,
+hero images, the photo / submission / publication / moderation / upload
+foundations were NOT touched.
+
+### Data model
+
+- [`types/nearby-discovery.ts`](../types/nearby-discovery.ts) — a
+  TypeScript `enum NearbyPlaceRelationshipType` (10 members),
+  `RelatedPlace` (`placeSlug`, `distanceKm`, `relationshipType`),
+  `NearbyPlaceDiscoveryNode`.
+- [`lib/data/nearby-place-discovery-graph.ts`](../lib/data/nearby-place-discovery-graph.ts)
+  — `NEARBY_PLACE_DISCOVERY_GRAPH: Record<string, readonly RelatedPlace[]>`,
+  plus `getRelatedPlaces`, `hasRelatedPlaces`,
+  `getNearbyPlaceRelationshipLabel`.
+- Ten relationship types: `nearby_place`, `same_region`,
+  `same_protected_area_system`, `same_mountain_region`, `same_coastline`,
+  `same_river_system`, `same_lake_region`, `same_ecoregion`,
+  `weekend_alternative`, `cross_border_nature`.
+
+### Counts
+
+- **897 of 899 places** carry a discovery node; **7,797 relationships**;
+  **avg 8.7 links/place** (median 6; 572 places at the 10-link cap).
+- **2 places excluded** with zero catalog neighbours within 1,500 km —
+  `litchfield-national-park-near-darwin`, `kaena-point-near-honolulu`.
+  An honest local-first outcome (no manufactured long-haul links).
+- Relationship-type mix: `weekend_alternative` 3,648 (46.8%),
+  `same_ecoregion` 1,517 (19.5%), `nearby_place` 881 (11.3%),
+  `same_region` 601 (7.7%), `cross_border_nature` 496 (6.4%),
+  `same_protected_area_system` 302 (3.9%), `same_mountain_region`
+  216 (2.8%), `same_lake_region` 77 (1.0%), `same_coastline` 51 (0.7%),
+  `same_river_system` 8 (0.1%).
+
+### Method (fully deterministic)
+
+- Place centres from Wikidata **P625** coordinates (already in the
+  catalog); Wikidata natural-region attributes resolved for all 834
+  unique place QIDs: mountain range **P4552**, body of water **P206**
+  (each typed river / lake / sea by its class), protected-area operator
+  **P137**, parent **P361**, administrative entity **P131**, watercourse
+  **P403/P974**. Same-physical-place catalog duplicates (different slug,
+  same QID) are collapsed to the nearest instance.
+- Edges = great-circle (haversine) nearest neighbours, tiered: nearest
+  within 250 km up to 10; fallback ≤600 km up to 6; fallback ≤1,500 km up
+  to 5. Selection is type-independent.
+- Relationship type by precedence: `cross_border_nature` (different
+  country, ≤120 km, same landform class) → `same_mountain_region`
+  (shared P4552 range, or two mountain places ≤90 km) → `same_river_system`
+  (shared watercourse) → `same_lake_region` (shared lake, or two lake
+  places in a shared district/≤90 km) → `same_coastline` (both genuinely
+  sea-adjacent and on the same sea) → `same_protected_area_system`
+  (shared operator/parent, ≤300 km) → `same_region` (same admin region,
+  ≤180 km) → `same_ecoregion` (same continent + biome band, ≤250 km) →
+  `nearby_place` (≤60 km) → `weekend_alternative`. WWF ecoregion (P1425)
+  is unpopulated on these entities, so `same_ecoregion` uses a documented
+  continent+biome-band proxy. No popularity, traffic, or tourism signal.
+
+### Adversarial audit
+
+The generated graph was reviewed by a multi-agent workflow: ten
+independent geographer-agents verified a stratified sample of each
+relationship type, and a systemic critic synthesised the findings. The
+first pass (~87% label precision) drove deterministic rule fixes —
+sea-adjacency + same-sea gating for `same_coastline`, shared-identifier
+gating for `same_lake_region` / `same_mountain_region`, a distance cap on
+`same_region`, and a landform-class continuity gate on
+`cross_border_nature`. A focused re-audit of the hardened types approved
+the graph for ship: every residual mislabel degrades only to a looser but
+still-relevant nearby suggestion (`weekend_alternative` / `same_region`),
+never to a geographically irrelevant place.
+
+### Build-time integrity guard
+
+`assertNearbyPlaceDiscoveryGraph` runs at module load and is re-exported
+through [`lib/data/queries`](../lib/data/queries/index.ts), so it executes
+during `next build`. It checks: source place exists, ≤10 related, no
+self-reference, no duplicate reference, related place exists, valid
+`relationshipType`, positive `distanceKm`. Verified by injecting a
+self-reference: `next build` failed with
+`Invalid nearby-place discovery graph (1): - …: self-reference`. A
+standalone mirror lives in
+[`scripts/validate-nearby-discovery.py`](../scripts/validate-nearby-discovery.py)
+(`npm run validate:nearby-discovery`).
+
+### Internal linking / SEO
+
+A new "Related places" section on
+[`/nearby-weekend-places/[slug]`](../app/(nearby-weekend-places)/nearby-weekend-places/[slug]/page.tsx)
+renders related places as existing `Card` + `Link` components pointing at
+other `/nearby-weekend-places/[slug]` detail routes. Only edges whose
+target also has a detail page are rendered, so every link resolves: this
+adds **3,936 contextual internal links** across the 644 detail pages
+(avg 6.1 related links per detail page; 641/644 render at least one) using
+only existing components — **no new routes, sitemap entries, schemas, or
+metadata**, so the static page count is unchanged at 6,443. The 7,797-edge
+data layer is complete over all 899 places for any future surface.
+
+### Validation results
+
+- `npm run validate:nearby-discovery` — PASS (897 places, 7,797 relationships)
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:discovery` — PASS (544 cities)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,443 / 6,443 static pages)
+- build-fails-on-invalid-graph — verified (self-reference → build error)
+
+## 2026-06 regional discovery collections
+
+### Scope
+
+A regional discovery layer that groups the existing cities and nearby
+weekend places into **named natural regions** (mountain ranges, coasts,
+lakes, river valleys, national-park systems, forests, islands,
+cross-border landscapes, protected landscapes, weekend-escape regions) so
+a resident can discover where else nearby they could spend a day or a
+weekend. Two new routes (`/collections` hub + `/collections/[slug]`
+detail). The photo / community-photo / submission / publication /
+moderation / upload foundations were NOT touched, and no existing content
+was removed or rewritten.
+
+### Data model
+
+- [`types/regional-collections.ts`](../types/regional-collections.ts) —
+  `RegionType` (10-value union) and `RegionalCollection` (`slug`, `title`,
+  `description`, `regionType`, `cities[]`, `nearbyPlaces[]`,
+  `featuredPlaces[]`, `featuredCities[]`).
+- [`lib/data/regional-collections.ts`](../lib/data/regional-collections.ts)
+  — `REGIONAL_DISCOVERY_COLLECTIONS` + `getAllRegionalCollections`,
+  `getRegionalCollectionBySlug`, `getRegionalCollectionsForCity`,
+  `getRegionalCollectionsForPlace`, `getRegionTypeLabel`.
+- Ten region types: `mountain_region`, `coastal_region`, `lake_region`,
+  `river_region`, `national_park_region`, `forest_region`,
+  `island_region`, `cross_border_region`, `protected_landscape_region`,
+  `weekend_escape_region`.
+
+### Counts
+
+- **91 collections**, every one with ≥5 nearby places (5–30) and ≥2
+  cities. **642 of 899 nearby places** and **378 of 547 cities** are
+  linked into at least one collection.
+- **931 collection→place links** and **733 collection→city links**.
+- Region-type distribution: `cross_border_region` 22,
+  `weekend_escape_region` 17, `mountain_region` 16,
+  `national_park_region` 11, `lake_region` 6,
+  `protected_landscape_region` 6, `coastal_region` 5, `island_region` 4,
+  `forest_region` 3, `river_region` 1.
+
+### Method (fully deterministic)
+
+- Named natural features come from Wikidata: mountain ranges (**P4552**,
+  rolled up via **P361** through "clean" ancestors so sub-ranges
+  aggregate without merging into geological super-belts), seas
+  (**P206**, bays/gulfs rolled to their parent sea), and national parks
+  detected by **P31** instance-of (national park / national-park-system
+  unit — 195 places). A country×category backbone ("{Country} Mountains
+  / Lakes / Coast / Islands / Forests / Nature Escapes", and
+  sub-regional "{Region} …" where a curated `regionName` exists) provides
+  coverage. Cross-border regions are pairwise adjacent-country groupings
+  joined by the audited `cross_border_nature` edges of the nearby-place
+  discovery graph.
+- Every collection is **category-consistent**: members of a single-feature
+  region type all carry a matching nearby-place category. Same-physical-
+  place catalog duplicates (same QID, different city slug) are collapsed
+  to one member. No popularity, traffic, or visitor signal is used.
+
+### Adversarial audit
+
+Generated collections were reviewed by a multi-agent workflow: nine
+geographer-agents verified per-chunk coherence (title is a real region,
+members belong, regionType fits) and a systemic critic synthesised the
+findings; two focused re-audits followed each fix round. The audit drove
+deterministic fixes that materially improved the set: national-park
+collections now contain only P31-verified national parks (non-NP city /
+state / country parks were demoted to `protected_landscape_region` or
+`weekend_escape_region`); mistyped feature collections (an all-lakes
+"Alps", an all-lakes "Italian Lakes", a Provence-massif "Pyrenees") were
+dropped; urban parks (Hyde Park, Stanley Park) were excluded from
+protected landscapes; and duplicate same-physical-place members were
+collapsed.
+
+### Build-time integrity guard
+
+`assertRegionalCollections` runs at module load and is re-exported through
+[`lib/data/queries`](../lib/data/queries/index.ts), so it executes during
+`next build`. It checks: unique slug, valid regionType, ≥5 places, ≥2
+cities, no duplicate place/city refs, every city/place resolves, featured
+subsets — and a **semantic check** that each single-feature region type's
+members carry an allowed category. Verified by injecting a category
+mismatch: `next build` failed with
+`Invalid regional discovery collections (1): - …: place … category lake
+invalid for mountain_region`. A standalone mirror lives in
+[`scripts/validate-collections.py`](../scripts/validate-collections.py)
+(`npm run validate:collections`).
+
+### Internal linking / SEO
+
+New `/collections` hub (grouped by region type) and `/collections/[slug]`
+detail pages (overview, cities, nearby places, related collections,
+internal navigation) reuse the existing design system and emit only
+`WebPage`, `BreadcrumbList`, and `ItemList` schema (a small
+`itemListSchema` helper was added — no new schema types). Reverse
+"Related collections" sections were added to existing city, nearby-place
+detail, weekend-trip, and visual-guide pages (~733 links from city pages,
+~931 from place-detail pages). **+92 static pages** (91 collection detail
+pages + 1 hub), so the build grows from 6,443 to **6,535**; all
+collection routes are added to the sitemap and indexable routes.
+
+### Validation results
+
+- `npm run validate:collections` — PASS (91 collections, 10 region types)
+- `npm run validate:nearby-discovery` — PASS (897 places, 7,797 relationships)
+- `npm run validate:discovery` — PASS (544 cities)
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,535 / 6,535 static pages)
+- build-fails-on-invalid-collection — verified (category mismatch → build error)
+
+## 2026-06 regional collection expansion
+
+### Scope
+
+A coverage-expansion pass over the regional discovery collections — more
+collections, broader city/place coverage, and a new collection-to-
+collection relationship graph. Additive only: no new route families
+(still `/collections` + `/collections/[slug]`), no changed existing
+collection URLs, and the photo / submission / publication / moderation /
+upload / discovery-graph / nearby-discovery-graph architectures were NOT
+touched.
+
+### Before → after
+
+| metric | before | after |
+| --- | --- | --- |
+| collections | 91 | **175** |
+| cities covered | 378 | **407** |
+| places covered | 642 | **842** |
+| collection→place links | 931 | **1,593** |
+| collection→city links | 733 | **1,016** |
+| collection→collection links | 0 | **1,397** |
+| static pages | 6,535 | **6,619** |
+
+### New collection families (all deterministic)
+
+- **City-cluster weekend escapes** ("Weekend Escapes near {City}"):
+  greedy nearest-neighbour clusters of cities within 175 km of an anchor
+  city, pooling their nearby places. The main coverage driver. (An
+  adversarial audit flagged a wider 300 km radius as dishonestly merging
+  distinct regions — e.g. Munich places under "near Freiburg" — so the
+  radius was tightened to 175 km; cluster spans are now ≤ ~325 km.)
+- **Country / sub-region remainders** ("{Country|Region} Weekend
+  Escapes"): nature-recreation places of a country or curated `regionName`
+  not already in a city cluster, so scattered places are still grouped.
+- **Continental category pools** ("European Lakes", "North American
+  Mountains", "European Forests", …): one category pooled across a
+  continent from countries that individually have too few for their own
+  collection — mops up sub-threshold places.
+- These join the existing named-feature families (mountain ranges, seas,
+  P31-verified national parks, protected landscapes, cross-border pairs,
+  lakes, islands, river valleys).
+
+### Rules enforced
+
+Every collection has 5–30 nearby places and 2–15 cities; no duplicate
+place/city references; no near-duplicate collections (Jaccard ≥ 0.85 on
+places, same type); and **no collection is a strict subset of another of
+the same type**. Same-physical-place catalog entries (same Wikidata QID,
+different city slug) are collapsed to one member.
+
+### Collection relationships
+
+Every collection carries `relatedCollections[]` (added to the data model),
+scored deterministically by shared places (×5), shared cities (×2), and
+same region type (×1), capped at 8 — **1,397 links total** (avg 8.0 per
+collection), with no self-references and no orphans (every collection has
+≥1 related). Surfaced on the collection detail page as "Related
+collections"; the existing city / nearby-place / weekend-trip / visual-
+guide → collection integrations are unchanged.
+
+### Semantic validation (extended)
+
+`assertRegionalCollections` (runtime guard, re-exported through
+`lib/data/queries`, so it runs during `next build`) and
+[`scripts/validate-collections.py`](../scripts/validate-collections.py)
+now additionally fail on: category mismatch for single-feature types
+(e.g. a lake_region member that is not a lake); a forest_region member
+whose name is not forest-linked; a river_region member not river-linked;
+place/city counts outside 5–30 / 2–15; a same-type strict subset; a
+related self-reference, duplicate, or unresolved reference; and an orphan
+collection (no relatedCollections). Verified by injection: a related
+self-reference and a non-forest member in a forest_region each fail
+`next build`.
+
+### Coverage ceilings (honest note)
+
+City coverage is bounded at **445**: only 445 of the 547 cities lie in the
+30 countries that have any nearby places; the other 102 cities (e.g.
+Tokyo, Mumbai, São Paulo) are in countries with zero nearby-place
+coverage, so they cannot appear in any nature collection. Place coverage
+is bounded at **857** nature-recreation places (the other 42 are historic
+towns / cultural sites / regional cities, excluded from nature
+collections). The achieved 407 cities and 842 places are at ~91 % and
+~98 % of those ceilings. The 180-collection target is approached (175)
+but constrained by the strict no-subset + no-near-duplicate rules and the
+honest 175 km cluster radius, which together cap the scalable weekend-
+escape family; pushing higher would require looser (less honest) clusters
+or relaxing those rules.
+
+### SEO
+
+Reuses the existing metadata and schema system (`WebPage`,
+`BreadcrumbList`, `ItemList` only — no new schema types) and the existing
+two routes. +84 static pages (6,535 → **6,619**); all new collection
+routes are in the sitemap and indexable routes.
+
+### Validation results
+
+- `npm run validate:collections` — PASS (175 collections, 10 region types, 1,397 related links)
+- `npm run validate:nearby-discovery` — PASS (897 places, 7,797 relationships)
+- `npm run validate:discovery` — PASS (544 cities)
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,619 / 6,619 static pages)
+- build-fails-on-invalid — verified (related self-reference and non-forest member each → build error)
+
+## 2026-06 thematic discovery collections
+
+### Scope
+
+A second discovery layer, **theme-first** rather than geography-first. The
+existing regional collections are unchanged; this adds a parallel system
+that groups the same cities and nearby places around outdoor/nature THEMES
+(mountain escapes, lake escapes, waterfall destinations, alpine / Nordic /
+Mediterranean nature, wildlife areas, hiking areas, …). Two new routes
+(`/themes` + `/themes/[slug]`). The community-photo / submission /
+publication / moderation foundations were NOT modified — only read, for
+future-ready counters.
+
+### Counts
+
+- **164 thematic collections** across **24 theme types** (of 27 allowed;
+  `scenic_drives`, `unesco_nature_areas`, `rural_countryside_escapes` have
+  no qualifying data and are intentionally empty).
+- **853 of 899 places** and **435 of 547 cities** linked.
+- **2,640 collection→place**, **2,132 collection→city**, and **1,960
+  collection→collection** (relatedCollections) links — all above target.
+- Static pages **6,619 → 6,784** (+165: 164 detail pages + 1 hub).
+
+### Theme-type distribution
+
+hiking_areas 25, weekend_nature_retreats 22, nature_photography_spots 21,
+cycling_friendly_areas 19, family_outdoor_escapes 14, mountain_escapes 14,
+national_park_weekends 9, protected_landscapes 7, lake_escapes 6,
+coastal_landscapes 4, island_getaways 4, forest_walks 3,
+cross_border_nature_areas 2, river_valleys 2, sunrise_viewpoints 2,
+wildlife_areas 2, and one each of alpine_landscapes, atlantic_coast_nature,
+great_lakes_nature, mediterranean_nature, nordic_nature, volcanic_landscapes,
+waterfall_destinations, wetlands_marshes.
+
+### Method (deterministic)
+
+- Each theme maps to a deterministic membership rule over the existing 899
+  places: place category, Wikidata classifications (P31 instance-of, P4552
+  mountain range, P206 body of water typed sea/lake/river), and name tokens
+  (waterfall, valley/gorge, volcano, wetland). National parks are P31-
+  verified; alpine = European Alps-range mountains; Nordic = Sweden/Finland/
+  Denmark; Mediterranean/Atlantic = sea-body; Great Lakes = lake body / GL
+  cities; cross-border = the nearby-place discovery graph's
+  `cross_border_nature` edges.
+- Themes are scoped by country, continent, or natural region. City
+  membership is extended through the city discovery graph's
+  mountain/lake/coastal cluster edges. A continental-remainder pass mops up
+  sub-threshold / overflow places. Every collection is **nature-only** (no
+  towns / cultural sites), 5–50 places, 2–50 cities; same-physical-place
+  catalog duplicates (same Wikidata QID) are collapsed. No popularity,
+  rankings, or "best" lists.
+
+### Collection relationships
+
+`relatedCollections[]` (2–15 per collection, 1,960 total) is built from a
+theme-affinity map (e.g. Mountain Escapes → Alpine Landscapes / Hiking
+Areas / Sunrise Viewpoints) plus shared places/cities, with no
+self-references, duplicates, or orphans. Surfaced on the theme detail page
+and as reverse "Themed collections" sections on city, nearby-place detail,
+weekend-trip, and visual-guide pages.
+
+### Future-ready photo counters
+
+Every collection exposes `officialPhotoCount`, `communityPhotoCount`, and
+`photoEligiblePlaceCount`, computed statically from the existing
+community-photo records and detail-page set — no uploads, storage, or
+backend. The build guard checks they are non-negative and that
+photoEligiblePlaceCount ≤ place count; the validator recomputes and
+compares them exactly.
+
+### Coverage ceilings (honest note)
+
+City coverage is bounded at **445** (only 445 of 547 cities lie in the 30
+countries that have any nearby places; the other 102 are in countries with
+zero nearby-place coverage). Place coverage is bounded at **857**
+nature-recreation places. The achieved 435 cities and 853 places are at
+~98 % and ~99.5 % of those ceilings; the ≥500-city target is not reachable
+from the data.
+
+### Build-time integrity guard
+
+`assertThematicCollections` (re-exported through `lib/data/queries`, runs
+during `next build`) enforces: unique slug, valid themeType, 5–50 places,
+2–50 cities, no duplicate refs, every city/place resolves, featured /
+weekend-trip / visual-guide subsets, **nature-only members**, region-theme
+membership (Nordic countries for nordic_nature, European for
+alpine_landscapes), 2–15 related with no self-ref/dup/unresolved, no
+duplicate membership set, and consistent non-negative photo counters. A
+standalone mirror lives in
+[`scripts/validate-thematic-collections.py`](../scripts/validate-thematic-collections.py)
+(`npm run validate:thematic-collections`). Verified by injection: a
+non-nature member and a related self-reference each fail `next build`.
+
+### Adversarial audit
+
+A multi-agent workflow (eight geographer-agents + a synthesis verdict)
+reviewed a 40-collection sample. It approved the layer and flagged three
+deterministic defects, all fixed before commit: nordic_nature wrongly
+included Baltic states (tightened to Sweden/Finland/Denmark), alpine_
+landscapes admitted a New Zealand range (scoped to Europe), and
+atlantic_coast_nature pulled in an inland city (thematic collections are
+now strictly nature-only, enforced by the guard).
+
+### SEO
+
+Reuses the existing metadata + `WebPage` / `BreadcrumbList` / `ItemList`
+schema only (no new schema types) and adds only the two requested routes
+to the sitemap and indexable routes.
+
+### Validation results
+
+- `npm run validate:thematic-collections` — PASS (164 collections, 24 themes, 1,960 related links)
+- `npm run validate:collections` — PASS (175 regional collections)
+- `npm run validate:nearby-discovery` — PASS (897 places, 7,797 relationships)
+- `npm run validate:discovery` — PASS (544 cities)
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,784 / 6,784 static pages)
+- build-fails-on-invalid — verified (non-nature member and related self-reference each → build error)

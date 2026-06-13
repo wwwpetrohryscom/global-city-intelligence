@@ -6,7 +6,9 @@ import {
   getAllCollections,
   getAllMovingToCityPages,
   getAllNeighborhoodPlanningPages,
+  getAllRegionalCollections,
   getAllSummerTravelPages,
+  getAllThematicCollections,
   getAllVisualCityGuidePages,
   getAllWeekendTripPages,
   getCities,
@@ -39,6 +41,8 @@ export const staticRoutes = {
   summerTravel: "/summer-travel",
   weekendTrips: "/weekend-trips",
   nearbyWeekendPlaces: "/nearby-weekend-places",
+  regionalCollections: "/collections",
+  thematicCollections: "/themes",
 } as const;
 
 export function comparisonRoute(comparisonSlug: string) {
@@ -109,6 +113,14 @@ export function getCollectionUrl(slug: string) {
   return `/${slug}`;
 }
 
+export function regionalCollectionRoute(slug: string) {
+  return `/collections/${slug}`;
+}
+
+export function thematicCollectionRoute(slug: string) {
+  return `/themes/${slug}`;
+}
+
 export function getCollectionsIndexUrl() {
   return staticRoutes.collections;
 }
@@ -167,6 +179,14 @@ export function getAllIndexableRoutes() {
     ),
     ...getAllCitiesWithNearbyWeekendPlaces().map((city) =>
       nearbyWeekendPlacesCityRoute(city.slug),
+    ),
+    staticRoutes.regionalCollections,
+    ...getAllRegionalCollections().map((collection) =>
+      regionalCollectionRoute(collection.slug),
+    ),
+    staticRoutes.thematicCollections,
+    ...getAllThematicCollections().map((collection) =>
+      thematicCollectionRoute(collection.slug),
     ),
   ];
 }

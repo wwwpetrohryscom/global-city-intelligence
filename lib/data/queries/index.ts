@@ -314,3 +314,39 @@ export {
   getRelatedCities,
   hasRelatedCities,
 } from "@/lib/data/city-discovery-graph";
+
+// Nearby-place discovery graph — local-first place-to-place navigation
+// data-access. Re-exported so the graph integrity guard in
+// lib/data/nearby-place-discovery-graph.ts runs during `next build`.
+export {
+  NEARBY_PLACE_DISCOVERY_GRAPH,
+  getNearbyPlaceRelationshipLabel,
+  getRelatedPlaces,
+  hasRelatedPlaces,
+} from "@/lib/data/nearby-place-discovery-graph";
+
+// Regional discovery collections — local-first regional navigation data-access.
+// Re-exported so the integrity guard in lib/data/regional-collections.ts runs
+// during `next build`.
+export {
+  REGIONAL_DISCOVERY_COLLECTIONS,
+  getAllRegionalCollections,
+  getRegionTypeLabel,
+  getRegionalCollectionBySlug,
+  getRegionalCollectionsForCity,
+  getRegionalCollectionsForPlace,
+  getRelatedRegionalCollections,
+} from "@/lib/data/regional-collections";
+
+// Thematic discovery collections — theme-first navigation data-access.
+// Re-exported so the integrity guard in lib/data/thematic-collections.ts runs
+// during `next build`.
+export {
+  THEMATIC_COLLECTIONS,
+  getAllThematicCollections,
+  getRelatedThematicCollections,
+  getThematicCollectionBySlug,
+  getThematicCollectionsForCity,
+  getThematicCollectionsForPlace,
+  getThemeLabel,
+} from "@/lib/data/thematic-collections";
