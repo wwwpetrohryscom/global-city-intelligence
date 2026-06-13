@@ -13,7 +13,8 @@
     "validate:nearby-places": "python3 scripts/validate-nearby-places.py",
     "validate:photos": "python3 scripts/validate-photos.py",
     "validate:submissions": "python3 scripts/validate-submissions.py",
-    "validate:publication": "python3 scripts/validate-publication.py"
+    "validate:publication": "python3 scripts/validate-publication.py",
+    "validate:discovery": "python3 scripts/validate-discovery.py"
   },
   "dependencies": {
     "next": "^15.5.0",

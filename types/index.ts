@@ -166,3 +166,9 @@ export type {
   PublicationValidationResult,
   PublicationValidationSeverity,
 } from "./publication";
+// City discovery graph (local-first city-to-city navigation).
+export type {
+  CityDiscoveryNode,
+  CityRelationshipType,
+  RelatedCity,
+} from "./discovery";
