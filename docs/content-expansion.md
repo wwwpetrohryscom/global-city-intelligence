@@ -6260,3 +6260,129 @@ routes are in the sitemap and indexable routes.
 - `npm run lint` — clean
 - `npm run build` — clean (6,619 / 6,619 static pages)
 - build-fails-on-invalid — verified (related self-reference and non-forest member each → build error)
+
+## 2026-06 thematic discovery collections
+
+### Scope
+
+A second discovery layer, **theme-first** rather than geography-first. The
+existing regional collections are unchanged; this adds a parallel system
+that groups the same cities and nearby places around outdoor/nature THEMES
+(mountain escapes, lake escapes, waterfall destinations, alpine / Nordic /
+Mediterranean nature, wildlife areas, hiking areas, …). Two new routes
+(`/themes` + `/themes/[slug]`). The community-photo / submission /
+publication / moderation foundations were NOT modified — only read, for
+future-ready counters.
+
+### Counts
+
+- **164 thematic collections** across **24 theme types** (of 27 allowed;
+  `scenic_drives`, `unesco_nature_areas`, `rural_countryside_escapes` have
+  no qualifying data and are intentionally empty).
+- **853 of 899 places** and **435 of 547 cities** linked.
+- **2,640 collection→place**, **2,132 collection→city**, and **1,960
+  collection→collection** (relatedCollections) links — all above target.
+- Static pages **6,619 → 6,784** (+165: 164 detail pages + 1 hub).
+
+### Theme-type distribution
+
+hiking_areas 25, weekend_nature_retreats 22, nature_photography_spots 21,
+cycling_friendly_areas 19, family_outdoor_escapes 14, mountain_escapes 14,
+national_park_weekends 9, protected_landscapes 7, lake_escapes 6,
+coastal_landscapes 4, island_getaways 4, forest_walks 3,
+cross_border_nature_areas 2, river_valleys 2, sunrise_viewpoints 2,
+wildlife_areas 2, and one each of alpine_landscapes, atlantic_coast_nature,
+great_lakes_nature, mediterranean_nature, nordic_nature, volcanic_landscapes,
+waterfall_destinations, wetlands_marshes.
+
+### Method (deterministic)
+
+- Each theme maps to a deterministic membership rule over the existing 899
+  places: place category, Wikidata classifications (P31 instance-of, P4552
+  mountain range, P206 body of water typed sea/lake/river), and name tokens
+  (waterfall, valley/gorge, volcano, wetland). National parks are P31-
+  verified; alpine = European Alps-range mountains; Nordic = Sweden/Finland/
+  Denmark; Mediterranean/Atlantic = sea-body; Great Lakes = lake body / GL
+  cities; cross-border = the nearby-place discovery graph's
+  `cross_border_nature` edges.
+- Themes are scoped by country, continent, or natural region. City
+  membership is extended through the city discovery graph's
+  mountain/lake/coastal cluster edges. A continental-remainder pass mops up
+  sub-threshold / overflow places. Every collection is **nature-only** (no
+  towns / cultural sites), 5–50 places, 2–50 cities; same-physical-place
+  catalog duplicates (same Wikidata QID) are collapsed. No popularity,
+  rankings, or "best" lists.
+
+### Collection relationships
+
+`relatedCollections[]` (2–15 per collection, 1,960 total) is built from a
+theme-affinity map (e.g. Mountain Escapes → Alpine Landscapes / Hiking
+Areas / Sunrise Viewpoints) plus shared places/cities, with no
+self-references, duplicates, or orphans. Surfaced on the theme detail page
+and as reverse "Themed collections" sections on city, nearby-place detail,
+weekend-trip, and visual-guide pages.
+
+### Future-ready photo counters
+
+Every collection exposes `officialPhotoCount`, `communityPhotoCount`, and
+`photoEligiblePlaceCount`, computed statically from the existing
+community-photo records and detail-page set — no uploads, storage, or
+backend. The build guard checks they are non-negative and that
+photoEligiblePlaceCount ≤ place count; the validator recomputes and
+compares them exactly.
+
+### Coverage ceilings (honest note)
+
+City coverage is bounded at **445** (only 445 of 547 cities lie in the 30
+countries that have any nearby places; the other 102 are in countries with
+zero nearby-place coverage). Place coverage is bounded at **857**
+nature-recreation places. The achieved 435 cities and 853 places are at
+~98 % and ~99.5 % of those ceilings; the ≥500-city target is not reachable
+from the data.
+
+### Build-time integrity guard
+
+`assertThematicCollections` (re-exported through `lib/data/queries`, runs
+during `next build`) enforces: unique slug, valid themeType, 5–50 places,
+2–50 cities, no duplicate refs, every city/place resolves, featured /
+weekend-trip / visual-guide subsets, **nature-only members**, region-theme
+membership (Nordic countries for nordic_nature, European for
+alpine_landscapes), 2–15 related with no self-ref/dup/unresolved, no
+duplicate membership set, and consistent non-negative photo counters. A
+standalone mirror lives in
+[`scripts/validate-thematic-collections.py`](../scripts/validate-thematic-collections.py)
+(`npm run validate:thematic-collections`). Verified by injection: a
+non-nature member and a related self-reference each fail `next build`.
+
+### Adversarial audit
+
+A multi-agent workflow (eight geographer-agents + a synthesis verdict)
+reviewed a 40-collection sample. It approved the layer and flagged three
+deterministic defects, all fixed before commit: nordic_nature wrongly
+included Baltic states (tightened to Sweden/Finland/Denmark), alpine_
+landscapes admitted a New Zealand range (scoped to Europe), and
+atlantic_coast_nature pulled in an inland city (thematic collections are
+now strictly nature-only, enforced by the guard).
+
+### SEO
+
+Reuses the existing metadata + `WebPage` / `BreadcrumbList` / `ItemList`
+schema only (no new schema types) and adds only the two requested routes
+to the sitemap and indexable routes.
+
+### Validation results
+
+- `npm run validate:thematic-collections` — PASS (164 collections, 24 themes, 1,960 related links)
+- `npm run validate:collections` — PASS (175 regional collections)
+- `npm run validate:nearby-discovery` — PASS (897 places, 7,797 relationships)
+- `npm run validate:discovery` — PASS (544 cities)
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,784 / 6,784 static pages)
+- build-fails-on-invalid — verified (non-nature member and related self-reference each → build error)

@@ -11,6 +11,7 @@ import {
   getAllNeighborhoodPlanningPages,
   getAllRegionalCollections,
   getAllSummerTravelPages,
+  getAllThematicCollections,
   getAllVisualCityGuidePages,
   getAllWeekendTripPages,
   getCities,
@@ -34,6 +35,7 @@ import {
   rankingRoute,
   regionalCollectionRoute,
   staticRoutes,
+  thematicCollectionRoute,
   summerTravelRoute,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -277,6 +279,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
+  const thematicCollectionItems = [
+    {
+      url: absoluteUrl(staticRoutes.thematicCollections),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    ...getAllThematicCollections().map((collection) => ({
+      url: absoluteUrl(thematicCollectionRoute(collection.slug)),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.74,
+    })),
+  ];
+
   return [
     ...staticItems,
     ...cityItems,
@@ -293,5 +310,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...summerTravelItems,
     ...weekendTripItems,
     ...regionalCollectionItems,
+    ...thematicCollectionItems,
   ];
 }

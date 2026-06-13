@@ -35,6 +35,8 @@ import {
   getCountryTransportProfile,
   getRegionalCollectionsForCity,
   getRegionTypeLabel,
+  getThematicCollectionsForCity,
+  getThemeLabel,
   getSourcesByIds,
   getVisualCityGuidePageByCitySlug,
   getVisualGuideFocusLabel,
@@ -61,6 +63,7 @@ import {
   movingToCityRoute,
   neighborhoodPlanningRoute,
   regionalCollectionRoute,
+  thematicCollectionRoute,
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
@@ -131,6 +134,7 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
   const cityHasSummerTravel = hasSummerTravelPage(city.slug);
   const cityHasWeekendTrip = hasWeekendTripPage(city.slug);
   const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
+  const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
 
   const title = `Visual Guide to ${city.name}`;
   const description = `Explore source-attributed visual context for ${city.name}${country ? `, ${country.name}` : ""} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency.`;
@@ -574,6 +578,30 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
                     href={regionalCollectionRoute(collection.slug)}
                   >
                     {`${collection.title} (${getRegionTypeLabel(collection.regionType)})`}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {themedCollections.length > 0 ? (
+          <section aria-labelledby="visual-themes-heading">
+            <SectionHeading
+              description={`Theme-first discovery collections that include ${city.name} — grouped by outdoor interest.`}
+              title="Themed collections"
+            />
+            <h2 className="sr-only" id="visual-themes-heading">
+              Themed collections
+            </h2>
+            <ul className="mt-6 grid gap-3 text-sm md:grid-cols-2">
+              {themedCollections.map((collection) => (
+                <li key={collection.slug}>
+                  <Link
+                    className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                    href={thematicCollectionRoute(collection.slug)}
+                  >
+                    {`${collection.title} (${getThemeLabel(collection.themeType)})`}
                   </Link>
                 </li>
               ))}

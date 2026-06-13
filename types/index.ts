@@ -172,6 +172,8 @@ export type {
   CityRelationshipType,
   RelatedCity,
 } from "./discovery";
+// Thematic discovery collections (theme-first navigation layer).
+export type { ThematicCollection, ThemeType } from "./thematic-collections";
 // Regional discovery collections (local-first regional navigation).
 export type { RegionalCollection, RegionType } from "./regional-collections";
 // Nearby-place discovery graph (local-first place-to-place navigation).

@@ -7,6 +7,7 @@ import {
   getModuleBySlug,
   getRankingBySlug,
   getRegionalCollectionBySlug,
+  getThematicCollectionBySlug,
 } from "@/lib/data/queries";
 import {
   arrivalRoute,
@@ -21,6 +22,7 @@ import {
   rankingRoute,
   regionalCollectionRoute,
   staticRoutes,
+  thematicCollectionRoute,
   summerTravelRoute,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -325,5 +327,20 @@ export function regionalCollectionBreadcrumbs(slug?: string): BreadcrumbItem[] {
     });
   }
 
+  return crumbs;
+}
+
+export function thematicCollectionBreadcrumbs(slug?: string): BreadcrumbItem[] {
+  const crumbs: BreadcrumbItem[] = [
+    homeCrumb,
+    { name: "Themes", href: staticRoutes.thematicCollections },
+  ];
+  if (slug) {
+    const collection = getThematicCollectionBySlug(slug);
+    crumbs.push({
+      name: collection?.title || "Theme",
+      href: thematicCollectionRoute(slug),
+    });
+  }
   return crumbs;
 }

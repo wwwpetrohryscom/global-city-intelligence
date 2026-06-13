@@ -18,6 +18,8 @@ import {
   getNearbyWeekendPlaceDetailPageBySlug,
   getRegionalCollectionsForPlace,
   getRegionTypeLabel,
+  getThematicCollectionsForPlace,
+  getThemeLabel,
   getRelatedPlaces,
   getSourcesByIds,
   hasArrivalPage,
@@ -36,6 +38,7 @@ import {
   nearbyWeekendPlaceRoute,
   neighborhoodPlanningRoute,
   regionalCollectionRoute,
+  thematicCollectionRoute,
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
@@ -100,6 +103,7 @@ export default async function NearbyWeekendPlaceDetailPage({
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
 
   const relatedCollections = getRegionalCollectionsForPlace(place.slug).slice(0, 6);
+  const themedCollections = getThematicCollectionsForPlace(place.slug).slice(0, 6);
 
   const breadcrumbs = [
     { name: "Home", href: staticRoutes.home },
@@ -418,6 +422,30 @@ export default async function NearbyWeekendPlaceDetailPage({
                     href={regionalCollectionRoute(collection.slug)}
                   >
                     {`${collection.title} (${getRegionTypeLabel(collection.regionType)})`}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {themedCollections.length > 0 ? (
+          <section aria-labelledby="detail-themes-heading">
+            <SectionHeading
+              description="Theme-first discovery collections that include this place — grouped by outdoor interest."
+              title="Themed collections"
+            />
+            <h2 className="sr-only" id="detail-themes-heading">
+              Themed collections
+            </h2>
+            <ul className="mt-6 grid gap-3 text-sm md:grid-cols-2">
+              {themedCollections.map((collection) => (
+                <li key={collection.slug}>
+                  <Link
+                    className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                    href={thematicCollectionRoute(collection.slug)}
+                  >
+                    {`${collection.title} (${getThemeLabel(collection.themeType)})`}
                   </Link>
                 </li>
               ))}

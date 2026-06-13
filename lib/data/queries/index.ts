@@ -337,3 +337,16 @@ export {
   getRegionalCollectionsForPlace,
   getRelatedRegionalCollections,
 } from "@/lib/data/regional-collections";
+
+// Thematic discovery collections — theme-first navigation data-access.
+// Re-exported so the integrity guard in lib/data/thematic-collections.ts runs
+// during `next build`.
+export {
+  THEMATIC_COLLECTIONS,
+  getAllThematicCollections,
+  getRelatedThematicCollections,
+  getThematicCollectionBySlug,
+  getThematicCollectionsForCity,
+  getThematicCollectionsForPlace,
+  getThemeLabel,
+} from "@/lib/data/thematic-collections";
