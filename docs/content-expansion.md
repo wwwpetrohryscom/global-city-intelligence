@@ -5910,3 +5910,123 @@ count is unchanged at 6,443.
 - `npm run lint` — clean
 - `npm run build` — clean (6,443 / 6,443 static pages)
 - build-fails-on-invalid-graph — verified (self-reference → build error)
+
+## 2026-06 nearby place discovery graph
+
+### Scope
+
+A place-to-place discovery network over **all 899 nearby weekend places**
+so a visitor can answer "if I enjoyed this place, where else nearby would
+I plausibly spend a day or a weekend?" — *not* "what is famous?". It is a
+pure data layer plus one new section on the existing nearby-place detail
+page. **No new route families, schemas, or metadata.** Cities, countries,
+hero images, the photo / submission / publication / moderation / upload
+foundations were NOT touched.
+
+### Data model
+
+- [`types/nearby-discovery.ts`](../types/nearby-discovery.ts) — a
+  TypeScript `enum NearbyPlaceRelationshipType` (10 members),
+  `RelatedPlace` (`placeSlug`, `distanceKm`, `relationshipType`),
+  `NearbyPlaceDiscoveryNode`.
+- [`lib/data/nearby-place-discovery-graph.ts`](../lib/data/nearby-place-discovery-graph.ts)
+  — `NEARBY_PLACE_DISCOVERY_GRAPH: Record<string, readonly RelatedPlace[]>`,
+  plus `getRelatedPlaces`, `hasRelatedPlaces`,
+  `getNearbyPlaceRelationshipLabel`.
+- Ten relationship types: `nearby_place`, `same_region`,
+  `same_protected_area_system`, `same_mountain_region`, `same_coastline`,
+  `same_river_system`, `same_lake_region`, `same_ecoregion`,
+  `weekend_alternative`, `cross_border_nature`.
+
+### Counts
+
+- **897 of 899 places** carry a discovery node; **7,797 relationships**;
+  **avg 8.7 links/place** (median 6; 572 places at the 10-link cap).
+- **2 places excluded** with zero catalog neighbours within 1,500 km —
+  `litchfield-national-park-near-darwin`, `kaena-point-near-honolulu`.
+  An honest local-first outcome (no manufactured long-haul links).
+- Relationship-type mix: `weekend_alternative` 3,648 (46.8%),
+  `same_ecoregion` 1,517 (19.5%), `nearby_place` 881 (11.3%),
+  `same_region` 601 (7.7%), `cross_border_nature` 496 (6.4%),
+  `same_protected_area_system` 302 (3.9%), `same_mountain_region`
+  216 (2.8%), `same_lake_region` 77 (1.0%), `same_coastline` 51 (0.7%),
+  `same_river_system` 8 (0.1%).
+
+### Method (fully deterministic)
+
+- Place centres from Wikidata **P625** coordinates (already in the
+  catalog); Wikidata natural-region attributes resolved for all 834
+  unique place QIDs: mountain range **P4552**, body of water **P206**
+  (each typed river / lake / sea by its class), protected-area operator
+  **P137**, parent **P361**, administrative entity **P131**, watercourse
+  **P403/P974**. Same-physical-place catalog duplicates (different slug,
+  same QID) are collapsed to the nearest instance.
+- Edges = great-circle (haversine) nearest neighbours, tiered: nearest
+  within 250 km up to 10; fallback ≤600 km up to 6; fallback ≤1,500 km up
+  to 5. Selection is type-independent.
+- Relationship type by precedence: `cross_border_nature` (different
+  country, ≤120 km, same landform class) → `same_mountain_region`
+  (shared P4552 range, or two mountain places ≤90 km) → `same_river_system`
+  (shared watercourse) → `same_lake_region` (shared lake, or two lake
+  places in a shared district/≤90 km) → `same_coastline` (both genuinely
+  sea-adjacent and on the same sea) → `same_protected_area_system`
+  (shared operator/parent, ≤300 km) → `same_region` (same admin region,
+  ≤180 km) → `same_ecoregion` (same continent + biome band, ≤250 km) →
+  `nearby_place` (≤60 km) → `weekend_alternative`. WWF ecoregion (P1425)
+  is unpopulated on these entities, so `same_ecoregion` uses a documented
+  continent+biome-band proxy. No popularity, traffic, or tourism signal.
+
+### Adversarial audit
+
+The generated graph was reviewed by a multi-agent workflow: ten
+independent geographer-agents verified a stratified sample of each
+relationship type, and a systemic critic synthesised the findings. The
+first pass (~87% label precision) drove deterministic rule fixes —
+sea-adjacency + same-sea gating for `same_coastline`, shared-identifier
+gating for `same_lake_region` / `same_mountain_region`, a distance cap on
+`same_region`, and a landform-class continuity gate on
+`cross_border_nature`. A focused re-audit of the hardened types approved
+the graph for ship: every residual mislabel degrades only to a looser but
+still-relevant nearby suggestion (`weekend_alternative` / `same_region`),
+never to a geographically irrelevant place.
+
+### Build-time integrity guard
+
+`assertNearbyPlaceDiscoveryGraph` runs at module load and is re-exported
+through [`lib/data/queries`](../lib/data/queries/index.ts), so it executes
+during `next build`. It checks: source place exists, ≤10 related, no
+self-reference, no duplicate reference, related place exists, valid
+`relationshipType`, positive `distanceKm`. Verified by injecting a
+self-reference: `next build` failed with
+`Invalid nearby-place discovery graph (1): - …: self-reference`. A
+standalone mirror lives in
+[`scripts/validate-nearby-discovery.py`](../scripts/validate-nearby-discovery.py)
+(`npm run validate:nearby-discovery`).
+
+### Internal linking / SEO
+
+A new "Related places" section on
+[`/nearby-weekend-places/[slug]`](../app/(nearby-weekend-places)/nearby-weekend-places/[slug]/page.tsx)
+renders related places as existing `Card` + `Link` components pointing at
+other `/nearby-weekend-places/[slug]` detail routes. Only edges whose
+target also has a detail page are rendered, so every link resolves: this
+adds **3,936 contextual internal links** across the 644 detail pages
+(avg 6.1 related links per detail page; 641/644 render at least one) using
+only existing components — **no new routes, sitemap entries, schemas, or
+metadata**, so the static page count is unchanged at 6,443. The 7,797-edge
+data layer is complete over all 899 places for any future surface.
+
+### Validation results
+
+- `npm run validate:nearby-discovery` — PASS (897 places, 7,797 relationships)
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:discovery` — PASS (544 cities)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,443 / 6,443 static pages)
+- build-fails-on-invalid-graph — verified (self-reference → build error)

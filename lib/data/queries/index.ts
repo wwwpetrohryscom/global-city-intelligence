@@ -314,3 +314,13 @@ export {
   getRelatedCities,
   hasRelatedCities,
 } from "@/lib/data/city-discovery-graph";
+
+// Nearby-place discovery graph — local-first place-to-place navigation
+// data-access. Re-exported so the graph integrity guard in
+// lib/data/nearby-place-discovery-graph.ts runs during `next build`.
+export {
+  NEARBY_PLACE_DISCOVERY_GRAPH,
+  getNearbyPlaceRelationshipLabel,
+  getRelatedPlaces,
+  hasRelatedPlaces,
+} from "@/lib/data/nearby-place-discovery-graph";

@@ -14,7 +14,9 @@ import {
   getCountryBySlug,
   getNearbyPlaceCategoryLabel,
   getNearbyPlaceFacts,
+  getNearbyPlaceRelationshipLabel,
   getNearbyWeekendPlaceDetailPageBySlug,
+  getRelatedPlaces,
   getSourcesByIds,
   hasArrivalPage,
   hasMovingToCityPage,
@@ -83,6 +85,16 @@ export default async function NearbyWeekendPlaceDetailPage({
   const sources = getSourcesByIds(place.sourceIds);
   const categoryLabel = getNearbyPlaceCategoryLabel(place.category);
   const facts = getNearbyPlaceFacts(place.slug);
+
+  // Related places for local-first discovery. Only edges whose target also has
+  // a detail page are rendered, so every link resolves to a real
+  // /nearby-weekend-places/[slug] route.
+  const relatedPlaces = getRelatedPlaces(place.slug)
+    .map((related) => {
+      const target = getNearbyWeekendPlaceDetailPageBySlug(related.placeSlug);
+      return target ? { ...related, place: target } : null;
+    })
+    .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
 
   const breadcrumbs = [
     { name: "Home", href: staticRoutes.home },
@@ -349,6 +361,40 @@ export default async function NearbyWeekendPlaceDetailPage({
             </p>
           )}
         </section>
+
+        {relatedPlaces.length > 0 ? (
+          <section aria-labelledby="detail-related-heading">
+            <SectionHeading
+              description="If you enjoyed this place, these nearby places make a plausible day or weekend alternative. Links are derived from geography and shared natural regions (mountain ranges, rivers, lakes, coastlines), protected-area systems, administrative region, and cross-border continuity — not popularity or visitor numbers. Verify access, transport, weather, health, and safety with official sources before visiting."
+              title="Related places"
+            />
+            <h2 className="sr-only" id="detail-related-heading">
+              Related places
+            </h2>
+            <ul className="mt-6 grid gap-5 md:grid-cols-2">
+              {relatedPlaces.map((related) => (
+                <li key={related.placeSlug}>
+                  <Card as="article" className="h-full">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                      {`${getNearbyPlaceRelationshipLabel(related.relationshipType)} · about ${related.distanceKm} km`}
+                    </p>
+                    <h3 className="mt-2 text-lg font-semibold text-text-primary">
+                      <Link
+                        className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
+                        href={nearbyWeekendPlaceRoute(related.placeSlug)}
+                      >
+                        {related.place.name}
+                      </Link>
+                    </h3>
+                    <p className="mt-2 text-sm text-text-secondary">
+                      {getNearbyPlaceCategoryLabel(related.place.category)}
+                    </p>
+                  </Card>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
         <section
           aria-labelledby="detail-sources-heading"
