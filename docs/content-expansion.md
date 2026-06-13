@@ -5643,3 +5643,110 @@ upload payload.
 - `npm run validate:media` — PASS
 - `npm run typecheck` / `npm run lint` — clean
 - `npm run build` — clean (5,214 / 5,214 static pages, unchanged)
+
+## 2026-06-13: city coverage batch six with complete local-first content
+
+### Scope
+
+A large-scale expansion adding **100 new cities** plus their full
+local-first cluster (hero images, nearby weekend places, weekend-trip
+pages, visual-guide pages). Geographic scope limited per spec to the
+EU, UK, Ireland, USA, Canada, Australia, and New Zealand — spread across
+**all 30 supported countries** for maximum diversity. The community
+photo / submission / publication / moderation architecture was NOT
+touched.
+
+### Counts (before → after)
+
+- cities: **447 → 547 (+100)**, across **30 countries** (no new countries)
+- city hero images: **445 → 545** (the new batch is **100 / 100 = 100%**)
+- nearby weekend places: **439 → 597 (+158)** (100% verified image coverage)
+- nearby detail pages: **415 → 495 (+80)**
+- reference facts: +80
+- weekend-trip pages: **346 → 446 (+100)** (all 100 batch-six cities)
+- visual-guide pages: **346 → 446 (+100)** (all 100 batch-six cities)
+- static pages: **5,214 → 6,294 (+1,080)**
+
+### Per-country city distribution (30 countries)
+
+germany 8, france 7, italy 7, united-states 15, united-kingdom 7,
+canada 6, spain 6, australia 5, poland 4, netherlands 3, portugal 3,
+sweden 3, ireland 3, romania 2, finland 2, new-zealand 2, czechia 2,
+austria 2, greece 2, denmark 1, belgium 1, croatia 1, slovakia 1,
+hungary 1, bulgaria 1, lithuania 1, slovenia 1, estonia 1, latvia 1,
+luxembourg 1. (EU 62 · UK+IE 10 · USA 15 · Canada 6 · Australia 5 · NZ 2.)
+
+### Selection funnel
+
+- 165 in-scope candidate cities (deep secondary/regional cities) were
+  proposed per country, screened against the 447 existing slugs (zero
+  collisions).
+- Each was resolved deterministically against Wikidata + Wikimedia
+  Commons (QID → P18 hero, with a Commons-category P373 fallback for
+  cities whose P18 was a montage); 164/165 produced a clean, permissively
+  licensed hero.
+- 100 were selected to span all 30 supported countries while maximizing
+  local-first value (coast / lake / river / mountain-gateway / national-
+  park / university / regional-capital cities). **Every one of the 100
+  ships with a verified Wikimedia hero — 100% coverage, zero fallback.**
+
+### Local-first selection
+
+Batch six deliberately favors places residents actually live in and
+explore from — mountain/outdoor gateways (Bozeman, Missoula, Bend,
+Flagstaff, Durango, Zakopane, Garmisch-Partenkirchen, Jaca, Aosta,
+Kranj), coastal/lake towns (Santa Cruz, Santa Barbara, Duluth, Konstanz,
+Cagliari, Bayonne, Viana do Castelo, Pärnu, Visby), and river/regional
+cities (Trento, Udine, Besançon, Caen, Oviedo, Erfurt, Rostock) — not
+international-tourism or luxury-travel optimization.
+
+### Nearby weekend places
+
+158 verified natural areas added (1–2 per city; every batch-six city
+covered) through the standard pipeline: Wikidata QID → P625 proximity
+gate (≤170 km) → P856 official URL → P18 image run through the repo's own
+`validate-nearby-places` filters (license accept-list, suspicious-token
+rejection, 600px minimum). 80 reached `verified` (with an official URL →
+detail page) and 78 are `partial`. **100% ship a verified Wikimedia
+image.** Category mix: nature 49, mountain 34, lake 22, park 19, island
+13, beach 11, waterfront 10. Spanning all 30 countries.
+
+### Hero / nearby image licensing
+
+All Wikimedia Commons, permissive only. New hero licenses: CC BY-SA 3.0
+×33, CC BY-SA 4.0 ×21, Public domain ×17, CC BY 2.0 ×7, CC BY 3.0 ×5,
+CC BY-SA 2.0 ×5, CC BY 4.0 ×4, CC0 ×2, plus a few CC 2.5 / regional
+ports. New nearby-image licenses similarly CC BY / CC BY-SA / PD / CC0
+only. Zero NC/ND/FAL/GFDL/unknown. No AI, stock, or placeholder imagery.
+
+### Data safety
+
+No exact population, cost, rent, crime, transport, healthcare, airport,
+visa, weather, event, or ranking data was added. New city seeds use the
+existing `buildNeutralCitySeed` helper (population "Pending integration",
+directional default scores). Intro/outlook copy is grounded strictly in
+each city's verified Wikipedia summary (river, lake, sea, mountains,
+university/UNESCO/regional role) with no numbers or rankings.
+
+### Automatic page impact
+
+- +100 `/cities/[city]` + 600 `/{module}/[city]` (6 modules) = +700
+- +100 `/cities/[city]/weekend-trip`, +100 `/cities/[city]/visual-guide`
+- +80 `/nearby-weekend-places/[slug]` detail pages
+- +100 `/cities/[city]/nearby-weekend-places` (the new cities now have
+  nearby data)
+- = +1,080 static pages; +100 city + 600 module + 80 detail + 100
+  nearby-city + 100 weekend + 100 visual URLs in the sitemap. No new
+  route types; no duplicate or orphan URLs.
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (597 records)
+- `npm run validate:media` — PASS (cities 545 hero / 577 total on 547 slugs)
+- `npm run validate:community-media` — PASS (28 values)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,294 / 6,294 static pages)
