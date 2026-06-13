@@ -324,3 +324,15 @@ export {
   getRelatedPlaces,
   hasRelatedPlaces,
 } from "@/lib/data/nearby-place-discovery-graph";
+
+// Regional discovery collections — local-first regional navigation data-access.
+// Re-exported so the integrity guard in lib/data/regional-collections.ts runs
+// during `next build`.
+export {
+  REGIONAL_DISCOVERY_COLLECTIONS,
+  getAllRegionalCollections,
+  getRegionTypeLabel,
+  getRegionalCollectionBySlug,
+  getRegionalCollectionsForCity,
+  getRegionalCollectionsForPlace,
+} from "@/lib/data/regional-collections";

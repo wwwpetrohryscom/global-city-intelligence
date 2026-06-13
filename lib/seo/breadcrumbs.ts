@@ -6,6 +6,7 @@ import {
   getCountryBySlug,
   getModuleBySlug,
   getRankingBySlug,
+  getRegionalCollectionBySlug,
 } from "@/lib/data/queries";
 import {
   arrivalRoute,
@@ -18,6 +19,7 @@ import {
   movingToCityRoute,
   neighborhoodPlanningRoute,
   rankingRoute,
+  regionalCollectionRoute,
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
@@ -304,4 +306,24 @@ export function comparisonBreadcrumbs(slug: string): BreadcrumbItem[] {
       href: comparisonRoute(slug),
     },
   ];
+}
+
+export function regionalCollectionBreadcrumbs(slug?: string): BreadcrumbItem[] {
+  const crumbs: BreadcrumbItem[] = [
+    homeCrumb,
+    {
+      name: "Regional collections",
+      href: staticRoutes.regionalCollections,
+    },
+  ];
+
+  if (slug) {
+    const collection = getRegionalCollectionBySlug(slug);
+    crumbs.push({
+      name: collection?.title || "Collection",
+      href: regionalCollectionRoute(slug),
+    });
+  }
+
+  return crumbs;
 }

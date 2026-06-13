@@ -15,7 +15,8 @@
     "validate:submissions": "python3 scripts/validate-submissions.py",
     "validate:publication": "python3 scripts/validate-publication.py",
     "validate:discovery": "python3 scripts/validate-discovery.py",
-    "validate:nearby-discovery": "python3 scripts/validate-nearby-discovery.py"
+    "validate:nearby-discovery": "python3 scripts/validate-nearby-discovery.py",
+    "validate:collections": "python3 scripts/validate-collections.py"
   },
   "dependencies": {
     "next": "^15.5.0",

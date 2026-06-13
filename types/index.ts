@@ -172,6 +172,8 @@ export type {
   CityRelationshipType,
   RelatedCity,
 } from "./discovery";
+// Regional discovery collections (local-first regional navigation).
+export type { RegionalCollection, RegionType } from "./regional-collections";
 // Nearby-place discovery graph (local-first place-to-place navigation).
 // NearbyPlaceRelationshipType is a string enum (runtime value), so it is
 // exported as a value, not type-only.

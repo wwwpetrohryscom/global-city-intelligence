@@ -6030,3 +6030,120 @@ data layer is complete over all 899 places for any future surface.
 - `npm run lint` — clean
 - `npm run build` — clean (6,443 / 6,443 static pages)
 - build-fails-on-invalid-graph — verified (self-reference → build error)
+
+## 2026-06 regional discovery collections
+
+### Scope
+
+A regional discovery layer that groups the existing cities and nearby
+weekend places into **named natural regions** (mountain ranges, coasts,
+lakes, river valleys, national-park systems, forests, islands,
+cross-border landscapes, protected landscapes, weekend-escape regions) so
+a resident can discover where else nearby they could spend a day or a
+weekend. Two new routes (`/collections` hub + `/collections/[slug]`
+detail). The photo / community-photo / submission / publication /
+moderation / upload foundations were NOT touched, and no existing content
+was removed or rewritten.
+
+### Data model
+
+- [`types/regional-collections.ts`](../types/regional-collections.ts) —
+  `RegionType` (10-value union) and `RegionalCollection` (`slug`, `title`,
+  `description`, `regionType`, `cities[]`, `nearbyPlaces[]`,
+  `featuredPlaces[]`, `featuredCities[]`).
+- [`lib/data/regional-collections.ts`](../lib/data/regional-collections.ts)
+  — `REGIONAL_DISCOVERY_COLLECTIONS` + `getAllRegionalCollections`,
+  `getRegionalCollectionBySlug`, `getRegionalCollectionsForCity`,
+  `getRegionalCollectionsForPlace`, `getRegionTypeLabel`.
+- Ten region types: `mountain_region`, `coastal_region`, `lake_region`,
+  `river_region`, `national_park_region`, `forest_region`,
+  `island_region`, `cross_border_region`, `protected_landscape_region`,
+  `weekend_escape_region`.
+
+### Counts
+
+- **91 collections**, every one with ≥5 nearby places (5–30) and ≥2
+  cities. **642 of 899 nearby places** and **378 of 547 cities** are
+  linked into at least one collection.
+- **931 collection→place links** and **733 collection→city links**.
+- Region-type distribution: `cross_border_region` 22,
+  `weekend_escape_region` 17, `mountain_region` 16,
+  `national_park_region` 11, `lake_region` 6,
+  `protected_landscape_region` 6, `coastal_region` 5, `island_region` 4,
+  `forest_region` 3, `river_region` 1.
+
+### Method (fully deterministic)
+
+- Named natural features come from Wikidata: mountain ranges (**P4552**,
+  rolled up via **P361** through "clean" ancestors so sub-ranges
+  aggregate without merging into geological super-belts), seas
+  (**P206**, bays/gulfs rolled to their parent sea), and national parks
+  detected by **P31** instance-of (national park / national-park-system
+  unit — 195 places). A country×category backbone ("{Country} Mountains
+  / Lakes / Coast / Islands / Forests / Nature Escapes", and
+  sub-regional "{Region} …" where a curated `regionName` exists) provides
+  coverage. Cross-border regions are pairwise adjacent-country groupings
+  joined by the audited `cross_border_nature` edges of the nearby-place
+  discovery graph.
+- Every collection is **category-consistent**: members of a single-feature
+  region type all carry a matching nearby-place category. Same-physical-
+  place catalog duplicates (same QID, different city slug) are collapsed
+  to one member. No popularity, traffic, or visitor signal is used.
+
+### Adversarial audit
+
+Generated collections were reviewed by a multi-agent workflow: nine
+geographer-agents verified per-chunk coherence (title is a real region,
+members belong, regionType fits) and a systemic critic synthesised the
+findings; two focused re-audits followed each fix round. The audit drove
+deterministic fixes that materially improved the set: national-park
+collections now contain only P31-verified national parks (non-NP city /
+state / country parks were demoted to `protected_landscape_region` or
+`weekend_escape_region`); mistyped feature collections (an all-lakes
+"Alps", an all-lakes "Italian Lakes", a Provence-massif "Pyrenees") were
+dropped; urban parks (Hyde Park, Stanley Park) were excluded from
+protected landscapes; and duplicate same-physical-place members were
+collapsed.
+
+### Build-time integrity guard
+
+`assertRegionalCollections` runs at module load and is re-exported through
+[`lib/data/queries`](../lib/data/queries/index.ts), so it executes during
+`next build`. It checks: unique slug, valid regionType, ≥5 places, ≥2
+cities, no duplicate place/city refs, every city/place resolves, featured
+subsets — and a **semantic check** that each single-feature region type's
+members carry an allowed category. Verified by injecting a category
+mismatch: `next build` failed with
+`Invalid regional discovery collections (1): - …: place … category lake
+invalid for mountain_region`. A standalone mirror lives in
+[`scripts/validate-collections.py`](../scripts/validate-collections.py)
+(`npm run validate:collections`).
+
+### Internal linking / SEO
+
+New `/collections` hub (grouped by region type) and `/collections/[slug]`
+detail pages (overview, cities, nearby places, related collections,
+internal navigation) reuse the existing design system and emit only
+`WebPage`, `BreadcrumbList`, and `ItemList` schema (a small
+`itemListSchema` helper was added — no new schema types). Reverse
+"Related collections" sections were added to existing city, nearby-place
+detail, weekend-trip, and visual-guide pages (~733 links from city pages,
+~931 from place-detail pages). **+92 static pages** (91 collection detail
+pages + 1 hub), so the build grows from 6,443 to **6,535**; all
+collection routes are added to the sitemap and indexable routes.
+
+### Validation results
+
+- `npm run validate:collections` — PASS (91 collections, 10 region types)
+- `npm run validate:nearby-discovery` — PASS (897 places, 7,797 relationships)
+- `npm run validate:discovery` — PASS (544 cities)
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,535 / 6,535 static pages)
+- build-fails-on-invalid-collection — verified (category mismatch → build error)

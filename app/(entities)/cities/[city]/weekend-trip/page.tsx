@@ -30,6 +30,8 @@ import {
   getCountryTransportProfile,
   getNearbyPlaceCategoryLabel,
   getNearbyWeekendPlacesForWeekendTrip,
+  getRegionalCollectionsForCity,
+  getRegionTypeLabel,
   getSourcesByIds,
   getWeekendTripChecklist,
   getWeekendTripFocusLabel,
@@ -59,6 +61,7 @@ import {
   nearbyWeekendPlaceRoute,
   nearbyWeekendPlacesCityRoute,
   neighborhoodPlanningRoute,
+  regionalCollectionRoute,
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
@@ -124,6 +127,7 @@ export default async function WeekendTripPage({ params }: PageProps) {
   const cityHasNeighborhood = hasNeighborhoodPlanningPage(city.slug);
   const cityHasMovingTo = hasMovingToCityPage(city.slug);
   const cityHasSummerTravel = hasSummerTravelPage(city.slug);
+  const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
   const nearbyPlaces = getNearbyWeekendPlacesForWeekendTrip(city.slug, 6);
 
   const title = `Weekend Trip Planning Guide for ${city.name}`;
@@ -658,6 +662,30 @@ export default async function WeekendTripPage({ params }: PageProps) {
                       {comparison.description}
                     </p>
                   </Card>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {relatedCollections.length > 0 ? (
+          <section aria-labelledby="weekend-collections-heading">
+            <SectionHeading
+              description={`Regional discovery collections that include ${city.name} — named natural regions grouping nearby places and cities for wider day and weekend planning.`}
+              title="Related collections"
+            />
+            <h2 className="sr-only" id="weekend-collections-heading">
+              Related collections
+            </h2>
+            <ul className="mt-6 grid gap-3 text-sm md:grid-cols-2">
+              {relatedCollections.map((collection) => (
+                <li key={collection.slug}>
+                  <Link
+                    className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                    href={regionalCollectionRoute(collection.slug)}
+                  >
+                    {`${collection.title} (${getRegionTypeLabel(collection.regionType)})`}
+                  </Link>
                 </li>
               ))}
             </ul>

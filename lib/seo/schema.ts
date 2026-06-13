@@ -56,6 +56,30 @@ export function breadcrumbSchema(items: BreadcrumbItem[]) {
   };
 }
 
+export function itemListSchema({
+  name,
+  description,
+  items,
+}: {
+  name: string;
+  description: string;
+  items: { name: string; path: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: absoluteUrl(item.path),
+    })),
+  };
+}
+
 export function datasetSchema({
   name,
   description,
