@@ -5750,3 +5750,73 @@ university/UNESCO/regional role) with no numbers or rankings.
 - `npm run typecheck` — clean
 - `npm run lint` — clean
 - `npm run build` — clean (6,294 / 6,294 static pages)
+
+## 2026-06-13: nearby place density expansion (top 116 cities)
+
+### Scope
+
+A density pass that adds more nearby weekend places to existing
+high-value cities (no new cities, no new countries, no new route types).
+The community photo / submission / publication / moderation architecture
+was NOT touched.
+
+### Counts (before → after)
+
+- nearby weekend places: **597 → 899 (+302)** (100% verified image coverage)
+- nearby detail pages: **495 → 644 (+149)**
+- reference facts: **459 → 608 (+149)**
+- static pages: **6,294 → 6,443 (+149)** (the 116 cities already had
+  per-city nearby pages, so only detail-page routes are new)
+- new places verified (official URL) / partial: **149 / 153**
+
+### Cities affected
+
+**116 highest-value cities** selected (major capitals, metros, and
+strong-recreation regional cities) across **28 countries**. Average
+nearby density of the selected set rose from **~1.1 → 3.9 per city**;
+resulting distribution: 97 cities at 4, 12 at 3, 3 at 5, 2 at 2, London
+at 7 (already dense; capped), Seville at 1 (its nearby protected areas
+lack clean Wikidata images / are already linked). 114 of 116 densified;
+113 sit in the 3–6 target band.
+
+### Method
+
+- A 15-agent workflow proposed 671 NEW nearby protected/natural areas
+  (each city given its existing places to AVOID), prioritizing officially
+  managed areas (national/regional/nature parks, reserves, mountain
+  ranges, lake districts, coastal walks, river corridors, geoparks).
+- Each was resolved against Wikidata + Wikimedia Commons: QID → P625
+  proximity gate (≤170 km from the city) → P856 official URL → P18 image
+  through the repo's own `validate-nearby-places` filters (license
+  accept-list, suspicious-token rejection, 600px minimum). Candidates were
+  de-duplicated against every existing (city, place-QID) pair so no place
+  is added twice to the same city.
+- Per-city additions were capped so total density stays within 3–6.
+- 441/671 candidates resolved cleanly; 302 selected (1–4 new per city).
+
+### Category & licensing
+
+New-place categories: nature 105, mountain 83, lake 43, park 24, beach
+21, island 19, waterfront 7. All images Wikimedia Commons, permissive
+only (CC BY-SA 3.0 ×139, CC BY-SA 4.0 ×54, CC BY-SA 2.0 ×25, CC BY 2.5
+×18, CC BY 2.0/3.0, CC0, regional ports). Zero NC/ND/FAL/GFDL/unknown,
+no AI / stock / placeholder.
+
+### Internal linking / SEO
+
+All new places flow through existing helpers (city → nearby places,
+nearby directory → detail pages, weekend-trip & visual-guide → nearby
+places, detail → connected city). +149 `/nearby-weekend-places/[slug]`
+sitemap URLs; no new route types, no duplicate or orphan URLs.
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,443 / 6,443 static pages)
