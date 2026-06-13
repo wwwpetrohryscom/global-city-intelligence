@@ -304,3 +304,13 @@ export {
   getPublishedCandidates,
   getReadyCandidates,
 } from "@/lib/data/publication-candidates";
+
+// City discovery graph — local-first city-to-city navigation data-access.
+// Re-exported so the graph integrity guard in lib/data/city-discovery-graph.ts
+// runs during `next build`.
+export {
+  CITY_DISCOVERY_GRAPH,
+  getCityRelationshipLabel,
+  getRelatedCities,
+  hasRelatedCities,
+} from "@/lib/data/city-discovery-graph";

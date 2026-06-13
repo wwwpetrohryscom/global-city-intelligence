@@ -5820,3 +5820,93 @@ sitemap URLs; no new route types, no duplicate or orphan URLs.
 - `npm run typecheck` — clean
 - `npm run lint` — clean
 - `npm run build` — clean (6,443 / 6,443 static pages)
+
+## 2026-06-13: city discovery graph for local-first navigation
+
+### Scope
+
+A city-to-city discovery network over **all existing cities** so a
+resident can answer "where else nearby could I spend a day or a
+weekend?" — *not* "what are the most famous cities?" It is a pure data
+layer plus one new section on the existing city page. **No new route
+families, schemas, or metadata.** The nearby-place architecture, photo
+architecture, submissions, publication, moderation, and upload
+foundations were NOT touched.
+
+### Data model
+
+- [`types/discovery.ts`](../types/discovery.ts) — `CityRelationshipType`
+  (8-value union), `RelatedCity` (`citySlug`, `distanceKm`,
+  `relationshipType`), `CityDiscoveryNode`. Documented as geography-only
+  (no popularity / tourism rankings).
+- [`lib/data/city-discovery-graph.ts`](../lib/data/city-discovery-graph.ts)
+  — `CITY_DISCOVERY_GRAPH: Record<string, readonly RelatedCity[]>`, plus
+  `getRelatedCities`, `hasRelatedCities`, `getCityRelationshipLabel`.
+- Eight relationship types: `nearby_city`, `same_region`,
+  `same_corridor`, `weekend_trip`, `coastal_cluster`,
+  `mountain_cluster`, `lake_cluster`, `cross_border`.
+
+### Counts
+
+- **544 of 547 cities** carry a discovery node; **4,024 relationships**;
+  **avg 7.4 links / city** (median 6). Distribution: 10 links ×221,
+  6 ×152, 5 ×108; the long tail of geographically isolated cities sits
+  below 5 (e.g. lima 1, lagos 1, accra 1, perth 2, jakarta 2).
+- **3 cities excluded** with zero catalog neighbours within 1,500 km —
+  `dakar`, `darwin`, `honolulu`. This is an honest local-first outcome
+  (no manufactured long-haul "nearby" links), not a coverage gap.
+- Relationship-type mix: `cross_border` 1,329 (33.0%), `same_region`
+  818 (20.3%), `same_corridor` 720 (17.9%), `weekend_trip` 465 (11.6%),
+  `nearby_city` 287 (7.1%), `mountain_cluster` 227 (5.6%),
+  `coastal_cluster` 100 (2.5%), `lake_cluster` 78 (1.9%).
+
+### Method (fully deterministic)
+
+- City centres resolved from Wikidata **P625** coordinates (country-
+  verified via **P17**) for all 547 cities.
+- Nature-recreation profiles (coastal / mountain / lake) derived from
+  each city's existing `nearby-places` categories — no new data source.
+- Edges = great-circle (haversine) nearest neighbours, tiered: nearest
+  within 300 km up to 10; fallback ≤700 km up to 6; fallback ≤1,500 km
+  up to 5. Relationship type by precedence: different country →
+  `cross_border`; same country + same region → `same_region`; ≤200 km +
+  shared nature profile → `coastal_/mountain_/lake_cluster`; ≤100 km →
+  `nearby_city`; ≤250 km → `same_corridor`; else `weekend_trip`.
+- No popularity, traffic, or tourism ranking is used at any step.
+
+### Build-time integrity guard
+
+`assertDiscoveryGraph` runs at module load and is re-exported through
+[`lib/data/queries`](../lib/data/queries/index.ts), so it executes during
+`next build`. It checks: source city exists, ≤10 related, no self-
+reference, no duplicate reference, related city exists, valid
+`relationshipType`, positive `distanceKm`. Verified by injecting a self-
+reference: `next build` failed with
+`Invalid city discovery graph (1): - a-coruna: self-reference`.
+A standalone mirror lives in
+[`scripts/validate-discovery.py`](../scripts/validate-discovery.py)
+(`npm run validate:discovery`).
+
+### Internal linking / SEO
+
+A new "Nearby cities from {city}" section on
+[`/cities/[city]`](../app/(entities)/cities/[city]/page.tsx) renders the
+related cities as existing `LinkCard`s pointing at `/cities/[slug]`. This
+adds **4,024 contextual internal links** across the city cluster (avg 7.4
+new outbound links per city page) using only existing components — **no
+new routes, sitemap entries, schemas, or metadata**, so the static page
+count is unchanged at 6,443.
+
+### Validation results
+
+- `npm run validate:discovery` — PASS (544 cities, 4,024 relationships)
+- `npm run validate:nearby-places` — PASS (899 records)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,443 / 6,443 static pages)
+- build-fails-on-invalid-graph — verified (self-reference → build error)

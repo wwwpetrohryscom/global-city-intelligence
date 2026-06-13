@@ -32,8 +32,10 @@ import {
   getCityMobilityProfile,
   getCitySafetyProfile,
   getCityIntentBySlug,
+  getCityRelationshipLabel,
   getCollectionIntentLabel,
   getCollectionsForCity,
+  getRelatedCities,
   getComparisonsForCity,
   getIntentPagesForCity,
   getCountryEmergencyProfile,
@@ -134,6 +136,12 @@ export default async function CityPage({ params }: PageProps) {
   const cityAirports = getAirportsForCity(city.slug);
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
   const cityIntentPages = getIntentPagesForCity(city.slug);
+  const relatedCities = getRelatedCities(city.slug)
+    .map((related) => {
+      const target = getCityBySlug(related.citySlug);
+      return target ? { ...related, city: target } : null;
+    })
+    .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
 
   return (
     <main>
@@ -432,6 +440,25 @@ export default async function CityPage({ params }: PageProps) {
             />
           </div>
         </section>
+
+        {relatedCities.length > 0 ? (
+          <section>
+            <SectionHeading
+              description={`Where else nearby you could spend a day or a weekend from ${city.name}. Links are derived from geographic proximity, shared region, shared natural-recreation areas, transport corridors, and country borders — not popularity or tourism rankings.`}
+              title={`Nearby cities from ${city.name}`}
+            />
+            <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+              {relatedCities.map((related) => (
+                <LinkCard
+                  description={`${getCityRelationshipLabel(related.relationshipType)} · about ${related.distanceKm} km from ${city.name}. Explore ${related.city.name}'s city intelligence profile.`}
+                  href={cityRoute(related.city.slug)}
+                  key={related.citySlug}
+                  title={`${related.city.name}, ${related.city.countryName}`}
+                />
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
           <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
