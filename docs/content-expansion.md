@@ -5265,3 +5265,488 @@ No runtime fetches, no new dependencies, no maps/weather/routing
 libraries; all pages static. New copy is neutral, factual, and
 source-grounded (no best/top/must-see/world-class wording, no prices,
 schedules, hours, or weather).
+
+## 2026-06-12: official-source expansion for nearby places
+
+### Scope
+
+A source-quality pass that resolves verified **official managing-authority
+URLs** for partial nearby places, upgrading them to `verified` and
+unlocking dedicated detail pages. No new cities, countries, places,
+route types, or images. Existing verified images are untouched.
+
+### Counts (before → after)
+
+- partial nearby places: **177 → 24 (−153)**
+- verified nearby places: **262 → 415 (+153)**
+- nearby detail pages: **262 → 415 (+153)**
+- reference facts: **226 → 379 (+153)**
+- static pages: **5,061 → 5,214 (+153 detail pages)**
+- nearby places total: 439 (unchanged); image coverage 439/439 = **100%** (unchanged)
+
+### Official-URL resolution (no guessing)
+
+Every URL is a verified official site belonging to the body that
+manages or governs the place — never a tourism portal, wiki, OTA,
+social network, or blog. Resolution tiers:
+
+1. **Wikidata P856** on the place (its official website) — 1.
+2. **Operator (P137/P126) → operator's P856** (the responsible
+   authority's official site) — 10.
+3. **Verified authority lookup** (search + page fetch confirming the
+   managing authority, then deterministic liveness-check + banned-domain
+   screen + manual domain review) — 142.
+
+Total resolved: **153**. 148 candidate URLs were proposed; rejects were
+dropped for dead links / banned domains. The 24 places left partial are
+genuinely multi-jurisdiction natural features with no single managing
+authority (e.g. Loch Ness, Øresund, Lake Champlain, the Rhodope
+Mountains, several trans-regional rivers and coastlines) — correctly
+kept partial rather than assigned a non-authoritative URL.
+
+### Source coverage
+
+Resolved URLs are all official authorities, spanning:
+- National agencies — NPS, US Forest Service, Fish & Wildlife,
+  Parks Canada / BC Parks / Ontario Parks, NZ DOC, Natural Resources
+  Wales, NatureScot/Forestry & Land Scotland, Forestry England,
+  NPWS Ireland (×6), Metsähallitus, Naturstyrelsen / Länsstyrelsen (SE),
+  Staatsbosbeheer, RMK & Keskkonnaamet (EE), ICNF (PT), MITECO (ES).
+- Regional / landscape / nature-park authorities — Parcs naturels
+  régionaux (FR), Enti Parco Regionale (IT), Naturparke /
+  Biosphärenreservate / Zweckverbände (DE), Landscape Parks Authorities
+  (PL), Catalan/Aragón/Galicia/Basque park services (ES), UNESCO geoparks.
+- County / municipal governments and official conservation trusts /
+  foundations that legally manage a site (National Trust, Natuurmonumenten,
+  RSPB, Phillip Island Nature Parks, SPSG, Te Mata Park Trust, etc.).
+
+After this pass, **415 / 439 (94.5%)** nearby places carry an official
+URL.
+
+### Reference facts
+
+153 fact records added (designation = Wikidata P31, IUCN category =
+P814, inception year = P571/P1619), fetched deterministically from each
+place's Wikidata entity — no fabrication. The detail-page "Reference
+data" block renders these via the existing template; the managing
+authority is conveyed through the official-URL link (the
+`NearbyPlaceFacts` schema is unchanged — no new fields).
+
+### Detail pages
+
+Every newly verified place satisfies the audited eligibility rules
+(verificationStatus "verified" + wikidataId + officialUrl + coordinates
++ verified image) and was promoted to
+`NEARBY_WEEKEND_PLACE_DETAIL_SLUGS`. Pages render via the existing
+detail template — full content (image + attribution, official link,
+coordinates, reference facts, connected-city context), no thin pages,
+no new route types.
+
+### Internal linking / SEO
+
+All linking flows through existing helpers (no hardcoded routes):
+nearby directory → detail, detail → connected city, city / weekend-trip
+/ visual-guide → nearby places. New detail URLs are emitted
+automatically in the sitemap (no duplicate or orphan URLs). Metadata
+(canonical + OpenGraph) and structured data (WebPage + BreadcrumbList,
+ItemList on directories) use the existing architecture unchanged — no
+TouristAttraction / Event / Review / Rating / Offer / TravelAction /
+Itinerary.
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (439 records)
+- `npm run validate:media` — PASS (cities 445 hero / 477 total)
+- `npm run validate:community-media` — PASS (28 values)
+- `npm run typecheck` — clean
+- `npm run lint` — clean (0 problems)
+- `npm run build` — clean (5,214 / 5,214 static pages)
+
+### Performance
+
+No runtime fetches, no new dependencies, no maps/APIs/routing; all pages
+remain static.
+
+## 2026-06-12: community photo platform foundations
+
+### Scope
+
+Architecture-only foundation for future community photos — a render-layer
+photo + gallery model that sits alongside the existing community-media
+submission/moderation contract. No uploads, no auth, no accounts, no
+storage, no backend, no moderation UI, no routes, no gallery/photo pages,
+no sitemap or metadata changes. Everything stays static and build-safe.
+
+### Photo model (`types/photos.ts`)
+
+- `Photo`: id, slug, title, description, sourceType, status, attribution,
+  authorName, createdAt, updatedAt, optional citySlug / nearbyPlaceSlug,
+  plus a render payload (src, width, height, alt).
+- `PhotoSourceType` = `official | community`.
+- `PhotoStatus` = `pending | approved | rejected` (official ships
+  `approved`; future community defaults to `pending`).
+- `PhotoAttribution` = author, source, license, licenseUrl?, sourceUrl,
+  authorUrl?, attributionText? — compatible with existing Wikimedia records.
+- A photo may attach to a city, a nearby place, or both.
+
+### Gallery model (`lib/data/photo-galleries.ts`)
+
+- `PhotoGallery` (targetType `city | nearby_place`, photos, officialCount,
+  communityCount, total) — supports official, community, and mixed sets.
+- Data-access layer only (no UI): `getCityPhotos`, `getNearbyPlacePhotos`,
+  `getCityPhotoGallery`, `getNearbyPlacePhotoGallery`, `hasCityPhotos`,
+  `hasNearbyPlacePhotos`, plus moderation-tooling reads (`getAllPhotos`,
+  `getPhotosByStatus`, `getPhotosBySourceType`). Public galleries surface
+  ONLY `status: "approved"` photos. Re-exported from `lib/data/queries`.
+
+### Moderation model
+
+The render-layer `PhotoStatus` (pending/approved/rejected) composes with
+the richer submission lifecycle already in `types/community-media.ts`
+(`CommunityPhotoSubmission`: draft → pending_review → approved, safety
+flags, policy, pure validators in `lib/community-media/`). An approved
+submission maps onto a `Photo` with `sourceType: "community"`,
+`status: "approved"`. The existing foundation is untouched.
+
+### Validation model
+
+- Runtime guard (`assertPhotoReferentialIntegrity`, runs at module
+  evaluation): unique ids, unique slugs, valid `citySlug` (cities.ts),
+  valid `nearbyPlaceSlug` (nearby-places.ts), at-least-one target, valid
+  sourceType/status, official-not-pending, render-payload present. Because
+  the gallery module is re-exported from `lib/data/queries` (imported by
+  built pages), **`next build` fails on any invalid reference** (verified).
+- `scripts/validate-photos.py` (`npm run validate:photos`) enforces the
+  same rules as an explicit CI gate.
+
+### Sample dataset
+
+15 records (`lib/data/community-photos.ts`), all `sourceType: "official"`,
+`status: "approved"`, reusing verified Wikimedia Commons attribution from
+the existing catalog purely to exercise the architecture (5 city-only,
+5 nearby-only, 5 dual-attached). No invented users; not a content
+expansion.
+
+### Future roadmap
+
+- Phase 1 ✓ official photo records + galleries (this pass).
+- Phase 2 ✓ community photo records (model + status support ready).
+- Phase 3 — upload workflow (future; submission types already exist).
+- Phase 4 — moderation workflow (future; lifecycle + validators exist).
+- Phase 5 — community galleries surface (future; gallery layer ready).
+The architecture needs no rewrite to reach later phases.
+
+### Validation results
+
+- `npm run validate:photos` — PASS (15 records: 15 official, 0 community)
+- `npm run validate:nearby-places` — PASS (439)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS (28 values)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (5,214 / 5,214 static pages, unchanged — no new
+  routes or pages)
+
+## 2026-06-12: community photo submission foundations
+
+### Scope
+
+Architecture-only Phase 3 — the draft → review → approval lifecycle a
+contributor's photo moves through BEFORE any upload, auth, account, storage,
+database, backend, moderation UI, or publishing exists. Static, build-safe,
+validation-driven. No routes, pages, sitemap, or metadata changes.
+
+### Submission model (`types/submissions.ts`)
+
+- `CommunityPhotoSubmissionDraft`: id, citySlug?, nearbyPlaceSlug?, title,
+  description, photographerName, sourceFileName, sourceFileSize, captureDate?,
+  notes?, createdAt, updatedAt, isExample? (`sourceFileName`/`sourceFileSize`
+  are metadata only — no real file).
+- `CommunityPhotoSubmission` extends the draft with `status`, `submittedAt?`,
+  and the review block (`reviewState`, `reviewedAt?`, `reviewReason?`,
+  `reviewNotes?`).
+- This is the PUBLIC, lightweight lifecycle record. It is deliberately
+  distinct from the heavier internal admin `CommunityPhotoSubmission` in
+  `types/community-media.ts` (which carries userId / storageKey / safetyFlags
+  for the Phase 4-5 moderation queue). To avoid a barrel name clash, the new
+  record is imported from `@/types/submissions`; the existing one is untouched.
+
+### Workflow model (`lib/submissions/workflow.ts`)
+
+- `SubmissionStatus` = `draft | submitted | under_review | approved | rejected`.
+- `SUBMISSION_TRANSITIONS` encodes allowed status moves; `canTransition(from,to)`
+  guards them.
+- `STATUS_REVIEW_CONSISTENCY` maps each status to its valid review states;
+  `isReviewStateConsistent` enforces no inconsistent state can exist.
+
+### Review model
+
+- `SubmissionReviewState` = `not_reviewed | in_review | accepted | declined |
+  changes_requested`, plus `reviewedAt?`, `reviewReason?`, `reviewNotes?` on
+  the submission. Future-moderation-compatible; no moderation implemented.
+
+### Validation model (`lib/submissions/validation.ts`)
+
+Pure, synchronous validators returning `SubmissionValidationResult`
+(`{ ok, errors, warnings }`) with detailed `SubmissionValidationError`
+(`{ field, code, message, severity }`): `validateSubmissionDraft` (empty
+guard, length limits, file metadata), `validateSubmissionReferences`,
+`validateSubmissionState` (enum + consistency), `validateSubmissionTransition`,
+`validateSubmissionRecord` (composes all), `findDuplicateSubmissionMetadata`.
+Content-safety preparation only — no AI, no image analysis.
+
+### Publication flow (documented, not implemented)
+
+`draft → submitted → under_review → approved → (future) Community Photo`.
+An approved submission becomes a published `Photo` (sourceType "community")
+only once a real upload exists — a later phase. No publishing implemented.
+
+### Build safety (`lib/data/community-photo-submissions.ts`)
+
+`assertSubmissionIntegrity` runs at module evaluation (the module is
+re-exported from `lib/data/queries`, imported by built pages) so **`next build`
+fails** on: duplicate ids, invalid city/nearby references, missing target,
+invalid status/reviewState, inconsistent state, empty or over-length text, or
+bad file metadata. The `validate:submissions` script enforces the same rules.
+
+### Data-access layer
+
+`getAllSubmissions`, `getSubmissionById`, `getSubmissionsByStatus`,
+`getDraftSubmissions`, `getApprovedSubmissions`, `getSubmissionsForCity`,
+`getSubmissionsForNearbyPlace`, `getApprovedSubmissionsForCity`,
+`getApprovedSubmissionsForNearbyPlace`. Static only; re-exported from
+`lib/data/queries`.
+
+### Sample dataset
+
+9 fictional, clearly-marked (`isExample: true`) example records — no real
+users, no uploads — covering all five statuses (3 draft, 2 submitted,
+2 under_review, 1 approved, 1 rejected), some city-targeted, some
+nearby-place-targeted, one dual-target.
+
+### Future roadmap
+
+- Phase 1-2 ✓ official photos + galleries · Phase 3 ✓ submission architecture
+  (this pass) · Phase 4 → uploads · Phase 5 → moderation · Phase 6 →
+  publishing · Phase 7 → community galleries. No rewrites required.
+
+### Validation results
+
+- `npm run validate:submissions` — PASS (9 records)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:nearby-places` — PASS (439)
+- `npm run validate:media` — PASS
+- `npm run typecheck` / `npm run lint` — clean
+- `npm run build` — clean (5,214 / 5,214 static pages, unchanged)
+
+## 2026-06-12: community photo publication foundations
+
+### Scope
+
+Architecture-only Phase 4 — the bridge between an approved
+`CommunityPhotoSubmission` and a published `Photo`. Static, build-safe,
+validation-driven. No uploads, auth, storage, databases, backend, server
+actions, moderation UI, routes, pages, sitemap, or metadata changes; nothing
+is actually published.
+
+### Publication model (`types/publication.ts`)
+
+- `PublicationStatus` = `candidate | ready | published | archived`.
+- `PublicationCandidate` — id, submissionId, citySlug?, nearbyPlaceSlug?,
+  title, description, photographerName, `attribution` (the shared
+  `PhotoAttribution`), captureDate?, licenseIntent?, altText?, status,
+  createdAt, updatedAt.
+- `PublicationRule` (declarative rule descriptor), `PublicationValidationError`,
+  `PublicationValidationResult`, `PublicationResult` (the pure outcome of a
+  modeled publish — carries the would-be `Photo`).
+
+### Candidate model
+
+A candidate represents an APPROVED submission that is eligible to become a
+`Photo`. Its `attribution` is the same shape a community `Photo` uses, so a
+ready candidate maps directly onto the photo layer.
+
+### Validation rules (`lib/publication/`)
+
+`PUBLICATION_RULES` declares: submission approved, valid city/nearby target,
+title, description, photographer, complete attribution, valid status (+ an
+alt-text warning). Pure validators (`lib/publication/validation.ts`):
+`validatePublicationCandidate`, `validatePublicationRules`,
+`validatePublicationReadiness`, `validatePublicationTransition`. Status machine
+(`rules.ts`): `PUBLICATION_TRANSITIONS` + `canPublicationTransition`.
+
+### Submission → Publication bridge
+
+`submissionToPublicationCandidate(submission)` returns a candidate ONLY for
+approved submissions (else null), synthesising attribution from
+`photographerName` + `licenseIntent` (`licenseFromIntent`) with a
+`community-submission:<id>` source reference.
+
+### Publication → Photo bridge
+
+`candidateToPhotoMetadata(candidate)` returns the metadata portion of a
+community `Photo` (sourceType "community", status "approved",
+`sourceSubmissionId`). `buildPhotoFromCandidate(candidate, image)` combines it
+with an uploaded image's render payload (`src`/`width`/`height`) — supplied by
+a LATER upload phase. `publishCandidate(candidate, image)` models the publish
+attempt purely and returns a `PublicationResult` (no persistence).
+
+### Publication workflow
+
+`draft → submitted → under_review → approved → candidate → ready → published →
+(gallery)`. Documented and modeled; no automatic publishing.
+
+### Gallery integration
+
+A published candidate becomes a community `Photo` that flows into the EXISTING
+gallery layer (`lib/data/photo-galleries.ts`) — official and community photos
+share the same `Photo` model. No gallery UI or routes were changed.
+
+### Build safety (`lib/data/publication-candidates.ts`)
+
+`assertPublicationIntegrity` runs at module evaluation (re-exported from
+`lib/data/queries`) so **`next build` fails** on: duplicate candidate ids,
+duplicate submissionId, a submissionId that is missing or not approved, invalid
+city/nearby references, missing target, invalid status, or incomplete required
+fields/attribution. The `validate:publication` script enforces the same rules.
+
+### Data-access helpers
+
+`getPublicationCandidates`, `getPublicationCandidateById`,
+`getCandidatesByStatus`, `getReadyCandidates`, `getPublishedCandidates`,
+`getArchivedCandidates`, `getCandidatesForCity`, `getCandidatesForNearbyPlace`,
+`getCandidateForSubmission`. Static; re-exported from `lib/data/queries`.
+
+### Sample dataset
+
+6 fictional, clearly-marked (`isExample: true`) candidates, each derived from a
+distinct approved example submission, across all four statuses (2 candidate,
+2 ready, 1 published, 1 archived). 5 approved example submissions were added to
+the Phase-3 dataset (now 14 submissions, 6 approved) to seed them.
+
+### Future roadmap
+
+Phase 1-2 ✓ photos + galleries · Phase 3 ✓ submissions · **Phase 4 ✓
+publication foundations (this pass)** · Phase 5 → uploads · Phase 6 →
+moderation UI · Phase 7 → publishing pipeline · Phase 8 → community galleries.
+No rewrites required — `buildPhotoFromCandidate` already accepts the future
+upload payload.
+
+### Validation results
+
+- `npm run validate:publication` — PASS (6 candidates)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:community-media` — PASS (28)
+- `npm run validate:nearby-places` — PASS (439)
+- `npm run validate:media` — PASS
+- `npm run typecheck` / `npm run lint` — clean
+- `npm run build` — clean (5,214 / 5,214 static pages, unchanged)
+
+## 2026-06-13: city coverage batch six with complete local-first content
+
+### Scope
+
+A large-scale expansion adding **100 new cities** plus their full
+local-first cluster (hero images, nearby weekend places, weekend-trip
+pages, visual-guide pages). Geographic scope limited per spec to the
+EU, UK, Ireland, USA, Canada, Australia, and New Zealand — spread across
+**all 30 supported countries** for maximum diversity. The community
+photo / submission / publication / moderation architecture was NOT
+touched.
+
+### Counts (before → after)
+
+- cities: **447 → 547 (+100)**, across **30 countries** (no new countries)
+- city hero images: **445 → 545** (the new batch is **100 / 100 = 100%**)
+- nearby weekend places: **439 → 597 (+158)** (100% verified image coverage)
+- nearby detail pages: **415 → 495 (+80)**
+- reference facts: +80
+- weekend-trip pages: **346 → 446 (+100)** (all 100 batch-six cities)
+- visual-guide pages: **346 → 446 (+100)** (all 100 batch-six cities)
+- static pages: **5,214 → 6,294 (+1,080)**
+
+### Per-country city distribution (30 countries)
+
+germany 8, france 7, italy 7, united-states 15, united-kingdom 7,
+canada 6, spain 6, australia 5, poland 4, netherlands 3, portugal 3,
+sweden 3, ireland 3, romania 2, finland 2, new-zealand 2, czechia 2,
+austria 2, greece 2, denmark 1, belgium 1, croatia 1, slovakia 1,
+hungary 1, bulgaria 1, lithuania 1, slovenia 1, estonia 1, latvia 1,
+luxembourg 1. (EU 62 · UK+IE 10 · USA 15 · Canada 6 · Australia 5 · NZ 2.)
+
+### Selection funnel
+
+- 165 in-scope candidate cities (deep secondary/regional cities) were
+  proposed per country, screened against the 447 existing slugs (zero
+  collisions).
+- Each was resolved deterministically against Wikidata + Wikimedia
+  Commons (QID → P18 hero, with a Commons-category P373 fallback for
+  cities whose P18 was a montage); 164/165 produced a clean, permissively
+  licensed hero.
+- 100 were selected to span all 30 supported countries while maximizing
+  local-first value (coast / lake / river / mountain-gateway / national-
+  park / university / regional-capital cities). **Every one of the 100
+  ships with a verified Wikimedia hero — 100% coverage, zero fallback.**
+
+### Local-first selection
+
+Batch six deliberately favors places residents actually live in and
+explore from — mountain/outdoor gateways (Bozeman, Missoula, Bend,
+Flagstaff, Durango, Zakopane, Garmisch-Partenkirchen, Jaca, Aosta,
+Kranj), coastal/lake towns (Santa Cruz, Santa Barbara, Duluth, Konstanz,
+Cagliari, Bayonne, Viana do Castelo, Pärnu, Visby), and river/regional
+cities (Trento, Udine, Besançon, Caen, Oviedo, Erfurt, Rostock) — not
+international-tourism or luxury-travel optimization.
+
+### Nearby weekend places
+
+158 verified natural areas added (1–2 per city; every batch-six city
+covered) through the standard pipeline: Wikidata QID → P625 proximity
+gate (≤170 km) → P856 official URL → P18 image run through the repo's own
+`validate-nearby-places` filters (license accept-list, suspicious-token
+rejection, 600px minimum). 80 reached `verified` (with an official URL →
+detail page) and 78 are `partial`. **100% ship a verified Wikimedia
+image.** Category mix: nature 49, mountain 34, lake 22, park 19, island
+13, beach 11, waterfront 10. Spanning all 30 countries.
+
+### Hero / nearby image licensing
+
+All Wikimedia Commons, permissive only. New hero licenses: CC BY-SA 3.0
+×33, CC BY-SA 4.0 ×21, Public domain ×17, CC BY 2.0 ×7, CC BY 3.0 ×5,
+CC BY-SA 2.0 ×5, CC BY 4.0 ×4, CC0 ×2, plus a few CC 2.5 / regional
+ports. New nearby-image licenses similarly CC BY / CC BY-SA / PD / CC0
+only. Zero NC/ND/FAL/GFDL/unknown. No AI, stock, or placeholder imagery.
+
+### Data safety
+
+No exact population, cost, rent, crime, transport, healthcare, airport,
+visa, weather, event, or ranking data was added. New city seeds use the
+existing `buildNeutralCitySeed` helper (population "Pending integration",
+directional default scores). Intro/outlook copy is grounded strictly in
+each city's verified Wikipedia summary (river, lake, sea, mountains,
+university/UNESCO/regional role) with no numbers or rankings.
+
+### Automatic page impact
+
+- +100 `/cities/[city]` + 600 `/{module}/[city]` (6 modules) = +700
+- +100 `/cities/[city]/weekend-trip`, +100 `/cities/[city]/visual-guide`
+- +80 `/nearby-weekend-places/[slug]` detail pages
+- +100 `/cities/[city]/nearby-weekend-places` (the new cities now have
+  nearby data)
+- = +1,080 static pages; +100 city + 600 module + 80 detail + 100
+  nearby-city + 100 weekend + 100 visual URLs in the sitemap. No new
+  route types; no duplicate or orphan URLs.
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (597 records)
+- `npm run validate:media` — PASS (cities 545 hero / 577 total on 547 slugs)
+- `npm run validate:community-media` — PASS (28 values)
+- `npm run validate:photos` — PASS (15)
+- `npm run validate:submissions` — PASS (14)
+- `npm run validate:publication` — PASS (6)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (6,294 / 6,294 static pages)

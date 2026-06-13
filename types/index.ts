@@ -136,3 +136,33 @@ export type {
   PlaceImageType,
   PlaceType,
 } from "./media";
+export type {
+  Photo,
+  PhotoAttribution,
+  PhotoGallery,
+  PhotoGalleryTargetType,
+  PhotoSourceType,
+  PhotoStatus,
+} from "./photos";
+// Community photo submission lifecycle (Phase 3). `CommunityPhotoSubmission`
+// is intentionally NOT re-exported here: a distinct internal admin record of
+// the same name already lives in ./community-media. Import the submission
+// record from "@/types/submissions" directly.
+export type {
+  CommunityPhotoSubmissionDraft,
+  SubmissionReviewState,
+  SubmissionStatus,
+  SubmissionValidationError,
+  SubmissionValidationResult,
+  SubmissionValidationSeverity,
+} from "./submissions";
+// Community photo publication bridge (Phase 4).
+export type {
+  PublicationCandidate,
+  PublicationResult,
+  PublicationRule,
+  PublicationStatus,
+  PublicationValidationError,
+  PublicationValidationResult,
+  PublicationValidationSeverity,
+} from "./publication";

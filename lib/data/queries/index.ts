@@ -256,3 +256,51 @@ export type {
   CountryCollectionMatch,
   CountryRankingMatch,
 } from "@/lib/data/queries/country-hub";
+
+// Community photo platform — render-layer data-access (foundation only).
+// Re-exported here so the photo referential-integrity guard in
+// lib/data/photo-galleries.ts runs during `next build`.
+export {
+  getAllPhotos,
+  getCityPhotoGallery,
+  getCityPhotos,
+  getNearbyPlacePhotoGallery,
+  getNearbyPlacePhotos,
+  getPhotoBySlug,
+  getPhotoSourceLabel,
+  getPhotoStatusLabel,
+  getPhotosBySourceType,
+  getPhotosByStatus,
+  hasCityPhotos,
+  hasNearbyPlacePhotos,
+} from "@/lib/data/photo-galleries";
+
+// Community photo submissions — Phase 3 lifecycle data-access (foundation only).
+// Re-exported so the submission integrity guard in
+// lib/data/community-photo-submissions.ts runs during `next build`.
+export {
+  getAllSubmissions,
+  getApprovedSubmissions,
+  getApprovedSubmissionsForCity,
+  getApprovedSubmissionsForNearbyPlace,
+  getDraftSubmissions,
+  getSubmissionById,
+  getSubmissionsByStatus,
+  getSubmissionsForCity,
+  getSubmissionsForNearbyPlace,
+} from "@/lib/data/community-photo-submissions";
+
+// Community photo publication candidates — Phase 4 bridge data-access (foundation only).
+// Re-exported so the publication integrity guard in
+// lib/data/publication-candidates.ts runs during `next build`.
+export {
+  getArchivedCandidates,
+  getCandidateForSubmission,
+  getCandidatesByStatus,
+  getCandidatesForCity,
+  getCandidatesForNearbyPlace,
+  getPublicationCandidateById,
+  getPublicationCandidates,
+  getPublishedCandidates,
+  getReadyCandidates,
+} from "@/lib/data/publication-candidates";
