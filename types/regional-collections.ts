@@ -43,4 +43,6 @@ export interface RegionalCollection {
   featuredPlaces: readonly string[];
   /** A small ordered subset of cities to surface first. */
   featuredCities: readonly string[];
+  /** Slugs of related collections (shared region type / places / cities). */
+  relatedCollections: readonly string[];
 }

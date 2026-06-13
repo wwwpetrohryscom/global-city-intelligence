@@ -16,7 +16,7 @@ import {
   getNearbyWeekendPlaceBySlug,
   getRegionTypeLabel,
   getRegionalCollectionBySlug,
-  getRegionalCollectionsForCity,
+  getRelatedRegionalCollections,
   hasNearbyWeekendPlaceDetailPage,
 } from "@/lib/data/queries";
 import { regionalCollectionBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -85,20 +85,9 @@ export default async function RegionalCollectionDetailPage({
     })
     .filter((p): p is NonNullable<typeof p> => p !== null);
 
-  // Related collections: other collections that share a city with this one.
-  const related: RegionalCollection[] = (() => {
-    const seen = new Set<string>([collection.slug]);
-    const out: RegionalCollection[] = [];
-    for (const citySlug of collection.cities) {
-      for (const rc of getRegionalCollectionsForCity(citySlug)) {
-        if (!seen.has(rc.slug)) {
-          seen.add(rc.slug);
-          out.push(rc);
-        }
-      }
-    }
-    return out.slice(0, 8);
-  })();
+  // Related collections (same region type / shared places / shared cities),
+  // precomputed deterministically in the data layer.
+  const related: RegionalCollection[] = getRelatedRegionalCollections(collection.slug);
 
   return (
     <main>

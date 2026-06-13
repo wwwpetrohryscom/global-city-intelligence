@@ -335,4 +335,5 @@ export {
   getRegionalCollectionBySlug,
   getRegionalCollectionsForCity,
   getRegionalCollectionsForPlace,
+  getRelatedRegionalCollections,
 } from "@/lib/data/regional-collections";
