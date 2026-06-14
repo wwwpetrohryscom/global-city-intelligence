@@ -6466,3 +6466,90 @@ collections respectively from the larger dataset.
 - `npm run typecheck` — clean
 - `npm run lint` — clean
 - `npm run build` — clean (7,952 / 7,952 static pages)
+
+## 2026-06-14: nearby-place density expansion for batch-seven cities
+
+### Scope
+
+Batch seven shipped its 100 new cities with a baseline of 1-2 nearby places
+each. This pass deepens **only** those 100 cities to a target density of 3-6
+nearby places, prioritising natural places (national/regional parks, nature
+reserves, protected landscapes, mountains, lakes, coastal nature, forests,
+river valleys) and avoiding urban attractions, museums, and monuments. No new
+cities, countries, routes, schema, or architecture — data-only densification.
+
+### Before → after
+
+| Metric | Before | After | Δ |
+| --- | --- | --- | --- |
+| Nearby-place records | 1,082 | 1,443 | +361 |
+| Nearby detail pages | 764 | 881 | +117 |
+| Nearby-place facts | 728 | 845 | +117 |
+| Nearby-place discovery-graph nodes | 1,080 | 1,441 | +361 |
+| Nearby-place discovery-graph edges | 9,677 | 13,441 | +3,764 |
+| Thematic collections | 180 | 205 | +25 |
+| Static pages | 7,952 | 8,094 | +142 |
+
+- All 100 batch-seven cities now have **3-6** nearby places (distribution:
+  3→4 cities, 4→10, 5→24, 6→62); none below 3, none above 6.
+- 361 new places: **117 verified** (P856 official URL → detail page +
+  designation/inception/IUCN facts) and **244 partial** (Wikidata + verified
+  Commons image, no official URL → no detail page).
+- Category mix of new places: park 93, mountain 84, nature 80, lake 40,
+  waterfront 32, beach 18, island 15.
+
+### Method (deterministic)
+
+- Candidates proposed per city, then resolved exactly as in batch seven:
+  Wikipedia title → Wikidata QID → P625 coordinates (gated ≤170 km from the
+  city), P18 Commons image with a **P373 Commons-category first-image
+  fallback** (license accept-list + repo image-filter parity), P856 official
+  URL, and P31/P814/P571 facts. Per-city cap of `max(0, 6 − existing)`,
+  verified-first by distance, deduped by slug and by Wikidata QID.
+- Remote outback Kalgoorlie-Boulder was recovered to 3 via the P373 fallback
+  plus a small curated list of in-range protected areas (Goldfields Woodlands
+  NP, Lake Ballard) since its candidates lacked P18 images.
+
+### Discovery & collection impact
+
+- **Nearby-place discovery graph** regenerated with the unchanged generator:
+  1,441 / 1,443 places carry edges (2 remote/island places — Litchfield near
+  Darwin, Ka‘ena Point near Honolulu — are >1,500 km from any peer and remain
+  reachable via their city), avg 9.3 edges/place.
+- **Thematic collections** regenerated with the unchanged generator (the
+  generator reproduces the prior 180 exactly on the old inputs, confirming
+  parity): 205 collections, new natural places fold into nature themes. Fixed
+  a latent generator bug where continental-aggregate collections capped places
+  at 50 but computed `photoEligiblePlaceCount` over the uncapped set.
+- **Regional collections** were *augmented in place* rather than regenerated:
+  the generator that produced the committed 207-collection file is not present
+  in the workspace (the available generator regresses to ~130 on current
+  inputs), so all 207 collections were preserved and the new places were added
+  only to collections that already include the place's connected city, honoring
+  every validator rule (category-consistency, forest/river tokens, 5-30 cap,
+  no same-type strict subset). 615 memberships added across 117 collections;
+  314 / 361 new places now appear in ≥1 regional collection (the remainder are
+  covered by the nearby-place discovery graph, thematic collections, their city
+  pages, and — for verified places — detail pages).
+- **City discovery graph** is unchanged: it models city↔city relationships and
+  is unaffected by nearby-place density.
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (1,443 records)
+- `npm run validate:media` — PASS
+- `npm run validate:community-media` — PASS
+- `npm run validate:photos` — PASS
+- `npm run validate:submissions` — PASS
+- `npm run validate:publication` — PASS
+- `npm run validate:discovery` — PASS (640 cities, 4,983 edges)
+- `npm run validate:nearby-discovery` — PASS (1,441 places, 13,441 edges)
+- `npm run validate:collections` — PASS (207 regional collections)
+- `npm run validate:thematic-collections` — PASS (205 thematic collections)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (8,094 / 8,094 static pages)
+
+> Note: `lib/data/nearby-places.ts` now splits its seed array into
+> `batchSevenDensitySeeds` + `baseSeeds` spread into `seeds`, to keep the
+> ~1,444-element literal under TypeScript's union-complexity ceiling (TS2590).
