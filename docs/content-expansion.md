@@ -6386,3 +6386,83 @@ to the sitemap and indexable routes.
 - `npm run lint` — clean
 - `npm run build` — clean (6,784 / 6,784 static pages)
 - build-fails-on-invalid — verified (non-nature member and related self-reference each → build error)
+
+## 2026-06-14: city coverage batch seven with complete local-first content
+
+### Scope
+
+Added 100 new cities across the supported target regions with a complete
+local-first content cluster, then re-ran every discovery and collection
+generator so the new records are integrated automatically. No existing
+architecture, validators, routes, or community-photo foundations were
+modified — data-only expansion.
+
+### Before → after
+
+| metric | before | after |
+| --- | --- | --- |
+| cities | 547 | **647** |
+| nearby places | 899 | **1,082** (+183) |
+| nearby detail pages | 644 | **764** (+120) |
+| reference facts | 608 | **728** (+120) |
+| weekend-trip pages | 446 | **546** |
+| visual-guide pages | 446 | **546** |
+| city hero images | — | **100 % of new cities** |
+| city discovery graph | 544 cities / 4,024 edges | **640 / 4,983** |
+| nearby-place discovery graph | 897 places / 7,797 edges | **1,080 / 9,677** |
+| regional collections | 175 | **207** |
+| thematic collections | 164 | **180** |
+| static pages | 6,784 | **7,952** |
+
+### Cities added (100, across 29 countries)
+
+EU ~60 (Germany 7, France 7, Italy 7, Spain 6, Poland 5, Netherlands 3,
+Belgium 2, Portugal 2, Sweden 2, Finland 2, Austria 2, Czechia 2, Greece 2,
+Romania 2, Denmark 1, Croatia 1, Slovenia 1, Slovakia 1, Bulgaria 1,
+Estonia 1, Latvia 1, Lithuania 1, Hungary 1), UK 7 + Ireland 3, USA 15,
+Canada 8, Australia 5, New Zealand 2. No new countries; all slugs unique
+and deduplicated against the existing 547.
+
+### Method (deterministic + workflow-assisted)
+
+- Candidate cities proposed by a per-country workflow (neutral grounded
+  intros, no marketing wording), deduplicated and validated to the exact
+  target distribution.
+- Hero images resolved per city via Wikidata P18 with a Commons-category
+  (P373) fallback, license accept-list (CC BY / CC BY-SA / CC0 / Public
+  Domain), montage/collage/crest rejection, and a clean-author filter →
+  100 % hero coverage for new cities.
+- Nearby places proposed by a workflow, then resolved deterministically:
+  Wikipedia title → Wikidata QID → P625 coordinates (gated ≤170 km from the
+  city), P18 + Commons image (repo image-filter parity), P856 official
+  authority URL, and P31/P814/P571 reference facts. 183 places kept (120
+  verified → detail pages + facts, 63 partial); every new city has ≥1
+  nearby place.
+- Weekend-trip and visual-guide pages are templated seeds for all 100
+  cities. City + place coordinates and Wikidata attributes for the new
+  records were resolved and the four discovery/collection artifacts were
+  regenerated with the unchanged generation logic.
+
+### Discovery & collection impact
+
+New cities and places appear automatically: all 100 new cities are in the
+city discovery graph; all new nearby places are in the nearby-place
+discovery graph; 95/100 new cities join ≥1 regional collection and 99/100
+join ≥1 thematic collection. The two collection layers grew by 32 and 16
+collections respectively from the larger dataset.
+
+### Validation results
+
+- `npm run validate:nearby-places` — PASS (1,082 records)
+- `npm run validate:media` — PASS (100 % new-city heroes, all licensed/clean)
+- `npm run validate:community-media` — PASS
+- `npm run validate:photos` — PASS
+- `npm run validate:submissions` — PASS
+- `npm run validate:publication` — PASS
+- `npm run validate:discovery` — PASS (640 cities, 4,983 edges)
+- `npm run validate:nearby-discovery` — PASS (1,080 places, 9,677 edges)
+- `npm run validate:collections` — PASS (207 regional collections)
+- `npm run validate:thematic-collections` — PASS (180 thematic collections)
+- `npm run typecheck` — clean
+- `npm run lint` — clean
+- `npm run build` — clean (7,952 / 7,952 static pages)

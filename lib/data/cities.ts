@@ -407,6 +407,1407 @@ function buildCity(seed: CitySeed): City {
 }
 
 const seeds: CitySeed[] = [
+  // ===== Batch seven (2026-06-14) =====
+  buildNeutralCitySeed({
+    slug: "aachen",
+    name: "Aachen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~0.5M metro",
+    intro:
+      "Aachen is a western German city on the Belgian-Dutch border with a major technical-university and research profile, used for cross-border relocation comparison with transport access into the Euregio.",
+    outlook:
+      "Use the Aachen profile to compare cost framing, transport access, and country-level context alongside Cologne, Bonn, and other Rhine-region metros.",
+    scores: { overall: 74, affordability: 72, airQuality: 74, energy: 74, resilience: 72 },
+    relatedCitySlugs: ["cologne", "bonn", "dusseldorf"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bochum",
+    name: "Bochum",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~0.4M",
+    intro:
+      "Bochum is a Ruhr-region city in western Germany with a university and post-industrial economy, used for comparing economic-transition and transport-access context within the Rhine-Ruhr conurbation.",
+    outlook:
+      "Use the Bochum profile to compare cost framing, transport access, and country-level signals alongside Dortmund, Essen, and other Ruhr metros.",
+    scores: { overall: 71, affordability: 76, airQuality: 70, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["dortmund", "essen", "cologne"],
+  }),
+  buildNeutralCitySeed({
+    slug: "wolfsburg",
+    name: "Wolfsburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~0.2M",
+    intro:
+      "Wolfsburg is a Lower Saxony city in northern Germany centred on automotive manufacturing, used for comparing engineering-relocation and cost framing within the German industrial belt.",
+    outlook:
+      "Use the Wolfsburg profile to compare cost framing, transport access, and country-level context alongside Hanover, Bremen, and other northern German cities.",
+    scores: { overall: 73, affordability: 72, airQuality: 74, energy: 76, resilience: 72 },
+    relatedCitySlugs: ["hanover", "bremen", "berlin"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kassel",
+    name: "Kassel",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~0.4M metro",
+    intro:
+      "Kassel is a central German city in northern Hesse with engineering, logistics, and university activity at a national rail crossroads, used for comparing transport-access and cost framing.",
+    outlook:
+      "Use the Kassel profile to compare cost framing, transport access, and country-level signals alongside Frankfurt, Hanover, and other central German cities.",
+    scores: { overall: 71, affordability: 74, airQuality: 72, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["frankfurt", "hanover"],
+  }),
+  buildNeutralCitySeed({
+    slug: "magdeburg",
+    name: "Magdeburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~0.4M metro",
+    intro:
+      "Magdeburg is the capital of Saxony-Anhalt in eastern Germany with logistics, manufacturing, and a planned semiconductor-investment profile, used for cost-friendly eastern German relocation comparison.",
+    outlook:
+      "Use the Magdeburg profile to compare cost framing, transport access, and country-level context alongside Leipzig, Dresden, and Berlin.",
+    scores: { overall: 70, affordability: 78, airQuality: 72, energy: 72, resilience: 68 },
+    relatedCitySlugs: ["leipzig", "berlin", "dresden"],
+  }),
+  buildNeutralCitySeed({
+    slug: "saarbrucken",
+    name: "Saarbrücken",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~0.3M metro",
+    intro:
+      "Saarbrücken is the capital of Saarland on the French border in western Germany with university, informatics-research, and cross-border-commuting activity, used for cross-border relocation comparison.",
+    outlook:
+      "Use the Saarbrücken profile to compare cost framing, transport access, and country-level context alongside Mannheim, Trier, and Frankfurt.",
+    scores: { overall: 70, affordability: 76, airQuality: 72, energy: 72, resilience: 68 },
+    relatedCitySlugs: ["trier", "frankfurt"],
+  }),
+  buildNeutralCitySeed({
+    slug: "chemnitz",
+    name: "Chemnitz",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~0.4M metro",
+    intro:
+      "Chemnitz is a Saxon city in eastern Germany with a machine-building and university profile and a low cost framing, used for cost-friendly eastern German relocation comparison.",
+    outlook:
+      "Use the Chemnitz profile to compare cost framing, transport access, and country-level signals alongside Leipzig, Dresden, and other eastern German cities.",
+    scores: { overall: 69, affordability: 80, airQuality: 72, energy: 70, resilience: 66 },
+    relatedCitySlugs: ["dresden", "leipzig", "berlin"],
+  }),
+  buildNeutralCitySeed({
+    slug: "saint-etienne",
+    name: "Saint-Étienne",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~520K metro",
+    intro:
+      "Saint-Étienne is a former coal and manufacturing metro in the Auvergne-Rhône-Alpes region of central France, with a design-industry pivot, a tram-and-rail transport network linked to Lyon, and ongoing post-industrial air-quality and redevelopment context.",
+    outlook:
+      "Use the Saint-Étienne profile to compare cost framing, transport access, and post-industrial resilience context alongside Lyon, Clermont-Ferrand, and Grenoble.",
+    scores: { overall: 64, affordability: 80, airQuality: 66, energy: 70, resilience: 66 },
+    relatedCitySlugs: ["lyon", "clermont-ferrand", "grenoble"],
+  }),
+  buildNeutralCitySeed({
+    slug: "le-havre",
+    name: "Le Havre",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~290K metro",
+    intro:
+      "Le Havre is a major Channel-coast port city in Normandy at the mouth of the Seine, with container-logistics and industrial activity, rail and motorway links to Paris, and active coastal climate-adaptation context.",
+    outlook:
+      "Use the Le Havre profile to compare cost framing, transport access, and coastal-resilience context alongside Rouen, Caen, and other northern French cities.",
+    scores: { overall: 64, affordability: 78, airQuality: 68, energy: 70, resilience: 66 },
+    relatedCitySlugs: ["rouen", "caen", "paris"],
+  }),
+  buildNeutralCitySeed({
+    slug: "angers",
+    name: "Angers",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~410K metro",
+    intro:
+      "Angers is a regional center in the Pays de la Loire region of western France on the Maine river, with horticulture, plant-science, and university activity, a tram-served transport network, and a temperate-climate Loire-valley setting.",
+    outlook:
+      "Use the Angers profile to compare cost framing, transport access, and healthcare context alongside Nantes, Tours, and Rennes.",
+    scores: { overall: 70, affordability: 74, airQuality: 74, energy: 74, resilience: 74 },
+    relatedCitySlugs: ["nantes", "tours", "rennes"],
+  }),
+  buildNeutralCitySeed({
+    slug: "metz",
+    name: "Metz",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~290K metro",
+    intro:
+      "Metz is a regional capital in the Grand Est region of northeastern France on the Moselle river near the German and Luxembourg borders, with administrative and cross-border employment ties, rail access toward Luxembourg and Paris, and a temperate-continental climate setting.",
+    outlook:
+      "Use the Metz profile to compare cost framing, transport access, and cross-border employment context alongside Nancy, Strasbourg, and Reims.",
+    scores: { overall: 68, affordability: 76, airQuality: 72, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["nancy", "strasbourg", "reims"],
+  }),
+  buildNeutralCitySeed({
+    slug: "orleans",
+    name: "Orléans",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~450K metro",
+    intro:
+      "Orléans is the regional capital of Centre-Val de Loire on the Loire river in north-central France, with logistics, cosmetics, and research activity, frequent rail links to Paris, and Loire-valley flood and climate-adaptation context.",
+    outlook:
+      "Use the Orléans profile to compare cost framing, transport access, and flood-resilience context alongside Tours, Paris, and other central French cities.",
+    scores: { overall: 70, affordability: 74, airQuality: 74, energy: 74, resilience: 72 },
+    relatedCitySlugs: ["tours", "paris", "dijon"],
+  }),
+  buildNeutralCitySeed({
+    slug: "le-mans",
+    name: "Le Mans",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~340K metro",
+    intro:
+      "Le Mans is an industrial and rail-hub city in the Pays de la Loire region of northwestern France, with insurance, manufacturing, and automotive-event activity, fast rail links to Paris, and a temperate-climate inland setting.",
+    outlook:
+      "Use the Le Mans profile to compare cost framing, transport access, and country-level intelligence alongside Tours, Nantes, and Rennes.",
+    scores: { overall: 66, affordability: 78, airQuality: 74, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["tours", "nantes", "rennes"],
+  }),
+  buildNeutralCitySeed({
+    slug: "limoges",
+    name: "Limoges",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~280K metro",
+    intro:
+      "Limoges is a regional center in the Nouvelle-Aquitaine region of central-western France, historically known for porcelain and enamel production, with a university and healthcare role and an inland, forested Limousin climate setting.",
+    outlook:
+      "Use the Limoges profile to compare cost framing, transport access, and healthcare context alongside Clermont-Ferrand, Bordeaux, and Tours.",
+    scores: { overall: 66, affordability: 80, airQuality: 76, energy: 72, resilience: 72 },
+    relatedCitySlugs: ["clermont-ferrand", "bordeaux", "tours"],
+  }),
+  buildNeutralCitySeed({
+    slug: "reggio-calabria",
+    name: "Reggio Calabria",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~550K metro",
+    intro:
+      "Reggio Calabria is the largest city of the Calabria region in southern Italy, sitting on the Strait of Messina with ferry and rail links, a Mediterranean climate, and seismic-zone context that shapes its climate-adaptation framing.",
+    outlook:
+      "Use the Reggio Calabria profile to compare cost framing, transport access, and resilience signals alongside other southern Italian and Mediterranean metros.",
+    scores: { overall: 66, affordability: 78, airQuality: 68, energy: 64, resilience: 60 },
+    relatedCitySlugs: ["naples", "catania", "palermo"],
+  }),
+  buildNeutralCitySeed({
+    slug: "salerno",
+    name: "Salerno",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~600K metro",
+    intro:
+      "Salerno is a Campanian port city south of Naples with a working commercial harbour, university and medical-school heritage, and coastal Mediterranean climate that informs its adaptation context.",
+    outlook:
+      "Use the Salerno profile to compare cost framing, port and transport access, and healthcare framing alongside Naples and other southern Italian metros.",
+    scores: { overall: 69, affordability: 76, airQuality: 70, energy: 66, resilience: 64 },
+    relatedCitySlugs: ["naples", "bari", "rome"],
+  }),
+  buildNeutralCitySeed({
+    slug: "taranto",
+    name: "Taranto",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~480K metro",
+    intro:
+      "Taranto is a Puglian port city with a major naval base and one of Italy's largest steelworks, giving it an industrial economy and air-quality context that frame its environmental-adaptation planning.",
+    outlook:
+      "Use the Taranto profile to compare cost framing, industrial air-quality signals, and transport access alongside Bari and other southern Italian metros.",
+    scores: { overall: 63, affordability: 80, airQuality: 58, energy: 62, resilience: 60 },
+    relatedCitySlugs: ["bari", "naples", "catania"],
+  }),
+  buildNeutralCitySeed({
+    slug: "ferrara",
+    name: "Ferrara",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~340K metro",
+    intro:
+      "Ferrara is an Emilia-Romagna university city with a UNESCO-listed Renaissance core, flat cycling-friendly urban form, and Po-plain flood context that shapes its climate-adaptation framing.",
+    outlook:
+      "Use the Ferrara profile to compare cost framing, mobility, and flood-resilience signals alongside Bologna, Parma, and other northern Italian metros.",
+    scores: { overall: 73, affordability: 72, airQuality: 68, energy: 70, resilience: 68 },
+    relatedCitySlugs: ["bologna", "parma"],
+  }),
+  buildNeutralCitySeed({
+    slug: "reggio-emilia",
+    name: "Reggio Emilia",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~530K metro",
+    intro:
+      "Reggio Emilia is an Emilia-Romagna manufacturing city on the high-speed Mediterranea rail corridor, with a mechanical-industry economy and Po-plain climate context that inform its adaptation planning.",
+    outlook:
+      "Use the Reggio Emilia profile to compare cost framing, transport access, and industrial-economy signals alongside Modena, Parma, and Bologna.",
+    scores: { overall: 74, affordability: 70, airQuality: 66, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["parma", "bologna"],
+  }),
+  buildNeutralCitySeed({
+    slug: "rimini",
+    name: "Rimini",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~330K metro",
+    intro:
+      "Rimini is an Adriatic coastal city in Emilia-Romagna with a tourism- and conference-driven economy, rail and airport links, and seasonal-coastal climate context that shapes its adaptation framing.",
+    outlook:
+      "Use the Rimini profile to compare cost framing, transport access, and coastal-resilience signals alongside Bologna and other Adriatic Italian metros.",
+    scores: { overall: 71, affordability: 71, airQuality: 70, energy: 68, resilience: 66 },
+    relatedCitySlugs: ["bologna", "venice"],
+  }),
+  buildNeutralCitySeed({
+    slug: "pescara",
+    name: "Pescara",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~350K metro",
+    intro:
+      "Pescara is the largest city of the Abruzzo region, an Adriatic port and regional commercial center with rail and airport access and coastal Mediterranean climate that frames its adaptation context.",
+    outlook:
+      "Use the Pescara profile to compare cost framing, transport access, and coastal-resilience signals alongside Rome and other central Italian metros.",
+    scores: { overall: 69, affordability: 74, airQuality: 70, energy: 66, resilience: 64 },
+    relatedCitySlugs: ["rome", "bari", "naples"],
+  }),
+  buildNeutralCitySeed({
+    slug: "leon",
+    name: "León",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~0.2M metro",
+    intro:
+      "León is a provincial capital in north-western Castile and León, with university, services, and high-speed-rail activity inside a continental highland climate context.",
+    outlook:
+      "Use the León profile to compare cost framing, transport access, and country-level inland context alongside Valladolid and other Castilian metros.",
+    scores: { overall: 71, affordability: 76, airQuality: 77, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["valladolid", "madrid", "zaragoza"],
+  }),
+  buildNeutralCitySeed({
+    slug: "burgos",
+    name: "Burgos",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~0.2M metro",
+    intro:
+      "Burgos is a provincial capital in northern Castile and León, with food-industry, logistics, and university activity inside a cold continental climate context.",
+    outlook:
+      "Use the Burgos profile to compare cost framing, transport access, and country-level inland context alongside Valladolid and Bilbao.",
+    scores: { overall: 72, affordability: 75, airQuality: 78, energy: 73, resilience: 71 },
+    relatedCitySlugs: ["valladolid", "bilbao"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cadiz",
+    name: "Cádiz",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~0.62M metro",
+    intro:
+      "Cádiz is an Andalusian port city and naval base on an Atlantic peninsula in south-western Spain, with shipbuilding, tourism, and services activity inside a coastal climate-adaptation context.",
+    outlook:
+      "Use the Cádiz profile to compare cost framing, transport access, and country-level coastal context alongside Seville and Málaga.",
+    scores: { overall: 69, affordability: 74, airQuality: 74, energy: 71, resilience: 63 },
+    relatedCitySlugs: ["seville", "malaga", "cordoba"],
+  }),
+  buildNeutralCitySeed({
+    slug: "almeria",
+    name: "Almería",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~0.28M metro",
+    intro:
+      "Almería is an Andalusian port metro in south-eastern Spain, with intensive agriculture, logistics, and tourism activity inside a hot, semi-arid climate context.",
+    outlook:
+      "Use the Almería profile to compare cost framing, transport access, and country-level Mediterranean context alongside Granada and Murcia.",
+    scores: { overall: 68, affordability: 76, airQuality: 72, energy: 73, resilience: 61 },
+    relatedCitySlugs: ["granada", "murcia", "malaga"],
+  }),
+  buildNeutralCitySeed({
+    slug: "cartagena",
+    name: "Cartagena",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~0.22M metro",
+    intro:
+      "Cartagena is a major naval port and industrial metro on the south-eastern Spanish coast in the Murcia region, with shipbuilding, petrochemical, and logistics activity inside a hot, dry Mediterranean climate context.",
+    outlook:
+      "Use the Cartagena profile to compare cost framing, transport access, and country-level coastal context alongside Murcia and Alicante.",
+    scores: { overall: 68, affordability: 75, airQuality: 70, energy: 72, resilience: 62 },
+    relatedCitySlugs: ["murcia", "alicante", "valencia"],
+  }),
+  buildNeutralCitySeed({
+    slug: "santiago-de-compostela",
+    name: "Santiago de Compostela",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~0.17M metro",
+    intro:
+      "Santiago de Compostela is the regional capital of Galicia in north-western Spain, with government, university, and pilgrimage-tourism activity inside a wet Atlantic climate context.",
+    outlook:
+      "Use the Santiago de Compostela profile to compare cost framing, transport access, and country-level Atlantic context alongside Vigo and other Galician peers.",
+    scores: { overall: 71, affordability: 73, airQuality: 79, energy: 71, resilience: 71 },
+    relatedCitySlugs: ["vigo", "santander", "bilbao"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kielce",
+    name: "Kielce",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~270K",
+    intro:
+      "Kielce is the capital of Świętokrzyskie Voivodeship in south-central Poland, with regional trade-fair and services activity, road and rail access toward Kraków and Warsaw, and seasonal heating-related air-quality context typical of the area.",
+    outlook:
+      "Use the Kielce profile to compare cost framing, transport access, and air-quality signals alongside Kraków, Lublin, and other Polish regional centres.",
+    scores: { overall: 70, affordability: 79, airQuality: 64, energy: 67, resilience: 69 },
+    relatedCitySlugs: ["krakow", "lublin", "warsaw"],
+  }),
+  buildNeutralCitySeed({
+    slug: "opole",
+    name: "Opole",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~200K metro",
+    intro:
+      "Opole is the capital of Opolskie Voivodeship in south-western Poland on the Oder river, with administrative and services activity, rail access along the Wrocław–Katowice corridor, and river-flood and heat exposure framed by EU adaptation context.",
+    outlook:
+      "Use the Opole profile to compare cost framing, transport access, and climate-adaptation signals alongside Wrocław, Katowice, and other Central-European metros.",
+    scores: { overall: 71, affordability: 78, airQuality: 66, energy: 68, resilience: 69 },
+    relatedCitySlugs: ["wroclaw", "katowice", "krakow"],
+  }),
+  buildNeutralCitySeed({
+    slug: "sosnowiec",
+    name: "Sosnowiec",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~190K",
+    intro:
+      "Sosnowiec is a city in the Zagłębie Dąbrowskie area within the Upper Silesian–Zagłębie metropolis, with industrial and services activity, dense tram and rail links across the conurbation, and heating-related particulate exposure characteristic of the coal-region context.",
+    outlook:
+      "Use the Sosnowiec profile to compare cost framing, transport access, and air-quality signals alongside Katowice and other Silesian cities.",
+    scores: { overall: 68, affordability: 80, airQuality: 60, energy: 65, resilience: 67 },
+    relatedCitySlugs: ["katowice", "krakow", "wroclaw"],
+  }),
+  buildNeutralCitySeed({
+    slug: "gliwice",
+    name: "Gliwice",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~170K",
+    intro:
+      "Gliwice is an Upper Silesian city within the metropolitan conurbation, with automotive-manufacturing and technical-university activity, motorway and rail access via the A1/A4 junction, and seasonal heating-related air-quality context typical of the region.",
+    outlook:
+      "Use the Gliwice profile to compare cost framing, transport access, and energy-transition signals alongside Katowice and other Silesian cities.",
+    scores: { overall: 70, affordability: 78, airQuality: 62, energy: 67, resilience: 68 },
+    relatedCitySlugs: ["katowice", "wroclaw", "krakow"],
+  }),
+  buildNeutralCitySeed({
+    slug: "czestochowa",
+    name: "Częstochowa",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~210K",
+    intro:
+      "Częstochowa is a city in the Silesian Voivodeship of southern Poland known for the Jasna Góra pilgrimage site, with services and manufacturing activity, rail and road links along the Warsaw–Katowice corridor, and heating-related air-quality context common in the region.",
+    outlook:
+      "Use the Częstochowa profile to compare cost framing, transport access, and air-quality signals alongside Katowice, Kraków, and other Polish cities.",
+    scores: { overall: 68, affordability: 80, airQuality: 62, energy: 65, resilience: 67 },
+    relatedCitySlugs: ["katowice", "krakow", "lodz"],
+  }),
+  buildNeutralCitySeed({
+    slug: "almere",
+    name: "Almere",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~220K",
+    intro:
+      "Almere is a planned new town in the province of Flevoland built on reclaimed land east of Amsterdam, with rail and motorway links into the capital, polder climate-adaptation context, and a fast-growing residential profile.",
+    outlook:
+      "Use the Almere profile to compare affordability framing, transport access, and water-management resilience context alongside Amsterdam and other Randstad-edge cities.",
+    scores: { overall: 67, affordability: 65, airQuality: 70, energy: 70, resilience: 60 },
+    relatedCitySlugs: ["amsterdam", "utrecht", "haarlem"],
+  }),
+  buildNeutralCitySeed({
+    slug: "s-hertogenbosch",
+    name: "'s-Hertogenbosch",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~155K",
+    intro:
+      "'s-Hertogenbosch is the capital of the province of North Brabant in the southern Netherlands, with intercity rail access, regional healthcare and administrative functions, and a historic core set within a low-lying river landscape.",
+    outlook:
+      "Use the 's-Hertogenbosch profile to compare cost framing, transport access, and provincial-capital context alongside Eindhoven, Tilburg, and Nijmegen.",
+    scores: { overall: 68, affordability: 67, airQuality: 68, energy: 70, resilience: 64 },
+    relatedCitySlugs: ["eindhoven", "tilburg", "nijmegen"],
+  }),
+  buildNeutralCitySeed({
+    slug: "enschede",
+    name: "Enschede",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~160K",
+    intro:
+      "Enschede is the largest city of the Twente region in the eastern Netherlands near the German border, with a university and technology focus, regional rail connections, and a post-textile-industry economic profile.",
+    outlook:
+      "Use the Enschede profile to compare cost framing, transport access, and university-economy context alongside Groningen, Nijmegen, and Eindhoven.",
+    scores: { overall: 66, affordability: 70, airQuality: 68, energy: 68, resilience: 64 },
+    relatedCitySlugs: ["groningen", "nijmegen", "eindhoven"],
+  }),
+  buildNeutralCitySeed({
+    slug: "charleroi",
+    name: "Charleroi",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~0.6M metro",
+    intro:
+      "Charleroi is the largest city in Wallonia in southern Belgium, with post-industrial transition, regional airport access, and rail-connectivity activity shaping its urban profile.",
+    outlook:
+      "Use the Charleroi profile to compare cost framing, transport access, and country-level context alongside Liege and Brussels.",
+    scores: { overall: 62, affordability: 74, airQuality: 62, energy: 66, resilience: 62 },
+    relatedCitySlugs: ["liege", "brussels", "antwerp"],
+  }),
+  buildNeutralCitySeed({
+    slug: "mons",
+    name: "Mons",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~0.25M metro",
+    intro:
+      "Mons is the capital of Hainaut province in southern Belgium, with university, public-administration, and NATO-related institutional activity shaping its urban profile.",
+    outlook:
+      "Use the Mons profile to compare cost framing, transport access, and country-level context alongside Liege and Brussels.",
+    scores: { overall: 66, affordability: 72, airQuality: 68, energy: 68, resilience: 66 },
+    relatedCitySlugs: ["liege", "brussels", "leuven"],
+  }),
+  buildNeutralCitySeed({
+    slug: "vila-nova-de-gaia",
+    name: "Vila Nova de Gaia",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "~0.3M",
+    intro:
+      "Vila Nova de Gaia is the largest municipality of the Porto metropolitan area across the Douro from Porto, with metro and bridge links into the regional core and a service, port-wine logistics, and residential profile shaping its cost framing.",
+    outlook:
+      "Use the Vila Nova de Gaia profile to compare cost framing, transport access, and country-level context alongside Porto, Braga, and Aveiro.",
+    scores: { overall: 72, affordability: 74, airQuality: 75, energy: 72, resilience: 70 },
+    relatedCitySlugs: ["porto", "braga", "aveiro"],
+  }),
+  buildNeutralCitySeed({
+    slug: "setubal",
+    name: "Setúbal",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "~0.15M",
+    intro:
+      "Setúbal is a port and district-capital city on the Sado estuary south of Lisbon, with fishing, automotive-manufacturing, and logistics activity and rail and ferry access shaping its transport and cost framing.",
+    outlook:
+      "Use the Setúbal profile to compare cost framing, transport access, and climate-adaptation context alongside Lisbon and other Southern-European metros.",
+    scores: { overall: 70, affordability: 74, airQuality: 72, energy: 71, resilience: 68 },
+    relatedCitySlugs: ["lisbon", "faro", "porto"],
+  }),
+  buildNeutralCitySeed({
+    slug: "orebro",
+    name: "Örebro",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Northern Europe",
+    population: "~0.16M metro",
+    intro:
+      "Örebro is the regional capital of Örebro County in central Sweden, with university, logistics, and distribution activity and rail transport access shaping a stable inland urban profile.",
+    outlook:
+      "Use the Örebro profile to compare cost framing, transport access, and country-level context alongside Stockholm, Vasteras, and other central Swedish cities.",
+    scores: { overall: 75, affordability: 67, airQuality: 80, energy: 80, resilience: 75 },
+    relatedCitySlugs: ["stockholm", "linkoping"],
+  }),
+  buildNeutralCitySeed({
+    slug: "norrkoping",
+    name: "Norrköping",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Northern Europe",
+    population: "~0.14M metro",
+    intro:
+      "Norrköping is an industrial and port city on Sweden's east coast in Östergötland, with logistics, data-center, and manufacturing activity and rail access shaping its urban profile.",
+    outlook:
+      "Use the Norrköping profile to compare cost framing, transport access, and country-level context alongside Linkoping, Stockholm, and other east-coast Swedish cities.",
+    scores: { overall: 74, affordability: 68, airQuality: 79, energy: 80, resilience: 74 },
+    relatedCitySlugs: ["linkoping", "stockholm", "gothenburg"],
+  }),
+  buildNeutralCitySeed({
+    slug: "vejle",
+    name: "Vejle",
+    countrySlug: "denmark",
+    countryName: "Denmark",
+    region: "Northern Europe",
+    population: "~0.12M",
+    intro:
+      "Vejle is an East Jutland regional center at the head of Vejle Fjord and a rail and motorway junction in the Triangle Region, with documented stormwater and coastal climate-adaptation planning and country-level Danish healthcare framing.",
+    outlook:
+      "Use the Vejle profile to compare cost framing, transport access, and climate-adaptation context alongside Aarhus, Odense, and other Danish regional centers.",
+    scores: { overall: 79, affordability: 70, airQuality: 83, energy: 84, resilience: 84 },
+    relatedCitySlugs: ["aarhus", "odense", "copenhagen"],
+  }),
+  buildNeutralCitySeed({
+    slug: "vantaa",
+    name: "Vantaa",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Northern Europe",
+    population: "~250K",
+    intro:
+      "Vantaa is a city in the Greater Helsinki capital region of southern Finland and the site of Helsinki Airport, with rail and ring-road links that frame its transport access, a public healthcare system shared across the metro, and capital-region housing costs that shape its cost framing.",
+    outlook:
+      "Use the Vantaa profile to compare transport access, housing cost, and air quality alongside Helsinki, Espoo, and Turku.",
+    scores: { overall: 71, affordability: 47, airQuality: 82, energy: 79, resilience: 75 },
+    relatedCitySlugs: ["helsinki", "turku"],
+  }),
+  buildNeutralCitySeed({
+    slug: "lahti",
+    name: "Lahti",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Northern Europe",
+    population: "~120K",
+    intro:
+      "Lahti is the regional capital of Paijat-Hame in southern Finland, positioned on the main rail line north of Helsinki with commuter and logistics connections, a regional public healthcare framing, and a climate-adaptation context tied to its lakeside setting and past clean-air planning.",
+    outlook:
+      "Use the Lahti profile to compare transport access, cost framing, and climate-adaptation context alongside Helsinki, Tampere, and Turku.",
+    scores: { overall: 69, affordability: 56, airQuality: 81, energy: 78, resilience: 73 },
+    relatedCitySlugs: ["helsinki", "tampere", "turku"],
+  }),
+  buildNeutralCitySeed({
+    slug: "sankt-polten",
+    name: "Sankt Pölten",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~55K",
+    intro:
+      "Sankt Pölten is the capital of the Austrian state of Lower Austria, sited on the Traisen River with rail access on the Western Railway line toward Vienna, regional administrative and healthcare functions, and a continental climate that frames its climate-adaptation context.",
+    outlook:
+      "Use the Sankt Pölten profile to compare transport access, cost framing, and climate-adaptation context alongside regional peers such as Vienna, Linz, and Graz.",
+    scores: { overall: 70, affordability: 64, airQuality: 78, energy: 80, resilience: 74 },
+    relatedCitySlugs: ["vienna", "graz"],
+  }),
+  buildNeutralCitySeed({
+    slug: "villach",
+    name: "Villach",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~65K",
+    intro:
+      "Villach is the second-largest city in the Austrian state of Carinthia, positioned at an alpine rail junction near the Italian and Slovenian borders with a semiconductor manufacturing base, regional hospital provision, and a mountain-valley setting that shapes its climate-adaptation context.",
+    outlook:
+      "Use the Villach profile to compare transport access, healthcare framing, and energy context alongside regional peers such as Graz, Salzburg, and Innsbruck.",
+    scores: { overall: 69, affordability: 66, airQuality: 79, energy: 79, resilience: 73 },
+    relatedCitySlugs: ["graz", "salzburg", "innsbruck"],
+  }),
+  buildNeutralCitySeed({
+    slug: "usti-nad-labem",
+    name: "Ústí nad Labem",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Central Europe",
+    population: "~120K",
+    intro:
+      "Ústí nad Labem is the regional capital of the Ústí nad Labem Region in north Bohemia, an industrial and chemical-manufacturing center on the Labe (Elbe) River with a major rail corridor to Germany, moderate housing costs, and air-quality monitoring tied to its industrial base.",
+    outlook:
+      "Use the Ústí nad Labem profile to compare cost framing, transport access, and air-quality context alongside Prague, Pilsen, and other Czech regional centers.",
+    scores: { overall: 63, affordability: 80, airQuality: 58, energy: 62, resilience: 63 },
+    relatedCitySlugs: ["prague", "brno"],
+  }),
+  buildNeutralCitySeed({
+    slug: "hradec-kralove",
+    name: "Hradec Králové",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Central Europe",
+    population: "~95K",
+    intro:
+      "Hradec Králové is the regional capital of the Hradec Králové Region in eastern Bohemia, a university and medical-services city on the Elbe River with strong rail and road access and a cost framing typical of mid-sized Czech centers.",
+    outlook:
+      "Use the Hradec Králové profile to compare cost framing, transport access, and healthcare framing alongside Prague, Brno, and Olomouc.",
+    scores: { overall: 72, affordability: 76, airQuality: 70, energy: 68, resilience: 71 },
+    relatedCitySlugs: ["prague", "brno", "olomouc"],
+  }),
+  buildNeutralCitySeed({
+    slug: "larissa",
+    name: "Larissa",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Southern Europe",
+    population: "~280K metro",
+    intro:
+      "Larissa is the capital of the Thessaly region in central Greece and a transport and agricultural hub on the Athens-Thessaloniki rail and motorway axis, with healthcare framing anchored by a regional university hospital and a continental climate that shapes heat-and-water adaptation context.",
+    outlook:
+      "Use the Larissa profile to compare cost framing, transport access, and climate-adaptation context alongside Greek regional peers.",
+    scores: { overall: 67, affordability: 78, airQuality: 63, energy: 66, resilience: 63 },
+    relatedCitySlugs: ["athens"],
+  }),
+  buildNeutralCitySeed({
+    slug: "chania",
+    name: "Chania",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Southern Europe",
+    population: "~110K metro",
+    intro:
+      "Chania is the principal city of western Crete and a Mediterranean port with an international airport, with cost framing tied to seasonal tourism and a coastal climate that shapes heat, drought, and water-adaptation context.",
+    outlook:
+      "Use the Chania profile to compare cost framing, transport access, and climate-adaptation context alongside other Greek island and coastal peers.",
+    scores: { overall: 69, affordability: 70, airQuality: 72, energy: 67, resilience: 64 },
+    relatedCitySlugs: ["heraklion", "athens"],
+  }),
+  buildNeutralCitySeed({
+    slug: "craiova",
+    name: "Craiova",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "~420K metro",
+    intro:
+      "Craiova is the regional capital of Oltenia and seat of Dolj County in southwestern Romania, with university and automotive-manufacturing activity, road and rail links toward Bucharest and the Danube, and an Eastern-European cost framing relevant to relocation comparison.",
+    outlook:
+      "Use the Craiova profile to compare affordability, transport access, air quality, and country-level context alongside regional peers such as Bucharest, Timisoara, and Sibiu.",
+    scores: { overall: 63, affordability: 80, airQuality: 58, energy: 60, resilience: 58 },
+    relatedCitySlugs: ["bucharest", "timisoara", "sibiu"],
+  }),
+  buildNeutralCitySeed({
+    slug: "galati",
+    name: "Galați",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "~250K metro",
+    intro:
+      "Galați is a Danube port city and seat of Galați County in eastern Romania, anchored by steel and shipbuilding industry, river and rail freight access, and an affordability framing typical of the lower Danube region.",
+    outlook:
+      "Use the Galați profile to compare cost framing, transport and port access, air quality, and resilience context alongside regional peers such as Constanta, Iasi, and Bucharest.",
+    scores: { overall: 58, affordability: 82, airQuality: 52, energy: 56, resilience: 54 },
+    relatedCitySlugs: ["constanta", "iasi", "bucharest"],
+  }),
+  buildNeutralCitySeed({
+    slug: "osijek",
+    name: "Osijek",
+    countrySlug: "croatia",
+    countryName: "Croatia",
+    region: "Southeastern Europe",
+    population: "~150K metro",
+    intro:
+      "Osijek is the largest city of eastern Croatia and the administrative center of Osijek-Baranja County in the Slavonia region, a Drava-river port and university city whose inland-continental setting frames its transport access, healthcare provision, and cost structure.",
+    outlook:
+      "Use the Osijek profile to compare affordability, transport access, and climate-adaptation context alongside Zagreb, Rijeka, and Split.",
+    scores: { overall: 67, affordability: 80, airQuality: 68, energy: 65, resilience: 64 },
+    relatedCitySlugs: ["zagreb", "rijeka", "split"],
+  }),
+  buildNeutralCitySeed({
+    slug: "celje",
+    name: "Celje",
+    countrySlug: "slovenia",
+    countryName: "Slovenia",
+    region: "Central Europe",
+    population: "~50K",
+    intro:
+      "Celje is a regional centre of the Lower Styria region in east-central Slovenia, set at the confluence of the Savinja and Voglajna rivers, with rail-junction transport access on the Ljubljana-Maribor corridor and inland-continental climate-adaptation context.",
+    outlook:
+      "Use the Celje profile to compare transport access, cost framing, and climate-adaptation context alongside Ljubljana, Maribor, and Kranj.",
+    scores: { overall: 60, affordability: 70, airQuality: 62, energy: 58, resilience: 58 },
+    relatedCitySlugs: ["ljubljana", "maribor", "kranj"],
+  }),
+  buildNeutralCitySeed({
+    slug: "presov",
+    name: "Presov",
+    countrySlug: "slovakia",
+    countryName: "Slovakia",
+    region: "Central Europe",
+    population: "~90K",
+    intro:
+      "Presov is the regional capital of eastern Slovakia's Presov Region with a university-anchored services economy, road and rail access toward the Polish and Ukrainian borders, and a continental climate framing for relocation and cost comparison.",
+    outlook:
+      "Use the Presov profile to compare affordability, transport access, and climate-adaptation context alongside regional peers such as Kosice, Nitra, and Zilina.",
+    scores: { overall: 58, affordability: 72, airQuality: 58, energy: 52, resilience: 54 },
+    relatedCitySlugs: ["kosice", "zilina"],
+  }),
+  buildNeutralCitySeed({
+    slug: "ruse",
+    name: "Ruse",
+    countrySlug: "bulgaria",
+    countryName: "Bulgaria",
+    region: "Southeastern Europe",
+    population: "~140K",
+    intro:
+      "Ruse is the largest Bulgarian city on the Danube and the administrative centre of Ruse Province, with cross-border rail and road access via the Danube Bridge to Romania, a regional river port, and a continental climate that frames its flood and heat adaptation context.",
+    outlook:
+      "Use the Ruse profile to compare transport access, affordability, and climate-adaptation context alongside regional peers such as Varna and Sofia.",
+    scores: { overall: 56, affordability: 74, airQuality: 48, energy: 50, resilience: 52 },
+    relatedCitySlugs: ["varna", "sofia", "plovdiv"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kohtla-jarve",
+    name: "Kohtla-Järve",
+    countrySlug: "estonia",
+    countryName: "Estonia",
+    region: "Baltic Europe",
+    population: "~33K",
+    intro:
+      "Kohtla-Järve is an industrial city in Ida-Viru County in northeastern Estonia, historically built around oil-shale mining and processing, useful for energy-transition framing and regional cost comparison.",
+    outlook:
+      "Use the Kohtla-Järve profile to compare energy-transition context, cost framing, and air-quality indicators alongside other Estonian and Baltic peers.",
+    scores: { overall: 61, affordability: 80, airQuality: 58, energy: 55, resilience: 54 },
+    relatedCitySlugs: ["tallinn", "tartu"],
+  }),
+  buildNeutralCitySeed({
+    slug: "daugavpils",
+    name: "Daugavpils",
+    countrySlug: "latvia",
+    countryName: "Latvia",
+    region: "Baltic Europe",
+    population: "~80K",
+    intro:
+      "Daugavpils is Latvia's second-largest city and the regional center of the Latgale region in the southeast, sitting on the Daugava River near the Lithuanian and Belarusian borders with rail-junction transport access and an industrial-era economy under post-Soviet adaptation.",
+    outlook:
+      "Use the Daugavpils profile to compare cost framing, transport access, and climate-adaptation context alongside Latvian and Baltic regional peers.",
+    scores: { overall: 61, affordability: 80, airQuality: 68, energy: 58, resilience: 60 },
+    relatedCitySlugs: ["riga"],
+  }),
+  buildNeutralCitySeed({
+    slug: "panevezys",
+    name: "Panevėžys",
+    countrySlug: "lithuania",
+    countryName: "Lithuania",
+    region: "Baltic Europe",
+    population: "~85K",
+    intro:
+      "Panevėžys is the fifth-largest city and a county capital in northern-central Lithuania, an industrial and logistics centre on the Via Baltica road corridor with road-based regional transport access, county-level healthcare facilities, and a lower-cost living context relative to the national capital.",
+    outlook:
+      "Use the Panevėžys profile to compare affordability, air quality, energy, and climate-resilience dimensions alongside regional peers Kaunas, Šiauliai, and Vilnius.",
+    scores: { overall: 54, affordability: 72, airQuality: 56, energy: 50, resilience: 48 },
+    relatedCitySlugs: ["kaunas", "siauliai", "vilnius"],
+  }),
+  buildNeutralCitySeed({
+    slug: "miskolc",
+    name: "Miskolc",
+    countrySlug: "hungary",
+    countryName: "Hungary",
+    region: "Central Europe",
+    population: "~200K metro",
+    intro:
+      "Miskolc is the regional centre of north-eastern Hungary and seat of Borsod-Abaúj-Zemplén County, with a post-industrial economy, a public university, and rail and motorway links toward Budapest that frame its transport access and cost context.",
+    outlook:
+      "Use the Miskolc profile to compare affordability framing, transport access, healthcare context, and climate-adaptation signals alongside regional Hungarian peers.",
+    scores: { overall: 60, affordability: 78, airQuality: 58, energy: 60, resilience: 58 },
+    relatedCitySlugs: ["budapest", "debrecen"],
+  }),
+  buildNeutralCitySeed({
+    slug: "drogheda",
+    name: "Drogheda",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Western Europe",
+    population: "~45K",
+    intro:
+      "Drogheda is a port town on the River Boyne in County Louth on Ireland's east coast, with commuter-rail and M1 motorway access to Dublin and Belfast and a healthcare catchment served by Our Lady of Lourdes Hospital.",
+    outlook:
+      "Use the Drogheda profile to compare transport access, cost framing, and coastal climate-adaptation context alongside Dublin, Dundalk-adjacent regional peers, and other east-coast settlements.",
+    scores: { overall: 59, affordability: 52, airQuality: 66, energy: 62, resilience: 56 },
+    relatedCitySlugs: ["dublin", "kilkenny", "waterford"],
+  }),
+  buildNeutralCitySeed({
+    slug: "dundalk",
+    name: "Dundalk",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Western Europe",
+    population: "~43K",
+    intro:
+      "Dundalk is the county town of County Louth near the border with Northern Ireland, with motorway and rail links on the Dublin-Belfast corridor and an industrial and technology employment base anchored by Dundalk Institute of Technology.",
+    outlook:
+      "Use the Dundalk profile to compare transport access, healthcare framing, and cross-border cost context alongside Dublin and other east-coast Irish peers.",
+    scores: { overall: 57, affordability: 55, airQuality: 65, energy: 60, resilience: 54 },
+    relatedCitySlugs: ["dublin", "waterford", "kilkenny"],
+  }),
+  buildNeutralCitySeed({
+    slug: "swords",
+    name: "Swords",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Western Europe",
+    population: "~40K",
+    intro:
+      "Swords is the county town of Fingal in the northern Dublin metropolitan area, adjacent to Dublin Airport and served by bus corridors and planned light-rail extensions within a fast-growing commuter catchment.",
+    outlook:
+      "Use the Swords profile to compare transport access, housing cost framing, and metropolitan growth context alongside Dublin and other Leinster peers.",
+    scores: { overall: 58, affordability: 48, airQuality: 63, energy: 63, resilience: 57 },
+    relatedCitySlugs: ["dublin", "kilkenny", "galway"],
+  }),
+  buildNeutralCitySeed({
+    slug: "leicester",
+    name: "Leicester",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~560K",
+    intro:
+      "Leicester is a city and unitary authority in the East Midlands of England with two universities, frequent rail links to London and Birmingham, and a healthcare framing anchored on the University Hospitals of Leicester NHS Trust.",
+    outlook:
+      "Use the Leicester profile to compare affordability, transport access, and air-quality context alongside regional peers such as Nottingham, Birmingham, and Sheffield.",
+    scores: { overall: 58, affordability: 60, airQuality: 56, energy: 60, resilience: 57 },
+    relatedCitySlugs: ["nottingham", "birmingham", "sheffield"],
+  }),
+  buildNeutralCitySeed({
+    slug: "coventry",
+    name: "Coventry",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~370K",
+    intro:
+      "Coventry is a city in the West Midlands of England with a manufacturing and automotive-research base, two universities, and rail and motorway connections placing it within commuting reach of Birmingham.",
+    outlook:
+      "Use the Coventry profile to compare affordability, energy context, and transport access alongside regional peers such as Birmingham, Nottingham, and Leeds.",
+    scores: { overall: 57, affordability: 60, airQuality: 55, energy: 60, resilience: 56 },
+    relatedCitySlugs: ["birmingham", "nottingham", "leeds"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bradford",
+    name: "Bradford",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~550K",
+    intro:
+      "Bradford is a city in West Yorkshire, England, with a former textile-industry heritage, a young population profile, and close rail connections to Leeds within the wider West Yorkshire conurbation.",
+    outlook:
+      "Use the Bradford profile to compare affordability, transport access, and air-quality context alongside regional peers such as Leeds, Sheffield, and Manchester.",
+    scores: { overall: 55, affordability: 64, airQuality: 54, energy: 58, resilience: 53 },
+    relatedCitySlugs: ["leeds", "sheffield", "manchester"],
+  }),
+  buildNeutralCitySeed({
+    slug: "portsmouth",
+    name: "Portsmouth",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~240K",
+    intro:
+      "Portsmouth is a port city on the south coast of England, largely on Portsea Island, with a naval base, a university, and ferry and rail links along the Solent and toward London.",
+    outlook:
+      "Use the Portsmouth profile to compare affordability, climate-adaptation context, and transport access alongside regional peers such as Brighton, Southampton, and Plymouth.",
+    scores: { overall: 57, affordability: 53, airQuality: 58, energy: 60, resilience: 54 },
+    relatedCitySlugs: ["brighton", "plymouth", "bristol"],
+  }),
+  buildNeutralCitySeed({
+    slug: "wolverhampton",
+    name: "Wolverhampton",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~265K",
+    intro:
+      "Wolverhampton is a city in the West Midlands of England on the edge of the Black Country, with a manufacturing heritage, a university, and tram and rail links toward Birmingham.",
+    outlook:
+      "Use the Wolverhampton profile to compare affordability, energy context, and transport access alongside regional peers such as Birmingham, Stoke-on-Trent, and Nottingham.",
+    scores: { overall: 55, affordability: 64, airQuality: 54, energy: 58, resilience: 53 },
+    relatedCitySlugs: ["birmingham", "stoke-on-trent", "nottingham"],
+  }),
+  buildNeutralCitySeed({
+    slug: "sunderland",
+    name: "Sunderland",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~275K",
+    intro:
+      "Sunderland is a port city in Tyne and Wear, North East England, at the mouth of the River Wear, with an automotive-manufacturing base, a university, and Metro and rail links toward Newcastle.",
+    outlook:
+      "Use the Sunderland profile to compare affordability, energy context, and transport access alongside regional peers such as Newcastle, Leeds, and Sheffield.",
+    scores: { overall: 54, affordability: 66, airQuality: 57, energy: 57, resilience: 52 },
+    relatedCitySlugs: ["newcastle", "leeds", "sheffield"],
+  }),
+  buildNeutralCitySeed({
+    slug: "derby",
+    name: "Derby",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~260K",
+    intro:
+      "Derby is a city in the East Midlands of England on the River Derwent, with an aerospace and rail-engineering manufacturing base and rail links toward Birmingham, Nottingham, and London.",
+    outlook:
+      "Use the Derby profile to compare affordability, energy context, and transport access alongside regional peers such as Nottingham, Birmingham, and Sheffield.",
+    scores: { overall: 57, affordability: 62, airQuality: 56, energy: 60, resilience: 55 },
+    relatedCitySlugs: ["nottingham", "birmingham", "sheffield"],
+  }),
+  buildNeutralCitySeed({
+    slug: "fort-worth",
+    name: "Fort Worth",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~8M metro",
+    intro:
+      "Fort Worth is a major North Texas city within the Dallas-Fort Worth metroplex with highway and rail freight access, growing healthcare and logistics sectors, comparatively moderate housing costs, and heat and severe-storm adaptation context.",
+    outlook:
+      "Use the Fort Worth profile to compare affordability, air quality, energy mix, and climate resilience alongside Dallas, Houston, and San Antonio.",
+    scores: { overall: 68, affordability: 60, airQuality: 58, energy: 64, resilience: 60 },
+    relatedCitySlugs: ["dallas", "houston", "san-antonio"],
+  }),
+  buildNeutralCitySeed({
+    slug: "jacksonville",
+    name: "Jacksonville",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1.6M metro",
+    intro:
+      "Jacksonville is a Northeast Florida port and military city with deepwater shipping and interstate access, expanding healthcare employment, moderate housing costs, and coastal-flooding and hurricane adaptation context.",
+    outlook:
+      "Use the Jacksonville profile to compare affordability, air quality, energy planning, and climate resilience alongside Tampa, Miami, and Atlanta.",
+    scores: { overall: 63, affordability: 58, airQuality: 62, energy: 58, resilience: 50 },
+    relatedCitySlugs: ["tampa", "miami", "atlanta"],
+  }),
+  buildNeutralCitySeed({
+    slug: "el-paso",
+    name: "El Paso",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~870K metro",
+    intro:
+      "El Paso is a West Texas border city on the Rio Grande with cross-border trade and rail access, regional medical and military employment, lower housing costs, and arid-climate water-stress and heat adaptation context.",
+    outlook:
+      "Use the El Paso profile to compare affordability, air quality, energy mix, and climate resilience alongside San Antonio, Phoenix, and Houston.",
+    scores: { overall: 62, affordability: 70, airQuality: 55, energy: 60, resilience: 54 },
+    relatedCitySlugs: ["san-antonio", "phoenix", "houston"],
+  }),
+  buildNeutralCitySeed({
+    slug: "long-beach",
+    name: "Long Beach",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~13M metro",
+    intro:
+      "Long Beach is a Southern California port city within the Los Angeles metro with one of the largest U.S. container ports, light-rail transit access, high housing costs, and coastal-flooding and air-quality adaptation context.",
+    outlook:
+      "Use the Long Beach profile to compare affordability, air quality, energy planning, and climate resilience alongside Los Angeles, San Diego, and San Francisco.",
+    scores: { overall: 67, affordability: 36, airQuality: 54, energy: 70, resilience: 62 },
+    relatedCitySlugs: ["los-angeles", "san-diego", "san-francisco"],
+  }),
+  buildNeutralCitySeed({
+    slug: "colorado-springs",
+    name: "Colorado Springs",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~760K metro",
+    intro:
+      "Colorado Springs is a Front Range city in Colorado with military and aerospace employment, regional healthcare access, moderate housing costs, and wildfire and water-supply adaptation context.",
+    outlook:
+      "Use the Colorado Springs profile to compare affordability, air quality, energy planning, and climate resilience alongside Denver, Boulder, and Fort Collins.",
+    scores: { overall: 67, affordability: 56, airQuality: 72, energy: 64, resilience: 60 },
+    relatedCitySlugs: ["denver", "boulder", "fort-collins"],
+  }),
+  buildNeutralCitySeed({
+    slug: "virginia-beach",
+    name: "Virginia Beach",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1.8M metro",
+    intro:
+      "Virginia Beach is a coastal city in the Hampton Roads region with naval and port employment, regional healthcare access, moderate housing costs, and sea-level-rise and recurrent-flooding adaptation context.",
+    outlook:
+      "Use the Virginia Beach profile to compare affordability, air quality, energy planning, and climate resilience alongside Washington, Baltimore, and Charlotte.",
+    scores: { overall: 64, affordability: 54, airQuality: 64, energy: 58, resilience: 48 },
+    relatedCitySlugs: ["baltimore", "charlotte"],
+  }),
+  buildNeutralCitySeed({
+    slug: "fresno",
+    name: "Fresno",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1M metro",
+    intro:
+      "Fresno is a Central Valley city in California serving as an agricultural and logistics hub with highway and rail access, regional healthcare employment, lower housing costs than coastal California, and drought and air-quality adaptation context.",
+    outlook:
+      "Use the Fresno profile to compare affordability, air quality, energy mix, and climate resilience alongside Sacramento, San Francisco, and Los Angeles.",
+    scores: { overall: 58, affordability: 56, airQuality: 42, energy: 62, resilience: 52 },
+    relatedCitySlugs: ["sacramento", "san-francisco", "los-angeles"],
+  }),
+  buildNeutralCitySeed({
+    slug: "tulsa",
+    name: "Tulsa",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1M metro",
+    intro:
+      "Tulsa is a northeastern Oklahoma city with an energy-sector and aerospace employment base, interstate and river-port access, lower housing costs, and severe-storm and flooding adaptation context.",
+    outlook:
+      "Use the Tulsa profile to compare affordability, air quality, energy mix, and climate resilience alongside Dallas, Houston, and St Louis.",
+    scores: { overall: 63, affordability: 70, airQuality: 60, energy: 58, resilience: 54 },
+    relatedCitySlugs: ["dallas", "houston", "st-louis"],
+  }),
+  buildNeutralCitySeed({
+    slug: "new-haven",
+    name: "New Haven",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~860K metro",
+    intro:
+      "New Haven is a Connecticut port and university city anchored by Yale with commuter-rail access to New York, large healthcare and research employment, high housing costs, and coastal-flooding adaptation context.",
+    outlook:
+      "Use the New Haven profile to compare affordability, air quality, energy planning, and climate resilience alongside Boston, New York, and Philadelphia.",
+    scores: { overall: 66, affordability: 48, airQuality: 66, energy: 64, resilience: 60 },
+    relatedCitySlugs: ["boston", "new-york", "philadelphia"],
+  }),
+  buildNeutralCitySeed({
+    slug: "hartford",
+    name: "Hartford",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1.2M metro",
+    intro:
+      "Hartford is the capital of Connecticut and a regional insurance-industry center with rail and highway access, established healthcare employment, moderate-to-high housing costs, and riverine-flooding and winter-storm adaptation context.",
+    outlook:
+      "Use the Hartford profile to compare affordability, air quality, energy planning, and climate resilience alongside Boston, New York, and Philadelphia.",
+    scores: { overall: 64, affordability: 52, airQuality: 66, energy: 62, resilience: 60 },
+    relatedCitySlugs: ["boston", "new-york", "philadelphia"],
+  }),
+  buildNeutralCitySeed({
+    slug: "birmingham-al",
+    name: "Birmingham",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1.1M metro",
+    intro:
+      "Birmingham is the largest city in Alabama and a regional banking and medical center with interstate access and a major academic medical system, lower housing costs, and severe-storm and heat adaptation context.",
+    outlook:
+      "Use the Birmingham profile to compare affordability, air quality, energy mix, and climate resilience alongside Atlanta, Nashville, and Charlotte.",
+    scores: { overall: 60, affordability: 66, airQuality: 58, energy: 56, resilience: 54 },
+    relatedCitySlugs: ["atlanta", "nashville", "charlotte"],
+  }),
+  buildNeutralCitySeed({
+    slug: "rochester",
+    name: "Rochester",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~1.1M metro",
+    intro:
+      "Rochester is a western New York city with an optics, imaging, and university research base near Lake Ontario, regional healthcare employment, lower housing costs, and lake-effect-winter and Great-Lakes climate context.",
+    outlook:
+      "Use the Rochester profile to compare affordability, air quality, energy planning, and climate resilience alongside Buffalo, Cleveland, and Pittsburgh.",
+    scores: { overall: 62, affordability: 64, airQuality: 68, energy: 60, resilience: 62 },
+    relatedCitySlugs: ["buffalo", "cleveland", "pittsburgh"],
+  }),
+  buildNeutralCitySeed({
+    slug: "tacoma",
+    name: "Tacoma",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~920K metro",
+    intro:
+      "Tacoma is a Puget Sound port city in Washington within the Seattle metro region with deepwater shipping and commuter-rail access, regional healthcare employment, high housing costs, and seismic and coastal-flooding adaptation context.",
+    outlook:
+      "Use the Tacoma profile to compare affordability, air quality, energy planning, and climate resilience alongside Seattle, Portland, and San Francisco.",
+    scores: { overall: 66, affordability: 46, airQuality: 70, energy: 74, resilience: 64 },
+    relatedCitySlugs: ["seattle", "portland", "san-francisco"],
+  }),
+  buildNeutralCitySeed({
+    slug: "reno",
+    name: "Reno",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~510K metro",
+    intro:
+      "Reno is a northern Nevada city near the Sierra Nevada with a growing logistics and technology employment base, interstate access, rising housing costs, and wildfire and arid-climate water-stress adaptation context.",
+    outlook:
+      "Use the Reno profile to compare affordability, air quality, energy mix, and climate resilience alongside Las Vegas, Sacramento, and Salt Lake City.",
+    scores: { overall: 63, affordability: 50, airQuality: 62, energy: 64, resilience: 56 },
+    relatedCitySlugs: ["las-vegas", "sacramento", "salt-lake-city"],
+  }),
+  buildNeutralCitySeed({
+    slug: "newark",
+    name: "Newark",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~20M metro",
+    intro:
+      "Newark is the largest city in New Jersey within the New York metro region with a major international airport, seaport, and rail access, large healthcare and logistics employment, high housing costs, and coastal-flooding adaptation context.",
+    outlook:
+      "Use the Newark profile to compare affordability, air quality, energy planning, and climate resilience alongside New York, Philadelphia, and Baltimore.",
+    scores: { overall: 64, affordability: 44, airQuality: 58, energy: 68, resilience: 60 },
+    relatedCitySlugs: ["new-york", "philadelphia", "baltimore"],
+  }),
+  buildNeutralCitySeed({
+    slug: "mississauga",
+    name: "Mississauga",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~720K",
+    intro:
+      "Mississauga is a Greater Toronto Area city anchored by Pearson airport and a large corporate and logistics base, with regional transit access, country-level healthcare framing, and housing-cost pressure tied to the Toronto market.",
+    outlook:
+      "Use the Mississauga profile to compare cost framing, transport access, and healthcare framing alongside Toronto, Hamilton, and Ottawa.",
+    scores: { overall: 75, affordability: 56, airQuality: 78, energy: 80, resilience: 76 },
+    relatedCitySlugs: ["toronto", "hamilton-ontario", "ottawa"],
+  }),
+  buildNeutralCitySeed({
+    slug: "brampton",
+    name: "Brampton",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~720K",
+    intro:
+      "Brampton is a fast-growing Greater Toronto Area city with a large logistics and warehousing sector, regional transit connections to Toronto, and affordability framing shaped by metro-wide housing demand.",
+    outlook:
+      "Use the Brampton profile to compare cost framing, transport access, and relocation framing alongside Toronto, Hamilton, and Ottawa.",
+    scores: { overall: 73, affordability: 57, airQuality: 77, energy: 79, resilience: 74 },
+    relatedCitySlugs: ["toronto", "hamilton-ontario", "ottawa"],
+  }),
+  buildNeutralCitySeed({
+    slug: "surrey",
+    name: "Surrey",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~570K",
+    intro:
+      "Surrey is a Metro Vancouver city among the region's fastest-growing, with SkyTrain extension plans, country-level healthcare framing, and affordability pressure linked to the broader Vancouver housing market.",
+    outlook:
+      "Use the Surrey profile to compare cost framing, transport access, and healthcare framing alongside Vancouver, Victoria, and Kelowna.",
+    scores: { overall: 72, affordability: 50, airQuality: 80, energy: 82, resilience: 73 },
+    relatedCitySlugs: ["vancouver", "victoria", "kelowna"],
+  }),
+  buildNeutralCitySeed({
+    slug: "laval",
+    name: "Laval",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~440K",
+    intro:
+      "Laval is the second-largest city in the Montreal metropolitan area, connected by its own Metro line, with a low-carbon Quebec grid, country-level healthcare framing, and cost framing tied to the Montreal region.",
+    outlook:
+      "Use the Laval profile to compare cost framing, transport access, and energy context alongside Montreal, Quebec City, and Ottawa.",
+    scores: { overall: 74, affordability: 68, airQuality: 78, energy: 84, resilience: 73 },
+    relatedCitySlugs: ["montreal", "quebec-city", "ottawa"],
+  }),
+  buildNeutralCitySeed({
+    slug: "markham",
+    name: "Markham",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~340K",
+    intro:
+      "Markham is a Greater Toronto Area city with a concentration of technology and corporate offices, regional transit links to Toronto, and housing-cost framing shaped by the wider metro market.",
+    outlook:
+      "Use the Markham profile to compare cost framing, transport access, and relocation framing alongside Toronto, Waterloo, and Ottawa.",
+    scores: { overall: 75, affordability: 55, airQuality: 79, energy: 80, resilience: 75 },
+    relatedCitySlugs: ["toronto", "waterloo-ontario", "ottawa"],
+  }),
+  buildNeutralCitySeed({
+    slug: "vaughan",
+    name: "Vaughan",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~330K",
+    intro:
+      "Vaughan is a Greater Toronto Area city served by a subway extension terminus and a large logistics and distribution sector, with country-level healthcare framing and affordability pressure tied to the Toronto market.",
+    outlook:
+      "Use the Vaughan profile to compare cost framing, transport access, and relocation framing alongside Toronto, Hamilton, and Ottawa.",
+    scores: { overall: 74, affordability: 54, airQuality: 78, energy: 80, resilience: 75 },
+    relatedCitySlugs: ["toronto", "hamilton-ontario", "ottawa"],
+  }),
+  buildNeutralCitySeed({
+    slug: "burnaby",
+    name: "Burnaby",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~250K",
+    intro:
+      "Burnaby is a Metro Vancouver city home to Simon Fraser University and a technology and film sector, with SkyTrain access, country-level healthcare framing, and affordability pressure linked to the Vancouver housing market.",
+    outlook:
+      "Use the Burnaby profile to compare cost framing, transport access, and energy context alongside Vancouver, Victoria, and Kelowna.",
+    scores: { overall: 74, affordability: 51, airQuality: 81, energy: 83, resilience: 74 },
+    relatedCitySlugs: ["vancouver", "victoria", "kelowna"],
+  }),
+  buildNeutralCitySeed({
+    slug: "longueuil",
+    name: "Longueuil",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~250K",
+    intro:
+      "Longueuil is a south-shore anchor of the Montreal metropolitan area with an aerospace sector and Metro connection across the river, a low-carbon Quebec grid, and cost framing tied to the Montreal region.",
+    outlook:
+      "Use the Longueuil profile to compare cost framing, transport access, and energy context alongside Montreal, Quebec City, and Ottawa.",
+    scores: { overall: 73, affordability: 67, airQuality: 78, energy: 84, resilience: 72 },
+    relatedCitySlugs: ["montreal", "quebec-city", "ottawa"],
+  }),
+  buildNeutralCitySeed({
+    slug: "gladstone",
+    name: "Gladstone",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~45K",
+    intro:
+      "Gladstone is a deepwater port and heavy-industry city in central Queensland whose LNG, alumina, and coal-export facilities shape its labor market, air-quality monitoring, and climate-adaptation planning around heat and cyclone exposure.",
+    outlook:
+      "Use the Gladstone profile to compare industrial air-quality framing, energy-transition context, and affordability alongside regional peers such as Rockhampton, Mackay, and Townsville.",
+    scores: { overall: 56, affordability: 68, airQuality: 58, energy: 70, resilience: 52 },
+    relatedCitySlugs: ["townsville", "cairns", "brisbane"],
+  }),
+  buildNeutralCitySeed({
+    slug: "bundaberg",
+    name: "Bundaberg",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~75K",
+    intro:
+      "Bundaberg is a regional service and agricultural city on the Burnett River in Queensland with a sugar and rum processing base, a coastal port outlet, and recurring flood and heat exposure that frames its climate-adaptation context.",
+    outlook:
+      "Use the Bundaberg profile to compare cost framing, healthcare access, and climate-resilience dimensions alongside regional peers such as the Sunshine Coast, Brisbane, and Cairns.",
+    scores: { overall: 58, affordability: 70, airQuality: 66, energy: 64, resilience: 53 },
+    relatedCitySlugs: ["sunshine-coast", "brisbane", "cairns"],
+  }),
+  buildNeutralCitySeed({
+    slug: "kalgoorlie",
+    name: "Kalgoorlie",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~30K",
+    intro:
+      "Kalgoorlie is the main service center of Western Australia's Goldfields region, anchored by large-scale gold and nickel mining, fly-in fly-out labor flows, and arid-climate water and heat constraints that shape its resilience planning.",
+    outlook:
+      "Use the Kalgoorlie profile to compare energy and resource-economy context, affordability, and climate-resilience dimensions alongside regional peers such as Perth, Geraldton, and Bunbury.",
+    scores: { overall: 53, affordability: 66, airQuality: 60, energy: 68, resilience: 46 },
+    relatedCitySlugs: ["perth", "geraldton", "bunbury"],
+  }),
+  buildNeutralCitySeed({
+    slug: "tamworth",
+    name: "Tamworth",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~45K",
+    intro:
+      "Tamworth is an inland regional hub in northern New South Wales serving the New England region as an agricultural, health, and transport center, with inland heat and drought exposure shaping its climate-adaptation context.",
+    outlook:
+      "Use the Tamworth profile to compare cost framing, healthcare access, and climate-resilience dimensions alongside regional peers such as Newcastle, Wollongong, and Sydney.",
+    scores: { overall: 56, affordability: 72, airQuality: 67, energy: 62, resilience: 50 },
+    relatedCitySlugs: ["wollongong", "sydney"],
+  }),
+  buildNeutralCitySeed({
+    slug: "dubbo",
+    name: "Dubbo",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~40K",
+    intro:
+      "Dubbo is a central New South Wales regional city serving the Orana region as a transport, health, and agricultural-services hub, with inland heat and drought exposure framing its water and climate-adaptation context.",
+    outlook:
+      "Use the Dubbo profile to compare healthcare access, cost framing, and climate-resilience dimensions alongside regional peers such as Canberra, Sydney, and Wollongong.",
+    scores: { overall: 55, affordability: 72, airQuality: 67, energy: 62, resilience: 49 },
+    relatedCitySlugs: ["canberra", "sydney", "wollongong"],
+  }),
+  buildNeutralCitySeed({
+    slug: "lower-hutt",
+    name: "Lower Hutt",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "~0.11M metro",
+    intro:
+      "Lower Hutt is a Wellington-region New Zealand city in the Hutt Valley, with industrial, research, and commuter-rail activity and seismic-adaptation context used for cross-region NZ comparison.",
+    outlook:
+      "Use the Lower Hutt profile to compare cost framing, transport access, and seismic-resilience signals alongside Wellington, Auckland, and Christchurch.",
+    scores: { overall: 74, affordability: 66, airQuality: 80, energy: 72, resilience: 64 },
+    relatedCitySlugs: ["wellington", "auckland", "christchurch"],
+  }),
+  buildNeutralCitySeed({
+    slug: "invercargill",
+    name: "Invercargill",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "~0.06M metro",
+    intro:
+      "Invercargill is the southernmost city in New Zealand and the regional centre of Southland, with port, agricultural-services, and cool-temperate-climate context used for cross-region NZ comparison.",
+    outlook:
+      "Use the Invercargill profile to compare cost framing, transport access, and energy signals alongside Dunedin, Christchurch, and Queenstown.",
+    scores: { overall: 72, affordability: 76, airQuality: 82, energy: 70, resilience: 66 },
+    relatedCitySlugs: ["dunedin", "christchurch", "queenstown"],
+  }),
   {
     slug: "copenhagen",
     name: "Copenhagen",
