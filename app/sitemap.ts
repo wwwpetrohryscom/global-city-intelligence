@@ -26,6 +26,7 @@ import {
   climateRoute,
   economyRoute,
   educationRoute,
+  healthcareRoute,
   costOfLivingRoute,
   comparisonRoute,
   countryRoute,
@@ -208,6 +209,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.72,
   }));
 
+  const healthcareItems = cities.map((city) => ({
+    url: absoluteUrl(healthcareRoute(city.slug)),
+    lastModified: new Date(city.lastUpdated),
+    changeFrequency: "monthly" as const,
+    priority: 0.72,
+  }));
+
   const countryItems = getCountries().map((country) => ({
     url: absoluteUrl(countryRoute(country.slug)),
     lastModified: new Date(country.lastUpdated),
@@ -333,6 +341,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...climateItems,
     ...economyItems,
     ...educationItems,
+    ...healthcareItems,
     ...countryItems,
     ...moduleItems,
     ...rankingItems,

@@ -117,6 +117,10 @@ export function educationRoute(citySlug: string) {
   return `/cities/${citySlug}/education`;
 }
 
+export function healthcareRoute(citySlug: string) {
+  return `/cities/${citySlug}/healthcare`;
+}
+
 export function nearbyWeekendPlacesCityRoute(citySlug: string) {
   return `/cities/${citySlug}/nearby-weekend-places`;
 }
@@ -194,6 +198,7 @@ export function getAllIndexableRoutes() {
     ...cities.map((city) => climateRoute(city.slug)),
     ...cities.map((city) => economyRoute(city.slug)),
     ...cities.map((city) => educationRoute(city.slug)),
+    ...cities.map((city) => healthcareRoute(city.slug)),
     ...NEARBY_WEEKEND_PLACE_DETAIL_SLUGS.map((slug) =>
       nearbyWeekendPlaceRoute(slug),
     ),

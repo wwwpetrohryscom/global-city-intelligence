@@ -59,8 +59,10 @@ import { getClimate, hasClimate } from "@/lib/data/climate";
 import { getCityQuality } from "@/lib/data/city-quality";
 import { getEconomy, hasEconomy } from "@/lib/data/economy";
 import { getEducation, getUniversitiesForCity, hasEducation } from "@/lib/data/education";
+import { getHealthcare, getRetirement, hasHealthcare } from "@/lib/data/healthcare-retirement";
 import type { EconomyCategory } from "@/types/economy";
 import type { EducationCategory } from "@/types/education";
+import type { HealthcareCategory } from "@/types/healthcare";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
@@ -86,6 +88,7 @@ import {
   climateRoute,
   economyRoute,
   educationRoute,
+  healthcareRoute,
   weekendTripRoute,
 } from "@/lib/seo/routes";
 import {
@@ -113,6 +116,15 @@ const CITY_EDUCATION_LABEL: Record<EducationCategory, string> = {
   student_city: "student city",
   regional_education_center: "regional education center",
   mixed: "mixed education base",
+};
+
+const CITY_HEALTHCARE_LABEL: Record<HealthcareCategory, string> = {
+  global_medical_hub: "global medical hub",
+  major_healthcare_center: "major healthcare center",
+  regional_healthcare_center: "regional healthcare center",
+  healthcare_access_city: "healthcare access city",
+  developing_healthcare_market: "developing healthcare market",
+  mixed: "mixed healthcare profile",
 };
 
 type PageProps = {
@@ -572,6 +584,19 @@ export default async function CityPage({ params }: PageProps) {
                       description={`Education profile for ${city.name} — ${CITY_EDUCATION_LABEL[education.educationCategory]}, education score ${education.educationScore}/100, ${uniCount} representative universities, plus research, student life, and international-student indicators. Deterministic dataset, not institutional rankings.`}
                       href={educationRoute(city.slug)}
                       title={`Universities and education in ${city.name}`}
+                    />
+                  );
+                })()
+              : null}
+            {hasHealthcare(city.slug)
+              ? (() => {
+                  const healthcare = getHealthcare(city.slug)!;
+                  const retirement = getRetirement(city.slug);
+                  return (
+                    <LinkCard
+                      description={`Healthcare and retirement profile for ${city.name} — ${CITY_HEALTHCARE_LABEL[healthcare.healthcareCategory]}, healthcare score ${healthcare.healthcareScore}/100${retirement ? `, retirement score ${retirement.retirementScore}/100` : ""}. Medical access, specialist and emergency care, affordability, and retirement suitability. Deterministic planning estimates.`}
+                      href={healthcareRoute(city.slug)}
+                      title={`Healthcare and retirement in ${city.name}`}
                     />
                   );
                 })()

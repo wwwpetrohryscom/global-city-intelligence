@@ -70,7 +70,17 @@ export type ThemeType =
   | "international_student_cities"
   | "technology_education_hubs"
   | "academic_capitals"
-  | "knowledge_economy_cities";
+  | "knowledge_economy_cities"
+  | "healthcare_cities"
+  | "medical_centers"
+  | "university_medical_cities"
+  | "healthcare_access_cities"
+  | "healthy_living_cities"
+  | "active_lifestyle_cities"
+  | "senior_friendly_cities"
+  | "retirement_cities"
+  | "affordable_retirement_cities"
+  | "nature_retirement_cities";
 
 /** A thematic discovery collection of cities + nearby places. */
 export interface ThematicCollection {

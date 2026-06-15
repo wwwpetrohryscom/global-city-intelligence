@@ -21,6 +21,7 @@ import {
 import { hasClimate } from "@/lib/data/climate";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
 import { hasEconomy } from "@/lib/data/economy";
+import { hasHealthcare } from "@/lib/data/healthcare-retirement";
 import { createMetadata } from "@/lib/seo/metadata";
 import {
   cityRoute,
@@ -29,6 +30,7 @@ import {
   countryRoute,
   economyRoute,
   educationRoute,
+  healthcareRoute,
   staticRoutes,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -387,6 +389,16 @@ export default async function EducationPage({ params }: PageProps) {
                   href={economyRoute(city.slug)}
                 >
                   Economy and jobs in {city.name}
+                </Link>
+              </li>
+            ) : null}
+            {hasHealthcare(city.slug) ? (
+              <li>
+                <Link
+                  className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                  href={healthcareRoute(city.slug)}
+                >
+                  Healthcare and retirement in {city.name}
                 </Link>
               </li>
             ) : null}
