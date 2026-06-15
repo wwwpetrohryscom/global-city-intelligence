@@ -2,6 +2,147 @@ import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
 import type { Country } from "@/types";
 
 export const countries: Country[] = [
+  // ===== Wave 1: new countries (2026-06-15) =====
+  {
+    slug: "ukraine",
+    name: "Ukraine",
+    iso2: "UA",
+    region: "Eastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Ukraine's country profile covers large industrial and university metros, cost framing, and infrastructure and resilience context across its regions.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: [
+      "kyiv",
+      "kharkiv",
+      "odesa",
+      "dnipro",
+      "donetsk",
+      "zaporizhzhia",
+      "lviv",
+    ],
+    metrics: [
+      { label: "Urban data context", value: "Developing", description: "City-level monitoring is improving and supports indexable, comparable pages." },
+      { label: "Energy transition context", value: "In progress", description: "National energy planning shapes the operating environment for its cities." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
+  {
+    slug: "montenegro",
+    name: "Montenegro",
+    iso2: "ME",
+    region: "Southeastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Montenegro's country profile covers its Adriatic-and-mountain geography, cost framing, and small-state urban and transport context.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: [
+      "podgorica",
+    ],
+    metrics: [
+      { label: "Urban data context", value: "Developing", description: "City-level monitoring is improving and supports indexable, comparable pages." },
+      { label: "Energy transition context", value: "In progress", description: "National energy planning shapes the operating environment for its cities." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
+  {
+    slug: "bosnia-and-herzegovina",
+    name: "Bosnia and Herzegovina",
+    iso2: "BA",
+    region: "Southeastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Bosnia and Herzegovina's country profile covers its river-valley and mountain cities, cost framing, and regional transport and resilience context.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: [
+      "sarajevo",
+      "banja-luka",
+    ],
+    metrics: [
+      { label: "Urban data context", value: "Developing", description: "City-level monitoring is improving and supports indexable, comparable pages." },
+      { label: "Energy transition context", value: "In progress", description: "National energy planning shapes the operating environment for its cities." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
+  {
+    slug: "north-macedonia",
+    name: "North Macedonia",
+    iso2: "MK",
+    region: "Southeastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "North Macedonia's country profile covers its capital-centred urban system, cost framing, and inland-climate and transport context.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: [
+      "skopje",
+    ],
+    metrics: [
+      { label: "Urban data context", value: "Developing", description: "City-level monitoring is improving and supports indexable, comparable pages." },
+      { label: "Energy transition context", value: "In progress", description: "National energy planning shapes the operating environment for its cities." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
+  {
+    slug: "albania",
+    name: "Albania",
+    iso2: "AL",
+    region: "Southeastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Albania's country profile covers its coastal-and-mountain geography, cost framing, and fast-changing urban and transport context.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: [
+      "tirana",
+    ],
+    metrics: [
+      { label: "Urban data context", value: "Developing", description: "City-level monitoring is improving and supports indexable, comparable pages." },
+      { label: "Energy transition context", value: "In progress", description: "National energy planning shapes the operating environment for its cities." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
+  {
+    slug: "iceland",
+    name: "Iceland",
+    iso2: "IS",
+    region: "Northern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Iceland's country profile covers its small capital region, clean-energy context, and exposure to a cold maritime and volcanic environment.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: [
+      "reykjavik",
+    ],
+    metrics: [
+      { label: "Urban data context", value: "Developing", description: "City-level monitoring is improving and supports indexable, comparable pages." },
+      { label: "Energy transition context", value: "In progress", description: "National energy planning shapes the operating environment for its cities." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
+  {
+    slug: "moldova",
+    name: "Moldova",
+    iso2: "MD",
+    region: "Eastern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Moldova's country profile covers its capital-centred urban system, cost framing, and regional transport and resilience context.",
+    sources: ["un-habitat", "nasa-power", "who-air", "ipcc-urban"],
+    citySlugs: [
+      "chisinau",
+    ],
+    metrics: [
+      { label: "Urban data context", value: "Developing", description: "City-level monitoring is improving and supports indexable, comparable pages." },
+      { label: "Energy transition context", value: "In progress", description: "National energy planning shapes the operating environment for its cities." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
   {
     slug: "denmark",
     name: "Denmark",
