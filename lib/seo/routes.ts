@@ -101,6 +101,10 @@ export function weekendTripRoute(citySlug: string) {
   return `/cities/${citySlug}/weekend-trip`;
 }
 
+export function costOfLivingRoute(citySlug: string) {
+  return `/cities/${citySlug}/cost-of-living`;
+}
+
 export function nearbyWeekendPlacesCityRoute(citySlug: string) {
   return `/cities/${citySlug}/nearby-weekend-places`;
 }
@@ -174,6 +178,7 @@ export function getAllIndexableRoutes() {
     ...getAllWeekendTripPages().map((page) =>
       weekendTripRoute(page.citySlug),
     ),
+    ...cities.map((city) => costOfLivingRoute(city.slug)),
     ...NEARBY_WEEKEND_PLACE_DETAIL_SLUGS.map((slug) =>
       nearbyWeekendPlaceRoute(slug),
     ),

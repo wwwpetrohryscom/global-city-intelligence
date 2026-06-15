@@ -57,6 +57,7 @@ import {
 import {
   arrivalRoute,
   cityRoute,
+  costOfLivingRoute,
   comparisonRoute,
   countryRoute,
   movingToCityRoute,
@@ -236,6 +237,12 @@ export default async function WeekendTripPage({ params }: PageProps) {
           },
         ]
       : []),
+    {
+      label: `Cost of living in ${city.name}`,
+      href: costOfLivingRoute(city.slug),
+      description:
+        "Monthly budgets, rent, food, and transport in the local currency, with an affordability score. Planning estimates, not live prices.",
+    },
     {
       label: "Travel budget calculator",
       href: staticRoutes.travelBudgetCalculator,

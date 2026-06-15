@@ -57,6 +57,7 @@ import {
 } from "@/lib/data/queries";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
+import { hasCostOfLiving } from "@/lib/data/cost-of-living";
 import { createMetadata, ogImageFromPlaceImage } from "@/lib/seo/metadata";
 import { getCityHeroImage } from "@/lib/data/media/queries";
 import {
@@ -75,6 +76,7 @@ import {
   staticRoutes,
   summerTravelRoute,
   visualCityGuideRoute,
+  costOfLivingRoute,
   weekendTripRoute,
 } from "@/lib/seo/routes";
 import {
@@ -387,6 +389,13 @@ export default async function CityPage({ params }: PageProps) {
               href={rankingRoute("overall-city-intelligence")}
               title="City rankings"
             />
+            {hasCostOfLiving(city.slug) ? (
+              <LinkCard
+                description={`Cost of living estimates for ${city.name} — monthly budgets, rent, food, and transport in the local currency, plus an affordability score for comparison. Planning estimates derived from country baselines, not live prices.`}
+                href={costOfLivingRoute(city.slug)}
+                title={`Cost of living in ${city.name}`}
+              />
+            ) : null}
             {hasArrivalPage(city.slug) ? (
               <LinkCard
                 description={`Practical arrival planning context for ${city.name} — links into transport, public-safety, healthcare, budgeting tools, and methodology. Not an official airport or travel instruction service.`}
