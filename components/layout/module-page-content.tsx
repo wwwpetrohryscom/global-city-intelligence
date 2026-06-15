@@ -43,13 +43,29 @@ export function ModulePageContent({
   const path = moduleRoute(moduleItem.slug, city.slug);
 
   const allCities = getAllCities();
-  const otherCities = allCities
+  const rankedCities = allCities
     .filter((otherCity) => otherCity.slug !== city.slug)
     .map((otherCity) => ({
       city: otherCity,
       moduleData: otherCity.modules[moduleItem.slug],
     }))
     .sort((a, b) => b.moduleData.score - a.moduleData.score);
+  // Cap the on-page comparison so module pages stay small (the full set would
+  // be 1,000+ rows per page across 6 modules x every city, which blows up the
+  // build output). Same-country peers first, then the highest-scoring cities
+  // globally, deduped, max 30. Every city remains crawlable via the sitemap,
+  // the /cities index, and per-city profiles.
+  const COMPARISON_CAP = 30;
+  const sameCountryCities = rankedCities.filter(
+    (entry) => entry.city.countrySlug === city.countrySlug,
+  );
+  const sameCountrySlugs = new Set(
+    sameCountryCities.map((entry) => entry.city.slug),
+  );
+  const otherCities = [
+    ...sameCountryCities,
+    ...rankedCities.filter((entry) => !sameCountrySlugs.has(entry.city.slug)),
+  ].slice(0, COMPARISON_CAP);
 
   const introCopy = generateModuleIntro(moduleItem, city);
   const explanationCopy = generateModuleExplanation(moduleItem, city, allCities);
@@ -135,7 +151,7 @@ export function ModulePageContent({
 
         <section>
           <SectionHeading
-            description="A crawlable comparison across every indexed city makes it easy to scan how this module changes between metros."
+            description="A crawlable comparison across a selection of same-country and top-scoring cities. The complete set is reachable via the rankings, the cities index, and each city profile."
             title={`${moduleItem.name} city comparison`}
           />
           <div className="mt-6 overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm">
