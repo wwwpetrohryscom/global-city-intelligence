@@ -13,6 +13,7 @@ import {
   getCostOfLiving,
 } from "@/lib/data/cost-of-living";
 import { hasClimate } from "@/lib/data/climate";
+import { hasEconomy } from "@/lib/data/economy";
 import {
   getCityBySlug,
   getCountryBySlug,
@@ -25,6 +26,7 @@ import {
   climateRoute,
   costOfLivingRoute,
   countryRoute,
+  economyRoute,
   staticRoutes,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -306,6 +308,16 @@ export default async function CostOfLivingPage({ params }: PageProps) {
                   href={climateRoute(city.slug)}
                 >
                   Climate in {city.name}
+                </Link>
+              </li>
+            ) : null}
+            {hasEconomy(city.slug) ? (
+              <li>
+                <Link
+                  className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                  href={economyRoute(city.slug)}
+                >
+                  Economy and jobs in {city.name}
                 </Link>
               </li>
             ) : null}

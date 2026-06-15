@@ -50,7 +50,17 @@ export type ThemeType =
   | "family_friendly_cities"
   | "digital_nomad_cities"
   | "retirement_friendly_cities"
-  | "high_quality_of_life_cities";
+  | "high_quality_of_life_cities"
+  | "technology_cities"
+  | "startup_cities"
+  | "business_hubs"
+  | "remote_work_cities"
+  | "finance_centers"
+  | "manufacturing_cities"
+  | "research_cities"
+  | "tourism_economies"
+  | "government_centers"
+  | "innovation_cities";
 
 /** A thematic discovery collection of cities + nearby places. */
 export interface ThematicCollection {

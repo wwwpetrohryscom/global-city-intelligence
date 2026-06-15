@@ -60,6 +60,7 @@ import {
   cityRoute,
   climateRoute,
   costOfLivingRoute,
+  economyRoute,
   comparisonRoute,
   countryRoute,
   movingToCityRoute,
@@ -257,6 +258,12 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
       href: climateRoute(city.slug),
       description:
         "Month-by-month temperatures, rainfall, sunshine, and the best months to visit, with a climate comfort score. Deterministic estimates, not a forecast.",
+    },
+    {
+      label: `Economy and jobs in ${city.name}`,
+      href: economyRoute(city.slug),
+      description:
+        "Key industries, employment, salary, startup, remote-work, and career indicators, with an economy score. Deterministic planning estimates, not measured economic data.",
     },
     {
       label: "Travel budget calculator",

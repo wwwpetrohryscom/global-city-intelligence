@@ -57,6 +57,8 @@ import {
 } from "@/lib/data/queries";
 import { getClimate, hasClimate } from "@/lib/data/climate";
 import { getCityQuality } from "@/lib/data/city-quality";
+import { getEconomy, hasEconomy } from "@/lib/data/economy";
+import type { EconomyCategory } from "@/types/economy";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
@@ -80,6 +82,7 @@ import {
   visualCityGuideRoute,
   costOfLivingRoute,
   climateRoute,
+  economyRoute,
   weekendTripRoute,
 } from "@/lib/seo/routes";
 import {
@@ -88,6 +91,17 @@ import {
   datasetSchema,
   webpageSchema,
 } from "@/lib/seo/schema";
+
+const CITY_ECONOMY_LABEL: Record<EconomyCategory, string> = {
+  global_hub: "global hub",
+  major_economy: "major economy",
+  regional_center: "regional center",
+  industrial_city: "industrial city",
+  tourism_economy: "tourism economy",
+  government_center: "government center",
+  education_research: "education & research center",
+  mixed: "mixed economy",
+};
 
 type PageProps = {
   params: Promise<{ city: string }>;
@@ -521,6 +535,18 @@ export default async function CityPage({ params }: PageProps) {
                       description={`Climate profile for ${city.name} — ${climate.climateZone} climate, annual average ${climate.annualAvgTempC}°C, comfort score ${climate.comfortScore}/100. Month-by-month temperatures, rainfall, sunshine, and the best months to visit. Deterministic planning estimates, not a forecast.`}
                       href={climateRoute(city.slug)}
                       title={`Climate in ${city.name}`}
+                    />
+                  );
+                })()
+              : null}
+            {hasEconomy(city.slug)
+              ? (() => {
+                  const economy = getEconomy(city.slug)!;
+                  return (
+                    <LinkCard
+                      description={`Economy and jobs profile for ${city.name} — ${CITY_ECONOMY_LABEL[economy.economyCategory]}, economy score ${economy.economyScore}/100, key industries including ${economy.dominantIndustries.slice(0, 3).join(", ").toLowerCase()}. Employment, salary, startup, remote-work, and career indicators. Deterministic planning estimates.`}
+                      href={economyRoute(city.slug)}
+                      title={`Economy and jobs in ${city.name}`}
                     />
                   );
                 })()

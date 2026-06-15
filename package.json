@@ -24,7 +24,9 @@
     "validate-climate": "python3 scripts/validate-climate.py",
     "validate:climate": "python3 scripts/validate-climate.py",
     "validate-city-quality": "python3 scripts/validate-city-quality.py",
-    "validate:city-quality": "python3 scripts/validate-city-quality.py"
+    "validate:city-quality": "python3 scripts/validate-city-quality.py",
+    "validate-economy": "python3 scripts/validate-economy.py",
+    "validate:economy": "python3 scripts/validate-economy.py"
   },
   "dependencies": {
     "next": "^15.5.0",
