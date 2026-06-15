@@ -18,7 +18,9 @@
     "validate:discovery": "python3 scripts/validate-discovery.py",
     "validate:nearby-discovery": "python3 scripts/validate-nearby-discovery.py",
     "validate:collections": "python3 scripts/validate-collections.py",
-    "validate:thematic-collections": "python3 scripts/validate-thematic-collections.py"
+    "validate:thematic-collections": "python3 scripts/validate-thematic-collections.py",
+    "validate-cost-of-living": "python3 scripts/validate-cost-of-living.py",
+    "validate:cost-of-living": "python3 scripts/validate-cost-of-living.py"
   },
   "dependencies": {
     "next": "^15.5.0",
