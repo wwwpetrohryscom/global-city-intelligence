@@ -3,7 +3,9 @@ import { countries } from "@/lib/data/countries";
 import { intelligenceModules } from "@/lib/data/modules";
 import { rankings } from "@/lib/data/rankings";
 import { dataSources, getSourcesByIds as getSourcesByIdsImpl } from "@/lib/data/sources";
-import type { ModuleSlug } from "@/types";
+import { getAllCityQualityProfiles } from "@/lib/data/city-quality";
+import type { City, ModuleSlug } from "@/types";
+import type { CityQualityProfileRecord } from "@/types/city-quality";
 
 export function getAllCities() {
   return cities;
@@ -64,6 +66,48 @@ export function getRankingEntriesWithCities(slug: string) {
       return city ? { ...entry, city } : undefined;
     })
     .filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
+}
+
+// --- Safety & Quality-of-Life discovery rankings (static, deterministic) ---
+// Rank cities by a selected quality score, joining back to the City record.
+function rankCitiesByQuality(
+  scoreOf: (profile: CityQualityProfileRecord) => number,
+  limit = 24,
+): City[] {
+  const ranked = [...getAllCityQualityProfiles()].sort(
+    (a, b) => scoreOf(b) - scoreOf(a),
+  );
+  const result: City[] = [];
+  for (const profile of ranked) {
+    const city = getCityBySlug(profile.citySlug);
+    if (city) {
+      result.push(city);
+    }
+    if (result.length >= limit) {
+      break;
+    }
+  }
+  return result;
+}
+
+export function getSafestCities(limit = 24): City[] {
+  return rankCitiesByQuality((p) => p.safety.overallSafetyScore, limit);
+}
+
+export function getBestQualityOfLifeCities(limit = 24): City[] {
+  return rankCitiesByQuality((p) => p.quality.qualityOfLifeScore, limit);
+}
+
+export function getBestFamilyCities(limit = 24): City[] {
+  return rankCitiesByQuality((p) => p.lifestyle.familyFriendlyScore, limit);
+}
+
+export function getBestDigitalNomadCities(limit = 24): City[] {
+  return rankCitiesByQuality((p) => p.lifestyle.digitalNomadScore, limit);
+}
+
+export function getBestRetirementCities(limit = 24): City[] {
+  return rankCitiesByQuality((p) => p.lifestyle.retirementScore, limit);
 }
 
 export function getAllSources() {
@@ -350,3 +394,21 @@ export {
   getThematicCollectionsForPlace,
   getThemeLabel,
 } from "@/lib/data/thematic-collections";
+
+// Climate layer — latitude/region-aware deterministic climate profiles.
+// Re-exported so the integrity guard in lib/data/climate.ts runs during
+// `next build`.
+export {
+  getAllClimateProfiles,
+  getClimate,
+  hasClimate,
+} from "@/lib/data/climate";
+
+// Safety & Quality-of-Life layer — deterministic country/signal-aware profiles.
+// Re-exported so the integrity guard in lib/data/city-quality.ts runs during
+// `next build`.
+export {
+  getAllCityQualityProfiles,
+  getCityQuality,
+  hasCityQuality,
+} from "@/lib/data/city-quality";

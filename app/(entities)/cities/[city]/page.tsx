@@ -55,6 +55,8 @@ import {
   hasVisualCityGuidePage,
   hasWeekendTripPage,
 } from "@/lib/data/queries";
+import { getClimate, hasClimate } from "@/lib/data/climate";
+import { getCityQuality } from "@/lib/data/city-quality";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
@@ -77,6 +79,7 @@ import {
   summerTravelRoute,
   visualCityGuideRoute,
   costOfLivingRoute,
+  climateRoute,
   weekendTripRoute,
 } from "@/lib/seo/routes";
 import {
@@ -141,6 +144,7 @@ export default async function CityPage({ params }: PageProps) {
   const countryTransportProfile = getCountryTransportProfile(city.countrySlug);
   const cityCollections = getCollectionsForCity(city.slug);
   const cityMobilityProfile = getCityMobilityProfile(city.slug);
+  const cityQuality = getCityQuality(city.slug);
   const cityAirports = getAirportsForCity(city.slug);
   const relatedComparisons = getComparisonsForCity(city.slug).slice(0, 4);
   const cityIntentPages = getIntentPagesForCity(city.slug);
@@ -273,6 +277,119 @@ export default async function CityPage({ params }: PageProps) {
           </div>
         </section>
 
+        {cityQuality ? (
+          <>
+            <section aria-labelledby="safety-scores-heading">
+              <SectionHeading
+                description="Deterministic safety estimates from our index — planning signals derived from country priors and city data, not official crime statistics."
+                title="Safety"
+              />
+              <h2 className="sr-only" id="safety-scores-heading">
+                Safety
+              </h2>
+              <article className="mt-6 rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
+                <div className="space-y-4">
+                  <ScoreBar label="Overall safety" value={cityQuality.safety.overallSafetyScore} />
+                  <ScoreBar label="Low crime" value={cityQuality.safety.crimeScore} />
+                  <ScoreBar label="Personal safety" value={cityQuality.safety.personalSafetyScore} />
+                  <ScoreBar label="Night safety" value={cityQuality.safety.nightSafetyScore} />
+                  <ScoreBar label="Road safety" value={cityQuality.safety.roadSafetyScore} />
+                </div>
+                <p className="mt-5 text-sm leading-6 text-text-secondary">
+                  {cityQuality.safetySummary}
+                </p>
+              </article>
+            </section>
+
+            <section aria-labelledby="quality-of-life-heading">
+              <SectionHeading
+                description="A composite quality-of-life estimate and its component indicators."
+                title="Quality of Life"
+              />
+              <h2 className="sr-only" id="quality-of-life-heading">
+                Quality of Life
+              </h2>
+              <article className="mt-6 rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
+                <div className="space-y-4">
+                  <ScoreBar label="Quality of life" value={cityQuality.quality.qualityOfLifeScore} />
+                  <ScoreBar label="Healthcare" value={cityQuality.quality.healthcareScore} />
+                  <ScoreBar label="Education" value={cityQuality.quality.educationScore} />
+                  <ScoreBar label="Green space" value={cityQuality.quality.greenSpaceScore} />
+                  <ScoreBar label="Cleanliness" value={cityQuality.quality.cleanlinessScore} />
+                  <ScoreBar label="Infrastructure" value={cityQuality.quality.infrastructureScore} />
+                  <ScoreBar label="Mobility" value={cityQuality.quality.mobilityScore} />
+                </div>
+                <p className="mt-5 text-sm leading-6 text-text-secondary">
+                  {cityQuality.qualitySummary}
+                </p>
+              </article>
+            </section>
+
+            <section aria-labelledby="family-friendliness-heading">
+              <SectionHeading
+                description="How the city scores for raising a family, with the indicators that drive it."
+                title="Family Friendliness"
+              />
+              <h2 className="sr-only" id="family-friendliness-heading">
+                Family Friendliness
+              </h2>
+              <article className="mt-6 rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
+                <div className="space-y-4">
+                  <ScoreBar label="Family friendliness" value={cityQuality.lifestyle.familyFriendlyScore} />
+                  <ScoreBar label="Education" value={cityQuality.quality.educationScore} />
+                  <ScoreBar label="Green space" value={cityQuality.quality.greenSpaceScore} />
+                  <ScoreBar label="Overall safety" value={cityQuality.safety.overallSafetyScore} />
+                </div>
+                <p className="mt-5 text-sm leading-6 text-text-secondary">
+                  {cityQuality.familySummary}
+                </p>
+              </article>
+            </section>
+
+            <section aria-labelledby="digital-nomad-heading">
+              <SectionHeading
+                description="Suitability for remote workers, based on connectivity, mobility, and livability."
+                title="Digital Nomad Suitability"
+              />
+              <h2 className="sr-only" id="digital-nomad-heading">
+                Digital Nomad Suitability
+              </h2>
+              <article className="mt-6 rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
+                <div className="space-y-4">
+                  <ScoreBar label="Digital nomad suitability" value={cityQuality.lifestyle.digitalNomadScore} />
+                  <ScoreBar label="Walkability" value={cityQuality.lifestyle.walkabilityScore} />
+                  <ScoreBar label="Cycling" value={cityQuality.lifestyle.cyclingScore} />
+                  <ScoreBar label="Infrastructure" value={cityQuality.quality.infrastructureScore} />
+                </div>
+                <p className="mt-5 text-sm leading-6 text-text-secondary">
+                  {cityQuality.nomadSummary}
+                </p>
+              </article>
+            </section>
+
+            <section aria-labelledby="retirement-heading">
+              <SectionHeading
+                description="Suitability for retirement, weighing healthcare, affordability, climate, and environment."
+                title="Retirement Suitability"
+              />
+              <h2 className="sr-only" id="retirement-heading">
+                Retirement Suitability
+              </h2>
+              <article className="mt-6 rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
+                <div className="space-y-4">
+                  <ScoreBar label="Retirement suitability" value={cityQuality.lifestyle.retirementScore} />
+                  <ScoreBar label="Healthcare" value={cityQuality.quality.healthcareScore} />
+                  <ScoreBar label="Cleanliness" value={cityQuality.quality.cleanlinessScore} />
+                  <ScoreBar label="Outdoor lifestyle" value={cityQuality.lifestyle.outdoorLifestyleScore} />
+                </div>
+                <p className="mt-5 text-sm leading-6 text-text-secondary">
+                  {cityQuality.retirementSummary}
+                </p>
+              </article>
+            </section>
+          </>
+        ) : null}
+
         <PublicSafetySection
           cityName={city.name}
           cityProfile={citySafetyProfile}
@@ -396,6 +513,18 @@ export default async function CityPage({ params }: PageProps) {
                 title={`Cost of living in ${city.name}`}
               />
             ) : null}
+            {hasClimate(city.slug)
+              ? (() => {
+                  const climate = getClimate(city.slug)!;
+                  return (
+                    <LinkCard
+                      description={`Climate profile for ${city.name} — ${climate.climateZone} climate, annual average ${climate.annualAvgTempC}°C, comfort score ${climate.comfortScore}/100. Month-by-month temperatures, rainfall, sunshine, and the best months to visit. Deterministic planning estimates, not a forecast.`}
+                      href={climateRoute(city.slug)}
+                      title={`Climate in ${city.name}`}
+                    />
+                  );
+                })()
+              : null}
             {hasArrivalPage(city.slug) ? (
               <LinkCard
                 description={`Practical arrival planning context for ${city.name} — links into transport, public-safety, healthcare, budgeting tools, and methodology. Not an official airport or travel instruction service.`}

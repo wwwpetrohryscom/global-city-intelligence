@@ -58,6 +58,7 @@ import {
 import {
   arrivalRoute,
   cityRoute,
+  climateRoute,
   costOfLivingRoute,
   comparisonRoute,
   countryRoute,
@@ -250,6 +251,12 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
       href: costOfLivingRoute(city.slug),
       description:
         "Monthly budgets, rent, food, and transport in the local currency, with an affordability score. Planning estimates, not live prices.",
+    },
+    {
+      label: `Climate in ${city.name}`,
+      href: climateRoute(city.slug),
+      description:
+        "Month-by-month temperatures, rainfall, sunshine, and the best months to visit, with a climate comfort score. Deterministic estimates, not a forecast.",
     },
     {
       label: "Travel budget calculator",

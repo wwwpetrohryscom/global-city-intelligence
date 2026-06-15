@@ -12,6 +12,7 @@ import {
   getAllCostProfiles,
   getCostOfLiving,
 } from "@/lib/data/cost-of-living";
+import { hasClimate } from "@/lib/data/climate";
 import {
   getCityBySlug,
   getCountryBySlug,
@@ -21,6 +22,7 @@ import {
 import { createMetadata } from "@/lib/seo/metadata";
 import {
   cityRoute,
+  climateRoute,
   costOfLivingRoute,
   countryRoute,
   staticRoutes,
@@ -297,6 +299,16 @@ export default async function CostOfLivingPage({ params }: PageProps) {
                 {city.name} city profile
               </Link>
             </li>
+            {hasClimate(city.slug) ? (
+              <li>
+                <Link
+                  className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                  href={climateRoute(city.slug)}
+                >
+                  Climate in {city.name}
+                </Link>
+              </li>
+            ) : null}
             {country ? (
               <li>
                 <Link
