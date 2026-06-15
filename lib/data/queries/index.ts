@@ -4,6 +4,10 @@ import { intelligenceModules } from "@/lib/data/modules";
 import { rankings } from "@/lib/data/rankings";
 import { dataSources, getSourcesByIds as getSourcesByIdsImpl } from "@/lib/data/sources";
 import { getAllCityQualityProfiles } from "@/lib/data/city-quality";
+import {
+  getAllEconomyProfiles,
+  getAllJobsProfiles,
+} from "@/lib/data/economy";
 import type { City, ModuleSlug } from "@/types";
 import type { CityQualityProfileRecord } from "@/types/city-quality";
 
@@ -108,6 +112,58 @@ export function getBestDigitalNomadCities(limit = 24): City[] {
 
 export function getBestRetirementCities(limit = 24): City[] {
   return rankCitiesByQuality((p) => p.lifestyle.retirementScore, limit);
+}
+
+// --- Economy & Jobs discovery rankings (static, deterministic) ---
+function rankCities<T extends { citySlug: string }>(
+  profiles: readonly T[],
+  scoreOf: (profile: T) => number,
+  limit: number,
+): City[] {
+  const ranked = [...profiles].sort((a, b) => scoreOf(b) - scoreOf(a));
+  const result: City[] = [];
+  for (const profile of ranked) {
+    const city = getCityBySlug(profile.citySlug);
+    if (city) {
+      result.push(city);
+    }
+    if (result.length >= limit) {
+      break;
+    }
+  }
+  return result;
+}
+
+export function getTopEconomyCities(limit = 24): City[] {
+  return rankCities(getAllEconomyProfiles(), (p) => p.economyScore, limit);
+}
+
+export function getTopStartupCities(limit = 24): City[] {
+  return rankCities(getAllEconomyProfiles(), (p) => p.startupScore, limit);
+}
+
+export function getTopCareerCities(limit = 24): City[] {
+  return rankCities(
+    getAllJobsProfiles(),
+    (p) => p.overallCareerOpportunityScore,
+    limit,
+  );
+}
+
+export function getTopRemoteWorkCities(limit = 24): City[] {
+  return rankCities(getAllEconomyProfiles(), (p) => p.remoteWorkScore, limit);
+}
+
+export function getTopBusinessCities(limit = 24): City[] {
+  return rankCities(
+    getAllEconomyProfiles(),
+    (p) => p.businessEnvironmentScore,
+    limit,
+  );
+}
+
+export function getTopEmploymentCities(limit = 24): City[] {
+  return rankCities(getAllEconomyProfiles(), (p) => p.employmentScore, limit);
 }
 
 export function getAllSources() {
@@ -412,3 +468,15 @@ export {
   getCityQuality,
   hasCityQuality,
 } from "@/lib/data/city-quality";
+
+// Economy & Jobs layer — deterministic country/signal-aware profiles.
+// Re-exported so the integrity guard in lib/data/economy.ts runs during
+// `next build`.
+export {
+  getAllEconomyProfiles,
+  getAllJobsProfiles,
+  getEconomy,
+  getJobs,
+  hasEconomy,
+  hasJobs,
+} from "@/lib/data/economy";

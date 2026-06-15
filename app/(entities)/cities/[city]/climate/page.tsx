@@ -17,12 +17,14 @@ import {
   hasWeekendTripPage,
 } from "@/lib/data/queries";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
+import { hasEconomy } from "@/lib/data/economy";
 import { createMetadata } from "@/lib/seo/metadata";
 import {
   cityRoute,
   climateRoute,
   costOfLivingRoute,
   countryRoute,
+  economyRoute,
   staticRoutes,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -404,6 +406,16 @@ export default async function ClimatePage({ params }: PageProps) {
                   href={costOfLivingRoute(city.slug)}
                 >
                   Cost of living in {city.name}
+                </Link>
+              </li>
+            ) : null}
+            {hasEconomy(city.slug) ? (
+              <li>
+                <Link
+                  className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                  href={economyRoute(city.slug)}
+                >
+                  Economy and jobs in {city.name}
                 </Link>
               </li>
             ) : null}

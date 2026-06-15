@@ -34,7 +34,9 @@ VALID_THEMES = {
     "scenic_drives","weekend_nature_retreats","alpine_landscapes","nordic_nature","mediterranean_nature",
     "atlantic_coast_nature","great_lakes_nature","volcanic_landscapes","wetlands_marshes",
     "rural_countryside_escapes","safest_cities","family_friendly_cities","digital_nomad_cities",
-    "retirement_friendly_cities","high_quality_of_life_cities",
+    "retirement_friendly_cities","high_quality_of_life_cities","technology_cities","startup_cities",
+    "business_hubs","remote_work_cities","finance_centers","manufacturing_cities","research_cities",
+    "tourism_economies","government_centers","innovation_cities",
 }
 NATURE_CATEGORIES = {"nature","park","mountain","lake","beach","island","waterfront","family_outdoor","general_weekend_place"}
 NORDIC_COUNTRIES = {"sweden","finland","denmark","norway","iceland"}
