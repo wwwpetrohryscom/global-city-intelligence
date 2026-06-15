@@ -45,7 +45,12 @@ export type ThemeType =
   | "great_lakes_nature"
   | "volcanic_landscapes"
   | "wetlands_marshes"
-  | "rural_countryside_escapes";
+  | "rural_countryside_escapes"
+  | "safest_cities"
+  | "family_friendly_cities"
+  | "digital_nomad_cities"
+  | "retirement_friendly_cities"
+  | "high_quality_of_life_cities";
 
 /** A thematic discovery collection of cities + nearby places. */
 export interface ThematicCollection {

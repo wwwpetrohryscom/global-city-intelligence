@@ -59,6 +59,11 @@ const THEME_ORDER: ThemeType[] = [
   "unesco_nature_areas",
   "scenic_drives",
   "rural_countryside_escapes",
+  "safest_cities",
+  "family_friendly_cities",
+  "digital_nomad_cities",
+  "retirement_friendly_cities",
+  "high_quality_of_life_cities",
 ];
 
 export default function ThematicCollectionsIndexPage() {

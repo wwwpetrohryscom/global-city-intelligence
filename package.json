@@ -22,7 +22,9 @@
     "validate-cost-of-living": "python3 scripts/validate-cost-of-living.py",
     "validate:cost-of-living": "python3 scripts/validate-cost-of-living.py",
     "validate-climate": "python3 scripts/validate-climate.py",
-    "validate:climate": "python3 scripts/validate-climate.py"
+    "validate:climate": "python3 scripts/validate-climate.py",
+    "validate-city-quality": "python3 scripts/validate-city-quality.py",
+    "validate:city-quality": "python3 scripts/validate-city-quality.py"
   },
   "dependencies": {
     "next": "^15.5.0",
