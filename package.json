@@ -26,7 +26,9 @@
     "validate-city-quality": "python3 scripts/validate-city-quality.py",
     "validate:city-quality": "python3 scripts/validate-city-quality.py",
     "validate-economy": "python3 scripts/validate-economy.py",
-    "validate:economy": "python3 scripts/validate-economy.py"
+    "validate:economy": "python3 scripts/validate-economy.py",
+    "validate-education": "python3 scripts/validate-education.py",
+    "validate:education": "python3 scripts/validate-education.py"
   },
   "dependencies": {
     "next": "^15.5.0",

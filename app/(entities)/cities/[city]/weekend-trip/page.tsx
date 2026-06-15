@@ -60,6 +60,7 @@ import {
   climateRoute,
   costOfLivingRoute,
   economyRoute,
+  educationRoute,
   comparisonRoute,
   countryRoute,
   movingToCityRoute,
@@ -256,6 +257,12 @@ export default async function WeekendTripPage({ params }: PageProps) {
       href: economyRoute(city.slug),
       description:
         "Key industries, employment, salary, startup, remote-work, and career indicators, with an economy score. Deterministic planning estimates, not measured economic data.",
+    },
+    {
+      label: `Universities and education in ${city.name}`,
+      href: educationRoute(city.slug),
+      description:
+        "Representative universities, research environment, student life, and international-student indicators, with an education score. Deterministic dataset, not institutional rankings.",
     },
     {
       label: "Travel budget calculator",

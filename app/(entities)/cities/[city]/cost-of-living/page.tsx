@@ -14,6 +14,7 @@ import {
 } from "@/lib/data/cost-of-living";
 import { hasClimate } from "@/lib/data/climate";
 import { hasEconomy } from "@/lib/data/economy";
+import { hasEducation } from "@/lib/data/education";
 import {
   getCityBySlug,
   getCountryBySlug,
@@ -27,6 +28,7 @@ import {
   costOfLivingRoute,
   countryRoute,
   economyRoute,
+  educationRoute,
   staticRoutes,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -318,6 +320,16 @@ export default async function CostOfLivingPage({ params }: PageProps) {
                   href={economyRoute(city.slug)}
                 >
                   Economy and jobs in {city.name}
+                </Link>
+              </li>
+            ) : null}
+            {hasEducation(city.slug) ? (
+              <li>
+                <Link
+                  className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                  href={educationRoute(city.slug)}
+                >
+                  Universities and education in {city.name}
                 </Link>
               </li>
             ) : null}

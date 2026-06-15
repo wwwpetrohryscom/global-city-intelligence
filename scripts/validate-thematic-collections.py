@@ -37,6 +37,9 @@ VALID_THEMES = {
     "retirement_friendly_cities","high_quality_of_life_cities","technology_cities","startup_cities",
     "business_hubs","remote_work_cities","finance_centers","manufacturing_cities","research_cities",
     "tourism_economies","government_centers","innovation_cities",
+    "academic_research_cities","student_cities","university_cities","engineering_education_cities",
+    "medical_education_cities","business_education_cities","international_student_cities",
+    "technology_education_hubs","academic_capitals","knowledge_economy_cities",
 }
 NATURE_CATEGORIES = {"nature","park","mountain","lake","beach","island","waterfront","family_outdoor","general_weekend_place"}
 NORDIC_COUNTRIES = {"sweden","finland","denmark","norway","iceland"}
