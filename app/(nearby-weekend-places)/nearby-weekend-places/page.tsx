@@ -5,7 +5,6 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { HubNav } from "@/components/navigation/HubNav";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
-import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
 import {
@@ -42,12 +41,6 @@ export const metadata: Metadata = createMetadata({
   path: staticRoutes.nearbyWeekendPlaces,
 });
 
-const STATUS_LABEL: Record<"verified" | "partial" | "needs_review", string> = {
-  verified: "Verified source record",
-  partial: "Partially verified source record",
-  needs_review: "Pending detailed verification",
-};
-
 const CATEGORY_ORDER = [
   "nature",
   "waterfront",
@@ -65,6 +58,19 @@ const CATEGORY_ORDER = [
 
 export default function NearbyWeekendPlacesDirectoryPage() {
   const allPlaces = getAllNearbyWeekendPlaces();
+  const placeHref = (place: (typeof allPlaces)[number]): string => {
+    if (hasNearbyWeekendPlaceDetailPage(place.slug)) {
+      return nearbyWeekendPlaceRoute(place.slug);
+    }
+    const city = place.connectedCitySlugs[0];
+    if (city && hasNearbyWeekendPlacesCityPage(city)) {
+      return nearbyWeekendPlacesCityRoute(city);
+    }
+    if (city) {
+      return cityRoute(city);
+    }
+    return staticRoutes.nearbyWeekendPlaces;
+  };
   const breadcrumbs = staticBreadcrumbs(
     "Nearby weekend places",
     staticRoutes.nearbyWeekendPlaces,
@@ -143,12 +149,10 @@ export default function NearbyWeekendPlacesDirectoryPage() {
     url: absoluteUrl(staticRoutes.nearbyWeekendPlaces),
     numberOfItems: entries.length,
     itemListOrder: "https://schema.org/ItemListUnordered",
-    itemListElement: entries.map((entry) => ({
+    itemListElement: entries.slice(0, 100).map((entry) => ({
       "@type": "ListItem",
       name: entry.place.name,
-      url: absoluteUrl(
-        `${staticRoutes.nearbyWeekendPlaces}#${entry.place.slug}`,
-      ),
+      url: absoluteUrl(placeHref(entry.place)),
     })),
   };
 
@@ -364,156 +368,6 @@ export default function NearbyWeekendPlacesDirectoryPage() {
           </dl>
         </section>
 
-        <section aria-labelledby="nearby-directory-grid-heading">
-          <SectionHeading
-            description="Each card opens an official source where Wikidata lists one, plus links to the connected city and country profiles. Records are unordered and not ranked; verify access and conditions with the official source before departure."
-            title="All nearby weekend places"
-          />
-          <h2 className="sr-only" id="nearby-directory-grid-heading">
-            All nearby weekend places
-          </h2>
-          <ul className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {entries.map((entry) => (
-              <li key={entry.place.slug}>
-                <Card
-                  as="article"
-                  className="h-full"
-                  id={entry.place.slug}
-                  interactive
-                >
-                  {entry.place.image ? (
-                    <figure className="mb-4 -mx-5 -mt-5 overflow-hidden rounded-t-2xl border-b border-neutral-border bg-surface-soft">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        alt={entry.place.image.alt}
-                        className="block h-auto w-full object-cover"
-                        decoding="async"
-                        height={entry.place.image.height}
-                        loading="lazy"
-                        sizes="(min-width: 1280px) 384px, (min-width: 768px) 50vw, 100vw"
-                        src={entry.place.image.src}
-                        style={{ aspectRatio: `${entry.place.image.width} / ${entry.place.image.height}` }}
-                        width={entry.place.image.width}
-                      />
-                      <figcaption className="border-t border-neutral-border bg-white px-4 py-2 text-xs leading-5 text-text-secondary">
-                        Image:{" "}
-                        {entry.place.image.authorUrl ? (
-                          <a
-                            className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                            href={entry.place.image.authorUrl}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                          >
-                            {entry.place.image.author}
-                          </a>
-                        ) : (
-                          entry.place.image.author
-                        )}{" "}
-                        /{" "}
-                        <a
-                          className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                          href={entry.place.image.sourceUrl}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          Wikimedia Commons
-                        </a>
-                        ,{" "}
-                        <a
-                          className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                          href={entry.place.image.licenseUrl}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          {entry.place.image.license}
-                        </a>
-                        . Visual context only.
-                      </figcaption>
-                    </figure>
-                  ) : null}
-                  <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                    {`${entry.country?.name ?? "Indexed place"}${entry.place.regionName ? ` · ${entry.place.regionName}` : ""}`}
-                  </p>
-                  <h3 className="mt-2 text-lg font-semibold text-text-primary">
-                    {hasNearbyWeekendPlaceDetailPage(entry.place.slug) ? (
-                      <Link
-                        className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
-                        href={nearbyWeekendPlaceRoute(entry.place.slug)}
-                      >
-                        {entry.place.name}
-                      </Link>
-                    ) : entry.place.officialUrl ? (
-                      <Link
-                        className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
-                        href={entry.place.officialUrl}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        {entry.place.name}
-                      </Link>
-                    ) : (
-                      entry.place.name
-                    )}
-                  </h3>
-                  {hasNearbyWeekendPlaceDetailPage(entry.place.slug) ? (
-                    <p className="mt-1 text-xs font-medium text-text-secondary">
-                      Detailed research page available
-                    </p>
-                  ) : null}
-                  <p className="mt-1 text-xs font-medium text-text-secondary">
-                    {getNearbyPlaceCategoryLabel(entry.place.category)}
-                  </p>
-                  <p className="mt-3 text-sm leading-6 text-text-secondary">
-                    {entry.place.summary}
-                  </p>
-                  <p className="mt-3 text-xs text-text-secondary">
-                    {STATUS_LABEL[entry.place.verificationStatus]}.
-                  </p>
-                  <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-                    {entry.connectedCities.map((c) => (
-                      <Link
-                        className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                        href={cityRoute(c.slug)}
-                        key={c.slug}
-                      >
-                        {`${c.name} city profile`}
-                      </Link>
-                    ))}
-                    {entry.country ? (
-                      <Link
-                        className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                        href={countryRoute(entry.country.slug)}
-                      >
-                        {`${entry.country.name} country profile`}
-                      </Link>
-                    ) : null}
-                    {entry.place.officialUrl ? (
-                      <Link
-                        className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                        href={entry.place.officialUrl}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        Official source
-                      </Link>
-                    ) : null}
-                    {entry.place.wikidataId ? (
-                      <Link
-                        className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                        href={`https://www.wikidata.org/wiki/${entry.place.wikidataId}`}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        {`Wikidata: ${entry.place.wikidataId}`}
-                      </Link>
-                    ) : null}
-                  </div>
-                </Card>
-              </li>
-            ))}
-          </ul>
-        </section>
-
         <section aria-labelledby="nearby-directory-country-heading">
           <SectionHeading
             description="A complete index of nearby weekend place records grouped by country, fully present in the initial HTML so every link is crawlable without client-side JavaScript."
@@ -544,7 +398,7 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                     <li key={place.slug}>
                       <Link
                         className="text-text-secondary hover:text-brand-500"
-                        href={`${staticRoutes.nearbyWeekendPlaces}#${place.slug}`}
+                        href={placeHref(place)}
                       >
                         {place.name}
                       </Link>{" "}
@@ -582,7 +436,7 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                     <li key={place.slug}>
                       <Link
                         className="text-text-secondary hover:text-brand-500"
-                        href={`${staticRoutes.nearbyWeekendPlaces}#${place.slug}`}
+                        href={placeHref(place)}
                       >
                         {place.name}
                       </Link>
@@ -642,7 +496,7 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                       <li key={place.slug}>
                         <Link
                           className="text-text-secondary hover:text-brand-500"
-                          href={`${staticRoutes.nearbyWeekendPlaces}#${place.slug}`}
+                          href={placeHref(place)}
                         >
                           {place.name}
                         </Link>
