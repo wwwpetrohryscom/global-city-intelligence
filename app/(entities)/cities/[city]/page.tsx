@@ -58,7 +58,9 @@ import {
 import { getClimate, hasClimate } from "@/lib/data/climate";
 import { getCityQuality } from "@/lib/data/city-quality";
 import { getEconomy, hasEconomy } from "@/lib/data/economy";
+import { getEducation, getUniversitiesForCity, hasEducation } from "@/lib/data/education";
 import type { EconomyCategory } from "@/types/economy";
+import type { EducationCategory } from "@/types/education";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
@@ -83,6 +85,7 @@ import {
   costOfLivingRoute,
   climateRoute,
   economyRoute,
+  educationRoute,
   weekendTripRoute,
 } from "@/lib/seo/routes";
 import {
@@ -101,6 +104,15 @@ const CITY_ECONOMY_LABEL: Record<EconomyCategory, string> = {
   government_center: "government center",
   education_research: "education & research center",
   mixed: "mixed economy",
+};
+
+const CITY_EDUCATION_LABEL: Record<EducationCategory, string> = {
+  global_academic_hub: "global academic hub",
+  major_university_city: "major university city",
+  research_center: "research center",
+  student_city: "student city",
+  regional_education_center: "regional education center",
+  mixed: "mixed education base",
 };
 
 type PageProps = {
@@ -547,6 +559,19 @@ export default async function CityPage({ params }: PageProps) {
                       description={`Economy and jobs profile for ${city.name} — ${CITY_ECONOMY_LABEL[economy.economyCategory]}, economy score ${economy.economyScore}/100, key industries including ${economy.dominantIndustries.slice(0, 3).join(", ").toLowerCase()}. Employment, salary, startup, remote-work, and career indicators. Deterministic planning estimates.`}
                       href={economyRoute(city.slug)}
                       title={`Economy and jobs in ${city.name}`}
+                    />
+                  );
+                })()
+              : null}
+            {hasEducation(city.slug)
+              ? (() => {
+                  const education = getEducation(city.slug)!;
+                  const uniCount = getUniversitiesForCity(city.slug).length;
+                  return (
+                    <LinkCard
+                      description={`Education profile for ${city.name} — ${CITY_EDUCATION_LABEL[education.educationCategory]}, education score ${education.educationScore}/100, ${uniCount} representative universities, plus research, student life, and international-student indicators. Deterministic dataset, not institutional rankings.`}
+                      href={educationRoute(city.slug)}
+                      title={`Universities and education in ${city.name}`}
                     />
                   );
                 })()

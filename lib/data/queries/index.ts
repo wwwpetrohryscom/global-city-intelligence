@@ -8,8 +8,10 @@ import {
   getAllEconomyProfiles,
   getAllJobsProfiles,
 } from "@/lib/data/economy";
+import { getAllEducationProfiles } from "@/lib/data/education";
 import type { City, ModuleSlug } from "@/types";
 import type { CityQualityProfileRecord } from "@/types/city-quality";
+import type { EducationProfile } from "@/types/education";
 
 export function getAllCities() {
   return cities;
@@ -164,6 +166,31 @@ export function getTopBusinessCities(limit = 24): City[] {
 
 export function getTopEmploymentCities(limit = 24): City[] {
   return rankCities(getAllEconomyProfiles(), (p) => p.employmentScore, limit);
+}
+
+// --- Education discovery rankings (static, deterministic) ---
+function rankEducation(scoreOf: (profile: EducationProfile) => number, limit: number): City[] {
+  return rankCities(getAllEducationProfiles(), scoreOf, limit);
+}
+
+export function getTopEducationCities(limit = 24): City[] {
+  return rankEducation((p) => p.educationScore, limit);
+}
+
+export function getTopResearchCities(limit = 24): City[] {
+  return rankEducation((p) => p.researchScore, limit);
+}
+
+export function getTopStudentCities(limit = 24): City[] {
+  return rankEducation((p) => p.studentFriendlinessScore, limit);
+}
+
+export function getTopInternationalStudentCities(limit = 24): City[] {
+  return rankEducation((p) => p.internationalStudentScore, limit);
+}
+
+export function getTopAcademicCities(limit = 24): City[] {
+  return rankEducation((p) => p.academicReputationScore, limit);
 }
 
 export function getAllSources() {
@@ -480,3 +507,14 @@ export {
   hasEconomy,
   hasJobs,
 } from "@/lib/data/economy";
+
+// Education & Universities layer — deterministic country/signal-aware profiles
+// + representative university entities. Re-exported so the integrity guard in
+// lib/data/education.ts runs during `next build`.
+export {
+  getAllEducationProfiles,
+  getAllUniversities,
+  getEducation,
+  getUniversitiesForCity,
+  hasEducation,
+} from "@/lib/data/education";

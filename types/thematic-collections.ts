@@ -60,7 +60,17 @@ export type ThemeType =
   | "research_cities"
   | "tourism_economies"
   | "government_centers"
-  | "innovation_cities";
+  | "innovation_cities"
+  | "academic_research_cities"
+  | "student_cities"
+  | "university_cities"
+  | "engineering_education_cities"
+  | "medical_education_cities"
+  | "business_education_cities"
+  | "international_student_cities"
+  | "technology_education_hubs"
+  | "academic_capitals"
+  | "knowledge_economy_cities";
 
 /** A thematic discovery collection of cities + nearby places. */
 export interface ThematicCollection {
