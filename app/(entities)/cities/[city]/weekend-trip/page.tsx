@@ -61,6 +61,7 @@ import {
   costOfLivingRoute,
   economyRoute,
   educationRoute,
+  healthcareRoute,
   comparisonRoute,
   countryRoute,
   movingToCityRoute,
@@ -263,6 +264,12 @@ export default async function WeekendTripPage({ params }: PageProps) {
       href: educationRoute(city.slug),
       description:
         "Representative universities, research environment, student life, and international-student indicators, with an education score. Deterministic dataset, not institutional rankings.",
+    },
+    {
+      label: `Healthcare and retirement in ${city.name}`,
+      href: healthcareRoute(city.slug),
+      description:
+        "Medical access, specialist and emergency care, healthcare affordability, and retirement suitability, with healthcare and retirement scores. Deterministic planning estimates, not measured health data.",
     },
     {
       label: "Travel budget calculator",

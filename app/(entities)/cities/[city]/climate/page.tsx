@@ -19,6 +19,7 @@ import {
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
 import { hasEconomy } from "@/lib/data/economy";
 import { hasEducation } from "@/lib/data/education";
+import { hasHealthcare } from "@/lib/data/healthcare-retirement";
 import { createMetadata } from "@/lib/seo/metadata";
 import {
   cityRoute,
@@ -27,6 +28,7 @@ import {
   countryRoute,
   economyRoute,
   educationRoute,
+  healthcareRoute,
   staticRoutes,
   visualCityGuideRoute,
   weekendTripRoute,
@@ -428,6 +430,16 @@ export default async function ClimatePage({ params }: PageProps) {
                   href={educationRoute(city.slug)}
                 >
                   Universities and education in {city.name}
+                </Link>
+              </li>
+            ) : null}
+            {hasHealthcare(city.slug) ? (
+              <li>
+                <Link
+                  className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                  href={healthcareRoute(city.slug)}
+                >
+                  Healthcare and retirement in {city.name}
                 </Link>
               </li>
             ) : null}

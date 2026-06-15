@@ -9,9 +9,15 @@ import {
   getAllJobsProfiles,
 } from "@/lib/data/economy";
 import { getAllEducationProfiles } from "@/lib/data/education";
+import {
+  getAllHealthcareProfiles,
+  getAllRetirementProfiles,
+} from "@/lib/data/healthcare-retirement";
 import type { City, ModuleSlug } from "@/types";
 import type { CityQualityProfileRecord } from "@/types/city-quality";
 import type { EducationProfile } from "@/types/education";
+import type { HealthcareProfile } from "@/types/healthcare";
+import type { RetirementProfile } from "@/types/retirement";
 
 export function getAllCities() {
   return cities;
@@ -191,6 +197,35 @@ export function getTopInternationalStudentCities(limit = 24): City[] {
 
 export function getTopAcademicCities(limit = 24): City[] {
   return rankEducation((p) => p.academicReputationScore, limit);
+}
+
+// --- Healthcare & Retirement discovery rankings (static, deterministic) ---
+function rankHealthcare(scoreOf: (p: HealthcareProfile) => number, limit: number): City[] {
+  return rankCities(getAllHealthcareProfiles(), scoreOf, limit);
+}
+
+function rankRetirement(scoreOf: (p: RetirementProfile) => number, limit: number): City[] {
+  return rankCities(getAllRetirementProfiles(), scoreOf, limit);
+}
+
+export function getTopHealthcareCities(limit = 24): City[] {
+  return rankHealthcare((p) => p.healthcareScore, limit);
+}
+
+export function getTopHealthcareAccessCities(limit = 24): City[] {
+  return rankHealthcare((p) => p.healthcareAccessScore, limit);
+}
+
+export function getTopRetirementCities(limit = 24): City[] {
+  return rankRetirement((p) => p.retirementScore, limit);
+}
+
+export function getTopAffordableRetirementCities(limit = 24): City[] {
+  return rankRetirement((p) => p.affordabilityScore, limit);
+}
+
+export function getTopActiveRetirementCities(limit = 24): City[] {
+  return rankRetirement((p) => p.activeLifestyleScore, limit);
 }
 
 export function getAllSources() {
@@ -518,3 +553,17 @@ export {
   getUniversitiesForCity,
   hasEducation,
 } from "@/lib/data/education";
+
+// Healthcare & Retirement layer — deterministic per-city profiles +
+// representative medical-facility entities. Re-exported so the integrity guard
+// in lib/data/healthcare-retirement.ts runs during `next build`.
+export {
+  getAllHealthcareProfiles,
+  getAllMedicalFacilities,
+  getAllRetirementProfiles,
+  getHealthcare,
+  getMedicalFacilitiesForCity,
+  getRetirement,
+  hasHealthcare,
+  hasRetirement,
+} from "@/lib/data/healthcare-retirement";

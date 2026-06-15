@@ -28,7 +28,9 @@
     "validate-economy": "python3 scripts/validate-economy.py",
     "validate:economy": "python3 scripts/validate-economy.py",
     "validate-education": "python3 scripts/validate-education.py",
-    "validate:education": "python3 scripts/validate-education.py"
+    "validate:education": "python3 scripts/validate-education.py",
+    "validate-healthcare": "python3 scripts/validate-healthcare.py",
+    "validate:healthcare": "python3 scripts/validate-healthcare.py"
   },
   "dependencies": {
     "next": "^15.5.0",
