@@ -6698,3 +6698,80 @@ genuinely tapped out above 100k and correctly returned no new cities.
 - `npm run typecheck` — clean · `npm run lint` — clean
 - `npm run build` — clean (11,670 / 11,670 static pages); robots.txt + sitemap.xml
   build, new routes auto-registered via generateStaticParams, no new schema types.
+
+## 2026-06-15: wave 3 — high-value cities by SEO Opportunity Score
+
+### Scope
+
+Third expansion wave. Selection used a multi-factor **SEO Opportunity Score**
+(population_weight + regional_importance + airport_presence + tourism_significance
++ nearby_nature_density + administrative_importance + cross-border_relevance) —
+not population alone — so strong tourism/airport/nature-gateway cities (Banff,
+Jackson WY, Niagara Falls, Alice Springs, Corfu, Marbella, Lucerne, Tromsø …)
+rank alongside large metros. Tiered priority across 37 supported countries; all
+already existed (no new country records). Nearby minimum raised to **5 per city**.
+
+### Before → after
+
+| Metric | Before | After | Δ |
+| --- | --- | --- | --- |
+| Cities | 931 | 1,119 | +188 |
+| Verified city hero images | 923 | 1,110 | +187 (1 fallback) |
+| Nearby-place records | 3,104 | 4,555 | +1,451 |
+| Nearby detail pages | 1,565 | 2,138 | +573 |
+| Nearby-place facts | 1,529 | 2,102 | +573 |
+| City discovery-graph cities | 920 | 1,107 | +187 |
+| City discovery-graph edges | 7,780 | 9,661 | +1,881 |
+| Nearby discovery-graph places | 3,102 | 4,554 | +1,452 |
+| Nearby discovery-graph edges | 30,102 | 44,716 | +14,614 |
+| Regional collections | 207 | 207 | +645 memberships (89 colls) |
+| Thematic collections | 250 | 250 | new places folded into themes |
+| Static pages | 11,670 | 14,123 | +2,453 |
+
+- Every new city: SEO-ranked selection, neutral grounded intro/outlook, scores
+  (auto-ranked), 3 resolvable related-city links, a verified hero photo
+  (187/188; Alexandroupoli renders the designed fallback — 1 fallback total),
+  and **5–8 nearby natural places** (minimum 5 met for all).
+- Nearby places: ~573 verified (P856 → detail page + designation/inception/IUCN),
+  ~878 partial. Categories incl. national/regional parks, nature reserves,
+  mountains, lakes, islands, coast, forests, geoparks, waterfalls, river valleys.
+
+### Quality audits (fixed before commit)
+
+A deterministic sweep + a 13-agent adversarial Workflow review caught and fixed:
+- **Wrong same-name entity**: Portland→Maine (not Oregon, already in dataset),
+  Manchester→New Hampshire (not UK), Norfolk→Virginia (not Norfolk county
+  England), Jackson→Wyoming (not Jacksonville), Rochester→Minnesota (not NY),
+  Melbourne/Naples→Florida (not Australia/Italy), Cornwall→Ontario, and
+  **Trenton→New Jersey** (not Trenton, Michigan — caught by the adversarial pass;
+  its nearby places were re-resolved for the corrected NJ coordinates).
+- **Duplicate**: dropped `caceres-spain` (re-proposed existing Cáceres).
+  Dataset-wide city-QID dedup confirms 0 duplicates.
+- **Dropped 2 cities** (Laredo, Broome) that could not reach the 5-nearby minimum
+  with verified Commons imagery (arid border / remote Kimberley) — preserving the
+  min-5 invariant for every wired city.
+- Restored the "Slovak Paradise National Park" proper noun; 0 genuine marketing
+  words remain in intros.
+
+### SEO & internal linking
+
+No new schema types — reuses WebPage / BreadcrumbList / ItemList. Routes
+auto-register via generateStaticParams; sitemap.xml + robots.txt build; canonical
++ metadata generation unchanged. All new cities and places participate in the
+city + nearby discovery graphs (no orphans beyond 2 geographically remote
+isolated nodes, still reachable via their city pages), thematic collections,
+weekend-trip and visual-guide pages.
+
+### Validation results
+
+- 10 validators — all PASS (nearby-places 4,555; media; community-media; photos;
+  submissions; publication; discovery 1,107/9,661; nearby-discovery 4,554/44,716;
+  collections 207; thematic 250)
+- `npm run typecheck` — clean · `npm run lint` — clean
+- `npm run build` — clean (14,123 / 14,123 static pages); no oversized-ISR warnings.
+
+### Related fix
+
+The `/nearby-weekend-places` index page was slimmed from a 27 MB oversized-ISR
+page to ~6 MB (commit d7d632f) by dropping a redundant full-card grid; it remains
+~8 MB after wave 3, comfortably under Vercel's threshold.
