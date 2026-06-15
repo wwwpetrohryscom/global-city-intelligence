@@ -6631,3 +6631,70 @@ auto-include every added city (derived from `cities` in `lib/data/rankings.ts`).
 - `npm run build` — clean (9,778 / 9,778 static pages)
 
 > Follow-up waves continue toward full >100k coverage (~700–900 more cities).
+
+## 2026-06-15: wave 2 — cities >100k, priority countries (US/DE/FR/IT/ES/PL/UA/CA + P2)
+
+### Scope
+
+Second population-driven wave, weighted to the largest remaining opportunity
+countries (Priority 1: United States, Germany, France, Italy, Spain, Poland,
+Ukraine, Canada; Priority 2: Netherlands, Belgium, Austria, Sweden, Finland,
+Denmark, Czechia, Portugal, Romania, Greece, Ireland, Australia, New Zealand).
+All target countries already existed, so no new country records. Several P2
+countries (Finland, Denmark, Czechia, Ireland, Australia, New Zealand) are
+genuinely tapped out above 100k and correctly returned no new cities.
+
+### Before → after
+
+| Metric | Before | After | Δ |
+| --- | --- | --- | --- |
+| Cities | 781 | 931 | +150 |
+| Verified city hero images | 793 | 923 | +148 (2 fallback) |
+| Nearby-place records | 2,231 | 3,104 | +873 |
+| Nearby detail pages | 1,173 | 1,565 | +392 |
+| Nearby-place facts | 1,137 | 1,529 | +392 |
+| City discovery-graph cities | 774 | 920 | +146 |
+| City discovery-graph edges | 6,291 | 7,780 | +1,489 |
+| Nearby discovery-graph places | 2,229 | 3,102 | +873 |
+| Nearby discovery-graph edges | 21,275 | 30,102 | +8,827 |
+| Regional collections | 207 | 207 | +1,909 memberships (169 colls) |
+| Thematic collections | 250 | 250 | new places folded into themes |
+| Static pages | 9,778 | 11,670 | +1,892 |
+
+- Every new city: neutral grounded intro/outlook, scores (auto-ranked), 3
+  resolvable related-city links, a verified hero photo (148/150; Santa Rosa and
+  Salinas render the designed fallback — no accept-listed Commons image), and
+  **4–6 nearby natural places** (minimum 4 met for all 150).
+- Nearby places: 392 verified (P856 authority → detail page + designation/
+  inception/IUCN facts), 481 partial.
+- Ukraine deepened with 8 more cities (Kryvyi Rih, Mykolaiv, Mariupol, Vinnytsia,
+  Kherson, Poltava, Chernihiv, Cherkasy).
+
+### Method notes
+
+- Same deterministic pipeline as wave 1 (P17-verified QID + disambiguation,
+  P625 coords, P18 → P373 hero with license/montage/author filters, ≤170 km
+  proximity-gated nearby places, P856 classification).
+- Fixes this wave: county/consolidated-city mispicks corrected via
+  settlement-class preference + reject-existing-QID dedup (Columbus GA not
+  Columbus OH; Arlington TX; Rockford IL; Amarillo TX); a cross-border error
+  (Greek Nikaia had resolved to ancient Nicaea in Turkey) caught by a
+  country-bounds sanity check; "Unknown author" / verbose-notice hero authors
+  rejected; 4 cities under the 4-nearby minimum boosted with curated parks
+  (Waterton Lakes NP, Natural Bridge, Tippecanoe River SP, etc.).
+- nearby-places.ts adds a fourth annotated seed const (`wave2NearbySeeds`)
+  spread into `seeds` (TS2590 split-array chain).
+- Regional collections geographically augmented (new places added to existing
+  same-type collections within ~110 km of members, honoring all validator
+  rules); the original 207-collection generator remains absent from the
+  workspace, so non-European new cities are represented via the nearby-place
+  graph and thematic collections instead.
+
+### Validation results
+
+- 10 validators — all PASS (nearby-places 3,104; media; community-media; photos;
+  submissions; publication; discovery 920/7,780; nearby-discovery 3,102/30,102;
+  collections 207; thematic 250)
+- `npm run typecheck` — clean · `npm run lint` — clean
+- `npm run build` — clean (11,670 / 11,670 static pages); robots.txt + sitemap.xml
+  build, new routes auto-registered via generateStaticParams, no new schema types.
