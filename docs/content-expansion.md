@@ -6553,3 +6553,81 @@ cities, countries, routes, schema, or architecture — data-only densification.
 > Note: `lib/data/nearby-places.ts` now splits its seed array into
 > `batchSevenDensitySeeds` + `baseSeeds` spread into `seeds`, to keep the
 > ~1,444-element literal under TypeScript's union-complexity ceiling (TS2590).
+
+## 2026-06-15: wave 1 — cities >100k across all-Europe + US/CA/UK/AU (first wave)
+
+### Scope
+
+First wave of a population-driven expansion toward every city above 100,000
+in geographic Europe (incl. non-EU: Ukraine, Switzerland, Norway, Western
+Balkans) plus the United States, Canada, United Kingdom, and Australia. This
+wave adds the largest missing cities across 38 countries with the full
+local-first content cluster, then regenerates discovery/collections. Rankings
+auto-include every added city (derived from `cities` in `lib/data/rankings.ts`).
+
+### Before → after
+
+| Metric | Before | After | Δ |
+| --- | --- | --- | --- |
+| Cities | 647 | 781 | +134 |
+| Countries with cities | 86 | 93 | +7 |
+| Verified city hero images | 645 | 775 | +130 |
+| Nearby-place records | 1,443 | 2,231 | +788 |
+| Nearby detail pages | 881 | 1,173 | +292 |
+| Nearby-place facts | 845 | 1,137 | +292 |
+| City discovery-graph cities | 640 | 774 | +134 |
+| Nearby discovery-graph places | 1,441 | 2,229 | +788 |
+| Thematic collections | 205 | 250 | +45 |
+| Weekend-trip / visual-guide pages | 548 / 548 | 682 / 682 | +134 each |
+| Static pages | 8,094 | 9,778 | +1,684 |
+
+- **7 new countries** added to `countries.ts`: Ukraine (7 cities incl. Kyiv,
+  Kharkiv, Lviv, Odesa, Dnipro, Zaporizhzhia, Donetsk), Bosnia and Herzegovina,
+  North Macedonia, Albania, Iceland, Moldova, Montenegro.
+- 134 new cities each carry: neutral grounded intro/outlook, directional
+  scores, 3 resolvable related-city links, a verified hero photo (130 of 134;
+  Münster, Vicenza, Elche, Prato render the designed fallback), 4–6 natural
+  nearby places, and weekend-trip + visual-guide pages.
+- Nearby places: 292 verified (P856 official URL → detail page + designation/
+  inception/IUCN facts), 496 partial (Wikidata + verified Commons image).
+
+### Method (deterministic + workflow-assisted)
+
+- **City candidates**: one workflow agent per country proposed the largest
+  missing >100k cities with neutral grounded intros and plausible scores.
+- **City resolution**: Wikipedia title → Wikidata QID (verifying P17 == country,
+  with state/region disambiguation), P625 coords, hero via P18 → P373
+  Commons-category fallback with the repo license/montage/author filters.
+  County/consolidated-city mispicks were corrected (Riverside County → Riverside
+  city; Augusta, Maine → Augusta, Georgia; Allentown, PA; etc.) by preferring
+  settlement P31 classes over administrative ones.
+- **Nearby places**: one workflow agent per city proposed 6–8 natural places;
+  resolved deterministically (title → QID → P625 gated ≤170 km from the city →
+  P18/P373 image → P856 → P31/P814/P571 facts), capped at 6 per city,
+  verified-first by distance.
+- **Wiring**: `nearby-places.ts` adds a third annotated seed const
+  (`wave1NearbySeeds`) spread into `seeds` (TS2590 split-array). One place name
+  with embedded double-quotes (`J.N. "Ding" Darling…`) was normalised to single
+  quotes for the validator's `name` regex.
+
+### Discovery & collection impact
+
+- **City discovery graph** regenerated from rebuilt coordinate caches: 774/781
+  cities (4 lack P625; Dakar/Darwin/Honolulu isolated), 6,291 edges.
+- **Nearby-place discovery graph** regenerated: 2,229/2,231 places, 21,275 edges.
+- **Thematic collections** regenerated with the canonical generator: 250
+  collections (new natural places fold into nature themes).
+- **Regional collections** left at the committed 207 (their refs remain a valid
+  subset; the original 207-collection generator is not in the workspace, and
+  the available generator regresses the count — wave-1 places are instead
+  covered by the nearby-place graph, thematic collections, and city pages).
+
+### Validation results
+
+- 10 validators — all PASS (nearby-places 2,231; media; community-media; photos;
+  submissions; publication; discovery 774/6,291; nearby-discovery 2,229/21,275;
+  collections 207; thematic 250)
+- `npm run typecheck` — clean · `npm run lint` — clean
+- `npm run build` — clean (9,778 / 9,778 static pages)
+
+> Follow-up waves continue toward full >100k coverage (~700–900 more cities).
