@@ -55,6 +55,7 @@ import {
   hasVisualCityGuidePage,
   hasWeekendTripPage,
 } from "@/lib/data/queries";
+import { getClimate, hasClimate } from "@/lib/data/climate";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
@@ -77,6 +78,7 @@ import {
   summerTravelRoute,
   visualCityGuideRoute,
   costOfLivingRoute,
+  climateRoute,
   weekendTripRoute,
 } from "@/lib/seo/routes";
 import {
@@ -396,6 +398,18 @@ export default async function CityPage({ params }: PageProps) {
                 title={`Cost of living in ${city.name}`}
               />
             ) : null}
+            {hasClimate(city.slug)
+              ? (() => {
+                  const climate = getClimate(city.slug)!;
+                  return (
+                    <LinkCard
+                      description={`Climate profile for ${city.name} — ${climate.climateZone} climate, annual average ${climate.annualAvgTempC}°C, comfort score ${climate.comfortScore}/100. Month-by-month temperatures, rainfall, sunshine, and the best months to visit. Deterministic planning estimates, not a forecast.`}
+                      href={climateRoute(city.slug)}
+                      title={`Climate in ${city.name}`}
+                    />
+                  );
+                })()
+              : null}
             {hasArrivalPage(city.slug) ? (
               <LinkCard
                 description={`Practical arrival planning context for ${city.name} — links into transport, public-safety, healthcare, budgeting tools, and methodology. Not an official airport or travel instruction service.`}

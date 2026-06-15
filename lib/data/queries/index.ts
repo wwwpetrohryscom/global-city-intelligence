@@ -350,3 +350,12 @@ export {
   getThematicCollectionsForPlace,
   getThemeLabel,
 } from "@/lib/data/thematic-collections";
+
+// Climate layer — latitude/region-aware deterministic climate profiles.
+// Re-exported so the integrity guard in lib/data/climate.ts runs during
+// `next build`.
+export {
+  getAllClimateProfiles,
+  getClimate,
+  hasClimate,
+} from "@/lib/data/climate";

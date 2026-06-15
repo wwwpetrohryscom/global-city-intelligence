@@ -20,7 +20,9 @@
     "validate:collections": "python3 scripts/validate-collections.py",
     "validate:thematic-collections": "python3 scripts/validate-thematic-collections.py",
     "validate-cost-of-living": "python3 scripts/validate-cost-of-living.py",
-    "validate:cost-of-living": "python3 scripts/validate-cost-of-living.py"
+    "validate:cost-of-living": "python3 scripts/validate-cost-of-living.py",
+    "validate-climate": "python3 scripts/validate-climate.py",
+    "validate:climate": "python3 scripts/validate-climate.py"
   },
   "dependencies": {
     "next": "^15.5.0",

@@ -23,6 +23,7 @@ import {
   absoluteUrl,
   arrivalRoute,
   cityRoute,
+  climateRoute,
   costOfLivingRoute,
   comparisonRoute,
   countryRoute,
@@ -184,6 +185,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const climateItems = cities.map((city) => ({
+    url: absoluteUrl(climateRoute(city.slug)),
+    lastModified: new Date(city.lastUpdated),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   const countryItems = getCountries().map((country) => ({
     url: absoluteUrl(countryRoute(country.slug)),
     lastModified: new Date(country.lastUpdated),
@@ -306,6 +314,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticItems,
     ...cityItems,
     ...costOfLivingItems,
+    ...climateItems,
     ...countryItems,
     ...moduleItems,
     ...rankingItems,
