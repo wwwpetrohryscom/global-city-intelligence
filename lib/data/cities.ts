@@ -26899,6 +26899,1307 @@ const seeds: CitySeed[] = [
       "Use the Turnhout profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
     scores: { overall: 80, affordability: 46, airQuality: 79, energy: 81, resilience: 76 },
   }),
+  // ===== Wave 8: +100 cities, A-F complete (2026-06-21) =====
+  buildNeutralCitySeed({
+    slug: "north-hempstead",
+    name: "North Hempstead",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~238K",
+    intro:
+      "North Hempstead is an indexed city in United States (North America), with a metropolitan population of about ~238K. This profile brings together deterministic city-intelligence indicators for North Hempstead spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the North Hempstead profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 65, energy: 80, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gera",
+    name: "Gera",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Western Europe",
+    population: "~95K",
+    intro:
+      "Gera is an indexed city in Germany (Western Europe), with a metropolitan population of about ~95K. This profile brings together deterministic city-intelligence indicators for Gera spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gera profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 74, energy: 84, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-ciotat",
+    name: "La Ciotat",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~38K",
+    intro:
+      "La Ciotat is an indexed city in France (Western Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for La Ciotat spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Ciotat profile to compare affordability, livability, and economic indicators against other indexed cities in France and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 76, energy: 78, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sanremo",
+    name: "Sanremo",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~53K",
+    intro:
+      "Sanremo is an indexed city in Italy (Southern Europe), with a metropolitan population of about ~53K. This profile brings together deterministic city-intelligence indicators for Sanremo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sanremo profile to compare affordability, livability, and economic indicators against other indexed cities in Italy and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 69, energy: 67, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "guadalajara-spain",
+    name: "Guadalajara",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~87K",
+    intro:
+      "Guadalajara is an indexed city in Spain (Southern Europe), with a metropolitan population of about ~87K. This profile brings together deterministic city-intelligence indicators for Guadalajara spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Guadalajara profile to compare affordability, livability, and economic indicators against other indexed cities in Spain and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 73, energy: 64, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "leszno",
+    name: "Leszno",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~62K",
+    intro:
+      "Leszno is an indexed city in Poland (Central Europe), with a metropolitan population of about ~62K. This profile brings together deterministic city-intelligence indicators for Leszno spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Leszno profile to compare affordability, livability, and economic indicators against other indexed cities in Poland and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 65, airQuality: 62, energy: 63, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "saint-jean-sur-richelieu",
+    name: "Saint-Jean-sur-Richelieu",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~99K",
+    intro:
+      "Saint-Jean-sur-Richelieu is an indexed city in Canada (North America), with a metropolitan population of about ~99K. This profile brings together deterministic city-intelligence indicators for Saint-Jean-sur-Richelieu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Saint-Jean-sur-Richelieu profile to compare affordability, livability, and economic indicators against other indexed cities in Canada and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 74, energy: 81, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "horlivka",
+    name: "Horlivka",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~257K",
+    intro:
+      "Horlivka is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~257K. This profile brings together deterministic city-intelligence indicators for Horlivka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Horlivka profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 72, airQuality: 57, energy: 56, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "solihull",
+    name: "Solihull",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~207K",
+    intro:
+      "Solihull is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~207K. This profile brings together deterministic city-intelligence indicators for Solihull spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Solihull profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 64, airQuality: 60, energy: 64, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "veenendaal",
+    name: "Veenendaal",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~67K",
+    intro:
+      "Veenendaal is an indexed city in Netherlands (Western Europe), with a metropolitan population of about ~67K. This profile brings together deterministic city-intelligence indicators for Veenendaal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Veenendaal profile to compare affordability, livability, and economic indicators against other indexed cities in Netherlands and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 78, energy: 82, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vilvoorde",
+    name: "Vilvoorde",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~44K",
+    intro:
+      "Vilvoorde is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Vilvoorde spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vilvoorde profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 74, energy: 82, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "perchtoldsdorf",
+    name: "Perchtoldsdorf",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Western Europe",
+    population: "~15K",
+    intro:
+      "Perchtoldsdorf is an indexed city in Austria (Western Europe), with a metropolitan population of about ~15K. This profile brings together deterministic city-intelligence indicators for Perchtoldsdorf spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Perchtoldsdorf profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 73, energy: 77, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "silves",
+    name: "Silves",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "~38K",
+    intro:
+      "Silves is an indexed city in Portugal (Southern Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Silves spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Silves profile to compare affordability, livability, and economic indicators against other indexed cities in Portugal and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 67, energy: 65, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "varberg",
+    name: "Varberg",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Northern Europe",
+    population: "~39K",
+    intro:
+      "Varberg is an indexed city in Sweden (Northern Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Varberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Varberg profile to compare affordability, livability, and economic indicators against other indexed cities in Sweden and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 76, energy: 77, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kokkola",
+    name: "Kokkola",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Northern Europe",
+    population: "~48K",
+    intro:
+      "Kokkola is an indexed city in Finland (Northern Europe), with a metropolitan population of about ~48K. This profile brings together deterministic city-intelligence indicators for Kokkola spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kokkola profile to compare affordability, livability, and economic indicators against other indexed cities in Finland and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 59, energy: 66, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "floresti",
+    name: "Florești",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "~50K",
+    intro:
+      "Florești is an indexed city in Romania (Eastern Europe), with a metropolitan population of about ~50K. This profile brings together deterministic city-intelligence indicators for Florești spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Florești profile to compare affordability, livability, and economic indicators against other indexed cities in Romania and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 70, airQuality: 54, energy: 60, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "prostejov",
+    name: "Prostějov",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Central Europe",
+    population: "~43K",
+    intro:
+      "Prostějov is an indexed city in Czechia (Central Europe), with a metropolitan population of about ~43K. This profile brings together deterministic city-intelligence indicators for Prostějov spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Prostějov profile to compare affordability, livability, and economic indicators against other indexed cities in Czechia and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 67, airQuality: 59, energy: 67, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ballincollig",
+    name: "Ballincollig",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Western Europe",
+    population: "~16K",
+    intro:
+      "Ballincollig is an indexed city in Ireland (Western Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Ballincollig spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ballincollig profile to compare affordability, livability, and economic indicators against other indexed cities in Ireland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 64, airQuality: 66, energy: 59, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "maitland",
+    name: "Maitland",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~90K",
+    intro:
+      "Maitland is an indexed city in Australia (Oceania), with a metropolitan population of about ~90K. This profile brings together deterministic city-intelligence indicators for Maitland spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Maitland profile to compare affordability, livability, and economic indicators against other indexed cities in Australia and across Oceania, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 60, energy: 61, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "timaru",
+    name: "Timaru",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "~29K",
+    intro:
+      "Timaru is an indexed city in New Zealand (Oceania), with a metropolitan population of about ~29K. This profile brings together deterministic city-intelligence indicators for Timaru spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Timaru profile to compare affordability, livability, and economic indicators against other indexed cities in New Zealand and across Oceania, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 67, energy: 63, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kastela",
+    name: "Kaštela",
+    countrySlug: "croatia",
+    countryName: "Croatia",
+    region: "Southern Europe",
+    population: "~38K",
+    intro:
+      "Kaštela is an indexed city in Croatia (Southern Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Kaštela spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kaštela profile to compare affordability, livability, and economic indicators against other indexed cities in Croatia and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 64, airQuality: 61, energy: 64, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nove-zamky",
+    name: "Nové Zámky",
+    countrySlug: "slovakia",
+    countryName: "Slovakia",
+    region: "Central Europe",
+    population: "~36K",
+    intro:
+      "Nové Zámky is an indexed city in Slovakia (Central Europe), with a metropolitan population of about ~36K. This profile brings together deterministic city-intelligence indicators for Nové Zámky spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nové Zámky profile to compare affordability, livability, and economic indicators against other indexed cities in Slovakia and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 70, airQuality: 59, energy: 62, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kamnik",
+    name: "Kamnik",
+    countrySlug: "slovenia",
+    countryName: "Slovenia",
+    region: "Southern Europe",
+    population: "~14K",
+    intro:
+      "Kamnik is an indexed city in Slovenia (Southern Europe), with a metropolitan population of about ~14K. This profile brings together deterministic city-intelligence indicators for Kamnik spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kamnik profile to compare affordability, livability, and economic indicators against other indexed cities in Slovenia and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 63, airQuality: 60, energy: 65, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "telsiai",
+    name: "Telšiai",
+    countrySlug: "lithuania",
+    countryName: "Lithuania",
+    region: "Northern Europe",
+    population: "~22K",
+    intro:
+      "Telšiai is an indexed city in Lithuania (Northern Europe), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for Telšiai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Telšiai profile to compare affordability, livability, and economic indicators against other indexed cities in Lithuania and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 67, energy: 66, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ogre",
+    name: "Ogre",
+    countrySlug: "latvia",
+    countryName: "Latvia",
+    region: "Northern Europe",
+    population: "~22K",
+    intro:
+      "Ogre is an indexed city in Latvia (Northern Europe), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for Ogre spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ogre profile to compare affordability, livability, and economic indicators against other indexed cities in Latvia and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 60, airQuality: 58, energy: 63, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kuressaare",
+    name: "Kuressaare",
+    countrySlug: "estonia",
+    countryName: "Estonia",
+    region: "Northern Europe",
+    population: "~13K",
+    intro:
+      "Kuressaare is an indexed city in Estonia (Northern Europe), with a metropolitan population of about ~13K. This profile brings together deterministic city-intelligence indicators for Kuressaare spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kuressaare profile to compare affordability, livability, and economic indicators against other indexed cities in Estonia and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 56, airQuality: 64, energy: 66, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dubasari",
+    name: "Dubăsari",
+    countrySlug: "moldova",
+    countryName: "Moldova",
+    region: "Eastern Europe",
+    population: "~25K",
+    intro:
+      "Dubăsari is an indexed city in Moldova (Eastern Europe), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Dubăsari spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dubăsari profile to compare affordability, livability, and economic indicators against other indexed cities in Moldova and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 73, airQuality: 59, energy: 56, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "haskovo",
+    name: "Haskovo",
+    countrySlug: "bulgaria",
+    countryName: "Bulgaria",
+    region: "Eastern Europe",
+    population: "~63K",
+    intro:
+      "Haskovo is an indexed city in Bulgaria (Eastern Europe), with a metropolitan population of about ~63K. This profile brings together deterministic city-intelligence indicators for Haskovo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Haskovo profile to compare affordability, livability, and economic indicators against other indexed cities in Bulgaria and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 70, airQuality: 58, energy: 56, resilience: 54 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hialeah",
+    name: "Hialeah",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~223K",
+    intro:
+      "Hialeah is an indexed city in United States (North America), with a metropolitan population of about ~223K. This profile brings together deterministic city-intelligence indicators for Hialeah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hialeah profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 72, energy: 79, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "duren",
+    name: "Düren",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Western Europe",
+    population: "~93K",
+    intro:
+      "Düren is an indexed city in Germany (Western Europe), with a metropolitan population of about ~93K. This profile brings together deterministic city-intelligence indicators for Düren spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Düren profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 79, energy: 77, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tremblay-en-france",
+    name: "Tremblay-en-France",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~38K",
+    intro:
+      "Tremblay-en-France is an indexed city in France (Western Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Tremblay-en-France spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tremblay-en-France profile to compare affordability, livability, and economic indicators against other indexed cities in France and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 83, energy: 82, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "empoli",
+    name: "Empoli",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~49K",
+    intro:
+      "Empoli is an indexed city in Italy (Southern Europe), with a metropolitan population of about ~49K. This profile brings together deterministic city-intelligence indicators for Empoli spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Empoli profile to compare affordability, livability, and economic indicators against other indexed cities in Italy and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 70, energy: 65, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pontevedra",
+    name: "Pontevedra",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~83K",
+    intro:
+      "Pontevedra is an indexed city in Spain (Southern Europe), with a metropolitan population of about ~83K. This profile brings together deterministic city-intelligence indicators for Pontevedra spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pontevedra profile to compare affordability, livability, and economic indicators against other indexed cities in Spain and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 73, energy: 68, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lomza",
+    name: "Łomża",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~61K",
+    intro:
+      "Łomża is an indexed city in Poland (Central Europe), with a metropolitan population of about ~61K. This profile brings together deterministic city-intelligence indicators for Łomża spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Łomża profile to compare affordability, livability, and economic indicators against other indexed cities in Poland and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 63, airQuality: 66, energy: 65, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "repentigny",
+    name: "Repentigny",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~88K",
+    intro:
+      "Repentigny is an indexed city in Canada (North America), with a metropolitan population of about ~88K. This profile brings together deterministic city-intelligence indicators for Repentigny spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Repentigny profile to compare affordability, livability, and economic indicators against other indexed cities in Canada and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 72, energy: 74, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kerch",
+    name: "Kerch",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~151K",
+    intro:
+      "Kerch is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~151K. This profile brings together deterministic city-intelligence indicators for Kerch spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kerch profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 51, energy: 59, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "basildon",
+    name: "Basildon",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~186K",
+    intro:
+      "Basildon is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~186K. This profile brings together deterministic city-intelligence indicators for Basildon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Basildon profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 57, airQuality: 58, energy: 63, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bergen-op-zoom",
+    name: "Bergen op Zoom",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~66K",
+    intro:
+      "Bergen op Zoom is an indexed city in Netherlands (Western Europe), with a metropolitan population of about ~66K. This profile brings together deterministic city-intelligence indicators for Bergen op Zoom spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bergen op Zoom profile to compare affordability, livability, and economic indicators against other indexed cities in Netherlands and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 80, energy: 81, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "brasschaat",
+    name: "Brasschaat",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~38K",
+    intro:
+      "Brasschaat is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Brasschaat spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Brasschaat profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 76, energy: 82, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gotzis",
+    name: "Götzis",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Western Europe",
+    population: "~12K",
+    intro:
+      "Götzis is an indexed city in Austria (Western Europe), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Götzis spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Götzis profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 76, energy: 80, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "torres-novas",
+    name: "Torres Novas",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "~34K",
+    intro:
+      "Torres Novas is an indexed city in Portugal (Southern Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Torres Novas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Torres Novas profile to compare affordability, livability, and economic indicators against other indexed cities in Portugal and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 66, energy: 72, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "molndal",
+    name: "Mölndal",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Northern Europe",
+    population: "~37K",
+    intro:
+      "Mölndal is an indexed city in Sweden (Northern Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Mölndal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mölndal profile to compare affordability, livability, and economic indicators against other indexed cities in Sweden and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 83, energy: 76, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hyvinkaa",
+    name: "Hyvinkää",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Northern Europe",
+    population: "~47K",
+    intro:
+      "Hyvinkää is an indexed city in Finland (Northern Europe), with a metropolitan population of about ~47K. This profile brings together deterministic city-intelligence indicators for Hyvinkää spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hyvinkää profile to compare affordability, livability, and economic indicators against other indexed cities in Finland and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 60, energy: 59, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "voluntari",
+    name: "Voluntari",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "~47K",
+    intro:
+      "Voluntari is an indexed city in Romania (Eastern Europe), with a metropolitan population of about ~47K. This profile brings together deterministic city-intelligence indicators for Voluntari spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Voluntari profile to compare affordability, livability, and economic indicators against other indexed cities in Romania and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 54, energy: 60, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xanthi",
+    name: "Xanthi",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Southern Europe",
+    population: "~59K",
+    intro:
+      "Xanthi is an indexed city in Greece (Southern Europe), with a metropolitan population of about ~59K. This profile brings together deterministic city-intelligence indicators for Xanthi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xanthi profile to compare affordability, livability, and economic indicators against other indexed cities in Greece and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 68, energy: 65, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "prerov",
+    name: "Přerov",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Central Europe",
+    population: "~41K",
+    intro:
+      "Přerov is an indexed city in Czechia (Central Europe), with a metropolitan population of about ~41K. This profile brings together deterministic city-intelligence indicators for Přerov spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Přerov profile to compare affordability, livability, and economic indicators against other indexed cities in Czechia and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 70, airQuality: 63, energy: 61, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ashbourne",
+    name: "Ashbourne",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Western Europe",
+    population: "~16K",
+    intro:
+      "Ashbourne is an indexed city in Ireland (Western Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Ashbourne spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ashbourne profile to compare affordability, livability, and economic indicators against other indexed cities in Ireland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 66, energy: 65, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "melton",
+    name: "Melton",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~76K",
+    intro:
+      "Melton is an indexed city in Australia (Oceania), with a metropolitan population of about ~76K. This profile brings together deterministic city-intelligence indicators for Melton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Melton profile to compare affordability, livability, and economic indicators against other indexed cities in Australia and across Oceania, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 57, airQuality: 60, energy: 65, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pukekohe",
+    name: "Pukekohe",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "~26K",
+    intro:
+      "Pukekohe is an indexed city in New Zealand (Oceania), with a metropolitan population of about ~26K. This profile brings together deterministic city-intelligence indicators for Pukekohe spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pukekohe profile to compare affordability, livability, and economic indicators against other indexed cities in New Zealand and across Oceania, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 66, energy: 60, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "samobor",
+    name: "Samobor",
+    countrySlug: "croatia",
+    countryName: "Croatia",
+    region: "Southern Europe",
+    population: "~37K",
+    intro:
+      "Samobor is an indexed city in Croatia (Southern Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Samobor spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Samobor profile to compare affordability, livability, and economic indicators against other indexed cities in Croatia and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 63, airQuality: 66, energy: 66, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "michalovce",
+    name: "Michalovce",
+    countrySlug: "slovakia",
+    countryName: "Slovakia",
+    region: "Central Europe",
+    population: "~35K",
+    intro:
+      "Michalovce is an indexed city in Slovakia (Central Europe), with a metropolitan population of about ~35K. This profile brings together deterministic city-intelligence indicators for Michalovce spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Michalovce profile to compare affordability, livability, and economic indicators against other indexed cities in Slovakia and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 66, airQuality: 62, energy: 66, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "trbovlje",
+    name: "Trbovlje",
+    countrySlug: "slovenia",
+    countryName: "Slovenia",
+    region: "Southern Europe",
+    population: "~14K",
+    intro:
+      "Trbovlje is an indexed city in Slovenia (Southern Europe), with a metropolitan population of about ~14K. This profile brings together deterministic city-intelligence indicators for Trbovlje spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Trbovlje profile to compare affordability, livability, and economic indicators against other indexed cities in Slovenia and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 66, airQuality: 66, energy: 67, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "taurage",
+    name: "Tauragė",
+    countrySlug: "lithuania",
+    countryName: "Lithuania",
+    region: "Northern Europe",
+    population: "~21K",
+    intro:
+      "Tauragė is an indexed city in Lithuania (Northern Europe), with a metropolitan population of about ~21K. This profile brings together deterministic city-intelligence indicators for Tauragė spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tauragė profile to compare affordability, livability, and economic indicators against other indexed cities in Lithuania and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 66, energy: 63, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jekabpils",
+    name: "Jēkabpils",
+    countrySlug: "latvia",
+    countryName: "Latvia",
+    region: "Northern Europe",
+    population: "~21K",
+    intro:
+      "Jēkabpils is an indexed city in Latvia (Northern Europe), with a metropolitan population of about ~21K. This profile brings together deterministic city-intelligence indicators for Jēkabpils spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jēkabpils profile to compare affordability, livability, and economic indicators against other indexed cities in Latvia and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 65, energy: 60, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sillamae",
+    name: "Sillamäe",
+    countrySlug: "estonia",
+    countryName: "Estonia",
+    region: "Northern Europe",
+    population: "~12K",
+    intro:
+      "Sillamäe is an indexed city in Estonia (Northern Europe), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Sillamäe spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sillamäe profile to compare affordability, livability, and economic indicators against other indexed cities in Estonia and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 64, airQuality: 62, energy: 60, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "orhei",
+    name: "Orhei",
+    countrySlug: "moldova",
+    countryName: "Moldova",
+    region: "Eastern Europe",
+    population: "~22K",
+    intro:
+      "Orhei is an indexed city in Moldova (Eastern Europe), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for Orhei spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Orhei profile to compare affordability, livability, and economic indicators against other indexed cities in Moldova and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 73, airQuality: 51, energy: 56, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yambol",
+    name: "Yambol",
+    countrySlug: "bulgaria",
+    countryName: "Bulgaria",
+    region: "Eastern Europe",
+    population: "~59K",
+    intro:
+      "Yambol is an indexed city in Bulgaria (Eastern Europe), with a metropolitan population of about ~59K. This profile brings together deterministic city-intelligence indicators for Yambol spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yambol profile to compare affordability, livability, and economic indicators against other indexed cities in Bulgaria and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 66, airQuality: 61, energy: 62, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "modesto",
+    name: "Modesto",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~218K",
+    intro:
+      "Modesto is an indexed city in United States (North America), with a metropolitan population of about ~218K. This profile brings together deterministic city-intelligence indicators for Modesto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Modesto profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 56, airQuality: 72, energy: 76, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "iserlohn",
+    name: "Iserlohn",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Western Europe",
+    population: "~92K",
+    intro:
+      "Iserlohn is an indexed city in Germany (Western Europe), with a metropolitan population of about ~92K. This profile brings together deterministic city-intelligence indicators for Iserlohn spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Iserlohn profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 83, energy: 78, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "menton",
+    name: "Menton",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~31K",
+    intro:
+      "Menton is an indexed city in France (Western Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Menton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Menton profile to compare affordability, livability, and economic indicators against other indexed cities in France and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 79, energy: 78, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "biella",
+    name: "Biella",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~43K",
+    intro:
+      "Biella is an indexed city in Italy (Southern Europe), with a metropolitan population of about ~43K. This profile brings together deterministic city-intelligence indicators for Biella spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Biella profile to compare affordability, livability, and economic indicators against other indexed cities in Italy and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 66, energy: 70, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "coslada",
+    name: "Coslada",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~81K",
+    intro:
+      "Coslada is an indexed city in Spain (Southern Europe), with a metropolitan population of about ~81K. This profile brings together deterministic city-intelligence indicators for Coslada spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Coslada profile to compare affordability, livability, and economic indicators against other indexed cities in Spain and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 73, energy: 66, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zamosc",
+    name: "Zamość",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~60K",
+    intro:
+      "Zamość is an indexed city in Poland (Central Europe), with a metropolitan population of about ~60K. This profile brings together deterministic city-intelligence indicators for Zamość spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zamość profile to compare affordability, livability, and economic indicators against other indexed cities in Poland and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 69, airQuality: 58, energy: 65, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "newmarket",
+    name: "Newmarket",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~84K",
+    intro:
+      "Newmarket is an indexed city in Canada (North America), with a metropolitan population of about ~84K. This profile brings together deterministic city-intelligence indicators for Newmarket spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Newmarket profile to compare affordability, livability, and economic indicators against other indexed cities in Canada and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 67, energy: 76, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "melitopol",
+    name: "Melitopol",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~149K",
+    intro:
+      "Melitopol is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~149K. This profile brings together deterministic city-intelligence indicators for Melitopol spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Melitopol profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 66, airQuality: 58, energy: 58, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "st-helens",
+    name: "St Helens",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~183K",
+    intro:
+      "St Helens is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~183K. This profile brings together deterministic city-intelligence indicators for St Helens spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the St Helens profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 64, airQuality: 62, energy: 61, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nieuwegein",
+    name: "Nieuwegein",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~64K",
+    intro:
+      "Nieuwegein is an indexed city in Netherlands (Western Europe), with a metropolitan population of about ~64K. This profile brings together deterministic city-intelligence indicators for Nieuwegein spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nieuwegein profile to compare affordability, livability, and economic indicators against other indexed cities in Netherlands and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 76, energy: 76, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tongeren",
+    name: "Tongeren",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~31K",
+    intro:
+      "Tongeren is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Tongeren spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tongeren profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 78, energy: 80, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "brunn-am-gebirge",
+    name: "Brunn am Gebirge",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Western Europe",
+    population: "~12K",
+    intro:
+      "Brunn am Gebirge is an indexed city in Austria (Western Europe), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Brunn am Gebirge spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Brunn am Gebirge profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 73, energy: 84, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santiago-do-cacem",
+    name: "Santiago do Cacém",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "~28K",
+    intro:
+      "Santiago do Cacém is an indexed city in Portugal (Southern Europe), with a metropolitan population of about ~28K. This profile brings together deterministic city-intelligence indicators for Santiago do Cacém spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santiago do Cacém profile to compare affordability, livability, and economic indicators against other indexed cities in Portugal and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 56, airQuality: 66, energy: 70, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "uddevalla",
+    name: "Uddevalla",
+    countrySlug: "sweden",
+    countryName: "Sweden",
+    region: "Northern Europe",
+    population: "~36K",
+    intro:
+      "Uddevalla is an indexed city in Sweden (Northern Europe), with a metropolitan population of about ~36K. This profile brings together deterministic city-intelligence indicators for Uddevalla spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Uddevalla profile to compare affordability, livability, and economic indicators against other indexed cities in Sweden and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 76, energy: 83, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lohja",
+    name: "Lohja",
+    countrySlug: "finland",
+    countryName: "Finland",
+    region: "Northern Europe",
+    population: "~46K",
+    intro:
+      "Lohja is an indexed city in Finland (Northern Europe), with a metropolitan population of about ~46K. This profile brings together deterministic city-intelligence indicators for Lohja spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lohja profile to compare affordability, livability, and economic indicators against other indexed cities in Finland and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 67, energy: 61, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "turda",
+    name: "Turda",
+    countrySlug: "romania",
+    countryName: "Romania",
+    region: "Eastern Europe",
+    population: "~43K",
+    intro:
+      "Turda is an indexed city in Romania (Eastern Europe), with a metropolitan population of about ~43K. This profile brings together deterministic city-intelligence indicators for Turda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Turda profile to compare affordability, livability, and economic indicators against other indexed cities in Romania and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 73, airQuality: 51, energy: 62, resilience: 53 },
+  }),
+  buildNeutralCitySeed({
+    slug: "serres",
+    name: "Serres",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Southern Europe",
+    population: "~58K",
+    intro:
+      "Serres is an indexed city in Greece (Southern Europe), with a metropolitan population of about ~58K. This profile brings together deterministic city-intelligence indicators for Serres spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Serres profile to compare affordability, livability, and economic indicators against other indexed cities in Greece and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 66, energy: 64, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ceska-lipa",
+    name: "Česká Lípa",
+    countrySlug: "czechia",
+    countryName: "Czechia",
+    region: "Central Europe",
+    population: "~37K",
+    intro:
+      "Česká Lípa is an indexed city in Czechia (Central Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Česká Lípa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Česká Lípa profile to compare affordability, livability, and economic indicators against other indexed cities in Czechia and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 65, airQuality: 62, energy: 62, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "leixlip",
+    name: "Leixlip",
+    countrySlug: "ireland",
+    countryName: "Ireland",
+    region: "Western Europe",
+    population: "~16K",
+    intro:
+      "Leixlip is an indexed city in Ireland (Western Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Leixlip spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Leixlip profile to compare affordability, livability, and economic indicators against other indexed cities in Ireland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 56, airQuality: 64, energy: 65, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pakenham",
+    name: "Pakenham",
+    countrySlug: "australia",
+    countryName: "Australia",
+    region: "Oceania",
+    population: "~54K",
+    intro:
+      "Pakenham is an indexed city in Australia (Oceania), with a metropolitan population of about ~54K. This profile brings together deterministic city-intelligence indicators for Pakenham spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pakenham profile to compare affordability, livability, and economic indicators against other indexed cities in Australia and across Oceania, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 61, energy: 58, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "taupo",
+    name: "Taupō",
+    countrySlug: "new-zealand",
+    countryName: "New Zealand",
+    region: "Oceania",
+    population: "~25K",
+    intro:
+      "Taupō is an indexed city in New Zealand (Oceania), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Taupō spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Taupō profile to compare affordability, livability, and economic indicators against other indexed cities in New Zealand and across Oceania, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 61, energy: 65, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bjelovar",
+    name: "Bjelovar",
+    countrySlug: "croatia",
+    countryName: "Croatia",
+    region: "Southern Europe",
+    population: "~36K",
+    intro:
+      "Bjelovar is an indexed city in Croatia (Southern Europe), with a metropolitan population of about ~36K. This profile brings together deterministic city-intelligence indicators for Bjelovar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bjelovar profile to compare affordability, livability, and economic indicators against other indexed cities in Croatia and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 62, airQuality: 63, energy: 67, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "spisska-nova-ves",
+    name: "Spišská Nová Ves",
+    countrySlug: "slovakia",
+    countryName: "Slovakia",
+    region: "Central Europe",
+    population: "~34K",
+    intro:
+      "Spišská Nová Ves is an indexed city in Slovakia (Central Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Spišská Nová Ves spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Spišská Nová Ves profile to compare affordability, livability, and economic indicators against other indexed cities in Slovakia and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 68, airQuality: 64, energy: 60, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jesenice",
+    name: "Jesenice",
+    countrySlug: "slovenia",
+    countryName: "Slovenia",
+    region: "Southern Europe",
+    population: "~14K",
+    intro:
+      "Jesenice is an indexed city in Slovenia (Southern Europe), with a metropolitan population of about ~14K. This profile brings together deterministic city-intelligence indicators for Jesenice spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jesenice profile to compare affordability, livability, and economic indicators against other indexed cities in Slovenia and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 70, airQuality: 57, energy: 63, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ukmerge",
+    name: "Ukmergė",
+    countrySlug: "lithuania",
+    countryName: "Lithuania",
+    region: "Northern Europe",
+    population: "~21K",
+    intro:
+      "Ukmergė is an indexed city in Lithuania (Northern Europe), with a metropolitan population of about ~21K. This profile brings together deterministic city-intelligence indicators for Ukmergė spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ukmergė profile to compare affordability, livability, and economic indicators against other indexed cities in Lithuania and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 64, airQuality: 62, energy: 62, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "salaspils",
+    name: "Salaspils",
+    countrySlug: "latvia",
+    countryName: "Latvia",
+    region: "Northern Europe",
+    population: "~18K",
+    intro:
+      "Salaspils is an indexed city in Latvia (Northern Europe), with a metropolitan population of about ~18K. This profile brings together deterministic city-intelligence indicators for Salaspils spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Salaspils profile to compare affordability, livability, and economic indicators against other indexed cities in Latvia and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 59, energy: 65, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "valga",
+    name: "Valga",
+    countrySlug: "estonia",
+    countryName: "Estonia",
+    region: "Northern Europe",
+    population: "~12K",
+    intro:
+      "Valga is an indexed city in Estonia (Northern Europe), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Valga spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Valga profile to compare affordability, livability, and economic indicators against other indexed cities in Estonia and across Northern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 57, airQuality: 59, energy: 65, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "soroca",
+    name: "Soroca",
+    countrySlug: "moldova",
+    countryName: "Moldova",
+    region: "Eastern Europe",
+    population: "~21K",
+    intro:
+      "Soroca is an indexed city in Moldova (Eastern Europe), with a metropolitan population of about ~21K. This profile brings together deterministic city-intelligence indicators for Soroca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Soroca profile to compare affordability, livability, and economic indicators against other indexed cities in Moldova and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 72, airQuality: 52, energy: 60, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pazardzhik",
+    name: "Pazardzhik",
+    countrySlug: "bulgaria",
+    countryName: "Bulgaria",
+    region: "Eastern Europe",
+    population: "~54K",
+    intro:
+      "Pazardzhik is an indexed city in Bulgaria (Eastern Europe), with a metropolitan population of about ~54K. This profile brings together deterministic city-intelligence indicators for Pazardzhik spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pazardzhik profile to compare affordability, livability, and economic indicators against other indexed cities in Bulgaria and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 69, airQuality: 57, energy: 59, resilience: 54 },
+  }),
+  buildNeutralCitySeed({
+    slug: "babylon",
+    name: "Babylon",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~218K",
+    intro:
+      "Babylon is an indexed city in United States (North America), with a metropolitan population of about ~218K. This profile brings together deterministic city-intelligence indicators for Babylon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Babylon profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 56, airQuality: 70, energy: 75, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "villingen-schwenningen",
+    name: "Villingen-Schwenningen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Western Europe",
+    population: "~89K",
+    intro:
+      "Villingen-Schwenningen is an indexed city in Germany (Western Europe), with a metropolitan population of about ~89K. This profile brings together deterministic city-intelligence indicators for Villingen-Schwenningen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Villingen-Schwenningen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 82, energy: 80, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "armentieres",
+    name: "Armentières",
+    countrySlug: "france",
+    countryName: "France",
+    region: "Western Europe",
+    population: "~27K",
+    intro:
+      "Armentières is an indexed city in France (Western Europe), with a metropolitan population of about ~27K. This profile brings together deterministic city-intelligence indicators for Armentières spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Armentières profile to compare affordability, livability, and economic indicators against other indexed cities in France and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 82, energy: 82, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "imperia",
+    name: "Imperia",
+    countrySlug: "italy",
+    countryName: "Italy",
+    region: "Southern Europe",
+    population: "~42K",
+    intro:
+      "Imperia is an indexed city in Italy (Southern Europe), with a metropolitan population of about ~42K. This profile brings together deterministic city-intelligence indicators for Imperia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Imperia profile to compare affordability, livability, and economic indicators against other indexed cities in Italy and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 56, airQuality: 70, energy: 72, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vilanova-i-la-geltru",
+    name: "Vilanova i la Geltrú",
+    countrySlug: "spain",
+    countryName: "Spain",
+    region: "Southern Europe",
+    population: "~71K",
+    intro:
+      "Vilanova i la Geltrú is an indexed city in Spain (Southern Europe), with a metropolitan population of about ~71K. This profile brings together deterministic city-intelligence indicators for Vilanova i la Geltrú spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vilanova i la Geltrú profile to compare affordability, livability, and economic indicators against other indexed cities in Spain and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 67, energy: 69, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chelm",
+    name: "Chełm",
+    countrySlug: "poland",
+    countryName: "Poland",
+    region: "Central Europe",
+    population: "~60K",
+    intro:
+      "Chełm is an indexed city in Poland (Central Europe), with a metropolitan population of about ~60K. This profile brings together deterministic city-intelligence indicators for Chełm spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chełm profile to compare affordability, livability, and economic indicators against other indexed cities in Poland and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 68, airQuality: 64, energy: 63, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "drummondville",
+    name: "Drummondville",
+    countrySlug: "canada",
+    countryName: "Canada",
+    region: "North America",
+    population: "~83K",
+    intro:
+      "Drummondville is an indexed city in Canada (North America), with a metropolitan population of about ~83K. This profile brings together deterministic city-intelligence indicators for Drummondville spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Drummondville profile to compare affordability, livability, and economic indicators against other indexed cities in Canada and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 56, airQuality: 71, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "khrustalnyi",
+    name: "Khrustalnyi",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~124K",
+    intro:
+      "Khrustalnyi is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~124K. This profile brings together deterministic city-intelligence indicators for Khrustalnyi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Khrustalnyi profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 73, airQuality: 51, energy: 58, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "warrington",
+    name: "Warrington",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~165K",
+    intro:
+      "Warrington is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~165K. This profile brings together deterministic city-intelligence indicators for Warrington spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Warrington profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 58, airQuality: 57, energy: 63, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "heerhugowaard",
+    name: "Heerhugowaard",
+    countrySlug: "netherlands",
+    countryName: "Netherlands",
+    region: "Western Europe",
+    population: "~58K",
+    intro:
+      "Heerhugowaard is an indexed city in Netherlands (Western Europe), with a metropolitan population of about ~58K. This profile brings together deterministic city-intelligence indicators for Heerhugowaard spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Heerhugowaard profile to compare affordability, livability, and economic indicators against other indexed cities in Netherlands and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 73, energy: 80, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rixensart",
+    name: "Rixensart",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~22K",
+    intro:
+      "Rixensart is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for Rixensart spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rixensart profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 80, energy: 77, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wolfsberg",
+    name: "Wolfsberg",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Western Europe",
+    population: "~25K",
+    intro:
+      "Wolfsberg is an indexed city in Austria (Western Europe), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Wolfsberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wolfsberg profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 79, energy: 77, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tavira",
+    name: "Tavira",
+    countrySlug: "portugal",
+    countryName: "Portugal",
+    region: "Southern Europe",
+    population: "~28K",
+    intro:
+      "Tavira is an indexed city in Portugal (Southern Europe), with a metropolitan population of about ~28K. This profile brings together deterministic city-intelligence indicators for Tavira spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tavira profile to compare affordability, livability, and economic indicators against other indexed cities in Portugal and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 69, energy: 64, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "agrinio",
+    name: "Agrinio",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Southern Europe",
+    population: "~51K",
+    intro:
+      "Agrinio is an indexed city in Greece (Southern Europe), with a metropolitan population of about ~51K. This profile brings together deterministic city-intelligence indicators for Agrinio spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Agrinio profile to compare affordability, livability, and economic indicators against other indexed cities in Greece and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 68, energy: 72, resilience: 70 },
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);
