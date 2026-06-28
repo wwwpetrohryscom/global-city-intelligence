@@ -108,25 +108,33 @@ export default function HomePage() {
 
         <section>
           <SectionHeading
-            description="Start with cities, then move into modules and rankings. Every link is crawlable and every data block has text and table equivalents."
+            description="A featured selection of city profiles. Browse the complete, crawlable index of every indexed city in the cities directory."
             title="Explore city profiles"
           />
           <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {cities.map((city) => (
+            {cities.slice(0, 12).map((city) => (
               <CityCard city={city} key={city.slug} />
             ))}
           </div>
+          <p className="mt-6 text-sm">
+            <Link
+              className="font-semibold text-text-primary underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+              href={staticRoutes.cities}
+            >
+              Browse all {cities.length} indexed cities →
+            </Link>
+          </p>
         </section>
 
         <section>
           <SectionHeading
-            description="The homepage includes a compact table so search engines and users can compare core scores without waiting for client-side JavaScript."
+            description="A compact table of leading city profiles so search engines and users can compare core scores without waiting for client-side JavaScript. The full directory is grouped by country in the cities index."
             title="City intelligence table"
           />
           <div className="mt-6">
             <DataTable
-              caption="City intelligence overview table"
-              rows={cities.map((city) => ({
+              caption="City intelligence overview table (selected cities)"
+              rows={cities.slice(0, 50).map((city) => ({
                 metric: city.name,
                 value: `${city.scores.overall}/100`,
                 context: `${city.countryName}; affordability ${city.scores.affordability}/100, air quality ${city.scores.airQuality}/100, energy ${city.scores.energy}/100.`,

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { LinkCard } from "@/components/cards/link-card";
 import { RankingBarChart } from "@/components/charts/RankingBarChart";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -24,7 +23,7 @@ import {
 import { getSourcesByIds } from "@/lib/data/sources";
 import { rankingBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
-import { cityRoute, rankingRoute } from "@/lib/seo/routes";
+import { rankingRoute } from "@/lib/seo/routes";
 import { breadcrumbSchema, datasetSchema, webpageSchema } from "@/lib/seo/schema";
 
 type PageProps = {
@@ -152,23 +151,6 @@ export default async function RankingDetailPage({ params }: PageProps) {
             </p>
           </article>
           <SourceBlock sources={sources} />
-        </section>
-
-        <section>
-          <SectionHeading
-            description="Continue from the ranking into city profiles. The links below are normal server-rendered anchors."
-            title="City pages in this ranking"
-          />
-          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {entries.map((entry) => (
-              <LinkCard
-                description={entry.note}
-                href={cityRoute(entry.city.slug)}
-                key={entry.city.slug}
-                title={`#${entry.rank} ${entry.city.name}`}
-              />
-            ))}
-          </div>
         </section>
       </div>
     </main>
