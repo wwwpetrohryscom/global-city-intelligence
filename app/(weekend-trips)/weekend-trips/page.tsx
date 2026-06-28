@@ -303,14 +303,14 @@ export default function WeekendTripsDirectoryPage() {
 
         <section aria-labelledby="weekend-directory-grid-heading">
           <SectionHeading
-            description="Each card opens a weekend trip planning guide with structured city intelligence, arrival, Summer 2026, visual, neighborhood, and moving-to planning links plus budget tools and source transparency."
-            title="All weekend trip planning guides"
+            description="A featured selection of weekend trip planning guides. The complete, crawlable index of every guide is in the “Weekend trip guides by country” section below."
+            title="Featured weekend trip planning guides"
           />
           <h2 className="sr-only" id="weekend-directory-grid-heading">
-            All weekend trip planning guides
+            Featured weekend trip planning guides
           </h2>
           <ul className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {guides.map(({ page, city, country }) => {
+            {guides.slice(0, 48).map(({ page, city, country }) => {
               const cityHasArrival = hasArrivalPage(city.slug);
               const cityHasSummerTravel = hasSummerTravelPage(city.slug);
               const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);

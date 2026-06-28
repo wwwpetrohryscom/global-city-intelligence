@@ -102,11 +102,11 @@ export default function CitiesIndexPage() {
 
         <section>
           <SectionHeading
-            description="Each card opens the full city profile with structured indicators, source-attributed emergency and healthcare information, and crawlable internal links to module and ranking pages."
-            title="All indexed cities"
+            description="A featured selection of city profiles. The complete, crawlable index of every indexed city is in the “Cities by country” section below."
+            title="Featured cities"
           />
           <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {cities.map((city) => (
+            {cities.slice(0, 48).map((city) => (
               <CityCard city={city} key={city.slug} />
             ))}
           </div>

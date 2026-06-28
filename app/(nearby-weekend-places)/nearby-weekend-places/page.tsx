@@ -41,21 +41,6 @@ export const metadata: Metadata = createMetadata({
   path: staticRoutes.nearbyWeekendPlaces,
 });
 
-const CATEGORY_ORDER = [
-  "nature",
-  "waterfront",
-  "historic_town",
-  "park",
-  "beach",
-  "lake",
-  "mountain",
-  "island",
-  "cultural_site",
-  "regional_city",
-  "family_outdoor",
-  "general_weekend_place",
-] as const;
-
 export default function NearbyWeekendPlacesDirectoryPage() {
   const allPlaces = getAllNearbyWeekendPlaces();
   const placeHref = (place: (typeof allPlaces)[number]): string => {
@@ -111,13 +96,6 @@ export default function NearbyWeekendPlacesDirectoryPage() {
     .filter((g) => g.items.length > 0)
     .sort((a, b) => a.country.name.localeCompare(b.country.name));
 
-  const entriesByCategory = CATEGORY_ORDER.map((category) => ({
-    category,
-    label: getNearbyPlaceCategoryLabel(category),
-    items: entries
-      .filter((e) => e.place.category === category)
-      .sort((a, b) => a.place.name.localeCompare(b.place.name)),
-  })).filter((g) => g.items.length > 0);
 
   type CityType = NonNullable<ReturnType<typeof getCityBySlug>>;
   const cityBuckets = new Map<
@@ -411,49 +389,6 @@ export default function NearbyWeekendPlacesDirectoryPage() {
           </div>
         </section>
 
-        <section aria-labelledby="nearby-directory-category-heading">
-          <SectionHeading
-            description="A complete index of nearby weekend place records grouped by category, fully present in the initial HTML so every link is crawlable without client-side JavaScript."
-            title="Nearby places by category"
-          />
-          <h2 className="sr-only" id="nearby-directory-category-heading">
-            Nearby places by category
-          </h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {entriesByCategory.map(({ category, label, items }) => (
-              <article
-                className="rounded-2xl border border-neutral-border bg-white p-5 shadow-sm"
-                key={category}
-              >
-                <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                  {category}
-                </p>
-                <h3 className="mt-1 text-lg font-semibold text-text-primary">
-                  {label}
-                </h3>
-                <ul className="mt-3 grid grid-cols-1 gap-1 text-sm">
-                  {items.map(({ place, country }) => (
-                    <li key={place.slug}>
-                      <Link
-                        className="text-text-secondary hover:text-brand-500"
-                        href={placeHref(place)}
-                      >
-                        {place.name}
-                      </Link>
-                      {country ? (
-                        <span className="text-text-secondary">
-                          {" "}
-                          — {country.name}
-                        </span>
-                      ) : null}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section aria-labelledby="nearby-directory-city-heading">
           <SectionHeading
             description="A complete index of nearby weekend place records grouped by the connected city profile that links to them, fully present in the initial HTML so every link is crawlable without client-side JavaScript."
@@ -487,22 +422,10 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                         className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
                         href={nearbyWeekendPlacesCityRoute(city.slug)}
                       >
-                        Nearby weekend places from {city.name}
+                        Nearby weekend places from {city.name} ({items.length})
                       </Link>
                     </p>
                   ) : null}
-                  <ul className="mt-3 grid grid-cols-1 gap-1 text-sm">
-                    {items.map((place) => (
-                      <li key={place.slug}>
-                        <Link
-                          className="text-text-secondary hover:text-brand-500"
-                          href={placeHref(place)}
-                        >
-                          {place.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
                 </article>
               );
             })}

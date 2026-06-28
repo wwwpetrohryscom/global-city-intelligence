@@ -183,14 +183,14 @@ export default function VisualGuidesDirectoryPage() {
 
         <section aria-labelledby="visual-directory-grid-heading">
           <SectionHeading
-            description="Each card opens a visual city guide with source-attributed verified imagery alongside structured city intelligence, arrival, neighborhood, and moving-to planning links."
-            title="All visual city guides"
+            description="A featured selection of visual city guides. The complete, crawlable index of every guide is in the “Visual city guides by country” section below."
+            title="Featured visual city guides"
           />
           <h2 className="sr-only" id="visual-directory-grid-heading">
-            All visual city guides
+            Featured visual city guides
           </h2>
           <ul className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {guides.map(({ page, city, country }) => {
+            {guides.slice(0, 48).map(({ page, city, country }) => {
               const cityHasArrival = hasArrivalPage(city.slug);
               const cityHasNeighborhood = hasNeighborhoodPlanningPage(
                 city.slug,
