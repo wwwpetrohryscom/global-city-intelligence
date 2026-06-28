@@ -10,6 +10,8 @@ import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAcces
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
+import { AiOverviewSection } from "@/components/seo/ai-overview-section";
+import { FaqSection } from "@/components/seo/faq-section";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
 import { DataTable } from "@/components/tables/DataTable";
@@ -27,7 +29,9 @@ import {
   getAllCities,
   getAllModules,
   getAllRankings,
+  getCityAiOverview,
   getCityBySlug,
+  getCityFaq,
   getCityHealthcareProfile,
   getCityMobilityProfile,
   getCitySafetyProfile,
@@ -194,6 +198,8 @@ export default async function CityPage({ params }: PageProps) {
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
   const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
   const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
+  const cityAiOverview = getCityAiOverview(city.slug);
+  const cityFaq = getCityFaq(city.slug);
 
   return (
     <main>
@@ -475,6 +481,14 @@ export default async function CityPage({ params }: PageProps) {
           ]}
         />
 
+        {cityAiOverview ? (
+          <AiOverviewSection
+            cityName={city.name}
+            items={cityAiOverview.items}
+            path={cityRoute(city.slug)}
+          />
+        ) : null}
+
         {relatedComparisons.length > 0 ? (
           <RelatedComparisons comparisons={relatedComparisons} />
         ) : null}
@@ -718,6 +732,14 @@ export default async function CityPage({ params }: PageProps) {
               ))}
             </div>
           </section>
+        ) : null}
+
+        {cityFaq ? (
+          <FaqSection
+            cityName={city.name}
+            items={cityFaq.items}
+            path={cityRoute(city.slug)}
+          />
         ) : null}
 
         <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">

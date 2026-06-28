@@ -5,6 +5,7 @@ import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
+import { PhaseCrossLinks } from "@/components/seo/phase-cross-links";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
@@ -475,6 +476,7 @@ export default async function ClimatePage({ params }: PageProps) {
             ) : null}
           </ul>
         </section>
+        <PhaseCrossLinks cityName={city.name} citySlug={city.slug} />
       </Container>
     </main>
   );

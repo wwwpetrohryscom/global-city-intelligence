@@ -296,3 +296,24 @@ export function airportSchema({
     dateModified: airport.lastVerified,
   };
 }
+
+/**
+ * schema.org FAQPage — used for both the city FAQ block and the AI-Overview
+ * answer-first block (both are Question → acceptedAnswer pairs). Renders the
+ * structured data Google needs for FAQ rich results / AI Overview eligibility.
+ */
+export function faqSchema(
+  faqs: { question: string; answer: string }[],
+  url?: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    ...(url ? { url: absoluteUrl(url) } : {}),
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+}

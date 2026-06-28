@@ -5,6 +5,7 @@ import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
+import { PhaseCrossLinks } from "@/components/seo/phase-cross-links";
 import { Card } from "@/components/ui/Card";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -454,6 +455,7 @@ export default async function EducationPage({ params }: PageProps) {
             ) : null}
           </ul>
         </section>
+        <PhaseCrossLinks cityName={city.name} citySlug={city.slug} />
       </Container>
     </main>
   );
