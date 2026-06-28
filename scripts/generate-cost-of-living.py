@@ -20,6 +20,8 @@ C={
  'bulgaria':('BGN',1.8,58),'ukraine':('UAH',41.0,45),'serbia':('RSD',108.0,58),
  'bosnia-and-herzegovina':('BAM',1.8,56),'north-macedonia':('MKD',57.0,54),'albania':('ALL',95.0,56),
  'iceland':('ISK',138.0,160),'moldova':('MDL',17.8,48),'turkey':('TRY',33.0,55),
+ 'russia':('RUB',92.0,46),'belarus':('BYN',3.3,42),'georgia':('GEL',2.7,48),'armenia':('AMD',390.0,48),
+ 'azerbaijan':('AZN',1.7,46),'kazakhstan':('KZT',480.0,44),'uzbekistan':('UZS',12700.0,35),
  'israel':('ILS',3.7,130),'united-arab-emirates':('AED',3.67,110),'saudi-arabia':('SAR',3.75,90),
  'qatar':('QAR',3.64,115),'kuwait':('KWD',0.31,105),'bahrain':('BHD',0.38,95),'oman':('OMR',0.385,90),
  'jordan':('JOD',0.71,85),'lebanon':('USD',1.0,75),

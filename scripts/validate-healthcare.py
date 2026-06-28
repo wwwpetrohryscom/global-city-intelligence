@@ -118,8 +118,9 @@ def main() -> int:
         n = per_city.get(slug, 0)
         if not (3 <= n <= 10):
             errors.append(f"{slug}: {n} medical facilities (must be 3-10)")
-    if not (4000 <= fac_count <= 8000):
-        errors.append(f"facility total {fac_count} outside 4000-8000")
+    lo_fac, hi_fac = 2 * len(cities), 11 * len(cities)
+    if not (lo_fac <= fac_count <= hi_fac):
+        errors.append(f"facility total {fac_count} outside {lo_fac}-{hi_fac}")
 
     if errors:
         print("FAIL: healthcare validation failed:")
