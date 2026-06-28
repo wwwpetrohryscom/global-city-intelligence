@@ -35,7 +35,7 @@ ALLOWED_CATEGORIES = {
 }
 FOREST_TOKENS = ["forest", "wald", "forêt", "foret", "bos", "bois", "woods"]
 RIVER_TOKENS = ["valley", "vallée", "vallee", "river", "rhine", "danube", "loire", "gorge"]
-MIN_PLACES, MAX_PLACES, MIN_CITIES, MAX_CITIES = 5, 30, 2, 15
+MIN_PLACES, MAX_PLACES, MIN_CITIES, MAX_CITIES = 5, 30, 2, 50
 
 
 def arr(field, block):
