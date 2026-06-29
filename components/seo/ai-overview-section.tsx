@@ -1,6 +1,4 @@
-import { JsonLd } from "@/components/seo/json-ld";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { faqSchema } from "@/lib/seo/schema";
 import type { AiOverviewItem } from "@/types/faq";
 
 /**
@@ -10,17 +8,14 @@ import type { AiOverviewItem } from "@/types/faq";
  */
 export function AiOverviewSection({
   cityName,
-  path,
   items,
 }: {
   cityName: string;
-  path: string;
   items: readonly AiOverviewItem[];
 }) {
   if (items.length === 0) return null;
   return (
     <section aria-labelledby="ai-overview-heading">
-      <JsonLd data={faqSchema(items.map((i) => ({ question: i.question, answer: i.answer })), path)} />
       <SectionHeading
         description={`Quick, evidence-based answers about ${cityName} drawn from this profile's indexed cost, climate, safety, economy, education, healthcare and nearby-nature data. Figures are deterministic estimates for orientation — verify specifics with official sources.`}
         title="Quick answers"

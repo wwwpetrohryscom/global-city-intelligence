@@ -3951,6 +3951,28 @@ export const NEARBY_WEEKEND_PLACE_DETAIL_SLUGS: readonly NearbyWeekendPlace["slu
   "bohemian-paradise-near-liberec",
   "skiathos-near-volos",
   "bukk-national-park-near-debrecen",
+  // ===== Stabilization nearby<6 detail pages (2026-06-28) =====
+  "platte-river-state-park-near-lincoln-us",
+  "honeymoon-island-state-park-near-clearwater",
+  "radnor-lake-state-natural-area-near-clarksville",
+  "nathan-bedford-forrest-state-park-near-clarksville",
+  "cat-island-national-wildlife-refuge-near-baton-rouge",
+  "meaher-state-park-near-mobile",
+  "caddo-lake-state-park-near-shreveport",
+  "franklin-creek-state-natural-area-near-rockford",
+  "appalachian-trail-near-roanoke",
+  "reserve-naturelle-regionale-des-marais-de-cambrin-annequin-cuinchy-et-festubert-near-bethune",
+  "tom-s-cooperrider-kent-bog-state-nature-preserve-near-akron",
+  "wingfoot-lake-state-park-near-akron",
+  "lincoln-homestead-state-park-near-lexington",
+  "wormer-en-jisperveld-kalverpolder-near-zaanstad",
+  "arche-de-la-nature-near-le-mans",
+  "riserva-naturale-orientata-di-onferno-near-rimini",
+  "jesmond-dene-near-sunderland",
+  "talladega-national-forest-near-birmingham-al",
+  "lake-district-near-lancaster",
+  "bushy-park-tarapuruhi-near-whanganui",
+  "lac-saint-pierre-biosphere-reserve-near-drummondville",
 ] as const;
 
 const DETAIL_SLUG_SET: ReadonlySet<string> = new Set(

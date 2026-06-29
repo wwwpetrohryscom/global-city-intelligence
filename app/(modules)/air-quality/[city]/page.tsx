@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ModulePageContent } from "@/components/layout/module-page-content";
 import { getAllCities, getCityBySlug, getModuleBySlug } from "@/lib/data/queries";
 import { createMetadata } from "@/lib/seo/metadata";
+import { cityTitleName } from "@/lib/seo/city-title";
 import { moduleRoute } from "@/lib/seo/routes";
 
 const MODULE_SLUG = "air-quality" as const;
@@ -24,8 +25,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return createMetadata({
-    title: `Air Quality in ${city.name}: Health Score, Data and Sources`,
-    description: `${city.name} air quality intelligence with clean-air score, pollutant context, health-based explanation, data table, and trusted sources.`,
+    title: `Air Quality in ${cityTitleName(city)}, ${city.countryName}: Health Score, Data and Sources`,
+    description: `${cityTitleName(city)}, ${city.countryName} air quality intelligence with clean-air score, pollutant context, health-based explanation, data table, and trusted sources.`,
     path: moduleRoute(MODULE_SLUG, city.slug),
     type: "article",
   });

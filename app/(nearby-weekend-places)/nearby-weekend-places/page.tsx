@@ -419,39 +419,35 @@ export default function NearbyWeekendPlacesDirectoryPage() {
           <h2 className="sr-only" id="nearby-directory-city-heading">
             Nearby places by connected city
           </h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <ul className="mt-6 grid gap-x-6 gap-y-2 sm:grid-cols-2 xl:grid-cols-3">
             {cityIndex.map(({ city, items }) => {
               const cityCountry = getCountryBySlug(city.countrySlug);
               return (
-                <article
-                  className="rounded-2xl border border-neutral-border bg-white p-5 shadow-sm"
-                  key={city.slug}
-                >
-                  <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                    {cityCountry ? cityCountry.name : "Indexed city"}
-                  </p>
-                  <h3 className="mt-1 text-lg font-semibold text-text-primary">
-                    <Link
-                      className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
-                      href={cityRoute(city.slug)}
-                    >
-                      {city.name}
-                    </Link>
-                  </h3>
+                <li className="text-sm text-text-secondary" key={city.slug}>
+                  <Link
+                    className="font-medium text-text-primary decoration-brand-500 underline-offset-4 hover:underline"
+                    href={cityRoute(city.slug)}
+                  >
+                    {city.name}
+                  </Link>
+                  {cityCountry ? (
+                    <span className="text-text-secondary">
+                      {" "}
+                      · {cityCountry.name}
+                    </span>
+                  ) : null}{" "}
                   {hasNearbyWeekendPlacesCityPage(city.slug) ? (
-                    <p className="mt-1 text-xs text-text-secondary">
-                      <Link
-                        className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                        href={nearbyWeekendPlacesCityRoute(city.slug)}
-                      >
-                        Nearby weekend places from {city.name} ({items.length})
-                      </Link>
-                    </p>
+                    <Link
+                      className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                      href={nearbyWeekendPlacesCityRoute(city.slug)}
+                    >
+                      ({items.length} nearby)
+                    </Link>
                   ) : null}
-                </article>
+                </li>
               );
             })}
-          </div>
+          </ul>
         </section>
 
         <section aria-labelledby="nearby-directory-continue-heading">

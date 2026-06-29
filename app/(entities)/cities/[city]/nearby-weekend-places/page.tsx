@@ -24,6 +24,7 @@ import {
   hasWeekendTripPage,
 } from "@/lib/data/queries";
 import { createMetadata } from "@/lib/seo/metadata";
+import { cityTitleName } from "@/lib/seo/city-title";
 import {
   absoluteUrl,
   arrivalRoute,
@@ -60,7 +61,7 @@ export async function generateMetadata({
   if (!city || !hasNearbyWeekendPlacesCityPage(citySlug)) {
     return {};
   }
-  const title = `Nearby Weekend Places from ${city.name}`;
+  const title = `Nearby Weekend Places from ${cityTitleName(city)}, ${city.countryName}`;
   const description = `Research source-backed nearby weekend places connected to ${city.name} for local-first short breaks, with verification status, official source links, Wikidata identity, visual context, planning tools, and source transparency.`;
   return createMetadata({
     title,
@@ -110,7 +111,7 @@ export default async function NearbyWeekendPlacesCityPage({
     },
   ];
 
-  const title = `Nearby Weekend Places from ${city.name}`;
+  const title = `Nearby Weekend Places from ${cityTitleName(city)}, ${city.countryName}`;
   const description = `Research source-backed nearby weekend places connected to ${city.name} for local-first short breaks, with verification status, official source links, Wikidata identity, visual context, planning tools, and source transparency.`;
 
   const introParagraph = `Research source-backed public places within weekend reach of ${city.name}. The records on this page are planning candidates — not a route planner, not a tourism ranking, not a live schedule, and not a price guide. Verify access, transport, weather, opening status, and seasonal conditions with the official source linked on each record before departure.`;

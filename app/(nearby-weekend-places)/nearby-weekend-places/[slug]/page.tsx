@@ -64,10 +64,23 @@ export async function generateMetadata({
   const { slug } = await params;
   const place = getNearbyWeekendPlaceDetailPageBySlug(slug);
   if (!place) return {};
-  const title = `${place.name}: Nearby Weekend Place to Research`;
   const country = getCountryBySlug(place.countrySlug);
-  const focus = country ? country.name : "indexed city profiles";
-  const description = `Use this source-backed nearby weekend place record for local-first planning near ${focus}, with verification status, official source link, Wikidata identity, visual context, planning tools, and source transparency.`;
+  // Disambiguate by the primary connected city — the same nature place can be a
+  // nearby record for several cities, so a place-name-only title duplicates across
+  // those per-city detail pages. The connected city makes each title unique.
+  const primaryCity = getCityBySlug(place.connectedCitySlugs[0] ?? "");
+  const near = primaryCity
+    ? ` near ${primaryCity.name}${country ? `, ${country.name}` : ""}`
+    : country
+      ? ` in ${country.name}`
+      : "";
+  const title = `${place.name}${near}: Nearby Weekend Place to Research`;
+  const focus = primaryCity
+    ? `${primaryCity.name}${country ? `, ${country.name}` : ""}`
+    : country
+      ? country.name
+      : "indexed city profiles";
+  const description = `Plan a local-first weekend trip to ${place.name}${near || ""}: a source-backed nearby weekend place near ${focus}, with verification status, official source link, Wikidata identity, visual context, planning tools and source transparency.`;
   return createMetadata({
     title,
     description,
@@ -111,7 +124,9 @@ export default async function NearbyWeekendPlaceDetailPage({
     { name: place.name, href: nearbyWeekendPlaceRoute(place.slug) },
   ];
 
-  const pageTitle = `${place.name}: Nearby Weekend Place to Research`;
+  const pageTitle = connectedCities[0]
+    ? `${place.name} near ${connectedCities[0].name}: Nearby Weekend Place to Research`
+    : `${place.name}: Nearby Weekend Place to Research`;
   const focusName = country ? country.name : "indexed city profiles";
   const pageDescription = `Use this source-backed nearby weekend place record for local-first planning near ${focusName}, with verification status, official source link, Wikidata identity, visual context, planning tools, and source transparency.`;
 

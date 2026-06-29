@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cityTitleName } from "@/lib/seo/city-title";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
@@ -139,8 +140,8 @@ export default async function WeekendTripPage({ params }: PageProps) {
   const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
   const nearbyPlaces = getNearbyWeekendPlacesForWeekendTrip(city.slug, 6);
 
-  const title = `Weekend Trip Planning Guide for ${city.name}`;
-  const description = `Plan a weekend city trip to ${city.name}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency.`;
+  const title = `Weekend Trip Planning Guide for ${cityTitleName(city)}, ${city.countryName}`;
+  const description = `Plan a weekend city trip to ${cityTitleName(city)}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency.`;
 
   const overviewCards: WeekendTripOverviewCard[] = [
     {

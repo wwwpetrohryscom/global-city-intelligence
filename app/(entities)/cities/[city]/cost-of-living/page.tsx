@@ -24,6 +24,7 @@ import {
   hasWeekendTripPage,
 } from "@/lib/data/queries";
 import { createMetadata } from "@/lib/seo/metadata";
+import { cityTitleName } from "@/lib/seo/city-title";
 import {
   cityRoute,
   climateRoute,
@@ -53,8 +54,8 @@ function formatMoney(value: number, currency: string): string {
   return `${new Intl.NumberFormat("en-US").format(value)} ${currency}`;
 }
 
-function pageTitle(cityName: string): string {
-  return `Cost of Living in ${cityName}`;
+function pageTitle(cityName: string, countryName: string): string {
+  return `Cost of Living in ${cityName}, ${countryName}`;
 }
 
 function pageDescription(cityName: string, profile: CostOfLivingProfile): string {
@@ -71,8 +72,8 @@ export async function generateMetadata({
     return {};
   }
   return createMetadata({
-    title: pageTitle(city.name),
-    description: pageDescription(city.name, profile),
+    title: pageTitle(cityTitleName(city), city.countryName),
+    description: pageDescription(cityTitleName(city), profile),
     path: costOfLivingRoute(city.slug),
     lastModified: profile.updatedAt,
   });
@@ -104,8 +105,8 @@ export default async function CostOfLivingPage({ params }: PageProps) {
     { name: "Cost of living", href: costOfLivingRoute(city.slug) },
   ];
 
-  const title = pageTitle(city.name);
-  const description = pageDescription(city.name, profile);
+  const title = pageTitle(cityTitleName(city), city.countryName);
+  const description = pageDescription(cityTitleName(city), profile);
 
   // same-country peers with cost-of-living pages, for a neutral comparison
   const peers = (city.relatedCitySlugs ?? [])

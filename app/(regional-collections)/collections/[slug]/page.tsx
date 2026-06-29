@@ -52,8 +52,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const collection = getRegionalCollectionBySlug(slug);
   if (!collection) return {};
+  // Overflow collections (slug "...-2") share a base title with the original; tag the
+  // page title with the part number so every <title> stays unique.
+  const overflow = slug.match(/-(\d+)$/);
+  const partTag = overflow ? ` (Part ${overflow[1]})` : "";
   return createMetadata({
-    title: `${collection.title}: Regional Discovery Collection`,
+    title: `${collection.title}${partTag}: Regional Discovery Collection`,
     description: collection.description,
     path: regionalCollectionRoute(collection.slug),
   });

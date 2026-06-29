@@ -3910,6 +3910,28 @@ export const NEARBY_PLACE_FACTS: Record<string, NearbyPlaceFacts> = {
   "bohemian-paradise-near-liberec": { designation: "Geopark", iucnCategory: "V", wikidataId: "Q341327" },
   "skiathos-near-volos": { designation: "Island", wikidataId: "Q515085" },
   "bukk-national-park-near-debrecen": { designation: "National Park", iucnCategory: "II", established: 1976, wikidataId: "Q855548" },
+  // ===== Stabilization nearby<6 facts (2026-06-28) =====
+  "platte-river-state-park-near-lincoln-us": { designation: "State Park", established: 1982, wikidataId: "Q7202498" },
+  "honeymoon-island-state-park-near-clearwater": { designation: "State Park", iucnCategory: "V", wikidataId: "Q1626871" },
+  "radnor-lake-state-natural-area-near-clarksville": { designation: "State Park", established: 1973, wikidataId: "Q7281482" },
+  "nathan-bedford-forrest-state-park-near-clarksville": { designation: "State Park", established: 1929, wikidataId: "Q6968905" },
+  "cat-island-national-wildlife-refuge-near-baton-rouge": { designation: "National Wildlife Refuge", iucnCategory: "IV", established: 2000, wikidataId: "Q5051038" },
+  "meaher-state-park-near-mobile": { designation: "State Park", established: 1989, wikidataId: "Q6803502" },
+  "caddo-lake-state-park-near-shreveport": { designation: "State Park", established: 1933, wikidataId: "Q5016309" },
+  "franklin-creek-state-natural-area-near-rockford": { designation: "State Park", iucnCategory: "III", established: 1970, wikidataId: "Q5491427" },
+  "appalachian-trail-near-roanoke": { designation: "Natural Area", wikidataId: "Q620648" },
+  "reserve-naturelle-regionale-des-marais-de-cambrin-annequin-cuinchy-et-festubert-near-bethune": { designation: "Nature Reserve", iucnCategory: "IV", established: 2009, wikidataId: "Q2386489" },
+  "tom-s-cooperrider-kent-bog-state-nature-preserve-near-akron": { designation: "Nature Reserve", wikidataId: "Q7817448" },
+  "wingfoot-lake-state-park-near-akron": { designation: "State Park", wikidataId: "Q113084154" },
+  "lincoln-homestead-state-park-near-lexington": { designation: "State Park", wikidataId: "Q14690828" },
+  "wormer-en-jisperveld-kalverpolder-near-zaanstad": { designation: "Natural Area", iucnCategory: "IV", established: 2002, wikidataId: "Q14520246" },
+  "arche-de-la-nature-near-le-mans": { designation: "Nature Park", established: 1997, wikidataId: "Q2860027" },
+  "riserva-naturale-orientata-di-onferno-near-rimini": { designation: "Nature Reserve", iucnCategory: "IV", established: 1991, wikidataId: "Q3936884" },
+  "jesmond-dene-near-sunderland": { designation: "Natural Area", wikidataId: "Q6185770" },
+  "talladega-national-forest-near-birmingham-al": { designation: "National Forest", iucnCategory: "VI", established: 1936, wikidataId: "Q3079157" },
+  "lake-district-near-lancaster": { designation: "Lake", established: 1951, wikidataId: "Q211778" },
+  "bushy-park-tarapuruhi-near-whanganui": { designation: "Protected Area", wikidataId: "Q5001614" },
+  "lac-saint-pierre-biosphere-reserve-near-drummondville": { designation: "Biosphere Reserve", wikidataId: "Q3457176" },
 };
 
 export function getNearbyPlaceFacts(

@@ -1,6 +1,4 @@
-import { JsonLd } from "@/components/seo/json-ld";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { faqSchema } from "@/lib/seo/schema";
 import type { FaqItem } from "@/types/faq";
 
 /**
@@ -10,17 +8,14 @@ import type { FaqItem } from "@/types/faq";
  */
 export function FaqSection({
   cityName,
-  path,
   items,
 }: {
   cityName: string;
-  path: string;
   items: readonly FaqItem[];
 }) {
   if (items.length === 0) return null;
   return (
     <section aria-labelledby="faq-heading">
-      <JsonLd data={faqSchema(items.map((i) => ({ question: i.question, answer: i.answer })), path)} />
       <SectionHeading
         description={`Common questions about living in, visiting, working in, studying in and retiring to ${cityName}, answered from the indexed cost-of-living, climate, safety, economy, education, healthcare and nearby-nature data on this profile.`}
         title={`${cityName} FAQ`}
