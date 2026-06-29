@@ -567,3 +567,5 @@ export {
   hasHealthcare,
   hasRetirement,
 } from "@/lib/data/healthcare-retirement";
+
+export { getCityFaq, getCityAiOverview } from "@/lib/data/queries/faqs";

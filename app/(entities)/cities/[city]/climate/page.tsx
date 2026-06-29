@@ -5,6 +5,7 @@ import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
+import { PhaseCrossLinks } from "@/components/seo/phase-cross-links";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
@@ -21,6 +22,7 @@ import { hasEconomy } from "@/lib/data/economy";
 import { hasEducation } from "@/lib/data/education";
 import { hasHealthcare } from "@/lib/data/healthcare-retirement";
 import { createMetadata } from "@/lib/seo/metadata";
+import { cityTitleName } from "@/lib/seo/city-title";
 import {
   cityRoute,
   climateRoute,
@@ -46,8 +48,8 @@ export function generateStaticParams() {
   return getAllClimateProfiles().map((profile) => ({ city: profile.citySlug }));
 }
 
-function pageTitle(cityName: string): string {
-  return `Climate in ${cityName}`;
+function pageTitle(cityName: string, countryName: string): string {
+  return `Climate in ${cityName}, ${countryName}`;
 }
 
 function pageDescription(cityName: string, p: ClimateProfile): string {
@@ -64,8 +66,8 @@ export async function generateMetadata({
     return {};
   }
   return createMetadata({
-    title: pageTitle(city.name),
-    description: pageDescription(city.name, profile),
+    title: pageTitle(cityTitleName(city), city.countryName),
+    description: pageDescription(cityTitleName(city), profile),
     path: climateRoute(city.slug),
     lastModified: profile.updatedAt,
   });
@@ -115,8 +117,8 @@ export default async function ClimatePage({ params }: PageProps) {
   const southern = (m[0]?.avgHighC ?? 0) > (m[6]?.avgHighC ?? 0); // Jan warmer than Jul
   const seasons = southern ? SOUTH_SEASONS : NORTH_SEASONS;
 
-  const title = pageTitle(city.name);
-  const description = pageDescription(city.name, profile);
+  const title = pageTitle(cityTitleName(city), city.countryName);
+  const description = pageDescription(cityTitleName(city), profile);
 
   const breadcrumbs = [
     { name: "Home", href: staticRoutes.home },
@@ -475,6 +477,7 @@ export default async function ClimatePage({ params }: PageProps) {
             ) : null}
           </ul>
         </section>
+        <PhaseCrossLinks cityName={city.name} citySlug={city.slug} />
       </Container>
     </main>
   );

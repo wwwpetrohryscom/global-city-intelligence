@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ModulePageContent } from "@/components/layout/module-page-content";
 import { getAllCities, getCityBySlug, getModuleBySlug } from "@/lib/data/queries";
 import { createMetadata } from "@/lib/seo/metadata";
+import { cityTitleName } from "@/lib/seo/city-title";
 import { moduleRoute } from "@/lib/seo/routes";
 
 const MODULE_SLUG = "climate-risk" as const;
@@ -24,8 +25,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return createMetadata({
-    title: `Climate Risk in ${city.name}: Score, Data and Sources`,
-    description: `${city.name} climate-risk profile with hazard exposure, adaptation capacity, data table, and sources.`,
+    title: `Climate Risk in ${cityTitleName(city)}, ${city.countryName}: Score, Data and Sources`,
+    description: `${cityTitleName(city)}, ${city.countryName} climate-risk profile with hazard exposure, adaptation capacity, data table, and sources.`,
     path: moduleRoute(MODULE_SLUG, city.slug),
     type: "article",
   });

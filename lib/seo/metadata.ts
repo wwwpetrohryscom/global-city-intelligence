@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cityTitleName } from "@/lib/seo/city-title";
 import { LAST_UPDATED } from "@/lib/data/constants";
 import {
   absoluteUrl,
@@ -144,8 +145,8 @@ export function generateArrivalMetadata({
   image?: MetadataOgImage;
 }): Metadata {
   const countryFragment = country ? `, ${country.name}` : "";
-  const title = `Arriving in ${city.name}: City Arrival Planning Guide`;
-  const description = `Plan your arrival in ${city.name}${countryFragment} with city intelligence links, transport context, public-safety references, healthcare access notes, budget tools, relocation checklist, sources, and methodology — not an official airport or travel instruction service.`;
+  const title = `Arriving in ${cityTitleName(city)}${countryFragment}: City Arrival Planning Guide`;
+  const description = `Plan your arrival in ${cityTitleName(city)}${countryFragment} with city intelligence links, transport context, public-safety references, healthcare access notes, budget tools, relocation checklist, sources, and methodology — not an official airport or travel instruction service.`;
 
   return createMetadata({
     title,
@@ -169,8 +170,8 @@ export function generateNeighborhoodPlanningMetadata({
   image?: MetadataOgImage;
 }): Metadata {
   const countryFragment = country ? `, ${country.name}` : "";
-  const title = `Neighborhood Planning Guide for ${city.name}`;
-  const description = `Plan neighborhood research in ${city.name}${countryFragment} with transport context, public-safety context, healthcare access, arrival planning, budgeting tools, methodology notes, and source transparency. Not a real-estate, rental, or safety-ranking service.`;
+  const title = `Neighborhood Planning Guide for ${cityTitleName(city)}${countryFragment}`;
+  const description = `Plan neighborhood research in ${cityTitleName(city)}${countryFragment} with transport context, public-safety context, healthcare access, arrival planning, budgeting tools, methodology notes, and source transparency. Not a real-estate, rental, or safety-ranking service.`;
 
   return createMetadata({
     title,
@@ -194,8 +195,8 @@ export function generateMovingToCityMetadata({
   image?: MetadataOgImage;
 }): Metadata {
   const countryFragment = country ? `, ${country.name}` : "";
-  const title = `Moving to ${city.name}: Planning Guide`;
-  const description = `Plan relocation research for ${city.name}${countryFragment} with city context, country context, arrival planning, neighborhood research, cost tools, healthcare access, public-safety context, transport notes, methodology, and source transparency. Not immigration, visa, tax, legal, financial, medical, or property advice.`;
+  const title = `Moving to ${cityTitleName(city)}${countryFragment}: Planning Guide`;
+  const description = `Plan relocation research for ${cityTitleName(city)}${countryFragment} with city context, country context, arrival planning, neighborhood research, cost tools, healthcare access, public-safety context, transport notes, methodology, and source transparency. Not immigration, visa, tax, legal, financial, medical, or property advice.`;
 
   return createMetadata({
     title,
@@ -219,8 +220,8 @@ export function generateVisualCityGuideMetadata({
   image?: MetadataOgImage;
 }): Metadata {
   const countryFragment = country ? `, ${country.name}` : "";
-  const title = `Visual Guide to ${city.name}`;
-  const description = `Explore source-attributed visual context for ${city.name}${countryFragment} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency. Not a tourism guide and not an attractions ranking.`;
+  const title = `Visual Guide to ${cityTitleName(city)}${countryFragment}`;
+  const description = `Explore source-attributed visual context for ${cityTitleName(city)}${countryFragment} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency. Not a tourism guide and not an attractions ranking.`;
 
   return createMetadata({
     title,
@@ -244,8 +245,8 @@ export function generateSummerTravelMetadata({
   image?: MetadataOgImage;
 }): Metadata {
   const countryFragment = country ? `, ${country.name}` : "";
-  const title = `Summer 2026 Travel Planning Guide for ${city.name}`;
-  const description = `Plan summer 2026 travel research for ${city.name}${countryFragment} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency. Not a weather forecast, events calendar, hotel-price guide, or tourism ranking.`;
+  const title = `Summer 2026 Travel Planning Guide for ${cityTitleName(city)}${countryFragment}`;
+  const description = `Plan summer 2026 travel research for ${cityTitleName(city)}${countryFragment} with arrival planning, visual orientation, budget tools, transport context, healthcare and public-safety context, city comparisons, methodology, and source transparency. Not a weather forecast, events calendar, hotel-price guide, or tourism ranking.`;
 
   return createMetadata({
     title,
@@ -269,8 +270,8 @@ export function generateWeekendTripMetadata({
   image?: MetadataOgImage;
 }): Metadata {
   const countryFragment = country ? `, ${country.name}` : "";
-  const title = `Weekend Trip Planning Guide for ${city.name}`;
-  const description = `Plan a weekend city trip to ${city.name}${countryFragment} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency. Not an itinerary, events calendar, hotel-price guide, restaurant guide, or tourism ranking.`;
+  const title = `Weekend Trip Planning Guide for ${cityTitleName(city)}${countryFragment}`;
+  const description = `Plan a weekend city trip to ${cityTitleName(city)}${countryFragment} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency. Not an itinerary, events calendar, hotel-price guide, restaurant guide, or tourism ranking.`;
 
   return createMetadata({
     title,
@@ -294,8 +295,8 @@ export function generateCityIntentMetadata({
   intentPage: CityIntentPage;
 }): Metadata {
   const countryFragment = country ? ` in ${country.name}` : "";
-  const title = `${city.name} for ${intent.shortTitle}: City Intelligence Guide`;
-  const description = `Explore ${city.name}${countryFragment} for ${intent.shortTitle.toLowerCase()} using structured city intelligence across cost context, safety, healthcare, transport, public services, sources, and related comparisons.`;
+  const title = `${cityTitleName(city)}${countryFragment} for ${intent.shortTitle}: City Intelligence Guide`;
+  const description = `Explore ${cityTitleName(city)}${countryFragment} for ${intent.shortTitle.toLowerCase()} using structured city intelligence across cost context, safety, healthcare, transport, public services, sources, and related comparisons.`;
 
   return createMetadata({
     title,

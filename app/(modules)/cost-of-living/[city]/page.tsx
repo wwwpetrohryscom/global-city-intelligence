@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ModulePageContent } from "@/components/layout/module-page-content";
 import { getAllCities, getCityBySlug, getModuleBySlug } from "@/lib/data/queries";
 import { createMetadata } from "@/lib/seo/metadata";
+import { cityTitleName } from "@/lib/seo/city-title";
 import { moduleRoute } from "@/lib/seo/routes";
 
 const MODULE_SLUG = "cost-of-living" as const;
@@ -24,8 +25,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return createMetadata({
-    title: `Cost of Living in ${city.name}: Score, Data and Sources`,
-    description: `${city.name} cost of living intelligence with affordability score, housing pressure, mobility offsets, data table, and sources.`,
+    title: `Cost of Living in ${cityTitleName(city)}, ${city.countryName}: Score, Data and Sources`,
+    description: `${cityTitleName(city)}, ${city.countryName} cost of living intelligence with affordability score, housing pressure, mobility offsets, data table, and sources.`,
     path: moduleRoute(MODULE_SLUG, city.slug),
     type: "article",
   });

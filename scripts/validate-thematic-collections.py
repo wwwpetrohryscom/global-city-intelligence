@@ -49,7 +49,7 @@ NORDIC_COUNTRIES = {"sweden","finland","denmark","norway","iceland"}
 EUROPE_COUNTRIES = {"austria","belgium","bulgaria","croatia","czechia","denmark","estonia","finland","france",
     "germany","greece","hungary","ireland","italy","latvia","lithuania","luxembourg","netherlands","poland",
     "portugal","romania","slovakia","slovenia","spain","sweden","united-kingdom"}
-MIN_P, MAX_P, MIN_C, MAX_C, MIN_R, MAX_R = 5, 50, 2, 50, 2, 15
+MIN_P, MAX_P, MIN_C, MAX_C, MIN_R, MAX_R = 5, 50, 2, 80, 2, 15
 
 
 def arr(field, block):

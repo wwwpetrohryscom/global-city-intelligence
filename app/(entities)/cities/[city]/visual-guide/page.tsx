@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cityTitleName } from "@/lib/seo/city-title";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
@@ -141,8 +142,8 @@ export default async function VisualCityGuidePage({ params }: PageProps) {
   const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
   const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
 
-  const title = `Visual Guide to ${city.name}`;
-  const description = `Explore source-attributed visual context for ${city.name}${country ? `, ${country.name}` : ""} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency.`;
+  const title = `Visual Guide to ${cityTitleName(city)}, ${city.countryName}`;
+  const description = `Explore source-attributed visual context for ${cityTitleName(city)}${country ? `, ${country.name}` : ""} with city intelligence links, arrival planning, neighborhood research, moving-to planning, comparisons, tools, methodology, and source transparency.`;
 
   const overviewCards: VisualGuideOverviewCard[] = [
     {

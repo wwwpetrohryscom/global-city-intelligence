@@ -32,6 +32,12 @@ const title = "Nearby Weekend Places to Research";
 const description =
   "Browse source-backed nearby weekend place records connected to city profiles for local-first short breaks, with verification status, city links, planning tools, methodology, and source transparency.";
 
+// Featured cap for the country grid. The complete crawlable index lives in the
+// "by connected city" section + each city's own nearby-weekend-places page, so
+// capping the featured-by-country sample keeps this directory page under 5 MB
+// without orphaning any record (every record stays reachable via its city).
+const NEARBY_DIRECTORY_FEATURED_PER_COUNTRY = 12;
+
 const introParagraph =
   "Each record is a short, source-attributed reference to a park, heritage site, nature reserve, or other public destination within weekend reach of an indexed city. These pages are research orientation only — they are not a tourism guide, not an attractions ranking, not an itinerary generator, and not evidence of current local conditions. Records do not publish exact distances, travel times, transport schedules, opening hours, ticket prices, restaurant or hotel recommendations, attraction rankings, or live access status. Verify access, opening times, weather, health, and safety details with the official source linked on each record before departure.";
 
@@ -348,7 +354,7 @@ export default function NearbyWeekendPlacesDirectoryPage() {
 
         <section aria-labelledby="nearby-directory-country-heading">
           <SectionHeading
-            description="A complete index of nearby weekend place records grouped by country, fully present in the initial HTML so every link is crawlable without client-side JavaScript."
+            description="A featured sample of nearby weekend place records grouped by country. The complete, fully-crawlable index of every record is provided per connected city in the section below — each city links to its own nearby-weekend-places page listing all of its records."
             title="Nearby places by country"
           />
           <h2 className="sr-only" id="nearby-directory-country-heading">
@@ -369,21 +375,37 @@ export default function NearbyWeekendPlacesDirectoryPage() {
                     href={countryRoute(country.slug)}
                   >
                     {country.name}
-                  </Link>
+                  </Link>{" "}
+                  <span className="text-xs font-normal text-text-secondary">
+                    ({items.length})
+                  </span>
                 </h3>
                 <ul className="mt-3 grid grid-cols-1 gap-1 text-sm">
-                  {items.map(({ place }) => (
-                    <li key={place.slug}>
-                      <Link
-                        className="text-text-secondary hover:text-brand-500"
-                        href={placeHref(place)}
-                      >
-                        {place.name}
-                      </Link>{" "}
-                      — {getNearbyPlaceCategoryLabel(place.category)}
-                    </li>
-                  ))}
+                  {items
+                    .slice(0, NEARBY_DIRECTORY_FEATURED_PER_COUNTRY)
+                    .map(({ place }) => (
+                      <li key={place.slug}>
+                        <Link
+                          className="text-text-secondary hover:text-brand-500"
+                          href={placeHref(place)}
+                        >
+                          {place.name}
+                        </Link>{" "}
+                        — {getNearbyPlaceCategoryLabel(place.category)}
+                      </li>
+                    ))}
                 </ul>
+                {items.length > NEARBY_DIRECTORY_FEATURED_PER_COUNTRY ? (
+                  <p className="mt-2 text-xs text-text-secondary">
+                    <Link
+                      className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                      href={countryRoute(country.slug)}
+                    >
+                      + {items.length - NEARBY_DIRECTORY_FEATURED_PER_COUNTRY}{" "}
+                      more near {country.name} cities
+                    </Link>
+                  </p>
+                ) : null}
               </article>
             ))}
           </div>
@@ -397,39 +419,35 @@ export default function NearbyWeekendPlacesDirectoryPage() {
           <h2 className="sr-only" id="nearby-directory-city-heading">
             Nearby places by connected city
           </h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <ul className="mt-6 grid gap-x-6 gap-y-2 sm:grid-cols-2 xl:grid-cols-3">
             {cityIndex.map(({ city, items }) => {
               const cityCountry = getCountryBySlug(city.countrySlug);
               return (
-                <article
-                  className="rounded-2xl border border-neutral-border bg-white p-5 shadow-sm"
-                  key={city.slug}
-                >
-                  <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                    {cityCountry ? cityCountry.name : "Indexed city"}
-                  </p>
-                  <h3 className="mt-1 text-lg font-semibold text-text-primary">
-                    <Link
-                      className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
-                      href={cityRoute(city.slug)}
-                    >
-                      {city.name}
-                    </Link>
-                  </h3>
+                <li className="text-sm text-text-secondary" key={city.slug}>
+                  <Link
+                    className="font-medium text-text-primary decoration-brand-500 underline-offset-4 hover:underline"
+                    href={cityRoute(city.slug)}
+                  >
+                    {city.name}
+                  </Link>
+                  {cityCountry ? (
+                    <span className="text-text-secondary">
+                      {" "}
+                      · {cityCountry.name}
+                    </span>
+                  ) : null}{" "}
                   {hasNearbyWeekendPlacesCityPage(city.slug) ? (
-                    <p className="mt-1 text-xs text-text-secondary">
-                      <Link
-                        className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
-                        href={nearbyWeekendPlacesCityRoute(city.slug)}
-                      >
-                        Nearby weekend places from {city.name} ({items.length})
-                      </Link>
-                    </p>
+                    <Link
+                      className="text-text-secondary underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                      href={nearbyWeekendPlacesCityRoute(city.slug)}
+                    >
+                      ({items.length} nearby)
+                    </Link>
                   ) : null}
-                </article>
+                </li>
               );
             })}
-          </div>
+          </ul>
         </section>
 
         <section aria-labelledby="nearby-directory-continue-heading">

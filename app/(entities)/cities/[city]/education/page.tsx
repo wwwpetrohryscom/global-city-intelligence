@@ -5,6 +5,7 @@ import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
+import { PhaseCrossLinks } from "@/components/seo/phase-cross-links";
 import { Card } from "@/components/ui/Card";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -23,6 +24,7 @@ import { hasCostOfLiving } from "@/lib/data/cost-of-living";
 import { hasEconomy } from "@/lib/data/economy";
 import { hasHealthcare } from "@/lib/data/healthcare-retirement";
 import { createMetadata } from "@/lib/seo/metadata";
+import { cityTitleName } from "@/lib/seo/city-title";
 import {
   cityRoute,
   climateRoute,
@@ -70,8 +72,8 @@ const TYPE_LABEL: Record<UniversityType, string> = {
 const REPRESENTATIVE_NOTE =
   "Universities below are deterministic, representative dataset entities generated for research and discovery — they are not a directory of specific, real, or accredited institutions, and the scores are not rankings. Verify actual universities and accreditation with official sources.";
 
-function pageTitle(cityName: string): string {
-  return `Universities and education in ${cityName}`;
+function pageTitle(cityName: string, countryName: string): string {
+  return `Universities and education in ${cityName}, ${countryName}`;
 }
 
 function pageDescription(cityName: string, p: EducationProfile): string {
@@ -88,8 +90,8 @@ export async function generateMetadata({
     return {};
   }
   return createMetadata({
-    title: pageTitle(city.name),
-    description: pageDescription(city.name, profile),
+    title: pageTitle(cityTitleName(city), city.countryName),
+    description: pageDescription(cityTitleName(city), profile),
     path: educationRoute(city.slug),
     lastModified: profile.updatedAt,
   });
@@ -106,8 +108,8 @@ export default async function EducationPage({ params }: PageProps) {
 
   const country = getCountryBySlug(city.countrySlug);
   const universities = getUniversitiesForCity(city.slug);
-  const title = pageTitle(city.name);
-  const description = pageDescription(city.name, profile);
+  const title = pageTitle(cityTitleName(city), city.countryName);
+  const description = pageDescription(cityTitleName(city), profile);
 
   const breadcrumbs = [
     { name: "Home", href: staticRoutes.home },
@@ -454,6 +456,7 @@ export default async function EducationPage({ params }: PageProps) {
             ) : null}
           </ul>
         </section>
+        <PhaseCrossLinks cityName={city.name} citySlug={city.slug} />
       </Container>
     </main>
   );

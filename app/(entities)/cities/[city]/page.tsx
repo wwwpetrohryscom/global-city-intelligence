@@ -10,6 +10,8 @@ import { HealthcareAccessSection } from "@/components/healthcare/HealthcareAcces
 import { PublicSafetySection } from "@/components/safety/PublicSafetySection";
 import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
+import { AiOverviewSection } from "@/components/seo/ai-overview-section";
+import { FaqSection } from "@/components/seo/faq-section";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
 import { DataTable } from "@/components/tables/DataTable";
@@ -27,7 +29,9 @@ import {
   getAllCities,
   getAllModules,
   getAllRankings,
+  getCityAiOverview,
   getCityBySlug,
+  getCityFaq,
   getCityHealthcareProfile,
   getCityMobilityProfile,
   getCitySafetyProfile,
@@ -67,6 +71,7 @@ import { getSourcesByIds } from "@/lib/data/sources";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
 import { createMetadata, ogImageFromPlaceImage } from "@/lib/seo/metadata";
+import { cityTitleName } from "@/lib/seo/city-title";
 import { getCityHeroImage } from "@/lib/data/media/queries";
 import {
   arrivalRoute,
@@ -95,6 +100,7 @@ import {
   airportSchema,
   breadcrumbSchema,
   datasetSchema,
+  faqSchema,
   webpageSchema,
 } from "@/lib/seo/schema";
 
@@ -144,8 +150,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return createMetadata({
-    title: `${city.name} City Intelligence: Scores, Data and Rankings`,
-    description: `${city.name} city intelligence profile with affordability, air quality, energy, resilience, sources, tables, and rankings.`,
+    title: `${cityTitleName(city)}, ${city.countryName} City Intelligence: Scores, Data and Rankings`,
+    description: `${cityTitleName(city)}, ${city.countryName} city intelligence profile with affordability, air quality, energy, resilience, sources, tables, and rankings.`,
     path: cityRoute(city.slug),
     type: "article",
     image: ogImageFromPlaceImage(getCityHeroImage(city.slug)),
@@ -160,7 +166,7 @@ export default async function CityPage({ params }: PageProps) {
     notFound();
   }
 
-  const title = `${city.name} City Intelligence`;
+  const title = `${city.name}, ${city.countryName} City Intelligence`;
   const description = `${city.intro} Compare affordability, air quality, energy readiness, resilience, sources, and rankings.`;
   const breadcrumbs = cityBreadcrumbs(city.slug);
   const sources = getSourcesByIds(city.sources);
@@ -194,6 +200,8 @@ export default async function CityPage({ params }: PageProps) {
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
   const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
   const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
+  const cityAiOverview = getCityAiOverview(city.slug);
+  const cityFaq = getCityFaq(city.slug);
 
   return (
     <main>
@@ -475,6 +483,25 @@ export default async function CityPage({ params }: PageProps) {
           ]}
         />
 
+        {cityAiOverview || cityFaq ? (
+          <JsonLd
+            data={faqSchema(
+              [
+                ...(cityAiOverview?.items ?? []),
+                ...(cityFaq?.items ?? []),
+              ].map((i) => ({ question: i.question, answer: i.answer })),
+              cityRoute(city.slug),
+            )}
+          />
+        ) : null}
+
+        {cityAiOverview ? (
+          <AiOverviewSection
+            cityName={city.name}
+            items={cityAiOverview.items}
+          />
+        ) : null}
+
         {relatedComparisons.length > 0 ? (
           <RelatedComparisons comparisons={relatedComparisons} />
         ) : null}
@@ -718,6 +745,10 @@ export default async function CityPage({ params }: PageProps) {
               ))}
             </div>
           </section>
+        ) : null}
+
+        {cityFaq ? (
+          <FaqSection cityName={city.name} items={cityFaq.items} />
         ) : null}
 
         <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
