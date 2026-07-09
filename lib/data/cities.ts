@@ -42505,6 +42505,3257 @@ const seeds: CitySeed[] = [
       "Use the Kadina profile to compare affordability, livability, and economic indicators against other indexed cities in Australia and across Oceania, and to explore nearby nature and weekend destinations.",
     scores: { overall: 81, affordability: 46, airQuality: 79, energy: 80, resilience: 78 },
   }),
+  // ===== Wave 14: +250 cities (US/UK/DE/BE/AT/CH), A-F complete (2026-07-09) =====
+  buildNeutralCitySeed({
+    slug: "killeen",
+    name: "Killeen",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~153K",
+    intro:
+      "Killeen is an indexed city in United States (North America), with a metropolitan population of about ~153K. This profile brings together deterministic city-intelligence indicators for Killeen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Killeen profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 55, airQuality: 74, energy: 82, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ely",
+    name: "Ely",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~20K",
+    intro:
+      "Ely is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~20K. This profile brings together deterministic city-intelligence indicators for Ely spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ely profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 82, energy: 79, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "uetersen",
+    name: "Uetersen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~19K",
+    intro:
+      "Uetersen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~19K. This profile brings together deterministic city-intelligence indicators for Uetersen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Uetersen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 74, energy: 79, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wavre",
+    name: "Wavre",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~34K",
+    intro:
+      "Wavre is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Wavre spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wavre profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 73, energy: 81, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kufstein",
+    name: "Kufstein",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~19K",
+    intro:
+      "Kufstein is an indexed city in Austria (Central Europe), with a metropolitan population of about ~19K. This profile brings together deterministic city-intelligence indicators for Kufstein spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kufstein profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 79, energy: 82, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sion",
+    name: "Sion",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~37K",
+    intro:
+      "Sion is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Sion spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sion profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 38, airQuality: 85, energy: 80, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "st-cloud",
+    name: "St. Cloud",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~69K",
+    intro:
+      "St. Cloud is an indexed city in United States (North America), with a metropolitan population of about ~69K. This profile brings together deterministic city-intelligence indicators for St. Cloud spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the St. Cloud profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 74, energy: 79, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "newry",
+    name: "Newry",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~28K",
+    intro:
+      "Newry is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~28K. This profile brings together deterministic city-intelligence indicators for Newry spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Newry profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 80, energy: 81, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "eisleben",
+    name: "Eisleben",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~23K",
+    intro:
+      "Eisleben is an indexed city in Germany (Central Europe), with a metropolitan population of about ~23K. This profile brings together deterministic city-intelligence indicators for Eisleben spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Eisleben profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 82, energy: 79, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "eupen",
+    name: "Eupen",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~20K",
+    intro:
+      "Eupen is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~20K. This profile brings together deterministic city-intelligence indicators for Eupen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Eupen profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 51, airQuality: 73, energy: 82, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chur",
+    name: "Chur",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~39K",
+    intro:
+      "Chur is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Chur spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chur profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 39, airQuality: 77, energy: 79, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hutchinson",
+    name: "Hutchinson",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~40K",
+    intro:
+      "Hutchinson is an indexed city in United States (North America), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Hutchinson spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hutchinson profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 74, energy: 78, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dorchester",
+    name: "Dorchester",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~21K",
+    intro:
+      "Dorchester is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~21K. This profile brings together deterministic city-intelligence indicators for Dorchester spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dorchester profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 74, energy: 78, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pinneberg",
+    name: "Pinneberg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~45K",
+    intro:
+      "Pinneberg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~45K. This profile brings together deterministic city-intelligence indicators for Pinneberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pinneberg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 73, energy: 83, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ixelles",
+    name: "Ixelles",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~88K",
+    intro:
+      "Ixelles is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~88K. This profile brings together deterministic city-intelligence indicators for Ixelles spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ixelles profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 47, airQuality: 80, energy: 76, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gmunden",
+    name: "Gmunden",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~13K",
+    intro:
+      "Gmunden is an indexed city in Austria (Central Europe), with a metropolitan population of about ~13K. This profile brings together deterministic city-intelligence indicators for Gmunden spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gmunden profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 80, energy: 82, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "schaffhausen",
+    name: "Schaffhausen",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~39K",
+    intro:
+      "Schaffhausen is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Schaffhausen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Schaffhausen profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 43, airQuality: 87, energy: 78, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "manassas",
+    name: "Manassas",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~43K",
+    intro:
+      "Manassas is an indexed city in United States (North America), with a metropolitan population of about ~43K. This profile brings together deterministic city-intelligence indicators for Manassas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Manassas profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 73, energy: 76, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bury-st-edmunds",
+    name: "Bury St Edmunds",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~41K",
+    intro:
+      "Bury St Edmunds is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~41K. This profile brings together deterministic city-intelligence indicators for Bury St Edmunds spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bury St Edmunds profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 82, energy: 83, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "peine",
+    name: "Peine",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~52K",
+    intro:
+      "Peine is an indexed city in Germany (Central Europe), with a metropolitan population of about ~52K. This profile brings together deterministic city-intelligence indicators for Peine spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Peine profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 81, energy: 83, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "waterloo-be",
+    name: "Waterloo",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~30K",
+    intro:
+      "Waterloo is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~30K. This profile brings together deterministic city-intelligence indicators for Waterloo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Waterloo profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 46, airQuality: 71, energy: 81, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "modling",
+    name: "Mödling",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~21K",
+    intro:
+      "Mödling is an indexed city in Austria (Central Europe), with a metropolitan population of about ~21K. This profile brings together deterministic city-intelligence indicators for Mödling spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mödling profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 83, energy: 78, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fribourg",
+    name: "Fribourg",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~39K",
+    intro:
+      "Fribourg is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Fribourg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fribourg profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 42, airQuality: 78, energy: 78, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pine-bluff",
+    name: "Pine Bluff",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~41K",
+    intro:
+      "Pine Bluff is an indexed city in United States (North America), with a metropolitan population of about ~41K. This profile brings together deterministic city-intelligence indicators for Pine Bluff spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pine Bluff profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 69, energy: 80, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "burton-upon-trent",
+    name: "Burton upon Trent",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~75K",
+    intro:
+      "Burton upon Trent is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~75K. This profile brings together deterministic city-intelligence indicators for Burton upon Trent spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Burton upon Trent profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 74, energy: 84, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kothen",
+    name: "Köthen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~25K",
+    intro:
+      "Köthen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Köthen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Köthen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 82, energy: 76, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "uccle",
+    name: "Uccle",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~84K",
+    intro:
+      "Uccle is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~84K. This profile brings together deterministic city-intelligence indicators for Uccle spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Uccle profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 77, energy: 75, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lienz",
+    name: "Lienz",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~12K",
+    intro:
+      "Lienz is an indexed city in Austria (Central Europe), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Lienz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lienz profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 75, energy: 82, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aarau",
+    name: "Aarau",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~23K",
+    intro:
+      "Aarau is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~23K. This profile brings together deterministic city-intelligence indicators for Aarau spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Aarau profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 40, airQuality: 82, energy: 82, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wilson",
+    name: "Wilson",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~48K",
+    intro:
+      "Wilson is an indexed city in United States (North America), with a metropolitan population of about ~48K. This profile brings together deterministic city-intelligence indicators for Wilson spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wilson profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 68, energy: 80, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "banbury",
+    name: "Banbury",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~47K",
+    intro:
+      "Banbury is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~47K. This profile brings together deterministic city-intelligence indicators for Banbury spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Banbury profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 77, energy: 84, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bernburg",
+    name: "Bernburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~32K",
+    intro:
+      "Bernburg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Bernburg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bernburg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 76, energy: 84, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "etterbeek",
+    name: "Etterbeek",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~48K",
+    intro:
+      "Etterbeek is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~48K. This profile brings together deterministic city-intelligence indicators for Etterbeek spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Etterbeek profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 72, energy: 78, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bruck-an-der-mur",
+    name: "Bruck an der Mur",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~16K",
+    intro:
+      "Bruck an der Mur is an indexed city in Austria (Central Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Bruck an der Mur spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bruck an der Mur profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 81, energy: 77, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bellinzona",
+    name: "Bellinzona",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~45K",
+    intro:
+      "Bellinzona is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~45K. This profile brings together deterministic city-intelligence indicators for Bellinzona spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bellinzona profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 43, airQuality: 87, energy: 80, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shakopee",
+    name: "Shakopee",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~44K",
+    intro:
+      "Shakopee is an indexed city in United States (North America), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Shakopee spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shakopee profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 56, airQuality: 73, energy: 78, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "horsham-uk",
+    name: "Horsham",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~51K",
+    intro:
+      "Horsham is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~51K. This profile brings together deterministic city-intelligence indicators for Horsham spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Horsham profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 75, energy: 82, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "arnstadt",
+    name: "Arnstadt",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~28K",
+    intro:
+      "Arnstadt is an indexed city in Germany (Central Europe), with a metropolitan population of about ~28K. This profile brings together deterministic city-intelligence indicators for Arnstadt spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Arnstadt profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 83, energy: 82, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lier",
+    name: "Lier",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~37K",
+    intro:
+      "Lier is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Lier spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lier profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 75, energy: 82, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "schwaz",
+    name: "Schwaz",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~14K",
+    intro:
+      "Schwaz is an indexed city in Austria (Central Europe), with a metropolitan population of about ~14K. This profile brings together deterministic city-intelligence indicators for Schwaz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Schwaz profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 73, energy: 82, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zug",
+    name: "Zug",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~32K",
+    intro:
+      "Zug is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Zug spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zug profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 43, airQuality: 83, energy: 81, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "perth-amboy",
+    name: "Perth Amboy",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~55K",
+    intro:
+      "Perth Amboy is an indexed city in United States (North America), with a metropolitan population of about ~55K. This profile brings together deterministic city-intelligence indicators for Perth Amboy spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Perth Amboy profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 71, energy: 74, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "newcastle-under-lyme",
+    name: "Newcastle-under-Lyme",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~75K",
+    intro:
+      "Newcastle-under-Lyme is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~75K. This profile brings together deterministic city-intelligence indicators for Newcastle-under-Lyme spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Newcastle-under-Lyme profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 83, energy: 82, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rendsburg",
+    name: "Rendsburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~31K",
+    intro:
+      "Rendsburg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Rendsburg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rendsburg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 73, energy: 76, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "saint-gilles",
+    name: "Saint-Gilles",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~50K",
+    intro:
+      "Saint-Gilles is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~50K. This profile brings together deterministic city-intelligence indicators for Saint-Gilles spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Saint-Gilles profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 74, energy: 82, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kitzbuhel",
+    name: "Kitzbühel",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~8K",
+    intro:
+      "Kitzbühel is an indexed city in Austria (Central Europe), with a metropolitan population of about ~8K. This profile brings together deterministic city-intelligence indicators for Kitzbühel spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kitzbühel profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 79, energy: 80, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "solothurn",
+    name: "Solothurn",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~17K",
+    intro:
+      "Solothurn is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~17K. This profile brings together deterministic city-intelligence indicators for Solothurn spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Solothurn profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 36, airQuality: 85, energy: 80, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sparks",
+    name: "Sparks",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~108K",
+    intro:
+      "Sparks is an indexed city in United States (North America), with a metropolitan population of about ~108K. This profile brings together deterministic city-intelligence indicators for Sparks spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sparks profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 73, energy: 76, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "windsor",
+    name: "Windsor",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~32K",
+    intro:
+      "Windsor is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Windsor spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Windsor profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 74, energy: 84, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "oudenaarde",
+    name: "Oudenaarde",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~32K",
+    intro:
+      "Oudenaarde is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Oudenaarde spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Oudenaarde profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 79, energy: 76, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vocklabruck",
+    name: "Vöcklabruck",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~12K",
+    intro:
+      "Vöcklabruck is an indexed city in Austria (Central Europe), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Vöcklabruck spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vöcklabruck profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 77, energy: 84, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "thun",
+    name: "Thun",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~44K",
+    intro:
+      "Thun is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Thun spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Thun profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 43, airQuality: 82, energy: 80, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hoboken",
+    name: "Hoboken",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~60K",
+    intro:
+      "Hoboken is an indexed city in United States (North America), with a metropolitan population of about ~60K. This profile brings together deterministic city-intelligence indicators for Hoboken spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hoboken profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 68, energy: 76, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "godalming",
+    name: "Godalming",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~67K",
+    intro:
+      "Godalming is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~67K. This profile brings together deterministic city-intelligence indicators for Godalming spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Godalming profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 77, energy: 82, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "furstenfeldbruck",
+    name: "Fürstenfeldbruck",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~38K",
+    intro:
+      "Fürstenfeldbruck is an indexed city in Germany (Central Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Fürstenfeldbruck spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fürstenfeldbruck profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 74, energy: 84, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "beveren",
+    name: "Beveren",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~50K",
+    intro:
+      "Beveren is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~50K. This profile brings together deterministic city-intelligence indicators for Beveren spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Beveren profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 78, energy: 77, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zell-am-see",
+    name: "Zell am See",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~10K",
+    intro:
+      "Zell am See is an indexed city in Austria (Central Europe), with a metropolitan population of about ~10K. This profile brings together deterministic city-intelligence indicators for Zell am See spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zell am See profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 78, energy: 84, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-chaux-de-fonds",
+    name: "La Chaux-de-Fonds",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~39K",
+    intro:
+      "La Chaux-de-Fonds is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for La Chaux-de-Fonds spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Chaux-de-Fonds profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 40, airQuality: 77, energy: 85, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "brockton",
+    name: "Brockton",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~106K",
+    intro:
+      "Brockton is an indexed city in United States (North America), with a metropolitan population of about ~106K. This profile brings together deterministic city-intelligence indicators for Brockton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Brockton profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 74, energy: 74, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hertford",
+    name: "Hertford",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~29K",
+    intro:
+      "Hertford is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~29K. This profile brings together deterministic city-intelligence indicators for Hertford spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hertford profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 78, energy: 76, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wilhelmshaven",
+    name: "Wilhelmshaven",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~76K",
+    intro:
+      "Wilhelmshaven is an indexed city in Germany (Central Europe), with a metropolitan population of about ~76K. This profile brings together deterministic city-intelligence indicators for Wilhelmshaven spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wilhelmshaven profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 73, energy: 82, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "woluwe-saint-pierre",
+    name: "Woluwe-Saint-Pierre",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~42K",
+    intro:
+      "Woluwe-Saint-Pierre is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~42K. This profile brings together deterministic city-intelligence indicators for Woluwe-Saint-Pierre spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Woluwe-Saint-Pierre profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 81, energy: 77, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "judenburg",
+    name: "Judenburg",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~10K",
+    intro:
+      "Judenburg is an indexed city in Austria (Central Europe), with a metropolitan population of about ~10K. This profile brings together deterministic city-intelligence indicators for Judenburg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Judenburg profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 77, energy: 78, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "davos",
+    name: "Davos",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~11K",
+    intro:
+      "Davos is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~11K. This profile brings together deterministic city-intelligence indicators for Davos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Davos profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 36, airQuality: 80, energy: 81, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hempstead",
+    name: "Hempstead",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~793K",
+    intro:
+      "Hempstead is an indexed city in United States (North America), with a metropolitan population of about ~793K. This profile brings together deterministic city-intelligence indicators for Hempstead spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hempstead profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 75, energy: 80, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dumbarton",
+    name: "Dumbarton",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~21K",
+    intro:
+      "Dumbarton is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~21K. This profile brings together deterministic city-intelligence indicators for Dumbarton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dumbarton profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 77, energy: 80, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bad-tolz",
+    name: "Bad Tölz",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~19K",
+    intro:
+      "Bad Tölz is an indexed city in Germany (Central Europe), with a metropolitan population of about ~19K. This profile brings together deterministic city-intelligence indicators for Bad Tölz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bad Tölz profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 81, energy: 77, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "waregem",
+    name: "Waregem",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~38K",
+    intro:
+      "Waregem is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Waregem spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Waregem profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 74, energy: 76, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "st-veit-an-der-glan",
+    name: "St. Veit an der Glan",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~13K",
+    intro:
+      "St. Veit an der Glan is an indexed city in Austria (Central Europe), with a metropolitan population of about ~13K. This profile brings together deterministic city-intelligence indicators for St. Veit an der Glan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the St. Veit an der Glan profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 73, energy: 80, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "altdorf",
+    name: "Altdorf",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~10K",
+    intro:
+      "Altdorf is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~10K. This profile brings together deterministic city-intelligence indicators for Altdorf spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Altdorf profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 37, airQuality: 85, energy: 81, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "norwalk",
+    name: "Norwalk",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~103K",
+    intro:
+      "Norwalk is an indexed city in United States (North America), with a metropolitan population of about ~103K. This profile brings together deterministic city-intelligence indicators for Norwalk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Norwalk profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 73, energy: 80, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "newbury",
+    name: "Newbury",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~41K",
+    intro:
+      "Newbury is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~41K. This profile brings together deterministic city-intelligence indicators for Newbury spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Newbury profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 77, energy: 84, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "saalfeld",
+    name: "Saalfeld",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~29K",
+    intro:
+      "Saalfeld is an indexed city in Germany (Central Europe), with a metropolitan population of about ~29K. This profile brings together deterministic city-intelligence indicators for Saalfeld spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Saalfeld profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 77, energy: 84, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "woluwe-saint-lambert",
+    name: "Woluwe-Saint-Lambert",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~58K",
+    intro:
+      "Woluwe-Saint-Lambert is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~58K. This profile brings together deterministic city-intelligence indicators for Woluwe-Saint-Lambert spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Woluwe-Saint-Lambert profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 51, airQuality: 81, energy: 83, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "leibnitz",
+    name: "Leibnitz",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~13K",
+    intro:
+      "Leibnitz is an indexed city in Austria (Central Europe), with a metropolitan population of about ~13K. This profile brings together deterministic city-intelligence indicators for Leibnitz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Leibnitz profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 78, energy: 80, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "frauenfeld",
+    name: "Frauenfeld",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~27K",
+    intro:
+      "Frauenfeld is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~27K. This profile brings together deterministic city-intelligence indicators for Frauenfeld spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Frauenfeld profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 44, airQuality: 77, energy: 79, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "suffolk",
+    name: "Suffolk",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~94K",
+    intro:
+      "Suffolk is an indexed city in United States (North America), with a metropolitan population of about ~94K. This profile brings together deterministic city-intelligence indicators for Suffolk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Suffolk profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 55, airQuality: 73, energy: 78, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "trowbridge",
+    name: "Trowbridge",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~38K",
+    intro:
+      "Trowbridge is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Trowbridge spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Trowbridge profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 78, energy: 76, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aichach",
+    name: "Aichach",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~22K",
+    intro:
+      "Aichach is an indexed city in Germany (Central Europe), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for Aichach spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Aichach profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 82, energy: 78, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "forest",
+    name: "Forest",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~57K",
+    intro:
+      "Forest is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~57K. This profile brings together deterministic city-intelligence indicators for Forest spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Forest profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 76, energy: 83, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "melk",
+    name: "Melk",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~6K",
+    intro:
+      "Melk is an indexed city in Austria (Central Europe), with a metropolitan population of about ~6K. This profile brings together deterministic city-intelligence indicators for Melk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Melk profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 81, energy: 81, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "glarus",
+    name: "Glarus",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~13K",
+    intro:
+      "Glarus is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~13K. This profile brings together deterministic city-intelligence indicators for Glarus spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Glarus profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 41, airQuality: 85, energy: 78, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bradenton",
+    name: "Bradenton",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~56K",
+    intro:
+      "Bradenton is an indexed city in United States (North America), with a metropolitan population of about ~56K. This profile brings together deterministic city-intelligence indicators for Bradenton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bradenton profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 75, energy: 79, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yeovil",
+    name: "Yeovil",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~32K",
+    intro:
+      "Yeovil is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Yeovil spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yeovil profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 80, energy: 77, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "donauworth",
+    name: "Donauwörth",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~20K",
+    intro:
+      "Donauwörth is an indexed city in Germany (Central Europe), with a metropolitan population of about ~20K. This profile brings together deterministic city-intelligence indicators for Donauwörth spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Donauwörth profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 73, energy: 76, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "knokke-heist",
+    name: "Knokke-Heist",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~33K",
+    intro:
+      "Knokke-Heist is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~33K. This profile brings together deterministic city-intelligence indicators for Knokke-Heist spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Knokke-Heist profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 47, airQuality: 78, energy: 79, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "volkermarkt",
+    name: "Völkermarkt",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~11K",
+    intro:
+      "Völkermarkt is an indexed city in Austria (Central Europe), with a metropolitan population of about ~11K. This profile brings together deterministic city-intelligence indicators for Völkermarkt spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Völkermarkt profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 78, energy: 76, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "delemont",
+    name: "Delémont",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~13K",
+    intro:
+      "Delémont is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~13K. This profile brings together deterministic city-intelligence indicators for Delémont spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Delémont profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 42, airQuality: 84, energy: 81, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "valdosta",
+    name: "Valdosta",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~55K",
+    intro:
+      "Valdosta is an indexed city in United States (North America), with a metropolitan population of about ~55K. This profile brings together deterministic city-intelligence indicators for Valdosta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Valdosta profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 69, energy: 79, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "eastleigh",
+    name: "Eastleigh",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~79K",
+    intro:
+      "Eastleigh is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~79K. This profile brings together deterministic city-intelligence indicators for Eastleigh spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Eastleigh profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 81, energy: 79, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gunzburg",
+    name: "Günzburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~22K",
+    intro:
+      "Günzburg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for Günzburg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Günzburg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 74, energy: 78, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "binche",
+    name: "Binche",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~34K",
+    intro:
+      "Binche is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Binche spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Binche profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 51, airQuality: 77, energy: 78, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "st-johann-im-pongau",
+    name: "St Johann im Pongau",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~11K",
+    intro:
+      "St Johann im Pongau is an indexed city in Austria (Central Europe), with a metropolitan population of about ~11K. This profile brings together deterministic city-intelligence indicators for St Johann im Pongau spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the St Johann im Pongau profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 76, energy: 79, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "schwyz",
+    name: "Schwyz",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~16K",
+    intro:
+      "Schwyz is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Schwyz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Schwyz profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 41, airQuality: 80, energy: 83, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "compton",
+    name: "Compton",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~96K",
+    intro:
+      "Compton is an indexed city in United States (North America), with a metropolitan population of about ~96K. This profile brings together deterministic city-intelligence indicators for Compton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Compton profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 69, energy: 80, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "motherwell",
+    name: "Motherwell",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~33K",
+    intro:
+      "Motherwell is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~33K. This profile brings together deterministic city-intelligence indicators for Motherwell spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Motherwell profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 83, energy: 76, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bad-hersfeld",
+    name: "Bad Hersfeld",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~31K",
+    intro:
+      "Bad Hersfeld is an indexed city in Germany (Central Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Bad Hersfeld spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bad Hersfeld profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 73, energy: 82, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jette",
+    name: "Jette",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~53K",
+    intro:
+      "Jette is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~53K. This profile brings together deterministic city-intelligence indicators for Jette spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jette profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 79, energy: 76, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "deutschlandsberg",
+    name: "Deutschlandsberg",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~12K",
+    intro:
+      "Deutschlandsberg is an indexed city in Austria (Central Europe), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Deutschlandsberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Deutschlandsberg profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 77, energy: 84, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "liestal",
+    name: "Liestal",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~16K",
+    intro:
+      "Liestal is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Liestal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Liestal profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 38, airQuality: 81, energy: 77, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hollister",
+    name: "Hollister",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~42K",
+    intro:
+      "Hollister is an indexed city in United States (North America), with a metropolitan population of about ~42K. This profile brings together deterministic city-intelligence indicators for Hollister spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hollister profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 56, airQuality: 75, energy: 77, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "elgin-uk",
+    name: "Elgin",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~25K",
+    intro:
+      "Elgin is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Elgin spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Elgin profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 73, energy: 78, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "meppen",
+    name: "Meppen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~36K",
+    intro:
+      "Meppen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~36K. This profile brings together deterministic city-intelligence indicators for Meppen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Meppen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 76, energy: 84, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "spa",
+    name: "Spa",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~10K",
+    intro:
+      "Spa is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~10K. This profile brings together deterministic city-intelligence indicators for Spa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Spa profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 51, airQuality: 74, energy: 79, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "imst",
+    name: "Imst",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~11K",
+    intro:
+      "Imst is an indexed city in Austria (Central Europe), with a metropolitan population of about ~11K. This profile brings together deterministic city-intelligence indicators for Imst spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Imst profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 77, energy: 76, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nyon",
+    name: "Nyon",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~23K",
+    intro:
+      "Nyon is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~23K. This profile brings together deterministic city-intelligence indicators for Nyon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nyon profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 37, airQuality: 79, energy: 84, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "evanston",
+    name: "Evanston",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~78K",
+    intro:
+      "Evanston is an indexed city in United States (North America), with a metropolitan population of about ~78K. This profile brings together deterministic city-intelligence indicators for Evanston spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Evanston profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 65, energy: 77, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "grantham",
+    name: "Grantham",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~35K",
+    intro:
+      "Grantham is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~35K. This profile brings together deterministic city-intelligence indicators for Grantham spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Grantham profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 73, energy: 76, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "itzehoe",
+    name: "Itzehoe",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~32K",
+    intro:
+      "Itzehoe is an indexed city in Germany (Central Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Itzehoe spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Itzehoe profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 82, energy: 77, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ath",
+    name: "Ath",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~29K",
+    intro:
+      "Ath is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~29K. This profile brings together deterministic city-intelligence indicators for Ath spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ath profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 51, airQuality: 74, energy: 77, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kapfenberg",
+    name: "Kapfenberg",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~23K",
+    intro:
+      "Kapfenberg is an indexed city in Austria (Central Europe), with a metropolitan population of about ~23K. This profile brings together deterministic city-intelligence indicators for Kapfenberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kapfenberg profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 80, energy: 82, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "locarno",
+    name: "Locarno",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~16K",
+    intro:
+      "Locarno is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Locarno spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Locarno profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 40, airQuality: 84, energy: 81, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "daly-city",
+    name: "Daly City",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~105K",
+    intro:
+      "Daly City is an indexed city in United States (North America), with a metropolitan population of about ~105K. This profile brings together deterministic city-intelligence indicators for Daly City spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Daly City profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 56, airQuality: 68, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cannock",
+    name: "Cannock",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~68K",
+    intro:
+      "Cannock is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~68K. This profile brings together deterministic city-intelligence indicators for Cannock spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cannock profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 75, energy: 84, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "warendorf",
+    name: "Warendorf",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~38K",
+    intro:
+      "Warendorf is an indexed city in Germany (Central Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Warendorf spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Warendorf profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 76, energy: 76, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "virton",
+    name: "Virton",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~11K",
+    intro:
+      "Virton is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~11K. This profile brings together deterministic city-intelligence indicators for Virton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Virton profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 75, energy: 76, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "neusiedl-am-see",
+    name: "Neusiedl am See",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~9K",
+    intro:
+      "Neusiedl am See is an indexed city in Austria (Central Europe), with a metropolitan population of about ~9K. This profile brings together deterministic city-intelligence indicators for Neusiedl am See spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Neusiedl am See profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 77, energy: 84, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "herisau",
+    name: "Herisau",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~16K",
+    intro:
+      "Herisau is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Herisau spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Herisau profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 37, airQuality: 79, energy: 85, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rio-rancho",
+    name: "Rio Rancho",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~104K",
+    intro:
+      "Rio Rancho is an indexed city in United States (North America), with a metropolitan population of about ~104K. This profile brings together deterministic city-intelligence indicators for Rio Rancho spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rio Rancho profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 74, energy: 75, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chesterfield",
+    name: "Chesterfield",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~76K",
+    intro:
+      "Chesterfield is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~76K. This profile brings together deterministic city-intelligence indicators for Chesterfield spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chesterfield profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 76, energy: 80, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "emmendingen",
+    name: "Emmendingen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~29K",
+    intro:
+      "Emmendingen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~29K. This profile brings together deterministic city-intelligence indicators for Emmendingen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Emmendingen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 73, energy: 83, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "evere",
+    name: "Evere",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~43K",
+    intro:
+      "Evere is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~43K. This profile brings together deterministic city-intelligence indicators for Evere spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Evere profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 75, energy: 82, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "spittal-an-der-drau",
+    name: "Spittal an der Drau",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~15K",
+    intro:
+      "Spittal an der Drau is an indexed city in Austria (Central Europe), with a metropolitan population of about ~15K. This profile brings together deterministic city-intelligence indicators for Spittal an der Drau spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Spittal an der Drau profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 80, energy: 81, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vevey",
+    name: "Vevey",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~20K",
+    intro:
+      "Vevey is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~20K. This profile brings together deterministic city-intelligence indicators for Vevey spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vevey profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 39, airQuality: 87, energy: 80, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rialto",
+    name: "Rialto",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~104K",
+    intro:
+      "Rialto is an indexed city in United States (North America), with a metropolitan population of about ~104K. This profile brings together deterministic city-intelligence indicators for Rialto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rialto profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 69, energy: 81, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rochester-uk",
+    name: "Rochester",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~63K",
+    intro:
+      "Rochester is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~63K. This profile brings together deterministic city-intelligence indicators for Rochester spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rochester profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 79, energy: 78, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "starnberg",
+    name: "Starnberg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~24K",
+    intro:
+      "Starnberg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~24K. This profile brings together deterministic city-intelligence indicators for Starnberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Starnberg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 80, energy: 78, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aarschot",
+    name: "Aarschot",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~30K",
+    intro:
+      "Aarschot is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~30K. This profile brings together deterministic city-intelligence indicators for Aarschot spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Aarschot profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 76, energy: 79, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bludenz",
+    name: "Bludenz",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~15K",
+    intro:
+      "Bludenz is an indexed city in Austria (Central Europe), with a metropolitan population of about ~15K. This profile brings together deterministic city-intelligence indicators for Bludenz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bludenz profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 79, energy: 77, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sarnen",
+    name: "Sarnen",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~11K",
+    intro:
+      "Sarnen is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~11K. This profile brings together deterministic city-intelligence indicators for Sarnen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sarnen profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 40, airQuality: 81, energy: 80, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "paradise",
+    name: "Paradise",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~191K",
+    intro:
+      "Paradise is an indexed city in United States (North America), with a metropolitan population of about ~191K. This profile brings together deterministic city-intelligence indicators for Paradise spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Paradise profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 74, energy: 82, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "neath",
+    name: "Neath",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~51K",
+    intro:
+      "Neath is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~51K. This profile brings together deterministic city-intelligence indicators for Neath spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Neath profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 78, energy: 80, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "heinsberg",
+    name: "Heinsberg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~44K",
+    intro:
+      "Heinsberg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Heinsberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Heinsberg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 74, energy: 84, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "auderghem",
+    name: "Auderghem",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~34K",
+    intro:
+      "Auderghem is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Auderghem spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Auderghem profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 77, energy: 78, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "freistadt",
+    name: "Freistadt",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~8K",
+    intro:
+      "Freistadt is an indexed city in Austria (Central Europe), with a metropolitan population of about ~8K. This profile brings together deterministic city-intelligence indicators for Freistadt spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Freistadt profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 80, energy: 79, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "stans",
+    name: "Stans",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~9K",
+    intro:
+      "Stans is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~9K. This profile brings together deterministic city-intelligence indicators for Stans spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Stans profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 38, airQuality: 87, energy: 79, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "woodland",
+    name: "Woodland",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~61K",
+    intro:
+      "Woodland is an indexed city in United States (North America), with a metropolitan population of about ~61K. This profile brings together deterministic city-intelligence indicators for Woodland spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Woodland profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 73, energy: 80, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gillingham",
+    name: "Gillingham",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~108K",
+    intro:
+      "Gillingham is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~108K. This profile brings together deterministic city-intelligence indicators for Gillingham spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gillingham profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 81, energy: 80, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sigmaringen",
+    name: "Sigmaringen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~18K",
+    intro:
+      "Sigmaringen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~18K. This profile brings together deterministic city-intelligence indicators for Sigmaringen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sigmaringen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 82, energy: 80, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tienen",
+    name: "Tienen",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~37K",
+    intro:
+      "Tienen is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Tienen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tienen profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 71, energy: 76, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "landeck",
+    name: "Landeck",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~8K",
+    intro:
+      "Landeck is an indexed city in Austria (Central Europe), with a metropolitan population of about ~8K. This profile brings together deterministic city-intelligence indicators for Landeck spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Landeck profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 82, energy: 80, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "montreux",
+    name: "Montreux",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~27K",
+    intro:
+      "Montreux is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~27K. This profile brings together deterministic city-intelligence indicators for Montreux spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Montreux profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 41, airQuality: 83, energy: 78, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nampa",
+    name: "Nampa",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~100K",
+    intro:
+      "Nampa is an indexed city in United States (North America), with a metropolitan population of about ~100K. This profile brings together deterministic city-intelligence indicators for Nampa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nampa profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 66, energy: 78, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "beverley",
+    name: "Beverley",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~31K",
+    intro:
+      "Beverley is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Beverley spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Beverley profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 82, energy: 79, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "helmstedt",
+    name: "Helmstedt",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~26K",
+    intro:
+      "Helmstedt is an indexed city in Germany (Central Europe), with a metropolitan population of about ~26K. This profile brings together deterministic city-intelligence indicators for Helmstedt spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Helmstedt profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 80, energy: 80, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huy",
+    name: "Huy",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~21K",
+    intro:
+      "Huy is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~21K. This profile brings together deterministic city-intelligence indicators for Huy spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huy profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 79, energy: 76, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tulln-an-der-donau",
+    name: "Tulln an der Donau",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~16K",
+    intro:
+      "Tulln an der Donau is an indexed city in Austria (Central Europe), with a metropolitan population of about ~16K. This profile brings together deterministic city-intelligence indicators for Tulln an der Donau spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tulln an der Donau profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 81, energy: 79, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yverdon-les-bains",
+    name: "Yverdon-les-Bains",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~30K",
+    intro:
+      "Yverdon-les-Bains is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~30K. This profile brings together deterministic city-intelligence indicators for Yverdon-les-Bains spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yverdon-les-Bains profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 44, airQuality: 82, energy: 83, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jonesboro",
+    name: "Jonesboro",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~79K",
+    intro:
+      "Jonesboro is an indexed city in United States (North America), with a metropolitan population of about ~79K. This profile brings together deterministic city-intelligence indicators for Jonesboro spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jonesboro profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 55, airQuality: 65, energy: 77, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "torquay",
+    name: "Torquay",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~49K",
+    intro:
+      "Torquay is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~49K. This profile brings together deterministic city-intelligence indicators for Torquay spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Torquay profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 76, energy: 76, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "freital",
+    name: "Freital",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~39K",
+    intro:
+      "Freital is an indexed city in Germany (Central Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Freital spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Freital profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 81, energy: 84, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "halle-be",
+    name: "Halle",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~39K",
+    intro:
+      "Halle is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Halle spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Halle profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 46, airQuality: 74, energy: 82, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "weiz",
+    name: "Weiz",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~12K",
+    intro:
+      "Weiz is an indexed city in Austria (Central Europe), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Weiz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Weiz profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 81, energy: 79, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "uster",
+    name: "Uster",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~37K",
+    intro:
+      "Uster is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Uster spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Uster profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 41, airQuality: 84, energy: 84, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "barnstable",
+    name: "Barnstable",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~49K",
+    intro:
+      "Barnstable is an indexed city in United States (North America), with a metropolitan population of about ~49K. This profile brings together deterministic city-intelligence indicators for Barnstable spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Barnstable profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 56, airQuality: 72, energy: 75, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "welwyn-garden-city",
+    name: "Welwyn Garden City",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~48K",
+    intro:
+      "Welwyn Garden City is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~48K. This profile brings together deterministic city-intelligence indicators for Welwyn Garden City spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Welwyn Garden City profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 76, energy: 83, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "annaberg-buchholz",
+    name: "Annaberg-Buchholz",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~19K",
+    intro:
+      "Annaberg-Buchholz is an indexed city in Germany (Central Europe), with a metropolitan population of about ~19K. This profile brings together deterministic city-intelligence indicators for Annaberg-Buchholz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Annaberg-Buchholz profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 79, energy: 81, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "herstal",
+    name: "Herstal",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~40K",
+    intro:
+      "Herstal is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Herstal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Herstal profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 73, energy: 78, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "liezen",
+    name: "Liezen",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~8K",
+    intro:
+      "Liezen is an indexed city in Austria (Central Europe), with a metropolitan population of about ~8K. This profile brings together deterministic city-intelligence indicators for Liezen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Liezen profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 81, energy: 77, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "martigny",
+    name: "Martigny",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~18K",
+    intro:
+      "Martigny is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~18K. This profile brings together deterministic city-intelligence indicators for Martigny spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Martigny profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 39, airQuality: 86, energy: 77, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "covington",
+    name: "Covington",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~41K",
+    intro:
+      "Covington is an indexed city in United States (North America), with a metropolitan population of about ~41K. This profile brings together deterministic city-intelligence indicators for Covington spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Covington profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 73, energy: 80, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kidderminster",
+    name: "Kidderminster",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~57K",
+    intro:
+      "Kidderminster is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~57K. This profile brings together deterministic city-intelligence indicators for Kidderminster spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kidderminster profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 74, energy: 83, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nienburg-weser",
+    name: "Nienburg/Weser",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~32K",
+    intro:
+      "Nienburg/Weser is an indexed city in Germany (Central Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Nienburg/Weser spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nienburg/Weser profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 80, energy: 78, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lommel",
+    name: "Lommel",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~34K",
+    intro:
+      "Lommel is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Lommel spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lommel profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 71, energy: 80, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "voitsberg",
+    name: "Voitsberg",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~9K",
+    intro:
+      "Voitsberg is an indexed city in Austria (Central Europe), with a metropolitan population of about ~9K. This profile brings together deterministic city-intelligence indicators for Voitsberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Voitsberg profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 80, energy: 84, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "olten",
+    name: "Olten",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~19K",
+    intro:
+      "Olten is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~19K. This profile brings together deterministic city-intelligence indicators for Olten spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Olten profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 37, airQuality: 78, energy: 80, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rexburg",
+    name: "Rexburg",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~39K",
+    intro:
+      "Rexburg is an indexed city in United States (North America), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Rexburg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rexburg profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 68, energy: 82, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bexhill-on-sea",
+    name: "Bexhill-on-Sea",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~44K",
+    intro:
+      "Bexhill-on-Sea is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Bexhill-on-Sea spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bexhill-on-Sea profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 81, energy: 84, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "neumarkt-in-der-oberpfalz",
+    name: "Neumarkt in der Oberpfalz",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~41K",
+    intro:
+      "Neumarkt in der Oberpfalz is an indexed city in Germany (Central Europe), with a metropolitan population of about ~41K. This profile brings together deterministic city-intelligence indicators for Neumarkt in der Oberpfalz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Neumarkt in der Oberpfalz profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 75, energy: 83, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dinant",
+    name: "Dinant",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~14K",
+    intro:
+      "Dinant is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~14K. This profile brings together deterministic city-intelligence indicators for Dinant spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dinant profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 51, airQuality: 71, energy: 82, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hohenems",
+    name: "Hohenems",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~17K",
+    intro:
+      "Hohenems is an indexed city in Austria (Central Europe), with a metropolitan population of about ~17K. This profile brings together deterministic city-intelligence indicators for Hohenems spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hohenems profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 82, energy: 77, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "baden-ch",
+    name: "Baden",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~24K",
+    intro:
+      "Baden is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~24K. This profile brings together deterministic city-intelligence indicators for Baden spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Baden profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 39, airQuality: 80, energy: 84, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vacaville",
+    name: "Vacaville",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~102K",
+    intro:
+      "Vacaville is an indexed city in United States (North America), with a metropolitan population of about ~102K. This profile brings together deterministic city-intelligence indicators for Vacaville spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vacaville profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 73, energy: 82, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huntingdon",
+    name: "Huntingdon",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~25K",
+    intro:
+      "Huntingdon is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Huntingdon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huntingdon profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 77, energy: 83, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "freudenstadt",
+    name: "Freudenstadt",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~24K",
+    intro:
+      "Freudenstadt is an indexed city in Germany (Central Europe), with a metropolitan population of about ~24K. This profile brings together deterministic city-intelligence indicators for Freudenstadt spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Freudenstadt profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 73, energy: 83, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "overpelt",
+    name: "Overpelt",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~15K",
+    intro:
+      "Overpelt is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~15K. This profile brings together deterministic city-intelligence indicators for Overpelt spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Overpelt profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 71, energy: 82, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "oberwart",
+    name: "Oberwart",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~8K",
+    intro:
+      "Oberwart is an indexed city in Austria (Central Europe), with a metropolitan population of about ~8K. This profile brings together deterministic city-intelligence indicators for Oberwart spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Oberwart profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 74, energy: 81, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kreuzlingen",
+    name: "Kreuzlingen",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~22K",
+    intro:
+      "Kreuzlingen is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for Kreuzlingen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kreuzlingen profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 41, airQuality: 81, energy: 83, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "boca-raton",
+    name: "Boca Raton",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~97K",
+    intro:
+      "Boca Raton is an indexed city in United States (North America), with a metropolitan population of about ~97K. This profile brings together deterministic city-intelligence indicators for Boca Raton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Boca Raton profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 68, energy: 77, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "clacton-on-sea",
+    name: "Clacton-on-Sea",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~51K",
+    intro:
+      "Clacton-on-Sea is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~51K. This profile brings together deterministic city-intelligence indicators for Clacton-on-Sea spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Clacton-on-Sea profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 83, energy: 82, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "coesfeld",
+    name: "Coesfeld",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~37K",
+    intro:
+      "Coesfeld is an indexed city in Germany (Central Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Coesfeld spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Coesfeld profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 79, energy: 81, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "maasmechelen",
+    name: "Maasmechelen",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~38K",
+    intro:
+      "Maasmechelen is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Maasmechelen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Maasmechelen profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 77, energy: 82, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "saalfelden-am-steinernen-meer",
+    name: "Saalfelden am Steinernen Meer",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~17K",
+    intro:
+      "Saalfelden am Steinernen Meer is an indexed city in Austria (Central Europe), with a metropolitan population of about ~17K. This profile brings together deterministic city-intelligence indicators for Saalfelden am Steinernen Meer spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Saalfelden am Steinernen Meer profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 73, energy: 84, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "interlaken",
+    name: "Interlaken",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~6K",
+    intro:
+      "Interlaken is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~6K. This profile brings together deterministic city-intelligence indicators for Interlaken spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Interlaken profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 37, airQuality: 82, energy: 83, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "newport-beach",
+    name: "Newport Beach",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~85K",
+    intro:
+      "Newport Beach is an indexed city in United States (North America), with a metropolitan population of about ~85K. This profile brings together deterministic city-intelligence indicators for Newport Beach spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Newport Beach profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 66, energy: 76, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wellingborough",
+    name: "Wellingborough",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~55K",
+    intro:
+      "Wellingborough is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~55K. This profile brings together deterministic city-intelligence indicators for Wellingborough spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wellingborough profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 76, energy: 79, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "erding",
+    name: "Erding",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~37K",
+    intro:
+      "Erding is an indexed city in Germany (Central Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Erding spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Erding profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 83, energy: 79, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gembloux",
+    name: "Gembloux",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~26K",
+    intro:
+      "Gembloux is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~26K. This profile brings together deterministic city-intelligence indicators for Gembloux spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gembloux profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 73, energy: 79, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "feldbach",
+    name: "Feldbach",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~13K",
+    intro:
+      "Feldbach is an indexed city in Austria (Central Europe), with a metropolitan population of about ~13K. This profile brings together deterministic city-intelligence indicators for Feldbach spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Feldbach profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 77, energy: 81, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "horgen",
+    name: "Horgen",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~25K",
+    intro:
+      "Horgen is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Horgen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Horgen profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 38, airQuality: 77, energy: 78, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wausau",
+    name: "Wausau",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~40K",
+    intro:
+      "Wausau is an indexed city in United States (North America), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Wausau spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wausau profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 66, energy: 79, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hartlepool",
+    name: "Hartlepool",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~88K",
+    intro:
+      "Hartlepool is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~88K. This profile brings together deterministic city-intelligence indicators for Hartlepool spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hartlepool profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 51, airQuality: 75, energy: 81, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "salzwedel",
+    name: "Salzwedel",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~23K",
+    intro:
+      "Salzwedel is an indexed city in Germany (Central Europe), with a metropolitan population of about ~23K. This profile brings together deterministic city-intelligence indicators for Salzwedel spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Salzwedel profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 81, energy: 76, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bilzen",
+    name: "Bilzen",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~32K",
+    intro:
+      "Bilzen is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Bilzen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bilzen profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 46, airQuality: 74, energy: 80, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "furstenfeld",
+    name: "Fürstenfeld",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~9K",
+    intro:
+      "Fürstenfeld is an indexed city in Austria (Central Europe), with a metropolitan population of about ~9K. This profile brings together deterministic city-intelligence indicators for Fürstenfeld spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fürstenfeld profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 80, energy: 81, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dietikon",
+    name: "Dietikon",
+    countrySlug: "switzerland",
+    countryName: "Switzerland",
+    region: "Western Europe",
+    population: "~27K",
+    intro:
+      "Dietikon is an indexed city in Switzerland (Western Europe), with a metropolitan population of about ~27K. This profile brings together deterministic city-intelligence indicators for Dietikon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dietikon profile to compare affordability, livability, and economic indicators against other indexed cities in Switzerland and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 42, airQuality: 81, energy: 78, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "castle-rock",
+    name: "Castle Rock",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~73K",
+    intro:
+      "Castle Rock is an indexed city in United States (North America), with a metropolitan population of about ~73K. This profile brings together deterministic city-intelligence indicators for Castle Rock spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Castle Rock profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 56, airQuality: 67, energy: 78, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "widnes",
+    name: "Widnes",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~61K",
+    intro:
+      "Widnes is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~61K. This profile brings together deterministic city-intelligence indicators for Widnes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Widnes profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 83, energy: 79, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "senftenberg",
+    name: "Senftenberg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~23K",
+    intro:
+      "Senftenberg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~23K. This profile brings together deterministic city-intelligence indicators for Senftenberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Senftenberg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 78, energy: 80, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nivelles",
+    name: "Nivelles",
+    countrySlug: "belgium",
+    countryName: "Belgium",
+    region: "Western Europe",
+    population: "~29K",
+    intro:
+      "Nivelles is an indexed city in Belgium (Western Europe), with a metropolitan population of about ~29K. This profile brings together deterministic city-intelligence indicators for Nivelles spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nivelles profile to compare affordability, livability, and economic indicators against other indexed cities in Belgium and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 78, energy: 75, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jeffersonville",
+    name: "Jeffersonville",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~49K",
+    intro:
+      "Jeffersonville is an indexed city in United States (North America), with a metropolitan population of about ~49K. This profile brings together deterministic city-intelligence indicators for Jeffersonville spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jeffersonville profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 51, airQuality: 73, energy: 82, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "andover",
+    name: "Andover",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~51K",
+    intro:
+      "Andover is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~51K. This profile brings together deterministic city-intelligence indicators for Andover spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Andover profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 74, energy: 81, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "merzig",
+    name: "Merzig",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~30K",
+    intro:
+      "Merzig is an indexed city in Germany (Central Europe), with a metropolitan population of about ~30K. This profile brings together deterministic city-intelligence indicators for Merzig spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Merzig profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 82, energy: 79, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "moorhead",
+    name: "Moorhead",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~45K",
+    intro:
+      "Moorhead is an indexed city in United States (North America), with a metropolitan population of about ~45K. This profile brings together deterministic city-intelligence indicators for Moorhead spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Moorhead profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 73, energy: 82, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "glenrothes",
+    name: "Glenrothes",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~39K",
+    intro:
+      "Glenrothes is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Glenrothes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Glenrothes profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 81, energy: 80, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "balingen",
+    name: "Balingen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~35K",
+    intro:
+      "Balingen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~35K. This profile brings together deterministic city-intelligence indicators for Balingen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Balingen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 73, energy: 76, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lynn",
+    name: "Lynn",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~101K",
+    intro:
+      "Lynn is an indexed city in United States (North America), with a metropolitan population of about ~101K. This profile brings together deterministic city-intelligence indicators for Lynn spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lynn profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 68, energy: 78, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "port-talbot",
+    name: "Port Talbot",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~37K",
+    intro:
+      "Port Talbot is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Port Talbot spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Port Talbot profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 78, energy: 83, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tuttlingen",
+    name: "Tuttlingen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~38K",
+    intro:
+      "Tuttlingen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Tuttlingen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tuttlingen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 80, energy: 76, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "redmond",
+    name: "Redmond",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~73K",
+    intro:
+      "Redmond is an indexed city in United States (North America), with a metropolitan population of about ~73K. This profile brings together deterministic city-intelligence indicators for Redmond spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Redmond profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 75, energy: 81, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ballymena",
+    name: "Ballymena",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~31K",
+    intro:
+      "Ballymena is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Ballymena spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ballymena profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 83, energy: 77, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kulmbach",
+    name: "Kulmbach",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~26K",
+    intro:
+      "Kulmbach is an indexed city in Germany (Central Europe), with a metropolitan population of about ~26K. This profile brings together deterministic city-intelligence indicators for Kulmbach spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kulmbach profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 79, energy: 82, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lake-charles",
+    name: "Lake Charles",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~85K",
+    intro:
+      "Lake Charles is an indexed city in United States (North America), with a metropolitan population of about ~85K. This profile brings together deterministic city-intelligence indicators for Lake Charles spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lake Charles profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 75, energy: 79, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "stretford",
+    name: "Stretford",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~52K",
+    intro:
+      "Stretford is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~52K. This profile brings together deterministic city-intelligence indicators for Stretford spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Stretford profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 80, energy: 84, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "forchheim",
+    name: "Forchheim",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~34K",
+    intro:
+      "Forchheim is an indexed city in Germany (Central Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Forchheim spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Forchheim profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 76, energy: 77, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "salina",
+    name: "Salina",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~47K",
+    intro:
+      "Salina is an indexed city in United States (North America), with a metropolitan population of about ~47K. This profile brings together deterministic city-intelligence indicators for Salina spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Salina profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 74, energy: 79, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "harlow",
+    name: "Harlow",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~82K",
+    intro:
+      "Harlow is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~82K. This profile brings together deterministic city-intelligence indicators for Harlow spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Harlow profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 81, energy: 77, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "neunkirchen",
+    name: "Neunkirchen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~47K",
+    intro:
+      "Neunkirchen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~47K. This profile brings together deterministic city-intelligence indicators for Neunkirchen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Neunkirchen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 75, energy: 84, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "livermore",
+    name: "Livermore",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~88K",
+    intro:
+      "Livermore is an indexed city in United States (North America), with a metropolitan population of about ~88K. This profile brings together deterministic city-intelligence indicators for Livermore spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Livermore profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 51, airQuality: 67, energy: 74, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "accrington",
+    name: "Accrington",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~35K",
+    intro:
+      "Accrington is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~35K. This profile brings together deterministic city-intelligence indicators for Accrington spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Accrington profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 78, energy: 76, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "delmenhorst",
+    name: "Delmenhorst",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~79K",
+    intro:
+      "Delmenhorst is an indexed city in Germany (Central Europe), with a metropolitan population of about ~79K. This profile brings together deterministic city-intelligence indicators for Delmenhorst spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Delmenhorst profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 75, energy: 82, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "alameda",
+    name: "Alameda",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~78K",
+    intro:
+      "Alameda is an indexed city in United States (North America), with a metropolitan population of about ~78K. This profile brings together deterministic city-intelligence indicators for Alameda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Alameda profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 67, energy: 79, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kendal",
+    name: "Kendal",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~30K",
+    intro:
+      "Kendal is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~30K. This profile brings together deterministic city-intelligence indicators for Kendal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kendal profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 75, energy: 78, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "emden",
+    name: "Emden",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~51K",
+    intro:
+      "Emden is an indexed city in Germany (Central Europe), with a metropolitan population of about ~51K. This profile brings together deterministic city-intelligence indicators for Emden spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Emden profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 74, energy: 77, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "norwalk-us",
+    name: "Norwalk",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~91K",
+    intro:
+      "Norwalk is an indexed city in United States (North America), with a metropolitan population of about ~91K. This profile brings together deterministic city-intelligence indicators for Norwalk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Norwalk profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 70, energy: 82, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bridgwater",
+    name: "Bridgwater",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~38K",
+    intro:
+      "Bridgwater is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Bridgwater spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bridgwater profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 73, energy: 83, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cloppenburg",
+    name: "Cloppenburg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~37K",
+    intro:
+      "Cloppenburg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Cloppenburg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cloppenburg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 79, energy: 80, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sanford",
+    name: "Sanford",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~61K",
+    intro:
+      "Sanford is an indexed city in United States (North America), with a metropolitan population of about ~61K. This profile brings together deterministic city-intelligence indicators for Sanford spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sanford profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 72, energy: 78, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "omagh",
+    name: "Omagh",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~20K",
+    intro:
+      "Omagh is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~20K. This profile brings together deterministic city-intelligence indicators for Omagh spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Omagh profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 77, energy: 81, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vechta",
+    name: "Vechta",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~34K",
+    intro:
+      "Vechta is an indexed city in Germany (Central Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Vechta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vechta profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 44, airQuality: 83, energy: 79, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "beaverton",
+    name: "Beaverton",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~97K",
+    intro:
+      "Beaverton is an indexed city in United States (North America), with a metropolitan population of about ~97K. This profile brings together deterministic city-intelligence indicators for Beaverton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Beaverton profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 55, airQuality: 74, energy: 75, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "littlehampton",
+    name: "Littlehampton",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~58K",
+    intro:
+      "Littlehampton is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~58K. This profile brings together deterministic city-intelligence indicators for Littlehampton spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Littlehampton profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 50, airQuality: 74, energy: 78, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "friedberg",
+    name: "Friedberg",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~31K",
+    intro:
+      "Friedberg is an indexed city in Germany (Central Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Friedberg spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Friedberg profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 81, energy: 77, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "edison",
+    name: "Edison",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~108K",
+    intro:
+      "Edison is an indexed city in United States (North America), with a metropolitan population of about ~108K. This profile brings together deterministic city-intelligence indicators for Edison spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Edison profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 74, energy: 78, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "barnstaple",
+    name: "Barnstaple",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~24K",
+    intro:
+      "Barnstaple is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~24K. This profile brings together deterministic city-intelligence indicators for Barnstaple spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Barnstaple profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 47, airQuality: 83, energy: 80, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "borken",
+    name: "Borken",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~44K",
+    intro:
+      "Borken is an indexed city in Germany (Central Europe), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Borken spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Borken profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 77, energy: 76, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "danbury",
+    name: "Danbury",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~87K",
+    intro:
+      "Danbury is an indexed city in United States (North America), with a metropolitan population of about ~87K. This profile brings together deterministic city-intelligence indicators for Danbury spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Danbury profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 50, airQuality: 75, energy: 81, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cirencester",
+    name: "Cirencester",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~20K",
+    intro:
+      "Cirencester is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~20K. This profile brings together deterministic city-intelligence indicators for Cirencester spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cirencester profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 82, energy: 83, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "traunstein",
+    name: "Traunstein",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~22K",
+    intro:
+      "Traunstein is an indexed city in Germany (Central Europe), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for Traunstein spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Traunstein profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 74, energy: 82, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fort-pierce",
+    name: "Fort Pierce",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~47K",
+    intro:
+      "Fort Pierce is an indexed city in United States (North America), with a metropolitan population of about ~47K. This profile brings together deterministic city-intelligence indicators for Fort Pierce spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fort Pierce profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 53, airQuality: 75, energy: 80, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bootle",
+    name: "Bootle",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~51K",
+    intro:
+      "Bootle is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~51K. This profile brings together deterministic city-intelligence indicators for Bootle spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bootle profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 76, energy: 82, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sangerhausen",
+    name: "Sangerhausen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~25K",
+    intro:
+      "Sangerhausen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Sangerhausen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sangerhausen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 49, airQuality: 78, energy: 76, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "carson",
+    name: "Carson",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~96K",
+    intro:
+      "Carson is an indexed city in United States (North America), with a metropolitan population of about ~96K. This profile brings together deterministic city-intelligence indicators for Carson spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Carson profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 70, energy: 80, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "stevenage",
+    name: "Stevenage",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~90K",
+    intro:
+      "Stevenage is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~90K. This profile brings together deterministic city-intelligence indicators for Stevenage spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Stevenage profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 75, energy: 83, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "neumunster",
+    name: "Neumünster",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~80K",
+    intro:
+      "Neumünster is an indexed city in Germany (Central Europe), with a metropolitan population of about ~80K. This profile brings together deterministic city-intelligence indicators for Neumünster spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Neumünster profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 46, airQuality: 83, energy: 82, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "federal-way",
+    name: "Federal Way",
+    countrySlug: "united-states",
+    countryName: "United States",
+    region: "North America",
+    population: "~101K",
+    intro:
+      "Federal Way is an indexed city in United States (North America), with a metropolitan population of about ~101K. This profile brings together deterministic city-intelligence indicators for Federal Way spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Federal Way profile to compare affordability, livability, and economic indicators against other indexed cities in United States and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 75, energy: 74, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lewes",
+    name: "Lewes",
+    countrySlug: "united-kingdom",
+    countryName: "United Kingdom",
+    region: "Western Europe",
+    population: "~17K",
+    intro:
+      "Lewes is an indexed city in United Kingdom (Western Europe), with a metropolitan population of about ~17K. This profile brings together deterministic city-intelligence indicators for Lewes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lewes profile to compare affordability, livability, and economic indicators against other indexed cities in United Kingdom and across Western Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 48, airQuality: 77, energy: 81, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gelnhausen",
+    name: "Gelnhausen",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~24K",
+    intro:
+      "Gelnhausen is an indexed city in Germany (Central Europe), with a metropolitan population of about ~24K. This profile brings together deterministic city-intelligence indicators for Gelnhausen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gelnhausen profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 76, energy: 77, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bischofshofen",
+    name: "Bischofshofen",
+    countrySlug: "austria",
+    countryName: "Austria",
+    region: "Central Europe",
+    population: "~11K",
+    intro:
+      "Bischofshofen is an indexed city in Austria (Central Europe), with a metropolitan population of about ~11K. This profile brings together deterministic city-intelligence indicators for Bischofshofen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bischofshofen profile to compare affordability, livability, and economic indicators against other indexed cities in Austria and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 45, airQuality: 82, energy: 83, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "neuburg-an-der-donau",
+    name: "Neuburg an der Donau",
+    countrySlug: "germany",
+    countryName: "Germany",
+    region: "Central Europe",
+    population: "~31K",
+    intro:
+      "Neuburg an der Donau is an indexed city in Germany (Central Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Neuburg an der Donau spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Neuburg an der Donau profile to compare affordability, livability, and economic indicators against other indexed cities in Germany and across Central Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 52, airQuality: 83, energy: 82, resilience: 79 },
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);
