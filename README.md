@@ -34,6 +34,12 @@ transport — each attributed to official publishers.
 ## Methodology
 See /methodology page in the app.
 
+## SEO / IndexNow
+New and updated URLs are pushed to IndexNow (Bing, Yandex, …) automatically after
+each production deploy, and can be submitted manually with `npm run indexnow`.
+See [docs/indexnow.md](docs/indexnow.md) for setup, the `INDEXNOW_KEY` variable,
+and how the post-deploy workflow works.
+
 ## Local Development
 
 ```bash

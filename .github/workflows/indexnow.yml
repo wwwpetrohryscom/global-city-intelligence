@@ -1,0 +1,84 @@
+name: IndexNow submit
+
+# Notify IndexNow search engines (Bing, Yandex, Seznam, Naver, …) of new or
+# updated URLs AFTER a successful production deployment. This runs as an
+# independent workflow — it never blocks or fails the Vercel build/deploy.
+#
+# Triggers:
+#   1. deployment_status — fired by Vercel's GitHub integration. We act only on
+#      state == "success" AND a production environment, i.e. once the new build
+#      (and its updated sitemap + key file) is actually live.
+#   2. workflow_dispatch — manual runs from the Actions tab, with a `scope`
+#      choice. Use "full-sitemap" after large static-route / sitemap changes.
+#
+# Secrets/vars required (Settings → Secrets and variables → Actions):
+#   secrets.INDEXNOW_KEY        the same key served at /<key>.txt (production env)
+#   vars.NEXT_PUBLIC_SITE_URL   optional; defaults to the production origin below
+
+on:
+  deployment_status: {}
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Which URLs to submit"
+        type: choice
+        default: recent
+        options:
+          - recent          # only URLs whose <lastmod> is within RECENT_DAYS
+          - full-sitemap    # every URL in the sitemap index (use after big changes)
+      recent_days:
+        description: "Look-back window (days) for the 'recent' scope"
+        type: string
+        default: "7"
+
+# Never run two submissions at once → no duplicate-submission spam.
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    # Gate: manual dispatch, OR a *successful production* deployment_status.
+    # Vercel sets environment to "Production" for prod; previews are ignored.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'deployment_status' &&
+       github.event.deployment_status.state == 'success' &&
+       contains(github.event.deployment_status.environment, 'Production'))
+    runs-on: ubuntu-latest
+    env:
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://www.globalcityintelligence.com' }}
+    steps:
+      - name: Checkout (submission script + sitemap helpers)
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Guard — INDEXNOW_KEY must be configured
+        run: |
+          if [ -z "${INDEXNOW_KEY}" ]; then
+            echo "::warning::INDEXNOW_KEY secret is not set — skipping IndexNow submission (non-fatal)."
+            echo "skip=true" >> "$GITHUB_ENV"
+          fi
+
+      - name: Submit updated URLs to IndexNow
+        if: env.skip != 'true'
+        # Non-blocking: an IndexNow outage must never mark the deploy red.
+        continue-on-error: true
+        run: |
+          if [ "${{ github.event.inputs.scope }}" = "full-sitemap" ]; then
+            echo "Scope: full sitemap (all URLs)"
+            node scripts/submit-indexnow.mjs --sitemap
+          else
+            DAYS="${{ github.event.inputs.recent_days }}"
+            DAYS="${DAYS:-7}"
+            echo "Scope: recent (<lastmod> within ${DAYS} day(s))"
+            node scripts/submit-indexnow.mjs --sitemap --recent="${DAYS}"
+          fi
