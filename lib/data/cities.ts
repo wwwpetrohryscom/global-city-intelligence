@@ -52286,19 +52286,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 73, affordability: 61, airQuality: 64, energy: 69, resilience: 65 },
   }),
   buildNeutralCitySeed({
-    slug: "sevastopol",
-    name: "Sevastopol",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~485K",
-    intro:
-      "Sevastopol is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~485K. This profile brings together deterministic city-intelligence indicators for Sevastopol spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Sevastopol profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 64, affordability: 72, airQuality: 55, energy: 66, resilience: 60 },
-  }),
-  buildNeutralCitySeed({
     slug: "corinth",
     name: "Corinth",
     countrySlug: "greece",
@@ -52390,32 +52377,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 77, affordability: 59, airQuality: 67, energy: 75, resilience: 75 },
   }),
   buildNeutralCitySeed({
-    slug: "pristina",
-    name: "Pristina",
-    countrySlug: "serbia",
-    countryName: "Serbia",
-    region: "Southeastern Europe",
-    population: "~227K",
-    intro:
-      "Pristina is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~227K. This profile brings together deterministic city-intelligence indicators for Pristina spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Pristina profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 67, affordability: 69, airQuality: 60, energy: 69, resilience: 68 },
-  }),
-  buildNeutralCitySeed({
-    slug: "jerusalem",
-    name: "Jerusalem",
-    countrySlug: "israel",
-    countryName: "Israel",
-    region: "Western Asia",
-    population: "~936K",
-    intro:
-      "Jerusalem is an indexed city in Israel (Western Asia), with a metropolitan population of about ~936K. This profile brings together deterministic city-intelligence indicators for Jerusalem spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Jerusalem profile to compare affordability, livability, and economic indicators against other indexed cities in Israel and across Western Asia, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 78, affordability: 44, airQuality: 72, energy: 76, resilience: 75 },
-  }),
-  buildNeutralCitySeed({
     slug: "izola",
     name: "Izola",
     countrySlug: "slovenia",
@@ -52479,19 +52440,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Antakya profile to compare affordability, livability, and economic indicators against other indexed cities in Turkey and across Western Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 73, affordability: 61, airQuality: 67, energy: 67, resilience: 69 },
-  }),
-  buildNeutralCitySeed({
-    slug: "luhansk",
-    name: "Luhansk",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~418K",
-    intro:
-      "Luhansk is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~418K. This profile brings together deterministic city-intelligence indicators for Luhansk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Luhansk profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 66, affordability: 70, airQuality: 60, energy: 62, resilience: 55 },
   }),
   buildNeutralCitySeed({
     slug: "alexandroupolis-gr",
@@ -52585,19 +52533,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 78, affordability: 58, airQuality: 72, energy: 72, resilience: 75 },
   }),
   buildNeutralCitySeed({
-    slug: "prizren",
-    name: "Prizren",
-    countrySlug: "serbia",
-    countryName: "Serbia",
-    region: "Southeastern Europe",
-    population: "~187K",
-    intro:
-      "Prizren is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~187K. This profile brings together deterministic city-intelligence indicators for Prizren spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Prizren profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 68, affordability: 68, airQuality: 61, energy: 70, resilience: 67 },
-  }),
-  buildNeutralCitySeed({
     slug: "haifa",
     name: "Haifa",
     countrySlug: "israel",
@@ -52674,19 +52609,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Batman profile to compare affordability, livability, and economic indicators against other indexed cities in Turkey and across Western Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 67, affordability: 67, airQuality: 61, energy: 67, resilience: 69 },
-  }),
-  buildNeutralCitySeed({
-    slug: "simferopol",
-    name: "Simferopol",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~335K",
-    intro:
-      "Simferopol is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~335K. This profile brings together deterministic city-intelligence indicators for Simferopol spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Simferopol profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 70, affordability: 66, airQuality: 65, energy: 67, resilience: 59 },
   }),
   buildNeutralCitySeed({
     slug: "barysaw",
@@ -52767,19 +52689,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 75, affordability: 61, airQuality: 72, energy: 74, resilience: 76 },
   }),
   buildNeutralCitySeed({
-    slug: "mitrovica",
-    name: "Mitrovica",
-    countrySlug: "serbia",
-    countryName: "Serbia",
-    region: "Southeastern Europe",
-    population: "~72K",
-    intro:
-      "Mitrovica is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~72K. This profile brings together deterministic city-intelligence indicators for Mitrovica spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Mitrovica profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 74, affordability: 62, airQuality: 62, energy: 70, resilience: 67 },
-  }),
-  buildNeutralCitySeed({
     slug: "nazareth",
     name: "Nazareth",
     countrySlug: "israel",
@@ -52856,19 +52765,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Sivas profile to compare affordability, livability, and economic indicators against other indexed cities in Turkey and across Western Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 71, affordability: 63, airQuality: 66, energy: 66, resilience: 65 },
-  }),
-  buildNeutralCitySeed({
-    slug: "yalta",
-    name: "Yalta",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~72K",
-    intro:
-      "Yalta is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~72K. This profile brings together deterministic city-intelligence indicators for Yalta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Yalta profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 66, affordability: 70, airQuality: 61, energy: 67, resilience: 58 },
   }),
   buildNeutralCitySeed({
     slug: "elis",
@@ -52962,19 +52858,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 74, affordability: 62, airQuality: 77, energy: 73, resilience: 74 },
   }),
   buildNeutralCitySeed({
-    slug: "ferizaj",
-    name: "Ferizaj",
-    countrySlug: "serbia",
-    countryName: "Serbia",
-    region: "Southeastern Europe",
-    population: "~181K",
-    intro:
-      "Ferizaj is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~181K. This profile brings together deterministic city-intelligence indicators for Ferizaj spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Ferizaj profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 74, affordability: 62, airQuality: 65, energy: 69, resilience: 63 },
-  }),
-  buildNeutralCitySeed({
     slug: "beersheba",
     name: "Beersheba",
     countrySlug: "israel",
@@ -53051,19 +52934,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the İzmit profile to compare affordability, livability, and economic indicators against other indexed cities in Turkey and across Western Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 72, affordability: 62, airQuality: 67, energy: 67, resilience: 70 },
-  }),
-  buildNeutralCitySeed({
-    slug: "makiivka",
-    name: "Makiivka",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~343K",
-    intro:
-      "Makiivka is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~343K. This profile brings together deterministic city-intelligence indicators for Makiivka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Makiivka profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 68, affordability: 68, airQuality: 56, energy: 62, resilience: 54 },
   }),
   buildNeutralCitySeed({
     slug: "tripoli",
@@ -53248,19 +53118,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 74, affordability: 60, airQuality: 58, energy: 71, resilience: 65 },
   }),
   buildNeutralCitySeed({
-    slug: "feodosiia",
-    name: "Feodosiia",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~66K",
-    intro:
-      "Feodosiia is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~66K. This profile brings together deterministic city-intelligence indicators for Feodosiia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Feodosiia profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 63, affordability: 73, airQuality: 59, energy: 65, resilience: 57 },
-  }),
-  buildNeutralCitySeed({
     slug: "samos",
     name: "Samos",
     countrySlug: "greece",
@@ -53417,19 +53274,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 66, affordability: 68, airQuality: 67, energy: 66, resilience: 62 },
   }),
   buildNeutralCitySeed({
-    slug: "bakhchysarai",
-    name: "Bakhchysarai",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~29K",
-    intro:
-      "Bakhchysarai is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~29K. This profile brings together deterministic city-intelligence indicators for Bakhchysarai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Bakhchysarai profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 64, affordability: 72, airQuality: 63, energy: 62, resilience: 60 },
-  }),
-  buildNeutralCitySeed({
     slug: "elefsina",
     name: "Elefsina",
     countrySlug: "greece",
@@ -53584,19 +53428,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Elazığ profile to compare affordability, livability, and economic indicators against other indexed cities in Turkey and across Western Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 74, affordability: 60, airQuality: 59, energy: 71, resilience: 63 },
-  }),
-  buildNeutralCitySeed({
-    slug: "siverskodonetsk",
-    name: "Siverskodonetsk",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~40K",
-    intro:
-      "Siverskodonetsk is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Siverskodonetsk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Siverskodonetsk profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 69, affordability: 67, airQuality: 62, energy: 62, resilience: 61 },
   }),
   buildNeutralCitySeed({
     slug: "zakynthos",
@@ -54275,19 +54106,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 67, affordability: 67, airQuality: 63, energy: 71, resilience: 67 },
   }),
   buildNeutralCitySeed({
-    slug: "alushta",
-    name: "Alushta",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~31K",
-    intro:
-      "Alushta is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Alushta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Alushta profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 69, affordability: 67, airQuality: 57, energy: 61, resilience: 62 },
-  }),
-  buildNeutralCitySeed({
     slug: "kastoria",
     name: "Kastoria",
     countrySlug: "greece",
@@ -54377,19 +54195,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Limbaži profile to compare affordability, livability, and economic indicators against other indexed cities in Latvia and across Baltic Europe, and to explore nearby nature and weekend destinations.",
     scores: { overall: 72, affordability: 64, airQuality: 67, energy: 75, resilience: 71 },
-  }),
-  buildNeutralCitySeed({
-    slug: "peja",
-    name: "Peja",
-    countrySlug: "serbia",
-    countryName: "Serbia",
-    region: "Southeastern Europe",
-    population: "~83K",
-    intro:
-      "Peja is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~83K. This profile brings together deterministic city-intelligence indicators for Peja spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Peja profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 70, affordability: 66, airQuality: 63, energy: 69, resilience: 63 },
   }),
   buildNeutralCitySeed({
     slug: "netanya",
@@ -55822,19 +55627,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 74, affordability: 60, airQuality: 64, energy: 71, resilience: 70 },
   }),
   buildNeutralCitySeed({
-    slug: "dzhankoi",
-    name: "Dzhankoi",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~37K",
-    intro:
-      "Dzhankoi is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Dzhankoi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Dzhankoi profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 66, affordability: 70, airQuality: 60, energy: 64, resilience: 56 },
-  }),
-  buildNeutralCitySeed({
     slug: "missolonghi",
     name: "Missolonghi",
     countrySlug: "greece",
@@ -56121,19 +55913,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 70, affordability: 64, airQuality: 61, energy: 67, resilience: 65 },
   }),
   buildNeutralCitySeed({
-    slug: "nova-kakhovka",
-    name: "Nova Kakhovka",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~45K",
-    intro:
-      "Nova Kakhovka is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~45K. This profile brings together deterministic city-intelligence indicators for Nova Kakhovka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Nova Kakhovka profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 66, affordability: 70, airQuality: 62, energy: 62, resilience: 56 },
-  }),
-  buildNeutralCitySeed({
     slug: "lefkada",
     name: "Lefkada",
     countrySlug: "greece",
@@ -56173,19 +55952,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 70, affordability: 64, airQuality: 63, energy: 72, resilience: 66 },
   }),
   buildNeutralCitySeed({
-    slug: "avdiivka",
-    name: "Avdiivka",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~32K",
-    intro:
-      "Avdiivka is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Avdiivka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Avdiivka profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 65, affordability: 71, airQuality: 62, energy: 63, resilience: 61 },
-  }),
-  buildNeutralCitySeed({
     slug: "zografou",
     name: "Zografou",
     countrySlug: "greece",
@@ -56223,19 +55989,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Düzce profile to compare affordability, livability, and economic indicators against other indexed cities in Turkey and across Western Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 67, affordability: 67, airQuality: 57, energy: 72, resilience: 67 },
-  }),
-  buildNeutralCitySeed({
-    slug: "antratsyt",
-    name: "Antratsyt",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~52K",
-    intro:
-      "Antratsyt is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~52K. This profile brings together deterministic city-intelligence indicators for Antratsyt spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Antratsyt profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 70, affordability: 66, airQuality: 60, energy: 67, resilience: 55 },
   }),
   buildNeutralCitySeed({
     slug: "agia-paraskevi",
@@ -56420,19 +56173,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 68, affordability: 66, airQuality: 63, energy: 69, resilience: 66 },
   }),
   buildNeutralCitySeed({
-    slug: "rubizhne",
-    name: "Rubizhne",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~60K",
-    intro:
-      "Rubizhne is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~60K. This profile brings together deterministic city-intelligence indicators for Rubizhne spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Rubizhne profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 62, affordability: 74, airQuality: 57, energy: 61, resilience: 54 },
-  }),
-  buildNeutralCitySeed({
     slug: "naoussa",
     name: "Naoussa",
     countrySlug: "greece",
@@ -56483,19 +56223,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Sambir profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
     scores: { overall: 64, affordability: 72, airQuality: 64, energy: 63, resilience: 54 },
-  }),
-  buildNeutralCitySeed({
-    slug: "didim",
-    name: "Didim",
-    countrySlug: "greece",
-    countryName: "Greece",
-    region: "Southern Europe",
-    population: "~85K",
-    intro:
-      "Didim is an indexed city in Greece (Southern Europe), with a metropolitan population of about ~85K. This profile brings together deterministic city-intelligence indicators for Didim spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Didim profile to compare affordability, livability, and economic indicators against other indexed cities in Greece and across Southern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 78, affordability: 56, airQuality: 77, energy: 72, resilience: 73 },
   }),
   buildNeutralCitySeed({
     slug: "lipetsk",
@@ -56574,19 +56301,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Kastamonu profile to compare affordability, livability, and economic indicators against other indexed cities in Turkey and across Western Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 73, affordability: 61, airQuality: 58, energy: 68, resilience: 69 },
-  }),
-  buildNeutralCitySeed({
-    slug: "sorokyne",
-    name: "Sorokyne",
-    countrySlug: "ukraine",
-    countryName: "Ukraine",
-    region: "Eastern Europe",
-    population: "~44K",
-    intro:
-      "Sorokyne is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Sorokyne spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Sorokyne profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 67, affordability: 69, airQuality: 57, energy: 65, resilience: 54 },
   }),
   buildNeutralCitySeed({
     slug: "sitia",
@@ -57133,6 +56847,292 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Petropavlovsk-Kamchatsky profile to compare affordability, livability, and economic indicators against other indexed cities in Russia and across Eastern Europe, and to explore nearby nature and weekend destinations.",
     scores: { overall: 65, affordability: 69, airQuality: 59, energy: 69, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chortkiv",
+    name: "Chortkiv",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~29K",
+    intro:
+      "Chortkiv is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~29K. This profile brings together deterministic city-intelligence indicators for Chortkiv spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chortkiv profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 67, airQuality: 57, energy: 65, resilience: 54 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shepetivka",
+    name: "Shepetivka",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~40K",
+    intro:
+      "Shepetivka is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Shepetivka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shepetivka profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 74, airQuality: 59, energy: 67, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mohyliv-podilskyi",
+    name: "Mohyliv-Podilskyi",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~30K",
+    intro:
+      "Mohyliv-Podilskyi is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~30K. This profile brings together deterministic city-intelligence indicators for Mohyliv-Podilskyi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mohyliv-Podilskyi profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 66, airQuality: 61, energy: 68, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vyshhorod",
+    name: "Vyshhorod",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~30K",
+    intro:
+      "Vyshhorod is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~30K. This profile brings together deterministic city-intelligence indicators for Vyshhorod spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vyshhorod profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 74, airQuality: 65, energy: 66, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "korosten",
+    name: "Korosten",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~61K",
+    intro:
+      "Korosten is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~61K. This profile brings together deterministic city-intelligence indicators for Korosten spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Korosten profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 66, airQuality: 55, energy: 63, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "podilsk",
+    name: "Podilsk",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~40K",
+    intro:
+      "Podilsk is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Podilsk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Podilsk profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 69, airQuality: 62, energy: 64, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "novovolynsk",
+    name: "Novovolynsk",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~50K",
+    intro:
+      "Novovolynsk is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~50K. This profile brings together deterministic city-intelligence indicators for Novovolynsk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Novovolynsk profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 74, airQuality: 61, energy: 65, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "truskavets",
+    name: "Truskavets",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~28K",
+    intro:
+      "Truskavets is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~28K. This profile brings together deterministic city-intelligence indicators for Truskavets spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Truskavets profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 67, airQuality: 59, energy: 65, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vasylkiv",
+    name: "Vasylkiv",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~38K",
+    intro:
+      "Vasylkiv is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Vasylkiv spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vasylkiv profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 69, airQuality: 61, energy: 67, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "boryslav",
+    name: "Boryslav",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~32K",
+    intro:
+      "Boryslav is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Boryslav spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Boryslav profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 66, airQuality: 61, energy: 66, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "varash",
+    name: "Varash",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~42K",
+    intro:
+      "Varash is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~42K. This profile brings together deterministic city-intelligence indicators for Varash spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Varash profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 70, airQuality: 60, energy: 65, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pivdennoukrainsk",
+    name: "Pivdennoukrainsk",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~39K",
+    intro:
+      "Pivdennoukrainsk is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Pivdennoukrainsk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pivdennoukrainsk profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 67, airQuality: 63, energy: 65, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pivdenne",
+    name: "Pivdenne",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~33K",
+    intro:
+      "Pivdenne is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~33K. This profile brings together deterministic city-intelligence indicators for Pivdenne spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pivdenne profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 73, airQuality: 55, energy: 66, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "voznesensk",
+    name: "Voznesensk",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~34K",
+    intro:
+      "Voznesensk is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Voznesensk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Voznesensk profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 70, airQuality: 58, energy: 62, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "netishyn",
+    name: "Netishyn",
+    countrySlug: "ukraine",
+    countryName: "Ukraine",
+    region: "Eastern Europe",
+    population: "~37K",
+    intro:
+      "Netishyn is an indexed city in Ukraine (Eastern Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Netishyn spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Netishyn profile to compare affordability, livability, and economic indicators against other indexed cities in Ukraine and across Eastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 66, airQuality: 55, energy: 64, resilience: 54 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jagodina",
+    name: "Jagodina",
+    countrySlug: "serbia",
+    countryName: "Serbia",
+    region: "Southeastern Europe",
+    population: "~37K",
+    intro:
+      "Jagodina is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~37K. This profile brings together deterministic city-intelligence indicators for Jagodina spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jagodina profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 66, airQuality: 62, energy: 69, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kikinda",
+    name: "Kikinda",
+    countrySlug: "serbia",
+    countryName: "Serbia",
+    region: "Southeastern Europe",
+    population: "~38K",
+    intro:
+      "Kikinda is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Kikinda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kikinda profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 64, airQuality: 68, energy: 67, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bor",
+    name: "Bor",
+    countrySlug: "serbia",
+    countryName: "Serbia",
+    region: "Southeastern Europe",
+    population: "~34K",
+    intro:
+      "Bor is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~34K. This profile brings together deterministic city-intelligence indicators for Bor spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bor profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 67, airQuality: 62, energy: 71, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "loznica",
+    name: "Loznica",
+    countrySlug: "serbia",
+    countryName: "Serbia",
+    region: "Southeastern Europe",
+    population: "~20K",
+    intro:
+      "Loznica is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~20K. This profile brings together deterministic city-intelligence indicators for Loznica spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Loznica profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 62, airQuality: 62, energy: 72, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "backa-palanka",
+    name: "Bačka Palanka",
+    countrySlug: "serbia",
+    countryName: "Serbia",
+    region: "Southeastern Europe",
+    population: "~25K",
+    intro:
+      "Bačka Palanka is an indexed city in Serbia (Southeastern Europe), with a metropolitan population of about ~25K. This profile brings together deterministic city-intelligence indicators for Bačka Palanka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bačka Palanka profile to compare affordability, livability, and economic indicators against other indexed cities in Serbia and across Southeastern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 64, airQuality: 62, energy: 70, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "beit-shemesh",
+    name: "Beit Shemesh",
+    countrySlug: "israel",
+    countryName: "Israel",
+    region: "Western Asia",
+    population: "~119K",
+    intro:
+      "Beit Shemesh is an indexed city in Israel (Western Asia), with a metropolitan population of about ~119K. This profile brings together deterministic city-intelligence indicators for Beit Shemesh spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Beit Shemesh profile to compare affordability, livability, and economic indicators against other indexed cities in Israel and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 47, airQuality: 75, energy: 76, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "stavroupoli",
+    name: "Stavroupoli",
+    countrySlug: "greece",
+    countryName: "Greece",
+    region: "Southern Europe",
+    population: "~46K",
+    intro:
+      "Stavroupoli is an indexed city in Greece (Southern Europe), with a metropolitan population of about ~46K. This profile brings together deterministic city-intelligence indicators for Stavroupoli spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Stavroupoli profile to compare affordability, livability, and economic indicators against other indexed cities in Greece and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 57, airQuality: 71, energy: 68, resilience: 74 },
   }),
 ];
 
