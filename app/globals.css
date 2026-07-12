@@ -3,21 +3,28 @@
 @import "../styles/tokens.css";
 
 @theme {
-  --color-brand-400: #ff8a33;
-  --color-brand-500: #ff6b00;
-  --color-brand-600: #e55f00;
-  --color-brand-navy: #0d1b3d;
+  --color-brand-50: #fff7ed;
+  --color-brand-100: #ffedd5;
+  --color-brand-200: #fed7aa;
+  --color-brand-400: #ea8c1a;
+  --color-brand-500: #d97706;
+  --color-brand-600: #92400e;
+  --color-brand-700: #78350f;
+  --color-brand-navy: #0f172a;
   --color-brand-gray: #d7dbe0;
   --color-neutral-bg: #ffffff;
-  --color-neutral-soft: #f8fafc;
+  --color-neutral-soft: #f9fafb;
   --color-neutral-border: #e5e7eb;
   --color-neutral-line: #d7dbe0;
-  --color-text-primary: #0d1b3d;
+  --color-text-primary: #0f172a;
   --color-text-secondary: #475569;
   --color-text-muted: #64748b;
   --color-text-inverse: #ffffff;
+  --color-accent-blue: #2563eb;
+  --color-accent-teal: #0d9488;
   --color-surface: #ffffff;
-  --color-surface-soft: #f8fafc;
+  --color-surface-soft: #f9fafb;
+  --color-surface-warm: #fffbf7;
 }
 
 * {
@@ -37,6 +44,12 @@ body {
     "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-feature-settings:
+    "cv02" 1,
+    "cv03" 1,
+    "cv04" 1,
+    "cv11" 1;
+  font-variant-numeric: lining-nums;
 }
 
 h1,
@@ -44,20 +57,40 @@ h2,
 h3,
 h4 {
   color: var(--ink);
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 a {
   text-underline-offset: 4px;
 }
 
+.tracking-tight {
+  letter-spacing: 0;
+}
+
+.text-brand-500,
+.hover\:text-brand-500:hover {
+  color: var(--accent-strong);
+}
+
 ::selection {
-  background: #ffd9b8;
-  color: #0d1b3d;
+  background: var(--accent-border);
+  color: var(--ink);
 }
 
 :focus-visible {
-  outline: 3px solid #ff6b00;
+  outline: 3px solid var(--accent);
   outline-offset: 3px;
   border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

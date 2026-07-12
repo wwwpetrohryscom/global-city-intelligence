@@ -24,7 +24,7 @@ export function getScoreLabel(score: number) {
 
 export function getScoreTone(score: number) {
   if (score >= 85) {
-    return "text-text-primary bg-orange-50 border-brand-400";
+    return "text-text-primary bg-brand-50 border-brand-200";
   }
 
   if (score >= 70) {

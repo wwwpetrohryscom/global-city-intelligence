@@ -28,10 +28,10 @@ export function RankingTable({
   const rest = entries.slice(RICH_ROWS);
   return (
     <div className="space-y-6">
-      <div className="overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm">
+      <div className="overflow-x-auto rounded-[1.125rem] border border-neutral-border/90 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
         <table className="min-w-full border-collapse text-left text-sm">
           <caption className="sr-only">{caption}</caption>
-          <thead className="bg-neutral-soft text-text-secondary">
+          <thead className="border-b border-neutral-border bg-neutral-soft text-text-secondary">
             <tr>
               <th className="px-4 py-3 font-semibold" scope="col">
                 Rank
@@ -49,8 +49,8 @@ export function RankingTable({
           </thead>
           <tbody className="divide-y divide-neutral-border">
             {rich.map((entry) => (
-              <tr className="odd:bg-white even:bg-neutral-soft/60 hover:bg-orange-50/60" key={entry.city.slug}>
-                <td className="px-4 py-4 font-semibold text-text-primary">
+              <tr className="odd:bg-white even:bg-neutral-soft/60 hover:bg-brand-50/70" key={entry.city.slug}>
+                <td className="px-4 py-4 font-semibold tabular-nums text-text-primary">
                   #{entry.rank}
                 </td>
                 <th className="px-4 py-4 font-medium text-text-primary" scope="row">
@@ -61,7 +61,7 @@ export function RankingTable({
                     {entry.city.countryName}
                   </span>
                 </th>
-                <td className="border-l-2 border-brand-500 px-4 py-4 font-semibold text-text-primary">
+                <td className="border-l-2 border-brand-500 bg-brand-50/35 px-4 py-4 font-semibold tabular-nums text-text-primary">
                   {entry.score}/100
                 </td>
                 <td className="px-4 py-4 text-text-secondary">{entry.note}</td>

@@ -480,7 +480,7 @@ export default async function NearbyWeekendPlaceDetailPage({
           </h2>
           <dl className="mt-5 grid gap-4 md:grid-cols-2">
             {place.wikidataId ? (
-              <div>
+              <div className="min-w-0">
                 <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
                   Wikidata identity
                 </dt>
@@ -497,13 +497,13 @@ export default async function NearbyWeekendPlaceDetailPage({
               </div>
             ) : null}
             {place.officialUrl ? (
-              <div>
+              <div className="min-w-0">
                 <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
                   Official source
                 </dt>
                 <dd className="mt-1 break-words text-base text-text-primary">
                   <Link
-                    className="underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
+                    className="break-all underline decoration-neutral-border underline-offset-2 hover:text-brand-500"
                     href={place.officialUrl}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -514,7 +514,7 @@ export default async function NearbyWeekendPlaceDetailPage({
               </div>
             ) : null}
             {place.commonsCategory ? (
-              <div>
+              <div className="min-w-0">
                 <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
                   Commons category
                 </dt>
