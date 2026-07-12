@@ -22,7 +22,7 @@ export function ImageAttribution({
       Image:{" "}
       {showAuthorLink ? (
         <a
-          className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+          className="underline decoration-brand-500 decoration-2 hover:bg-brand-50"
           href={attribution.authorUrl}
           rel="noopener noreferrer"
           target="_blank"
@@ -34,7 +34,7 @@ export function ImageAttribution({
       ) : null}
       {attribution.author ? " / " : null}
       <a
-        className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+        className="underline decoration-brand-500 decoration-2 hover:bg-brand-50"
         href={attribution.sourceUrl}
         rel="noopener noreferrer"
         target="_blank"
@@ -46,7 +46,7 @@ export function ImageAttribution({
           {", "}
           {attribution.licenseUrl ? (
             <a
-              className="underline decoration-brand-500 decoration-2 hover:bg-orange-50"
+              className="underline decoration-brand-500 decoration-2 hover:bg-brand-50"
               href={attribution.licenseUrl}
               rel="noopener noreferrer"
               target="_blank"

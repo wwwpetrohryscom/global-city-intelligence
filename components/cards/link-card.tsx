@@ -12,6 +12,7 @@ export function LinkCard({
 }) {
   return (
     <Card interactive>
+      <div aria-hidden="true" className="mb-4 h-1 w-8 rounded-full bg-brand-500" />
       <h3 className="text-lg font-semibold text-text-primary">
         <Link className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline" href={href}>
           {title}

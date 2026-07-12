@@ -8,10 +8,10 @@ export function DataTable({
   rows: DataTableRow[];
 }) {
   return (
-    <div className="overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm">
+    <div className="overflow-x-auto rounded-[1.125rem] border border-neutral-border/90 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
       <table className="min-w-full border-collapse text-left text-sm">
         <caption className="sr-only">{caption}</caption>
-        <thead className="bg-neutral-soft text-text-primary">
+        <thead className="border-b border-neutral-border bg-neutral-soft text-text-primary">
           <tr>
             <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide" scope="col">
               Metric
@@ -26,11 +26,11 @@ export function DataTable({
         </thead>
         <tbody className="divide-y divide-neutral-border">
           {rows.map((row) => (
-            <tr className="odd:bg-white even:bg-neutral-soft/60 hover:bg-orange-50/60" key={row.metric}>
+            <tr className="odd:bg-white even:bg-neutral-soft/60 hover:bg-brand-50/70" key={row.metric}>
               <th className="px-4 py-4 font-medium text-text-primary" scope="row">
                 {row.metric}
               </th>
-              <td className="border-l-2 border-brand-500 px-4 py-4 font-semibold text-text-primary">
+              <td className="border-l-2 border-brand-500 bg-brand-50/35 px-4 py-4 font-semibold tabular-nums text-text-primary">
                 {row.value}
               </td>
               <td className="px-4 py-4 text-text-secondary">{row.context}</td>

@@ -15,15 +15,15 @@ const navItems = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-30 border-b border-neutral-border bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
-      <Container className="flex items-center justify-between gap-5 py-4">
-        <BrandMark size="md" />
-        <nav aria-label="Primary navigation">
-          <ul className="flex flex-wrap items-center justify-end gap-1 sm:gap-2">
+    <header className="sticky top-0 z-30 border-b border-neutral-border bg-white/95 shadow-[0_1px_0_rgba(15,23,42,0.02)] backdrop-blur supports-[backdrop-filter]:bg-white/88">
+      <Container className="flex flex-col gap-3 py-3 lg:flex-row lg:items-center lg:justify-between lg:gap-5">
+        <BrandMark size="md" tone="accent" />
+        <nav aria-label="Primary navigation" className="-mx-4 overflow-x-auto px-4 lg:mx-0 lg:px-0">
+          <ul className="flex min-w-max items-center gap-1.5">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
-                  className="inline-flex items-center rounded-full px-3 py-2 text-sm font-medium text-text-secondary transition duration-150 hover:bg-orange-50 hover:text-text-primary focus-visible:bg-orange-50"
+                  className="inline-flex min-h-10 items-center rounded-full px-3.5 py-2 text-sm font-medium text-text-secondary transition duration-150 hover:bg-brand-50 hover:text-text-primary focus-visible:bg-brand-50"
                   href={item.href}
                 >
                   {item.label}

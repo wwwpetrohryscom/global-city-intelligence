@@ -16,11 +16,11 @@ export function CityCard({ city }: { city: City }) {
   return (
     <Card interactive>
       {hero ? (
-        <figure className="-mx-5 -mt-5 mb-4 overflow-hidden rounded-t-2xl border-b border-neutral-border bg-neutral-soft">
+        <figure className="-mx-5 -mt-5 mb-4 overflow-hidden rounded-t-[1.125rem] border-b border-neutral-border bg-neutral-soft">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             alt={hero.alt}
-            className="block h-auto w-full object-cover"
+            className="block h-auto w-full object-cover saturate-[0.96]"
             decoding="async"
             height={hero.height}
             loading="lazy"
@@ -45,7 +45,7 @@ export function CityCard({ city }: { city: City }) {
             {city.countryName} / {city.region}
           </p>
         </div>
-        <span className="rounded-full border border-brand-400 bg-orange-50 px-3 py-1 text-sm font-semibold text-text-primary">
+        <span className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-sm font-semibold tabular-nums text-text-primary">
           {city.scores.overall}
         </span>
       </div>
