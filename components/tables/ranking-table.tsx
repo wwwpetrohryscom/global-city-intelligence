@@ -28,8 +28,8 @@ export function RankingTable({
   const rest = entries.slice(RICH_ROWS);
   return (
     <div className="space-y-6">
-      <div className="overflow-x-auto rounded-[1.125rem] border border-neutral-border/90 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
-        <table className="min-w-full border-collapse text-left text-sm">
+      <div className="overflow-x-auto rounded-[1.125rem] border border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_32px_rgba(15,23,42,0.035)]">
+        <table className="min-w-[48rem] border-collapse text-left text-sm md:min-w-full">
           <caption className="sr-only">{caption}</caption>
           <thead className="border-b border-neutral-border bg-neutral-soft text-text-secondary">
             <tr>

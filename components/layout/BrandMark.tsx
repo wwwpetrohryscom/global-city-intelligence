@@ -11,26 +11,26 @@ const SIZES = {
 const TONES = {
   default: {
     mark:
-      "border-text-primary bg-white text-text-primary shadow-[0_1px_2px_rgba(15,23,42,0.08)]",
+      "border-text-primary/80 bg-white text-text-primary shadow-[0_1px_2px_rgba(15,23,42,0.08)]",
     wordPrimary: "text-text-primary",
     wordAccent: "text-brand-700",
     bars: {
       primary: "#0F172A",
-      accent: "#92400E",
+      accent: "#B86108",
       tint: "#D97706",
       baseline: "#0F172A",
     },
   },
   accent: {
     mark:
-      "border-brand-200 bg-brand-50 text-text-primary shadow-[0_1px_2px_rgba(146,64,14,0.12)]",
+      "border-brand-200 bg-white text-text-primary shadow-[0_1px_2px_rgba(184,97,8,0.14)]",
     wordPrimary: "text-text-primary",
     wordAccent: "text-brand-700",
     bars: {
       primary: "#0F172A",
-      accent: "#92400E",
+      accent: "#B86108",
       tint: "#D97706",
-      baseline: "#92400E",
+      baseline: "#B86108",
     },
   },
   monochrome: {
@@ -88,7 +88,7 @@ export function BrandMark({
       <span
         aria-hidden="true"
         className={cn(
-          "relative inline-flex shrink-0 items-center justify-center rounded-[0.7rem] border",
+          "relative inline-flex shrink-0 items-center justify-center rounded-full border",
           "transition duration-150 group-hover:-translate-y-px group-hover:shadow-md",
           palette.mark,
           dimensions.mark,
@@ -133,17 +133,31 @@ function BrandIcon({
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <circle
+        cx="16"
+        cy="16"
+        opacity="0.22"
+        r="12"
+        stroke={colors.baseline}
+        strokeWidth="1.35"
+      />
       <path
-        d="M6 26.25H26"
-        opacity="0.28"
+        d="M16 4.5C13.4 7.3 12 11.1 12 16s1.4 8.7 4 11.5M16 4.5c2.6 2.8 4 6.6 4 11.5s-1.4 8.7-4 11.5"
+        opacity="0.2"
+        stroke={colors.baseline}
+        strokeLinecap="round"
+        strokeWidth="1.1"
+      />
+      <path
+        d="M7 24.75H25"
+        opacity="0.32"
         stroke={colors.baseline}
         strokeLinecap="round"
         strokeWidth="1.35"
       />
-      <rect fill={colors.primary} height="10" rx="1.25" width="4" x="6" y="16" />
-      <rect fill={colors.accent} height="17" rx="1.25" width="4" x="12" y="9" />
-      <rect fill={colors.tint} height="13" rx="1.25" width="4" x="18" y="13" />
-      <rect fill={colors.primary} height="20" rx="1.25" width="4" x="24" y="6" />
+      <rect fill={colors.primary} height="9" rx="1.2" width="3.6" x="8" y="16" />
+      <rect fill={colors.accent} height="15" rx="1.2" width="3.6" x="13.2" y="10" />
+      <rect fill={colors.tint} height="11" rx="1.2" width="3.6" x="18.4" y="14" />
     </svg>
   );
 }
