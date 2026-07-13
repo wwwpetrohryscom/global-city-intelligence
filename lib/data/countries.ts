@@ -2273,4 +2273,55 @@ export const countries: Country[] = [
       { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
     ],
   },
+  {
+    slug: "iran",
+    name: "Iran",
+    iso2: "IR",
+    region: "Western Asia",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Iran's profile spans high-altitude plateaus, arid basins, and dense historic cities, useful for users comparing West-Asian city contexts, climate exposure, and relocation factors.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["tehran", "isfahan", "mashhad"],
+    metrics: [
+      { label: "Regional context", value: "West Asia plateau", description: "Plateau and basin geography with pronounced continental and arid climate zones." },
+      { label: "Climate exposure", value: "Heat and water", description: "Water-resource stress and summer heat are central adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
+  {
+    slug: "iraq",
+    name: "Iraq",
+    iso2: "IQ",
+    region: "Middle East",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Iraq's profile combines major river-valley cities, arid southern plains, and northern uplands, useful for users comparing Middle-Eastern city contexts and relocation factors.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["baghdad", "basra", "mosul"],
+    metrics: [
+      { label: "Regional context", value: "Mesopotamian basin", description: "River-valley and arid-plain geography with hot continental summers." },
+      { label: "Climate exposure", value: "Extreme heat", description: "Summer heat extremes and water availability are key adaptation priorities." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively across sources." },
+    ],
+  },
+  {
+    slug: "cyprus",
+    name: "Cyprus",
+    iso2: "CY",
+    region: "Southern Europe",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Cyprus's profile combines an Eastern-Mediterranean island climate with EU-aligned urban systems, useful for users comparing coastal and inland relocation factors.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban", "eurostat"],
+    citySlugs: ["limassol", "larnaca", "paphos"],
+    metrics: [
+      { label: "Regional context", value: "East Mediterranean", description: "Island geography with a hot-summer Mediterranean climate." },
+      { label: "Climate exposure", value: "Heat and drought", description: "Summer heat and water scarcity are central adaptation priorities." },
+      { label: "Data confidence", value: "High", description: "EU-aligned statistical reporting supports neutral city comparison." },
+    ],
+  },
 ];

@@ -20,13 +20,13 @@ export function CityCard({ city }: { city: City }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             alt={hero.alt}
-            className="block h-auto w-full object-cover saturate-[0.96]"
+            className="block aspect-[16/9] h-auto w-full object-cover contrast-[1.02] saturate-[1.02]"
             decoding="async"
             height={hero.height}
             loading="lazy"
             sizes="(min-width: 1280px) 18rem, (min-width: 768px) 50vw, 100vw"
             src={hero.src}
-            style={aspectStyle}
+            style={{ ...aspectStyle, aspectRatio: "16 / 9" }}
             width={hero.width}
           />
           <figcaption className="px-4 py-2">

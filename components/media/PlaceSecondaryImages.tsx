@@ -59,11 +59,11 @@ function SecondaryImageCard({ image }: { image: PlaceImage }) {
       : { aspectRatio: "16 / 9" };
 
   return (
-    <figure className="overflow-hidden rounded-[1.125rem] border border-neutral-border/90 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+    <figure className="overflow-hidden rounded-[1.125rem] border border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_32px_rgba(15,23,42,0.045)]">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         alt={image.alt}
-        className="block h-auto w-full object-cover saturate-[0.96]"
+        className="block h-auto w-full object-cover contrast-[1.02] saturate-[1.02]"
         decoding="async"
         height={image.height}
         loading="lazy"

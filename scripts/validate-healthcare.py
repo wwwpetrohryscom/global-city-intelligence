@@ -79,9 +79,12 @@ def main() -> int:
     cities = city_slugs()
     text = DATA.read_text()
     try:
+        # medicalFacilities may be split into chunk consts (medicalFacilities_0..N) to stay
+        # under TypeScript's array-literal union-complexity limit; parse either form identically.
+        fac_marker = "const medicalFacilities_0:" if "const medicalFacilities_0:" in text else "export const medicalFacilities"
         hc_text = text.split("export const healthcareProfiles")[1].split("export const retirementProfiles")[0]
-        ret_text = text.split("export const retirementProfiles")[1].split("export const medicalFacilities")[0]
-        fac_text = text.split("export const medicalFacilities")[1].split("const healthcareBySlug")[0]
+        ret_text = text.split("export const retirementProfiles")[1].split(fac_marker)[0]
+        fac_text = text.split(fac_marker, 1)[1].split("const healthcareBySlug")[0]
     except IndexError:
         print("FAIL: could not locate healthcare/retirement/facility arrays")
         return 1

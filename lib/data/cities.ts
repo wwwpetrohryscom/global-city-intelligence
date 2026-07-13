@@ -57134,6 +57134,4557 @@ const seeds: CitySeed[] = [
       "Use the Stavroupoli profile to compare affordability, livability, and economic indicators against other indexed cities in Greece and across Southern Europe, and to explore nearby nature and weekend destinations.",
     scores: { overall: 77, affordability: 57, airQuality: 71, energy: 68, resilience: 74 },
   }),
+  // ===== Wave 18: +350 cities (11 countries JP/KR/CN/IN/PK/IR/IQ/SA/OM/AE/CY), A-F complete (2026-07-13) =====
+  buildNeutralCitySeed({
+    slug: "yokohama",
+    name: "Yokohama",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~3.8M",
+    intro:
+      "Yokohama is an indexed city in Japan (East Asia), with a metropolitan population of about ~3.8M. This profile brings together deterministic city-intelligence indicators for Yokohama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yokohama profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 70, energy: 79, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xi-an",
+    name: "Xi'an",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~13.0M",
+    intro:
+      "Xi'an is an indexed city in China (East Asia), with a metropolitan population of about ~13.0M. This profile brings together deterministic city-intelligence indicators for Xi'an spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xi'an profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 53, energy: 75, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "suwon",
+    name: "Suwon",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~1.2M",
+    intro:
+      "Suwon is an indexed city in South Korea (East Asia), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Suwon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Suwon profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 52, airQuality: 59, energy: 83, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mecca",
+    name: "Mecca",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~2.4M",
+    intro:
+      "Mecca is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~2.4M. This profile brings together deterministic city-intelligence indicators for Mecca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mecca profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 55, energy: 74, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kolkata",
+    name: "Kolkata",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~4.5M",
+    intro:
+      "Kolkata is an indexed city in India (South Asia), with a metropolitan population of about ~4.5M. This profile brings together deterministic city-intelligence indicators for Kolkata spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kolkata profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 74, airQuality: 43, energy: 72, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "islamabad",
+    name: "Islamabad",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~1.0M",
+    intro:
+      "Islamabad is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~1.0M. This profile brings together deterministic city-intelligence indicators for Islamabad spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Islamabad profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 51, affordability: 73, airQuality: 44, energy: 61, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tehran",
+    name: "Tehran",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~8.7M",
+    intro:
+      "Tehran is an indexed city in Iran (Western Asia), with a metropolitan population of about ~8.7M. This profile brings together deterministic city-intelligence indicators for Tehran spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tehran profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 71, airQuality: 52, energy: 53, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "baghdad",
+    name: "Baghdad",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~8.1M",
+    intro:
+      "Baghdad is an indexed city in Iraq (Middle East), with a metropolitan population of about ~8.1M. This profile brings together deterministic city-intelligence indicators for Baghdad spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Baghdad profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 50, affordability: 68, airQuality: 48, energy: 59, resilience: 49 },
+  }),
+  buildNeutralCitySeed({
+    slug: "salalah",
+    name: "Salalah",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~332K",
+    intro:
+      "Salalah is an indexed city in Oman (Middle East), with a metropolitan population of about ~332K. This profile brings together deterministic city-intelligence indicators for Salalah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Salalah profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 58, airQuality: 61, energy: 69, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "al-ain",
+    name: "Al Ain",
+    countrySlug: "united-arab-emirates",
+    countryName: "United Arab Emirates",
+    region: "Middle East",
+    population: "~767K",
+    intro:
+      "Al Ain is an indexed city in United Arab Emirates (Middle East), with a metropolitan population of about ~767K. This profile brings together deterministic city-intelligence indicators for Al Ain spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Al Ain profile to compare affordability, livability, and economic indicators against other indexed cities in United Arab Emirates and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 48, airQuality: 55, energy: 80, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nicosia",
+    name: "Nicosia",
+    countrySlug: "cyprus",
+    countryName: "Cyprus",
+    region: "Southern Europe",
+    population: "~57K",
+    intro:
+      "Nicosia is an indexed city in Cyprus (Southern Europe), with a metropolitan population of about ~57K. This profile brings together deterministic city-intelligence indicators for Nicosia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nicosia profile to compare affordability, livability, and economic indicators against other indexed cities in Cyprus and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 65, airQuality: 77, energy: 74, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hiroshima",
+    name: "Hiroshima",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~1.2M",
+    intro:
+      "Hiroshima is an indexed city in Japan (East Asia), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Hiroshima spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hiroshima profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 72, energy: 79, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zhengzhou",
+    name: "Zhengzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~12.6M",
+    intro:
+      "Zhengzhou is an indexed city in China (East Asia), with a metropolitan population of about ~12.6M. This profile brings together deterministic city-intelligence indicators for Zhengzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zhengzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 53, energy: 82, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "changwon",
+    name: "Changwon",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~1.0M",
+    intro:
+      "Changwon is an indexed city in South Korea (East Asia), with a metropolitan population of about ~1.0M. This profile brings together deterministic city-intelligence indicators for Changwon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Changwon profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 52, airQuality: 61, energy: 79, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dammam",
+    name: "Dammam",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~903K",
+    intro:
+      "Dammam is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~903K. This profile brings together deterministic city-intelligence indicators for Dammam spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dammam profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 58, energy: 82, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ahmedabad",
+    name: "Ahmedabad",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~7.6M",
+    intro:
+      "Ahmedabad is an indexed city in India (South Asia), with a metropolitan population of about ~7.6M. This profile brings together deterministic city-intelligence indicators for Ahmedabad spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ahmedabad profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 73, airQuality: 43, energy: 72, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "peshawar",
+    name: "Peshawar",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~2.0M",
+    intro:
+      "Peshawar is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~2.0M. This profile brings together deterministic city-intelligence indicators for Peshawar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Peshawar profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 52, affordability: 72, airQuality: 41, energy: 55, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "isfahan",
+    name: "Isfahan",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~2.0M",
+    intro:
+      "Isfahan is an indexed city in Iran (Western Asia), with a metropolitan population of about ~2.0M. This profile brings together deterministic city-intelligence indicators for Isfahan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Isfahan profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 70, airQuality: 50, energy: 59, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mosul",
+    name: "Mosul",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~1.8M",
+    intro:
+      "Mosul is an indexed city in Iraq (Middle East), with a metropolitan population of about ~1.8M. This profile brings together deterministic city-intelligence indicators for Mosul spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mosul profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 52, affordability: 66, airQuality: 46, energy: 56, resilience: 46 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sohar",
+    name: "Sohar",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~219K",
+    intro:
+      "Sohar is an indexed city in Oman (Middle East), with a metropolitan population of about ~219K. This profile brings together deterministic city-intelligence indicators for Sohar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sohar profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 57, airQuality: 70, energy: 76, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ajman",
+    name: "Ajman",
+    countrySlug: "united-arab-emirates",
+    countryName: "United Arab Emirates",
+    region: "Middle East",
+    population: "~490K",
+    intro:
+      "Ajman is an indexed city in United Arab Emirates (Middle East), with a metropolitan population of about ~490K. This profile brings together deterministic city-intelligence indicators for Ajman spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ajman profile to compare affordability, livability, and economic indicators against other indexed cities in United Arab Emirates and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 54, airQuality: 58, energy: 81, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "larnaca",
+    name: "Larnaca",
+    countrySlug: "cyprus",
+    countryName: "Cyprus",
+    region: "Southern Europe",
+    population: "~59K",
+    intro:
+      "Larnaca is an indexed city in Cyprus (Southern Europe), with a metropolitan population of about ~59K. This profile brings together deterministic city-intelligence indicators for Larnaca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Larnaca profile to compare affordability, livability, and economic indicators against other indexed cities in Cyprus and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 60, airQuality: 79, energy: 67, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kobe",
+    name: "Kobe",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~1.5M",
+    intro:
+      "Kobe is an indexed city in Japan (East Asia), with a metropolitan population of about ~1.5M. This profile brings together deterministic city-intelligence indicators for Kobe spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kobe profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 68, energy: 84, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nanjing",
+    name: "Nanjing",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.3M",
+    intro:
+      "Nanjing is an indexed city in China (East Asia), with a metropolitan population of about ~9.3M. This profile brings together deterministic city-intelligence indicators for Nanjing spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nanjing profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 54, energy: 78, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jeonju",
+    name: "Jeonju",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~653K",
+    intro:
+      "Jeonju is an indexed city in South Korea (East Asia), with a metropolitan population of about ~653K. This profile brings together deterministic city-intelligence indicators for Jeonju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jeonju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 58, airQuality: 62, energy: 79, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ta-if",
+    name: "Ta'if",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~580K",
+    intro:
+      "Ta'if is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~580K. This profile brings together deterministic city-intelligence indicators for Ta'if spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ta'if profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 53, energy: 77, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "agra",
+    name: "Agra",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~1.6M",
+    intro:
+      "Agra is an indexed city in India (South Asia), with a metropolitan population of about ~1.6M. This profile brings together deterministic city-intelligence indicators for Agra spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Agra profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 74, airQuality: 46, energy: 64, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "faisalabad",
+    name: "Faisalabad",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~3.2M",
+    intro:
+      "Faisalabad is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~3.2M. This profile brings together deterministic city-intelligence indicators for Faisalabad spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Faisalabad profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 53, affordability: 71, airQuality: 41, energy: 56, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tabriz",
+    name: "Tabriz",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~1.6M",
+    intro:
+      "Tabriz is an indexed city in Iran (Western Asia), with a metropolitan population of about ~1.6M. This profile brings together deterministic city-intelligence indicators for Tabriz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tabriz profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 74, airQuality: 50, energy: 52, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "basra",
+    name: "Basra",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~1.3M",
+    intro:
+      "Basra is an indexed city in Iraq (Middle East), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Basra spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Basra profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 49, affordability: 69, airQuality: 49, energy: 58, resilience: 44 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sur",
+    name: "Sur",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~120K",
+    intro:
+      "Sur is an indexed city in Oman (Middle East), with a metropolitan population of about ~120K. This profile brings together deterministic city-intelligence indicators for Sur spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sur profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 62, airQuality: 71, energy: 68, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ras-al-khaimah",
+    name: "Ras al-Khaimah",
+    countrySlug: "united-arab-emirates",
+    countryName: "United Arab Emirates",
+    region: "Middle East",
+    population: "~116K",
+    intro:
+      "Ras al-Khaimah is an indexed city in United Arab Emirates (Middle East), with a metropolitan population of about ~116K. This profile brings together deterministic city-intelligence indicators for Ras al-Khaimah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ras al-Khaimah profile to compare affordability, livability, and economic indicators against other indexed cities in United Arab Emirates and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 49, airQuality: 65, energy: 82, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "limassol",
+    name: "Limassol",
+    countrySlug: "cyprus",
+    countryName: "Cyprus",
+    region: "Southern Europe",
+    population: "~108K",
+    intro:
+      "Limassol is an indexed city in Cyprus (Southern Europe), with a metropolitan population of about ~108K. This profile brings together deterministic city-intelligence indicators for Limassol spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Limassol profile to compare affordability, livability, and economic indicators against other indexed cities in Cyprus and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 64, airQuality: 83, energy: 72, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nagasaki",
+    name: "Nagasaki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~405K",
+    intro:
+      "Nagasaki is an indexed city in Japan (East Asia), with a metropolitan population of about ~405K. This profile brings together deterministic city-intelligence indicators for Nagasaki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nagasaki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 73, energy: 84, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hangzhou",
+    name: "Hangzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~11.9M",
+    intro:
+      "Hangzhou is an indexed city in China (East Asia), with a metropolitan population of about ~11.9M. This profile brings together deterministic city-intelligence indicators for Hangzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hangzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 50, energy: 82, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cheongju",
+    name: "Cheongju",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~848K",
+    intro:
+      "Cheongju is an indexed city in South Korea (East Asia), with a metropolitan population of about ~848K. This profile brings together deterministic city-intelligence indicators for Cheongju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cheongju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 55, airQuality: 66, energy: 84, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tabuk",
+    name: "Tabuk",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~886K",
+    intro:
+      "Tabuk is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~886K. This profile brings together deterministic city-intelligence indicators for Tabuk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tabuk profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 61, energy: 80, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lucknow",
+    name: "Lucknow",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~3.4M",
+    intro:
+      "Lucknow is an indexed city in India (South Asia), with a metropolitan population of about ~3.4M. This profile brings together deterministic city-intelligence indicators for Lucknow spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lucknow profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 41, energy: 68, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rawalpindi",
+    name: "Rawalpindi",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~2.1M",
+    intro:
+      "Rawalpindi is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~2.1M. This profile brings together deterministic city-intelligence indicators for Rawalpindi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rawalpindi profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 50, affordability: 74, airQuality: 43, energy: 56, resilience: 51 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mashhad",
+    name: "Mashhad",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~3.0M",
+    intro:
+      "Mashhad is an indexed city in Iran (Western Asia), with a metropolitan population of about ~3.0M. This profile brings together deterministic city-intelligence indicators for Mashhad spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mashhad profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 75, airQuality: 58, energy: 60, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "erbil",
+    name: "Erbil",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~846K",
+    intro:
+      "Erbil is an indexed city in Iraq (Middle East), with a metropolitan population of about ~846K. This profile brings together deterministic city-intelligence indicators for Erbil spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Erbil profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 63, airQuality: 46, energy: 53, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nizwa",
+    name: "Nizwa",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~84K",
+    intro:
+      "Nizwa is an indexed city in Oman (Middle East), with a metropolitan population of about ~84K. This profile brings together deterministic city-intelligence indicators for Nizwa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nizwa profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 56, airQuality: 66, energy: 70, resilience: 54 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fujairah",
+    name: "Fujairah",
+    countrySlug: "united-arab-emirates",
+    countryName: "United Arab Emirates",
+    region: "Middle East",
+    population: "~94K",
+    intro:
+      "Fujairah is an indexed city in United Arab Emirates (Middle East), with a metropolitan population of about ~94K. This profile brings together deterministic city-intelligence indicators for Fujairah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fujairah profile to compare affordability, livability, and economic indicators against other indexed cities in United Arab Emirates and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 56, energy: 88, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "paphos",
+    name: "Paphos",
+    countrySlug: "cyprus",
+    countryName: "Cyprus",
+    region: "Southern Europe",
+    population: "~36K",
+    intro:
+      "Paphos is an indexed city in Cyprus (Southern Europe), with a metropolitan population of about ~36K. This profile brings together deterministic city-intelligence indicators for Paphos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Paphos profile to compare affordability, livability, and economic indicators against other indexed cities in Cyprus and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 58, airQuality: 81, energy: 73, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sendai",
+    name: "Sendai",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~1.1M",
+    intro:
+      "Sendai is an indexed city in Japan (East Asia), with a metropolitan population of about ~1.1M. This profile brings together deterministic city-intelligence indicators for Sendai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sendai profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 73, energy: 78, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chongqing",
+    name: "Chongqing",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~32.1M",
+    intro:
+      "Chongqing is an indexed city in China (East Asia), with a metropolitan population of about ~32.1M. This profile brings together deterministic city-intelligence indicators for Chongqing spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chongqing profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 54, energy: 81, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jeju",
+    name: "Jeju",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~698K",
+    intro:
+      "Jeju is an indexed city in South Korea (East Asia), with a metropolitan population of about ~698K. This profile brings together deterministic city-intelligence indicators for Jeju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jeju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 53, airQuality: 66, energy: 85, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "burayda",
+    name: "Burayda",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~467K",
+    intro:
+      "Burayda is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~467K. This profile brings together deterministic city-intelligence indicators for Burayda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Burayda profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 54, energy: 77, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "new-delhi",
+    name: "New Delhi",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~250K",
+    intro:
+      "New Delhi is an indexed city in India (South Asia), with a metropolitan population of about ~250K. This profile brings together deterministic city-intelligence indicators for New Delhi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the New Delhi profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 72, airQuality: 42, energy: 70, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "multan",
+    name: "Multan",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~1.9M",
+    intro:
+      "Multan is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~1.9M. This profile brings together deterministic city-intelligence indicators for Multan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Multan profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 51, affordability: 73, airQuality: 39, energy: 57, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shiraz",
+    name: "Shiraz",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~1.6M",
+    intro:
+      "Shiraz is an indexed city in Iran (Western Asia), with a metropolitan population of about ~1.6M. This profile brings together deterministic city-intelligence indicators for Shiraz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shiraz profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 69, airQuality: 50, energy: 55, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kirkuk",
+    name: "Kirkuk",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~975K",
+    intro:
+      "Kirkuk is an indexed city in Iraq (Middle East), with a metropolitan population of about ~975K. This profile brings together deterministic city-intelligence indicators for Kirkuk spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kirkuk profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 62, airQuality: 51, energy: 55, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "seeb",
+    name: "Seeb",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~471K",
+    intro:
+      "Seeb is an indexed city in Oman (Middle East), with a metropolitan population of about ~471K. This profile brings together deterministic city-intelligence indicators for Seeb spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Seeb profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 64, airQuality: 65, energy: 69, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "umm-al-quwain",
+    name: "Umm Al Quwain",
+    countrySlug: "united-arab-emirates",
+    countryName: "United Arab Emirates",
+    region: "Middle East",
+    population: "~44K",
+    intro:
+      "Umm Al Quwain is an indexed city in United Arab Emirates (Middle East), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Umm Al Quwain spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Umm Al Quwain profile to compare affordability, livability, and economic indicators against other indexed cities in United Arab Emirates and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 52, airQuality: 56, energy: 83, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lakatamia",
+    name: "Lakatamia",
+    countrySlug: "cyprus",
+    countryName: "Cyprus",
+    region: "Southern Europe",
+    population: "~38K",
+    intro:
+      "Lakatamia is an indexed city in Cyprus (Southern Europe), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Lakatamia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lakatamia profile to compare affordability, livability, and economic indicators against other indexed cities in Cyprus and across Southern Europe, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 63, airQuality: 81, energy: 70, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "saitama",
+    name: "Saitama",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~1.3M",
+    intro:
+      "Saitama is an indexed city in Japan (East Asia), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Saitama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Saitama profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 68, energy: 82, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "harbin",
+    name: "Harbin",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~10.0M",
+    intro:
+      "Harbin is an indexed city in China (East Asia), with a metropolitan population of about ~10.0M. This profile brings together deterministic city-intelligence indicators for Harbin spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Harbin profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 47, energy: 82, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chuncheon",
+    name: "Chuncheon",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~282K",
+    intro:
+      "Chuncheon is an indexed city in South Korea (East Asia), with a metropolitan population of about ~282K. This profile brings together deterministic city-intelligence indicators for Chuncheon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chuncheon profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 60, airQuality: 58, energy: 81, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "abha",
+    name: "Abha",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~236K",
+    intro:
+      "Abha is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~236K. This profile brings together deterministic city-intelligence indicators for Abha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Abha profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 58, energy: 74, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "varanasi",
+    name: "Varanasi",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~1.2M",
+    intro:
+      "Varanasi is an indexed city in India (South Asia), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Varanasi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Varanasi profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 70, airQuality: 41, energy: 71, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hyderabad-pk",
+    name: "Hyderabad",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~1.7M",
+    intro:
+      "Hyderabad is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~1.7M. This profile brings together deterministic city-intelligence indicators for Hyderabad spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hyderabad profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 67, airQuality: 44, energy: 58, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "qom",
+    name: "Qom",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~1.2M",
+    intro:
+      "Qom is an indexed city in Iran (Western Asia), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Qom spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Qom profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 73, airQuality: 49, energy: 58, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "karbala",
+    name: "Karbala",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~690K",
+    intro:
+      "Karbala is an indexed city in Iraq (Middle East), with a metropolitan population of about ~690K. This profile brings together deterministic city-intelligence indicators for Karbala spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Karbala profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 51, affordability: 67, airQuality: 46, energy: 60, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ibri",
+    name: "Ibri",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~98K",
+    intro:
+      "Ibri is an indexed city in Oman (Middle East), with a metropolitan population of about ~98K. This profile brings together deterministic city-intelligence indicators for Ibri spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ibri profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 62, airQuality: 69, energy: 75, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chiba",
+    name: "Chiba",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~975K",
+    intro:
+      "Chiba is an indexed city in Japan (East Asia), with a metropolitan population of about ~975K. This profile brings together deterministic city-intelligence indicators for Chiba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chiba profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 73, energy: 83, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shenyang",
+    name: "Shenyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.1M",
+    intro:
+      "Shenyang is an indexed city in China (East Asia), with a metropolitan population of about ~9.1M. This profile brings together deterministic city-intelligence indicators for Shenyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shenyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 47, energy: 75, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "andong",
+    name: "Andong",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~153K",
+    intro:
+      "Andong is an indexed city in South Korea (East Asia), with a metropolitan population of about ~153K. This profile brings together deterministic city-intelligence indicators for Andong spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Andong profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 57, airQuality: 64, energy: 78, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ha-il",
+    name: "Ha'il",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~311K",
+    intro:
+      "Ha'il is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~311K. This profile brings together deterministic city-intelligence indicators for Ha'il spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ha'il profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 53, energy: 74, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "prayagraj",
+    name: "Prayagraj",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~6.0M",
+    intro:
+      "Prayagraj is an indexed city in India (South Asia), with a metropolitan population of about ~6.0M. This profile brings together deterministic city-intelligence indicators for Prayagraj spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Prayagraj profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 70, airQuality: 45, energy: 67, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "quetta",
+    name: "Quetta",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~1.0M",
+    intro:
+      "Quetta is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~1.0M. This profile brings together deterministic city-intelligence indicators for Quetta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Quetta profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 69, airQuality: 41, energy: 56, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "karaj",
+    name: "Karaj",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~1.6M",
+    intro:
+      "Karaj is an indexed city in Iran (Western Asia), with a metropolitan population of about ~1.6M. This profile brings together deterministic city-intelligence indicators for Karaj spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Karaj profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 71, airQuality: 51, energy: 57, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "najaf",
+    name: "Najaf",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~725K",
+    intro:
+      "Najaf is an indexed city in Iraq (Middle East), with a metropolitan population of about ~725K. This profile brings together deterministic city-intelligence indicators for Najaf spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Najaf profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 53, affordability: 65, airQuality: 45, energy: 57, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bawshar",
+    name: "Bawshar",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~402K",
+    intro:
+      "Bawshar is an indexed city in Oman (Middle East), with a metropolitan population of about ~402K. This profile brings together deterministic city-intelligence indicators for Bawshar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bawshar profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 61, airQuality: 67, energy: 73, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "niigata",
+    name: "Niigata",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~791K",
+    intro:
+      "Niigata is an indexed city in Japan (East Asia), with a metropolitan population of about ~791K. This profile brings together deterministic city-intelligence indicators for Niigata spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Niigata profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 73, energy: 79, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "urumqi",
+    name: "Ürümqi",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.1M",
+    intro:
+      "Ürümqi is an indexed city in China (East Asia), with a metropolitan population of about ~4.1M. This profile brings together deterministic city-intelligence indicators for Ürümqi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ürümqi profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 46, energy: 82, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gyeongju",
+    name: "Gyeongju",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~248K",
+    intro:
+      "Gyeongju is an indexed city in South Korea (East Asia), with a metropolitan population of about ~248K. This profile brings together deterministic city-intelligence indicators for Gyeongju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gyeongju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 60, airQuality: 60, energy: 79, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "najran",
+    name: "Najran",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~298K",
+    intro:
+      "Najran is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~298K. This profile brings together deterministic city-intelligence indicators for Najran spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Najran profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 60, energy: 79, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "patna",
+    name: "Patna",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~1.7M",
+    intro:
+      "Patna is an indexed city in India (South Asia), with a metropolitan population of about ~1.7M. This profile brings together deterministic city-intelligence indicators for Patna spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Patna profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 74, airQuality: 41, energy: 70, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gujranwala",
+    name: "Gujranwala",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~2.0M",
+    intro:
+      "Gujranwala is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~2.0M. This profile brings together deterministic city-intelligence indicators for Gujranwala spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gujranwala profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 67, airQuality: 47, energy: 61, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ahvaz",
+    name: "Ahvaz",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~1.2M",
+    intro:
+      "Ahvaz is an indexed city in Iran (Western Asia), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Ahvaz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ahvaz profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 72, airQuality: 50, energy: 57, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sulaymaniyah",
+    name: "Sulaymaniyah",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~878K",
+    intro:
+      "Sulaymaniyah is an indexed city in Iraq (Middle East), with a metropolitan population of about ~878K. This profile brings together deterministic city-intelligence indicators for Sulaymaniyah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sulaymaniyah profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 64, airQuality: 55, energy: 54, resilience: 46 },
+  }),
+  buildNeutralCitySeed({
+    slug: "khasab",
+    name: "Khasab",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~18K",
+    intro:
+      "Khasab is an indexed city in Oman (Middle East), with a metropolitan population of about ~18K. This profile brings together deterministic city-intelligence indicators for Khasab spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Khasab profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 64, airQuality: 68, energy: 71, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nagano",
+    name: "Nagano",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~367K",
+    intro:
+      "Nagano is an indexed city in Japan (East Asia), with a metropolitan population of about ~367K. This profile brings together deterministic city-intelligence indicators for Nagano spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nagano profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 63, energy: 84, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kunming",
+    name: "Kunming",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~8.5M",
+    intro:
+      "Kunming is an indexed city in China (East Asia), with a metropolitan population of about ~8.5M. This profile brings together deterministic city-intelligence indicators for Kunming spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kunming profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 46, energy: 82, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sejong",
+    name: "Sejong",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~392K",
+    intro:
+      "Sejong is an indexed city in South Korea (East Asia), with a metropolitan population of about ~392K. This profile brings together deterministic city-intelligence indicators for Sejong spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sejong profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 58, airQuality: 59, energy: 82, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jubail",
+    name: "Jubail",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~379K",
+    intro:
+      "Jubail is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~379K. This profile brings together deterministic city-intelligence indicators for Jubail spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jubail profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 58, energy: 82, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "surat",
+    name: "Surat",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~5.9M",
+    intro:
+      "Surat is an indexed city in India (South Asia), with a metropolitan population of about ~5.9M. This profile brings together deterministic city-intelligence indicators for Surat spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Surat profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 70, airQuality: 45, energy: 68, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sialkot",
+    name: "Sialkot",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~592K",
+    intro:
+      "Sialkot is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~592K. This profile brings together deterministic city-intelligence indicators for Sialkot spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sialkot profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 69, airQuality: 46, energy: 58, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kermanshah",
+    name: "Kermanshah",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~947K",
+    intro:
+      "Kermanshah is an indexed city in Iran (Western Asia), with a metropolitan population of about ~947K. This profile brings together deterministic city-intelligence indicators for Kermanshah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kermanshah profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 70, airQuality: 50, energy: 56, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "samarra",
+    name: "Samarra",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~140K",
+    intro:
+      "Samarra is an indexed city in Iraq (Middle East), with a metropolitan population of about ~140K. This profile brings together deterministic city-intelligence indicators for Samarra spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Samarra profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 53, affordability: 65, airQuality: 47, energy: 54, resilience: 47 },
+  }),
+  buildNeutralCitySeed({
+    slug: "madha",
+    name: "Madha",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~4K",
+    intro:
+      "Madha is an indexed city in Oman (Middle East), with a metropolitan population of about ~4K. This profile brings together deterministic city-intelligence indicators for Madha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Madha profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 59, airQuality: 61, energy: 69, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kumamoto",
+    name: "Kumamoto",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~738K",
+    intro:
+      "Kumamoto is an indexed city in Japan (East Asia), with a metropolitan population of about ~738K. This profile brings together deterministic city-intelligence indicators for Kumamoto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kumamoto profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 86, affordability: 54, airQuality: 72, energy: 78, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "qingdao",
+    name: "Qingdao",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~10.1M",
+    intro:
+      "Qingdao is an indexed city in China (East Asia), with a metropolitan population of about ~10.1M. This profile brings together deterministic city-intelligence indicators for Qingdao spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Qingdao profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 53, energy: 79, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "seongnam",
+    name: "Seongnam",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~949K",
+    intro:
+      "Seongnam is an indexed city in South Korea (East Asia), with a metropolitan population of about ~949K. This profile brings together deterministic city-intelligence indicators for Seongnam spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Seongnam profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 53, airQuality: 63, energy: 79, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "khamis-mushait",
+    name: "Khamis Mushait",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~431K",
+    intro:
+      "Khamis Mushait is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~431K. This profile brings together deterministic city-intelligence indicators for Khamis Mushait spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Khamis Mushait profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 55, energy: 75, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bhopal",
+    name: "Bhopal",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~1.8M",
+    intro:
+      "Bhopal is an indexed city in India (South Asia), with a metropolitan population of about ~1.8M. This profile brings together deterministic city-intelligence indicators for Bhopal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bhopal profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 73, airQuality: 48, energy: 71, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bahawalpur",
+    name: "Bahawalpur",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~762K",
+    intro:
+      "Bahawalpur is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~762K. This profile brings together deterministic city-intelligence indicators for Bahawalpur spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bahawalpur profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 53, affordability: 71, airQuality: 45, energy: 61, resilience: 53 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yazd",
+    name: "Yazd",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~530K",
+    intro:
+      "Yazd is an indexed city in Iran (Western Asia), with a metropolitan population of about ~530K. This profile brings together deterministic city-intelligence indicators for Yazd spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yazd profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 69, airQuality: 56, energy: 54, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tikrit",
+    name: "Tikrit",
+    countrySlug: "iraq",
+    countryName: "Iraq",
+    region: "Middle East",
+    population: "~106K",
+    intro:
+      "Tikrit is an indexed city in Iraq (Middle East), with a metropolitan population of about ~106K. This profile brings together deterministic city-intelligence indicators for Tikrit spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tikrit profile to compare affordability, livability, and economic indicators against other indexed cities in Iraq and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 49, affordability: 69, airQuality: 48, energy: 60, resilience: 48 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nara",
+    name: "Nara",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~352K",
+    intro:
+      "Nara is an indexed city in Japan (East Asia), with a metropolitan population of about ~352K. This profile brings together deterministic city-intelligence indicators for Nara spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nara profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 70, energy: 78, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lhasa",
+    name: "Lhasa",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~868K",
+    intro:
+      "Lhasa is an indexed city in China (East Asia), with a metropolitan population of about ~868K. This profile brings together deterministic city-intelligence indicators for Lhasa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lhasa profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 48, energy: 81, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "goyang",
+    name: "Goyang",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~1.1M",
+    intro:
+      "Goyang is an indexed city in South Korea (East Asia), with a metropolitan population of about ~1.1M. This profile brings together deterministic city-intelligence indicators for Goyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Goyang profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 57, airQuality: 58, energy: 78, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yanbu",
+    name: "Yanbu",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~299K",
+    intro:
+      "Yanbu is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~299K. This profile brings together deterministic city-intelligence indicators for Yanbu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yanbu profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 56, energy: 81, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chandigarh",
+    name: "Chandigarh",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~1.1M",
+    intro:
+      "Chandigarh is an indexed city in India (South Asia), with a metropolitan population of about ~1.1M. This profile brings together deterministic city-intelligence indicators for Chandigarh spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chandigarh profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 41, energy: 72, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sukkur",
+    name: "Sukkur",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~500K",
+    intro:
+      "Sukkur is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~500K. This profile brings together deterministic city-intelligence indicators for Sukkur spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sukkur profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 70, airQuality: 43, energy: 56, resilience: 51 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rasht",
+    name: "Rasht",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~680K",
+    intro:
+      "Rasht is an indexed city in Iran (Western Asia), with a metropolitan population of about ~680K. This profile brings together deterministic city-intelligence indicators for Rasht spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rasht profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 69, airQuality: 53, energy: 55, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shizuoka",
+    name: "Shizuoka",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~686K",
+    intro:
+      "Shizuoka is an indexed city in Japan (East Asia), with a metropolitan population of about ~686K. This profile brings together deterministic city-intelligence indicators for Shizuoka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shizuoka profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 66, energy: 82, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "changchun",
+    name: "Changchun",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.1M",
+    intro:
+      "Changchun is an indexed city in China (East Asia), with a metropolitan population of about ~9.1M. This profile brings together deterministic city-intelligence indicators for Changchun spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Changchun profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 55, energy: 79, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ansan",
+    name: "Ansan",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~623K",
+    intro:
+      "Ansan is an indexed city in South Korea (East Asia), with a metropolitan population of about ~623K. This profile brings together deterministic city-intelligence indicators for Ansan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ansan profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 52, airQuality: 58, energy: 84, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "khobar",
+    name: "Khobar",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~220K",
+    intro:
+      "Khobar is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~220K. This profile brings together deterministic city-intelligence indicators for Khobar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Khobar profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 56, energy: 76, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "amritsar",
+    name: "Amritsar",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~1.2M",
+    intro:
+      "Amritsar is an indexed city in India (South Asia), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Amritsar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Amritsar profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 66, airQuality: 47, energy: 72, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sargodha",
+    name: "Sargodha",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~660K",
+    intro:
+      "Sargodha is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~660K. This profile brings together deterministic city-intelligence indicators for Sargodha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sargodha profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 67, airQuality: 45, energy: 54, resilience: 54 },
+  }),
+  buildNeutralCitySeed({
+    slug: "urmia",
+    name: "Urmia",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~736K",
+    intro:
+      "Urmia is an indexed city in Iran (Western Asia), with a metropolitan population of about ~736K. This profile brings together deterministic city-intelligence indicators for Urmia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Urmia profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 74, airQuality: 50, energy: 55, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kagoshima",
+    name: "Kagoshima",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~594K",
+    intro:
+      "Kagoshima is an indexed city in Japan (East Asia), with a metropolitan population of about ~594K. This profile brings together deterministic city-intelligence indicators for Kagoshima spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kagoshima profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 65, energy: 81, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "changsha",
+    name: "Changsha",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~10.0M",
+    intro:
+      "Changsha is an indexed city in China (East Asia), with a metropolitan population of about ~10.0M. This profile brings together deterministic city-intelligence indicators for Changsha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Changsha profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 48, energy: 76, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yongin",
+    name: "Yongin",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~1.1M",
+    intro:
+      "Yongin is an indexed city in South Korea (East Asia), with a metropolitan population of about ~1.1M. This profile brings together deterministic city-intelligence indicators for Yongin spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yongin profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 60, airQuality: 62, energy: 83, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jizan",
+    name: "Jizan",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~128K",
+    intro:
+      "Jizan is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~128K. This profile brings together deterministic city-intelligence indicators for Jizan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jizan profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 63, energy: 78, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "thiruvananthapuram",
+    name: "Thiruvananthapuram",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~744K",
+    intro:
+      "Thiruvananthapuram is an indexed city in India (South Asia), with a metropolitan population of about ~744K. This profile brings together deterministic city-intelligence indicators for Thiruvananthapuram spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Thiruvananthapuram profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 69, airQuality: 48, energy: 69, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "abbottabad",
+    name: "Abbottabad",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~149K",
+    intro:
+      "Abbottabad is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~149K. This profile brings together deterministic city-intelligence indicators for Abbottabad spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Abbottabad profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 70, airQuality: 44, energy: 54, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hamadan",
+    name: "Hamadan",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~554K",
+    intro:
+      "Hamadan is an indexed city in Iran (Western Asia), with a metropolitan population of about ~554K. This profile brings together deterministic city-intelligence indicators for Hamadan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hamadan profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 73, airQuality: 54, energy: 55, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kanazawa",
+    name: "Kanazawa",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~462K",
+    intro:
+      "Kanazawa is an indexed city in Japan (East Asia), with a metropolitan population of about ~462K. This profile brings together deterministic city-intelligence indicators for Kanazawa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kanazawa profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 65, energy: 85, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jinan",
+    name: "Jinan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.2M",
+    intro:
+      "Jinan is an indexed city in China (East Asia), with a metropolitan population of about ~9.2M. This profile brings together deterministic city-intelligence indicators for Jinan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jinan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 49, energy: 75, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hwaseong",
+    name: "Hwaseong",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~1.0M",
+    intro:
+      "Hwaseong is an indexed city in South Korea (East Asia), with a metropolitan population of about ~1.0M. This profile brings together deterministic city-intelligence indicators for Hwaseong spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hwaseong profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 53, airQuality: 59, energy: 84, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sakakah",
+    name: "Sakakah",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~150K",
+    intro:
+      "Sakakah is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~150K. This profile brings together deterministic city-intelligence indicators for Sakakah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sakakah profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 54, energy: 79, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nagpur",
+    name: "Nagpur",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~2.4M",
+    intro:
+      "Nagpur is an indexed city in India (South Asia), with a metropolitan population of about ~2.4M. This profile brings together deterministic city-intelligence indicators for Nagpur spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nagpur profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 66, airQuality: 48, energy: 64, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jhang",
+    name: "Jhang",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~414K",
+    intro:
+      "Jhang is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~414K. This profile brings together deterministic city-intelligence indicators for Jhang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jhang profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 70, airQuality: 44, energy: 56, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kitakyushu",
+    name: "Kitakyūshū",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~935K",
+    intro:
+      "Kitakyūshū is an indexed city in Japan (East Asia), with a metropolitan population of about ~935K. This profile brings together deterministic city-intelligence indicators for Kitakyūshū spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kitakyūshū profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 72, energy: 81, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fuzhou",
+    name: "Fuzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~8.3M",
+    intro:
+      "Fuzhou is an indexed city in China (East Asia), with a metropolitan population of about ~8.3M. This profile brings together deterministic city-intelligence indicators for Fuzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fuzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 49, energy: 82, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bucheon",
+    name: "Bucheon",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~772K",
+    intro:
+      "Bucheon is an indexed city in South Korea (East Asia), with a metropolitan population of about ~772K. This profile brings together deterministic city-intelligence indicators for Bucheon spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bucheon profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 59, airQuality: 59, energy: 83, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hofuf",
+    name: "Hofuf",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~661K",
+    intro:
+      "Hofuf is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~661K. This profile brings together deterministic city-intelligence indicators for Hofuf spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hofuf profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 62, energy: 75, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "indore",
+    name: "Indore",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~2.0M",
+    intro:
+      "Indore is an indexed city in India (South Asia), with a metropolitan population of about ~2.0M. This profile brings together deterministic city-intelligence indicators for Indore spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Indore profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 72, airQuality: 44, energy: 68, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gujrat",
+    name: "Gujrat",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~391K",
+    intro:
+      "Gujrat is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~391K. This profile brings together deterministic city-intelligence indicators for Gujrat spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gujrat profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 66, airQuality: 48, energy: 57, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ardabil",
+    name: "Ardabil",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~529K",
+    intro:
+      "Ardabil is an indexed city in Iran (Western Asia), with a metropolitan population of about ~529K. This profile brings together deterministic city-intelligence indicators for Ardabil spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ardabil profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 51, energy: 54, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "okayama",
+    name: "Okayama",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~720K",
+    intro:
+      "Okayama is an indexed city in Japan (East Asia), with a metropolitan population of about ~720K. This profile brings together deterministic city-intelligence indicators for Okayama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Okayama profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 70, energy: 86, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dalian",
+    name: "Dalian",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.5M",
+    intro:
+      "Dalian is an indexed city in China (East Asia), with a metropolitan population of about ~7.5M. This profile brings together deterministic city-intelligence indicators for Dalian spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dalian profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 53, energy: 74, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pohang",
+    name: "Pohang",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~520K",
+    intro:
+      "Pohang is an indexed city in South Korea (East Asia), with a metropolitan population of about ~520K. This profile brings together deterministic city-intelligence indicators for Pohang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pohang profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 58, airQuality: 61, energy: 79, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "unaizah",
+    name: "Unaizah",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~250K",
+    intro:
+      "Unaizah is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~250K. This profile brings together deterministic city-intelligence indicators for Unaizah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Unaizah profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 57, energy: 81, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ranchi",
+    name: "Ranchi",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~1.1M",
+    intro:
+      "Ranchi is an indexed city in India (South Asia), with a metropolitan population of about ~1.1M. This profile brings together deterministic city-intelligence indicators for Ranchi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ranchi profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 66, airQuality: 46, energy: 72, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jhelum",
+    name: "Jhelum",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~312K",
+    intro:
+      "Jhelum is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~312K. This profile brings together deterministic city-intelligence indicators for Jhelum spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jhelum profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 68, airQuality: 45, energy: 60, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kerman",
+    name: "Kerman",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~538K",
+    intro:
+      "Kerman is an indexed city in Iran (Western Asia), with a metropolitan population of about ~538K. This profile brings together deterministic city-intelligence indicators for Kerman spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kerman profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 72, airQuality: 55, energy: 55, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kawasaki",
+    name: "Kawasaki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~1.5M",
+    intro:
+      "Kawasaki is an indexed city in Japan (East Asia), with a metropolitan population of about ~1.5M. This profile brings together deterministic city-intelligence indicators for Kawasaki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kawasaki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 64, energy: 86, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hefei",
+    name: "Hefei",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.4M",
+    intro:
+      "Hefei is an indexed city in China (East Asia), with a metropolitan population of about ~9.4M. This profile brings together deterministic city-intelligence indicators for Hefei spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hefei profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 50, energy: 81, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gimhae",
+    name: "Gimhae",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~534K",
+    intro:
+      "Gimhae is an indexed city in South Korea (East Asia), with a metropolitan population of about ~534K. This profile brings together deterministic city-intelligence indicators for Gimhae spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gimhae profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 57, airQuality: 66, energy: 86, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dhahran",
+    name: "Dhahran",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~138K",
+    intro:
+      "Dhahran is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~138K. This profile brings together deterministic city-intelligence indicators for Dhahran spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dhahran profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 58, energy: 81, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vadodara",
+    name: "Vadodara",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~3.1M",
+    intro:
+      "Vadodara is an indexed city in India (South Asia), with a metropolitan population of about ~3.1M. This profile brings together deterministic city-intelligence indicators for Vadodara spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vadodara profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 74, airQuality: 42, energy: 65, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mardan",
+    name: "Mardan",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~364K",
+    intro:
+      "Mardan is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~364K. This profile brings together deterministic city-intelligence indicators for Mardan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mardan profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 51, affordability: 73, airQuality: 47, energy: 62, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nishapur",
+    name: "Nishapur",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~264K",
+    intro:
+      "Nishapur is an indexed city in Iran (Western Asia), with a metropolitan population of about ~264K. This profile brings together deterministic city-intelligence indicators for Nishapur spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nishapur profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 69, airQuality: 53, energy: 59, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "naha",
+    name: "Naha",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~316K",
+    intro:
+      "Naha is an indexed city in Japan (East Asia), with a metropolitan population of about ~316K. This profile brings together deterministic city-intelligence indicators for Naha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Naha profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 63, energy: 86, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shijiazhuang",
+    name: "Shijiazhuang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~10.6M",
+    intro:
+      "Shijiazhuang is an indexed city in China (East Asia), with a metropolitan population of about ~10.6M. This profile brings together deterministic city-intelligence indicators for Shijiazhuang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shijiazhuang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 50, energy: 81, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "paju",
+    name: "Paju",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~498K",
+    intro:
+      "Paju is an indexed city in South Korea (East Asia), with a metropolitan population of about ~498K. This profile brings together deterministic city-intelligence indicators for Paju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Paju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 60, airQuality: 65, energy: 86, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "visakhapatnam",
+    name: "Visakhapatnam",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~2.0M",
+    intro:
+      "Visakhapatnam is an indexed city in India (South Asia), with a metropolitan population of about ~2.0M. This profile brings together deterministic city-intelligence indicators for Visakhapatnam spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Visakhapatnam profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 70, airQuality: 42, energy: 71, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sheikhupura",
+    name: "Sheikhupura",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~473K",
+    intro:
+      "Sheikhupura is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~473K. This profile brings together deterministic city-intelligence indicators for Sheikhupura spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sheikhupura profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 70, airQuality: 41, energy: 56, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "arak",
+    name: "Arak",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~521K",
+    intro:
+      "Arak is an indexed city in Iran (Western Asia), with a metropolitan population of about ~521K. This profile brings together deterministic city-intelligence indicators for Arak spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Arak profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 74, airQuality: 53, energy: 52, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "matsuyama",
+    name: "Matsuyama",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~507K",
+    intro:
+      "Matsuyama is an indexed city in Japan (East Asia), with a metropolitan population of about ~507K. This profile brings together deterministic city-intelligence indicators for Matsuyama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Matsuyama profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 73, energy: 84, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nanchang",
+    name: "Nanchang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.3M",
+    intro:
+      "Nanchang is an indexed city in China (East Asia), with a metropolitan population of about ~6.3M. This profile brings together deterministic city-intelligence indicators for Nanchang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nanchang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 47, energy: 77, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gangneung",
+    name: "Gangneung",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~207K",
+    intro:
+      "Gangneung is an indexed city in South Korea (East Asia), with a metropolitan population of about ~207K. This profile brings together deterministic city-intelligence indicators for Gangneung spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gangneung profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 52, airQuality: 58, energy: 79, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "al-bahah",
+    name: "Al Bahah",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~95K",
+    intro:
+      "Al Bahah is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~95K. This profile brings together deterministic city-intelligence indicators for Al Bahah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Al Bahah profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 62, energy: 76, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "madurai",
+    name: "Madurai",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~1.6M",
+    intro:
+      "Madurai is an indexed city in India (South Asia), with a metropolitan population of about ~1.6M. This profile brings together deterministic city-intelligence indicators for Madurai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Madurai profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 42, energy: 70, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sahiwal",
+    name: "Sahiwal",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~538K",
+    intro:
+      "Sahiwal is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~538K. This profile brings together deterministic city-intelligence indicators for Sahiwal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sahiwal profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 53, affordability: 71, airQuality: 47, energy: 56, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zahedan",
+    name: "Zahedan",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~588K",
+    intro:
+      "Zahedan is an indexed city in Iran (Western Asia), with a metropolitan population of about ~588K. This profile brings together deterministic city-intelligence indicators for Zahedan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zahedan profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 73, airQuality: 50, energy: 60, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aomori",
+    name: "Aomori",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~426K",
+    intro:
+      "Aomori is an indexed city in Japan (East Asia), with a metropolitan population of about ~426K. This profile brings together deterministic city-intelligence indicators for Aomori spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Aomori profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 65, energy: 86, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nanning",
+    name: "Nanning",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~8.7M",
+    intro:
+      "Nanning is an indexed city in China (East Asia), with a metropolitan population of about ~8.7M. This profile brings together deterministic city-intelligence indicators for Nanning spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nanning profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 55, energy: 79, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "namyangju",
+    name: "Namyangju",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~732K",
+    intro:
+      "Namyangju is an indexed city in South Korea (East Asia), with a metropolitan population of about ~732K. This profile brings together deterministic city-intelligence indicators for Namyangju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Namyangju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 53, airQuality: 64, energy: 79, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bhubaneswar",
+    name: "Bhubaneswar",
+    countrySlug: "india",
+    countryName: "India",
+    region: "South Asia",
+    population: "~838K",
+    intro:
+      "Bhubaneswar is an indexed city in India (South Asia), with a metropolitan population of about ~838K. This profile brings together deterministic city-intelligence indicators for Bhubaneswar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bhubaneswar profile to compare affordability, livability, and economic indicators against other indexed cities in India and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 42, energy: 68, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kasur",
+    name: "Kasur",
+    countrySlug: "pakistan",
+    countryName: "Pakistan",
+    region: "South Asia",
+    population: "~315K",
+    intro:
+      "Kasur is an indexed city in Pakistan (South Asia), with a metropolitan population of about ~315K. This profile brings together deterministic city-intelligence indicators for Kasur spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kasur profile to compare affordability, livability, and economic indicators against other indexed cities in Pakistan and across South Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 66, airQuality: 43, energy: 58, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "qazvin",
+    name: "Qazvin",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~403K",
+    intro:
+      "Qazvin is an indexed city in Iran (Western Asia), with a metropolitan population of about ~403K. This profile brings together deterministic city-intelligence indicators for Qazvin spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Qazvin profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 70, airQuality: 58, energy: 58, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fukushima",
+    name: "Fukushima",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~284K",
+    intro:
+      "Fukushima is an indexed city in Japan (East Asia), with a metropolitan population of about ~284K. This profile brings together deterministic city-intelligence indicators for Fukushima spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fukushima profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 73, energy: 82, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lanzhou",
+    name: "Lanzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.4M",
+    intro:
+      "Lanzhou is an indexed city in China (East Asia), with a metropolitan population of about ~4.4M. This profile brings together deterministic city-intelligence indicators for Lanzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lanzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 45, energy: 80, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pyeongtaek",
+    name: "Pyeongtaek",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~607K",
+    intro:
+      "Pyeongtaek is an indexed city in South Korea (East Asia), with a metropolitan population of about ~607K. This profile brings together deterministic city-intelligence indicators for Pyeongtaek spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pyeongtaek profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 52, airQuality: 65, energy: 78, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hafar-al-batin",
+    name: "Hafar Al-Batin",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~390K",
+    intro:
+      "Hafar Al-Batin is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~390K. This profile brings together deterministic city-intelligence indicators for Hafar Al-Batin spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hafar Al-Batin profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 61, energy: 78, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gifu",
+    name: "Gifu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~400K",
+    intro:
+      "Gifu is an indexed city in Japan (East Asia), with a metropolitan population of about ~400K. This profile brings together deterministic city-intelligence indicators for Gifu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gifu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 67, energy: 81, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "taiyuan",
+    name: "Taiyuan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.3M",
+    intro:
+      "Taiyuan is an indexed city in China (East Asia), with a metropolitan population of about ~5.3M. This profile brings together deterministic city-intelligence indicators for Taiyuan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Taiyuan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 52, energy: 76, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gumi",
+    name: "Gumi",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~421K",
+    intro:
+      "Gumi is an indexed city in South Korea (East Asia), with a metropolitan population of about ~421K. This profile brings together deterministic city-intelligence indicators for Gumi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gumi profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 52, airQuality: 64, energy: 78, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "al-ula",
+    name: "Al-Ula",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~32K",
+    intro:
+      "Al-Ula is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Al-Ula spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Al-Ula profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 55, energy: 82, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "akita",
+    name: "Akita",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~303K",
+    intro:
+      "Akita is an indexed city in Japan (East Asia), with a metropolitan population of about ~303K. This profile brings together deterministic city-intelligence indicators for Akita spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Akita profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 67, energy: 81, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "guiyang",
+    name: "Guiyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.0M",
+    intro:
+      "Guiyang is an indexed city in China (East Asia), with a metropolitan population of about ~6.0M. This profile brings together deterministic city-intelligence indicators for Guiyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Guiyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 47, energy: 78, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cheonan",
+    name: "Cheonan",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~657K",
+    intro:
+      "Cheonan is an indexed city in South Korea (East Asia), with a metropolitan population of about ~657K. This profile brings together deterministic city-intelligence indicators for Cheonan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cheonan profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 60, airQuality: 67, energy: 79, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ar-rass",
+    name: "Ar Rass",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~133K",
+    intro:
+      "Ar Rass is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~133K. This profile brings together deterministic city-intelligence indicators for Ar Rass spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ar Rass profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 62, energy: 78, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "toyama",
+    name: "Toyama",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~413K",
+    intro:
+      "Toyama is an indexed city in Japan (East Asia), with a metropolitan population of about ~413K. This profile brings together deterministic city-intelligence indicators for Toyama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Toyama profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 67, energy: 86, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "luoyang",
+    name: "Luoyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.1M",
+    intro:
+      "Luoyang is an indexed city in China (East Asia), with a metropolitan population of about ~7.1M. This profile brings together deterministic city-intelligence indicators for Luoyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Luoyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 55, energy: 74, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wonju",
+    name: "Wonju",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~331K",
+    intro:
+      "Wonju is an indexed city in South Korea (East Asia), with a metropolitan population of about ~331K. This profile brings together deterministic city-intelligence indicators for Wonju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wonju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 55, airQuality: 58, energy: 79, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bisha",
+    name: "Bisha",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~86K",
+    intro:
+      "Bisha is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~86K. This profile brings together deterministic city-intelligence indicators for Bisha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bisha profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 55, energy: 75, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "morioka",
+    name: "Morioka",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~291K",
+    intro:
+      "Morioka is an indexed city in Japan (East Asia), with a metropolitan population of about ~291K. This profile brings together deterministic city-intelligence indicators for Morioka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Morioka profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 63, energy: 86, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "suzhou",
+    name: "Suzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~12.7M",
+    intro:
+      "Suzhou is an indexed city in China (East Asia), with a metropolitan population of about ~12.7M. This profile brings together deterministic city-intelligence indicators for Suzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Suzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 52, energy: 77, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "uijeongbu",
+    name: "Uijeongbu",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~463K",
+    intro:
+      "Uijeongbu is an indexed city in South Korea (East Asia), with a metropolitan population of about ~463K. This profile brings together deterministic city-intelligence indicators for Uijeongbu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Uijeongbu profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 56, airQuality: 65, energy: 79, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "oita-shi",
+    name: "Ōita-shi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~477K",
+    intro:
+      "Ōita-shi is an indexed city in Japan (East Asia), with a metropolitan population of about ~477K. This profile brings together deterministic city-intelligence indicators for Ōita-shi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ōita-shi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 66, energy: 86, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xiamen",
+    name: "Xiamen",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.2M",
+    intro:
+      "Xiamen is an indexed city in China (East Asia), with a metropolitan population of about ~5.2M. This profile brings together deterministic city-intelligence indicators for Xiamen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xiamen profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 46, energy: 80, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gimpo",
+    name: "Gimpo",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~353K",
+    intro:
+      "Gimpo is an indexed city in South Korea (East Asia), with a metropolitan population of about ~353K. This profile brings together deterministic city-intelligence indicators for Gimpo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gimpo profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 53, airQuality: 62, energy: 84, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "takamatsu",
+    name: "Takamatsu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~418K",
+    intro:
+      "Takamatsu is an indexed city in Japan (East Asia), with a metropolitan population of about ~418K. This profile brings together deterministic city-intelligence indicators for Takamatsu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Takamatsu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 71, energy: 83, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "haikou",
+    name: "Haikou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~2.9M",
+    intro:
+      "Haikou is an indexed city in China (East Asia), with a metropolitan population of about ~2.9M. This profile brings together deterministic city-intelligence indicators for Haikou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Haikou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 52, energy: 78, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gwangju",
+    name: "Gwangju",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~397K",
+    intro:
+      "Gwangju is an indexed city in South Korea (East Asia), with a metropolitan population of about ~397K. This profile brings together deterministic city-intelligence indicators for Gwangju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gwangju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 56, airQuality: 62, energy: 81, resilience: 79 },
+  }),
+  buildNeutralCitySeed({
+    slug: "utsunomiya",
+    name: "Utsunomiya",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~518K",
+    intro:
+      "Utsunomiya is an indexed city in Japan (East Asia), with a metropolitan population of about ~518K. This profile brings together deterministic city-intelligence indicators for Utsunomiya spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Utsunomiya profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 69, energy: 83, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xining",
+    name: "Xining",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~2.5M",
+    intro:
+      "Xining is an indexed city in China (East Asia), with a metropolitan population of about ~2.5M. This profile brings together deterministic city-intelligence indicators for Xining spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xining profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 49, energy: 78, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yeosu",
+    name: "Yeosu",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~274K",
+    intro:
+      "Yeosu is an indexed city in South Korea (East Asia), with a metropolitan population of about ~274K. This profile brings together deterministic city-intelligence indicators for Yeosu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yeosu profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 54, airQuality: 65, energy: 86, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "al-kharj",
+    name: "Al-Kharj",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~295K",
+    intro:
+      "Al-Kharj is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~295K. This profile brings together deterministic city-intelligence indicators for Al-Kharj spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Al-Kharj profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 63, energy: 74, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wakayama",
+    name: "Wakayama",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~353K",
+    intro:
+      "Wakayama is an indexed city in Japan (East Asia), with a metropolitan population of about ~353K. This profile brings together deterministic city-intelligence indicators for Wakayama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wakayama profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 72, energy: 80, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hohhot",
+    name: "Hohhot",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~3.4M",
+    intro:
+      "Hohhot is an indexed city in China (East Asia), with a metropolitan population of about ~3.4M. This profile brings together deterministic city-intelligence indicators for Hohhot spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hohhot profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 46, energy: 79, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "geoje",
+    name: "Geoje",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~249K",
+    intro:
+      "Geoje is an indexed city in South Korea (East Asia), with a metropolitan population of about ~249K. This profile brings together deterministic city-intelligence indicators for Geoje spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Geoje profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 52, airQuality: 65, energy: 81, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bareq",
+    name: "Bareq",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~75K",
+    intro:
+      "Bareq is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~75K. This profile brings together deterministic city-intelligence indicators for Bareq spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bareq profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 63, energy: 82, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "otsu",
+    name: "Otsu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~343K",
+    intro:
+      "Otsu is an indexed city in Japan (East Asia), with a metropolitan population of about ~343K. This profile brings together deterministic city-intelligence indicators for Otsu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Otsu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 65, energy: 82, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yinchuan",
+    name: "Yinchuan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~2.9M",
+    intro:
+      "Yinchuan is an indexed city in China (East Asia), with a metropolitan population of about ~2.9M. This profile brings together deterministic city-intelligence indicators for Yinchuan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yinchuan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 52, energy: 78, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "asan",
+    name: "Asan",
+    countrySlug: "south-korea",
+    countryName: "South Korea",
+    region: "East Asia",
+    population: "~320K",
+    intro:
+      "Asan is an indexed city in South Korea (East Asia), with a metropolitan population of about ~320K. This profile brings together deterministic city-intelligence indicators for Asan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Asan profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 56, airQuality: 66, energy: 79, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "abqaiq",
+    name: "Abqaiq",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~36K",
+    intro:
+      "Abqaiq is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~36K. This profile brings together deterministic city-intelligence indicators for Abqaiq spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Abqaiq profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 61, energy: 80, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "miyazaki",
+    name: "Miyazaki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~397K",
+    intro:
+      "Miyazaki is an indexed city in Japan (East Asia), with a metropolitan population of about ~397K. This profile brings together deterministic city-intelligence indicators for Miyazaki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Miyazaki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 72, energy: 83, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dongguan",
+    name: "Dongguan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~10.5M",
+    intro:
+      "Dongguan is an indexed city in China (East Asia), with a metropolitan population of about ~10.5M. This profile brings together deterministic city-intelligence indicators for Dongguan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dongguan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 45, energy: 76, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kochi-shi",
+    name: "Kōchi-shi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~326K",
+    intro:
+      "Kōchi-shi is an indexed city in Japan (East Asia), with a metropolitan population of about ~326K. This profile brings together deterministic city-intelligence indicators for Kōchi-shi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kōchi-shi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 66, energy: 84, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "foshan",
+    name: "Foshan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.5M",
+    intro:
+      "Foshan is an indexed city in China (East Asia), with a metropolitan population of about ~9.5M. This profile brings together deterministic city-intelligence indicators for Foshan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Foshan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 51, energy: 78, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "maebashi",
+    name: "Maebashi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~332K",
+    intro:
+      "Maebashi is an indexed city in Japan (East Asia), with a metropolitan population of about ~332K. This profile brings together deterministic city-intelligence indicators for Maebashi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Maebashi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 69, energy: 85, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xuzhou",
+    name: "Xuzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.1M",
+    intro:
+      "Xuzhou is an indexed city in China (East Asia), with a metropolitan population of about ~9.1M. This profile brings together deterministic city-intelligence indicators for Xuzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xuzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 46, energy: 79, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tokushima",
+    name: "Tokushima",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~255K",
+    intro:
+      "Tokushima is an indexed city in Japan (East Asia), with a metropolitan population of about ~255K. This profile brings together deterministic city-intelligence indicators for Tokushima spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tokushima profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 70, energy: 85, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kaifeng",
+    name: "Kaifeng",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.8M",
+    intro:
+      "Kaifeng is an indexed city in China (East Asia), with a metropolitan population of about ~4.8M. This profile brings together deterministic city-intelligence indicators for Kaifeng spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kaifeng profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 50, energy: 78, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hakodate",
+    name: "Hakodate",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~252K",
+    intro:
+      "Hakodate is an indexed city in Japan (East Asia), with a metropolitan population of about ~252K. This profile brings together deterministic city-intelligence indicators for Hakodate spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hakodate profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 68, energy: 79, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "handan",
+    name: "Handan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.4M",
+    intro:
+      "Handan is an indexed city in China (East Asia), with a metropolitan population of about ~9.4M. This profile brings together deterministic city-intelligence indicators for Handan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Handan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 52, energy: 76, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mito",
+    name: "Mito",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~271K",
+    intro:
+      "Mito is an indexed city in Japan (East Asia), with a metropolitan population of about ~271K. This profile brings together deterministic city-intelligence indicators for Mito spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mito profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 72, energy: 78, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ningbo",
+    name: "Ningbo",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.4M",
+    intro:
+      "Ningbo is an indexed city in China (East Asia), with a metropolitan population of about ~9.4M. This profile brings together deterministic city-intelligence indicators for Ningbo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ningbo profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 46, energy: 78, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yamagata",
+    name: "Yamagata",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~247K",
+    intro:
+      "Yamagata is an indexed city in Japan (East Asia), with a metropolitan population of about ~247K. This profile brings together deterministic city-intelligence indicators for Yamagata spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yamagata profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 67, energy: 85, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yangzhou",
+    name: "Yangzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.6M",
+    intro:
+      "Yangzhou is an indexed city in China (East Asia), with a metropolitan population of about ~4.6M. This profile brings together deterministic city-intelligence indicators for Yangzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yangzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 46, energy: 75, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hamamatsu",
+    name: "Hamamatsu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~788K",
+    intro:
+      "Hamamatsu is an indexed city in Japan (East Asia), with a metropolitan population of about ~788K. This profile brings together deterministic city-intelligence indicators for Hamamatsu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hamamatsu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 63, energy: 79, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zhanjiang",
+    name: "Zhanjiang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.0M",
+    intro:
+      "Zhanjiang is an indexed city in China (East Asia), with a metropolitan population of about ~7.0M. This profile brings together deterministic city-intelligence indicators for Zhanjiang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zhanjiang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 48, energy: 76, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fukui",
+    name: "Fukui",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~261K",
+    intro:
+      "Fukui is an indexed city in Japan (East Asia), with a metropolitan population of about ~261K. This profile brings together deterministic city-intelligence indicators for Fukui spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fukui profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 70, energy: 80, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kashgar",
+    name: "Kashgar",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~783K",
+    intro:
+      "Kashgar is an indexed city in China (East Asia), with a metropolitan population of about ~783K. This profile brings together deterministic city-intelligence indicators for Kashgar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kashgar profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 53, energy: 78, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "himeji",
+    name: "Himeji",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~528K",
+    intro:
+      "Himeji is an indexed city in Japan (East Asia), with a metropolitan population of about ~528K. This profile brings together deterministic city-intelligence indicators for Himeji spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Himeji profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 72, energy: 83, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wuxi",
+    name: "Wuxi",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.5M",
+    intro:
+      "Wuxi is an indexed city in China (East Asia), with a metropolitan population of about ~7.5M. This profile brings together deterministic city-intelligence indicators for Wuxi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wuxi profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 55, energy: 79, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "saga",
+    name: "Saga",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~232K",
+    intro:
+      "Saga is an indexed city in Japan (East Asia), with a metropolitan population of about ~232K. This profile brings together deterministic city-intelligence indicators for Saga spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Saga profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 69, energy: 83, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "anyang",
+    name: "Anyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.5M",
+    intro:
+      "Anyang is an indexed city in China (East Asia), with a metropolitan population of about ~5.5M. This profile brings together deterministic city-intelligence indicators for Anyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Anyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 45, energy: 76, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tsu",
+    name: "Tsu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~273K",
+    intro:
+      "Tsu is an indexed city in Japan (East Asia), with a metropolitan population of about ~273K. This profile brings together deterministic city-intelligence indicators for Tsu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tsu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 63, energy: 78, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "guilin",
+    name: "Guilin",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.1M",
+    intro:
+      "Guilin is an indexed city in China (East Asia), with a metropolitan population of about ~5.1M. This profile brings together deterministic city-intelligence indicators for Guilin spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Guilin profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 51, energy: 79, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tottori",
+    name: "Tottori",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~187K",
+    intro:
+      "Tottori is an indexed city in Japan (East Asia), with a metropolitan population of about ~187K. This profile brings together deterministic city-intelligence indicators for Tottori spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tottori profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 70, energy: 86, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shantou",
+    name: "Shantou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.5M",
+    intro:
+      "Shantou is an indexed city in China (East Asia), with a metropolitan population of about ~5.5M. This profile brings together deterministic city-intelligence indicators for Shantou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shantou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 55, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "matsue",
+    name: "Matsue",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~202K",
+    intro:
+      "Matsue is an indexed city in Japan (East Asia), with a metropolitan population of about ~202K. This profile brings together deterministic city-intelligence indicators for Matsue spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Matsue profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 71, energy: 83, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fuyang",
+    name: "Fuyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~8.2M",
+    intro:
+      "Fuyang is an indexed city in China (East Asia), with a metropolitan population of about ~8.2M. This profile brings together deterministic city-intelligence indicators for Fuyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fuyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 47, energy: 81, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kofu",
+    name: "Kofu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~187K",
+    intro:
+      "Kofu is an indexed city in Japan (East Asia), with a metropolitan population of about ~187K. This profile brings together deterministic city-intelligence indicators for Kofu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kofu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 67, energy: 85, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shaoxing",
+    name: "Shaoxing",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.3M",
+    intro:
+      "Shaoxing is an indexed city in China (East Asia), with a metropolitan population of about ~5.3M. This profile brings together deterministic city-intelligence indicators for Shaoxing spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shaoxing profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 45, energy: 82, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yamaguchi",
+    name: "Yamaguchi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~194K",
+    intro:
+      "Yamaguchi is an indexed city in Japan (East Asia), with a metropolitan population of about ~194K. This profile brings together deterministic city-intelligence indicators for Yamaguchi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yamaguchi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 66, energy: 82, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tangshan",
+    name: "Tangshan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.7M",
+    intro:
+      "Tangshan is an indexed city in China (East Asia), with a metropolitan population of about ~7.7M. This profile brings together deterministic city-intelligence indicators for Tangshan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tangshan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 54, energy: 75, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "asahikawa",
+    name: "Asahikawa",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~331K",
+    intro:
+      "Asahikawa is an indexed city in Japan (East Asia), with a metropolitan population of about ~331K. This profile brings together deterministic city-intelligence indicators for Asahikawa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Asahikawa profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 66, energy: 78, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zibo",
+    name: "Zibo",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.7M",
+    intro:
+      "Zibo is an indexed city in China (East Asia), with a metropolitan population of about ~4.7M. This profile brings together deterministic city-intelligence indicators for Zibo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zibo profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 51, energy: 79, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "toyohashi",
+    name: "Toyohashi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~372K",
+    intro:
+      "Toyohashi is an indexed city in Japan (East Asia), with a metropolitan population of about ~372K. This profile brings together deterministic city-intelligence indicators for Toyohashi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Toyohashi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 64, energy: 83, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wenzhou",
+    name: "Wenzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.6M",
+    intro:
+      "Wenzhou is an indexed city in China (East Asia), with a metropolitan population of about ~9.6M. This profile brings together deterministic city-intelligence indicators for Wenzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wenzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 46, energy: 81, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sakai",
+    name: "Sakai",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~827K",
+    intro:
+      "Sakai is an indexed city in Japan (East Asia), with a metropolitan population of about ~827K. This profile brings together deterministic city-intelligence indicators for Sakai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sakai profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 86, affordability: 54, airQuality: 73, energy: 78, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zhangjiakou",
+    name: "Zhangjiakou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.3M",
+    intro:
+      "Zhangjiakou is an indexed city in China (East Asia), with a metropolitan population of about ~4.3M. This profile brings together deterministic city-intelligence indicators for Zhangjiakou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zhangjiakou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 54, energy: 80, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "okazaki",
+    name: "Okazaki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~385K",
+    intro:
+      "Okazaki is an indexed city in Japan (East Asia), with a metropolitan population of about ~385K. This profile brings together deterministic city-intelligence indicators for Okazaki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Okazaki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 86, affordability: 54, airQuality: 63, energy: 81, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shangqiu",
+    name: "Shangqiu",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.8M",
+    intro:
+      "Shangqiu is an indexed city in China (East Asia), with a metropolitan population of about ~7.8M. This profile brings together deterministic city-intelligence indicators for Shangqiu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shangqiu profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 47, energy: 82, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sagamihara",
+    name: "Sagamihara",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~726K",
+    intro:
+      "Sagamihara is an indexed city in Japan (East Asia), with a metropolitan population of about ~726K. This profile brings together deterministic city-intelligence indicators for Sagamihara spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sagamihara profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 67, energy: 78, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "quanzhou",
+    name: "Quanzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~8.8M",
+    intro:
+      "Quanzhou is an indexed city in China (East Asia), with a metropolitan population of about ~8.8M. This profile brings together deterministic city-intelligence indicators for Quanzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Quanzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 52, energy: 74, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ichikawa",
+    name: "Ichikawa",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~496K",
+    intro:
+      "Ichikawa is an indexed city in Japan (East Asia), with a metropolitan population of about ~496K. This profile brings together deterministic city-intelligence indicators for Ichikawa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ichikawa profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 70, energy: 83, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lijiang",
+    name: "Lijiang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~1.3M",
+    intro:
+      "Lijiang is an indexed city in China (East Asia), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Lijiang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lijiang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 53, energy: 74, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "matsumoto",
+    name: "Matsumoto",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~239K",
+    intro:
+      "Matsumoto is an indexed city in Japan (East Asia), with a metropolitan population of about ~239K. This profile brings together deterministic city-intelligence indicators for Matsumoto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Matsumoto profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 70, energy: 81, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "baoding",
+    name: "Baoding",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~11.5M",
+    intro:
+      "Baoding is an indexed city in China (East Asia), with a metropolitan population of about ~11.5M. This profile brings together deterministic city-intelligence indicators for Baoding spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Baoding profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 46, energy: 77, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kurume",
+    name: "Kurume",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~303K",
+    intro:
+      "Kurume is an indexed city in Japan (East Asia), with a metropolitan population of about ~303K. This profile brings together deterministic city-intelligence indicators for Kurume spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kurume profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 72, energy: 78, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pudong",
+    name: "Pudong",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.7M",
+    intro:
+      "Pudong is an indexed city in China (East Asia), with a metropolitan population of about ~5.7M. This profile brings together deterministic city-intelligence indicators for Pudong spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pudong profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 54, energy: 78, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hachinohe",
+    name: "Hachinohe",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~223K",
+    intro:
+      "Hachinohe is an indexed city in Japan (East Asia), with a metropolitan population of about ~223K. This profile brings together deterministic city-intelligence indicators for Hachinohe spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hachinohe profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 65, energy: 82, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yantai",
+    name: "Yantai",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.1M",
+    intro:
+      "Yantai is an indexed city in China (East Asia), with a metropolitan population of about ~7.1M. This profile brings together deterministic city-intelligence indicators for Yantai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yantai profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 50, energy: 75, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "odawara",
+    name: "Odawara",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~189K",
+    intro:
+      "Odawara is an indexed city in Japan (East Asia), with a metropolitan population of about ~189K. This profile brings together deterministic city-intelligence indicators for Odawara spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Odawara profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 72, energy: 79, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xuchang",
+    name: "Xuchang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.4M",
+    intro:
+      "Xuchang is an indexed city in China (East Asia), with a metropolitan population of about ~4.4M. This profile brings together deterministic city-intelligence indicators for Xuchang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xuchang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 52, energy: 76, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "toyota",
+    name: "Toyota",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~422K",
+    intro:
+      "Toyota is an indexed city in Japan (East Asia), with a metropolitan population of about ~422K. This profile brings together deterministic city-intelligence indicators for Toyota spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Toyota profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 68, energy: 85, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zhuhai",
+    name: "Zhuhai",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~2.4M",
+    intro:
+      "Zhuhai is an indexed city in China (East Asia), with a metropolitan population of about ~2.4M. This profile brings together deterministic city-intelligence indicators for Zhuhai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zhuhai profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 51, energy: 79, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "suzuka",
+    name: "Suzuka",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~195K",
+    intro:
+      "Suzuka is an indexed city in Japan (East Asia), with a metropolitan population of about ~195K. This profile brings together deterministic city-intelligence indicators for Suzuka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Suzuka profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 65, energy: 81, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "qiqihar",
+    name: "Qiqihar",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.4M",
+    intro:
+      "Qiqihar is an indexed city in China (East Asia), with a metropolitan population of about ~5.4M. This profile brings together deterministic city-intelligence indicators for Qiqihar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Qiqihar profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 53, energy: 74, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "akashi",
+    name: "Akashi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~300K",
+    intro:
+      "Akashi is an indexed city in Japan (East Asia), with a metropolitan population of about ~300K. This profile brings together deterministic city-intelligence indicators for Akashi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Akashi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 73, energy: 82, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "changzhou",
+    name: "Changzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.3M",
+    intro:
+      "Changzhou is an indexed city in China (East Asia), with a metropolitan population of about ~5.3M. This profile brings together deterministic city-intelligence indicators for Changzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Changzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 53, energy: 76, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nagaoka",
+    name: "Nagaoka",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~266K",
+    intro:
+      "Nagaoka is an indexed city in Japan (East Asia), with a metropolitan population of about ~266K. This profile brings together deterministic city-intelligence indicators for Nagaoka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nagaoka profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 67, energy: 82, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nanyang",
+    name: "Nanyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.7M",
+    intro:
+      "Nanyang is an indexed city in China (East Asia), with a metropolitan population of about ~9.7M. This profile brings together deterministic city-intelligence indicators for Nanyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nanyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 55, energy: 81, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yokosuka",
+    name: "Yokosuka",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~390K",
+    intro:
+      "Yokosuka is an indexed city in Japan (East Asia), with a metropolitan population of about ~390K. This profile brings together deterministic city-intelligence indicators for Yokosuka spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yokosuka profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 66, energy: 86, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huizhou",
+    name: "Huizhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.0M",
+    intro:
+      "Huizhou is an indexed city in China (East Asia), with a metropolitan population of about ~6.0M. This profile brings together deterministic city-intelligence indicators for Huizhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huizhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 51, energy: 74, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "linfen",
+    name: "Linfen",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.0M",
+    intro:
+      "Linfen is an indexed city in China (East Asia), with a metropolitan population of about ~4.0M. This profile brings together deterministic city-intelligence indicators for Linfen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Linfen profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 45, energy: 77, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hirosaki",
+    name: "Hirosaki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~168K",
+    intro:
+      "Hirosaki is an indexed city in Japan (East Asia), with a metropolitan population of about ~168K. This profile brings together deterministic city-intelligence indicators for Hirosaki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hirosaki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 64, energy: 80, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jilin-city",
+    name: "Jilin City",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.4M",
+    intro:
+      "Jilin City is an indexed city in China (East Asia), with a metropolitan population of about ~4.4M. This profile brings together deterministic city-intelligence indicators for Jilin City spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jilin City profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 53, energy: 78, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "amagasaki",
+    name: "Amagasaki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~456K",
+    intro:
+      "Amagasaki is an indexed city in Japan (East Asia), with a metropolitan population of about ~456K. This profile brings together deterministic city-intelligence indicators for Amagasaki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Amagasaki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 86, affordability: 54, airQuality: 73, energy: 80, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jiangmen",
+    name: "Jiangmen",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.8M",
+    intro:
+      "Jiangmen is an indexed city in China (East Asia), with a metropolitan population of about ~4.8M. This profile brings together deterministic city-intelligence indicators for Jiangmen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jiangmen profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 49, energy: 82, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kamakura",
+    name: "Kamakura",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~173K",
+    intro:
+      "Kamakura is an indexed city in Japan (East Asia), with a metropolitan population of about ~173K. This profile brings together deterministic city-intelligence indicators for Kamakura spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kamakura profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 71, energy: 82, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yan-an",
+    name: "Yan'an",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~2.3M",
+    intro:
+      "Yan'an is an indexed city in China (East Asia), with a metropolitan population of about ~2.3M. This profile brings together deterministic city-intelligence indicators for Yan'an spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yan'an profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 50, energy: 80, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "obihiro",
+    name: "Obihiro",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~166K",
+    intro:
+      "Obihiro is an indexed city in Japan (East Asia), with a metropolitan population of about ~166K. This profile brings together deterministic city-intelligence indicators for Obihiro spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Obihiro profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 68, energy: 80, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nantong",
+    name: "Nantong",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.7M",
+    intro:
+      "Nantong is an indexed city in China (East Asia), with a metropolitan population of about ~7.7M. This profile brings together deterministic city-intelligence indicators for Nantong spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nantong profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 52, energy: 74, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "funabashi",
+    name: "Funabashi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~641K",
+    intro:
+      "Funabashi is an indexed city in Japan (East Asia), with a metropolitan population of about ~641K. This profile brings together deterministic city-intelligence indicators for Funabashi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Funabashi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 67, energy: 83, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "weifang",
+    name: "Weifang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.4M",
+    intro:
+      "Weifang is an indexed city in China (East Asia), with a metropolitan population of about ~9.4M. This profile brings together deterministic city-intelligence indicators for Weifang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Weifang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 46, energy: 79, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yonago",
+    name: "Yonago",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~147K",
+    intro:
+      "Yonago is an indexed city in Japan (East Asia), with a metropolitan population of about ~147K. This profile brings together deterministic city-intelligence indicators for Yonago spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yonago profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 64, energy: 79, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "linyi",
+    name: "Linyi",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~11.0M",
+    intro:
+      "Linyi is an indexed city in China (East Asia), with a metropolitan population of about ~11.0M. This profile brings together deterministic city-intelligence indicators for Linyi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Linyi profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 52, energy: 76, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fukuyama",
+    name: "Fukuyama",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~460K",
+    intro:
+      "Fukuyama is an indexed city in Japan (East Asia), with a metropolitan population of about ~460K. This profile brings together deterministic city-intelligence indicators for Fukuyama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fukuyama profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 64, energy: 81, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ganzhou",
+    name: "Ganzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~9.0M",
+    intro:
+      "Ganzhou is an indexed city in China (East Asia), with a metropolitan population of about ~9.0M. This profile brings together deterministic city-intelligence indicators for Ganzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ganzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 48, energy: 77, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "takasaki",
+    name: "Takasaki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~373K",
+    intro:
+      "Takasaki is an indexed city in Japan (East Asia), with a metropolitan population of about ~373K. This profile brings together deterministic city-intelligence indicators for Takasaki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Takasaki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 63, energy: 85, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zhongshan",
+    name: "Zhongshan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.4M",
+    intro:
+      "Zhongshan is an indexed city in China (East Asia), with a metropolitan population of about ~4.4M. This profile brings together deterministic city-intelligence indicators for Zhongshan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zhongshan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 49, energy: 79, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aizuwakamatsu",
+    name: "Aizuwakamatsu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~118K",
+    intro:
+      "Aizuwakamatsu is an indexed city in Japan (East Asia), with a metropolitan population of about ~118K. This profile brings together deterministic city-intelligence indicators for Aizuwakamatsu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Aizuwakamatsu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 73, energy: 86, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "baotou",
+    name: "Baotou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~2.7M",
+    intro:
+      "Baotou is an indexed city in China (East Asia), with a metropolitan population of about ~2.7M. This profile brings together deterministic city-intelligence indicators for Baotou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Baotou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 48, energy: 77, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "shimonoseki",
+    name: "Shimonoseki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~253K",
+    intro:
+      "Shimonoseki is an indexed city in Japan (East Asia), with a metropolitan population of about ~253K. This profile brings together deterministic city-intelligence indicators for Shimonoseki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Shimonoseki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 72, energy: 84, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "anshan",
+    name: "Anshan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~3.3M",
+    intro:
+      "Anshan is an indexed city in China (East Asia), with a metropolitan population of about ~3.3M. This profile brings together deterministic city-intelligence indicators for Anshan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Anshan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 47, energy: 78, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "iwata",
+    name: "Iwata",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~166K",
+    intro:
+      "Iwata is an indexed city in Japan (East Asia), with a metropolitan population of about ~166K. This profile brings together deterministic city-intelligence indicators for Iwata spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Iwata profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 71, energy: 78, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "liuzhou",
+    name: "Liuzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.2M",
+    intro:
+      "Liuzhou is an indexed city in China (East Asia), with a metropolitan population of about ~4.2M. This profile brings together deterministic city-intelligence indicators for Liuzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Liuzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 50, energy: 81, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nishinomiya",
+    name: "Nishinomiya",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~487K",
+    intro:
+      "Nishinomiya is an indexed city in Japan (East Asia), with a metropolitan population of about ~487K. This profile brings together deterministic city-intelligence indicators for Nishinomiya spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nishinomiya profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 65, energy: 78, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "maoming",
+    name: "Maoming",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.3M",
+    intro:
+      "Maoming is an indexed city in China (East Asia), with a metropolitan population of about ~6.3M. This profile brings together deterministic city-intelligence indicators for Maoming spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Maoming profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 51, energy: 79, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kawaguchi",
+    name: "Kawaguchi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~594K",
+    intro:
+      "Kawaguchi is an indexed city in Japan (East Asia), with a metropolitan population of about ~594K. This profile brings together deterministic city-intelligence indicators for Kawaguchi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kawaguchi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 66, energy: 78, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "datong",
+    name: "Datong",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~3.3M",
+    intro:
+      "Datong is an indexed city in China (East Asia), with a metropolitan population of about ~3.3M. This profile brings together deterministic city-intelligence indicators for Datong spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Datong profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 48, energy: 80, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kurashiki",
+    name: "Kurashiki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~475K",
+    intro:
+      "Kurashiki is an indexed city in Japan (East Asia), with a metropolitan population of about ~475K. This profile brings together deterministic city-intelligence indicators for Kurashiki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kurashiki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 70, energy: 80, resilience: 86 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zhangye",
+    name: "Zhangye",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~1.2M",
+    intro:
+      "Zhangye is an indexed city in China (East Asia), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Zhangye spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zhangye profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 54, energy: 80, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kashiwa",
+    name: "Kashiwa",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~428K",
+    intro:
+      "Kashiwa is an indexed city in Japan (East Asia), with a metropolitan population of about ~428K. This profile brings together deterministic city-intelligence indicators for Kashiwa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kashiwa profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 64, energy: 80, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zhangzhou",
+    name: "Zhangzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.1M",
+    intro:
+      "Zhangzhou is an indexed city in China (East Asia), with a metropolitan population of about ~5.1M. This profile brings together deterministic city-intelligence indicators for Zhangzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zhangzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 46, energy: 81, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "marugame",
+    name: "Marugame",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~109K",
+    intro:
+      "Marugame is an indexed city in Japan (East Asia), with a metropolitan population of about ~109K. This profile brings together deterministic city-intelligence indicators for Marugame spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Marugame profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 64, energy: 83, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jining",
+    name: "Jining",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~8.4M",
+    intro:
+      "Jining is an indexed city in China (East Asia), with a metropolitan population of about ~8.4M. This profile brings together deterministic city-intelligence indicators for Jining spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jining profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 52, energy: 78, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fujieda",
+    name: "Fujieda",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~141K",
+    intro:
+      "Fujieda is an indexed city in Japan (East Asia), with a metropolitan population of about ~141K. This profile brings together deterministic city-intelligence indicators for Fujieda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fujieda profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 63, energy: 80, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hengyang",
+    name: "Hengyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.6M",
+    intro:
+      "Hengyang is an indexed city in China (East Asia), with a metropolitan population of about ~6.6M. This profile brings together deterministic city-intelligence indicators for Hengyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hengyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 47, energy: 80, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kuwana",
+    name: "Kuwana",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~139K",
+    intro:
+      "Kuwana is an indexed city in Japan (East Asia), with a metropolitan population of about ~139K. This profile brings together deterministic city-intelligence indicators for Kuwana spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kuwana profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 69, energy: 79, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dandong",
+    name: "Dandong",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~2.4M",
+    intro:
+      "Dandong is an indexed city in China (East Asia), with a metropolitan population of about ~2.4M. This profile brings together deterministic city-intelligence indicators for Dandong spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dandong profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 54, energy: 76, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kisarazu",
+    name: "Kisarazu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~136K",
+    intro:
+      "Kisarazu is an indexed city in Japan (East Asia), with a metropolitan population of about ~136K. This profile brings together deterministic city-intelligence indicators for Kisarazu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kisarazu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 66, energy: 82, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "anqing",
+    name: "Anqing",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.2M",
+    intro:
+      "Anqing is an indexed city in China (East Asia), with a metropolitan population of about ~4.2M. This profile brings together deterministic city-intelligence indicators for Anqing spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Anqing profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 48, energy: 81, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hikone",
+    name: "Hikone",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~113K",
+    intro:
+      "Hikone is an indexed city in Japan (East Asia), with a metropolitan population of about ~113K. This profile brings together deterministic city-intelligence indicators for Hikone spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hikone profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 66, energy: 78, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yichang",
+    name: "Yichang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.0M",
+    intro:
+      "Yichang is an indexed city in China (East Asia), with a metropolitan population of about ~4.0M. This profile brings together deterministic city-intelligence indicators for Yichang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yichang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 55, energy: 77, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kawagoe",
+    name: "Kawagoe",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~355K",
+    intro:
+      "Kawagoe is an indexed city in Japan (East Asia), with a metropolitan population of about ~355K. This profile brings together deterministic city-intelligence indicators for Kawagoe spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kawagoe profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 71, energy: 83, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xiangyang",
+    name: "Xiangyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.7M",
+    intro:
+      "Xiangyang is an indexed city in China (East Asia), with a metropolitan population of about ~5.7M. This profile brings together deterministic city-intelligence indicators for Xiangyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xiangyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 46, energy: 74, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sakura",
+    name: "Sakura",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~169K",
+    intro:
+      "Sakura is an indexed city in Japan (East Asia), with a metropolitan population of about ~169K. This profile brings together deterministic city-intelligence indicators for Sakura spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sakura profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 72, energy: 85, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "wuhu",
+    name: "Wuhu",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~3.6M",
+    intro:
+      "Wuhu is an indexed city in China (East Asia), with a metropolitan population of about ~3.6M. This profile brings together deterministic city-intelligence indicators for Wuhu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Wuhu profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 51, energy: 77, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kariya",
+    name: "Kariya",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~153K",
+    intro:
+      "Kariya is an indexed city in Japan (East Asia), with a metropolitan population of about ~153K. This profile brings together deterministic city-intelligence indicators for Kariya spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kariya profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 80, affordability: 60, airQuality: 65, energy: 79, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yancheng",
+    name: "Yancheng",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.7M",
+    intro:
+      "Yancheng is an indexed city in China (East Asia), with a metropolitan population of about ~6.7M. This profile brings together deterministic city-intelligence indicators for Yancheng spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yancheng profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 50, energy: 76, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "matsudo",
+    name: "Matsudo",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~498K",
+    intro:
+      "Matsudo is an indexed city in Japan (East Asia), with a metropolitan population of about ~498K. This profile brings together deterministic city-intelligence indicators for Matsudo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Matsudo profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 71, energy: 82, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cangzhou",
+    name: "Cangzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.3M",
+    intro:
+      "Cangzhou is an indexed city in China (East Asia), with a metropolitan population of about ~7.3M. This profile brings together deterministic city-intelligence indicators for Cangzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cangzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 46, energy: 77, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ichinomiya",
+    name: "Ichinomiya",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~378K",
+    intro:
+      "Ichinomiya is an indexed city in Japan (East Asia), with a metropolitan population of about ~378K. This profile brings together deterministic city-intelligence indicators for Ichinomiya spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ichinomiya profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 64, energy: 85, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "taizhou",
+    name: "Taizhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.6M",
+    intro:
+      "Taizhou is an indexed city in China (East Asia), with a metropolitan population of about ~6.6M. This profile brings together deterministic city-intelligence indicators for Taizhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Taizhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 48, energy: 76, resilience: 78 },
+  }),
+  buildNeutralCitySeed({
+    slug: "karatsu",
+    name: "Karatsu",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~116K",
+    intro:
+      "Karatsu is an indexed city in Japan (East Asia), with a metropolitan population of about ~116K. This profile brings together deterministic city-intelligence indicators for Karatsu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Karatsu profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 71, energy: 81, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zhaoqing",
+    name: "Zhaoqing",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.2M",
+    intro:
+      "Zhaoqing is an indexed city in China (East Asia), with a metropolitan population of about ~4.2M. This profile brings together deterministic city-intelligence indicators for Zhaoqing spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zhaoqing profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 49, energy: 82, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fujisawa",
+    name: "Fujisawa",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~437K",
+    intro:
+      "Fujisawa is an indexed city in Japan (East Asia), with a metropolitan population of about ~437K. This profile brings together deterministic city-intelligence indicators for Fujisawa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fujisawa profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 79, affordability: 61, airQuality: 65, energy: 78, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huanggang",
+    name: "Huanggang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.3M",
+    intro:
+      "Huanggang is an indexed city in China (East Asia), with a metropolitan population of about ~6.3M. This profile brings together deterministic city-intelligence indicators for Huanggang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huanggang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 49, energy: 74, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "koriyama",
+    name: "Kōriyama",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~327K",
+    intro:
+      "Kōriyama is an indexed city in Japan (East Asia), with a metropolitan population of about ~327K. This profile brings together deterministic city-intelligence indicators for Kōriyama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kōriyama profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 86, affordability: 54, airQuality: 68, energy: 86, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yueyang",
+    name: "Yueyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.8M",
+    intro:
+      "Yueyang is an indexed city in China (East Asia), with a metropolitan population of about ~5.8M. This profile brings together deterministic city-intelligence indicators for Yueyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yueyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 48, energy: 81, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "higashiosaka-shi",
+    name: "Higashiōsaka-shi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~491K",
+    intro:
+      "Higashiōsaka-shi is an indexed city in Japan (East Asia), with a metropolitan population of about ~491K. This profile brings together deterministic city-intelligence indicators for Higashiōsaka-shi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Higashiōsaka-shi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 73, energy: 86, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jingzhou",
+    name: "Jingzhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.6M",
+    intro:
+      "Jingzhou is an indexed city in China (East Asia), with a metropolitan population of about ~5.6M. This profile brings together deterministic city-intelligence indicators for Jingzhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jingzhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 55, energy: 80, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "iwaki",
+    name: "Iwaki",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~336K",
+    intro:
+      "Iwaki is an indexed city in Japan (East Asia), with a metropolitan population of about ~336K. This profile brings together deterministic city-intelligence indicators for Iwaki spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Iwaki profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 69, energy: 84, resilience: 87 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zunyi",
+    name: "Zunyi",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.6M",
+    intro:
+      "Zunyi is an indexed city in China (East Asia), with a metropolitan population of about ~6.6M. This profile brings together deterministic city-intelligence indicators for Zunyi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zunyi profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 55, energy: 79, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kasugai",
+    name: "Kasugai",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~306K",
+    intro:
+      "Kasugai is an indexed city in Japan (East Asia), with a metropolitan population of about ~306K. This profile brings together deterministic city-intelligence indicators for Kasugai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kasugai profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 69, energy: 79, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tai-an",
+    name: "Tai'an",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.5M",
+    intro:
+      "Tai'an is an indexed city in China (East Asia), with a metropolitan population of about ~5.5M. This profile brings together deterministic city-intelligence indicators for Tai'an spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tai'an profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 51, energy: 80, resilience: 77 },
+  }),
+  buildNeutralCitySeed({
+    slug: "suita",
+    name: "Suita",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~385K",
+    intro:
+      "Suita is an indexed city in Japan (East Asia), with a metropolitan population of about ~385K. This profile brings together deterministic city-intelligence indicators for Suita spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Suita profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 67, energy: 79, resilience: 84 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xingtai",
+    name: "Xingtai",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~7.1M",
+    intro:
+      "Xingtai is an indexed city in China (East Asia), with a metropolitan population of about ~7.1M. This profile brings together deterministic city-intelligence indicators for Xingtai spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xingtai profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 47, energy: 79, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ueda",
+    name: "Ueda",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~153K",
+    intro:
+      "Ueda is an indexed city in Japan (East Asia), with a metropolitan population of about ~153K. This profile brings together deterministic city-intelligence indicators for Ueda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ueda profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 81, affordability: 59, airQuality: 68, energy: 84, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mishima",
+    name: "Mishima",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~107K",
+    intro:
+      "Mishima is an indexed city in Japan (East Asia), with a metropolitan population of about ~107K. This profile brings together deterministic city-intelligence indicators for Mishima spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mishima profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 71, energy: 83, resilience: 82 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chaozhou",
+    name: "Chaozhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~2.7M",
+    intro:
+      "Chaozhou is an indexed city in China (East Asia), with a metropolitan population of about ~2.7M. This profile brings together deterministic city-intelligence indicators for Chaozhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chaozhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 52, energy: 76, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "koshigaya",
+    name: "Koshigaya",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~342K",
+    intro:
+      "Koshigaya is an indexed city in Japan (East Asia), with a metropolitan population of about ~342K. This profile brings together deterministic city-intelligence indicators for Koshigaya spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Koshigaya profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 84, affordability: 56, airQuality: 66, energy: 85, resilience: 88 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fushun",
+    name: "Fushun",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~1.9M",
+    intro:
+      "Fushun is an indexed city in China (East Asia), with a metropolitan population of about ~1.9M. This profile brings together deterministic city-intelligence indicators for Fushun spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fushun profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 46, energy: 75, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "yokkaichi",
+    name: "Yokkaichi",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~310K",
+    intro:
+      "Yokkaichi is an indexed city in Japan (East Asia), with a metropolitan population of about ~310K. This profile brings together deterministic city-intelligence indicators for Yokkaichi spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Yokkaichi profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 82, affordability: 58, airQuality: 66, energy: 80, resilience: 85 },
+  }),
+  buildNeutralCitySeed({
+    slug: "changde",
+    name: "Changde",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~5.8M",
+    intro:
+      "Changde is an indexed city in China (East Asia), with a metropolitan population of about ~5.8M. This profile brings together deterministic city-intelligence indicators for Changde spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Changde profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 50, energy: 80, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hirakata",
+    name: "Hirakata",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~397K",
+    intro:
+      "Hirakata is an indexed city in Japan (East Asia), with a metropolitan population of about ~397K. This profile brings together deterministic city-intelligence indicators for Hirakata spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hirakata profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 78, affordability: 62, airQuality: 63, energy: 84, resilience: 80 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xinyang",
+    name: "Xinyang",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~6.2M",
+    intro:
+      "Xinyang is an indexed city in China (East Asia), with a metropolitan population of about ~6.2M. This profile brings together deterministic city-intelligence indicators for Xinyang spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xinyang profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 45, energy: 76, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "koga",
+    name: "Koga",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~138K",
+    intro:
+      "Koga is an indexed city in Japan (East Asia), with a metropolitan population of about ~138K. This profile brings together deterministic city-intelligence indicators for Koga spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Koga profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 83, affordability: 57, airQuality: 68, energy: 83, resilience: 83 },
+  }),
+  buildNeutralCitySeed({
+    slug: "meizhou",
+    name: "Meizhou",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~4.4M",
+    intro:
+      "Meizhou is an indexed city in China (East Asia), with a metropolitan population of about ~4.4M. This profile brings together deterministic city-intelligence indicators for Meizhou spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Meizhou profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 52, energy: 77, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sabya",
+    name: "Sabya",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~63K",
+    intro:
+      "Sabya is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~63K. This profile brings together deterministic city-intelligence indicators for Sabya spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sabya profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 63, energy: 74, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "turubah",
+    name: "Turubah",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~26K",
+    intro:
+      "Turubah is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~26K. This profile brings together deterministic city-intelligence indicators for Turubah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Turubah profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 56, energy: 76, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sari",
+    name: "Sari",
+    countrySlug: "iran",
+    countryName: "Iran",
+    region: "Western Asia",
+    population: "~310K",
+    intro:
+      "Sari is an indexed city in Iran (Western Asia), with a metropolitan population of about ~310K. This profile brings together deterministic city-intelligence indicators for Sari spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sari profile to compare affordability, livability, and economic indicators against other indexed cities in Iran and across Western Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 57, energy: 56, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "muroran",
+    name: "Muroran",
+    countrySlug: "japan",
+    countryName: "Japan",
+    region: "East Asia",
+    population: "~82K",
+    intro:
+      "Muroran is an indexed city in Japan (East Asia), with a metropolitan population of about ~82K. This profile brings together deterministic city-intelligence indicators for Muroran spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Muroran profile to compare affordability, livability, and economic indicators against other indexed cities in Japan and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 85, affordability: 55, airQuality: 73, energy: 83, resilience: 81 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huainan",
+    name: "Huainan",
+    countrySlug: "china",
+    countryName: "China",
+    region: "East Asia",
+    population: "~3.0M",
+    intro:
+      "Huainan is an indexed city in China (East Asia), with a metropolitan population of about ~3.0M. This profile brings together deterministic city-intelligence indicators for Huainan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huainan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 54, energy: 77, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tabarjal",
+    name: "Tabarjal",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~49K",
+    intro:
+      "Tabarjal is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~49K. This profile brings together deterministic city-intelligence indicators for Tabarjal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tabarjal profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 54, energy: 75, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "duba",
+    name: "Duba",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~40K",
+    intro:
+      "Duba is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Duba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Duba profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 63, energy: 77, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "umm-lajj",
+    name: "Umm Lajj",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~38K",
+    intro:
+      "Umm Lajj is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Umm Lajj spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Umm Lajj profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 54, energy: 79, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kumzar",
+    name: "Kumzar",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~1K",
+    intro:
+      "Kumzar is an indexed city in Oman (Middle East), with a metropolitan population of about ~1K. This profile brings together deterministic city-intelligence indicators for Kumzar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kumzar profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 62, airQuality: 65, energy: 70, resilience: 53 },
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);

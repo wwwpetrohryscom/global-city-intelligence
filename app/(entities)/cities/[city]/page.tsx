@@ -16,6 +16,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
 import { DataTable } from "@/components/tables/DataTable";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { Card } from "@/components/ui/Card";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
@@ -275,10 +276,29 @@ export default async function CityPage({ params }: PageProps) {
         />
 
         <section className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr]">
-          <article className="rounded-2xl border border-neutral-border bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-semibold text-text-primary">
-              Overall score
-            </h2>
+          <Card as="article" className="relative overflow-hidden p-6">
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#92400E,#B86108,#EA8C1A)]"
+            />
+            <div className="flex items-start justify-between gap-5">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">
+                  Composite profile
+                </p>
+                <h2 className="mt-2 text-2xl font-semibold text-text-primary">
+                  Overall score
+                </h2>
+              </div>
+              <p className="text-right">
+                <span className="block text-4xl font-semibold tabular-nums text-text-primary">
+                  {city.scores.overall}
+                </span>
+                <span className="text-sm font-medium text-text-secondary">
+                  /100
+                </span>
+              </p>
+            </div>
             <p className="mt-4 leading-7 text-text-secondary">{city.outlook}</p>
             <div className="mt-6 space-y-4">
               <ScoreBar label="Overall" value={city.scores.overall} />
@@ -286,7 +306,7 @@ export default async function CityPage({ params }: PageProps) {
               <ScoreBar label="Air quality" value={city.scores.airQuality} />
               <ScoreBar label="Energy" value={city.scores.energy} />
             </div>
-          </article>
+          </Card>
           <div className="grid gap-5 md:grid-cols-3">
             {city.metrics.map((metric) => (
               <MetricCard key={metric.label} metric={metric} />

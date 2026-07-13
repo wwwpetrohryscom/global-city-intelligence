@@ -25,6 +25,7 @@ C={
  'israel':('ILS',3.7,130),'united-arab-emirates':('AED',3.67,110),'saudi-arabia':('SAR',3.75,90),
  'qatar':('QAR',3.64,115),'kuwait':('KWD',0.31,105),'bahrain':('BHD',0.38,95),'oman':('OMR',0.385,90),
  'jordan':('JOD',0.71,85),'lebanon':('USD',1.0,75),
+ 'iran':('IRR',600000.0,34),'iraq':('IQD',1310.0,58),'cyprus':('EUR',0.92,90),
  'japan':('JPY',150.0,105),'south-korea':('KRW',1350.0,100),'china':('CNY',7.1,75),'hong-kong':('HKD',7.8,135),
  'taiwan':('TWD',32.0,80),'singapore':('SGD',1.34,140),'malaysia':('MYR',4.4,55),'thailand':('THB',35.0,55),
  'vietnam':('VND',25000.0,45),'philippines':('PHP',57.0,50),'indonesia':('IDR',15800.0,48),
