@@ -45,8 +45,11 @@ def main() -> int:
     cities = city_slugs()
     text = DATA.read_text()
     try:
-        edu_text = text.split("export const educationProfiles")[1].split("export const universities")[0]
-        uni_text = text.split("export const universities")[1].split("const educationBySlug")[0]
+        # universities may be split into chunk consts (universities_0..N) to stay under
+        # TypeScript's array-literal union-complexity limit; parse either form identically.
+        uni_marker = "const universities_0:" if "const universities_0:" in text else "export const universities"
+        edu_text = text.split("export const educationProfiles")[1].split(uni_marker)[0]
+        uni_text = text.split(uni_marker, 1)[1].split("const educationBySlug")[0]
     except IndexError:
         print("FAIL: could not locate educationProfiles / universities arrays")
         return 1

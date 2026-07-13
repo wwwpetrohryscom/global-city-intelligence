@@ -94,12 +94,17 @@ _NEARBY_PAT = re.compile(
 
 _NEARBY_HARD = ("flag", "coat_of_arms", "coat-of-arms", "emblem", "wappen", "seal_of_",
     "_montage", "montage_", "photomontage", "_culture.", "_deckel")
+# Non-Latin contamination (wave18: JP/CN/KO/AR/FA filenames) — map / satellite / diagram / plan terms.
+_NEARBY_NONLATIN = ("地図", "地圖", "地图", "略図", "衛星", "卫星", "위성", "지도",
+    "خريطة", "خارطة", "نقشه", "示意图", "示意圖", "設計図", "平面図", "圖表", "图表")
 def nearby_file_unsuitable(filename):
     """Mirror the validator's SUSPICIOUS_SRC_PATTERNS exactly (checked vs both the
-    underscore src form and the space sourceUrl form), plus a few hard tokens.
+    underscore src form and the space sourceUrl form), plus a few hard tokens and
+    non-Latin map/satellite/diagram terms.
     Deliberately NOT the broad BAD_FILE_TOKENS (its '_map' over-matches 'Mapillary')."""
     nu = filename.replace(" ", "_").lower()
     if any(t in nu for t in _NEARBY_HARD): return True
+    if any(t in filename for t in _NEARBY_NONLATIN): return True
     return bool(_NEARBY_PAT.search(filename) or _NEARBY_PAT.search(filename.replace(" ", "_")))
 
 def license_ok(code, short):

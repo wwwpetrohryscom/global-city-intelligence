@@ -62,6 +62,7 @@ R = {
  'botswana':('semiarid',450),'senegal':('semiarid',600),
  'united-arab-emirates':('arid',100),'saudi-arabia':('arid',100),'qatar':('arid',80),
  'kuwait':('arid',110),'bahrain':('arid',90),'oman':('arid',120),'jordan':('arid',270),
+ 'iran':('semiarid',250),'iraq':('arid',150),'cyprus':('mediterranean',480),
 }
 DEFAULT_R = ('continental', 700)
 
