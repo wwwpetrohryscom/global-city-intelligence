@@ -26,7 +26,7 @@ BAD_TYPE = re.compile(r"historic|memorial|monument|battlefield|\bfort\b|fortress
     r"urban park|former lake|woolen mill|\bmill\b|civic|ceremonial|parkway|\broad\b|\bhighway\b")
 BAD_NAME = re.compile(r"memorial|monument|\bhistoric\b|heritage|\bmall\b|battlefield|\bfort\b|\bprison\b|"
     r"museum|state historic|national historic|\bcanal\b|woolen mill|quartermaster|\bdepot\b|president|"
-    r"capitol|courthouse|\bhall\b|cathedral|\bchurch\b|\bdam\b|parkway|bathing beach|\bairport\b|aerodrome|air base|palm jumeirah|palm jebel|\bthe world\b|world islands|marina city|deira island|jumeirah islands|\bmarina\b", re.I)
+    r"capitol|courthouse|\bhall\b|cathedral|\bchurch\b|\bdam\b|parkway|bathing beach|arabian peninsula|indian subcontinent|\barabia\b|\beurasia\b|\bafrica\b|arabian plate|\bairport\b|aerodrome|air base|palm jumeirah|palm jebel|\bthe world\b|world islands|amwaj|passport island|deira island|jumeirah island|reclaimed|marina city|deira island|jumeirah islands|\bmarina\b", re.I)
 NATURE_OK = re.compile(r"national park|nature reserve|national nature reserve|protected landscape|state park|"
     r"provincial park|regional park|natural park|nature park|national forest|state forest|\bforest\b|"
     r"\bmountain|\bpeak\b|massif|\bhill\b|\blake\b|reservoir|\bbay\b|\bcape\b|peninsula|\bbeach\b|\bisland\b|"

@@ -58423,19 +58423,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 49, affordability: 69, airQuality: 48, energy: 60, resilience: 48 },
   }),
   buildNeutralCitySeed({
-    slug: "al-mazyunah",
-    name: "Al-Mazyunah",
-    countrySlug: "oman",
-    countryName: "Oman",
-    region: "Middle East",
-    population: "~10K",
-    intro:
-      "Al-Mazyunah is an indexed city in Oman (Middle East), with a metropolitan population of about ~10K. This profile brings together deterministic city-intelligence indicators for Al-Mazyunah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Al-Mazyunah profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 76, affordability: 56, airQuality: 64, energy: 76, resilience: 53 },
-  }),
-  buildNeutralCitySeed({
     slug: "nara",
     name: "Nara",
     countrySlug: "japan",
@@ -59268,19 +59255,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 83, affordability: 53, airQuality: 64, energy: 79, resilience: 83 },
   }),
   buildNeutralCitySeed({
-    slug: "diriyah",
-    name: "Diriyah",
-    countrySlug: "saudi-arabia",
-    countryName: "Saudi Arabia",
-    region: "Middle East",
-    population: "~43K",
-    intro:
-      "Diriyah is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~43K. This profile brings together deterministic city-intelligence indicators for Diriyah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Diriyah profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 64, affordability: 66, airQuality: 56, energy: 78, resilience: 63 },
-  }),
-  buildNeutralCitySeed({
     slug: "bhubaneswar",
     name: "Bhubaneswar",
     countrySlug: "india",
@@ -59606,19 +59580,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 83, affordability: 53, airQuality: 62, energy: 84, resilience: 80 },
   }),
   buildNeutralCitySeed({
-    slug: "al-majma-ah",
-    name: "Al Majma'ah",
-    countrySlug: "saudi-arabia",
-    countryName: "Saudi Arabia",
-    region: "Middle East",
-    population: "~48K",
-    intro:
-      "Al Majma'ah is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~48K. This profile brings together deterministic city-intelligence indicators for Al Majma'ah spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Al Majma'ah profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 69, affordability: 61, airQuality: 59, energy: 76, resilience: 58 },
-  }),
-  buildNeutralCitySeed({
     slug: "takamatsu",
     name: "Takamatsu",
     countrySlug: "japan",
@@ -59656,19 +59617,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Gwangju profile to compare affordability, livability, and economic indicators against other indexed cities in South Korea and across East Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 80, affordability: 56, airQuality: 62, energy: 81, resilience: 79 },
-  }),
-  buildNeutralCitySeed({
-    slug: "dumat-al-jandal",
-    name: "Dumat Al-Jandal",
-    countrySlug: "saudi-arabia",
-    countryName: "Saudi Arabia",
-    region: "Middle East",
-    population: "~45K",
-    intro:
-      "Dumat Al-Jandal is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~45K. This profile brings together deterministic city-intelligence indicators for Dumat Al-Jandal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Dumat Al-Jandal profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 68, affordability: 62, airQuality: 62, energy: 81, resilience: 63 },
   }),
   buildNeutralCitySeed({
     slug: "utsunomiya",
@@ -61684,6 +61632,58 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Huainan profile to compare affordability, livability, and economic indicators against other indexed cities in China and across East Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 68, affordability: 62, airQuality: 54, energy: 77, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tabarjal",
+    name: "Tabarjal",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~49K",
+    intro:
+      "Tabarjal is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~49K. This profile brings together deterministic city-intelligence indicators for Tabarjal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tabarjal profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 54, energy: 75, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "duba",
+    name: "Duba",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~40K",
+    intro:
+      "Duba is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Duba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Duba profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 63, energy: 77, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "umm-lajj",
+    name: "Umm Lajj",
+    countrySlug: "saudi-arabia",
+    countryName: "Saudi Arabia",
+    region: "Middle East",
+    population: "~38K",
+    intro:
+      "Umm Lajj is an indexed city in Saudi Arabia (Middle East), with a metropolitan population of about ~38K. This profile brings together deterministic city-intelligence indicators for Umm Lajj spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Umm Lajj profile to compare affordability, livability, and economic indicators against other indexed cities in Saudi Arabia and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 54, energy: 79, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "kumzar",
+    name: "Kumzar",
+    countrySlug: "oman",
+    countryName: "Oman",
+    region: "Middle East",
+    population: "~1K",
+    intro:
+      "Kumzar is an indexed city in Oman (Middle East), with a metropolitan population of about ~1K. This profile brings together deterministic city-intelligence indicators for Kumzar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Kumzar profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 62, airQuality: 65, energy: 70, resilience: 53 },
   }),
 ];
 

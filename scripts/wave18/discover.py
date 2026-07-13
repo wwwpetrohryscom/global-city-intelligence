@@ -8,7 +8,7 @@ OUT = Path("/tmp/w18"); OUT.mkdir(parents=True, exist_ok=True)
 COUNTRIES = {
     "japan": ("Q17", 40000), "south-korea": ("Q884", 45000), "china": ("Q148", 200000),
     "india": ("Q668", 180000), "pakistan": ("Q843", 90000), "iran": ("Q794", 80000),
-    "iraq": ("Q796", 100000), "saudi-arabia": ("Q851", 22000), "oman": ("Q842", 2000),
+    "iraq": ("Q796", 100000), "saudi-arabia": ("Q851", 22000), "oman": ("Q842", 800),
     "united-arab-emirates": ("Q878", 18000), "cyprus": ("Q229", 3500),
 }
 QTMPL = """
