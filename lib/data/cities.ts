@@ -61685,6 +61685,4557 @@ const seeds: CitySeed[] = [
       "Use the Kumzar profile to compare affordability, livability, and economic indicators against other indexed cities in Oman and across Middle East, and to explore nearby nature and weekend destinations.",
     scores: { overall: 70, affordability: 62, airQuality: 65, energy: 70, resilience: 53 },
   }),
+  // ===== Wave 19: +350 cities (13 countries BR/MX/AR/CO/CL/PE/EC/BO/UY/PY/CR/PA/DO), A-F complete (2026-07-13) =====
+  buildNeutralCitySeed({
+    slug: "belo-horizonte",
+    name: "Belo Horizonte",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~2.3M",
+    intro:
+      "Belo Horizonte is an indexed city in Brazil (South America), with a metropolitan population of about ~2.3M. This profile brings together deterministic city-intelligence indicators for Belo Horizonte spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Belo Horizonte profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 60, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tijuana",
+    name: "Tijuana",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~2.0M",
+    intro:
+      "Tijuana is an indexed city in Mexico (North America), with a metropolitan population of about ~2.0M. This profile brings together deterministic city-intelligence indicators for Tijuana spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tijuana profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 60, airQuality: 53, energy: 72, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cali",
+    name: "Cali",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~2.5M",
+    intro:
+      "Cali is an indexed city in Colombia (South America), with a metropolitan population of about ~2.5M. This profile brings together deterministic city-intelligence indicators for Cali spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cali profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 55, energy: 65, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rosario",
+    name: "Rosario",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~1.2M",
+    intro:
+      "Rosario is an indexed city in Argentina (South America), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Rosario spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rosario profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 62, airQuality: 70, energy: 68, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cusco",
+    name: "Cusco",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~428K",
+    intro:
+      "Cusco is an indexed city in Peru (South America), with a metropolitan population of about ~428K. This profile brings together deterministic city-intelligence indicators for Cusco spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cusco profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 59, energy: 63, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "concepcion",
+    name: "Concepción",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~218K",
+    intro:
+      "Concepción is an indexed city in Chile (South America), with a metropolitan population of about ~218K. This profile brings together deterministic city-intelligence indicators for Concepción spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Concepción profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 64, energy: 75, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "guayaquil",
+    name: "Guayaquil",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~2.7M",
+    intro:
+      "Guayaquil is an indexed city in Ecuador (South America), with a metropolitan population of about ~2.7M. This profile brings together deterministic city-intelligence indicators for Guayaquil spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Guayaquil profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 60, airQuality: 61, energy: 57, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-paz",
+    name: "La Paz",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~756K",
+    intro:
+      "La Paz is an indexed city in Bolivia (South America), with a metropolitan population of about ~756K. This profile brings together deterministic city-intelligence indicators for La Paz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Paz profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 51, affordability: 75, airQuality: 57, energy: 54, resilience: 53 },
+  }),
+  buildNeutralCitySeed({
+    slug: "salto",
+    name: "Salto",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~125K",
+    intro:
+      "Salto is an indexed city in Uruguay (South America), with a metropolitan population of about ~125K. This profile brings together deterministic city-intelligence indicators for Salto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Salto profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 75, energy: 70, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ciudad-del-este",
+    name: "Ciudad del Este",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~350K",
+    intro:
+      "Ciudad del Este is an indexed city in Paraguay (South America), with a metropolitan population of about ~350K. This profile brings together deterministic city-intelligence indicators for Ciudad del Este spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ciudad del Este profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 71, airQuality: 56, energy: 59, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santiago-de-los-caballeros",
+    name: "Santiago de los Caballeros",
+    countrySlug: "dominican-republic",
+    countryName: "Dominican Republic",
+    region: "Caribbean",
+    population: "~1.3M",
+    intro:
+      "Santiago de los Caballeros is an indexed city in Dominican Republic (Caribbean), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Santiago de los Caballeros spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santiago de los Caballeros profile to compare affordability, livability, and economic indicators against other indexed cities in Dominican Republic and across Caribbean, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 64, airQuality: 64, energy: 65, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "limon",
+    name: "Limón",
+    countrySlug: "costa-rica",
+    countryName: "Costa Rica",
+    region: "Central America",
+    population: "~72K",
+    intro:
+      "Limón is an indexed city in Costa Rica (Central America), with a metropolitan population of about ~72K. This profile brings together deterministic city-intelligence indicators for Limón spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Limón profile to compare affordability, livability, and economic indicators against other indexed cities in Costa Rica and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 56, airQuality: 82, energy: 72, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "colon-city",
+    name: "Colón City",
+    countrySlug: "panama",
+    countryName: "Panama",
+    region: "Central America",
+    population: "~242K",
+    intro:
+      "Colón City is an indexed city in Panama (Central America), with a metropolitan population of about ~242K. This profile brings together deterministic city-intelligence indicators for Colón City spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Colón City profile to compare affordability, livability, and economic indicators against other indexed cities in Panama and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 59, airQuality: 70, energy: 75, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "manaus",
+    name: "Manaus",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~2.3M",
+    intro:
+      "Manaus is an indexed city in Brazil (South America), with a metropolitan population of about ~2.3M. This profile brings together deterministic city-intelligence indicators for Manaus spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Manaus profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 58, energy: 70, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "veracruz",
+    name: "Veracruz",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~8.1M",
+    intro:
+      "Veracruz is an indexed city in Mexico (North America), with a metropolitan population of about ~8.1M. This profile brings together deterministic city-intelligence indicators for Veracruz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Veracruz profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 60, airQuality: 56, energy: 76, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cartagena-co",
+    name: "Cartagena",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~915K",
+    intro:
+      "Cartagena is an indexed city in Colombia (South America), with a metropolitan population of about ~915K. This profile brings together deterministic city-intelligence indicators for Cartagena spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cartagena profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 70, airQuality: 57, energy: 66, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-plata",
+    name: "La Plata",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~220K",
+    intro:
+      "La Plata is an indexed city in Argentina (South America), with a metropolitan population of about ~220K. This profile brings together deterministic city-intelligence indicators for La Plata spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Plata profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 67, airQuality: 61, energy: 70, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "arequipa",
+    name: "Arequipa",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~1.0M",
+    intro:
+      "Arequipa is an indexed city in Peru (South America), with a metropolitan population of about ~1.0M. This profile brings together deterministic city-intelligence indicators for Arequipa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Arequipa profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 71, airQuality: 61, energy: 64, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "antofagasta",
+    name: "Antofagasta",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~349K",
+    intro:
+      "Antofagasta is an indexed city in Chile (South America), with a metropolitan population of about ~349K. This profile brings together deterministic city-intelligence indicators for Antofagasta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Antofagasta profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 67, energy: 78, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cuenca-ec",
+    name: "Cuenca",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~362K",
+    intro:
+      "Cuenca is an indexed city in Ecuador (South America), with a metropolitan population of about ~362K. This profile brings together deterministic city-intelligence indicators for Cuenca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cuenca profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 63, energy: 57, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sucre",
+    name: "Sucre",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~361K",
+    intro:
+      "Sucre is an indexed city in Bolivia (South America), with a metropolitan population of about ~361K. This profile brings together deterministic city-intelligence indicators for Sucre spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sucre profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 70, airQuality: 59, energy: 55, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "colonia-del-sacramento",
+    name: "Colonia del Sacramento",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~32K",
+    intro:
+      "Colonia del Sacramento is an indexed city in Uruguay (South America), with a metropolitan population of about ~32K. This profile brings together deterministic city-intelligence indicators for Colonia del Sacramento spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Colonia del Sacramento profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 70, energy: 68, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "encarnacion",
+    name: "Encarnación",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~107K",
+    intro:
+      "Encarnación is an indexed city in Paraguay (South America), with a metropolitan population of about ~107K. This profile brings together deterministic city-intelligence indicators for Encarnación spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Encarnación profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 70, airQuality: 56, energy: 54, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-pedro-de-macoris",
+    name: "San Pedro de Macorís",
+    countrySlug: "dominican-republic",
+    countryName: "Dominican Republic",
+    region: "Caribbean",
+    population: "~217K",
+    intro:
+      "San Pedro de Macorís is an indexed city in Dominican Republic (Caribbean), with a metropolitan population of about ~217K. This profile brings together deterministic city-intelligence indicators for San Pedro de Macorís spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Pedro de Macorís profile to compare affordability, livability, and economic indicators against other indexed cities in Dominican Republic and across Caribbean, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 66, energy: 62, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "alajuela",
+    name: "Alajuela",
+    countrySlug: "costa-rica",
+    countryName: "Costa Rica",
+    region: "Central America",
+    population: "~44K",
+    intro:
+      "Alajuela is an indexed city in Costa Rica (Central America), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Alajuela spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Alajuela profile to compare affordability, livability, and economic indicators against other indexed cities in Costa Rica and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 76, energy: 67, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santiago-de-veraguas",
+    name: "Santiago de Veraguas",
+    countrySlug: "panama",
+    countryName: "Panama",
+    region: "Central America",
+    population: "~110K",
+    intro:
+      "Santiago de Veraguas is an indexed city in Panama (Central America), with a metropolitan population of about ~110K. This profile brings together deterministic city-intelligence indicators for Santiago de Veraguas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santiago de Veraguas profile to compare affordability, livability, and economic indicators against other indexed cities in Panama and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 55, airQuality: 64, energy: 76, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fortaleza",
+    name: "Fortaleza",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~2.6M",
+    intro:
+      "Fortaleza is an indexed city in Brazil (South America), with a metropolitan population of about ~2.6M. This profile brings together deterministic city-intelligence indicators for Fortaleza spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fortaleza profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 63, energy: 68, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "acapulco-de-juarez",
+    name: "Acapulco de Juárez",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~673K",
+    intro:
+      "Acapulco de Juárez is an indexed city in Mexico (North America), with a metropolitan population of about ~673K. This profile brings together deterministic city-intelligence indicators for Acapulco de Juárez spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Acapulco de Juárez profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 61, airQuality: 61, energy: 71, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "barranquilla",
+    name: "Barranquilla",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~1.3M",
+    intro:
+      "Barranquilla is an indexed city in Colombia (South America), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Barranquilla spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Barranquilla profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 64, airQuality: 54, energy: 65, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mar-del-plata",
+    name: "Mar del Plata",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~593K",
+    intro:
+      "Mar del Plata is an indexed city in Argentina (South America), with a metropolitan population of about ~593K. This profile brings together deterministic city-intelligence indicators for Mar del Plata spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mar del Plata profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 69, airQuality: 61, energy: 69, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "trujillo",
+    name: "Trujillo",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~920K",
+    intro:
+      "Trujillo is an indexed city in Peru (South America), with a metropolitan population of about ~920K. This profile brings together deterministic city-intelligence indicators for Trujillo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Trujillo profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 56, energy: 67, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "temuco",
+    name: "Temuco",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~282K",
+    intro:
+      "Temuco is an indexed city in Chile (South America), with a metropolitan population of about ~282K. This profile brings together deterministic city-intelligence indicators for Temuco spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Temuco profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 65, energy: 77, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "riobamba",
+    name: "Riobamba",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~177K",
+    intro:
+      "Riobamba is an indexed city in Ecuador (South America), with a metropolitan population of about ~177K. This profile brings together deterministic city-intelligence indicators for Riobamba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Riobamba profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 64, airQuality: 59, energy: 56, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santa-cruz-de-la-sierra",
+    name: "Santa Cruz de la Sierra",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~3.1M",
+    intro:
+      "Santa Cruz de la Sierra is an indexed city in Bolivia (South America), with a metropolitan population of about ~3.1M. This profile brings together deterministic city-intelligence indicators for Santa Cruz de la Sierra spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santa Cruz de la Sierra profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 52, affordability: 74, airQuality: 56, energy: 52, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rivera",
+    name: "Rivera",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~85K",
+    intro:
+      "Rivera is an indexed city in Uruguay (South America), with a metropolitan population of about ~85K. This profile brings together deterministic city-intelligence indicators for Rivera spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rivera profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 75, energy: 66, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pedro-juan-caballero",
+    name: "Pedro Juan Caballero",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~127K",
+    intro:
+      "Pedro Juan Caballero is an indexed city in Paraguay (South America), with a metropolitan population of about ~127K. This profile brings together deterministic city-intelligence indicators for Pedro Juan Caballero spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pedro Juan Caballero profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 53, affordability: 75, airQuality: 62, energy: 58, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-romana",
+    name: "La Romana",
+    countrySlug: "dominican-republic",
+    countryName: "Dominican Republic",
+    region: "Caribbean",
+    population: "~139K",
+    intro:
+      "La Romana is an indexed city in Dominican Republic (Caribbean), with a metropolitan population of about ~139K. This profile brings together deterministic city-intelligence indicators for La Romana spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Romana profile to compare affordability, livability, and economic indicators against other indexed cities in Dominican Republic and across Caribbean, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 60, airQuality: 61, energy: 68, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "puntarenas",
+    name: "Puntarenas",
+    countrySlug: "costa-rica",
+    countryName: "Costa Rica",
+    region: "Central America",
+    population: "~42K",
+    intro:
+      "Puntarenas is an indexed city in Costa Rica (Central America), with a metropolitan population of about ~42K. This profile brings together deterministic city-intelligence indicators for Puntarenas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Puntarenas profile to compare affordability, livability, and economic indicators against other indexed cities in Costa Rica and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 73, energy: 71, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "david",
+    name: "David",
+    countrySlug: "panama",
+    countryName: "Panama",
+    region: "Central America",
+    population: "~83K",
+    intro:
+      "David is an indexed city in Panama (Central America), with a metropolitan population of about ~83K. This profile brings together deterministic city-intelligence indicators for David spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the David profile to compare affordability, livability, and economic indicators against other indexed cities in Panama and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 60, airQuality: 65, energy: 74, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "recife",
+    name: "Recife",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~1.5M",
+    intro:
+      "Recife is an indexed city in Brazil (South America), with a metropolitan population of about ~1.5M. This profile brings together deterministic city-intelligence indicators for Recife spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Recife profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 58, energy: 71, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cancun",
+    name: "Cancun",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~889K",
+    intro:
+      "Cancun is an indexed city in Mexico (North America), with a metropolitan population of about ~889K. This profile brings together deterministic city-intelligence indicators for Cancun spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cancun profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 55, energy: 69, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santa-marta",
+    name: "Santa Marta",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~506K",
+    intro:
+      "Santa Marta is an indexed city in Colombia (South America), with a metropolitan population of about ~506K. This profile brings together deterministic city-intelligence indicators for Santa Marta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santa Marta profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 61, energy: 70, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "salta",
+    name: "Salta",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~595K",
+    intro:
+      "Salta is an indexed city in Argentina (South America), with a metropolitan population of about ~595K. This profile brings together deterministic city-intelligence indicators for Salta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Salta profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 65, airQuality: 65, energy: 66, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "callao",
+    name: "Callao",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~568K",
+    intro:
+      "Callao is an indexed city in Peru (South America), with a metropolitan population of about ~568K. This profile brings together deterministic city-intelligence indicators for Callao spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Callao profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 70, airQuality: 57, energy: 61, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-serena",
+    name: "La Serena",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~195K",
+    intro:
+      "La Serena is an indexed city in Chile (South America), with a metropolitan population of about ~195K. This profile brings together deterministic city-intelligence indicators for La Serena spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Serena profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 65, energy: 77, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "machala",
+    name: "Machala",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~288K",
+    intro:
+      "Machala is an indexed city in Ecuador (South America), with a metropolitan population of about ~288K. This profile brings together deterministic city-intelligence indicators for Machala spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Machala profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 62, energy: 56, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cochabamba",
+    name: "Cochabamba",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~632K",
+    intro:
+      "Cochabamba is an indexed city in Bolivia (South America), with a metropolitan population of about ~632K. This profile brings together deterministic city-intelligence indicators for Cochabamba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cochabamba profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 72, airQuality: 56, energy: 56, resilience: 51 },
+  }),
+  buildNeutralCitySeed({
+    slug: "maldonado",
+    name: "Maldonado",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~87K",
+    intro:
+      "Maldonado is an indexed city in Uruguay (South America), with a metropolitan population of about ~87K. This profile brings together deterministic city-intelligence indicators for Maldonado spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Maldonado profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 53, airQuality: 70, energy: 69, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "coronel-oviedo",
+    name: "Coronel Oviedo",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~188K",
+    intro:
+      "Coronel Oviedo is an indexed city in Paraguay (South America), with a metropolitan population of about ~188K. This profile brings together deterministic city-intelligence indicators for Coronel Oviedo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Coronel Oviedo profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 69, airQuality: 55, energy: 57, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "higuey",
+    name: "Higüey",
+    countrySlug: "dominican-republic",
+    countryName: "Dominican Republic",
+    region: "Caribbean",
+    population: "~251K",
+    intro:
+      "Higüey is an indexed city in Dominican Republic (Caribbean), with a metropolitan population of about ~251K. This profile brings together deterministic city-intelligence indicators for Higüey spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Higüey profile to compare affordability, livability, and economic indicators against other indexed cities in Dominican Republic and across Caribbean, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 58, energy: 62, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cartago",
+    name: "Cartago",
+    countrySlug: "costa-rica",
+    countryName: "Costa Rica",
+    region: "Central America",
+    population: "~23K",
+    intro:
+      "Cartago is an indexed city in Costa Rica (Central America), with a metropolitan population of about ~23K. This profile brings together deterministic city-intelligence indicators for Cartago spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cartago profile to compare affordability, livability, and economic indicators against other indexed cities in Costa Rica and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 75, energy: 69, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-miguelito-district",
+    name: "San Miguelito District",
+    countrySlug: "panama",
+    countryName: "Panama",
+    region: "Central America",
+    population: "~315K",
+    intro:
+      "San Miguelito District is an indexed city in Panama (Central America), with a metropolitan population of about ~315K. This profile brings together deterministic city-intelligence indicators for San Miguelito District spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Miguelito District profile to compare affordability, livability, and economic indicators against other indexed cities in Panama and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 57, airQuality: 64, energy: 77, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "porto-alegre-br",
+    name: "Porto Alegre",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~1.4M",
+    intro:
+      "Porto Alegre is an indexed city in Brazil (South America), with a metropolitan population of about ~1.4M. This profile brings together deterministic city-intelligence indicators for Porto Alegre spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Porto Alegre profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 64, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zapopan",
+    name: "Zapopan",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~1.3M",
+    intro:
+      "Zapopan is an indexed city in Mexico (North America), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Zapopan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zapopan profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 63, energy: 71, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bucaramanga",
+    name: "Bucaramanga",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~615K",
+    intro:
+      "Bucaramanga is an indexed city in Colombia (South America), with a metropolitan population of about ~615K. This profile brings together deterministic city-intelligence indicators for Bucaramanga spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bucaramanga profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 63, energy: 64, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-miguel-de-tucuman",
+    name: "San Miguel de Tucumán",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~602K",
+    intro:
+      "San Miguel de Tucumán is an indexed city in Argentina (South America), with a metropolitan population of about ~602K. This profile brings together deterministic city-intelligence indicators for San Miguel de Tucumán spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Miguel de Tucumán profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 65, airQuality: 69, energy: 63, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "iquitos",
+    name: "Iquitos",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~378K",
+    intro:
+      "Iquitos is an indexed city in Peru (South America), with a metropolitan population of about ~378K. This profile brings together deterministic city-intelligence indicators for Iquitos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Iquitos profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 71, airQuality: 52, energy: 66, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "arica",
+    name: "Arica",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~202K",
+    intro:
+      "Arica is an indexed city in Chile (South America), with a metropolitan population of about ~202K. This profile brings together deterministic city-intelligence indicators for Arica spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Arica profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 61, energy: 78, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ambato",
+    name: "Ambato",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~177K",
+    intro:
+      "Ambato is an indexed city in Ecuador (South America), with a metropolitan population of about ~177K. This profile brings together deterministic city-intelligence indicators for Ambato spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ambato profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 55, energy: 59, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "potosi",
+    name: "Potosí",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~190K",
+    intro:
+      "Potosí is an indexed city in Bolivia (South America), with a metropolitan population of about ~190K. This profile brings together deterministic city-intelligence indicators for Potosí spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Potosí profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 52, affordability: 74, airQuality: 50, energy: 60, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tacuarembo",
+    name: "Tacuarembó",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~61K",
+    intro:
+      "Tacuarembó is an indexed city in Uruguay (South America), with a metropolitan population of about ~61K. This profile brings together deterministic city-intelligence indicators for Tacuarembó spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tacuarembó profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 74, affordability: 56, airQuality: 78, energy: 72, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-lorenzo",
+    name: "San Lorenzo",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~225K",
+    intro:
+      "San Lorenzo is an indexed city in Paraguay (South America), with a metropolitan population of about ~225K. This profile brings together deterministic city-intelligence indicators for San Lorenzo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Lorenzo profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 70, airQuality: 63, energy: 57, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-vega",
+    name: "La Vega",
+    countrySlug: "dominican-republic",
+    countryName: "Dominican Republic",
+    region: "Caribbean",
+    population: "~282K",
+    intro:
+      "La Vega is an indexed city in Dominican Republic (Caribbean), with a metropolitan population of about ~282K. This profile brings together deterministic city-intelligence indicators for La Vega spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Vega profile to compare affordability, livability, and economic indicators against other indexed cities in Dominican Republic and across Caribbean, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 61, energy: 66, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "heredia",
+    name: "Heredia",
+    countrySlug: "costa-rica",
+    countryName: "Costa Rica",
+    region: "Central America",
+    population: "~17K",
+    intro:
+      "Heredia is an indexed city in Costa Rica (Central America), with a metropolitan population of about ~17K. This profile brings together deterministic city-intelligence indicators for Heredia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Heredia profile to compare affordability, livability, and economic indicators against other indexed cities in Costa Rica and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 80, energy: 70, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-chorrera",
+    name: "La Chorrera",
+    countrySlug: "panama",
+    countryName: "Panama",
+    region: "Central America",
+    population: "~69K",
+    intro:
+      "La Chorrera is an indexed city in Panama (Central America), with a metropolitan population of about ~69K. This profile brings together deterministic city-intelligence indicators for La Chorrera spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Chorrera profile to compare affordability, livability, and economic indicators against other indexed cities in Panama and across Central America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 57, airQuality: 65, energy: 80, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "belem",
+    name: "Belém",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~1.3M",
+    intro:
+      "Belém is an indexed city in Brazil (South America), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Belém spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Belém profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 57, energy: 71, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ciudad-juarez",
+    name: "Ciudad Juárez",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~1.3M",
+    intro:
+      "Ciudad Juárez is an indexed city in Mexico (North America), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Ciudad Juárez spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ciudad Juárez profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 60, airQuality: 63, energy: 70, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pereira",
+    name: "Pereira",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~591K",
+    intro:
+      "Pereira is an indexed city in Colombia (South America), with a metropolitan population of about ~591K. This profile brings together deterministic city-intelligence indicators for Pereira spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pereira profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 63, airQuality: 58, energy: 66, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mendoza",
+    name: "Mendoza",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~127K",
+    intro:
+      "Mendoza is an indexed city in Argentina (South America), with a metropolitan population of about ~127K. This profile brings together deterministic city-intelligence indicators for Mendoza spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mendoza profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 63, airQuality: 63, energy: 68, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chiclayo",
+    name: "Chiclayo",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~553K",
+    intro:
+      "Chiclayo is an indexed city in Peru (South America), with a metropolitan population of about ~553K. This profile brings together deterministic city-intelligence indicators for Chiclayo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chiclayo profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 64, airQuality: 53, energy: 66, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "puerto-montt",
+    name: "Puerto Montt",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~170K",
+    intro:
+      "Puerto Montt is an indexed city in Chile (South America), with a metropolitan population of about ~170K. This profile brings together deterministic city-intelligence indicators for Puerto Montt spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Puerto Montt profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 64, energy: 70, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "manta",
+    name: "Manta",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~259K",
+    intro:
+      "Manta is an indexed city in Ecuador (South America), with a metropolitan population of about ~259K. This profile brings together deterministic city-intelligence indicators for Manta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Manta profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 65, airQuality: 58, energy: 56, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "oruro",
+    name: "Oruro",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~297K",
+    intro:
+      "Oruro is an indexed city in Bolivia (South America), with a metropolitan population of about ~297K. This profile brings together deterministic city-intelligence indicators for Oruro spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Oruro profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 52, energy: 55, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "artigas",
+    name: "Artigas",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~44K",
+    intro:
+      "Artigas is an indexed city in Uruguay (South America), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Artigas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Artigas profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 78, energy: 71, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "luque",
+    name: "Luque",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~260K",
+    intro:
+      "Luque is an indexed city in Paraguay (South America), with a metropolitan population of about ~260K. This profile brings together deterministic city-intelligence indicators for Luque spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Luque profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 52, affordability: 76, airQuality: 61, energy: 57, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "goiania",
+    name: "Goiânia",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~1.4M",
+    intro:
+      "Goiânia is an indexed city in Brazil (South America), with a metropolitan population of about ~1.4M. This profile brings together deterministic city-intelligence indicators for Goiânia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Goiânia profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 66, energy: 69, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santiago-de-queretaro",
+    name: "Santiago de Querétaro",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~795K",
+    intro:
+      "Santiago de Querétaro is an indexed city in Mexico (North America), with a metropolitan population of about ~795K. This profile brings together deterministic city-intelligence indicators for Santiago de Querétaro spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santiago de Querétaro profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 58, energy: 71, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ibague",
+    name: "Ibagué",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~546K",
+    intro:
+      "Ibagué is an indexed city in Colombia (South America), with a metropolitan population of about ~546K. This profile brings together deterministic city-intelligence indicators for Ibagué spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ibagué profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 53, energy: 67, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santa-fe-ar",
+    name: "Santa Fe",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~409K",
+    intro:
+      "Santa Fe is an indexed city in Argentina (South America), with a metropolitan population of about ~409K. This profile brings together deterministic city-intelligence indicators for Santa Fe spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santa Fe profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 69, airQuality: 67, energy: 70, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "piura",
+    name: "Piura",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~473K",
+    intro:
+      "Piura is an indexed city in Peru (South America), with a metropolitan population of about ~473K. This profile brings together deterministic city-intelligence indicators for Piura spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Piura profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 64, airQuality: 56, energy: 60, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "punta-arenas",
+    name: "Punta Arenas",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~123K",
+    intro:
+      "Punta Arenas is an indexed city in Chile (South America), with a metropolitan population of about ~123K. This profile brings together deterministic city-intelligence indicators for Punta Arenas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Punta Arenas profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 70, energy: 73, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "loja",
+    name: "Loja",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~203K",
+    intro:
+      "Loja is an indexed city in Ecuador (South America), with a metropolitan population of about ~203K. This profile brings together deterministic city-intelligence indicators for Loja spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Loja profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 58, airQuality: 62, energy: 58, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "el-alto",
+    name: "El Alto",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~885K",
+    intro:
+      "El Alto is an indexed city in Bolivia (South America), with a metropolitan population of about ~885K. This profile brings together deterministic city-intelligence indicators for El Alto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the El Alto profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 51, affordability: 75, airQuality: 52, energy: 55, resilience: 51 },
+  }),
+  buildNeutralCitySeed({
+    slug: "melo",
+    name: "Melo",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~56K",
+    intro:
+      "Melo is an indexed city in Uruguay (South America), with a metropolitan population of about ~56K. This profile brings together deterministic city-intelligence indicators for Melo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Melo profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 72, energy: 65, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "concepcion-py",
+    name: "Concepción",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~45K",
+    intro:
+      "Concepción is an indexed city in Paraguay (South America), with a metropolitan population of about ~45K. This profile brings together deterministic city-intelligence indicators for Concepción spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Concepción profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 69, airQuality: 65, energy: 56, resilience: 51 },
+  }),
+  buildNeutralCitySeed({
+    slug: "natal",
+    name: "Natal",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~751K",
+    intro:
+      "Natal is an indexed city in Brazil (South America), with a metropolitan population of about ~751K. This profile brings together deterministic city-intelligence indicators for Natal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Natal profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 65, energy: 71, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mexicali",
+    name: "Mexicali",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~854K",
+    intro:
+      "Mexicali is an indexed city in Mexico (North America), with a metropolitan population of about ~854K. This profile brings together deterministic city-intelligence indicators for Mexicali spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mexicali profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 56, energy: 73, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "manizales",
+    name: "Manizales",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~454K",
+    intro:
+      "Manizales is an indexed city in Colombia (South America), with a metropolitan population of about ~454K. This profile brings together deterministic city-intelligence indicators for Manizales spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Manizales profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 62, airQuality: 53, energy: 66, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "parana",
+    name: "Paraná",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~271K",
+    intro:
+      "Paraná is an indexed city in Argentina (South America), with a metropolitan population of about ~271K. This profile brings together deterministic city-intelligence indicators for Paraná spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Paraná profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 63, airQuality: 66, energy: 68, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huancayo",
+    name: "Huancayo",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~378K",
+    intro:
+      "Huancayo is an indexed city in Peru (South America), with a metropolitan population of about ~378K. This profile brings together deterministic city-intelligence indicators for Huancayo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huancayo profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 72, airQuality: 53, energy: 61, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "iquique",
+    name: "Iquique",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~188K",
+    intro:
+      "Iquique is an indexed city in Chile (South America), with a metropolitan population of about ~188K. This profile brings together deterministic city-intelligence indicators for Iquique spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Iquique profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 62, energy: 76, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "portoviejo",
+    name: "Portoviejo",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~244K",
+    intro:
+      "Portoviejo is an indexed city in Ecuador (South America), with a metropolitan population of about ~244K. This profile brings together deterministic city-intelligence indicators for Portoviejo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Portoviejo profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 65, airQuality: 61, energy: 59, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tarija",
+    name: "Tarija",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~180K",
+    intro:
+      "Tarija is an indexed city in Bolivia (South America), with a metropolitan population of about ~180K. This profile brings together deterministic city-intelligence indicators for Tarija spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tarija profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 59, energy: 55, resilience: 54 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mercedes",
+    name: "Mercedes",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~44K",
+    intro:
+      "Mercedes is an indexed city in Uruguay (South America), with a metropolitan population of about ~44K. This profile brings together deterministic city-intelligence indicators for Mercedes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mercedes profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 53, airQuality: 74, energy: 64, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aregua",
+    name: "Areguá",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~67K",
+    intro:
+      "Areguá is an indexed city in Paraguay (South America), with a metropolitan population of about ~67K. This profile brings together deterministic city-intelligence indicators for Areguá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Areguá profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 52, affordability: 76, airQuality: 58, energy: 60, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-luis",
+    name: "São Luís",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~1.0M",
+    intro:
+      "São Luís is an indexed city in Brazil (South America), with a metropolitan population of about ~1.0M. This profile brings together deterministic city-intelligence indicators for São Luís spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São Luís profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 64, energy: 75, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "leon-de-los-aldama",
+    name: "León de Los Aldama",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~1.6M",
+    intro:
+      "León de Los Aldama is an indexed city in Mexico (North America), with a metropolitan population of about ~1.6M. This profile brings together deterministic city-intelligence indicators for León de Los Aldama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the León de Los Aldama profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 58, energy: 75, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "valledupar",
+    name: "Valledupar",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~544K",
+    intro:
+      "Valledupar is an indexed city in Colombia (South America), with a metropolitan population of about ~544K. This profile brings together deterministic city-intelligence indicators for Valledupar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Valledupar profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 62, airQuality: 53, energy: 69, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ushuaia",
+    name: "Ushuaia",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~83K",
+    intro:
+      "Ushuaia is an indexed city in Argentina (South America), with a metropolitan population of about ~83K. This profile brings together deterministic city-intelligence indicators for Ushuaia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ushuaia profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 68, airQuality: 68, energy: 63, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tacna",
+    name: "Tacna",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~286K",
+    intro:
+      "Tacna is an indexed city in Peru (South America), with a metropolitan population of about ~286K. This profile brings together deterministic city-intelligence indicators for Tacna spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tacna profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 58, energy: 64, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "talcahuano",
+    name: "Talcahuano",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~270K",
+    intro:
+      "Talcahuano is an indexed city in Chile (South America), with a metropolitan population of about ~270K. This profile brings together deterministic city-intelligence indicators for Talcahuano spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Talcahuano profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 64, energy: 74, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santo-domingo-ec",
+    name: "Santo Domingo",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~335K",
+    intro:
+      "Santo Domingo is an indexed city in Ecuador (South America), with a metropolitan population of about ~335K. This profile brings together deterministic city-intelligence indicators for Santo Domingo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santo Domingo profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 61, energy: 62, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "trinidad",
+    name: "Trinidad",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~124K",
+    intro:
+      "Trinidad is an indexed city in Bolivia (South America), with a metropolitan population of about ~124K. This profile brings together deterministic city-intelligence indicators for Trinidad spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Trinidad profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 72, airQuality: 57, energy: 60, resilience: 50 },
+  }),
+  buildNeutralCitySeed({
+    slug: "florida",
+    name: "Florida",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~36K",
+    intro:
+      "Florida is an indexed city in Uruguay (South America), with a metropolitan population of about ~36K. This profile brings together deterministic city-intelligence indicators for Florida spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Florida profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 54, airQuality: 70, energy: 69, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "capiata",
+    name: "Capiatá",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~237K",
+    intro:
+      "Capiatá is an indexed city in Paraguay (South America), with a metropolitan population of about ~237K. This profile brings together deterministic city-intelligence indicators for Capiatá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Capiatá profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 60, energy: 57, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "florianopolis",
+    name: "Florianópolis",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~587K",
+    intro:
+      "Florianópolis is an indexed city in Brazil (South America), with a metropolitan population of about ~587K. This profile brings together deterministic city-intelligence indicators for Florianópolis spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Florianópolis profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 65, energy: 69, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "merida",
+    name: "Mérida",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~892K",
+    intro:
+      "Mérida is an indexed city in Mexico (North America), with a metropolitan population of about ~892K. This profile brings together deterministic city-intelligence indicators for Mérida spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mérida profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 65, airQuality: 53, energy: 71, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "armenia",
+    name: "Armenia",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~301K",
+    intro:
+      "Armenia is an indexed city in Colombia (South America), with a metropolitan population of about ~301K. This profile brings together deterministic city-intelligence indicators for Armenia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Armenia profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 65, airQuality: 54, energy: 66, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santiago-del-estero",
+    name: "Santiago del Estero",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~311K",
+    intro:
+      "Santiago del Estero is an indexed city in Argentina (South America), with a metropolitan population of about ~311K. This profile brings together deterministic city-intelligence indicators for Santiago del Estero spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santiago del Estero profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 66, airQuality: 70, energy: 70, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cajamarca",
+    name: "Cajamarca",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~201K",
+    intro:
+      "Cajamarca is an indexed city in Peru (South America), with a metropolitan population of about ~201K. This profile brings together deterministic city-intelligence indicators for Cajamarca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cajamarca profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 55, energy: 66, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chillan",
+    name: "Chillán",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~164K",
+    intro:
+      "Chillán is an indexed city in Chile (South America), with a metropolitan population of about ~164K. This profile brings together deterministic city-intelligence indicators for Chillán spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chillán profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 64, energy: 75, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ibarra",
+    name: "Ibarra",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~158K",
+    intro:
+      "Ibarra is an indexed city in Ecuador (South America), with a metropolitan population of about ~158K. This profile brings together deterministic city-intelligence indicators for Ibarra spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ibarra profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 59, airQuality: 59, energy: 63, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sacaba",
+    name: "Sacaba",
+    countrySlug: "bolivia",
+    countryName: "Bolivia",
+    region: "South America",
+    population: "~172K",
+    intro:
+      "Sacaba is an indexed city in Bolivia (South America), with a metropolitan population of about ~172K. This profile brings together deterministic city-intelligence indicators for Sacaba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sacaba profile to compare affordability, livability, and economic indicators against other indexed cities in Bolivia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 52, affordability: 74, airQuality: 50, energy: 60, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "durazno",
+    name: "Durazno",
+    countrySlug: "uruguay",
+    countryName: "Uruguay",
+    region: "South America",
+    population: "~40K",
+    intro:
+      "Durazno is an indexed city in Uruguay (South America), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for Durazno spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Durazno profile to compare affordability, livability, and economic indicators against other indexed cities in Uruguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 77, affordability: 53, airQuality: 72, energy: 65, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "caacupe",
+    name: "Caacupé",
+    countrySlug: "paraguay",
+    countryName: "Paraguay",
+    region: "South America",
+    population: "~57K",
+    intro:
+      "Caacupé is an indexed city in Paraguay (South America), with a metropolitan population of about ~57K. This profile brings together deterministic city-intelligence indicators for Caacupé spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Caacupé profile to compare affordability, livability, and economic indicators against other indexed cities in Paraguay and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 72, airQuality: 60, energy: 55, resilience: 52 },
+  }),
+  buildNeutralCitySeed({
+    slug: "campo-grande",
+    name: "Campo Grande",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~963K",
+    intro:
+      "Campo Grande is an indexed city in Brazil (South America), with a metropolitan population of about ~963K. This profile brings together deterministic city-intelligence indicators for Campo Grande spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Campo Grande profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 58, energy: 76, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chihuahua-city",
+    name: "Chihuahua City",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~926K",
+    intro:
+      "Chihuahua City is an indexed city in Mexico (North America), with a metropolitan population of about ~926K. This profile brings together deterministic city-intelligence indicators for Chihuahua City spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chihuahua City profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 62, energy: 71, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pasto",
+    name: "Pasto",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~411K",
+    intro:
+      "Pasto is an indexed city in Colombia (South America), with a metropolitan population of about ~411K. This profile brings together deterministic city-intelligence indicators for Pasto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pasto profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 64, airQuality: 61, energy: 65, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-juan",
+    name: "San Juan",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~471K",
+    intro:
+      "San Juan is an indexed city in Argentina (South America), with a metropolitan population of about ~471K. This profile brings together deterministic city-intelligence indicators for San Juan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Juan profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 67, airQuality: 67, energy: 67, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pucallpa",
+    name: "Pucallpa",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~326K",
+    intro:
+      "Pucallpa is an indexed city in Peru (South America), with a metropolitan population of about ~326K. This profile brings together deterministic city-intelligence indicators for Pucallpa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pucallpa profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 53, energy: 68, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rancagua",
+    name: "Rancagua",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~231K",
+    intro:
+      "Rancagua is an indexed city in Chile (South America), with a metropolitan population of about ~231K. This profile brings together deterministic city-intelligence indicators for Rancagua spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rancagua profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 66, energy: 78, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "duran",
+    name: "Durán",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~295K",
+    intro:
+      "Durán is an indexed city in Ecuador (South America), with a metropolitan population of about ~295K. This profile brings together deterministic city-intelligence indicators for Durán spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Durán profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 63, energy: 60, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cuiaba",
+    name: "Cuiabá",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~692K",
+    intro:
+      "Cuiabá is an indexed city in Brazil (South America), with a metropolitan population of about ~692K. This profile brings together deterministic city-intelligence indicators for Cuiabá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cuiabá profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 64, energy: 70, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-luis-potosi",
+    name: "San Luis Potosí",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~2.8M",
+    intro:
+      "San Luis Potosí is an indexed city in Mexico (North America), with a metropolitan population of about ~2.8M. This profile brings together deterministic city-intelligence indicators for San Luis Potosí spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Luis Potosí profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 55, energy: 73, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "villavicencio",
+    name: "Villavicencio",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~664K",
+    intro:
+      "Villavicencio is an indexed city in Colombia (South America), with a metropolitan population of about ~664K. This profile brings together deterministic city-intelligence indicators for Villavicencio spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Villavicencio profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 64, airQuality: 62, energy: 64, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "corrientes",
+    name: "Corrientes",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~430K",
+    intro:
+      "Corrientes is an indexed city in Argentina (South America), with a metropolitan population of about ~430K. This profile brings together deterministic city-intelligence indicators for Corrientes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Corrientes profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 70, airQuality: 70, energy: 62, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "puno",
+    name: "Puno",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~129K",
+    intro:
+      "Puno is an indexed city in Peru (South America), with a metropolitan population of about ~129K. This profile brings together deterministic city-intelligence indicators for Puno spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Puno profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 52, energy: 63, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "valdivia",
+    name: "Valdivia",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~150K",
+    intro:
+      "Valdivia is an indexed city in Chile (South America), with a metropolitan population of about ~150K. This profile brings together deterministic city-intelligence indicators for Valdivia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Valdivia profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 64, energy: 72, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "esmeraldas",
+    name: "Esmeraldas",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~155K",
+    intro:
+      "Esmeraldas is an indexed city in Ecuador (South America), with a metropolitan population of about ~155K. This profile brings together deterministic city-intelligence indicators for Esmeraldas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Esmeraldas profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 62, energy: 58, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "teresina",
+    name: "Teresina",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~868K",
+    intro:
+      "Teresina is an indexed city in Brazil (South America), with a metropolitan population of about ~868K. This profile brings together deterministic city-intelligence indicators for Teresina spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Teresina profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 60, energy: 71, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aguascalientes-city",
+    name: "Aguascalientes City",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~934K",
+    intro:
+      "Aguascalientes City is an indexed city in Mexico (North America), with a metropolitan population of about ~934K. This profile brings together deterministic city-intelligence indicators for Aguascalientes City spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Aguascalientes City profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 61, airQuality: 58, energy: 70, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "popayan",
+    name: "Popayán",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~301K",
+    intro:
+      "Popayán is an indexed city in Colombia (South America), with a metropolitan population of about ~301K. This profile brings together deterministic city-intelligence indicators for Popayán spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Popayán profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 63, energy: 62, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "resistencia",
+    name: "Resistencia",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~301K",
+    intro:
+      "Resistencia is an indexed city in Argentina (South America), with a metropolitan population of about ~301K. This profile brings together deterministic city-intelligence indicators for Resistencia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Resistencia profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 67, airQuality: 67, energy: 63, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ica",
+    name: "Ica",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~282K",
+    intro:
+      "Ica is an indexed city in Peru (South America), with a metropolitan population of about ~282K. This profile brings together deterministic city-intelligence indicators for Ica spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ica profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 52, energy: 65, resilience: 57 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vina-del-mar",
+    name: "Viña del Mar",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~333K",
+    intro:
+      "Viña del Mar is an indexed city in Chile (South America), with a metropolitan population of about ~333K. This profile brings together deterministic city-intelligence indicators for Viña del Mar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Viña del Mar profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 54, airQuality: 68, energy: 77, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "quevedo",
+    name: "Quevedo",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~178K",
+    intro:
+      "Quevedo is an indexed city in Ecuador (South America), with a metropolitan population of about ~178K. This profile brings together deterministic city-intelligence indicators for Quevedo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Quevedo profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 63, airQuality: 56, energy: 62, resilience: 55 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aracaju",
+    name: "Aracaju",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~633K",
+    intro:
+      "Aracaju is an indexed city in Brazil (South America), with a metropolitan population of about ~633K. This profile brings together deterministic city-intelligence indicators for Aracaju spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Aracaju profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 62, energy: 70, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hermosillo",
+    name: "Hermosillo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~856K",
+    intro:
+      "Hermosillo is an indexed city in Mexico (North America), with a metropolitan population of about ~856K. This profile brings together deterministic city-intelligence indicators for Hermosillo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hermosillo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 64, airQuality: 62, energy: 71, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "monteria",
+    name: "Montería",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~400K",
+    intro:
+      "Montería is an indexed city in Colombia (South America), with a metropolitan population of about ~400K. This profile brings together deterministic city-intelligence indicators for Montería spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Montería profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 59, energy: 64, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "neuquen",
+    name: "Neuquén",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~289K",
+    intro:
+      "Neuquén is an indexed city in Argentina (South America), with a metropolitan population of about ~289K. This profile brings together deterministic city-intelligence indicators for Neuquén spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Neuquén profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 70, airQuality: 68, energy: 65, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chimbote",
+    name: "Chimbote",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~395K",
+    intro:
+      "Chimbote is an indexed city in Peru (South America), with a metropolitan population of about ~395K. This profile brings together deterministic city-intelligence indicators for Chimbote spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chimbote profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 59, energy: 63, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "talca",
+    name: "Talca",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~232K",
+    intro:
+      "Talca is an indexed city in Chile (South America), with a metropolitan population of about ~232K. This profile brings together deterministic city-intelligence indicators for Talca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Talca profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 61, energy: 71, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "latacunga",
+    name: "Latacunga",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~77K",
+    intro:
+      "Latacunga is an indexed city in Ecuador (South America), with a metropolitan population of about ~77K. This profile brings together deterministic city-intelligence indicators for Latacunga spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Latacunga profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 64, airQuality: 57, energy: 64, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "joao-pessoa",
+    name: "João Pessoa",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~834K",
+    intro:
+      "João Pessoa is an indexed city in Brazil (South America), with a metropolitan population of about ~834K. This profile brings together deterministic city-intelligence indicators for João Pessoa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the João Pessoa profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 62, energy: 69, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "saltillo",
+    name: "Saltillo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~864K",
+    intro:
+      "Saltillo is an indexed city in Mexico (North America), with a metropolitan population of about ~864K. This profile brings together deterministic city-intelligence indicators for Saltillo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Saltillo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 62, energy: 72, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "neiva",
+    name: "Neiva",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~380K",
+    intro:
+      "Neiva is an indexed city in Colombia (South America), with a metropolitan population of about ~380K. This profile brings together deterministic city-intelligence indicators for Neiva spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Neiva profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 57, energy: 65, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "posadas",
+    name: "Posadas",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~276K",
+    intro:
+      "Posadas is an indexed city in Argentina (South America), with a metropolitan population of about ~276K. This profile brings together deterministic city-intelligence indicators for Posadas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Posadas profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 69, airQuality: 65, energy: 70, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ayacucho",
+    name: "Ayacucho",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~216K",
+    intro:
+      "Ayacucho is an indexed city in Peru (South America), with a metropolitan population of about ~216K. This profile brings together deterministic city-intelligence indicators for Ayacucho spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ayacucho profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 59, energy: 67, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "copiapo",
+    name: "Copiapó",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~151K",
+    intro:
+      "Copiapó is an indexed city in Chile (South America), with a metropolitan population of about ~151K. This profile brings together deterministic city-intelligence indicators for Copiapó spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Copiapó profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 62, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "milagro",
+    name: "Milagro",
+    countrySlug: "ecuador",
+    countryName: "Ecuador",
+    region: "South America",
+    population: "~160K",
+    intro:
+      "Milagro is an indexed city in Ecuador (South America), with a metropolitan population of about ~160K. This profile brings together deterministic city-intelligence indicators for Milagro spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Milagro profile to compare affordability, livability, and economic indicators against other indexed cities in Ecuador and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 61, airQuality: 62, energy: 56, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rio-branco",
+    name: "Rio Branco",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~365K",
+    intro:
+      "Rio Branco is an indexed city in Brazil (South America), with a metropolitan population of about ~365K. This profile brings together deterministic city-intelligence indicators for Rio Branco spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rio Branco profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 59, energy: 72, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "culiacan",
+    name: "Culiacán",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~808K",
+    intro:
+      "Culiacán is an indexed city in Mexico (North America), with a metropolitan population of about ~808K. This profile brings together deterministic city-intelligence indicators for Culiacán spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Culiacán profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 60, airQuality: 58, energy: 75, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tunja",
+    name: "Tunja",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~181K",
+    intro:
+      "Tunja is an indexed city in Colombia (South America), with a metropolitan population of about ~181K. This profile brings together deterministic city-intelligence indicators for Tunja spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tunja profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 58, energy: 63, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-salvador-de-jujuy",
+    name: "San Salvador de Jujuy",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~312K",
+    intro:
+      "San Salvador de Jujuy is an indexed city in Argentina (South America), with a metropolitan population of about ~312K. This profile brings together deterministic city-intelligence indicators for San Salvador de Jujuy spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Salvador de Jujuy profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 65, airQuality: 65, energy: 63, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huanuco",
+    name: "Huánuco",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~197K",
+    intro:
+      "Huánuco is an indexed city in Peru (South America), with a metropolitan population of about ~197K. This profile brings together deterministic city-intelligence indicators for Huánuco spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huánuco profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 71, airQuality: 56, energy: 61, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "los-angeles-cl",
+    name: "Los Ángeles",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~143K",
+    intro:
+      "Los Ángeles is an indexed city in Chile (South America), with a metropolitan population of about ~143K. This profile brings together deterministic city-intelligence indicators for Los Ángeles spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Los Ángeles profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 69, energy: 74, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "porto-velho",
+    name: "Porto Velho",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~518K",
+    intro:
+      "Porto Velho is an indexed city in Brazil (South America), with a metropolitan population of about ~518K. This profile brings together deterministic city-intelligence indicators for Porto Velho spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Porto Velho profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 62, energy: 75, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tenochtitlan",
+    name: "Tenochtitlan",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~212K",
+    intro:
+      "Tenochtitlan is an indexed city in Mexico (North America), with a metropolitan population of about ~212K. This profile brings together deterministic city-intelligence indicators for Tenochtitlan spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tenochtitlan profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 60, energy: 70, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "riohacha",
+    name: "Riohacha",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~223K",
+    intro:
+      "Riohacha is an indexed city in Colombia (South America), with a metropolitan population of about ~223K. This profile brings together deterministic city-intelligence indicators for Riohacha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Riohacha profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 64, airQuality: 61, energy: 64, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-rioja",
+    name: "La Rioja",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~212K",
+    intro:
+      "La Rioja is an indexed city in Argentina (South America), with a metropolitan population of about ~212K. This profile brings together deterministic city-intelligence indicators for La Rioja spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Rioja profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 70, airQuality: 65, energy: 62, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "juliaca",
+    name: "Juliaca",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~276K",
+    intro:
+      "Juliaca is an indexed city in Peru (South America), with a metropolitan population of about ~276K. This profile brings together deterministic city-intelligence indicators for Juliaca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Juliaca profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 58, energy: 62, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "coyhaique",
+    name: "Coyhaique",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~61K",
+    intro:
+      "Coyhaique is an indexed city in Chile (South America), with a metropolitan population of about ~61K. This profile brings together deterministic city-intelligence indicators for Coyhaique spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Coyhaique profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 54, airQuality: 65, energy: 74, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vitoria",
+    name: "Vitória",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~343K",
+    intro:
+      "Vitória is an indexed city in Brazil (South America), with a metropolitan population of about ~343K. This profile brings together deterministic city-intelligence indicators for Vitória spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vitória profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 58, energy: 74, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "toluca-de-lerdo",
+    name: "Toluca de Lerdo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~224K",
+    intro:
+      "Toluca de Lerdo is an indexed city in Mexico (North America), with a metropolitan population of about ~224K. This profile brings together deterministic city-intelligence indicators for Toluca de Lerdo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Toluca de Lerdo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 62, energy: 72, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "florencia",
+    name: "Florencia",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~192K",
+    intro:
+      "Florencia is an indexed city in Colombia (South America), with a metropolitan population of about ~192K. This profile brings together deterministic city-intelligence indicators for Florencia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Florencia profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 63, airQuality: 57, energy: 67, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bahia-blanca",
+    name: "Bahía Blanca",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~299K",
+    intro:
+      "Bahía Blanca is an indexed city in Argentina (South America), with a metropolitan population of about ~299K. This profile brings together deterministic city-intelligence indicators for Bahía Blanca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bahía Blanca profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 63, airQuality: 61, energy: 69, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huaraz",
+    name: "Huaraz",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~119K",
+    intro:
+      "Huaraz is an indexed city in Peru (South America), with a metropolitan population of about ~119K. This profile brings together deterministic city-intelligence indicators for Huaraz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huaraz profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 54, affordability: 72, airQuality: 54, energy: 64, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "villa-alemana",
+    name: "Villa Alemana",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~140K",
+    intro:
+      "Villa Alemana is an indexed city in Chile (South America), with a metropolitan population of about ~140K. This profile brings together deterministic city-intelligence indicators for Villa Alemana spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Villa Alemana profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 65, energy: 76, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "boa-vista",
+    name: "Boa Vista",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~413K",
+    intro:
+      "Boa Vista is an indexed city in Brazil (South America), with a metropolitan population of about ~413K. This profile brings together deterministic city-intelligence indicators for Boa Vista spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Boa Vista profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 64, energy: 73, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "victoria-de-durango",
+    name: "Victoria de Durango",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~655K",
+    intro:
+      "Victoria de Durango is an indexed city in Mexico (North America), with a metropolitan population of about ~655K. This profile brings together deterministic city-intelligence indicators for Victoria de Durango spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Victoria de Durango profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 60, airQuality: 58, energy: 69, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sincelejo",
+    name: "Sincelejo",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~287K",
+    intro:
+      "Sincelejo is an indexed city in Colombia (South America), with a metropolitan population of about ~287K. This profile brings together deterministic city-intelligence indicators for Sincelejo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sincelejo profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 70, airQuality: 62, energy: 67, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "formosa",
+    name: "Formosa",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~264K",
+    intro:
+      "Formosa is an indexed city in Argentina (South America), with a metropolitan population of about ~264K. This profile brings together deterministic city-intelligence indicators for Formosa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Formosa profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 65, airQuality: 63, energy: 65, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tarapoto",
+    name: "Tarapoto",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~240K",
+    intro:
+      "Tarapoto is an indexed city in Peru (South America), with a metropolitan population of about ~240K. This profile brings together deterministic city-intelligence indicators for Tarapoto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tarapoto profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 61, energy: 65, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "coquimbo",
+    name: "Coquimbo",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~204K",
+    intro:
+      "Coquimbo is an indexed city in Chile (South America), with a metropolitan population of about ~204K. This profile brings together deterministic city-intelligence indicators for Coquimbo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Coquimbo profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 71, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "macapa",
+    name: "Macapá",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~443K",
+    intro:
+      "Macapá is an indexed city in Brazil (South America), with a metropolitan population of about ~443K. This profile brings together deterministic city-intelligence indicators for Macapá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Macapá profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 64, energy: 70, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "xalapa",
+    name: "Xalapa",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~425K",
+    intro:
+      "Xalapa is an indexed city in Mexico (North America), with a metropolitan population of about ~425K. This profile brings together deterministic city-intelligence indicators for Xalapa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Xalapa profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 57, energy: 69, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "quibdo",
+    name: "Quibdó",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~131K",
+    intro:
+      "Quibdó is an indexed city in Colombia (South America), with a metropolitan population of about ~131K. This profile brings together deterministic city-intelligence indicators for Quibdó spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Quibdó profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 59, energy: 69, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-fernando-del-valle-de-catamarca",
+    name: "San Fernando del Valle de Catamarca",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~187K",
+    intro:
+      "San Fernando del Valle de Catamarca is an indexed city in Argentina (South America), with a metropolitan population of about ~187K. This profile brings together deterministic city-intelligence indicators for San Fernando del Valle de Catamarca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Fernando del Valle de Catamarca profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 69, airQuality: 71, energy: 68, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sullana",
+    name: "Sullana",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~162K",
+    intro:
+      "Sullana is an indexed city in Peru (South America), with a metropolitan population of about ~162K. This profile brings together deterministic city-intelligence indicators for Sullana spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sullana profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 71, airQuality: 61, energy: 60, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "osorno",
+    name: "Osorno",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~147K",
+    intro:
+      "Osorno is an indexed city in Chile (South America), with a metropolitan population of about ~147K. This profile brings together deterministic city-intelligence indicators for Osorno spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Osorno profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 73, affordability: 57, airQuality: 61, energy: 72, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "campinas",
+    name: "Campinas",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~1.2M",
+    intro:
+      "Campinas is an indexed city in Brazil (South America), with a metropolitan population of about ~1.2M. This profile brings together deterministic city-intelligence indicators for Campinas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Campinas profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 64, energy: 73, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-francisco-de-campeche",
+    name: "San Francisco de Campeche",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~250K",
+    intro:
+      "San Francisco de Campeche is an indexed city in Mexico (North America), with a metropolitan population of about ~250K. This profile brings together deterministic city-intelligence indicators for San Francisco de Campeche spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Francisco de Campeche profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 63, energy: 72, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "arauca",
+    name: "Arauca",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~97K",
+    intro:
+      "Arauca is an indexed city in Colombia (South America), with a metropolitan population of about ~97K. This profile brings together deterministic city-intelligence indicators for Arauca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Arauca profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 65, airQuality: 59, energy: 65, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "comodoro-rivadavia",
+    name: "Comodoro Rivadavia",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~202K",
+    intro:
+      "Comodoro Rivadavia is an indexed city in Argentina (South America), with a metropolitan population of about ~202K. This profile brings together deterministic city-intelligence indicators for Comodoro Rivadavia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Comodoro Rivadavia profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 64, airQuality: 69, energy: 62, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "huacho",
+    name: "Huacho",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~201K",
+    intro:
+      "Huacho is an indexed city in Peru (South America), with a metropolitan population of about ~201K. This profile brings together deterministic city-intelligence indicators for Huacho spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Huacho profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 56, energy: 64, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "puente-alto",
+    name: "Puente Alto",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~574K",
+    intro:
+      "Puente Alto is an indexed city in Chile (South America), with a metropolitan population of about ~574K. This profile brings together deterministic city-intelligence indicators for Puente Alto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Puente Alto profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 76, affordability: 54, airQuality: 68, energy: 72, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santos",
+    name: "Santos",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~419K",
+    intro:
+      "Santos is an indexed city in Brazil (South America), with a metropolitan population of about ~419K. This profile brings together deterministic city-intelligence indicators for Santos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santos profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 59, energy: 70, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "torreon",
+    name: "Torreón",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~690K",
+    intro:
+      "Torreón is an indexed city in Mexico (North America), with a metropolitan population of about ~690K. This profile brings together deterministic city-intelligence indicators for Torreón spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Torreón profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 66, airQuality: 63, energy: 75, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "leticia",
+    name: "Leticia",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~56K",
+    intro:
+      "Leticia is an indexed city in Colombia (South America), with a metropolitan population of about ~56K. This profile brings together deterministic city-intelligence indicators for Leticia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Leticia profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 53, energy: 64, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bariloche",
+    name: "Bariloche",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~136K",
+    intro:
+      "Bariloche is an indexed city in Argentina (South America), with a metropolitan population of about ~136K. This profile brings together deterministic city-intelligence indicators for Bariloche spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bariloche profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 64, airQuality: 64, energy: 64, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tumbes",
+    name: "Tumbes",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~97K",
+    intro:
+      "Tumbes is an indexed city in Peru (South America), with a metropolitan population of about ~97K. This profile brings together deterministic city-intelligence indicators for Tumbes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tumbes profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 57, energy: 64, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-pedro-de-la-paz",
+    name: "San Pedro de la Paz",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~132K",
+    intro:
+      "San Pedro de la Paz is an indexed city in Chile (South America), with a metropolitan population of about ~132K. This profile brings together deterministic city-intelligence indicators for San Pedro de la Paz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Pedro de la Paz profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 58, airQuality: 69, energy: 78, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "olinda",
+    name: "Olinda",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~350K",
+    intro:
+      "Olinda is an indexed city in Brazil (South America), with a metropolitan population of about ~350K. This profile brings together deterministic city-intelligence indicators for Olinda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Olinda profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 60, energy: 71, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tuxtla-gutierrez",
+    name: "Tuxtla Gutiérrez",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~579K",
+    intro:
+      "Tuxtla Gutiérrez is an indexed city in Mexico (North America), with a metropolitan population of about ~579K. This profile brings together deterministic city-intelligence indicators for Tuxtla Gutiérrez spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tuxtla Gutiérrez profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 64, airQuality: 58, energy: 75, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-jose-del-guaviare",
+    name: "San José del Guaviare",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~69K",
+    intro:
+      "San José del Guaviare is an indexed city in Colombia (South America), with a metropolitan population of about ~69K. This profile brings together deterministic city-intelligence indicators for San José del Guaviare spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San José del Guaviare profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 65, airQuality: 55, energy: 70, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-luis",
+    name: "San Luis",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~207K",
+    intro:
+      "San Luis is an indexed city in Argentina (South America), with a metropolitan population of about ~207K. This profile brings together deterministic city-intelligence indicators for San Luis spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Luis profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 64, airQuality: 64, energy: 64, resilience: 76 },
+  }),
+  buildNeutralCitySeed({
+    slug: "abancay",
+    name: "Abancay",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~72K",
+    intro:
+      "Abancay is an indexed city in Peru (South America), with a metropolitan population of about ~72K. This profile brings together deterministic city-intelligence indicators for Abancay spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Abancay profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 54, energy: 64, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "calama",
+    name: "Calama",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~158K",
+    intro:
+      "Calama is an indexed city in Chile (South America), with a metropolitan population of about ~158K. This profile brings together deterministic city-intelligence indicators for Calama spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Calama profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 66, energy: 72, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "niteroi",
+    name: "Niterói",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~497K",
+    intro:
+      "Niterói is an indexed city in Brazil (South America), with a metropolitan population of about ~497K. This profile brings together deterministic city-intelligence indicators for Niterói spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Niterói profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 60, energy: 72, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "villahermosa",
+    name: "Villahermosa",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~340K",
+    intro:
+      "Villahermosa is an indexed city in Mexico (North America), with a metropolitan population of about ~340K. This profile brings together deterministic city-intelligence indicators for Villahermosa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Villahermosa profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 60, energy: 71, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santa-cruz-de-mompos",
+    name: "Santa Cruz de Mompós",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~45K",
+    intro:
+      "Santa Cruz de Mompós is an indexed city in Colombia (South America), with a metropolitan population of about ~45K. This profile brings together deterministic city-intelligence indicators for Santa Cruz de Mompós spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santa Cruz de Mompós profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 56, energy: 63, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "avellaneda",
+    name: "Avellaneda",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~366K",
+    intro:
+      "Avellaneda is an indexed city in Argentina (South America), with a metropolitan population of about ~366K. This profile brings together deterministic city-intelligence indicators for Avellaneda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Avellaneda profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 63, airQuality: 67, energy: 65, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pisco",
+    name: "Pisco",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~110K",
+    intro:
+      "Pisco is an indexed city in Peru (South America), with a metropolitan population of about ~110K. This profile brings together deterministic city-intelligence indicators for Pisco spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pisco profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 65, airQuality: 60, energy: 65, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-bernardo",
+    name: "San Bernardo",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~301K",
+    intro:
+      "San Bernardo is an indexed city in Chile (South America), with a metropolitan population of about ~301K. This profile brings together deterministic city-intelligence indicators for San Bernardo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Bernardo profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 75, affordability: 55, airQuality: 64, energy: 71, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "palmas",
+    name: "Palmas",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~303K",
+    intro:
+      "Palmas is an indexed city in Brazil (South America), with a metropolitan population of about ~303K. This profile brings together deterministic city-intelligence indicators for Palmas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Palmas profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 57, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tepic",
+    name: "Tepic",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~426K",
+    intro:
+      "Tepic is an indexed city in Mexico (North America), with a metropolitan population of about ~426K. This profile brings together deterministic city-intelligence indicators for Tepic spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tepic profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 59, energy: 71, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ipiales",
+    name: "Ipiales",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~170K",
+    intro:
+      "Ipiales is an indexed city in Colombia (South America), with a metropolitan population of about ~170K. This profile brings together deterministic city-intelligence indicators for Ipiales spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ipiales profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 58, energy: 67, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rio-gallegos",
+    name: "Río Gallegos",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~116K",
+    intro:
+      "Río Gallegos is an indexed city in Argentina (South America), with a metropolitan population of about ~116K. This profile brings together deterministic city-intelligence indicators for Río Gallegos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Río Gallegos profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 69, airQuality: 62, energy: 67, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "puerto-maldonado",
+    name: "Puerto Maldonado",
+    countrySlug: "peru",
+    countryName: "Peru",
+    region: "South America",
+    population: "~85K",
+    intro:
+      "Puerto Maldonado is an indexed city in Peru (South America), with a metropolitan population of about ~85K. This profile brings together deterministic city-intelligence indicators for Puerto Maldonado spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Puerto Maldonado profile to compare affordability, livability, and economic indicators against other indexed cities in Peru and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 55, affordability: 71, airQuality: 56, energy: 68, resilience: 56 },
+  }),
+  buildNeutralCitySeed({
+    slug: "curico",
+    name: "Curicó",
+    countrySlug: "chile",
+    countryName: "Chile",
+    region: "South America",
+    population: "~137K",
+    intro:
+      "Curicó is an indexed city in Chile (South America), with a metropolitan population of about ~137K. This profile brings together deterministic city-intelligence indicators for Curicó spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Curicó profile to compare affordability, livability, and economic indicators against other indexed cities in Chile and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 59, airQuality: 71, energy: 70, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "guarulhos",
+    name: "Guarulhos",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~1.3M",
+    intro:
+      "Guarulhos is an indexed city in Brazil (South America), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Guarulhos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Guarulhos profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 65, energy: 70, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "guanajuato",
+    name: "Guanajuato",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~194K",
+    intro:
+      "Guanajuato is an indexed city in Mexico (North America), with a metropolitan population of about ~194K. This profile brings together deterministic city-intelligence indicators for Guanajuato spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Guanajuato profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 65, airQuality: 57, energy: 68, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mitu",
+    name: "Mitú",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~30K",
+    intro:
+      "Mitú is an indexed city in Colombia (South America), with a metropolitan population of about ~30K. This profile brings together deterministic city-intelligence indicators for Mitú spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mitú profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 56, energy: 67, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lanus",
+    name: "Lanús",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~459K",
+    intro:
+      "Lanús is an indexed city in Argentina (South America), with a metropolitan population of about ~459K. This profile brings together deterministic city-intelligence indicators for Lanús spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lanús profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 63, airQuality: 67, energy: 62, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "catalao",
+    name: "Catalão",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~114K",
+    intro:
+      "Catalão is an indexed city in Brazil (South America), with a metropolitan population of about ~114K. This profile brings together deterministic city-intelligence indicators for Catalão spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Catalão profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 59, energy: 68, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-paz-mx",
+    name: "La Paz",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~250K",
+    intro:
+      "La Paz is an indexed city in Mexico (North America), with a metropolitan population of about ~250K. This profile brings together deterministic city-intelligence indicators for La Paz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Paz profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 55, energy: 75, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "villa-del-rosario",
+    name: "Villa del Rosario",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~70K",
+    intro:
+      "Villa del Rosario is an indexed city in Colombia (South America), with a metropolitan population of about ~70K. This profile brings together deterministic city-intelligence indicators for Villa del Rosario spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Villa del Rosario profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 56, energy: 66, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "quilmes",
+    name: "Quilmes",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~262K",
+    intro:
+      "Quilmes is an indexed city in Argentina (South America), with a metropolitan population of about ~262K. This profile brings together deterministic city-intelligence indicators for Quilmes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Quilmes profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 67, airQuality: 61, energy: 64, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nova-iguacu",
+    name: "Nova Iguaçu",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~1.3M",
+    intro:
+      "Nova Iguaçu is an indexed city in Brazil (South America), with a metropolitan population of about ~1.3M. This profile brings together deterministic city-intelligence indicators for Nova Iguaçu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nova Iguaçu profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 65, energy: 75, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chilpancingo-de-los-bravo",
+    name: "Chilpancingo de los Bravo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~187K",
+    intro:
+      "Chilpancingo de los Bravo is an indexed city in Mexico (North America), with a metropolitan population of about ~187K. This profile brings together deterministic city-intelligence indicators for Chilpancingo de los Bravo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chilpancingo de los Bravo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 66, airQuality: 63, energy: 74, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "puerto-carreno",
+    name: "Puerto Carreño",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~17K",
+    intro:
+      "Puerto Carreño is an indexed city in Colombia (South America), with a metropolitan population of about ~17K. This profile brings together deterministic city-intelligence indicators for Puerto Carreño spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Puerto Carreño profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 57, energy: 64, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tandil",
+    name: "Tandil",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~150K",
+    intro:
+      "Tandil is an indexed city in Argentina (South America), with a metropolitan population of about ~150K. This profile brings together deterministic city-intelligence indicators for Tandil spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tandil profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 63, airQuality: 67, energy: 65, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santo-andre",
+    name: "Santo André",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~749K",
+    intro:
+      "Santo André is an indexed city in Brazil (South America), with a metropolitan population of about ~749K. This profile brings together deterministic city-intelligence indicators for Santo André spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santo André profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 64, energy: 70, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "chetumal",
+    name: "Chetumal",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~169K",
+    intro:
+      "Chetumal is an indexed city in Mexico (North America), with a metropolitan population of about ~169K. This profile brings together deterministic city-intelligence indicators for Chetumal spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Chetumal profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 64, airQuality: 59, energy: 70, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "arauquita",
+    name: "Arauquita",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~41K",
+    intro:
+      "Arauquita is an indexed city in Colombia (South America), with a metropolitan population of about ~41K. This profile brings together deterministic city-intelligence indicators for Arauquita spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Arauquita profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 58, energy: 68, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rio-cuarto",
+    name: "Río Cuarto",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~200K",
+    intro:
+      "Río Cuarto is an indexed city in Argentina (South America), with a metropolitan population of about ~200K. This profile brings together deterministic city-intelligence indicators for Río Cuarto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Río Cuarto profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 69, airQuality: 65, energy: 65, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-bernardo-do-campo",
+    name: "São Bernardo do Campo",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~811K",
+    intro:
+      "São Bernardo do Campo is an indexed city in Brazil (South America), with a metropolitan population of about ~811K. This profile brings together deterministic city-intelligence indicators for São Bernardo do Campo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São Bernardo do Campo profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 63, energy: 71, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zacatecas",
+    name: "Zacatecas",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~150K",
+    intro:
+      "Zacatecas is an indexed city in Mexico (North America), with a metropolitan population of about ~150K. This profile brings together deterministic city-intelligence indicators for Zacatecas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zacatecas profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 56, energy: 72, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-union",
+    name: "La Unión",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~40K",
+    intro:
+      "La Unión is an indexed city in Colombia (South America), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for La Unión spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Unión profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 61, energy: 65, resilience: 58 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santa-rosa-ar",
+    name: "Santa Rosa",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~117K",
+    intro:
+      "Santa Rosa is an indexed city in Argentina (South America), with a metropolitan population of about ~117K. This profile brings together deterministic city-intelligence indicators for Santa Rosa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santa Rosa profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 67, airQuality: 64, energy: 67, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ribeirao-preto",
+    name: "Ribeirão Preto",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~732K",
+    intro:
+      "Ribeirão Preto is an indexed city in Brazil (South America), with a metropolitan population of about ~732K. This profile brings together deterministic city-intelligence indicators for Ribeirão Preto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ribeirão Preto profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 61, energy: 69, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ensenada",
+    name: "Ensenada",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~557K",
+    intro:
+      "Ensenada is an indexed city in Mexico (North America), with a metropolitan population of about ~557K. This profile brings together deterministic city-intelligence indicators for Ensenada spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ensenada profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 61, airQuality: 62, energy: 70, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-bernardo-del-viento",
+    name: "San Bernardo del Viento",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~40K",
+    intro:
+      "San Bernardo del Viento is an indexed city in Colombia (South America), with a metropolitan population of about ~40K. This profile brings together deterministic city-intelligence indicators for San Bernardo del Viento spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Bernardo del Viento profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 63, airQuality: 63, energy: 69, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "puerto-madryn",
+    name: "Puerto Madryn",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~103K",
+    intro:
+      "Puerto Madryn is an indexed city in Argentina (South America), with a metropolitan population of about ~103K. This profile brings together deterministic city-intelligence indicators for Puerto Madryn spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Puerto Madryn profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 62, airQuality: 68, energy: 63, resilience: 75 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sorocaba",
+    name: "Sorocaba",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~724K",
+    intro:
+      "Sorocaba is an indexed city in Brazil (South America), with a metropolitan population of about ~724K. This profile brings together deterministic city-intelligence indicators for Sorocaba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Sorocaba profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 60, energy: 69, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "colima",
+    name: "Colima",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~147K",
+    intro:
+      "Colima is an indexed city in Mexico (North America), with a metropolitan population of about ~147K. This profile brings together deterministic city-intelligence indicators for Colima spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Colima profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 53, energy: 71, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "socorro",
+    name: "Socorro",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~31K",
+    intro:
+      "Socorro is an indexed city in Colombia (South America), with a metropolitan population of about ~31K. This profile brings together deterministic city-intelligence indicators for Socorro spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Socorro profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 66, airQuality: 61, energy: 67, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-rafael-ar",
+    name: "San Rafael",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~215K",
+    intro:
+      "San Rafael is an indexed city in Argentina (South America), with a metropolitan population of about ~215K. This profile brings together deterministic city-intelligence indicators for San Rafael spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Rafael profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 63, airQuality: 67, energy: 63, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-carlos",
+    name: "São Carlos",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~254K",
+    intro:
+      "São Carlos is an indexed city in Brazil (South America), with a metropolitan population of about ~254K. This profile brings together deterministic city-intelligence indicators for São Carlos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São Carlos profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 62, energy: 69, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mazatlan",
+    name: "Mazatlán",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~501K",
+    intro:
+      "Mazatlán is an indexed city in Mexico (North America), with a metropolitan population of about ~501K. This profile brings together deterministic city-intelligence indicators for Mazatlán spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mazatlán profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 61, energy: 76, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-jacinto",
+    name: "San Jacinto",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~22K",
+    intro:
+      "San Jacinto is an indexed city in Colombia (South America), with a metropolitan population of about ~22K. This profile brings together deterministic city-intelligence indicators for San Jacinto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Jacinto profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 70, airQuality: 54, energy: 64, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "concordia",
+    name: "Concordia",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~180K",
+    intro:
+      "Concordia is an indexed city in Argentina (South America), with a metropolitan population of about ~180K. This profile brings together deterministic city-intelligence indicators for Concordia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Concordia profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 71, affordability: 63, airQuality: 62, energy: 70, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "petropolis",
+    name: "Petrópolis",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~279K",
+    intro:
+      "Petrópolis is an indexed city in Brazil (South America), with a metropolitan population of about ~279K. This profile brings together deterministic city-intelligence indicators for Petrópolis spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Petrópolis profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 63, energy: 69, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "reynosa",
+    name: "Reynosa",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~589K",
+    intro:
+      "Reynosa is an indexed city in Mexico (North America), with a metropolitan population of about ~589K. This profile brings together deterministic city-intelligence indicators for Reynosa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Reynosa profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 64, airQuality: 62, energy: 74, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "hogares-soacha",
+    name: "Hogares Soacha",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~35K",
+    intro:
+      "Hogares Soacha is an indexed city in Colombia (South America), with a metropolitan population of about ~35K. This profile brings together deterministic city-intelligence indicators for Hogares Soacha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Hogares Soacha profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 63, energy: 69, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-nicolas-de-los-arroyos",
+    name: "San Nicolás de los Arroyos",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~160K",
+    intro:
+      "San Nicolás de los Arroyos is an indexed city in Argentina (South America), with a metropolitan population of about ~160K. This profile brings together deterministic city-intelligence indicators for San Nicolás de los Arroyos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Nicolás de los Arroyos profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 67, airQuality: 62, energy: 68, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "uberlandia",
+    name: "Uberlândia",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~762K",
+    intro:
+      "Uberlândia is an indexed city in Brazil (South America), with a metropolitan population of about ~762K. This profile brings together deterministic city-intelligence indicators for Uberlândia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Uberlândia profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 64, energy: 68, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tlaquepaque",
+    name: "Tlaquepaque",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~650K",
+    intro:
+      "Tlaquepaque is an indexed city in Mexico (North America), with a metropolitan population of about ~650K. This profile brings together deterministic city-intelligence indicators for Tlaquepaque spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tlaquepaque profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 56, energy: 68, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "salgar",
+    name: "Salgar",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~84K",
+    intro:
+      "Salgar is an indexed city in Colombia (South America), with a metropolitan population of about ~84K. This profile brings together deterministic city-intelligence indicators for Salgar spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Salgar profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 56, affordability: 70, airQuality: 55, energy: 63, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "merlo",
+    name: "Merlo",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~244K",
+    intro:
+      "Merlo is an indexed city in Argentina (South America), with a metropolitan population of about ~244K. This profile brings together deterministic city-intelligence indicators for Merlo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Merlo profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 68, airQuality: 71, energy: 68, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-jose-dos-campos",
+    name: "São José dos Campos",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~737K",
+    intro:
+      "São José dos Campos is an indexed city in Brazil (South America), with a metropolitan population of about ~737K. This profile brings together deterministic city-intelligence indicators for São José dos Campos spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São José dos Campos profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 62, energy: 71, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "irapuato",
+    name: "Irapuato",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~593K",
+    intro:
+      "Irapuato is an indexed city in Mexico (North America), with a metropolitan population of about ~593K. This profile brings together deterministic city-intelligence indicators for Irapuato spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Irapuato profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 65, airQuality: 56, energy: 69, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "el-tablon",
+    name: "El Tablón",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~13K",
+    intro:
+      "El Tablón is an indexed city in Colombia (South America), with a metropolitan population of about ~13K. This profile brings together deterministic city-intelligence indicators for El Tablón spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the El Tablón profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 57, energy: 67, resilience: 59 },
+  }),
+  buildNeutralCitySeed({
+    slug: "rawson",
+    name: "Rawson",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~39K",
+    intro:
+      "Rawson is an indexed city in Argentina (South America), with a metropolitan population of about ~39K. This profile brings together deterministic city-intelligence indicators for Rawson spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Rawson profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 66, airQuality: 68, energy: 68, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-goncalo",
+    name: "São Gonçalo",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~897K",
+    intro:
+      "São Gonçalo is an indexed city in Brazil (South America), with a metropolitan population of about ~897K. This profile brings together deterministic city-intelligence indicators for São Gonçalo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São Gonçalo profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 63, energy: 68, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "puerto-vallarta",
+    name: "Puerto Vallarta",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~224K",
+    intro:
+      "Puerto Vallarta is an indexed city in Mexico (North America), with a metropolitan population of about ~224K. This profile brings together deterministic city-intelligence indicators for Puerto Vallarta spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Puerto Vallarta profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 60, airQuality: 59, energy: 76, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "baranoa",
+    name: "Baranoa",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~62K",
+    intro:
+      "Baranoa is an indexed city in Colombia (South America), with a metropolitan population of about ~62K. This profile brings together deterministic city-intelligence indicators for Baranoa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Baranoa profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 58, affordability: 68, airQuality: 58, energy: 63, resilience: 61 },
+  }),
+  buildNeutralCitySeed({
+    slug: "viedma",
+    name: "Viedma",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~61K",
+    intro:
+      "Viedma is an indexed city in Argentina (South America), with a metropolitan population of about ~61K. This profile brings together deterministic city-intelligence indicators for Viedma spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Viedma profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 65, airQuality: 71, energy: 62, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "duque-de-caxias",
+    name: "Duque de Caxias",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~887K",
+    intro:
+      "Duque de Caxias is an indexed city in Brazil (South America), with a metropolitan population of about ~887K. This profile brings together deterministic city-intelligence indicators for Duque de Caxias spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Duque de Caxias profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 58, energy: 69, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "heroica-matamoros",
+    name: "Heroica Matamoros",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~542K",
+    intro:
+      "Heroica Matamoros is an indexed city in Mexico (North America), with a metropolitan population of about ~542K. This profile brings together deterministic city-intelligence indicators for Heroica Matamoros spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Heroica Matamoros profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 60, energy: 73, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "unguia",
+    name: "Unguía",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~12K",
+    intro:
+      "Unguía is an indexed city in Colombia (South America), with a metropolitan population of about ~12K. This profile brings together deterministic city-intelligence indicators for Unguía spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Unguía profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 57, affordability: 69, airQuality: 58, energy: 65, resilience: 60 },
+  }),
+  buildNeutralCitySeed({
+    slug: "lomas-de-zamora",
+    name: "Lomas de Zamora",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~113K",
+    intro:
+      "Lomas de Zamora is an indexed city in Argentina (South America), with a metropolitan population of about ~113K. This profile brings together deterministic city-intelligence indicators for Lomas de Zamora spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Lomas de Zamora profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 72, affordability: 62, airQuality: 66, energy: 68, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "caxias-do-sul",
+    name: "Caxias do Sul",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~524K",
+    intro:
+      "Caxias do Sul is an indexed city in Brazil (South America), with a metropolitan population of about ~524K. This profile brings together deterministic city-intelligence indicators for Caxias do Sul spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Caxias do Sul profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 60, energy: 74, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "manzanillo",
+    name: "Manzanillo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~160K",
+    intro:
+      "Manzanillo is an indexed city in Mexico (North America), with a metropolitan population of about ~160K. This profile brings together deterministic city-intelligence indicators for Manzanillo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Manzanillo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 61, energy: 75, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "el-banco",
+    name: "El Banco",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~55K",
+    intro:
+      "El Banco is an indexed city in Colombia (South America), with a metropolitan population of about ~55K. This profile brings together deterministic city-intelligence indicators for El Banco spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the El Banco profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 59, affordability: 67, airQuality: 57, energy: 62, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "godoy-cruz",
+    name: "Godoy Cruz",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~191K",
+    intro:
+      "Godoy Cruz is an indexed city in Argentina (South America), with a metropolitan population of about ~191K. This profile brings together deterministic city-intelligence indicators for Godoy Cruz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Godoy Cruz profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 70, airQuality: 64, energy: 70, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "joinville",
+    name: "Joinville",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~616K",
+    intro:
+      "Joinville is an indexed city in Brazil (South America), with a metropolitan population of about ~616K. This profile brings together deterministic city-intelligence indicators for Joinville spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Joinville profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 60, energy: 73, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-cristobal-de-las-casas",
+    name: "San Cristóbal de Las Casas",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~184K",
+    intro:
+      "San Cristóbal de Las Casas is an indexed city in Mexico (North America), with a metropolitan population of about ~184K. This profile brings together deterministic city-intelligence indicators for San Cristóbal de Las Casas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Cristóbal de Las Casas profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 54, energy: 75, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "la-boquilla",
+    name: "La Boquilla",
+    countrySlug: "colombia",
+    countryName: "Colombia",
+    region: "South America",
+    population: "~11K",
+    intro:
+      "La Boquilla is an indexed city in Colombia (South America), with a metropolitan population of about ~11K. This profile brings together deterministic city-intelligence indicators for La Boquilla spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the La Boquilla profile to compare affordability, livability, and economic indicators against other indexed cities in Colombia and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 63, airQuality: 57, energy: 68, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "berazategui",
+    name: "Berazategui",
+    countrySlug: "argentina",
+    countryName: "Argentina",
+    region: "South America",
+    population: "~181K",
+    intro:
+      "Berazategui is an indexed city in Argentina (South America), with a metropolitan population of about ~181K. This profile brings together deterministic city-intelligence indicators for Berazategui spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Berazategui profile to compare affordability, livability, and economic indicators against other indexed cities in Argentina and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 65, airQuality: 71, energy: 68, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "londrina",
+    name: "Londrina",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~581K",
+    intro:
+      "Londrina is an indexed city in Brazil (South America), with a metropolitan population of about ~581K. This profile brings together deterministic city-intelligence indicators for Londrina spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Londrina profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 64, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "nuevo-laredo",
+    name: "Nuevo Laredo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~416K",
+    intro:
+      "Nuevo Laredo is an indexed city in Mexico (North America), with a metropolitan population of about ~416K. This profile brings together deterministic city-intelligence indicators for Nuevo Laredo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Nuevo Laredo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 64, airQuality: 61, energy: 71, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "americana",
+    name: "Americana",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~248K",
+    intro:
+      "Americana is an indexed city in Brazil (South America), with a metropolitan population of about ~248K. This profile brings together deterministic city-intelligence indicators for Americana spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Americana profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 65, energy: 72, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "guadalupe",
+    name: "Guadalupe",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~692K",
+    intro:
+      "Guadalupe is an indexed city in Mexico (North America), with a metropolitan population of about ~692K. This profile brings together deterministic city-intelligence indicators for Guadalupe spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Guadalupe profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 59, energy: 68, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "juiz-de-fora",
+    name: "Juiz de Fora",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~541K",
+    intro:
+      "Juiz de Fora is an indexed city in Brazil (South America), with a metropolitan population of about ~541K. This profile brings together deterministic city-intelligence indicators for Juiz de Fora spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Juiz de Fora profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 67, energy: 75, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cordoba-mx",
+    name: "Córdoba",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~205K",
+    intro:
+      "Córdoba is an indexed city in Mexico (North America), with a metropolitan population of about ~205K. This profile brings together deterministic city-intelligence indicators for Córdoba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Córdoba profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 62, energy: 75, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "mogi-das-cruzes",
+    name: "Mogi das Cruzes",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~451K",
+    intro:
+      "Mogi das Cruzes is an indexed city in Brazil (South America), with a metropolitan population of about ~451K. This profile brings together deterministic city-intelligence indicators for Mogi das Cruzes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mogi das Cruzes profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 57, energy: 75, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tonala",
+    name: "Tonalá",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~442K",
+    intro:
+      "Tonalá is an indexed city in Mexico (North America), with a metropolitan population of about ~442K. This profile brings together deterministic city-intelligence indicators for Tonalá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tonalá profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 63, airQuality: 54, energy: 74, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "feira-de-santana",
+    name: "Feira de Santana",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~661K",
+    intro:
+      "Feira de Santana is an indexed city in Brazil (South America), with a metropolitan population of about ~661K. This profile brings together deterministic city-intelligence indicators for Feira de Santana spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Feira de Santana profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 60, energy: 68, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "heroica-nogales",
+    name: "Heroica Nogales",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~261K",
+    intro:
+      "Heroica Nogales is an indexed city in Mexico (North America), with a metropolitan population of about ~261K. This profile brings together deterministic city-intelligence indicators for Heroica Nogales spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Heroica Nogales profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 60, energy: 74, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-jose-do-rio-preto",
+    name: "São José do Rio Preto",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~504K",
+    intro:
+      "São José do Rio Preto is an indexed city in Brazil (South America), with a metropolitan population of about ~504K. This profile brings together deterministic city-intelligence indicators for São José do Rio Preto spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São José do Rio Preto profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 57, energy: 76, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "valladolid-mx",
+    name: "Valladolid",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~300K",
+    intro:
+      "Valladolid is an indexed city in Mexico (North America), with a metropolitan population of about ~300K. This profile brings together deterministic city-intelligence indicators for Valladolid spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Valladolid profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 54, energy: 76, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "blumenau",
+    name: "Blumenau",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~361K",
+    intro:
+      "Blumenau is an indexed city in Brazil (South America), with a metropolitan population of about ~361K. This profile brings together deterministic city-intelligence indicators for Blumenau spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Blumenau profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 60, energy: 76, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "tapachula-de-cordova-y-ordonez",
+    name: "Tapachula de Córdova y Ordóñez",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~218K",
+    intro:
+      "Tapachula de Córdova y Ordóñez is an indexed city in Mexico (North America), with a metropolitan population of about ~218K. This profile brings together deterministic city-intelligence indicators for Tapachula de Córdova y Ordóñez spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Tapachula de Córdova y Ordóñez profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 60, airQuality: 57, energy: 70, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "coronel-fabriciano",
+    name: "Coronel Fabriciano",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~105K",
+    intro:
+      "Coronel Fabriciano is an indexed city in Brazil (South America), with a metropolitan population of about ~105K. This profile brings together deterministic city-intelligence indicators for Coronel Fabriciano spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Coronel Fabriciano profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 63, energy: 72, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ciudad-del-carmen",
+    name: "Ciudad del Carmen",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~191K",
+    intro:
+      "Ciudad del Carmen is an indexed city in Mexico (North America), with a metropolitan population of about ~191K. This profile brings together deterministic city-intelligence indicators for Ciudad del Carmen spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ciudad del Carmen profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 60, airQuality: 59, energy: 68, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "anapolis",
+    name: "Anápolis",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~399K",
+    intro:
+      "Anápolis is an indexed city in Brazil (South America), with a metropolitan population of about ~399K. This profile brings together deterministic city-intelligence indicators for Anápolis spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Anápolis profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 60, energy: 74, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "fresnillo",
+    name: "Fresnillo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~231K",
+    intro:
+      "Fresnillo is an indexed city in Mexico (North America), with a metropolitan population of about ~231K. This profile brings together deterministic city-intelligence indicators for Fresnillo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Fresnillo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 65, airQuality: 60, energy: 75, resilience: 65 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jaboatao-dos-guararapes",
+    name: "Jaboatão dos Guararapes",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~711K",
+    intro:
+      "Jaboatão dos Guararapes is an indexed city in Brazil (South America), with a metropolitan population of about ~711K. This profile brings together deterministic city-intelligence indicators for Jaboatão dos Guararapes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jaboatão dos Guararapes profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 57, energy: 75, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "zamora-de-hidalgo",
+    name: "Zamora de Hidalgo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~208K",
+    intro:
+      "Zamora de Hidalgo is an indexed city in Mexico (North America), with a metropolitan population of about ~208K. This profile brings together deterministic city-intelligence indicators for Zamora de Hidalgo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Zamora de Hidalgo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 65, airQuality: 62, energy: 73, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "pelotas",
+    name: "Pelotas",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~345K",
+    intro:
+      "Pelotas is an indexed city in Brazil (South America), with a metropolitan population of about ~345K. This profile brings together deterministic city-intelligence indicators for Pelotas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Pelotas profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 66, energy: 69, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ciudad-acuna",
+    name: "Ciudad Acuña",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~160K",
+    intro:
+      "Ciudad Acuña is an indexed city in Mexico (North America), with a metropolitan population of about ~160K. This profile brings together deterministic city-intelligence indicators for Ciudad Acuña spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ciudad Acuña profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 64, airQuality: 58, energy: 72, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vila-velha",
+    name: "Vila Velha",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~473K",
+    intro:
+      "Vila Velha is an indexed city in Brazil (South America), with a metropolitan population of about ~473K. This profile brings together deterministic city-intelligence indicators for Vila Velha spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vila Velha profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 60, energy: 70, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "piedras-negras",
+    name: "Piedras Negras",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~174K",
+    intro:
+      "Piedras Negras is an indexed city in Mexico (North America), with a metropolitan population of about ~174K. This profile brings together deterministic city-intelligence indicators for Piedras Negras spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Piedras Negras profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 64, airQuality: 60, energy: 74, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "maringa",
+    name: "Maringá",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~410K",
+    intro:
+      "Maringá is an indexed city in Brazil (South America), with a metropolitan population of about ~410K. This profile brings together deterministic city-intelligence indicators for Maringá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Maringá profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 66, energy: 75, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "gomez-palacio",
+    name: "Gómez Palacio",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~342K",
+    intro:
+      "Gómez Palacio is an indexed city in Mexico (North America), with a metropolitan population of about ~342K. This profile brings together deterministic city-intelligence indicators for Gómez Palacio spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Gómez Palacio profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 55, energy: 74, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bauru",
+    name: "Bauru",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~393K",
+    intro:
+      "Bauru is an indexed city in Brazil (South America), with a metropolitan population of about ~393K. This profile brings together deterministic city-intelligence indicators for Bauru spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bauru profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 65, energy: 68, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ciudad-obregon",
+    name: "Ciudad Obregón",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~329K",
+    intro:
+      "Ciudad Obregón is an indexed city in Mexico (North America), with a metropolitan population of about ~329K. This profile brings together deterministic city-intelligence indicators for Ciudad Obregón spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ciudad Obregón profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 57, energy: 69, resilience: 64 },
+  }),
+  buildNeutralCitySeed({
+    slug: "maraba",
+    name: "Marabá",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~291K",
+    intro:
+      "Marabá is an indexed city in Brazil (South America), with a metropolitan population of about ~291K. This profile brings together deterministic city-intelligence indicators for Marabá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Marabá profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 59, energy: 76, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-jose-del-cabo",
+    name: "San José del Cabo",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~136K",
+    intro:
+      "San José del Cabo is an indexed city in Mexico (North America), with a metropolitan population of about ~136K. This profile brings together deterministic city-intelligence indicators for San José del Cabo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San José del Cabo profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 62, airQuality: 53, energy: 69, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "taubate",
+    name: "Taubaté",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~318K",
+    intro:
+      "Taubaté is an indexed city in Brazil (South America), with a metropolitan population of about ~318K. This profile brings together deterministic city-intelligence indicators for Taubaté spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Taubaté profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 66, energy: 72, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "san-luis-rio-colorado",
+    name: "San Luis Río Colorado",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~177K",
+    intro:
+      "San Luis Río Colorado is an indexed city in Mexico (North America), with a metropolitan population of about ~177K. This profile brings together deterministic city-intelligence indicators for San Luis Río Colorado spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the San Luis Río Colorado profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 57, energy: 68, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "contagem",
+    name: "Contagem",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~674K",
+    intro:
+      "Contagem is an indexed city in Brazil (South America), with a metropolitan population of about ~674K. This profile brings together deterministic city-intelligence indicators for Contagem spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Contagem profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 58, energy: 73, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cabo-san-lucas",
+    name: "Cabo San Lucas",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~203K",
+    intro:
+      "Cabo San Lucas is an indexed city in Mexico (North America), with a metropolitan population of about ~203K. This profile brings together deterministic city-intelligence indicators for Cabo San Lucas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cabo San Lucas profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 63, energy: 70, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "foz-do-iguacu",
+    name: "Foz do Iguaçu",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~285K",
+    intro:
+      "Foz do Iguaçu is an indexed city in Brazil (South America), with a metropolitan population of about ~285K. This profile brings together deterministic city-intelligence indicators for Foz do Iguaçu spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Foz do Iguaçu profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 62, energy: 75, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cuauhtemoc",
+    name: "Cuauhtémoc",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~181K",
+    intro:
+      "Cuauhtémoc is an indexed city in Mexico (North America), with a metropolitan population of about ~181K. This profile brings together deterministic city-intelligence indicators for Cuauhtémoc spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cuauhtémoc profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 60, affordability: 68, airQuality: 53, energy: 73, resilience: 62 },
+  }),
+  buildNeutralCitySeed({
+    slug: "jundiai",
+    name: "Jundiaí",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~402K",
+    intro:
+      "Jundiaí is an indexed city in Brazil (South America), with a metropolitan population of about ~402K. This profile brings together deterministic city-intelligence indicators for Jundiaí spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Jundiaí profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 58, energy: 76, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "comitan-de-dominguez",
+    name: "Comitán de Domínguez",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~113K",
+    intro:
+      "Comitán de Domínguez is an indexed city in Mexico (North America), with a metropolitan population of about ~113K. This profile brings together deterministic city-intelligence indicators for Comitán de Domínguez spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Comitán de Domínguez profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 64, airQuality: 53, energy: 72, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "aparecida-de-goiania",
+    name: "Aparecida de Goiânia",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~556K",
+    intro:
+      "Aparecida de Goiânia is an indexed city in Brazil (South America), with a metropolitan population of about ~556K. This profile brings together deterministic city-intelligence indicators for Aparecida de Goiânia spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Aparecida de Goiânia profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 65, energy: 68, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "navojoa",
+    name: "Navojoa",
+    countrySlug: "mexico",
+    countryName: "Mexico",
+    region: "North America",
+    population: "~121K",
+    intro:
+      "Navojoa is an indexed city in Mexico (North America), with a metropolitan population of about ~121K. This profile brings together deterministic city-intelligence indicators for Navojoa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Navojoa profile to compare affordability, livability, and economic indicators against other indexed cities in Mexico and across North America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 61, affordability: 67, airQuality: 54, energy: 72, resilience: 63 },
+  }),
+  buildNeutralCitySeed({
+    slug: "piracicaba",
+    name: "Piracicaba",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~423K",
+    intro:
+      "Piracicaba is an indexed city in Brazil (South America), with a metropolitan population of about ~423K. This profile brings together deterministic city-intelligence indicators for Piracicaba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Piracicaba profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 60, energy: 72, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "campina-grande",
+    name: "Campina Grande",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~419K",
+    intro:
+      "Campina Grande is an indexed city in Brazil (South America), with a metropolitan population of about ~419K. This profile brings together deterministic city-intelligence indicators for Campina Grande spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Campina Grande profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 58, energy: 71, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santa-maria-br",
+    name: "Santa Maria",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~285K",
+    intro:
+      "Santa Maria is an indexed city in Brazil (South America), with a metropolitan population of about ~285K. This profile brings together deterministic city-intelligence indicators for Santa Maria spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santa Maria profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 60, energy: 72, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ananindeua",
+    name: "Ananindeua",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~479K",
+    intro:
+      "Ananindeua is an indexed city in Brazil (South America), with a metropolitan population of about ~479K. This profile brings together deterministic city-intelligence indicators for Ananindeua spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ananindeua profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 63, energy: 71, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "campos-dos-goytacazes",
+    name: "Campos dos Goytacazes",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~519K",
+    intro:
+      "Campos dos Goytacazes is an indexed city in Brazil (South America), with a metropolitan population of about ~519K. This profile brings together deterministic city-intelligence indicators for Campos dos Goytacazes spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Campos dos Goytacazes profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 63, energy: 72, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "guaruja",
+    name: "Guarujá",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~311K",
+    intro:
+      "Guarujá is an indexed city in Brazil (South America), with a metropolitan population of about ~311K. This profile brings together deterministic city-intelligence indicators for Guarujá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Guarujá profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 64, energy: 74, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "uberaba",
+    name: "Uberaba",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~357K",
+    intro:
+      "Uberaba is an indexed city in Brazil (South America), with a metropolitan population of about ~357K. This profile brings together deterministic city-intelligence indicators for Uberaba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Uberaba profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 63, energy: 68, resilience: 69 },
+  }),
+  buildNeutralCitySeed({
+    slug: "canoas",
+    name: "Canoas",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~348K",
+    intro:
+      "Canoas is an indexed city in Brazil (South America), with a metropolitan population of about ~348K. This profile brings together deterministic city-intelligence indicators for Canoas spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Canoas profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 63, energy: 72, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ponta-grossa",
+    name: "Ponta Grossa",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~376K",
+    intro:
+      "Ponta Grossa is an indexed city in Brazil (South America), with a metropolitan population of about ~376K. This profile brings together deterministic city-intelligence indicators for Ponta Grossa spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ponta Grossa profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 64, affordability: 66, airQuality: 67, energy: 70, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-vicente",
+    name: "São Vicente",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~330K",
+    intro:
+      "São Vicente is an indexed city in Brazil (South America), with a metropolitan population of about ~330K. This profile brings together deterministic city-intelligence indicators for São Vicente spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São Vicente profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 62, affordability: 68, airQuality: 57, energy: 71, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "caruaru",
+    name: "Caruaru",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~405K",
+    intro:
+      "Caruaru is an indexed city in Brazil (South America), with a metropolitan population of about ~405K. This profile brings together deterministic city-intelligence indicators for Caruaru spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Caruaru profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 60, energy: 75, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "vitoria-da-conquista",
+    name: "Vitória da Conquista",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~397K",
+    intro:
+      "Vitória da Conquista is an indexed city in Brazil (South America), with a metropolitan population of about ~397K. This profile brings together deterministic city-intelligence indicators for Vitória da Conquista spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Vitória da Conquista profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 61, energy: 76, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "cascavel",
+    name: "Cascavel",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~348K",
+    intro:
+      "Cascavel is an indexed city in Brazil (South America), with a metropolitan population of about ~348K. This profile brings together deterministic city-intelligence indicators for Cascavel spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Cascavel profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 57, energy: 71, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "franca",
+    name: "Franca",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~365K",
+    intro:
+      "Franca is an indexed city in Brazil (South America), with a metropolitan population of about ~365K. This profile brings together deterministic city-intelligence indicators for Franca spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Franca profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 59, energy: 68, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "barueri",
+    name: "Barueri",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~334K",
+    intro:
+      "Barueri is an indexed city in Brazil (South America), with a metropolitan population of about ~334K. This profile brings together deterministic city-intelligence indicators for Barueri spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Barueri profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 63, energy: 70, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "santarem-br",
+    name: "Santarém",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~361K",
+    intro:
+      "Santarém is an indexed city in Brazil (South America), with a metropolitan population of about ~361K. This profile brings together deterministic city-intelligence indicators for Santarém spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Santarém profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 57, energy: 68, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "bage",
+    name: "Bagé",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~118K",
+    intro:
+      "Bagé is an indexed city in Brazil (South America), with a metropolitan population of about ~118K. This profile brings together deterministic city-intelligence indicators for Bagé spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Bagé profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 65, energy: 75, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "petrolina",
+    name: "Petrolina",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~418K",
+    intro:
+      "Petrolina is an indexed city in Brazil (South America), with a metropolitan population of about ~418K. This profile brings together deterministic city-intelligence indicators for Petrolina spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Petrolina profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 62, energy: 71, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "itaquaquecetuba",
+    name: "Itaquaquecetuba",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~375K",
+    intro:
+      "Itaquaquecetuba is an indexed city in Brazil (South America), with a metropolitan population of about ~375K. This profile brings together deterministic city-intelligence indicators for Itaquaquecetuba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Itaquaquecetuba profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 59, energy: 75, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "belford-roxo",
+    name: "Belford Roxo",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~483K",
+    intro:
+      "Belford Roxo is an indexed city in Brazil (South America), with a metropolitan population of about ~483K. This profile brings together deterministic city-intelligence indicators for Belford Roxo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Belford Roxo profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 65, affordability: 65, airQuality: 58, energy: 70, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "novo-hamburgo",
+    name: "Novo Hamburgo",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~236K",
+    intro:
+      "Novo Hamburgo is an indexed city in Brazil (South America), with a metropolitan population of about ~236K. This profile brings together deterministic city-intelligence indicators for Novo Hamburgo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Novo Hamburgo profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 57, energy: 72, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "diadema",
+    name: "Diadema",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~393K",
+    intro:
+      "Diadema is an indexed city in Brazil (South America), with a metropolitan population of about ~393K. This profile brings together deterministic city-intelligence indicators for Diadema spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Diadema profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 66, energy: 75, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "maua",
+    name: "Mauá",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~418K",
+    intro:
+      "Mauá is an indexed city in Brazil (South America), with a metropolitan population of about ~418K. This profile brings together deterministic city-intelligence indicators for Mauá spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Mauá profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 61, energy: 70, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "betim",
+    name: "Betim",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~450K",
+    intro:
+      "Betim is an indexed city in Brazil (South America), with a metropolitan population of about ~450K. This profile brings together deterministic city-intelligence indicators for Betim spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Betim profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 61, energy: 70, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "juazeiro",
+    name: "Juazeiro",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~256K",
+    intro:
+      "Juazeiro is an indexed city in Brazil (South America), with a metropolitan population of about ~256K. This profile brings together deterministic city-intelligence indicators for Juazeiro spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Juazeiro profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 60, energy: 76, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "ilheus",
+    name: "Ilhéus",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~224K",
+    intro:
+      "Ilhéus is an indexed city in Brazil (South America), with a metropolitan population of about ~224K. This profile brings together deterministic city-intelligence indicators for Ilhéus spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Ilhéus profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 64, energy: 68, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "governador-valadares",
+    name: "Governador Valadares",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~267K",
+    intro:
+      "Governador Valadares is an indexed city in Brazil (South America), with a metropolitan population of about ~267K. This profile brings together deterministic city-intelligence indicators for Governador Valadares spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Governador Valadares profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 66, affordability: 64, airQuality: 66, energy: 68, resilience: 68 },
+  }),
+  buildNeutralCitySeed({
+    slug: "trindade",
+    name: "Trindade",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~142K",
+    intro:
+      "Trindade is an indexed city in Brazil (South America), with a metropolitan population of about ~142K. This profile brings together deterministic city-intelligence indicators for Trindade spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Trindade profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 65, energy: 70, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "serra",
+    name: "Serra",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~580K",
+    intro:
+      "Serra is an indexed city in Brazil (South America), with a metropolitan population of about ~580K. This profile brings together deterministic city-intelligence indicators for Serra spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Serra profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 63, energy: 73, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "volta-redonda",
+    name: "Volta Redonda",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~280K",
+    intro:
+      "Volta Redonda is an indexed city in Brazil (South America), with a metropolitan population of about ~280K. This profile brings together deterministic city-intelligence indicators for Volta Redonda spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Volta Redonda profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 67, energy: 68, resilience: 67 },
+  }),
+  buildNeutralCitySeed({
+    slug: "carapicuiba",
+    name: "Carapicuíba",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~405K",
+    intro:
+      "Carapicuíba is an indexed city in Brazil (South America), with a metropolitan population of about ~405K. This profile brings together deterministic city-intelligence indicators for Carapicuíba spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Carapicuíba profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 64, energy: 76, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "limeira",
+    name: "Limeira",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~311K",
+    intro:
+      "Limeira is an indexed city in Brazil (South America), with a metropolitan population of about ~311K. This profile brings together deterministic city-intelligence indicators for Limeira spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Limeira profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 63, affordability: 67, airQuality: 61, energy: 73, resilience: 66 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-joao-de-meriti",
+    name: "São João de Meriti",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~441K",
+    intro:
+      "São João de Meriti is an indexed city in Brazil (South America), with a metropolitan population of about ~441K. This profile brings together deterministic city-intelligence indicators for São João de Meriti spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São João de Meriti profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 66, energy: 73, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "montes-claros",
+    name: "Montes Claros",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~438K",
+    intro:
+      "Montes Claros is an indexed city in Brazil (South America), with a metropolitan population of about ~438K. This profile brings together deterministic city-intelligence indicators for Montes Claros spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Montes Claros profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 59, energy: 70, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "imperatriz",
+    name: "Imperatriz",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~273K",
+    intro:
+      "Imperatriz is an indexed city in Brazil (South America), with a metropolitan population of about ~273K. This profile brings together deterministic city-intelligence indicators for Imperatriz spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Imperatriz profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 64, energy: 72, resilience: 72 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-jose-dos-pinhais",
+    name: "São José dos Pinhais",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~350K",
+    intro:
+      "São José dos Pinhais is an indexed city in Brazil (South America), with a metropolitan population of about ~350K. This profile brings together deterministic city-intelligence indicators for São José dos Pinhais spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São José dos Pinhais profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 67, energy: 68, resilience: 73 },
+  }),
+  buildNeutralCitySeed({
+    slug: "sao-leopoldo",
+    name: "São Leopoldo",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~240K",
+    intro:
+      "São Leopoldo is an indexed city in Brazil (South America), with a metropolitan population of about ~240K. This profile brings together deterministic city-intelligence indicators for São Leopoldo spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the São Leopoldo profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 67, affordability: 63, airQuality: 63, energy: 68, resilience: 70 },
+  }),
+  buildNeutralCitySeed({
+    slug: "dourados",
+    name: "Dourados",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~264K",
+    intro:
+      "Dourados is an indexed city in Brazil (South America), with a metropolitan population of about ~264K. This profile brings together deterministic city-intelligence indicators for Dourados spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Dourados profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 69, affordability: 61, airQuality: 58, energy: 73, resilience: 71 },
+  }),
+  buildNeutralCitySeed({
+    slug: "porto-seguro",
+    name: "Porto Seguro",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~183K",
+    intro:
+      "Porto Seguro is an indexed city in Brazil (South America), with a metropolitan population of about ~183K. This profile brings together deterministic city-intelligence indicators for Porto Seguro spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Porto Seguro profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 70, affordability: 60, airQuality: 59, energy: 73, resilience: 74 },
+  }),
+  buildNeutralCitySeed({
+    slug: "presidente-prudente",
+    name: "Presidente Prudente",
+    countrySlug: "brazil",
+    countryName: "Brazil",
+    region: "South America",
+    population: "~226K",
+    intro:
+      "Presidente Prudente is an indexed city in Brazil (South America), with a metropolitan population of about ~226K. This profile brings together deterministic city-intelligence indicators for Presidente Prudente spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
+    outlook:
+      "Use the Presidente Prudente profile to compare affordability, livability, and economic indicators against other indexed cities in Brazil and across South America, and to explore nearby nature and weekend destinations.",
+    scores: { overall: 68, affordability: 62, airQuality: 60, energy: 72, resilience: 68 },
+  }),
 ];
 
 export const cities: City[] = seeds.map(buildCity);

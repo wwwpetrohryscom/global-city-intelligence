@@ -53,6 +53,7 @@ R = {
  'india':('monsoon',1100),'pakistan':('arid',300),'sri-lanka':('tropical',2000),
  'brazil':('tropical',1500),'mexico':('semiarid',700),'argentina':('humid_subtropical',900),
  'chile':('mediterranean',400),'colombia':('tropical',1500),'peru':('arid',150),
+ 'bolivia':('semiarid',450),'paraguay':('humid_subtropical',1300),
  'ecuador':('tropical',1200),'uruguay':('humid_subtropical',1100),'panama':('tropical',2000),
  'costa-rica':('tropical',2500),'guatemala':('tropical',1300),'dominican-republic':('tropical',1400),
  'south-africa':('semiarid',600),'egypt':('arid',60),'nigeria':('tropical',1500),

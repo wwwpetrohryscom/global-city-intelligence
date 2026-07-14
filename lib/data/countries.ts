@@ -2324,4 +2324,38 @@ export const countries: Country[] = [
       { label: "Data confidence", value: "High", description: "EU-aligned statistical reporting supports neutral city comparison." },
     ],
   },
+  {
+    slug: "bolivia",
+    name: "Bolivia",
+    iso2: "BO",
+    region: "Latin America",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Bolivia's profile spans high-altitude Andean cities, inter-Andean valleys, and tropical lowlands, useful for users comparing Latin-American city contexts, altitude, and relocation factors.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["santa-cruz-de-la-sierra", "la-paz", "cochabamba"],
+    metrics: [
+      { label: "Regional context", value: "Andes and lowlands", description: "Altiplano, valley, and Amazon-oriented lowland geography with wide altitude range." },
+      { label: "Climate exposure", value: "Altitude and water", description: "High-altitude cold, seasonal rainfall, and water-resource pressure are key adaptation factors." },
+      { label: "Data confidence", value: "Moderate", description: "International datasets provide a workable basis for neutral city comparison." },
+    ],
+  },
+  {
+    slug: "paraguay",
+    name: "Paraguay",
+    iso2: "PY",
+    region: "Latin America",
+    dataYear: DATA_YEAR,
+    lastUpdated: LAST_UPDATED,
+    intro:
+      "Paraguay's profile combines subtropical river-valley cities with drier Chaco geography, useful for users comparing Latin-American city contexts and relocation factors.",
+    sources: ["un-habitat", "nasa-power", "ipcc-urban"],
+    citySlugs: ["asuncion", "ciudad-del-este", "encarnacion"],
+    metrics: [
+      { label: "Regional context", value: "River-valley subtropics", description: "Subtropical eastern region and drier western Chaco geography." },
+      { label: "Climate exposure", value: "Heat and rainfall", description: "Summer heat and seasonal rainfall variability are central adaptation factors." },
+      { label: "Data confidence", value: "Moderate", description: "Reporting improves progressively across sources." },
+    ],
+  },
 ];

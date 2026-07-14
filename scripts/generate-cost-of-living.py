@@ -31,7 +31,7 @@ C={
  'vietnam':('VND',25000.0,45),'philippines':('PHP',57.0,50),'indonesia':('IDR',15800.0,48),
  'cambodia':('KHR',4100.0,45),'india':('INR',83.0,45),'pakistan':('PKR',280.0,40),'sri-lanka':('LKR',300.0,42),
  'brazil':('BRL',5.2,62),'mexico':('MXN',18.0,58),'argentina':('ARS',1000.0,60),'chile':('CLP',950.0,65),
- 'colombia':('COP',4200.0,50),'peru':('PEN',3.8,55),'ecuador':('USD',1.0,55),'uruguay':('UYU',41.0,70),
+ 'colombia':('COP',4200.0,50),'peru':('PEN',3.8,55),'bolivia':('BOB',6.9,46),'paraguay':('PYG',7300.0,48),'ecuador':('USD',1.0,55),'uruguay':('UYU',41.0,70),
  'panama':('USD',1.0,70),'costa-rica':('CRC',520.0,65),'guatemala':('GTQ',7.8,52),'dominican-republic':('DOP',60.0,55),
  'south-africa':('ZAR',18.5,55),'egypt':('EGP',49.0,40),'morocco':('MAD',10.0,50),'tunisia':('TND',3.1,48),
  'nigeria':('NGN',1600.0,42),'kenya':('KES',130.0,48),'ghana':('GHS',15.0,45),'ethiopia':('ETB',122.0,38),
