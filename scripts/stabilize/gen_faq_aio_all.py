@@ -13,7 +13,9 @@ COUNTRY_THE = {"united-states", "united-kingdom", "netherlands", "philippines",
                "united-arab-emirates", "czechia", "dominican-republic"}
 CUR = {"USD": "$", "CAD": "C$", "AUD": "A$", "EUR": "€", "GBP": "£", "NZD": "NZ$",
        "CHF": "CHF ", "SEK": "SEK ", "NOK": "NOK ", "DKK": "DKK ", "PLN": "PLN ",
-       "JPY": "¥", "INR": "₹", "BRL": "R$", "MXN": "MX$", "ZAR": "R", "SGD": "S$"}
+       "JPY": "¥", "INR": "₹", "BRL": "R$", "MXN": "MX$", "ZAR": "R", "SGD": "S$",
+       "ARS": "AR$", "COP": "COL$", "CLP": "CLP ", "PEN": "S/ ", "BOB": "Bs ",
+       "UYU": "$U ", "PYG": "₲", "CRC": "₡", "DOP": "RD$"}
 
 
 def art(w):

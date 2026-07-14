@@ -68,6 +68,30 @@ jobs:
             echo "skip=true" >> "$GITHUB_ENV"
           fi
 
+      - name: Wait for fresh production sitemap
+        # Deployment-timing race: `deployment_status: success` can fire before the new
+        # production sitemap is actually served, so a fetch here can return 0 URLs and
+        # submit nothing (or stale URLs). Poll the live sitemap with bounded retries
+        # until it is healthy, then proceed. Never blocks the deployment (this workflow
+        # is decoupled from the deploy). If it never becomes healthy, skip submission
+        # rather than submit a stale/empty sitemap. Manual full-sitemap dispatch still works.
+        if: env.skip != 'true'
+        continue-on-error: true
+        run: |
+          SITE="${NEXT_PUBLIC_SITE_URL%/}"
+          MIN=${SITEMAP_MIN_CITY_URLS:-100}
+          ready=""
+          for i in $(seq 1 24); do
+            n=$(curl -sf --max-time 20 "$SITE/sitemaps/cities-1.xml" | grep -c "<loc>" || echo 0)
+            echo "attempt $i/24: cities sitemap has ${n} URL(s) (need >= ${MIN})"
+            if [ "${n:-0}" -ge "$MIN" ]; then ready="1"; echo "production sitemap is live (${n} city URLs)"; break; fi
+            sleep 15
+          done
+          if [ -z "$ready" ]; then
+            echo "::warning::production sitemap not healthy after bounded wait (~6 min) — skipping IndexNow submission to avoid submitting a stale/empty sitemap"
+            echo "skip=true" >> "$GITHUB_ENV"
+          fi
+
       - name: Submit updated URLs to IndexNow
         if: env.skip != 'true'
         # Non-blocking: an IndexNow outage must never mark the deploy red.
