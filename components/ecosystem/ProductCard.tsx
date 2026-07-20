@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ExternalLinkIcon } from "@/components/ecosystem/icons";
-import type { EcosystemWebsite } from "@/lib/ecosystem/products";
-import { staticRoutes } from "@/lib/seo/routes";
+import { HOME_PATH, type EcosystemWebsite } from "@/lib/ecosystem/products";
 import { cn } from "@/lib/utils/cn";
 
 /**
@@ -75,7 +74,7 @@ export function ProductCard({
       <Link
         aria-label={`${website.name} — you are here (go to home)`}
         className={cardClassName}
-        href={staticRoutes.home}
+        href={HOME_PATH}
       >
         {header}
         {body}

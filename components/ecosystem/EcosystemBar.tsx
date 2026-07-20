@@ -11,9 +11,9 @@ import {
 import { Container } from "@/components/layout/Container";
 import {
   ECOSYSTEM_BRAND,
+  ECOSYSTEM_PATH,
   ECOSYSTEM_SECTION_IDS,
 } from "@/lib/ecosystem/products";
-import { staticRoutes } from "@/lib/seo/routes";
 
 /**
  * HELPERG ecosystem bar — Variant 7 ("company timeline").
@@ -54,7 +54,7 @@ export function EcosystemBar() {
           {/* Left — brand, always a crawlable link to the ecosystem page. */}
           <Link
             className="group flex min-h-11 min-w-0 items-center gap-2.5 rounded-full py-1 pr-1 transition sm:min-h-0"
-            href={staticRoutes.ecosystem}
+            href={ECOSYSTEM_PATH}
           >
             <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-brand-200 bg-brand-50 text-brand-700 transition group-hover:border-brand-400 group-hover:bg-brand-100">
               <EcosystemGlyph className="h-[1.05rem] w-[1.05rem]" />
@@ -76,7 +76,7 @@ export function EcosystemBar() {
             <Dot />
             <QuickLink
               expanded={open}
-              href={`${staticRoutes.ecosystem}#${ECOSYSTEM_SECTION_IDS.websites}`}
+              href={`${ECOSYSTEM_PATH}#${ECOSYSTEM_SECTION_IDS.websites}`}
               onClick={openWith(ECOSYSTEM_SECTION_IDS.websites)}
             >
               Websites
@@ -84,7 +84,7 @@ export function EcosystemBar() {
             <Dot />
             <QuickLink
               expanded={open}
-              href={`${staticRoutes.ecosystem}#${ECOSYSTEM_SECTION_IDS.apps}`}
+              href={`${ECOSYSTEM_PATH}#${ECOSYSTEM_SECTION_IDS.apps}`}
               onClick={openWith(ECOSYSTEM_SECTION_IDS.apps)}
             >
               Mobile Apps
@@ -97,7 +97,7 @@ export function EcosystemBar() {
               aria-haspopup="dialog"
               aria-expanded={open}
               className="group inline-flex min-h-11 items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50 px-3.5 text-sm font-semibold text-brand-700 transition duration-150 hover:border-brand-400 hover:bg-brand-100 sm:min-h-9 sm:px-4"
-              href={staticRoutes.ecosystem}
+              href={ECOSYSTEM_PATH}
               onClick={openWith(undefined)}
             >
               <span className="hidden sm:inline">Explore </span>

@@ -10,6 +10,21 @@
  * them that way when editing.
  */
 
+/**
+ * Client-safe route constants.
+ *
+ * Client components (the bar, the drawer, the product cards) must NEVER import
+ * `@/lib/seo/routes`, because that module top-level-imports the full city-data
+ * layer (`@/lib/data/queries` → ~21 MB of generated data). Pulling that into a
+ * client component drags the entire dataset into the browser bundle on every
+ * page and breaks the production client build. These plain string constants let
+ * client components link to the ecosystem/home routes with zero heavy imports.
+ * `lib/seo/routes.ts` re-exports ECOSYSTEM_PATH as `staticRoutes.ecosystem`, so
+ * the path is still defined exactly once, here.
+ */
+export const ECOSYSTEM_PATH = "/ecosystem";
+export const HOME_PATH = "/";
+
 /** The umbrella brand shown on the left of the ecosystem bar. */
 export const ECOSYSTEM_BRAND = {
   name: "HELPERG",

@@ -15,10 +15,10 @@ import {
 } from "@/components/ecosystem/EcosystemSections";
 import {
   ECOSYSTEM_BRAND,
+  ECOSYSTEM_PATH,
   ECOSYSTEM_SECTION_IDS,
   ecosystemCounts,
 } from "@/lib/ecosystem/products";
-import { staticRoutes } from "@/lib/seo/routes";
 
 const TITLE_ID = "helperg-ecosystem-drawer-title";
 const EXIT_MS = 240;
@@ -238,7 +238,7 @@ export function EcosystemDrawer({
           <div className="border-t border-neutral-border/80 px-5 py-4 sm:px-6">
             <Link
               className="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-100"
-              href={staticRoutes.ecosystem}
+              href={ECOSYSTEM_PATH}
               onClick={onClose}
             >
               Open the full ecosystem page
