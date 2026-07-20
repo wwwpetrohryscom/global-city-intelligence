@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { EcosystemBar } from "@/components/ecosystem/EcosystemBar";
 import { Footer } from "@/components/layout/Footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -41,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <JsonLd data={websiteSchema()} />
+        <EcosystemBar />
         <SiteHeader />
         {children}
         <Footer />

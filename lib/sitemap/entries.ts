@@ -106,6 +106,7 @@ export function getSitemapEntries(): SitemapEntry[] {
     { url: absoluteUrl(staticRoutes.nearbyWeekendPlaces), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.75 },
     { url: absoluteUrl(staticRoutes.regionalCollections), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.8 },
     { url: absoluteUrl(staticRoutes.thematicCollections), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.8 },
+    { url: absoluteUrl(staticRoutes.ecosystem), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.6 },
   ]);
 
   // ---- country ----
