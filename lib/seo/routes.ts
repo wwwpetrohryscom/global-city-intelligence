@@ -1,3 +1,4 @@
+import { ECOSYSTEM_PATH } from "@/lib/ecosystem/products";
 import { NEARBY_WEEKEND_PLACE_DETAIL_SLUGS } from "@/lib/data/nearby-place-detail-pages";
 import {
   getAllArrivalPages,
@@ -43,7 +44,7 @@ export const staticRoutes = {
   nearbyWeekendPlaces: "/nearby-weekend-places",
   regionalCollections: "/collections",
   thematicCollections: "/themes",
-  ecosystem: "/ecosystem",
+  ecosystem: ECOSYSTEM_PATH,
 } as const;
 
 export function comparisonRoute(comparisonSlug: string) {

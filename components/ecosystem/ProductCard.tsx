@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ExternalLinkIcon } from "@/components/ecosystem/icons";
-import type { EcosystemWebsite } from "@/lib/ecosystem/products";
-import { staticRoutes } from "@/lib/seo/routes";
+import { HOME_PATH, type EcosystemWebsite } from "@/lib/ecosystem/products";
 import { cn } from "@/lib/utils/cn";
 
 /**
@@ -23,10 +22,10 @@ export function ProductCard({
   // one background + one border utility — never layer a conditional colour over
   // a base one, or the winner would depend on stylesheet order.
   const stateClassName = isCurrent
-    ? "border-brand-200 bg-brand-50/40 shadow-[0_1px_2px_rgba(184,97,8,0.06)]"
+    ? "border-eco-200 bg-eco-50/60 shadow-[0_1px_2px_rgba(15,108,189,0.06)]"
     : website.hub
-      ? "border-brand-200/70 bg-surface-warm shadow-[0_1px_2px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-brand-400 hover:shadow-[0_16px_38px_rgba(15,23,42,0.08)] focus-within:border-brand-400"
-      : "border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-[0_16px_38px_rgba(15,23,42,0.08)] focus-within:border-brand-200";
+      ? "border-ecogreen-200 bg-ecogreen-50 shadow-[0_1px_2px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-ecogreen-500 hover:shadow-[0_16px_38px_rgba(15,23,42,0.08)] focus-within:border-ecogreen-500"
+      : "border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-eco-200 hover:shadow-[0_16px_38px_rgba(15,23,42,0.08)] focus-within:border-eco-200";
 
   const cardClassName = cn(
     "group relative flex h-full flex-col rounded-[1.125rem] border transition duration-200",
@@ -37,7 +36,12 @@ export function ProductCard({
   const header = (
     <div className="flex items-start justify-between gap-3">
       <div>
-        <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.08em] text-brand-700">
+        <p
+          className={cn(
+            "text-[0.6875rem] font-semibold uppercase tracking-[0.08em]",
+            website.hub ? "text-ecogreen-700" : "text-eco-700",
+          )}
+        >
           {website.category}
         </p>
         <h3
@@ -50,11 +54,11 @@ export function ProductCard({
         </h3>
       </div>
       {isCurrent ? (
-        <span className="shrink-0 rounded-full border border-brand-200 bg-white px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wide text-brand-700">
+        <span className="shrink-0 rounded-full border border-eco-200 bg-white px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wide text-eco-700">
           You are here
         </span>
       ) : (
-        <ExternalLinkIcon className="mt-0.5 h-4 w-4 shrink-0 text-text-muted/60 transition group-hover:text-brand-600" />
+        <ExternalLinkIcon className="mt-0.5 h-4 w-4 shrink-0 text-text-muted/60 transition group-hover:text-eco-500" />
       )}
     </div>
   );
@@ -75,7 +79,7 @@ export function ProductCard({
       <Link
         aria-label={`${website.name} — you are here (go to home)`}
         className={cardClassName}
-        href={staticRoutes.home}
+        href={HOME_PATH}
       >
         {header}
         {body}

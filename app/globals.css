@@ -25,6 +25,19 @@
   --color-surface: #ffffff;
   --color-surface-soft: #f9fafb;
   --color-surface-warm: #fffbf7;
+  /* HELPERG ecosystem accent — light blue (primary) + light green (secondary).
+     Scoped to the ecosystem bar/drawer/cards; the GCI host brand stays orange. */
+  --color-eco-50: #eff6fc;
+  --color-eco-100: #deecf9;
+  --color-eco-200: #c7e0f4;
+  --color-eco-400: #2b88d8;
+  --color-eco-500: #0f6cbd;
+  --color-eco-700: #0b4c86;
+  --color-ecogreen-50: #eaf6ea;
+  --color-ecogreen-100: #d7efd7;
+  --color-ecogreen-200: #bbe3bb;
+  --color-ecogreen-500: #4caf50;
+  --color-ecogreen-700: #2e7d32;
 }
 
 * {

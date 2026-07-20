@@ -11,9 +11,9 @@ import {
 import { Container } from "@/components/layout/Container";
 import {
   ECOSYSTEM_BRAND,
+  ECOSYSTEM_PATH,
   ECOSYSTEM_SECTION_IDS,
 } from "@/lib/ecosystem/products";
-import { staticRoutes } from "@/lib/seo/routes";
 
 /**
  * HELPERG ecosystem bar — Variant 7 ("company timeline").
@@ -54,9 +54,9 @@ export function EcosystemBar() {
           {/* Left — brand, always a crawlable link to the ecosystem page. */}
           <Link
             className="group flex min-h-11 min-w-0 items-center gap-2.5 rounded-full py-1 pr-1 transition sm:min-h-0"
-            href={staticRoutes.ecosystem}
+            href={ECOSYSTEM_PATH}
           >
-            <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-brand-200 bg-brand-50 text-brand-700 transition group-hover:border-brand-400 group-hover:bg-brand-100">
+            <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-eco-200 bg-eco-50 transition group-hover:border-eco-400 group-hover:bg-eco-100">
               <EcosystemGlyph className="h-[1.05rem] w-[1.05rem]" />
             </span>
             <span className="flex min-w-0 items-baseline gap-2">
@@ -76,7 +76,7 @@ export function EcosystemBar() {
             <Dot />
             <QuickLink
               expanded={open}
-              href={`${staticRoutes.ecosystem}#${ECOSYSTEM_SECTION_IDS.websites}`}
+              href={`${ECOSYSTEM_PATH}#${ECOSYSTEM_SECTION_IDS.websites}`}
               onClick={openWith(ECOSYSTEM_SECTION_IDS.websites)}
             >
               Websites
@@ -84,7 +84,7 @@ export function EcosystemBar() {
             <Dot />
             <QuickLink
               expanded={open}
-              href={`${staticRoutes.ecosystem}#${ECOSYSTEM_SECTION_IDS.apps}`}
+              href={`${ECOSYSTEM_PATH}#${ECOSYSTEM_SECTION_IDS.apps}`}
               onClick={openWith(ECOSYSTEM_SECTION_IDS.apps)}
             >
               Mobile Apps
@@ -96,8 +96,8 @@ export function EcosystemBar() {
             <a
               aria-haspopup="dialog"
               aria-expanded={open}
-              className="group inline-flex min-h-11 items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50 px-3.5 text-sm font-semibold text-brand-700 transition duration-150 hover:border-brand-400 hover:bg-brand-100 sm:min-h-9 sm:px-4"
-              href={staticRoutes.ecosystem}
+              className="group inline-flex min-h-11 items-center gap-1.5 rounded-full border border-eco-200 bg-eco-50 px-3.5 text-sm font-semibold text-eco-700 transition duration-150 hover:border-eco-400 hover:bg-eco-100 sm:min-h-9 sm:px-4"
+              href={ECOSYSTEM_PATH}
               onClick={openWith(undefined)}
             >
               <span className="hidden sm:inline">Explore </span>
@@ -140,7 +140,7 @@ function QuickLink({
     <a
       aria-expanded={expanded}
       aria-haspopup="dialog"
-      className="inline-flex items-center rounded-full px-1 text-sm font-medium text-text-secondary transition duration-150 hover:text-brand-700 focus-visible:text-brand-700"
+      className="inline-flex items-center rounded-full px-1 text-sm font-medium text-text-secondary transition duration-150 hover:text-eco-700 focus-visible:text-eco-700"
       href={href}
       onClick={onClick}
     >

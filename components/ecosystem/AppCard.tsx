@@ -25,7 +25,7 @@ export function AppCard({
       <div className="flex items-center gap-3">
         <AppMonogram name={app.name} />
         <div className="min-w-0">
-          <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.08em] text-brand-700">
+          <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.08em] text-eco-700">
             {app.category}
           </p>
           <h3
@@ -67,7 +67,7 @@ function AppMonogram({ name }: { name: string }) {
   return (
     <span
       aria-hidden="true"
-      className="grid h-10 w-10 shrink-0 place-items-center rounded-[0.75rem] bg-[linear-gradient(135deg,#B86108_0%,#EA8C1A_100%)] text-sm font-semibold text-white shadow-[0_2px_6px_rgba(184,97,8,0.28)]"
+      className="grid h-10 w-10 shrink-0 place-items-center rounded-[0.75rem] bg-[linear-gradient(135deg,#0F6CBD_0%,#4CAF50_100%)] text-sm font-semibold text-white shadow-[0_2px_6px_rgba(15,108,189,0.28)]"
     >
       {initials}
     </span>

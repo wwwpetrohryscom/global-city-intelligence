@@ -15,10 +15,10 @@ import {
 } from "@/components/ecosystem/EcosystemSections";
 import {
   ECOSYSTEM_BRAND,
+  ECOSYSTEM_PATH,
   ECOSYSTEM_SECTION_IDS,
   ecosystemCounts,
 } from "@/lib/ecosystem/products";
-import { staticRoutes } from "@/lib/seo/routes";
 
 const TITLE_ID = "helperg-ecosystem-drawer-title";
 const EXIT_MS = 240;
@@ -181,7 +181,7 @@ export function EcosystemDrawer({
         >
           <div className="flex items-start justify-between gap-4 border-b border-neutral-border/80 px-5 py-4 sm:px-6">
             <div className="flex items-center gap-3">
-              <span className="grid h-9 w-9 place-items-center rounded-full border border-brand-200 bg-brand-50 text-brand-700">
+              <span className="grid h-9 w-9 place-items-center rounded-full border border-eco-200 bg-eco-50">
                 <EcosystemGlyph className="h-5 w-5" />
               </span>
               <div>
@@ -199,7 +199,7 @@ export function EcosystemDrawer({
             </div>
             <button
               aria-label="Close the HELPERG ecosystem panel"
-              className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-neutral-border bg-white text-text-secondary transition hover:border-brand-200 hover:bg-brand-50 hover:text-text-primary sm:h-9 sm:w-9"
+              className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-neutral-border bg-white text-text-secondary transition hover:border-eco-200 hover:bg-eco-50 hover:text-text-primary sm:h-9 sm:w-9"
               onClick={onClose}
               type="button"
             >
@@ -237,8 +237,8 @@ export function EcosystemDrawer({
 
           <div className="border-t border-neutral-border/80 px-5 py-4 sm:px-6">
             <Link
-              className="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 hover:bg-brand-100"
-              href={staticRoutes.ecosystem}
+              className="inline-flex items-center gap-1.5 rounded-full border border-eco-200 bg-eco-50 px-4 py-2 text-sm font-semibold text-eco-700 transition hover:border-eco-400 hover:bg-eco-100"
+              href={ECOSYSTEM_PATH}
               onClick={onClose}
             >
               Open the full ecosystem page
