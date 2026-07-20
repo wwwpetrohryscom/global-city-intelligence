@@ -15,4 +15,30 @@
   --accent-tint: #ea8c1a;
   --navy: #0f172a;
   --gray-soft: #d7dbe0;
+
+  /*
+   * Coordinated sticky stack (HELPERG ecosystem bar + site header).
+   * The ecosystem bar pins at top: 0; the site header pins directly below it
+   * at top: var(--ecosystem-bar-height). Both heights are shared here so the
+   * header offset and scroll-padding-top always agree — no magic numbers, no
+   * layout shift. The ecosystem bar height folds in the safe-area inset so the
+   * header never overlaps a device notch in standalone/full-screen mode.
+   */
+  --ecosystem-bar-base-height: 52px;
+  --ecosystem-bar-height: calc(
+    var(--ecosystem-bar-base-height) + env(safe-area-inset-top, 0px)
+  );
+  /* Approximate rendered header height; only feeds scroll-padding-top, so a
+     small over-estimate is harmless (it just adds gap above anchor targets). */
+  --site-header-height: 116px;
+  --sticky-stack-height: calc(
+    var(--ecosystem-bar-height) + var(--site-header-height)
+  );
+}
+
+@media (min-width: 1024px) {
+  :root {
+    /* Header collapses to a single row at the lg breakpoint. */
+    --site-header-height: 68px;
+  }
 }

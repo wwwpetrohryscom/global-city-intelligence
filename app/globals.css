@@ -33,6 +33,21 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset in-page anchor targets (Phase A–F nav, table of contents, #section
+     links) so they land below the sticky ecosystem bar + site header stack
+     instead of hiding underneath it. */
+  scroll-padding-top: var(--sticky-stack-height);
+}
+
+/*
+ * HELPERG ecosystem bar — the top layer of the sticky stack. Height and the
+ * safe-area inset live here (rather than in Tailwind arbitrary values) so the
+ * env()/calc() math is bullet-proof across engines. The bar reserves its own
+ * height in normal document flow, so pinning it produces no layout shift.
+ */
+.ecosystem-bar {
+  height: var(--ecosystem-bar-height);
+  padding-top: env(safe-area-inset-top, 0px);
 }
 
 body {
