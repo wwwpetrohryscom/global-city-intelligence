@@ -15,7 +15,7 @@ const navItems = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-30 border-b border-neutral-border bg-white/95 shadow-[0_1px_0_rgba(15,23,42,0.02)] backdrop-blur supports-[backdrop-filter]:bg-white/88">
+    <header className="sticky top-[var(--ecosystem-bar-height)] z-30 border-b border-neutral-border bg-white/95 shadow-[0_1px_0_rgba(15,23,42,0.02)] backdrop-blur supports-[backdrop-filter]:bg-white/88">
       <Container className="flex flex-col gap-3 py-3 lg:flex-row lg:items-center lg:justify-between lg:gap-5">
         <BrandMark size="md" tone="accent" />
         <nav aria-label="Primary navigation" className="-mx-4 overflow-x-auto px-4 lg:mx-0 lg:px-0">
