@@ -18,7 +18,7 @@ export function AppCard({
   return (
     <div
       className={cn(
-        "flex h-full flex-col rounded-[1.125rem] border border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]",
+        "flex h-full flex-col rounded-2xl border border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(23,32,51,0.04)]",
         compact ? "p-4" : "p-5",
       )}
     >
@@ -67,7 +67,7 @@ function AppMonogram({ name }: { name: string }) {
   return (
     <span
       aria-hidden="true"
-      className="grid h-10 w-10 shrink-0 place-items-center rounded-[0.75rem] bg-[linear-gradient(135deg,#0F6CBD_0%,#4CAF50_100%)] text-sm font-semibold text-white shadow-[0_2px_6px_rgba(15,108,189,0.28)]"
+      className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[linear-gradient(135deg,var(--color-info)_0%,var(--color-positive)_100%)] text-sm font-semibold text-white shadow-[0_2px_6px_rgba(38,141,200,0.24)]"
     >
       {initials}
     </span>

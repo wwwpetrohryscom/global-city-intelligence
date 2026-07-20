@@ -122,11 +122,11 @@ export function ModulePageContent({
           <Card as="article" className="relative overflow-hidden p-6">
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#92400E,#B86108,#EA8C1A)]"
+              className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--color-info),var(--color-positive),var(--color-brand))]"
             />
             <div className="flex items-start justify-between gap-5">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-eco-800">
                   Module profile
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold text-text-primary">
@@ -174,10 +174,10 @@ export function ModulePageContent({
             description="A crawlable comparison across a selection of same-country and top-scoring cities. The complete set is reachable via the rankings, the cities index, and each city profile."
             title={`${moduleItem.name} city comparison`}
           />
-          <div className="mt-6 overflow-x-auto rounded-2xl border border-neutral-border bg-white shadow-sm">
+          <div className="mt-6 overflow-x-auto rounded-2xl border border-neutral-border/85 bg-white shadow-[0_1px_2px_rgba(23,32,51,0.04),0_10px_24px_rgba(23,32,51,0.035)]">
             <table className="min-w-full border-collapse text-left text-sm">
               <caption className="sr-only">{`${moduleItem.name} city comparison table`}</caption>
-              <thead className="bg-neutral-soft text-text-secondary">
+              <thead className="border-b border-eco-100 bg-eco-50 text-text-secondary">
                 <tr>
                   <th className="px-4 py-3 font-semibold" scope="col">
                     City
@@ -191,17 +191,17 @@ export function ModulePageContent({
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-border">
-                <tr className="bg-orange-50/40">
+                <tr className="bg-eco-50/70">
                   <th className="px-4 py-4 font-medium text-text-primary" scope="row">
                     {city.name} (this page)
                   </th>
-                  <td className="border-l-2 border-brand-500 px-4 py-4 font-semibold text-text-primary">
+                  <td className="border-l-2 border-eco-300 px-4 py-4 font-semibold text-text-primary">
                     {moduleData.score}/100
                   </td>
                   <td className="px-4 py-4 text-text-secondary">{moduleData.summary}</td>
                 </tr>
                 {otherCities.map(({ city: otherCity, moduleData: otherModule }) => (
-                  <tr className="odd:bg-white even:bg-neutral-soft/60 hover:bg-orange-50/60" key={otherCity.slug}>
+                  <tr className="odd:bg-white even:bg-neutral-soft/60 hover:bg-eco-50/80" key={otherCity.slug}>
                     <th className="px-4 py-4 font-medium text-text-primary" scope="row">
                       <Link
                         className="decoration-brand-500 decoration-2 underline-offset-4 hover:underline"
@@ -210,7 +210,7 @@ export function ModulePageContent({
                         {otherCity.name}
                       </Link>
                     </th>
-                    <td className="border-l-2 border-brand-500 px-4 py-4 font-semibold text-text-primary">
+                    <td className="border-l-2 border-eco-300 px-4 py-4 font-semibold text-text-primary">
                       {otherModule.score}/100
                     </td>
                     <td className="px-4 py-4 text-text-secondary">{otherModule.summary}</td>

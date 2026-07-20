@@ -13,7 +13,7 @@ export function MetricCard({
 }) {
   const cardClassName = [
     "relative overflow-hidden",
-    highlight ? "border-brand-200" : undefined,
+    highlight ? "border-eco-200 bg-eco-50/25" : undefined,
   ]
     .filter(Boolean)
     .join(" ");
@@ -22,7 +22,7 @@ export function MetricCard({
     <Card className={cardClassName}>
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#92400E,#D97706,#FED7AA)]"
+        className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--color-info),var(--color-positive),var(--color-brand))]"
       />
       <div className="flex items-start justify-between gap-4">
         <h3 className="text-base font-semibold text-text-primary">
@@ -47,7 +47,7 @@ export function MetricCard({
         ) : null}
       </p>
       {delta ? (
-        <p className="mt-2 rounded-r-lg border-l-2 border-brand-500 bg-brand-50/70 py-1 pl-3 text-sm font-medium text-text-primary">
+        <p className="mt-2 rounded-r-lg border-l-2 border-ecogreen-400 bg-ecogreen-50 py-1 pl-3 text-sm font-medium text-text-primary">
           {delta}
         </p>
       ) : null}

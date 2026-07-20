@@ -48,7 +48,7 @@ export function EcosystemBar() {
   );
 
   return (
-    <div className="ecosystem-bar sticky top-0 z-40 border-b border-neutral-border bg-white">
+    <div className="ecosystem-bar sticky top-0 z-40 border-b border-eco-100 bg-[linear-gradient(90deg,#FFFFFF_0%,#EFF8FF_52%,#F0FDF6_100%)]">
       <nav aria-label="HELPERG ecosystem" className="h-full">
         <Container className="flex h-full items-center gap-3">
           {/* Left — brand, always a crawlable link to the ecosystem page. */}
@@ -96,7 +96,7 @@ export function EcosystemBar() {
             <a
               aria-haspopup="dialog"
               aria-expanded={open}
-              className="group inline-flex min-h-11 items-center gap-1.5 rounded-full border border-eco-200 bg-eco-50 px-3.5 text-sm font-semibold text-eco-700 transition duration-150 hover:border-eco-400 hover:bg-eco-100 sm:min-h-9 sm:px-4"
+              className="group inline-flex min-h-11 items-center gap-1.5 rounded-full border border-eco-200 bg-white/85 px-3.5 text-sm font-semibold text-eco-800 shadow-[0_1px_2px_rgba(23,32,51,0.04)] transition duration-150 hover:border-eco-300 hover:bg-eco-50 sm:min-h-9 sm:px-4"
               href={ECOSYSTEM_PATH}
               onClick={openWith(undefined)}
             >
@@ -140,7 +140,7 @@ function QuickLink({
     <a
       aria-expanded={expanded}
       aria-haspopup="dialog"
-      className="inline-flex items-center rounded-full px-1 text-sm font-medium text-text-secondary transition duration-150 hover:text-eco-700 focus-visible:text-eco-700"
+      className="inline-flex items-center rounded-full px-1 text-sm font-medium text-text-secondary transition duration-150 hover:text-eco-800 focus-visible:text-eco-800"
       href={href}
       onClick={onClick}
     >

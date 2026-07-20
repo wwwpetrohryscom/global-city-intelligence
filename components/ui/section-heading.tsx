@@ -7,7 +7,7 @@ export function SectionHeading({
 }) {
   return (
     <div className="max-w-3xl">
-      <div aria-hidden="true" className="mb-3 h-1 w-10 rounded-full bg-[linear-gradient(90deg,#B86108,#EA8C1A)]" />
+      <div aria-hidden="true" className="mb-3 h-1 w-10 rounded-full bg-[linear-gradient(90deg,var(--color-info),var(--color-positive),var(--color-brand))]" />
       <h2 className="text-[1.65rem] font-semibold leading-tight text-text-primary md:text-[1.8rem]">
         {title}
       </h2>

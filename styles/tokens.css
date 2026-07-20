@@ -1,20 +1,44 @@
 :root {
-  --surface: #ffffff;
-  --surface-soft: #f9fafb;
-  --surface-warm: #fffbf7;
-  --ink: #0f172a;
-  --muted: #475569;
-  --line: #e5e7eb;
-  --line-soft: #d7dbe0;
-  --accent-soft: #fff7ed;
-  --accent-border: #fed7aa;
-  --accent: #d97706;
-  --accent-mid: #b86108;
-  --accent-strong: #b86108;
-  --accent-deep: #92400e;
-  --accent-tint: #ea8c1a;
-  --navy: #0f172a;
-  --gray-soft: #d7dbe0;
+  --color-brand: #fb923c;
+  --color-brand-hover: #f97316;
+  --color-brand-strong: #c7530a;
+  --color-brand-soft: #fff8ed;
+  --color-brand-border: #fed7aa;
+  --color-info: #268dc8;
+  --color-info-hover: #1b70a4;
+  --color-info-soft: #eff8ff;
+  --color-info-border: #b9defb;
+  --color-positive: #22c76f;
+  --color-positive-hover: #16a45a;
+  --color-positive-soft: #f0fdf6;
+  --color-positive-border: #bbf7d3;
+  --color-surface-page: #f7f9fc;
+  --color-surface-card: #ffffff;
+  --color-surface-soft: #fbfcfe;
+  --color-surface-muted: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+  --color-text: #172033;
+  --color-text-secondary: #526071;
+  --color-text-muted: #758295;
+  --color-focus: #268dc8;
+
+  --surface: var(--color-surface-card);
+  --surface-soft: var(--color-surface-soft);
+  --surface-warm: var(--color-brand-soft);
+  --ink: var(--color-text);
+  --muted: var(--color-text-secondary);
+  --line: var(--color-border);
+  --line-soft: var(--color-border-strong);
+  --accent-soft: var(--color-brand-soft);
+  --accent-border: var(--color-brand-border);
+  --accent: var(--color-brand);
+  --accent-mid: var(--color-brand-hover);
+  --accent-strong: var(--color-brand-strong);
+  --accent-deep: #7f3811;
+  --accent-tint: #fdba74;
+  --navy: var(--color-text);
+  --gray-soft: var(--color-border-strong);
 
   /*
    * Coordinated sticky stack (HELPERG ecosystem bar + site header).

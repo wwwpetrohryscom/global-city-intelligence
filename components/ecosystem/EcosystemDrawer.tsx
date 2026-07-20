@@ -161,7 +161,7 @@ export function EcosystemDrawer({
     <div className="fixed inset-0 z-[70]" role="presentation">
       <div
         aria-hidden="true"
-        className={`absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] transition-opacity duration-200 ${
+        className={`absolute inset-0 bg-slate-950/24 backdrop-blur-[2px] transition-opacity duration-200 ${
           entered ? "opacity-100" : "opacity-0"
         }`}
       />
@@ -172,14 +172,14 @@ export function EcosystemDrawer({
         <div
           aria-labelledby={TITLE_ID}
           aria-modal="true"
-          className={`relative my-auto w-full max-w-4xl rounded-2xl border border-neutral-border/80 bg-white shadow-[0_24px_70px_rgba(15,23,42,0.22)] outline-none transition duration-200 sm:my-0 ${
+          className={`relative my-auto w-full max-w-4xl rounded-2xl border border-eco-100 bg-white shadow-[0_20px_54px_rgba(23,32,51,0.16)] outline-none transition duration-200 sm:my-0 ${
             entered ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0"
           }`}
           ref={panelRef}
           role="dialog"
           tabIndex={-1}
         >
-          <div className="flex items-start justify-between gap-4 border-b border-neutral-border/80 px-5 py-4 sm:px-6">
+          <div className="flex items-start justify-between gap-4 border-b border-eco-100 bg-eco-50/50 px-5 py-4 sm:px-6">
             <div className="flex items-center gap-3">
               <span className="grid h-9 w-9 place-items-center rounded-full border border-eco-200 bg-eco-50">
                 <EcosystemGlyph className="h-5 w-5" />
@@ -199,7 +199,7 @@ export function EcosystemDrawer({
             </div>
             <button
               aria-label="Close the HELPERG ecosystem panel"
-              className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-neutral-border bg-white text-text-secondary transition hover:border-eco-200 hover:bg-eco-50 hover:text-text-primary sm:h-9 sm:w-9"
+              className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-neutral-border bg-white text-text-secondary transition hover:border-eco-200 hover:bg-eco-50 hover:text-eco-800 sm:h-9 sm:w-9"
               onClick={onClose}
               type="button"
             >
@@ -235,9 +235,9 @@ export function EcosystemDrawer({
             </DrawerSection>
           </div>
 
-          <div className="border-t border-neutral-border/80 px-5 py-4 sm:px-6">
+          <div className="border-t border-eco-100 bg-surface-soft px-5 py-4 sm:px-6">
             <Link
-              className="inline-flex items-center gap-1.5 rounded-full border border-eco-200 bg-eco-50 px-4 py-2 text-sm font-semibold text-eco-700 transition hover:border-eco-400 hover:bg-eco-100"
+              className="inline-flex items-center gap-1.5 rounded-full border border-eco-200 bg-white px-4 py-2 text-sm font-semibold text-eco-800 transition hover:border-eco-300 hover:bg-eco-50"
               href={ECOSYSTEM_PATH}
               onClick={onClose}
             >
