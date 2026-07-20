@@ -20,20 +20,21 @@ export function EcosystemGlyph(props: SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
+      {/* Two-tone HELPERG mark: blue primary nodes + green accent nodes. */}
       <path
         d="M10 3.2 4.4 6.4v7.2L10 16.8l5.6-3.2V6.4L10 3.2Z"
-        opacity="0.28"
-        stroke="currentColor"
+        opacity="0.3"
+        stroke="#0F6CBD"
         strokeLinejoin="round"
         strokeWidth="1.1"
       />
-      <circle cx="10" cy="10" fill="currentColor" r="1.7" />
-      <circle cx="10" cy="4.2" fill="currentColor" opacity="0.85" r="1.15" />
-      <circle cx="15" cy="7" fill="currentColor" opacity="0.7" r="1.15" />
-      <circle cx="15" cy="13" fill="currentColor" opacity="0.55" r="1.15" />
-      <circle cx="10" cy="15.8" fill="currentColor" opacity="0.7" r="1.15" />
-      <circle cx="5" cy="13" fill="currentColor" opacity="0.55" r="1.15" />
-      <circle cx="5" cy="7" fill="currentColor" opacity="0.85" r="1.15" />
+      <circle cx="10" cy="10" fill="#0F6CBD" r="1.7" />
+      <circle cx="10" cy="4.2" fill="#0F6CBD" opacity="0.9" r="1.15" />
+      <circle cx="15" cy="7" fill="#4CAF50" r="1.15" />
+      <circle cx="15" cy="13" fill="#4CAF50" opacity="0.8" r="1.15" />
+      <circle cx="10" cy="15.8" fill="#0F6CBD" opacity="0.75" r="1.15" />
+      <circle cx="5" cy="13" fill="#4CAF50" opacity="0.8" r="1.15" />
+      <circle cx="5" cy="7" fill="#0F6CBD" opacity="0.9" r="1.15" />
     </svg>
   );
 }
