@@ -136,7 +136,7 @@ export default function EcosystemPage() {
           </div>
         </section>
 
-        <section className="rounded-[1.45rem] border border-neutral-border/80 bg-surface-warm p-6 sm:p-8">
+        <section className="rounded-2xl border border-eco-100 bg-[linear-gradient(135deg,#EFF8FF_0%,#F0FDF6_58%,#FFF8ED_100%)] p-6 sm:p-8">
           <h2 className="text-xl font-semibold text-text-primary">
             About the HELPERG ecosystem
           </h2>
@@ -147,7 +147,7 @@ export default function EcosystemPage() {
             the family, not a single combined service.
           </p>
           <a
-            className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-eco-200 bg-eco-50 px-4 py-2 text-sm font-semibold text-eco-700 transition hover:border-eco-400 hover:bg-eco-100"
+            className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-eco-200 bg-white px-4 py-2 text-sm font-semibold text-eco-800 transition hover:border-eco-300 hover:bg-eco-50"
             href={ECOSYSTEM_BRAND.url}
             rel="noopener noreferrer"
             target="_blank"

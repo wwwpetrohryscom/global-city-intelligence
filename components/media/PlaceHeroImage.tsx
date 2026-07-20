@@ -18,7 +18,7 @@ export function PlaceHeroImage({
 }) {
   const image = getPlaceHeroImage(placeType, placeSlug);
   const wrapperClass =
-    "overflow-hidden rounded-[1.35rem] border border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.05),0_20px_54px_rgba(15,23,42,0.08)]" +
+    "overflow-hidden rounded-2xl border border-neutral-border/85 bg-white shadow-[0_1px_2px_rgba(23,32,51,0.04),0_14px_34px_rgba(23,32,51,0.06)]" +
     (className ? ` ${className}` : "");
 
   if (!image) {

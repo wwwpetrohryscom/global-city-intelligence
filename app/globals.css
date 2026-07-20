@@ -3,41 +3,55 @@
 @import "../styles/tokens.css";
 
 @theme {
-  --color-brand-50: #fff7ed;
+  --color-brand-50: #fff8ed;
   --color-brand-100: #ffedd5;
   --color-brand-200: #fed7aa;
-  --color-brand-400: #ea8c1a;
-  --color-brand-500: #d97706;
-  --color-brand-600: #b86108;
-  --color-brand-700: #92400e;
-  --color-brand-navy: #0f172a;
-  --color-brand-gray: #d7dbe0;
-  --color-neutral-bg: #ffffff;
-  --color-neutral-soft: #f9fafb;
-  --color-neutral-border: #e5e7eb;
-  --color-neutral-line: #d7dbe0;
-  --color-text-primary: #0f172a;
-  --color-text-secondary: #475569;
-  --color-text-muted: #64748b;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #fb923c;
+  --color-brand-500: #f97316;
+  --color-brand-600: #ea690c;
+  --color-brand-700: #c7530a;
+  --color-brand-800: #9f4310;
+  --color-brand-900: #7f3811;
+  --color-brand-navy: #172033;
+  --color-brand-gray: #cbd5e1;
+  --color-neutral-bg: #f7f9fc;
+  --color-neutral-soft: #fbfcfe;
+  --color-neutral-border: #e2e8f0;
+  --color-neutral-line: #cbd5e1;
+  --color-text-primary: #172033;
+  --color-text-secondary: #526071;
+  --color-text-muted: #758295;
   --color-text-inverse: #ffffff;
-  --color-accent-blue: #2563eb;
-  --color-accent-teal: #0d9488;
+  --color-accent-blue: #268dc8;
+  --color-accent-teal: #22c76f;
   --color-surface: #ffffff;
-  --color-surface-soft: #f9fafb;
-  --color-surface-warm: #fffbf7;
+  --color-surface-soft: #fbfcfe;
+  --color-surface-warm: #fff8ed;
+  --color-surface-page: #f7f9fc;
+  --color-surface-muted: #f1f5f9;
   /* HELPERG ecosystem accent — light blue (primary) + light green (secondary).
      Scoped to the ecosystem bar/drawer/cards; the GCI host brand stays orange. */
-  --color-eco-50: #eff6fc;
-  --color-eco-100: #deecf9;
-  --color-eco-200: #c7e0f4;
-  --color-eco-400: #2b88d8;
-  --color-eco-500: #0f6cbd;
-  --color-eco-700: #0b4c86;
-  --color-ecogreen-50: #eaf6ea;
-  --color-ecogreen-100: #d7efd7;
-  --color-ecogreen-200: #bbe3bb;
-  --color-ecogreen-500: #4caf50;
-  --color-ecogreen-700: #2e7d32;
+  --color-eco-50: #eff8ff;
+  --color-eco-100: #dbeefe;
+  --color-eco-200: #b9defb;
+  --color-eco-300: #86c7f3;
+  --color-eco-400: #4eabe5;
+  --color-eco-500: #268dc8;
+  --color-eco-600: #1b70a4;
+  --color-eco-700: #195a83;
+  --color-eco-800: #1a4d6d;
+  --color-eco-900: #193f5a;
+  --color-ecogreen-50: #f0fdf6;
+  --color-ecogreen-100: #dcfce9;
+  --color-ecogreen-200: #bbf7d3;
+  --color-ecogreen-300: #86efb3;
+  --color-ecogreen-400: #4ade8b;
+  --color-ecogreen-500: #22c76f;
+  --color-ecogreen-600: #16a45a;
+  --color-ecogreen-700: #158248;
+  --color-ecogreen-800: #16673d;
+  --color-ecogreen-900: #145334;
 }
 
 * {
@@ -65,7 +79,9 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, var(--surface-warm) 0, var(--surface) 18rem);
+  background:
+    radial-gradient(circle at 16% 0%, rgba(239, 248, 255, 0.95), transparent 32rem),
+    linear-gradient(180deg, var(--color-surface-page) 0, var(--surface) 26rem);
   color: var(--ink);
   font-family:
     "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -93,7 +109,7 @@ a {
 }
 
 ::placeholder {
-  color: #94a3b8;
+  color: var(--color-text-muted);
   opacity: 1;
 }
 
@@ -102,17 +118,107 @@ a {
 }
 
 .text-brand-500,
-.hover\:text-brand-500:hover {
+.text-brand-600,
+.text-brand-700 {
   color: var(--accent-strong);
 }
 
+.hover\:text-brand-500:hover {
+  color: var(--color-info-hover);
+}
+
+.decoration-brand-500 {
+  text-decoration-color: var(--color-info);
+}
+
+.border-brand-200,
+.border-brand-400,
+.border-brand-500 {
+  border-color: var(--color-info-border);
+}
+
+.hover\:border-brand-200:hover,
+.hover\:border-brand-400:hover,
+.hover\:border-brand-500:hover {
+  border-color: var(--color-info);
+}
+
+.bg-brand-50,
+.bg-brand-50\/35,
+.bg-brand-50\/60,
+.bg-brand-50\/70 {
+  background-color: color-mix(in srgb, var(--color-info-soft) 78%, white);
+}
+
+.bg-brand-500 {
+  background-color: var(--color-info);
+}
+
+.hover\:bg-orange-50:hover,
+.hover\:bg-brand-50:hover {
+  background-color: var(--color-info-soft);
+}
+
+.bg-orange-50,
+.bg-orange-50\/40 {
+  background-color: color-mix(in srgb, var(--color-info-soft) 72%, white);
+}
+
+.hover\:bg-orange-50\/60:hover,
+.hover\:bg-brand-50\/70:hover {
+  background-color: color-mix(in srgb, var(--color-info-soft) 82%, white);
+}
+
+.focus-visible\:outline-brand-500:focus-visible,
+.focus-visible\:outline-eco-500:focus-visible {
+  outline-color: var(--color-focus);
+}
+
+input:not([type]),
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+  max-width: 100%;
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  accent-color: var(--color-info);
+}
+
+.primary-nav-scroll {
+  scrollbar-color: var(--color-info-border) transparent;
+  scrollbar-width: thin;
+}
+
+.primary-nav-scroll::-webkit-scrollbar {
+  height: 0.4rem;
+}
+
+.primary-nav-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.primary-nav-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-info-border);
+  border-radius: 999px;
+}
+
 ::selection {
-  background: var(--accent-border);
+  background: var(--color-info-border);
   color: var(--ink);
 }
 
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--color-focus);
   outline-offset: 3px;
   border-radius: 6px;
 }

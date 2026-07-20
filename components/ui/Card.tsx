@@ -17,10 +17,10 @@ export function Card({
   return (
     <Component
       className={cn(
-        "rounded-[1.125rem] border border-neutral-border/80 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_12px_32px_rgba(15,23,42,0.035)]",
+        "rounded-2xl border border-neutral-border/85 bg-white/95 p-5 shadow-[0_1px_2px_rgba(23,32,51,0.04),0_10px_24px_rgba(23,32,51,0.035)]",
         "transition duration-200",
         interactive &&
-          "hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-[0_18px_44px_rgba(15,23,42,0.085)]",
+          "hover:-translate-y-px hover:border-eco-200 hover:bg-eco-50/30 hover:shadow-[0_12px_30px_rgba(23,32,51,0.07)]",
         className,
       )}
       {...props}

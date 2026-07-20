@@ -40,7 +40,7 @@ export function StoreLinks({
           <li key={store.platform}>
             <a
               aria-label={`${appName} on the ${label} (opens in a new tab)`}
-              className="group inline-flex min-h-11 items-center gap-1.5 rounded-full border border-neutral-border bg-white px-3.5 text-xs font-semibold text-text-secondary shadow-[0_1px_2px_rgba(15,23,42,0.04)] transition duration-150 hover:border-eco-200 hover:bg-eco-50 hover:text-text-primary focus-visible:border-eco-200 focus-visible:bg-eco-50 sm:min-h-8 sm:px-3 sm:py-1.5"
+              className="group inline-flex min-h-11 items-center gap-1.5 rounded-full border border-neutral-border bg-white px-3.5 text-xs font-semibold text-text-secondary shadow-[0_1px_2px_rgba(23,32,51,0.04)] transition duration-150 hover:border-eco-200 hover:bg-eco-50 hover:text-eco-800 focus-visible:border-eco-200 focus-visible:bg-eco-50 sm:min-h-8 sm:px-3 sm:py-1.5"
               href={store.url}
               rel="noopener noreferrer"
               target="_blank"

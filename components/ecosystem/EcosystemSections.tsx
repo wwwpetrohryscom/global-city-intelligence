@@ -57,7 +57,7 @@ export function FutureProductsNote({ compact = false }: { compact?: boolean }) {
   return (
     <div
       className={cn(
-        "rounded-[1.125rem] border border-dashed border-neutral-line bg-surface-soft text-text-secondary",
+        "rounded-2xl border border-dashed border-eco-200 bg-eco-50/50 text-text-secondary",
         compact ? "p-4" : "p-6",
       )}
     >

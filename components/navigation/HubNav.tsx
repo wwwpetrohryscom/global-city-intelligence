@@ -42,7 +42,7 @@ export function HubNav({
   return (
     <nav
       aria-label={label}
-      className="rounded-[1.125rem] border border-neutral-border/90 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04)]"
+      className="rounded-2xl border border-neutral-border/90 bg-white/95 p-5 shadow-[0_1px_2px_rgba(23,32,51,0.04)]"
     >
       <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
         {label}
@@ -56,10 +56,10 @@ export function HubNav({
                 aria-current={isActive ? "page" : undefined}
                 className={[
                   "inline-flex items-center rounded-full border px-3 py-1.5 font-medium transition",
-                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-500",
+                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-eco-500",
                   isActive
-                    ? "border-brand-500 bg-brand-50 text-text-primary"
-                    : "border-neutral-border bg-surface-soft text-text-secondary hover:border-brand-200 hover:bg-brand-50 hover:text-text-primary",
+                    ? "border-eco-300 bg-eco-50 text-eco-900"
+                    : "border-neutral-border bg-surface-soft text-text-secondary hover:border-eco-200 hover:bg-eco-50 hover:text-text-primary",
                 ].join(" ")}
                 href={item.href}
               >

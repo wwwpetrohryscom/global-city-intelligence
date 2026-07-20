@@ -321,20 +321,20 @@ function HomeHero({
   ];
 
   return (
-    <section className="relative overflow-hidden border-b border-neutral-border bg-[radial-gradient(circle_at_18%_0%,rgba(254,215,170,0.46),transparent_34rem),linear-gradient(180deg,#FFFBF7_0%,#FFFFFF_100%)]">
+    <section className="relative overflow-hidden border-b border-eco-100 bg-[radial-gradient(circle_at_16%_0%,rgba(219,238,254,0.86),transparent_34rem),radial-gradient(circle_at_82%_12%,rgba(240,253,246,0.74),transparent_28rem),linear-gradient(180deg,#F7F9FC_0%,#FFFFFF_100%)]">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#92400E_0%,#B86108_38%,#EA8C1A_72%,#FED7AA_100%)]"
+        className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--color-info)_0%,var(--color-positive)_52%,var(--color-brand)_100%)]"
       />
       <Container className="relative py-8 md:py-10">
-        <div className="overflow-hidden rounded-[1.45rem] border border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.05),0_24px_70px_rgba(15,23,42,0.08)] lg:grid lg:grid-cols-[0.92fr_1.08fr]">
+        <div className="overflow-hidden rounded-2xl border border-neutral-border/85 bg-white/95 shadow-[0_1px_2px_rgba(23,32,51,0.05),0_18px_48px_rgba(23,32,51,0.075)] lg:grid lg:grid-cols-[0.92fr_1.08fr]">
           <div className="relative z-10 px-6 py-8 sm:px-8 lg:px-10 lg:py-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-eco-800">
               Global city intelligence
             </p>
             <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.02] text-text-primary sm:text-5xl lg:text-[3.55rem]">
               Understand cities.{" "}
-              <span className="text-brand-600">Make better choices.</span>
+              <span className="text-brand-700">Make better choices.</span>
             </h1>
             <p className="mt-5 max-w-[62ch] text-base leading-8 text-text-secondary sm:text-[1.0625rem]">
               {description}
@@ -358,7 +358,7 @@ function HomeHero({
                 {popularLinks.map((item) => (
                   <li key={item.href}>
                     <Link
-                      className="inline-flex rounded-full border border-neutral-border bg-surface-soft px-3 py-1.5 font-medium text-text-secondary transition hover:border-brand-200 hover:bg-brand-50 hover:text-text-primary"
+                      className="inline-flex rounded-full border border-neutral-border bg-surface-soft px-3 py-1.5 font-medium text-text-secondary transition hover:border-eco-200 hover:bg-eco-50 hover:text-eco-800"
                       href={item.href}
                     >
                       {item.label}
@@ -388,7 +388,7 @@ function HomeHero({
             </dl>
           </div>
 
-          <figure className="relative min-h-[18rem] border-t border-neutral-border bg-text-primary lg:min-h-[31rem] lg:border-l lg:border-t-0">
+          <figure className="relative min-h-[18rem] border-t border-neutral-border bg-eco-50 lg:min-h-[31rem] lg:border-l lg:border-t-0">
             {heroImage ? (
               <>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -404,26 +404,26 @@ function HomeHero({
                 />
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,23,42,0.56)_0%,rgba(15,23,42,0.12)_46%,rgba(15,23,42,0.02)_100%)]"
+                  className="absolute inset-0 bg-[linear-gradient(90deg,rgba(247,249,252,0.72)_0%,rgba(255,255,255,0.18)_48%,rgba(255,255,255,0.03)_100%)]"
                 />
-                <figcaption className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/20 bg-slate-950/75 p-4 text-white shadow-[0_10px_28px_rgba(15,23,42,0.28)] backdrop-blur-sm sm:inset-x-6 sm:bottom-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-100">
+                <figcaption className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/70 bg-white/90 p-4 text-text-primary shadow-[0_10px_26px_rgba(23,32,51,0.14)] backdrop-blur-sm sm:inset-x-6 sm:bottom-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-eco-800">
                     Featured city profile
                   </p>
                   <p className="mt-2 text-xl font-semibold">
                     {heroCity ? heroCity.name : "New York"}
                   </p>
                   {heroCity ? (
-                    <p className="mt-1 text-sm leading-6 text-white/80">
+                    <p className="mt-1 text-sm leading-6 text-text-secondary">
                       {heroCity.countryName} / {heroCity.region} · Overall{" "}
                       {heroCity.scores.overall}/100
                     </p>
                   ) : null}
-                  <ImageAttribution image={heroImage} className="mt-2 text-white/70" />
+                  <ImageAttribution image={heroImage} className="mt-2 text-text-secondary" />
                 </figcaption>
               </>
             ) : (
-              <figcaption className="flex h-full min-h-[18rem] items-center justify-center p-8 text-center text-white">
+              <figcaption className="flex h-full min-h-[18rem] items-center justify-center p-8 text-center text-text-primary">
                 <span className="max-w-sm text-lg font-semibold">
                   Verified city imagery is rendered from the existing media catalog.
                 </span>
@@ -432,7 +432,7 @@ function HomeHero({
           </figure>
         </div>
 
-        <dl className="relative z-10 mx-4 -mt-5 grid overflow-hidden rounded-2xl border border-neutral-border/80 bg-white shadow-[0_18px_48px_rgba(15,23,42,0.09)] sm:mx-6 sm:grid-cols-2 lg:mx-12 lg:grid-cols-5">
+        <dl className="relative z-10 mx-4 -mt-5 grid overflow-hidden rounded-2xl border border-eco-100 bg-white shadow-[0_14px_34px_rgba(23,32,51,0.08)] sm:mx-6 sm:grid-cols-2 lg:mx-12 lg:grid-cols-5">
           <HomeStat label="Cities" value={citiesCount.toLocaleString("en-US")} />
           <HomeStat label="Countries" value={countriesCount.toLocaleString("en-US")} />
           <HomeStat label="Data phases" value={modulesCount.toLocaleString("en-US")} />

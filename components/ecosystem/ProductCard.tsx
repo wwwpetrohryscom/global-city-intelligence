@@ -22,13 +22,13 @@ export function ProductCard({
   // one background + one border utility — never layer a conditional colour over
   // a base one, or the winner would depend on stylesheet order.
   const stateClassName = isCurrent
-    ? "border-eco-200 bg-eco-50/60 shadow-[0_1px_2px_rgba(15,108,189,0.06)]"
+    ? "border-eco-200 bg-eco-50/70 shadow-[0_1px_2px_rgba(38,141,200,0.06)]"
     : website.hub
-      ? "border-ecogreen-200 bg-ecogreen-50 shadow-[0_1px_2px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-ecogreen-500 hover:shadow-[0_16px_38px_rgba(15,23,42,0.08)] focus-within:border-ecogreen-500"
-      : "border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-eco-200 hover:shadow-[0_16px_38px_rgba(15,23,42,0.08)] focus-within:border-eco-200";
+      ? "border-ecogreen-200 bg-ecogreen-50 shadow-[0_1px_2px_rgba(23,32,51,0.04)] hover:-translate-y-px hover:border-ecogreen-400 hover:shadow-[0_12px_30px_rgba(23,32,51,0.07)] focus-within:border-ecogreen-400"
+      : "border-neutral-border/80 bg-white shadow-[0_1px_2px_rgba(23,32,51,0.04)] hover:-translate-y-px hover:border-eco-200 hover:bg-eco-50/30 hover:shadow-[0_12px_30px_rgba(23,32,51,0.07)] focus-within:border-eco-200";
 
   const cardClassName = cn(
-    "group relative flex h-full flex-col rounded-[1.125rem] border transition duration-200",
+    "group relative flex h-full flex-col rounded-2xl border transition duration-200",
     compact ? "p-4" : "p-5",
     stateClassName,
   );

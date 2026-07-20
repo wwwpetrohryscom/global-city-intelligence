@@ -279,11 +279,11 @@ export default async function CityPage({ params }: PageProps) {
           <Card as="article" className="relative overflow-hidden p-6">
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#92400E,#B86108,#EA8C1A)]"
+              className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--color-info),var(--color-positive),var(--color-brand))]"
             />
             <div className="flex items-start justify-between gap-5">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-700">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-eco-800">
                   Composite profile
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold text-text-primary">

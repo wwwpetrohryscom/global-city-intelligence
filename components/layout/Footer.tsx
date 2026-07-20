@@ -23,11 +23,11 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/10 bg-text-primary text-white">
+    <footer className="border-t border-eco-100 bg-[linear-gradient(180deg,#FFFFFF_0%,#F7F9FC_100%)] text-text-primary">
       <Container className="grid gap-10 py-12 md:grid-cols-12">
         <div className="md:col-span-4">
-          <BrandMark size="md" tone="dark" />
-          <p className="mt-4 max-w-md text-sm leading-6 text-slate-300">
+          <BrandMark size="md" tone="accent" />
+          <p className="mt-4 max-w-md text-sm leading-6 text-text-secondary">
             A server-rendered city and country intelligence platform.
             Structured indicators across affordability, air quality, energy,
             resilience, public safety, and healthcare — attributed to official
@@ -108,8 +108,8 @@ export function Footer() {
           <FooterLink href={staticRoutes.dataSources}>Data sources</FooterLink>
         </FooterColumn>
       </Container>
-      <div className="border-t border-white/10 bg-black/15">
-        <Container className="flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-slate-400">
+      <div className="border-t border-neutral-border bg-white/80">
+        <Container className="flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-text-muted">
           <span>© {currentYear} Global City Intelligence</span>
           <span>
             Structured indicators are directional. Always verify critical
@@ -130,7 +130,7 @@ function FooterColumn({
 }) {
   return (
     <nav aria-label={`Footer ${label.toLowerCase()} links`} className="md:col-span-2">
-      <p className="text-xs font-semibold uppercase tracking-wide text-brand-100">
+      <p className="text-xs font-semibold uppercase tracking-wide text-eco-800">
         {label}
       </p>
       <ul className="mt-3 space-y-2 text-sm">{children}</ul>
@@ -148,7 +148,7 @@ function FooterLink({
   return (
     <li>
       <Link
-        className="inline-flex text-slate-300 transition hover:text-brand-100"
+        className="inline-flex text-text-secondary transition hover:text-eco-800"
         href={href}
       >
         {children}

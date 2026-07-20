@@ -11,49 +11,49 @@ const SIZES = {
 const TONES = {
   default: {
     mark:
-      "border-text-primary/80 bg-white text-text-primary shadow-[0_1px_2px_rgba(15,23,42,0.08)]",
+      "border-neutral-border bg-white text-text-primary shadow-[0_1px_2px_rgba(23,32,51,0.08)]",
     wordPrimary: "text-text-primary",
-    wordAccent: "text-brand-700",
+    wordAccent: "text-eco-800",
     bars: {
-      primary: "#0F172A",
-      accent: "#B86108",
-      tint: "#D97706",
-      baseline: "#0F172A",
+      primary: "#172033",
+      accent: "#268DC8",
+      tint: "#FB923C",
+      baseline: "#172033",
     },
   },
   accent: {
     mark:
-      "border-brand-200 bg-white text-text-primary shadow-[0_1px_2px_rgba(184,97,8,0.14)]",
+      "border-eco-200 bg-white text-text-primary shadow-[0_1px_2px_rgba(38,141,200,0.12)]",
     wordPrimary: "text-text-primary",
     wordAccent: "text-brand-700",
     bars: {
-      primary: "#0F172A",
-      accent: "#B86108",
-      tint: "#D97706",
-      baseline: "#B86108",
+      primary: "#172033",
+      accent: "#268DC8",
+      tint: "#22C76F",
+      baseline: "#F97316",
     },
   },
   monochrome: {
     mark:
-      "border-text-primary bg-white text-text-primary shadow-[0_1px_2px_rgba(15,23,42,0.08)]",
+      "border-text-primary bg-white text-text-primary shadow-[0_1px_2px_rgba(23,32,51,0.08)]",
     wordPrimary: "text-text-primary",
     wordAccent: "text-text-primary",
     bars: {
-      primary: "#0F172A",
-      accent: "#0F172A",
-      tint: "#475569",
-      baseline: "#0F172A",
+      primary: "#172033",
+      accent: "#172033",
+      tint: "#526071",
+      baseline: "#172033",
     },
   },
   dark: {
     mark:
-      "border-white/20 bg-white/10 text-white shadow-[0_1px_2px_rgba(0,0,0,0.22)]",
+      "border-white/25 bg-white/12 text-white shadow-[0_1px_2px_rgba(0,0,0,0.18)]",
     wordPrimary: "text-white",
     wordAccent: "text-brand-100",
     bars: {
       primary: "#FFFFFF",
-      accent: "#FED7AA",
-      tint: "#EA8C1A",
+      accent: "#86C7F3",
+      tint: "#FDBA74",
       baseline: "#FFFFFF",
     },
   },
