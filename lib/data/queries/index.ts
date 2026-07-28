@@ -19,12 +19,22 @@ import type { EducationProfile } from "@/types/education";
 import type { HealthcareProfile } from "@/types/healthcare";
 import type { RetirementProfile } from "@/types/retirement";
 
+// Slug → record indexes, built once at module load (same pattern as
+// cityHeroIndex in lib/data/media/queries.ts). getCityBySlug is called from
+// ~170 sites — pages, breadcrumbs, metadata, ranking joins — for every one of
+// ~73k statically generated pages, so the previous linear .find() over 4,400+
+// cities was repeated millions of times per build.
+const cityBySlugIndex = new Map(cities.map((city) => [city.slug, city]));
+const countryBySlugIndex = new Map(
+  countries.map((country) => [country.slug, country]),
+);
+
 export function getAllCities() {
   return cities;
 }
 
 export function getCityBySlug(slug: string) {
-  return cities.find((city) => city.slug === slug);
+  return cityBySlugIndex.get(slug);
 }
 
 export function getAllCountries() {
@@ -32,7 +42,7 @@ export function getAllCountries() {
 }
 
 export function getCountryBySlug(slug: string) {
-  return countries.find((country) => country.slug === slug);
+  return countryBySlugIndex.get(slug);
 }
 
 export function getCitiesByCountrySlug(countrySlug: string) {
