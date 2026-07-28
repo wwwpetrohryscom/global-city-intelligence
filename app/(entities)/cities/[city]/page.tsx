@@ -138,6 +138,11 @@ type PageProps = {
   params: Promise<{ city: string }>;
 };
 
+// All valid slugs are enumerated by generateStaticParams below (same canonical
+// data source as the sitemap). Unknown slugs must 404 at the routing layer
+// instead of invoking on-demand ISR rendering.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllCities().map((city) => ({ city: city.slug }));
 }

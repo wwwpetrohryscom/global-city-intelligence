@@ -25,7 +25,11 @@ export async function GET(
   return new Response(renderUrlset(entries), {
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
-      "Cache-Control": "public, max-age=0, s-maxage=3600, must-revalidate",
+      // Shard XML is fixed at build time; the edge cache is deployment-scoped
+      // (fresh deploys always serve fresh shards), so 24h s-maxage is safe and
+      // avoids hourly origin re-pulls of the multi-MB module/phase shards.
+      "Cache-Control":
+        "public, max-age=0, s-maxage=86400, stale-while-revalidate=86400",
     },
   });
 }
