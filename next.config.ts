@@ -33,6 +33,20 @@ const nextConfig: NextConfig = {
   //   7.4 GB → ~8.6 GB headroom). Fewer simultaneous cold-starts = smaller
   //   spike. Instrumented full-run: 1,078 s local (M-series), 80 pages/s gen.
   experimental: {
+    // Cap the WHOLE jest-worker pool, not just the active static-gen workers.
+    // Instrumented 16 GB runs show staticGenerationMinPagesPerWorker only
+    // limits how many children actively render pages (2), while the pool
+    // itself is sized from CPU count (9 children on a 10-core machine, ~7 on
+    // the 8-core Vercel builder) and EVERY child evaluates the ~21 MB data
+    // modules during "Collecting page data", holding ~0.8-1.6 GB each
+    // afterwards. That pool — not the 2 active workers — is what OOM'd the
+    // 16 GB build container even at minPagesPerWorker: 45000 (main build
+    // d1ccef9 SIGKILLed at "Generating static pages (0/73564)").
+    // cpus: 3 → pool of 3 children ≈ ≤5 GB worker RSS total + main ≈ well
+    // inside 16 GB. Collect-page-data runs ~3x slower (seconds, not minutes);
+    // static generation is unaffected (still 2 active workers via the
+    // 45000 page floor below).
+    cpus: 3,
     staticGenerationMinPagesPerWorker: 45000,
     memoryBasedWorkersCount: true,
     enablePrerenderSourceMaps: false,
