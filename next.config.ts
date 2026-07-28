@@ -21,9 +21,19 @@ const nextConfig: NextConfig = {
   // per-worker memory estimate (which under-counts our heavy data modules).
   //   history: 10000 held ~7 workers for Wave 18's ~68k pages (fit, thin margin),
   //   but Wave 19 (~73.5k pages + larger data modules) → 8 workers OOM'd on Vercel.
-  //   25000 → ceil(73.5k/25000) = 3 workers (~3x the per-worker heap headroom).
+  //   25000 → ceil(73.5k/25000) = 3 workers (~3x the per-worker heap headroom)
+  //   — tuned for the old 60 GB build container.
+  //   45000 → 2 active gen workers (holds through ~90k pages). Set after the
+  //   build machine became 8 cores / 16 GB and 3 workers SIGKILLed at
+  //   "Generating static pages (0/73564)": the OOM is a worker START-UP spike
+  //   (each child evaluating the ~21 MB data modules at once, stacked on the
+  //   collect-page-data pool, which is sized by CPU count and briefly held
+  //   ~7 GB total in an instrumented 16 GB run), not steady state (steady:
+  //   ~1.1-1.6 GB per active worker, main ≤2.2 GB; observed combined peak
+  //   7.4 GB → ~8.6 GB headroom). Fewer simultaneous cold-starts = smaller
+  //   spike. Instrumented full-run: 1,078 s local (M-series), 80 pages/s gen.
   experimental: {
-    staticGenerationMinPagesPerWorker: 25000,
+    staticGenerationMinPagesPerWorker: 45000,
     memoryBasedWorkersCount: true,
     enablePrerenderSourceMaps: false,
     webpackMemoryOptimizations: true,
