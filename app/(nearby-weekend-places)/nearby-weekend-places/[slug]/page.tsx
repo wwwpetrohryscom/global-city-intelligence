@@ -9,7 +9,6 @@ import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
 import {
-  getAllNearbyWeekendPlaceDetailPages,
   getCityBySlug,
   getCountryBySlug,
   getNearbyPlaceCategoryLabel,
@@ -46,16 +45,42 @@ import {
 } from "@/lib/seo/routes";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
 
-export const dynamicParams = false;
+/**
+ * HYBRID-RENDERING CANARY (single family, deliberately scoped).
+ *
+ * This family (5,976 pages) is the only route family generated on demand
+ * rather than exhaustively at build time. Everything else in the app remains
+ * build-time SSG with `dynamicParams = false`.
+ *
+ * Semantics are unchanged for every public URL:
+ *   - valid slug   -> rendered, HTTP 200, then cached (identical HTML: the
+ *                     page has no request-time inputs, no fetch, no cookies/
+ *                     headers/searchParams, so on-demand output is byte-equal
+ *                     to what the build used to emit)
+ *   - unknown slug -> notFound() -> real HTTP 404 (guard below, unchanged)
+ *   - sitemap      -> unaffected; lib/sitemap/entries.ts enumerates this family
+ *                     from the data layer, independent of rendering mode, so
+ *                     all 5,976 URLs stay discoverable.
+ *
+ * `revalidate = false` is explicit rather than implied: content changes only
+ * on deploy, so a generated page should be cached indefinitely and never
+ * periodically regenerated. Do not replace this with a time interval.
+ */
+export const dynamicParams = true;
+export const revalidate = false;
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
-  return getAllNearbyWeekendPlaceDetailPages().map((place) => ({
-    slug: place.slug,
-  }));
+/**
+ * Intentionally empty: no page of this family is prerendered at build time.
+ * The canonical slug registry still governs validity at request time via
+ * `getNearbyWeekendPlaceDetailPageBySlug` + `notFound()` below, and still
+ * drives sitemap membership — this only changes *when* pages are generated.
+ */
+export function generateStaticParams(): Array<{ slug: string }> {
+  return [];
 }
 
 export async function generateMetadata({

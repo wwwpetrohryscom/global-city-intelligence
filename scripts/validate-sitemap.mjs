@@ -109,7 +109,44 @@ for (const f of htmlFiles) {
 const NON_INDEXABLE = new Set(["/_not-found", "/404", "/500", "/_error"]);
 const sitemapPaths = new Set(allUrls.map((u) => { try { return new URL(u).pathname; } catch { return u; } }));
 
-const broken = [...sitemapPaths].filter((p) => !genPaths.has(p));
+/**
+ * On-demand (hybrid) route families.
+ *
+ * A family with `dynamicParams = true` and no build-time params is emitted in
+ * the prerender manifest with `fallback: null`, meaning "generate this path on
+ * first request, then cache it". Those URLs legitimately have no .html on disk
+ * after `next build`, so the sitemap-vs-disk comparison alone would report all
+ * of them as broken. They are still fully indexable: the sitemap is built from
+ * the same canonical registry the page validates against, and an unknown slug
+ * still calls notFound().
+ *
+ * So a sitemap URL is considered renderable if it is EITHER prerendered on disk
+ * OR matches an on-demand family's route regex. Everything else is still a hard
+ * failure, which keeps the check's real purpose intact: catching sitemap URLs
+ * that no route can ever serve.
+ */
+const onDemandPatterns = (() => {
+  const manifest = read(join(ROOT, ".next/prerender-manifest.json"));
+  if (!manifest) return [];
+  try {
+    const dynamicRoutes = JSON.parse(manifest).dynamicRoutes ?? {};
+    return Object.entries(dynamicRoutes)
+      .filter(([, cfg]) => cfg.fallback === null)
+      .map(([route, cfg]) => ({ route, re: new RegExp(cfg.routeRegex) }));
+  } catch {
+    return [];
+  }
+})();
+const isOnDemand = (p) => onDemandPatterns.some(({ re }) => re.test(p));
+
+const broken = [...sitemapPaths].filter((p) => !genPaths.has(p) && !isOnDemand(p));
+const onDemandCount = [...sitemapPaths].filter((p) => !genPaths.has(p) && isOnDemand(p)).length;
+if (onDemandPatterns.length) {
+  console.log(
+    `on-demand families: ${onDemandPatterns.map((p) => p.route).join(", ")} — ` +
+      `${onDemandCount} sitemap URL(s) generated on first request (not prerendered)`,
+  );
+}
 const orphans = [...genPaths].filter((p) => !sitemapPaths.has(p) && !NON_INDEXABLE.has(p));
 if (broken.length) errors.push(`${broken.length} sitemap URL(s) with no generated page (broken), e.g. ${broken.slice(0, 3).join(", ")}`);
 if (orphans.length) {
