@@ -26,7 +26,13 @@
 #
 # Manual override
 # ---------------
-#   Put [force-build] (or [vercel build]) anywhere in the commit message.
+#   Either put the exact token [force-build] in the SUBJECT LINE (first line) of
+#   the commit message, or add a trailer on its own line:
+#       Force-Build: yes
+#   Matching is deliberately NOT a whole-message substring test: a commit whose
+#   body merely *discusses* the marker (documentation, this header, a review
+#   note) must not silently force a build. That actually happened once — a
+#   commit body describing this mechanism triggered it.
 #   Redeploying from the Vercel dashboard also bypasses this script entirely.
 
 set -uo pipefail
@@ -47,10 +53,16 @@ case "${VERCEL_GIT_COMMIT_REF:-}" in
 esac
 
 # ---- Rule 4: explicit manual override ---------------------------------------
-MSG="$(git log -1 --pretty=%B 2>/dev/null || echo '')"
-case "$MSG" in
-  *"[force-build]"*|*"[vercel build]"*) build "forced by commit message" ;;
+# Subject line only (first line) — prose in the body must never trigger this.
+SUBJECT="$(git log -1 --pretty=%s 2>/dev/null || echo '')"
+case "$SUBJECT" in
+  *"[force-build]"*|*"[vercel build]"*) build "forced by subject-line marker" ;;
 esac
+# Or an explicit trailer on its own line: "Force-Build: yes|true|1"
+if git log -1 --pretty=%B 2>/dev/null \
+   | grep -qiE '^[[:space:]]*Force-Build:[[:space:]]*(yes|true|1)[[:space:]]*$'; then
+  build "forced by Force-Build trailer"
+fi
 
 # ---- Rule 2: we must be able to diff, or we build ---------------------------
 PREV="${VERCEL_GIT_PREVIOUS_SHA:-}"

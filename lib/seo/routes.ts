@@ -1,22 +1,4 @@
 import { ECOSYSTEM_PATH } from "@/lib/ecosystem/products";
-import { NEARBY_WEEKEND_PLACE_DETAIL_SLUGS } from "@/lib/data/nearby-place-detail-pages";
-import {
-  getAllArrivalPages,
-  getAllCitiesWithNearbyWeekendPlaces,
-  getAllCityIntentPages,
-  getAllCollections,
-  getAllMovingToCityPages,
-  getAllNeighborhoodPlanningPages,
-  getAllRegionalCollections,
-  getAllSummerTravelPages,
-  getAllThematicCollections,
-  getAllVisualCityGuidePages,
-  getAllWeekendTripPages,
-  getCities,
-  getCountries,
-  getModules,
-  getRankings,
-} from "@/lib/data/queries";
 import type { ModuleSlug } from "@/types";
 
 export const siteUrl =
@@ -147,74 +129,13 @@ export function getCollectionsIndexUrl() {
   return staticRoutes.collections;
 }
 
-export function getAllIndexableRoutes() {
-  const cities = getCities();
-  const modules = getModules();
-
-  return [
-    staticRoutes.home,
-    staticRoutes.cities,
-    staticRoutes.countries,
-    staticRoutes.methodology,
-    staticRoutes.dataSources,
-    staticRoutes.rankings,
-    staticRoutes.compare,
-    staticRoutes.collections,
-    staticRoutes.tools,
-    staticRoutes.costOfLivingCalculator,
-    staticRoutes.travelBudgetCalculator,
-    staticRoutes.relocationChecklist,
-    staticRoutes.arrival,
-    staticRoutes.movingTo,
-    staticRoutes.visualGuides,
-    staticRoutes.summerTravel,
-    staticRoutes.weekendTrips,
-    staticRoutes.nearbyWeekendPlaces,
-    staticRoutes.ecosystem,
-    ...cities.map((city) => cityRoute(city.slug)),
-    ...getCountries().map((country) => countryRoute(country.slug)),
-    ...modules.flatMap((moduleItem) =>
-      cities.map((city) => moduleRoute(moduleItem.slug, city.slug)),
-    ),
-    ...getRankings().map((ranking) => rankingRoute(ranking.slug)),
-    ...getAllCollections().map((collection) => getCollectionUrl(collection.slug)),
-    ...getAllCityIntentPages().map((page) =>
-      getCityIntentUrl(page.citySlug, page.intentSlug),
-    ),
-    ...getAllArrivalPages().map((page) => arrivalRoute(page.citySlug)),
-    ...getAllNeighborhoodPlanningPages().map((page) =>
-      neighborhoodPlanningRoute(page.citySlug),
-    ),
-    ...getAllMovingToCityPages().map((page) =>
-      movingToCityRoute(page.citySlug),
-    ),
-    ...getAllVisualCityGuidePages().map((page) =>
-      visualCityGuideRoute(page.citySlug),
-    ),
-    ...getAllSummerTravelPages().map((page) =>
-      summerTravelRoute(page.citySlug),
-    ),
-    ...getAllWeekendTripPages().map((page) =>
-      weekendTripRoute(page.citySlug),
-    ),
-    ...cities.map((city) => costOfLivingRoute(city.slug)),
-    ...cities.map((city) => climateRoute(city.slug)),
-    ...cities.map((city) => economyRoute(city.slug)),
-    ...cities.map((city) => educationRoute(city.slug)),
-    ...cities.map((city) => healthcareRoute(city.slug)),
-    ...NEARBY_WEEKEND_PLACE_DETAIL_SLUGS.map((slug) =>
-      nearbyWeekendPlaceRoute(slug),
-    ),
-    ...getAllCitiesWithNearbyWeekendPlaces().map((city) =>
-      nearbyWeekendPlacesCityRoute(city.slug),
-    ),
-    staticRoutes.regionalCollections,
-    ...getAllRegionalCollections().map((collection) =>
-      regionalCollectionRoute(collection.slug),
-    ),
-    staticRoutes.thematicCollections,
-    ...getAllThematicCollections().map((collection) =>
-      thematicCollectionRoute(collection.slug),
-    ),
-  ];
-}
+/**
+ * NOTE: `getAllIndexableRoutes()` used to live here. It was the ONLY consumer of
+ * this file's `@/lib/data/queries` imports, and because ~86 modules import this
+ * file, it transitively pulled the ~155 MB generated data layer into nearly every
+ * route's server bundle (one ~132.7 MB shared chunk). It now lives in
+ * `lib/seo/build/all-indexable-routes.ts`, which is build-time only.
+ *
+ * Keep this module free of `@/lib/data` imports: everything here must stay pure
+ * string/path construction so runtime routes do not load the corpus.
+ */
