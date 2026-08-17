@@ -33,7 +33,8 @@
     "validate-education": "python3 scripts/validate-education.py",
     "validate:education": "python3 scripts/validate-education.py",
     "validate-healthcare": "python3 scripts/validate-healthcare.py",
-    "validate:healthcare": "python3 scripts/validate-healthcare.py"
+    "validate:healthcare": "python3 scripts/validate-healthcare.py",
+    "validate:search-index": "node scripts/validate-search-index.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",

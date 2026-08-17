@@ -1,0 +1,101 @@
+# ============================================================================
+# PRODUCTION hosting config — Netlify TRUE STATIC for Global City Intelligence.
+#
+# This is the live configuration. Production moved off Vercel to Netlify on
+# 2026-08-13 after the Vercel project was deleted; the site is served as a
+# prebuilt static artifact.
+#
+# The published directory is the Next.js `output: 'export'` result (`out/`),
+# served as plain files. Deliberately NO @netlify/plugin-nextjs, NO OpenNext,
+# NO Functions, NO Edge Functions, NO On-demand Builders: every public page is
+# a prebuilt .html file, so there is no server runtime to bill or to fail.
+#
+# Deploys are MANUAL and artifact-based:
+#   npm run build && netlify deploy --dir=out --no-build [--prod]
+# There is deliberately no `command` below, so a Git push can never trigger a
+# Netlify build. Automatic builds are additionally suppressed by the site-level
+# `stop_builds` setting, which lives in the Netlify site config and must NOT be
+# expressed here — repo config cannot and should not override it.
+# ============================================================================
+
+[build]
+  # Prebuilt artifact model (Model B). If Netlify ever builds it itself this
+  # becomes `command = "next build"`, but see the report: the 73.5k-page
+  # generation is what SIGKILLed a Netlify build before.
+  publish = "out"
+
+# ---------------------------------------------------------------------------
+# Redirects — exact translations of the four next.config.ts redirects, which
+# `output: 'export'` cannot express. force=false so a real file always wins.
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/sitemap"
+  to = "/sitemap.xml"
+  status = 301
+
+[[redirects]]
+  from = "/sitemap/xml"
+  to = "/sitemap.xml"
+  status = 301
+
+[[redirects]]
+  from = "/sitemap/"
+  to = "/sitemap.xml"
+  status = 301
+
+[[redirects]]
+  from = "/robots"
+  to = "/robots.txt"
+  status = 301
+
+# Canonical host. Production canonical is www; the apex must 301 to it so the
+# SEO identity in every <link rel="canonical"> stays the only reachable host.
+[[redirects]]
+  from = "https://globalcityintelligence.com/*"
+  to = "https://www.globalcityintelligence.com/:splat"
+  status = 301
+  force = true
+
+# NOTE: there is deliberately NO catch-all `/* /index.html 200` rule. That SPA
+# fallback would turn every unknown URL into a soft 200 — catastrophic for a
+# 73.5k-page SEO property. Netlify serves out/404.html with a real 404 instead.
+
+# ---------------------------------------------------------------------------
+# Headers
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Mirrors the only custom header production currently sends.
+    Strict-Transport-Security = "max-age=63072000"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # No CSP: production has none today, and adding one risks breaking the
+    # WebmasterID tracker and outbound store links. Out of scope here.
+
+[[headers]]
+  # Content-hashed build assets are immutable.
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  # HTML must revalidate so a new deploy is picked up immediately.
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=0, s-maxage=86400, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/sitemaps/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, s-maxage=86400, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=0, s-maxage=3600, must-revalidate"

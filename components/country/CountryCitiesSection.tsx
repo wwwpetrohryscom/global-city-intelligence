@@ -1,8 +1,15 @@
 import { CityCard } from "@/components/cards/CityCard";
+import { CityDirectory } from "@/components/search/CityDirectory";
 import { SectionHeading } from "@/components/ui/section-heading";
 import type { City } from "@/types";
 
 const SECTION_ID = "country-cities";
+
+/**
+ * Below this many cities the full card grid already fits comfortably on one
+ * screen, so a searchable directory would only duplicate links for no gain.
+ */
+const DIRECTORY_MIN_CITIES = 8;
 
 export function CountryCitiesSection({
   countryName,
@@ -25,11 +32,25 @@ export function CountryCitiesSection({
           No indexed city profiles for {countryName} yet.
         </p>
       ) : (
-        <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {cities.map((city) => (
-            <CityCard city={city} key={city.slug} />
-          ))}
-        </div>
+        <>
+          {cities.length >= DIRECTORY_MIN_CITIES ? (
+            <div className="mt-6">
+              <CityDirectory
+                countryName={countryName}
+                cities={cities.map((city) => ({
+                  slug: city.slug,
+                  name: city.name,
+                  region: city.region,
+                }))}
+              />
+            </div>
+          ) : null}
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {cities.map((city) => (
+              <CityCard city={city} key={city.slug} />
+            ))}
+          </div>
+        </>
       )}
     </section>
   );

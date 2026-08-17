@@ -4,6 +4,10 @@ import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ImageAttribution } from "@/components/media/ImageAttribution";
 import { HubNav } from "@/components/navigation/HubNav";
+import {
+  CountryDiscovery,
+  type CountryRow,
+} from "@/components/search/CountryDiscovery";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -23,6 +27,7 @@ import {
   countryRoute,
   staticRoutes,
 } from "@/lib/seo/routes";
+import { flagEmoji, macroRegionFor } from "@/lib/search/regions";
 import { breadcrumbSchema, webpageSchema } from "@/lib/seo/schema";
 
 const title = "Global Country Intelligence Directory";
@@ -54,6 +59,18 @@ export default function CountriesIndexPage() {
       hasIndicators: hasVerifiedCountryIndicators(country.slug),
     };
   });
+
+  // Lightweight rows for the client discovery layer: names, slugs, facets and
+  // counts only — no intro prose, metrics or source lists.
+  const discoveryRows: CountryRow[] = rows.map((row) => ({
+    slug: row.country.slug,
+    name: row.country.name,
+    iso2: row.country.iso2,
+    region: row.country.region,
+    macroRegion: macroRegionFor(row.country.slug, row.country.region),
+    cityCount: row.cityCount,
+    flag: flagEmoji(row.country.iso2),
+  }));
 
   const totalCities = rows.reduce((sum, row) => sum + row.cityCount, 0);
   const verifiedEmergency = rows.filter((row) => row.hasEmergency).length;
@@ -110,6 +127,8 @@ export default function CountriesIndexPage() {
       <Container className="space-y-12 py-12">
         <BreadcrumbNav items={breadcrumbs} />
         <HubNav activeHref={staticRoutes.countries} />
+
+        <CountryDiscovery countries={discoveryRows} />
 
         <section>
           <SectionHeading
