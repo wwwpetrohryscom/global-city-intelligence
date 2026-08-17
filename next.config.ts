@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
   outputFileTracingRoot: process.cwd(),
   // The generated city datasets in lib/data are enormous (nearby-places.ts
   // alone is ~21MB). Running ESLint + the full tsc type-check inside
@@ -51,14 +52,6 @@ const nextConfig: NextConfig = {
     memoryBasedWorkersCount: true,
     enablePrerenderSourceMaps: false,
     webpackMemoryOptimizations: true,
-  },
-  async redirects() {
-    return [
-      { source: "/sitemap", destination: "/sitemap.xml", permanent: true },
-      { source: "/sitemap/xml", destination: "/sitemap.xml", permanent: true },
-      { source: "/sitemap/", destination: "/sitemap.xml", permanent: true },
-      { source: "/robots", destination: "/robots.txt", permanent: true },
-    ];
   },
 };
 
