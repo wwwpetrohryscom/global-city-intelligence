@@ -1,5 +1,7 @@
 import { CityQuickNav } from "@/components/discovery/CityQuickNav";
 import { citySectionAvailability } from "@/lib/discovery/city-sections.server";
+import { CityIntelligenceScorecard } from "@/components/city-intelligence/CityIntelligenceScorecard";
+import { buildScorecard } from "@/lib/city-intelligence/scorecard";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
@@ -177,6 +179,8 @@ export default async function CityPage({ params }: PageProps) {
   const title = `${city.name}, ${city.countryName} City Intelligence`;
   const description = `${city.intro} Compare affordability, air quality, energy readiness, resilience, sources, and rankings.`;
   const breadcrumbs = cityBreadcrumbs(city.slug);
+  // Prepared on the server; the component renders primitives only.
+  const scorecard = buildScorecard(city.slug);
   const sources = getSourcesByIds(city.sources);
   const rankings = getAllRankings().slice(0, 3);
   const modules = getAllModules();
@@ -272,6 +276,8 @@ export default async function CityPage({ params }: PageProps) {
 
       <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
         <BreadcrumbNav items={breadcrumbs} />
+
+        {scorecard ? <CityIntelligenceScorecard scorecard={scorecard} /> : null}
 
         <section aria-label={`${city.name} visual context`}>
           <PlaceHeroImage

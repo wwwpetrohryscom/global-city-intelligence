@@ -37,7 +37,8 @@
     "validate:search-index": "node scripts/validate-search-index.mjs",
     "validate:discovery-index": "node scripts/validate-discovery-index.mjs",
     "validate:quick-nav": "node scripts/validate-quick-nav.mjs",
-    "validate:sentinel": "node scripts/validate-sentinel-cohort.mjs"
+    "validate:sentinel": "node scripts/validate-sentinel-cohort.mjs",
+    "validate:city-intelligence": "node scripts/validate-city-intelligence.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",
