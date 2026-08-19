@@ -1,3 +1,5 @@
+import { CityQuickNav } from "@/components/discovery/CityQuickNav";
+import { citySectionAvailability } from "@/lib/discovery/city-sections.server";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -162,6 +164,13 @@ export default async function EducationPage({ params }: PageProps) {
           </div>
         </dl>
       </PageHeader>
+
+      <CityQuickNav
+        availability={citySectionAvailability(city.slug)}
+        cityName={city.name}
+        citySlug={city.slug}
+        current="education"
+      />
 
       <Container className="space-y-12 pb-20">
         <BreadcrumbNav items={breadcrumbs} />

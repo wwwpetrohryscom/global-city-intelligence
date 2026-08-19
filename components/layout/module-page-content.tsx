@@ -1,3 +1,6 @@
+import { CityQuickNav } from "@/components/discovery/CityQuickNav";
+import { citySectionAvailability } from "@/lib/discovery/city-sections.server";
+import type { CitySectionId } from "@/lib/discovery/city-sections";
 import Link from "next/link";
 import { LinkCard } from "@/components/cards/link-card";
 import { MetricCard } from "@/components/cards/MetricCard";
@@ -28,12 +31,22 @@ export function ModulePageContent({
   moduleData,
   title,
   description,
+  quickNavSection,
 }: {
   city: City;
   moduleItem: IntelligenceModule;
   moduleData: CityModuleData;
   title: string;
   description: string;
+  /**
+   * Opt-in contextual navigation. Only modules that are also a city
+   * quick-nav section pass this — today that is Safety alone. The other five
+   * module families (air quality, energy, internet speed, climate risk, and
+   * the module-level cost page) are not sections of the navigator, so showing
+   * it there would highlight nothing and, for cost, would link to a different
+   * page than the one being viewed.
+   */
+  quickNavSection?: CitySectionId;
 }) {
   const breadcrumbs = moduleBreadcrumbs(moduleItem.slug, city.slug);
   const sources = getSourcesByIds(moduleData.sources);
@@ -114,6 +127,15 @@ export function ModulePageContent({
           </div>
         </dl>
       </PageHeader>
+
+      {quickNavSection ? (
+        <CityQuickNav
+          availability={citySectionAvailability(city.slug)}
+          cityName={city.name}
+          citySlug={city.slug}
+          current={quickNavSection}
+        />
+      ) : null}
 
       <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
         <BreadcrumbNav items={breadcrumbs} />

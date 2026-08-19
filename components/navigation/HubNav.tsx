@@ -7,6 +7,7 @@ export interface HubNavItem {
 }
 
 const DEFAULT_HUB_ITEMS: HubNavItem[] = [
+  { href: staticRoutes.exploreCities, label: "Find a city" },
   { href: staticRoutes.cities, label: "Cities" },
   { href: staticRoutes.countries, label: "Countries" },
   { href: staticRoutes.collections, label: "Best Cities" },

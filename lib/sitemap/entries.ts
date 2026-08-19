@@ -93,6 +93,12 @@ export function getSitemapEntries(): SitemapEntry[] {
     { url: absoluteUrl(staticRoutes.dataSources), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.8 },
     { url: absoluteUrl(staticRoutes.rankings), lastModified: staticFreshness, changeFrequency: "weekly", priority: 0.9 },
     { url: absoluteUrl(staticRoutes.compare), lastModified: staticFreshness, changeFrequency: "weekly", priority: 0.9 },
+    // The city finder is a genuine indexable surface: it carries static
+    // explanatory content and links onward into the corpus. Its filter state is
+    // held in React, never in the URL, so it contributes exactly ONE sitemap
+    // entry and cannot fan out into crawlable facet combinations.
+    // /compare-cities is deliberately absent — it is noindex (see its page).
+    { url: absoluteUrl(staticRoutes.exploreCities), lastModified: staticFreshness, changeFrequency: "weekly", priority: 0.9 },
     { url: absoluteUrl(staticRoutes.collections), lastModified: staticFreshness, changeFrequency: "weekly", priority: 0.9 },
     { url: absoluteUrl(staticRoutes.tools), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.72 },
     { url: absoluteUrl(staticRoutes.costOfLivingCalculator), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.7 },

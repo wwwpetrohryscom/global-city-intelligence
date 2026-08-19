@@ -1,3 +1,5 @@
+import { CityQuickNav } from "@/components/discovery/CityQuickNav";
+import { citySectionAvailability } from "@/lib/discovery/city-sections.server";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
@@ -260,6 +262,13 @@ export default async function CityPage({ params }: PageProps) {
           </div>
         </dl>
       </PageHeader>
+
+      <CityQuickNav
+        availability={citySectionAvailability(city.slug)}
+        cityName={city.name}
+        citySlug={city.slug}
+        current="overview"
+      />
 
       <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
         <BreadcrumbNav items={breadcrumbs} />

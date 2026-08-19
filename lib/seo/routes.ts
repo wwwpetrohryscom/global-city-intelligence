@@ -13,6 +13,8 @@ export const staticRoutes = {
   dataSources: "/data-sources",
   rankings: "/rankings",
   compare: "/compare",
+  exploreCities: "/explore-cities",
+  compareCities: "/compare-cities",
   collections: "/best-cities",
   tools: "/tools",
   costOfLivingCalculator: "/tools/cost-of-living-calculator",

@@ -54,6 +54,7 @@ export default async function SafetyPage({ params }: PageProps) {
       description={`${moduleData.summary} Includes safety score, visible data table, source block, and links back to the city profile.`}
       moduleData={moduleData}
       moduleItem={moduleItem}
+      quickNavSection="safety"
       title={`Safety in ${city.name}`}
     />
   );

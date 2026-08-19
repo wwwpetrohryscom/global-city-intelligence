@@ -5,6 +5,7 @@ import { GlobalSearch } from "@/components/search/GlobalSearch";
 import { staticRoutes } from "@/lib/seo/routes";
 
 const navItems = [
+  { href: staticRoutes.exploreCities, label: "Find a city" },
   { href: staticRoutes.cities, label: "Cities" },
   { href: staticRoutes.countries, label: "Countries" },
   { href: staticRoutes.rankings, label: "Rankings" },

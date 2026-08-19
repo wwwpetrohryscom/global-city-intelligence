@@ -101,16 +101,44 @@ function walkHtml(dir, acc) {
 }
 const htmlFiles = existsSync(APP) ? walkHtml(APP, []) : [];
 const genPaths = new Set();
+/** route path -> emitted HTML file, so indexability can be read from the artifact. */
+const htmlByPath = new Map();
 for (const f of htmlFiles) {
   let rel = f.slice(APP.length).replace(/\.html$/, "").replace(/\/\([^)]+\)/g, "");
   if (rel === "/index" || rel === "") rel = "/";
   genPaths.add(rel);
+  if (!htmlByPath.has(rel)) htmlByPath.set(rel, f);
 }
 const NON_INDEXABLE = new Set(["/_not-found", "/404", "/500", "/_error"]);
+
+/**
+ * A page that declares `robots: noindex` is intentionally out of the sitemap —
+ * listing it would be the actual error. Read that intent from the emitted HTML
+ * rather than maintaining a hand-written exclusion list, so a future noindex
+ * page is handled without editing this file.
+ */
+const noindexPaths = new Set();
+for (const [rel, file] of htmlByPath) {
+  const html = read(file);
+  if (html && /<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i.test(html)) {
+    noindexPaths.add(rel);
+  }
+}
+
 const sitemapPaths = new Set(allUrls.map((u) => { try { return new URL(u).pathname; } catch { return u; } }));
 
 const broken = [...sitemapPaths].filter((p) => !genPaths.has(p));
-const orphans = [...genPaths].filter((p) => !sitemapPaths.has(p) && !NON_INDEXABLE.has(p));
+const orphans = [...genPaths].filter(
+  (p) => !sitemapPaths.has(p) && !NON_INDEXABLE.has(p) && !noindexPaths.has(p),
+);
+// The inverse is a genuine contradiction: a noindex page must never be
+// advertised in the sitemap.
+const noindexInSitemap = [...sitemapPaths].filter((p) => noindexPaths.has(p));
+if (noindexInSitemap.length) {
+  errors.push(
+    `${noindexInSitemap.length} noindex page(s) present in sitemap, e.g. ${noindexInSitemap.slice(0, 3).join(", ")}`,
+  );
+}
 if (broken.length) errors.push(`${broken.length} sitemap URL(s) with no generated page (broken), e.g. ${broken.slice(0, 3).join(", ")}`);
 if (orphans.length) {
   // report as warning — some generated pages may be intentionally non-indexable
@@ -118,7 +146,7 @@ if (orphans.length) {
 }
 
 console.log(`sitemap index: ${childLocs.length} shards, ${allUrls.length} URLs (${new Set(allUrls).size} unique), host ${host}`);
-console.log(`generated indexable pages: ${genPaths.size}; broken: ${broken.length}; orphans: ${orphans.length}`);
+console.log(`generated pages: ${genPaths.size} (noindex: ${noindexPaths.size}); broken: ${broken.length}; orphans: ${orphans.length}`);
 for (const w of warnings) console.log(`  WARN: ${w}`);
 if (errors.length) {
   console.error("\nFAIL: sitemap validation errors:");
