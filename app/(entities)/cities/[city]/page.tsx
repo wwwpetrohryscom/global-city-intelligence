@@ -2,6 +2,9 @@ import { CityQuickNav } from "@/components/discovery/CityQuickNav";
 import { citySectionAvailability } from "@/lib/discovery/city-sections.server";
 import { CityIntelligenceScorecard } from "@/components/city-intelligence/CityIntelligenceScorecard";
 import { buildScorecard } from "@/lib/city-intelligence/scorecard";
+import { SimilarCities } from "@/components/similar/SimilarCities";
+import { CityAlternatives } from "@/components/similar/CityAlternatives";
+import { countryNameFor, similarFor } from "@/lib/similar/server";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LinkCard } from "@/components/cards/link-card";
@@ -181,6 +184,9 @@ export default async function CityPage({ params }: PageProps) {
   const breadcrumbs = cityBreadcrumbs(city.slug);
   // Prepared on the server; the component renders primitives only.
   const scorecard = buildScorecard(city.slug);
+  // Precomputed on the server; the section renders primitives only.
+  const similar = similarFor(city.slug);
+  const similarCountries = similar.map((h) => countryNameFor(h.city.c));
   const sources = getSourcesByIds(city.sources);
   const rankings = getAllRankings().slice(0, 3);
   const modules = getAllModules();
@@ -278,6 +284,24 @@ export default async function CityPage({ params }: PageProps) {
         <BreadcrumbNav items={breadcrumbs} />
 
         {scorecard ? <CityIntelligenceScorecard scorecard={scorecard} /> : null}
+
+        {/* Placeholder cities are outside the recommendation engine entirely:
+            they have two genuinely city-specific numeric fields out of ten, so
+            neither "cities similar to X" nor "alternatives to X" can be
+            computed. Rendering either would state, or imply, something the data
+            does not support — the scorecard above already discloses why. */}
+        {scorecard?.isPlaceholderRecord ? null : (
+          <>
+            <SimilarCities
+              cityName={city.name}
+              citySlug={city.slug}
+              countryNames={similarCountries}
+              hits={similar}
+            />
+
+            <CityAlternatives cityName={city.name} citySlug={city.slug} />
+          </>
+        )}
 
         <section aria-label={`${city.name} visual context`}>
           <PlaceHeroImage

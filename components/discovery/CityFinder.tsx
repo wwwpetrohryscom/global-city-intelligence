@@ -7,6 +7,11 @@ import { CompareTray } from "@/components/discovery/CompareTray";
 import { FilterControls } from "@/components/discovery/FilterControls";
 import { useDiscoveryIndex } from "@/components/discovery/use-discovery-index";
 import {
+  BAND_SOMEWHAT,
+  buildContext as buildSimilarContext,
+  distance as similarDistance,
+} from "@/lib/similar/engine";
+import {
   useCompareSelection,
   useRecentCities,
   useSavedCities,
@@ -39,6 +44,19 @@ export function CityFinder() {
   const [sort, setSort] = useState<SortId>(DEFAULT_SORT);
   const [limit, setLimit] = useState(PAGE_SIZE);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [similarTo, setSimilarTo] = useState<string | null>(null);
+
+  /**
+   * Deep link support: /explore-cities?similarTo=<slug>, read after hydration
+   * from window.location rather than useSearchParams, because the latter forces
+   * this subtree out of prerendering and /explore-cities must keep its
+   * server-rendered, crawlable content. The parameter is never linked from a
+   * canonical URL and never enters the sitemap.
+   */
+  useEffect(() => {
+    const raw = new URLSearchParams(window.location.search).get("similarTo");
+    if (raw && /^[a-z0-9-]{1,80}$/.test(raw)) setSimilarTo(raw);
+  }, []);
 
   const { saved, hydrated: savedReady, toggle: toggleSave, clear: clearSaved } = useSavedCities();
   const { recent, hydrated: recentReady, clear: clearRecent } = useRecentCities();
@@ -51,10 +69,34 @@ export function CityFinder() {
     return map;
   }, [index]);
 
+  /**
+   * Optional "Similar to <city>" constraint.
+   *
+   * It composes with every existing facet as an INTERSECTION: the finder runs
+   * exactly as before, and this narrows the result to cities within the
+   * somewhat-similar band of the chosen city. The Explorer is unchanged when
+   * no city is selected, so the recommendation engine is never mandatory.
+   */
+  const similarCtx = useMemo(
+    () => (index && similarTo ? buildSimilarContext(index) : null),
+    [index, similarTo],
+  );
+
   const results = useMemo(() => {
     if (!index || !ctx) return [];
-    return runFinder(index, filters, sort, ctx);
-  }, [index, ctx, filters, sort]);
+    const base = runFinder(index, filters, sort, ctx);
+    if (!similarTo || !similarCtx) return base;
+    const anchor = similarCtx.bySlug.get(similarTo);
+    if (anchor === undefined) return base;
+    const near = new Set<string>();
+    for (let j = 0; j < similarCtx.cities.length; j += 1) {
+      if (j === anchor) continue;
+      if (similarDistance(similarCtx.vectors[anchor], similarCtx.vectors[j]) <= BAND_SOMEWHAT) {
+        near.add(similarCtx.cities[j].s);
+      }
+    }
+    return base.filter((c) => near.has(c.s));
+  }, [index, ctx, filters, sort, similarTo, similarCtx]);
 
   // A changed query or facet should show the top of the new result set, not
   // keep the visitor's previous scroll depth into a different list.
@@ -168,6 +210,25 @@ export function CityFinder() {
         </aside>
 
         <div className="min-w-0">
+          {similarTo ? (
+            <div className="mb-3 flex flex-wrap items-center gap-2 rounded-xl border border-brand-200 bg-brand-50/60 p-3">
+              <span className="text-sm text-text-primary">
+                Showing cities similar to{" "}
+                <strong className="font-semibold">
+                  {byslug.get(similarTo)?.n ?? similarTo}
+                </strong>
+                . Filters below narrow this further.
+              </span>
+              <button
+                type="button"
+                onClick={() => setSimilarTo(null)}
+                className="inline-flex min-h-11 items-center rounded-lg border border-neutral-border bg-white px-2.5 text-xs font-medium text-text-secondary hover:border-brand-300 hover:text-text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 lg:min-h-9"
+              >
+                Clear
+              </button>
+            </div>
+          ) : null}
+
           <div className="flex flex-col gap-3 rounded-xl border border-neutral-border bg-white p-3 sm:flex-row sm:items-center">
             <label className="min-w-0 flex-1">
               <span className="sr-only">Search cities by name or country</span>
