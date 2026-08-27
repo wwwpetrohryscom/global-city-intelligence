@@ -64,6 +64,8 @@ VETO_TYPE_QIDS = {
     "Q28692646",   # artificial island airport
     "Q135474849",  # artificial archipelago
     "Q12053053",   # artificial waterfall
+    "Q10460934",   # artificial hill      - a landscaped mound in a city park
+    "Q483453",     # fountain
     "Q167346",     # botanical garden      - cultivated collection, not a natural feature
     "Q272231",     # arboretum
     "Q1759852",    # sculpture garden

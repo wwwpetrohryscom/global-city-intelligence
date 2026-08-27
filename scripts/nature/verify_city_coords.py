@@ -42,6 +42,14 @@ TRILATERATION_MARGIN_KM = 25.0   # a derived point must beat a named entity by t
 MIN_PLACES_FOR_PLACE_WITNESS = 3
 ITERATIONS = 6
 
+# Already-published coordinates: the committed source of truth.
+PUBLISHED = {}
+_pub = ROOT / "lib/data/city-coordinates.ts"
+if _pub.exists():
+    for _m in re.finditer(r'^\s*\["([a-z0-9-]+)", (-?\d+(?:\.\d+)?), (-?\d+(?:\.\d+)?), (?:"(Q\d+)"|undefined)\],$',
+                          _pub.read_text(), re.M):
+        PUBLISHED[_m.group(1)] = {"lat": float(_m.group(2)), "lon": float(_m.group(3)), "qid": _m.group(4)}
+
 data = json.load(open(CACHE / "city-candidates.json"))
 cand = data["cand"]
 
@@ -157,6 +165,14 @@ for s_ in slugs:
     # distances trilaterate to. Wikidata entities are preferred on ties so a
     # real identity always beats a derived point.
     hyps = [dict(c, _src="wikidata") for c in (cand.get(s_) or [])]
+    # A coordinate already published in lib/data/city-coordinates.ts is the
+    # source of truth and is not re-derived. Re-deriving it from a place set
+    # that was itself selected using that coordinate is circular, and it
+    # actively misfires: after V3 gave Nagoya a legitimately Tokyo-leaning set
+    # of features, re-selection moved "Nagoya" 321 km east. The published
+    # coordinate is re-verified, never re-chosen.
+    if s_ in PUBLISHED:
+        hyps = [dict(PUBLISHED[s_], _src="published")] 
     if len(refs) >= 4:
         srt = sorted(refs, key=lambda r: r[1])
         for seed in ((statistics.mean(o["lat"] for o, _ in refs), statistics.mean(o["lon"] for o, _ in refs)),
@@ -174,6 +190,22 @@ for s_ in slugs:
         # place geometry decides; the graph only ranks when there are no places
         return (pk if pk is not None else (gk if gk is not None else 9e9),
                 gk if gk is not None else 9e9)
+
+    if hyps and hyps[0]["_src"] == "published":
+        best = hyps[0]
+        worst = worst_place(best, pts) if pts else None
+        med_place = place_score(best, pts) if pts else None
+        refs2 = [(pick[o], km) for o, km in nb.get(s_, []) if o in pick and o != s_]
+        gerr2 = round(graph_score(best, refs2), 2) if refs2 else None
+        if gerr2 is not None and gerr2 > MAX_GRAPH_MEDIAN_KM and worst is not None:
+            graph_conflicts[s_] = {"graphMedianErrorKm": gerr2, "worstPlaceKm": round(worst, 1)}
+        coords[s_] = {"lat": round(best["lat"], 5), "lon": round(best["lon"], 5),
+                      "qid": best.get("qid"), "witness": "published",
+                      "identity": "published",
+                      "worstPlaceKm": round(worst, 1) if worst is not None else None,
+                      "medianPlaceKm": round(med_place, 1) if med_place is not None else None,
+                      "places": len(pts), "graphMedianErrorKm": gerr2}
+        continue
 
     wiki = [h for h in hyps if h["_src"] == "wikidata"]
     tri = [h for h in hyps if h["_src"] == "graph-trilateration"]

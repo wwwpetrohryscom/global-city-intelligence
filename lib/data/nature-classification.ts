@@ -51,6 +51,14 @@ a-limia-near-chaves|65536|3|Natura 2000 site
 a-w-marion-state-park-near-columbus|131072|3|Ohio state park
 aa-beach-near-kivioli|16|3|beach
 aa-beach-near-kohtla-jarve|16|3|beach
+aa-beach-near-narva|16|3|beach
+aa-beach-near-rakvere|16|3|beach
+aabenraa-fjord-near-aabenraa|4096|3|fjord
+aabenraa-fjord-near-haderslev|4096|3|fjord
+aabenraa-fjord-near-kolding|4096|3|fjord
+aabenraa-fjord-near-ribe|4096|3|fjord
+aabenraa-fjord-near-sonderborg|4096|3|fjord
+aabenraa-fjord-near-tonder|4096|3|fjord
 aachener-stadtforst-near-eupen|16384|3|forest
 aag-near-petropavlovsk-kamchatsky|1152|3|volcano
 aalkistensee-near-pforzheim|32|3|lake
@@ -75,6 +83,7 @@ abel-tasman-national-park-near-nelson|32768|3|national park
 aberavon-beach-near-neath|16|3|beach
 aberavon-beach-near-port-talbot|16|3|beach
 aberavon-beach-near-swansea|16|3|beach
+aberdeen-beach-and-queens-links-near-aberdeen|16|3|beach
 aberdulais-falls-near-neath|1|3|waterfall
 aberlady-bay-near-edinburgh|4096|3|bay
 abgarm-waterfall-near-mashhad|1|3|waterfall
@@ -93,6 +102,13 @@ abras-de-mantequilla-near-milagro|66048|3|wetland
 abras-de-mantequilla-near-portoviejo|66048|3|wetland
 abras-de-mantequilla-near-quevedo|66048|3|wetland
 abrau-peninsula-near-novorossiysk|4096|3|peninsula
+abrico-beach-near-belford-roxo|16|2|
+abrico-beach-near-duque-de-caxias|16|2|
+abrico-beach-near-niteroi|16|2|
+abrico-beach-near-nova-iguacu|16|2|
+abrico-beach-near-rio-de-janeiro|16|2|
+abrico-beach-near-sao-goncalo|16|2|
+abrico-beach-near-sao-joao-de-meriti|16|2|
 abrigo-de-el-canto-del-cuervo-near-avila|2|2|
 abromiskiu-lake-near-elektrenai|32|3|lake
 abruka-nature-reserve-near-kuressaare|65536|3|protected area
@@ -107,8 +123,13 @@ abtswoudse-bos-near-schiedam|196608|3|nature area
 abu-kubais-near-mecca|1024|3|mountain
 abu-kubais-near-ta-if|1024|3|mountain
 abu-kubais-near-turubah|1024|3|mountain
+abu-qir-bay-near-alexandria|4096|3|bay
+abu-qir-bay-near-cairo|4096|3|bay
 abukuma-highlands-near-iwaki|1024|3|mountain range
 abunka-near-zamosc|256|3|river
+abyfjorden-near-trollhattan|4096|3|fjord
+abyfjorden-near-uddevalla|4096|3|fjord
+abyfjorden-near-vanersborg|4096|3|fjord
 acadian-peninsula-near-miramichi|4096|3|peninsula
 acapulco-diamante-near-acapulco-de-juarez|16|3|beach
 acarai-state-park-near-joinville|131072|3|state park
@@ -130,17 +151,24 @@ achensee-near-bad-tolz|32|3|lake
 achensee-near-kufstein|32|3|lake
 achensee-near-schwaz|32|3|lake
 acheron-near-corfu|256|3|river
+achill-head-near-westport|4096|3|cape
 achill-island-near-westport|64|3|island
+achimota-forest-near-accra|81920|3|forest reserve
 achishkho-near-sochi|1024|3|mountain range
 ackerdijkse-plassen-near-zoetermeer|66048|3|fen
 ackerlspitze-near-kitzbuhel|1024|3|mountain
 aconcagua-near-godoy-cruz|1024|3|mountain
 aconcagua-near-mendoza|1024|3|mountain
+aconcagua-river-near-santiago|256|3|river
+aconcagua-river-near-valparaiso|256|3|river
 acquacheta-waterfall-near-cesena|256|3|creek
 acquacheta-waterfall-near-forli|256|3|creek
 acude-velho-near-campina-grande|32|3|reservoir
+ad-dahna-desert-near-riyadh|8192|3|desert
 ada-bojana-near-bar|64|3|island
 ada-ciganlija-near-belgrade|4096|3|peninsula
+adam-rock-near-tel-aviv|64|3|island
+adam-s-peak-near-colombo|1024|3|mountain
 adamello-brenta-natural-park-near-brescia|196608|3|protected area
 adamova-lake-nature-park-near-ludza|196608|3|Natura 2000 site
 adamova-lake-near-ludza|32|3|lake
@@ -148,6 +176,7 @@ adatepe-near-edirne|1024|3|mountain
 adatepe-near-kardzhali|1024|3|mountain
 adda-river-near-cremona|256|3|river
 addicks-reservoir-near-sugar-land|32|3|reservoir
+addington-beach-near-durban|16|3|beach
 adelaide-hills-near-adelaide|1024|3|hill chain
 adelaide-hills-near-murray-bridge|1024|3|hill chain
 adelaide-hills-near-nuriootpa|1024|3|hill chain
@@ -190,6 +219,8 @@ aero-near-nakskov|64|3|island
 aero-near-sonderborg|64|3|island
 aero-near-svendborg|64|3|island
 aeroportivskyi-hay-near-chornomorsk|16384|3|urban forest
+aeros-hale-near-svendborg|4096|3|cape
+aetos-beach-near-ermoupolis|16|3|beach
 afan-forest-park-near-neath|133120|3|valley
 afan-forest-park-near-port-talbot|133120|3|valley
 afan-forest-park-near-swansea|133120|3|valley
@@ -198,12 +229,15 @@ afan-valley-near-port-talbot|2048|3|valley
 afontova-gora-near-krasnoyarsk|1024|3|mountain
 afton-street-conservation-reserve-near-melton|65536|2|
 afton-street-conservation-reserve-near-sunbury|65536|2|
+agafay-desert-near-marrakesh|8192|3|desert
+agara-lake-near-bangalore|32|3|lake
 agassiz-national-wildlife-refuge-near-grand-forks|65536|3|National Wildlife Refuge
 agassiz-peak-near-flagstaff|1024|3|mountain
 agastya-mala-near-thiruvananthapuram|1024|3|mountain
 agasvar-near-gyongyos|1024|3|mountain
 agate-lake-near-medford|32|3|reservoir
 agathonisi-near-samos|64|3|island
+agathopes-near-ermoupolis|131088|3|beach
 agden-reservoir-near-doncaster|32|3|reservoir
 agden-reservoir-near-rotherham|32|3|reservoir
 agden-reservoir-near-sheffield|32|3|reservoir
@@ -216,17 +250,39 @@ agerisee-near-stans|32|3|lake
 agerisee-near-uster|32|3|lake
 agerisee-near-zug|32|3|lake
 agerso-near-nyborg|64|3|island
+agestabadet-near-nynashamn|16|2|
+agger-beach-near-skive|16|3|beach
 aggtelek-karst-near-nyiregyhaza|0|0|
 aggtelek-national-park-near-miskolc|32768|3|national parkin Hungary
 aggtelek-national-park-near-ozd|32768|3|national parkin Hungary
 aghbyurak-reservoir-near-hrazdan|32|3|reservoir
+aghia-fotia-beach-near-agios-nikolaos|131088|3|beach
 aghia-fotia-beach-near-ierapetra|131088|3|beach
+aghia-fotia-beach-near-sitia|131088|3|beach
 aghili-canyon-near-ahvaz|2052|3|canyon
 aghili-canyon-near-basra|2052|3|canyon
 agia-triada-near-chalkida|64|2|
 agioi-pantes-near-agios-nikolaos|64|3|island
 agioi-pantes-near-ierapetra|64|3|island
 agios-athanasios-hill-near-kastoria|1024|3|mountain
+agios-kosmas-cape-near-acharnes|4096|3|cape
+agios-kosmas-cape-near-agia-paraskevi|4096|3|cape
+agios-kosmas-cape-near-athens|4096|3|cape
+agios-kosmas-cape-near-chalandri|4096|3|cape
+agios-kosmas-cape-near-egaleo|4096|3|cape
+agios-kosmas-cape-near-elefsina|4096|3|cape
+agios-kosmas-cape-near-glyfada|4096|3|cape
+agios-kosmas-cape-near-ilion|4096|3|cape
+agios-kosmas-cape-near-kallithea|4096|3|cape
+agios-kosmas-cape-near-korydallos|4096|3|cape
+agios-kosmas-cape-near-megara|4096|3|cape
+agios-kosmas-cape-near-nikaia|4096|3|cape
+agios-kosmas-cape-near-peristeri|4096|3|cape
+agios-kosmas-cape-near-petroupoli|4096|3|cape
+agios-kosmas-cape-near-piraeus|4096|3|cape
+agios-kosmas-cape-near-salamis-island|4096|3|cape
+agios-kosmas-cape-near-vrilissia|4096|3|cape
+agios-kosmas-cape-near-zografou|4096|3|cape
 agios-nikolaos-near-rethymno|64|3|island
 agios-nikolaos-near-xanthi|64|2|
 agios-sostis-near-missolonghi|64|3|island
@@ -264,12 +320,14 @@ ahrendsberg-near-wismar|64|3|island
 ahsewiesen-near-soest|65536|3|Special Area of Conservation
 ahtarinjarvi-near-alavus|32|3|lake or pond
 ahuriri-bush-scenic-reserve-near-rolleston|81920|3|forest
+ai-river-near-kaohsiung|256|3|river
 aiako-harria-natural-park-near-irun|196608|3|protected area
 aiako-harria-near-san-sebastian|1024|3|mountain chain
 aichfeld-near-judenburg|2048|3|valley
 aichi-kogen-quasi-national-park-near-okazaki|32768|3|quasi-national park of Japan
 aichi-kogen-quasi-national-park-near-toyota|32768|3|quasi-national park of Japan
 aichi-pond-near-kariya|32|3|reservoir
+aichi-pond-near-nagoya|32|3|reservoir
 aichi-pond-near-toyota|32|3|reservoir
 aidar-near-alchevsk|256|3|river
 aiguestortes-i-estany-de-sant-maurici-national-park-near-lleida|98304|3|national park
@@ -279,9 +337,12 @@ aijakari-near-naantali|64|3|island
 aijakari-near-raisio|64|3|island
 aiken-state-park-near-augusta|131072|2|
 ailik-lake-near-urumqi|32|3|lake
+ailladie-near-ennis|4096|3|cape
+ailladie-near-galway|4096|3|cape
 ailsa-craig-near-ayr-uk|64|3|island
 ailsa-craig-near-bangor|64|3|island
 ailsa-craig-near-kilmarnock|64|3|island
+ain-diab-beach-near-casablanca|16|3|beach
 ainodake-near-kofu|1024|3|mountain
 aire-and-candeeiros-ranges-natural-park-near-leiria|196608|3|protected area
 aitana-near-alcoy|1024|3|mountain range
@@ -289,6 +350,8 @@ aitana-near-benidorm|1024|3|mountain range
 aitana-near-la-vila-joiosa|1024|3|mountain range
 aitoliko-lagoon-near-agrinio|4128|3|lagoon
 aitoliko-lagoon-near-missolonghi|4128|3|lagoon
+aitoliko-lagoon-near-nafpaktos|4128|3|lagoon
+aitoliko-lagoon-near-patras|4128|3|lagoon
 aiviekstes-paliene-near-madona|196608|3|Natura 2000 site
 aix-island-near-la-rochelle|64|3|island
 aix-island-near-rochefort|64|3|island
@@ -298,14 +361,21 @@ aja-and-salma-mountains-near-ar-rass|1024|3|mountain range
 aja-and-salma-mountains-near-burayda|1024|3|mountain range
 aja-and-salma-mountains-near-ha-il|1024|3|mountain range
 aja-and-salma-mountains-near-unaizah|1024|3|mountain range
+ajanta-caves-near-pune|0|0|
 ajawaan-lake-near-prince-albert|32|3|lake
 ajidaar-unkyur-near-andijan|65538|3|cave
 ajidaar-unkyur-near-fergana|65538|3|cave
+ajman-beach-near-dubai|16|1|
 ajodhya-hills-near-ranchi|1024|3|hill
 ajwa-near-vadodara|32|3|reservoir
+akabane-long-beach-near-iwata|4096|3|coast
+akabane-long-beach-near-okazaki|4096|3|coast
+akabane-long-beach-near-toyohashi|4096|3|coast
+akabane-long-beach-near-toyota|4096|3|coast
 akaka-falls-state-park-near-hilo|1|3|waterfall
 akamas-near-paphos|4096|3|cape
 akame-ichishikyo-prefectural-natural-park-near-tsu|196608|2|
+akan-mashu-national-park-near-sapporo|32768|3|national park
 akatarawa-forest-near-upper-hutt|131072|3|regional park
 akbarobod-natural-monument-near-fergana|65536|3|natural monument
 akdag-denizli-near-afyonkarahisar|1024|3|mountain
@@ -330,11 +400,17 @@ aklais-purvs-near-birzai|65536|3|Natura 2000 site
 akmena-near-trakai|32|3|lake
 aknistes-velnala-near-jekabpils|2|3|cave
 akovo-near-osijek|0|0|
+akra-sideros-near-corfu|4096|3|cape
+akra-skrofa-near-elis|4096|3|cape
+akra-tourlida-near-agrinio|4096|3|cape
+akra-tourlida-near-aigio|4096|3|cape
+akra-tourlida-near-elis|4096|3|cape
 akra-tourlida-near-missolonghi|4096|3|cape
 akrehamn-beach-near-karmoy-municipality|16|3|beach
 akri-near-arta|4096|3|cape
 akri-near-lefkada|4096|3|cape
 akri-near-preveza|4096|3|cape
+aksa-beach-near-mumbai|16|3|beach
 aksdalsvatnet-near-haugesund-municipality|32|3|lake
 aksdalsvatnet-near-karmoy-municipality|32|3|lake
 aktobe-reservoir-near-aktobe|32|3|reservoir
@@ -347,21 +423,25 @@ akyatan-lagoon-near-iskenderun|4128|3|lagoon
 akyatan-lagoon-near-tarsus|4128|3|lagoon
 al-akhdar-mountains-near-bawshar|1024|3|mountain range
 al-akhdar-mountains-near-ibri|1024|3|mountain range
+al-akhdar-mountains-near-muscat|1024|3|mountain range
 al-akhdar-mountains-near-nizwa|1024|3|mountain range
 al-akhdar-mountains-near-seeb|1024|3|mountain range
 al-akhdar-mountains-near-sohar|1024|3|mountain range
 al-akhdar-mountains-near-sur|1024|3|mountain range
 al-fahal-near-bawshar|64|3|island
+al-fahal-near-muscat|64|3|island
 al-fahal-near-nizwa|64|3|island
 al-fahal-near-seeb|64|3|island
 al-fahal-near-sur|64|3|island
 al-hajar-mountains-near-bawshar|1024|3|mountain range
 al-hajar-mountains-near-ibri|1024|3|mountain range
+al-hajar-mountains-near-muscat|1024|3|mountain range
 al-hajar-mountains-near-nizwa|1024|3|mountain range
 al-hajar-mountains-near-seeb|1024|3|mountain range
 al-hajar-mountains-near-sohar|1024|3|mountain range
 al-hajar-mountains-near-sur|1024|3|mountain range
 al-jahra-natural-reserve-near-hafar-al-batin|65536|3|nature reserve
+al-jahra-natural-reserve-near-kuwait-city|65536|3|nature reserve
 al-marjan-island-near-ajman|64|3|island
 al-marjan-island-near-umm-al-quwain|64|3|island
 al-qarah-mountain-near-abqaiq|1024|3|mountain
@@ -372,9 +452,13 @@ al-qarah-mountain-near-hofuf|1024|3|mountain
 al-qarah-mountain-near-jubail|1024|3|mountain
 al-qarah-mountain-near-khobar|1024|3|mountain
 al-qudra-lake-near-al-ain|32|3|reservoir
+al-thowarah-hot-spring-near-muscat|0|0|
+al-wathba-wetland-reserve-near-abu-dhabi|65536|3|nature reserve
 al-wohoosh-desert-conservation-reserve-near-ajman|65536|3|nature reserve
 al-wohoosh-desert-conservation-reserve-near-al-ain|65536|3|nature reserve
+al-wohoosh-desert-conservation-reserve-near-dubai|65536|3|nature reserve
 al-wohoosh-desert-conservation-reserve-near-fujairah|65536|3|nature reserve
+al-wohoosh-desert-conservation-reserve-near-sharjah|65536|3|nature reserve
 al-wohoosh-desert-conservation-reserve-near-umm-al-quwain|65536|3|nature reserve
 ala-lompolo-near-kiruna|32|3|lake
 ala-siili-near-pieksamaki|32|3|lake or pond
@@ -387,6 +471,7 @@ alafia-river-state-park-near-lakeland|131072|3|Florida state park
 alainen-sappio-near-alavus|32|3|lake or pond
 alalay-lake-near-cochabamba|32|3|lake
 alalay-lake-near-sacaba|32|3|lake
+alameda-chabuca-granda-near-lima|393216|3|park
 alameda-de-capuchinos-de-jaen-near-jaen|0|0|
 alameda-near-alameda|64|3|island
 alameda-of-pontevedra-near-pontevedra|131072|3|urban park
@@ -404,10 +489,21 @@ alban-hills-near-frosinone|1024|3|mountain range
 alban-hills-near-latina|1024|3|mountain range
 alban-hills-near-tivoli|1024|3|mountain range
 alban-hills-near-velletri|1024|3|mountain range
+albanian-riviera-near-vlore|4096|3|coast
 albans-wood-near-hemel-hempstead|16384|3|forest
 albans-wood-near-st-albans|16384|3|forest
+albany-beach-near-antioch|16|3|beach
+albany-beach-near-fairfield|16|3|beach
+albany-beach-near-vacaville|16|3|beach
 albany-pine-bush-near-albany-ny|65536|3|protected area
+albarquel-beach-near-agualva-cacem|16|3|beach
+albarquel-beach-near-almada|16|3|beach
+albarquel-beach-near-amadora|16|3|beach
+albarquel-beach-near-barreiro|16|3|beach
+albarquel-beach-near-lisbon|16|3|beach
+albarquel-beach-near-loures|16|3|beach
 albarquel-beach-near-palmela|16|3|beach
+albarquel-beach-near-setubal|16|3|beach
 albera-massif-near-perpignan|66560|3|mountain range
 alberca-de-loreto-near-huesca|32|3|lake
 alberni-valley-near-port-alberni|2048|3|valley
@@ -419,8 +515,10 @@ albert-lofgren-state-park-near-guarulhos|131072|3|state park
 albert-lofgren-state-park-near-itaquaquecetuba|131072|3|state park
 albert-lofgren-state-park-near-jundiai|131072|3|state park
 albert-lofgren-state-park-near-santo-andre|131072|3|state park
+albert-lofgren-state-park-near-sao-paulo|131072|3|state park
 albert-park-and-lake-near-melbourne|131072|3|park
 alberta-british-columbia-foothills-forests-near-grande-prairie|16384|1|
+albertstrand-near-bruges|16|3|beach
 albertstrand-near-knokke-heist|16|3|beach
 albinovska-hora-near-trebisov|1024|3|mountain
 albion-falls-near-hamilton-ontario|1|3|waterfall
@@ -459,6 +557,8 @@ aleksandar-stamboliyski-reservoir-near-lovech|32|3|reservoir
 aleksandar-stamboliyski-reservoir-near-sevlievo|32|3|reservoir
 aleksandar-stamboliyski-reservoir-near-svishtov|32|3|reservoir
 aleksandria-park-in-siedlce-near-siedlce|131072|3|park
+alepu-near-burgas|4640|3|lagoon
+alepu-near-nesebar|4640|3|lagoon
 alerce-andino-national-park-near-puerto-montt|32768|3|national park
 alerce-costero-national-park-near-osorno|32768|3|national park
 alerce-costero-national-park-near-valdivia|32768|3|national park
@@ -481,6 +581,8 @@ algodoes-beach-near-ilheus|16|3|beach
 algodones-dunes-near-el-centro|8192|3|dune field
 algodones-dunes-near-yuma|8192|3|dune field
 alibates-flint-quarries-national-monument-near-amarillo|32768|3|National Park System unit
+alibey-creek-near-istanbul|256|3|river
+alibey-lagoon-near-bilhorod-dnistrovskyi|4128|3|lagoon
 aliman-adamclisi-near-medgidia|65536|3|Natura 2000 site
 alinenjarvi-near-nokia|32|3|lake or pond
 alinja-near-nakhchivan|1024|3|mountain
@@ -490,6 +592,22 @@ alison-hartman-gardens-near-albany|131072|3|park
 alister-clark-memorial-rose-garden-near-melton|0|0|
 alister-clark-memorial-rose-garden-near-sunbury|0|0|
 alkhanay-national-park-near-chita|65536|3|protected area of Russia
+alki-beach-park-near-bellevue|131072|3|urban park
+alki-beach-park-near-everett|131072|3|urban park
+alki-beach-park-near-federal-way|131072|3|urban park
+alki-beach-park-near-kent|131072|3|urban park
+alki-beach-park-near-redmond|131072|3|urban park
+alki-beach-park-near-renton|131072|3|urban park
+alki-beach-park-near-seattle|131072|3|urban park
+alki-beach-park-near-tacoma|131072|3|urban park
+alki-point-near-bellevue|4096|3|cape
+alki-point-near-everett|4096|3|cape
+alki-point-near-federal-way|4096|3|cape
+alki-point-near-kent|4096|3|cape
+alki-point-near-redmond|4096|3|cape
+alki-point-near-renton|4096|3|cape
+alki-point-near-seattle|4096|3|cape
+alki-point-near-tacoma|4096|3|cape
 alkmaarderhout-near-heerhugowaard|131072|3|park
 alkmaardermeer-near-alkmaar|32|3|lake
 alkmaardermeer-near-beverwijk|32|3|lake
@@ -510,6 +628,8 @@ allier-near-bourges|256|3|gold river
 allincapac-near-puerto-maldonado|1024|3|mountain
 allner-see-near-siegburg|32|3|reservoir
 allpahuayo-mishana-national-reserve-near-iquitos|65536|3|protected area
+almaciga-beach-near-san-cristobal-de-la-laguna|16|3|beach
+almaciga-beach-near-santa-cruz-de-tenerife|16|3|beach
 almaty-botanical-garden-near-almaty|0|0|
 almauen-near-wels|81920|3|riparian forest
 almazne-lake-near-boryspil|32|3|lake
@@ -557,6 +677,11 @@ alqueva-reservoir-near-beja|32|3|reservoir
 alqueva-reservoir-near-evora|32|3|reservoir
 alr-near-horsens|64|3|island
 alro-near-skanderborg|64|3|island
+als-fjord-near-aabenraa|4096|3|fjord
+als-fjord-near-haderslev|4096|3|fjord
+als-fjord-near-kolding|4096|3|fjord
+als-fjord-near-sonderborg|4096|3|fjord
+als-fjord-near-tonder|4096|3|fjord
 als-near-aabenraa|64|3|island
 als-near-haderslev|64|3|island
 als-near-kolding|64|3|island
@@ -568,6 +693,7 @@ alsens-tongrube-near-itzehoe|0|0|
 alsina-beach-near-comodoro-rivadavia|16|3|beach
 alsjon-near-lerum|32|3|lake
 alsta-near-mosjoen|64|3|island
+alstenfjorden-near-mosjoen|4096|3|fjord
 alt-de-biscoi-near-villena|1024|3|mountain
 alt-pirineu-natural-park-near-lleida|196608|3|protected area
 alta-murgia-national-park-near-altamura|98304|3|national park
@@ -579,6 +705,7 @@ alta-murgia-national-park-near-matera|98304|3|national park
 alta-murgia-national-park-near-molfetta|98304|3|national park
 alta-murgia-national-park-near-taranto|98304|3|national park
 alta-murgia-national-park-near-trani|98304|3|national park
+altafjord-near-alta|4096|3|fjord
 altamiro-de-moura-pacheco-state-park-near-anapolis|131072|3|state park
 altamiro-de-moura-pacheco-state-park-near-aparecida-de-goiania|131072|3|state park
 altamiro-de-moura-pacheco-state-park-near-catalao|131072|3|state park
@@ -615,8 +742,11 @@ alto-tajo-nature-reserve-near-alcala-de-henares|196608|3|protected area
 alto-tajo-nature-reserve-near-mostoles|196608|3|protected area
 alto-tajo-nature-reserve-near-teruel|196608|3|protected area
 alton-water-near-ipswich-uk|32|3|lake
+altona-beach-near-melbourne|16|3|beach
+altona-beach-near-melton|16|3|beach
 altopiano-delle-murge-near-taranto|1024|3|plateau
 altos-de-campana-national-park-near-la-chorrera|32768|3|national park
+alturlie-point-near-inverness|4096|3|cape
 altwasser-der-aare-und-der-zihl-near-biel-bienne|65536|3|protected area
 aluoja-falls-near-johvi|1|3|waterfall
 aluoja-falls-near-sillamae|1|3|waterfall
@@ -635,10 +765,26 @@ alvor-beach-near-lagos-pt|16|3|beach
 alvravinerna-near-borlange|65536|3|nature reserve
 alvrummet-near-trollhattan|65536|3|nature reserve
 alye-parusa-near-voronezh|196608|3|protected area of Russia
+alykes-beach-paphos-near-paphos|16|3|beach
 alzette-near-aubange|256|3|river
 am-oberhof-bei-groen-linden-near-giessen|65536|3|protected area
 amacayacu-national-park-near-leticia|32768|3|national park
+amager-strandpark-near-copenhagen|131088|3|beach
+amager-strandpark-near-frederiksberg|131088|3|beach
+amager-strandpark-near-frederiksvaerk|131088|3|beach
+amager-strandpark-near-helsingor|131088|3|beach
+amager-strandpark-near-hillerod|131088|3|beach
+amager-strandpark-near-horsholm|131088|3|beach
 amager-strandpark-near-koge|131088|3|beach
+amager-strandpark-near-roskilde|131088|3|beach
+amaharashi-coast-near-kanazawa|4096|3|coast
+amalfi-coast-near-acerra|4096|3|coast
+amalfi-coast-near-aversa|4096|3|coast
+amalfi-coast-near-caserta|4096|3|coast
+amalfi-coast-near-castellammare-di-stabia|4096|3|coast
+amalfi-coast-near-giugliano-in-campania|4096|3|coast
+amalfi-coast-near-naples|4096|3|coast
+amalfi-coast-near-pozzuoli|4096|3|coast
 amalfi-coast-near-salerno|4096|3|coast
 amalia-alvarez-park-near-pontevedra|131072|3|urban park
 amamoor-national-park-near-gympie|32768|3|national park of Australia
@@ -646,6 +792,7 @@ amankaragay-forest-near-kostanay|16384|3|forest
 amarillo-hill-near-concepcion|1024|3|mountain
 amarillo-hill-near-san-pedro-de-la-paz|1024|3|mountain
 amarillo-hill-near-talcahuano|1024|3|mountain
+amarube-saki-near-tottori|4096|3|cape
 amazon-island-near-amasya|0|0|
 amazon-island-near-corum|0|0|
 amazon-island-near-sinop|0|0|
@@ -686,6 +833,7 @@ ammersee-near-landsberg-am-lech|32|3|lake
 ammersee-near-munich|32|3|lake
 ammersee-near-starnberg|32|3|lake
 ammoudi-near-rethymno|0|0|
+ammoudi-zakynthos-near-zakynthos|131088|3|beach
 amne-machin-near-xining|1024|3|mountain range
 amnicon-falls-state-park-near-duluth|131072|2|
 amojima-near-tottori|64|3|island
@@ -717,6 +865,7 @@ anacostia-park-near-washington-dc|32768|3|National Park System unit
 anaga-massif-near-san-cristobal-de-la-laguna|82944|3|mountain range
 anaga-massif-near-santa-cruz-de-tenerife|82944|3|mountain range
 anaho-island-near-reno|96|3|lake island
+anapskaya-cove-near-novorossiysk|4096|3|cove
 anastasia-state-park-near-st-augustine|131072|3|Florida state park
 anatolia-near-aksaray|0|0|
 anatolia-near-krkkale|0|0|
@@ -725,6 +874,9 @@ anatolia-near-nevsehir|0|0|
 anatolia-near-yozgat|0|0|
 anavilhanas-national-park-near-manaus|32768|3|national park
 anavilhanas-near-manaus|64|3|archipelago
+anawhata-near-auckland|16|3|beach
+anawhata-near-hibiscus-coast|16|3|beach
+anawhata-near-pukekohe|16|3|beach
 anchorena-park-near-avellaneda|32768|3|national park
 anchorena-park-near-berazategui|32768|3|national park
 anchorena-park-near-colonia-del-sacramento|32768|3|national park
@@ -733,14 +885,17 @@ anchorena-park-near-la-plata|32768|3|national park
 anchorena-park-near-lomas-de-zamora|32768|3|national park
 anchorena-park-near-mercedes|32768|3|national park
 anchorena-park-near-quilmes|32768|3|national park
+ancon-hill-near-panama-city|1024|3|mountain
 andaine-forest-near-laval-fr|16384|3|forest
 andersey-island-near-abingdon-on-thames|320|3|river island
 anderson-island-near-olympia|0|0|
 andfiskvatnet-near-mo-i-rana|32|3|lake
+andfjorden-near-harstad|4096|3|fjord
 andia-mountain-range-near-pamplona|1024|3|mountain chain
 andino-norpatagonica-biosphere-reserve-near-bariloche|65536|3|biosphere reserve
 andorja-near-harstad|64|3|island
 andozero-near-arkhangelsk|32|3|lake
+andreev-cove-near-taganrog|4096|3|cove
 andreevskoe-near-tyumen|32|3|lake
 andrew-molera-state-park-near-salinas|131072|3|California state park
 andriivskyi-lis-near-pavlohrad|81920|3|forest reserve
@@ -750,6 +905,7 @@ andrusova-mud-volcano-near-kerch|0|0|
 anensky-vrch-near-bruntal|1024|3|mountain
 anensky-vrch-near-krnov|1024|3|mountain
 aneriojarvi-near-salo|32|3|lake or pond
+aneto-near-vilanova-i-la-geltru|1024|3|main peak
 angel-island-near-alameda|64|3|island
 angel-island-near-daly-city|64|3|island
 angel-island-near-oakland|64|3|island
@@ -760,6 +916,8 @@ angeles-national-forest-near-palmdale|81920|3|proclaimed forest
 angelholms-strandskog-near-angelholm|65536|3|nature reserve
 angelochori-lagoon-near-evosmos|4128|3|lagoon
 angelochori-lagoon-near-kalamaria|4128|3|lagoon
+angelochori-lagoon-near-stavroupoli|4128|3|lagoon
+angelochori-lagoon-near-thessaloniki|4128|3|lagoon
 angle-lake-near-kent|32|3|lake
 anglin-near-poitiers|256|3|river
 ango-near-kalmar|64|3|island
@@ -801,6 +959,8 @@ antelope-island-near-ogden|64|3|island
 antelope-island-state-park-near-salt-lake-city|131072|2|
 antelope-valley-california-poppy-reserve-state-natural-reserve-near-palmdale|196608|3|nature reserve
 anthony-chabot-regional-park-near-hayward|131072|3|regional park
+anthony-quinn-bay-near-rhodes|16|3|beach
+anti-atlas-near-marrakesh|1024|3|mountain range
 anti-taurus-mountains-near-nigde|1024|3|mountain range
 anti-taurus-mountains-near-osmaniye|1024|3|mountain range
 anti-taurus-mountains-near-tarsus|1024|3|mountain range
@@ -812,6 +972,7 @@ antioch-city-park-near-antioch|131072|3|park
 antioch-dunes-national-wildlife-refuge-near-antioch|65536|3|National Wildlife Refuge
 antipaxos-near-corfu|64|3|island
 antipaxos-near-preveza|64|3|island
+antisamos-near-zakynthos|131088|3|beach
 antler-lake-near-camrose|32|3|lake
 antler-lake-near-edmonton|32|3|lake
 antler-lake-near-fort-saskatchewan|32|3|lake
@@ -823,6 +984,8 @@ antonesti-riverside-near-ceadir-lunga|65536|3|landscape reserve
 antonis-tritsis-metropolitan-park-near-chalandri|131072|3|park
 antuco-near-chillan|1152|3|volcano
 antuco-near-los-angeles-cl|1152|3|volcano
+anvil-point-near-eastleigh|4096|3|headland
+anvil-point-near-southampton|4096|3|headland
 anyksciai-regional-park-near-anyksciai|131072|3|regional park
 anyksciai-regional-park-near-kupiskis|131072|3|regional park
 anyksciai-regional-park-near-panevezys|131072|3|regional park
@@ -830,9 +993,14 @@ anyuysky-national-park-near-khabarovsk|65536|3|protected area of Russia
 anza-borrego-desert-state-park-near-san-diego|131072|3|California state park
 aokigahara-near-kofu|16384|3|forest
 aokigahara-near-mishima|16384|3|forest
+aokigahara-near-osaka|16384|3|forest
 aokigahara-near-shizuoka|16384|3|forest
 aoshima-near-matsuyama|64|3|island
+aotea-lagoon-near-lower-hutt|135200|3|lagoon
+aotea-lagoon-near-paraparaumu|135200|3|lagoon
 aotea-lagoon-near-porirua|135200|3|lagoon
+aotea-lagoon-near-upper-hutt|135200|3|lagoon
+aotea-lagoon-near-wellington|135200|3|lagoon
 ap-chau-near-huizhou|64|3|island
 apachita-near-puerto-maldonado|1024|3|mountain
 apalachicola-national-forest-near-tallahassee|81920|3|proclaimed forest
@@ -852,6 +1020,7 @@ apfelstadtaue-zwischen-wechmar-und-neudietendorf-near-arnstadt|65536|3|Special A
 apfelstadtaue-zwischen-wechmar-und-neudietendorf-near-gotha|65536|3|Special Area of Conservation
 apguldes-ezers-near-dobele|32|3|lake
 apiau-mountain-range-near-boa-vista|1024|3|mountain range
+apies-river-near-pretoria|256|3|river
 appalachian-mountains-near-charlottesville|1024|3|mountain range
 appalachian-trail-near-roanoke|0|0|
 appennino-abruzzese-near-laquila|1024|3|mountain range
@@ -870,6 +1039,7 @@ apple-river-canyon-state-park-near-rockford|131072|3|Illinois state park
 applegate-lake-near-medford|32|3|reservoir
 appletree-eyot-near-basingstoke|320|3|river island
 appletree-eyot-near-newbury|320|3|river island
+apsan-near-daegu|1024|3|mountain
 apsley-falls-near-armidale|1|3|waterfall
 apsu-sala-near-rezekne|64|3|island
 apsuciema-zalu-purvs-near-tukums|65536|3|Natura 2000 site
@@ -900,6 +1070,8 @@ aquidaba-canyon-near-londrina|2052|3|canyon
 aquidaba-canyon-near-maringa|2052|3|canyon
 aquidaba-canyon-near-presidente-prudente|2052|3|canyon
 ara-near-halden|32|3|lake
+arabah-near-amman|8192|3|desert
+arabah-near-tel-aviv|8192|3|desert
 arabia-mountain-near-athens-us|1024|3|mountain
 arabia-mountain-near-atlanta|1024|3|mountain
 arabia-mountain-near-macon|1024|3|mountain
@@ -925,6 +1097,7 @@ aras-unesco-global-geopark-near-nakhchivan|65536|3|UNESCO Global Geopark
 aras-unesco-global-geopark-near-tabriz|65536|3|UNESCO Global Geopark
 arasbaran-national-park-near-tabriz|32768|3|national park
 arasbaran-near-tabriz|66560|3|mountain
+arashiyama-near-kyoto|0|0|
 araslovssjon-near-kristianstad|32|3|lake
 araukhokh-near-vladikavkaz|1024|3|mountain
 aravan-river-near-margilan|256|3|river
@@ -962,11 +1135,13 @@ arbuzynka-canyon-near-pervomaisk|2052|3|canyon
 arbuzynka-canyon-near-pivdennoukrainsk|2052|3|canyon
 arbuzynka-canyon-near-voznesensk|2052|3|canyon
 arcadia-beach-near-chornomorsk|16|3|beach
+arcadia-beach-near-odesa|16|3|beach
 arcadia-beach-near-pivdenne|16|3|beach
 arcadia-lake-near-enid|32|3|reservoir
 arcadia-lake-near-norman|32|3|reservoir
 arcadia-lake-near-oklahoma-city|32|3|reservoir
 arcadia-lake-near-stillwater|32|3|reservoir
+arcadian-riviera-near-corinth|4096|3|coast
 arcalod-near-albertville|1024|3|mountain
 archbishop-s-garden-near-eger|131072|3|park
 arche-de-la-nature-near-le-mans|196608|3|nature park
@@ -977,6 +1152,12 @@ archie-carr-national-wildlife-refuge-near-fort-pierce|65536|3|National Wildlife 
 archie-carr-national-wildlife-refuge-near-palm-bay|65536|3|National Wildlife Refuge
 archipelago-national-park-near-hanko|32768|3|national park
 archipelago-national-park-near-turku|32768|3|national park
+archipelago-of-gothenburg-near-kungalv|4128|2|
+archipelago-of-gothenburg-near-kungsbacka|4128|2|
+archipelago-of-gothenburg-near-lerum|4128|2|
+archipelago-of-gothenburg-near-molndal|4128|2|
+archipelago-of-gothenburg-near-molnlycke|4128|2|
+archipelago-of-gothenburg-near-partille|4128|2|
 archipelago-of-sulcis-near-carbonia|64|3|island
 arcipelago-di-la-maddalena-national-park-near-olbia|98304|3|national park
 ardennes-near-charleroi|1024|3|low mountain range
@@ -992,6 +1173,15 @@ ardey-hills-near-dortmund|1024|3|mountain range
 ardey-hills-near-gelsenkirchen|1024|3|mountain range
 ardingly-reservoir-near-crawley|32|3|reservoir
 ardingly-reservoir-near-horsham-uk|32|3|reservoir
+ardlamont-point-near-ayr-uk|4096|3|headland
+ardlamont-point-near-dumbarton|4096|3|headland
+ardlamont-point-near-greenock|4096|3|headland
+ardlamont-point-near-kilmarnock|4096|3|headland
+ardmore-head-near-cobh|4096|3|cape
+ardmore-head-near-waterford|4096|3|cape
+ardmore-point-near-bangor|4096|3|cape
+ardmore-point-near-inverness|4096|3|cape
+ardmore-point-near-lisburn|4096|3|cape
 arduinbos-near-ath|81920|3|forest
 area-de-protecao-ambiental-da-ilha-do-combu-near-ananindeua|64|3|island
 area-de-protecao-ambiental-da-ilha-do-combu-near-belem|64|3|island
@@ -1001,6 +1191,7 @@ areia-vermelha-marine-state-park-near-joao-pessoa|131072|3|state park
 arena-gorda-beach-near-higuey|16|2|
 arena-gorda-beach-near-la-romana|16|2|
 arenal-volcano-near-puntarenas|1024|3|mountain
+arenal-volcano-near-san-jose|1024|3|mountain
 arendsee-near-salzwedel|32|3|lake
 arendsee-near-stendal|32|3|lake
 areskutan-near-ostersund|1024|3|mountain
@@ -1079,6 +1270,8 @@ arreso-near-frederiksvaerk|32|3|lake
 arreso-near-hillerod|32|3|lake
 arribes-del-duero-natural-park-near-salamanca|196608|3|Natura 2000 site
 arribes-del-duero-natural-park-near-zamora|196608|3|Natura 2000 site
+arrietara-near-barakaldo|16|3|beach
+arrietara-near-bilbao|16|3|beach
 arrow-rock-near-nelson|64|3|island
 arroyo-burro-beach-near-santa-barbara|16|3|beach
 arslankoy-pond-near-karaman|32|3|artificial lake
@@ -1089,6 +1282,7 @@ artemivs-ki-sadovo-dendrologichni-nasadzhennia-landscape-preserve-near-horlivka|
 artemivs-ki-sadovo-dendrologichni-nasadzhennia-landscape-preserve-near-kostiantynivka|65536|3|landscape reserve
 artemivs-ki-sadovo-dendrologichni-nasadzhennia-landscape-preserve-near-yenakiieve|65536|3|landscape reserve
 artesian-well-park-near-west-valley-city|131072|2|
+arthur-head-reserve-near-perth|4096|3|headland
 arthur-r-marshall-loxahatchee-national-wildlife-refuge-near-fort-lauderdale|65536|3|National Wildlife Refuge
 arthur-r-marshall-loxahatchee-national-wildlife-refuge-near-west-palm-beach|65536|3|National Wildlife Refuge
 arthur-s-rock-near-greeley|1024|3|mountain
@@ -1163,6 +1357,7 @@ aspero-near-gothenburg|64|3|island
 aspero-near-kungalv|64|3|island
 aspero-near-molnlycke|64|3|island
 aspevagen-near-alesund|4096|3|bay
+aspri-limni-beach-near-chania|16|3|beach
 asprokremmos-reservoir-near-paphos|32|3|reservoir
 aspromonte-national-park-near-catanzaro|98304|3|national park
 aspromonte-national-park-near-messina|98304|3|national park
@@ -1171,8 +1366,11 @@ asse-near-braunschweig|1024|3|mountain range
 assean-lake-near-thompson|32|3|lake
 asserbos-near-assen|196608|3|nature area
 assiniboine-corridor-wildlife-management-area-near-brandon|0|0|
+astafjorden-near-harstad|4096|3|strait
+astafjorden-near-narvik|4096|3|strait
 asterdplas-near-breda|32|3|lake
 asterdplas-near-oosterhout|32|3|lake
+asteria-beach-near-ermoupolis|16|3|beach
 aston-rowant-nnr-near-aylesbury|65536|3|nature reserve
 astravy-dulieby-near-babruysk|0|0|
 astrouna-near-vitebsk|32|3|lake
@@ -1180,6 +1378,9 @@ asturias-beach-near-guaruja|16|3|beach
 asums-angar-och-asumallet-near-kristianstad|65536|3|nature reserve
 asveja-near-vilnius|32|3|lake
 asylum-lake-near-kalamazoo|32|3|lake
+atalanti-lagoon-near-agrinio|4128|3|lagoon
+atalanti-lagoon-near-aigio|4128|3|lagoon
+atalanti-lagoon-near-missolonghi|4128|3|lagoon
 atascocita-park-near-conroe|131072|3|park
 atasko-near-kitee|32|3|lake or pond
 ataturk-reservoir-near-adyaman|32|3|reservoir
@@ -1206,6 +1407,7 @@ attwater-prairie-chicken-national-wildlife-refuge-near-victoria-us|65536|3|Natio
 atuel-canyon-near-san-rafael-ar|2052|3|canyon
 atwood-lake-near-canton|32|3|reservoir
 au-sable-state-forest-near-saginaw|81920|3|state forest
+auas-mountains-near-windhoek|1024|3|mountain range
 aubad-near-tulln-an-der-donau|32|3|lake
 auberg-near-sarreguemines|65536|3|Landschaftsschutzgebiet
 aubrac-near-albi|1152|3|volcanic landform
@@ -1218,9 +1420,13 @@ auenwalder-bei-plotzkau-near-kothen|65536|3|Special Area of Conservation
 auesee-near-bocholt|32|3|lake
 auesee-near-wesel|32|3|lake
 aughinish-near-galway|64|3|island
+aughrus-point-near-westport|4096|3|cape
 augsburg-western-woods-nature-park-near-augsburg|196608|3|Naturpark
 augsdaugava-protected-landscape-area-near-kraslava|65536|3|Natura 2000 site
 augsdaugava-protected-landscape-near-daugavpils|65536|3|Natura 2000 site
+augustenborg-fjord-near-aabenraa|4096|3|fjord
+augustenborg-fjord-near-sonderborg|4096|3|fjord
+augustenborg-fjord-near-svendborg|4096|3|fjord
 aukstadvaris-regional-park-near-alytus|131072|3|regional park
 aukstaitija-national-park-near-daugavpils|98304|3|national park
 aulangonjarvi-near-hameenlinna|32|3|lake
@@ -1251,6 +1457,9 @@ aveiro-nazare-near-figueira-da-foz|65536|3|Natura 2000 site
 aveto-natural-regional-park-near-la-spezia|196608|3|protected area
 avgo-pindos-near-trikala|1024|3|mountain
 avilys-near-zarasai|32|3|lake
+avno-fjord-near-naestved|4096|3|fjord
+avno-fjord-near-nykobing-falster|4096|3|fjord
+avno-fjord-near-vordingborg|4096|3|fjord
 avns-near-silkeborg|32|3|lake
 avoca-lake-near-gosford|32|3|lake
 avon-valley-national-park-near-northam|32768|3|national park of Australia
@@ -1263,6 +1472,8 @@ awa-ga-take-near-fujieda|1024|3|mountain
 awa-ga-take-near-iwata|1024|3|mountain
 awaji-island-near-akashi|64|3|island
 awaji-island-near-himeji|64|3|island
+awaji-island-near-kyoto|64|3|island
+awaji-island-near-osaka|64|3|island
 awaji-island-near-tokushima|64|3|island
 awaji-island-near-wakayama|64|3|island
 awenda-provincial-park-near-barrie|131072|3|provincial park of Canada
@@ -1273,6 +1484,7 @@ axios-loudias-aliakmonas-delta-national-park-near-giannitsa|32768|3|national par
 axios-loudias-aliakmonas-delta-national-park-near-kalamaria|32768|3|national park
 axios-loudias-aliakmonas-delta-national-park-near-stavroupoli|32768|3|national park
 axios-loudias-aliakmonas-delta-national-park-near-veria|32768|3|national park
+ayalon-river-near-tel-aviv|256|3|river
 ayalon-valley-near-ashdod|2048|3|valley
 ayalon-valley-near-bat-yam|2048|3|valley
 ayalon-valley-near-beit-shemesh|2048|3|valley
@@ -1286,6 +1498,7 @@ ayalon-valley-near-rishon-lezion|2048|3|valley
 ayding-lake-near-urumqi|32|3|lake
 aygr-golu-near-ani|32|3|lake
 aygr-golu-near-kars|32|3|lake
+ayn-al-sirah-near-cairo|32|3|lake
 aysgarth-falls-near-darlington|1|3|waterfall
 ayubia-national-park-near-abbottabad|32768|3|national park
 ayubia-national-park-near-islamabad|32768|3|national park
@@ -1303,6 +1516,7 @@ azov-upland-near-mariupol|1024|3|upland
 azraq-wetland-reserve-near-tabarjal|65536|3|nature reserve
 azufre-volcano-maule-near-curico|1024|3|mountain
 azure-mountain-near-cornwall|1024|3|mountain
+b-b-clarke-beach-near-madison|16|3|beach
 baarnse-bos-near-soest-nl|16384|3|forest
 baba-kosmonosy-horni-stakory-near-mlada-boleslav|66560|3|hill
 baba-mountain-near-florina|1024|3|mountain range
@@ -1310,6 +1524,7 @@ baba-mountain-near-kastoria|1024|3|mountain range
 baba-near-jagodina|1024|3|mountain
 baba-near-krusevac|1024|3|mountain
 baba-v-bukach-near-velke-mezirici|65536|3|nature reserve in the Czech Republic
+babbs-beach-near-hartford|16|3|beach
 babczyna-dolina-nature-reserve-near-zory|81920|3|forest reserve (Poland)
 babenai-lake-near-kedainiai|32|3|reservoir
 babi-hora-near-trencin|65536|3|natural monument in the Czech Republic
@@ -1338,6 +1553,7 @@ babrycha-near-svyetlahorsk|32|3|lake
 babrycha-near-zhlobin|32|3|lake
 babyn-waterfalls-near-kolomyia|1|3|waterfall
 bacanga-state-park-near-sao-luis|131072|3|state park
+bach-ma-national-park-near-da-nang|32768|3|national park
 bachman-lake-near-carrollton|32|3|lake
 bachman-lake-near-dallas|32|3|lake
 bachman-lake-near-denton|32|3|lake
@@ -1362,14 +1578,27 @@ bacina-lakes-near-ploce|32|3|lake
 back-bay-national-wildlife-refuge-near-chesapeake|65536|3|National Wildlife Refuge
 back-bay-national-wildlife-refuge-near-norfolk|65536|3|National Wildlife Refuge
 back-bay-national-wildlife-refuge-near-virginia-beach|65536|3|National Wildlife Refuge
+back-beach-near-devonport|16|3|beach
+back-beach-near-geraldton|16|3|beach
+back-beach-near-latrobe|16|3|beach
 backakra-near-ronne|65536|3|nature reserve
 backbone-state-park-near-cedar-rapids|131072|3|Iowa state park
 backbone-state-park-near-waterloo|131072|3|Iowa state park
+bacvice-beach-near-kastela|16|3|beach
+bacvice-beach-near-omis|16|3|beach
+bacvice-beach-near-sibenik|16|3|beach
+bacvice-beach-near-sinj|16|3|beach
+bacvice-beach-near-solin|16|3|beach
+bacvice-beach-near-split|16|3|beach
+bacvice-beach-near-trogir|16|3|beach
 badacsony-near-szekesfehervar|1024|1|
+badagry-coconut-beach-near-lagos|131088|3|beach
 badai-tugai-nature-reserve-near-nukus|65536|3|nature reserve
 badby-wood-near-banbury|65536|3|nature reserve
 badby-wood-near-leamington-spa|65536|3|nature reserve
 badby-wood-near-rugby|65536|3|nature reserve
+baddeleys-beach-near-auckland|16|3|beach
+baddeleys-beach-near-hibiscus-coast|16|3|beach
 badelundaasen-near-vasteras|0|0|
 badesee-burg-near-szombathely|32|3|lake
 badesee-tannenhausen-near-aurich|0|0|
@@ -1381,6 +1610,7 @@ badila-limestone-blocks-near-ramnicu-sarat|65536|3|nature reserve
 badila-limestone-blocks-near-valenii-de-munte|65536|3|nature reserve
 badinsky-prales-near-zvolen|65536|3|national nature reserve
 badkhal-lake-near-agra|32|3|lake
+badkhal-lake-near-delhi|32|3|lake
 badkhal-lake-near-new-delhi|32|3|lake
 badlands-national-park-near-rapid-city|32768|3|National Park of the United States
 badner-lindkogel-near-baden|1024|3|mountain
@@ -1396,7 +1626,10 @@ baga-national-park-near-rockhampton|32768|3|national park of Australia
 baggeridge-country-park-near-wolverhampton|131072|3|country park
 baggersee-lutz-near-sigmaringen|32|3|lake
 baggersee-near-hall-in-tirol|0|0|
+baggy-point-near-barnstaple|4096|3|headland
+baggy-point-near-swansea|4096|3|headland
 baginbun-head-near-waterford|4096|3|cape
+baginbun-head-near-wexford|4096|3|cape
 bagley-park-near-hillsboro|131072|3|urban park
 bagnall-road-wood-near-newcastle-under-lyme|65536|3|local nature reserve
 bagnall-road-wood-near-stoke-on-trent|65536|3|local nature reserve
@@ -1415,15 +1648,23 @@ baguari-reservoir-near-governador-valadares|32|3|reservoir
 bahia-de-cadiz-natural-park-near-cadiz|197120|3|Ramsar site
 bahia-de-cadiz-natural-park-near-jerez-de-la-frontera|197120|3|Ramsar site
 bahia-de-cadiz-natural-park-near-san-fernando|197120|3|Ramsar site
+bahia-de-las-calderas-near-santo-domingo|4096|3|bay
 bahia-de-melilla-near-melilla|4096|3|bay
+bahia-de-miraflores-near-lima|4096|3|bay
 bahia-falls-near-coronel-fabriciano|1|3|waterfall
+bahia-laguna-verde-near-valparaiso|4096|3|bay
 bahia-lomas-near-rio-gallegos|69632|3|bay
 bahia-portete-kaurrele-national-natural-park-near-riohacha|32768|3|national park
 bahnhofswald-flensburg-near-flensburg|16384|3|forest
 bahuaja-sonene-national-park-near-puerto-maldonado|32768|2|
 bahulske-jamy-near-trencin|65536|3|natural monument in the Czech Republic
+baia-del-silenzio-near-genoa|16|3|beach
+baia-del-silenzio-near-la-spezia|16|3|beach
 baia-do-seixal-near-montijo|4096|3|bay
+baia-flaminia-near-ancona|16|3|beach
+baia-flaminia-near-cesena|16|3|beach
 baia-flaminia-near-pesaro|16|3|beach
+baia-flaminia-near-rimini|16|3|beach
 baie-d-authie-near-abbeville|70144|3|estuary
 baie-de-cassis-near-la-ciotat|4096|3|bay
 baie-de-l-isle-verte-national-wildlife-area-near-riviere-du-loup|65536|3|national wildlife area
@@ -1437,9 +1678,23 @@ baiu-mountains-near-ploiesti|1024|3|mountain range
 baixa-limia-serra-do-xures-natural-park-near-ourense|196608|3|Special Protection Area
 baixi-reservoir-near-taizhou|32|3|reservoir
 baixi-reservoir-near-wenzhou|32|3|reservoir
+baiyun-mountain-near-guangzhou|1024|3|mountain
 bakans-near-gulbene|32|3|lake
 bakans-near-madona|32|3|lake
+baker-beach-near-alameda|16|3|beach
+baker-beach-near-berkeley|16|3|beach
+baker-beach-near-concord|16|3|beach
 baker-beach-near-daly-city|16|3|beach
+baker-beach-near-fremont|16|3|beach
+baker-beach-near-hayward|16|3|beach
+baker-beach-near-mountain-view|16|3|beach
+baker-beach-near-oakland|16|3|beach
+baker-beach-near-palo-alto|16|3|beach
+baker-beach-near-redwood-city|16|3|beach
+baker-beach-near-san-francisco|16|3|beach
+baker-beach-near-san-mateo|16|3|beach
+baker-beach-near-san-rafael|16|3|beach
+baker-beach-near-vallejo|16|3|beach
 bakers-island-near-salem-us|64|3|island
 bakhira-sanctuary-near-lucknow|65568|3|lake
 bakhira-sanctuary-near-varanasi|65568|3|lake
@@ -1447,6 +1702,7 @@ bakhmatovskoye-near-barnaul|32|3|lake
 bakht-lake-near-tashkent|32|3|lake
 bakker-near-randers|65536|3|protected area
 bakkeveense-duinen-near-smallingerland|65536|3|nature area
+baklan-near-vladivostok|4112|3|beach
 baklanovskoe-near-smolensk|65568|3|lake
 bakony-balaton-unesco-global-geopark-near-ajka|65536|3|geopark
 bakony-balaton-unesco-global-geopark-near-papa|65536|3|geopark
@@ -1491,6 +1747,7 @@ baldwin-hills-near-compton|1024|3|mountain range
 baldwin-hills-near-inglewood|1024|3|mountain range
 baldwin-lake-near-el-monte|32|3|lake
 baldwin-lake-near-west-covina|32|3|lake
+bale-mountains-national-park-near-addis-ababa|163840|3|national park
 balea-lak-near-avrig|32|3|glacial lake
 balea-lak-near-cisnadie|32|3|glacial lake
 baleal-island-near-alcobaca|64|3|island
@@ -1523,8 +1780,10 @@ ball-s-falls-near-niagara-falls|65536|3|protected area
 ball-s-falls-near-st-catharines|65536|3|protected area
 ballard-park-near-palm-bay|131072|3|park
 ballard-state-forest-near-nashua|81920|3|state forest
+ballehage-near-randers|16|3|beach
 ballestas-islands-near-ica|64|3|archipelago
 ballestas-islands-near-pisco|64|3|archipelago
+ballito-near-durban|0|0|
 ballkayalar-nature-park-near-gebze|198660|3|canyon
 ballkayalar-nature-park-near-izmit|198660|3|canyon
 ballon-d-alsace-near-belfort|1024|3|mountain
@@ -1542,10 +1801,19 @@ ballykeeffe-wood-near-kilkenny|16384|3|forest
 ballyteigue-burrow-near-wexford|65536|3|Special Area of Conservation
 balmorhea-lake-near-odessa|32|3|lake
 balmorhea-state-park-near-odessa|131072|3|Texas state park
+balmy-beach-near-ajax|16|3|beach
+balmy-beach-near-brampton|16|3|beach
+balmy-beach-near-markham|16|3|beach
+balmy-beach-near-milton|16|3|beach
+balmy-beach-near-mississauga|16|3|beach
+balmy-beach-near-pickering|16|3|beach
+balmy-beach-near-richmond-hill|16|3|beach
+balmy-beach-near-vaughan|16|3|beach
 balneario-la-florida-near-parana|16|3|beach
 balneario-la-florida-near-rosario|16|3|beach
 balneario-la-florida-near-san-nicolas-de-los-arroyos|16|3|beach
 balneario-la-florida-near-santa-fe-ar|16|3|beach
+balos-lagoon-near-chania|4144|3|beach
 balotes-ezers-near-jekabpils|32|3|lake
 balotes-ezers-near-livani|32|3|lake
 balsa-del-cadimo-near-andujar|32|3|reservoir
@@ -1554,6 +1822,7 @@ balsa-del-cadimo-near-linares|32|3|reservoir
 balsam-lake-provincial-park-near-kawartha-lakes|131072|3|provincial park of Canada
 balsam-lake-provincial-park-near-peterborough|131072|3|provincial park of Canada
 balsfjorden-near-tromso|4096|3|fjord
+balsfjorden-near-tromso-municipality|4096|3|fjord
 balskai-reservoir-near-taurage|32|3|reservoir
 balta-ialomitei-near-cernavoda|320|3|river island
 balta-ialomitei-near-constanta|320|3|river island
@@ -1570,26 +1839,39 @@ balta-soimos-near-bekescsaba|32|3|lake
 baltas-near-visaginas|32|3|lake
 baltasiai-near-visaginas|32|3|lake
 baltata-near-varna|65536|2|
+baltic-southern-coast-near-swinoujscie|4096|3|coast
+baltic-southern-coast-near-szczecin|4096|3|coast
 baltis-near-lentvaris|32|3|lake
 baltussee-near-minden|32|3|lake
+balut-near-manila|0|0|
 balvany-near-ozd|1024|3|mountain
 balvi-lake-near-balvi|32|3|lake
 balvi-lake-near-gulbene|32|3|lake
+bammelecke-near-berlin|4096|3|headland
+bammelecke-near-oranienburg|4096|3|headland
+bammelecke-near-potsdam|4096|3|headland
 bamseom-near-bucheon|320|3|river island
 bamseom-near-gimpo|320|3|river island
+ban-dao-son-tra-near-da-nang|4096|3|peninsula
 ban-gioc-detian-falls-near-nanning|1|3|waterfall
 banados-del-este-biosphere-reserve-near-melo|65536|3|biosphere reserve
+banana-island-near-doha|64|3|island
+banana-island-near-lagos|64|3|island
 banat-mountains-near-bocsa|1024|3|mountain range
 banat-mountains-near-vrsac|1024|3|mountain range
 banco-chinchorro-near-chetumal|64|3|island
 bandai-asahi-national-park-near-aizuwakamatsu|32768|3|national park
 bandai-asahi-national-park-near-niigata|32768|3|national park
+bandala-valley-near-lahore|2048|3|valley
 bandama-caldera-near-las-palmas|65664|3|caldera
 bandh-baretha-near-agra|66048|3|wetland
 baneheia-near-kristiansand|0|0|
 banff-national-park-near-banff|32768|3|national park
 banff-national-park-near-calgary|32768|3|national park
 banff-national-park-near-canmore|32768|3|national park
+bang-kachao-peninsula-near-bangkok|4096|3|peninsula
+bang-saen-near-bangkok|0|0|
+banganga-river-near-jaipur|256|3|river
 bangrove-wood-near-bury-st-edmunds|16384|3|forest
 banhado-dos-pachecos-wildlife-refuge-near-canoas|65536|3|wildlife refuge of Brazil
 banhado-dos-pachecos-wildlife-refuge-near-caxias-do-sul|65536|3|wildlife refuge of Brazil
@@ -1597,14 +1879,19 @@ banhado-dos-pachecos-wildlife-refuge-near-novo-hamburgo|65536|3|wildlife refuge 
 banhado-dos-pachecos-wildlife-refuge-near-porto-alegre-br|65536|3|wildlife refuge of Brazil
 banhado-dos-pachecos-wildlife-refuge-near-sao-leopoldo|65536|3|wildlife refuge of Brazil
 banibois-near-bastogne|16384|3|forest
+banje-beach-near-dubrovnik|16|3|beach
+banje-beach-near-metkovic|16|3|beach
 banjol-island-near-rovinj|64|3|island
 banjosa-lake-near-jhelum|32|3|reservoir
 banks-lake-national-wildlife-refuge-near-valdosta|65536|3|National Wildlife Refuge
+banna-strand-near-killarney|16|3|beach
+banna-strand-near-tralee|16|3|beach
 bannau-brycheiniog-national-park-near-hereford|98304|3|national park of England and Wales
 bannau-brycheiniog-national-park-near-merthyr-tydfil|98304|3|national park of England and Wales
 bannau-brycheiniog-national-park-near-neath|98304|3|national park of England and Wales
 bannau-brycheiniog-national-park-near-port-talbot|98304|3|national park of England and Wales
 banner-marsh-state-fish-and-wildlife-area-near-peoria|131072|3|Illinois state park
+bannerghatta-national-park-near-bangalore|32768|3|national park
 bannock-range-near-pocatello|1024|3|mountain range
 banovska-pahorkatina-near-banovce-nad-bebravou|1024|3|mountain range
 bansmeer-near-emden|32|3|lake
@@ -1614,6 +1901,7 @@ baoshi-hill-near-hangzhou|1024|3|hill
 baoshi-hill-near-shaoxing|1024|3|hill
 baou-de-saint-jeannet-near-cagnes-sur-mer|1024|3|mountain
 bar-am-national-park-near-safed|98304|3|national park
+bar-beach-lagos-near-lagos|16|3|beach
 baraboy-reservoir-near-bilhorod-dnistrovskyi|32|3|reservoir
 baracka-reservoir-near-povazska-bystrica|32|3|reservoir
 barania-gora-near-zywiec|1024|3|mountain
@@ -1655,7 +1943,10 @@ bargerveen-nature-reserve-near-coevorden|65536|3|Special Area of Conservation
 bargerveen-nature-reserve-near-hardenberg|65536|3|Special Area of Conservation
 barghauser-see-near-wilhelmshaven|32|3|lake
 bargo-mediceo-near-empoli|131072|3|park
+barigui-river-near-curitiba|256|3|river
 bariny-near-novy-jicin|65536|3|nature reserve in the Czech Republic
+barker-beach-near-antioch|16|3|beach
+barker-beach-near-fairfield|16|3|beach
 barlad-river-near-barlad|256|3|river
 barlindasen-near-lorenskog|1024|3|mountain
 barlinek-gorzow-landscape-park-near-gorzow-wielkopolski|196608|3|landscape park in Poland
@@ -1667,6 +1958,8 @@ barnack-hills-holes-national-nature-reserve-near-grantham|65536|3|nature reserve
 barnacken-near-detmold|1024|3|mountain
 barnaul-ribbon-forest-near-barnaul|16384|2|
 barnes-lake-near-olympia|32|3|lake
+barneys-beach-near-dartmouth|16|3|beach
+barneys-beach-near-halifax|16|3|beach
 barnstable-state-forest-near-barnstable|16384|3|forest
 barnwell-east-near-cambridge|65536|3|local nature reserve
 barnwell-west-near-cambridge|65536|3|local nature reserve
@@ -1678,12 +1971,17 @@ barossa-ranges-near-renmark|1024|3|mountain
 barossa-reservoir-near-gawler|32|3|reservoir
 barossa-reservoir-near-nuriootpa|32|3|reservoir
 barossa-valley-near-gawler|2048|3|valley
+barouk-near-beirut|1024|3|mountain
 barr-lake-near-brighton-us|32|3|lake
 barr-lake-near-thornton|32|3|lake
 barr-lake-state-park-near-brighton-us|131072|2|
 barra-de-gramame-near-joao-pessoa|16|3|beach
 barra-de-gramame-sul-beach-near-joao-pessoa|16|3|beach
+barra-do-jucu-near-serra|0|0|
+barra-do-jucu-near-vila-velha|0|0|
+barra-do-jucu-near-vitoria|0|0|
 barra-vieja-beach-near-acapulco-de-juarez|16|3|beach
+barranca-de-oblatos-near-guadalajara|2048|3|valley
 barranca-de-oblatos-near-tlaquepaque|2048|3|valley
 barranca-de-oblatos-near-tonala|2048|3|valley
 barranca-de-oblatos-near-zamora-de-hidalgo|2048|3|valley
@@ -1716,6 +2014,8 @@ barso-near-aabenraa|64|3|island
 barso-near-haderslev|64|3|island
 barso-near-sonderborg|64|3|island
 barso-near-tonder|64|3|island
+barther-bodden-near-greifswald|4128|3|lagoon
+barther-bodden-near-rostock|4128|3|lagoon
 barthes-de-l-adour-near-dax|66048|3|swamp
 bartley-reservoir-near-dudley|32|3|reservoir
 bartley-reservoir-near-kidderminster|32|3|reservoir
@@ -1759,6 +2059,7 @@ bass-rock-near-dundee|1088|3|island
 bass-rock-near-dunfermline|1088|3|island
 bass-rock-near-glenrothes|1088|3|island
 bass-rock-near-kirkcaldy|1088|3|island
+bassac-river-near-ho-chi-minh-city|256|3|river
 bassin-de-champagney-near-belfort|32|3|reservoir
 bassin-de-saint-ferreol-near-castres|32|3|reservoir
 bastak-nature-reserve-near-khabarovsk|65536|3|nature reserve
@@ -1767,11 +2068,47 @@ bastejkalns-park-near-marupe|131072|3|park
 bastudalen-nature-reserve-near-ostersund|65536|3|nature reserve
 basty-near-moss|64|3|island
 batak-reservoir-near-velingrad|32|3|reservoir
+bataviastrand-near-aalsmeer|16|3|beach
+bataviastrand-near-almere|16|3|beach
+bataviastrand-near-amersfoort|16|3|beach
+bataviastrand-near-amstelveen|16|3|beach
+bataviastrand-near-amsterdam|16|3|beach
+bataviastrand-near-apeldoorn|16|3|beach
+bataviastrand-near-barneveld|16|3|beach
+bataviastrand-near-beverwijk|16|3|beach
+bataviastrand-near-castricum|16|3|beach
+bataviastrand-near-deventer|16|3|beach
+bataviastrand-near-diemen|16|3|beach
+bataviastrand-near-dronten|16|3|beach
+bataviastrand-near-ede|16|3|beach
+bataviastrand-near-enkhuizen|16|3|beach
+bataviastrand-near-haarlem|16|3|beach
+bataviastrand-near-haarlemmermeer|16|3|beach
+bataviastrand-near-harderwijk|16|3|beach
+bataviastrand-near-heemskerk|16|3|beach
+bataviastrand-near-hilversum|16|3|beach
+bataviastrand-near-huizen|16|3|beach
+bataviastrand-near-ijmuiden|16|3|beach
+bataviastrand-near-kampen|16|3|beach
+bataviastrand-near-lelystad|16|3|beach
+bataviastrand-near-naarden|16|3|beach
+bataviastrand-near-noordoostpolder|16|3|beach
+bataviastrand-near-oldebroek|16|3|beach
+bataviastrand-near-sneek|16|3|beach
+bataviastrand-near-soest-nl|16|3|beach
+bataviastrand-near-urk|16|3|beach
+bataviastrand-near-veenendaal|16|3|beach
+bataviastrand-near-velsen|16|3|beach
+bataviastrand-near-weesp|16|3|beach
+bataviastrand-near-zaanstad|16|3|beach
+bataviastrand-near-zeist|16|3|beach
+bataviastrand-near-zwolle|16|3|beach
 batchawana-bay-provincial-park-near-sault-ste-marie|131072|3|provincial park of Canada
 batchawana-river-near-sault-ste-marie|256|3|river
 bateman-island-near-pasco|320|3|river island
 bateti-lake-near-gori|32|3|lake
 bath-beach-near-santiago-do-cacem|16|3|beach
+bathers-beach-near-perth|16|3|beach
 baths-island-near-bracknell|320|3|river island
 baths-island-near-slough|320|3|river island
 baths-island-near-windsor|320|3|river island
@@ -1780,11 +2117,13 @@ batin-island-near-razgrad|320|3|river island
 batin-island-near-ruse|320|3|river island
 batin-island-near-svishtov|320|3|river island
 batiscan-river-near-trois-rivieres|256|3|river
+batnfjorden-near-kristiansund-municipality|4096|3|fjord
 batoryna-near-vileyka|32|3|lake
 batstad-mellsta-near-borlange|65536|3|nature reserve
 battert-near-rastatt|1024|3|mountain
 battery-kemble-park-near-alexandria-va|32768|3|national park
 battures-de-saint-fulgence-near-alma|65536|3|wildlife refuge
+batu-caves-near-kuala-lumpur|2|3|cave
 batumi-botanical-garden-near-batumi|0|0|
 batumi-botanical-garden-near-poti|0|0|
 batyieva-hora-near-fastiv|1024|3|mountain
@@ -1824,11 +2163,20 @@ bay-island-near-huntington-beach|64|3|island
 bay-island-near-irvine|64|3|island
 bay-island-near-newport-beach|64|3|island
 bay-of-baku-near-sumgait|4096|3|bay
+bay-of-bangkok-near-bangkok|4096|3|bay
 bay-of-fundy-near-saint-john|4096|3|bay
+bay-of-garitsa-near-corfu|4096|3|cove
 bay-of-greifswald-near-stralsund|4096|3|bay
 bay-of-islands-coastal-park-near-warrnambool|131072|3|park
+bay-of-kiel-near-kiel|4096|3|cove
+bay-of-kiel-near-nakskov|4096|3|cove
+bay-of-kiel-near-rendsburg|4096|3|cove
+bay-of-kiel-near-sonderborg|4096|3|cove
 bay-of-kotor-near-herceg-novi|0|0|
 bay-of-mont-saint-michel-near-saint-malo|69632|3|bay
+bay-of-montevideo-near-montevideo|4096|3|bay
+bay-of-pomerania-near-greifswald|4096|3|cove
+bay-of-pomerania-near-swinoujscie|4096|3|cove
 bay-of-puck-near-sopot|69632|3|bay
 bay-of-the-somme-near-arras|4608|3|estuary
 bay-of-the-somme-near-beauvais|4608|3|estuary
@@ -1863,16 +2211,34 @@ bazos-dendrological-park-near-timisoara|0|0|
 bde-maka-ska-near-bloomington|32|3|lake
 bde-maka-ska-near-minneapolis|32|3|lake
 bde-maka-ska-near-shakopee|32|3|lake
+beach-ameland-near-sneek|16|3|beach
+beach-banj-sibenik-near-kastela|16|3|beach
 beach-banj-sibenik-near-sibenik|16|3|beach
+beach-banj-sibenik-near-solin|16|3|beach
+beach-banj-sibenik-near-split|16|3|beach
+beach-banj-sibenik-near-trogir|16|3|beach
+beach-banj-sibenik-near-vodice|16|3|beach
+beach-of-a-lanzada-near-pontevedra|16|3|beach
+beach-of-a-lanzada-near-vigo|16|3|beach
 beach-of-batumi-near-batumi|16|3|beach
 beach-of-batumi-near-poti|16|3|beach
+beach-of-criel-sur-mer-near-dieppe|16|3|beach
+beach-of-dieppe-near-dieppe|16|3|beach
+beach-of-durres-near-durres|16|3|beach
+beach-of-durres-near-tirana|16|3|beach
 beach-of-el-cordial-el-reguero-near-aviles|16|3|beach
+beach-of-fecamp-near-dieppe|16|3|beach
+beach-of-hooksiel-near-wilhelmshaven|16|3|beach
 beach-of-orzan-near-a-coruna|16|3|urban beach
+beach-of-pourville-near-dieppe|16|3|beach
 beach-of-san-giovanni-di-sinis-near-oristano|16|3|beach
 beach-of-santo-amaro-near-a-coruna|16|3|urban beach
+beach-of-veulettes-sur-mer-near-dieppe|16|3|beach
+beach-przytor-swinoujscie-near-szczecin|16|3|beach
 beachy-head-near-ashford|4096|3|cape
 beachy-head-near-bexhill-on-sea|4096|3|cape
 beachy-head-near-brighton|4096|3|cape
+beachy-head-near-brighton-and-hove|4096|3|cape
 beachy-head-near-crawley|4096|3|cape
 beachy-head-near-eastbourne|4096|3|cape
 beachy-head-near-folkestone|4096|3|cape
@@ -1886,6 +2252,14 @@ beacon-hill-near-andover|66560|3|hill
 beacon-hill-near-eastleigh|66560|3|hill
 beacon-hill-near-leicester|1024|3|hill
 beacon-hill-near-winchester|66560|3|hill
+beacon-point-near-durham|4096|3|cape
+beacon-point-near-gateshead|4096|3|cape
+beacon-point-near-hartlepool|4096|3|cape
+beacon-point-near-newcastle-upon-tyne|4096|3|cape
+beacon-point-near-south-shields|4096|3|cape
+beacon-point-near-sunderland|4096|3|cape
+bear-beach-near-langford|16|3|beach
+bear-beach-near-victoria|16|3|beach
 bear-brook-state-park-near-manchester-nh|131072|2|
 bear-creek-pioneers-park-near-conroe|196608|3|protected area
 bear-creek-pioneers-park-near-sugar-land|196608|3|protected area
@@ -1928,8 +2302,10 @@ beaverhill-lake-near-camrose|32|3|lake
 beaverhill-lake-near-fort-saskatchewan|32|3|lake
 beaversprite-near-utica|65536|3|nature reserve
 beavertail-hill-state-park-near-missoula|131072|2|
+bebek-bay-near-istanbul|4096|3|bay
 bebresh-near-botevgrad|65536|3|Special Area of Conservation
 bebrukas-near-prienai|32|3|lake
+bec-de-l-aigle-near-la-seyne-sur-mer|5120|3|summit
 beckinger-buchwald-near-merzig|16384|3|forest
 beckinger-buchwald-near-saarlouis|16384|3|forest
 becklemer-busch-near-recklinghausen|65536|3|protected area
@@ -1956,14 +2332,21 @@ beeklustpark-near-hengelo|131072|3|park
 beelu-national-park-near-northam|32768|3|national park of Australia
 beemster-arboretum-near-purmerend|0|0|
 beer-sheva-park-near-renton|131072|3|park
+beersheba-beach-ashdod-near-ashkelon|16|3|beach
 bees-landing-park-near-north-charleston|131072|3|park
 beetaloo-reservoir-near-kadina|32|3|reservoir
 beetaloo-reservoir-near-port-augusta|32|3|reservoir
 beetaloo-reservoir-near-whyalla|32|3|reservoir
 beetzsee-near-brandenburg-an-der-havel|0|0|
+beg-en-aud-near-lorient|4096|3|cape
+beg-er-skeul-near-lorient|4096|3|cape
+beg-er-skeul-near-vannes|4096|3|cape
+beglitsa-spit-near-taganrog|69632|3|cape
 begwary-brook-near-bedford|65536|3|nature reserve
 behrensbruck-near-oranienburg|65536|3|Special Area of Conservation
 bei-den-drei-pfarren-near-leoben|1024|3|mountain
+beiarfjorden-near-bodo|4096|3|fjord
+beihai-lake-near-beijing|32|3|lake
 beihai-lake-near-cangzhou|32|3|lake
 beihai-silver-beach-near-maoming|16|3|beach
 beihai-silver-beach-near-nanning|16|3|beach
@@ -1976,6 +2359,10 @@ beijing-xishan-national-forest-park-near-baoding|147456|3|forest park
 beijing-xishan-national-forest-park-near-cangzhou|147456|3|forest park
 beijinhos-beach-near-silves|16|3|beach
 beim-trunk-dolnji-trink-near-szombathely|65536|3|protected area
+beira-lake-near-colombo|32|3|reservoir
+beitstadfjorden-near-steinkjer-municipality|4096|3|fjord
+beitstadfjorden-near-stjordalshalsen|4096|3|fjord
+beixiao-he-near-beijing|256|3|watercourse
 beket-pond-near-moscow|32|3|reservoir
 bel-aire-park-near-burbank|131072|3|park
 bel-ko-near-eger|66560|3|summit
@@ -2005,12 +2392,14 @@ belcrum-beach-near-oosterhout|16|3|urban beach
 belemedik-nature-park-near-tarsus|196608|3|nature park
 belews-lake-near-high-point|32|3|reservoir
 belfountain-conservation-area-near-caledon|65536|3|protected area
+belgian-coast-near-bruges|4096|3|coast
 belgorod-reservoir-near-belgorod|32|3|reservoir
 belgorod-reservoir-near-kursk|32|3|reservoir
 belianske-tatras-near-poprad|1024|3|mountain range
 belintash-near-asenovgrad|65536|3|natural monument
 belintash-near-kardzhali|65536|3|natural monument
 beljanica-near-jagodina|1024|3|mountain
+bellandur-lake-near-bangalore|32|3|lake
 bellarine-peninsula-near-geelong|4096|3|peninsula
 bellavista-near-sondrio|1024|3|mountain
 belle-ile-en-mer-near-vannes|65600|3|island
@@ -2024,15 +2413,29 @@ belle-isle-park-near-detroit|0|0|
 belle-isle-park-near-sterling-heights|0|0|
 belle-isle-park-near-warren|0|0|
 belleville-lake-near-ann-arbor|32|3|reservoir
+bellevue-beach-near-copenhagen|16|3|beach
+bellevue-beach-near-frederiksberg|16|3|beach
+bellevue-beach-near-frederiksvaerk|16|3|beach
+bellevue-beach-near-hadsund|16|3|beach
+bellevue-beach-near-helsingor|16|3|beach
+bellevue-beach-near-hillerod|16|3|beach
+bellevue-beach-near-horsholm|16|3|beach
+bellevue-beach-near-koge|16|3|beach
+bellevue-beach-near-metkovic|16|3|beach
+bellevue-beach-near-roskilde|16|3|beach
 bellevue-state-park-near-cedar-rapids|131072|3|park
 bellevue-state-park-near-davenport|131072|3|park
 bellevue-state-park-near-dubuque|131072|3|park
 bellevuebos-near-bilzen|81920|3|forest
+belmont-lake-state-park-near-babylon|131072|3|New York state park
 belmont-mound-state-park-near-dubuque|131072|2|
 belmont-regional-park-near-lower-hutt|131072|3|regional park
 belo-jezero-near-kikinda|4128|3|lagoon
 belo-jezero-near-zrenjanin|4128|3|lagoon
 beloe-near-ryazan|32|3|lake
+belongil-beach-near-ballina-nsw|16|3|beach
+belongil-beach-near-goonellabah|16|3|beach
+belongil-beach-near-lismore|16|3|beach
 beloye-bardukovskoye-lake-near-vladimir|32|3|lake
 beloye-lake-near-vologda|32|3|lake
 beloye-near-ulan-ude|32|3|lake
@@ -2061,13 +2464,19 @@ ben-shemen-forest-near-ramla|16384|3|forest
 ben-shemen-forest-near-rehovot|16384|3|forest
 benacantil-near-alicante|1024|3|mountain
 benacantil-near-elda|1024|3|mountain
+benagil-near-faro|0|0|
+benagil-near-olhao|0|0|
 benagil-near-portimao|0|0|
+benajarafe-beach-near-malaga|16|3|beach
+benajarafe-beach-near-velez-malaga|16|3|beach
 benalla-botanical-gardens-near-shepparton|0|0|
 benarkin-national-park-near-kingaroy|32768|3|national park of Australia
 benbradagh-near-ballymena|1024|3|mountain
 benbradagh-near-derry|1024|3|mountain
 benbradagh-near-omagh|1024|3|mountain
 benbulbin-near-sligo|1024|3|mountain
+bender-beach-near-milwaukee|131088|3|beach
+bender-beach-near-waukesha|131088|3|beach
 benestads-backar-near-ystad|65536|3|nature reserve
 benger-swamp-near-bunbury|32|3|lake
 benger-swamp-near-collie|32|3|lake
@@ -2083,6 +2492,7 @@ beninksberg-near-tienen|1024|3|mountain
 benjamin-rush-state-park-near-camden|131072|3|Pennsylvania state park
 benjamin-rush-state-park-near-philadelphia|131072|3|Pennsylvania state park
 benkove-ostrovy-near-dunajska-streda|96|3|lake island
+bennane-head-near-ayr-uk|4096|3|headland
 bennett-s-pond-state-park-near-danbury|131072|2|
 bennett-spring-state-park-near-jefferson-city|131072|3|Missouri state park
 benten-island-near-fukuyama|64|3|island
@@ -2092,12 +2502,15 @@ benther-berg-near-hanover|1024|3|mountain
 bentsen-rio-grande-valley-state-park-near-brownsville|131072|3|Texas state park
 bentsen-rio-grande-valley-state-park-near-edinburg-us|131072|3|Texas state park
 bentsen-rio-grande-valley-state-park-near-mcallen|131072|3|Texas state park
+benwee-head-near-ballina|4096|3|cape
+beqaa-valley-near-beirut|2048|3|valley
 berca-mud-volcanoes-near-buzau|65536|3|protected area
 berca-mud-volcanoes-near-ploiesti|65536|3|protected area
 berceau-island-near-melun|320|3|river island
 berd-spit-near-novosibirsk|65536|3|protected area of Russia
 berdiansk-bay-near-berdiansk|4096|3|bay
 berdianska-kosa-near-berdiansk|0|0|
+berea-range-near-durban|1024|3|hill
 bereg-cherskogo-near-omsk|65536|3|protected area of Russia
 beresti-lake-near-barlad|65536|3|nature reserve
 beresti-lake-near-miroslava|65536|3|nature reserve
@@ -2144,12 +2557,16 @@ berkshires-near-albany-ny|1024|3|mountain range
 berlenga-grande-island-near-caldas-da-rainha|64|3|island
 berlengas-natural-reserve-near-leiria|65536|3|nature reserve
 bernhartshohe-near-boblingen|1024|3|hill
+bernies-beach-near-madison|16|3|beach
 bernstein-near-rastatt|1024|3|mountain
 bernsteinsee-stude-near-gifhorn|131104|3|artificial lake
 bernwood-forest-near-aylesbury|16384|3|royal forest
 bernwood-forest-near-banbury|16384|3|royal forest
 bernwood-forest-near-oxford|16384|3|royal forest
 berounka-near-plzen|256|3|river
+berry-head-near-exeter|4096|3|cape
+berry-head-near-plymouth|4096|3|cape
+berry-head-near-torquay|4096|3|cape
 berry-springs-park-near-round-rock|65536|3|protected area
 bertembos-near-aarschot|81920|3|forest
 bertembos-near-leuven|81920|3|forest
@@ -2175,6 +2592,7 @@ beskydy-protected-area-near-ostrava|65536|3|Special Area of Conservation
 beskydy-protected-landscape-area-near-zlin|65536|3|Special Area of Conservation
 besna-kobila-near-vranje|1024|3|mountain
 bethpage-state-park-near-hempstead|0|0|
+betina-spilja-near-dubrovnik|16|3|beach
 betla-national-park-near-patna|32768|3|national park
 betonara-near-koprivnica|32|3|artificial lake
 betonara-near-nagykanizsa|32|3|artificial lake
@@ -2288,6 +2706,7 @@ bigge-reservoir-near-herne|32|3|reservoir
 biggesee-near-wuppertal|32|3|reservoir
 bighorn-canyon-national-recreation-area-near-billings|32768|3|National Park System unit
 bighorn-lake-near-billings|32|3|reservoir
+bight-of-benin-near-lagos|4096|3|bay
 bignone-near-imperia|0|0|
 bigora-near-vratsa|1|3|waterfall
 bigstick-lake-near-swift-current|32|3|lake
@@ -2326,6 +2745,7 @@ bindersee-near-eisleben|32|3|lake
 bindusagar-lake-near-bhubaneswar|32|3|lake
 binevenagh-near-derry|1024|3|mountain
 bingumer-sand-near-leer|320|3|river island
+binh-quoi-thanh-da-near-ho-chi-minh-city|4096|3|peninsula
 binnenbedijkte-maas-near-ridderkerk|32|3|lake
 binnendune-nordostlich-homburg-near-homburg|65536|3|Special Area of Conservation
 binnendunen-nordoe-near-itzehoe|65536|3|Special Area of Conservation
@@ -2372,16 +2792,38 @@ birzai-regional-park-near-panevezys|131072|3|regional park
 bisajarvi-near-porvoo|32|3|lake or pond
 bisajarvi-near-tuusula|32|3|lake or pond
 bisalta-near-cuneo|1024|3|mountain
+biscayne-bay-near-davie|4128|3|lagoon
+biscayne-bay-near-hialeah|4128|3|lagoon
+biscayne-bay-near-hollywood|4128|3|lagoon
+biscayne-bay-near-miami|4128|3|lagoon
+biscayne-bay-near-miami-gardens|4128|3|lagoon
+biscayne-bay-near-miramar|4128|3|lagoon
+biscayne-bay-near-pembroke-pines|4128|3|lagoon
 biscayne-national-park-near-boca-raton|32768|3|National Park of the United States
 biscayne-national-park-near-fort-lauderdale|32768|3|National Park of the United States
 biscayne-national-park-near-hollywood|32768|3|National Park of the United States
 biscayne-national-park-near-miami|32768|3|National Park of the United States
 biscayne-national-park-near-miami-beach|32768|3|National Park of the United States
 biscayne-national-park-near-pembroke-pines|32768|3|National Park of the United States
+biseulsan-near-daegu|1024|3|mountain
 biseulsan-near-gumi|1024|3|mountain
 bisham-woods-near-high-wycombe|81920|3|forest
+bishoftu-guda-lake-near-addis-ababa|32|3|lake
 bishop-lucey-park-near-ballincollig|131072|3|park
 bishop-peak-near-san-luis-obispo|1024|3|mountain
+biskopsudden-near-haninge-municipality|4096|3|cape
+biskopsudden-near-huddinge-municipality|4096|3|cape
+biskopsudden-near-lidingo|4096|3|cape
+biskopsudden-near-marsta|4096|3|cape
+biskopsudden-near-nacka-municipality|4096|3|cape
+biskopsudden-near-norrtalje|4096|3|cape
+biskopsudden-near-nynashamn|4096|3|cape
+biskopsudden-near-sodertalje|4096|3|cape
+biskopsudden-near-solna-municipality|4096|3|cape
+biskopsudden-near-stockholm|4096|3|cape
+biskopsudden-near-taby|4096|3|cape
+biskopsudden-near-tumba|4096|3|cape
+biskopsudden-near-upplands-vasby|4096|3|cape
 biskupska-kupa-near-kedzierzyn-kozle|1024|3|mountain
 biskupska-kupa-near-krnov|1024|3|mountain
 biskupska-kupa-near-nysa|1024|3|mountain
@@ -2396,6 +2838,7 @@ bistrita-mountains-near-gura-humorului|1024|3|mountain range
 bistrita-mountains-near-targu-neamt|1024|3|mountain range
 bit-rock-near-torrance|64|3|island
 bita-river-near-puerto-carreno|256|3|watercourse
+bitou-cape-near-taipei|4096|3|headland
 bitter-lake-national-wildlife-refuge-near-roswell|65536|3|National Wildlife Refuge
 bixley-heath-near-ipswich-uk|65536|3|local nature reserve
 bixquert-near-alzira|2048|3|valley
@@ -2408,13 +2851,26 @@ bjersjoholms-adellovskog-near-ystad|65536|3|nature reserve
 bjorgedalen-naturreservat-near-elverum-municipality|65536|3|nature reserve
 bjorgedalen-naturreservat-near-hamar-municipality|65536|3|nature reserve
 bjorko-ekero-near-strangnas|64|3|island
+bjornafjorden-near-bergen|4096|3|fjord
 bjornastjarn-near-partille|32|3|lake
 bjorndammen-near-partille|32|3|lake
 bjornerodspiggen-near-halden|263168|3|mountain
 bjorno-near-kalmar|65536|3|nature reserve
 bjorno-near-sonderborg|64|3|island
 bjorno-near-svendborg|64|3|island
+bjugnfjorden-near-trondheim|4096|3|fjord
 bjusan-near-borlange|32|3|lake
+bla-lagunen-munson-near-huddinge-municipality|48|3|beach
+bla-lagunen-munson-near-lidingo|48|3|beach
+bla-lagunen-munson-near-marsta|48|3|beach
+bla-lagunen-munson-near-nacka-municipality|48|3|beach
+bla-lagunen-munson-near-nynashamn|48|3|beach
+bla-lagunen-munson-near-sodertalje|48|3|beach
+bla-lagunen-munson-near-solna-municipality|48|3|beach
+bla-lagunen-munson-near-stockholm|48|3|beach
+bla-lagunen-munson-near-taby|48|3|beach
+bla-lagunen-munson-near-tumba|48|3|beach
+bla-lagunen-munson-near-upplands-vasby|48|3|beach
 black-angel-gorge-near-mount-isa|2052|3|defile
 black-bayou-lake-national-wildlife-refuge-near-shreveport|65536|3|National Wildlife Refuge
 black-bourn-valley-near-bury-st-edmunds|65536|3|nature reserve
@@ -2456,6 +2912,7 @@ black-potts-ait-near-windsor|320|3|river island
 black-pyramid-rock-near-smithton-au|65600|3|island
 black-ridge-canyons-wilderness-near-grand-junction|65536|3|United States Wilderness Area
 black-rock-mountain-near-carlow|1024|3|mountain
+black-s-beach-near-el-cajon|16|3|beach
 black-s-beach-near-escondido|16|3|beach
 black-s-beach-near-san-diego|16|3|beach
 black-sandy-state-park-near-helena|131072|2|
@@ -2468,13 +2925,25 @@ blackdown-hills-near-taunton|1024|3|hill chain
 blackdown-tableland-national-park-near-emerald|32768|3|national park of Australia
 blackfoot-mountains-near-idaho-falls|1024|3|mountain range
 blackfoot-mountains-near-pocatello|1024|3|mountain range
+blackhead-point-near-shenzhen|4096|3|headland
 blackjack-mountain-near-marietta|1024|3|mountain
 blackjack-mountain-near-newnan|1024|3|mountain
 blackjack-mountain-near-sandy-springs|1024|3|mountain
 blackleach-country-park-near-bolton|131072|3|country park
+blackpool-sands-near-barrow-in-furness|16|3|beach
 blackpool-sands-near-blackpool|16|3|beach
+blackpool-sands-near-lancaster|16|3|beach
+blackpool-sands-near-preston|16|3|beach
+blackpool-sands-near-st-helens|16|3|beach
+blackpool-sands-near-widnes|16|3|beach
+blackpool-sands-near-wigan|16|3|beach
+blackrock-ladies-beach-near-ashbourne|16|2|
+blackrock-ladies-beach-near-balbriggan|16|2|
+blackrock-ladies-beach-near-drogheda|16|2|
+blackrock-ladies-beach-near-dundalk|16|2|
 blackrock-near-charlottesville|1024|3|mountain
 blacksas-near-hudiksvall|65536|3|nature reserve
+blacksmiths-beach-near-newcastle|16|3|beach
 blackstairs-mountain-near-carlow|1024|3|mountain
 blackstairs-mountains-near-carlow|1024|3|mountain range
 blackstairs-mountains-near-kilkenny|1024|3|mountain range
@@ -2502,7 +2971,13 @@ blankaviken-near-vastervik|65536|3|nature reserve
 blankenberge-near-bruges|0|0|
 blanko-near-jindrichuv-hradec|65536|3|nature reserve in the Czech Republic
 blansky-les-near-cesky-krumlov|1024|3|mountain range
+blasan-near-gothenburg|4112|3|beach
+blasan-near-kungsbacka|4112|3|beach
+blasan-near-lerum|4112|3|beach
 blasan-near-mariehamn|1024|3|mountain
+blasan-near-molndal|4112|3|beach
+blasan-near-molnlycke|4112|3|beach
+blasan-near-partille|4112|3|beach
 blatchford-lake-near-yellowknife|32|3|lake
 blattersberg-near-landau-in-der-pfalz|1024|3|mountain
 blau-und-kleine-lauter-near-neu-ulm|65536|3|Special Area of Conservation
@@ -2514,6 +2989,8 @@ blausteinsee-near-eschweiler|131104|3|artificial lake
 blautopf-near-ulm|65536|3|geotope
 blauwe-meer-near-assen|32|3|lake
 blauwe-meer-near-hoogeveen|32|3|lake
+blavandshuk-near-esbjerg|0|0|
+blavandshuk-near-ribe|0|0|
 blavet-valley-near-lorient|256|3|gold river
 bleddiner-riss-near-lutherstadt-wittenberg|32|2|
 bledsoe-creek-state-park-near-bowling-green|131072|2|
@@ -2532,15 +3009,20 @@ bliednaje-near-vileyka|32|3|lake
 bliesaue-bei-beeden-near-homburg|65536|3|Special Area of Conservation
 bliesgau-biosphere-reserve-near-neunkirchen|65536|3|biosphere reserve
 bliha-waterfall-near-prijedor|1|3|waterfall
+blind-point-near-vacaville|4096|3|cape
 blithfield-reservoir-near-burton-upon-trent|32|3|reservoir
 blithfield-reservoir-near-cannock|32|3|reservoir
 blithfield-reservoir-near-lichfield|32|3|reservoir
 blithfield-reservoir-near-stafford|32|3|reservoir
 bliznec-sumarev-grob-near-zapresic|65536|3|protected area
 blling-lake-near-herning|65568|3|lake
+blokhus-beach-near-aalborg|16|3|beach
+blokhus-beach-near-hjorring|16|3|beach
 blomberg-near-lidkoping|65536|3|nature reserve
 blouson-gardens-near-lysychansk|65536|3|protected area
 blowing-rocks-preserve-near-west-palm-beach|0|0|
+blue-beach-near-sibenik|16|3|beach
+blue-beach-near-vodice|16|3|beach
 blue-heron-lake-near-chatham-kent|32|3|lake
 blue-heron-lake-near-leamington|32|3|lake
 blue-heron-lake-near-windsor-ontario|32|3|lake
@@ -2592,6 +3074,7 @@ boca-brava-near-david|64|3|island
 boca-chica-beach-near-brownsville|4096|3|shore
 boca-paila-peninsula-near-chetumal|32|3|lake
 boca-paila-peninsula-near-valladolid-mx|32|3|lake
+boccadasse-beach-near-genoa|16|3|beach
 bochechanskyy-near-konotop|65536|3|landscape reserve
 bocksberg-near-goslar|1024|3|mountain
 boddington-meadow-near-banbury|65536|3|nature reserve
@@ -2614,12 +3097,14 @@ boelaremeersen-near-ninove|65536|3|nature reserve
 boetelerveld-near-almelo|65536|3|Special Area of Conservation
 boetelerveld-near-deventer|65536|3|Special Area of Conservation
 boetelerveld-near-ommen|65536|3|Special Area of Conservation
+boeung-kak-near-phnom-penh|32|3|lake
 bog-brook-reservoir-near-danbury|32|3|reservoir
 bogda-peak-near-urumqi|1024|3|summit
 bogdalicky-vrch-near-malacky|65536|3|nature reserve
 bogenberg-near-straubing|66560|3|mountain
 bogensee-near-eberswalde|32|3|lake
 bogildo-near-jeju|64|3|island
+bogota-river-near-bogota|256|3|watercourse
 bogue-chitto-state-park-near-hattiesburg|131072|2|
 bohatsky-park-near-komarno|65536|3|protected area
 bohatsky-park-near-nove-zamky|65536|3|protected area
@@ -2652,6 +3137,7 @@ bois-blanc-island-near-windsor-ontario|320|3|river island
 bois-d-acren-akrenbos-near-ath|16384|3|forest
 bois-d-hergies-near-ath|81920|3|forest
 bois-d-hubermont-bois-d-antoing-bois-de-leuze-near-ath|16384|3|forest
+bois-de-boulogne-near-armentieres|147456|3|forest
 bois-de-l-ile-bizard-nature-park-near-beaconsfield|131072|3|regional park
 bois-de-l-ile-bizard-nature-park-near-blainville|131072|3|regional park
 bois-de-l-ile-bizard-nature-park-near-boisbriand|131072|3|regional park
@@ -2719,12 +3205,21 @@ boise-mountains-near-boise|1024|3|mountain range
 boise-national-forest-near-boise|81920|3|proclaimed forest
 boise-national-forest-near-caldwell|81920|3|proclaimed forest
 boise-national-forest-near-nampa|81920|3|proclaimed forest
+bojo-beach-near-accra|16|3|beach
+bokfjorden-near-vadso|4096|3|fjord
+boknafjord-near-haugesund-municipality|4096|3|fjord
+boknafjord-near-karmoy-municipality|4096|3|fjord
+boknafjord-near-sandnes|4096|3|fjord
+boknafjord-near-sandnes-municipality|4096|3|fjord
+boknafjord-near-stavanger|4096|3|fjord
+boknafjord-near-stavanger-sandnes|4096|3|fjord
 bokove-palatove-near-dovzhansk|65536|3|landscape reserve
 bokove-palatove-near-khrustalnyi|65536|3|landscape reserve
 bokrijk-near-hasselt|0|0|
 boky-near-zvolen|65536|3|national nature reserve
 bol-shoy-taldykol-near-astana|32|3|lake
 bolata-near-dobrich|16|3|beach
+bolata-near-varna|16|3|beach
 bolboci-reservoir-near-breaza|32|3|reservoir
 bolboci-reservoir-near-targoviste|32|3|reservoir
 bolehlav-near-trnava|65536|3|nature reserve
@@ -2744,11 +3239,15 @@ bolshoe-near-pskov|32|3|lake
 bolshoi-tkhach-mountain-near-maykop|1024|3|mountain range
 bolshoy-ochakovsky-pond-near-podolsk|32|3|reservoir
 bolshoye-yarovoye-near-pavlodar|32|3|salt lake
+bolt-tail-near-exeter|4096|3|headland
+bolt-tail-near-plymouth|4096|3|headland
 boltenhagen-near-schwerin|0|0|
 bolton-abbey-near-bradford|0|0|
 bombay-hills-near-pukekohe|1024|3|mountain range
 bombay-hook-national-wildlife-refuge-near-dover|65536|3|National Wildlife Refuge
+bombo-beach-near-nowra|16|3|beach
 bomere-pool-near-telford|32|3|lake
+bomlafjorden-near-haugesund-municipality|4096|3|fjord
 bommeer-near-spijkenisse|32|3|lake
 bommeer-near-vlaardingen|32|3|lake
 bommer-canyon-near-newport-beach|2052|3|canyon
@@ -2766,6 +3265,7 @@ bond-lake-near-richmond-hill|32|3|lake
 bond-swamp-national-wildlife-refuge-near-macon|196608|3|National Wildlife Refuge
 bondofjarden-near-pitea|65536|3|nature reserve
 bongil-bongil-national-park-near-coffs-harbour|32768|3|national park of Australia
+bongoyo-island-near-dar-es-salaam|64|3|island
 bonham-state-park-near-frisco|131072|3|Texas state park
 bonham-state-park-near-mckinney|131072|3|Texas state park
 bonham-state-park-near-mesquite|131072|3|Texas state park
@@ -2777,7 +3277,10 @@ bonita-falls-near-rialto|1|3|waterfall
 bonita-falls-near-san-bernardino|1|3|waterfall
 bonita-falls-near-victorville|1|3|waterfall
 bonnebutteler-gehege-near-neumunster|65536|3|Special Area of Conservation
+bonnerup-strand-near-aarhus|0|0|
 bonnerup-strand-near-grenaa|0|0|
+bonnerup-strand-near-hadsund|0|0|
+bonnerup-strand-near-randers|0|0|
 bonnington-pavilion-near-hamilton-uk|1|3|waterfall
 bonnington-pavilion-near-motherwell|1|3|waterfall
 booderee-national-park-near-nowra|98304|3|national park of Australia
@@ -2807,6 +3310,7 @@ borderland-state-park-near-brockton|131072|2|
 bordesholmer-see-near-neumunster|32|3|lake
 boren-near-motala|32|3|lake
 borenore-caves-near-orange|2|3|karst
+borgarfjordur-near-reykjavik|4096|3|fjord
 borgoy-near-haugesund-municipality|64|3|island
 borgstedter-see-near-rendsburg|32|3|lake
 borgundfjorden-near-alesund|4096|3|fjord
@@ -2823,6 +3327,7 @@ borowno-lake-near-bydgoszcz|32|3|lake
 borowo-lake-near-wejherowo|32|3|lake
 borrigo-near-menton|256|3|river
 borshchivskyi-reserve-near-pryluky|81920|3|forest reserve
+borsmose-strand-near-esbjerg|16|3|beach
 borsucha-balka-near-kadiivka|65536|3|landscape reserve
 bory-tucholskie-national-park-near-chojnice|32768|3|National Parks of Poland
 borya-near-sandvika|64|3|island
@@ -2876,11 +3381,18 @@ botanical-garden-tabor-near-tabor|0|0|
 botanicka-zahrada-petra-albrechta-near-prostejov|0|0|
 botanischer-garten-rombergpark-near-lunen|0|0|
 bothnian-sea-national-park-near-uusikaupunki|32768|3|national park
+boti-falls-near-accra|1|3|waterfall
 botshol-near-nieuwegein|65536|3|nature area
 bottomless-lakes-state-park-near-roswell|131072|2|
+bou-arouss-near-casablanca|1024|3|hill
+bou-arouss-near-rabat|1024|3|hill
 boubin-near-prachatice|1024|3|mountain
 bouddi-national-park-near-central-coast|32768|3|national park of Australia
 bouddi-national-park-near-gosford|32768|3|national park of Australia
+boukornine-national-park-near-tunis|32768|3|national park
+boulder-bank-near-nelson|0|0|
+boulders-beach-near-cape-town|16|3|beach
+boulders-beach-near-stellenbosch|16|3|beach
 boulsworth-hill-near-accrington|1024|3|mountain
 boulsworth-hill-near-burnley|1024|3|mountain
 boulsworth-hill-near-halifax-uk|1024|3|mountain
@@ -2927,6 +3439,7 @@ brabyns-park-near-stockport|131072|3|park
 bracciano-lake-near-rome|160|3|volcanic crater lake
 brache-vondern-near-bottrop|131072|3|park
 brache-vondern-near-oberhausen|131072|3|park
+brackley-lough-near-sligo|4128|3|lagoon
 bradano-river-near-matera|256|3|river
 bradbury-mountain-state-park-near-portland-me|131072|2|
 bradford-beach-near-fond-du-lac|16|3|beach
@@ -2980,8 +3493,10 @@ bratslavska-dubyna-near-mohyliv-podilskyi|81920|3|forest reserve
 bratslavska-dubyna-near-podilsk|81920|3|forest reserve
 bratslavska-dubyna-near-zhmerynka|81920|3|forest reserve
 bratten-strand-near-frederikshavn|16|2|
+bratten-strand-near-hjorring|16|2|
 bratten-strand-near-skagen|16|2|
 braunsberg-near-neusiedl-am-see|1024|3|mountain
+brava-beach-near-maldonado|16|3|beach
 braviken-near-norrkoping|4096|3|bay
 bray-head-near-bray|1024|3|mountain
 bray-head-near-greystones|1024|3|mountain
@@ -3005,6 +3520,14 @@ brdy-near-rokycany|1024|3|mountain range
 breakheart-reservation-near-lynn|131072|2|
 breakheart-reservation-near-salem-us|131072|2|
 bream-head-near-whangarei|0|0|
+brean-down-near-bridgwater|5120|3|hill
+brean-down-near-bristol|5120|3|hill
+brean-down-near-cardiff|5120|3|hill
+brean-down-near-newport|5120|3|hill
+brean-down-near-port-talbot|5120|3|hill
+brean-down-near-taunton|5120|3|hill
+brean-down-near-weston-super-mare|5120|3|hill
+brean-down-near-yeovil|5120|3|hill
 brechtse-heide-near-lier|65536|3|nature area
 brecon-beacons-near-cardiff|98304|3|national park of England and Wales
 brecon-beacons-near-newport|1024|3|mountain range
@@ -3023,6 +3546,8 @@ breitenauriegel-near-deggendorf|1024|3|mountain
 breitenbachtalsperre-near-siegen|32|3|reservoir
 breites-moor-near-celle|65536|3|Special Area of Conservation
 breithorn-near-saalfelden-am-steinernen-meer|1024|3|mountain
+breitling-warnow-near-rostock|4128|3|lagoon
+breitling-warnow-near-wismar|4128|3|lagoon
 breitlingsee-near-brandenburg-an-der-havel|32|3|lake
 bremangerlandet-near-floro|64|3|island
 bremische-ochtum-near-delmenhorst|65536|3|Special Area of Conservation
@@ -3032,6 +3557,7 @@ brenne-regional-natural-park-near-chateauroux|196608|3|protected area
 brenne-regional-natural-park-near-chatellerault|196608|3|protected area
 brenne-regional-natural-park-near-orleans|196608|3|protected area
 brenne-regional-natural-park-near-poitiers|196608|3|protected area
+brentwood-state-park-near-babylon|131072|3|New York state park
 brest-city-park-near-biala-podlaska|131072|3|park
 brest-rowing-basin-near-byerastsye|32|3|artificial lake
 brest-rowing-basin-near-kobryn|32|3|artificial lake
@@ -3048,6 +3574,8 @@ bribie-island-national-park-near-caloundra|32768|3|national park of Australia
 bric-berciassa-near-cuneo|1024|3|mountain
 bric-puschera-near-alba|1024|3|mountain
 brich-di-zumaglia-near-biella|1024|3|mountain
+brickyard-cove-near-antioch|4096|3|cove
+brickyard-cove-near-fairfield|4096|3|cove
 bridal-veil-falls-near-katoomba|1|3|waterfall
 bridal-veil-falls-near-provo|1|3|waterfall
 bridal-veil-falls-provincial-park-near-abbotsford|131072|3|provincial park of Canada
@@ -3091,6 +3619,7 @@ brnik-near-louny|1024|3|mountain
 brno-near-rokycany|1024|3|mountain
 brno-reservoir-near-blansko|32|3|reservoir
 brno-reservoir-near-brno|32|3|reservoir
+broad-brook-millpond-near-hartford|4128|3|lagoon
 broadwater-national-park-near-ballina-nsw|32768|3|national park of Australia
 broadwater-national-park-near-byron-bay|32768|3|national park of Australia
 broadwater-national-park-near-casino|32768|3|national park of Australia
@@ -3108,6 +3637,16 @@ brocken-near-quedlinburg|1024|3|main peak
 brocken-near-wolfenbuttel|1024|3|main peak
 brockholes-near-blackburn|65536|3|nature reserve
 brockholes-near-blackpool|65536|3|nature reserve
+brockton-point-near-burnaby|4096|3|cape
+brockton-point-near-coquitlam|4096|3|cape
+brockton-point-near-delta|4096|3|cape
+brockton-point-near-langley|4096|3|cape
+brockton-point-near-maple-ridge|4096|3|cape
+brockton-point-near-new-westminster|4096|3|cape
+brockton-point-near-port-moody|4096|3|cape
+brockton-point-near-surrey|4096|3|cape
+brockton-point-near-vancouver|4096|3|cape
+brockton-point-near-white-rock|4096|3|cape
 broczowka-nature-reserve-near-chelm|65536|3|nature reserve in Poland
 broczowka-nature-reserve-near-zamosc|65536|3|nature reserve in Poland
 broderick-park-near-amherst|131072|3|park
@@ -3115,12 +3654,18 @@ brodnica-landscape-park-near-grudziadz|196608|3|landscape park in Poland
 brodnica-landscape-park-near-torun|196608|3|landscape park in Poland
 brodnica-landscape-park-near-wloclawek|196608|3|landscape park in Poland
 brodtberg-near-remscheid|1024|3|mountain
+brodtener-ufer-near-lubeck|4096|3|cliff
+brodtener-ufer-near-wismar|4096|3|cliff
 brody-czerwinskie-nature-reserve-near-sochaczew|81920|3|forest reserve (Poland)
 broekelei-near-aarschot|65536|3|nature reserve
 broekelei-near-etten-leur|65536|3|nature reserve
 broekelei-near-lier|65536|3|nature reserve
 broekelei-near-mechelen|65536|3|nature reserve
 broekelei-near-rixensart|65536|3|nature reserve
+brofjorden-near-trollhattan|4096|3|fjord
+brofjorden-near-uddevalla|4096|3|fjord
+brofjorden-near-vanersborg|4096|3|fjord
+broga-hill-near-kuala-lumpur|1024|3|summit
 brokers-nose-near-wollongong|1024|3|mountain
 brom-dyckman-park-near-yonkers|131072|3|park
 bromberg-near-boblingen|1024|3|mountain
@@ -3131,6 +3676,8 @@ bronte-creek-provincial-park-near-mississauga|131072|3|provincial park of Canada
 bronte-heritage-waterfront-park-near-milton|131072|3|urban park
 brook-waimarama-sanctuary-near-nelson|65536|3|wildlife refuge
 brooke-house-nature-reserve-near-ipswich-uk|65536|3|nature reserve
+brooklands-lagoon-near-christchurch|4128|3|lagoon
+brooklands-lagoon-near-rolleston|4128|3|lagoon
 brooksee-near-rostock|32|3|lake
 broughton-island-near-forster|64|3|island
 broulee-island-nature-reserve-near-moruya|65536|3|protected area
@@ -3226,6 +3773,7 @@ bucura-lake-near-petrosani|32|3|lake
 buda-hills-near-esztergom|0|0|
 buda-hills-near-godollo|0|0|
 buda-hills-near-szentendre|0|0|
+budaki-lagoon-near-bilhorod-dnistrovskyi|4128|3|lagoon
 budawang-national-park-near-moruya|32768|3|national park of Australia
 budd-wiener-park-near-pasadena|131072|3|park
 budderoo-national-park-near-moss-vale|32768|3|national park of Australia
@@ -3235,6 +3783,8 @@ budi-lake-near-temuco|32|3|lake
 buena-vista-lagoon-near-carlsbad|4128|3|lagoon
 buendia-reservoir-near-cuenca|32|3|reservoir
 buescher-state-park-near-bryan|131072|3|Texas state park
+buffalo-beach-near-bunbury|16|3|beach
+buffalo-beach-near-busselton|16|3|beach
 buffalo-harbor-state-park-near-amherst|131072|3|New York state park
 buffalo-harbor-state-park-near-buffalo|131072|3|New York state park
 buffalo-lake-national-wildlife-refuge-near-amarillo|65536|3|National Wildlife Refuge
@@ -3253,9 +3803,20 @@ bug-gard-national-nature-park-near-mykolaiv|32768|3|national nature park
 bugaksan-near-goyang|1024|3|mountain
 bugaksan-near-paju|1024|3|mountain
 bugaksan-near-uijeongbu|1024|3|mountain
+bugala-island-near-kampala|64|3|island
 buggenhoutbos-near-beveren|16384|3|forest
 buggenhoutbos-near-dendermonde|16384|3|forest
 bugornea-near-ribnita|65536|3|landscape reserve
+bugoyfjorden-near-vadso|4096|3|fjord
+bugrashov-beach-tel-aviv-near-bat-yam|16|3|beach
+bugrashov-beach-tel-aviv-near-bnei-brak|16|3|beach
+bugrashov-beach-tel-aviv-near-holon|16|3|beach
+bugrashov-beach-tel-aviv-near-netanya|16|3|beach
+bugrashov-beach-tel-aviv-near-petah-tikva|16|3|beach
+bugrashov-beach-tel-aviv-near-ramat-gan|16|3|beach
+bugrashov-beach-tel-aviv-near-ramla|16|3|beach
+bugrashov-beach-tel-aviv-near-rishon-lezion|16|3|beach
+bugrashov-beach-tel-aviv-near-tel-aviv|16|3|beach
 bugyly-near-karaganda|1024|3|mountain
 bugyly-sanctuary-near-karaganda|65536|3|protected area
 buhnenwerder-near-brandenburg-an-der-havel|64|3|inland island
@@ -3270,6 +3831,7 @@ buiten-ij-near-diemen|32|3|lake
 buk-lesni-v-pribrami-near-pribram|0|0|
 buk-near-drohobych|0|0|
 buk-sobieskiego-near-zory|65536|3|natural monument
+bukhansan-national-park-near-seoul|32768|3|national park
 bukhansan-near-bucheon|1024|3|mountain
 bukhansan-near-chuncheon|1024|3|mountain
 bukhansan-near-gimpo|1024|3|mountain
@@ -3278,9 +3840,12 @@ bukhansan-near-gwangju|1024|3|mountain
 bukhansan-near-namyangju|1024|3|mountain
 bukhansan-near-paju|1024|3|mountain
 bukhansan-near-seongnam|1024|3|mountain
+bukhansan-near-seoul|1024|3|mountain
 bukhansan-near-uijeongbu|1024|3|mountain
 bukhara-specialized-nursery-jayron-near-qarshi|65536|3|protected area
 bukhtarma-reservoir-near-oskemen|32|3|reservoir
+bukit-timah-nature-reserve-near-singapore|65536|3|nature reserve
+bukit-timah-near-singapore|1024|3|hill
 bukk-mountains-near-miskolc|1024|3|mountain range
 bukk-national-park-near-budapest|32768|3|national parkin Hungary
 bukk-national-park-near-debrecen|32768|3|national parkin Hungary
@@ -3300,6 +3865,7 @@ bulau-near-hanau|16384|3|forest
 bulburin-national-park-near-biloela|32768|3|national park of Australia
 bulburin-national-park-near-gladstone|32768|3|national park of Australia
 bulganak-field-of-mud-volcanoes-near-kerch|128|3|mud volcano
+bulgarian-coastline-of-the-black-sea-near-burgas|16|3|beach
 bulgarian-coastline-of-the-black-sea-near-nesebar|16|3|beach
 bulgarka-nature-park-near-gabrovo|196608|3|nature park
 bulgarka-nature-park-near-gorna-oryahovitsa|196608|3|nature park
@@ -3325,9 +3891,17 @@ bundek-near-velika-gorica|32|3|lake
 bundek-near-zapresic|32|3|lake
 bunderbos-near-sittard|16384|3|forest
 bunderbos-near-sittard-geleen|16384|3|forest
+bundilla-beach-near-darwin|16|3|beach
 bundjalung-national-park-near-grafton|32768|3|national park of Australia
 bungonia-national-park-near-goulburn|32768|3|national park of Australia
 bunkers-in-antakalnis-near-salcininkai|0|0|
+bunnefjorden-near-baerum-municipality|4096|3|fjord
+bunnefjorden-near-drammen|4096|3|fjord
+bunnefjorden-near-drobak|4096|3|fjord
+bunnefjorden-near-lorenskog|4096|3|fjord
+bunnefjorden-near-moss|4096|3|fjord
+bunnefjorden-near-oslo|4096|3|fjord
+bunnefjorden-near-sandvika|4096|3|fjord
 buntsandstein-und-gipskarstlandschaft-bei-questenberg-im-sudharz-near-sangerhausen|65536|3|Special Area of Conservation
 buntsandsteinfelsen-im-rurtal-near-duren|65536|3|Special Area of Conservation
 buntven-near-helmond|32|2|
@@ -3357,6 +3931,9 @@ burgenstock-near-lucerne|1024|3|mountain
 burgenstock-near-sarnen|1024|3|mountain
 burgenstock-near-stans|1024|3|mountain
 burgenstock-near-zug|1024|3|mountain
+burgerablage-near-berlin|16|3|beach
+burgerablage-near-oranienburg|16|3|beach
+burgerablage-near-potsdam|16|3|beach
 burgess-falls-state-park-near-murfreesboro|131072|2|
 burgh-island-near-plymouth|64|3|tidal island
 burgh-island-near-torquay|64|3|tidal island
@@ -3370,6 +3947,8 @@ burham-down-near-maidstone|65536|3|nature reserve
 burham-down-near-rochester-uk|65536|3|nature reserve
 burica-peninsula-near-david|4096|3|peninsula
 burke-lake-near-manassas|32|3|reservoir
+burleigh-beach-near-gold-coast|16|3|beach
+burleigh-beach-near-murwillumbah|16|3|beach
 burlington-island-near-camden|320|3|river island
 burlinskoye-near-pavlodar|32|3|salt lake
 burlo-vardingholter-venn-und-entenschlatt-near-aalten|65536|3|Special Area of Conservation
@@ -3386,13 +3965,19 @@ burnaby-lake-regional-park-near-new-westminster|131072|3|regional park
 burnaby-mountain-near-coquitlam|1024|3|mountain
 burnaby-mountain-near-new-westminster|1024|3|mountain
 burnaby-mountain-near-port-moody|1024|3|mountain
+burnas-lagoon-near-bilhorod-dnistrovskyi|4128|3|lagoon
 burnham-beeches-near-reading|81920|3|forest
 burning-mountain-near-gunnedah|1024|3|hill
 burning-mountain-near-muswellbrook|1024|3|hill
 burning-mountain-near-scone|1024|3|hill
+burnt-cedar-beach-near-carson-city|16|3|beach
+burr-point-near-bangor|4096|3|cape
+burr-point-near-lisburn|4096|3|cape
 burren-and-burrena-near-tudela|1024|3|mountain
 burren-national-park-near-ennis|32768|3|national park
 burrough-hill-near-leicester|0|0|
+burrow-head-near-bexhill-on-sea|4096|3|cape
+burrow-head-near-hastings-uk|4096|3|cape
 burrum-coast-national-park-near-bundaberg|32768|3|national park of Australia
 burton-dassett-hills-near-banbury|131072|3|country park
 burton-dassett-hills-near-leamington-spa|131072|3|country park
@@ -3417,9 +4002,22 @@ busse-woods-near-waukegan|81920|3|forest
 busse-woods-near-wheaton|81920|3|forest
 bussen-near-biberach-an-der-riss|1024|3|mountain
 bussen-near-ulm|1024|3|mountain
+bussloo-recreation-site-near-amersfoort|131120|3|beach
+bussloo-recreation-site-near-apeldoorn|131120|3|beach
+bussloo-recreation-site-near-barneveld|131120|3|beach
 bussloo-recreation-site-near-deventer|131120|3|beach
+bussloo-recreation-site-near-dronten|131120|3|beach
+bussloo-recreation-site-near-ede|131120|3|beach
+bussloo-recreation-site-near-harderwijk|131120|3|beach
+bussloo-recreation-site-near-huizen|131120|3|beach
+bussloo-recreation-site-near-kampen|131120|3|beach
+bussloo-recreation-site-near-lelystad|131120|3|beach
+bussloo-recreation-site-near-oldebroek|131120|3|beach
+bussloo-recreation-site-near-soest-nl|131120|3|beach
+bussloo-recreation-site-near-veenendaal|131120|3|beach
 bussloo-recreation-site-near-voorst|131120|3|beach
 bussloo-recreation-site-near-zutphen|131120|3|beach
+bussloo-recreation-site-near-zwolle|131120|3|beach
 bustengarten-near-bergisch-gladbach|131072|3|park
 butinge-geomorphological-reserve-near-palanga|65536|3|protected area
 butkov-near-puchov|1024|3|mountain
@@ -3429,12 +4027,16 @@ butser-hill-near-portsmouth|1024|3|hill
 butte-chaumont-near-alencon|1024|3|hill
 butte-sink-wildlife-management-area-near-yuba-city|0|0|
 butter-pot-provincial-park-near-st-johns|131072|1|
+butterfield-beach-near-invercargill|16|3|beach
 butterley-reservoir-near-chesterfield|32|3|reservoir
 butterley-reservoir-near-mansfield-uk|32|3|reservoir
 butterley-reservoir-near-nottingham|32|3|reservoir
 buttermilk-falls-near-edison|1|3|waterfall
 buttermilk-falls-near-new-brunswick|1|3|waterfall
 buttle-lake-near-courtenay|32|3|lake
+buttons-beach-near-devonport|16|3|beach
+buttons-beach-near-latrobe|16|3|beach
+buttons-beach-near-wynyard|16|3|beach
 buvika-rdskjr-near-moss|65536|3|nature reserve
 buysdelle-wood-near-auderghem|81920|3|forest
 buysdelle-wood-near-etterbeek|81920|3|forest
@@ -3445,18 +4047,33 @@ buysdelle-wood-near-saint-gilles|81920|3|forest
 buysdelle-wood-near-uccle|81920|3|forest
 buysdelle-wood-near-waterloo-be|81920|3|forest
 buyuk-ada-near-chios-gr|64|3|island
+buyuk-camlca-hill-near-istanbul|1024|3|hill
 buyukada-near-gebze|64|3|island
+buyukada-near-istanbul|64|3|island
 buyukada-near-izmit|64|3|island
 buyukada-near-yalova|64|3|island
 buzau-mountains-near-buzau|1024|3|mountain range
 buzau-mountains-near-ramnicu-sarat|1024|3|mountain range
 buzau-mountains-near-tecuci|1024|3|mountain range
 buzkyi-gard-national-nature-park-near-kropyvnytskyi|32768|3|national nature park
+buzzard-point-near-alexandria-va|4096|3|cape
+buzzard-point-near-baltimore|4096|3|cape
+buzzard-point-near-rockville|4096|3|cape
+buzzard-point-near-washington-dc|4096|3|cape
 byfield-national-park-near-rockhampton|32768|3|national park of Australia
 byfield-pool-near-banbury|65536|3|nature reserve
 byfield-pool-near-leamington-spa|65536|3|nature reserve
 byfield-pool-near-warwick-uk|65536|3|nature reserve
+byfjorden-near-bergen|4096|3|fjord
+byfjorden-near-haugesund-municipality|4096|3|fjord
+byfjorden-near-kungalv|4096|3|fjord
+byfjorden-near-sandnes|4096|3|fjord
+byfjorden-near-sandnes-municipality|4096|3|fjord
+byfjorden-near-stavanger-sandnes|4096|3|fjord
 byfjorden-near-tonsberg|4096|3|fjord
+byfjorden-near-trollhattan|4096|3|fjord
+byfjorden-near-uddevalla|4096|3|fjord
+byfjorden-near-vanersborg|4096|3|fjord
 bygdoy-near-baerum-municipality|4096|3|peninsula
 bygdoy-near-drammen|4096|3|peninsula
 bygdoy-near-drobak|4096|3|peninsula
@@ -3473,10 +4090,20 @@ byobu-dake-near-yamagata|1024|3|mountain
 byparken-sandefjord-near-sandefjord|131072|3|park
 byron-s-pool-near-cambridge|65536|3|local nature reserve
 bysjon-borlange-near-borlange|32|3|lake
+bystranda-near-grimstad|16|3|beach
+bystranda-near-kristiansand|16|3|beach
 bystrina-nature-reserve-near-as|65536|3|nature reserve in the Czech Republic
 bytkha-near-sochi|1024|3|mountain
+c-y-o-connor-beach-near-perth|16|3|beach
+ca-lo-river-near-hanoi|256|3|river
 cabac-near-ungheni|65536|3|nature reserve
 cabaneros-national-park-near-toledo|98304|3|national park
+cabarita-beach-near-ballina-nsw|16|3|beach
+cabarita-beach-near-byron-bay|16|3|beach
+cabarita-beach-near-gold-coast|16|3|beach
+cabarita-beach-near-goonellabah|16|3|beach
+cabarita-beach-near-lismore|16|3|beach
+cabarita-beach-near-murwillumbah|16|3|beach
 cabecao-near-abrantes|65536|3|Natura 2000 site
 cabecao-near-evora|65536|3|Natura 2000 site
 cabecao-near-portalegre|65536|3|Natura 2000 site
@@ -3489,42 +4116,86 @@ cabezo-negro-de-zeneta-near-molina-de-segura|1152|3|extinct volcano
 cabezo-negro-de-zeneta-near-murcia|1152|3|extinct volcano
 cabezo-negro-de-zeneta-near-orihuela|1152|3|extinct volcano
 cabin-john-regional-park-near-rockville|131072|3|regional park
+cable-beach-near-albany|16|3|beach
 cable-beach-near-broome|16|3|beach
 cabo-branco-beach-near-joao-pessoa|16|3|beach
 cabo-carvoeiro-near-alcobaca|4096|3|cape
 cabo-carvoeiro-near-caldas-da-rainha|4096|3|cape
+cabo-carvoeiro-near-marinha-grande|4096|3|cape
 cabo-carvoeiro-near-torres-vedras|4096|3|cape
 cabo-catoche-near-cancun|4096|3|cape
 cabo-cervera-near-orihuela|4096|3|peninsula
 cabo-cope-y-puntas-de-calnegre-regional-park-near-lorca|65536|3|protected area
+cabo-da-roca-near-agualva-cacem|4096|3|cape
 cabo-da-roca-near-almada|4096|3|cape
 cabo-da-roca-near-amadora|4096|3|cape
+cabo-da-roca-near-barreiro|4096|3|cape
 cabo-da-roca-near-cascais|4096|3|cape
+cabo-da-roca-near-lisbon|4096|3|cape
 cabo-da-roca-near-loures|4096|3|cape
+cabo-da-roca-near-montijo|4096|3|cape
+cabo-da-roca-near-odivelas|4096|3|cape
+cabo-da-roca-near-queluz|4096|3|cape
+cabo-da-roca-near-seixal|4096|3|cape
 cabo-da-roca-near-sintra|4096|3|cape
+cabo-de-ajo-near-barakaldo|4096|3|cape
+cabo-de-ajo-near-bilbao|4096|3|cape
 cabo-de-gata-nijar-natural-park-near-almeria|196608|3|Special Area of Conservation
 cabo-de-gata-nijar-natural-park-near-granada|196608|3|Special Area of Conservation
 cabo-de-la-vela-near-riohacha|4096|3|cape
+cabo-de-penas-near-gijon|4096|3|cape
+cabo-de-penas-near-oviedo|4096|3|cape
+cabo-de-santa-maria-near-olhao|4096|3|cape
+cabo-de-santa-maria-near-tavira|4096|3|cape
 cabo-de-santo-agostinho-near-caruaru|4096|3|cape
 cabo-de-santo-agostinho-near-jaboatao-dos-guararapes|4096|3|cape
 cabo-de-santo-agostinho-near-olinda|4096|3|cape
 cabo-de-santo-agostinho-near-recife|4096|3|cape
 cabo-de-sao-tome-near-campos-dos-goytacazes|4096|3|cape
 cabo-de-sines-near-sines|4096|3|cape
+cabo-espichel-near-agualva-cacem|69632|3|headland
+cabo-espichel-near-amadora|69632|3|headland
 cabo-espichel-near-barreiro|69632|3|headland
+cabo-espichel-near-cascais|69632|3|headland
+cabo-espichel-near-lisbon|69632|3|headland
+cabo-espichel-near-loures|69632|3|headland
+cabo-espichel-near-montijo|69632|3|headland
+cabo-espichel-near-odivelas|69632|3|headland
 cabo-espichel-near-palmela|69632|3|headland
+cabo-espichel-near-queluz|69632|3|headland
 cabo-espichel-near-seixal|69632|3|headland
 cabo-espichel-near-sines|69632|3|headland
+cabo-espichel-near-sintra|69632|3|headland
 cabo-girao-near-funchal|331776|3|cliff
+cabo-mondego-near-aveiro|4096|3|cape
 cabo-mondego-near-figueira-da-foz|4096|3|cape
+cabo-mondego-near-leiria|4096|3|cape
+cabo-mondego-near-marinha-grande|4096|3|cape
+cabo-mondego-near-oliveira-do-bairro|4096|3|cape
+cabo-mondego-near-pombal|4096|3|cape
 cabo-pulmo-beach-near-cabo-san-lucas|16|3|beach
 cabo-pulmo-beach-near-culiacan|16|3|beach
 cabo-pulmo-beach-near-san-jose-del-cabo|16|3|beach
 cabo-pulmo-national-park-near-cabo-san-lucas|32768|3|National Park of Mexico
 cabo-pulmo-national-park-near-culiacan|32768|3|National Park of Mexico
 cabo-pulmo-national-park-near-san-jose-del-cabo|32768|3|National Park of Mexico
+cabo-raso-near-agualva-cacem|69632|3|cape
+cabo-raso-near-almada|69632|3|cape
+cabo-raso-near-amadora|69632|3|cape
+cabo-raso-near-barreiro|69632|3|cape
+cabo-raso-near-cascais|69632|3|cape
+cabo-raso-near-lisbon|69632|3|cape
+cabo-raso-near-loures|69632|3|cape
+cabo-raso-near-montijo|69632|3|cape
+cabo-raso-near-odivelas|69632|3|cape
+cabo-raso-near-seixal|69632|3|cape
+cabo-raso-near-sintra|69632|3|cape
 cabo-roig-near-torrevieja|0|0|
+cabo-sacratif-near-velez-malaga|4096|3|cape
 cabo-sardao-near-sines|4096|3|cape
+cabo-silleiro-near-vigo|4096|3|cape
+cabo-tinoso-near-lorca|4096|3|cape
+cabo-vidio-near-oviedo|4096|3|cape
 cabot-beach-provincial-park-near-summerside|131072|3|provincial park of Canada
 cabra-corral-reservoir-near-salta|32|3|reservoir
 cabra-corral-reservoir-near-san-miguel-de-tucuman|32|3|reservoir
@@ -3532,8 +4203,24 @@ cabra-corral-reservoir-near-san-salvador-de-jujuy|32|3|reservoir
 cabreia-waterfall-near-oliveira-de-azemeis|1|3|waterfall
 cabreia-waterfall-near-tondela|1|3|waterfall
 cabrera-archipelago-maritime-terrestrial-national-park-near-palma|98368|3|archipelago
+cabrillo-beach-near-anaheim|16|3|beach
+cabrillo-beach-near-burbank|16|3|beach
 cabrillo-beach-near-carson|16|3|beach
 cabrillo-beach-near-compton|16|3|beach
+cabrillo-beach-near-costa-mesa|16|3|beach
+cabrillo-beach-near-downey|16|3|beach
+cabrillo-beach-near-fullerton|16|3|beach
+cabrillo-beach-near-garden-grove|16|3|beach
+cabrillo-beach-near-inglewood|16|3|beach
+cabrillo-beach-near-irvine|16|3|beach
+cabrillo-beach-near-long-beach|16|3|beach
+cabrillo-beach-near-los-angeles|16|3|beach
+cabrillo-beach-near-newport-beach|16|3|beach
+cabrillo-beach-near-norwalk|16|3|beach
+cabrillo-beach-near-orange-us|16|3|beach
+cabrillo-beach-near-santa-ana|16|3|beach
+cabrillo-beach-near-santa-monica|16|3|beach
+cabrillo-beach-near-torrance|16|3|beach
 cabrillo-national-monument-near-san-diego|32768|3|National Park System unit
 cabulja-near-mostar|1024|3|mountain
 caburgua-lake-near-temuco|32|3|lake
@@ -3565,12 +4252,14 @@ cachoeira-do-rio-bonito-near-sorocaba|1|3|waterfall
 cachoeira-iracema-near-manaus|1|3|waterfall
 cachoeira-veu-de-noiva-near-vitoria-da-conquista|1|3|waterfall
 caddo-lake-near-shreveport|32|3|reservoir
+caddo-lake-near-tyler|32|3|reservoir
 caddo-lake-state-park-near-shreveport|131072|3|Texas state park
 cadi-moixero-natural-park-near-lleida|196608|3|protected area
 caerphilly-mountain-near-cardiff|1024|3|summit
 caesar-creek-state-park-near-hamilton-us|131072|3|Ohio state park
 caesars-head-state-park-near-greenville|131072|3|state park
 caesars-head-state-park-near-spartanburg|131072|3|state park
+cagayan-river-near-manila|256|3|river
 cahaba-river-national-wildlife-refuge-near-birmingham-al|65536|3|National Wildlife Refuge
 cahaba-river-national-wildlife-refuge-near-tuscaloosa|65536|3|National Wildlife Refuge
 cahuita-national-park-near-limon|32768|3|national park
@@ -3583,21 +4272,61 @@ cajual-island-near-sao-luis|64|3|island
 cakljanac-near-pancevo|320|3|river island
 cakljanac-near-zemun|320|3|river island
 cala-anguila-near-manacor|16|3|beach
+cala-azzurra-near-marsala|4096|3|coast
+cala-azzurra-near-trapani|4096|3|coast
 cala-bota-near-manacor|4096|3|cove
+cala-civette-near-grosseto|4112|3|beach
+cala-de-los-cocedores-near-lorca|16|3|beach
 cala-de-sant-esteve-near-mao|16|3|beach
 cala-del-forte-near-sanremo|0|0|
+cala-del-leone-near-camaiore|16|3|beach
+cala-del-leone-near-livorno|16|3|beach
+cala-del-leone-near-lucca|16|3|beach
+cala-del-leone-near-pisa|16|3|beach
 cala-dels-cantalars-near-alicante|16|3|beach
+cala-di-forno-near-grosseto|16|3|beach
+cala-fuili-near-nuoro|16|3|beach
+cala-goloritze-near-nuoro|16|3|beach
+cala-incina-near-taranto|4096|3|cove
+cala-llombards-bay-near-llucmajor|4112|3|beach
+cala-llombards-bay-near-palma|4112|3|beach
 cala-llonga-near-ibiza|16|3|beach
+cala-llucalari-near-mao|16|3|beach
+cala-luna-near-nuoro|16|3|beach
+cala-martina-near-grosseto|4096|3|cove
 cala-mendia-near-manacor|16|3|beach
+cala-mitjana-near-mao|4112|3|beach
+cala-montgo-near-girona|16|3|beach
+cala-paura-near-taranto|4096|3|cove
+cala-sisine-near-nuoro|4112|3|beach
+cala-tuent-near-palma|4096|3|cove
+cala-violina-near-grosseto|4112|3|beach
 caladesi-island-state-park-near-clearwater|131072|3|Florida state park
 caladesi-island-state-park-near-st-petersburg|131072|3|Florida state park
 calahonda-near-fuengirola|131088|3|beach
+calahonda-near-malaga|131088|3|beach
 calakmul-biosphere-reserve-near-chetumal|65536|3|biosphere reserve
 calakmul-biosphere-reserve-near-san-francisco-de-campeche|65536|3|biosphere reserve
 calamosche-beach-near-noto|16|3|beach
+calamosche-beach-near-ragusa|16|3|beach
+calamosche-beach-near-syracuse-it|16|3|beach
 calanchi-pliocenici-dell-appennino-faentino-near-faenza|65536|3|Natura 2000 site
 calanda-near-chur|1024|3|mountain
+calanque-de-port-miou-near-aix-en-provence|0|0|
+calanque-de-port-miou-near-aubagne|0|0|
+calanque-de-port-miou-near-hyeres|0|0|
+calanque-de-port-miou-near-istres|0|0|
 calanque-de-port-miou-near-la-ciotat|0|0|
+calanque-de-port-miou-near-la-seyne-sur-mer|0|0|
+calanque-de-port-miou-near-marseille|0|0|
+calanque-de-port-miou-near-martigues|0|0|
+calanque-de-port-miou-near-salon-de-provence|0|0|
+calanque-de-port-miou-near-toulon|0|0|
+calanque-de-sormiou-near-aix-en-provence|16|2|
+calanque-de-sormiou-near-aubagne|16|2|
+calanque-de-sormiou-near-la-seyne-sur-mer|16|2|
+calanque-de-sormiou-near-toulon|16|2|
+calanques-de-piana-near-ajaccio|16|2|
 calanques-national-park-near-aix-en-provence|98304|3|national park
 calanques-national-park-near-aubagne|98304|3|national park
 calanques-national-park-near-istres|98304|3|national park
@@ -3620,12 +4349,16 @@ calderon-hondo-near-puerto-del-rosario|1024|3|mountain
 caledon-lake-near-caledon|32|3|lake
 caledon-lake-near-halton-hills|32|3|lake
 caledon-lake-near-orangeville|32|3|lake
+cales-coves-near-mao|16|3|beach
+caleta-abarca-beach-near-valparaiso|16|3|beach
 caleta-abarca-beach-near-villa-alemana|16|3|beach
 caleta-abarca-beach-near-vina-del-mar|16|3|beach
+caleta-portales-near-valparaiso|4096|3|bay
 caleta-valdes-near-puerto-madryn|32|3|lake
 caleta-valdes-near-rawson|32|3|lake
 caleta-valdes-near-viedma|32|3|lake
 calf-island-near-detroit|320|3|river island
+calheta-beach-near-funchal|16|2|
 california-coast-ranges-near-redding|1024|3|mountain range
 calilegua-national-park-near-san-salvador-de-jujuy|32768|3|national park
 caliman-mountains-near-gura-humorului|1024|3|mountain range
@@ -3639,6 +4372,12 @@ calimani-national-park-near-targu-mures|98304|3|national park
 calinestii-mici-near-falesti|16384|3|forest
 calmeynbos-near-koksijde|81920|3|forest
 caloosahatchee-river-near-cape-coral|256|3|river
+calshot-beach-near-portsmouth|16|3|beach
+calshot-beach-near-winchester|16|3|beach
+calshot-spit-near-chichester|0|0|
+calshot-spit-near-eastleigh|0|0|
+calshot-spit-near-portsmouth|0|0|
+calshot-spit-near-winchester|0|0|
 calton-hill-near-dunfermline|1024|3|mountain
 calton-hill-near-edinburgh|1024|3|mountain
 calton-hill-near-falkirk|1024|3|mountain
@@ -3648,6 +4387,7 @@ calton-hill-near-livingston|1024|3|mountain
 calvaire-du-mont-juillet-near-saint-herblain|1024|3|mountain
 calvary-hill-in-tata-near-komarom|1024|3|hill
 calvary-hill-in-tata-near-tatabanya|1024|3|hill
+calvary-near-tel-aviv|1024|3|hill
 calvert-cliffs-state-park-near-annapolis|131072|2|
 calwer-heckengau-near-calw|65536|3|Special Area of Conservation
 camanche-reservoir-near-stockton|32|3|reservoir
@@ -3663,9 +4403,15 @@ camas-national-wildlife-refuge-near-rexburg|65536|3|National Wildlife Refuge
 camber-sands-near-ashford|16|3|beach
 camber-sands-near-bexhill-on-sea|16|3|beach
 camber-sands-near-canterbury|16|3|beach
+camber-sands-near-chatham|16|3|beach
 camber-sands-near-dover-uk|16|3|beach
+camber-sands-near-eastbourne|16|3|beach
 camber-sands-near-folkestone|16|3|beach
+camber-sands-near-gillingham|16|3|beach
 camber-sands-near-hastings-uk|16|3|beach
+camber-sands-near-lewes|16|3|beach
+camber-sands-near-maidstone|16|3|beach
+camber-sands-near-rochester-uk|16|3|beach
 cambunian-mountains-near-kozani|1024|3|mountain
 camel-s-back-park-near-meridian|131072|3|park
 camelback-mountain-near-chandler|1024|3|mountain
@@ -3679,6 +4425,7 @@ cameron-prairie-national-wildlife-refuge-near-lake-charles|65536|3|National Wild
 caminito-del-rey-near-marbella|0|0|
 camino-de-cruces-national-park-near-colon-city|32768|3|national park
 camino-de-cruces-national-park-near-la-chorrera|32768|3|national park
+camino-de-cruces-national-park-near-panama-city|32768|3|national park
 camino-de-cruces-national-park-near-san-miguelito-district|32768|3|national park
 camkoru-nature-park-near-bolu|196608|3|nature park
 camkoru-nature-park-near-karabuk|196608|3|nature park
@@ -3729,11 +4476,13 @@ canche-river-valley-near-calais|256|3|river
 candido-portinari-state-park-near-barueri|131072|3|state park
 candido-portinari-state-park-near-carapicuiba|131072|3|state park
 candido-portinari-state-park-near-diadema|131072|3|state park
+candido-portinari-state-park-near-sao-paulo|131072|3|state park
 candle-lake-near-prince-albert|32|3|lake
 candlewood-lake-near-bridgeport|32|3|lake
 candy-mountain-near-pasco|1024|3|mountain
 cane-creek-mountains-near-greensboro|1024|3|mountain range
 cane-creek-state-park-near-pine-bluff|131072|2|
+canella-beach-near-ajaccio|16|3|beach
 canelles-reservoir-near-monzon|32|3|reservoir
 cania-gorge-national-park-near-biloela|32768|3|national park of Australia
 canigo-near-perpignan|1024|3|mountain
@@ -3765,6 +4514,7 @@ canon-del-usumacinta-near-san-francisco-de-campeche|2052|3|canyon
 canon-del-usumacinta-near-tuxtla-gutierrez|2052|3|canyon
 canon-del-usumacinta-near-villahermosa|2052|3|canyon
 canon-la-huasteca-near-guadalupe|2052|3|canyon
+canon-la-huasteca-near-monterrey|2052|3|canyon
 cansiglio-near-belluno|1024|3|plateau
 cansiglio-near-treviso|1024|3|plateau
 cansiglio-near-venice|1024|3|plateau
@@ -3801,6 +4551,7 @@ canyon-lake-near-murrieta|32|3|reservoir
 canyon-lake-near-new-braunfels|32|3|reservoir
 caohai-lake-near-guiyang|32|3|lake
 caohai-lake-near-zunyi|32|3|lake
+cap-bear-near-perpignan|4096|3|cape
 cap-blanc-nez-near-bethune|69632|3|cape
 cap-blanc-nez-near-boulogne-sur-mer|69632|3|cape
 cap-blanc-nez-near-calais|69632|3|cape
@@ -3808,24 +4559,54 @@ cap-blanc-nez-near-dover-uk|69632|3|cape
 cap-blanc-nez-near-dunkirk|69632|3|cape
 cap-blanc-nez-near-folkestone|69632|3|cape
 cap-blanc-nez-near-margate|69632|3|cape
+cap-bon-near-tunis|4096|3|cape
+cap-camarat-near-antibes|4096|3|cape
+cap-camarat-near-cannes|4096|3|cape
+cap-camarat-near-draguignan|4096|3|cape
+cap-camarat-near-frejus|4096|3|cape
+cap-camarat-near-grasse|4096|3|cape
+cap-camarat-near-hyeres|4096|3|cape
+cap-camarat-near-le-cannet|4096|3|cape
 cap-canaille-near-aubagne|1024|3|mountain
 cap-canaille-near-la-ciotat|1024|3|mountain
 cap-corse-near-bastia|4096|3|cape
 cap-couronne-near-martigues|4096|3|cape
+cap-croisette-near-la-seyne-sur-mer|4096|3|cape
+cap-croisette-near-marseille|4096|3|cape
+cap-croisette-near-toulon|4096|3|cape
+cap-d-antibes-near-antibes|4096|3|cape
 cap-d-antibes-near-cagnes-sur-mer|4096|3|cape
+cap-d-antibes-near-cannes|4096|3|cape
+cap-d-antibes-near-draguignan|4096|3|cape
+cap-d-antibes-near-frejus|4096|3|cape
 cap-d-antibes-near-grasse|4096|3|cape
 cap-d-antibes-near-le-cannet|4096|3|cape
+cap-d-antibes-near-menton|4096|3|cape
+cap-d-antibes-near-nice|4096|3|cape
+cap-d-antifer-near-le-havre|4096|3|cape
 cap-d-erquy-near-saint-brieuc|4096|3|cape
+cap-d-erquy-near-saint-malo|4096|3|cape
 cap-de-caca-near-alghero|4096|3|cape
+cap-de-caca-near-sassari|4096|3|cape
 cap-de-carteret-near-cherbourg|0|0|
 cap-de-creus-near-girona|4096|3|cape
 cap-de-creus-near-perpignan|4096|3|cape
+cap-de-formentor-near-llucmajor|4096|3|cape
+cap-de-formentor-near-manacor|4096|3|cape
 cap-de-la-hague-near-cherbourg|4096|3|cape
 cap-de-la-heve-near-lisieux|4096|3|cape
 cap-de-la-mola-near-mao|4096|3|peninsula
 cap-de-la-nau-near-benidorm|4096|3|cape
 cap-de-la-nau-near-denia|4096|3|cape
 cap-de-la-nau-near-gandia|4096|3|cape
+cap-de-nice-near-cagnes-sur-mer|4096|3|cape
+cap-de-nice-near-menton|4096|3|cape
+cap-de-nice-near-nice|4096|3|cape
+cap-de-santa-pola-near-alcoy|4096|3|cape
+cap-de-santa-pola-near-alicante|4096|3|cape
+cap-de-santa-pola-near-benidorm|4096|3|cape
+cap-de-santa-pola-near-elche|4096|3|cape
+cap-de-santa-pola-near-orihuela|4096|3|cape
 cap-des-rosiers-near-gaspe|4096|3|peninsula
 cap-enderrocat-near-llucmajor|4096|3|cape
 cap-fagnet-near-dieppe|4096|3|cape
@@ -3844,7 +4625,15 @@ cap-gris-nez-near-folkestone|69632|3|cape
 cap-gris-nez-near-ieper|69632|3|cape
 cap-gris-nez-near-lens|69632|3|cape
 cap-gris-nez-near-margate|69632|3|cape
+cap-levi-near-cherbourg|4096|3|cape
 cap-levi-near-cherbourg-octeville|4096|3|cape
+cap-manuel-near-dakar|4096|3|cape
+cap-norfeu-near-girona|4096|3|cape
+cap-roux-near-cagnes-sur-mer|4096|3|cape
+cap-roux-near-draguignan|4096|3|cape
+cap-roux-near-frejus|4096|3|cape
+cap-roux-near-menton|4096|3|cape
+cap-roux-near-nice|4096|3|cape
 cap-saint-jacques-nature-park-near-beaconsfield|131072|3|park
 cap-saint-jacques-nature-park-near-beauharnois|131072|3|park
 cap-saint-jacques-nature-park-near-deux-montagnes|131072|3|park
@@ -3853,90 +4642,329 @@ cap-saint-jacques-nature-park-near-saint-eustache|131072|3|park
 cap-saint-jacques-nature-park-near-saint-lazare|131072|3|park
 cap-saint-jacques-nature-park-near-vaudreuil-dorion|131072|3|park
 cap-sicie-near-la-seyne-sur-mer|66560|3|mountain range
+cap-sizun-near-brest|4096|3|cape
 cap-sizun-near-quimper|4096|3|cape
 cap-spartel-near-ceuta|4096|3|cape
+cap-taillat-near-antibes|4096|3|cape
+cap-taillat-near-cannes|4096|3|cape
+cap-taillat-near-draguignan|4096|3|cape
+cap-taillat-near-frejus|4096|3|cape
+cap-taillat-near-grasse|4096|3|cape
+cap-taillat-near-hyeres|4096|3|cape
+cap-taillat-near-le-cannet|4096|3|cape
+cap-taillat-near-toulon|4096|3|cape
+cap-vert-near-dakar|4096|3|cape
+cap-zebib-near-tunis|4096|3|cape
 capachica-peninsula-near-juliaca|4096|3|peninsula
 capachica-peninsula-near-puno|4096|3|peninsula
 capanne-di-marcarolo-natural-park-near-asti|196608|3|protected area
 capao-bonito-national-forest-near-bauru|81920|3|national forest of Brazil
 capatanii-mountains-near-ramnicu-valcea|1024|3|mountain range
+cape-agios-aimilianos-near-rhodes|4096|3|cape
+cape-agulhas-near-cape-town|4096|3|cape
+cape-agulhas-near-stellenbosch|4096|3|cape
+cape-amagozen-near-fukui|4096|3|cape
+cape-amagozen-near-kanazawa|4096|3|cape
+cape-ann-near-boston|4096|3|cape
+cape-ann-near-cambridge-us|4096|3|cape
 cape-ann-near-lynn|4096|3|cape
+cape-ann-near-quincy-us|4096|3|cape
 cape-ann-near-salem-us|4096|3|cape
+cape-ara-near-naha|4096|3|cape
+cape-araxos-near-agrinio|4096|3|cape
+cape-araxos-near-elis|4096|3|cape
+cape-araxos-near-missolonghi|4096|3|cape
+cape-araxos-near-nafpaktos|4096|3|cape
+cape-araxos-near-patras|4096|3|cape
+cape-arhangelos-near-rhodes|4096|3|cape
+cape-arkona-near-stralsund|4096|3|cape
+cape-artemisio-near-volos|4096|3|cape
+cape-aspro-near-limassol|4096|3|cape
+cape-aspro-near-paphos|4096|3|cape
 cape-au-moine-near-montreux|1024|3|mountain
 cape-bellefin-near-carnarvon|4096|3|cape
+cape-benten-near-akita|4096|3|cape
+cape-birztvyno-near-klaipeda|4096|3|cape
+cape-birztvyno-near-kretinga|4096|3|cape
+cape-birztvyno-near-palanga|4096|3|cape
+cape-birztvyno-near-silute|4096|3|cape
 cape-bon-ami-near-gaspe|4096|3|peninsula
 cape-breton-island-near-sydney-ca|64|3|island
 cape-canaveral-near-fort-pierce|4096|3|cape
 cape-canaveral-near-titusville|4096|3|cape
+cape-carbonara-near-cagliari|4096|3|cape
+cape-carthage-near-tunis|4096|3|cape
 cape-chikiu-near-muroran|4096|3|cape
 cape-cod-national-seashore-near-barnstable|4112|3|United States National Seashore
+cape-cod-national-seashore-near-plymouth-us|4112|3|United States National Seashore
 cape-cod-near-barnstable|4096|3|cape
 cape-cod-near-boston|4096|3|cape
 cape-cod-near-plymouth-us|4096|3|cape
+cape-collinson-near-shenzhen|4096|3|cape
+cape-d-aguilar-near-shenzhen|4096|3|cape
 cape-dauphin-near-sydney-ca|4096|3|headland
+cape-drepano-near-aigio|4096|3|cape
+cape-drepano-near-nafpaktos|4096|3|cape
+cape-elaia-near-larnaca|4096|3|cape
+cape-emine-near-burgas|4096|3|cape
+cape-emine-near-nesebar|4096|3|cape
+cape-emine-near-varna|4096|3|cape
 cape-enrage-near-moncton|4096|3|peninsula
 cape-enrage-near-riverview|4096|3|peninsula
+cape-epanomis-near-evosmos|4096|3|cape
+cape-epanomis-near-kalamaria|4096|3|cape
+cape-epanomis-near-stavroupoli|4096|3|cape
+cape-epanomis-near-thessaloniki|4096|3|cape
+cape-esan-near-hakodate|4096|3|cape
 cape-espichel-near-almada|69632|3|headland
 cape-espichel-near-setubal|69632|3|headland
 cape-etomo-near-muroran|4096|3|cape
+cape-farina-near-tunis|4096|3|cape
+cape-fonar-near-kerch|4096|3|cape
 cape-froward-near-punta-arenas|4096|3|cape
+cape-fugui-near-taipei|4096|3|cape
+cape-futtsu-near-chiba|4096|3|cape
+cape-futtsu-near-kawasaki|4096|3|cape
 cape-futtsu-near-kisarazu|4096|3|cape
+cape-futtsu-near-odawara|4096|3|cape
+cape-futtsu-near-sagamihara|4096|3|cape
+cape-futtsu-near-yokohama|4096|3|cape
+cape-futtsu-near-yokosuka|4096|3|cape
 cape-galata-near-varna|4096|3|cape
+cape-gata-near-almeria|4096|3|cape
 cape-gata-near-limassol|4096|3|cape
+cape-gata-near-paphos|4096|3|cape
+cape-gata-near-roquetas-de-mar|4096|3|cape
+cape-greco-near-larnaca|4096|3|cape
+cape-hado-near-fukuoka|4096|3|cape
+cape-hazu-near-kariya|4096|3|cape
+cape-hazu-near-okazaki|4096|3|cape
+cape-hazu-near-toyohashi|4096|3|cape
+cape-hazu-near-toyota|4096|3|cape
 cape-helles-near-canakkale|4096|3|cape
+cape-henry-near-chesapeake|4096|3|headland
+cape-henry-near-hampton|4096|3|headland
+cape-henry-near-newport-news|4096|3|headland
+cape-henry-near-norfolk|4096|3|headland
+cape-henry-near-virginia-beach|4096|3|headland
 cape-higer-near-irun|4096|3|cape
+cape-higer-near-san-sebastian|4096|3|cape
 cape-hillsborough-national-park-near-mackay|32768|3|national park of Australia
+cape-hinomisaki-near-wakayama|4096|3|cape
+cape-irago-near-kariya|4096|3|cape
+cape-irago-near-okazaki|4096|3|cape
+cape-irago-near-toyohashi|4096|3|cape
+cape-irago-near-toyota|4096|3|cape
+cape-iro-near-shizuoka|4096|3|cape
+cape-jackson-near-lower-hutt|4096|3|cape
+cape-jackson-near-paraparaumu|4096|3|cape
+cape-jackson-near-wellington|4096|3|cape
 cape-jason-near-amasya|4096|3|peninsula
 cape-jason-near-giresun|4096|3|peninsula
 cape-jason-near-tokat|4096|3|peninsula
 cape-jourimain-near-moncton|4096|3|peninsula
 cape-jourimain-near-summerside|4096|3|peninsula
 cape-kamenjak-near-pula|0|0|
+cape-kamoda-near-wakayama|4096|3|cape
+cape-kanenomisaki-near-fukuoka|4096|3|cape
+cape-kannon-near-chiba|4096|3|cape
+cape-kannon-near-kawasaki|4096|3|cape
+cape-kannon-near-odawara|4096|3|cape
+cape-kannon-near-sagamihara|4096|3|cape
+cape-kannon-near-yokohama|4096|3|cape
 cape-kannon-near-yokosuka|4096|3|cape
+cape-karadomari-near-fukuoka|4096|3|cape
+cape-kasa-near-fukui|4096|3|cape
+cape-kasa-near-kanazawa|4096|3|cape
 cape-kidnappers-nature-reserve-near-hastings|65536|3|nature reserve
+cape-kidnappers-te-kauwae-a-maui-near-hastings|4096|3|cape
 cape-kidnappers-te-kauwae-a-maui-near-napier|4096|3|cape
+cape-kiti-near-larnaca|4096|3|cape
+cape-kiti-near-limassol|4096|3|cape
+cape-kiyan-near-naha|4096|3|cape
+cape-kogane-near-fujieda|4096|3|cape
 cape-koyurugi-near-fujisawa|4096|3|cape
+cape-kumukahi-near-hilo|4096|3|cape
 cape-langeron-near-chornomorsk|4096|3|cape
+cape-langeron-near-odesa|4096|3|cape
 cape-langeron-near-pivdenne|4096|3|cape
+cape-lardos-near-rhodes|4096|3|cape
 cape-leeuwin-near-margaret-river|4096|3|cape
+cape-leucatas-near-lefkada|4096|3|cape
+cape-leucatas-near-preveza|4096|3|cape
 cape-malyi-fontan-near-chornomorsk|4096|3|cape
+cape-martin-near-antibes|69632|3|headland
+cape-martin-near-cagnes-sur-mer|69632|3|headland
+cape-martin-near-cannes|69632|3|headland
+cape-martin-near-grasse|69632|3|headland
+cape-martin-near-le-cannet|69632|3|headland
+cape-martin-near-menton|69632|3|headland
+cape-martin-near-nice|69632|3|headland
+cape-matsuho-near-akashi|4096|3|cape
+cape-matsuho-near-amagasaki|4096|3|cape
+cape-matsuho-near-kobe|4096|3|cape
+cape-matsuho-near-nishinomiya|4096|3|cape
+cape-matsuho-near-osaka|4096|3|cape
+cape-matsuho-near-sakai|4096|3|cape
+cape-matsuho-near-wakayama|4096|3|cape
+cape-melagkavi-near-corinth|4096|3|cape
+cape-melagkavi-near-megara|4096|3|cape
+cape-miseno-near-acerra|69632|3|cape
+cape-miseno-near-aversa|69632|3|cape
+cape-miseno-near-caserta|69632|3|cape
+cape-miseno-near-castellammare-di-stabia|69632|3|cape
+cape-miseno-near-giugliano-in-campania|69632|3|cape
+cape-miseno-near-naples|69632|3|cape
+cape-miseno-near-pozzuoli|69632|3|cape
+cape-miseno-near-salerno|69632|3|cape
+cape-monze-near-karachi|4096|3|cape
 cape-mount-beach-near-hyderabad-pk|16|3|beach
+cape-mount-beach-near-karachi|16|3|beach
+cape-mylon-near-rhodes|4096|3|cape
+cape-myoken-near-fukuoka|4096|3|cape
 cape-nagao-near-tottori|4096|3|cape
+cape-nyudo-near-akita|4096|3|cape
+cape-of-gjuhez-near-vlore|4096|3|cape
+cape-of-good-hope-near-cape-town|4096|3|cape
+cape-of-good-hope-near-stellenbosch|4096|3|cape
+cape-of-matxitxako-near-barakaldo|4096|3|cape
+cape-of-matxitxako-near-bilbao|4096|3|cape
 cape-of-rodon-near-durres|4096|3|cape
+cape-of-rodon-near-shkoder|4096|3|cape
 cape-of-rodon-near-tirana|4096|3|cape
+cape-oishi-near-akashi|4096|3|cape
+cape-oishi-near-kobe|4096|3|cape
+cape-oishi-near-sakai|4096|3|cape
+cape-oishi-near-wakayama|4096|3|cape
 cape-oma-near-hakodate|4096|3|cape
+cape-omae-near-fujieda|4096|3|cape
+cape-omae-near-iwata|4096|3|cape
+cape-omae-near-shizuoka|4096|3|cape
 cape-palinuro-near-salerno|4096|3|cape
 cape-pallarenda-conservation-park-near-ayr|65536|3|conservation park of Australia
 cape-pallarenda-conservation-park-near-charters-towers|65536|3|conservation park of Australia
 cape-pallarenda-conservation-park-near-townsville|65536|3|conservation park of Australia
+cape-palliser-matakitaki-a-kupe-near-lower-hutt|4096|3|cape
+cape-palliser-matakitaki-a-kupe-near-upper-hutt|4096|3|cape
+cape-palliser-matakitaki-a-kupe-near-wellington|4096|3|cape
+cape-peristeri-near-heraklion|4096|3|cape
+cape-point-near-cape-town|4096|3|headland
+cape-point-near-stellenbosch|4096|3|headland
+cape-rozewie-near-gdansk|4096|3|cape
+cape-rozewie-near-gdynia|4096|3|cape
+cape-rozewie-near-sopot|4096|3|cape
 cape-rozewie-near-wejherowo|4096|3|cape
+cape-rzucewo-near-gdansk|4096|3|cape
+cape-rzucewo-near-gdynia|4096|3|cape
+cape-rzucewo-near-sopot|4096|3|cape
+cape-rzucewo-near-wejherowo|4096|3|cape
+cape-sant-antoni-spain-near-alcoy|4096|3|cape
+cape-sant-antoni-spain-near-benidorm|4096|3|cape
+cape-sant-antoni-spain-near-gandia|4096|3|cape
+cape-santiago-near-taipei|4096|3|cape
 cape-santo-andre-near-braga|4096|3|cape
+cape-santo-andre-near-matosinhos|4096|3|cape
+cape-santo-andre-near-pacos-de-ferreira|4096|3|cape
+cape-santo-andre-near-porto|4096|3|cape
 cape-santo-andre-near-povoa-de-varzim|4096|3|cape
 cape-santo-andre-near-santo-tirso|4096|3|cape
+cape-santo-andre-near-viana-do-castelo|4096|3|cape
 cape-santo-andre-near-vila-do-conde|4096|3|cape
 cape-santo-andre-near-vila-nova-de-famalicao|4096|3|cape
+cape-santo-andre-near-vila-nova-de-gaia|4096|3|cape
 cape-sao-roque-near-natal|4112|3|beach
+cape-saraki-near-hakodate|4096|3|cape
+cape-savudrija-near-pazin|4096|3|cape
+cape-savudrija-near-porec|4096|3|cape
+cape-savudrija-near-rovinj|4096|3|cape
+cape-shiokubi-near-hakodate|4096|3|cape
+cape-sideros-near-agios-nikolaos|4096|3|cape
+cape-sideros-near-sitia|4096|3|cape
+cape-smokey-near-sydney-ca|4096|3|cape
 cape-sounion-near-acharnes|4096|3|cape
 cape-st-vincent-near-lagos-pt|4096|3|cape
 cape-st-vincent-near-portimao|4096|3|cape
 cape-tachimachi-near-hakodate|4096|3|cape
+cape-taito-near-chiba|4096|3|cape
+cape-takei-kannon-near-kurashiki|4096|3|cape
+cape-tateishi-near-fukui|4096|3|cape
+cape-teulada-near-cagliari|4096|3|cape
+cape-teulada-near-carbonia|4096|3|cape
+cape-trachvli-near-chios-gr|4096|3|cape
 cape-trafalgar-near-algeciras|4096|3|cape
+cape-trafalgar-near-cadiz|4096|3|cape
 cape-trafalgar-near-jerez-de-la-frontera|4096|3|cape
 cape-trafalgar-near-san-fernando|4096|3|cape
+cape-tsiniki-near-rhodes|4096|3|cape
 cape-upstart-national-park-near-ayr|32768|3|national park of Australia
 cape-upstart-national-park-near-bowen|32768|3|national park of Australia
 cape-velykyi-fontan-near-bilhorod-dnistrovskyi|4096|3|cape
 cape-velykyi-fontan-near-chornomorsk|4096|3|cape
+cape-velykyi-fontan-near-odesa|4096|3|cape
 cape-vidio-near-gijon|4096|3|cape
 cape-virgenes-near-rio-gallegos|4096|3|cape
+cape-zanpa-near-naha|4096|3|cape
+cape-zyuk-near-kerch|4096|3|cape
 capers-island-near-charleston|64|3|island
 capitan-mountains-near-roswell|1024|3|mountain range
+capo-berta-near-imperia|5120|3|hill
+capo-berta-near-sanremo|5120|3|hill
+capo-berta-near-savona|5120|3|hill
+capo-bianco-near-agrigento|4096|3|cape
+capo-boeo-near-alcamo|4096|3|cape
+capo-boeo-near-marsala|4096|3|cape
+capo-boeo-near-trapani|4096|3|cape
 capo-caccia-lighthouse-near-sassari|0|0|
 capo-caccia-near-alghero|65536|3|Natura 2000 site
+capo-caprazoppa-near-imperia|4096|3|cape
+capo-caprazoppa-near-sanremo|4096|3|cape
+capo-ceraso-near-olbia|4096|3|cape
+capo-cervo-near-imperia|1024|3|hill
+capo-coda-cavallo-near-olbia|4096|3|cape
+capo-d-otranto-near-lecce|4096|3|cape
+capo-di-milazzo-near-messina|4096|3|cape
+capo-di-milazzo-near-reggio-calabria|4096|3|cape
+capo-di-vado-near-savona|4096|3|cape
+capo-feto-near-alcamo|4608|3|swamp
+capo-feto-near-marsala|4608|3|swamp
+capo-feto-near-trapani|4608|3|swamp
+capo-gallo-near-palermo|4096|3|cape
 capo-mannu-near-oristano|4096|3|cape
+capo-marargiu-near-sassari|4096|3|cape
+capo-mortola-near-imperia|4096|3|cape
+capo-mortola-near-sanremo|4096|3|cape
+capo-nero-near-imperia|4096|3|cape
+capo-nero-near-sanremo|4096|3|cape
+capo-noli-near-genoa|4096|3|cape
+capo-noli-near-imperia|4096|3|cape
+capo-noli-near-savona|4096|3|cape
 capo-passero-near-noto|4096|3|cape
+capo-passero-near-ragusa|4096|3|cape
+capo-passero-near-syracuse-it|4096|3|cape
 capo-peloro-lagoon-lake-ganzirri-near-messina|4128|3|lagoon
 capo-rizzuto-marine-protected-area-near-catanzaro|65536|3|protected area
+capo-san-vito-near-alcamo|4096|3|cape
+capo-san-vito-near-marsala|4096|3|cape
+capo-san-vito-near-palermo|4096|3|cape
+capo-san-vito-near-trapani|4096|3|cape
+capo-sant-alessio-near-acireale|4096|3|cape
+capo-santa-croce-near-imperia|4096|3|cape
+capo-santa-croce-near-sanremo|4096|3|cape
+capo-santa-panagia-near-acireale|4096|3|cape
+capo-santa-panagia-near-ragusa|4096|3|cape
+capo-santa-panagia-near-syracuse-it|4096|3|cape
+capo-schiso-near-acireale|4096|3|cape
+capo-spartivento-near-cagliari|4096|3|cape
+capo-spartivento-near-carbonia|4096|3|cape
+capo-spartivento-near-iglesias|4096|3|cape
+capo-spartivento-near-messina|4096|3|cape
+capo-spartivento-near-reggio-calabria|4096|3|cape
+capo-testa-near-olbia|4096|3|cape
+capo-vaticano-near-messina|4096|3|cape
+capo-vaticano-near-reggio-calabria|4096|3|cape
+capo-vaticano-near-vibo-valentia|4096|3|cape
+capo-zafferano-near-alcamo|4096|3|cape
+capo-zafferano-near-palermo|4096|3|cape
 capocotta-near-fiumicino|65552|3|beach
 capoompeta-national-park-near-glen-innes|32768|3|national park of Australia
 capoompeta-national-park-near-inverell|32768|3|national park of Australia
@@ -3948,9 +4976,10 @@ capri-near-acerra|64|3|island
 capri-near-aversa|64|3|island
 capri-near-pozzuoli|64|3|island
 capriana-scoreni-landscape-reserve-near-straseni|65536|3|landscape reserve
+capriccioli-near-olbia|0|0|
 caprock-canyons-state-park-and-trailway-near-amarillo|131072|3|Texas state park
 caprock-canyons-state-park-and-trailway-near-lubbock|131072|3|Texas state park
-captree-state-park-near-babylon|0|0|
+captree-state-park-near-babylon|131072|3|New York state park
 capul-dolosman-near-navodari|65536|3|nature reserve
 caracol-falls-near-caxias-do-sul|1|3|waterfall
 caracol-falls-near-novo-hamburgo|1|3|waterfall
@@ -3971,7 +5000,9 @@ carbon-canyon-regional-park-near-fullerton|131072|3|regional park
 carbon-canyon-regional-park-near-orange-us|131072|3|regional park
 carbuna-near-causeni|65536|3|landscape reserve
 cardamom-hills-near-madurai|1024|3|mountain range
+cardiff-state-beach-near-el-cajon|16|3|California state beach
 cardiff-state-beach-near-oceanside|16|3|California state beach
+cardiff-state-beach-near-san-diego|16|3|California state beach
 carei-near-menton|256|3|river
 cares-gorge-near-gijon|0|0|
 cargo-muchacho-mountains-near-el-centro|1024|3|mountain range
@@ -3991,13 +5022,19 @@ carlton-bank-near-darlington|1024|3|mountain
 carlton-bank-near-hartlepool|1024|3|mountain
 carlton-bank-near-scarborough|1024|3|mountain
 carlton-bank-near-stockton-on-tees|1024|3|mountain
+carmel-point-near-salinas|4096|3|cape
+carmel-point-near-santa-cruz|4096|3|cape
+carmel-river-state-beach-near-salinas|16|3|California state beach
 carneiro-beach-near-espinho|16|3|beach
 carneiro-beach-near-gondomar|16|3|beach
 carneiro-beach-near-penafiel|16|3|beach
 carneiro-beach-near-porto|16|3|beach
 carneiro-beach-near-valongo|16|3|beach
 carnic-alps-near-udine|1024|2|
+carnon-plage-near-montpellier|16|3|beach
 carnota-near-santiago-de-compostela|0|0|
+carnsore-point-near-waterford|4096|3|cape
+carnsore-point-near-wexford|4096|3|cape
 carol-park-near-popesti-leordeni|131072|3|urban park
 carolasee-near-dresden|32|3|lake
 carolasee-near-freital|32|3|lake
@@ -4020,6 +5057,7 @@ carquinez-strait-regional-shoreline-near-fairfield|131072|3|regional park
 carquinez-strait-regional-shoreline-near-vallejo|131072|3|regional park
 carrascal-de-la-font-roja-natural-park-near-alcoy|196608|3|protected area
 carrascal-de-la-font-roja-natural-park-near-villena|196608|3|protected area
+carrasco-beach-near-montevideo|16|3|beach
 carrasco-national-park-near-santa-cruz-de-la-sierra|32768|3|national park
 carrick-roads-near-truro|4608|3|estuary
 carriere-des-nerviens-regional-nature-reserve-near-maubeuge|65536|3|regional nature reserve
@@ -4034,6 +5072,14 @@ carska-bara-near-kikinda|66080|3|lake
 carska-bara-near-novi-sad|66080|3|lake
 carska-bara-near-vrsac|66080|3|lake
 carska-bara-near-zrenjanin|66080|3|lake
+carson-beach-south-boston-near-boston|16|3|beach
+carson-beach-south-boston-near-brockton|16|3|beach
+carson-beach-south-boston-near-cambridge-us|16|3|beach
+carson-beach-south-boston-near-lynn|16|3|beach
+carson-beach-south-boston-near-plymouth-us|16|3|beach
+carson-beach-south-boston-near-quincy-us|16|3|beach
+carson-beach-south-boston-near-salem-us|16|3|beach
+carson-beach-south-boston-near-taunton-us|16|3|beach
 carson-range-near-reno|1024|3|mountain range
 carson-range-near-sparks|1024|3|mountain range
 carson-valley-near-carson-city|2048|3|valley
@@ -4041,6 +5087,8 @@ carsphairn-and-scaur-hills-near-dumfries|1024|3|hill group
 carter-lake-near-council-bluffs|32|3|lake
 carter-lake-near-omaha|32|3|lake
 carter-scenic-reserve-near-masterton|65536|3|scenic reserve
+carvallo-beach-near-valparaiso|16|3|beach
+carvallo-beach-near-villa-alemana|16|3|beach
 carvallo-beach-near-vina-del-mar|16|3|beach
 carvers-creek-state-park-near-fayetteville-nc|131072|3|North Carolina state park
 carvers-creek-state-park-near-raleigh|131072|3|North Carolina state park
@@ -4127,9 +5175,11 @@ cat-island-national-wildlife-refuge-near-baton-rouge|65536|3|National Wildlife R
 cat-island-near-biloxi|64|3|island
 cat-island-near-gulfport|64|3|island
 cat-island-near-hattiesburg|64|3|island
+cat-tien-national-park-near-ho-chi-minh-city|98304|3|national park
 catalina-island-near-higuey|64|3|island
 catalina-island-near-la-romana|64|3|island
 catalina-island-near-san-pedro-de-macoris|64|3|island
+catalina-island-near-santo-domingo|64|3|island
 cataract-gorge-near-launceston|2052|3|defile
 catawba-island-state-park-near-findlay|131072|3|Ohio state park
 cathedral-caverns-state-park-near-huntsville|2|3|show cave
@@ -4143,6 +5193,7 @@ catoctin-mountain-park-near-frederick-md|32768|3|National Park System unit
 catoctin-mountain-park-near-hagerstown|32768|3|National Park System unit
 catskill-mountains-near-schenectady|1024|3|mountain range
 cattai-national-park-near-penrith|32768|3|national park of Australia
+cattle-point-near-bellingham|4096|3|cape
 caucasus-biosphere-reserve-near-maykop|65536|3|biosphere reserve
 caucasus-biosphere-reserve-near-sochi|65536|3|biosphere reserve
 caucasus-mountains-near-vladikavkaz|0|0|
@@ -4170,6 +5221,8 @@ cave-of-edessa-near-veria|2|3|cave
 cave-of-pan-near-kallithea|2|3|cave
 cave-of-pellumbas-near-durres|2|3|cave
 cave-of-surprises-near-dubasari|2|3|cave
+cave-of-the-seven-sleepers-near-amman|2|3|cave
+cave-of-thor-near-jeddah|2|3|cave
 cave-run-lake-near-lexington|32|3|reservoir
 cavehill-near-ballymena|1024|3|mountain
 cavehill-near-bangor|1024|3|mountain
@@ -4180,11 +5233,13 @@ caves-of-barac-near-karlovac|2|3|show cave
 caxiuana-national-forest-near-macapa|81920|3|national forest of Brazil
 cayambe-near-ibarra|1152|3|stratovolcano
 cayambe-near-ipiales|1152|3|stratovolcano
+cayambe-near-quito|1152|3|stratovolcano
 cayo-costa-state-park-near-cape-coral|131072|3|Florida state park
 cayo-costa-state-park-near-fort-myers|131072|3|Florida state park
 cayo-costa-state-park-near-north-port|131072|3|Florida state park
 cayo-costa-state-park-near-sarasota|131072|3|Florida state park
 cayo-levantado-near-higuey|64|3|island
+cayucos-state-beach-near-san-luis-obispo|16|3|California state beach
 cazacu-near-baicoi|1024|3|mountain
 cazacu-near-breaza|1024|3|mountain
 cazalegas-reservoir-near-talavera-de-la-reina|32|3|reservoir
@@ -4200,12 +5255,19 @@ ceahlau-national-park-near-targu-neamt|32768|3|national park
 ceboruco-near-tepic|1024|3|mountain
 ceboruco-near-zapopan|1024|3|mountain
 cebrat-near-ruzomberok|1024|3|mountain
+cebu-near-cebu|64|3|island
 cecil-peak-near-queenstown|1024|3|hill
 cecita-lake-near-cosenza|32|3|reservoir
+cedar-beach-near-bridgeport|16|3|beach
+cedar-beach-near-new-haven|16|3|beach
+cedar-beach-near-norwalk-us|16|3|beach
+cedar-beach-near-smithtown|16|3|beach
+cedar-beach-near-stamford|16|3|beach
 cedar-creek-reservoir-near-dallas|32|3|reservoir
 cedar-creek-reservoir-near-grand-prairie-us|32|3|reservoir
 cedar-creek-reservoir-near-mesquite|32|3|reservoir
 cedar-creek-reservoir-near-rockwall|32|3|reservoir
+cedar-creek-reservoir-near-tyler|32|3|reservoir
 cedar-creek-reservoir-near-waxahachie|32|3|reservoir
 cedar-hill-state-park-near-dallas|131072|3|Texas state park
 cedar-hill-state-park-near-fort-worth|131072|3|Texas state park
@@ -4222,12 +5284,14 @@ cedar-lake-near-shakopee|32|3|lake
 cedar-mountain-virginia-near-charlottesville|1024|3|mountain
 cedar-point-national-wildlife-refuge-near-findlay|65536|3|National Wildlife Refuge
 cedar-swamp-wildlife-area-near-dover|65536|2|
+cedars-of-god-near-beirut|16384|3|forest
 cedars-of-lebanon-state-park-near-franklin|131072|2|
 cedars-of-lebanon-state-park-near-murfreesboro|131072|2|
 cedars-of-lebanon-state-park-near-nashville|131072|2|
 cedartree-lake-near-kenora|32|3|lake
 cedro-peak-near-rio-rancho|1024|3|mountain
 cefa-natural-park-near-bekescsaba|65536|3|protected area
+cefn-sidan-near-neath|16|3|beach
 cefn-yr-ystrad-near-merthyr-tydfil|1024|3|summit
 celestyn-lake-near-minsk-mazowiecki|32|3|lake
 cemernik-near-vranje|1024|3|mountain
@@ -4236,7 +5300,11 @@ cemsenik-pasture-near-trbovlje|1024|3|mountain
 cemsenik-pasture-near-zagorje-ob-savi|1024|3|mountain
 cenajo-reservoir-near-caravaca-de-la-cruz|32|3|reservoir
 cenaru-near-focsani|65536|3|Natura 2000 site
+centennial-beach-near-chicago|16|3|beach
+centennial-beach-near-evanston|16|3|beach
+centennial-beach-near-joliet|16|3|beach
 centennial-beach-near-naperville|16|3|beach
+centennial-beach-near-wheaton|16|3|beach
 centennial-park-near-naperville|131072|3|park
 centennial-park-near-rolleston|131072|3|park
 center-hill-lake-near-murfreesboro|32|3|reservoir
@@ -4251,6 +5319,7 @@ central-balkan-national-park-near-troyan|32768|3|national park
 central-balkan-national-park-near-veliko-tarnovo|32768|3|national park
 central-bohemian-uplands-near-decin|1024|3|low mountain range
 central-botanical-garden-minsk-near-minsk|0|0|
+central-catchment-nature-reserve-near-singapore|65536|3|nature reserve
 central-lowlands-near-perth-uk|2048|3|valley
 central-moravian-carpathians-near-kromeriz|1024|3|mountain range
 central-moravian-carpathians-near-vyskov|1024|3|mountain range
@@ -4272,6 +5341,7 @@ central-valley-near-alajuela|2048|3|valley
 central-valley-near-cartago|2048|3|valley
 central-valley-near-heredia|2048|3|valley
 central-valley-near-merced|2048|3|valley
+central-valley-near-san-jose|2048|3|valley
 centralnyi-park-near-kamyanske|65536|3|protected area
 centre-de-la-nature-near-terrebonne|131072|3|park
 centro-cicogne-e-anatidi-racconigi-near-alba|65536|3|nature reserve
@@ -4321,6 +5391,7 @@ cerro-armazones-near-antofagasta|1024|3|mountain
 cerro-artigas-near-durazno|1024|3|hill
 cerro-artigas-near-florida|1024|3|hill
 cerro-azul-near-curico|1152|3|stratovolcano
+cerro-azul-near-santiago|1152|3|stratovolcano
 cerro-azul-near-talca|1152|3|stratovolcano
 cerro-batovi-near-artigas|1024|3|hill
 cerro-batovi-near-bage|1024|3|hill
@@ -4382,7 +5453,9 @@ cerro-de-guayacundo-near-villavicencio|1024|3|mountain
 cerro-de-la-calavera-near-carlsbad|1024|3|mountain
 cerro-de-la-calavera-near-escondido|1024|3|mountain
 cerro-de-la-calavera-near-oceanside|1024|3|mountain
+cerro-de-la-estrella-national-park-near-mexico-city|32768|3|National Park of Mexico
 cerro-de-la-estrella-national-park-near-tenochtitlan|32768|3|National Park of Mexico
+cerro-de-la-estrella-near-mexico-city|1024|3|mountain
 cerro-de-la-loma-larga-near-guadalupe|1024|3|mountain
 cerro-de-la-loma-larga-near-reynosa|1024|3|mountain
 cerro-de-la-santa-cruz-near-aguascalientes-city|1024|3|mountain
@@ -4391,6 +5464,7 @@ cerro-de-la-santa-cruz-near-san-luis-potosi|1024|3|mountain
 cerro-de-la-santa-cruz-near-zacatecas|1024|3|mountain
 cerro-de-la-silla-near-guadalupe|1024|3|mountain
 cerro-de-la-silla-near-heroica-matamoros|1024|3|mountain
+cerro-de-la-silla-near-monterrey|1024|3|mountain
 cerro-de-la-silla-near-nuevo-laredo|1024|3|mountain
 cerro-de-la-silla-near-reynosa|1024|3|mountain
 cerro-de-las-campanas-near-guanajuato|32768|3|National Park of Mexico
@@ -4399,6 +5473,7 @@ cerro-de-las-campanas-near-santiago-de-queretaro|32768|3|National Park of Mexico
 cerro-de-las-mitras-near-guadalupe|1024|3|mountain range
 cerro-de-los-siete-colores-near-salta|1024|3|hill
 cerro-de-los-siete-colores-near-san-salvador-de-jujuy|1024|3|hill
+cerro-de-montevideo-near-montevideo|1024|3|hill
 cerro-de-nexca-near-cordoba-mx|1024|3|hill
 cerro-de-nexca-near-veracruz|1024|3|hill
 cerro-de-santa-catarina-near-saltillo|1024|3|mountain
@@ -4409,6 +5484,7 @@ cerro-del-carmen-near-manta|1024|3|hill
 cerro-del-carmen-near-milagro|1024|3|hill
 cerro-del-carmen-near-portoviejo|1024|3|hill
 cerro-del-chiquihuite-near-tenochtitlan|1024|3|hill
+cerro-del-cuatro-near-guadalajara|1024|3|mountain
 cerro-del-cuatro-near-tlaquepaque|1024|3|mountain
 cerro-del-cuatro-near-tonala|1024|3|mountain
 cerro-del-cuatro-near-zapopan|1024|3|mountain
@@ -4460,6 +5536,7 @@ cerro-el-picacho-near-villa-del-rosario|1024|3|mountain
 cerro-el-plata-near-godoy-cruz|1024|3|mountain
 cerro-el-plata-near-mendoza|1024|3|mountain
 cerro-el-potosi-near-heroica-matamoros|1024|3|mountain
+cerro-el-potosi-near-monterrey|1024|3|mountain
 cerro-el-puntudo-near-comodoro-rivadavia|1024|3|mountain
 cerro-el-sombrerito-near-mar-del-plata|1024|3|mountain
 cerro-el-sombrerito-near-tandil|1024|3|mountain
@@ -4468,6 +5545,7 @@ cerro-el-veladero-near-chilpancingo-de-los-bravo|1024|3|mountain
 cerro-el-vigia-near-tlaquepaque|1024|3|mountain
 cerro-el-vigia-near-tonala|1024|3|mountain
 cerro-el-vigia-near-zapopan|1024|3|mountain
+cerro-el-volador-near-medellin|1024|3|hill
 cerro-el-volador-near-quibdo|1024|3|hill
 cerro-garabitas-near-alcobendas|1024|3|mountain
 cerro-garabitas-near-las-rozas-de-madrid|1024|3|mountain
@@ -4506,6 +5584,7 @@ cerro-la-popa-near-santa-marta|1024|3|hill
 cerro-leonera-near-puente-alto|1024|3|mountain
 cerro-leonera-near-san-bernardo|1024|3|mountain
 cerro-lo-aguirre-near-san-bernardo|1024|3|mountain range
+cerro-los-placeres-near-valparaiso|1024|3|mountain
 cerro-los-placeres-near-villa-alemana|1024|3|mountain
 cerro-los-placeres-near-vina-del-mar|1024|3|mountain
 cerro-maca-near-coyhaique|1152|3|volcano
@@ -4540,7 +5619,9 @@ cerro-renca-near-san-bernardo|1024|3|mountain
 cerro-romauldo-near-san-luis-obispo|1024|3|mountain
 cerro-san-cristobal-near-puente-alto|1024|3|mountain
 cerro-san-cristobal-near-san-bernardo|1024|3|mountain
+cerro-san-cristobal-near-santiago|1024|3|mountain
 cerro-san-cristobal-peru-near-callao|1024|3|hill
+cerro-san-cristobal-peru-near-lima|1024|3|hill
 cerro-san-javier-near-san-fernando-del-valle-de-catamarca|1024|3|mountain
 cerro-san-javier-near-san-miguel-de-tucuman|1024|3|mountain
 cerro-san-javier-near-santiago-del-estero|1024|3|mountain
@@ -4582,6 +5663,7 @@ cerro-zurqui-near-heredia|1024|3|mountain
 cerros-de-escazu-near-alajuela|1024|3|mountain range
 cerros-de-escazu-near-cartago|1024|3|mountain range
 cerros-de-escazu-near-heredia|1024|3|mountain range
+cerros-de-escazu-near-san-jose|1024|3|mountain range
 cerros-de-suba-near-hogares-soacha|1024|3|hill
 certova-hora-u-vraze-near-pisek|65536|3|nature reserve in the Czech Republic
 cervena-louka-near-rakovnik|65536|3|nature reserve in the Czech Republic
@@ -4629,6 +5711,7 @@ chaine-de-l-estaque-near-istres|1024|3|mountain range
 chaine-de-l-estaque-near-martigues|1024|3|mountain range
 chaka-salt-lake-near-xining|32|3|lake
 chaka-salt-lake-near-zhangye|32|3|lake
+chalikiopoulou-lagoon-near-corfu|4128|3|lagoon
 chalk-flora-nature-reserve-near-donetsk|65536|3|protected area
 challenger-park-near-simi-valley|131072|3|park
 chamechaude-near-grenoble|1024|3|mountain
@@ -4649,10 +5732,12 @@ chandless-state-park-near-rio-branco|131072|3|state park
 chandola-lake-near-ahmedabad|32|3|lake
 chandola-lake-near-vadodara|32|3|lake
 chandrabhaga-beach-near-bhubaneswar|16|3|beach
+changane-river-near-maputo|256|3|river
 changshan-islands-near-dalian|64|3|archipelago
 changshan-islands-near-dandong|64|3|archipelago
 changxing-island-near-anshan|4096|3|peninsula
 changxing-island-near-dalian|4096|3|peninsula
+changxing-island-near-shanghai|64|3|island
 changzhou-island-near-dongguan|64|3|island
 changzhou-island-near-foshan|64|3|island
 changzhou-island-near-zhaoqing|64|3|island
@@ -4679,9 +5764,12 @@ chapada-das-mesas-national-park-near-maraba|32768|3|national park
 chapada-do-araripe-near-juazeiro|1024|3|mountain range
 chapada-do-araripe-near-petrolina|1024|3|mountain range
 chapada-dos-guimaraes-national-park-near-cuiaba|32768|3|national park
+chapada-dos-veadeiros-national-park-near-brasilia|32768|3|national park
 chapeau-de-napoleon-near-yverdon-les-bains|1024|3|mountain
 chapo-lake-near-puerto-montt|32|3|lake
 charapucu-state-park-near-macapa|131072|3|state park
+charco-verde-near-arrecife|4128|3|lagoon
+charco-verde-near-puerto-del-rosario|4128|3|lagoon
 charles-a-lindbergh-state-park-near-st-cloud|131072|2|
 charles-darwin-national-park-near-darwin|32768|3|national park of Australia
 charles-mill-lake-near-mansfield|32|3|reservoir
@@ -4705,6 +5793,7 @@ chartreuzenbos-near-aarschot|16384|3|forest
 chartreuzenbos-near-leuven|16384|3|forest
 chartreuzenbos-near-tienen|16384|3|forest
 charvak-lake-near-tashkent|32|3|reservoir
+chascomus-lagoon-near-buenos-aires|4128|3|lagoon
 chascomus-lagoon-near-la-plata|4128|3|lagoon
 chasewater-near-burton-upon-trent|32|3|reservoir
 chasewater-near-cannock|32|3|reservoir
@@ -4718,6 +5807,7 @@ chasseral-near-la-chaux-de-fonds|1024|3|mountain
 chasseral-near-neuchatel|1024|3|mountain
 chastain-memorial-park-near-sandy-springs|131072|3|park
 chateau-de-chenonceau-near-tours|0|0|
+chatelet-beach-tardinghen-near-calais|16|3|beach
 chatelherault-country-park-near-hamilton-uk|131072|3|country park
 chatelherault-country-park-near-motherwell|131072|3|country park
 chater-valley-near-grantham|2048|3|valley
@@ -4779,21 +5869,27 @@ cheile-valisoarei-near-ocna-mures|65536|3|nature reserve
 cheile-valisoarei-near-turda|65536|3|nature reserve
 chekeril-near-izhevsk|1024|3|mountain
 chekhov-well-near-khrustalnyi|0|0|
+chelira-near-rabat|64|3|island
 chelmarsh-reservoir-near-telford|32|3|reservoir
 chelmo-hill-near-belchatow|1024|3|mountain
 chelmo-hill-near-radomsko|1024|3|mountain
 cheltenham-badlands-near-brampton|0|0|
 chelton-beach-provincial-park-near-summerside|131072|3|provincial park of Canada
 chelyabinsky-urban-pine-forest-near-chelyabinsk|196608|3|protected area
+chembarambakkam-lake-near-chennai|32|3|reservoir
 chemno-landscape-park-near-grudziadz|196608|3|landscape park in Poland
 chemo-hill-near-piotrkow-trybunalski|1024|3|mountain
 chemong-lake-near-cobourg|32|3|lake
 chemong-lake-near-kawartha-lakes|32|3|lake
-chemski-park-krajobrazowy-near-chelm|0|0|
+chemski-park-krajobrazowy-near-chelm|196608|3|landscape park in Poland
+chemu-lagoon-near-accra|4128|3|lagoon
 chemuhe-shuiku-near-kunming|32|3|reservoir
 chenango-valley-state-park-near-binghamton|131072|3|New York state park
+chengcing-lake-near-kaohsiung|32|3|lake
 chenghai-lake-near-lijiang|32|3|lake
 chenque-hill-near-comodoro-rivadavia|1024|3|hill
+cheonggyecheon-near-incheon|256|3|river
+cheonggyecheon-near-seoul|256|3|river
 cheongnyangsan-near-andong|1024|3|mountain
 cheonhwangsan-near-gyeongju|1024|3|mountain
 cheonjiyeon-waterfall-near-jeju|1|3|waterfall
@@ -4814,7 +5910,18 @@ chernorechensk-reservoir-near-grozny|32|3|reservoir
 chernovsk-reservoir-near-samara|32|3|reservoir
 chernyayevsky-forest-near-perm|81920|3|forest
 cherokee-falls-near-chattanooga|1|3|waterfall
+cherry-beach-near-ajax|131088|3|beach
+cherry-beach-near-brampton|131088|3|beach
+cherry-beach-near-burlington|131088|3|beach
+cherry-beach-near-hamilton-ontario|131088|3|beach
+cherry-beach-near-markham|131088|3|beach
+cherry-beach-near-milton|131088|3|beach
+cherry-beach-near-mississauga|131088|3|beach
+cherry-beach-near-oakville|131088|3|beach
+cherry-beach-near-pickering|131088|3|beach
+cherry-beach-near-richmond-hill|131088|3|beach
 cherry-beach-near-toronto|131088|3|beach
+cherry-beach-near-vaughan|131088|3|beach
 cherry-creek-lake-near-centennial|32|3|reservoir
 cherry-creek-lake-near-littleton|32|3|reservoir
 cherry-creek-state-park-near-aurora|131072|2|
@@ -4825,15 +5932,20 @@ chersky-range-near-chita|1024|3|mountain range
 chersky-stone-near-irkutsk|1024|3|mountain
 chervonoarmijs-kyj-dendropark-near-taraclia|65536|3|protected area
 chervonoarmijs-kyj-dendropark-near-vulcanesti|65536|3|protected area
+chesil-beach-near-bournemouth|80|2|
 chesil-beach-near-dorchester|80|2|
+chesil-beach-near-poole|80|2|
 chesil-beach-near-yeovil|80|2|
 chestermere-lake-near-airdrie|32|3|reservoir
 chestermere-lake-near-brooks|32|3|reservoir
 chestermere-lake-near-strathmore|32|3|reservoir
+chetput-lake-near-chennai|32|3|lake
 chettisham-meadow-near-ely|65536|3|nature reserve
 chettisham-meadow-near-king-s-lynn|65536|3|nature reserve
 chetyryokhvyorstnoye-lake-near-petrozavodsk|32|3|lake
 cheval-blanc-mountain-near-digne-les-bains|1024|3|mountain
+cheviot-beach-near-cowes|16|3|beach
+cheviot-beach-near-geelong|16|3|beach
 chevron-island-near-gold-coast|64|3|island
 chew-valley-lake-near-bristol|32|3|reservoir
 chewacla-state-park-near-columbus-ga|131072|2|
@@ -4855,15 +5967,24 @@ chicamocha-national-park-near-villa-del-rosario|32768|3|national park
 chicaque-nature-park-near-hogares-soacha|196608|3|nature park
 chichester-harbour-near-portsmouth|0|0|
 chichibu-tama-kai-national-park-near-kofu|32768|3|national park
+chichibugahama-near-kurashiki|16|3|beach
 chickamauga-lake-near-chattanooga|32|3|reservoir
 chickies-rock-near-lancaster-us|1024|3|mountain
 chickies-rock-near-york-us|1024|3|mountain
 chicot-state-park-near-lafayette|131072|2|
+chidorigahama-near-kariya|4096|3|coast
+chidorigahama-near-okazaki|4096|3|coast
+chidorigahama-near-toyota|4096|3|coast
 chiemsee-near-rosenheim|32|3|lake
 chiemsee-near-traunstein|32|3|lake
 chignecto-national-wildlife-area-near-riverview|65536|3|national wildlife area
 chihuahua-beach-near-maldonado|16|2|
+chikly-near-tunis|65600|3|island
 chikubu-island-near-hikone|96|3|lake island
+chikugo-river-near-fukuoka|256|3|river
+chilanga-near-lusaka|0|0|
+children-s-pool-beach-near-el-cajon|16|3|beach
+children-s-pool-beach-near-san-diego|16|3|beach
 chilean-central-valley-near-curico|0|0|
 chilean-central-valley-near-talca|0|0|
 chiles-volcano-near-ipiales|1152|3|stratovolcano
@@ -4885,10 +6006,23 @@ chimborazo-near-guayaquil|1152|3|stratovolcano
 chimborazo-near-latacunga|1152|3|stratovolcano
 chimborazo-near-milagro|1152|3|stratovolcano
 chimborazo-near-quevedo|1152|3|stratovolcano
+chimborazo-near-quito|1152|3|stratovolcano
 chimborazo-near-riobamba|1152|3|stratovolcano
+chimney-beach-near-carson-city|16|3|beach
 chimney-bluffs-state-park-near-rochester|131072|3|New York state park
 chimney-rock-park-near-sugar-land|131072|3|park
 chimney-rock-state-park-near-spartanburg|131072|3|North Carolina state park
+chin-beach-near-langford|16|3|beach
+china-beach-san-francisco-near-alameda|16|3|beach
+china-beach-san-francisco-near-berkeley|16|3|beach
+china-beach-san-francisco-near-concord|16|3|beach
+china-beach-san-francisco-near-daly-city|16|3|beach
+china-beach-san-francisco-near-fremont|16|3|beach
+china-beach-san-francisco-near-hayward|16|3|beach
+china-beach-san-francisco-near-oakland|16|3|beach
+china-beach-san-francisco-near-palo-alto|16|3|beach
+china-beach-san-francisco-near-redwood-city|16|3|beach
+china-beach-san-francisco-near-san-mateo|16|3|beach
 chineria-island-near-leticia|320|3|river island
 chingaza-national-natural-park-near-san-jose-del-guaviare|32768|3|national park
 chingaza-national-natural-park-near-villavicencio|32768|3|national park
@@ -4931,6 +6065,7 @@ chizhovskoye-reservoir-near-slutsk|32|3|reservoir
 chlomo-near-livadeia|1024|3|mountain
 chlum-near-mlada-boleslav|196608|2|
 chocianow-palace-park-near-lubin|131072|3|park
+chocolate-hills-near-cebu|1024|3|hill
 chocolate-lake-near-halifax|32|3|lake
 chocolate-mountains-near-el-centro|1024|3|mountain range
 choghakhor-lake-near-isfahan|544|3|lake
@@ -4947,11 +6082,13 @@ chonta-mountain-range-near-pisco|1024|3|mountain range
 chop-lake-near-zielona-gora|32|1|
 chopok-near-brezno|1024|3|mountain
 chor-chinor-park-near-jizzakh|131072|3|park
+chorefto-beach-near-volos|16|3|beach
 chornohora-near-ivano-frankivsk|1024|3|mountain range
 chorolque-near-tarija|1024|3|mountain
 chorynsky-mokrad-near-valasske-mezirici|65536|3|nature reserve in the Czech Republic
 choshu-dejima-near-shimonoseki|0|0|
 chotinske-piesky-near-komarno|65536|3|nature reserve
+chowpatty-beach-near-mumbai|16|3|beach
 chrib-near-piestany|65536|3|nature reserve
 chriby-near-kromeriz|1024|3|mountain range
 chriby-near-uherske-hradiste|1024|3|mountain range
@@ -4963,6 +6100,7 @@ christopher-lake-near-prince-albert|32|3|lake
 chropynsky-rybnik-near-prerov|65536|3|protected area
 chubongdo-near-geoje|64|3|island
 chubu-sangaku-national-park-near-nagano|32768|3|national park
+chuckanut-point-near-bellingham|4096|3|cape
 chucuito-peninsula-near-juliaca|4096|3|peninsula
 chucuito-peninsula-near-puno|4096|3|peninsula
 chugach-state-park-near-anchorage|131072|2|
@@ -5016,6 +6154,7 @@ ciietu-near-taraclia|16384|3|forest
 cijara-dam-near-merida-spain|32|3|reservoir
 cilingoz-nature-park-near-corlu|196608|3|nature park
 cilingoz-nature-park-near-tekirdag|196608|3|nature park
+ciliwung-river-near-jakarta|256|3|river
 cima-dello-stagn-near-bellinzona|1024|3|mountain
 cima-di-francia-near-cuneo|1024|3|mountain
 cima-palon-pasubio-near-vicenza|1024|3|mountain
@@ -5030,6 +6169,11 @@ cineritele-de-la-somusca-bacau-near-miroslava|65536|3|nature reserve
 cineritele-de-la-somusca-bacau-near-tecuci|65536|3|nature reserve
 cinobanske-predhorie-near-lucenec|1024|3|mountain range
 cinque-terre-national-park-near-la-spezia|98304|3|national park
+cinque-terre-near-camaiore|4096|3|coast
+cinque-terre-near-carrara|4096|3|coast
+cinque-terre-near-la-spezia|4096|3|coast
+cinque-terre-near-massa|4096|3|coast
+cinto-river-near-quito|256|3|river
 ciobalaccia-near-cahul|65536|3|nature reserve
 ciobalaccia-near-comrat|65536|3|nature reserve
 ciovo-near-kastela|64|3|island
@@ -5059,6 +6203,7 @@ citadel-yam-ashdod-ecological-park-near-ashdod|65536|3|nature reserve
 citadel-yam-ashdod-ecological-park-near-ashkelon|65536|3|nature reserve
 cithaeron-near-acharnes|1024|3|mountain range
 citlaltepetl-near-cordoba-mx|1024|3|mountain
+citlaltepetl-near-mexico-city|1024|3|mountain
 citlaltepetl-near-veracruz|1024|3|mountain
 citlaltepetl-near-xalapa|1024|3|mountain
 city-creek-near-fontana|256|3|river
@@ -5092,6 +6237,7 @@ ciudad-universitaria-ecological-reserve-buenos-aires-near-merlo|65536|3|nature r
 ciudad-universitaria-ecological-reserve-buenos-aires-near-quilmes|65536|3|nature reserve
 cizov-near-benesov|65536|3|nature reserve in the Czech Republic
 clachnaben-near-aberdeen|1024|3|mountain
+clam-pond-near-smithtown|4096|3|cove
 clara-bog-near-athlone|66048|3|bog
 clare-valley-near-kadina|2048|3|valley
 claremore-mound-near-broken-arrow|1024|3|mountain
@@ -5104,6 +6250,10 @@ clark-county-wetlands-park-near-north-las-vegas|131072|3|county park
 clark-lake-near-kent|32|3|lake
 clark-s-island-near-plymouth-us|64|3|island
 clarke-beach-park-near-renton|131072|3|park
+clarkes-beach-near-ballina-nsw|16|3|beach
+clarkes-beach-near-byron-bay|16|3|beach
+clarkes-beach-near-goonellabah|16|3|beach
+clarkes-beach-near-lismore|16|3|beach
 clausensee-near-pirmasens|32|3|reservoir
 clay-pit-ponds-state-park-preserve-near-edison|131072|3|park
 clay-pit-ponds-state-park-preserve-near-new-brunswick|131072|3|park
@@ -5123,17 +6273,26 @@ cleland-national-park-near-adelaide|32768|3|national park of Australia
 clent-hills-near-birmingham|1024|3|hill chain
 clent-hills-near-coventry|1024|3|hill chain
 clent-hills-near-wolverhampton|1024|3|hill chain
+cleveland-beach-near-dartmouth|16|3|beach
+cleveland-beach-near-halifax|16|3|beach
 cleveland-national-forest-near-anaheim|81920|3|proclaimed forest
 cleveland-national-forest-near-riverside|81920|3|proclaimed forest
 clew-bay-near-westport|4096|3|bay
 cliffs-of-moher-near-ennis|4096|3|cliff
 cliffs-of-moher-near-limerick|4096|3|cliff
 cliffs-of-the-neuse-state-park-near-wilson|131072|3|North Carolina state park
+clifton-beach-near-karachi|0|0|
 clifton-oyster-rocks-near-hyderabad-pk|64|3|island
+clifton-oyster-rocks-near-karachi|64|3|island
 clifty-falls-state-park-near-jeffersonville|131073|3|waterfall
 clifty-falls-state-park-near-louisville|131073|3|waterfall
 climont-near-saint-die-des-vosges|1024|3|mountain
+climping-beach-near-brighton|65552|3|beach
+climping-beach-near-brighton-and-hove|65552|3|beach
 climping-beach-near-chichester|65552|3|beach
+climping-beach-near-eastbourne|65552|3|beach
+climping-beach-near-horsham-uk|65552|3|beach
+climping-beach-near-lewes|65552|3|beach
 climping-beach-near-littlehampton|65552|3|beach
 climping-beach-near-worthing|65552|3|beach
 clinton-conservation-park-near-kadina|65536|3|conservation park of Australia
@@ -5144,6 +6303,7 @@ clinton-state-park-near-olathe|131072|2|
 clinton-state-park-near-overland-park|131072|2|
 clinton-state-park-near-st-joseph|131072|2|
 clinton-state-park-near-topeka|131072|2|
+cloch-point-near-dumbarton|4096|3|cape
 cloch-point-near-greenock|4096|3|cape
 clock-face-country-park-near-st-helens|131072|3|country park
 clock-tower-beach-near-boucherville|16|3|urban beach
@@ -5153,6 +6313,14 @@ clock-tower-beach-near-saint-bruno-de-montarville|16|3|urban beach
 clock-tower-beach-near-saint-lambert|16|3|urban beach
 clock-tower-beach-near-sainte-julie|16|3|urban beach
 clock-tower-beach-near-westmount|16|3|urban beach
+clogher-head-near-ashbourne|4096|3|cape
+clogher-head-near-balbriggan|4096|3|cape
+clogher-head-near-drogheda|4096|3|cape
+clogher-head-near-dublin|4096|3|cape
+clogher-head-near-dun-laoghaire|4096|3|cape
+clogher-head-near-dundalk|4096|3|cape
+clogher-head-near-leixlip|4096|3|cape
+clogher-head-near-swords|4096|3|cape
 clogherhead-near-drogheda|0|0|
 clomantagh-hill-near-kilkenny|1024|3|mountain
 cloquet-valley-state-forest-near-duluth|81920|3|Minnesota state forest
@@ -5161,6 +6329,7 @@ clover-island-near-pasco|320|3|river island
 clovis-botanical-garden-near-clovis|0|0|
 clubbiedean-reservoir-near-livingston|32|3|reservoir
 clubes-island-near-anapolis|64|3|island
+clubes-island-near-brasilia|64|3|island
 clue-de-barles-near-digne-les-bains|2052|3|canyon
 cluj-napoca-central-park-near-floresti|131072|3|park
 cluj-napoca-central-park-near-turda|131072|3|park
@@ -5179,6 +6348,14 @@ coa-near-mirandela|256|3|river
 coa-river-near-guarda|256|3|river
 coachella-valley-near-palm-springs|2048|3|valley
 coast-guard-island-near-alameda|0|0|
+coast-of-the-gods-near-vibo-valentia|4096|3|coast
+coastline-near-lagos|4096|3|coast
+coasts-of-the-basque-country-near-anglet|4096|3|coast
+coasts-of-the-basque-country-near-bayonne|4096|3|coast
+coasts-of-the-basque-country-near-biarritz|4096|3|coast
+coasts-of-the-basque-country-near-hendaye|4096|3|coast
+coasts-of-the-basque-country-near-irun|4096|3|coast
+coasts-of-the-basque-country-near-san-sebastian|4096|3|coast
 coate-water-country-park-near-swindon|131072|3|country park
 coba-lake-near-merida|32|3|lake
 coba-lake-near-valladolid-mx|32|3|lake
@@ -5218,6 +6395,7 @@ cofre-de-peru-en-tanga-near-xalapa|1152|3|extinct volcano
 cohoes-falls-near-albany-ny|1|3|waterfall
 cohoes-falls-near-schenectady|1|3|waterfall
 cohoes-falls-near-troy|1|3|waterfall
+coiba-near-panama-city|32832|3|island
 coiba-near-santiago-de-veraguas|32832|3|island
 col-du-tourmalet-near-tarbes|1024|3|mountain pass
 cola-de-caballo-near-guadalupe|1|3|waterfall
@@ -5229,6 +6407,8 @@ cold-creek-conservation-area-near-markham|65536|3|protected area
 cold-lake-near-cold-lake|32|3|lake
 cold-lake-near-lloydminster|32|3|lake
 cold-lake-provincial-park-near-cold-lake|131072|3|provincial park of Canada
+colgagh-lough-near-ballina|4128|3|lagoon
+colgagh-lough-near-sligo|4128|3|lagoon
 colibita-lake-near-bistrita|32|3|lake
 colico-lake-near-temuco|32|3|lake
 collarada-near-jaca|1024|3|mountain
@@ -5288,6 +6468,12 @@ como-lake-near-saint-paul|32|3|lake
 comox-lake-near-courtenay|32|3|lake
 complejo-lagunar-de-la-albuera-near-almendralejo|66048|3|wetland
 complejo-lagunar-de-la-albuera-near-elvas|66048|3|wetland
+compo-beach-near-bridgeport|16|3|beach
+compo-beach-near-new-haven|16|3|beach
+compo-beach-near-norwalk-us|16|3|beach
+compo-beach-near-smithtown|16|3|beach
+compo-beach-near-stamford|16|3|beach
+compo-beach-near-waterbury|16|3|beach
 comporta-gale-near-beja|65536|3|Natura 2000 site
 comporta-gale-near-evora|65536|3|Natura 2000 site
 comunidades-europeas-park-near-aranjuez|131072|3|park
@@ -5307,20 +6493,39 @@ conestoga-lake-near-lincoln-us|32|3|reservoir
 conestogo-lake-near-stratford|32|3|lake
 conestogo-lake-near-waterloo-ontario|32|3|lake
 conestogo-lake-near-woodstock|32|3|lake
+coney-island-near-babylon|0|0|
+coney-island-near-edison|0|0|
+coney-island-near-elizabeth|0|0|
+coney-island-near-hackensack|0|0|
+coney-island-near-hempstead|0|0|
+coney-island-near-hoboken|0|0|
+coney-island-near-jersey-city|0|0|
+coney-island-near-new-york|0|0|
+coney-island-near-newark|0|0|
+coney-island-near-north-hempstead|0|0|
+coney-island-near-oyster-bay|0|0|
+coney-island-near-paterson|0|0|
+coney-island-near-perth-amboy|0|0|
 coney-island-near-sligo|64|3|island
+coney-island-near-white-plains|0|0|
+coney-island-near-yonkers|0|0|
 coney-island-of-the-west-near-mankato|96|3|lake island
 confluence-park-near-arvada|131072|3|park
 confluence-park-near-westminster|131072|3|park
 confluenta-jiu-dunare-near-slatina|66048|3|Ramsar site
 congaree-national-park-near-columbia|32768|3|National Park of the United States
 conguillio-national-park-near-temuco|32768|3|national park
+coningham-beach-near-hobart|16|3|beach
 coningham-beach-near-kingston-au|16|3|beach
+coningham-beach-near-new-norfolk|16|3|beach
 conneaut-lake-near-erie|32|3|lake
 connemara-national-park-near-galway|32768|3|national park
 connemara-national-park-near-westport|32768|3|national park
-connetquot-river-state-park-preserve-near-babylon|0|0|
+connetquot-river-state-park-preserve-near-babylon|131072|3|New York state park
 conocranra-near-chimbote|1024|3|mountain
 conocranra-near-trujillo|1024|3|mountain
+conrad-s-beach-near-dartmouth|16|3|beach
+conrad-s-beach-near-halifax|16|3|beach
 conservation-garden-park-near-west-jordan|0|0|
 conservation-garden-park-near-west-valley-city|0|0|
 constitution-1857-national-park-near-ensenada|32768|3|National Park of Mexico
@@ -5331,6 +6536,7 @@ contendas-de-sincora-national-forest-near-vitoria-da-conquista|81920|3|national 
 contra-loma-regional-park-near-antioch|131072|3|regional park
 conventer-see-near-rostock|32|3|lake
 conway-national-park-near-bowen|32768|3|national park of Australia
+cookies-beach-near-moruya|16|3|beach
 cooking-lake-near-camrose|32|3|lake
 cooking-lake-near-edmonton|32|3|lake
 cooking-lake-near-fort-saskatchewan|32|3|lake
@@ -5348,6 +6554,14 @@ cooley-mountains-near-dundalk|1024|3|mountain range
 cooper-mountain-near-beaverton|1024|3|mountain
 coorabakh-national-park-near-forster|32768|3|national park of Australia
 coorabakh-national-park-near-taree|32768|3|national park of Australia
+copacabana-beach-near-rio-de-janeiro|16|3|beach
+copacabana-near-belford-roxo|0|0|
+copacabana-near-duque-de-caxias|0|0|
+copacabana-near-niteroi|0|0|
+copacabana-near-nova-iguacu|0|0|
+copacabana-near-rio-de-janeiro|0|0|
+copacabana-near-sao-goncalo|0|0|
+copacabana-near-sao-joao-de-meriti|0|0|
 copiapo-volcano-near-copiapo|1152|3|stratovolcano
 copicut-woods-near-new-bedford|65536|3|nature reserve
 cople-pits-near-bedford|65536|3|nature reserve
@@ -5361,6 +6575,8 @@ coquet-island-near-south-shields|65600|3|island
 corani-lake-near-cochabamba|32|3|lake
 corani-lake-near-sacaba|32|3|lake
 corbieres-near-perpignan|1024|3|mountain range
+corcovado-national-park-near-san-jose|32768|3|national park
+corcovado-near-rio-de-janeiro|66560|3|mountain
 cordillera-azul-national-park-near-pucallpa|32768|2|
 cordillera-azul-national-park-near-tarapoto|32768|2|
 cordillera-blanca-near-huaraz|1024|3|mountain range
@@ -5409,6 +6625,7 @@ cordillera-oriental-near-la-romana|1024|3|mountain
 cordillera-oriental-near-oruro|1024|3|mountain range
 cordillera-oriental-near-sacaba|1024|3|mountain range
 cordillera-oriental-near-san-pedro-de-macoris|1024|3|mountain
+cordillera-oriental-near-santo-domingo|1024|3|mountain
 cordillera-oriental-near-socorro|1024|3|mountain range
 cordillera-oriental-near-tunja|1024|3|mountain range
 cordillera-oriental-near-villa-del-rosario|1024|3|mountain range
@@ -5417,6 +6634,7 @@ cordillera-pelada-near-valdivia|1024|3|mountain range
 cordillera-real-near-cuenca-ec|1024|3|mountain range
 cordillera-real-near-oruro|1024|3|mountain range
 cordillera-volcanic-near-arequipa|1024|3|mountain range
+cordoba-near-bogota|512|3|swamp
 cordon-del-plata-near-godoy-cruz|1024|3|mountain
 cordon-del-plata-near-mendoza|1024|3|mountain
 coridorul-rusca-montana-tarcu-retezat-near-hunedoara|65536|3|Natura 2000 site
@@ -5439,28 +6657,86 @@ corno-grande-near-laquila|1024|3|mountain
 corno-grande-near-teramo|1024|3|mountain
 cornstejn-near-znojmo|65536|3|nature reserve in the Czech Republic
 cornwall-park-near-hastings|131072|3|park
+coromandel-coast-near-bangalore|4096|3|coast
+coromandel-coast-near-chennai|4096|3|coast
+corona-del-mar-state-beach-near-anaheim|16|3|California state beach
+corona-del-mar-state-beach-near-carson|16|3|California state beach
+corona-del-mar-state-beach-near-compton|16|3|California state beach
 corona-del-mar-state-beach-near-costa-mesa|16|3|California state beach
+corona-del-mar-state-beach-near-downey|16|3|California state beach
+corona-del-mar-state-beach-near-fullerton|16|3|California state beach
+corona-del-mar-state-beach-near-garden-grove|16|3|California state beach
 corona-del-mar-state-beach-near-huntington-beach|16|3|California state beach
+corona-del-mar-state-beach-near-inglewood|16|3|California state beach
 corona-del-mar-state-beach-near-irvine|16|3|California state beach
+corona-del-mar-state-beach-near-long-beach|16|3|California state beach
 corona-del-mar-state-beach-near-newport-beach|16|3|California state beach
+corona-del-mar-state-beach-near-norwalk|16|3|California state beach
+corona-del-mar-state-beach-near-orange-us|16|3|California state beach
+corona-del-mar-state-beach-near-santa-ana|16|3|California state beach
+corona-del-mar-state-beach-near-torrance|16|3|California state beach
 corralejo-natural-park-near-puerto-del-rosario|196608|3|protected area
 corrales-de-rota-near-sanlucar-de-barrameda|196608|3|Special Area of Conservation
+corsewall-point-near-bangor|4096|3|cape
 cosauti-landscape-reserve-near-soroca|65536|3|landscape reserve
 cosava-mica-near-resita|65536|3|Natura 2000 site
 cositzer-teich-near-kothen|32|3|lake
 cospudener-see-near-leipzig|0|0|
+cosquin-river-near-cordoba|256|3|river
 cosson-near-blois|256|3|river
+costa-blanca-near-alcoy|4096|3|coast
+costa-blanca-near-alicante|4096|3|coast
+costa-blanca-near-benidorm|4096|3|coast
+costa-blanca-near-elche|4096|3|coast
+costa-blanca-near-orihuela|4096|3|coast
+costa-blanca-near-torrevieja|4096|3|coast
+costa-brava-near-girona|4096|3|coast
+costa-calida-near-cartagena|4096|3|coast
+costa-calida-near-lorca|4096|3|coast
 costa-da-caparica-near-lisbon|0|0|
 costa-da-caparica-near-setubal|0|0|
 costa-da-morte-near-a-coruna|4096|3|coast
 costa-da-morte-near-santiago-de-compostela|4096|3|coast
 costa-daurada-near-tarragona|4096|3|coast
+costa-de-almeria-near-almeria|4096|3|coast
+costa-de-almeria-near-roquetas-de-mar|4096|3|coast
+costa-de-la-luz-near-algeciras|4096|3|coast
+costa-de-la-luz-near-cadiz|4096|3|coast
 costa-de-la-luz-near-huelva|4096|3|coast
+costa-de-la-luz-near-jerez-de-la-frontera|4096|3|coast
+costa-del-garraf-near-badalona|4096|3|coast
+costa-del-garraf-near-barcelona|4096|3|coast
+costa-del-garraf-near-castelldefels|4096|3|coast
+costa-del-garraf-near-granollers|4096|3|coast
+costa-del-garraf-near-lhospitalet|4096|3|coast
+costa-del-garraf-near-sabadell|4096|3|coast
+costa-del-garraf-near-sant-cugat-del-valles|4096|3|coast
+costa-del-garraf-near-terrassa|4096|3|coast
+costa-del-garraf-near-vilanova-i-la-geltru|4096|3|coast
+costa-del-maresme-near-badalona|4096|3|coast
+costa-del-maresme-near-barcelona|4096|3|coast
+costa-del-maresme-near-castelldefels|4096|3|coast
+costa-del-maresme-near-girona|4096|3|coast
+costa-del-maresme-near-granollers|4096|3|coast
+costa-del-maresme-near-lhospitalet|4096|3|coast
+costa-del-maresme-near-sabadell|4096|3|coast
+costa-del-maresme-near-sant-cugat-del-valles|4096|3|coast
+costa-del-maresme-near-terrassa|4096|3|coast
+costa-del-sol-near-malaga|4096|3|coast
+costa-del-sol-near-marbella|4096|3|coast
+costa-giardino-near-ascoli-piceno|4096|3|coast
+costa-giardino-near-chieti|4096|3|coast
+costa-giardino-near-fermo|4096|3|coast
+costa-giardino-near-pescara|4096|3|coast
+costa-giardino-near-teramo|4096|3|coast
 costa-nova-do-prado-near-aveiro|0|0|
 costa-nova-do-prado-near-oliveira-do-bairro|0|0|
 costa-rocciosa-tra-sperlonga-e-gaeta-near-gaeta|65536|3|Natura 2000 site
+costa-smeralda-near-olbia|4096|3|coast
+costa-verde-near-lima|4096|3|coast
 costanera-sur-ecological-reserve-near-avellaneda|65536|3|nature reserve
 costanera-sur-ecological-reserve-near-berazategui|65536|3|nature reserve
+costanera-sur-ecological-reserve-near-buenos-aires|65536|3|nature reserve
 costanera-sur-ecological-reserve-near-colonia-del-sacramento|65536|3|nature reserve
 costanera-sur-ecological-reserve-near-la-plata|65536|3|nature reserve
 costanera-sur-ecological-reserve-near-lanus|65536|3|nature reserve
@@ -5471,9 +6747,26 @@ costiera-amalfitana-tra-nerano-e-positano-near-castellammare-di-stabia|65536|3|N
 cosumnes-river-preserve-near-stockton|65536|3|protected area
 cotacachi-near-esmeraldas|1152|3|stratovolcano
 cotacachi-near-ibarra|1152|3|stratovolcano
+cote-bleue-near-aix-en-provence|0|0|
+cote-bleue-near-arles|0|0|
+cote-bleue-near-aubagne|0|0|
+cote-bleue-near-istres|0|0|
+cote-bleue-near-la-ciotat|0|0|
+cote-bleue-near-marseille|0|0|
+cote-bleue-near-martigues|0|0|
+cote-bleue-near-salon-de-provence|0|0|
 cote-d-opale-near-boulogne-sur-mer|4096|3|coast
+cote-de-nacre-near-le-havre|4096|3|coast
+cote-de-nacre-near-lisieux|4096|3|coast
+cote-demeraude-near-saint-brieuc|4096|3|coast
+cote-demeraude-near-saint-malo|4096|3|coast
 cote-fleurie-near-caen|4096|3|coast
 cote-fleurie-near-le-havre|4096|3|coast
+cote-sauvage-near-la-rochelle|4096|3|coast
+cote-sauvage-near-rochefort|4096|3|coast
+cote-sauvage-near-royan|4096|3|coast
+cote-sauvage-near-saint-nazaire|4096|3|coast
+cote-sauvage-presqu-ile-de-quiberon-near-lorient|4096|3|coast
 cotentin-peninsula-near-cherbourg-octeville|4096|3|peninsula
 cotentin-peninsula-near-saint-lo|4096|3|peninsula
 cotes-de-moselle-near-thionville|1024|3|hill chain
@@ -5482,6 +6775,7 @@ cotopaxi-national-park-near-latacunga|32768|3|national park
 cotopaxi-volcano-near-ambato|1152|3|stratovolcano
 cotopaxi-volcano-near-latacunga|1152|3|stratovolcano
 cotopaxi-volcano-near-quevedo|1152|3|stratovolcano
+cotopaxi-volcano-near-quito|1152|3|stratovolcano
 cotopaxi-volcano-near-santo-domingo-ec|1152|3|stratovolcano
 cotswolds-near-andover|66560|3|hill
 cotswolds-near-banbury|66560|3|hill
@@ -5499,6 +6793,7 @@ cotswolds-near-trowbridge|66560|3|hill
 cotswolds-near-warwick-uk|66560|3|hill
 cotswolds-near-worcester-uk|66560|3|hill
 cottbuser-ostsee-near-cottbus|0|0|
+cottesloe-beach-near-perth|16|3|beach
 cottonwood-park-near-elgin|131072|3|park
 cotubanama-national-park-near-higuey|32768|3|national park
 cotubanama-national-park-near-la-romana|32768|3|national park
@@ -5520,6 +6815,9 @@ cova-del-rinoceront-near-castelldefels|2|3|cave
 covao-dos-conchos-near-covilha|32|3|artificial lake
 covao-dos-conchos-near-guarda|32|3|artificial lake
 covao-dos-conchos-near-oliveira-do-hospital|32|3|artificial lake
+covehithe-beach-near-ipswich-uk|16|3|beach
+covehithe-beach-near-lowestoft|16|3|beach
+covehithe-beach-near-norwich|16|3|beach
 covert-park-near-round-rock|131072|3|park
 coves-de-la-torre-near-torrent|2|3|cave
 cow-neck-peninsula-near-hempstead|4096|3|peninsula
@@ -5530,6 +6828,8 @@ cowell-beach-near-santa-cruz|16|3|beach
 cowiche-canyon-near-yakima|2048|3|valley
 cowles-mountain-near-el-cajon|1024|3|mountain
 cowles-mountain-near-san-diego|1024|3|mountain
+cowrie-beach-near-cowes|16|3|beach
+cowrie-beach-near-wonthaggi|16|3|beach
 coyote-hills-near-hayward|1024|3|mountain range
 coyote-hills-regional-park-near-fremont|131072|3|regional park
 coyote-mountains-near-el-centro|1024|3|mountain range
@@ -5552,17 +6852,36 @@ craigleith-near-kirkcaldy|64|3|island
 craigleith-provincial-park-near-owen-sound|131072|3|provincial park of Canada
 craiglethy-near-aberdeen|64|3|island
 craigville-beach-near-barnstable|16|3|beach
+craigville-beach-near-new-bedford|16|3|beach
 craimoosweiher-near-bayreuth|32|3|lake
+cran-aux-oeufs-near-boulogne-sur-mer|16|3|beach
+cran-aux-oeufs-near-calais|16|3|beach
 cran-aux-oeufs-near-dover-uk|16|3|beach
 cran-aux-oeufs-near-folkestone|16|3|beach
+cran-poulet-near-boulogne-sur-mer|16|3|beach
+cran-poulet-near-calais|16|3|beach
 cran-poulet-near-dover-uk|16|3|beach
 cranae-near-sparta|64|3|island
+crandon-park-near-davie|131072|3|park
+crandon-park-near-fort-lauderdale|131072|3|park
+crandon-park-near-hialeah|131072|3|park
+crandon-park-near-hollywood|131072|3|park
 crandon-park-near-miami|131072|3|park
 crandon-park-near-miami-beach|131072|3|park
+crandon-park-near-miami-gardens|131072|3|park
+crandon-park-near-miramar|131072|3|park
+crandon-park-near-pembroke-pines|131072|3|park
+crandon-park-near-pompano-beach|131072|3|park
+crane-beach-near-boston|16|3|beach
+crane-beach-near-cambridge-us|16|3|beach
+crane-beach-near-lynn|16|3|beach
+crane-beach-near-quincy-us|16|3|beach
+crane-beach-near-salem-us|16|3|beach
 crane-island-near-shakopee|64|3|island
 cranenweyer-near-heerlen|32|3|reservoir
 cranenweyer-near-kerkrade|32|3|reservoir
 craney-island-near-suffolk|64|3|island
+cranfield-point-near-lisburn|4096|3|headland
 crangasi-park-near-bragadiru|131072|3|park
 cranham-brickfields-near-brentwood|65536|3|nature reserve
 cranham-marsh-near-brentwood|65536|3|nature reserve
@@ -5582,6 +6901,8 @@ cres-near-pazin|64|3|island
 cres-near-pula|64|3|island
 cres-near-rijeka|64|3|island
 crescent-beach-state-park-near-portland-me|131072|2|
+crescent-island-near-nairobi|64|3|island
+crescent-lake-ho-chi-minh-city-near-ho-chi-minh-city|32|3|lake
 cret-de-l-oeillon-near-vienne|1024|3|mountain
 cret-de-la-neige-near-annemasse|1024|3|mountain
 cret-de-la-neige-near-bourg-en-bresse|1024|3|mountain
@@ -5603,7 +6924,10 @@ crimean-near-kadiivka|0|0|
 crimple-valley-near-harrogate|2048|3|valley
 crimple-valley-near-york|2048|3|valley
 crimson-lake-provincial-park-near-red-deer|131072|3|provincial park of Canada
+crique-de-l-anau-near-sete|4096|3|cove
 crna-glava-near-bijelo-polje|1024|3|mountain
+crni-molo-near-crikvenica|16|3|beach
+crni-molo-near-rijeka|16|3|beach
 crni-vrh-near-bor|1024|3|mountain
 crni-vrh-near-jagodina|1024|3|mountain
 crni-vrh-near-kragujevac|1024|3|mountain
@@ -5619,16 +6943,23 @@ crompton-moor-near-huddersfield|1024|3|mountain
 crompton-moor-near-oldham|1024|3|mountain
 crompton-moor-near-rochdale|1024|3|mountain
 crompton-moor-near-salford|1024|3|mountain
+cronulla-beach-near-penrith|16|3|beach
+cronulla-beach-near-sydney|16|3|beach
+cronulla-beach-near-wollongong|16|3|beach
 crooked-forest-near-szczecin|16384|3|forest
 croppies-acre-near-ashbourne|131072|3|park
 croppies-acre-near-leixlip|131072|3|park
 cropston-reservoir-near-loughborough|32|3|reservoir
 crosby-beach-near-birkenhead|16|3|beach
+crosby-beach-near-blackpool|16|3|beach
 crosby-beach-near-bootle|16|3|beach
+crosby-beach-near-chester|16|3|beach
 crosby-beach-near-liverpool|16|3|beach
+crosby-beach-near-preston|16|3|beach
 crosby-beach-near-st-helens|16|3|beach
 crosby-beach-near-warrington|16|3|beach
 crosby-beach-near-widnes|16|3|beach
+crosby-beach-near-wigan|16|3|beach
 cross-lake-near-shreveport|32|3|reservoir
 cross-of-the-three-kingdoms-near-cuenca|1024|3|mountain
 cross-ranch-state-park-near-bismarck|131072|2|
@@ -5642,6 +6973,7 @@ crowders-mountain-state-park-near-gastonia|131072|3|North Carolina state park
 crowdy-bay-national-park-near-forster|32768|3|national park of Australia
 crowdy-bay-national-park-near-port-macquarie|32768|3|national park of Australia
 crowdy-bay-national-park-near-taree|32768|3|national park of Australia
+crowdy-head-near-taree|0|0|
 crowe-lake-near-quinte-west|32|3|lake
 crowley-s-ridge-state-park-near-jonesboro|131072|3|park
 crown-hill-park-near-arvada|131072|3|county park
@@ -5662,6 +6994,8 @@ crystal-cove-state-park-near-irvine|131072|3|California state park
 crystal-cove-state-park-near-long-beach|131072|3|California state park
 crystal-cove-state-park-near-los-angeles|131072|3|California state park
 crystal-cove-state-park-near-newport-beach|131072|3|California state park
+crystal-crescent-beach-near-dartmouth|16|3|beach
+crystal-crescent-beach-near-halifax|16|3|beach
 crystal-lake-near-yorkton|32|3|lake
 crystal-springs-reservoir-near-redwood-city|32|3|reservoir
 crystal-springs-reservoir-near-san-mateo|32|3|reservoir
@@ -5677,6 +7011,7 @@ csovanyos-near-vac|1024|3|mountain
 cuartel-huerta-park-near-parla|131072|3|park
 cuatro-calas-protected-landscape-near-lorca|65536|3|Natura 2000 site
 cubuv-kopec-near-trencin|1024|3|mountain
+cuc-phuong-national-park-near-hanoi|196608|3|nature park
 cucamonga-valley-near-corona|2048|3|valley
 cucamonga-valley-near-ontario|2048|3|valley
 cucamonga-valley-near-pomona|2048|3|valley
@@ -5721,9 +7056,12 @@ cummins-falls-state-park-near-murfreesboro|131072|2|
 cunda-island-near-canakkale|64|3|island
 cunnawarra-national-park-near-armidale|32768|3|national park of Australia
 cunningham-falls-state-park-near-frederick-md|131072|2|
+cununyacu-near-quito|0|0|
 curlew-national-grassland-near-pocatello|16384|3|forest
 curonian-spit-national-park-near-kaliningrad|65536|3|protected area of Russia
 curonian-spit-national-park-near-klaipeda|98304|3|national park
+curonian-spit-near-klaipeda|0|0|
+curonian-spit-near-silute|0|0|
 curragh-chase-forest-park-near-limerick|212992|3|forest park
 curt-gowdy-state-park-near-cheyenne|131072|2|
 curtis-island-national-park-near-gladstone|32768|3|national park of Australia
@@ -5743,6 +7081,7 @@ cuyamaca-mountains-near-ensenada|1024|3|mountain range
 cuyamaca-mountains-near-mexicali|1024|3|mountain range
 cuyamaca-mountains-near-tijuana|1024|3|mountain range
 cuyamaca-rancho-state-park-near-san-diego|131072|3|California state park
+cvitacka-beach-near-ploce|16|3|beach
 cyhirynskaje-reservoir-near-asipovichy|32|3|reservoir
 cyhirynskaje-reservoir-near-babruysk|32|3|reservoir
 cyhirynskaje-reservoir-near-mahilyow|32|3|reservoir
@@ -5751,6 +7090,10 @@ cyhirynskaje-reservoir-near-rechytsa|32|3|reservoir
 cyhirynskaje-reservoir-near-svyetlahorsk|32|3|reservoir
 cyhirynskaje-reservoir-near-zhlobin|32|3|reservoir
 cynon-valley-near-merthyr-tydfil|2048|3|valley
+cypel-rewski-near-gdansk|0|0|
+cypel-rewski-near-gdynia|0|0|
+cypel-rewski-near-sopot|0|0|
+cypel-rewski-near-wejherowo|0|0|
 cypremort-point-state-park-near-lafayette|131072|2|
 cypress-creek-park-near-round-rock|131072|3|park
 cypress-hills-interprovincial-park-near-medicine-hat|65536|2|
@@ -5764,6 +7107,7 @@ czarci-ostrow-near-lomza|64|2|
 czarnorzeki-strzyzow-landscape-park-near-krosno|196608|3|landscape park in Poland
 czarnorzeki-strzyzow-landscape-park-near-rzeszow|196608|3|landscape park in Poland
 czarny-staw-near-bochnia|16384|3|forest
+da-nang-bay-near-da-nang|4096|3|bay
 daapma-near-steinkjer-municipality|1024|3|mountain
 daba-mountains-near-xi-an|66560|3|mountain range
 dabar-cave-near-prijedor|2|3|cave
@@ -5771,6 +7115,7 @@ dabie-lake-near-szczecin|32|3|lake
 dabie-mountains-near-anqing|1024|3|mountain range
 dabie-mountains-near-fuyang|1024|3|mountain range
 dabie-mountains-near-huanggang|1024|3|mountain range
+dabie-mountains-near-wuhan|1024|3|mountain range
 dabie-mountains-near-xinyang|1024|3|mountain range
 dabie-mountains-near-xuchang|1024|3|mountain range
 dabie-near-gogow|32|3|lake
@@ -5784,10 +7129,12 @@ dadia-lefkimi-soufli-forest-national-park-near-alexandroupolis-gr|32768|3|nation
 dadia-lefkimi-soufli-forest-national-park-near-edirne|32768|3|national park
 dadia-lefkimi-soufli-forest-national-park-near-komotini|32768|3|national park
 dadohaehaesang-national-park-near-jeju|32768|3|national park
+daebudo-near-incheon|64|3|island
 daecheon-beach-near-asan|16|3|beach
 daedunsan-near-asan|1024|3|mountain
 daedunsan-near-jeonju|1024|3|mountain
 daedunsan-near-sejong|1024|3|mountain
+daegu-dodong-arborvitae-forest-near-daegu|81920|3|forest
 dafundo-beach-near-odivelas|16|3|beach
 dafundo-beach-near-queluz|16|3|beach
 daggs-falls-near-warwick|1|3|waterfall
@@ -5798,6 +7145,7 @@ dahner-felsenland-near-kaiserslautern|0|0|
 daibutsuji-san-near-fukui|1024|3|mountain
 daimus-near-gandia|16|3|urban beach
 dainava-forest-near-horadnia|16384|3|forest
+daingerfield-state-park-near-tyler|131072|3|Texas state park
 daintree-national-park-near-cairns|32768|3|national park of Australia
 daisen-oki-national-park-near-tottori|32768|3|national park
 daisen-oki-national-park-near-yonago|32768|3|national park
@@ -5831,6 +7179,7 @@ dalma-wildlife-sanctuary-near-ranchi|65536|3|wildlife refuge
 dalneye-lake-near-petropavlovsk-kamchatsky|65568|3|lake
 dalou-mountains-near-chongqing|1024|3|mountain range
 dalou-mountains-near-zunyi|1024|3|mountain range
+dalsfjorden-near-floro|4096|3|fjord
 dalsnuten-near-sandnes|1024|3|mountain ridge
 damaseuskaje-near-baranavichy|32|3|lake
 damaseuskaje-near-navahrudak|32|3|lake
@@ -5873,6 +7222,9 @@ dan-dan-national-park-near-biloela|32768|3|national park of Australia
 dana-biosphere-reserve-near-tabarjal|65536|3|biosphere reserve
 danamandra-nature-park-near-corlu|196608|3|nature park
 danamandra-nature-park-near-tekirdag|196608|3|nature park
+danau-agung-near-jakarta|32|3|lake
+dance-beach-near-dubrovnik|16|3|beach
+dance-beach-near-metkovic|16|3|beach
 dancersend-near-aylesbury|65536|3|nature reserve
 danci-obora-near-karvina|65536|2|
 dangar-island-near-gosford|0|0|
@@ -5927,7 +7279,10 @@ dashu-shan-near-fuyang|1024|3|mountain
 dashu-shan-near-hefei|1024|3|mountain
 dashu-shan-near-huainan|1024|3|mountain
 dassam-falls-near-ranchi|1|3|waterfall
+dassen-island-near-cape-town|64|3|island
+dassen-island-near-stellenbosch|64|3|island
 datteln-hamm-canal-near-lunen|0|0|
+dau-tieng-reservoir-near-ho-chi-minh-city|32|3|reservoir
 dauda-and-jodupite-valley-near-sigulda|0|0|
 daufuskie-island-near-savannah|64|3|island
 daugava-near-kaibala-near-aizkraukle|65536|3|Natura 2000 site
@@ -6020,7 +7375,9 @@ de-zoom-kalmthoutse-heide-near-goes|32768|3|national park
 de-zoom-kalmthoutse-heide-near-roosendaal|32768|3|national park
 de-zoom-kalmthoutse-heide-near-vlissingen|32768|3|national park
 de-zoomkalmthoutse-heide-cross-border-park-near-molenbeek|32768|3|national park
+dead-sea-near-amman|32|2|
 dead-sea-near-tabarjal|32|2|
+dead-sea-near-tel-aviv|32|2|
 dealul-lempes-near-brasov|66560|3|hill
 dealul-lempes-near-sacele|66560|3|hill
 dealul-lempes-near-sfantu-gheorghe|66560|3|hill
@@ -6050,6 +7407,7 @@ dedovicke-strane-near-pisek|65536|3|nature reserve in the Czech Republic
 dee-estuary-near-chester|4608|3|estuary
 deelerwoud-near-arnhem|81920|3|forest
 deelerwoud-near-zutphen|81920|3|forest
+deep-bay-near-shenzhen|4096|3|bay
 deep-fork-national-wildlife-refuge-near-broken-arrow|65536|3|National Wildlife Refuge
 deep-fork-national-wildlife-refuge-near-stillwater|65536|3|National Wildlife Refuge
 deepwater-national-park-near-bundaberg|32768|3|national park of Australia
@@ -6115,18 +7473,27 @@ delta-lake-near-utica|32|3|reservoir
 delta-lake-state-park-near-utica|131072|3|New York state park
 demanovska-hora-near-liptovsky-mikulas|1024|3|mountain
 demarest-lloyd-state-park-near-new-bedford|131072|2|
+demekash-shet-near-addis-ababa|256|3|river
 demervallei-near-aarschot|65536|3|Natura 2000 site
 demervallei-near-tienen|65536|3|Natura 2000 site
 demirkazk-peak-near-nigde|1024|3|mountain
 demmerkogel-near-leibnitz|1024|3|mountain
 den-ast-near-deinze|1024|3|hill
 den-dotter-near-ninove|65536|3|protected area
+den-permanente-badeanstalt-near-aarhus|16|3|beach
+den-permanente-badeanstalt-near-grenaa|16|3|beach
+den-permanente-badeanstalt-near-horsens|16|3|beach
+den-permanente-badeanstalt-near-randers|16|3|beach
+den-permanente-badeanstalt-near-skanderborg|16|3|beach
+den-permanente-badeanstalt-near-viborg|16|3|beach
 dender-near-lokeren|256|3|river
 dendrarium-of-the-sukachyov-institute-near-krasnoyarsk|0|0|
 dendrological-garden-in-chisinau-near-ialoveni|0|0|
 dendrological-garden-in-chisinau-near-singera|0|0|
+denge-beach-near-hastings-uk|16|3|beach
 deniz-golu-near-rize|32|3|lake
 dennenloher-see-near-ansbach|32|3|lake
+densu-river-near-accra|256|3|river
 dent-blanche-near-sion|1024|3|mountain
 dent-d-herens-near-aosta|1024|3|mountain
 dent-d-oche-near-thonon-les-bains|1024|3|mountain
@@ -6183,6 +7550,7 @@ detroit-river-international-wildlife-refuge-near-dearborn|65536|3|National Wildl
 detunata-goala-near-turda|65536|3|nature reserve
 deule-near-halluin|256|3|river
 deux-freres-near-la-seyne-sur-mer|64|3|island
+deux-mamelles-near-dakar|1024|3|hill
 devenish-island-near-omagh|64|3|island
 devetashka-cave-near-pleven|2|3|show cave
 devil-canyon-near-rialto|2052|3|canyon
@@ -6210,9 +7578,12 @@ dexter-state-recreation-site-near-eugene|131072|2|
 dez-national-park-near-ahvaz|32768|3|national park
 dez-national-park-near-basra|32768|3|national park
 dgo-near-smolensk|32|3|lake
+dhal-al-misfir-near-doha|2|3|cave
 dhanas-lake-near-chandigarh|32|3|lake
 dharug-national-park-near-central-coast|32768|3|national park of Australia
 dhofar-mountains-near-salalah|1024|3|mountain range
+dhosi-hill-near-delhi|1024|3|mountain
+dhosi-hill-near-jaipur|1024|3|mountain
 dhunnaue-near-bergisch-gladbach|65536|3|Naturschutzgebiet
 dia-near-heraklion|64|3|island
 diablerets-near-sion|1024|3|mountain
@@ -6227,6 +7598,8 @@ dianshan-lake-near-suzhou|32|3|lake
 dianshan-lake-near-wuxi|32|3|lake
 diaoshuilou-waterfall-near-changchun|1|3|waterfall
 diaoshuilou-waterfall-near-jilin-city|1|3|waterfall
+diaskari-beach-near-agios-nikolaos|16|3|beach
+diaskari-beach-near-ierapetra|16|3|beach
 dibrivskyi-near-pokrovsk|81920|3|forest reserve
 dibrova-lisnychoho-vronskoho-near-berdychiv|81920|3|forest reserve
 dibrova-lisnychoho-vronskoho-near-korosten|81920|3|forest reserve
@@ -6251,6 +7624,47 @@ dieleghem-wood-near-woluwe-saint-lambert|147456|3|forest
 dieleghem-wood-near-woluwe-saint-pierre|147456|3|forest
 diemerbos-near-diemen|81920|3|forest
 diemerbos-near-weesp|81920|3|forest
+diemerlagune-near-aalsmeer|32|2|
+diemerlagune-near-almere|32|2|
+diemerlagune-near-alphen-aan-den-rijn|32|2|
+diemerlagune-near-amersfoort|32|2|
+diemerlagune-near-amstelveen|32|2|
+diemerlagune-near-amsterdam|32|2|
+diemerlagune-near-barneveld|32|2|
+diemerlagune-near-beverwijk|32|2|
+diemerlagune-near-capelle-aan-den-ijssel|32|2|
+diemerlagune-near-castricum|32|2|
+diemerlagune-near-delft|32|2|
+diemerlagune-near-diemen|32|2|
+diemerlagune-near-dronten|32|2|
+diemerlagune-near-ede|32|2|
+diemerlagune-near-enkhuizen|32|2|
+diemerlagune-near-gouda|32|2|
+diemerlagune-near-haarlem|32|2|
+diemerlagune-near-haarlemmermeer|32|2|
+diemerlagune-near-harderwijk|32|2|
+diemerlagune-near-heemskerk|32|2|
+diemerlagune-near-hilversum|32|2|
+diemerlagune-near-huizen|32|2|
+diemerlagune-near-ijmuiden|32|2|
+diemerlagune-near-katwijk|32|2|
+diemerlagune-near-leiden|32|2|
+diemerlagune-near-leidschendam-voorburg|32|2|
+diemerlagune-near-lelystad|32|2|
+diemerlagune-near-naarden|32|2|
+diemerlagune-near-noordwijk|32|2|
+diemerlagune-near-rijswijk|32|2|
+diemerlagune-near-rotterdam|32|2|
+diemerlagune-near-soest-nl|32|2|
+diemerlagune-near-the-hague|32|2|
+diemerlagune-near-urk|32|2|
+diemerlagune-near-veenendaal|32|2|
+diemerlagune-near-velsen|32|2|
+diemerlagune-near-weesp|32|2|
+diemerlagune-near-zaanstad|32|2|
+diemerlagune-near-zandvoort|32|2|
+diemerlagune-near-zeist|32|2|
+diemerlagune-near-zoetermeer|32|2|
 diepholzer-moor-near-vechta|65536|3|Special Area of Conservation
 dierkes-lake-near-twin-falls|32|3|lake
 diersfordter-wald-schnepfenberg-near-bocholt|65536|3|Special Area of Conservation
@@ -6278,6 +7692,7 @@ dillon-falls-near-bend|1|3|waterfall
 dillon-state-park-near-mansfield|131072|3|park
 dimitrie-ghica-park-near-targoviste|131072|3|park
 dimna-lake-near-ranchi|32|3|lake
+dimotiki-plaz-chiou-near-chios-gr|131088|3|beach
 dinara-nature-park-near-knin|196608|3|nature park
 dinara-near-knin|1024|3|main peak
 dinaric-alps-near-knin|1024|3|mountain range
@@ -6319,9 +7734,12 @@ divo-near-smolensk|65568|3|lake
 divoka-sarka-near-prague-4|65536|3|nature reserve in the Czech Republic
 divoka-sarka-near-prague-6|65536|3|nature reserve in the Czech Republic
 dixon-reservoir-near-escondido|32|3|reservoir
+diyawanna-lake-near-colombo|32|3|lake
+djebel-ressas-near-tunis|1024|3|mountain
 djendema-near-troyan|65536|3|biosphere reserve
 djerdap-national-park-near-drobeta-turnu-severin|98304|3|national park
 djouce-near-bray|1024|3|mountain
+djoudj-national-bird-sanctuary-near-dakar|32768|2|
 djulosjon-near-katrineholm|32|3|lake
 djurgarden-near-haninge-municipality|64|3|island
 djurgarden-near-huddinge-municipality|64|3|island
@@ -6371,7 +7789,16 @@ dobrotvir-reservoir-near-sheptytskyi|32|3|reservoir
 dobruja-plateau-near-braila|1024|3|plateau
 dobrusa-landscape-reserve-near-ribnita|65536|3|landscape reserve
 dobrzynka-river-near-pabianice|256|3|river
+dockweiler-state-beach-near-burbank|16|3|California state beach
+dockweiler-state-beach-near-carson|16|3|California state beach
+dockweiler-state-beach-near-compton|16|3|California state beach
+dockweiler-state-beach-near-downey|16|3|California state beach
+dockweiler-state-beach-near-fullerton|16|3|California state beach
 dockweiler-state-beach-near-inglewood|16|3|California state beach
+dockweiler-state-beach-near-long-beach|16|3|California state beach
+dockweiler-state-beach-near-los-angeles|16|3|California state beach
+dockweiler-state-beach-near-norwalk|16|3|California state beach
+dockweiler-state-beach-near-orange-us|16|3|California state beach
 dockweiler-state-beach-near-santa-monica|16|3|California state beach
 doda-fallet-dead-falls-near-sundsvall|65536|3|nature reserve
 doftana-gorge-near-baicoi|65536|3|Natura 2000 site
@@ -6381,7 +7808,20 @@ doftana-gorge-near-valenii-de-munte|65536|3|Natura 2000 site
 dog-beach-in-odesa-near-chornomorsk|16|3|beach
 dog-island-near-invercargill|64|3|island
 doghouse-grove-near-ely|65536|3|nature reserve
+doha-bay-near-doha|4096|3|bay
+doheny-state-beach-near-anaheim|16|3|California state beach
+doheny-state-beach-near-costa-mesa|16|3|California state beach
+doheny-state-beach-near-fullerton|16|3|California state beach
+doheny-state-beach-near-garden-grove|16|3|California state beach
+doheny-state-beach-near-irvine|16|3|California state beach
+doheny-state-beach-near-long-beach|16|3|California state beach
+doheny-state-beach-near-newport-beach|16|3|California state beach
+doheny-state-beach-near-orange-us|16|3|California state beach
+doheny-state-beach-near-santa-ana|16|3|California state beach
 dohler-wehe-near-cloppenburg|65536|3|Special Area of Conservation
+doi-inthanon-near-chiang-mai|1024|3|mountain
+doi-suthep-near-chiang-mai|1024|3|mountain
+doi-suthep-pui-national-park-near-chiang-mai|32768|2|
 dois-irmaos-state-park-near-jaboatao-dos-guararapes|131072|3|state park
 dois-irmaos-state-park-near-olinda|131072|3|state park
 dois-irmaos-state-park-near-recife|131072|3|state park
@@ -6398,6 +7838,7 @@ dolhoe-near-ufa|32|3|lake
 dolina-branice-near-sezana|65536|3|Special Area of Conservation
 dolina-pojednania-near-gniezno|131072|3|urban park
 dolina-siedmiu-stawow-slaskich-near-myslowice|32|3|reservoir
+dollar-point-near-carson-city|4096|3|cape
 dolmar-near-meiningen|1024|3|mountain
 dolna-topchia-near-edirne|65536|2|
 dolni-vinohradky-near-prostejov|65536|3|natural monument in the Czech Republic
@@ -6461,6 +7902,7 @@ donets-river-near-kharkiv|256|3|river
 donetsk-botanic-garden-near-yenakiieve|0|0|
 donetskoe-more-reservoir-near-pokrovsk|32|3|lake
 dongan-island-near-fuzhou|64|3|island
+dongbaek-island-near-busan|64|3|island
 dongbaek-island-near-changwon|64|3|island
 dongbaek-island-near-gimhae|64|3|island
 dongdaesan-ulsan-near-gyeongju|1024|3|mountain
@@ -6504,6 +7946,8 @@ doode-bemde-near-wavre|65536|3|nature reserve
 door-peninsula-near-appleton|4096|3|peninsula
 dooragan-national-park-near-port-macquarie|32768|3|national park of Australia
 dope-near-wismar|32|3|lake
+dor-habonim-beach-near-hadera|65552|3|beach
+dor-habonim-beach-near-netanya|65552|3|beach
 dordogne-near-bordeaux|256|3|river
 dornava-mansion-park-near-ptuj|131072|2|
 dornicksche-ward-near-kleve|65536|3|Special Area of Conservation
@@ -6544,6 +7988,9 @@ dowdell-s-knob-near-columbus-ga|1024|3|mountain
 dowdell-s-knob-near-macon|1024|3|mountain
 dowdell-s-knob-near-newnan|1024|3|mountain
 downie-point-near-aberdeen|4096|3|cape
+downpatrick-head-near-ballina|4096|3|cape
+downpatrick-head-near-castlebar|4096|3|cape
+downpatrick-head-near-sligo|4096|3|cape
 downs-park-near-annapolis|131072|3|park
 doxey-marshes-near-cannock|65536|3|nature reserve
 doxey-marshes-near-stafford|65536|3|nature reserve
@@ -6564,6 +8011,16 @@ dragsfjarden-near-hanko|32|3|lake or pond
 drahanska-vysocina-near-vyskov|1024|3|mountain range
 drake-s-island-near-plymouth|64|3|island
 drama-municipal-garden-near-drama|131072|3|urban park
+drammensfjord-near-baerum-municipality|4096|3|fjord
+drammensfjord-near-drammen|4096|3|fjord
+drammensfjord-near-drobak|4096|3|fjord
+drammensfjord-near-fredrikstad|4096|3|fjord
+drammensfjord-near-lorenskog|4096|3|fjord
+drammensfjord-near-moss|4096|3|fjord
+drammensfjord-near-oslo|4096|3|fjord
+drammensfjord-near-sandvika|4096|3|fjord
+drammensfjord-near-sarpsborg|4096|3|fjord
+drammensfjord-near-tonsberg|4096|3|fjord
 dratow-lake-near-lublin|32|3|lake
 draudeniu-lake-near-taurage|32|3|lake
 dravinja-s-pritoki-near-slovenska-bistrica|65536|3|Special Area of Conservation
@@ -6611,6 +8068,9 @@ drienovy-vrch-near-partizanske|1024|3|mountain
 driftless-area-national-wildlife-refuge-near-waterloo|65536|3|National Wildlife Refuge
 driksnis-heath-nature-park-near-livani|196608|3|Natura 2000 site
 driny-near-trnava|65538|3|show cave
+drobak-sound-near-drammen|4096|3|fjord
+drobak-sound-near-sandvika|4096|3|fjord
+drobak-sound-near-sarpsborg|4096|3|fjord
 drohmberg-near-bautzen|1024|3|mountain
 dronne-near-angouleme|256|3|river
 drottningholm-near-stockholm|0|0|
@@ -6620,6 +8080,7 @@ drowned-land-of-saeftinghe-near-sint-niklaas|0|0|
 druksiai-near-kraslava|65568|3|lake
 druksiai-near-zarasai|65568|3|lake
 drummond-nature-reserve-near-northam|65536|3|nature reserve
+drunken-moon-lake-near-taipei|32|3|artificial lake
 druridge-bay-country-park-near-south-shields|131072|3|country park
 druskonis-near-druskininkai|32|3|lake
 druzno-lake-druzno-near-elblag|32|3|lake
@@ -6638,6 +8099,8 @@ dry-sandford-pit-near-abingdon-on-thames|65536|3|nature reserve
 dryandra-woodland-national-park-near-narrogin|32768|3|national park of Australia
 dryviaty-near-kraslava|32|3|lake
 dshk-park-kyiv-near-brovary|131072|3|park
+dubai-creek-near-dubai|4096|3|bay
+dubai-creek-near-sharjah|4096|3|bay
 dubasari-reservoir-near-chisinau|0|0|
 dubasari-reservoir-near-dubasari|32|3|reservoir
 dubasari-reservoir-near-orhei|32|3|reservoir
@@ -6733,19 +8196,35 @@ dune-of-pilat-near-pessac|73728|3|dune
 dunes-of-guardamar-near-torrevieja|65536|3|Natura 2000 site
 dunes-of-texel-national-park-near-den-helder|106560|3|island
 dunezers-near-limbazi|65536|3|Natura 2000 site
+dungeness-near-ashford|4096|3|headland
+dungeness-near-bexhill-on-sea|4096|3|headland
+dungeness-near-canterbury|4096|3|headland
+dungeness-near-eastbourne|4096|3|headland
+dungeness-near-gillingham|4096|3|headland
+dungeness-near-hastings-uk|4096|3|headland
+dungeness-near-maidstone|4096|3|headland
+dungeness-near-margate|4096|3|headland
 dunggir-national-park-near-kempsey|32768|3|national park of Australia
+dunghou-river-near-guangzhou|256|3|river
 dunk-island-near-ingham|64|3|island
 dunkelstein-near-melk|1024|3|mountain
 dunkelsteinerwald-near-melk|17408|3|mountain range
 dunkelsteinerwald-near-sankt-polten|17408|3|mountain range
+dunmore-head-near-tralee|4096|3|cape
+dunsborough-beach-near-bunbury|16|3|beach
 dunsborough-beach-near-busselton|16|3|beach
+dunsborough-beach-near-margaret-river|16|3|beach
 dunsinane-hill-near-dundee|1024|3|hill
 dunsinane-hill-near-glenrothes|1024|3|hill
 dunsinane-hill-near-perth-uk|1024|3|hill
 dunstable-and-whipsnade-downs-near-milton-keynes|65536|3|Site of Special Scientific Interest
 dunstable-downs-near-luton|0|0|
 dunvegan-provincial-park-near-grande-prairie|131072|3|provincial park of Canada
+dunwich-beach-near-ipswich-uk|16|3|beach
 dupont-state-recreational-forest-near-asheville|65536|3|protected area
+duranbah-beach-near-byron-bay|16|3|beach
+duranbah-beach-near-gold-coast|16|3|beach
+duranbah-beach-near-murwillumbah|16|3|beach
 durankulak-lake-near-silistra|4128|3|lagoon
 duraton-river-gorges-natural-park-near-segovia|196608|3|protected area
 durdevacki-peski-near-virovitica|65536|3|Natura 2000 site
@@ -6759,7 +8238,21 @@ durrenstein-near-amstetten|65536|3|protected area
 durrfelder-und-sulzheimer-wald-near-schweinfurt|65536|3|Special Area of Conservation
 durrlohsee-near-neumarkt-in-der-oberpfalz|32|3|reservoir
 dus-near-ostroleka|32|3|lake
+dutchman-point-near-alexandria-va|4096|3|cape
+dutchman-point-near-annapolis|4096|3|cape
+dutchman-point-near-baltimore|4096|3|cape
+dutchman-point-near-washington-dc|4096|3|cape
 duveholmssjon-near-katrineholm|32|3|lake
+duwamish-head-near-bellevue|4096|3|cliff
+duwamish-head-near-everett|4096|3|cliff
+duwamish-head-near-federal-way|4096|3|cliff
+duwamish-head-near-kent|4096|3|cliff
+duwamish-head-near-redmond|4096|3|cliff
+duwamish-head-near-renton|4096|3|cliff
+duwamish-head-near-seattle|4096|3|cliff
+duwamish-head-near-tacoma|4096|3|cliff
+duxbury-beach-near-new-bedford|16|3|beach
+duxbury-beach-near-taunton-us|16|3|beach
 dvergsoya-near-kristiansand|64|3|island
 dvorichna-national-nature-park-near-kharkiv|32768|3|national park
 dwingelderveld-national-park-near-assen|98304|3|national park
@@ -6769,6 +8262,8 @@ dwingelderveld-national-park-near-hoogeveen|98304|3|national park
 dwingelderveld-national-park-near-meppel|98304|3|national park
 dwingelderveld-national-park-near-ommen|98304|3|national park
 dybrzyk-near-chojnice|32|3|lake
+dybso-fjord-near-naestved|69632|3|fjord
+dybso-fjord-near-vordingborg|69632|3|fjord
 dybso-near-naestved|65600|3|island
 dyke-at-the-mouth-of-the-berda-near-berdiansk|0|0|
 dykh-tau-near-nalchik|1024|3|mountain
@@ -6776,6 +8271,7 @@ dyle-valley-near-molenbeek|256|3|river
 dylen-near-cheb|1024|3|mountain
 dylewska-gora-near-ostroda|1024|3|mountain
 dynget-near-angelholm|65536|3|nature reserve
+dyvig-near-tonder|4096|3|fjord
 dzban-near-rakovnik|1024|3|mountain range
 dzban-reservoir-near-kladno|32|3|reservoir
 dzban-reservoir-near-prague-6|32|3|reservoir
@@ -6812,6 +8308,7 @@ eagle-mountain-lake-near-mesquite|32|3|reservoir
 eagle-mountain-lake-near-sherman|32|3|reservoir
 eagle-mountain-lake-near-waxahachie|32|3|reservoir
 eagle-nests-landscape-park-near-katowice|196608|3|landscape park
+eagle-point-near-carson-city|4096|3|cape
 eagle-s-nest-hill-near-vladivostok|1024|3|hill
 eagle-valley-near-carson-city|2048|3|valley
 eagles-nests-landscape-park-near-bytom|196608|3|landscape park
@@ -6826,32 +8323,48 @@ earl-rowe-provincial-park-near-orangeville|131072|3|provincial park of Canada
 earlham-park-woods-near-norwich|65536|3|local nature reserve
 easky-lough-near-ballina|32|3|lake
 east-bay-near-conroe|4096|3|bay
+east-beach-near-brighton|16|3|beach
+east-beach-near-brighton-and-hove|16|3|beach
+east-beach-near-chichester|16|3|beach
+east-beach-near-horsham-uk|16|3|beach
+east-beach-near-portsmouth|16|3|beach
+east-beach-near-santa-barbara|16|3|beach
+east-beach-near-worthing|16|3|beach
 east-branch-reservoir-near-danbury|32|3|reservoir
 east-cobb-park-near-marietta|131072|3|regional park
 east-cobb-park-near-sandy-springs|131072|3|regional park
 east-fork-state-park-near-cincinnati|131072|3|Ohio state park
 east-fork-state-park-near-covington|131072|3|Ohio state park
 east-fork-state-park-near-hamilton-us|131072|3|Ohio state park
+east-head-near-blenheim|4096|3|headland
 east-lake-near-huanggang|32|3|lake
+east-lake-near-wuhan|32|3|lake
 east-lake-near-xinyang|32|3|lake
 east-lake-tohopekaliga-near-kissimmee|32|3|lake
 east-lake-tohopekaliga-near-orlando|32|3|lake
 east-lynn-lake-near-huntington|32|3|reservoir
+east-matunuck-state-beach-near-new-bedford|16|3|beach
+east-matunuck-state-beach-near-providence|16|3|beach
 east-over-reservation-near-new-bedford|65536|3|nature reserve
 east-rock-near-new-haven|1024|3|mountain
 east-styrian-hills-near-feldbach|1024|3|hill group
 east-styrian-hills-near-furstenfeld|1024|3|hill group
 east-vattern-scarp-landscape-near-jonkoping|65536|3|biosphere reserve
 east-vattern-scarp-landscape-near-nassjo|65536|3|biosphere reserve
+east-wynyard-beach-near-devonport|16|3|beach
+east-wynyard-beach-near-smithton-au|16|3|beach
+east-wynyard-beach-near-wynyard|16|3|beach
 eastend-reservoir-near-swift-current|32|3|reservoir
 eastern-alps-near-brixen|1024|3|mountain range
 eastern-beach-near-geelong|16|3|beach
+eastern-beach-near-melton|16|3|beach
 eastern-gulf-of-finland-national-park-near-hamina|32768|3|national park
 eastern-neck-national-wildlife-refuge-near-annapolis|65536|3|National Wildlife Refuge
 eastern-pontic-mountains-near-erzincan|1024|3|mountain range
 eastern-slovak-hills-near-trebisov|1024|3|mountain range
 eastern-slovak-hills-near-vranov-nad-toplou|1024|3|mountain range
 eastern-sudetes-near-bruntal|1024|3|mountain range
+easton-beach-near-providence|16|3|beach
 eastwoodhill-arboretum-near-gisborne|0|0|
 eau-d-heure-lakes-near-binche|32|3|reservoir
 eau-d-heure-lakes-near-charleroi|32|3|reservoir
@@ -6873,6 +8386,7 @@ eccup-reservoir-near-harrogate|32|3|reservoir
 eccup-reservoir-near-wakefield|32|3|reservoir
 eccup-reservoir-near-york|32|3|reservoir
 echigo-sanzan-tadami-quasi-national-park-near-nagaoka|32768|3|quasi-national park of Japan
+echizen-coast-near-fukui|4096|3|coast
 echizen-kaga-kaigan-quasi-national-park-near-fukui|32768|3|quasi-national park of Japan
 echo-lake-saskatchewan-near-regina|32|3|lake
 echo-valley-provincial-park-near-moose-jaw|131072|3|provincial park of Saskatchewan
@@ -6881,6 +8395,10 @@ echo-valley-provincial-park-near-yorkton|131072|3|provincial park of Saskatchewa
 echobos-near-naarden|16384|3|forest
 echobos-near-weesp|16384|3|forest
 echuca-wharf-near-shepparton|0|0|
+eckernforde-bay-near-flensburg|4096|3|fjord
+eckernforde-bay-near-husum|4096|3|fjord
+eckernforde-bay-near-kiel|4096|3|fjord
+eckernforde-bay-near-rendsburg|4096|3|fjord
 ecklasjon-near-partille|32|3|lake
 ecological-lake-petah-tikva-near-bat-yam|32|3|artificial lake
 ecological-lake-petah-tikva-near-bnei-brak|32|3|artificial lake
@@ -6911,6 +8429,7 @@ edmundo-navarro-de-andrade-state-forest-near-piracicaba|212992|3|state forest of
 edmundo-navarro-de-andrade-state-forest-near-sao-carlos|212992|3|state forest of Brazil
 edness-k-wilkins-state-park-near-casper|131072|2|
 edward-ball-wakulla-springs-state-park-near-tallahassee|131072|3|Florida state park
+edward-elliot-s-beach-near-chennai|131088|3|beach
 edward-vincent-jr-park-near-inglewood|131072|3|park
 eeltsjemar-near-dongeradeel|131104|3|lake
 eem-near-almere|256|3|river
@@ -6927,6 +8446,24 @@ eemmeer-near-utrecht|32|3|lake
 eemmeer-near-weesp|32|3|lake
 eemmeer-near-woerden|32|3|lake
 eemmeer-near-zeist|32|3|lake
+eetioneia-near-acharnes|4096|3|cape
+eetioneia-near-agia-paraskevi|4096|3|cape
+eetioneia-near-athens|4096|3|cape
+eetioneia-near-chalandri|4096|3|cape
+eetioneia-near-egaleo|4096|3|cape
+eetioneia-near-elefsina|4096|3|cape
+eetioneia-near-glyfada|4096|3|cape
+eetioneia-near-ilion|4096|3|cape
+eetioneia-near-kallithea|4096|3|cape
+eetioneia-near-korydallos|4096|3|cape
+eetioneia-near-megara|4096|3|cape
+eetioneia-near-nikaia|4096|3|cape
+eetioneia-near-peristeri|4096|3|cape
+eetioneia-near-petroupoli|4096|3|cape
+eetioneia-near-piraeus|4096|3|cape
+eetioneia-near-salamis-island|4096|3|cape
+eetioneia-near-vrilissia|4096|3|cape
+eetioneia-near-zografou|4096|3|cape
 eg-near-tarnobrzeg|32|3|reservoir
 egbert-triangle-near-elizabeth|131072|3|park
 egelsee-near-baden-ch|32|3|lake
@@ -6934,6 +8471,8 @@ egelsee-near-dietikon|32|3|lake
 egelsee-near-spittal-an-der-drau|32|3|lake
 egersky-pond-near-moscow|32|3|reservoir
 egge-hills-near-paderborn|1024|3|mountain range
+eggs-and-bacon-beach-near-hobart|16|3|beach
+eggs-and-bacon-beach-near-new-norfolk|16|3|beach
 egholm-near-aalborg|64|3|island
 egholm-near-aars|64|3|island
 egholm-near-hjorring|64|3|island
@@ -6945,6 +8484,8 @@ egmont-key-near-clearwater|196608|3|National Wildlife Refuge
 egmont-key-near-st-petersburg|196608|3|National Wildlife Refuge
 egmont-key-state-park-near-bradenton|196608|3|National Wildlife Refuge
 egmont-national-park-near-new-plymouth|32768|3|national park
+egremni-near-lefkada|16|3|beach
+egremni-near-preveza|16|3|beach
 ehrenburg-walberla-near-erlangen|1024|3|outlier
 eibsee-near-garmisch-partenkirchen|32|3|lake
 eiche-in-der-schlossbergstr-near-tubingen|0|0|
@@ -6955,6 +8496,10 @@ eichinger-see-near-dachau|32|3|lake
 eichkogel-near-modling|1024|3|mountain
 eichkopf-bei-obermorlen-near-friedberg|65536|3|Special Area of Conservation
 eichwald-und-buschmuhle-near-frankfurt-oder|65536|3|Special Area of Conservation
+eidangerfjord-near-larvik|4096|3|fjord
+eidangerfjord-near-porsgrunn|4096|3|fjord
+eidangerfjord-near-sandefjord|4096|3|fjord
+eidangerfjord-near-skien|4096|3|fjord
 eiderstedt-near-husum|4096|3|peninsula
 eifel-national-park-near-aachen|32768|3|Nationalpark
 eifel-national-park-near-cologne|32768|3|Nationalpark
@@ -7017,6 +8562,7 @@ el-cajas-national-park-near-machala|32768|3|national park
 el-cajas-national-park-near-milagro|32768|3|national park
 el-cajas-national-park-near-tumbes|32768|3|national park
 el-camino-real-de-los-tejas-national-historic-trail-near-round-rock|65536|2|
+el-capitan-state-beach-near-santa-barbara|16|3|California state beach
 el-capricho-park-near-coslada|0|0|
 el-capricho-park-near-torrejon-de-ardoz|0|0|
 el-castellar-near-zaragoza|66560|3|mountain
@@ -7029,6 +8575,8 @@ el-cocuy-national-park-near-arauquita|32776|3|glacier
 el-cocuy-national-park-near-bucaramanga|32776|3|glacier
 el-cocuy-national-park-near-socorro|32776|3|glacier
 el-cocuy-national-park-near-villa-del-rosario|32776|3|glacier
+el-confital-near-las-palmas|16|3|beach
+el-confital-near-telde|16|3|beach
 el-dorado-park-near-downey|131072|3|park
 el-dorado-state-park-near-hutchinson|131072|2|
 el-dorado-state-park-near-salina|131072|2|
@@ -7048,6 +8596,7 @@ el-juncal-lagoon-near-viedma|32|3|lake
 el-junco-near-mar-del-plata|32|3|lake
 el-junco-near-tandil|32|3|lake
 el-leoncito-national-park-near-san-juan|32768|3|national park
+el-mamoura-near-rabat|16384|3|forest
 el-medano-beach-near-cabo-san-lucas|16|3|beach
 el-medano-beach-near-san-jose-del-cabo|16|3|beach
 el-mogote-near-cabo-san-lucas|4096|3|peninsula
@@ -7055,6 +8604,7 @@ el-mogote-near-la-paz-mx|4096|3|peninsula
 el-mogote-near-san-jose-del-cabo|4096|3|peninsula
 el-montgo-natural-park-near-denia|196608|3|natural park
 el-montgo-natural-park-near-gandia|196608|3|natural park
+el-ojo-near-buenos-aires|32|3|lake
 el-ojo-near-lanus|32|3|lake
 el-ojo-near-lomas-de-zamora|32|3|lake
 el-ojo-near-mercedes|32|3|lake
@@ -7083,6 +8633,7 @@ el-veladero-national-park-near-acapulco-de-juarez|32768|3|National Park of Mexic
 el-veladero-national-park-near-chilpancingo-de-los-bravo|32768|3|National Park of Mexico
 el-vicario-reservoir-near-ciudad-real|32|3|reservoir
 elabana-falls-near-murwillumbah|1|3|waterfall
+elafonisi-beach-near-chania|131088|3|beach
 elaine-d-and-charles-a-sammons-park-near-richardson|131072|3|park
 elaphiti-islands-near-dubrovnik|64|3|archipelago
 elaphiti-islands-near-metkovic|64|3|archipelago
@@ -7103,12 +8654,16 @@ eldgarnso-nature-reserve-near-eskilstuna|65536|3|nature reserve
 eldmorjan-near-vanersborg|32|3|lake
 eldorado-canyon-state-park-near-boulder|131072|2|
 eleftherias-park-near-chalandri|131072|3|park
+elegushi-beach-near-lagos|16|3|beach
+eleko-beach-near-lagos|16|3|beach
 elektrenai-reservoir-near-elektrenai|32|3|reservoir
 elena-island-near-vladivostok|64|3|island
 elephant-hill-open-space-near-el-monte|131072|3|urban park
 elephant-hill-open-space-near-pasadena|131072|3|urban park
 elephant-trunk-hill-near-guilin|1024|3|hill
 elephant-trunk-hill-near-liuzhou|1024|3|hill
+elephanta-caves-near-mumbai|2|3|cave
+elephanta-caves-near-pune|2|3|cave
 elesteiele-iernut-cipau-near-medias|65536|3|Natura 2000 site
 eleven-mile-state-park-near-colorado-springs|131072|2|
 eleven-point-state-park-near-jonesboro|131072|3|Missouri state park
@@ -7137,11 +8692,13 @@ eller-forst-near-dusseldorf|16384|3|forest
 ellertshauser-see-near-bamberg|32|3|reservoir
 ellertshauser-see-near-schweinfurt|32|3|reservoir
 ellingsya-near-alesund|64|3|island
+ellis-island-near-babylon|64|3|island
 ellis-lake-near-yuba-city|32|3|reservoir
 ellison-provincial-park-near-vernon|131072|3|provincial park of Canada
 ellisville-harbor-state-park-near-plymouth-us|131072|2|
 ellites-purvs-near-aizkraukle|65536|3|Natura 2000 site
 ellmaker-state-wayside-near-corvallis|131072|2|
+ellora-caves-near-mumbai|2|3|cave
 elm-grove-park-near-meridian|131072|3|park
 elm-lappwald-nature-park-near-wolfsburg|196608|3|Naturpark
 elm-near-braunschweig|17408|3|mountain range
@@ -7164,6 +8721,8 @@ elora-gorge-near-kitchener|67584|3|valley
 elora-gorge-near-stratford|67584|3|valley
 elora-gorge-near-waterloo-ontario|67584|3|valley
 eloro-beach-near-noto|16|3|beach
+eloro-beach-near-ragusa|16|3|beach
+eloro-beach-near-syracuse-it|16|3|beach
 elorriaga-near-barakaldo|1024|3|mountain
 elsebach-near-lunen|256|3|river
 elsen-see-near-pinneberg|32|3|lake
@@ -7178,6 +8737,7 @@ elum-ghar-near-peshawar|1024|3|mountain range
 elva-nature-reserve-near-porsgrunn|65536|3|nature reserve
 elvetham-heath-local-nature-reserve-and-open-spaces-near-basingstoke|65536|3|local nature reserve
 elvetham-heath-local-nature-reserve-and-open-spaces-near-farnborough|65536|3|local nature reserve
+elwood-beach-near-melton|16|3|beach
 elzer-berg-near-limburg-an-der-lahn|1024|3|mountain
 emasalo-near-loviisa|64|3|island
 emasalo-near-porvoo|64|3|island
@@ -7208,6 +8768,7 @@ embalse-del-gergal-near-carmona|32|3|reservoir
 embalse-del-gergal-near-seville|32|3|reservoir
 embalse-del-giribaile-near-linares|32|3|reservoir
 embalse-del-giribaile-near-ubeda|32|3|reservoir
+embalse-del-penol-near-medellin|32|3|reservoir
 embalse-del-yeguas-near-andujar|32|3|reservoir
 embalse-la-florida-near-rio-cuarto|32|3|lake
 embalse-la-florida-near-san-luis|32|3|lake
@@ -7215,7 +8776,10 @@ embalse-la-luz-near-vina-del-mar|32|3|reservoir
 embalse-la-vina-near-rio-cuarto|32|3|lake
 embalse-la-vina-near-san-luis|32|3|lake
 embalse-lliu-lliu-near-villa-alemana|32|3|reservoir
+embalse-los-molinos-near-cordoba|32|3|reservoir
+embalse-troneras-near-medellin|32|3|reservoir
 embassament-de-bellus-near-xativa|32|3|reservoir
+embo-point-near-inverness|4096|3|cape
 emerald-beach-near-coffs-harbour|16|3|beach
 emerald-lake-near-whitehorse|32|3|lake
 emerson-point-preserve-near-bradenton|65536|3|nature reserve
@@ -7226,6 +8790,7 @@ emiquon-national-wildlife-refuge-near-decatur|65536|3|National Wildlife Refuge
 emiquon-national-wildlife-refuge-near-peoria|65536|3|National Wildlife Refuge
 emma-lake-near-prince-albert|32|3|lake
 emma-wood-state-beach-near-oxnard|16|3|California state beach
+emma-wood-state-beach-near-santa-barbara|16|3|California state beach
 emma-wood-state-beach-near-ventura|16|3|California state beach
 emmental-near-bern|2048|3|valley
 emmerdennen-near-coevorden|81920|3|forest
@@ -7236,6 +8801,7 @@ emscher-near-lunen|256|3|river
 emscherinsel-near-recklinghausen|64|3|island
 enajarvi-near-pori|32|3|lake
 encayapau-range-near-neuquen|1024|3|mountain
+encinal-beach-near-antioch|16|3|beach
 enclosed-park-of-convento-de-cristo-near-torres-novas|131072|3|park
 encontro-das-aguas-state-park-near-cuiaba|131072|3|state park
 encuentro-beach-dominican-republic-near-la-vega|16|3|beach
@@ -7318,15 +8884,21 @@ ermenonville-forest-near-saint-quentin|16384|3|forest
 erna-nixon-park-near-palm-bay|131072|3|park
 ernest-e-debs-regional-park-near-el-monte|131072|3|park
 ernest-e-debs-regional-park-near-pasadena|131072|3|park
+erosberge-near-windhoek|1024|3|mountain range
 erratic-rock-state-natural-site-near-salem|131072|2|
+erris-head-near-ballina|69632|3|cape
 erse-near-celle|65536|3|Special Area of Conservation
+ersfjorden-near-tromso|4096|3|fjord
+ersfjorden-near-tromso-municipality|4096|3|fjord
 ersha-island-near-dongguan|64|3|island
 ersha-island-near-foshan|64|3|island
+ersha-island-near-guangzhou|64|3|island
 ersha-island-near-jiangmen|64|3|island
 ersha-island-near-zhaoqing|64|3|island
 erusheti-range-near-kars|1024|3|mountain range
 erzen-near-tirana|256|3|river
 es-trenc-near-llucmajor|16|2|
+es-trenc-near-manacor|16|2|
 es-trenc-near-palma|16|2|
 escandon-pass-near-teruel|1024|3|mountain pass
 eschbachtal-near-remscheid|65536|3|Naturschutzgebiet
@@ -7343,9 +8915,12 @@ eskilstorps-ormgranar-near-nassjo|65536|3|nature reserve
 eslovs-allmanning-near-eslov|65536|3|nature reserve
 espace-des-droits-de-l-homme-villeurbanne-near-villeurbanne|131072|3|park
 espachteich-near-erfurt|32|3|lake
+espiguette-near-agde|69648|3|beach
+espiguette-near-arles|69648|3|beach
 espiguette-near-montpellier|69648|3|beach
 espiguette-near-sete|69648|3|beach
 esplanade-genevieve-anthonioz-de-gaulle-villeurbanne-near-villeurbanne|131072|3|park
+esquimalt-lagoon-near-victoria|4128|3|lagoon
 ess-na-larach-near-ballymena|1|3|waterfall
 essenburgpark-near-schiedam|131072|3|park
 essigberg-near-pforzheim|65536|3|protected area
@@ -7355,9 +8930,10 @@ estancia-mimosa-near-campo-grande|1|3|waterfall
 estancia-mimosa-near-pedro-juan-caballero|1|3|waterfall
 estanque-del-retiro-near-madrid|32|3|artificial lake
 estanque-del-retiro-near-san-sebastian-de-los-reyes|32|3|artificial lake
-estanque-puerta-logrono-near-coslada|32|2|
+estanque-puerta-logrono-near-coslada|0|0|
 estanque-sur-del-parque-juan-carlos-i-near-coslada|32|2|
 estany-del-calic-near-alghero|4128|3|lagoon
+estany-del-calic-near-sassari|4128|3|lagoon
 esteiro-beach-near-povoa-de-varzim|16|3|beach
 esteiro-beach-near-santo-tirso|16|3|beach
 esteiro-beach-near-vila-do-conde|16|3|beach
@@ -7377,18 +8953,51 @@ esteves-near-puno|64|3|island
 esthwaite-water-near-kendal|32|3|lake
 eszterhazy-cave-near-tatabanya|2|3|cave
 etajima-near-hiroshima|64|3|island
+etang-d-ingril-near-agde|4128|3|lagoon
+etang-d-ingril-near-beziers|4128|3|lagoon
+etang-d-ingril-near-montpellier|4128|3|lagoon
+etang-d-ingril-near-sete|4128|3|lagoon
+etang-de-bages-sigean-near-agde|4128|3|lagoon
+etang-de-bages-sigean-near-beziers|4128|3|lagoon
+etang-de-bages-sigean-near-narbonne|4128|3|lagoon
+etang-de-bages-sigean-near-perpignan|4128|3|lagoon
+etang-de-berre-near-aix-en-provence|4128|3|lagoon
+etang-de-berre-near-arles|4128|3|lagoon
+etang-de-berre-near-aubagne|4128|3|lagoon
+etang-de-berre-near-istres|4128|3|lagoon
+etang-de-berre-near-la-ciotat|4128|3|lagoon
+etang-de-berre-near-marseille|4128|3|lagoon
+etang-de-berre-near-martigues|4128|3|lagoon
+etang-de-berre-near-salon-de-provence|4128|3|lagoon
 etang-de-biguglia-near-bastia|65536|3|Natura 2000 site
+etang-de-bolmon-near-arles|4128|3|lagoon
+etang-de-canet-saint-nazaire-near-narbonne|4128|3|lagoon
+etang-de-canet-saint-nazaire-near-perpignan|4128|3|lagoon
 etang-de-chabaud-latour-near-maubeuge|32|3|lake
+etang-de-l-olivier-near-arles|4128|3|lagoon
+etang-de-l-olivier-near-istres|4128|3|lagoon
+etang-de-l-olivier-near-salon-de-provence|4128|3|lagoon
 etang-de-la-brienne-near-rodez|32|3|reservoir
+etang-de-leon-near-anglet|4128|3|lagoon
+etang-de-leon-near-bayonne|4128|3|lagoon
+etang-de-leon-near-biarritz|4128|3|lagoon
+etang-de-leon-near-dax|4128|3|lagoon
+etang-de-leucate-near-beziers|4128|3|lagoon
 etang-de-leucate-near-carcassonne|4128|3|lagoon
+etang-de-leucate-near-narbonne|4128|3|lagoon
+etang-de-leucate-near-perpignan|4128|3|lagoon
 etang-de-moisan-near-dax|32|3|lake
+etang-de-palo-near-ajaccio|4128|3|lagoon
 etang-de-pissevaches-near-agde|32|3|lake
 etang-de-saint-quentin-near-poissy|65568|3|reservoir
 etang-de-saint-quentin-near-rambouillet|65568|3|reservoir
 etang-de-saint-quentin-near-saint-germain-en-laye|65568|3|reservoir
 etang-de-saint-quentin-near-versailles|65568|3|reservoir
+etang-de-thau-near-agde|4128|3|lagoon
 etang-de-thau-near-beziers|4128|3|lagoon
+etang-de-thau-near-montpellier|4128|3|lagoon
 etang-de-thau-near-narbonne|4128|3|lagoon
+etang-de-thau-near-sete|4128|3|lagoon
 etang-de-torcy-neuf-near-chalon-sur-saone|32|3|lake
 etang-du-bagnas-near-agde|65536|3|Natura 2000 site
 etang-du-bagnas-near-sete|65536|3|Natura 2000 site
@@ -7404,6 +9013,8 @@ etna-park-near-acireale|196608|3|protected area
 etomo-peninsula-near-muroran|4160|3|tied island
 etretat-near-rouen|0|0|
 etropole-waterfall-varovitets-near-botevgrad|1|3|waterfall
+etruscan-coast-near-livorno|4096|3|coast
+etruscan-coast-near-pisa|4096|3|coast
 eu-forest-near-abbeville|16384|3|forest
 eu-forest-near-beauvais|16384|3|forest
 eu-forest-near-dieppe|16384|3|forest
@@ -7416,6 +9027,7 @@ euganean-hills-near-padua|196608|3|protected area
 euganean-hills-near-rovigo|1024|3|hill chain
 euganean-hills-near-venice|1024|3|hill chain
 euganean-hills-near-vicenza|1024|3|hill chain
+eugene-marais-park-near-pretoria|196608|3|nature reserve
 eugene-t-mahoney-state-park-near-council-bluffs|131072|2|
 eugene-t-mahoney-state-park-near-lincoln-us|131072|2|
 eugene-t-mahoney-state-park-near-omaha|131072|2|
@@ -7466,6 +9078,9 @@ faber-park-near-nuremberg|147456|3|forest
 faboda-near-jakobstad|16|3|beach
 faboda-near-kokkola|16|3|beach
 faeno-near-fredericia|64|3|island
+faettenfjorden-near-steinkjer-municipality|4096|3|fjord
+faettenfjorden-near-stjordalshalsen|4096|3|fjord
+faettenfjorden-near-trondheim|4096|3|fjord
 fagaras-mountains-near-avrig|1024|3|mountain range
 fagaras-mountains-near-cisnadie|1024|3|mountain range
 fagaras-mountains-near-cluj-napoca|1024|3|mountain range
@@ -7473,6 +9088,7 @@ fagaras-mountains-near-mioveni|1024|3|mountain range
 fagaras-mountains-near-ramnicu-valcea|1024|3|mountain range
 fagaras-mountains-near-sibiu|1024|3|mountain range
 fagaras-mountains-near-stefanesti|1024|3|mountain range
+fagelouddebadet-near-norrtalje|16|3|beach
 fageruddsasen-near-enkoping|65536|3|nature reserve
 fagetul-clujului-near-cluj-napoca|65536|3|nature reserve
 fagetul-clujului-near-floresti|65536|3|nature reserve
@@ -7481,6 +9097,7 @@ fahner-hohe-near-gotha|1024|3|mountain range
 fahrmannssand-near-stade|64|3|island
 faia-brava-reserve-near-guarda|65536|3|protected area
 failaka-island-near-hafar-al-batin|64|3|island
+failaka-island-near-kuwait-city|64|3|island
 fair-oaks-park-near-santa-clara|131072|3|park
 fairholme-range-near-canmore|1024|3|mountain range
 fairmount-park-near-fontana|131072|3|park
@@ -7495,10 +9112,12 @@ falakro-near-kavala|1024|3|mountain
 falakro-near-smolyan|1024|3|mountain
 falasarna-near-chania|0|0|
 falben-near-gotzis|1024|3|main peak
+falcon-international-reservoir-near-monterrey|32|3|reservoir
 falcon-international-reservoir-near-piedras-negras|32|3|reservoir
 falcon-lake-near-kenora|32|3|lake
 falesia-beach-near-faro|16|3|beach
 falesia-beach-near-loule|16|3|beach
+falesia-beach-near-tavira|16|3|beach
 faliesi-near-avellino|1024|3|mountain
 falkenberg-near-judenburg|1024|3|mountain
 fallerbach-near-steyr|257|3|waterfall
@@ -7527,15 +9146,18 @@ falster-near-vordingborg|64|3|island
 falsterbo-near-malmo|0|0|
 family-park-near-prerov|147456|3|urban forest
 fan-near-kolding|64|3|island
+fanad-near-letterkenny|4096|3|headland
 fanaturile-de-la-glodeni-near-vaslui|65536|3|Natura 2000 site
 fanjingshan-near-chongqing|65536|3|biosphere reserve
 fanjingshan-near-guiyang|65536|3|biosphere reserve
 fanjingshan-near-zunyi|65536|3|biosphere reserve
+fannefjorden-near-kristiansund-municipality|4096|3|fjord
 fano-near-esbjerg|64|3|island
 fanore-near-ennis|0|0|
 fanshawe-lake-near-london-ontario|32|3|reservoir
 fanshawe-lake-near-stratford|32|3|reservoir
 fanshawe-lake-near-woodstock|32|3|reservoir
+fansipan-near-hanoi|1024|3|mountain
 fantanita-murfatlar-near-medgidia|65536|3|Natura 2000 site
 farallones-de-cali-national-natural-park-near-cali|32768|3|national park
 farallones-de-cali-national-natural-park-near-neiva|32768|3|national park
@@ -7546,6 +9168,7 @@ farallones-del-citara-near-quibdo|1024|3|mountain
 farasan-island-near-jizan|64|3|island
 farasan-island-near-sabya|64|3|island
 farkasvolgy-cave-near-erd|2|3|cave
+farlev-fjord-near-uddevalla|4096|3|fjord
 farley-mount-near-andover|1024|3|mountain
 farley-mount-near-eastleigh|1024|3|mountain
 farley-mount-near-salisbury|1024|3|mountain
@@ -7559,6 +9182,9 @@ farnebofjarden-national-park-near-vasteras|32768|3|national park
 faro-island-near-faro|4096|3|peninsula
 faro-near-nykobing-falster|64|3|island
 faro-near-vordingborg|64|3|island
+faro-point-near-messina|4096|3|cape
+faro-point-near-reggio-calabria|4096|3|cape
+faro-point-near-vibo-valentia|4096|3|cape
 faros-kato-pafou-near-paphos|65536|3|Natura 2000 site
 farragut-state-park-near-coeur-dalene|131072|2|
 farrenbracker-bachtal-near-remscheid|65536|3|protected area
@@ -7569,6 +9195,7 @@ farup-so-near-billund|32|3|lake
 fassa-valley-near-bolzano|2048|3|valley
 fassa-valley-near-brixen|2048|3|valley
 fatares-near-cartagena|16|3|beach
+fatares-near-lorca|16|3|beach
 fatijarvi-near-pori|32|3|lake
 fauler-see-markendorfer-wald-near-frankfurt-oder|65536|3|Special Area of Conservation
 faver-dykes-state-park-near-st-augustine|131072|3|Florida state park
@@ -7576,6 +9203,7 @@ favignana-near-trapani|0|0|
 faye-near-belfort|1024|3|mountain
 fayerweather-island-near-norwalk-us|64|3|island
 feather-falls-near-chico|1|3|waterfall
+fedafjorden-near-egersund|4096|3|fjord
 federation-forest-state-park-near-tacoma|131072|2|
 federsee-near-biberach-an-der-riss|32|3|lake
 federsee-near-ulm|32|3|lake
@@ -7592,8 +9220,10 @@ feldberg-near-emmendingen|66560|3|main peak
 feldberg-near-freiburg|0|0|
 feldberg-near-liestal|66560|3|main peak
 feldberg-near-lorrach|66560|3|main peak
-feldberg-near-villingen-schwenningen|0|0|
+feldberg-near-villingen-schwenningen|65536|3|Naturschutzgebiet
 felipe-vi-park-near-alcobendas|131072|3|park
+felixstowe-beach-near-colchester|16|3|beach
+felixstowe-beach-near-ipswich-uk|16|3|beach
 felkers-falls-near-hamilton-ontario|1|3|waterfall
 fellows-lake-near-springfield|32|3|reservoir
 felmersham-gravel-pits-near-bedford|65536|3|nature reserve
@@ -7633,6 +9263,15 @@ ferto-hansag-national-park-near-papa|32768|3|national parkin Hungary
 ferto-hansag-national-park-near-sopron|32768|3|national parkin Hungary
 fetesti-landscape-reserve-near-edinet|65536|3|landscape reserve
 ffh-gebiet-federsee-und-blinder-see-bei-kanzach-near-biberach-an-der-riss|65536|3|Special Area of Conservation
+ffrith-beach-near-st-helens|16|3|beach
+ffrith-beach-near-widnes|16|3|beach
+ffrith-beach-near-wigan|16|3|beach
+fiascherino-near-camaiore|4112|3|beach
+fiascherino-near-carrara|4112|3|beach
+fiascherino-near-la-spezia|4112|3|beach
+fiascherino-near-lucca|4112|3|beach
+fiascherino-near-massa|4112|3|beach
+fiascherino-near-pisa|4112|3|beach
 fichtel-mountain-nature-park-near-erlangen|196608|3|Naturpark
 fichtel-mountains-near-bamberg|1024|3|mountain range
 fichtelberg-near-annaberg-buchholz|1024|3|main peak
@@ -7641,14 +9280,25 @@ fiddler-s-island-near-oxford|320|3|river island
 fidra-near-glenrothes|64|3|island
 fidra-near-kirkcaldy|64|3|island
 fiemme-valley-near-bolzano|2048|3|valley
+fife-ness-near-dundee|4096|3|headland
+fife-ness-near-edinburgh|4096|3|headland
+fife-ness-near-glenrothes|4096|3|headland
+fife-ness-near-kirkcaldy|4096|3|headland
+fife-ness-near-perth-uk|4096|3|headland
 fig-tree-bay-near-larnaca|16|3|beach
 figarola-near-porec|64|3|island
 figarola-near-rovinj|64|3|island
 fighting-island-near-dearborn|320|3|river island
 fighting-island-near-windsor-ontario|320|3|river island
+figueirinha-beach-near-almada|16|3|beach
+figueirinha-beach-near-cascais|16|3|beach
+figueirinha-beach-near-lisbon|16|3|beach
 figueirinha-beach-near-palmela|16|3|beach
 figueirinha-beach-near-santiago-do-cacem|16|3|beach
+figueirinha-beach-near-setubal|16|3|beach
+figueirinha-beach-near-sintra|16|3|beach
 figueretes-near-ibiza|16|3|beach
+filey-brigg-near-scarborough|4096|3|headland
 filinskoye-ozero-near-ryazan|32|3|lake
 fillmannsbach-near-braunau-am-inn|256|3|river
 fillmore-glen-state-park-near-syracuse|131072|3|New York state park
@@ -7662,8 +9312,12 @@ finkenberg-near-bonn|1024|3|mountain
 finucane-island-near-port-hedland|64|3|island
 fiordland-national-park-near-invercargill|32768|3|national park
 fiordland-near-queenstown|32768|3|national park
-fire-island-national-seashore-near-babylon|0|0|
+fiordo-di-furore-near-castellammare-di-stabia|4096|3|fjord
+fiordo-di-furore-near-giugliano-in-campania|4096|3|fjord
+fiordo-di-furore-near-salerno|4096|3|fjord
+fire-island-national-seashore-near-babylon|4112|3|United States National Seashore
 fire-island-near-anchorage|64|3|island
+fire-island-near-babylon|0|0|
 fire-island-near-hempstead|0|0|
 fire-island-near-norwalk-us|0|0|
 first-landing-state-park-near-chesapeake|131072|2|
@@ -7672,6 +9326,23 @@ first-landing-state-park-near-norfolk|131072|2|
 first-landing-state-park-near-virginia-beach|131072|2|
 first-peoples-buffalo-jump-state-park-near-great-falls|131072|2|
 first-president-of-kazakhstan-park-near-aktobe|131072|3|park
+firth-of-forth-near-dundee|4608|3|estuary
+firth-of-forth-near-edinburgh|4608|3|estuary
+firth-of-forth-near-glenrothes|4608|3|estuary
+firth-of-forth-near-kirkcaldy|4608|3|estuary
+firth-of-forth-near-perth-uk|4608|3|estuary
+firth-of-tay-near-dundee|4096|3|fjord
+firth-of-tay-near-edinburgh|4096|3|fjord
+firth-of-tay-near-glenrothes|4096|3|fjord
+firth-of-tay-near-kirkcaldy|4096|3|fjord
+firth-of-tay-near-perth-uk|4096|3|fjord
+firule-beach-near-makarska|16|3|beach
+firule-beach-near-omis|16|3|beach
+firule-beach-near-sibenik|16|3|beach
+firule-beach-near-sinj|16|3|beach
+firule-beach-near-solin|16|3|beach
+firule-beach-near-split|16|3|beach
+firule-beach-near-trogir|16|3|beach
 fischerinsel-near-neubrandenburg|64|3|island
 fischland-darss-zingst-near-rostock|4096|3|peninsula
 fischlhamerau-near-wels|65536|3|nature reserve
@@ -7706,6 +9377,7 @@ fjando-near-lemvig|64|3|island
 fjaras-bracka-near-kungsbacka|65536|3|nature reserve
 fjellsjokampen-near-eidsvoll-municipality|1024|3|mountain
 flachstal-near-muhlhausen-thuringia|2048|3|valley
+flamborough-head-near-scarborough|4096|3|headland
 flamenca-beach-spain-near-torrevieja|16|3|beach
 flaming-geyser-state-park-near-tacoma|131072|2|
 flaming-mountains-near-urumqi|1024|3|mountain range
@@ -7741,7 +9413,13 @@ flemish-ardennes-near-kortrijk|1024|3|mountain range
 flemish-ardennes-near-mons|1024|3|mountain range
 flemish-ardennes-near-oudenaarde|1024|3|mountain range
 flemish-ardennes-near-waregem|1024|3|mountain range
+flensburg-firth-near-aabenraa|4096|3|fjord
+flensburg-firth-near-haderslev|4096|3|fjord
+flensburg-firth-near-husum|4096|3|fjord
+flensburg-firth-near-sonderborg|4096|3|fjord
+flensburg-firth-near-tonder|4096|3|fjord
 flensburg-fjord-near-flensburg|4096|3|fjord
+fletcher-neck-near-portland-me|4096|3|cape
 fleurieu-peninsula-near-goolwa|4096|3|peninsula
 fleurieu-peninsula-near-murray-bridge|4096|3|peninsula
 fleurieu-peninsula-near-victor-harbor|4096|3|peninsula
@@ -7782,6 +9460,8 @@ fockbeker-moor-near-rendsburg|65536|3|Special Area of Conservation
 fockeberg-near-leipzig|1024|3|mountain
 foix-reservoir-near-lhospitalet|32|3|reservoir
 fokserd-near-sandefjord|65536|3|nature reserve
+folda-near-bodo|4096|3|fjord
+foldfjorden-near-kristiansund-municipality|4096|3|fjord
 foldsjoen-near-stjordalshalsen|32|3|lake
 folehaveskoven-near-horsholm|16384|3|forest
 follins-pond-near-barnstable|32|3|lake
@@ -7804,6 +9484,7 @@ fontainebleau-state-park-near-new-orleans|131072|2|
 fontburn-near-gateshead|32|3|reservoir
 fontburn-near-south-shields|32|3|reservoir
 fonte-da-telha-beach-near-seixal|16|3|beach
+fonte-da-telha-beach-near-setubal|16|3|beach
 fonte-grande-state-park-near-serra|131072|3|state park
 fonte-grande-state-park-near-vila-velha|131072|3|state park
 fonte-grande-state-park-near-vitoria|131072|3|state park
@@ -7822,8 +9503,11 @@ for-mar-nature-preserve-arboretum-near-saginaw|0|0|
 forbordsfjellet-near-stjordalshalsen|1024|3|mountain
 ford-island-near-honolulu|64|3|island
 ford-lake-near-ann-arbor|32|3|reservoir
+forde-fjord-near-floro|4096|3|fjord
 foreign-tree-specimen-forest-near-asahikawa|16384|1|
 forellensee-holm-near-uetersen|32|3|lake
+foreness-point-near-clacton-on-sea|4096|3|headland
+foreness-point-near-southend-on-sea|4096|3|headland
 forest-near-malcoci-near-hincesti|65536|3|nature reserve
 forest-of-arenberg-near-cambrai|16384|3|forest
 forest-of-arenberg-near-douai|16384|3|forest
@@ -8006,6 +9690,7 @@ foret-de-montceaux-near-meaux|81920|3|national forest
 foret-de-montfort-near-lisieux|16384|3|forest
 foret-de-mormal-near-bethune|16384|3|forest
 foret-de-mormal-near-saint-quentin|16384|3|forest
+foret-de-nieppe-near-armentieres|16384|3|forest
 foret-de-nieppe-near-bethune|16384|3|forest
 foret-de-notre-dame-near-champigny-sur-marne|16384|3|forest
 foret-de-notre-dame-near-noisy-le-grand|16384|3|forest
@@ -8063,10 +9748,22 @@ forks-of-the-credit-provincial-park-near-vaughan|131072|3|provincial park of Can
 formby-beach-near-birkenhead|16|3|beach
 formby-beach-near-blackpool|16|3|beach
 formby-beach-near-bootle|16|3|beach
+formby-beach-near-chester|16|3|beach
+formby-beach-near-lancaster|16|3|beach
+formby-beach-near-liverpool|16|3|beach
+formby-beach-near-preston|16|3|beach
 formby-beach-near-st-helens|16|3|beach
+formby-beach-near-widnes|16|3|beach
+formby-beach-near-wigan|16|3|beach
 formby-near-liverpool|0|0|
 formosa-island-near-high-wycombe|320|3|river island
+fornillo-beach-near-acerra|16|3|beach
+fornillo-beach-near-aversa|16|3|beach
+fornillo-beach-near-caserta|16|3|beach
 fornillo-beach-near-castellammare-di-stabia|16|3|beach
+fornillo-beach-near-giugliano-in-campania|16|3|beach
+fornillo-beach-near-naples|16|3|beach
+fornillo-beach-near-pozzuoli|16|3|beach
 forno-de-orca-cave-near-marinha-grande|2|3|cave
 forno-de-orca-cave-near-rio-maior|2|3|cave
 forst-dianenslust-und-stadtwald-schweinfurt-near-schweinfurt|65536|3|Special Area of Conservation
@@ -8091,6 +9788,7 @@ fort-worth-nature-center-and-refuge-near-arlington-tx|0|0|
 fort-worth-nature-center-and-refuge-near-fort-worth|0|0|
 forte-de-tamandare-municipal-nature-park-near-caruaru|131072|3|municipal nature park
 fortuna-forest-reserve-near-david|65536|3|nature reserve
+fossil-beach-near-bristol|16|3|beach
 fossil-soils-near-malaiesti-near-singera|0|0|
 fossilized-trees-in-druzhkovka-near-kostiantynivka|0|0|
 fota-island-near-ballincollig|64|3|island
@@ -8108,12 +9806,14 @@ fournoi-islands-near-samos|64|3|archipelago
 fourth-beach-near-esperance|16|3|beach
 foy-property-provincial-park-near-pembroke|131072|3|provincial park of Canada
 foy-provincial-park-near-ottawa|131072|3|provincial park of Canada
+frafjorden-near-egersund|4096|3|fjord
 fragas-do-eume-near-a-coruna|196608|3|Special Area of Conservation
 fragas-do-eume-near-santiago-de-compostela|196608|3|Special Area of Conservation
 fragosa-beach-near-povoa-de-varzim|16|3|beach
 fragosa-beach-near-santo-tirso|16|3|beach
 fragosa-beach-near-vila-do-conde|16|3|beach
 fragosa-beach-near-vila-nova-de-famalicao|16|3|beach
+framnas-udde-near-nynashamn|4096|3|cape
 frances-slocum-state-park-near-wilkes-barre|131072|3|Pennsylvania state park
 francis-marion-national-forest-near-charleston|81920|3|proclaimed forest
 francisco-abellan-reservoir-near-guadix|32|3|reservoir
@@ -8195,21 +9895,39 @@ french-island-near-warragul|0|0|
 french-island-near-wonthaggi|0|0|
 french-prealps-near-digne-les-bains|1024|3|mountain range
 french-river-near-sudbury|256|3|river
+french-riviera-near-antibes|4096|3|coast
+french-riviera-near-cagnes-sur-mer|4096|3|coast
+french-riviera-near-cannes|4096|3|coast
+french-riviera-near-draguignan|4096|3|coast
+french-riviera-near-frejus|4096|3|coast
+french-riviera-near-grasse|4096|3|coast
+french-riviera-near-hyeres|4096|3|coast
+french-riviera-near-le-cannet|4096|3|coast
 frenchman-mountain-near-henderson|1024|3|mountain
 frenchman-mountain-near-las-vegas|1024|3|mountain
 frenchman-mountain-near-north-las-vegas|1024|3|mountain
 frenchman-mountain-near-paradise|1024|3|mountain
 frenchman-range-near-las-vegas|1024|3|mountain range
 frenchman-range-near-paradise|1024|3|mountain range
+freshwater-beach-near-central-coast|16|3|beach
+freshwater-beach-near-gosford|16|3|beach
+freshwater-beach-near-penrith|16|3|beach
+freshwater-beach-near-sydney|16|3|beach
 freyr-forest-near-virton|16384|3|forest
 friedberger-baggersee-near-aichach|32|3|lake
 friedberger-baggersee-near-augsburg|32|3|lake
 friedhofseiche-genin-near-lubeck|65536|3|Special Area of Conservation
+frierfjord-near-larvik|4096|3|fjord
+frierfjord-near-porsgrunn|4096|3|fjord
+frierfjord-near-sandefjord|4096|3|fjord
+frierfjord-near-skien|4096|3|fjord
+frierfjord-near-tonsberg|4096|3|fjord
 friesling-near-amstetten|1024|3|mountain
 frio-river-near-laredo|256|3|river
 frisian-islands-near-cuxhaven|64|3|archipelago
 frisian-islands-near-wilhelmshaven|64|3|archipelago
 frisian-lakes-near-leeuwarden|32|2|
+frogtown-beach-near-whangarei|16|3|beach
 fronalpstock-near-glarus|1024|3|mountain
 fronalpstock-near-schwyz|1024|3|mountain
 frontenac-provincial-park-near-belleville|131072|3|provincial park of Canada
@@ -8238,6 +9956,8 @@ frydecky-les-near-frydek-mistek|16384|3|forest
 frying-pan-lake-near-rotorua|32|3|lake
 frylandsvatnet-near-sandnes-municipality|32|3|lake
 frysavsky-kopec-near-zdar-nad-sazavou|1024|3|mountain
+ftelia-near-ermoupolis|16|3|beach
+fucha-river-near-bogota|256|3|river
 fuchshohe-near-annaberg-buchholz|1024|3|mountain
 fuelbecketalsperre-near-ludenscheid|32|3|reservoir
 fuente-de-piedra-lagoon-near-malaga|66048|3|Ramsar site
@@ -8253,10 +9973,12 @@ fuglsang-lake-near-herning|32|3|lake
 fuglsang-lake-near-ikast|32|3|lake
 fukuroda-falls-near-iwaki|1|3|waterfall
 fullerton-arboretum-near-fullerton|0|0|
+fulong-beach-near-taipei|16|2|
 fulophaza-dand-drifts-near-cegled|65536|3|Natura 2000 site
 fulophaza-dand-drifts-near-dunaujvaros|65536|3|Natura 2000 site
 fulophaza-dand-drifts-near-kecskemet|65536|3|Natura 2000 site
 fulophaza-dand-drifts-near-kiskunhalas|65536|3|Natura 2000 site
+funchal-naval-club-bathing-complex-near-funchal|16|3|beach
 fundy-biosphere-reserve-near-riverview|65536|3|biosphere reserve
 fundy-national-park-near-moncton|32768|3|national park
 fundy-national-park-near-riverview|32768|3|national park
@@ -8266,6 +9988,7 @@ fur-near-skive|64|3|island
 furadouro-beach-near-aveiro|16|3|beach
 furadouro-beach-near-espinho|16|3|beach
 furadouro-beach-near-oliveira-de-azemeis|16|3|beach
+furadouro-beach-near-oliveira-do-bairro|16|3|beach
 furadouro-beach-near-santa-maria-da-feira|16|3|beach
 furastjarn-near-partille|32|3|lake
 fures-near-frederiksberg|65568|3|lake
@@ -8302,6 +10025,7 @@ fusi-mountain-near-changde|1024|3|mountain
 fusi-mountain-near-changsha|1024|3|mountain
 fusi-mountain-near-hengyang|1024|3|mountain
 fussing-s-near-randers|32|3|lake
+futami-ga-ura-near-kariya|4096|3|cove
 futula-near-shumen|1|3|waterfall
 futula-near-sliven|1|3|waterfall
 futula-near-yambol|1|3|waterfall
@@ -8310,6 +10034,10 @@ fynland-near-tonsberg|64|3|island
 fyodorovskoe-vodokhranylyshche-near-karaganda|32|3|reservoir
 g-j-van-heekpark-near-hengelo|131072|3|park
 g-ross-lord-park-near-richmond-hill|131072|3|park
+gaa-sand-near-dundee|16|2|
+gaa-sand-near-glenrothes|16|2|
+gaa-sand-near-kirkcaldy|16|2|
+gaa-sand-near-perth-uk|16|2|
 gaalgebierg-near-esch-sur-alzette|1024|3|hill
 gaasperplas-near-diemen|131104|3|artificial lake
 gaasperplas-near-weesp|131104|3|artificial lake
@@ -8317,6 +10045,7 @@ gabaret-island-near-belleville-us|64|3|island
 gabaret-island-near-st-charles|64|3|island
 gabaret-island-near-st-louis|64|3|island
 gabilan-range-near-hollister|1024|3|mountain range
+gadani-beach-near-karachi|16|3|beach
 gadeabergsbrannan-near-harnosand|65536|3|nature reserve
 gadisar-lake-near-sukkur|32|3|lake
 gaflenzer-kaibling-near-amstetten|1024|3|mountain
@@ -8338,6 +10067,7 @@ gajsevsko-jezero-near-varazdin|32|3|reservoir
 galabets-near-botevgrad|1024|3|mountain
 galan-near-san-miguel-de-tucuman|1152|3|caldera
 galapinhos-beach-near-palmela|16|3|beach
+galapinhos-beach-near-setubal|16|3|beach
 galati-botanical-garden-near-vulcanesti|0|0|
 galbraith-mountain-near-bellingham|1024|3|mountain
 galderse-meren-near-roosendaal|131104|3|lake
@@ -8356,6 +10086,7 @@ galicica-national-park-near-ohrid|1024|3|mountain range
 gallaberg-near-luneburg|1024|3|mountain
 gallagher-park-near-st-albert|131072|3|urban park
 gallatin-river-near-bozeman|256|3|river
+gallinara-near-imperia|64|3|island
 galltrask-near-kauniainen|32|3|lake or pond
 galovske-luky-near-vsetin|65536|3|nature reserve in the Czech Republic
 galtee-mountains-near-cork|1024|3|mountain
@@ -8380,8 +10111,12 @@ gamleriket-near-lidkoping|65536|3|nature reserve
 gammelstadsviken-near-boden|65536|3|nature reserve
 gammelstadsviken-near-lulea|32|3|lake
 gamsey-wood-near-huntingdon|65536|3|nature reserve
+gandsfjord-near-egersund|4096|3|fjord
+gandsfjord-near-karmoy-municipality|4096|3|fjord
 gandsfjord-near-sandnes|4096|3|fjord
 gandsfjord-near-sandnes-municipality|4096|3|fjord
+gandsfjord-near-stavanger|4096|3|fjord
+gandsfjord-near-stavanger-sandnes|4096|3|fjord
 gangani-west-bengal-near-kolkata|2052|3|canyon
 gangmun-beach-near-gangneung|16|3|beach
 gangpori-near-lhasa|1024|3|mountain
@@ -8395,9 +10130,11 @@ gansedrecksee-near-speyer|32|3|lake
 gantkofel-near-merano|1024|3|mountain
 gantrisch-regional-nature-park-near-bern|196608|3|nature park
 ganzepoot-near-ostend|32|3|lake
+gaoping-river-near-kaohsiung|256|3|river
 gaoyou-lake-near-nanjing|32|3|lake
 gaoyou-lake-near-yancheng|32|3|lake
 gaoyou-lake-near-yangzhou|32|3|lake
+garadice-lough-near-sligo|4128|3|lagoon
 garajis-near-rokiskis|32|3|lake
 garcia-sola-reservoir-near-merida-spain|32|3|reservoir
 garden-of-augustinian-monastery-in-ceska-lipa-near-ceska-lipa|0|0|
@@ -8412,6 +10149,8 @@ gardens-of-stone-national-park-near-mudgee|32768|3|national park of Australia
 gardens-of-the-world-near-thousand-oaks|0|0|
 gardens-of-trebic-castle-near-trebic|131072|3|park
 gardens-of-water-near-melilla|0|0|
+gardens-point-near-brisbane|0|0|
+gardens-point-near-ipswich|0|0|
 gardunha-near-guarda|66560|3|mountain chain
 garfagnana-near-lucca|0|0|
 gargano-national-park-near-foggia|98304|3|national park
@@ -8420,9 +10159,11 @@ gargano-near-trani|5120|3|massif
 garganta-verde-near-moron-de-la-frontera|2052|3|canyon
 garhjat-hills-near-bhubaneswar|1024|3|mountain range
 garibaldi-provincial-park-near-vancouver|131072|3|provincial park of Canada
+garie-beach-near-wollongong|16|3|beach
 garigal-national-park-near-sydney|32768|3|national park of Australia
 garip-island-near-mytilene|64|3|island
 garlaban-near-aubagne|1024|3|summit
+garnet-point-near-vacaville|4096|3|cape
 garnudden-nature-reserve-near-sodertalje|81920|3|forest
 garnudden-nature-reserve-near-tumba|81920|3|forest
 garonne-near-toulouse|256|3|river
@@ -8447,8 +10188,12 @@ garth-mountain-near-cardiff|1024|3|summit
 gartower-forst-near-salzwedel|16384|3|forest
 garzaia-del-mortone-near-crema|65536|3|Natura 2000 site
 garzaia-del-mortone-near-lodi|65536|3|Natura 2000 site
+gas-beach-near-montevideo|16|3|beach
 gasparilla-island-state-park-near-fort-myers|131072|3|Florida state park
 gaspe-peninsula-near-gaspe|4096|3|peninsula
+gaspee-point-near-new-bedford|4096|3|cape
+gaspee-point-near-providence|4096|3|cape
+gaspee-point-near-taunton-us|4096|3|cape
 gaspesie-national-park-near-sept-iles|32768|3|national park of Quebec
 gass-peak-near-north-las-vegas|1024|3|mountain
 gates-of-the-mountains-wilderness-near-great-falls|65536|3|United States Wilderness Area
@@ -8462,6 +10207,7 @@ gatineau-park-near-ottawa|196608|3|protected area of Canada
 gatschkopf-near-landeck|1024|3|mountain
 gatun-lake-near-colon-city|32|3|reservoir
 gatun-lake-near-la-chorrera|32|3|reservoir
+gatun-lake-near-panama-city|32|3|reservoir
 gatun-lake-near-san-miguelito-district|32|3|reservoir
 gaube-lake-near-tarbes|32|3|glacial lake
 gauernitz-island-near-meissen|320|3|river island
@@ -8473,22 +10219,28 @@ gauja-national-park-near-valka|98304|3|national park
 gauja-national-park-near-valmiera|98304|3|national park
 gaulandschaft-an-der-wurm-near-boblingen|65536|3|Special Area of Conservation
 gaulandschaft-an-der-wurm-near-calw|65536|3|Special Area of Conservation
+gaulosen-near-trondheim|4096|3|fjord
 gavarres-near-girona|66560|3|massif
 gave-de-pau-near-anglet|65792|3|river
 gave-de-pau-near-bayonne|65792|3|river
 gave-de-pau-near-dax|65792|3|river
 gave-de-pau-near-mont-de-marsan|65792|3|river
 gave-de-pau-near-pau|65792|3|river
+gaviota-beach-near-santa-maria|16|3|beach
 gavkhuni-lake-near-isfahan|32|3|salt lake
 gavkhuni-lake-near-yazd|32|3|salt lake
 gavno-near-naestved|64|3|island
 gavurky-near-zvolen|65536|3|protected area
 gay-city-state-park-near-hartford|0|0|
+gayasan-national-park-near-daegu|32768|3|national park
 gayva-near-perm|65792|3|river
 gazivoda-lake-near-novi-pazar|32|3|reservoir
 gaztelugatxe-near-bilbao|0|0|
 gazzirola-near-bellinzona|1024|3|mountain
 gazzo-mountain-near-genoa|1024|3|mountain
+gdansk-stogi-beach-near-gdansk|16|2|
+gdansk-stogi-beach-near-gdynia|16|2|
+gdansk-stogi-beach-near-wejherowo|16|2|
 gdor-reserve-near-hadera|65536|3|nature reserve
 ge-lake-near-changzhou|32|3|lake
 ge-lake-near-suzhou|32|3|lake
@@ -8496,6 +10248,8 @@ ge-lake-near-wuxi|32|3|lake
 gebaberg-near-meiningen|1024|3|mountain
 gebhard-woods-state-park-near-joliet|131072|3|Illinois state park
 gebiete-zwischen-sigmaringen-und-messkirch-near-sigmaringen|65536|3|Special Area of Conservation
+gedser-odde-near-nykobing-falster|0|0|
+gedser-odde-near-vordingborg|0|0|
 geeste-reservoir-near-meppen|32|3|reservoir
 geeste-reservoir-near-nordhorn|32|3|reservoir
 geestmerambacht-near-alkmaar|131104|3|lake
@@ -8581,6 +10335,8 @@ german-luxembourg-nature-park-near-arlon|196608|3|nature park
 germantas-near-plunge|65568|3|lake
 germantas-near-telsiai|65568|3|lake
 germasogeia-reservoir-near-limassol|32|3|reservoir
+gerondolakkos-near-ierapetra|16|3|beach
+gerondolakkos-near-sitia|16|3|beach
 gerry-park-near-oyster-bay|131072|3|park
 gesause-national-park-near-graz|32768|3|national park
 gesause-national-park-near-liezen|32768|3|national park
@@ -8593,6 +10349,7 @@ gessi-di-monte-rocca-monte-capra-e-tizzano-near-bologna|65536|3|Natura 2000 site
 gesunda-mountain-near-mora|1024|3|mountain
 getaryggen-near-skovde|65536|3|nature reserve
 getteron-nature-reserve-near-varberg|65536|3|nature reserve
+geumjeongsan-near-busan|1024|3|mountain
 geumjeongsan-near-changwon|1024|3|mountain
 geumjeongsan-near-gimhae|1024|3|mountain
 geumodo-near-yeosu|64|3|island
@@ -8603,6 +10360,9 @@ gexian-lake-near-changzhou|32|3|lake
 gexian-lake-near-nanjing|32|3|lake
 gexian-lake-near-yangzhou|32|3|lake
 gexian-shan-near-nanchang|1024|3|mountain
+gezira-island-near-cairo|0|0|
+geziret-el-dahab-near-cairo|64|3|island
+ghaggar-hakra-river-near-lahore|256|3|river
 ghent-near-brussels|0|0|
 ghidighici-reservoir-near-chisinau|32|3|reservoir
 ghidighici-reservoir-near-durlesti|32|3|reservoir
@@ -8612,6 +10372,11 @@ ghliana-cave-natural-monument-near-kutaisi|2|3|cave
 ghora-katora-near-patna|32|3|lake
 ghyll-pond-near-kendal|32|3|lake
 gialova-lagoon-near-kalamata|4128|3|lagoon
+gianiskari-beach-near-agrinio|16|3|beach
+gianiskari-beach-near-elis|16|3|beach
+gianiskari-beach-near-missolonghi|16|3|beach
+gianiskari-beach-near-nafpaktos|16|3|beach
+gianiskari-beach-near-patras|16|3|beach
 giannutri-near-civitavecchia|64|3|island
 giant-mountains-national-park-near-jelenia-gora|32768|3|National Parks of Poland
 giant-mountains-national-park-near-legnica|32768|3|National Parks of Poland
@@ -8659,6 +10424,7 @@ giheung-lake-near-suwon|32|3|reservoir
 giheung-lake-near-yongin|32|3|reservoir
 gil-lake-near-ostroda|32|3|lake
 gilbergs-kopf-near-siegen|1024|3|hill
+gilbert-hill-near-mumbai|1024|3|mountain
 gilevskoye-vodokhranilishche-near-semey|32|3|reservoir
 gilfert-near-schwaz|1024|3|mountain
 gilgal-sculpture-garden-near-west-jordan|0|0|
@@ -8667,6 +10433,7 @@ gilusis-near-trakai|32|3|lake
 gipsurile-de-la-leghia-near-floresti|65536|3|nature reserve
 giresun-daglar-near-giresun|1024|3|mountain range
 giresun-island-near-giresun|64|3|island
+girgaum-chowpatty-near-mumbai|16|3|beach
 gironde-estuary-near-angouleme|70144|3|estuary
 gironde-estuary-near-rochefort|70144|3|estuary
 gironde-estuary-near-royan|70144|3|estuary
@@ -8707,6 +10474,8 @@ gleispark-frintrop-near-oberhausen|131072|3|park
 glemswald-und-stuttgarter-bucht-near-boblingen|65536|3|Special Area of Conservation
 glen-affric-near-inverness|67584|3|valley
 glen-alla-park-near-inglewood|131072|3|park
+glen-beach-near-cape-town|16|3|beach
+glen-beach-near-stellenbosch|16|3|beach
 glen-falls-near-amherst|1|3|waterfall
 glen-haffy-conservation-area-near-caledon|65536|3|protected area
 glen-helen-regional-park-near-fontana|131072|3|regional park
@@ -8715,20 +10484,25 @@ glen-helen-regional-park-near-san-bernardino|131072|3|regional park
 glen-island-park-near-yonkers|131072|3|park
 glen-lake-near-traverse-city|32|3|lake
 glen-of-the-downs-near-greystones|67584|3|valley
+glenade-lough-near-sligo|4128|3|lagoon
 glenan-islands-near-quimper|65600|3|archipelago
 glenariff-forest-park-near-ballymena|16384|3|forest
 glenbow-ranch-provincial-park-near-strathmore|131072|3|provincial park of Canada
 glencar-lough-near-sligo|32|3|lake
 glendalough-near-dublin|0|0|
+glenfield-beach-near-geraldton|16|3|beach
 glengarra-wood-near-clonmel|16384|3|woodland
 gleniffer-braes-near-paisley|132096|3|hill chain
 glenmore-reservoir-near-airdrie|32|3|reservoir
 glenn-otto-park-near-gresham|131072|3|park
 glennagalliagh-near-limerick|1024|3|mountain
+glenrock-lagoon-near-newcastle|4128|3|lagoon
 glens-of-antrim-near-belfast|2048|3|valley
 glenugie-peak-near-grafton|1024|3|mountain
 glenveagh-national-park-near-letterkenny|32768|3|national park
 glogovica-lake-near-vidin|32|3|reservoir
+glomfjorden-near-bodo|4096|3|fjord
+glomfjorden-near-mo-i-rana|4096|3|fjord
 glortalsperre-near-ludenscheid|32|3|reservoir
 glory-park-in-bila-tserkva-near-bila-tserkva|131072|3|park
 gloucester-island-national-park-near-bowen|32768|3|national park of Australia
@@ -8769,6 +10543,7 @@ goddered-hakered-near-kungalv|65536|3|nature reserve
 godeny-halom-near-bekescsaba|0|0|
 godeny-halom-near-hodmezovasarhely|0|0|
 godeny-halom-near-szolnok|0|0|
+godfreys-beach-near-smithton-au|16|3|beach
 godley-reservoir-near-stockport|32|3|reservoir
 godmanchester-nature-reserve-near-huntingdon|65536|3|nature reserve
 goffle-hill-near-paterson|1024|3|mountain
@@ -8777,6 +10552,7 @@ gogo-island-near-matsuyama|64|3|island
 gohlig-near-freital|1024|3|hill
 goiapaba-acu-municipal-nature-park-near-serra|131072|3|municipal nature park
 goingeasen-near-hassleholm|65536|3|nature reserve
+gojo-river-near-nagoya|256|3|river
 gokceada-lagoon-near-canakkale|4128|3|lagoon
 goksu-waterfall-near-amasya|1|3|waterfall
 goksu-waterfall-near-sivas|1|3|waterfall
@@ -8784,16 +10560,28 @@ goksu-waterfall-near-tokat|1|3|waterfall
 goksu-waterfall-near-yozgat|1|3|waterfall
 gola-zoska-near-augustow|32|3|lake
 gold-beach-near-caen|16|3|beach
+gold-beach-near-le-havre|16|3|beach
 gold-beach-near-lisieux|16|3|beach
 gold-beach-near-saint-lo|16|3|beach
 goldbergsee-near-coburg|32|3|reservoir
 goldeck-near-spittal-an-der-drau|1024|3|mountain
 golden-beach-puri-near-bhubaneswar|16|3|beach
+golden-cap-near-bridgwater|5120|3|hill
 golden-cap-near-dorchester|5120|3|hill
+golden-cap-near-exeter|5120|3|hill
+golden-cap-near-taunton|5120|3|hill
 golden-cap-near-yeovil|5120|3|hill
 golden-cape-forest-park-near-rovinj|147456|3|forest park
 golden-ears-provincial-park-near-abbotsford|131072|3|provincial park of Canada
 golden-ears-provincial-park-near-chilliwack|131072|3|provincial park of Canada
+golden-gardens-park-near-bellevue|131072|3|park
+golden-gardens-park-near-everett|131072|3|park
+golden-gardens-park-near-federal-way|131072|3|park
+golden-gardens-park-near-kent|131072|3|park
+golden-gardens-park-near-redmond|131072|3|park
+golden-gardens-park-near-renton|131072|3|park
+golden-gardens-park-near-seattle|131072|3|park
+golden-gardens-park-near-tacoma|131072|3|park
 golden-gate-canyon-state-park-near-boulder|131072|2|
 golden-gate-canyon-state-park-near-denver|131072|2|
 golden-lake-near-pembroke|32|3|lake
@@ -8820,11 +10608,13 @@ gollu-dag-near-nigde|1024|3|mountain
 golubinskiye-peski-near-volgograd|65536|2|
 goluboe-near-saratov|32|3|reservoir
 golubye-lakes-near-kazan|65568|3|lake
+gombak-river-near-kuala-lumpur|256|3|river
 gomeda-vadisi-near-nevsehir|2048|3|valley
 gomel-lake-near-polatsak|32|3|lake
 gondarem-beach-near-gondomar|16|3|beach
 gondarem-beach-near-maia|16|3|beach
 gondarem-beach-near-valongo|16|3|beach
+gongqing-forest-park-near-shanghai|147456|3|forest park
 gongzui-reservoir-near-chongqing|32|3|reservoir
 gonzaga-beach-near-santos|16|3|beach
 gonzaguinha-beach-near-sao-vicente|16|3|beach
@@ -8847,6 +10637,8 @@ goor-asbroek-near-sint-truiden|65536|3|nature reserve
 goose-island-state-park-near-corpus-christi|131072|3|Texas state park
 goose-island-state-park-near-victoria-us|131072|3|Texas state park
 goose-lake-near-anchorage|32|3|lake
+gooseberry-beach-near-new-bedford|16|3|beach
+gooseberry-beach-near-providence|16|3|beach
 gopo-landscape-park-near-konin|196608|3|landscape park in Poland
 gora-asbestnaya-near-maykop|1024|3|mountain
 gora-ekonomicheskaya-near-novorossiysk|1024|3|hill
@@ -8867,6 +10659,7 @@ gora-swietej-anny-near-kedzierzyn-kozle|1024|3|mountain
 gora-swietej-doroty-near-bedzin|1024|3|mountain
 gora-swietej-doroty-near-piekary-slaskie|1024|3|mountain
 gora-swietej-doroty-near-tarnowskie-gory|1024|3|mountain
+gorai-beach-near-mumbai|16|3|beach
 gorbea-natural-park-near-bilbao|196608|3|protected area
 gorbeia-natural-park-near-vitoria-gasteiz|196608|3|protected area
 gorbio-near-menton|256|3|river
@@ -8877,6 +10670,7 @@ gorce-national-park-near-nowy-targ|32768|3|National Parks of Poland
 gorce-national-park-near-tarnow|32768|3|National Parks of Poland
 gorce-national-park-near-zakopane|32768|3|National Parks of Poland
 gore-park-near-burlington|131072|3|urban park
+goree-near-dakar|64|3|island
 gorelaya-near-murmansk|1024|3|mountain
 gorely-near-petropavlovsk-kamchatsky|66688|3|volcano
 gorenitskyy-near-bucha|81920|3|forest reserve
@@ -8907,7 +10701,7 @@ gorkoye-peresheyechnoye-near-semey|32|3|salt lake
 gorky-park-near-minsk|131072|3|park
 gorky-park-near-perm|131072|2|
 gorky-park-near-rostov-on-don|196608|3|protected area of Russia
-gorky-park-near-zhodzina|0|0|
+gorky-park-near-zhodzina|131072|3|park
 gorky-reservoir-near-ivanovo|32|3|reservoir
 gorky-reservoir-near-kostroma|32|3|reservoir
 gornata-koria-near-montana|65536|3|nature reserve
@@ -8917,6 +10711,9 @@ gornje-podunavlje-near-subotica|65536|3|protected area
 gorodischenskoe-near-pskov|32|3|lake
 gorodskoe-reservoir-near-vladimir|32|3|reservoir
 gorriti-island-near-maldonado|64|3|island
+gorriti-island-near-montevideo|64|3|island
+gorrondatxe-near-barakaldo|16|3|beach
+gorrondatxe-near-bilbao|16|3|beach
 gorskoe-near-imatra|32|3|lake
 gorsselse-heide-near-deventer|81920|3|forest
 gorsselse-heide-near-voorst|81920|3|forest
@@ -8940,7 +10737,7 @@ gotska-sandon-national-park-near-visby|64|3|island
 gottingen-forest-near-gottingen|17408|3|mountain range
 gotvand-lake-near-ahvaz|32|3|reservoir
 gotvand-lake-near-basra|32|3|reservoir
-gougane-barra-near-cork|0|0|
+gougane-barra-near-cork|131072|3|park
 goulais-river-near-sault-ste-marie|256|3|river
 goulburn-river-national-park-near-dubbo|32768|3|national park of Australia
 goulburn-river-national-park-near-mudgee|32768|3|national park of Australia
@@ -8949,6 +10746,8 @@ gour-de-tazenat-near-vichy|32|3|lake
 gouwebos-near-gouda|212992|3|forest
 gouwzee-near-purmerend|32|3|lake
 govardhan-hill-near-agra|1024|3|hill
+govardhan-hill-near-delhi|1024|3|hill
+govardhan-hill-near-jaipur|1024|3|hill
 govardhan-hill-near-new-delhi|1024|3|hill
 government-canyon-state-natural-area-near-new-braunfels|131072|3|Texas state park
 government-canyon-state-natural-area-near-san-antonio|131072|3|Texas state park
@@ -8974,6 +10773,7 @@ graben-und-niedermoorreste-im-erdinger-moos-near-erding|65536|3|Special Area of 
 grabowsee-near-oranienburg|32|3|lake
 gracarca-near-volkermarkt|1024|3|mountain
 graciosa-near-arrecife|64|3|island
+graciosa-state-park-near-curitiba|131072|3|state park
 graciosa-state-park-near-sao-jose-dos-pinhais|131072|3|state park
 gracious-pond-near-woking|196608|3|nature reserve
 gradac-cave-near-kragujevac|2|3|cave
@@ -9062,6 +10862,8 @@ grass-eyot-near-high-wycombe|320|3|river island
 grass-eyot-near-maidenhead|320|3|river island
 grasslands-national-park-near-swift-current|32768|3|national park
 graswerth-near-neuwied|320|3|river island
+gratangen-near-harstad|4096|3|fjord
+gratangen-near-narvik|4096|3|fjord
 grattai-mountain-near-gunnedah|1024|3|mountain
 grattai-mountain-near-moree|1024|3|mountain
 grattai-mountain-near-narrabri|1024|3|mountain
@@ -9069,6 +10871,11 @@ gratzen-mountains-near-freistadt|1024|3|mountain range
 grauspitz-near-bludenz|1024|3|mountain
 grauspitz-near-chur|1024|3|mountain
 grauspitz-near-hohenems|1024|3|mountain
+gravelly-point-near-alexandria-va|4096|3|cape
+gravelly-point-near-annapolis|4096|3|cape
+gravelly-point-near-baltimore|4096|3|cape
+gravelly-point-near-rockville|4096|3|cape
+gravelly-point-near-washington-dc|4096|3|cape
 gravina-di-matera-near-matera|256|3|river
 gravona-near-ajaccio|256|3|river
 gray-wolf-peak-near-missoula|1024|3|mountain
@@ -9123,12 +10930,19 @@ great-kills-park-near-perth-amboy|32768|3|National Park System unit
 great-lake-near-longford|32|3|lake
 great-meadow-national-nature-park-near-dnipro|32768|3|national nature park
 great-merrible-wood-near-corby|81920|3|woodland
+great-neck-peninsula-near-babylon|4096|3|peninsula
 great-oakley-meadow-near-corby|65536|3|nature reserve
+great-orme-near-birkenhead|5120|3|summit
+great-orme-near-bootle|5120|3|summit
+great-orme-near-liverpool|5120|3|summit
 great-palm-island-near-ingham|64|3|island
 great-paradana-ice-cave-near-nova-gorica|2|3|cave
 great-plains-state-park-near-lawton|131072|2|
 great-plains-state-park-near-wichita-falls|131072|2|
 great-pliva-lake-near-banja-luka|32|3|lake
+great-pond-near-hartford|4128|3|lagoon
+great-pond-near-middletown|4128|3|lagoon
+great-pond-near-waterbury|4128|3|lagoon
 great-river-bluffs-state-park-near-la-crosse|131072|2|
 great-river-bluffs-state-park-near-rochester-mn|131072|2|
 great-river-road-state-park-near-pine-bluff|131072|2|
@@ -9159,6 +10973,7 @@ greater-preston-national-park-near-collie|32768|3|national park of Australia
 grebnoy-canal-near-rostov-on-don|32|3|artificial lake
 greco-island-near-redwood-city|64|3|island
 gredlingen-near-sarreguemines|65536|3|Landschaftsschutzgebiet
+green-beach-near-montevideo|16|3|beach
 green-bottom-wildlife-management-area-near-huntington|0|0|
 green-forest-timisoara-near-arad|16384|3|urban forest
 green-forest-timisoara-near-santana|16384|3|urban forest
@@ -9184,6 +10999,9 @@ greenbrier-state-park-near-frederick-md|131072|2|
 greenbrier-state-park-near-hagerstown|131072|2|
 greenery-in-the-psychiatric-hospital-complex-in-rybnik-near-zory|0|0|
 greenleaf-state-park-near-tulsa|131072|2|
+greenmount-beach-near-byron-bay|16|3|beach
+greenmount-beach-near-gold-coast|16|3|beach
+greenmount-beach-near-murwillumbah|16|3|beach
 greensboro-arboretum-near-high-point|0|0|
 greensboro-country-park-near-high-point|131072|3|park
 greenvale-reservoir-near-melton|32|3|reservoir
@@ -9216,6 +11034,9 @@ grenelle-reservoir-near-sevres|32|3|reservoir
 grenelle-reservoir-near-suresnes|32|3|reservoir
 grenelle-reservoir-near-villejuif|32|3|reservoir
 grenelle-reservoir-near-vincennes|32|3|reservoir
+grenen-near-frederikshavn|4096|3|headland
+grenen-near-hjorring|4096|3|headland
+grenen-near-skagen|4096|3|headland
 gressholmen-near-oslo|64|3|island
 gresvatnet-near-mo-i-rana|32|3|reservoir
 grevelingen-near-bergen-op-zoom|65568|3|lake
@@ -9229,6 +11050,8 @@ greynolds-park-near-coral-springs|131072|3|park
 greynolds-park-near-davie|131072|3|park
 greynolds-park-near-miami-gardens|131072|3|park
 greynolds-park-near-miramar|131072|3|park
+greys-beach-near-geraldton|16|3|beach
+gribovo-near-aigio|16|3|beach
 gribskov-near-copenhagen|16384|3|forest
 gribskov-near-frederiksberg|16384|3|forest
 gribskov-near-frederiksvaerk|16384|3|forest
@@ -9306,6 +11129,8 @@ grosser-hundstod-near-saalfelden-am-steinernen-meer|1024|3|mountain
 grosser-inselsberg-near-eisenach|1024|3|mountain
 grosser-inselsberg-near-gotha|1024|3|mountain
 grosser-inselsberg-near-jena|1024|3|mountain
+grosser-jasmunder-bodden-near-greifswald|4128|3|lagoon
+grosser-jasmunder-bodden-near-stralsund|4128|3|lagoon
 grosser-kornberg-near-hof|1024|3|mountain
 grosser-luckner-nordostl-oppen-near-merzig|65536|3|Special Area of Conservation
 grosser-mythen-near-schwyz|1024|3|mountain
@@ -9329,6 +11154,8 @@ grosses-walsertal-near-bludenz|2048|3|side valley
 grossglockner-near-lienz|1024|3|highest point
 grossglockner-near-zell-am-see|1024|3|highest point
 grossjoberget-near-hudiksvall|65536|3|nature reserve
+grossklutzhoved-near-lubeck|65536|3|geotope
+grossklutzhoved-near-wismar|65536|3|geotope
 grossraschener-see-near-senftenberg|32|3|lake
 grossvenediger-near-kitzbuhel|1024|3|mountain
 grote-geule-near-antwerp|32|3|lake
@@ -9368,6 +11195,7 @@ grujchanskyy-near-konotop|65536|3|protected area
 grunanlage-gartenstrae-near-tubingen|131072|2|
 grunanlage-willersweg-near-norderstedt|131072|2|
 grunberg-near-gmunden|1024|3|mountain
+grundartangi-near-reykjavik|4096|3|cape
 gruner-see-near-bruck-an-der-mur|32|3|lake
 gruner-see-near-kapfenberg|32|3|lake
 grunes-band-sachsen-bayern-near-hof|65536|3|Special Area of Conservation
@@ -9375,6 +11203,7 @@ grunewald-near-berlin|16384|3|forest
 grunewald-near-esch-sur-alzette|16384|3|forest
 grunewald-near-luxembourg-city|16384|3|forest
 grunewald-near-potsdam|16384|3|forest
+grunnafjordur-near-reykjavik|4096|3|cove
 gruta-da-lagoa-azul-state-park-near-cuiaba|131072|3|state park
 gruta-da-nascente-do-almonda-near-torres-novas|2|3|grotto
 gruta-de-avecasta-near-pombal|2|3|cave
@@ -9382,6 +11211,7 @@ gruta-de-las-maravillas-near-huelva|2|3|show cave
 grutas-da-moeda-near-marinha-grande|2|3|cave
 grutas-da-moeda-near-ourem|2|3|cave
 grutas-de-bustamante-near-laredo|2|3|show cave
+grutas-de-garcia-near-monterrey|2|3|show cave
 grutas-de-mira-de-aire-near-ourem|2|3|cave
 grutas-de-mira-de-aire-near-rio-maior|2|3|cave
 grutas-de-mira-de-aire-near-torres-novas|2|3|cave
@@ -9398,6 +11228,7 @@ gschwandtkopf-near-telfs|1024|3|mountain
 gsieg-obere-mahder-near-lustenau|65536|3|protected area
 guadalquivir-marshes-near-huelva|512|3|wetland
 guadalquivir-river-near-cordoba-spain|256|3|gold river
+guadalupe-hill-near-bogota|1024|3|mountain
 guadalupe-hill-near-hogares-soacha|1024|3|mountain
 guadalupe-hill-near-villavicencio|1024|3|mountain
 guadalupe-mountains-national-park-near-el-paso|32768|3|National Park of the United States
@@ -9462,13 +11293,30 @@ guelph-lake-near-kitchener|32|3|reservoir
 guelph-lake-near-waterloo-ontario|32|3|reservoir
 gufelstock-near-glarus|1024|3|mountain
 gugamal-national-park-near-indore|32768|3|national park
+guidaloca-near-alcamo|4112|3|beach
+guidaloca-near-marsala|4112|3|beach
+guidaloca-near-palermo|4112|3|beach
+guidaloca-near-trapani|4112|3|beach
 guide-rock-near-grand-island|1024|3|mountain
 guide-rock-near-salina|1024|3|mountain
 guifeng-near-nanchang|1024|3|mountain
+guigui-near-las-palmas|65552|3|beach
 guild-s-lake-near-beaverton|32|3|lake
 guild-s-lake-near-portland|32|3|lake
 guild-s-lake-near-vancouver-us|32|3|lake
+guincho-beach-near-agualva-cacem|16|3|beach
+guincho-beach-near-almada|16|3|beach
+guincho-beach-near-barreiro|16|3|beach
 guincho-beach-near-cascais|16|3|beach
+guincho-beach-near-lisbon|16|3|beach
+guincho-beach-near-loures|16|3|beach
+guincho-beach-near-montijo|16|3|beach
+guincho-beach-near-odivelas|16|3|beach
+guincho-beach-near-queluz|16|3|beach
+guincho-beach-near-seixal|16|3|beach
+guincho-beach-near-setubal|16|3|beach
+guincho-beach-near-sintra|16|3|beach
+guindy-national-park-near-chennai|32768|3|national park
 gulacs-near-keszthely|1024|3|mountain
 gulaga-national-park-near-moruya|32768|3|national park of Australia
 gulasen-near-hudiksvall|65536|3|nature reserve
@@ -9478,12 +11326,18 @@ gulf-islands-national-park-reserve-near-white-rock|32768|3|national park
 gulf-islands-national-seashore-near-pensacola|4112|3|United States National Seashore
 gulf-of-almeria-near-roquetas-de-mar|4096|3|gulf
 gulf-of-aqaba-near-duba|4096|3|bay
+gulf-of-heraklion-near-heraklion|4096|3|cove
+gulf-of-heraklion-near-rethymno|4096|3|cove
+gulf-of-honduras-near-guatemala-city|4096|3|bay
 gulf-of-kalamita-near-yevpatoriia|4096|3|bay
+gulf-of-mannar-near-colombo|4096|3|bay
 gulf-of-morbihan-near-lorient|4096|3|bay
 gulf-of-morbihan-near-vannes|4096|3|bay
 gulf-of-odesa-near-odesa|4096|3|bay
 gulf-of-orosei-and-gennargentu-national-park-near-olbia|98304|3|national park
+gulf-of-panama-near-panama-city|4096|3|gulf
 gulf-of-porto-near-ajaccio|4096|3|bay
+gulf-of-salwah-near-manama|4096|3|gulf
 gulf-of-squillace-near-catanzaro|4096|3|gulf
 gulf-of-taranto-near-brindisi|4096|3|gulf
 gulf-of-taranto-near-taranto|4096|3|gulf
@@ -9492,8 +11346,17 @@ gulf-state-park-near-mobile|131072|2|
 guling-near-fuzhou|1024|3|mountain
 guling-near-quanzhou|1024|3|mountain
 gull-lake-near-red-deer|32|3|lake
+gullane-sands-near-dundee|16|3|beach
+gullane-sands-near-edinburgh|16|3|beach
+gullane-sands-near-glenrothes|16|3|beach
+gullane-sands-near-kirkcaldy|16|3|beach
+gullane-sands-near-perth-uk|16|3|beach
 gullfjellet-near-bergen|1024|3|mountain
 gullkronene-near-tonsberg|65536|3|nature reserve
+gullmarn-near-kungalv|4096|3|fjord
+gullmarn-near-trollhattan|4096|3|fjord
+gullmarn-near-uddevalla|4096|3|fjord
+gullmarn-near-vanersborg|4096|3|fjord
 gun-island-near-geraldton|64|3|island
 gun-lake-near-kalamazoo|32|3|lake
 gunbower-national-park-near-deniliquin|32768|3|national park of Australia
@@ -9511,6 +11374,7 @@ gunton-meadow-near-great-yarmouth|65536|3|nature reserve
 gunton-meadow-near-lowestoft|65536|3|nature reserve
 gunton-warren-and-corton-woods-near-great-yarmouth|65536|3|nature reserve
 gunton-warren-and-corton-woods-near-lowestoft|65536|3|nature reserve
+gunung-angsi-near-kuala-lumpur|1024|3|mountain
 guolin-reservoir-near-kunming|32|3|reservoir
 gura-apelor-dam-near-deva|0|0|
 gurgaletsch-near-chur|1024|3|mountain
@@ -9533,6 +11397,7 @@ gutierrez-lake-near-bariloche|32|3|glacial lake
 gutmanis-cave-near-sigulda|2|3|cave
 gutske-peklo-near-trinec|65536|3|nature reserve in the Czech Republic
 guttenberger-wald-near-wurzburg|0|0|
+guvano-near-massa|16|3|beach
 guy-fawkes-river-national-park-near-glen-innes|32768|3|national park of Australia
 guy-fawkes-river-national-park-near-grafton|32768|3|national park of Australia
 gvaot-goral-near-beersheba|1024|3|mountain range
@@ -9545,6 +11410,7 @@ gwanaksan-near-pyeongtaek|1024|3|mountain
 gwanaksan-near-seongnam|1024|3|mountain
 gwanaksan-near-suwon|1024|3|mountain
 gwanaksan-near-yongin|1024|3|mountain
+gwangalli-beach-near-busan|16|3|beach
 gwangalli-beach-near-changwon|16|3|beach
 gwangalli-beach-near-gimhae|16|3|beach
 gwanggyosan-near-ansan|1024|3|mountain
@@ -9569,6 +11435,7 @@ gyeryongsan-near-cheonan|1024|3|mountain
 gyeryongsan-near-cheongju|1024|3|mountain
 gyeryongsan-near-sejong|1024|3|mountain
 gyeyangsan-near-gimpo|1024|3|mountain
+gyeyangsan-near-incheon|1024|3|mountain
 gyllyngvase-beach-near-truro|16|3|beach
 gympie-national-park-near-gympie|32768|3|national park of Australia
 gyomroi-furdoto-near-cegled|32|3|lake
@@ -9589,18 +11456,31 @@ haberge-nature-park-near-furth|196608|3|Naturpark
 habichtswald-near-kassel|1024|3|mountain range
 habrov-near-chrudim|65536|3|nature reserve in the Czech Republic
 habrova-sec-near-znojmo|65536|3|nature reserve in the Czech Republic
+hac-sa-beach-near-zhuhai|16|2|
 hachimantai-near-morioka|1152|3|stratovolcano
 hackensack-water-company-complex-near-hoboken|32|3|reservoir
 hackergrund-near-kulmbach|2048|3|valley
 hacksjon-near-lerum|32|3|lake
 hadera-forest-near-hadera|16384|3|forest
 hadera-forest-near-netanya|16384|3|forest
+haderslev-fjord-near-billund|4096|3|fjord
+haderslev-fjord-near-ribe|4096|3|fjord
+haderslev-fjord-near-tonder|4096|3|fjord
+haderslev-fjord-near-vejle|4096|3|fjord
 hadleigh-country-park-near-southend-on-sea|131072|3|country park
 hadrians-wall-near-carlisle|0|0|
 hadrians-wall-near-newcastle-upon-tyne|0|0|
+haeundae-beach-near-busan|0|0|
 haeundae-beach-near-changwon|0|0|
 haeundae-beach-near-geoje|0|0|
 haeundae-beach-near-gimhae|0|0|
+hafrsfjord-near-egersund|4096|3|fjord
+hafrsfjord-near-haugesund-municipality|4096|3|fjord
+hafrsfjord-near-karmoy-municipality|4096|3|fjord
+hafrsfjord-near-sandnes|4096|3|fjord
+hafrsfjord-near-sandnes-municipality|4096|3|fjord
+hafrsfjord-near-stavanger|4096|3|fjord
+hafrsfjord-near-stavanger-sandnes|4096|3|fjord
 haft-barm-lake-near-shiraz|32|3|lake
 haga-ekbackar-near-enkoping|65536|3|nature reserve
 hagatjern-near-drammen|32|3|lake
@@ -9629,6 +11509,12 @@ hainich-national-park-near-gottingen|32768|3|Nationalpark
 hainich-national-park-near-jena|32768|3|Nationalpark
 hainich-near-muhlhausen-thuringia|1024|3|mountain range
 hainich-near-weimar|1024|3|mountain range
+hains-point-near-alexandria-va|135168|3|cape
+hains-point-near-annapolis|135168|3|cape
+hains-point-near-baltimore|135168|3|cape
+hains-point-near-rockville|135168|3|cape
+hains-point-near-washington-dc|135168|3|cape
+haixinsha-island-near-guangzhou|64|3|island
 haiyang-island-near-dalian|64|3|island
 haiyang-island-near-dandong|64|3|island
 haj-u-ase-near-as|1024|3|hill
@@ -9637,12 +11523,16 @@ hajla-near-novi-pazar|1024|3|mountain
 hajnacska-vrchovina-near-lucenec|1024|3|mountain range
 hajnoczy-cave-near-eger|2|3|cave
 hajska-jaskyna-near-prievidza|65538|3|cave
+hakata-bay-near-fukuoka|4096|3|bay
 hakkeijima-near-yokohama|0|0|
 hakkeijima-near-yokosuka|0|0|
 hakkoda-mountains-near-aomori|1152|3|volcanic group
 hakkoda-mountains-near-hachinohe|1152|3|volcanic group
 hakkoda-mountains-near-hirosaki|1152|3|volcanic group
 hakoya-near-tromso-municipality|64|3|island
+hakshatot-beach-ashdod-near-ashdod|16|3|beach
+hakshatot-beach-ashdod-near-ashkelon|16|3|beach
+hakshatot-beach-ashdod-near-rehovot|16|3|beach
 hakusan-national-park-near-kanazawa|32768|3|national park
 hala-l-badr-near-al-ula|1024|3|mountain
 hala-l-badr-near-tabuk|1024|3|mountain
@@ -9696,6 +11586,9 @@ hallsdammen-near-skovde|32|3|lake
 hallsjon-near-vanersborg|32|3|lake
 hallyeohaesang-national-park-near-geoje|32768|2|
 hallyeohaesang-national-park-near-yeosu|32768|2|
+hals-strand-near-aalborg|16|2|
+hals-strand-near-frederikshavn|16|2|
+hals-strand-near-hadsund|16|2|
 halson-near-skelleftea|64|3|tied island
 halvovsky-potok-near-vsetin|65536|3|nature reserve in the Czech Republic
 halych-national-nature-park-near-ivano-frankivsk|32768|3|national nature park
@@ -9707,6 +11600,7 @@ ham-wall-near-taunton|65536|3|nature reserve
 ham-wall-near-yeovil|65536|3|nature reserve
 hamaguri-dake-near-kurume|1024|3|mountain
 hamaguri-dake-near-saga|1024|3|mountain
+hamasaka-kenmin-sun-beach-near-tottori|16|3|beach
 hambach-forest-near-bergheim|16384|3|forest
 hambach-forest-near-cologne|16384|3|forest
 hambach-forest-near-eschweiler|16384|3|forest
@@ -9722,7 +11616,9 @@ hameginim-wood-near-rehovot|16384|3|forest
 hamel-und-nebenbache-near-hamelin|65536|3|Special Area of Conservation
 hamelin-island-near-margaret-river|64|3|island
 hamersley-range-near-karratha|0|0|
+hametzuda-beach-near-ashkelon|16|3|beach
 hamilton-beach-near-burlington|16|3|beach
+hamilton-beach-near-hamilton-ontario|16|3|beach
 hamilton-beach-near-oakville|16|3|beach
 hamilton-park-near-waterbury|131072|3|park
 hamilton-pool-preserve-near-georgetown|1|3|waterfall
@@ -9737,11 +11633,15 @@ hampton-national-park-near-dalby|32768|3|national park of Australia
 hampton-national-park-near-gatton|32768|3|national park of Australia
 hampton-national-park-near-toowoomba|32768|3|national park of Australia
 hampton-park-near-north-charleston|131072|3|urban park
+hamresanden-near-arendal|16|3|beach
+hamresanden-near-grimstad|16|3|beach
+hamresanden-near-kristiansand|16|3|beach
 hamrnicky-mokrad-near-marianske-lazne|65536|3|nature reserve in the Czech Republic
 hamun-e-helmand-near-zahedan|32|2|
 hamun-e-jaz-murian-near-zahedan|32|3|salt lake
 hamun-lake-near-zahedan|65536|3|biosphere reserve
 hamworthy-beach-near-poole|16|3|beach
+han-river-near-wuhan|256|3|river
 hanakik-lake-near-bat-yam|32|3|artificial lake
 hanakik-lake-near-holon|32|3|artificial lake
 hanakik-lake-near-rishon-lezion|32|3|artificial lake
@@ -9755,11 +11655,25 @@ hanging-rock-near-kyneton|65536|3|nature reserve
 hanging-rock-state-park-near-cary|131072|3|North Carolina state park
 hanging-rock-state-park-near-greensboro|131072|3|North Carolina state park
 hanging-rock-state-park-near-winston-salem|131072|3|North Carolina state park
+hangklip-near-cape-town|5120|3|mountain
+hangklip-near-stellenbosch|5120|3|mountain
 hangu-pass-near-luoyang|1024|3|mountain pass
 hangwald-puckinger-leiten-near-traun|65536|3|nature reserve
 hangwalder-ritzlhof-near-traun|65536|3|nature reserve
+hangzhou-bay-near-shanghai|4096|3|bay
 hanko-peninsula-near-hanko|4096|3|peninsula
+hanlan-s-point-beach-near-ajax|16|3|beach
+hanlan-s-point-beach-near-brampton|16|3|beach
+hanlan-s-point-beach-near-burlington|16|3|beach
+hanlan-s-point-beach-near-hamilton-ontario|16|3|beach
+hanlan-s-point-beach-near-markham|16|3|beach
+hanlan-s-point-beach-near-milton|16|3|beach
+hanlan-s-point-beach-near-mississauga|16|3|beach
+hanlan-s-point-beach-near-oakville|16|3|beach
+hanlan-s-point-beach-near-pickering|16|3|beach
+hanlan-s-point-beach-near-richmond-hill|16|3|beach
 hanlan-s-point-beach-near-toronto|16|3|beach
+hanlan-s-point-beach-near-vaughan|16|3|beach
 hanmer-springs-near-christchurch|0|0|
 hanna-lake-near-quetta|32|3|reservoir
 hanna-urak-waterfall-near-quetta|1|3|waterfall
@@ -9777,6 +11691,7 @@ hansando-near-geoje|64|3|island
 hanshiqiao-wetland-near-tangshan|66048|3|wetland
 hanskalbsand-near-stade|64|3|island
 hanssenspark-near-vilvoorde|131072|3|park
+hantan-river-near-incheon|256|3|river
 hanusovicka-vrchovina-near-sumperk|1024|3|mountain range
 haoya-near-drobak|64|3|island
 haparanda-archipelago-national-park-near-kemi|32768|3|national park
@@ -9798,6 +11713,7 @@ harbor-island-near-bellevue|0|0|
 harby-hill-wood-near-grantham|16384|3|forest
 hard-labor-creek-state-park-near-athens-us|131072|2|
 hard-labor-creek-state-park-near-macon|131072|2|
+hardangerfjord-near-bergen|4096|3|bay
 hardberg-near-rastatt|1024|3|mountain
 hardcastle-crags-near-bradford|4096|3|cliff
 harden-moor-near-halifax-uk|65536|3|moorland
@@ -9806,6 +11722,7 @@ harderkulm-near-interlaken|1024|3|mountain
 hardt-near-bergisch-gladbach|65536|3|Naturschutzgebiet
 hardt-near-hagen|65536|3|Naturschutzgebiet
 hardter-wald-near-viersen|16384|3|forest
+hare-ness-near-aberdeen|4096|3|cape
 haren-park-near-vilvoorde|131072|3|park
 hareskoven-near-copenhagen|16384|3|forest
 harghita-madaras-near-miercurea-ciuc|1024|3|summit
@@ -9824,6 +11741,10 @@ harjulampi-near-rovaniemi|32|3|lake or pond
 harlan-county-reservoir-near-grand-island|32|3|reservoir
 harlem-meer-near-hackensack|32|3|lake
 harlem-meer-near-hoboken|32|3|lake
+harlingen-beach-near-enkhuizen|16|3|beach
+harlingen-beach-near-noordoostpolder|16|3|beach
+harlingen-beach-near-sneek|16|3|beach
+harlingen-beach-near-urk|16|3|beach
 harmanecka-cave-near-martin|65538|3|show cave
 harmankaya-canyon-nature-park-near-kutahya|196608|3|nature park
 harpers-ferry-national-historical-park-near-frederick-md|131072|1|
@@ -9834,6 +11755,7 @@ harrat-al-birk-near-bisha|1024|3|mountain
 harrat-al-birk-near-khamis-mushait|1024|3|mountain
 harrat-khaybar-near-al-ula|1024|3|mountain
 harrat-khaybar-near-ha-il|1024|3|mountain
+harrat-khaybar-near-medina|1024|3|mountain
 harrat-khaybar-near-yanbu|1024|3|mountain
 harrat-rahat-near-mecca|1024|3|mountain
 harrat-rahat-near-ta-if|1024|3|mountain
@@ -9849,8 +11771,20 @@ hart-island-near-hempstead|64|3|island
 hart-island-near-hoboken|64|3|island
 hart-island-near-norwalk-us|64|3|island
 hart-miller-island-state-park-maryland-near-baltimore|131072|2|
+hartbeespoort-reservoir-near-johannesburg|32|3|reservoir
+hartbeespoort-reservoir-near-pretoria|32|3|reservoir
 hartberger-gmoos-near-oberwart|65536|3|nature reserve
 hartensbergsee-near-vechta|32|3|lake
+hartland-point-near-barnstaple|4096|3|cape
+hartlepool-submerged-forest-near-darlington|69632|3|coast
+hartlepool-submerged-forest-near-durham|69632|3|coast
+hartlepool-submerged-forest-near-gateshead|69632|3|coast
+hartlepool-submerged-forest-near-hartlepool|69632|3|coast
+hartlepool-submerged-forest-near-middlesbrough|69632|3|coast
+hartlepool-submerged-forest-near-newcastle-upon-tyne|69632|3|coast
+hartlepool-submerged-forest-near-south-shields|69632|3|coast
+hartlepool-submerged-forest-near-stockton-on-tees|69632|3|coast
+hartlepool-submerged-forest-near-sunderland|69632|3|coast
 hartmannsdorfer-forst-near-zwickau|16384|3|forest
 hartsfeldsee-near-heidenheim-an-der-brenz|32|3|reservoir
 hartshead-pike-near-manchester|1024|3|mountain
@@ -9911,10 +11845,16 @@ haukivesi-near-varkaus|32|3|lake
 haulashore-island-near-nelson|64|3|island
 haulbowline-near-cork|64|3|island
 haulover-beach-near-boca-raton|0|0|
+haulover-beach-near-davie|0|0|
+haulover-beach-near-fort-lauderdale|0|0|
+haulover-beach-near-hialeah|0|0|
 haulover-beach-near-hollywood|0|0|
+haulover-beach-near-miami|0|0|
 haulover-beach-near-miami-beach|0|0|
 haulover-beach-near-miami-gardens|0|0|
+haulover-beach-near-miramar|0|0|
 haulover-beach-near-pembroke-pines|0|0|
+haulover-beach-near-pompano-beach|0|0|
 haulover-park-near-coral-springs|131072|3|park
 haulover-park-near-davie|131072|3|park
 haulover-park-near-miami-gardens|131072|3|park
@@ -9932,23 +11872,32 @@ haute-vallee-de-chevreuse-regional-natural-park-near-paris|196608|3|protected ar
 hautes-fagnes-nature-reserve-near-liege|1536|3|wetland
 hautes-fagnes-near-verviers|65536|3|nature reserve
 hauz-i-shamsi-near-new-delhi|32|3|reservoir
+haverigg-point-near-barrow-in-furness|4096|3|cape
+haverigg-point-near-kendal|4096|3|cape
+haverigg-point-near-lancaster|4096|3|cape
 haverstadter-berg-near-minden|1024|3|mountain
 havlickovy-sady-near-teplice|131072|3|park
 havoya-near-hammerfest|64|3|island
 havran-near-tachov|1024|3|mountain
 havranie-vrchy-near-spisska-nova-ves|1024|3|mountain range
 havranka-near-havlickuv-brod|65536|3|nature reserve in the Czech Republic
+havstensfjorden-near-kungalv|4096|3|fjord
+havstensfjorden-near-trollhattan|4096|3|fjord
 havstensfjorden-near-uddevalla|65536|3|nature reserve
+havstensfjorden-near-vanersborg|4096|3|fjord
 haw-river-state-park-near-durham-us|131072|3|North Carolina state park
 haw-river-state-park-near-high-point|131072|3|North Carolina state park
 hawaii-near-hilo|192|3|volcanic island
 hawaii-volcanoes-national-park-near-hilo|0|0|
 hawaiian-emperor-seamount-chain-near-hilo|1024|3|mountain range
+hawar-islands-near-doha|64|3|archipelago
+hawar-islands-near-manama|64|3|archipelago
 hawk-mountain-near-reading-us|1024|3|mountain
 hawk-mountain-sanctuary-near-allentown|65536|3|protected area
 hawk-mountain-sanctuary-near-harrisburg|65536|3|protected area
 hawk-springs-state-recreation-area-near-cheyenne|131072|3|recreation area
 hawke-s-bay-beach-near-hyderabad-pk|4112|3|beach
+hawke-s-bay-beach-near-karachi|4112|3|beach
 haxhi-ali-cave-near-vlore|2|3|solutional cave
 hay-wood-whepstead-near-bury-st-edmunds|16384|3|forest
 hayachine-quasi-national-park-near-morioka|32768|3|quasi-national park of Japan
@@ -9985,6 +11934,9 @@ hazzi-near-kilis|1024|3|mountain
 headlands-beach-state-park-near-cleveland|131072|3|Ohio state park
 headpile-eyot-near-bracknell|320|3|river island
 headpile-eyot-near-maidenhead|320|3|river island
+heads-of-ayr-near-ayr-uk|4096|3|cape
+heads-of-ayr-near-dumbarton|4096|3|cape
+heads-of-ayr-near-kilmarnock|4096|3|cape
 healing-springs-in-terpinnya-near-melitopol|65536|2|
 heart-island-near-brockville|320|3|river island
 heart-lake-conservation-area-near-brampton|65536|3|protected area
@@ -10007,11 +11959,33 @@ hedenham-wood-near-lowestoft|16384|3|forest
 heeder-see-near-meppen|32|3|lake
 heemtuin-near-capelle-aan-den-ijssel|131072|3|park
 heemtuin-zaandam-near-ijmuiden|131072|2|
+heerderstrand-near-almere|131088|3|beach
+heerderstrand-near-amersfoort|131088|3|beach
+heerderstrand-near-apeldoorn|131088|3|beach
+heerderstrand-near-barneveld|131088|3|beach
+heerderstrand-near-deventer|131088|3|beach
+heerderstrand-near-dronten|131088|3|beach
+heerderstrand-near-ede|131088|3|beach
+heerderstrand-near-enkhuizen|131088|3|beach
+heerderstrand-near-harderwijk|131088|3|beach
+heerderstrand-near-hilversum|131088|3|beach
+heerderstrand-near-huizen|131088|3|beach
+heerderstrand-near-kampen|131088|3|beach
+heerderstrand-near-lelystad|131088|3|beach
+heerderstrand-near-naarden|131088|3|beach
+heerderstrand-near-noordoostpolder|131088|3|beach
+heerderstrand-near-oldebroek|131088|3|beach
+heerderstrand-near-soest-nl|131088|3|beach
+heerderstrand-near-urk|131088|3|beach
+heerderstrand-near-veenendaal|131088|3|beach
+heerderstrand-near-voorst|131088|3|beach
+heerderstrand-near-zwolle|131088|3|beach
 heerter-see-near-salzgitter|65536|3|Special Protection Area
 heeseberg-near-helmstedt|1024|3|mountain ridge
 hegau-near-konstanz|66560|3|mountain
 hegau-near-schaffhausen|66560|3|mountain
 hegau-near-tuttlingen|66560|3|mountain
+hegau-near-villingen-schwenningen|66560|3|mountain
 hegeler-wald-near-cloppenburg|16384|3|forest
 hegyestu-near-ajka|65536|3|geopark
 hegyestu-near-keszthely|65536|3|geopark
@@ -10040,9 +12014,13 @@ heisinger-ruhraue-near-essen|65536|3|Special Area of Conservation
 heislerville-wildlife-management-area-near-dover|0|0|
 heissberg-near-feldbach|1024|3|mountain
 heissberg-near-furstenfeld|1024|3|mountain
+hel-peninsula-near-gdansk|4096|3|headland
+hel-peninsula-near-gdynia|4096|3|headland
 hel-peninsula-near-sopot|4096|3|headland
+hel-peninsula-near-wejherowo|4096|3|headland
 helan-mountains-near-yinchuan|66560|3|mountain range
 helderberg-escarpment-near-albany-ny|0|0|
+helderberg-nature-reserve-near-stellenbosch|65536|3|nature reserve
 helemba-island-near-esztergom|320|3|river island
 helena-national-forest-near-great-falls|81920|3|proclaimed forest
 helena-national-park-near-northam|32768|3|national park of Australia
@@ -10078,7 +12056,7 @@ hemlock-overlook-regional-park-near-manassas|131072|3|regional park
 hemlock-reservoir-near-norwalk-us|32|3|reservoir
 hemmelsdorfer-see-near-lubeck|32|3|lake
 hempolder-near-heerhugowaard|65536|3|nature reserve
-hempstead-lake-state-park-near-babylon|0|0|
+hempstead-lake-state-park-near-babylon|131072|3|New York state park
 hemson-near-harnosand|64|3|island
 hemsta-near-enkoping|65536|3|nature reserve
 henares-river-near-alcala-de-henares|256|3|river
@@ -10087,6 +12065,10 @@ hene-skultorp-near-skovde|65536|3|nature reserve
 hengam-island-near-kumzar|64|3|island
 hengchong-reservoir-near-kunming|32|3|reservoir
 hengistbury-head-near-bournemouth|4096|3|headland
+hengistbury-head-near-eastleigh|4096|3|headland
+hengistbury-head-near-portsmouth|4096|3|headland
+hengistbury-head-near-southampton|4096|3|headland
+hengistbury-head-near-winchester|4096|3|headland
 hengqin-near-jiangmen|64|3|island
 hengqin-near-zhongshan|64|3|island
 hengqin-near-zhuhai|64|3|island
@@ -10180,6 +12162,8 @@ heuchelberg-near-heilbronn|1024|3|mountain range
 heviz-springcave-near-nagykanizsa|2|3|cave
 heviz-springcave-near-zalaegerszeg|2|3|cave
 hevossaari-near-oulu|64|3|island
+hewitt-point-near-milwaukee|4096|3|cape
+hewitt-point-near-waukesha|4096|3|cape
 hexbachtal-near-essen|2048|3|valley
 heybeliada-near-gebze|64|3|island
 heybeliada-near-izmit|64|3|island
@@ -10197,12 +12181,21 @@ hidden-creek-park-east-near-hillsboro|131072|3|park
 hiddensee-near-stralsund|0|0|
 hidra-near-egersund|64|3|island
 hiesberg-near-melk|1024|3|mountain
+hietaniemi-beach-near-espoo|131088|3|beach
+hietaniemi-beach-near-helsinki|131088|3|beach
+hietaniemi-beach-near-jarvenpaa|131088|3|beach
 hietaniemi-beach-near-kauniainen|131088|3|beach
+hietaniemi-beach-near-kerava|131088|3|beach
+hietaniemi-beach-near-kirkkonummi|131088|3|beach
+hietaniemi-beach-near-klaukkala|131088|3|beach
+hietaniemi-beach-near-tuusula|131088|3|beach
+hietaniemi-beach-near-vantaa|131088|3|beach
 hiezhalskaje-near-lida|32|3|reservoir
 hiezhalskaje-near-navahrudak|32|3|reservoir
 hiezhalskaje-near-slonim|32|3|reservoir
 higashishiiya-falls-near-oita-shi|1|3|waterfall
 higashiyoka-higata-near-saga|65536|3|wildlife refuge
+higgins-beach-near-portland-me|16|3|beach
 high-bullough-reservoir-near-wigan|32|3|reservoir
 high-cliff-state-park-near-green-bay|131072|2|
 high-coast-near-sundsvall|0|0|
@@ -10254,7 +12247,9 @@ highlandtown-lake-near-hamilton-us|32|3|lake
 highline-botanical-garden-near-renton|0|0|
 highline-lake-state-park-near-grand-junction|131072|2|
 hiidenvesi-near-lohja|32|3|lake
+hijaz-mountains-near-jeddah|1024|3|mountain range
 hijaz-mountains-near-mecca|1024|3|mountain range
+hijaz-mountains-near-medina|1024|3|mountain range
 hijaz-mountains-near-ta-if|1024|3|mountain range
 hijaz-mountains-near-turubah|1024|3|mountain range
 hikoshima-near-kitakyushu|64|3|tied island
@@ -10274,6 +12269,7 @@ hill-of-sangla-near-gujranwala|1024|3|hill
 hill-of-sangla-near-gujrat|1024|3|hill
 hill-of-sangla-near-jhang|1024|3|hill
 hill-of-sangla-near-kasur|1024|3|hill
+hill-of-sangla-near-lahore|1024|3|hill
 hill-of-sangla-near-multan|1024|3|hill
 hill-of-sangla-near-sahiwal|1024|3|hill
 hill-of-sangla-near-sargodha|1024|3|hill
@@ -10282,12 +12278,30 @@ hill-of-tara-near-drogheda|0|0|
 hillcrest-park-near-fullerton|131072|3|park
 hillman-state-park-near-pittsburgh|131072|3|Pennsylvania state park
 hillsboro-beach-near-coral-springs|16|3|beach
+hillsboro-beach-near-davie|16|3|beach
+hillsboro-beach-near-fort-lauderdale|16|3|beach
+hillsboro-beach-near-hialeah|16|3|beach
+hillsboro-beach-near-hollywood|16|3|beach
+hillsboro-beach-near-miami|16|3|beach
+hillsboro-beach-near-miami-gardens|16|3|beach
+hillsboro-beach-near-miramar|16|3|beach
+hillsboro-beach-near-pembroke-pines|16|3|beach
 hillsboro-beach-near-pompano-beach|16|3|beach
 hillsborough-river-state-park-near-clearwater|131072|3|Florida state park
 hillsborough-river-state-park-near-lakeland|131072|3|Florida state park
 hillsborough-river-state-park-near-st-petersburg|131072|3|Florida state park
 hillsborough-river-state-park-near-tampa|131072|3|Florida state park
 hillsdale-lake-near-olathe|32|3|reservoir
+hilton-beach-tel-aviv-near-bat-yam|16|3|beach
+hilton-beach-tel-aviv-near-bnei-brak|16|3|beach
+hilton-beach-tel-aviv-near-hadera|16|3|beach
+hilton-beach-tel-aviv-near-holon|16|3|beach
+hilton-beach-tel-aviv-near-netanya|16|3|beach
+hilton-beach-tel-aviv-near-petah-tikva|16|3|beach
+hilton-beach-tel-aviv-near-ramat-gan|16|3|beach
+hilton-beach-tel-aviv-near-ramla|16|3|beach
+hilton-beach-tel-aviv-near-rishon-lezion|16|3|beach
+hilton-beach-tel-aviv-near-tel-aviv|16|3|beach
 hilton-falls-conservation-area-near-milton|65536|3|protected area
 hilton-falls-conservation-area-near-mississauga|65536|3|protected area
 himalayan-subtropical-pine-forests-near-chandigarh|16384|3|forest
@@ -10297,19 +12311,24 @@ hindens-rev-near-lidkoping|65536|3|nature reserve
 hindmarsh-island-near-goolwa|320|3|river island
 hindmarsh-island-near-murray-bridge|320|3|river island
 hindmarsh-island-near-victor-harbor|320|3|river island
+hindon-river-near-delhi|256|3|river
 hindsen-near-varnamo|65568|3|lake
 hindu-kush-near-mardan|1024|3|mountain range
 hindu-kush-near-peshawar|1024|3|mountain range
+hinkley-point-near-bristol|4096|3|headland
 hinnoya-near-harstad|64|3|island
 hinomine-omiko-regional-park-near-tokushima|131072|3|regional park
 hinsbecker-bruch-near-viersen|32|3|lake
+hinsby-beach-near-hobart|16|3|beach
 hinsby-beach-near-kingston-au|16|3|beach
+hinsby-beach-near-new-norfolk|16|3|beach
 hinterer-seelenkogel-near-merano|1024|3|mountain
 hinteri-egg-near-basel|1024|3|mountain
 hinteri-egg-near-liestal|1024|3|mountain
 hinteri-egg-near-olten|1024|3|mountain
 hipodromo-beach-near-melilla|16|3|beach
 hippie-hollow-park-near-round-rock|131072|3|county park
+hira-near-jeddah|2|3|cave
 hirbovat-forest-near-bender|16384|3|forest
 hirbovat-forest-near-causeni|16384|3|forest
 hirbovat-forest-near-tiraspol|16384|3|forest
@@ -10335,11 +12354,17 @@ hisehope-reservoir-near-gateshead|32|3|reservoir
 hisehope-reservoir-near-south-shields|32|3|reservoir
 hispaniola-near-la-vega|64|3|island
 hispaniola-near-santiago-de-los-caballeros|64|3|island
+hjarbaek-fjord-near-hadsund|69632|3|fjord
+hjarbaek-fjord-near-skive|69632|3|fjord
+hjarbaek-fjord-near-viborg|69632|3|fjord
 hjarn-near-horsens|64|3|island
 hjarno-near-skanderborg|64|3|island
 hjellevannet-near-skien|32|3|reservoir
+hjeltefjorden-near-bergen|4096|3|fjord
+hjerting-beach-near-esbjerg|16|3|beach
 hjertoya-near-molde-municipality|64|3|island
 hjortmarka-near-alingsas|65536|3|nature reserve
+hjorundfjorden-near-alesund|4096|3|fjord
 hjuls-near-randers|32|3|lake
 hlboca-near-trnava|65536|3|national nature reserve
 hlboke-near-dunajska-streda|32|3|lake
@@ -10351,7 +12376,9 @@ hluboky-rybnik-near-chrudim|65536|3|nature reserve in the Czech Republic
 hlucinske-jezero-near-raciborz|32|3|lake
 hlushets-lake-near-nizhyn|65568|3|lake
 hlushets-lake-near-rechytsa|65568|3|lake
+hoan-kiem-lake-near-hanoi|32|3|lake
 hobbs-state-park-conservation-area-near-bentonville|131072|2|
+hobson-beach-near-whangarei|16|3|beach
 hobulaid-near-haapsalu|64|3|island
 hoces-del-cabriel-cabriel-river-gorges-near-albacete|256|3|river
 hoces-del-rio-duraton-natural-park-near-aranda-de-duero|196608|3|protected area
@@ -10383,6 +12410,8 @@ hodbarrow-nature-reserve-near-barrow-in-furness|65536|3|nature reserve
 hodrusska-hornatina-near-ziar-nad-hronom|1024|3|mountain range
 hoellental-near-wiener-neustadt|2052|3|slot canyon
 hof-hasharon-national-park-near-netanya|65536|3|nature reserve
+hog-point-near-alexandria-va|4096|3|cape
+hog-point-near-annapolis|4096|3|cape
 hoge-kempen-national-park-near-antwerp|32768|3|National Park Flanders
 hoge-kempen-national-park-near-bilzen|32768|3|National Park Flanders
 hoge-kempen-national-park-near-genk|32768|3|National Park Flanders
@@ -10419,6 +12448,12 @@ hoge-veluwe-national-park-near-zeist|98304|3|national park
 hoge-vijvers-bos-near-lommel|16384|3|forest
 hogestads-mosse-near-ystad|65536|3|nature reserve
 hogklint-near-visby|0|0|
+hogsfjord-near-egersund|4096|3|fjord
+hogsfjord-near-karmoy-municipality|4096|3|fjord
+hogsfjord-near-sandnes|4096|3|fjord
+hogsfjord-near-sandnes-municipality|4096|3|fjord
+hogsfjord-near-stavanger|4096|3|fjord
+hogsfjord-near-stavanger-sandnes|4096|3|fjord
 hohbaumle-near-biberach-an-der-riss|1024|3|mountain
 hohbruch-near-tongeren|65536|3|protected area
 hohe-acht-near-koblenz|1152|3|volcano
@@ -10485,6 +12520,7 @@ holick-near-hudiksvall|65536|3|nature reserve
 holiday-beach-hainan-near-haikou|16|3|beach
 holiday-beach-hainan-near-maoming|16|3|beach
 holiday-beach-hainan-near-zhanjiang|16|3|beach
+holkham-beach-near-norwich|16|3|beach
 holland-park-surrey-near-delta|131072|3|park
 hollberg-near-freistadt|1024|3|mountain
 hollenbeck-park-near-downey|131072|3|park
@@ -10541,6 +12577,7 @@ hondsrug-near-coevorden|1024|3|hill chain
 hondsrug-near-hoogeveen|1024|3|hill chain
 hondsrug-near-winschoten|1024|3|hill chain
 honeymoon-island-state-park-near-clearwater|131072|3|Florida state park
+hong-kong-wetland-park-near-shenzhen|65536|3|nature reserve
 hongar-near-vocklabruck|1024|3|mountain
 hongjiannao-national-nature-reserve-near-baotou|65536|3|nature reserve
 hongjiannao-national-nature-reserve-near-hohhot|65536|3|nature reserve
@@ -10559,6 +12596,8 @@ honshu-near-ueda|64|2|
 hontoon-island-state-park-near-daytona-beach|131072|3|Florida state park
 hontoon-island-state-park-near-sanford|131072|3|Florida state park
 hoog-soerensche-bosschen-near-voorst|16384|3|forest
+hook-head-near-waterford|4096|3|headland
+hook-head-near-wexford|4096|3|headland
 hook-of-holland-beach-near-westland|0|0|
 hooks-island-near-mountain-view|64|3|tidal island
 hooks-island-near-palo-alto|64|3|tidal island
@@ -10571,6 +12610,7 @@ hopewell-rocks-near-moncton|131072|3|provincial park of New Brunswick
 hopewell-rocks-provincial-park-near-riverview|131072|3|provincial park of New Brunswick
 hopkins-falls-near-warrnambool|1|3|waterfall
 hoppelberg-bei-langenstein-near-halberstadt|65536|3|Special Area of Conservation
+hora-lake-near-addis-ababa|32|3|lake
 hora-makovytsya-near-mukachevo|1024|3|mountain
 hora-stih-near-borsa|1024|3|mountain
 hora-stih-near-negresti-oas|1024|3|mountain
@@ -10609,7 +12649,14 @@ horodyliv-waterfall-near-khust|1|3|waterfall
 horschbach-near-schwabisch-hall|257|3|waterfall
 horse-chestnut-skliara-street-onufriivka-near-oleksandriia|0|0|
 horse-thief-lake-near-rapid-city|32|3|lake
+horsens-fjord-near-aarhus|4096|3|fjord
+horsens-fjord-near-billund|4096|3|fjord
+horsens-fjord-near-fredericia|4096|3|fjord
 horsens-fjord-near-horsens|4096|3|fjord
+horsens-fjord-near-kolding|4096|3|fjord
+horsens-fjord-near-odense|4096|3|fjord
+horsens-fjord-near-skanderborg|4096|3|fjord
+horsens-fjord-near-vejle|4096|3|fjord
 horseshoe-bend-reserve-near-whanganui|65536|3|nature reserve
 horseshoe-falls-near-buffalo|1|3|waterfall
 horseshoe-falls-near-chester|0|0|
@@ -10628,6 +12675,8 @@ horsetooth-mountain-near-greeley|1024|3|mountain
 horsetooth-reservoir-near-fort-collins|32|3|reservoir
 horsetooth-reservoir-near-greeley|32|3|reservoir
 horsey-beach-near-great-yarmouth|4112|3|beach
+horsey-beach-near-lowestoft|4112|3|beach
+horsey-beach-near-norwich|4112|3|beach
 horsikan-near-molndal|32|3|lake
 horska-beach-near-ruzomberok|16|3|beach
 horso-varsnas-near-kalmar|65536|3|nature reserve
@@ -10653,10 +12702,12 @@ hostyn-vsetin-mountains-near-zlin|1024|3|mountain range
 hosudar-oak-of-the-great-glade-near-bila-tserkva|0|0|
 hotaka-mountains-near-matsumoto|1024|3|mountain
 hotel-zone-near-cancun|0|0|
+hotoke-ga-ura-near-hakodate|4096|3|coast
 houat-near-vannes|0|0|
 houghtons-pond-near-brockton|32|3|lake
 houghtons-pond-near-quincy-us|32|3|lake
 houhai-near-baoding|32|3|lake
+houhai-near-beijing|32|3|lake
 houhai-near-cangzhou|32|3|lake
 houhai-near-tangshan|32|3|lake
 houhajarvi-near-sastamala|32|3|lake or pond
@@ -10667,15 +12718,25 @@ houtman-abrolhos-near-geraldton|64|3|archipelago
 hove-park-near-brighton-and-hove|131072|3|park
 hoverla-near-ivano-frankivsk|1024|3|mountain
 hoverla-near-kolomyia|1024|3|mountain
+hoveton-great-broad-near-great-yarmouth|4128|3|lagoon
+hoveton-great-broad-near-lowestoft|4128|3|lagoon
+hoveton-great-broad-near-norwich|4128|3|lagoon
+hovikodden-near-baerum-municipality|4096|3|headland
+hovikodden-near-drammen|4096|3|headland
+hovikodden-near-lorenskog|4096|3|headland
+hovikodden-near-oslo|4096|3|headland
+hovikodden-near-sandvika|4096|3|headland
 hovinsaari-near-kotka|64|3|island
 hovinsaari-near-loviisa|64|3|island
 hovinsholmen-near-hamar-municipality|64|3|island
 howell-mountains-near-fairfield|1024|3|mountain range
 howell-mountains-near-napa|1024|3|mountain range
 howell-mountains-near-vacaville|1024|3|mountain range
+howick-falls-near-durban|1|3|waterfall
 howth-head-near-swords|4096|3|peninsula
 howz-e-soltan-near-qom|32|3|salt lake
 hoya-of-guadix-near-guadix|2048|3|valley
+hozu-gorge-near-kyoto|2052|3|canyon
 hradecek-near-jindrichuv-hradec|65536|3|nature reserve in the Czech Republic
 hradisko-near-vyskov|1024|3|mountain
 hrbovsky-vrch-near-velke-mezirici|1024|3|mountain
@@ -10695,6 +12756,7 @@ hryshkiv-forest-poltava-near-myrhorod|16384|3|forest
 hryshkiv-forest-poltava-near-okhtyrka|16384|3|forest
 hryshkiv-forest-poltava-near-poltava|16384|3|forest
 huacshash-near-huacho|1024|3|mountain
+huai-tueng-thao-reservoir-near-chiang-mai|32|3|reservoir
 huairou-reservoir-near-tangshan|32|3|reservoir
 huangcai-reservoir-near-changde|32|3|reservoir
 huangcai-reservoir-near-changsha|32|3|reservoir
@@ -10702,7 +12764,9 @@ huangcai-reservoir-near-hengyang|32|3|reservoir
 huangcai-reservoir-near-yueyang|32|3|reservoir
 huanggang-dabieshan-near-fuyang|65536|3|UNESCO Global Geopark
 huanggang-dabieshan-near-huanggang|65536|3|UNESCO Global Geopark
+huanggang-dabieshan-near-wuhan|65536|3|UNESCO Global Geopark
 huanggang-dabieshan-near-xinyang|65536|3|UNESCO Global Geopark
+huangpu-river-near-shanghai|256|3|river
 huangteng-gorge-near-ganzhou|1024|3|mountain range
 huangteng-gorge-near-zhaoqing|1024|3|mountain range
 huanren-reservoir-near-changchun|32|3|reservoir
@@ -10710,6 +12774,7 @@ huanren-reservoir-near-dandong|32|3|reservoir
 huanren-reservoir-near-fushun|32|3|reservoir
 huanren-reservoir-near-shenyang|32|3|reservoir
 huantsan-near-huaraz|1024|3|mountain
+huascaran-national-park-near-lima|32768|2|
 huascaran-near-chimbote|1024|3|mountain
 huascaran-near-huaraz|1024|3|mountain
 huayna-picchu-near-abancay|1024|3|mountain
@@ -10717,8 +12782,10 @@ huayna-potosi-near-el-alto|1024|3|mountain
 huayna-potosi-near-la-paz|1024|3|mountain
 huaytapallana-mountain-range-near-huancayo|1024|3|mountain range
 huaytapallana-near-huancayo|1024|3|mountain
+hub-river-near-karachi|256|3|river
 hubei-shennongjia-near-xiangyang|98304|3|national park
 hubei-shennongjia-near-yichang|98304|3|national park
+hubenloch-near-villingen-schwenningen|132096|3|hill
 hucker-moor-near-herford|32|3|lake
 hudson-valley-near-new-york|2048|3|valley
 hueco-mountains-near-el-paso|1024|3|mountain range
@@ -10748,23 +12815,35 @@ huhnerstutze-near-wolfsberg|1024|3|mountain
 huibang-waterfall-near-andong|1|3|waterfall
 huisne-near-le-mans|256|3|river
 huiva-river-near-zhytomyr|256|3|river
+huk-near-baerum-municipality|16|2|
+huk-near-lorenskog|16|2|
+huk-near-oslo|16|2|
+huk-near-sandvika|16|2|
 huka-falls-near-taupo|1|3|waterfall
 hula-valley-near-acre|2048|3|valley
 hula-valley-near-safed|2048|3|valley
 hula-valley-near-tiberias|2048|3|valley
 hulan-near-lerum|65536|3|nature reserve
 hulfensberg-near-muhlhausen-thuringia|1024|3|mountain
+hulkari-near-paldiski|4096|3|cape
+hulkari-near-tallinn|4096|3|cape
 hult-near-kumla|65536|3|nature reserve
 hulu-island-near-haikou|0|0|
 hulvacky-les-near-ostrava|16384|3|urban forest
 hum-hill-near-celje|1024|3|mountain
 hum-hill-near-krsko|1024|3|mountain
 humantay-near-abancay|1024|3|mountain
+humedal-de-batuco-near-santiago|4640|3|lagoon
+humedal-de-batuco-near-villa-alemana|4640|3|lagoon
 humenske-podolie-near-humenne|1024|3|mountain range
 humenske-vrchy-near-humenne|1024|3|mountain range
 hummelsbutteler-moore-near-norderstedt|65536|3|protected area
 hummelsee-hamburg-hummelsbuttel-near-norderstedt|32|3|lake
 humpback-rock-near-charlottesville|1024|3|mountain
+humphrey-head-near-barrow-in-furness|5120|3|hill
+humphrey-head-near-blackpool|5120|3|hill
+humphrey-head-near-kendal|5120|3|hill
+humphrey-head-near-lancaster|5120|3|hill
 humphreys-peak-near-flagstaff|1024|3|mountain
 humrich-mountain-near-zgorzelec|1024|3|hill
 hundalvatnet-near-mosjoen|32|3|lake
@@ -10792,6 +12871,7 @@ huntington-park-near-hampton|131072|3|park
 huntington-state-beach-near-costa-mesa|16|3|California state beach
 huntington-state-beach-near-garden-grove|16|3|California state beach
 huntington-state-beach-near-huntington-beach|16|3|California state beach
+huntington-state-beach-near-irvine|16|3|California state beach
 huntington-state-beach-near-newport-beach|16|3|California state beach
 huntington-state-beach-near-santa-ana|16|3|California state beach
 huntsville-state-park-near-bryan|131072|3|Texas state park
@@ -10808,14 +12888,19 @@ hurkalo-luzhanskyi-waterfall-near-stryi|1|3|waterfall
 hurkalo-near-boryslav|1|3|waterfall
 hurkalo-near-stryi|1|3|waterfall
 hurkalo-near-truskavets|1|3|waterfall
+hurlstone-point-near-cardiff|4096|3|cape
+hurlstone-point-near-newport|4096|3|cape
+hurlstone-point-near-taunton|4096|3|cape
 hurricane-cliffs-near-st-george|1024|3|mountain range
 hurst-hill-near-warrington|1024|3|mountain
+hurst-spit-near-winchester|0|0|
 hurtgen-forest-near-aachen|16384|3|forest
 hurtgen-forest-near-eschweiler|16384|3|forest
 hurtgen-forest-near-eupen|16384|3|forest
 hurumlandet-near-drobak|4096|3|peninsula
 husemersee-near-schaffhausen|32|3|lake
 husinec-reservoir-near-prachatice|32|3|reservoir
+hussain-sagar-near-hyderabad|32|3|reservoir
 hustyn-near-novy-jicin|66560|3|mountain
 hustyn-near-valasske-mezirici|66560|3|mountain
 hutchison-s-meadow-near-ipswich-uk|65536|3|nature reserve
@@ -10841,6 +12926,7 @@ hwaaksan-near-chuncheon|1024|3|mountain
 hwawangsan-near-changwon|1024|3|mountain
 hyblaean-mountains-near-syracuse-it|1024|3|mountain range
 hyde-park-london|131072|3|park
+hyefjorden-near-floro|4096|3|fjord
 hyland-provincial-park-near-steinbach|131072|3|provincial park of Manitoba
 hyland-provincial-park-near-winnipeg|131072|3|provincial park of Manitoba
 hymettus-near-agia-paraskevi|1024|3|mountain range
@@ -10857,6 +12943,7 @@ iagorlic-near-dubasari|65536|3|nature reserve
 iagorlic-near-orhei|65536|3|nature reserve
 iawa-lakeland-landscape-park-near-elblag|196608|3|landscape park in Poland
 iawa-lakeland-landscape-park-near-grudziadz|196608|3|landscape park in Poland
+ibeju-beach-near-lagos|16|3|beach
 ibera-national-park-near-encarnacion|32768|3|national park
 ibera-national-park-near-posadas|32768|3|national park
 iberian-peninsula-near-toledo|0|0|
@@ -10872,9 +12959,15 @@ ibitipoca-state-park-near-juiz-de-fora|131072|3|state park
 ibiza-near-ibiza|64|3|island
 icarai-beach-near-fortaleza|16|3|beach
 icaria-near-chios-gr|64|3|island
+iceberg-point-near-bellingham|4096|3|headland
 ichalkovsky-pine-forest-near-saransk|65536|3|nature reserve
 ichetucknee-springs-state-park-near-gainesville|131072|3|Florida state park
 ichnia-national-nature-park-near-chernihiv|32768|3|national nature park
+iddefjorden-near-fredrikstad|4096|3|fjord
+iddefjorden-near-halden|4096|3|fjord
+iddefjorden-near-moss|4096|3|fjord
+iddefjorden-near-sarpsborg|4096|3|fjord
+iddefjorden-near-tonsberg|4096|3|fjord
 idle-valley-nature-reserve-near-doncaster|65536|3|nature reserve
 idle-valley-nature-reserve-near-grimsby|65536|3|nature reserve
 idle-valley-nature-reserve-near-lincoln|65536|3|nature reserve
@@ -10886,6 +12979,7 @@ idroscalo-di-milano-near-rho|32|3|artificial lake
 idroscalo-di-milano-near-sesto-san-giovanni|32|3|artificial lake
 iezer-mountains-near-pitesti|1024|3|mountain
 ifinger-near-merano|1024|3|mountain
+ifni-lake-near-marrakesh|32|3|lake
 igman-near-sarajevo|1024|3|plateau
 iguacu-falls-near-cascavel|1|3|horseshoe waterfall
 iguacu-falls-near-ciudad-del-este|1|3|horseshoe waterfall
@@ -11114,6 +13208,7 @@ iles-de-l-estuaire-national-wildlife-area-near-riviere-du-loup|65536|3|national 
 iles-de-la-paix-national-wildlife-area-near-beauharnois|65536|3|national wildlife area
 iles-de-la-paix-national-wildlife-area-near-chateauguay|65536|3|national wildlife area
 iles-de-la-paix-national-wildlife-area-near-salaberry-de-valleyfield|65536|3|national wildlife area
+iles-des-madeleines-national-park-near-dakar|32768|2|
 ilgajis-near-ukmerge|32|3|lake
 ilgaz-mountains-near-corum|1024|3|mountain range
 ilgaz-mountains-near-karabuk|1024|3|mountain range
@@ -11138,6 +13233,8 @@ ilha-da-pedra-furada-near-ilheus|64|3|island
 ilha-da-polvora-near-serra|64|3|island
 ilha-da-polvora-near-vila-velha|64|3|island
 ilha-da-polvora-near-vitoria|64|3|island
+ilha-da-queimada-grande-near-curitiba|64|3|island
+ilha-da-queimada-grande-near-sao-paulo|64|3|island
 ilha-da-rita-near-joinville|64|3|island
 ilha-das-cobras-near-belford-roxo|64|3|island
 ilha-das-cobras-near-duque-de-caxias|64|3|island
@@ -11160,12 +13257,16 @@ ilha-de-santo-amaro-near-santos|64|3|island
 ilha-de-santo-amaro-near-sao-vicente|64|3|island
 ilha-do-chico-pedro-near-joinville|64|3|island
 ilha-do-fundao-near-duque-de-caxias|64|3|island
+ilha-do-governador-near-rio-de-janeiro|65600|3|island
 ilha-do-livramento-near-sao-luis|64|3|island
 ilha-do-mar-casado-near-guaruja|80|3|beach
+ilha-do-mel-near-curitiba|65600|3|island
 ilha-do-pernambuco-near-joinville|64|3|island
 ilha-grande-national-park-near-dourados|32768|3|national park
 ilha-grande-national-park-near-maringa|32768|3|national park
 ilha-grande-national-park-near-pedro-juan-caballero|32768|3|national park
+ilha-grande-near-rio-de-janeiro|65600|3|island
+ilha-grande-near-sao-paulo|65600|3|island
 ilha-guaiba-near-volta-redonda|64|3|island
 ilha-itapacis-near-sao-goncalo|64|3|island
 ilha-porchat-near-santos|64|3|island
@@ -11188,6 +13289,7 @@ illa-de-toralla-near-vigo|64|3|island
 illa-del-portitxol-near-denia|64|3|island
 illa-del-rei-near-mao|64|3|island
 illawarra-escarpment-near-wollongong|1024|3|mountain range
+iller-near-villingen-schwenningen|256|3|river
 illescas-peninsula-near-chiclayo|4096|3|peninsula
 illescas-peninsula-near-piura|4096|3|peninsula
 illescas-peninsula-near-sullana|4096|3|peninsula
@@ -11212,6 +13314,7 @@ imbabura-volcano-near-esmeraldas|1152|3|stratovolcano
 imbabura-volcano-near-ibarra|1152|3|stratovolcano
 imbros-near-alexandroupolis-gr|64|3|island
 imbros-near-canakkale|64|3|island
+imbros-near-istanbul|64|3|island
 immenstedter-wald-near-husum|65536|3|Special Area of Conservation
 imperial-national-wildlife-refuge-near-yuma|65536|3|National Wildlife Refuge
 imperial-reservoir-near-yuma|32|3|reservoir
@@ -11223,8 +13326,14 @@ imstenraderbos-near-kerkrade|81920|3|forest
 imster-muttekopf-near-imst|1024|3|mountain
 imuta-ike-near-kagoshima|32|3|lake
 in-der-hardt-near-iserlohn|65536|3|protected area
+inabanga-river-near-cebu|256|3|river
 inamuragasaki-near-fujisawa|4096|3|cape
 inamuragasaki-near-kamakura|4096|3|cape
+inamuragasaki-near-kawasaki|4096|3|cape
+inamuragasaki-near-kisarazu|4096|3|cape
+inamuragasaki-near-mishima|4096|3|cape
+inamuragasaki-near-odawara|4096|3|cape
+inamuragasaki-near-sagamihara|4096|3|cape
 inamuragasaki-near-yokohama|4096|3|cape
 inamuragasaki-near-yokosuka|4096|3|cape
 inao-national-park-and-integrated-management-natural-area-near-santa-cruz-de-la-sierra|32768|3|national park
@@ -11242,6 +13351,16 @@ indemundung-near-duren|65536|3|Special Area of Conservation
 independence-park-near-shymkent|131072|3|park
 inderoya-near-steinkjer-municipality|4096|3|peninsula
 inderskiye-gory-near-atyrau|1024|3|hill
+indian-arm-near-burnaby|4096|3|bay
+indian-arm-near-coquitlam|4096|3|bay
+indian-arm-near-delta|4096|3|bay
+indian-arm-near-langley|4096|3|bay
+indian-arm-near-maple-ridge|4096|3|bay
+indian-arm-near-new-westminster|4096|3|bay
+indian-arm-near-port-moody|4096|3|bay
+indian-arm-near-surrey|4096|3|bay
+indian-arm-near-vancouver|4096|3|bay
+indian-arm-near-white-rock|4096|3|bay
 indian-brook-reservoir-near-burlington-vt|32|3|reservoir
 indian-cave-state-park-near-lincoln-us|131072|2|
 indian-cave-state-park-near-st-joseph|131072|2|
@@ -11251,11 +13370,14 @@ indian-lake-near-kalamazoo|32|3|lake
 indian-lake-near-south-bend|32|3|lake
 indian-mesa-near-surprise|1024|3|mountain range
 indian-mounds-park-near-saint-paul|131072|3|urban park
+indian-peninsula-near-hyderabad|4096|3|peninsula
 indian-river-lagoon-near-melbourne-fl|0|0|
 indian-springs-state-park-near-macon|131072|3|state park
 indian-wild-ass-sanctuary-near-ahmedabad|65536|3|wildlife refuge
+indiana-dunes-national-park-near-gary|36864|3|United States National Seashore
 indiana-dunes-near-chicago|36864|3|United States National Seashore
 indre-viksfjord-near-larvik|65536|3|nature reserve
+indus-river-delta-near-karachi|768|3|river delta
 indus-valley-near-bahawalpur|2048|3|valley
 indus-valley-near-multan|2048|3|valley
 indus-valley-near-sukkur|2048|3|valley
@@ -11266,7 +13388,9 @@ ingleses-beach-near-gondomar|16|3|beach
 ingleses-beach-near-maia|16|3|beach
 ingleses-beach-near-valongo|16|3|beach
 inglis-falls-near-owen-sound|1|3|waterfall
+ingonish-beach-near-sydney-ca|16|3|beach
 ingoya-near-hammerfest|64|3|island
+inhaca-near-maputo|64|3|island
 inhul-river-near-kropyvnytskyi|256|3|river
 inhulets-river-near-kropyvnytskyi|256|3|river
 inhulets-river-near-kryvyi-rih|256|3|river
@@ -11277,6 +13401,7 @@ inka-wasi-apurimac-near-abancay|1024|3|mountain
 inkumu-near-karabuk|16|3|beach
 inkumu-near-kastamonu|16|3|beach
 inkumu-near-zonguldak|16|3|beach
+inland-sea-beach-near-doha|16|2|
 innerste-near-hildesheim|256|3|river
 innisfallen-island-near-killarney|64|3|island
 innisfallen-island-near-tralee|64|3|island
@@ -11293,6 +13418,7 @@ interlochen-state-park-near-traverse-city|131072|2|
 international-beach-near-maia|16|3|beach
 international-beach-near-pacos-de-ferreira|16|3|beach
 international-beach-near-santo-tirso|16|3|beach
+international-park-near-cairo|32768|3|national park
 international-peace-gardens-near-west-jordan|0|0|
 international-peace-gardens-near-west-valley-city|0|0|
 international-tagus-natural-park-near-castelo-branco|196608|3|protected area
@@ -11305,6 +13431,7 @@ inwangsan-near-bucheon|1024|3|mountain
 inwangsan-near-gimpo|1024|3|mountain
 inwangsan-near-goyang|1024|3|mountain
 inwangsan-near-paju|1024|3|mountain
+inwangsan-near-seoul|1024|3|mountain
 inwangsan-near-uijeongbu|1024|3|mountain
 inwood-hill-park-near-yonkers|131072|3|park
 iodine-springs-reserve-near-temecula|65536|3|nature reserve
@@ -11315,6 +13442,13 @@ ior-lake-near-oltenita|32|3|lake
 ior-lake-near-pantelimon|32|3|lake
 ior-lake-near-popesti-leordeni|32|3|lake
 iozen-near-kanazawa|1024|3|mountain range
+ipanema-district-near-belford-roxo|0|0|
+ipanema-district-near-duque-de-caxias|0|0|
+ipanema-district-near-niteroi|0|0|
+ipanema-district-near-nova-iguacu|0|0|
+ipanema-district-near-rio-de-janeiro|0|0|
+ipanema-district-near-sao-goncalo|0|0|
+ipanema-district-near-sao-joao-de-meriti|0|0|
 ipanema-national-forest-near-americana|81920|3|national forest of Brazil
 ipanema-national-forest-near-bauru|81920|3|national forest of Brazil
 ipanema-national-forest-near-limeira|81920|3|national forest of Brazil
@@ -11323,10 +13457,12 @@ ipanema-national-forest-near-sorocaba|81920|3|national forest of Brazil
 ipf-near-aalen|1024|3|mountain
 iquiri-national-forest-near-porto-velho|81920|3|national forest of Brazil
 iquiri-national-forest-near-rio-branco|81920|3|national forest of Brazil
+irakli-beach-near-varna|16|3|beach
 irati-forest-near-biarritz|81920|3|forest
 irati-forest-near-jaca|81920|3|forest
 irazu-volcano-national-park-near-cartago|32768|3|national park
 irazu-volcano-national-park-near-heredia|32768|3|national park
+irazu-volcano-near-san-jose|1152|3|volcano
 irchel-near-winterthur|1024|3|mountain
 ireland-s-eye-near-balbriggan|64|3|island
 ireland-s-eye-near-dublin|64|3|island
@@ -11381,6 +13517,7 @@ irvine-park-near-saint-paul|131072|3|park
 irvine-park-near-santa-ana|131072|3|park
 irvine-regional-park-near-anaheim|131072|3|park
 irving-nature-park-near-saint-john|65536|2|
+isaac-hale-beach-park-near-hilo|16|3|beach
 isabel-island-near-mazatlan|64|3|island
 isakivsk-reservoir-near-kadiivka|32|3|reservoir
 isarauen-von-unterfohring-bis-landshut-near-erding|65536|3|Special Area of Conservation
@@ -11388,8 +13525,19 @@ ischia-near-giugliano-in-campania|192|3|volcanic island
 ischia-near-naples|192|3|volcanic island
 ischigualasto-talampaya-natural-parks-near-la-rioja|65536|3|nature reserve
 ise-shima-national-park-near-tsu|32768|3|national park
+isefjord-near-copenhagen|4096|3|fjord
+isefjord-near-frederiksberg|4096|3|fjord
+isefjord-near-frederiksvaerk|4096|3|fjord
+isefjord-near-helsingor|4096|3|fjord
+isefjord-near-hillerod|4096|3|fjord
+isefjord-near-horsholm|4096|3|fjord
+isefjord-near-koge|4096|3|fjord
+isefjord-near-roskilde|4096|3|fjord
 isfayramsay-near-margilan|256|3|river
+isfjorden-near-kristiansund-municipality|4096|3|fjord
+isfjorden-near-molde-municipality|4096|3|fjord
 isham-park-near-yonkers|131072|3|park
+ishikari-river-near-sapporo|256|3|river
 isiboro-secure-national-park-and-indigenous-territory-near-trinidad|32768|3|national park
 isireri-lake-near-trinidad|32|3|lake
 iskar-gorge-near-sofia|0|0|
@@ -11417,14 +13565,18 @@ isla-contoy-near-cancun|64|3|tied island
 isla-cuale-near-puerto-vallarta|196672|3|island
 isla-damas-near-coquimbo|64|3|island
 isla-damas-near-la-serena|64|3|island
+isla-damas-near-san-jose|64|3|island
 isla-de-canas-near-santiago-de-veraguas|64|3|island
 isla-de-flores-near-florida|64|3|island
 isla-de-la-cartuja-near-seville|64|3|island
 isla-de-la-plata-near-manta|64|3|island
 isla-de-la-plata-near-portoviejo|64|3|island
 isla-de-las-gaviotas-montevideo-near-florida|64|3|island
+isla-de-las-gaviotas-montevideo-near-montevideo|64|3|island
 isla-de-las-mujeres-near-heroica-matamoros|64|3|island
+isla-de-las-mujeres-near-monterrey|64|3|island
 isla-de-las-mujeres-near-reynosa|64|3|island
+isla-de-las-munecas-near-mexico-city|64|3|island
 isla-de-las-munecas-near-tenochtitlan|64|3|island
 isla-de-las-munecas-near-toluca-de-lerdo|64|3|island
 isla-de-leon-near-san-fernando|64|3|island
@@ -11464,8 +13616,10 @@ isla-maria-cleofas-near-mazatlan|64|3|island
 isla-maria-magdalena-near-mazatlan|64|3|island
 isla-orrego-near-talca|16384|3|forest
 isla-partida-near-la-paz-mx|64|3|island
+isla-paulino-near-buenos-aires|64|3|island
 isla-pavon-near-rio-gallegos|320|3|river island
 isla-perez-near-merida|64|3|island
+isla-pulo-near-manila|64|3|island
 isla-san-francisco-near-la-paz-mx|64|3|island
 isla-san-gabriel-near-avellaneda|64|3|island
 isla-san-gabriel-near-berazategui|64|3|island
@@ -11513,6 +13667,7 @@ island-of-vukovar-near-zupanja|320|3|river island
 island-vetren-near-razgrad|320|3|river island
 island-vetren-near-silistra|320|3|river island
 island-view-beach-near-langford|16|3|beach
+island-view-beach-near-victoria|16|3|beach
 island-white-near-carson|0|0|
 islandeady-lough-near-castlebar|32|3|lake
 islands-and-protected-areas-of-the-gulf-of-california-near-ciudad-obregon|65536|3|nature reserve
@@ -11596,6 +13751,7 @@ isola-santa-maria-near-marsala|64|3|island
 isole-dei-ciclopi-near-acireale|65536|3|Natura 2000 site
 isole-dei-ciclopi-near-catania|65536|3|Natura 2000 site
 isolino-di-san-giovanni-near-verbania|64|3|island
+israeli-coastal-plain-near-tel-aviv|4096|2|
 istallos-ko-near-ozd|1024|3|mountain
 isternaset-near-kristianstad|65536|3|nature reserve
 istiklal-yolu-tarihi-milli-park-near-karabuk|32768|3|national park
@@ -11606,6 +13762,9 @@ it-butenfjild-near-dongeradeel|65536|3|nature area
 itaipu-reservoir-near-cascavel|32|3|reservoir
 itaipu-reservoir-near-ciudad-del-este|32|3|reservoir
 itaipu-reservoir-near-foz-do-iguacu|32|3|reservoir
+italian-riviera-near-genoa|4096|3|coast
+italian-riviera-near-imperia|4096|3|coast
+italian-riviera-near-savona|4096|3|coast
 itaparica-beach-near-serra|16|3|beach
 itaparica-beach-near-vila-velha|16|3|beach
 itaparica-beach-near-vitoria|16|3|beach
@@ -11663,11 +13822,15 @@ jaaukanigas-near-resistencia|66048|3|wetland
 jabal-al-harim-near-khasab|1024|3|mountain
 jabal-al-harim-near-kumzar|1024|3|mountain
 jabal-al-harim-near-ras-al-khaimah|1024|3|mountain
+jabal-al-hussein-amman-near-amman|1024|3|mountain
 jabal-al-lawz-near-duba|1024|3|mountain
 jabal-al-lawz-near-tabuk|1024|3|mountain
+jabal-al-nour-near-jeddah|1024|3|mountain
 jabal-al-nour-near-mecca|1024|3|mountain
 jabal-al-nour-near-ta-if|1024|3|mountain
 jabal-al-nour-near-turubah|1024|3|mountain
+jabal-ali-wildlife-sanctuary-near-abu-dhabi|65536|3|wildlife refuge
+jabal-amman-near-amman|1024|3|mountain
 jabal-ar-rahrah-near-khasab|1024|3|mountain
 jabal-ar-rahrah-near-ras-al-khaimah|1024|3|mountain
 jabal-atherb-near-abha|1024|3|mountain
@@ -11724,6 +13887,7 @@ jabal-yibir-near-ajman|1024|3|mountain
 jabal-yibir-near-fujairah|1024|3|mountain
 jabal-yibir-near-madha|1024|3|mountain
 jabal-yibir-near-ras-al-khaimah|1024|3|mountain
+jabal-yibir-near-sharjah|1024|3|mountain
 jabal-yibir-near-umm-al-quwain|1024|3|mountain
 jabalcuz-near-jaen|1024|3|mountain
 jablanica-near-ohrid|1024|3|mountain
@@ -11739,6 +13903,21 @@ jackson-hole-near-idaho-falls|2048|3|valley
 jackson-hole-near-rexburg|2048|3|valley
 jackson-lake-near-jackson-wy|32|3|reservoir
 jackson-washington-state-forest-near-jeffersonville|81920|3|forest
+jacob-riis-park-near-babylon|131072|3|urban park
+jacob-riis-park-near-edison|131072|3|urban park
+jacob-riis-park-near-elizabeth|131072|3|urban park
+jacob-riis-park-near-hackensack|131072|3|urban park
+jacob-riis-park-near-hempstead|131072|3|urban park
+jacob-riis-park-near-hoboken|131072|3|urban park
+jacob-riis-park-near-jersey-city|131072|3|urban park
+jacob-riis-park-near-new-york|131072|3|urban park
+jacob-riis-park-near-newark|131072|3|urban park
+jacob-riis-park-near-north-hempstead|131072|3|urban park
+jacob-riis-park-near-oyster-bay|131072|3|urban park
+jacob-riis-park-near-paterson|131072|3|urban park
+jacob-riis-park-near-perth-amboy|131072|3|urban park
+jacob-riis-park-near-white-plains|131072|3|urban park
+jacob-riis-park-near-yonkers|131072|3|urban park
 jacqueline-kennedy-onassis-reservoir-near-hackensack|32|3|reservoir
 jacqueline-kennedy-onassis-reservoir-near-hempstead|32|3|reservoir
 jacqueline-kennedy-onassis-reservoir-near-hoboken|32|3|reservoir
@@ -11754,6 +13933,7 @@ jacumba-mountains-near-el-centro|1024|3|mountain range
 jacunda-national-forest-near-porto-velho|81920|3|national forest of Brazil
 jade-bight-near-bremerhaven|4096|3|bay
 jade-bight-near-oldenburg|4096|3|bay
+jade-spring-hill-near-beijing|1024|3|hill
 jadova-near-gospic|65792|3|river
 jadwiga-dziekonska-park-in-biaystok-near-lomza|131072|3|urban park
 jaeren-near-stavanger|0|0|
@@ -11776,6 +13956,7 @@ jaizkibel-near-biarritz|1024|3|mountain chain
 jakab-hegy-near-mohacs|1024|3|mountain
 jakab-hegy-near-pecs|1024|3|mountain
 jakab-hegy-near-szekszard|1024|3|mountain
+jakarta-bay-near-jakarta|4096|3|bay
 jakobsberg-near-bad-kreuznach|1024|3|mountain
 jakobsberg-near-minden|1024|3|mountain
 jakupica-near-skopje|1024|3|mountain
@@ -11792,11 +13973,13 @@ jambeli-archipelago-near-sullana|64|3|island
 jambeli-archipelago-near-tumbes|64|3|island
 jamertal-near-malbork|32|3|lake
 james-kealoha-beach-near-hilo|16|3|beach
+james-madison-beach-near-madison|16|3|beach
 jamestown-island-near-newport-news|64|3|island
 jamison-valley-near-katoomba|2048|3|valley
 jamul-mountains-near-ensenada|1024|3|mountain range
 jamul-mountains-near-mexicali|1024|3|mountain range
 jamul-mountains-near-tijuana|1024|3|mountain range
+jan-marias-nature-reserve-near-stellenbosch|65536|3|nature reserve
 janackovo-stromoradi-near-trebic|131072|3|park
 janadarya-near-kyzylorda|256|3|river
 jandula-reservoir-near-andujar|32|3|reservoir
@@ -11843,7 +14026,7 @@ jardin-des-tout-petits-adolphe-lafont-near-villeurbanne|131072|3|park
 jardin-ecologique-de-lille-near-wattrelos|65536|3|protected area
 jardin-frida-kahlo-near-tremblay-en-france|131072|2|
 jardin-frontenac-near-saint-jean-sur-richelieu|131072|3|urban park
-jardin-vauban-near-armentieres|0|0|
+jardin-vauban-near-armentieres|131072|3|park
 jardines-de-la-buhaira-near-dos-hermanas|131072|3|park
 jarflotta-nature-reserve-near-nynashamn|65600|3|island
 jarman-island-near-karratha|64|3|island
@@ -11856,6 +14039,7 @@ jarvsoklacken-near-hudiksvall|65536|3|nature reserve
 jasien-near-pabianice|256|3|river
 jasmund-national-park-near-stralsund|32768|3|Nationalpark
 jasper-state-recreation-site-near-eugene|131072|2|
+jastarnia-beach-near-wejherowo|16|3|beach
 jastrebac-near-krusevac|1024|3|mountain range
 jattanuten-near-sandnes|1024|3|hill
 jattanuten-near-sandnes-municipality|1024|3|hill
@@ -11873,11 +14057,18 @@ javorske-near-cadca|1024|3|mountain
 javorsky-beskyd-near-cadca|1024|3|mountain range
 jay-cooke-state-park-near-duluth|131072|2|
 jayne-s-hill-near-oyster-bay|1024|3|mountain
+jaz-beach-near-bar|16|3|beach
 jaz-beach-near-budva|16|3|beach
 jaz-beach-near-cetinje|16|3|beach
+jaz-beach-near-herceg-novi|16|3|beach
+jazirat-as-siniyah-near-sharjah|64|3|island
 jazirat-dumsuq-near-jizan|64|3|island
 jazirat-dumsuq-near-sabya|64|3|island
+jbel-toubkal-near-casablanca|1024|3|mountain
+jbel-toubkal-near-marrakesh|1024|3|mountain
 jean-lafitte-national-historical-park-near-new-orleans|131072|1|
+jebel-boukornine-near-tunis|1024|3|mountain
+jebel-ech-chambi-near-tunis|1024|3|mountain
 jebel-jais-near-fujairah|1024|3|mountain
 jebel-jais-near-khasab|1024|3|mountain
 jebel-jais-near-kumzar|1024|3|mountain
@@ -11895,10 +14086,12 @@ jebel-qihwi-near-madha|1024|3|mountain
 jebel-qihwi-near-ras-al-khaimah|1024|3|mountain
 jebel-shams-near-bawshar|1024|3|mountain
 jebel-shams-near-ibri|1024|3|mountain
+jebel-shams-near-muscat|1024|3|mountain
 jebel-shams-near-nizwa|1024|3|mountain
 jebel-shams-near-seeb|1024|3|mountain
 jebel-shams-near-sohar|1024|3|mountain
 jebel-shams-near-sur|1024|3|mountain
+jebel-yagour-near-marrakesh|1024|3|mountain
 jedlovy-dul-near-jablonec-nad-nisou|65536|3|nature reserve in the Czech Republic
 jedlovy-les-a-udoli-rokytne-near-znojmo|65536|3|nature reserve in the Czech Republic
 jedova-near-sternberk|1024|3|mountain
@@ -11907,6 +14100,7 @@ jegocin-near-ostroleka|32|3|lake
 jegricka-nature-park-near-kikinda|196608|3|nature park
 jegricka-nature-park-near-zrenjanin|196608|3|nature park
 jeju-island-near-jeju|64|3|island
+jeju-udo-hongjo-nodule-beach-near-jeju|65552|3|beach
 jeker-valley-near-maastricht|67584|3|valley
 jelica-near-cacak|1024|3|mountain
 jells-park-near-pakenham|131072|3|park
@@ -11926,13 +14120,36 @@ jensen-botanical-gardens-near-roseville|0|0|
 jentsjemar-near-sneek|32|3|lake
 jeongbang-waterfall-near-jeju|4097|3|coastal waterfall
 jeongdongjin-beach-near-gangneung|16|3|beach
+jericho-beach-near-burnaby|16|3|beach
+jericho-beach-near-coquitlam|16|3|beach
+jericho-beach-near-delta|16|3|beach
+jericho-beach-near-langley|16|3|beach
+jericho-beach-near-maple-ridge|16|3|beach
+jericho-beach-near-nanaimo|16|3|beach
+jericho-beach-near-new-westminster|16|3|beach
 jericho-beach-near-north-vancouver|16|3|beach
+jericho-beach-near-port-moody|16|3|beach
 jericho-beach-near-richmond-ca|16|3|beach
+jericho-beach-near-surrey|16|3|beach
 jericho-beach-near-vancouver|16|3|beach
+jericho-beach-near-white-rock|16|3|beach
 jernhatten-near-grenaa|66560|3|hill
 jerome-park-reservoir-near-hackensack|32|3|reservoir
 jersey-city-flowage-near-wausau|32|3|reservoir
 jersey-city-reservoir-no-3-near-hoboken|65568|3|reservoir
+jerusalem-beach-tel-aviv-near-ashdod|16|3|beach
+jerusalem-beach-tel-aviv-near-ashkelon|16|3|beach
+jerusalem-beach-tel-aviv-near-bat-yam|16|3|beach
+jerusalem-beach-tel-aviv-near-bnei-brak|16|3|beach
+jerusalem-beach-tel-aviv-near-hadera|16|3|beach
+jerusalem-beach-tel-aviv-near-holon|16|3|beach
+jerusalem-beach-tel-aviv-near-netanya|16|3|beach
+jerusalem-beach-tel-aviv-near-petah-tikva|16|3|beach
+jerusalem-beach-tel-aviv-near-ramat-gan|16|3|beach
+jerusalem-beach-tel-aviv-near-ramla|16|3|beach
+jerusalem-beach-tel-aviv-near-rehovot|16|3|beach
+jerusalem-beach-tel-aviv-near-rishon-lezion|16|3|beach
+jerusalem-beach-tel-aviv-near-tel-aviv|16|3|beach
 jervis-bay-national-park-near-nowra|32768|3|national park of Australia
 jesenice-reservoir-near-cheb|32|3|reservoir
 jesevac-near-cacak|1024|3|mountain
@@ -11961,7 +14178,7 @@ jeziorko-bielawskie-dolne-near-otwock|32|2|
 jeziorko-bielawskie-gorne-near-otwock|32|2|
 jezioro-balewskie-near-kwidzyn|32|3|lake
 jezioro-balewskie-near-malbork|32|3|lake
-jezioro-biae-near-chelm|0|0|
+jezioro-biae-near-chelm|32|3|lake
 jezioro-biskupickie-near-gniezno|32|3|lake
 jezioro-bugaj-near-piotrkow-trybunalski|32|3|lake
 jezioro-chechelskie-near-chrzanow|32|3|reservoir
@@ -12021,10 +14238,12 @@ jiezno-lake-near-prienai|32|3|lake
 jihlavske-vrchy-near-jindrichuv-hradec|1024|3|mountain range
 jijia-iasi-wetlands-near-falesti|66048|3|Ramsar site
 jimmie-davis-state-park-near-shreveport|131072|2|
+jin-river-near-chengdu|256|3|river
 jindalee-national-park-near-cootamundra|32768|3|national park of Australia
 jindalee-national-park-near-cowra|32768|3|national park of Australia
 jindalee-national-park-near-forbes|32768|3|national park of Australia
 jindalee-national-park-near-junee|32768|3|national park of Australia
+jindo-near-busan|64|3|island
 jindrichovsky-mokrad-near-jablonec-nad-nisou|65536|3|natural monument in the Czech Republic
 jing-ting-mountain-near-anqing|1024|3|mountain
 jing-ting-mountain-near-wuhu|1024|3|mountain
@@ -12053,6 +14272,7 @@ jiufeng-near-baoding|132096|3|hill
 jiugong-mountains-near-huanggang|1024|3|mountain range
 jiugong-mountains-near-nanchang|1024|3|mountain range
 jiugong-mountains-near-yueyang|1024|3|mountain range
+jiuzhaigou-valley-near-chengdu|100352|3|valley
 jiviny-near-kladno|32|3|reservoir
 jizera-mountains-near-boleslawiec|1024|3|mountain range
 jizera-mountains-near-decin|1024|3|mountain range
@@ -12111,13 +14331,18 @@ jomo-gangtse-near-lhasa|1024|3|mountain
 jonas-valley-near-arnstadt|2048|3|valley
 jonathan-dickinson-state-park-near-west-palm-beach|131072|3|Florida state park
 jondalen-near-kongsberg|2048|3|valley
+jones-beach-near-nowra|16|3|beach
 jones-beach-state-park-near-new-york|131072|3|New York state park
 jones-confluence-point-state-park-near-belleville-us|131072|3|Missouri state park
 jones-confluence-point-state-park-near-st-charles|131072|3|Missouri state park
 jones-confluence-point-state-park-near-st-louis|131072|3|Missouri state park
 jones-lake-state-park-near-fayetteville-nc|131072|3|North Carolina state park
+jones-point-near-alexandria-va|4096|3|cape
+jones-point-near-rockville|4096|3|cape
+jones-point-near-washington-dc|4096|3|cape
 jongenbos-near-bilzen|81920|3|forest
 jonha-falls-near-ranchi|1|3|waterfall
+jonkershoek-nature-reserve-near-stellenbosch|65536|3|nature reserve
 jonsknuten-near-kongsberg|1024|3|mountain
 jonstorp-vegeans-mynning-near-angelholm|65536|3|nature reserve
 jonsvatnet-near-stjordalshalsen|32|3|lake
@@ -12127,6 +14352,7 @@ jordan-lake-near-greensboro|32|3|reservoir
 jordan-lake-near-tuscaloosa|32|3|reservoir
 jordan-lake-state-recreation-area-near-durham-us|0|0|
 jordan-near-tabor|32|3|reservoir
+jordan-rift-valley-near-beirut|2048|3|valley
 jordansky-waterfall-near-tabor|1|3|waterfall
 jordbodalen-near-helsingborg|16384|3|forest
 jose-menino-beach-near-santos|16|3|beach
@@ -12137,10 +14363,12 @@ joshin-etsu-kogen-national-park-near-nagano|98304|3|national park
 joshin-etsu-kogen-national-park-near-takasaki|98304|3|national park
 joshin-etsu-kogen-national-park-near-ueda|98304|3|national park
 joshua-tree-national-park-near-riverside|32768|3|National Park of the United States
+jossingfjorden-near-egersund|4096|3|fjord
 josvainiai-forest-near-kedainiai|81920|3|forest
 joutjarvi-near-lahti|32|3|lake or pond
 joutsjarvi-near-imatra|32|3|lake
 joyama-fukui-near-fukui|1024|3|mountain
+jozani-chwaka-bay-national-park-near-dar-es-salaam|32768|3|national park
 jualbup-lake-near-perth|32|3|lake
 juan-carlos-i-park-near-coslada|0|0|
 juan-de-fuca-provincial-park-near-victoria|131072|3|provincial park of Canada
@@ -12175,6 +14403,8 @@ juma-river-near-shijiazhuang|65792|3|river
 juma-river-near-taiyuan|65792|3|river
 jumbles-country-park-near-bolton|131072|3|park
 jumeirah-beach-near-ajman|16|1|
+jumeirah-beach-near-dubai|16|1|
+jumeirah-beach-near-sharjah|16|1|
 jumeirah-beach-near-umm-al-quwain|16|1|
 jummesee-near-leer|32|3|lake
 jump-creek-falls-near-meridian|1|3|waterfall
@@ -12183,6 +14413,9 @@ jundu-mountains-near-zhangjiakou|1024|3|mountain range
 jungfernsee-near-potsdam|32|3|lake
 juniper-dunes-wilderness-near-pasco|65536|3|United States Wilderness Area
 junkarsborg-near-lohja|0|0|
+juno-beach-near-caen|16|3|beach
+juno-beach-near-le-havre|16|3|beach
+juno-beach-near-lisieux|16|3|beach
 junqueiro-maize-bread-rocks-near-oliveira-de-azemeis|65536|2|
 junshan-island-near-jingzhou|64|3|island
 junshan-island-near-yueyang|64|3|island
@@ -12200,7 +14433,11 @@ juquery-state-park-near-guarulhos|131072|3|state park
 juquery-state-park-near-jundiai|131072|3|state park
 jura-mountains-near-montbeliard|1024|3|massif
 jurassic-coast-near-bournemouth|4096|3|coast
+jurassic-coast-near-bridgwater|4096|3|coast
 jurassic-coast-near-exeter|4096|3|coast
+jurassic-coast-near-taunton|4096|3|coast
+jurassic-coast-near-torquay|4096|3|coast
+jurassic-coast-near-yeovil|4096|3|coast
 jurupa-mountains-near-fontana|1024|3|mountain range
 jurupa-mountains-near-ontario|1024|3|mountain range
 jurupa-mountains-near-rancho-cucamonga|1024|3|mountain range
@@ -12224,10 +14461,12 @@ kaag-near-leiden|0|0|
 kaapse-bossen-near-buren|81920|3|forest
 kaapse-bossen-near-zeist|81920|3|forest
 kaaterskill-falls-near-albany-ny|1|3|waterfall
+kabaka-s-lake-near-kampala|32|3|artificial lake
 kabanka-near-kostanay|256|3|river
 kabaty-woods-near-warsaw|81920|3|forest reserve (Poland)
 kabe-island-near-karatsu|64|3|island
 kabel-near-torun|32|3|lake
+kabli-beach-near-parnu|16|3|beach
 kabushima-near-hachinohe|64|2|
 kacabaja-near-valasske-mezirici|32|3|reservoir
 kackar-dag-near-rize|1024|3|mountain
@@ -12246,18 +14485,22 @@ kaenica-near-cacak|0|0|
 kaer-halvo-near-sonderborg|4096|3|peninsula
 kaferberg-near-dietikon|1024|3|mountain
 kaferberg-near-zurich|1024|3|mountain
+kafjorden-near-alta|4096|3|fjord
 kafki-near-karditsa|1024|3|mountain
 kagerplassen-near-alphen-aan-den-rijn|131104|3|lake
 kagerplassen-near-leiden|131104|3|lake
 kagerplassen-near-noordwijk|131104|3|lake
+kagthane-creek-near-istanbul|256|3|river
 kahamlytskyi-landscape-park-near-kremenchuk|65536|3|protected area
 kahlenberg-near-klosterneuburg|1024|3|mountain
 kahlenberg-near-modling|1024|3|mountain
 kahlenberg-near-tulln-an-der-donau|1024|3|mountain
 kahlenberg-near-vienna|1024|3|mountain
 kahlenberg-rohrbach-near-neunkirchen|1024|3|hill
+kahokugata-lagoon-near-kanazawa|4128|3|lagoon
 kahuranaki-near-hastings|1024|3|mountain
 kahvankari-near-raahe|64|3|island
+kai-kung-leng-near-shenzhen|1024|3|mountain
 kailash-kund-near-amritsar|32|3|lake
 kailash-kund-near-sialkot|32|3|lake
 kaimai-mamaku-forest-park-near-tauranga|131072|1|
@@ -12279,6 +14522,8 @@ kaiserstuhl-near-freiburg|66688|3|volcano
 kaiserteich-near-dusseldorf|32|3|lake
 kaisho-forest-near-toyota|147456|3|forest park
 kaitake-range-near-new-plymouth|1024|3|mountain range
+kaitorete-spit-near-christchurch|0|0|
+kaitorete-spit-near-rolleston|0|0|
 kaitum-fjallurskog-near-gallivare|65536|3|nature reserve
 kaitum-fjallurskog-near-kiruna|65536|3|nature reserve
 kaive-oak-near-tukums|0|0|
@@ -12288,6 +14533,23 @@ kajmakcalan-near-naoussa|1024|3|summit
 kakagi-lake-near-kenora|32|3|lake
 kakhovka-reservoir-near-nikopol|32|3|reservoir
 kakhovka-reservoir-near-zaporizhzhia|32|3|reservoir
+kakia-skala-near-acharnes|4096|2|
+kakia-skala-near-agia-paraskevi|4096|2|
+kakia-skala-near-athens|4096|2|
+kakia-skala-near-chalandri|4096|2|
+kakia-skala-near-corinth|4096|2|
+kakia-skala-near-egaleo|4096|2|
+kakia-skala-near-elefsina|4096|2|
+kakia-skala-near-ilion|4096|2|
+kakia-skala-near-korydallos|4096|2|
+kakia-skala-near-megara|4096|2|
+kakia-skala-near-nikaia|4096|2|
+kakia-skala-near-peristeri|4096|2|
+kakia-skala-near-petroupoli|4096|2|
+kakia-skala-near-piraeus|4096|2|
+kakia-skala-near-salamis-island|4096|2|
+kakia-skala-near-vrilissia|4096|2|
+kakia-skala-near-zografou|4096|2|
 kal-pri-hrastniku-near-zagorje-ob-savi|1024|3|mountain
 kala-chitta-range-near-mardan|1024|3|mountain range
 kala-chitta-range-near-peshawar|1024|3|mountain range
@@ -12308,10 +14570,15 @@ kalar-kahar-lake-near-gujranwala|32|3|lake
 kalar-kahar-lake-near-gujrat|32|3|lake
 kalar-kahar-lake-near-jhang|32|3|lake
 kalar-kahar-lake-near-jhelum|32|3|lake
+kalar-kahar-lake-near-lahore|32|3|lake
 kalar-kahar-lake-near-sargodha|32|3|lake
 kalar-kahar-lake-near-sheikhupura|32|3|lake
 kalbarri-national-park-near-geraldton|32768|3|national park of Australia
 kalchyk-river-near-mariupol|256|3|river
+kaldfjorden-near-tromso|4096|3|fjord
+kaldfjorden-near-tromso-municipality|4096|3|fjord
+kaldvellfjorden-near-arendal|4096|3|fjord
+kaldvellfjorden-near-grimstad|4096|3|fjord
 kaldyceuskaje-lake-near-baranavichy|32|3|lake
 kaldyceuskaje-lake-near-navahrudak|32|3|lake
 kaldyceuskaje-lake-near-slonim|32|3|lake
@@ -12328,6 +14595,16 @@ kaliakra-near-varna|69632|3|cape
 kalkalpen-national-park-near-liezen|65536|3|protected area
 kalkalpen-national-park-near-linz|65536|3|protected area
 kalkmagerrasen-zwischen-morschen-und-sontra-near-bad-hersfeld|65536|3|Special Area of Conservation
+kallahdenniemi-near-espoo|4096|3|headland
+kallahdenniemi-near-helsinki|4096|3|headland
+kallahdenniemi-near-jarvenpaa|4096|3|headland
+kallahdenniemi-near-kauniainen|4096|3|headland
+kallahdenniemi-near-kerava|4096|3|headland
+kallahdenniemi-near-kirkkonummi|4096|3|headland
+kallahdenniemi-near-klaukkala|4096|3|headland
+kallahdenniemi-near-tuusula|4096|3|headland
+kallahdenniemi-near-vantaa|4096|3|headland
+kallang-river-near-singapore|256|3|river
 kallankari-islands-near-kokkola|64|3|island
 kallavesi-near-kuopio|32|3|lake
 kallavesi-near-varkaus|32|3|lake
@@ -12357,7 +14634,9 @@ kalnik-near-varazdin|1024|3|mountain
 kalnu-atsegums-near-mazeikiai|0|0|
 kalo-castle-near-aarhus|0|0|
 kalo-dungar-near-hyderabad-pk|1024|3|mountain
+kalogria-beach-near-elis|131088|3|beach
 kalogria-beach-near-patras|131088|3|beach
+kalogria-beach-near-zakynthos|131088|3|beach
 kalolimnos-near-bodrum|64|3|island
 kalolimnos-near-kos|64|3|island
 kalotes-lake-near-klaipeda|32|3|lake
@@ -12368,14 +14647,29 @@ kalski-greben-near-kamnik|1024|3|mountain
 kaltbrunnental-near-basel|2048|3|valley
 kalte-eiche-near-gera|0|0|
 kalteiche-near-siegen|1024|3|hill
+kalu-river-near-colombo|256|3|river
 kaluderski-skokovi-near-lom|1|3|waterfall
 kaluga-pine-forest-near-kaluga|81920|3|forest
 kaluga-pine-forest-near-tula|81920|3|forest
+kalundborg-fjord-near-nyborg|4096|3|fjord
+kalundborg-fjord-near-odense|4096|3|fjord
 kaluzhskiye-zaseki-nature-reserve-near-bryansk|65536|3|nature reserve
 kaluzhskiye-zaseki-nature-reserve-near-kaluga|65536|3|nature reserve
 kaluzhskiye-zaseki-nature-reserve-near-oryol|65536|3|nature reserve
 kaluzhskiye-zaseki-nature-reserve-near-tula|65536|3|nature reserve
 kalvebod-flled-near-frederiksberg|65536|3|protected area
+kalvfjarden-near-haninge-municipality|4096|3|cove
+kalvfjarden-near-huddinge-municipality|4096|3|cove
+kalvfjarden-near-lidingo|4096|3|cove
+kalvfjarden-near-marsta|4096|3|cove
+kalvfjarden-near-nacka-municipality|4096|3|cove
+kalvfjarden-near-nynashamn|4096|3|cove
+kalvfjarden-near-sodertalje|4096|3|cove
+kalvfjarden-near-solna-municipality|4096|3|cove
+kalvfjarden-near-stockholm|4096|3|cove
+kalvfjarden-near-taby|4096|3|cove
+kalvfjarden-near-tumba|4096|3|cove
+kalvfjarden-near-upplands-vasby|4096|3|cove
 kalvo-near-aabenraa|64|3|island
 kalvo-near-haderslev|64|3|island
 kalvo-near-tonder|64|3|island
@@ -12408,6 +14702,7 @@ kamila-mountain-near-evosmos|1024|3|mountain
 kamila-mountain-near-kalamaria|1024|3|mountain
 kamila-mountain-near-kilkis|1024|3|mountain
 kamila-mountain-near-stavroupoli|1024|3|mountain
+kamilafka-cape-near-arta|4096|3|cape
 kamionek-lake-near-warsaw|32|3|lake
 kamloops-lake-near-kamloops|32|3|lake
 kammmolch-biotop-plockhorst-near-gifhorn|65536|3|Special Area of Conservation
@@ -12436,6 +14731,7 @@ kamuikotan-near-asahikawa|2052|3|canyon
 kamzik-near-bratislava|1024|3|mountain
 kamzik-near-senec|1024|3|mountain
 kan-i-gut-cave-near-kokand|65538|3|cave
+kan-irag-nature-park-near-cebu|196608|3|nature park
 kanada-prirodni-rezervace-near-uherske-hradiste|65536|3|nature reserve in the Czech Republic
 kanajarvi-near-hameenlinna|32|3|lake
 kanaka-creek-regional-park-near-maple-ridge|131072|3|park
@@ -12444,8 +14740,9 @@ kananaskis-country-near-calgary|65536|3|protected area
 kanangra-boyd-national-park-near-bathurst|32768|3|national park of Australia
 kanawajima-near-hiroshima|64|3|island
 kanbeshbulak-near-qarshi|32|3|lake
+kanda-river-near-tokyo|256|3|river
 kandel-near-emmendingen|1024|3|main peak
-kandel-near-villingen-schwenningen|0|0|
+kandel-near-villingen-schwenningen|1024|3|main peak
 kangaroo-creek-reservoir-near-murray-bridge|32|3|reservoir
 kanisfluh-near-dornbirn|1024|3|massif
 kanithi-balancing-reservoir-near-visakhapatnam|32|3|reservoir
@@ -12459,6 +14756,7 @@ kankakee-river-state-park-near-chicago|131072|3|Illinois state park
 kankakee-river-state-park-near-joliet|131072|3|Illinois state park
 kankareenjarvi-near-salo|32|3|lake
 kankarisvesi-near-jamsa|32|3|lake or pond
+kanlaon-volcano-near-cebu|1152|3|active volcano
 kanopolis-state-park-near-hutchinson|131072|2|
 kanopolis-state-park-near-manhattan|131072|2|
 kanopolis-state-park-near-salina|131072|2|
@@ -12478,6 +14776,7 @@ kapolna-ret-near-kecskemet|65536|3|local protected landscape
 kapovac-near-dakovo|1024|3|mountain
 kapovac-near-slavonski-brod|1024|3|mountain
 kaprije-near-vodice|64|3|island
+kaptensudden-djurgarden-near-stockholm|4096|3|headland
 kapucijnenbos-near-auderghem|16384|3|forest
 kapucijnenbos-near-wavre|16384|3|forest
 kapucijnenbos-near-woluwe-saint-lambert|16384|3|forest
@@ -12504,6 +14803,7 @@ karachun-near-lozova|1024|3|mountain
 karachun-near-pokrovsk|1024|3|mountain
 karachun-near-sloviansk|1024|3|mountain
 karadere-beach-near-shumen|16|3|beach
+karadere-beach-near-varna|16|3|beach
 karagol-near-batumi|32|3|lake
 karagol-sahara-national-park-near-kars|32768|3|national park
 karakan-pine-forest-near-barnaul|16384|3|forest
@@ -12519,8 +14819,12 @@ karatepe-aslantas-national-park-near-antakya|32768|3|national park
 karatepe-aslantas-national-park-near-iskenderun|32768|3|national park
 karatepe-aslantas-national-park-near-kilis|32768|3|national park
 karatepe-aslantas-national-park-near-osmaniye|32768|3|national park
+karathona-near-corinth|131088|3|beach
 karava-near-karditsa|1024|3|mountain
 karava-near-trikala|1024|3|mountain
+karavasta-lagoon-near-durres|4128|3|lagoon
+karavasta-lagoon-near-tirana|4128|3|lagoon
+karavasta-lagoon-near-vlore|4128|3|lagoon
 karawanks-near-klagenfurt|1024|2|
 karcheezer-see-near-gustrow|32|3|lake
 karciupis-hydrographical-reserve-near-jonava|65536|3|protected area
@@ -12531,10 +14835,12 @@ kardzhali-reservoir-near-dimitrovgrad|32|3|reservoir
 kardzhali-reservoir-near-haskovo|32|3|reservoir
 kardzhali-reservoir-near-kardzhali|32|3|reservoir
 karersee-near-bolzano|32|3|lake
+karfas-near-chios-gr|131088|3|beach
 karhujarvi-near-kirkkonummi|32|3|lake or pond
 karhujarvi-near-lohja|32|3|lake or pond
 karhusjarvi-near-imatra|32|3|lake
 karingboda-near-nynashamn|65536|3|nature reserve
+karioitahi-beach-near-pukekohe|16|3|beach
 karjantau-mountains-near-chirchiq|1024|3|mountain range
 karkabud-waterfall-near-qazvin|1|3|waterfall
 karkas-mountains-near-isfahan|1024|3|mountain range
@@ -12545,6 +14851,8 @@ karkonosze-national-park-near-trutnov|32768|3|National Parks of Poland
 karkonosze-national-park-near-walbrzych|32768|3|National Parks of Poland
 karkopf-near-telfs|1024|3|mountain
 karl-bittel-park-near-worms|0|0|
+karla-caves-near-mumbai|0|0|
+karla-caves-near-pune|0|0|
 karlesspitze-near-merano|1024|3|mountain
 karlivske-reservoir-near-druzhkivka|32|3|reservoir
 karlivske-reservoir-near-pokrovsk|32|3|reservoir
@@ -12569,6 +14877,11 @@ karpendonkse-plas-near-eindhoven|32|3|lake
 karpendonkse-plas-near-helmond|32|3|lake
 karpykha-forestry-preserve-near-korosten|81920|3|forest reserve
 karpykha-forestry-preserve-near-zviahel|81920|3|forest reserve
+karrebaek-fjord-near-naestved|69632|3|fjord
+karrebaek-fjord-near-nakskov|69632|3|fjord
+karrebaek-fjord-near-nyborg|69632|3|fjord
+karrebaek-fjord-near-nykobing-falster|69632|3|fjord
+karrebaek-fjord-near-vordingborg|69632|3|fjord
 karren-near-dornbirn|1024|1|
 karsiborska-kepa-near-swinoujscie|64|3|island
 karst-plateau-near-koper|1024|3|karst plateau
@@ -12578,6 +14891,7 @@ kartsakhi-lake-near-kars|32|3|lake
 karun-1-lake-near-ahvaz|32|3|reservoir
 karun-2-lake-near-ahvaz|32|3|reservoir
 karun-2-lake-near-basra|32|3|reservoir
+karura-forest-near-nairobi|16384|3|forest
 karvounis-near-samos|1024|3|mountain
 karwendel-near-innsbruck|1024|2|
 kasagiyama-near-nara|1024|3|mountain
@@ -12591,6 +14905,8 @@ kashubian-landscape-park-near-sopot|196608|3|landscape park in Poland
 kasidis-near-glyfada|64|3|island
 kasiri-island-near-nakhchivan|320|3|river island
 kasjuni-beach-near-kastela|16|3|beach
+kasjuni-beach-near-sinj|16|3|beach
+kasjuni-beach-near-vodice|16|3|beach
 kask-island-near-gebze|64|3|island
 kask-island-near-yalova|64|3|island
 kasmalinsky-ribbon-forest-near-barnaul|65536|3|protected area of Russia
@@ -12613,8 +14929,10 @@ kastellholmen-near-nacka-municipality|64|3|island
 kastellholmen-near-solna-municipality|64|3|island
 kastjarv-near-johvi|32|3|lake
 kastjarv-near-sillamae|32|3|lake
+kasu-brahmananda-reddy-national-park-near-hyderabad|32768|3|national park
 kasuciu-lake-near-kretinga|32|3|lake
 kasugayama-primeval-forest-near-nara|16384|3|old-growth forest
+kasumi-coast-near-tottori|4096|3|coast
 kat-o-near-huizhou|64|3|island
 katepwa-point-provincial-park-near-yorkton|131072|3|provincial park of Saskatchewan
 katharinenlinde-near-esslingen-am-neckar|1024|3|hill
@@ -12655,6 +14973,15 @@ kauno-marios-regional-park-near-kaunas|131072|3|regional park
 kausezers-near-lielvarde|32|3|lake
 kausezers-near-ogre|32|3|lake
 kauwadol-hill-near-patna|1024|3|hill
+kavos-vassili-site-near-athens|4096|3|cape
+kavos-vassili-site-near-egaleo|4096|3|cape
+kavos-vassili-site-near-elefsina|4096|3|cape
+kavos-vassili-site-near-nikaia|4096|3|cape
+kavos-vassili-site-near-peristeri|4096|3|cape
+kavos-vassili-site-near-petroupoli|4096|3|cape
+kavos-vassili-site-near-piraeus|4096|3|cape
+kavos-vassili-site-near-salamis-island|4096|3|cape
+kavos-vassili-site-near-zografou|4096|3|cape
 kavros-near-rethymno|0|0|
 kaw-lake-near-enid|32|3|reservoir
 kaw-lake-near-stillwater|32|3|reservoir
@@ -12666,6 +14993,7 @@ kazachy-near-saratov|64|3|island
 kazanite-near-smolyan|65536|3|nature reserve
 kazanlak-valley-near-dimitrovgrad|2048|3|valley
 kazansky-island-near-saint-petersburg|64|3|island
+kazantyp-near-kerch|4096|3|cape
 kazem-dashi-near-tabriz|1024|3|hill
 kazem-dashi-near-urmia|1024|3|hill
 kazennyi-torets-near-sloviansk|256|3|river
@@ -12679,6 +15007,7 @@ kedrinos-lofos-near-evosmos|17408|3|hill
 kedrinos-lofos-near-kalamaria|17408|3|hill
 kedrinos-lofos-near-stavroupoli|17408|3|hill
 kedrinos-lofos-seih-sou-forest-near-thessaloniki|17408|3|hill
+kedrodasos-beach-near-chania|16|3|beach
 keent-near-oss|81920|3|riparian forest
 keent-near-wijchen|81920|3|riparian forest
 keep-river-national-park-near-kununurra|32768|3|national park of Australia
@@ -12688,6 +15017,7 @@ kefken-island-near-izmit|64|3|island
 kegon-falls-near-maebashi|1|3|waterfall
 kegon-falls-near-utsunomiya|1|3|waterfall
 kegostrov-near-arkhangelsk|64|3|island
+kehena-beach-near-hilo|16|3|beach
 keihinjima-near-kawasaki|0|0|
 keijarvi-near-ylojarvi|32|3|lake or pond
 keila-waterfall-near-keila|1|3|waterfall
@@ -12697,6 +15027,7 @@ keilberg-near-zwickau|1024|3|mountain
 keilor-botanic-gardens-near-sunbury|0|0|
 keiservarden-near-bodo|1024|3|mountain
 kejimkujik-national-park-near-halifax|32768|3|national park
+kelani-river-near-colombo|256|3|river
 keleberdianske-protected-tract-near-kremenchuk|65536|3|protected area
 kellerberg-near-brunn-am-gebirge|1024|3|mountain
 kellerjoch-near-schwaz|1024|3|mountain
@@ -12756,6 +15087,7 @@ kepler-lake-near-shreveport|32|3|reservoir
 keravanjarvi-near-hyvinkaa|32|3|lake or pond
 keravanjarvi-near-jarvenpaa|32|3|lake or pond
 keravanjarvi-near-riihimaki|32|3|lake or pond
+kerayong-river-near-kuala-lumpur|256|3|river
 kerch-bay-near-kerch|4096|3|bay
 kerewong-state-forest-near-taree|81920|3|state forest
 kerkenbos-near-heerhugowaard|131072|2|
@@ -12777,11 +15109,15 @@ kersal-moor-near-salford|65536|3|moorland
 kersal-moor-near-stretford|65536|3|moorland
 kerse-loch-near-ayr-uk|32|3|lake
 kersko-near-nymburk|65536|3|protected area
+kerteminde-fjord-near-nyborg|4096|3|fjord
+kerteminde-fjord-near-odense|4096|3|fjord
+kerteminde-fjord-near-svendborg|4096|3|fjord
 keshit-waterfall-near-kerman|1|3|waterfall
 keshit-waterfall-near-zahedan|1|3|waterfall
 kesselberg-palatinate-near-landau-in-der-pfalz|1024|3|mountain
 kesseltal-mit-kessel-hahnenbach-und-kohrlesbach-near-donauworth|65536|3|Special Area of Conservation
 keszthelyi-obol-near-nagykanizsa|4096|3|bay
+keta-lagoon-near-accra|4640|3|lagoon
 ketelmeer-near-dronten|32|3|lake
 ketelmeer-near-enkhuizen|32|3|lake
 ketelmeer-near-kampen|32|3|lake
@@ -12797,6 +15133,8 @@ kettle-moraine-state-forest-near-milwaukee|16384|1|
 kettle-valley-rail-trail-near-penticton|0|0|
 kettletown-state-park-near-bridgeport|131072|2|
 kevladev-national-park-near-agra|32768|3|national park
+kevladev-national-park-near-delhi|32768|3|national park
+kevladev-national-park-near-jaipur|32768|3|national park
 kew-gardens-london|0|0|
 key-biscayne-near-boca-raton|64|3|island
 key-biscayne-near-hollywood|64|3|island
@@ -12807,6 +15145,7 @@ keystone-state-park-near-broken-arrow|131072|2|
 keystone-state-park-near-stillwater|131072|2|
 keystone-state-park-near-tulsa|131072|2|
 kezenoyam-near-grozny|32|3|lake
+kgale-hill-near-gaborone|132096|3|hill
 khabikki-lake-near-faisalabad|32|3|salt lake
 khabikki-lake-near-jhang|32|3|salt lake
 khabikki-lake-near-sargodha|32|3|salt lake
@@ -12815,6 +15154,7 @@ khadzhibey-estuary-near-odesa|32|3|lake
 khadzhybei-liman-near-bilhorod-dnistrovskyi|32|3|lake
 khadzhybei-liman-near-chornomorsk|32|3|lake
 khadzhybei-liman-near-pivdenne|32|3|lake
+khadzhyder-lagoon-near-bilhorod-dnistrovskyi|4128|3|lagoon
 khajjiar-lake-near-amritsar|32|3|lake
 khajjiar-lake-near-kasur|32|3|lake
 khalaktyrskoe-near-petropavlovsk-kamchatsky|32|3|lake
@@ -12828,13 +15168,16 @@ khanpur-lake-near-peshawar|32|3|reservoir
 khanpur-lake-near-rawalpindi|32|3|reservoir
 khanzhonkivske-reservoir-near-horlivka|32|3|reservoir
 khanzhonkivske-reservoir-near-yenakiieve|32|3|reservoir
+khao-yai-national-park-near-bangkok|65536|3|nature reserve
 kharitonov-garden-near-yekaterinburg|131072|3|park
 khashechal-near-qazvin|1024|3|mountain
 khashechal-near-rasht|1024|3|mountain
+khayat-beach-near-hadera|16|3|beach
 khayiz-lake-near-jubail|32|3|reservoir
 khekhtsir-near-khabarovsk|1024|3|mountain range
 kheoni-wildlife-sanctuary-near-bhopal|65536|3|wildlife refuge
 kheoni-wildlife-sanctuary-near-indore|65536|3|wildlife refuge
+khlong-om-non-near-bangkok|256|3|river
 kholodny-yar-near-smila|16384|3|forest
 kholodnyi-yar-national-nature-park-near-pervomaisk|32768|3|national park
 kholodnyi-yar-national-nature-park-near-pivdennoukrainsk|32768|3|national park
@@ -12857,12 +15200,15 @@ khvalynsky-national-park-near-saratov|65536|3|nature reserve
 kiamika-reservoir-regional-park-near-mont-laurier|131072|3|regional park
 kiaules-nugara-near-gargzdai|64|3|island
 kiaules-nugara-near-klaipeda|64|3|island
+kibagata-near-fukui|4128|3|lagoon
+kibagata-near-kanazawa|4128|3|lagoon
 kichier-lake-near-cheboksary|32|3|lake
 kichier-lake-near-yoshkar-ola|32|3|lake
 kickapoo-cavern-state-park-near-ciudad-acuna|131074|3|show cave
 kickelhahn-near-suhl|1024|3|mountain
 kiel-fjord-near-kiel|4096|3|fjord
 kielder-water-near-newcastle-upon-tyne|32|3|reservoir
+kieler-forde-near-rendsburg|4096|3|fjord
 kielpinskie-lake-near-legionowo|32|3|lake
 kielstrup-s-near-randers|32|3|lake
 kielstrup-so-near-hadsund|32|3|lake
@@ -12882,6 +15228,8 @@ kilbourne-hole-near-el-paso|0|0|
 kildinskoye-lake-near-murmansk|32|3|lake
 kilen-near-holstebro|4128|3|lake
 kilen-near-lemvig|4128|3|lake
+kilen-near-skive|4128|3|lake
+kilen-near-viborg|4128|3|lake
 kilevann-near-porsgrunn|32|3|lake
 killala-bay-near-ballina|4096|3|bay
 killarney-provincial-park-near-sudbury|131072|3|provincial park of Canada
@@ -12906,6 +15254,7 @@ kindra-state-forest-near-griffith|81920|3|state forest
 kindra-state-forest-near-junee|81920|3|state forest
 kindra-state-forest-near-leeton|81920|3|state forest
 kindra-state-forest-near-narrandera|81920|3|state forest
+kindrum-lough-near-letterkenny|4128|3|lagoon
 king-george-sound-near-albany|4096|3|bay
 king-george-v-reservoir-near-basildon|32|3|reservoir
 king-s-inch-near-glasgow|64|3|island
@@ -12933,6 +15282,9 @@ kings-plains-national-park-near-glen-innes|32768|3|national park of Australia
 kings-plains-national-park-near-goondiwindi|32768|3|national park of Australia
 kings-plains-national-park-near-inverell|32768|3|national park of Australia
 kings-plains-national-park-near-moree|32768|3|national park of Australia
+kingscross-point-near-ayr-uk|4096|3|cape
+kingscross-point-near-kilmarnock|4096|3|cape
+kinmen-county-near-kaohsiung|64|3|archipelago
 kinn-near-floro|64|3|island
 kinpozan-prefectural-natural-park-near-kumamoto|196608|2|
 kinselmeer-near-diemen|32|3|lake
@@ -12951,12 +15303,14 @@ kirana-hills-near-faisalabad|1024|3|mountain
 kirana-hills-near-gujranwala|1024|3|mountain
 kirana-hills-near-jhang|1024|3|mountain
 kirana-hills-near-kasur|1024|3|mountain
+kirana-hills-near-lahore|1024|3|mountain
 kirana-hills-near-multan|1024|3|mountain
 kirana-hills-near-sahiwal|1024|3|mountain
 kirana-hills-near-sargodha|1024|3|mountain
 kirana-hills-near-sheikhupura|1024|3|mountain
 kirche-reichenbach-near-saalfeld|65536|3|Special Area of Conservation
 kirchsee-near-bad-tolz|32|3|lake
+kirirom-national-park-near-phnom-penh|32768|3|national park
 kirjurinluoto-near-pori|64|3|island
 kirjurinluoto-near-rauma|64|3|island
 kirk-s-bush-near-pukekohe|131072|3|park
@@ -12974,8 +15328,10 @@ kirov-park-novosibirsk-near-novosibirsk|131072|3|park
 kirov-reservoir-near-taraz|32|3|reservoir
 kirovograd-ponds-near-podolsk|32|3|reservoir
 kirthar-mountains-near-hyderabad-pk|1024|3|mountain range
+kirthar-mountains-near-karachi|1024|3|mountain range
 kirthar-mountains-near-sukkur|1024|3|mountain range
 kirwin-national-wildlife-refuge-near-grand-island|65536|3|National Wildlife Refuge
+kisakata-near-akita|4128|3|lagoon
 kisezers-near-ikskile|32|3|lake
 kisezers-near-olaine|32|3|lake
 kisezers-near-riga|32|3|lake
@@ -13003,9 +15359,19 @@ kithairon-near-megara|1024|3|mountain range
 kithairon-near-salamis-island|1024|3|mountain range
 kithairon-near-thebes|1024|3|mountain range
 kitka-near-svishtov|65536|3|nature reserve
+kitsilano-beach-near-burnaby|16|3|beach
+kitsilano-beach-near-coquitlam|16|3|beach
+kitsilano-beach-near-delta|16|3|beach
+kitsilano-beach-near-langley|16|3|beach
+kitsilano-beach-near-maple-ridge|16|3|beach
+kitsilano-beach-near-nanaimo|16|3|beach
+kitsilano-beach-near-new-westminster|16|3|beach
 kitsilano-beach-near-north-vancouver|16|3|beach
+kitsilano-beach-near-port-moody|16|3|beach
 kitsilano-beach-near-richmond-ca|16|3|beach
+kitsilano-beach-near-surrey|16|3|beach
 kitsilano-beach-near-vancouver|16|3|beach
+kitsilano-beach-near-white-rock|16|3|beach
 kitty-coleman-beach-provincial-park-near-courtenay|131072|3|provincial park of Canada
 kitzbuheler-horn-near-kitzbuhel|1024|3|mountain
 kitzsteinhorn-near-kitzbuhel|1024|3|mountain
@@ -13014,8 +15380,20 @@ kitzsteinhorn-near-zell-am-see|1024|3|mountain
 kiuruvesi-near-iisalmi|32|3|lake
 kivesjarvi-near-kajaani|32|3|lake
 kivijarvi-near-uusikaupunki|32|3|lake or pond
+kivinokka-near-espoo|135168|3|cape
+kivinokka-near-helsinki|135168|3|cape
+kivinokka-near-jarvenpaa|135168|3|cape
+kivinokka-near-kauniainen|135168|3|cape
+kivinokka-near-kerava|135168|3|cape
+kivinokka-near-kirkkonummi|135168|3|cape
+kivinokka-near-klaukkala|135168|3|cape
+kivinokka-near-tuusula|135168|3|cape
+kivinokka-near-vantaa|135168|3|cape
 kizhi-near-petrozavodsk|64|3|island
+kjaersgaard-strand-near-aalborg|16|3|beach
+kjaersgaard-strand-near-frederikshavn|16|3|beach
 kjaersgaard-strand-near-hjorring|16|3|beach
+kjaersgaard-strand-near-skagen|16|3|beach
 kjerag-near-stavanger|1024|3|mountain
 kjeragfossen-near-stavanger|1|3|waterfall
 kjosterud-canyon-near-drammen|2052|3|canyon
@@ -13024,6 +15402,8 @@ kladinsky-potok-near-pelhrimov|65536|3|nature reserve in the Czech Republic
 klaipeda-sculpture-park-near-gargzdai|0|0|
 klamath-mountains-near-grants-pass|1024|3|mountain range
 klamath-mountains-near-medford|1024|3|mountain range
+klapkalnciems-beach-near-marupe|16|3|beach
+klapkalnciems-beach-near-olaine|16|3|beach
 klapy-near-puchov|65536|3|nature reserve
 klasztorne-wzgorze-near-kedzierzyn-kozle|1024|3|mountain
 klatovske-rameno-near-dunajska-streda|65536|3|national nature reserve
@@ -13042,6 +15422,7 @@ klebitz-rahnsdorfer-feldsolle-near-lutherstadt-wittenberg|65536|3|Special Area o
 klebwald-near-pforzheim|65536|3|protected area
 kleeberg-near-feldbach|1024|3|mountain
 klein-offenseth-bokelsesser-moor-near-elmshorn|65536|3|Special Area of Conservation
+klein-strand-near-bruges|16|3|beach
 klein-strand-near-koksijde|16|3|beach
 kleine-kalmit-near-landau-in-der-pfalz|1024|3|hill
 kleine-rietplas-near-coevorden|32|3|lake
@@ -13077,6 +15458,7 @@ klever-reichswald-near-kleve|16384|3|forest
 klever-reichswald-near-krefeld|16384|3|forest
 klever-reichswald-near-venlo|16384|3|forest
 kliepsiu-lake-near-ukmerge|32|3|lake
+kliff-fischland-near-rostock|65536|3|geotope
 klikvova-louka-near-jablonec-nad-nisou|65536|3|nature reserve in the Czech Republic
 klimek-near-ostroleka|32|3|lake
 klimkowka-manor-house-near-krosno|131072|3|park
@@ -13084,6 +15466,7 @@ klinger-near-banska-stiavnica|32|3|reservoir
 klinovec-near-karlovy-vary|1024|3|main peak
 klinovec-near-sokolov|1024|3|main peak
 klinovec-near-zatec|1024|3|main peak
+klipriviersberg-nature-reserve-near-johannesburg|65536|3|nature reserve
 klirou-reservoir-near-lakatamia|32|3|reservoir
 klirou-reservoir-near-nicosia|32|3|reservoir
 klodzko-valley-near-klodzko|2048|3|depression
@@ -13119,7 +15502,9 @@ knepp-wildland-near-worthing|65536|3|nature reserve
 knezi-hora-near-strakonice|65536|3|nature reserve in the Czech Republic
 kniazhpilskyi-nature-reserve-near-kamianets-podilskyi|65536|3|landscape reserve
 kniebis-near-freudenstadt|1024|3|mountain
+knipe-point-near-scarborough|4096|3|headland
 knipemyst-near-kungsbacka|32|3|lake
+knockadoon-head-near-cobh|4096|3|cape
 knockmealdown-mountains-near-clonmel|1024|3|mountain range
 knokke-heist-near-bruges|0|0|
 knolls-of-parisis-near-argenteuil|1024|3|hill chain
@@ -13131,6 +15516,7 @@ knudshoved-near-nyborg|4096|3|peninsula
 knullgebirge-near-bad-hersfeld|1024|3|mountain range
 knypersley-reservoir-near-newcastle-under-lyme|32|3|reservoir
 knyszyn-forest-near-bialystok|16384|3|forest
+ko-chang-near-bangkok|64|3|island
 kobda-sanctuary-near-aktobe|65536|2|
 kobererkogel-near-voitsberg|1024|3|mountain
 kobes-darzs-near-marupe|131072|3|park
@@ -13150,18 +15536,31 @@ kogorjarv-near-voru|32|3|lake
 koh-i-chiltan-near-quetta|1024|3|mountain
 kohbrink-near-minden|65536|3|Naturschutzgebiet
 kohnionjarvi-near-jyvaskyla|32|3|lake or pond
+koiji-beach-near-toyohashi|16|3|beach
+koiji-beach-near-toyota|16|3|beach
 kojima-peninsula-near-kurashiki|4096|3|peninsula
 kok-tobe-near-almaty|263168|3|mountain
 kokkosaari-near-kitee|64|3|island
 kokkosaari-near-savonlinna|64|3|island
+koko-head-near-honolulu|4096|3|headland
 kolarovy-sady-near-prostejov|131072|3|park
 kolbenberg-near-bad-homburg-vor-der-hohe|1024|3|mountain
+kolding-fjord-near-aabenraa|4096|3|fjord
+kolding-fjord-near-billund|4096|3|fjord
+kolding-fjord-near-haderslev|4096|3|fjord
+kolding-fjord-near-horsens|4096|3|fjord
+kolding-fjord-near-kolding|4096|3|fjord
+kolding-fjord-near-odense|4096|3|fjord
+kolding-fjord-near-ribe|4096|3|fjord
+kolding-fjord-near-vejle|4096|3|fjord
 kolebky-near-uherske-hradiste|65536|3|nature reserve in the Czech Republic
 koli-national-park-near-joensuu|32768|3|national park
 kolin-letiste-near-kolin|65536|3|natural monument in the Czech Republic
 kolindsund-near-grenaa|32|3|lake
 kolinske-tune-near-kolin|65536|3|natural monument in the Czech Republic
 kolkheti-national-park-near-poti|32768|3|national park
+kollafjordur-near-reykjavik|4096|3|fjord
+kollam-beach-near-thiruvananthapuram|16|3|beach
 kollnischer-wald-ffh-near-bottrop|65536|3|protected area
 kollund-forest-near-aabenraa|16384|3|forest
 kollund-forest-near-tonder|16384|3|forest
@@ -13180,12 +15579,16 @@ koltsovsky-garden-square-near-voronezh|196608|3|protected area of Russia
 komoka-provincial-park-near-london-ontario|131072|3|provincial park of Canada
 komoka-provincial-park-near-stratford|131072|3|provincial park of Canada
 komoka-provincial-park-near-woodstock|131072|3|provincial park of Canada
+komos-beach-near-heraklion|16|3|beach
+komos-beach-near-rethymno|16|3|beach
 komovi-near-podgorica|1024|3|mountain range
 komovi-range-near-bijelo-polje|1024|3|mountain range
 kompsatos-near-komotini|256|3|river
 komsomolsky-garden-near-volgograd|131072|3|park
 konau-bei-braudel-near-salzwedel|65536|3|Special Area of Conservation
+kondakarla-ava-lake-near-visakhapatnam|4128|3|lagoon
 kondalilla-national-park-near-nambour|32768|3|national park of Australia
+kondyli-near-corinth|131088|3|beach
 koneprusy-caves-near-prague|2|3|show cave
 kongeparken-near-sandnes-municipality|0|0|
 kongernes-nordsjaelland-national-park-near-helsingor|32768|3|national park
@@ -13219,6 +15622,7 @@ konnujarv-near-rapla|32|3|lake
 konttaisjarvi-near-kuusamo|32|3|lake or pond
 konyavska-mountain-near-dupnitsa|1024|3|mountain
 konyavska-mountain-near-kyustendil|1024|3|mountain
+koome-island-near-kampala|64|3|island
 kooragang-island-near-cessnock|0|0|
 kooragang-island-near-maitland|0|0|
 kooragang-island-near-newcastle|0|0|
@@ -13255,6 +15659,7 @@ koprinka-reservoir-near-kazanlak|32|3|reservoir
 koprinka-reservoir-near-stara-zagora|32|3|reservoir
 kopylovo-near-tolyatti|4096|3|peninsula
 korab-near-domazlice|1024|3|mountain
+korakas-cape-near-ermoupolis|4096|3|cape
 korbjarv-near-polva|32|3|lake
 korean-peninsula-near-ansan|0|0|
 korean-peninsula-near-bucheon|0|0|
@@ -13278,6 +15683,7 @@ korkeasaari-near-helsinki|64|3|island
 korkeasaari-near-kauniainen|64|3|island
 korkeasaari-near-tuusula|64|3|island
 korkeasaari-near-vantaa|64|3|island
+korle-lagoon-near-accra|4128|3|lagoon
 kornalovychi-near-boryslav|81920|3|forest reserve
 kornalovychi-near-sambir|81920|3|forest reserve
 kornberg-near-goppingen|1024|3|mountain
@@ -13334,6 +15740,7 @@ koumoundourou-lake-near-ilion|32|3|lake
 koupena-near-pazardzhik|65536|3|nature reserve
 kouris-reservoir-near-limassol|32|3|reservoir
 kournas-near-rethymno|32|3|lake
+koutalas-beach-near-chania|16|3|beach
 kovalinskoye-lake-near-kazan|65568|3|lake
 kovasinske-louky-near-strakonice|65536|3|nature reserve in the Czech Republic
 kovsu-lake-near-rezekne|32|3|lake
@@ -13394,6 +15801,12 @@ kralingen-lake-near-schiedam|131104|3|lake
 kralingen-lake-near-vlaardingen|131104|3|lake
 kraljevec-forest-park-near-dugo-selo|147456|3|forest park
 kraljevec-forest-park-near-sveta-nedelja|147456|3|forest park
+kraljicina-near-bar|16|3|beach
+kraljicina-near-budva|16|3|beach
+kraljicina-near-cetinje|16|3|beach
+kraljicina-near-herceg-novi|16|3|beach
+kraljicina-plaza-near-gospic|16|3|beach
+kraljicina-plaza-near-zadar|16|3|beach
 kralovany-lake-near-martin|0|0|
 krammer-near-goes|32|3|reservoir
 krammer-near-roosendaal|32|3|reservoir
@@ -13448,7 +15861,7 @@ kreminna-woods-national-nature-park-near-lysychansk|32768|3|national park
 kremlin-garden-near-nizhny-novgorod|131072|3|park
 kremnica-mountains-near-banska-bystrica|1024|3|mountain range
 kremnica-mountains-near-ziar-nad-hronom|1024|3|mountain range
-kremnica-mountains-near-zvolen|0|0|
+kremnica-mountains-near-zvolen|1024|3|mountain range
 kresna-gorge-near-blagoevgrad|2052|3|ravine
 kressenklinge-near-schwabisch-hall|2308|3|canyon
 kreutzwald-park-near-voru|131072|3|park
@@ -13459,6 +15872,9 @@ kreuzbergkapelle-arnsberg-near-arnsberg|1024|3|mountain
 kreuzkogel-near-leibnitz|1024|3|mountain
 krichim-reservoir-near-pazardzhik|32|3|reservoir
 krimml-waterfalls-near-salzburg|1|3|waterfall
+kristiansandsfjorden-near-arendal|4096|3|fjord
+kristiansandsfjorden-near-grimstad|4096|3|fjord
+kristiansandsfjorden-near-kristiansand|4096|3|fjord
 kristianstads-vattenrike-biosphere-reserve-near-kristianstad|66048|3|wetland
 kritsa-gorge-near-agios-nikolaos|2052|3|canyon
 kriukivskyi-park-near-kremenchuk|131072|3|park
@@ -13546,6 +15962,7 @@ ktyponisi-near-chalkida|64|2|
 ku-ring-gai-chase-national-park-near-gosford|32768|3|national park of Australia
 ku-ring-gai-chase-national-park-near-sydney|32768|3|national park of Australia
 kubbar-island-near-hafar-al-batin|64|3|island
+kubbar-island-near-kuwait-city|64|3|island
 kubenskoe-near-vologda|32|3|lake
 kubija-reservoir-near-voru|32|3|reservoir
 kubinska-hola-near-dolny-kubin|1024|3|mountain
@@ -13590,6 +16007,8 @@ kuitholbos-near-waregem|81920|3|forest
 kuivajarvi-near-forssa|32|3|lake
 kuja-nature-park-near-gulbene|196608|3|Natura 2000 site
 kuja-nature-park-near-madona|196608|3|Natura 2000 site
+kujukuri-beach-near-chiba|16|3|beach
+kujukuri-beach-near-kisarazu|16|3|beach
 kujukuri-beach-near-sakura|16|3|beach
 kukouri-near-hamina|64|3|island
 kukouri-near-kotka|64|3|island
@@ -13625,6 +16044,13 @@ kunanyi-mount-wellington-near-hobart|1024|3|mountain
 kunetice-mountain-near-chrudim|1024|3|mountain
 kuneticka-hora-near-hradec-kralove|1024|3|mountain
 kuneticka-hora-near-pardubice|1024|3|mountain
+kungsbacka-fjord-near-gothenburg|4096|3|fjord
+kungsbacka-fjord-near-kungalv|4096|3|fjord
+kungsbacka-fjord-near-kungsbacka|4096|3|fjord
+kungsbacka-fjord-near-lerum|4096|3|fjord
+kungsbacka-fjord-near-molndal|4096|3|fjord
+kungsbacka-fjord-near-molnlycke|4096|3|fjord
+kungsbacka-fjord-near-partille|4096|3|fjord
 kungsfors-near-sandviken|65536|3|nature reserve
 kungsholmen-near-huddinge-municipality|64|3|island
 kungsholmen-near-lidingo|64|3|island
@@ -13635,6 +16061,7 @@ kunickie-lake-near-lubin|32|3|lake
 kunimi-dake-near-fukui|1024|3|mountain
 kuniyasu-beach-near-fujieda|16|3|beach
 kuniyasu-beach-near-iwata|16|3|beach
+kunming-lake-near-beijing|32|3|reservoir
 kunraticko-michelsky-les-near-prague-4|16384|3|forest
 kuntur-nasa-near-potosi|1024|3|mountain
 kuntur-nasa-near-sucre|1024|3|mountain
@@ -13679,8 +16106,18 @@ kuruzzenkogel-near-feldbach|1024|3|mountain
 kuruzzenkogel-near-furstenfeld|1024|3|mountain
 kusenbu-yama-near-kurume|1024|3|mountain
 kusenbu-yama-near-saga|1024|3|mountain
+kustaanmiekka-near-espoo|4096|3|cape
+kustaanmiekka-near-helsinki|4096|3|cape
+kustaanmiekka-near-jarvenpaa|4096|3|cape
+kustaanmiekka-near-kauniainen|4096|3|cape
+kustaanmiekka-near-kerava|4096|3|cape
+kustaanmiekka-near-kirkkonummi|4096|3|cape
+kustaanmiekka-near-klaukkala|4096|3|cape
+kustaanmiekka-near-tuusula|4096|3|cape
+kustaanmiekka-near-vantaa|4096|3|cape
 kustenheiden-und-krattwalder-bei-cuxhaven-near-cuxhaven|65536|3|Special Area of Conservation
 kustry-near-strakonice|1024|3|mountain
+kusu-island-near-singapore|64|3|island
 kutaisi-botanical-garden-near-kutaisi|0|0|
 kutany-near-vsetin|65536|3|nature reserve in the Czech Republic
 kutelka-near-sliven|65536|3|nature reserve
@@ -13695,10 +16132,12 @@ kuusinen-near-hamina|64|3|island
 kuusinen-near-kotka|64|3|island
 kuusistonlahti-near-kaarina|4096|3|bay
 kuusvesi-near-aanekoski|32|3|lake
+kuwait-high-point-near-kuwait-city|1024|3|mountain
 kuybyshev-reservoir-near-tolyatti|32|3|reservoir
 kuybyshev-reservoir-near-ulyanovsk|32|3|reservoir
 kuzuyayla-nature-park-near-adapazar|196608|3|nature park
 kuzuyayla-nature-park-near-izmit|196608|3|nature park
+kvaenangen-near-alta|4096|3|fjord
 kvaeoya-near-harstad|64|3|island
 kvaloya-near-tromso|64|3|island
 kvaloya-troms-near-tromso-municipality|64|3|island
@@ -13733,6 +16172,18 @@ kyrenia-mountains-near-lakatamia|1024|3|mountain range
 kyrenia-mountains-near-larnaca|1024|3|mountain range
 kyrenia-mountains-near-nicosia|1024|3|mountain range
 kyrgyz-ata-state-nature-park-near-fergana|196608|3|nature park
+kyrkfjarden-near-haninge-municipality|4096|3|cove
+kyrkfjarden-near-huddinge-municipality|4096|3|cove
+kyrkfjarden-near-lidingo|4096|3|cove
+kyrkfjarden-near-marsta|4096|3|cove
+kyrkfjarden-near-nacka-municipality|4096|3|cove
+kyrkfjarden-near-norrtalje|4096|3|cove
+kyrkfjarden-near-sodertalje|4096|3|cove
+kyrkfjarden-near-solna-municipality|4096|3|cove
+kyrkfjarden-near-stockholm|4096|3|cove
+kyrkfjarden-near-taby|4096|3|cove
+kyrkfjarden-near-tumba|4096|3|cove
+kyrkfjarden-near-upplands-vasby|4096|3|cove
 kyrkosjarvi-near-seinajoki|32|3|reservoir
 kyronkari-near-raahe|64|3|island
 kyrylyvskyi-hai-park-kyiv-near-bucha|16384|3|urban forest
@@ -13779,13 +16230,20 @@ la-cangreja-national-park-near-alajuela|32768|3|national park
 la-castel-near-edinet|65536|3|landscape reserve
 la-caume-near-arles|1024|3|mountain
 la-caume-near-salon-de-provence|1024|3|mountain
+la-colorada-beach-near-montevideo|16|3|beach
 la-creueta-dels-aragalls-near-castelldefels|1024|3|mountain
 la-cumbre-peak-near-santa-barbara|1024|3|mountain
+la-devesa-near-torrent|16|1|
 la-dole-near-geneva|1024|3|mountain
 la-dole-near-lausanne|1024|3|mountain
 la-dole-near-nyon|1024|3|mountain
 la-durande-near-le-puy-en-velay|1024|3|mountain
 la-foradada-near-granollers|1024|3|mountain
+la-fosca-near-girona|16|3|beach
+la-franqui-near-agde|16|3|beach
+la-franqui-near-beziers|16|3|beach
+la-franqui-near-narbonne|16|3|beach
+la-franqui-near-perpignan|16|3|beach
 la-gallinola-near-campobasso|1024|3|mountain
 la-garrofa-near-roquetas-de-mar|16|3|beach
 la-gavia-park-near-rivas-vaciamadrid|131072|3|park
@@ -13795,10 +16253,16 @@ la-grava-near-denia|16|3|urban beach
 la-hague-near-cherbourg-octeville|4096|3|cape
 la-herradura-near-callao|16|3|beach
 la-higa-near-pamplona|1024|3|mountain
+la-jolla-cove-near-el-cajon|4096|3|cove
+la-jolla-cove-near-escondido|4096|3|cove
+la-jolla-cove-near-san-diego|4096|3|cove
 la-laguna-lake-near-tarija|32|3|lake
 la-loteta-reservoir-near-tudela|32|3|reservoir
 la-mandria-natural-park-near-moncalieri|196608|3|protected area
 la-mandria-regional-park-near-turin|196608|3|protected area
+la-manga-near-cartagena|4096|3|headland
+la-manga-near-orihuela|4096|3|headland
+la-manga-near-torrevieja|4096|3|headland
 la-maranosa-near-aranjuez|1024|3|mountain
 la-maranosa-near-arganda-del-rey|1024|3|mountain
 la-maranosa-near-getafe|1024|3|mountain
@@ -13815,6 +16279,8 @@ la-mesa-redonda-near-leon-de-los-aldama|1024|3|mountain
 la-mesa-redonda-near-san-luis-potosi|1024|3|mountain
 la-om-near-zarnesti|1024|3|summit
 la-pampilla-near-callao|16|3|beach
+la-pampilla-near-lima|16|3|beach
+la-paz-cove-near-la-paz-mx|4096|3|cove
 la-paz-park-near-parla|131072|3|park
 la-paz-waterfall-near-alajuela|1|3|waterfall
 la-paz-waterfall-near-heredia|1|3|waterfall
@@ -13832,6 +16298,7 @@ la-rhune-larrun-near-biarritz|1024|3|mountain
 la-rhune-near-bayonne|1024|3|mountain
 la-roqueta-near-acapulco-de-juarez|64|3|island
 la-roqueta-near-chilpancingo-de-los-bravo|64|3|island
+la-salve-near-bilbao|16|3|beach
 la-segua-near-manta|66048|3|wetland
 la-segua-near-portoviejo|66048|3|wetland
 la-serena-dam-and-reservoir-near-merida-spain|32|3|reservoir
@@ -13853,6 +16320,7 @@ laacher-see-near-euskirchen|160|3|volcanic crater lake
 laacher-see-near-koblenz|160|3|volcanic crater lake
 laacher-see-near-neuwied|160|3|volcanic crater lake
 laacher-see-near-siegburg|160|3|volcanic crater lake
+laacher-see-near-villingen-schwenningen|160|3|volcanic crater lake
 laarder-wasmeer-near-nieuwegein|32|3|lake
 laascher-see-near-salzwedel|32|3|lake
 labanoras-regional-park-near-panevezys|131072|3|regional park
@@ -14008,6 +16476,11 @@ lac-de-saint-point-near-besancon|32|3|lake
 lac-de-schiffenen-near-fribourg|32|3|reservoir
 lac-de-seedorf-near-fribourg|32|3|lake
 lac-de-serre-poncon-near-gap|32|3|reservoir
+lac-de-soustons-near-anglet|4128|3|lagoon
+lac-de-soustons-near-bayonne|4128|3|lagoon
+lac-de-soustons-near-biarritz|4128|3|lagoon
+lac-de-soustons-near-dax|4128|3|lagoon
+lac-de-soustons-near-hendaye|4128|3|lagoon
 lac-de-sylans-near-oyonnax|32|3|lake
 lac-de-thoux-st-cricq-near-agen|32|3|lake
 lac-de-thoux-st-cricq-near-auch|32|3|lake
@@ -14260,6 +16733,8 @@ lady-bird-lake-near-san-marcos|32|3|reservoir
 lady-julia-percy-island-near-hamilton|64|3|island
 lady-julia-percy-island-near-portland-vic|64|3|island
 lady-julia-percy-island-near-warrnambool|64|3|island
+lady-robinsons-beach-near-penrith|16|3|beach
+lady-s-island-lake-near-waterford|4128|3|lagoon
 lady-s-island-lake-near-wexford|4128|3|lagoon
 lady-s-wood-near-huntingdon|65536|3|nature reserve
 laeken-park-near-vilvoorde|131072|3|park
@@ -14281,6 +16756,7 @@ lafarge-lake-near-coquitlam|32|3|lake
 lafarge-lake-near-langley|32|3|lake
 lafarge-lake-near-new-westminster|32|3|lake
 lafarge-lake-near-port-moody|32|3|lake
+laga-near-san-sebastian|16|1|
 lagendeltaet-near-lillehammer|65536|3|nature reserve
 lagern-near-baden-ch|1024|3|mountain
 lagern-near-dietikon|1024|3|mountain
@@ -14301,6 +16777,7 @@ lago-cruz-de-malta-near-itaquaquecetuba|32|3|lake
 lago-cruz-de-malta-near-maua|32|3|lake
 lago-cruz-de-malta-near-santo-andre|32|3|lake
 lago-cruz-de-malta-near-sao-bernardo-do-campo|32|3|lake
+lago-de-atitlan-near-guatemala-city|160|3|volcanic crater lake
 lago-de-camecuaro-national-park-near-zamora-de-hidalgo|32768|3|National Park of Mexico
 lago-de-la-republica-near-cascavel|32|3|lake
 lago-de-la-republica-near-ciudad-del-este|32|3|lake
@@ -14352,7 +16829,9 @@ lago-gerundo-near-crema|32|3|lake
 lago-gerundo-near-lodi|32|3|lake
 lago-grande-do-curuai-near-santarem-br|32|3|lake
 lago-la-plata-near-coyhaique|32|3|lake
+lago-marinello-near-acireale|4128|3|lagoon
 lago-marinello-near-milazzo|4128|3|lagoon
+lago-mergolo-della-tonnara-near-acireale|4128|3|lagoon
 lago-mergolo-della-tonnara-near-milazzo|4128|3|lagoon
 lago-municipal-de-sao-luis-de-montes-belos-near-aparecida-de-goiania|32|3|lake
 lago-municipal-de-sao-luis-de-montes-belos-near-goiania|32|3|lake
@@ -14363,6 +16842,7 @@ lago-nuovo-near-milazzo|4128|3|lagoon
 lago-olivo-near-caltanissetta|32|3|reservoir
 lago-pistono-near-ivrea|32|3|lake
 lago-portales-near-coyhaique|32|3|lake
+lago-porto-vecchio-near-acireale|4128|3|lagoon
 lago-porto-vecchio-near-milazzo|4128|3|lagoon
 lago-riesco-near-coyhaique|32|3|lake
 lago-salso-near-trani|32|3|lake
@@ -14403,6 +16883,7 @@ lagoa-dos-ingleses-near-betim|32|3|reservoir
 lagoa-dos-ingleses-near-contagem|32|3|reservoir
 lagoa-dos-patos-near-pelotas|4128|3|lagoon
 lagoa-dos-patos-near-santa-maria-br|4128|3|lagoon
+lagoa-feia-near-brasilia|32|3|lake
 lagoa-mangueira-near-melo|32|3|lake
 lagoa-mangueira-near-pelotas|32|3|lake
 lagoa-mirim-near-bage|32|3|lake
@@ -14411,8 +16892,16 @@ lagoa-mirim-near-pelotas|32|3|lake
 lagoa-misteriosa-near-campo-grande|32|3|lake
 lagoa-misteriosa-near-dourados|32|3|lake
 lagoa-misteriosa-near-pedro-juan-caballero|32|3|lake
+lagoa-rodrigo-de-freitas-near-belford-roxo|69664|3|lagoon
+lagoa-rodrigo-de-freitas-near-duque-de-caxias|69664|3|lagoon
+lagoa-rodrigo-de-freitas-near-niteroi|69664|3|lagoon
+lagoa-rodrigo-de-freitas-near-nova-iguacu|69664|3|lagoon
+lagoa-rodrigo-de-freitas-near-rio-de-janeiro|69664|3|lagoon
+lagoa-rodrigo-de-freitas-near-sao-goncalo|69664|3|lagoon
+lagoa-rodrigo-de-freitas-near-sao-joao-de-meriti|69664|3|lagoon
 lagoa-silvana-near-coronel-fabriciano|32|3|lake
 lagoa-silvana-near-governador-valadares|32|3|lake
+lagoon-of-ghar-el-melh-near-tunis|4128|3|lagoon
 lagoon-of-laguna-de-duero-near-palencia|32|3|lake
 lagoon-of-laguna-de-duero-near-valladolid|32|3|lake
 laguna-atascosa-national-wildlife-refuge-near-brownsville|65536|3|National Wildlife Refuge
@@ -14437,6 +16926,9 @@ laguna-brava-near-resistencia|32|3|lake
 laguna-canyon-near-newport-beach|2052|3|canyon
 laguna-chacas-near-juliaca|32|3|lake
 laguna-chacas-near-puno|32|3|lake
+laguna-chica-de-san-pedro-de-la-paz-near-concepcion|4128|3|lagoon
+laguna-chica-de-san-pedro-de-la-paz-near-san-pedro-de-la-paz|4128|3|lagoon
+laguna-chica-de-san-pedro-de-la-paz-near-talcahuano|4128|3|lagoon
 laguna-chis-chis-near-tandil|32|3|lake
 laguna-coast-wilderness-park-near-irvine|65536|3|protected area
 laguna-coast-wilderness-park-near-long-beach|65536|3|protected area
@@ -14445,6 +16937,7 @@ laguna-de-boada-near-palencia|32|3|lake
 laguna-de-boada-near-valladolid|32|3|lake
 laguna-de-el-hito-near-cuenca|32|2|
 laguna-de-el-hito-near-villarrobledo|32|2|
+laguna-de-el-portil-near-huelva|69664|3|lagoon
 laguna-de-fuente-del-rey-near-dos-hermanas|32|3|lake
 laguna-de-fuquene-near-tunja|32|3|lake
 laguna-de-gallocanta-near-calatayud|32|3|lake
@@ -14474,11 +16967,13 @@ laguna-de-pampa-blanca-near-arequipa|32|3|lake
 laguna-de-pedraza-near-palencia|32|3|lake
 laguna-de-pedraza-near-valladolid|32|3|lake
 laguna-de-pitillas-near-tudela|32|3|lake
+laguna-de-puerto-rey-near-lorca|4128|3|lagoon
 laguna-de-pultocc-near-ayacucho|32|3|lake
 laguna-de-pultocc-near-ica|32|3|lake
 laguna-de-san-juan-near-aranjuez|65568|3|lake
 laguna-de-san-juan-near-arganda-del-rey|65568|3|lake
 laguna-de-san-pablo-near-ibarra|4128|3|lagoon
+laguna-de-san-pablo-near-quito|4128|3|lagoon
 laguna-de-santa-maria-del-oro-near-tepic|32|3|lake
 laguna-de-sonso-near-cali|32|3|lake
 laguna-de-sonso-near-la-union|32|3|lake
@@ -14500,8 +16995,18 @@ laguna-del-sauce-near-maldonado|32|3|lake
 laguna-del-silencio-near-el-tablon|32|3|lake
 laguna-del-silencio-near-pasto|32|3|lake
 laguna-del-tobar-near-cuenca|32|3|lake
+laguna-e-vilunit-near-shkoder|4128|3|lagoon
+laguna-el-peral-near-valparaiso|4128|3|lagoon
+laguna-el-peral-near-villa-alemana|4128|3|lagoon
+laguna-el-peral-near-vina-del-mar|4128|3|lagoon
+laguna-el-pino-near-guatemala-city|32|3|lake
+laguna-garzon-near-maldonado|4128|3|lagoon
+laguna-grande-de-san-pedro-de-la-paz-near-concepcion|4128|3|lagoon
+laguna-grande-de-san-pedro-de-la-paz-near-san-pedro-de-la-paz|4128|3|lagoon
+laguna-grande-de-san-pedro-de-la-paz-near-talcahuano|4128|3|lagoon
 laguna-grande-near-linares|66080|3|lake
 laguna-grande-near-ubeda|66080|3|lake
+laguna-jose-ignacio-near-maldonado|4128|3|lagoon
 laguna-la-brava-near-mar-del-plata|32|3|lake
 laguna-la-brava-near-tandil|32|3|lake
 laguna-lake-near-san-luis-obispo|32|3|reservoir
@@ -14521,6 +17026,9 @@ laguna-oca-del-rio-paraguay-near-luque|65536|3|biosphere reserve
 laguna-oca-del-rio-paraguay-near-resistencia|65536|3|biosphere reserve
 laguna-oca-del-rio-paraguay-near-san-lorenzo|65536|3|biosphere reserve
 laguna-quistococha-near-iquitos|32|3|lake
+laguna-redonda-near-concepcion|4128|3|lagoon
+laguna-redonda-near-san-pedro-de-la-paz|4128|3|lagoon
+laguna-redonda-near-talcahuano|4128|3|lagoon
 laguna-rosa-de-torrevieja-near-torrevieja|32|1|
 laguna-san-jorge-near-trinidad|32|3|lake
 laguna-san-nicolas-near-cajamarca|32|3|lake
@@ -14541,6 +17049,12 @@ lagunas-de-rabasa-near-alicante|32|3|lake
 lagunas-de-ruidera-natural-park-near-albacete|196608|3|protected area
 lagunas-de-ruidera-near-villarrobledo|32|3|lake
 lagunas-de-teno-near-curico|32|3|lake
+lagunas-del-gran-concepcion-near-concepcion|4128|3|lagoon
+lagunas-del-gran-concepcion-near-san-pedro-de-la-paz|4128|3|lagoon
+lagunas-del-gran-concepcion-near-talcahuano|4128|3|lagoon
+lagune-di-caorle-near-pordenone|4128|3|lagoon
+lagune-di-caorle-near-treviso|4128|3|lagoon
+lagune-di-caorle-near-venice|4128|3|lagoon
 lagunes-de-brocas-near-mont-de-marsan|65536|3|Natura 2000 site
 lahartara-pond-near-prayagraj|32|3|lake
 lahartara-pond-near-varanasi|32|3|lake
@@ -14621,6 +17135,7 @@ lake-amara-near-cernavoda|32|3|lake
 lake-amara-near-mangalia|32|3|lake
 lake-amara-near-ramnicu-sarat|32|3|lake
 lake-amara-near-slobozia|32|3|lake
+lake-amatitlan-near-guatemala-city|160|3|volcanic crater lake
 lake-amvrakia-near-agrinio|65568|3|lake
 lake-ann-near-bentonville|32|3|lake
 lake-annecy-near-aix-les-bains|32|3|glacial lake
@@ -14629,6 +17144,7 @@ lake-annecy-near-annecy|32|3|glacial lake
 lake-annecy-near-annemasse|32|3|glacial lake
 lake-annecy-near-chambery|32|3|glacial lake
 lake-annone-near-monza|32|3|lake
+lake-antiniotissa-near-corfu|4128|3|lagoon
 lake-anza-near-berkeley|32|3|lake
 lake-apopka-near-kissimmee|32|3|lake
 lake-apopka-near-orlando|32|3|lake
@@ -14652,6 +17168,8 @@ lake-asnen-near-vaxjo|32|3|lake
 lake-asopiada-near-ilion|32|3|reservoir
 lake-asunden-near-boras|32|3|lake
 lake-atalanta-near-bentonville|32|3|lake
+lake-atanasovsko-near-burgas|4128|3|lagoon
+lake-atanasovsko-near-nesebar|4128|3|lagoon
 lake-atiamuri-near-taupo|32|3|reservoir
 lake-austin-near-killeen|32|3|reservoir
 lake-avernus-near-giugliano-in-campania|160|3|volcanic crater lake
@@ -14725,6 +17243,7 @@ lake-blagus-near-murska-sobota|32|3|reservoir
 lake-blagus-near-ptuj|32|3|reservoir
 lake-bled-near-kranj|32|3|glacial lake
 lake-bloomington-near-decatur|32|3|reservoir
+lake-bob-sandlin-state-park-near-tyler|131072|3|Texas state park
 lake-boga-near-deniliquin|32|3|lake
 lake-boga-near-swan-hill|32|3|lake
 lake-bohinj-near-kranj|32|3|glacial lake
@@ -14773,11 +17292,14 @@ lake-burrendong-near-orange|32|3|reservoir
 lake-burtnieks-near-cesis|32|3|lake
 lake-burtnieks-near-limbazi|32|3|lake
 lake-burtnieks-near-smiltene|32|3|lake
+lake-burullus-near-alexandria|32|3|lake
 lake-buyukcekmece-near-corlu|32|3|lake
 lake-buyukcekmece-near-tekirdag|32|3|lake
 lake-c-y-o-connor-near-northam|32|3|lake
 lake-cachi-near-cartago|32|3|lake
+lake-cachi-near-san-jose|32|3|lake
 lake-cajititlan-jalisco-near-colima|32|3|lake
+lake-cajititlan-jalisco-near-guadalajara|32|3|lake
 lake-cajititlan-jalisco-near-manzanillo|32|3|lake
 lake-cajititlan-jalisco-near-tlaquepaque|32|3|lake
 lake-cajititlan-jalisco-near-tonala|32|3|lake
@@ -14809,6 +17331,7 @@ lake-chabot-near-oakland|32|3|reservoir
 lake-chabyda-near-yakutsk|32|3|lake
 lake-champlain-near-burlington-vt|32|3|lake
 lake-chapala-near-colima|32|3|lake
+lake-chapala-near-guadalajara|32|3|lake
 lake-chapala-near-leon-de-los-aldama|32|3|lake
 lake-chapala-near-manzanillo|32|3|lake
 lake-chapala-near-tlaquepaque|32|3|lake
@@ -15079,6 +17602,7 @@ lake-gradisce-near-kamnik|32|3|lake
 lake-grassmere-near-blenheim|4128|3|lagoon
 lake-gregory-near-san-bernardino|32|3|lake
 lake-gregory-near-victorville|32|3|lake
+lake-guatavita-near-bogota|32|3|lake
 lake-guatavita-near-tunja|32|3|lake
 lake-guatavita-near-villavicencio|32|3|lake
 lake-guerledan-near-lorient|32|3|reservoir
@@ -15137,6 +17661,7 @@ lake-hibara-near-aizuwakamatsu|32|3|landslide-dammed lake
 lake-hibara-near-koriyama|32|3|landslide-dammed lake
 lake-hino-near-aluksne|32|3|lake
 lake-hino-near-balvi|32|3|lake
+lake-hiruga-near-fukui|4128|3|lagoon
 lake-hjalmaren-near-eskilstuna|32|3|lake
 lake-hjalmaren-near-vasteras|32|3|lake
 lake-hodges-near-escondido|32|3|reservoir
@@ -15153,8 +17678,10 @@ lake-hume-near-albury|0|0|
 lake-hundissaare-near-parnu|32|3|lake
 lake-ialpuh-near-vulcanesti|32|3|lake
 lake-iamonia-near-valdosta|32|3|lake
+lake-idku-near-alexandria|32|3|lake
 lake-idro-near-mantua|32|3|lake
 lake-iguaque-near-tunja|32|3|lake
+lake-illawarra-near-nowra|4128|3|lagoon
 lake-illawarra-near-wollongong|4128|3|lagoon
 lake-ilo-national-wildlife-refuge-near-minot|65536|3|National Wildlife Refuge
 lake-imsi-near-rapla|32|3|lake
@@ -15181,6 +17708,7 @@ lake-inman-near-wichita|32|3|lake
 lake-iruka-near-gifu|32|3|lake
 lake-iruka-near-ichinomiya|32|3|lake
 lake-iruka-near-kasugai|32|3|lake
+lake-iruka-near-nagoya|32|3|lake
 lake-isabel-near-pueblo|32|3|lake
 lake-iseo-near-bergamo|32|3|lake
 lake-iseo-near-brescia|32|3|lake
@@ -15228,10 +17756,12 @@ lake-karakz-near-tarsus|32|3|reservoir
 lake-karamk-near-afyonkarahisar|544|3|lake
 lake-karapiro-near-hamilton-new-zealand|32|3|reservoir
 lake-kari-near-gyumri|32|3|lake
+lake-kariba-near-lusaka|32|3|reservoir
 lake-karitsa-near-rapla|32|3|lake
 lake-karla-near-farsala|32|3|reservoir
 lake-karla-near-larissa|32|3|reservoir
 lake-karla-near-volos|32|3|reservoir
+lake-kashiba-near-lusaka|32|3|lake
 lake-kasumigaura-near-chiba|32|3|lake
 lake-kasumigaura-near-funabashi|32|3|lake
 lake-kasumigaura-near-ichikawa|32|3|lake
@@ -15263,6 +17793,7 @@ lake-king-near-sale|32|3|lake
 lake-kissimmee-state-park-near-lakeland|131072|3|Florida state park
 lake-kittamaqundi-near-baltimore|32|3|reservoir
 lake-kivijarvi-near-lappeenranta|32|3|lake or pond
+lake-kivu-near-kigali|32|3|lake
 lake-kleifarvatn-near-reykjavik|32|3|lake
 lake-klooga-near-keila|32|3|lake
 lake-klooga-near-paldiski|32|3|lake
@@ -15345,6 +17876,7 @@ lake-maggiore-near-milan|0|0|
 lake-maggiore-near-varese|0|0|
 lake-malaren-near-eskilstuna|32|3|lake
 lake-malaren-near-vasteras|32|3|lake
+lake-man-near-naha|69664|3|lagoon
 lake-manatee-state-park-near-sarasota|131072|3|Florida state park
 lake-mandrensko-near-nesebar|32|3|reservoir
 lake-mangamahoe-near-new-plymouth|32|3|reservoir
@@ -15369,6 +17901,7 @@ lake-massaciuccoli-near-pisa|0|0|
 lake-massaciuccoli-near-pistoia|32|3|lake
 lake-massaciuccoli-near-prato|32|3|lake
 lake-massapoag-near-brockton|32|3|lake
+lake-matahina-near-rotorua|4128|3|lagoon
 lake-mathews-near-corona|32|3|reservoir
 lake-matylda-near-most|32|3|lake
 lake-maurepas-near-baton-rouge|32|3|lake
@@ -15390,6 +17923,25 @@ lake-merced-near-daly-city|32|3|reservoir
 lake-meredith-national-recreation-area-near-amarillo|32768|3|National Park System unit
 lake-meridian-near-kent|32|3|lake
 lake-meridian-park-near-kent|131072|3|park
+lake-merritt-near-alameda|69664|3|lagoon
+lake-merritt-near-antioch|69664|3|lagoon
+lake-merritt-near-berkeley|69664|3|lagoon
+lake-merritt-near-concord|69664|3|lagoon
+lake-merritt-near-cupertino|69664|3|lagoon
+lake-merritt-near-daly-city|69664|3|lagoon
+lake-merritt-near-fairfield|69664|3|lagoon
+lake-merritt-near-fremont|69664|3|lagoon
+lake-merritt-near-hayward|69664|3|lagoon
+lake-merritt-near-mountain-view|69664|3|lagoon
+lake-merritt-near-oakland|69664|3|lagoon
+lake-merritt-near-palo-alto|69664|3|lagoon
+lake-merritt-near-redwood-city|69664|3|lagoon
+lake-merritt-near-san-francisco|69664|3|lagoon
+lake-merritt-near-san-mateo|69664|3|lagoon
+lake-merritt-near-san-rafael|69664|3|lagoon
+lake-merritt-near-santa-clara|69664|3|lagoon
+lake-merritt-near-sunnyvale|69664|3|lagoon
+lake-merritt-near-vallejo|69664|3|lagoon
 lake-michigan-near-appleton|32|3|lake
 lake-michigan-near-oshkosh|32|3|lake
 lake-michigan-near-sheboygan|32|3|lake
@@ -15403,6 +17955,8 @@ lake-misuzu-near-matsumoto|32|3|reservoir
 lake-miyagase-near-sagamihara|32|3|reservoir
 lake-miyazawa-near-kawagoe|32|3|artificial lake
 lake-mjorn-near-boras|32|3|lake
+lake-moeris-near-alexandria|32|3|lake
+lake-moeris-near-cairo|32|3|lake
 lake-mogan-near-krkkale|32|3|lake
 lake-mohawksin-near-wausau|32|3|lake
 lake-mokoan-near-shepparton|32|3|lake
@@ -15412,7 +17966,7 @@ lake-monroe-near-daytona-beach|32|3|lake
 lake-monroe-near-sanford|32|3|lake
 lake-monroe-near-titusville|32|3|lake
 lake-montedoglio-near-arezzo|32|3|reservoir
-lake-monticello-near-tyler|0|0|
+lake-monticello-near-tyler|32|3|reservoir
 lake-moondarra-near-mount-isa|32|3|reservoir
 lake-morello-near-caltanissetta|32|3|reservoir
 lake-morello-near-enna|32|3|reservoir
@@ -15425,12 +17979,13 @@ lake-mulwala-near-wangaratta|32|3|reservoir
 lake-mulwala-near-wodonga|32|3|reservoir
 lake-murati-near-aluksne|32|3|lake
 lake-murray-near-columbia|32|3|reservoir
-lake-murray-near-el-cajon|0|0|
+lake-murray-near-el-cajon|32|3|reservoir
 lake-murray-near-sherman|32|3|lake
 lake-murten-near-neuchatel|0|0|
 lake-nabudi-near-rakvere|32|3|lake
 lake-nagambie-near-echuca|32|3|lake
 lake-nagambie-near-shepparton|32|3|lake
+lake-naivasha-near-nairobi|32|3|lake
 lake-naplas-near-godollo|32|3|lake
 lake-nar-near-aksaray|160|3|volcanic crater lake
 lake-nar-near-krsehir|160|3|volcanic crater lake
@@ -15482,7 +18037,7 @@ lake-novillo-near-hermosillo|32|3|reservoir
 lake-nunijup-near-katanning|32|3|salt lake
 lake-nurie-near-batumi|32|3|lake
 lake-nurie-near-poti|32|3|lake
-lake-o-the-pines-near-tyler|0|0|
+lake-o-the-pines-near-tyler|32|3|reservoir
 lake-oasa-near-alba-iulia|0|0|
 lake-of-banyoles-near-girona|65568|3|lake
 lake-of-love-near-bruges|32|3|lake
@@ -15498,6 +18053,7 @@ lake-of-the-isles-near-minneapolis|32|3|lake
 lake-of-the-ozarks-near-jefferson-city|32|3|reservoir
 lake-of-the-ozarks-state-park-near-jefferson-city|131072|3|Missouri state park
 lake-of-the-woods-near-kenora|32|3|lake
+lake-of-tunis-near-tunis|69664|3|lagoon
 lake-of-two-mountains-near-beaconsfield|32|3|lake
 lake-of-two-mountains-near-beauharnois|32|3|lake
 lake-of-two-mountains-near-blainville|32|3|lake
@@ -15616,6 +18172,7 @@ lake-poinsett-state-park-near-jonesboro|131072|2|
 lake-poinsett-state-park-near-memphis|131072|2|
 lake-polva-near-polva|32|3|lake
 lake-pomacocha-near-tarapoto|32|3|lake
+lake-pomorie-near-burgas|4128|3|lagoon
 lake-pomorie-near-nesebar|4128|3|lagoon
 lake-pontchartrain-near-baton-rouge|4640|3|lake
 lake-pontchartrain-near-biloxi|4640|3|lake
@@ -15644,6 +18201,7 @@ lake-pyhaselka-near-joensuu|32|3|lake
 lake-qadisiyah-near-karbala|32|3|reservoir
 lake-qadisiyah-near-samarra|32|3|reservoir
 lake-qadisiyah-near-tikrit|32|3|reservoir
+lake-qaraoun-near-beirut|32|3|reservoir
 lake-rabisha-near-lom|32|3|lake
 lake-rabisha-near-vidin|32|3|lake
 lake-ramen-near-ludvika|32|3|lake
@@ -15681,6 +18239,7 @@ lake-rotorua-te-rotorua-nui-a-kahumatamomoe-near-rotorua|160|3|volcanic crater l
 lake-roznow-near-nowy-sacz|32|3|reservoir
 lake-roznow-near-tarnow|32|3|reservoir
 lake-ruila-near-keila|32|3|lake
+lake-rweru-near-kigali|32|3|lake
 lake-saaksi-near-hyvinkaa|32|3|lake
 lake-saaksi-near-klaukkala|32|3|lake
 lake-saaksi-near-nurmijarvi|32|3|lake
@@ -15849,7 +18408,8 @@ lake-tauragnas-near-panevezys|32|3|lake
 lake-tawakoni-near-mesquite|32|3|reservoir
 lake-tawakoni-near-rockwall|32|3|reservoir
 lake-tawakoni-near-sherman|32|3|reservoir
-lake-tawakoni-near-tyler|0|0|
+lake-tawakoni-near-tyler|131072|3|Texas state park
+lake-tawakoni-state-park-near-tyler|131072|3|Texas state park
 lake-tazawa-near-akita|160|3|volcanic crater lake
 lake-tazawa-near-morioka|160|3|volcanic crater lake
 lake-techirghiol-near-cernavoda|32|3|lake
@@ -15866,6 +18426,7 @@ lake-tega-near-sakura|32|3|reservoir
 lake-tegel-near-berlin|32|3|lake
 lake-tegel-near-oranienburg|32|3|lake
 lake-tei-near-voluntari|32|3|lake
+lake-texcoco-near-mexico-city|32|3|lake
 lake-tharthar-near-baghdad|32|3|lake
 lake-tharthar-near-karbala|32|3|lake
 lake-tharthar-near-najaf|32|3|lake
@@ -15895,6 +18456,7 @@ lake-towada-near-aomori|160|3|volcanic crater lake
 lake-towada-near-hachinohe|160|3|volcanic crater lake
 lake-towada-near-hirosaki|160|3|volcanic crater lake
 lake-toya-near-muroran|160|3|volcanic crater lake
+lake-toya-near-sapporo|160|3|volcanic crater lake
 lake-tragadero-near-huancayo|32|3|lake
 lake-trasimeno-near-arezzo|32|3|lake
 lake-trasimeno-near-assisi|32|3|lake
@@ -15977,6 +18539,7 @@ lake-vermilion-near-terre-haute|32|3|lake
 lake-vico-near-civitavecchia|32|3|lake
 lake-vico-near-terni|32|3|lake
 lake-vico-near-viterbo|32|3|lake
+lake-victoria-near-kampala|32|3|lake
 lake-victoria-near-mildura|32|3|reservoir
 lake-victoria-near-renmark|32|3|reservoir
 lake-vidraru-near-mioveni|32|3|reservoir
@@ -15997,6 +18560,7 @@ lake-vistonida-near-komotini|32|3|lake
 lake-vistonida-near-xanthi|32|3|lake
 lake-viverone-near-novara|32|3|lake
 lake-vogrsko-near-nova-gorica|32|3|reservoir
+lake-volta-near-accra|32|3|reservoir
 lake-volvi-near-evosmos|32|3|lake
 lake-volvi-near-kilkis|32|3|lake
 lake-volvi-near-serres|32|3|lake
@@ -16006,6 +18570,10 @@ lake-vouliagmeni-near-glyfada|32|3|lake
 lake-vouliagmeni-near-nikaia|32|3|lake
 lake-vouliagmeni-near-peristeri|32|3|lake
 lake-vouliagmeni-near-piraeus|32|3|lake
+lake-voulismeni-near-agios-nikolaos|4128|3|lagoon
+lake-voulismeni-near-heraklion|4128|3|lagoon
+lake-voulismeni-near-ierapetra|4128|3|lagoon
+lake-voulismeni-near-sitia|4128|3|lagoon
 lake-vrana-cres-near-pula|32|3|lake
 lake-vrana-near-labin|32|3|lake
 lake-vrana-near-zadar|32|3|lake
@@ -16022,6 +18590,7 @@ lake-wahtopanah-near-brandon|32|3|lake
 lake-waikaremoana-near-gisborne|32|3|lake
 lake-waikopiro-near-napier|32|3|lake
 lake-wallula-near-pasco|32|3|reservoir
+lake-wamala-near-kampala|32|3|lake
 lake-warfaaz-near-seraing|32|3|reservoir
 lake-warfaaz-near-spa|32|3|reservoir
 lake-warfaaz-near-verviers|32|3|reservoir
@@ -16051,6 +18620,7 @@ lake-worther-near-st-veit-an-der-glan|32|3|lake
 lake-worther-near-volkermarkt|32|3|lake
 lake-wylie-near-charlotte|32|3|lake
 lake-wylie-near-gastonia|32|3|lake
+lake-xochimilco-near-mexico-city|32|3|lake
 lake-yalchik-near-cheboksary|32|3|lake
 lake-yalchik-near-yoshkar-ola|32|3|lake
 lake-yarinaqucha-near-pucallpa|32|3|lake
@@ -16080,6 +18650,7 @@ lake-zell-near-zell-am-see|32|3|lake
 lake-zirahuen-near-zamora-de-hidalgo|32|3|lake
 lake-zovnek-near-zagorje-ob-savi|32|3|lake
 lake-zug-near-lucerne|0|0|
+lake-zway-near-addis-ababa|32|3|lake
 lakeland-provincial-park-near-cold-lake|131072|3|provincial park of Canada
 lakenheath-fen-rspb-reserve-near-ely|65536|3|nature reserve
 lakenheath-fen-rspb-reserve-near-king-s-lynn|65536|3|nature reserve
@@ -16102,9 +18673,11 @@ laktysy-near-slutsk|32|3|reservoir
 lal-suhanra-national-park-near-bahawalpur|32768|3|national park
 lal-suhanra-national-park-near-multan|32768|3|national park
 lal-suhanra-national-park-near-sahiwal|32768|3|national park
+lalaria-near-volos|16|3|beach
 lama-d-antico-near-bari|65536|3|nature reserve
 lama-dal-and-chander-naun-near-amritsar|32|3|lake
 lama-monachile-near-molfetta|16|3|beach
+lama-monachile-near-taranto|16|3|beach
 lamba-near-petrozavodsk|32|3|lake
 lambay-island-near-balbriggan|64|3|island
 lamberton-lake-near-grand-rapids|32|3|lake
@@ -16115,6 +18688,13 @@ lameroo-beach-near-darwin|16|3|beach
 lamia-lagoon-near-elis|32|3|lake
 lamington-national-park-near-gold-coast|32768|3|national park of Australia
 lammassaari-near-oulu|64|3|island
+lammefjord-near-copenhagen|4096|3|empoldered inlet
+lammefjord-near-frederiksberg|4096|3|empoldered inlet
+lammefjord-near-frederiksvaerk|4096|3|empoldered inlet
+lammefjord-near-hillerod|4096|3|empoldered inlet
+lammefjord-near-horsholm|4096|3|empoldered inlet
+lammefjord-near-koge|4096|3|empoldered inlet
+lammefjord-near-roskilde|4096|3|empoldered inlet
 lampedis-near-garliava|32|3|lake
 lampedis-near-kaunas|32|3|lake
 lamsenspitze-near-schwaz|1024|3|mountain
@@ -16139,6 +18719,12 @@ landgoederen-oldenzaal-near-hengelo|65536|3|Natura 2000 site
 landgraben-dumme-niederung-nordlich-salzwedel-near-salzwedel|65536|3|Special Area of Conservation
 landgraben-und-dummeniederung-near-salzwedel|65536|3|Special Area of Conservation
 landpark-wood-near-hemel-hempstead|65536|3|nature reserve
+lands-end-near-berkeley|4096|3|cape
+lands-end-near-concord|4096|3|cape
+lands-end-near-fremont|4096|3|cape
+lands-end-near-hayward|4096|3|cape
+lands-end-near-redwood-city|4096|3|cape
+lands-end-near-san-mateo|4096|3|cape
 landscape-park-in-zukow-near-gogow|131072|3|park
 landscape-park-in-zukow-near-lubin|131072|3|park
 landschaftsschutzgebiet-dellbrucker-wald-vorgelagerte-freiraume-und-verbindende-grunbereiche-near-bergisch-gladbach|65536|3|Landschaftsschutzgebiet
@@ -16149,6 +18735,23 @@ landschaftsschutzgebiet-schwafheimer-seenplatte-near-moers|65536|3|Landschaftssc
 landschaftsschutzgebiet-sudliche-weseraue-near-minden|65536|3|Landschaftsschutzgebiet
 landschaftsschutzgebiet-vormholz-waldungen-muttental-waldungen-muttenbach-near-witten|65536|3|Landschaftsschutzgebiet
 landschaftsschutzgebiet-wartenberg-arenberg-kalmerskopf-im-schuppling-near-witten|65536|3|Landschaftsschutzgebiet
+landtong-rozenburg-near-aalsmeer|69632|3|headland
+landtong-rozenburg-near-alphen-aan-den-rijn|69632|3|headland
+landtong-rozenburg-near-capelle-aan-den-ijssel|69632|3|headland
+landtong-rozenburg-near-delft|69632|3|headland
+landtong-rozenburg-near-goes|69632|3|headland
+landtong-rozenburg-near-gouda|69632|3|headland
+landtong-rozenburg-near-haarlem|69632|3|headland
+landtong-rozenburg-near-haarlemmermeer|69632|3|headland
+landtong-rozenburg-near-katwijk|69632|3|headland
+landtong-rozenburg-near-leiden|69632|3|headland
+landtong-rozenburg-near-leidschendam-voorburg|69632|3|headland
+landtong-rozenburg-near-noordwijk|69632|3|headland
+landtong-rozenburg-near-rijswijk|69632|3|headland
+landtong-rozenburg-near-rotterdam|69632|3|headland
+landtong-rozenburg-near-the-hague|69632|3|headland
+landtong-rozenburg-near-zandvoort|69632|3|headland
+landtong-rozenburg-near-zoetermeer|69632|3|headland
 landvettersjon-near-molnlycke|32|3|lake
 landvikvannet-near-grimstad|32|3|lake
 lane-cove-national-park-near-penrith|32768|3|national park of Australia
@@ -16162,8 +18765,15 @@ langedalsvannet-near-grimstad|32|3|lake
 langelmavesi-near-kangasala|32|3|lake or pond
 langenbrander-hohe-near-calw|1024|3|mountain
 langenbrander-hohe-near-pforzheim|1024|3|mountain
+langesundsfjord-near-larvik|4096|3|fjord
+langesundsfjord-near-porsgrunn|4096|3|fjord
+langesundsfjord-near-sandefjord|4096|3|fjord
+langesundsfjord-near-skien|4096|3|fjord
+langesundsfjord-near-tonsberg|4096|3|fjord
 langevoja-juga-near-sillamae|1|3|waterfall
 langfjellet-near-alta|1024|3|mountain
+langfjorden-near-alta|4096|3|fjord
+langfjorden-near-vadso|4096|3|fjord
 langhe-near-asti|0|0|
 langland-bay-near-swansea|0|0|
 langmann-stausee-near-voitsberg|32|3|reservoir
@@ -16174,8 +18784,12 @@ langsett-reservoir-near-wakefield|32|3|reservoir
 langsjon-near-mariehamn|32|3|lake
 langvatnet-near-mo-i-rana|32|3|lake
 langwarder-wielen-near-sneek|32|3|lake
+lanikai-beach-near-honolulu|16|3|beach
 lankesa-botanical-reserve-near-jonava|65536|3|protected area
 lannenbachaue-bei-scheiden-und-umgebung-near-merzig|65536|3|Special Area of Conservation
+lansiulapanniemi-near-klaukkala|4096|3|headland
+lantau-island-near-guangzhou|64|3|island
+lantau-island-near-shenzhen|64|3|island
 lantau-island-near-zhongshan|64|3|island
 lantau-island-near-zhuhai|64|3|island
 lanzarote-near-arrecife|64|3|island
@@ -16210,6 +18824,11 @@ larsen-lake-near-bellevue|32|3|lake
 larsen-lake-near-redmond|32|3|lake
 larsmosjon-near-jakobstad|32|3|reservoir
 larsmosjon-near-kokkola|32|3|reservoir
+larviksfjorden-near-fredrikstad|4096|3|fjord
+larviksfjorden-near-larvik|4096|3|fjord
+larviksfjorden-near-porsgrunn|4096|3|fjord
+larviksfjorden-near-sandefjord|4096|3|fjord
+larviksfjorden-near-skien|4096|3|fjord
 las-arenas-near-barakaldo|16|3|beach
 las-canteras-beach-near-las-palmas|131088|3|beach
 las-dehesas-de-sierra-morena-biosphere-reserve-near-carmona|65536|3|biosphere reserve
@@ -16220,6 +18839,7 @@ las-lagiewnicki-near-zgierz|16384|3|forest
 las-loras-geopark-near-palencia|65536|3|UNESCO Global Geopark
 las-mlocinski-near-legionowo|16384|3|forest
 las-palmas-de-cocalan-national-park-near-rancagua|32768|3|national park
+las-pinas-paranaque-critical-habitat-and-ecotourism-area-near-manila|66048|3|wetland
 las-piwnicki-nature-reserve-near-torun|81920|3|forest reserve (Poland)
 las-ruda-popioly-near-belchatow|16384|3|forest
 las-ruda-popioly-near-lodz|16384|3|forest
@@ -16229,6 +18849,7 @@ las-ruda-popioly-near-zgierz|16384|3|forest
 las-ruda-popioy-near-pabianice|16384|3|forest
 las-ruda-popioy-near-piotrkow-trybunalski|16384|3|forest
 las-torcas-reservoir-near-calatayud|32|3|reservoir
+las-vacas-river-near-guatemala-city|256|3|river
 las-vegas-bay-near-henderson|4096|3|bay
 las-wolski-near-krakow|65536|3|nature reserve
 las-wolski-near-wieliczka|65536|3|nature reserve
@@ -16294,12 +18915,16 @@ laviskio-lake-near-ukmerge|32|3|lake
 lavon-lake-near-garland|32|3|reservoir
 lavon-lake-near-mckinney|32|3|reservoir
 lavon-lake-near-plano|32|3|reservoir
+lavsa-cove-near-vodice|4096|3|cove
+lavsa-cove-near-zadar|4096|3|cove
 lavysas-near-varena|32|3|lake
 lawrence-rocks-near-hamilton|64|3|island
 lawrence-rocks-near-portland-vic|64|3|island
+laxsjon-ekero-kommun-near-sodertalje|48|3|beach
 lay-river-near-niort|0|0|
 lazberc-reservoir-near-ozd|32|3|reservoir
 lazensky-park-near-karvina|131072|2|
+lazurnaya-bay-near-vladivostok|4112|3|beach
 lazzaretto-near-alghero|16|3|beach
 le-bois-de-boulogne-near-armentieres|0|0|
 le-catogne-near-martigny|1024|3|mountain
@@ -16323,9 +18948,17 @@ le-touquet-dunes-and-beach-near-calais|0|0|
 leadbetter-beach-near-santa-barbara|16|3|beach
 lebada-alba-near-vaslui|65536|3|nature reserve
 lebedinoe-near-imatra|32|3|lake
+lebombo-mountains-near-maputo|1024|3|mountain range
 lebsko-lake-near-lebork|32|3|lake
 lebyazhe-forest-park-near-kazan|131072|3|park
 lebyazhye-near-tyumen|32|3|lake
+lecciona-near-camaiore|16|3|beach
+lecciona-near-carrara|16|3|beach
+lecciona-near-la-spezia|16|3|beach
+lecciona-near-livorno|16|3|beach
+lecciona-near-lucca|16|3|beach
+lecciona-near-massa|16|3|beach
+lecciona-near-pisa|16|3|beach
 lech-hill-near-gniezno|1024|3|mountain
 lech-zwischen-landsberg-und-konigsbrunn-mit-auen-und-leite-near-landsberg-am-lech|65536|3|Special Area of Conservation
 ledeboerpark-near-hengelo|131072|3|park
@@ -16350,6 +18983,7 @@ lehigh-gorge-state-park-near-allentown|131072|3|Pennsylvania state park
 lehigh-gorge-state-park-near-scranton|131072|3|Pennsylvania state park
 lehnitzsee-near-oranienburg|32|2|
 lehnssee-near-eberswalde|32|3|lake
+lehtma-cape-near-haapsalu|4096|3|cape
 leibniz-peak-near-kashgar|1024|3|mountain
 leiciskiu-lake-near-marijampole|32|3|lake
 leighton-dillman-park-near-dartmouth|131072|3|park
@@ -16401,6 +19035,7 @@ leogang-mountains-near-zell-am-see|1024|3|mountain range
 leonora-curtin-wetland-preserve-near-santa-fe|65536|3|nature reserve
 leopoldpark-near-koksijde|131072|3|park
 leopoldsberg-near-tulln-an-der-donau|1024|3|mountain
+leptokarya-near-katerini|0|0|
 lerchenberg-near-calw|1024|3|mountain
 lerchenberg-near-freital|1024|3|hill
 lerez-beach-near-pontevedra|272|3|river beach
@@ -16414,6 +19049,7 @@ lerins-islands-near-le-cannet|64|3|archipelago
 lerins-islands-near-nice|64|3|archipelago
 leros-near-bodrum|64|3|island
 leros-near-kos|64|3|island
+les-generelles-beach-near-la-rochelle|16|3|beach
 les-monges-near-digne-les-bains|1024|3|main peak
 les-na-vorskle-near-belgorod|65536|3|nature reserve
 les-na-vorskle-near-kursk|65536|3|nature reserve
@@ -16429,6 +19065,18 @@ leshnitsa-near-gabrovo|65536|3|nature reserve
 leshnitsa-near-kazanlak|65536|3|nature reserve
 leslie-gulch-near-caldwell|2052|3|canyon
 leslie-gulch-near-nampa|2052|3|canyon
+leslie-street-spit-near-ajax|4096|3|headland
+leslie-street-spit-near-brampton|4096|3|headland
+leslie-street-spit-near-burlington|4096|3|headland
+leslie-street-spit-near-hamilton-ontario|4096|3|headland
+leslie-street-spit-near-markham|4096|3|headland
+leslie-street-spit-near-milton|4096|3|headland
+leslie-street-spit-near-mississauga|4096|3|headland
+leslie-street-spit-near-oakville|4096|3|headland
+leslie-street-spit-near-pickering|4096|3|headland
+leslie-street-spit-near-richmond-hill|4096|3|headland
+leslie-street-spit-near-toronto|4096|3|headland
+leslie-street-spit-near-vaughan|4096|3|headland
 lesogorskoe-near-imatra|32|3|lake
 lesopark-chrast-near-povazska-bystrica|147456|3|urban forest
 lesopark-na-panskem-near-wodzislaw-slaski|16896|3|wetland
@@ -16459,6 +19107,8 @@ leucadia-state-beach-near-escondido|16|3|California state beach
 leucadia-state-beach-near-oceanside|16|3|California state beach
 leucate-near-narbonne|0|0|
 levally-lough-near-ballina|4128|3|lagoon
+levally-lough-near-castlebar|4128|3|lagoon
+levally-lough-near-westport|4128|3|lagoon
 levant-island-near-hyeres|64|3|island
 levanzo-near-alcamo|64|3|island
 levanzo-near-trapani|64|3|island
@@ -16493,8 +19143,10 @@ leyerbachtal-near-remscheid|65536|3|protected area
 leznica-reservoir-near-kutno|32|3|reservoir
 leznica-reservoir-near-zgierz|32|3|reservoir
 lhotecke-strane-near-kutna-hora|65536|3|nature reserve in the Czech Republic
+lianhua-hill-near-guangzhou|0|0|
 lianhua-peak-near-anqing|1024|3|mountain
 lias-grube-bei-untersturmig-near-forchheim|65536|3|Special Area of Conservation
+liberty-island-near-babylon|64|3|island
 liberty-park-near-west-valley-city|131072|3|urban park
 liberty-state-park-near-jersey-city|131072|2|
 libhostska-hurka-near-novy-jicin|1024|3|hill
@@ -16507,10 +19159,18 @@ lichtenmoor-near-nienburg-weser|65536|3|Special Area of Conservation
 licko-polje-near-gospic|65536|3|Natura 2000 site
 licko-sredogorje-near-gospic|1024|3|mountain range
 licu-langu-klintis-near-valmiera|0|0|
+lido-beach-ashdod-near-ashdod|16|3|beach
+lido-beach-ashdod-near-ashkelon|16|3|beach
+lido-beach-ashdod-near-rehovot|16|3|beach
+lido-degli-scacchi-near-forli|16|3|beach
+lido-degli-scacchi-near-ravenna|16|3|beach
+lido-di-pomposa-near-forli|16|3|beach
+lido-di-pomposa-near-ravenna|16|3|beach
 lido-di-venezia-near-padua|64|3|island
 lido-di-venezia-near-rovigo|64|3|island
 lido-isle-near-costa-mesa|0|0|
 lido-key-near-sarasota|64|3|island
+lido-le-cesine-near-lecce|16|3|beach
 liebethaler-grund-near-pirna|2048|3|valley
 liechtensteinberg-near-judenburg|1024|3|mountain
 lieftinghsbroek-near-winschoten|65536|3|nature area
@@ -16524,6 +19184,9 @@ lielie-kangari-near-ogre|65536|3|Natura 2000 site
 lielupes-grivas-plavas-near-jurmala|65536|3|Natura 2000 site
 lielupes-palienes-plavas-near-jelgava|65536|3|Natura 2000 site
 lienz-dolomites-near-lienz|1024|3|mountain range
+lieper-bucht-near-berlin|4112|3|beach
+lieper-bucht-near-oranienburg|4112|3|beach
+lieper-bucht-near-potsdam|4112|3|beach
 lieps-near-neubrandenburg|32|3|lake
 liesjarvi-national-park-near-espoo|32768|3|national park
 liesjarvi-national-park-near-forssa|32768|3|national park
@@ -16539,7 +19202,13 @@ liffey-falls-near-launceston|1|3|waterfall
 liffey-falls-near-longford|1|3|waterfall
 lifford-reservoir-near-redditch|32|3|reservoir
 lifford-reservoir-near-stratford-upon-avon|32|3|reservoir
+lighthouse-beach-near-limassol|16|3|beach
 lighthouse-beach-near-paphos|16|3|beach
+lighthouse-beach-near-smithton-au|16|3|beach
+lighthouse-field-state-beach-near-cupertino|16|3|California state beach
+lighthouse-field-state-beach-near-san-jose-us|16|3|California state beach
+lighthouse-field-state-beach-near-santa-clara|16|3|California state beach
+lighthouse-field-state-beach-near-sunnyvale|16|3|California state beach
 ligurian-apennines-near-genoa|1024|3|mountain range
 lihue-calel-national-park-near-santa-rosa-ar|32768|3|national park
 likarivskyi-botanical-reserve-near-oleksandriia|0|0|
@@ -16571,9 +19240,12 @@ lincoln-state-park-near-evansville|131072|3|Indiana state park
 lincoln-state-park-near-owensboro|131072|3|Indiana state park
 lincoln-woods-state-park-near-providence|131072|2|
 lindangets-naturreservat-near-mora|65536|3|nature reserve
+lindauer-noor-near-flensburg|4128|3|lagoon
+lindauer-noor-near-rendsburg|4128|3|lagoon
 linddalene-near-hadsund|16384|3|forest
 linde-in-berg-bei-ansfelden-near-traun|0|0|
 lindel-kopf-near-pirmasens|1024|3|hill
+lindelse-nor-near-svendborg|4096|3|fjord
 linden-berg-near-wolfenbuttel|1024|3|hill
 lindenstumpf-near-bad-kissingen|1024|3|mountain
 lindesnes-near-kristiansand|0|0|
@@ -16599,6 +19271,7 @@ lintbos-near-evere|16384|3|forest
 lintbos-near-jette|16384|3|forest
 lintbos-near-vilvoorde|16384|3|forest
 linudden-nature-reserve-near-nykoping|65536|3|nature reserve
+lion-s-head-near-cape-town|1024|3|mountain
 lions-peak-near-hollister|1024|3|mountain
 lipavy-haj-near-babruysk|131072|3|park
 lipavy-haj-near-mahilyow|131072|3|park
@@ -16629,6 +19302,7 @@ listove-jazero-near-nove-zamky|65536|3|nature reserve
 litchfield-national-park-near-darwin|32768|3|national park of Australia
 litencicke-vrchy-near-kromeriz|1024|3|mountain range
 litencicke-vrchy-near-vyskov|1024|3|mountain range
+lithi-near-chios-gr|131088|3|beach
 lithia-springs-regional-park-near-st-petersburg|131072|3|park
 litovelske-pomoravi-near-olomouc|65536|3|Special Area of Conservation
 litovelske-pomoravi-protected-landscape-area-near-sternberk|65536|3|Special Area of Conservation
@@ -16668,9 +19342,14 @@ little-kennesaw-mountain-near-marietta|1024|3|mountain
 little-liverpool-range-near-gatton|1024|3|mountain range
 little-manitou-lake-near-prince-albert|32|2|
 little-manitou-lake-near-saskatoon|32|2|
+little-meelup-beach-near-bunbury|16|3|beach
 little-meelup-beach-near-busselton|16|3|beach
+little-meelup-beach-near-margaret-river|16|3|beach
 little-miami-river-near-dayton|256|3|river
 little-miami-scenic-trail-near-dayton|131072|3|Ohio state park
+little-orme-near-birkenhead|4096|3|cape
+little-orme-near-bootle|4096|3|cape
+little-orme-near-liverpool|4096|3|cape
 little-para-reservoir-near-gawler|32|3|reservoir
 little-prince-park-near-velika-gorica|131072|3|park
 little-river-canyon-national-preserve-near-huntsville|65536|2|
@@ -16686,9 +19365,19 @@ littlefield-common-near-farnborough|65536|3|nature reserve
 littlefield-common-near-godalming|65536|3|nature reserve
 littlefield-common-near-guildford|65536|3|nature reserve
 littlefield-common-near-woking|65536|3|nature reserve
+littlehaven-beach-near-darlington|16|3|beach
+littlehaven-beach-near-durham|16|3|beach
+littlehaven-beach-near-gateshead|16|3|beach
+littlehaven-beach-near-hartlepool|16|3|beach
+littlehaven-beach-near-middlesbrough|16|3|beach
+littlehaven-beach-near-newcastle-upon-tyne|16|3|beach
+littlehaven-beach-near-south-shields|16|3|beach
+littlehaven-beach-near-stockton-on-tees|16|3|beach
+littlehaven-beach-near-sunderland|16|3|beach
 littoistenjarvi-near-kaarina|32|3|lake or pond
 litton-reservoirs-near-bath|32|3|lake
 litton-reservoirs-near-trowbridge|32|3|lake
+liu-spit-near-parnu|0|0|
 liudvinavo-lake-near-marijampole|32|3|lake
 liujiaxia-reservoir-near-lanzhou|32|3|reservoir
 liujiaxia-reservoir-near-xining|32|3|reservoir
@@ -16696,6 +19385,7 @@ liupan-shan-near-lanzhou|1024|3|mountain range
 liupan-shan-near-xi-an|1024|3|mountain range
 liupan-shan-near-yinchuan|1024|3|mountain range
 liuskasaari-near-helsinki|64|3|island
+livadi-beach-near-heraklion|16|3|beach
 livaditis-near-xanthi|1|3|waterfall
 live-oak-park-near-berkeley|131072|3|park
 livermore-valley-near-livermore|2048|3|valley
@@ -16704,6 +19394,7 @@ liverpool-range-near-scone|1024|3|mountain range
 living-desert-state-park-near-broken-hill|131072|3|state park
 living-fire-of-andreiasu-near-focsani|65536|3|natural monument
 livingston-peak-near-bozeman|1024|3|mountain
+livingstone-cave-near-gaborone|2|3|cave
 livingstone-national-park-near-junee|32768|3|national park of Australia
 livingstone-national-park-near-narrandera|32768|3|national park of Australia
 livingstone-national-park-near-wagga-wagga|32768|3|national park of Australia
@@ -16716,6 +19407,8 @@ ljubljana-botanical-garden-near-domzale|0|0|
 ljubljanski-vrh-near-vrhnika|1024|3|mountain
 ljungan-near-sundsvall|256|3|river
 ljustero-near-vastervik|65536|3|nature reserve
+llacuna-del-samaruc-near-torrent|4128|3|lagoon
+llacuna-del-samaruc-near-valencia|4128|3|lagoon
 llaima-near-temuco|1152|3|stratovolcano
 llancanelo-lake-near-san-rafael-ar|32|3|lake
 llanganates-national-park-near-ambato|32768|3|national park
@@ -16726,6 +19419,7 @@ llano-estacado-near-odessa|1024|2|
 llanos-de-challe-national-park-near-copiapo|32768|3|national park
 llanquihue-lake-near-osorno|32|3|lake
 llanquihue-lake-near-puerto-montt|32|3|lake
+llevant-near-vilanova-i-la-geltru|16|3|beach
 llobregat-delta-near-badalona|768|3|river delta
 llobregat-delta-near-barcelona|768|3|river delta
 llobregat-delta-near-lhospitalet|768|3|river delta
@@ -16758,6 +19452,9 @@ loch-lomond-near-hamilton-uk|32|3|lake
 loch-lomond-near-motherwell|32|3|lake
 loch-lomond-near-paisley|32|3|lake
 loch-lomond-near-thunder-bay|32|3|lake
+loch-long-near-dumbarton|4096|3|fjord
+loch-long-near-greenock|4096|3|fjord
+loch-long-near-kilmarnock|4096|3|fjord
 loch-lubnaig-near-stirling|32|3|lake
 loch-ness-near-elgin-uk|32|3|lake
 loch-ness-near-inverness|32|3|lake
@@ -16769,6 +19466,7 @@ lochemse-berg-near-doetinchem|1024|3|mountain
 lochemse-berg-near-zutphen|1024|3|mountain
 lochen-near-balingen|1024|3|mountain
 lochindorb-near-elgin-uk|32|3|lake
+lochinvar-national-park-near-lusaka|32768|3|national park
 lock-island-near-woking|320|3|river island
 lock-wood-island-near-abingdon-on-thames|320|3|river island
 locke-park-near-barnsley|131072|3|park
@@ -16796,6 +19494,7 @@ lohjansaari-near-lohja|64|3|island
 lohotsky-mociar-near-komarno|65536|3|nature reserve
 lohotsky-mociar-near-nove-zamky|65536|3|nature reserve
 loia-bay-near-hendaye|4096|3|bay
+loimandi-cape-near-haapsalu|4096|3|cape
 loing-near-orleans|256|3|river
 loire-anjou-touraine-regional-nature-park-near-angers|196608|3|protected area
 loire-anjou-touraine-regional-nature-park-near-chatellerault|196608|3|protected area
@@ -16811,6 +19510,9 @@ lois-hole-centennial-provincial-park-near-spruce-grove|131072|3|provincial park 
 lois-hole-centennial-provincial-park-near-st-albert|131072|3|provincial park of Canada
 lok-volgy-cave-near-eger|2|3|cave
 lokbatan-mud-volcano-near-sumgait|1152|3|mud volcano
+lokken-strand-near-aalborg|16|3|beach
+lokken-strand-near-frederikshavn|16|3|beach
+lokken-strand-near-hjorring|16|3|beach
 lokrum-near-dubrovnik|64|3|island
 lolland-near-nakskov|64|3|island
 lolland-near-nykobing-falster|64|3|island
@@ -16835,6 +19537,8 @@ lone-star-lake-near-topeka|32|3|reservoir
 long-bay-okura-marine-reserve-near-hibiscus-coast|0|0|
 long-beach-near-hobart|16|3|beach
 long-beach-near-kingston-au|16|3|beach
+long-beach-near-new-norfolk|16|3|beach
+long-beach-near-whangarei|16|3|beach
 long-beach-town-park-near-smithtown|131072|3|park
 long-forest-nature-conservation-reserve-near-melton|65536|3|nature reserve
 long-forest-nature-conservation-reserve-near-sunbury|65536|3|nature reserve
@@ -16853,6 +19557,7 @@ long-point-provincial-park-near-st-catharines|131072|3|provincial park of Canada
 long-pond-near-new-bedford|32|3|lake
 long-pond-near-plymouth-us|0|0|
 long-pond-near-taunton-us|32|3|lake
+long-slough-near-aberdeen|4096|3|cove
 longboat-key-near-sarasota|0|0|
 longdendale-near-oldham|2048|3|valley
 longfeng-wetland-park-near-harbin|197120|3|wetland
@@ -16878,6 +19583,7 @@ lonjsko-polje-nature-park-near-prijedor|196608|3|Natura 2000 site
 lonjsko-polje-nature-park-near-sisak|196608|3|Natura 2000 site
 lonjsko-polje-near-osijek|196608|3|Natura 2000 site
 lonkytin-near-kemi|64|3|island
+lonnekers-beach-near-invercargill|16|3|beach
 loode-wooded-meadow-near-kuressaare|16384|1|
 loohuisbos-near-aalten|147456|3|forest
 loohuisbos-near-winterswijk|147456|3|forest
@@ -16934,10 +19640,14 @@ los-cardones-national-park-near-san-miguel-de-tucuman|32768|3|national park
 los-cardones-national-park-near-san-salvador-de-jujuy|32768|3|national park
 los-castillos-near-calatayud|1024|3|mountain
 los-cedros-biological-reserve-near-esmeraldas|65536|3|nature reserve
+los-gigantes-argentina-near-cordoba|1024|3|mountain range
 los-haitises-national-park-near-san-pedro-de-macoris|163840|3|national park
+los-muertos-beach-near-almeria|16|3|beach
 los-muertos-beach-near-puerto-vallarta|16|3|beach
+los-nietos-near-cartagena|16|3|beach
 los-ojos-de-villaverde-lake-near-villarrobledo|32|3|lake
 los-patos-near-copiapo|1152|3|volcano
+los-tres-ojos-national-park-near-santo-domingo|2|3|cave
 los-vaqueros-reservoir-near-livermore|32|3|reservoir
 los-volcanes-natural-park-near-arrecife|196608|3|natural park
 losinj-near-pula|64|3|island
@@ -16946,6 +19656,17 @@ losiny-ostrov-national-park-near-podolsk|98304|3|national park
 lososinskoye-lake-near-petrozavodsk|32|3|lake
 lost-dutchman-state-park-near-mesa|131072|2|
 lost-dutchman-state-park-near-phoenix|131072|2|
+lost-lagoon-near-burnaby|4128|3|lagoon
+lost-lagoon-near-coquitlam|4128|3|lagoon
+lost-lagoon-near-delta|4128|3|lagoon
+lost-lagoon-near-langley|4128|3|lagoon
+lost-lagoon-near-maple-ridge|4128|3|lagoon
+lost-lagoon-near-nanaimo|4128|3|lagoon
+lost-lagoon-near-new-westminster|4128|3|lagoon
+lost-lagoon-near-port-moody|4128|3|lagoon
+lost-lagoon-near-surrey|4128|3|lagoon
+lost-lagoon-near-vancouver|4128|3|lagoon
+lost-lagoon-near-white-rock|4128|3|lagoon
 lost-lake-national-wildlife-refuge-near-minot|65536|3|National Wildlife Refuge
 lostener-see-near-wismar|32|3|lake
 losvida-near-vitebsk|32|3|lake
@@ -16956,8 +19677,18 @@ lotus-lake-near-volgograd|32|3|lake
 lotus-mountain-shanwei-near-chaozhou|1024|3|mountain
 lotus-mountain-shanwei-near-meizhou|1024|3|mountain
 lotus-mountain-shanwei-near-shantou|1024|3|mountain
+lotus-pond-near-kaohsiung|32|3|lake
+loudden-near-norrtalje|4096|3|cape
 lough-allen-near-sligo|32|3|lake
+lough-allua-near-killarney|4128|3|lagoon
+lough-atalia-near-ennis|4128|3|lagoon
+lough-atalia-near-galway|4128|3|lagoon
+lough-atedaun-near-ennis|4128|3|lagoon
+lough-atedaun-near-galway|4128|3|lagoon
 lough-bane-near-mullingar|32|3|lake
+lough-barra-near-letterkenny|4128|3|lagoon
+lough-bunny-near-ennis|4128|3|lagoon
+lough-bunny-near-galway|4128|3|lagoon
 lough-carra-near-castlebar|32|3|lake
 lough-conn-near-ballina|32|3|lake
 lough-cullin-near-ballina|32|3|lake
@@ -16970,7 +19701,12 @@ lough-erne-near-omagh|32|3|lake
 lough-feeagh-near-castlebar|32|3|lake
 lough-foyle-near-derry|4608|3|estuary
 lough-furnace-near-castlebar|32|3|lake
+lough-gill-near-killarney|4128|3|lagoon
 lough-gill-near-sligo|32|3|lake
+lough-gill-near-tralee|4128|3|lagoon
+lough-graney-near-ennis|4128|3|lagoon
+lough-graney-near-galway|4128|3|lagoon
+lough-guitane-near-killarney|4128|3|lagoon
 lough-gur-near-clonmel|32|3|lake
 lough-inniscarra-near-ballincollig|32|3|reservoir
 lough-island-reavy-near-lisburn|32|3|lake
@@ -16981,11 +19717,15 @@ lough-mahon-near-ballincollig|32|3|lake
 lough-mahon-near-cobh|32|3|lake
 lough-mahon-near-cork|32|3|lake
 lough-mask-near-westport|32|3|lake
+lough-meelagh-near-sligo|4128|3|lagoon
 lough-ouler-near-naas|32|3|lake
 lough-owel-near-athlone|32|3|lake
 lough-ree-near-athlone|32|3|lake
 lough-ree-near-tullamore|32|3|lake
 lough-sheever-near-tullamore|32|3|lake
+lough-shindilla-near-castlebar|4128|3|lagoon
+lough-shindilla-near-galway|4128|3|lagoon
+lough-shindilla-near-westport|4128|3|lagoon
 lough-swilly-near-letterkenny|4096|3|bay
 lough-tay-near-bray|32|3|lake
 loughcrew-near-drogheda|0|0|
@@ -16999,12 +19739,15 @@ louros-reservoir-near-arta|32|3|reservoir
 lousehill-copse-near-newbury|65536|3|local nature reserve
 loustin-near-rakovnik|1024|3|mountain
 lovcen-near-podgorica|1024|3|mountain range
+love-lake-dubai-near-abu-dhabi|32|3|artificial lake
 love-lake-dubai-near-ajman|32|3|artificial lake
 love-lake-dubai-near-al-ain|32|3|artificial lake
 love-valley-cappadocia-near-aksaray|2048|3|valley
 love-valley-cappadocia-near-krsehir|2048|3|valley
 love-valley-cappadocia-near-nevsehir|2048|3|valley
 love-valley-cappadocia-near-yozgat|2048|3|valley
+lovers-cape-near-fujieda|4096|3|cape
+lovers-cape-near-shizuoka|4096|3|cape
 lovers-key-state-park-near-cape-coral|131072|3|Florida state park
 lovers-key-state-park-near-fort-myers|131072|3|Florida state park
 lovers-key-state-park-near-naples-fl|131072|3|Florida state park
@@ -17019,13 +19762,30 @@ low-tatras-near-dolny-kubin|1024|3|mountain range
 lowden-state-park-near-rockford|131072|3|Illinois state park
 lowenstein-hills-near-heilbronn|1024|3|mountain range
 lower-buckhorn-lake-near-kawartha-lakes|32|3|lake
+lower-cheung-sha-beach-near-zhuhai|16|2|
 lower-dniester-national-nature-park-near-bilhorod-dnistrovskyi|32768|3|national nature park
 lower-dniester-national-nature-park-near-odesa|32768|3|national nature park
 lower-glenelg-national-park-near-mount-gambier|32768|3|national park of Australia
 lower-goulburn-national-park-near-deniliquin|32768|3|national park of Australia
 lower-goulburn-national-park-near-echuca|32768|3|national park of Australia
 lower-goulburn-national-park-near-shepparton|32768|3|national park of Australia
+lower-hope-point-near-basildon|4096|3|cape
+lower-hope-point-near-chatham|4096|3|cape
+lower-hope-point-near-chelmsford|4096|3|cape
+lower-hope-point-near-colchester|4096|3|cape
+lower-hope-point-near-gillingham|4096|3|cape
+lower-hope-point-near-gravesend|4096|3|cape
+lower-hope-point-near-maidstone|4096|3|cape
+lower-hope-point-near-rochester-uk|4096|3|cape
+lower-hope-point-near-southend-on-sea|4096|3|cape
 lower-horse-near-basildon|320|3|river island
+lower-lake-near-ashbourne|4128|3|lagoon
+lower-lake-near-bray|4128|3|lagoon
+lower-lake-near-dublin|4128|3|lagoon
+lower-lake-near-dun-laoghaire|4128|3|lagoon
+lower-lake-near-greystones|4128|3|lagoon
+lower-lake-near-leixlip|4128|3|lagoon
+lower-lake-near-swords|4128|3|lagoon
 lower-loire-near-cholet|67584|3|valley
 lower-lough-erne-near-omagh|32|3|lake
 lower-lusatian-heath-nature-park-near-cottbus|196608|3|Naturpark
@@ -17057,7 +19817,9 @@ lower-sula-national-nature-park-near-pryluky|32768|3|national park
 lower-sula-national-nature-park-near-romny|32768|3|national park
 lower-sula-national-nature-park-near-smila|32768|3|national park
 lower-vistula-valley-near-elblag|65536|3|Natura 2000 site
+lower-zambezi-national-park-near-lusaka|32768|3|national park
 loxahatchee-river-near-west-palm-beach|256|3|river
+lozari-beach-near-bastia|16|3|beach
 lozenska-mountain-near-botevgrad|1024|3|mountain
 lozerbos-near-deinze|81920|3|forest
 lozerbos-near-oudenaarde|81920|3|forest
@@ -17086,6 +19848,7 @@ lu-an-zhou-near-nantong|320|3|river island
 lu-an-zhou-near-wuxi|320|3|river island
 lu-an-zhou-near-yancheng|320|3|river island
 lu-an-zhou-near-yangzhou|320|3|river island
+luang-prabang-range-near-chiang-mai|1024|3|mountain range
 lubeck-near-hamburg|0|0|
 luberon-near-aix-en-provence|65536|3|Natura 2000 site
 luberon-near-avignon|65536|3|Natura 2000 site
@@ -17120,6 +19883,7 @@ luhesand-near-stade|320|3|river island
 luhesand-near-uetersen|320|3|river island
 luka-lake-near-kobryn|32|3|lake
 luka-near-trakai|32|3|lake
+lukanga-swamp-near-lusaka|512|3|swamp
 lukashov-nature-park-near-khabarovsk|196608|3|nature park
 lukasov-near-jablonec-nad-nisou|65536|3|natural monument in the Czech Republic
 lukomskaje-near-barysaw|32|3|lake
@@ -17131,6 +19895,8 @@ luliang-mountains-near-linfen|1024|3|mountain range
 luliang-mountains-near-taiyuan|1024|3|mountain range
 luliang-mountains-near-yan-an|1024|3|mountain range
 lulworth-cove-near-bournemouth|4096|3|cove
+lulworth-cove-near-poole|4096|3|cove
+lulworth-cove-near-yeovil|4096|3|cove
 lumber-river-state-park-near-fayetteville-nc|131072|3|North Carolina state park
 lummelunda-cave-near-visby|65538|3|cave
 lummi-island-near-bellingham|0|0|
@@ -17194,6 +19960,8 @@ lybeck-near-ystad|65536|3|nature reserve
 lyczynskie-olszyny-near-otwock|65536|3|nature reserve in Poland
 lyderhorn-near-bergen|1024|3|mountain
 lydiard-park-near-cirencester|131072|3|country park
+lydumas-horn-near-kretinga|4096|3|cape
+lydumas-horn-near-palanga|4096|3|cape
 lyme-park-near-manchester|0|0|
 lyna-near-olsztyn|256|3|river
 lyndon-b-johnson-national-grassland-near-denton|65536|3|protected area
@@ -17207,6 +19975,7 @@ lynn-shore-reservation-near-lynn|131072|2|
 lynn-shore-reservation-near-salem-us|131072|2|
 lynx-lake-near-prescott|32|3|lake
 lyon-park-near-yerevan|131072|3|park
+lys-near-armentieres|256|3|river
 lys-near-ghent|256|3|river
 lys-near-halluin|256|3|river
 lys-river-near-tournai|256|3|river
@@ -17216,15 +19985,26 @@ lysa-hora-near-cieszyn|1024|3|mountain
 lysa-hora-near-koprivnice|1024|3|mountain
 lysa-hora-near-novy-jicin|1024|3|mountain
 lysaja-near-maladzyechna|1024|3|hill
+lysakerfjorden-near-baerum-municipality|4096|3|fjord
+lysakerfjorden-near-drammen|4096|3|fjord
+lysakerfjorden-near-drobak|4096|3|fjord
+lysakerfjorden-near-lorenskog|4096|3|fjord
+lysakerfjorden-near-moss|4096|3|fjord
+lysakerfjorden-near-oslo|4096|3|fjord
+lysakerfjorden-near-sandvika|4096|3|fjord
 lysaya-mountain-near-samara|1024|3|mountain
 lysaya-mountain-zhiguli-near-tolyatti|1024|3|mountain
+lysefjord-near-sandnes|4096|3|fjord
+lysefjord-near-sandnes-municipality|4096|3|fjord
 lysefjord-near-stavanger|4096|3|fjord
+lysefjord-near-stavanger-sandnes|4096|3|fjord
 lysica-near-skarzysko-kamienna|1024|3|mountain
 lysica-near-starachowice|1024|3|mountain
 lysina-near-marianske-lazne|1024|3|hill
 lyudinovskoe-near-bryansk|32|3|reservoir
 lyudinovskoe-near-oryol|32|3|reservoir
 lyulin-mountain-near-pernik|1024|3|mountain
+ma-wat-river-near-hong-kong|256|3|river
 maaninkajarvi-near-iisalmi|32|3|lake
 maardu-moisa-park-near-maardu|131072|3|park
 maarsseveense-plassen-near-utrecht|32|3|lake
@@ -17257,7 +20037,9 @@ machalilla-national-park-near-duran|32768|3|national park
 machalilla-national-park-near-guayaquil|32768|3|national park
 machalilla-national-park-near-manta|32768|3|national park
 machalilla-national-park-near-portoviejo|32768|3|national park
+machangulo-near-maputo|4096|3|peninsula
 mache-chindul-ecological-reserve-near-esmeraldas|65536|3|nature reserve
+machico-beach-near-funchal|16|2|
 machicomoco-state-park-near-newport-news|131072|2|
 machovy-sady-near-trebic|131072|3|park
 maciarynskaje-lake-puchavicy-district-near-asipovichy|32|3|lake
@@ -17273,6 +20055,7 @@ macocha-gorge-near-blansko|2054|3|pit cave
 macocha-gorge-near-brno|2054|3|pit cave
 macocha-gorge-near-vyskov|2054|3|pit cave
 maconka-reservoir-near-salgotarjan|32|3|reservoir
+mactan-near-cebu|64|3|island
 mactaquac-dam-mactaquac-headpond-near-fredericton|0|0|
 mactaquac-provincial-park-near-fredericton|131072|3|provincial park of New Brunswick
 macuiltepec-near-veracruz|1024|3|mountain
@@ -17299,9 +20082,15 @@ madum-lake-near-aars|65568|3|lake
 madum-lake-near-hadsund|65568|3|lake
 madygen-state-natural-monument-near-kokand|65536|3|natural monument
 mae-island-near-naha|192|3|volcanic island
+mae-ngat-sombunchon-reservoir-near-chiang-mai|32|3|reservoir
 maedayama-near-takamatsu|1024|3|mountain
+maestral-beach-near-opatija|16|3|beach
+maestral-beach-near-rijeka|16|3|beach
 maestrazgo-near-teruel|0|0|
 magaguadavic-river-near-fredericton|256|3|stream
+magaliesberg-near-pretoria|1024|3|mountain range
+magazine-beach-near-brockton|16|3|beach
+magdalen-islands-near-dakar|64|3|island
 magdalena-island-near-punta-arenas|64|3|island
 magdalena-island-near-rio-gallegos|64|3|island
 magdalena-peninsula-near-santander|4096|3|peninsula
@@ -17339,7 +20128,11 @@ magura-odobesti-sit-spa-near-focsani|65536|3|Natura 2000 site
 magura-uroiului-project-near-cugir|65536|3|nature reserve
 magura-uroiului-project-near-hunedoara|65536|3|nature reserve
 maharlu-lake-near-shiraz|32|3|salt lake
+mahavir-harina-vanasthali-national-park-near-hyderabad|32768|3|national park
+mahia-beach-near-gisborne|16|3|beach
 mahia-peninsula-near-gisborne|4096|3|peninsula
+mahim-bay-near-mumbai|4096|3|bay
+mahim-beach-near-mumbai|16|3|beach
 mahistratske-lake-near-nizhyn|65568|3|lake
 mahistratske-lake-near-rechytsa|65568|3|lake
 mahya-dag-near-corlu|1024|3|mountain
@@ -17350,6 +20143,9 @@ maiella-national-park-near-laquila|98304|3|national park
 maiella-national-park-near-pescara|98304|3|national park
 maigu-lake-near-mazeikiai|32|3|lake
 maille-near-esslingen-am-neckar|131072|3|park
+main-beach-near-brisbane|16|3|beach
+main-beach-near-gold-coast|16|3|beach
+main-beach-near-ipswich|16|3|beach
 main-lake-provincial-park-near-campbell-river|131072|3|provincial park of Canada
 main-range-national-park-near-gatton|32768|3|national park of Australia
 main-range-national-park-near-toowoomba|32768|3|national park of Australia
@@ -17369,12 +20165,20 @@ maintal-bei-sennfeld-und-weyer-near-schweinfurt|65536|3|Special Area of Conserva
 maisan-near-asan|1024|3|mountain
 maisan-near-jeonju|1024|3|mountain
 maisinger-see-near-starnberg|32|3|lake
+maitland-beach-near-wonthaggi|16|3|beach
 maitland-park-near-maitland|131072|3|park
 maja-e-shites-near-shkoder|1024|3|mountain
 majevica-near-tuzla|1024|3|mountain range
+majlis-al-jinn-near-muscat|2|3|cave
+makapuu-point-near-honolulu|4096|3|cape
 makaro-ward-island-near-lower-hutt|64|3|island
+makarska-riviera-near-makarska|4096|3|coast
+makarska-riviera-near-metkovic|4096|3|coast
+makarska-riviera-near-omis|4096|3|coast
+makarska-riviera-near-ploce|4096|3|coast
 maketu-waterfall-near-pukekohe|1|3|waterfall
 makitra-mount-near-dubno|1024|3|mountain
+makomanai-river-near-sapporo|256|3|river
 makovica-near-bardejov|1024|3|mountain
 maksima-horkaha-park-mahiliou-near-mahilyow|131072|3|park
 maksimir-park-near-dugo-selo|147456|3|forest park
@@ -17394,15 +20198,20 @@ mala-fatra-near-zilina|1024|3|mountain range
 mala-gora-near-kocevje|1024|3|mountain
 mala-magura-near-prievidza|1024|3|mountain range
 mala-pec-near-piestany|65538|3|cave
+mala-plaza-near-bar|16|3|beach
+mala-plaza-near-budva|16|3|beach
+mala-plaza-near-cetinje|16|3|beach
 mala-prasiva-near-frydek-mistek|1024|3|mountain
 mala-sestrica-near-rovinj|64|3|island
 mala-strana-near-jablonec-nad-nisou|65536|3|nature reserve in the Czech Republic
+malabar-beach-near-sydney|16|3|beach
 malabar-farm-state-park-near-mansfield|131072|3|Ohio state park
 malahide-near-swords|0|0|
 malakoff-park-near-bouguenais|131072|3|park
 malakoff-park-near-sainte-luce-sur-loire|131072|3|park
 malakoff-park-near-vertou|131072|3|park
 malangen-near-tromso|4096|3|fjord
+malangen-near-tromso-municipality|4096|3|fjord
 malaren-near-enkoping|32|3|lake
 malaren-near-marsta|32|3|lake
 malaren-near-strangnas|32|3|lake
@@ -17428,6 +20237,7 @@ mali-kozjak-near-trogir|1024|3|mountain range
 mali-kuchuhury-island-near-berdiansk|0|0|
 mali-me-gropa-bize-martanesh-nature-park-near-tirana|65536|3|protected area
 maliivtsi-falls-near-mohyliv-podilskyi|1|3|waterfall
+malin-head-near-letterkenny|4096|3|cape
 malinec-reservoir-near-lucenec|32|3|reservoir
 malinovoye-near-semey|32|3|salt lake
 maljen-near-uzice|1024|3|mountain
@@ -17483,6 +20293,7 @@ mammoth-cave-national-park-near-louisville|0|0|
 mammoth-cave-national-park-near-owensboro|0|0|
 mamula-near-budva|64|3|island
 mamula-near-herceg-novi|64|3|island
+man-sagar-lake-near-jaipur|32|3|lake
 manafossen-near-stavanger|1|3|waterfall
 mananciais-de-campos-do-jordao-state-park-near-sao-jose-dos-campos|131072|3|state park
 mananciais-de-campos-do-jordao-state-park-near-taubate|131072|3|state park
@@ -17504,6 +20315,8 @@ mando-near-esbjerg|64|3|island
 mando-near-ribe|64|3|island
 mando-near-tonder|64|3|island
 maner-tank-near-patna|32|3|reservoir
+manessmane-beach-near-casablanca|16|3|beach
+manessmane-beach-near-rabat|16|3|beach
 mangahao-lower-no-2-reservoir-near-palmerston-north|32|3|reservoir
 mangahao-upper-no-1-reservoir-near-palmerston-north|32|3|lake
 mangelbeekvallei-near-lommel|67584|3|valley
@@ -17515,6 +20328,7 @@ mangla-reservoir-near-gujrat|32|3|reservoir
 mangla-reservoir-near-jhelum|32|3|reservoir
 mangla-reservoir-near-sheikhupura|32|3|reservoir
 mangla-reservoir-near-sialkot|32|3|reservoir
+mangrove-national-park-near-abu-dhabi|32768|3|national park
 mangrove-point-near-broome|0|0|
 manhasset-valley-park-near-north-hempstead|131072|3|park
 mani-peninsula-near-sparta|4096|3|peninsula
@@ -17522,6 +20336,8 @@ manicouagan-peninsula-near-baie-comeau|4096|3|peninsula
 manicouagan-peninsula-near-matane|4096|3|peninsula
 manicouagan-uapishka-biosphere-reserve-near-baie-comeau|65536|3|biosphere reserve
 manicouagan-uapishka-biosphere-reserve-near-matane|65536|3|biosphere reserve
+manila-bay-beach-near-manila|16|3|beach
+manila-bay-near-manila|4096|3|bay
 manilaid-near-parnu|64|3|island
 manistee-national-forest-near-grand-rapids|81920|3|proclaimed forest
 manitoba-tall-grass-prairie-preserve-near-grand-forks|65536|3|nature reserve
@@ -17531,6 +20347,10 @@ manitou-lake-near-north-battleford|32|3|lake
 manjaca-near-banja-luka|1024|3|mountain
 manjaca-near-prijedor|1024|3|mountain
 manjesti-near-vaslui|65536|3|Natura 2000 site
+manly-beach-near-central-coast|16|3|beach
+manly-beach-near-gosford|16|3|beach
+manly-beach-near-penrith|16|3|beach
+manly-beach-near-sydney|16|3|beach
 mannerheim-park-near-seinajoki|131072|3|park
 mannikjarv-near-jogeva|32|3|lake
 manoa-falls-near-honolulu|1|3|waterfall
@@ -17539,8 +20359,12 @@ manor-park-in-dabrowa-gmina-przesmyki-near-siedlce|131072|3|park
 manor-park-in-kupientyn-near-siedlce|131072|3|park
 manor-park-in-tupady-near-inowroclaw|131072|3|park
 manor-park-in-waliska-near-siedlce|131072|3|park
+manora-island-near-karachi|4096|3|peninsula
 manresa-island-near-norwalk-us|64|3|island
 manresa-island-near-stamford|64|3|island
+manresa-state-beach-near-salinas|16|3|California state beach
+manresa-state-beach-near-san-jose-us|16|3|California state beach
+manresa-state-beach-near-santa-clara|16|3|California state beach
 mansa-beach-near-maldonado|16|3|beach
 mansar-lake-near-amritsar|32|3|lake
 mansar-lake-near-gujranwala|32|3|lake
@@ -17548,12 +20372,14 @@ mansar-lake-near-gujrat|32|3|lake
 mansar-lake-near-kasur|32|3|lake
 mansar-lake-near-sheikhupura|32|3|lake
 mansar-lake-near-sialkot|32|3|lake
+mantayupan-falls-near-cebu|1|3|waterfall
 mantiqueira-mountains-near-volta-redonda|1024|3|non-geologically related mountain range
 manuel-antonio-national-park-near-cartago|32768|3|national park
 manuripi-heath-amazonian-wildlife-national-reserve-near-puerto-maldonado|65536|3|nature reserve
 manuripi-heath-amazonian-wildlife-national-reserve-near-rio-branco|65536|3|nature reserve
 manych-gudilo-near-stavropol|65568|3|lake
 manzanares-el-real-near-madrid|0|0|
+maota-lake-near-jaipur|32|3|lake
 mapimi-near-gomez-palacio|65536|3|biosphere reserve
 mapimi-near-torreon|65536|3|biosphere reserve
 mapinguari-national-park-near-porto-velho|32768|3|national park
@@ -17567,12 +20393,23 @@ mapleton-falls-national-park-near-nambour|32768|3|national park of Australia
 mapleton-national-park-near-kingaroy|32768|3|national park of Australia
 maplewood-state-park-near-fargo|131072|2|
 maplewood-state-park-near-moorhead|131072|2|
+mapocho-river-near-santiago|256|3|river
+mapocho-river-near-valparaiso|256|3|river
+maputo-bay-near-maputo|4096|3|bay
+maputo-national-park-near-maputo|32768|3|national park
+maputo-river-near-maputo|256|3|river
+maquipucuna-near-quito|65536|3|nature reserve
 maquoketa-caves-state-park-near-cedar-rapids|131074|3|show cave
 maquoketa-caves-state-park-near-davenport|131074|3|show cave
 maquoketa-caves-state-park-near-dubuque|131074|3|show cave
 maquoketa-caves-state-park-near-iowa-city|131074|3|show cave
+mar-chiquita-near-cordoba|32|3|salt lake
 mar-del-plata-natural-reserve-near-mar-del-plata|65536|3|nature reserve
 mar-del-plata-natural-reserve-near-tandil|65536|3|nature reserve
+mar-menor-near-cartagena|4128|3|lagoon
+mar-menor-near-elche|4128|3|lagoon
+mar-menor-near-orihuela|4128|3|lagoon
+mar-menor-near-torrevieja|4128|3|lagoon
 mara-provincial-park-near-orillia|131072|3|provincial park of Canada
 maracaju-mountain-range-near-concepcion-py|1024|3|mountain range
 maracaju-mountain-range-near-pedro-juan-caballero|1024|3|mountain range
@@ -17603,6 +20440,8 @@ marajo-near-ananindeua|64|3|island
 marajo-near-belem|64|3|island
 marajo-near-macapa|64|3|island
 maralgol-near-ganja|32|3|lake
+marano-grado-lagoon-near-pordenone|4128|3|lagoon
+marano-lagoon-near-pordenone|4128|3|lagoon
 marathonisi-near-zakynthos|64|3|island
 marbaek-plantation-near-esbjerg|16384|3|forest
 marcelovske-piesky-near-komarno|65536|3|nature reserve
@@ -17651,7 +20490,12 @@ maria-hendrikapark-near-koksijde|131072|3|park
 maria-square-near-drochia|131072|3|park
 maria-square-near-falesti|131072|3|park
 maria-vinyals-park-near-pontevedra|131072|3|park
+mariager-fjord-near-aalborg|4096|3|fjord
+mariager-fjord-near-aarhus|4096|3|fjord
+mariager-fjord-near-grenaa|4096|3|fjord
+mariager-fjord-near-hadsund|4096|3|fjord
 mariager-fjord-near-randers|4096|3|fjord
+mariager-fjord-near-viborg|4096|3|fjord
 mariahilf-berg-near-amberg|1024|3|hill
 marian-hill-near-levoca|1024|3|hill
 mariannenaue-near-ingelheim-am-rhein|320|3|river island
@@ -17660,6 +20504,19 @@ mariapark-near-beringen|131072|3|park
 mariapark-near-turnhout|131072|3|park
 maribor-island-near-maribor|320|3|river island
 maribor-island-near-slovenska-bistrica|320|3|river island
+marico-river-near-gaborone|256|3|river
+marie-curtis-beach-near-ajax|16|3|beach
+marie-curtis-beach-near-brampton|16|3|beach
+marie-curtis-beach-near-burlington|16|3|beach
+marie-curtis-beach-near-hamilton-ontario|16|3|beach
+marie-curtis-beach-near-markham|16|3|beach
+marie-curtis-beach-near-milton|16|3|beach
+marie-curtis-beach-near-mississauga|16|3|beach
+marie-curtis-beach-near-oakville|16|3|beach
+marie-curtis-beach-near-pickering|16|3|beach
+marie-curtis-beach-near-richmond-hill|16|3|beach
+marie-curtis-beach-near-toronto|16|3|beach
+marie-curtis-beach-near-vaughan|16|3|beach
 marie-curtis-park-near-oakville|131072|3|park
 marienberg-brandenburg-an-der-havel-near-brandenburg-an-der-havel|1024|3|mountain
 marienholzung-near-flensburg|16384|3|forest
@@ -17670,6 +20527,9 @@ marine-natural-park-of-bassin-d-arcachon-near-pessac|65536|3|protected area
 marine-nature-reserve-of-miramare-near-trieste|65536|3|biosphere reserve
 marine-port-kagoshima-near-kagoshima|0|0|
 marine-protected-area-capo-rizzuto-near-crotone|65536|3|protected area
+marine-street-beach-near-el-cajon|16|3|beach
+marine-street-beach-near-escondido|16|3|beach
+marine-street-beach-near-san-diego|16|3|beach
 mariposa-grove-near-madera|16384|3|forest
 marismas-de-isla-cristina-near-huelva|66048|3|tidal marsh
 marismas-de-isla-cristina-near-tavira|66048|3|tidal marsh
@@ -17733,6 +20593,7 @@ marktkirche-quedlinburg-near-quedlinburg|65536|3|Special Area of Conservation
 markwald-bei-baiersdorf-near-forchheim|65536|3|Special Area of Conservation
 marlborough-sounds-near-blenheim|0|0|
 marmara-island-near-corlu|64|3|island
+marmara-island-near-istanbul|64|3|island
 marmara-island-near-tekirdag|64|3|island
 marmarik-reservoir-near-hrazdan|32|3|reservoir
 marmisho-lake-near-urmia|32|3|lake
@@ -17757,7 +20618,12 @@ martin-breg-near-bjelovar|1024|3|hill
 martin-breg-near-dugo-selo|1024|3|hill
 martin-breg-near-krizevci|1024|3|hill
 martin-breg-near-petrinja|1024|3|hill
+martin-garcia-island-near-buenos-aires|64|3|island
 martin-park-near-norman|131072|3|park
+martin-s-beach-near-cupertino|16|3|beach
+martin-s-beach-near-san-jose-us|16|3|beach
+martin-s-beach-near-santa-clara|16|3|beach
+martin-s-beach-near-sunnyvale|16|3|beach
 martinak-state-park-near-dover|131072|2|
 martyshiv-lake-kyiv-near-boryspil|32|3|lake
 martyshiv-lake-kyiv-near-vasylkiv|32|3|lake
@@ -17768,10 +20634,16 @@ maschsee-near-hanover|32|3|reservoir
 mashezero-near-petrozavodsk|32|3|lake
 masiarsky-bok-near-zvolen|65536|3|national nature reserve
 masirah-island-near-sur|64|3|island
+maslen-nos-near-burgas|4096|3|cape
+maslen-nos-near-nesebar|4096|3|cape
 masnedo-near-nykobing-falster|64|3|island
 masnedo-near-vordingborg|64|3|island
 masonboro-island-near-wilmington-nc|64|3|island
 masovian-landscape-park-near-warsaw|196608|3|landscape park in Poland
+maspalomas-dunes-near-las-palmas|204816|3|beach
+maspalomas-dunes-near-telde|204816|3|beach
+massamagrell-near-torrent|16|1|
+massamagrell-near-valencia|16|1|
 massarandupio-near-aracaju|16|2|
 massasoit-state-park-near-taunton-us|131072|2|
 massif-central-near-vichy|1024|3|non-geologically related mountain range
@@ -17786,10 +20658,19 @@ massif-de-la-clape-near-carcassonne|66560|3|mountain range
 massif-de-la-clape-near-narbonne|66560|3|mountain range
 massif-de-lesterel-near-nice|1024|3|mountain range
 massif-des-bauges-near-annecy|1024|3|mountain range
+massif-des-calanques-near-aix-en-provence|5120|3|mountain range
 massif-des-calanques-near-aubagne|5120|3|mountain range
+massif-des-calanques-near-hyeres|5120|3|mountain range
+massif-des-calanques-near-istres|5120|3|mountain range
+massif-des-calanques-near-la-ciotat|5120|3|mountain range
+massif-des-calanques-near-la-seyne-sur-mer|5120|3|mountain range
+massif-des-calanques-near-marseille|5120|3|mountain range
+massif-des-calanques-near-martigues|5120|3|mountain range
+massif-des-calanques-near-salon-de-provence|5120|3|mountain range
+massif-des-calanques-near-toulon|5120|3|mountain range
 massif-des-maures-near-antibes|1024|3|mountain range
 massif-of-the-kopacz-hill-near-sanok|1024|3|mountain
-massis-del-garraf-near-vilanova-i-la-geltru|0|0|
+massis-del-garraf-near-vilanova-i-la-geltru|66560|3|mountain range
 mastbos-near-breda|65536|3|nature area
 mastigouche-wildlife-reserve-near-trois-rivieres|0|0|
 mastis-near-telsiai|32|3|lake
@@ -17801,6 +20682,7 @@ matajur-near-udine|1024|3|mountain
 matakana-island-near-tauranga|64|3|island
 matalascanas-near-huelva|0|0|
 matamon-near-alzira|1024|3|mountain
+matanza-river-near-buenos-aires|256|3|river
 matas-do-segredo-state-park-near-campo-grande|131072|3|state park
 matas-do-segredo-state-park-near-dourados|131072|3|state park
 matese-near-campobasso|1024|3|mountain range
@@ -17826,6 +20708,8 @@ mattheiser-wald-near-trier|65536|3|Special Area of Conservation
 matthew-henson-state-park-near-rockville|131072|2|
 matthiessen-state-park-near-peoria|131072|3|Illinois state park
 mattig-near-braunau-am-inn|256|3|river
+matuku-takotako-near-christchurch|16|3|beach
+matuku-takotako-near-rolleston|16|3|beach
 matyas-near-sokolov|65536|3|Special Area of Conservation
 matyra-reservoir-near-lipetsk|32|3|reservoir
 maulbeeraue-near-worms|64|3|island
@@ -17854,6 +20738,7 @@ mayenne-near-le-mans|256|3|river
 maynard-lake-near-dartmouth|32|3|lake
 maynard-lake-near-halifax|32|3|lake
 mayo-river-state-park-near-greensboro|131072|3|North Carolina state park
+mazagaon-near-mumbai|0|0|
 mazais-ludzas-ezers-near-ludza|32|3|lake
 mazais-ludzas-ezers-near-rezekne|32|3|lake
 mazais-nabas-ezers-near-kuldiga|32|3|lake
@@ -17864,6 +20749,7 @@ mbaracayu-forest-nature-reserve-near-pedro-juan-caballero|65536|3|nature reserve
 mburucuya-national-park-near-corrientes|32768|3|national park
 mburucuya-national-park-near-resistencia|32768|3|national park
 mcarthur-lake-near-timmins|32|3|lake
+mccook-point-park-near-middletown|16|3|beach
 mccormick-island-near-york-us|320|3|river island
 mccormick-s-creek-state-park-near-terre-haute|131072|3|Indiana state park
 mccullough-range-near-henderson|1024|3|mountain range
@@ -17891,6 +20777,8 @@ meadows-of-great-bustard-near-gyula|65536|3|nature reserve
 meadows-of-great-bustard-near-kikinda|65536|3|nature reserve
 meadows-of-great-bustard-near-mako|65536|3|nature reserve
 meaher-state-park-near-mobile|131072|2|
+meaipe-beach-near-vila-velha|16|3|beach
+meaipe-beach-near-vitoria|16|3|beach
 meander-creek-reservoir-near-canton|32|3|reservoir
 meandry-luciny-near-karvina|65536|3|natural monument in the Czech Republic
 meandry-smede-near-zgorzelec|65536|3|nature reserve in the Czech Republic
@@ -17902,10 +20790,12 @@ mecsek-near-pecs|0|0|
 mecsek-near-sombor|0|0|
 mecsek-near-szekszard|0|0|
 medard-near-sokolov|32|3|lake
+medellin-river-near-medellin|256|3|watercourse
 medeu-regional-nature-park-near-almaty|196608|3|nature park
 media-lunita-park-near-dos-hermanas|131072|3|park
 medicine-bow-mountains-near-cheyenne|1024|3|mountain range
 medina-lake-near-san-antonio|32|3|reservoir
+medjerda-river-near-tunis|256|3|river
 medobory-nature-reserve-near-khmelnytskyi|65536|3|protected area
 medobory-nature-reserve-near-ternopil|65536|3|protected area
 medoc-mountain-state-park-near-durham-us|131072|3|North Carolina state park
@@ -17924,7 +20814,9 @@ medvednica-nature-park-near-zagreb|1024|3|mountain range
 medvednica-near-sisak|1024|3|mountain range
 medvednik-near-loznica|1024|3|mountain
 meehan-range-near-kingston-au|1024|3|mountain range
+meelup-beach-near-bunbury|16|3|beach
 meelup-beach-near-busselton|16|3|beach
+meelup-beach-near-margaret-river|16|3|beach
 meelup-regional-park-near-busselton|131072|3|regional park
 meeman-shelby-forest-state-park-near-jonesboro|131072|2|
 meeman-shelby-forest-state-park-near-memphis|131072|2|
@@ -17944,6 +20836,11 @@ mehedinti-plateau-geopark-near-craiova|65536|3|protected area
 mehedinti-plateau-geopark-near-drobeta-turnu-severin|65536|3|protected area
 mehedinti-plateau-geopark-near-targu-jiu|65536|3|protected area
 mehrun-lake-near-indore|32|3|lake
+mei-ami-beach-ashdod-near-ashdod|16|3|beach
+mei-ami-beach-ashdod-near-bnei-brak|16|3|beach
+mei-ami-beach-ashdod-near-petah-tikva|16|3|beach
+mei-ami-beach-ashdod-near-rehovot|16|3|beach
+mei-ami-beach-ashdod-near-tel-aviv|16|3|beach
 meijendel-berkheide-near-katwijk|65536|3|Natura 2000 site
 meijendel-berkheide-near-leidschendam-voorburg|65536|3|Natura 2000 site
 meijendel-berkheide-near-rijswijk|65536|3|Natura 2000 site
@@ -17952,6 +20849,7 @@ meiji-no-mori-mino-quasi-national-park-near-hirakata|32768|3|quasi-national park
 meiji-no-mori-mino-quasi-national-park-near-suita|32768|3|quasi-national park of Japan
 meiji-no-mori-takao-quasi-national-park-near-sagamihara|32768|3|quasi-national park of Japan
 meiko-near-kirkkonummi|32|3|lake or pond
+meintjieskop-near-pretoria|1024|3|hill
 meinweg-national-park-near-sittard|98304|3|national park
 meinweg-national-park-near-sittard-geleen|98304|3|national park
 meinweg-national-park-near-weert|98304|3|national park
@@ -17988,12 +20886,14 @@ melton-country-park-near-loughborough|131072|3|country park
 melvern-lake-near-topeka|32|3|reservoir
 melville-island-park-near-becancour|131072|3|regional park
 melville-island-park-near-shawinigan|131072|3|regional park
+melville-koppies-near-johannesburg|65536|3|nature reserve
 memmert-near-aurich|64|3|island
 memmert-near-emden|64|3|island
 memorial-cross-park-near-santa-clara|131072|3|park
 memorial-park-near-ajax|131072|3|urban park
 memorial-park-near-whitby|131072|3|urban park
 memory-cove-wilderness-protection-area-near-port-lincoln|65536|1|
+menai-bay-near-dar-es-salaam|4096|3|bay
 mendibil-near-barakaldo|1024|3|mountain
 mendip-hills-near-bath|1024|3|mountain range
 mendip-hills-near-bristol|1024|3|mountain range
@@ -18008,6 +20908,10 @@ menoikio-near-serres|1024|3|mountain
 menorca-near-mao|64|3|island
 mensfelder-kopf-near-limburg-an-der-lahn|65536|3|Special Area of Conservation
 mente-near-mirandela|256|3|river
+mentone-beach-near-cowes|16|3|beach
+mentone-beach-near-frankston|16|3|beach
+mentone-beach-near-melbourne|16|3|beach
+mentone-beach-near-melton|16|3|beach
 meotyda-national-nature-park-near-donetsk|32768|3|national nature park
 meotyda-national-nature-park-near-mariupol|32768|3|national nature park
 mer-bleue-bog-near-ottawa|65536|2|
@@ -18059,7 +20963,11 @@ merry-s-meadows-near-grantham|65536|3|nature reserve
 mersea-island-near-clacton-on-sea|64|3|island
 mersea-island-near-colchester|64|3|island
 mersea-island-near-margate|64|3|island
+mersey-bluff-near-devonport|4096|3|headland
+mersey-bluff-near-latrobe|4096|3|headland
+mersey-bluff-near-wynyard|4096|3|headland
 mertinger-holle-und-umgebende-feuchtgebiete-near-donauworth|65536|3|Special Area of Conservation
+merula-near-imperia|256|3|river
 meryovskoye-lake-near-veliky-novgorod|32|3|lake
 mesa-grande-near-gilbert|65536|3|protected area
 mesa-verde-national-park-near-durango|0|0|
@@ -18091,8 +20999,19 @@ meteliai-regional-park-near-alytus|196608|3|Natura 2000 site
 metilstein-near-eisenach|1024|3|mountain
 metropolitan-natural-park-near-colon-city|196608|3|nature park
 metropolitan-natural-park-near-la-chorrera|196608|3|nature park
+metropolitan-natural-park-near-panama-city|196608|3|nature park
 metropolitan-natural-park-near-san-miguelito-district|196608|3|nature park
 metsajarvi-near-naantali|32|3|lake or pond
+metzitzim-beach-tel-aviv-near-bat-yam|16|3|beach
+metzitzim-beach-tel-aviv-near-bnei-brak|16|3|beach
+metzitzim-beach-tel-aviv-near-hadera|16|3|beach
+metzitzim-beach-tel-aviv-near-holon|16|3|beach
+metzitzim-beach-tel-aviv-near-netanya|16|3|beach
+metzitzim-beach-tel-aviv-near-petah-tikva|16|3|beach
+metzitzim-beach-tel-aviv-near-ramat-gan|16|3|beach
+metzitzim-beach-tel-aviv-near-ramla|16|3|beach
+metzitzim-beach-tel-aviv-near-rishon-lezion|16|3|beach
+metzitzim-beach-tel-aviv-near-tel-aviv|16|3|beach
 meudon-s-forest-near-antony|16384|3|forest
 meudon-s-forest-near-bourg-la-reine|16384|3|forest
 meudon-s-forest-near-chatenay-malabry|16384|3|forest
@@ -18132,7 +21051,15 @@ michov-near-strakonice|65536|3|nature reserve in the Czech Republic
 mickelmeer-near-meppen|32|3|lake
 mickelmeer-near-nordhorn|32|3|lake
 mid-beach-near-coral-springs|0|0|
+mid-beach-near-davie|0|0|
+mid-beach-near-fort-lauderdale|0|0|
+mid-beach-near-hialeah|0|0|
+mid-beach-near-hollywood|0|0|
+mid-beach-near-miami|0|0|
+mid-beach-near-miami-gardens|0|0|
 mid-beach-near-miramar|0|0|
+mid-beach-near-pembroke-pines|0|0|
+mid-beach-near-pompano-beach|0|0|
 middagskollen-near-porsgrunn|65536|3|nature reserve
 midden-delfland-near-delft|0|0|
 midden-delfland-near-rotterdam|0|0|
@@ -18140,6 +21067,7 @@ midden-delfland-near-the-hague|0|0|
 middenduin-near-haarlem|67584|3|valley
 middenduin-near-velsen|67584|3|valley
 middenduin-near-zandvoort|67584|3|valley
+middle-bay-near-hong-kong|4096|3|bay
 middle-elbe-biosphere-reserve-near-magdeburg|65536|3|biosphere reserve
 middle-elbe-biosphere-reserve-near-stendal|65536|3|biosphere reserve
 middle-island-near-elyria|64|3|island
@@ -18159,12 +21087,16 @@ midlake-pavilion-near-hangzhou|96|3|lake island
 midlake-pavilion-near-shaoxing|96|3|lake island
 midorinoshima-near-hakodate|0|0|
 miedwie-near-szczecin|32|3|lake
+miedzyzdroje-beach-near-swinoujscie|16|3|beach
+miedzyzdroje-beach-near-szczecin|16|3|beach
 mielno-near-koszalin|0|0|
 mien-near-karlshamn|160|3|impact crater lake
 mietholz-near-boblingen|81920|2|
 mietkowski-lake-near-swidnica|32|3|lake
 miguel-angel-blanco-gardens-near-alcobendas|131072|3|park
+miguelete-creek-near-montevideo|256|3|river
 miho-no-matsubara-near-fujieda|16384|3|pine forest
+miho-no-matsubara-near-mishima|16384|3|pine forest
 miho-no-matsubara-near-shizuoka|16384|3|pine forest
 miho-peninsula-near-fujieda|4096|3|peninsula
 miho-peninsula-near-shizuoka|4096|3|peninsula
@@ -18173,7 +21105,11 @@ mikhailov-state-nature-sanctuary-near-kostanay|65536|3|protected area
 miklosic-park-near-domzale|131072|3|urban park
 miknaiciu-lake-near-joniskis|32|3|lake
 mikorzynskie-lake-near-konin|32|3|lake
+mikro-emvolo-near-evosmos|4096|3|cape
+mikro-emvolo-near-kalamaria|4096|3|cape
+mikro-emvolo-near-katerini|4096|3|cape
 mikro-emvolo-near-stavroupoli|4096|3|cape
+mikro-emvolo-near-thessaloniki|4096|3|cape
 mikrolimano-harbour-near-korydallos|0|0|
 mikronisi-near-agios-nikolaos|64|3|island
 miksova-hydraulic-structure-near-povazska-bystrica|32|3|reservoir
@@ -18205,6 +21141,8 @@ millennium-park-near-myslowice|147456|3|forest
 millennium-park-near-piekary-slaskie|147456|3|forest
 millennium-park-near-swietochlowice|147456|3|forest
 miller-mountain-near-wilkes-barre|1024|3|mountain
+miller-s-point-near-cape-town|4112|3|beach
+miller-s-point-near-stellenbosch|4112|3|beach
 millerton-lake-near-clovis|32|3|reservoir
 millerton-lake-near-fresno|32|3|reservoir
 mills-beach-near-frankston|16|3|beach
@@ -18244,6 +21182,7 @@ minija-ichtiological-reserve-near-gargzdai|65536|3|protected area
 minija-landscape-reserve-near-telsiai|65536|3|protected area
 minija-old-valley-landscape-reserve-near-gargzdai|65536|3|protected area
 minija-old-valley-landscape-reserve-near-kretinga|65536|3|protected area
+minimes-beach-near-la-rochelle|16|3|beach
 minisinakwa-lake-near-timmins|32|3|lake
 minjujisan-near-gumi|1024|3|mountain
 minjujisan-near-sejong|1024|3|mountain
@@ -18277,6 +21216,7 @@ miquelon-lake-near-leduc|32|3|lake
 miquelon-lake-provincial-park-near-camrose|131072|3|provincial park of Canada
 miquelon-lake-provincial-park-near-fort-saskatchewan|131072|3|provincial park of Canada
 miquelon-lake-provincial-park-near-leduc|131072|3|provincial park of Canada
+mir-alam-tank-near-hyderabad|32|3|lake
 miracle-beach-provincial-park-near-campbell-river|131072|3|provincial park of Canada
 miracle-beach-provincial-park-near-courtenay|131072|3|provincial park of Canada
 miramichi-valley-near-miramichi|2048|3|valley
@@ -18289,6 +21229,7 @@ mirror-lake-near-columbus|32|3|lake
 mirror-lake-near-delaware|32|3|lake
 mirza-alakbar-sabir-garden-near-khyrdalan|131072|3|urban park
 misari-regatta-near-namyangju|32|3|artificial lake
+misery-beach-near-albany|16|3|beach
 misina-near-pecs|1024|3|mountain
 misol-ha-near-ciudad-del-carmen|1|3|waterfall
 misol-ha-near-comitan-de-dominguez|1|3|waterfall
@@ -18313,6 +21254,9 @@ mitsero-red-lake-near-lakatamia|32|3|lake
 mitsero-red-lake-near-nicosia|32|3|lake
 mittelerzgebirgische-basaltberge-near-annaberg-buchholz|65536|3|Special Area of Conservation
 mixville-park-near-waterbury|131072|3|park
+mixville-pond-near-hartford|4128|3|lagoon
+mixville-pond-near-middletown|4128|3|lagoon
+mixville-pond-near-new-haven|4128|3|lagoon
 mixville-pond-near-waterbury|4128|3|lagoon
 miyansheh-lake-near-sari|32|3|landslide-dammed lake
 miyun-reservoir-near-tangshan|32|3|reservoir
@@ -18342,7 +21286,17 @@ modjeska-peak-near-corona|1024|3|mountain
 modlivy-dul-near-rychnov-nad-kneznou|65536|3|nature reserve in the Czech Republic
 modrac-lake-near-tuzla|32|3|reservoir
 moel-famau-near-wrexham|1024|3|summit
+moesgard-beach-near-aarhus|16|3|beach
+moesgard-beach-near-horsens|16|3|beach
+moesgard-beach-near-randers|16|3|beach
+moesgard-beach-near-skanderborg|16|3|beach
 moffat-beach-near-caloundra|16|3|beach
+moffat-beach-near-nambour|16|3|beach
+moffat-beach-near-sunshine-coast|16|3|beach
+mogren-near-bar|16|3|beach
+mogren-near-budva|16|3|beach
+mogren-near-cetinje|16|3|beach
+mogren-near-herceg-novi|16|3|beach
 mohegan-hill-near-utica|1024|3|mountain
 mohican-state-park-near-akron|131072|3|Ohio state park
 mohican-state-park-near-mansfield|131072|3|Ohio state park
@@ -18367,6 +21321,7 @@ moj-near-ketrzyn|32|3|lake
 moke-lake-near-queenstown|32|3|lake
 mokoia-island-near-rotorua|64|3|island
 mokopuna-island-near-lower-hutt|64|3|island
+mokotahi-near-gisborne|4096|3|cape
 mokra-gora-near-novi-pazar|1024|3|mountain range
 mokra-sura-near-samar|256|3|river
 mokrad-pumpak-near-kromeriz|65536|3|Special Area of Conservation
@@ -18381,6 +21336,9 @@ mola-de-segart-near-sagunto|1024|3|mountain
 molara-island-near-olbia|64|3|island
 molard-noir-near-aix-les-bains|1024|3|mountain
 molde-archipelago-near-molde-municipality|64|3|archipelago
+moldefjorden-near-alesund|4096|3|fjord
+moldefjorden-near-kristiansund-municipality|4096|3|fjord
+moldefjorden-near-molde-municipality|4096|3|fjord
 moldevatnet-near-molde-municipality|32|3|reservoir
 moldoveanu-peak-near-avrig|1024|3|mountain
 moldoveanu-peak-near-cisnadie|1024|3|mountain
@@ -18401,7 +21359,10 @@ moleson-near-vevey|1024|3|mountain
 molhe-beach-near-gondomar|16|3|beach
 molhe-beach-near-maia|16|3|beach
 molhe-beach-near-valongo|16|3|beach
+mollarri-near-irun|4096|3|cape
+mollarri-near-san-sebastian|4096|3|cape
 mollendaalbos-near-tienen|16384|3|forest
+mollymook-beach-near-nowra|16|3|beach
 molnar-island-near-erd|64|3|island
 molochna-near-melitopol|256|3|river
 molodecky-mound-near-tolyatti|1024|3|mountain
@@ -18410,6 +21371,7 @@ mols-bjerge-national-park-near-aarhus|32768|3|national park
 mols-bjerge-national-park-near-grenaa|32768|3|national park
 mols-bjerge-national-park-near-vejle|32768|3|national park
 molsdorfer-schlosspark-near-arnstadt|65536|3|Special Area of Conservation
+moltkeblick-near-windhoek|1024|3|mountain
 mombeekvallei-near-hasselt|65536|3|nature area
 momo-island-near-fukuyama|64|3|island
 mon-near-koge|65600|3|island
@@ -18419,6 +21381,8 @@ mon-near-vordingborg|65600|3|island
 mona-vale-near-rolleston|131072|3|park
 monahans-sandhills-state-park-near-midland|131072|3|Texas state park
 monahans-sandhills-state-park-near-odessa|131072|3|Texas state park
+monalanong-hill-near-gaborone|1024|3|mountain
+monarch-butterfly-biosphere-reserve-near-mexico-city|65536|3|biosphere reserve
 monarch-butterfly-biosphere-reserve-near-santiago-de-queretaro|65536|3|biosphere reserve
 monarch-butterfly-biosphere-reserve-near-toluca-de-lerdo|65536|3|biosphere reserve
 monashee-provincial-park-near-vernon|131072|3|provincial park of Canada
@@ -18444,6 +21408,9 @@ monksville-reservoir-near-ramapo|32|3|reservoir
 mono-cliffs-provincial-park-near-barrie|131072|3|provincial park of Canada
 mono-cliffs-provincial-park-near-brampton|131072|3|provincial park of Canada
 mono-cliffs-provincial-park-near-orangeville|131072|3|provincial park of Canada
+monolithi-near-arta|131088|3|beach
+monolithi-near-lefkada|131088|3|beach
+monolithi-near-preveza|131088|3|beach
 monsacro-near-oviedo|1024|3|mountain
 monsanto-forest-park-near-barreiro|212992|3|protected forest
 monsanto-forest-park-near-mafra|212992|3|protected forest
@@ -18453,12 +21420,15 @@ monsanto-forest-park-near-queluz|212992|3|protected forest
 monsanto-forest-park-near-seixal|212992|3|protected forest
 monsanto-forest-park-near-torres-vedras|212992|3|protected forest
 monsanto-forest-park-near-vila-franca-de-xira|212992|3|protected forest
+monserrate-near-bogota|1024|3|mountain
 monserrate-near-hogares-soacha|1024|3|mountain
 monserrate-near-san-jose-del-guaviare|1024|3|mountain
 monserrate-near-villavicencio|1024|3|mountain
 monsin-island-near-herstal|64|3|island
 monsin-island-near-huy|64|3|island
 monsin-island-near-liege|64|3|island
+monsul-beach-near-almeria|16|3|beach
+monsul-beach-near-roquetas-de-mar|16|3|beach
 mont-adstock-near-thetford-mines|1024|3|mountain
 mont-afrique-near-beaune|1024|3|mountain
 mont-afrique-near-dijon|1024|3|mountain
@@ -18475,12 +21445,13 @@ mont-blanc-massif-near-albertville|1024|3|mountain chain
 mont-blanc-massif-near-martigny|1024|3|mountain chain
 mont-blanc-near-albertville|1024|3|main peak
 mont-blanc-near-aosta|1024|3|main peak
+mont-blanc-near-imperia|1024|3|main peak
 mont-blanc-near-matane|1024|3|mountain
 mont-blanc-perce-near-gaspe|1024|3|mountain
 mont-bouquet-near-ales|1024|3|mountain
 mont-boussuivre-near-roanne|1024|3|mountain
 mont-brome-near-cowansville|1024|3|mountain
-mont-cassel-near-armentieres|0|0|
+mont-cassel-near-armentieres|1024|3|outlier
 mont-cassel-near-ieper|1024|3|outlier
 mont-cassel-near-lens|1024|3|outlier
 mont-chaudron-near-rouyn-noranda|1024|3|hill
@@ -18503,6 +21474,7 @@ mont-des-avaloirs-near-laval-fr|1024|3|mountain
 mont-des-cats-near-ieper|0|0|
 mont-des-cats-near-lens|0|0|
 mont-des-cats-near-tournai|0|0|
+mont-des-recollets-near-armentieres|1024|3|outlier
 mont-deves-near-le-puy-en-velay|1024|3|mountain
 mont-dol-near-saint-malo|0|0|
 mont-du-midi-near-sainte-marie|1024|3|mountain
@@ -18525,6 +21497,7 @@ mont-lozere-near-ales|66560|3|massif
 mont-mars-near-ivrea|1024|3|mountain
 mont-mezenc-near-valence|1152|3|volcano
 mont-myon-near-bourg-en-bresse|66560|3|mountain
+mont-noir-near-armentieres|1024|3|hill
 mont-noir-near-ieper|1024|3|hill
 mont-noir-near-kortrijk|1024|3|hill
 mont-noir-near-tournai|1024|3|hill
@@ -18641,7 +21614,7 @@ mont-video-near-amos|1024|3|mountain
 mont-video-near-val-d-or|1024|3|mountain
 mont-vinaigre-near-frejus|1024|3|mountain
 mont-xalibu-near-sept-iles|1024|3|mountain
-mont-yamaska-near-drummondville|0|0|
+mont-yamaska-near-drummondville|1024|3|mountain
 mont-yamaska-near-saint-hyacinthe|1024|3|mountain
 montafon-near-bludenz|2048|3|valley
 montafon-near-davos|2048|3|valley
@@ -18676,6 +21649,8 @@ montague-island-near-mexicali|64|3|island
 montague-island-near-san-luis-rio-colorado|64|3|island
 montalbano-near-pistoia|1024|3|massif
 montalto-near-camaiore|1024|3|mountain
+montalvo-beach-near-pontevedra|16|3|beach
+montalvo-beach-near-vigo|16|3|beach
 montana-clara-near-arrecife|64|3|island
 montana-de-tindaya-near-puerto-del-rosario|1024|3|mountain
 montana-roja-near-puerto-del-rosario|1024|3|mountain
@@ -18720,7 +21695,7 @@ monte-cavanero-near-cuneo|1024|3|mountain
 monte-cavo-near-anzio|1024|3|mountain
 monte-cavo-near-tivoli|1024|3|mountain
 monte-cavo-near-velletri|1024|3|mountain
-monte-ceppo-near-imperia|0|0|
+monte-ceppo-near-imperia|65536|3|Natura 2000 site
 monte-ceppo-near-sanremo|65536|3|Natura 2000 site
 monte-cerreto-near-castellammare-di-stabia|1024|3|mountain
 monte-cimino-near-viterbo|1024|3|mountain
@@ -18768,7 +21743,7 @@ monte-faito-near-castellammare-di-stabia|1024|3|mountain
 monte-falterona-near-forli|1024|3|mountain
 monte-falterona-near-prato|1024|3|mountain
 monte-fasce-near-genoa|1024|3|mountain
-monte-faudo-near-imperia|0|0|
+monte-faudo-near-imperia|1024|3|summit
 monte-figogna-near-genoa|1024|3|mountain
 monte-formaggio-near-gela|1024|3|mountain
 monte-gabberi-near-camaiore|1024|3|mountain
@@ -18811,7 +21786,7 @@ monte-matanna-near-camaiore|1024|3|mountain
 monte-mauro-near-faenza|1024|3|mountain
 monte-mauro-near-imola|1024|3|mountain
 monte-miletto-near-campobasso|1024|3|mountain
-monte-monega-near-imperia|0|0|
+monte-monega-near-imperia|65536|3|Natura 2000 site
 monte-morello-near-florence|1024|3|mountain
 monte-morello-near-prato|1024|3|mountain
 monte-musine-near-moncalieri|1024|3|mountain
@@ -18845,7 +21820,7 @@ monte-raci-near-ragusa|1024|3|mountain
 monte-renoso-near-ajaccio|1024|3|mountain
 monte-resegone-near-lecco|263168|3|mountain
 monte-sabbiuno-near-bologna|1024|3|mountain
-monte-saccarello-near-imperia|0|0|
+monte-saccarello-near-imperia|1024|3|mountain
 monte-sacro-near-trani|1024|3|mountain
 monte-sagro-near-carrara|1024|3|mountain
 monte-sagro-near-massa|1024|3|mountain
@@ -18881,9 +21856,10 @@ monte-terminillo-near-rieti|1024|3|mountain
 monte-tezio-near-perugia|1024|3|mountain
 monte-titano-near-rimini|1024|3|mountain
 monte-tobbio-near-alessandria|1024|3|mountain
-monte-toraggio-near-imperia|0|0|
+monte-toraggio-near-imperia|65536|3|Natura 2000 site
 monte-troodeloh-near-velbert|1024|3|hill
 monte-velino-near-avezzano|1024|3|mountain
+monte-verde-beach-near-ponta-delgada|16|3|beach
 monte-vettore-near-ascoli-piceno|1024|3|mountain
 monte-vettore-near-fermo|1024|3|mountain
 monte-vettore-near-teramo|1024|3|mountain
@@ -18988,6 +21964,7 @@ montserrat-near-barcelona|1024|3|mountain
 montserrat-near-lhospitalet|1024|3|mountain
 montserrat-near-sabadell|1024|3|mountain
 montserrat-near-terrassa|1024|3|mountain
+montserrat-near-vilanova-i-la-geltru|1024|3|mountain
 monumento-natural-de-carenque-near-agualva-cacem|65536|3|natural monument
 monumento-natural-de-carenque-near-queluz|65536|3|natural monument
 monza-park-near-monza|131072|3|park
@@ -18997,6 +21974,8 @@ mooie-nel-near-heemskerk|32|3|lake
 mooie-nel-near-velsen|32|3|lake
 mooie-nel-near-zandvoort|32|3|lake
 mooloolaba-beach-near-caloundra|16|3|beach
+mooloolaba-beach-near-nambour|16|3|beach
+mooloolaba-beach-near-sunshine-coast|16|3|beach
 mooloolah-river-national-park-near-caloundra|32768|3|national park of Australia
 mooloolah-river-national-park-near-nambour|32768|3|national park of Australia
 mooloolah-river-national-park-near-sunshine-coast|32768|3|national park of Australia
@@ -19004,8 +21983,11 @@ moon-beach-near-manaus|272|3|river beach
 moon-peak-near-amritsar|1024|3|mountain
 moondah-beach-near-frankston|16|3|beach
 moonlight-beach-near-carlsbad|16|3|California state beach
+moonlight-beach-near-el-cajon|16|3|California state beach
 moonlight-beach-near-escondido|16|3|California state beach
 moonlight-beach-near-oceanside|16|3|California state beach
+moonlight-beach-near-san-diego|16|3|California state beach
+moonstone-beach-near-san-luis-obispo|16|3|beach
 moore-bei-christinenthal-near-itzehoe|65536|3|Special Area of Conservation
 moore-der-breitenburger-niederung-near-itzehoe|65536|3|Special Area of Conservation
 moore-nature-reserve-near-st-helens|65536|3|protected area
@@ -19105,6 +22087,7 @@ morro-santana-near-novo-hamburgo|1024|3|hill
 morro-santana-near-porto-alegre-br|1024|3|hill
 morro-santana-near-sao-leopoldo|1024|3|hill
 morro-spitzkopf-near-blumenau|263168|3|hill
+morro-strand-state-beach-near-san-luis-obispo|16|3|California state beach
 morro-voturua-near-santos|1024|3|hill
 morro-voturua-near-sao-vicente|1024|3|hill
 morrow-island-near-vacaville|64|3|island
@@ -19139,6 +22122,7 @@ mosqueiro-near-belem|320|3|river island
 mosquito-creek-lake-near-youngstown|32|3|reservoir
 mosseberg-near-falkoping|1024|3|mountain
 mossebergs-ostsluttning-near-falkoping|65536|3|Natura 2000 site
+mossesundet-near-halden|4096|3|fjord
 most-lake-near-most|32|3|artificial lake
 mosteiros-islets-near-ponta-delgada|0|0|
 mostiste-reservoir-near-velke-mezirici|32|3|reservoir
@@ -19160,6 +22144,7 @@ moturiki-island-near-tauranga|64|3|island
 moturoa-near-new-plymouth|64|3|island
 motutaiko-island-near-taupo|64|3|island
 motutere-bay-near-taupo|4096|3|bay
+moula-ali-hill-near-hyderabad|1024|3|hill
 mouldon-hill-country-park-near-cirencester|131072|3|country park
 mounds-state-park-near-anderson|131072|3|Indiana state park
 mounds-state-park-near-indianapolis|131072|3|Indiana state park
@@ -19169,7 +22154,9 @@ mounds-state-park-near-noblesville|131072|3|Indiana state park
 mount-abbl-near-prince-george|1024|3|mountain
 mount-aberdeen-national-park-near-ayr|32768|3|national park of Australia
 mount-aberdeen-national-park-near-bowen|32768|3|national park of Australia
+mount-abura-near-fukuoka|1024|3|mountain
 mount-abura-near-kurume|1024|3|mountain
+mount-adaklu-near-accra|1024|3|mountain
 mount-adelaide-near-albany|1024|3|mountain
 mount-adelung-near-taraz|1024|3|mountain
 mount-agr-national-park-near-igdr|32768|3|national park
@@ -19196,6 +22183,7 @@ mount-amagi-near-mishima|1152|3|extinct volcano
 mount-amiata-near-siena|1024|3|mountain
 mount-amjak-near-hamadan|1024|3|mountain
 mount-aonoyama-near-marugame|1024|3|hill
+mount-arafat-near-jeddah|1024|3|mountain
 mount-aragats-near-gyumri|1024|3|mountain
 mount-arapiles-near-horsham|1024|3|mountain
 mount-arapiles-near-stawell|1024|3|mountain
@@ -19215,12 +22203,14 @@ mount-artos-near-hakkari|1024|3|mountain
 mount-artos-near-siirt|1024|3|mountain
 mount-artxanda-near-bilbao|1024|3|mountain
 mount-asahi-near-asahikawa|1024|3|mountain
+mount-asama-near-tokyo|1152|3|stratovolcano
 mount-ashigara-near-odawara|1024|3|mountain
 mount-ashio-near-mito|1024|3|mountain
 mount-ashland-near-medford|1024|3|mountain
 mount-assiniboine-provincial-park-near-banff|131072|3|provincial park of Canada
 mount-asuwa-near-fukui|1024|3|mountain
 mount-atago-near-otsu|1024|3|mountain
+mount-atago-near-tokyo|1024|3|highest point
 mount-atashkadeh-near-sulaymaniyah|1024|3|mountain
 mount-attavyros-near-rhodes|1024|3|mountain
 mount-ayyub-near-kerman|1024|3|mountain
@@ -19238,6 +22228,7 @@ mount-banks-near-lithgow|1024|3|mountain
 mount-bankul-near-baghdad|1024|3|mountain
 mount-bankul-near-kermanshah|1024|3|mountain
 mount-bankul-near-najaf|1024|3|mountain
+mount-banping-near-kaohsiung|1024|3|hill
 mount-bar-aftab-khorheh-near-arak|1024|3|mountain
 mount-barbaro-near-aversa|1152|3|volcano
 mount-barbaro-near-pozzuoli|1152|3|volcano
@@ -19343,6 +22334,7 @@ mount-cristal-near-coronel-fabriciano|1024|3|mountain
 mount-crosby-weir-near-ipswich|32|3|lake
 mount-daimon-near-kanazawa|1024|3|mountain
 mount-dainenji-near-sendai|1024|3|mountain
+mount-dajian-near-taipei|1024|3|mountain range
 mount-dajti-near-tirana|1024|3|mountain
 mount-dakhmeh-kerman-province-near-kerman|1024|3|mountain
 mount-dakhmeh-yazd-county-near-yazd|1024|3|mountain
@@ -19372,6 +22364,7 @@ mount-elden-near-flagstaff|1024|3|mountain
 mount-elephant-near-ararat|1024|3|mountain
 mount-elephant-near-stawell|1024|3|mountain
 mount-emei-near-chongqing|1024|3|mountain
+mount-entoto-near-addis-ababa|1024|3|mountain
 mount-erciyes-near-nevsehir|1152|3|stratovolcano
 mount-erciyes-near-nigde|1152|3|stratovolcano
 mount-erciyes-near-yozgat|1152|3|stratovolcano
@@ -19405,9 +22398,12 @@ mount-fromme-near-north-vancouver|1024|3|mountain
 mount-fuji-near-akita|1024|3|mountain
 mount-fuji-near-fujieda|1152|3|active volcano
 mount-fuji-near-kofu|1152|3|active volcano
+mount-fuji-near-kyoto|1152|3|active volcano
 mount-fuji-near-mishima|1152|3|active volcano
+mount-fuji-near-nagoya|1152|3|active volcano
 mount-fuji-near-odawara|1152|3|active volcano
 mount-fuji-near-shizuoka|1152|3|active volcano
+mount-fuji-near-tokyo|1152|3|active volcano
 mount-fumaiolo-near-cesena|1024|3|mountain
 mount-fumaiolo-near-forli|1024|3|mountain
 mount-futaba-near-hiroshima|1024|3|mountain
@@ -19449,10 +22445,10 @@ mount-haituo-near-datong|1024|3|mountain range
 mount-haituo-near-zhangjiakou|1024|3|mountain range
 mount-hakamagoshi-near-hakodate|1024|3|mountain
 mount-hakodate-near-hakodate|1088|3|tied island
-mount-hakone-near-kawaguchi|1024|3|mountain
+mount-hakone-near-kawaguchi|0|0|
 mount-hakone-near-mishima|1152|3|volcano
 mount-hakone-near-odawara|1152|3|volcano
-mount-hakone-near-saitama|1024|3|mountain
+mount-hakone-near-saitama|0|0|
 mount-haku-near-fukui|1152|3|volcano
 mount-haku-near-kanazawa|1152|3|volcano
 mount-hamilton-near-san-jose-us|1024|3|mountain
@@ -19472,6 +22468,7 @@ mount-helicon-near-corinth|1024|3|mountain
 mount-helicon-near-livadeia|1024|3|mountain
 mount-helicon-near-thebes|1024|3|mountain
 mount-helix-near-el-cajon|1024|3|mountain
+mount-heming-near-chengdu|1024|3|mountain
 mount-heng-near-baotou|1024|3|mountain range
 mount-heng-near-datong|1024|3|mountain range
 mount-heng-near-hohhot|1024|3|mountain range
@@ -19485,7 +22482,9 @@ mount-hiba-near-matsue|1024|3|mountain
 mount-hiba-near-yonago|1024|3|mountain
 mount-hiei-near-hikone|1024|3|mountain
 mount-hiei-near-hirakata|1024|3|mountain
+mount-hiei-near-kyoto|1024|3|mountain
 mount-hiei-near-nara|1024|3|mountain
+mount-hiei-near-osaka|1024|3|mountain
 mount-hiei-near-otsu|1024|3|mountain
 mount-hiei-near-suita|1024|3|mountain
 mount-higashiazuma-near-fukushima|1024|3|mountain
@@ -19559,6 +22558,7 @@ mount-iwaya-near-nagasaki|1024|3|mountain
 mount-izumi-katsuragi-near-wakayama|1024|3|mountain
 mount-jagungal-near-cooma|1024|3|mountain
 mount-jahan-bin-near-isfahan|1024|3|mountain
+mount-jali-near-kigali|1024|3|mountain
 mount-jerusalem-national-park-near-ballina-nsw|32768|3|national park of Australia
 mount-jerusalem-national-park-near-byron-bay|32768|3|national park of Australia
 mount-jerusalem-national-park-near-casino|32768|3|national park of Australia
@@ -19598,6 +22598,7 @@ mount-kaukau-near-lower-hutt|1024|3|hill
 mount-kaukau-near-porirua|1024|3|hill
 mount-kembla-near-moss-vale|0|0|
 mount-kembla-near-wollongong|0|0|
+mount-kenya-near-nairobi|1024|3|mountain
 mount-keshigo-near-okayama|1024|3|mountain
 mount-khezr-nabi-near-qom|1024|3|mountain
 mount-kholodilnik-near-vladivostok|1024|3|mountain
@@ -19605,6 +22606,7 @@ mount-kibi-no-nakayama-near-kurashiki|1024|3|mountain
 mount-kibi-no-nakayama-near-okayama|1024|3|mountain
 mount-kichijo-near-hamamatsu|1024|3|mountain
 mount-kichijo-near-toyohashi|1024|3|mountain
+mount-kigali-near-kigali|1024|3|mountain
 mount-kinbo-near-kumamoto|1152|3|volcano
 mount-kinka-near-gifu|1024|3|mountain
 mount-kinka-near-ichinomiya|1024|3|mountain
@@ -19625,6 +22627,7 @@ mount-komaki-near-ichinomiya|1024|3|hill
 mount-komaki-near-kariya|1024|3|hill
 mount-komaki-near-kasugai|1024|3|hill
 mount-komaki-near-kuwana|1024|3|hill
+mount-komaki-near-nagoya|1024|3|hill
 mount-komaki-near-toyota|1024|3|hill
 mount-kongo-near-higashiosaka-shi|1024|3|mountain
 mount-kongo-near-kochi-shi|1024|3|mountain
@@ -19665,6 +22668,7 @@ mount-liantai-near-shangqiu|1024|3|mountain
 mount-liantai-near-tai-an|1024|3|mountain
 mount-liantai-near-zibo|1024|3|mountain
 mount-limbara-near-olbia|1024|3|mountain
+mount-longonot-near-nairobi|1152|3|stratovolcano
 mount-lycabettus-near-agia-paraskevi|1024|3|hill
 mount-lycabettus-near-athens|1024|3|hill
 mount-lycabettus-near-chalandri|1024|3|hill
@@ -19719,9 +22723,11 @@ mount-mito-toyokawa-near-toyohashi|1024|3|mountain
 mount-miwa-near-nara|1024|3|mountain
 mount-miyaji-near-toyohashi|1024|3|mountain
 mount-mo-near-huanggang|1024|3|mountain
+mount-mo-near-wuhan|1024|3|mountain
 mount-mo-near-xinyang|1024|3|mountain
 mount-mogan-near-hangzhou|1024|3|mountain
 mount-mogan-near-suzhou|1024|3|mountain
+mount-moiwa-near-sapporo|1024|3|mountain
 mount-momiji-near-hirosaki|1024|3|mountain
 mount-monadnock-near-manchester-nh|1024|3|mountain
 mount-monomi-near-kawagoe|1024|3|mountain
@@ -19742,6 +22748,7 @@ mount-nandai-near-mito|1024|3|mountain
 mount-napier-state-park-near-hamilton|131072|3|state park
 mount-napier-state-park-near-portland-vic|131072|3|state park
 mount-nasu-near-koriyama|1024|3|mountain
+mount-nebo-near-amman|1024|3|mountain
 mount-nebo-near-tabarjal|1024|3|mountain
 mount-neko-near-ueda|1024|3|mountain
 mount-nekomagadake-near-aizuwakamatsu|1024|3|mountain
@@ -19799,6 +22806,7 @@ mount-olympus-near-nicosia|1024|3|mountain
 mount-olympus-near-paphos|1024|3|mountain
 mount-ontake-near-kariya|1024|3|mountain
 mount-ontake-near-kasugai|1024|3|mountain
+mount-ontake-near-nagoya|1152|3|volcano
 mount-ontake-near-toyota|1024|3|mountain
 mount-oqab-near-yazd|1024|3|mountain
 mount-oread-near-olathe|1024|3|mountain
@@ -19869,6 +22877,7 @@ mount-qala-qiran-near-baghdad|1024|3|mountain
 mount-qala-qiran-near-karbala|1024|3|mountain
 mount-qala-qiran-near-najaf|1024|3|mountain
 mount-qaleh-sangi-sirjan-county-near-kerman|1024|3|mountain
+mount-qingcheng-near-chengdu|1024|3|mountain
 mount-qingcheng-near-chongqing|1024|3|mountain
 mount-qiyun-near-anqing|1024|3|mountain
 mount-rai-near-saga|1024|3|mountain
@@ -19919,6 +22928,8 @@ mount-san-jacinto-state-park-near-riverside|131072|3|California state park
 mount-sanage-near-toyota|1024|3|mountain
 mount-sangane-near-kariya|1024|3|mountain
 mount-sangane-near-okazaki|1024|3|mountain
+mount-sankaku-near-sapporo|1024|3|mountain
+mount-sannine-near-beirut|1024|3|mountain
 mount-sarakura-near-kitakyushu|1024|3|mountain
 mount-saru-near-kanazawa|1024|3|mountain
 mount-satsunai-near-obihiro|1024|3|mountain
@@ -19955,6 +22966,7 @@ mount-shokef-near-haifa|1024|3|mountain
 mount-shosha-near-himeji|1024|3|mountain
 mount-shotor-zanjan-province-near-qazvin|1024|3|mountain
 mount-shotor-zanjan-province-near-rasht|1024|3|mountain
+mount-shou-near-kaohsiung|1024|3|mountain
 mount-sitak-near-sari|1024|3|mountain
 mount-soffeh-near-isfahan|1024|3|mountain
 mount-soko-near-hiroshima|1024|3|mountain
@@ -19962,7 +22974,7 @@ mount-sokuryo-near-muroran|1024|3|mountain
 mount-solitary-near-katoomba|1024|3|mountain
 mount-solitary-near-lithgow|1024|3|mountain
 mount-somers-te-kiekie-near-ashburton|1024|3|mountain
-mount-sotetsu-near-sakai|1024|3|mountain
+mount-sotetsu-near-sakai|0|0|
 mount-spokane-near-spokane|1024|3|mountain
 mount-spokane-state-park-near-spokane|131072|2|
 mount-st-gwinear-near-morwell|1024|3|mountain
@@ -19988,6 +23000,7 @@ mount-sutro-near-daly-city|1024|3|mountain
 mount-sylvania-near-beaverton|1024|3|mountain
 mount-sylvania-near-portland|1024|3|mountain
 mount-sylvania-near-vancouver-us|1024|3|mountain
+mount-tachibana-near-fukuoka|1024|3|mountain
 mount-tado-near-kuwana|1024|3|mountain
 mount-taihaku-near-sendai|1024|3|mountain
 mount-taihei-near-akita|1024|3|mountain
@@ -20021,13 +23034,14 @@ mount-teide-near-santa-cruz-de-tenerife|1152|3|active volcano
 mount-ten-near-saga|1024|3|mountain
 mount-tendurek-near-agr|1152|3|volcano
 mount-tendurek-near-igdr|1152|3|volcano
+mount-tenjin-near-sapporo|1024|3|mountain
 mount-tennozan-near-hirakata|1024|3|mountain
 mount-tenpai-near-kurume|1024|3|mountain
-mount-tenpo-near-amagasaki|1024|1|
-mount-tenpo-near-higashiosaka-shi|1024|1|
-mount-tenpo-near-nishinomiya|1024|1|
-mount-tenpo-near-sakai|1024|1|
-mount-tenpo-near-suita|1024|1|
+mount-tenpo-near-amagasaki|0|0|
+mount-tenpo-near-higashiosaka-shi|0|0|
+mount-tenpo-near-nishinomiya|0|0|
+mount-tenpo-near-sakai|0|0|
+mount-tenpo-near-suita|0|0|
 mount-tenran-near-kawagoe|1024|3|mountain
 mount-teruishi-near-koga|1024|3|mountain
 mount-teruishi-near-utsunomiya|1024|3|mountain
@@ -20059,6 +23073,7 @@ mount-tsurugi-near-toyama|1024|3|mountain
 mount-tzfachot-near-eilat|1024|3|hill
 mount-ubione-near-bergamo|1024|3|mountain
 mount-uhud-near-al-ula|1024|3|mountain
+mount-uhud-near-medina|1024|3|mountain
 mount-uhud-near-umm-lajj|1024|3|mountain
 mount-uhud-near-yanbu|1024|3|mountain
 mount-ulia-near-irun|1024|3|mountain
@@ -20141,12 +23156,14 @@ mount-wilkinson-near-newnan|1024|3|mountain
 mount-wilkinson-near-sandy-springs|1024|3|mountain
 mount-wilson-near-palmdale|1024|3|mountain
 mount-wuling-near-tangshan|65536|3|nature reserve
+mount-wutai-near-beijing|1024|3|mountain
 mount-wycheproof-near-swan-hill|1024|3|mountain
 mount-xiaowutai-near-baoding|66560|3|mountain
 mount-xiaowutai-near-datong|66560|3|mountain
 mount-xiaowutai-near-hohhot|66560|3|mountain
 mount-xiaowutai-near-shijiazhuang|66560|3|mountain
 mount-xiaowutai-near-zhangjiakou|66560|3|mountain
+mount-xiqiao-near-guangzhou|1024|3|mountain
 mount-yadaijin-near-iwaki|1024|3|mountain
 mount-yaese-near-naha|1024|3|mountain
 mount-yahiko-near-nagaoka|1024|3|mountain
@@ -20173,6 +23190,7 @@ mount-zao-near-yamagata|1024|3|mountain range
 mount-zarqan-near-shiraz|1024|3|mountain
 mount-zion-near-lakewood|1024|3|mountain
 mount-zozu-near-marugame|1024|3|mountain
+mount-zuqualla-near-addis-ababa|1024|3|mountain
 mountain-gaehwa-near-bucheon|1024|3|mountain
 mountain-gaehwa-near-gimpo|1024|3|mountain
 mountain-gaehwa-near-goyang|1024|3|mountain
@@ -20191,13 +23209,20 @@ moutonery-park-near-bouguenais|131072|3|park
 moutonery-park-near-vertou|131072|3|park
 movila-lui-burcel-near-vaslui|65536|3|Special Area of Conservation
 movri-near-elis|1024|3|mountain
+mpanga-central-forest-reserve-near-kampala|81920|3|forest reserve
 mravenecnik-near-sumperk|1024|3|mountain
 mrrapanna-near-fredrikstad|65536|3|nature reserve
+msimbazi-river-near-dar-es-salaam|256|3|river
 mstino-near-tver|65568|3|lake
 mt-kyogamine-near-tsu|1024|3|mountain
 mtatsminda-near-rustavi|1024|3|mountain
 mtirala-national-park-near-batumi|32768|3|national park
+muara-angke-fishing-port-near-jakarta|256|3|river mouth
 mucinska-vrchovina-near-lucenec|1024|3|mountain range
+muckno-lake-near-drogheda|4128|3|lagoon
+muckno-lake-near-dundalk|4128|3|lagoon
+muckross-lake-near-killarney|4128|3|lagoon
+muckross-lake-near-tralee|4128|3|lagoon
 mud-volcanoes-state-nature-reserve-near-sumgait|65536|3|protected area
 mudar-valley-arak-county-near-arak|2048|3|valley
 mudasarlova-reservoir-near-visakhapatnam|32|3|reservoir
@@ -20213,6 +23238,7 @@ mugel-near-leoben|1024|3|mountain
 muggins-mountain-wilderness-near-yuma|65536|3|United States Wilderness Area
 muggins-mountains-near-mexicali|1024|3|mountain range
 muggins-mountains-near-san-luis-rio-colorado|1024|3|mountain range
+muharraq-island-near-manama|64|3|island
 muhleninsel-near-landshut|64|3|island
 muhlenteich-near-wismar|32|3|lake
 muhlenteich-springhoe-near-itzehoe|32|3|lake
@@ -20233,9 +23259,31 @@ muleshoe-national-wildlife-refuge-near-lubbock|65536|3|National Wildlife Refuge
 mulhacen-near-granada|1024|3|main peak
 mulhacen-near-guadix|1024|3|main peak
 muliczne-near-suwalki|32|3|lake
+mull-of-galloway-near-bangor|4096|3|headland
 mullaghcleevaun-near-naas|1024|3|mountain
 mullaghmeen-near-mullingar|1024|3|mountain
 mullberg-hummelsbuttel-near-norderstedt|1024|3|mountain
+mullerpier-near-aalsmeer|4096|3|headland
+mullerpier-near-alphen-aan-den-rijn|4096|3|headland
+mullerpier-near-amstelveen|4096|3|headland
+mullerpier-near-amsterdam|4096|3|headland
+mullerpier-near-capelle-aan-den-ijssel|4096|3|headland
+mullerpier-near-delft|4096|3|headland
+mullerpier-near-diemen|4096|3|headland
+mullerpier-near-gouda|4096|3|headland
+mullerpier-near-haarlem|4096|3|headland
+mullerpier-near-haarlemmermeer|4096|3|headland
+mullerpier-near-katwijk|4096|3|headland
+mullerpier-near-leiden|4096|3|headland
+mullerpier-near-leidschendam-voorburg|4096|3|headland
+mullerpier-near-noordwijk|4096|3|headland
+mullerpier-near-rijswijk|4096|3|headland
+mullerpier-near-rotterdam|4096|3|headland
+mullerpier-near-the-hague|4096|3|headland
+mullerpier-near-weesp|4096|3|headland
+mullerpier-near-zandvoort|4096|3|headland
+mullerpier-near-zeist|4096|3|headland
+mullerpier-near-zoetermeer|4096|3|headland
 mullerthal-near-luxembourg-city|0|0|
 mummelsee-near-baden-baden|32|3|lake
 mummelsee-near-freudenstadt|32|3|lake
@@ -20246,11 +23294,13 @@ mummy-mountain-arizona-near-tempe|1024|3|mountain
 mummy-mountain-near-chandler|1024|3|mountain
 mummy-mountain-near-scottsdale|1024|3|mountain
 munchique-national-natural-park-near-popayan|32768|3|national park
+mundakkal-beach-near-thiruvananthapuram|16|3|beach
 mundau-lagoon-near-aracaju|4640|3|lake
 mundigezers-near-talsi|32|3|lake
 munghorn-gap-nature-reserve-near-dubbo|65536|2|
 mungo-national-park-near-mildura|32768|3|national park of Australia
 mungyeong-saejae-near-cheongju|66560|3|mountain pass
+muni-lagoon-near-accra|4128|3|lagoon
 munichholzer-wald-near-steyr|16384|3|forest
 munkholmen-near-marsta|65536|3|nature reserve
 munkholmen-near-stjordalshalsen|64|3|island
@@ -20316,6 +23366,8 @@ musa-dagh-near-antakya|1024|3|mountain
 musa-dagh-near-iskenderun|1024|3|mountain
 musa-dagh-near-kilis|1024|3|mountain
 musa-dagh-near-osmaniye|1024|3|mountain
+musandam-peninsula-near-abu-dhabi|4096|3|peninsula
+musandam-peninsula-near-dubai|4096|3|peninsula
 musandam-peninsula-near-khasab|4096|3|peninsula
 musandam-peninsula-near-kumzar|4096|3|peninsula
 musandam-peninsula-near-ras-al-khaimah|4096|3|peninsula
@@ -20345,17 +23397,21 @@ mustang-island-near-victoria-us|64|3|island
 mustang-island-state-park-near-corpus-christi|131072|3|Texas state park
 mutawintji-national-park-near-broken-hill|32768|3|national park of Australia
 mutla-ridge-near-hafar-al-batin|1024|3|hill
+mutla-ridge-near-kuwait-city|1024|3|hill
 mutsurejima-near-kitakyushu|64|3|island
 mutsurejima-near-shimonoseki|64|3|island
 mutton-island-near-galway|64|3|island
 muuga-bay-near-maardu|4096|3|bay
 muuga-harbour-near-maardu|32|2|
+muuido-near-incheon|64|3|island
 muyu-urqu-near-cusco|1024|3|mountain
+muzdalifah-near-jeddah|2048|3|valley
 muzdalifah-valley-near-mecca|2048|3|valley
 muzdalifah-valley-near-ta-if|2048|3|valley
 muzdalifah-valley-near-turubah|2048|3|valley
 muztagh-ata-near-kashgar|1024|3|mountain
 mweelrea-near-castlebar|1024|3|mountain
+my-khe-beach-near-da-nang|16|3|beach
 myakka-river-state-park-near-north-port|131072|3|Florida state park
 myakka-river-state-park-near-sarasota|131072|3|Florida state park
 myall-lakes-national-park-near-forster|32768|3|national park of Australia
@@ -20369,6 +23425,7 @@ myklashevshchyna-botanical-reserve-near-gomel|65536|2|
 mykonos-near-ermoupolis|64|3|island
 myllyjarvi-near-klaukkala|32|3|lake
 myllylahde-near-loimaa|32|3|lake
+mylopotamos-beach-near-volos|16|3|beach
 myogi-arafune-saku-kogen-quasi-national-park-near-takasaki|32768|3|quasi-national park of Japan
 myponga-reservoir-near-goolwa|32|3|reservoir
 myponga-reservoir-near-victor-harbor|32|3|reservoir
@@ -20376,9 +23433,14 @@ myra-bellevue-provincial-park-near-kelowna|131072|3|provincial park of Canada
 myra-falls-near-wiener-neustadt|1|3|waterfall
 myre-big-island-state-park-near-mankato|131072|2|
 myriad-botanical-gardens-near-norman|0|0|
+myrtiotissa-beach-near-corfu|16|3|beach
+myrtle-beach-near-moruya|16|3|beach
 myrtle-beach-state-park-near-myrtle-beach|131072|2|
 myrtos-beach-near-argostoli|135184|3|beach
+myrtos-beach-near-lefkada|135184|3|beach
 mys-goldobina-near-vladivostok|4096|3|cape
+mystic-beach-near-langford|16|3|beach
+mystic-beach-near-victoria|16|3|beach
 mystic-lake-near-moreno-valley|32|3|lake
 myuryu-near-yakutsk|32|3|lake
 n-dhala-gorge-near-alice-springs|196608|3|nature reserve
@@ -20386,7 +23448,10 @@ na-ama-bay-near-duba|0|0|
 na-hornicke-near-kutna-hora|65536|3|nature reserve in the Czech Republic
 na-kocourkach-near-znojmo|65536|3|nature reserve in the Czech Republic
 na-skalce-cesky-les-near-domazlice|1024|3|mountain
+naankuse-wildlife-sanctuary-near-windhoek|65536|3|wildlife refuge
 naattisaari-near-kitee|64|3|island
+nabe-cape-near-keila|5120|3|hill
+nabe-cape-near-paldiski|5120|3|hill
 nacunday-national-park-near-ciudad-del-este|32768|2|
 nacunday-national-park-near-foz-do-iguacu|32768|2|
 nad-teterevom-near-berdychiv|81920|3|forest reserve
@@ -20396,6 +23461,7 @@ naejangsan-near-jeonju|1024|3|mountain
 naera-near-lillehammer|32|3|lake
 naesbyhoved-lake-near-odense|32|3|lake
 nag-s-head-island-near-abingdon-on-thames|320|3|river island
+nagara-river-near-nagoya|256|3|river
 nagarevi-cave-natural-monument-near-kutaisi|2|3|cave
 nagy-milic-near-kosice|1024|3|mountain
 nagy-milic-near-nyiregyhaza|1024|3|mountain
@@ -20416,17 +23482,27 @@ nahant-beach-reservation-near-salem-us|131072|2|
 naholnyi-ridge-near-dovzhansk|65536|3|landscape reserve
 nahuel-huapi-lake-near-bariloche|32|3|glacial lake
 nahuel-huapi-national-park-near-bariloche|32768|3|national park
+nairobi-national-park-near-nairobi|32768|3|national park
+nairobi-river-near-nairobi|256|3|river
 naissaar-near-paldiski|64|3|island
 najerilla-near-logrono|256|3|river
+naka-river-near-fukuoka|256|3|river
 nakanoshima-near-amagasaki|320|3|river island
 nakanoshima-near-higashiosaka-shi|320|3|river island
 nakanoshima-near-hirakata|320|3|river island
 nakanoshima-near-sakai|320|3|river island
 nakanoshima-near-suita|320|3|river island
+nakanoshima-park-near-osaka|131072|1|
 nakaumi-near-matsue|32|3|lake
 nakaumi-near-yonago|32|3|lake
 nakazato-warm-water-pond-near-mishima|32|3|reservoir
+nakdong-river-near-busan|256|3|river
 naklo-near-hodonin|1024|3|hill
+nakskov-fjord-near-nakskov|4096|3|fjord
+nakskov-fjord-near-nyborg|4096|3|fjord
+nakskov-fjord-near-nykobing-falster|4096|3|fjord
+nakskov-fjord-near-svendborg|4096|3|fjord
+nakskov-fjord-near-vordingborg|4096|3|fjord
 nal-sarovar-bird-sanctuary-near-ahmedabad|65568|3|lake
 naliboki-forest-near-dzyarzhynsk|16384|3|old-growth forest
 naliboki-forest-near-maladzyechna|16384|3|old-growth forest
@@ -20438,6 +23514,7 @@ namekawa-great-falls-near-fukushima|1|3|waterfall
 namhansan-near-gwangju|1024|3|mountain
 namhansan-near-seongnam|1024|3|mountain
 namhansan-near-yongin|1024|3|mountain
+namib-naukluft-national-park-near-windhoek|32768|3|national park
 naminoue-beach-near-naha|16|3|urban beach
 namsan-near-ansan|1024|3|mountain
 namsan-near-bucheon|1024|3|mountain
@@ -20447,11 +23524,13 @@ namsan-near-goyang|1024|3|mountain
 namsan-near-gwangju|1024|3|mountain
 namsan-near-gyeongju|1024|3|mountain
 namsan-near-hwaseong|1024|3|mountain
+namsan-near-incheon|1024|3|mountain
 namsan-near-namyangju|1024|3|mountain
 namsan-near-paju|1024|3|mountain
 namsan-near-pohang|1024|3|mountain
 namsan-near-pyeongtaek|1024|3|mountain
 namsan-near-seongnam|1024|3|mountain
+namsan-near-seoul|1024|3|mountain
 namsan-near-suwon|1024|3|mountain
 namsan-near-uijeongbu|1024|3|mountain
 namsan-near-yongin|1024|3|mountain
@@ -20460,6 +23539,8 @@ nan-ao-island-near-meizhou|64|3|island
 nan-ao-island-near-shantou|64|3|island
 nan-ao-island-near-xiamen|64|3|island
 nan-ao-island-near-zhangzhou|64|3|island
+nan-river-near-chiang-mai|256|3|river
+nanarup-beach-near-albany|16|3|beach
 nanatsumori-near-sendai|1024|3|mountain
 nanchangshan-island-near-dalian|64|3|island
 nanchangshan-island-near-qingdao|64|3|island
@@ -20489,6 +23570,14 @@ nanos-near-sezana|1024|3|mountain range
 nanos-near-vrhnika|1024|3|mountain range
 nansemond-national-wildlife-refuge-near-newport-news|65536|3|National Wildlife Refuge
 nansemond-national-wildlife-refuge-near-suffolk|65536|3|National Wildlife Refuge
+nantasket-beach-near-boston|16|3|beach
+nantasket-beach-near-brockton|16|3|beach
+nantasket-beach-near-cambridge-us|16|3|beach
+nantasket-beach-near-lynn|16|3|beach
+nantasket-beach-near-plymouth-us|16|3|beach
+nantasket-beach-near-quincy-us|16|3|beach
+nantasket-beach-near-salem-us|16|3|beach
+nantasket-beach-near-taunton-us|16|3|beach
 nantucket-near-barnstable|64|3|island
 napperdtjern-near-sandefjord|65536|3|nature reserve
 narac-near-maladzyechna|32|3|lake
@@ -20508,6 +23597,7 @@ narew-national-park-near-lomza|32768|3|National Parks of Poland
 narimanov-park-near-khyrdalan|131072|3|urban park
 naroczyce-aleja-grabowa-near-gogow|131072|3|park
 narok-nature-reserve-near-brzeg|81920|3|forest reserve (Poland)
+narta-lagoon-near-vlore|4128|3|lagoon
 nartiya-near-nalchik|1024|3|mountain
 narva-bay-near-narva|4096|3|bay
 narva-joesuu-beach-near-narva|0|0|
@@ -20515,6 +23605,8 @@ narva-reservoir-near-kivioli|32|3|reservoir
 narva-reservoir-near-kohtla-jarve|32|3|reservoir
 naryn-river-near-margilan|256|3|river
 nasby-falt-near-kristianstad|65536|3|nature reserve
+nash-point-near-cardiff|4096|3|headland
+nash-point-near-newport|4096|3|headland
 nashwaak-river-near-fredericton|256|3|river
 nasijarvi-near-akaa|32|3|lake
 nasijarvi-near-kangasala|32|3|lake
@@ -20576,10 +23668,17 @@ nattai-national-park-near-goulburn|98304|3|national park of Australia
 nattai-national-park-near-moss-vale|98304|3|national park of Australia
 nattaro-near-nynashamn|64|3|island
 natterer-see-near-innsbruck|32|3|lake
+natturi-cape-near-rakvere|4096|3|cape
 natural-bridge-near-roanoke|0|0|
 natural-bridge-state-resort-park-near-lexington|131072|2|
+natural-bridges-state-beach-near-cupertino|16|3|California state beach
+natural-bridges-state-beach-near-mountain-view|16|3|California state beach
+natural-bridges-state-beach-near-palo-alto|16|3|California state beach
+natural-bridges-state-beach-near-salinas|16|3|California state beach
 natural-bridges-state-beach-near-san-jose-us|16|3|California state beach
+natural-bridges-state-beach-near-santa-clara|16|3|California state beach
 natural-bridges-state-beach-near-santa-cruz|16|3|California state beach
+natural-bridges-state-beach-near-sunnyvale|16|3|California state beach
 natural-falls-state-park-near-bentonville|131072|2|
 natural-falls-state-park-near-tulsa|131072|2|
 natural-monument-sinegorskaya-firry-grove-near-oskemen|65536|3|natural monument
@@ -20789,7 +23888,7 @@ naujojo-lentvario-akis-near-lentvaris|32|3|lake
 naul-hills-near-ashbourne|1024|3|mountain
 naumeter-kopf-near-trier|1024|3|mountain
 naunspitze-near-kufstein|1024|3|mountain
-nauradehi-wildlife-sanctuary-near-bhopal|0|0|
+nauradehi-wildlife-sanctuary-near-bhopal|65536|3|wildlife refuge
 naushon-island-near-new-bedford|64|3|island
 navagio-near-argostoli|16|3|beach
 navagio-near-zakynthos|16|3|beach
@@ -20805,10 +23904,23 @@ nay-aug-park-near-scranton|131072|3|urban park
 nayband-national-marine-park-near-dammam|32768|3|national park
 nayband-national-marine-park-near-dhahran|32768|3|national park
 nayband-national-marine-park-near-khobar|32768|3|national park
+nazare-beach-near-alcobaca|16|3|beach
+nazare-beach-near-leiria|16|3|beach
+nazare-beach-near-marinha-grande|16|3|beach
+nazare-beach-near-pombal|16|3|beach
+nazas-river-near-monterrey|256|3|river
+naze-near-chelmsford|4096|3|cape
 naze-near-clacton-on-sea|4096|3|cape
+naze-near-colchester|4096|3|cape
+naze-near-ipswich-uk|4096|3|cape
+naze-near-southend-on-sea|4096|3|cape
 nazhvan-forest-park-near-isfahan|147456|3|forest park
 nazko-cone-near-prince-george|1024|3|mountain
 nazodelavo-cave-natural-monument-near-zugdidi|2|3|cave
+nea-moudania-near-evosmos|131088|3|beach
+nea-moudania-near-kalamaria|131088|3|beach
+nea-moudania-near-stavroupoli|131088|3|beach
+nea-moudania-near-thessaloniki|131088|3|beach
 nea-philadelphia-grove-near-chalandri|131072|3|park
 nea-smyrni-grove-near-glyfada|131072|3|park
 neandertal-near-bergheim|2048|3|valley
@@ -20826,6 +23938,7 @@ nebrezh-lake-kyiv-near-boryspil|32|3|lake
 nebrodi-mountains-near-messina|1024|3|mountain range
 nechako-river-near-prince-george|256|3|river
 neches-river-national-wildlife-refuge-near-bryan|65536|3|National Wildlife Refuge
+neches-river-near-tyler|256|3|river
 nechkinsky-national-park-near-izhevsk|32768|2|
 nechranice-reservoir-near-zatec|32|3|reservoir
 neck-de-sceautres-near-montelimar|1024|3|mountain
@@ -20848,7 +23961,10 @@ negishi-forest-park-near-yokohama|147456|3|forest park
 negoiu-peak-near-avrig|1024|3|mountain
 negoiu-peak-near-cisnadie|1024|3|mountain
 negoiu-peak-near-sibiu|1024|3|mountain
+negombo-beach-near-colombo|16|3|beach
+negombo-lagoon-near-colombo|32|3|lake
 nei-pori-beach-near-katerini|131088|3|beach
+neidenfjorden-near-vadso|4096|3|fjord
 neigembos-near-ninove|81920|3|forest
 nelson-dewey-state-park-near-dubuque|131072|2|
 nelson-dewey-state-park-near-waterloo|131072|2|
@@ -20882,6 +23998,9 @@ nesebar-near-varna|0|0|
 neshaminy-state-park-near-camden|131072|3|Pennsylvania state park
 neshaminy-state-park-near-philadelphia|131072|3|Pennsylvania state park
 nesoya-near-baerum-municipality|64|3|island
+ness-point-near-great-yarmouth|4096|3|cape
+ness-point-near-lowestoft|4096|3|cape
+ness-point-near-norwich|4096|3|cape
 nesselbachbecken-near-klosterneuburg|32|3|reservoir
 nest-hill-nature-reserve-near-junee|65536|3|nature reserve
 nesterov-pinus-near-brovary|0|0|
@@ -20910,6 +24029,7 @@ neuwerk-near-cuxhaven|64|3|island
 neuwerk-near-hamburg|64|3|island
 neuwerk-near-wilhelmshaven|64|3|island
 neuwieser-see-near-senftenberg|0|0|
+nevada-beach-near-carson-city|16|3|beach
 nevado-de-cachi-near-salta|1024|3|mountain
 nevado-de-cachi-near-san-salvador-de-jujuy|1024|3|mountain
 nevado-de-colima-national-park-near-colima|32768|3|National Park of Mexico
@@ -20929,6 +24049,8 @@ nevado-del-quindio-near-ibague|1032|3|glacier
 nevado-del-quindio-near-la-union|1032|3|glacier
 nevado-del-quindio-near-manizales|1032|3|glacier
 nevado-del-quindio-near-pereira|1032|3|glacier
+nevado-del-ruiz-near-bogota|1160|3|glacier
+nevado-del-ruiz-near-medellin|1160|3|glacier
 nevado-santa-isabel-near-armenia|1032|3|glacier
 nevado-santa-isabel-near-ibague|1032|3|glacier
 nevado-santa-isabel-near-la-union|1032|3|glacier
@@ -20940,6 +24062,9 @@ nevados-de-chillan-near-chillan|1152|3|volcano
 nevelfjell-near-lillehammer|1024|3|mountain
 nevelvatnet-near-lillehammer|32|3|lake
 nevropoli-lake-near-lamia|32|3|lake
+new-brighton-beach-near-christchurch|16|3|beach
+new-brighton-beach-near-rolleston|16|3|beach
+new-brighton-state-beach-near-san-jose-us|16|3|California state beach
 new-england-national-park-near-kempsey|32768|3|national park of Australia
 new-forest-national-park-near-andover|32768|3|national park of England and Wales
 new-forest-national-park-near-eastleigh|32768|3|national park of England and Wales
@@ -20960,7 +24085,22 @@ new-forest-near-winchester|49152|3|royal forest
 new-forest-near-yeovil|49152|3|royal forest
 new-river-beach-provincial-park-near-fredericton|131072|3|provincial park of New Brunswick
 new-river-beach-provincial-park-near-saint-john|131072|3|provincial park of New Brunswick
+newark-bay-near-edison|4096|3|cove
 newark-bay-near-elizabeth|4096|3|cove
+newark-bay-near-hackensack|4096|3|cove
+newark-bay-near-hempstead|4096|3|cove
+newark-bay-near-hoboken|4096|3|cove
+newark-bay-near-jersey-city|4096|3|cove
+newark-bay-near-new-york|4096|3|cove
+newark-bay-near-newark|4096|3|cove
+newark-bay-near-north-hempstead|4096|3|cove
+newark-bay-near-oyster-bay|4096|3|cove
+newark-bay-near-paterson|4096|3|cove
+newark-bay-near-perth-amboy|4096|3|cove
+newark-bay-near-white-plains|4096|3|cove
+newark-bay-near-yonkers|4096|3|cove
+newdicks-beach-near-rotorua|16|3|beach
+newdicks-beach-near-tauranga|16|3|beach
 newnans-lake-near-ocala|32|3|lake
 newport-state-park-near-green-bay|131072|2|
 newport-wetlands-near-newport|197120|3|wetland
@@ -20971,6 +24111,8 @@ nezabec-near-snina|1024|3|mountain
 nezabudicke-skaly-near-rakovnik|65536|3|nature reserve in the Czech Republic
 nga-manu-nature-reserve-near-paraparaumu|66048|3|wetland
 ngamoowalem-conservation-park-near-kununurra|196608|3|protected area
+ngong-hills-near-nairobi|1024|3|mountain range
+ngu-hanh-son-near-da-nang|1024|3|mountain range
 niagara-escarpment-biosphere-reserve-near-niagara-falls|65536|3|biosphere reserve
 niagara-escarpment-biosphere-reserve-near-stratford|65536|3|biosphere reserve
 niagara-escarpment-near-aurora-ca|1024|3|mountain
@@ -20992,6 +24134,7 @@ niagara-gorge-near-thorold|2052|3|canyon
 niagara-gorge-near-welland|2052|3|canyon
 niagara-whirlpool-near-niagara-falls|0|0|
 nichinan-kaigan-quasi-national-park-near-miyazaki|32768|3|quasi-national park of Japan
+nichupte-lagoon-near-cancun|4128|3|lagoon
 nicoll-scrub-national-park-near-murwillumbah|32768|3|national park of Australia
 nicollet-island-near-minneapolis|320|3|river island
 nida-landscape-park-near-kielce|196608|3|landscape park in Poland
@@ -21026,6 +24169,10 @@ nijkerkernauw-near-naarden|32|3|lake
 nijkerkernauw-near-soest-nl|32|3|lake
 nikhaloy-waterfalls-near-grozny|1|3|waterfall
 nikola-subic-zrinski-square-near-velika-gorica|131072|3|park
+ninamaa-cape-near-keila|4096|3|cape
+ninamaa-cape-near-maardu|4096|3|cape
+ninamaa-cape-near-paldiski|4096|3|cape
+ninamaa-cape-near-tallinn|4096|3|cape
 ninieris-near-cesis|32|3|lake
 nipgard-s-near-herning|65568|3|lake
 nipgard-so-near-ikast|65568|3|lake
@@ -21034,6 +24181,10 @@ nishinomiya-hama-near-nishinomiya|0|0|
 nishisonogi-peninsula-near-nagasaki|4096|3|peninsula
 nissan-river-near-halmstad|0|0|
 nissequogue-river-state-park-near-smithtown|131072|3|New York state park
+nissi-beach-near-larnaca|16|3|beach
+nissum-fjord-near-holstebro|4096|3|fjord
+nissum-fjord-near-lemvig|4096|3|fjord
+nissum-fjord-near-skive|4096|3|fjord
 nisyros-near-bodrum|64|3|island
 nisyros-near-kos|64|3|island
 nisyros-near-rhodes|64|3|island
@@ -21070,12 +24221,14 @@ noguera-pallaresa-near-lleida|256|3|watercourse
 noirmoutier-near-saint-nazaire|64|3|island
 nokereberg-near-deinze|1024|3|hill
 noklevann-near-lorenskog|32|3|lake
+noko-island-near-fukuoka|64|3|island
 nolde-forest-environmental-education-center-near-lancaster-us|131072|3|Pennsylvania state park
 nolde-forest-environmental-education-center-near-reading-us|131072|3|Pennsylvania state park
 nolhaga-bergs-naturreservat-near-alingsas|65536|3|nature reserve
 nolhagaviken-near-alingsas|65536|3|nature reserve
 nolin-lake-state-park-near-bowling-green|131072|2|
 nolin-lake-state-park-near-owensboro|131072|2|
+nollestrand-near-goes|16|3|beach
 nollestrand-near-middelburg|16|3|beach
 nolstrommen-near-trollhattan|1|3|waterfall
 nomo-peninsula-near-nagasaki|4096|3|peninsula
@@ -21088,8 +24241,10 @@ noordbargerbos-near-emmen|81920|3|forest
 noordbargerbos-near-hardenberg|81920|3|forest
 noordereiland-near-barendrecht|0|0|
 noorderhaaks-near-den-helder|64|3|island
+noordhoek-beach-near-cape-town|16|3|beach
 noosa-national-park-near-gympie|32768|3|national park of Australia
 noosa-national-park-near-sunshine-coast|32768|3|national park of Australia
+nopporo-shinrin-kouen-prefectural-natural-park-near-sapporo|147456|3|forest park
 nor-wester-mountains-near-thunder-bay|1024|3|mountain range
 norah-hanbury-kelk-meadows-near-bury-st-edmunds|65536|3|nature reserve
 norah-hanbury-kelk-meadows-near-ely|65536|3|nature reserve
@@ -21097,18 +24252,23 @@ nord-mesna-near-lillehammer|32|3|reservoir
 nordborg-so-near-sonderborg|32|3|lake
 nordbytjernet-near-jessheim|32|3|lake
 nordbytjernet-near-ullensaker-municipality|32|3|lake
+norddalsfjorden-near-molde-municipality|4096|3|fjord
+nordfjord-near-floro|4096|3|fjord
 nordhelle-near-ludenscheid|1024|3|mountain
 nordhue-near-elverum-municipality|1024|3|summit
 nordkette-near-innsbruck|1024|3|mountain range
 nordlandet-near-kristiansund-municipality|64|3|island
 nordlinger-ries-near-ingolstadt|128|3|rampart crater
 nordostre-askeskjaer-near-drobak|65536|3|nature reserve
+nordperd-near-greifswald|69632|3|headland
+nordperd-near-stralsund|69632|3|headland
 nordre-karlsy-near-sarpsborg|64|3|island
 nordre-puttjern-near-lorenskog|32|3|lake
 nordskoven-near-frederiksvaerk|16384|3|forest
 nordskoven-near-silkeborg|16384|3|forest
 nordstrand-near-erfurt|0|0|
 nordstrand-near-husum|4096|3|peninsula
+nordstrand-near-wilhelmshaven|16|3|beach
 nordwestlicher-elm-near-helmstedt|65536|3|Special Area of Conservation
 nordwestlicher-thuringer-wald-near-eisenach|65536|3|Special Area of Conservation
 norfolk-botanical-garden-near-hampton|0|0|
@@ -21132,7 +24292,16 @@ norreso-near-viborg|32|3|lake
 norrskar-near-vaasa|64|3|island
 norrtaljeviken-near-norrtalje|6144|3|rift valley
 norsjo-near-porsgrunn|32|3|reservoir
+norsminde-fjord-near-skanderborg|4096|3|fjord
+norsminde-fjord-near-vejle|4096|3|fjord
 north-anzac-bridge-unnamed-scenic-reserve-near-masterton|65536|3|scenic reserve
+north-avenue-beach-near-chicago|16|3|beach
+north-avenue-beach-near-evanston|16|3|beach
+north-avenue-beach-near-gary|16|3|beach
+north-avenue-beach-near-joliet|16|3|beach
+north-avenue-beach-near-naperville|16|3|beach
+north-avenue-beach-near-wheaton|16|3|beach
+north-beach-near-durban|16|3|beach
 north-bull-island-near-swords|64|3|island
 north-cascades-national-park-near-bellingham|32768|3|National Park of the United States
 north-cave-wetlands-near-beverley|65536|3|nature reserve
@@ -21143,6 +24312,14 @@ north-cave-wetlands-near-scunthorpe|65536|3|nature reserve
 north-country-trail-near-grand-rapids|32768|3|National Park System unit
 north-cove-nature-reserve-near-lowestoft|65536|3|nature reserve
 north-dome-near-madera|1024|3|mountain
+north-foreland-near-ashford|4096|3|cape
+north-foreland-near-canterbury|4096|3|cape
+north-foreland-near-clacton-on-sea|4096|3|cape
+north-foreland-near-margate|4096|3|cape
+north-foreland-near-southend-on-sea|4096|3|cape
+north-head-beach-near-moruya|16|3|beach
+north-head-near-auckland|5248|3|volcano
+north-head-near-pukekohe|5248|3|volcano
 north-hollywood-park-near-burbank|131072|3|park
 north-hungarian-mountains-near-gyongyos|1024|3|mountain range
 north-hungarian-mountains-near-ozd|1024|3|mountain range
@@ -21164,6 +24341,7 @@ north-pennines-near-durham|66560|3|mountain range
 north-pennines-near-middlesbrough|66560|3|mountain range
 north-pennines-near-newcastle-upon-tyne|66560|3|mountain range
 north-point-state-park-near-baltimore|131072|2|
+north-sea-coast-lower-saxony-near-wilhelmshaven|4096|3|coast
 north-slob-near-wexford|65536|3|nature reserve
 north-stradbroke-island-near-brisbane|64|2|
 north-table-mountain-near-arvada|1024|3|mountain
@@ -21206,6 +24384,8 @@ nosice-reservoir-near-puchov|32|3|reservoir
 nossentiner-schwinzer-heath-nature-park-near-schwerin|196608|3|Naturpark
 notigale-near-kupiskis|32|3|lake
 notigale-near-rokiskis|32|3|lake
+notre-dame-de-lorette-hill-near-armentieres|1024|3|hill
+notwane-river-near-gaborone|256|3|river
 novaraistis-ornithological-reserve-near-jurbarkas|65536|3|Natura 2000 site
 novochervyshchanskyi-zakaznyk-near-varash|81920|3|forest reserve
 novodvorsky-mocal-near-frydek-mistek|65536|3|nature reserve in the Czech Republic
@@ -21233,10 +24413,18 @@ nsg-urmitzer-werth-near-neuwied|65536|3|Special Area of Conservation
 nuasjarvi-near-kajaani|32|3|lake or pond
 nuevo-mundo-lake-near-trinidad|32|3|lake
 nugal-beach-near-makarska|16|3|beach
+nugal-beach-near-metkovic|16|3|beach
+nugal-beach-near-omis|16|3|beach
+nugal-beach-near-ploce|16|3|beach
+nugal-beach-near-sinj|16|3|beach
+nugal-beach-near-solin|16|3|beach
+nugal-beach-near-split|16|3|beach
+nui-chua-chan-near-ho-chi-minh-city|1024|3|mountain
 nuldernauw-near-barneveld|32|3|lake
 nuldernauw-near-harderwijk|32|3|lake
 numernes-valna-dabas-parks-near-balvi|196608|3|Natura 2000 site
 nummijarvi-near-salo|32|3|lake
+nungwi-beach-near-dar-es-salaam|0|0|
 nunnavuori-near-raisio|1024|3|hill
 nunnavuori-near-turku|1024|3|hill
 nunobiki-falls-near-kobe|1|3|waterfall
@@ -21259,7 +24447,11 @@ nuuksio-national-park-near-vantaa|98304|3|national park
 nuuksion-pitkajarvi-near-kirkkonummi|32|3|lake or pond
 nuuksion-pitkajarvi-near-klaukkala|32|3|lake or pond
 nuuksion-pitkajarvi-near-nurmijarvi|32|3|lake or pond
-nyamiha-river-near-zhodzina|0|0|
+nyamiha-river-near-zhodzina|32|2|
+nyandungu-urban-wetland-eco-tourism-park-near-kigali|131584|3|wetland
+nyarutarama-golf-lake-near-kigali|32|3|lake
+nybol-nor-near-aabenraa|4096|3|fjord
+nybol-nor-near-tonder|4096|3|fjord
 nybrufoss-near-kongsberg|1|3|waterfall
 nydalasjon-near-umea|32|3|lake
 nyenchen-tanglha-mountains-near-lhasa|1024|3|mountain range
@@ -21286,8 +24478,11 @@ oak-mountain-state-park-near-tuscaloosa|131072|2|
 oak-openings-preserve-metropark-near-toledo-us|131072|3|park
 oak-park-simi-valley-near-simi-valley|131072|3|park
 oak-ridges-moraine-near-oshawa|1024|3|mountain
+oak-street-beach-near-chicago|16|2|
 oak-street-beach-near-evanston|16|2|
 oak-street-beach-near-gary|16|2|
+oak-street-beach-near-joliet|16|2|
+oak-street-beach-near-naperville|16|2|
 oak-street-beach-near-waukegan|16|2|
 oak-street-beach-near-wheaton|16|2|
 oak-wood-5-near-lysychansk|65536|3|protected area
@@ -21336,6 +24531,21 @@ occoneechee-mountain-state-natural-area-near-durham-us|131072|3|North Carolina s
 occoquan-bay-national-wildlife-refuge-near-manassas|65536|3|National Wildlife Refuge
 occoquan-regional-park-near-manassas|131072|3|regional park
 occoquan-reservoir-near-manassas|32|3|reservoir
+ocean-beach-near-alameda|16|3|beach
+ocean-beach-near-berkeley|16|3|beach
+ocean-beach-near-concord|16|3|beach
+ocean-beach-near-daly-city|16|3|beach
+ocean-beach-near-dunedin|16|3|beach
+ocean-beach-near-fremont|16|3|beach
+ocean-beach-near-hayward|16|3|beach
+ocean-beach-near-mountain-view|16|3|beach
+ocean-beach-near-oakland|16|3|beach
+ocean-beach-near-palo-alto|16|3|beach
+ocean-beach-near-redwood-city|16|3|beach
+ocean-beach-near-san-francisco|16|3|beach
+ocean-beach-near-san-mateo|16|3|beach
+ocean-beach-near-san-rafael|16|3|beach
+ocean-beach-near-vallejo|16|3|beach
 ochil-hills-near-dunfermline|1024|3|mountain range
 ochil-hills-near-falkirk|1024|3|mountain range
 ochil-hills-near-glenrothes|1024|3|mountain range
@@ -21368,7 +24578,11 @@ odaiba-near-sakura|0|0|
 odaiba-near-yokohama|0|0|
 odaiba-near-yokosuka|0|0|
 odderoya-near-kristiansand|64|3|island
+odense-fjord-near-fredericia|69632|3|fjord
+odense-fjord-near-horsens|69632|3|fjord
+odense-fjord-near-nyborg|69632|3|fjord
 odense-fjord-near-odense|69632|3|fjord
+odense-fjord-near-svendborg|69632|3|fjord
 odenwald-near-darmstadt|1024|3|mountain range
 odenwald-near-heidelberg|1024|3|mountain range
 odenwald-near-ludwigshafen|1024|3|mountain range
@@ -21396,10 +24610,12 @@ oeschinen-lake-near-thun|32|3|lake
 oesling-near-virton|1024|3|mountain range
 offem-near-katwijk|0|0|
 offlumer-see-near-nordhorn|32|3|reservoir
+ofotfjorden-near-harstad|4096|3|fjord
+ofotfjorden-near-narvik|4096|3|fjord
 oga-peninsula-near-akita|4160|3|tied island
 oga-quasi-national-park-near-akita|32768|3|quasi-national park of Japan
 ogase-pond-near-gifu|32|3|lake
-ogata-fuji-near-akita|1024|3|mountain
+ogata-fuji-near-akita|0|0|
 ogden-canyon-near-ogden|2052|3|canyon
 ogden-point-near-langford|4096|3|peninsula
 ogden-point-near-victoria|4096|3|peninsula
@@ -21424,9 +24640,13 @@ ogres-zilie-kalni-near-ogre|196608|3|Natura 2000 site
 ogres-zilie-kalni-near-salaspils|196608|3|Natura 2000 site
 ogublyanka-near-kaluga|32|3|lake
 ogublyanka-near-tula|32|3|lake
+ogun-river-near-lagos|256|3|river
 oguni-numa-pond-near-aizuwakamatsu|32|3|lake
+ohio-street-beach-near-chicago|16|3|beach
 ohio-street-beach-near-evanston|16|3|beach
 ohio-street-beach-near-gary|16|3|beach
+ohio-street-beach-near-joliet|16|3|beach
+ohio-street-beach-near-naperville|16|3|beach
 ohio-street-beach-near-wheaton|16|3|beach
 ohiopyle-state-park-near-pittsburgh|131072|3|Pennsylvania state park
 ohlone-park-near-berkeley|131072|3|park
@@ -21476,25 +24696,33 @@ oker-reservoir-near-braunschweig|0|0|
 okinajima-near-aizuwakamatsu|96|3|lake island
 okinawa-near-naha|64|3|island
 okinawa-senseki-quasi-national-park-near-naha|32768|3|quasi-national park of Japan
+okinoshima-near-fukuoka|64|3|island
 okinoshima-near-wakayama|64|3|island
 okishima-near-hikone|96|3|lake island
+okishima-near-kyoto|96|3|lake island
 okmin-near-suwalki|32|3|lake
 okmulgee-park-near-broken-arrow|131072|3|urban park
 okresicke-louky-near-ceska-lipa|65536|3|natural monument in the Czech Republic
 okret-near-lowicz|32|3|lake
 okrouhla-near-frydek-mistek|1024|3|mountain
+oksefjorden-near-arendal|4096|3|fjord
+oksefjorden-near-grimstad|4096|3|fjord
+oksfjorden-near-alta|4096|3|fjord
 oksunbong-near-wonju|1024|3|summit
 okunoshima-near-fukuyama|64|3|island
 okura-bush-scenic-reserve-near-hibiscus-coast|65536|3|scenic reserve
+okuzure-coast-near-iwata|4096|3|coast
 olaa-forest-near-hilo|16384|1|
 oland-near-oskarshamn|64|3|island
 olanga-lake-near-cheboksary|32|3|lake
 olanga-lake-near-yoshkar-ola|32|3|lake
 olback-near-visby|65536|3|nature reserve
+olbrich-beach-near-madison|16|3|beach
 old-ausable-channel-near-sarnia|256|2|
 old-bavarian-donaumoos-near-ingolstadt|512|3|fen
 old-broom-near-bury-st-edmunds|65536|3|nature reserve
 old-growth-forest-auwalder-der-unteren-iller-near-neu-ulm|16384|3|old-growth forest
+old-head-of-kinsale-near-cobh|4096|3|headland
 old-hickory-lake-near-franklin|32|3|reservoir
 old-hickory-lake-near-nashville|32|3|reservoir
 old-kuban-lake-near-krasnodar|32|2|
@@ -21531,17 +24759,24 @@ olshanik-near-lysychansk|65536|3|protected area
 oltedalsvatnet-near-egersund|32|3|lake
 oltrepo-pavese-near-pavia|0|0|
 olympiaki-akti-near-katerini|0|0|
+olympiaki-near-evosmos|131088|3|beach
+olympiaki-near-kalamaria|131088|3|beach
 olympiaki-near-katerini|131088|3|beach
+olympiaki-near-stavroupoli|131088|3|beach
+olympiaki-near-thessaloniki|131088|3|beach
+olympian-riviera-near-katerini|4096|3|coast
 olympic-national-park-near-tacoma|32768|3|National Park of the United States
 olympic-near-seattle|32768|3|National Park of the United States
 olympos-near-mytilene|1024|3|mountain range
 olympus-euboea-near-chalkida|1024|3|mountain
 olzreuter-see-near-biberach-an-der-riss|32|3|lake
+omaezaki-beach-near-iwata|16|3|beach
 omaezaki-enshunada-prefectural-nature-park-near-fujieda|196608|2|
 omaezaki-enshunada-prefectural-nature-park-near-iwata|196608|2|
 omaha-beach-near-caen|16|3|beach
 omaha-beach-near-lisieux|16|3|beach
 omaha-beach-near-saint-lo|16|3|beach
+omanu-beach-near-tauranga|16|3|beach
 omchino-near-veliky-novgorod|32|3|lake
 ommoordse-veld-near-capelle-aan-den-ijssel|131072|3|park
 omo-near-nyborg|64|3|island
@@ -21630,7 +24865,19 @@ oranjezon-near-terneuzen|65536|3|nature area
 oranjezon-near-vlissingen|65536|3|nature area
 orbackens-kalkkarr-near-motala|65536|3|nature reserve
 orcas-island-near-white-rock|64|3|island
+orchard-beach-near-babylon|16|3|beach
+orchard-beach-near-elizabeth|16|3|beach
+orchard-beach-near-hackensack|16|3|beach
+orchard-beach-near-hoboken|16|3|beach
+orchard-beach-near-new-york|16|3|beach
+orchard-beach-near-north-hempstead|16|3|beach
+orchard-beach-near-norwalk-us|16|3|beach
+orchard-beach-near-oyster-bay|16|3|beach
+orchard-beach-near-paterson|16|3|beach
+orchard-beach-near-smithtown|16|3|beach
+orchard-beach-near-stamford|16|3|beach
 orchard-beach-near-white-plains|16|3|beach
+orchard-beach-near-yonkers|16|3|beach
 orchard-lake-near-detroit|32|3|lake
 orchard-lake-near-flint|32|3|lake
 orchard-lake-near-pontiac|32|3|lake
@@ -21652,6 +24899,11 @@ orenco-woods-nature-park-near-beaverton|196608|3|nature park
 orensberg-near-landau-in-der-pfalz|1024|3|mountain
 oresund-near-helsingborg|4096|3|strait
 oreti-beach-near-invercargill|16|3|beach
+orford-ness-near-clacton-on-sea|0|0|
+orford-ness-near-colchester|0|0|
+orford-ness-near-great-yarmouth|0|0|
+orford-ness-near-ipswich-uk|0|0|
+orford-ness-near-lowestoft|0|0|
 orfu-near-pecs|0|0|
 organ-mountains-desert-peaks-national-monument-near-el-paso|0|0|
 organ-mountains-desert-peaks-national-monument-near-las-cruces|0|0|
@@ -21663,10 +24915,13 @@ orhei-national-park-near-dubasari|32768|3|national park
 orhei-national-park-near-orhei|32768|3|national park
 orhei-national-park-near-straseni|32768|3|national park
 orient-forest-regional-natural-park-near-troyes|196608|3|Natura 2000 site
+orient-point-near-middletown|4096|3|cape
 orienteering-park-hliniste-near-krnov|16384|3|urban forest
 oril-river-near-dnipro|256|3|river
 orinduik-falls-near-boa-vista|1|3|waterfall
 orjen-near-niksic|1024|3|mountain range
+orkdal-fjord-near-stjordalshalsen|4096|3|fjord
+orkdal-fjord-near-trondheim|4096|3|fjord
 orlica-near-brezice|1024|3|mountain range
 orlica-near-krsko|1024|3|mountain range
 orlice-near-hradec-kralove|256|3|river
@@ -21681,6 +24936,9 @@ orlyonok-park-near-voronezh|65536|3|protected area of Russia
 ormajarvi-near-hameenlinna|32|3|lake
 ormberget-hertsolandet-near-boden|65536|3|nature reserve
 ormsetvatnet-near-steinkjer-municipality|32|3|lake
+ornumer-noor-near-flensburg|4128|3|lake
+ornumer-noor-near-kiel|4128|3|lake
+ornumer-noor-near-rendsburg|4128|3|lake
 oro-near-frederiksvaerk|64|3|island
 oro-near-koge|64|3|island
 oro-near-roskilde|64|3|island
@@ -21703,8 +24961,10 @@ orust-near-kungalv|64|3|island
 orust-near-vanersborg|64|3|island
 orx-marsh-near-dax|66048|3|swamp
 orys-near-elektrenai|32|3|lake
+oryukdo-near-busan|64|3|island
 osage-hills-state-park-near-stillwater|131072|2|
 osage-hills-state-park-near-tulsa|131072|2|
+osaka-bay-near-osaka|4096|3|bay
 osbroek-near-ninove|65536|3|protected area
 oscar-scherer-state-park-near-north-port|131072|3|Florida state park
 oscar-scherer-state-park-near-sarasota|131072|3|Florida state park
@@ -21753,6 +25013,7 @@ ostrc-near-samobor|1024|3|mountain
 ostrc-near-sveta-nedelja|1024|3|mountain
 ostrc-near-zapresic|1024|3|mountain
 ostredok-near-banska-bystrica|1024|3|mountain
+ostriconi-beach-near-bastia|16|3|beach
 ostrivs-ke-lake-near-pinsk|32|3|lake
 ostrivs-ke-lake-near-varash|32|3|lake
 ostrovu-lung-gostinu-near-giurgiu|65536|3|Natura 2000 site
@@ -21764,7 +25025,10 @@ ostrozky-near-lucenec|1024|3|mountain range
 ostrozub-near-leskovac|1024|3|mountain
 ostry-near-trinec|1024|3|mountain
 ostrzyca-near-boleslawiec|1152|3|volcanic plug
+ostseebad-near-flensburg|16|3|beach
+ostseebad-near-husum|16|3|beach
 osumi-peninsula-near-kagoshima|4096|3|peninsula
+osun-river-near-lagos|256|3|river
 oswald-west-state-park-near-portland|131072|2|
 oszeszeki-to-near-hodmezovasarhely|32|3|lake
 otago-peninsula-near-dunedin|4096|3|peninsula
@@ -21787,12 +25051,14 @@ otra-river-near-kristiansand|256|3|river
 otranto-near-lecce|0|0|
 otroya-near-molde-municipality|64|3|island
 otscher-near-sankt-polten|1024|3|mountain
+otse-hill-near-gaborone|1024|3|mountain
 otsego-lake-near-utica|32|3|lake
 ottawa-national-wildlife-refuge-near-toledo-us|65536|3|National Wildlife Refuge
 ottawa-river-near-gatineau|256|3|river
 ottawa-valley-near-pembroke|2048|3|valley
 otter-tail-lake-near-moorhead|32|3|lake
 otto-dix-eiche-near-gera|0|0|
+otumoetai-beach-near-tauranga|16|3|beach
 otvice-reservoir-near-chomutov|32|3|reservoir
 otztal-alps-near-imst|1024|3|mountain range
 otztal-alps-near-landeck|1024|3|mountain range
@@ -21802,6 +25068,7 @@ ou-mountains-near-morioka|1024|3|mountain range
 ouabache-state-park-near-anderson|131072|3|Indiana state park
 ouabache-state-park-near-fort-wayne|131072|3|Indiana state park
 ouabache-state-park-near-muncie|131072|3|Indiana state park
+ouachita-mountains-near-tyler|1024|3|mountain range
 ouachita-national-forest-near-fort-smith|81920|3|proclaimed forest
 oud-poelgeest-near-katwijk|0|0|
 oud-turnhout-deliereman-near-turnhout|65536|3|Natura 2000 site
@@ -21832,6 +25099,8 @@ oude-weerd-near-sint-truiden|65536|3|nature reserve
 ouderkerkerplas-near-diemen|196640|3|lake
 ouderkerkerplas-near-weesp|196640|3|lake
 oudieplas-alkmaar-near-hoorn|32|3|lake
+oued-mellah-near-casablanca|256|3|river
+ouergha-river-near-rabat|256|3|river
 oughtonhead-nature-reserve-near-stevenage|65536|3|nature reserve
 oulanka-national-park-near-kuusamo|32768|3|national park
 oulujarvi-near-kajaani|32|3|lake or pond
@@ -21865,6 +25134,7 @@ owakudani-near-mishima|2176|3|volcanic landform
 owakudani-near-odawara|2176|3|volcanic landform
 owari-fuji-near-ichinomiya|1024|3|hill
 owari-fuji-near-kasugai|1024|3|hill
+owenahincha-near-cobh|16|3|beach
 owl-mountains-landscape-park-near-opole|196608|3|landscape park in Poland
 owl-mountains-landscape-park-near-swidnica|196608|3|landscape park in Poland
 owl-mountains-near-klodzko|1024|3|mountain range
@@ -21880,6 +25150,7 @@ oxley-wild-rivers-national-park-near-tamworth|32768|3|national park of Australia
 oxleys-wood-near-hertford|81920|3|woodland
 oxleys-wood-near-st-albans|81920|3|woodland
 oxleys-wood-near-welwyn-garden-city|81920|3|woodland
+ozama-river-near-santo-domingo|256|3|river
 ozarichanskyy-near-konotop|65536|3|protected area
 ozark-national-forest-near-fort-smith|81920|3|United States National Forest
 ozarks-near-springfield|1024|3|mountain range
@@ -21896,6 +25167,7 @@ ozu-island-near-yamaguchi|64|3|island
 paalijarvi-near-hyvinkaa|32|3|lake or pond
 paalijarvi-near-riihimaki|32|3|lake or pond
 paar-und-ecknach-near-aichach|65536|3|Special Area of Conservation
+paardevlei-near-stellenbosch|4640|3|lagoon
 paardeweide-near-dendermonde|65536|3|nature reserve
 paardeweide-near-lokeren|65536|3|nature reserve
 paasberg-terborg-near-aalten|66560|3|mountain
@@ -21905,8 +25177,11 @@ paaskula-bog-near-keila|65536|3|protected area
 paasselka-near-kitee|32|3|impact crater lake
 paasselka-near-savonlinna|32|3|impact crater lake
 pacaas-novos-national-park-near-porto-velho|32768|3|national park
+pacaya-near-guatemala-city|1152|3|volcano
 pacaya-samiria-national-reserve-near-iquitos|65536|3|protected area
 pacheco-state-park-near-hollister|131072|3|California state park
+pacific-beach-near-hastings|16|3|beach
+pacific-beach-near-napier|16|3|beach
 pacific-spirit-regional-park-near-burnaby|131072|3|regional park
 pack-monadnock-near-manchester-nh|1024|3|mountain
 paco-beach-near-viana-do-castelo|16|3|beach
@@ -21964,10 +25239,14 @@ pajares-reservoir-near-soria|32|3|reservoir
 pajistile-de-la-manarade-near-medias|65536|3|Natura 2000 site
 pajottenland-near-anderlecht|0|0|
 pajuris-manor-park-near-taurage|131072|3|park
+pak-shek-kok-near-shenzhen|4096|3|cape
+pak-tai-to-yan-near-shenzhen|1024|3|mountain
 pakaraima-mountains-near-boa-vista|1024|3|non-geologically related mountain range
 pakastuvos-lake-near-plunge|32|3|lake
 paklenica-national-park-near-zadar|32768|3|national park
 pakowki-lake-near-medicine-hat|32|3|lake
+pakri-cape-near-keila|4096|3|cape
+pakri-cape-near-paldiski|4096|3|cape
 pakri-peninsula-near-paldiski|4096|3|peninsula
 pakulezers-near-lielvarde|32|3|lake
 pakuratahi-forest-near-lower-hutt|131072|3|regional park
@@ -21985,6 +25264,7 @@ palanga-beach-near-palanga|16|3|beach
 palangos-botanikos-parkas-near-kretinga|65536|3|protected area
 palangos-botanikos-parkas-near-palanga|65536|3|protected area
 palani-hills-wildlife-sanctuary-and-national-park-near-madurai|0|0|
+palar-river-near-chennai|256|3|river
 palarikovsky-park-near-nove-zamky|65536|3|protected area
 palaruvi-falls-near-thiruvananthapuram|1|3|waterfall
 palatinate-forest-nature-park-near-kaiserslautern|196608|3|Naturpark
@@ -22003,6 +25283,7 @@ palenque-national-park-near-villahermosa|32768|3|National Park of Mexico
 palentine-plains-near-avezzano|2048|3|valley
 paleontologichno-nahodishte-near-pazardzhik|65536|3|natural monument
 palfnerkogel-near-st-johann-im-pongau|1024|3|mountain
+palgongsan-near-daegu|1024|3|mountain
 palgongsan-near-gumi|1024|3|mountain
 pali-aike-national-park-near-rio-gallegos|32768|3|national park
 palice-near-usti-nad-orlici|1024|3|mountain
@@ -22013,11 +25294,19 @@ palkanevesi-near-valkeakoski|32|3|lake or pond
 palkovicke-hurky-near-frydek-mistek|1024|3|mountain range
 pallas-mountain-near-chita|66560|3|mountain
 pallonen-near-kemi|64|3|island
+palm-beach-near-aalborg|16|3|beach
 palm-beach-near-frederikshavn|16|3|beach
+palm-beach-near-hjorring|16|3|beach
+palm-beach-near-murwillumbah|16|3|beach
 palm-beach-near-skagen|16|3|beach
+palm-forest-of-vai-near-agios-nikolaos|65552|3|beach
+palm-forest-of-vai-near-ierapetra|65552|3|beach
 palm-forest-of-vai-near-sitia|65552|3|beach
+palm-islands-near-abu-dhabi|64|3|archipelago
 palm-islands-near-ajman|64|3|archipelago
 palm-islands-near-al-ain|64|3|archipelago
+palm-islands-near-dubai|64|3|archipelago
+palm-islands-near-sharjah|64|3|archipelago
 palm-islands-near-umm-al-quwain|64|3|archipelago
 palm-park-near-downey|131072|3|park
 palm-trees-park-near-pontevedra|131072|3|urban park
@@ -22077,14 +25366,26 @@ pampa-de-achala-near-rio-cuarto|1024|3|mountain range
 pampachica-beach-near-iquitos|16|3|beach
 pampalarama-near-el-alto|32|3|lake
 pampalarama-near-la-paz|32|3|lake
+pampelonne-near-antibes|16|2|
+pampelonne-near-cannes|16|2|
+pampelonne-near-draguignan|16|2|
+pampelonne-near-frejus|16|2|
+pampelonne-near-grasse|16|2|
+pampelonne-near-hyeres|16|2|
+pampelonne-near-le-cannet|16|2|
 pampus-near-almere|0|0|
 pamyatnik-prirody-ptich-ya-gavan-near-omsk|196608|3|nature reserve
 pan-de-azucar-national-park-near-copiapo|32768|3|national park
 pan-di-zucchero-near-carbonia|64|3|island
 pan-di-zucchero-near-iglesias|64|3|island
+pan-point-near-gateshead|4096|3|cape
+pan-point-near-newcastle-upon-tyne|4096|3|cape
+pan-point-near-south-shields|4096|3|cape
+pan-point-near-sunderland|4096|3|cape
 panachaiko-near-aigio|1024|3|mountain range
 panachaiko-near-nafpaktos|1024|3|mountain range
 panaitoliko-near-agrinio|1024|3|mountain
+panay-near-cebu|64|3|island
 pancake-bay-provincial-park-near-sault-ste-marie|131072|3|provincial park of Canada
 pancic-s-peak-near-novi-pazar|1024|3|mountain
 pancorbo-gorge-near-burgos|0|0|
@@ -22103,12 +25404,21 @@ pangtougou-reservoir-near-changchun|32|3|reservoir
 pangtougou-reservoir-near-jilin-city|32|3|reservoir
 panivetska-dacha-near-kamianets-podilskyi|0|0|
 pannenhoef-near-roosendaal|81920|3|forest
+pannerdense-kop-near-amersfoort|4096|3|cape
+pannerdense-kop-near-apeldoorn|4096|3|cape
+pannerdense-kop-near-barneveld|4096|3|cape
+pannerdense-kop-near-deventer|4096|3|cape
 pannerdense-kop-near-doetinchem|4096|3|cape
+pannerdense-kop-near-ede|4096|3|cape
+pannerdense-kop-near-harderwijk|4096|3|cape
+pannerdense-kop-near-veenendaal|4096|3|cape
+pannerdense-kop-near-voorst|4096|3|cape
 pannonia-lake-near-dunakeszi|32|3|lake
 panola-mountain-near-atlanta|1024|3|mountain
 panola-mountain-near-macon|1024|3|mountain
 panola-mountain-near-newnan|1024|3|mountain
 panonsko-lake-near-tuzla|32|3|salt lake
+panta-de-foix-near-vilanova-i-la-geltru|32|3|reservoir
 panta-de-santa-anna-near-monzon|32|3|reservoir
 pantalica-anapo-valley-near-syracuse-it|0|0|
 pantan-near-kastela|65536|3|Natura 2000 site
@@ -22116,12 +25426,17 @@ pantano-de-la-toba-near-cuenca|32|3|reservoir
 pantano-de-linares-near-aranda-de-duero|32|3|reservoir
 pantano-de-proserpina-near-almendralejo|32|3|lake
 pantelimon-park-near-voluntari|131072|3|urban park
+panteon-hill-near-valparaiso|1024|3|hill
 panther-hollow-lake-near-pittsburgh|32|3|reservoir
 pap-island-near-dunakeszi|64|3|island
+papa-nero-beach-near-volos|16|3|beach
+papagayo-beach-near-arrecife|4096|2|
 papagayo-beach-near-puerto-del-rosario|4096|2|
 papago-park-near-chandler|131072|3|urban park
 papago-park-near-gilbert|131072|3|urban park
 papago-park-near-scottsdale|131072|3|urban park
+papamoa-beach-near-rotorua|16|3|beach
+papamoa-beach-near-tauranga|16|3|beach
 papan-reservoir-near-andijan|32|3|reservoir
 papay-near-krasnodar|1024|3|mountain
 pape-nature-reserve-near-liepaja|196608|3|Natura 2000 site
@@ -22161,8 +25476,10 @@ paracas-national-reservation-near-pisco|66048|3|Ramsar site
 paracas-peninsula-near-ica|4096|3|peninsula
 paracas-peninsula-near-pisco|4096|3|peninsula
 paradajs-near-banska-stiavnica|1024|3|mountain
+paradise-beach-near-gospic|16|3|beach
 paradise-falls-near-thousand-oaks|1|3|waterfall
 paradise-fen-nature-reserve-near-cambridge|65536|3|nature reserve
+paradise-point-near-karachi|16|3|beach
 paradiskullen-near-ornskoldsvik|1024|3|mountain
 paraiba-valley-near-taubate|2048|3|valley
 paralia-panteleimonos-near-katerini|0|0|
@@ -22181,13 +25498,16 @@ parangu-mare-near-filiasi|1024|3|mountain
 parangu-mare-near-petrila|1024|3|mountain
 parangu-mare-near-petrosani|1024|3|mountain
 paranoa-island-near-anapolis|64|3|island
+paranoa-island-near-brasilia|64|3|island
 paranoa-lake-near-anapolis|32|3|reservoir
 paranoa-lake-near-aparecida-de-goiania|32|3|reservoir
+paranoa-lake-near-brasilia|32|3|reservoir
 paranoa-lake-near-catalao|32|3|reservoir
 paranui-falls-near-whangarei|1|3|waterfall
 pararekau-island-near-pukekohe|64|3|island
 parasnath-near-patna|1024|3|hill
 parasnath-near-ranchi|1024|3|hill
+parauwanui-beach-near-whangarei|16|3|beach
 parc-a-l-anglaise-du-duc-d-orleans-near-tremblay-en-france|131072|3|park
 parc-alcide-cervi-near-pesaro|131072|3|park
 parc-arboretum-du-manoir-aux-loups-near-halluin|0|0|
@@ -22242,7 +25562,7 @@ parc-de-proce-near-bouguenais|131072|3|park
 parc-de-rothschild-near-boulogne-billancourt|131072|3|park
 parc-de-vallparadis-near-sant-cugat-del-valles|131072|3|park
 parc-del-falgar-near-granollers|131072|3|park
-parc-del-foix-near-vilanova-i-la-geltru|0|0|
+parc-del-foix-near-vilanova-i-la-geltru|65536|3|protected area
 parc-del-laberint-d-horta-near-sant-cugat-del-valles|131072|3|urban park
 parc-departemental-de-l-ile-saint-denis-near-saint-denis|131072|3|park
 parc-departemental-des-hautes-bruyeres-near-vitry-sur-seine|131072|3|park
@@ -22300,7 +25620,7 @@ parc-laverdiere-near-repentigny|131072|3|park
 parc-matisse-near-halluin|131072|3|park
 parc-montmorency-near-levis|131072|3|park
 parc-montreau-near-montreuil|131072|3|park
-parc-national-de-la-yamaska-near-drummondville|0|0|
+parc-national-de-la-yamaska-near-drummondville|32768|3|national park of Quebec
 parc-natural-del-garraf-near-vilanova-i-la-geltru|0|0|
 parc-naturel-de-gaume-near-virton|196608|3|nature park
 parc-naturel-de-l-our-naturpark-our-near-bastogne|196608|3|protected area
@@ -22396,8 +25716,10 @@ pari-chata-near-sucre|1024|3|mountain
 pari-urqu-near-potosi|1024|3|mountain
 pari-urqu-near-sucre|1024|3|mountain
 pariacaca-near-huancayo|1024|3|mountain
+pariacaca-near-lima|1024|3|mountain
 pariauccro-near-huacho|1024|3|mountain
 paricutin-near-colima|1152|3|volcano
+paricutin-near-guadalajara|1152|3|volcano
 paricutin-near-zamora-de-hidalgo|1152|3|volcano
 parika-nature-reserve-near-viljandi|65536|3|protected area
 parinacota-near-arica|1152|3|volcano
@@ -22476,6 +25798,8 @@ park-przy-bazantarni-near-piaseczno|131072|3|park
 park-ravne-2-near-zenica|131072|3|park
 park-rozenburg-near-capelle-aan-den-ijssel|131072|3|park
 park-solankowy-in-inowrocaw-near-inowroclaw|131072|3|park
+park-street-beach-near-milwaukee|16|3|beach
+park-street-beach-near-waukesha|16|3|beach
 park-vogelenzang-near-spijkenisse|131072|3|urban park
 park-vystaviste-near-mlada-boleslav|131072|3|park
 park-w-kakolewie-near-leszno|131072|3|park
@@ -22491,9 +25815,11 @@ parkeyerring-lake-near-katanning|32|3|lake
 parkeyerring-lake-near-narrogin|32|3|lake
 parks-in-zamosc-near-zamosc|131072|3|park
 parkwood-park-near-league-city|131072|3|park
+parlee-beach-near-summerside|16|3|beach
 parlee-beach-provincial-park-near-moncton|131072|3|provincial park of New Brunswick
 parlee-beach-provincial-park-near-riverview|131072|3|provincial park of New Brunswick
 parnera-hill-near-surat|1024|3|hill
+parnidzio-cape-near-klaipeda|4096|3|cape
 parnitha-near-agia-paraskevi|1024|3|mountain range
 parnitha-near-egaleo|1024|3|mountain range
 parnitha-near-elefsina|1024|3|mountain range
@@ -22507,6 +25833,7 @@ parnitha-near-zografou|1024|3|mountain range
 parnon-near-sparta|1024|3|mountain range
 parnon-near-tripoli|1024|3|mountain range
 parnu-beach-near-parnu|16|3|beach
+parnu-ladies-beach-near-parnu|16|1|
 paros-near-ermoupolis|64|3|island
 parow-sojek-near-pruszkow|81920|3|forest reserve (Poland)
 parow-sojek-near-zyrardow|81920|3|forest reserve (Poland)
@@ -22569,6 +25896,7 @@ parque-municipal-de-leiria-near-ourem|131072|3|park
 parque-municipal-de-leiria-near-pombal|131072|3|park
 parque-nacional-cofre-de-perote-near-xalapa|163840|3|National Park of Mexico
 parque-nacional-submarino-la-caleta-near-san-pedro-de-macoris|98304|3|national park
+parque-natural-aguas-de-ramon-near-santiago|196608|3|nature park
 parque-natural-de-la-sierra-de-cardena-y-montoro-near-andujar|196608|3|protected area
 parque-natural-gomez-carreno-near-villa-alemana|196608|3|nature park
 parque-natural-gomez-carreno-near-vina-del-mar|196608|3|nature park
@@ -22611,12 +25939,16 @@ parthenio-near-sparta|1024|3|mountain
 parthenio-near-tripoli|1024|3|mountain
 partwitzer-see-near-senftenberg|32|3|lake
 parumer-see-near-gustrow|32|3|lake
+parvati-hill-near-pune|1024|3|hill
 pasadena-memorial-park-near-pasadena|131072|3|park
 pasaliman-island-near-tekirdag|64|3|island
 pasecky-vodopad-near-sternberk|1|3|waterfall
 paseo-de-los-lagos-near-veracruz|32|3|lake
 paseo-de-los-lagos-near-xalapa|32|3|lake
 pasesupiai-park-with-dendrological-value-near-marijampole|131072|3|park
+pashan-lake-near-pune|32|3|lake
+pasig-river-near-manila|256|3|river
+pasjaca-near-dubrovnik|16|3|beach
 pasjaca-near-herceg-novi|16|3|beach
 pasos-malos-near-rio-cuarto|1|3|waterfall
 pasos-malos-near-san-luis|1|3|waterfall
@@ -22664,6 +25996,8 @@ patoka-lake-near-evansville|32|3|reservoir
 patoka-lake-near-owensboro|32|3|reservoir
 patoka-river-national-wildlife-refuge-and-management-area-near-evansville|65536|3|National Wildlife Refuge
 patoka-river-national-wildlife-refuge-and-management-area-near-owensboro|65536|3|National Wildlife Refuge
+patoku-lagoon-near-shkoder|69664|3|lagoon
+patoku-lagoon-near-tirana|69664|3|lagoon
 patos-island-near-white-rock|64|3|island
 patriarch-ponds-near-moscow|32|3|reservoir
 patriarch-ponds-near-podolsk|32|3|reservoir
@@ -22688,6 +26022,7 @@ paunkula-reservoir-near-rapla|32|3|reservoir
 paunkula-reservoir-near-tapa|32|3|reservoir
 paunkula-reservoir-near-turi|32|3|reservoir
 pavagadh-hill-near-vadodara|1024|3|mountain
+pavana-lake-near-pune|32|3|reservoir
 pavenham-osier-beds-near-bedford|65536|3|nature reserve
 pavilnys-regional-park-near-salcininkai|131072|3|regional park
 pavilnys-regional-park-near-vilnius|131072|3|regional park
@@ -22720,6 +26055,8 @@ peak-of-gleize-near-gap|1024|3|mountain
 peaks-of-otter-near-roanoke|1024|3|mountain range
 peanut-island-near-west-palm-beach|64|3|island
 pearl-beach-near-cessnock|16|3|beach
+pearl-beach-near-newcastle|16|3|beach
+pearl-harbor-near-honolulu|4128|3|lagoon
 pearsoll-peak-near-grants-pass|1024|3|mountain
 peascroft-wood-near-cannock|65536|3|nature reserve
 peascroft-wood-near-dudley|65536|3|nature reserve
@@ -22727,6 +26064,7 @@ peascroft-wood-near-walsall|65536|3|nature reserve
 peascroft-wood-near-west-bromwich|65536|3|nature reserve
 peavine-peak-near-reno|1024|3|mountain
 peavine-peak-near-sparks|1024|3|mountain
+pebbley-beach-near-taree|16|3|beach
 pebbly-beach-near-moruya|16|3|beach
 peche-island-near-leamington|320|3|river island
 peche-island-near-warren|320|3|river island
@@ -22738,11 +26076,14 @@ peck-lake-near-lloydminster|32|3|lake
 peck-lake-near-north-battleford|32|3|lake
 peckova-near-skalica|1024|3|mountain
 pecznica-near-swidnica|256|3|river
+pedassaare-cape-near-kivioli|4096|3|cape
+pedassaare-cape-near-rakvere|4096|3|cape
 pedernales-falls-state-park-near-austin|131072|3|Texas state park
 pedernales-falls-state-park-near-san-marcos|131072|3|Texas state park
 pedion-tou-areos-near-chalandri|131072|3|urban park
 pedion-tou-areos-near-ilion|131072|3|urban park
 pedion-tou-areos-near-kallithea|131072|3|urban park
+pedra-branca-near-singapore|64|3|island
 pedra-branca-state-park-near-belford-roxo|131072|3|state park
 pedra-branca-state-park-near-nova-iguacu|131072|3|state park
 pedra-branca-state-park-near-sao-joao-de-meriti|131072|3|state park
@@ -22778,6 +26119,10 @@ pelednagiai-botanical-reserve-near-kedainiai|65536|3|protected area
 pelee-island-near-elyria|64|3|island
 pelee-island-near-leamington|64|3|island
 pelee-island-near-windsor-ontario|64|3|island
+pelgurand-near-keila|16|3|beach
+pelgurand-near-maardu|16|3|beach
+pelgurand-near-paldiski|16|3|beach
+pelgurand-near-tallinn|16|3|beach
 pelican-island-national-wildlife-refuge-near-fort-pierce|65536|3|National Wildlife Refuge
 pelican-island-national-wildlife-refuge-near-melbourne-fl|65536|3|National Wildlife Refuge
 pelican-island-national-wildlife-refuge-near-port-st-lucie|65536|3|National Wildlife Refuge
@@ -22806,6 +26151,9 @@ pelouses-de-l-hippodrome-d-auteuil-near-boulogne-billancourt|131072|3|park
 pelouzo-near-zakynthos|64|3|island
 pelyonkino-near-taganrog|32|3|lake
 pelze-near-kothen|288|3|lake
+pelzerhaken-beach-near-lubeck|16|3|beach
+pelzerhaken-beach-near-wismar|16|3|beach
+pemba-island-near-dar-es-salaam|64|3|island
 pen-y-fan-near-hereford|1024|3|summit
 pen-y-fan-near-merthyr-tydfil|1024|3|summit
 pen-y-fan-near-neath|1024|3|summit
@@ -22828,10 +26176,26 @@ penalara-near-leganes|1024|3|mountain
 penalara-near-mostoles|1024|3|mountain
 penalara-near-san-sebastian-de-los-reyes|1024|3|mountain
 penalara-near-segovia|1024|3|mountain
+penang-island-near-kuala-lumpur|64|3|island
 penarrubia-reservoir-near-ponferrada|32|3|reservoir
+penarth-head-near-bridgwater|4096|3|cape
+penarth-head-near-bristol|4096|3|cape
+penarth-head-near-cardiff|4096|3|cape
+penarth-head-near-neath|4096|3|cape
+penarth-head-near-newport|4096|3|cape
+penarth-head-near-port-talbot|4096|3|cape
+penarth-head-near-swansea|4096|3|cape
+penarth-head-near-taunton|4096|3|cape
 penarth-head-near-weston-super-mare|4096|3|cape
 penas-de-aya-aiako-harria-near-biarritz|1024|3|mountain chain
+pencarrow-head-near-lower-hutt|4096|3|headland
+pencarrow-head-near-paraparaumu|4096|3|headland
+pencarrow-head-near-upper-hutt|4096|3|headland
+pencarrow-head-near-wellington|4096|3|headland
 pench-national-park-near-nagpur|32768|3|national park
+pendine-sands-near-neath|16|3|beach
+pendine-sands-near-port-talbot|16|3|beach
+pendine-sands-near-swansea|16|3|beach
 pendle-hill-near-preston|1024|3|mountain
 pendling-near-kufstein|1024|3|mountain
 peneda-geres-national-park-near-braga|98304|3|national park
@@ -22844,11 +26208,15 @@ peneda-geres-national-park-near-vila-real|98304|3|national park
 penedo-near-serra|1024|3|mountain
 penedo-near-vila-velha|1024|3|mountain
 penedo-near-vitoria|1024|3|mountain
+penguin-beach-near-devonport|16|3|beach
+penguin-beach-near-latrobe|16|3|beach
+penguin-beach-near-wynyard|16|3|beach
 penguin-island-conservation-park-near-millicent|65536|3|conservation park of Australia
 penguin-island-near-millicent|64|3|island
 penikese-island-near-new-bedford|64|3|island
 penino-beach-near-durazno|16|3|beach
 penino-beach-near-florida|16|3|beach
+penino-beach-near-montevideo|16|3|beach
 peninsula-de-marau-near-ilheus|4096|3|peninsula
 peninsula-de-paripe-near-feira-de-santana|4096|3|peninsula
 peninsula-state-park-near-green-bay|131072|2|
@@ -22858,6 +26226,8 @@ peninsula-verde-near-bahia-blanca|4096|3|peninsula
 peninsula-verde-near-viedma|4096|3|peninsula
 peninsule-de-forillon-near-gaspe|4096|3|peninsula
 penkyovska-mountain-near-kyustendil|1024|3|mountain
+penlee-point-near-plymouth|4096|3|headland
+penna-river-near-chennai|256|3|river
 pennington-flash-near-st-helens|32|3|lake
 penny-pie-park-near-barnsley|131072|3|park
 penon-de-zaframagon-near-carmona|65536|3|Special Protection Area
@@ -22900,6 +26270,7 @@ perekhanovo-near-vladimir|32|3|lake
 perekopsky-pond-near-podolsk|32|3|reservoir
 peretno-near-veliky-novgorod|32|3|lake
 pereval-skiy-preserve-near-kadiivka|0|0|
+perfume-river-near-da-nang|256|3|river
 pergusa-lake-near-agrigento|32|3|lake
 pergusa-lake-near-caltanissetta|32|3|lake
 pergusa-lake-near-enna|32|3|lake
@@ -22909,6 +26280,7 @@ perigord-limousin-regional-natural-park-near-perigueux|196608|3|protected area
 periochi-limnis-tavropou-near-karditsa|65536|3|Special Area of Conservation
 peristerovrachoi-near-sitia|64|3|island
 periyar-national-park-near-madurai|32768|3|national park
+perley-pond-near-portland-me|4128|3|lagoon
 perlinkvallei-near-oudenaarde|65536|3|nature area
 pernajanlahti-near-porvoo|4096|3|bay
 perrot-state-park-near-la-crosse|131072|2|
@@ -22920,9 +26292,14 @@ persina-nature-park-near-veliko-tarnovo|196608|3|nature park
 peruca-lake-near-knin|32|3|reservoir
 peruca-lake-near-sinj|32|3|reservoir
 perumal-peak-near-madurai|1024|3|mountain
+pervelkos-ragas-near-klaipeda|4096|3|cape
+pervelkos-ragas-near-kretinga|4096|3|cape
+pervelkos-ragas-near-palanga|4096|3|cape
+pervelkos-ragas-near-silute|4096|3|cape
 pervomaysky-garden-near-voronezh|131072|3|park
 pervoye-lake-near-chelyabinsk|32|3|salt lake
 pesaro-parco-miralfiore-2025-09-24-20-30-46-001-near-pesaro|131072|3|park
+peschanaya-cove-near-vladivostok|4096|3|cove
 pesochnoye-lake-near-tver|32|3|lake
 pestera-deleni-near-medgidia|65536|3|Natura 2000 site
 pestruper-graberfeld-near-vechta|65536|3|Special Area of Conservation
@@ -22953,6 +26330,9 @@ petit-lac-nominingue-near-mont-laurier|32|3|lake
 petit-lac-saint-francois-near-thetford-mines|32|3|lake
 petite-camargue-alsacienne-near-lorrach|65536|3|national nature reserve
 petite-cascade-de-tendon-near-epinal|1|3|waterfall
+petite-cote-near-dakar|4096|3|coast
+petite-mer-de-gavres-near-lorient|4128|3|lagoon
+petite-mer-de-gavres-near-vannes|4128|3|lagoon
 petite-montagne-du-jura-near-bourg-en-bresse|65536|3|Natura 2000 site
 petites-roches-near-yverdon-les-bains|1024|3|mountain
 petkeljarvi-national-park-near-joensuu|32768|3|national park
@@ -22964,6 +26344,7 @@ petnja-near-slavonski-brod|32|3|reservoir
 petnja-near-zupanja|32|3|reservoir
 petra-tou-romiou-near-limassol|1024|3|mountain
 petra-tou-romiou-near-paphos|1024|3|mountain
+petrified-forest-near-maadi-near-cairo|65536|3|protected area
 petrin-near-benesov|1024|3|mountain
 petrin-near-beroun|1024|3|mountain
 petrin-near-melnik|1024|3|mountain
@@ -22990,6 +26371,8 @@ petsofas-near-sitia|1024|3|mountain
 petticoat-creek-conservation-area-near-ajax|65536|3|protected area
 petticoat-creek-conservation-area-near-whitby|65536|3|protected area
 petzeck-near-lienz|1024|3|mountain
+peveril-point-near-eastleigh|4096|3|headland
+peveril-point-near-southampton|4096|3|headland
 pewaukee-lake-near-fond-du-lac|32|3|reservoir
 pewaukee-lake-near-milwaukee|32|3|reservoir
 pewaukee-lake-near-racine|32|3|reservoir
@@ -23009,7 +26392,24 @@ pfannenstiel-near-horgen|1024|3|mountain
 pfannenstiel-near-uster|1024|3|mountain
 pfaueninsel-near-potsdam|64|3|island
 pfeiser-spitze-near-hall-in-tirol|1024|3|mountain
+phaleron-bay-near-acharnes|4096|3|cove
+phaleron-bay-near-agia-paraskevi|4096|3|cove
+phaleron-bay-near-athens|4096|3|cove
+phaleron-bay-near-chalandri|4096|3|cove
+phaleron-bay-near-egaleo|4096|3|cove
+phaleron-bay-near-elefsina|4096|3|cove
+phaleron-bay-near-glyfada|4096|3|cove
 phaleron-bay-near-ilion|4096|3|cove
+phaleron-bay-near-kallithea|4096|3|cove
+phaleron-bay-near-korydallos|4096|3|cove
+phaleron-bay-near-megara|4096|3|cove
+phaleron-bay-near-nikaia|4096|3|cove
+phaleron-bay-near-peristeri|4096|3|cove
+phaleron-bay-near-petroupoli|4096|3|cove
+phaleron-bay-near-piraeus|4096|3|cove
+phaleron-bay-near-salamis-island|4096|3|cove
+phaleron-bay-near-vrilissia|4096|3|cove
+phaleron-bay-near-zografou|4096|3|cove
 phantom-falls-near-chico|1|3|waterfall
 phantom-lake-near-bellevue|32|3|lake
 pharaoh-s-island-near-guildford|320|3|river island
@@ -23031,6 +26431,9 @@ phlegraean-fields-near-aversa|1152|3|caldera
 phlegraean-fields-near-caserta|1152|3|caldera
 phlegraean-fields-near-giugliano-in-campania|1152|3|caldera
 phlegraean-fields-near-pozzuoli|1152|3|caldera
+phnom-aural-near-phnom-penh|1024|3|mountain
+phnom-pros-near-phnom-penh|0|0|
+phnom-srei-near-phnom-penh|0|0|
 phoenix-mountains-near-glendale-az|1024|3|mountain range
 phoenix-mountains-near-phoenix|1024|3|mountain range
 phoenix-mountains-near-scottsdale|1024|3|mountain range
@@ -23042,6 +26445,7 @@ phoenix-park-near-leixlip|131072|3|park
 phoenix-see-near-dortmund|32|3|lake
 phoenix-see-near-unna|32|3|lake
 phoenix-vernal-pools-near-roseville|131072|3|park
+phong-nha-ke-bang-national-park-near-da-nang|32768|2|
 phutala-talav-near-nagpur|32|3|reservoir
 phyllis-rawlinson-park-near-richmond-hill|131072|3|park
 piacerski-forest-park-near-horki|16384|3|urban forest
@@ -23120,12 +26524,15 @@ pico-do-jaragua-near-maua|1024|3|mountain
 pico-do-jaragua-near-piracicaba|1024|3|mountain
 pico-do-jaragua-near-santo-andre|1024|3|mountain
 pico-do-jaragua-near-sao-bernardo-do-campo|1024|3|mountain
+pico-do-jaragua-near-sao-paulo|1024|3|mountain
 pico-do-jaragua-near-sorocaba|1024|3|mountain
+pico-do-marumbi-state-park-near-curitiba|131072|3|state park
 pico-do-marumbi-state-park-near-sao-jose-dos-pinhais|131072|3|state park
 pico-duarte-near-la-vega|1024|3|mountain
 pico-duarte-near-santiago-de-los-caballeros|1024|3|mountain
 pico-frentes-near-soria|1024|3|mountain
 pico-magina-near-ubeda|1024|3|mountain
+pico-parana-near-curitiba|1024|3|mountain
 pico-parana-near-sao-jose-dos-pinhais|1024|3|mountain
 pico-parana-state-park-near-sao-jose-dos-pinhais|131072|3|state park
 pico-salamanca-near-comodoro-rivadavia|1024|3|mountain
@@ -23159,6 +26566,7 @@ pierian-mountains-near-kozani|1024|3|mountain range
 pierian-mountains-near-naoussa|1024|3|mountain range
 pierian-mountains-near-veria|1024|3|mountain range
 pierre-avoi-near-martigny|1024|3|mountain
+pierre-loti-hill-near-istanbul|1024|3|hill
 pierre-sur-haute-near-saint-etienne|1024|3|mountain
 pieskowa-skaa-near-czestochowa|0|0|
 piestewa-peak-near-glendale-az|1024|3|summit
@@ -23187,6 +26595,7 @@ pigeon-valley-near-yozgat|2048|3|valley
 pihlajavesi-near-savonlinna|32|3|lake
 piirissaar-near-polva|96|3|lake island
 piirissaar-near-tartu|96|3|lake island
+pikakari-beach-near-tallinn|16|3|beach
 pikchu-near-cusco|1024|3|mountain
 pike-lake-near-north-battleford|32|3|lake
 pike-lake-near-saskatoon|32|3|lake
@@ -23213,6 +26622,7 @@ pilj-waterfall-near-lom|1|3|waterfall
 pilliga-forest-near-gunnedah|16384|3|forest
 pilliga-forest-near-moree|16384|3|forest
 pilliga-forest-near-narrabri|16384|3|forest
+pilliots-near-parnu|4096|3|cape
 pillku-urqu-near-cusco|1024|3|mountain
 pilot-knob-near-austin|1024|3|mountain
 pilot-knob-near-san-marcos|1024|3|mountain
@@ -23227,6 +26637,7 @@ pinacate-peaks-near-san-luis-rio-colorado|1024|3|mountain
 pinar-de-la-algaida-near-sanlucar-de-barrameda|196608|3|nature park
 pinares-de-venecia-near-zaragoza|16384|2|
 pinares-y-dunas-de-san-anton-near-el-puerto-de-santa-maria|16384|3|forest
+pinatubo-near-manila|1152|3|caldera
 pinckney-island-national-wildlife-refuge-near-savannah|65536|3|National Wildlife Refuge
 pinckney-state-recreation-area-near-ann-arbor|65536|3|protected area
 pinckney-state-recreation-area-near-lansing|65536|3|protected area
@@ -23258,6 +26669,7 @@ pingle-wood-and-cutting-near-huntingdon|65536|3|nature reserve
 pingtan-island-near-fuzhou|64|3|island
 pingtan-island-near-quanzhou|64|3|island
 pingtan-island-near-xiamen|64|3|island
+pinheiros-river-near-sao-paulo|256|3|river
 pinios-lake-near-elis|32|3|reservoir
 pinnacle-mountain-near-conway|1024|3|mountain
 pinnacle-mountain-near-little-rock|1024|3|mountain
@@ -23310,13 +26722,17 @@ pirita-beach-near-maardu|16|3|beach
 pirongia-forest-park-near-hamilton-new-zealand|1024|3|mountain
 pirunpesa-near-pori|2|3|cave
 piscina-irgas-near-iglesias|1|3|waterfall
+piscinas-near-carbonia|16|3|beach
+piscinas-near-iglesias|16|3|beach
 pisew-falls-provincial-park-near-thompson|131072|3|provincial park of Manitoba
 pisgah-hill-near-high-point|1024|3|mountain
 piskovna-erika-near-sokolov|65536|3|Special Area of Conservation
 piskovna-ziznikov-near-ceska-lipa|0|0|
+pismo-state-beach-near-san-luis-obispo|16|3|California state beach
 pismo-state-beach-near-santa-maria|16|3|California state beach
 pistyll-rhaeadr-near-shrewsbury|1|3|waterfall
 pitajansaari-near-hamina|64|3|island
+pitangueiras-near-sao-vicente|0|0|
 pite-ronnskar-near-pitea|64|3|island
 pite-ronnskar-near-skelleftea|64|3|island
 pitelis-near-ludza|32|3|lake
@@ -23340,24 +26756,59 @@ piz-palu-near-sondrio|1024|3|mountain
 piz-zupo-near-sondrio|1024|3|mountain
 pizol-near-chur|1024|3|mountain
 pizzo-coca-near-sondrio|1024|3|mountain
-pizzo-d-evigno-near-imperia|0|0|
+pizzo-d-evigno-near-imperia|1024|3|mountain
 pizzo-di-claro-near-bellinzona|1024|3|mountain
 pizzo-di-vogorno-near-locarno|1024|3|mountain
 pizzo-paglia-near-bellinzona|1024|3|mountain
 placa-de-tetuan-near-sant-cugat-del-valles|131072|3|park
 place-du-general-leclerc-near-saumur|131072|3|park
 placid-lake-state-park-near-missoula|131072|2|
+plage-de-ghignu-near-bastia|16|2|
+plage-de-l-arneche-near-rochefort|16|3|beach
+plage-de-l-arneche-near-royan|16|3|beach
+plage-de-l-eventail-near-saint-malo|16|3|beach
+plage-de-la-boirie-near-la-rochelle|16|3|beach
 plage-de-la-chambre-d-amour-anglet-near-anglet|16|3|beach
 plage-de-la-chambre-d-amour-anglet-near-bayonne|16|3|beach
+plage-de-la-chambre-d-amour-anglet-near-biarritz|16|3|beach
+plage-de-la-chambre-d-amour-anglet-near-dax|16|3|beach
+plage-de-la-grande-conche-near-rochefort|16|3|beach
 plage-de-la-grande-conche-near-royan|16|3|beach
 plage-de-la-madrague-anglet-near-bayonne|16|3|beach
+plage-de-la-roya-near-bastia|16|3|beach
+plage-de-la-vieille-eglise-near-cherbourg|16|3|beach
+plage-de-ngor-near-dakar|16|3|beach
+plage-de-piemanson-near-arles|16|3|beach
+plage-de-sainte-marguerite-near-saint-nazaire|16|3|beach
+plage-de-sainte-marguerite-near-vannes|16|3|beach
+plage-des-cavaliers-anglet-near-dax|16|3|beach
+plage-des-fourmis-near-nice|16|3|beach
+plage-des-huttes-near-la-rochelle|16|3|beach
+plage-des-libraires-near-saint-nazaire|16|3|beach
+plage-des-nations-near-rabat|16|3|beach
 plage-des-sablettes-near-menton|16|3|beach
+plage-du-buse-near-menton|16|3|beach
+plage-du-buse-near-nice|16|3|beach
+plage-du-centre-ville-point-zero-near-montpellier|16|3|beach
+plage-du-grand-capo-near-ajaccio|16|3|beach
+plage-du-metro-near-dax|16|3|beach
 plage-du-miramar-biarritz-near-anglet|16|3|beach
+plage-du-mole-near-saint-malo|16|3|beach
 plage-du-port-vieux-biarritz-near-anglet|16|3|beach
+plage-du-port-vieux-biarritz-near-bayonne|16|3|beach
+plage-du-port-vieux-biarritz-near-biarritz|16|3|beach
+plage-du-port-vieux-biarritz-near-dax|16|3|beach
+plage-du-port-vieux-biarritz-near-hendaye|16|3|beach
 plagefenn-near-eberswalde|65536|3|Special Area of Conservation
+plages-du-prado-near-aix-en-provence|16|3|beach
 plages-du-prado-near-aubagne|16|3|beach
+plages-du-prado-near-istres|16|3|beach
+plages-du-prado-near-la-ciotat|16|3|beach
+plages-du-prado-near-la-seyne-sur-mer|16|3|beach
 plages-du-prado-near-marseille|16|3|beach
 plages-du-prado-near-martigues|16|3|beach
+plages-du-prado-near-salon-de-provence|16|3|beach
+plages-du-prado-near-toulon|16|3|beach
 plaiaundi-near-hendaye|65536|3|protected area
 plaine-de-sorques-near-sens|65536|3|protected area
 plains-conservation-center-near-centennial|0|0|
@@ -23369,6 +26820,7 @@ plaiul-fagului-near-balti|65536|3|nature reserve
 plaiul-fagului-near-chisinau|65536|3|nature reserve
 plaiul-fagului-near-ungheni|65536|3|nature reserve
 plaja-corbu-near-navodari|16|3|beach
+plaka-beach-near-volos|16|3|beach
 plakias-near-rethymno|131088|3|beach
 plan-d-eau-de-mezieres-ecluzelles-near-chartres|32|3|artificial lake
 plan-d-eau-de-mezieres-ecluzelles-near-dreux|32|3|artificial lake
@@ -23380,30 +26832,93 @@ plane-tree-of-hoxhe-dheu-near-shkoder|65536|3|natural monument
 planken-wambuis-near-wageningen|81920|3|forest
 plantentuin-merksplas-near-turnhout|0|0|
 planting-fields-arboretum-state-historic-park-near-north-hempstead|0|0|
+platamona-near-sassari|4096|3|coast
 platani-river-near-agrigento|256|3|river
 plateau-de-malzeville-near-nancy|66560|3|plateau
 plateau-de-millevaches-near-brive-la-gaillarde|66560|3|plateau
 plateliai-lake-near-liepaja|32|3|lake
 platgeta-del-mal-pas-near-la-vila-joiosa|16|3|beach
+platja-d-almenara-near-castellon-de-la-plana|16|3|beach
 platja-d-almenara-near-sagunto|16|3|beach
+platja-d-almenara-near-torrent|16|3|beach
+platja-d-almenara-near-valencia|16|3|beach
 platja-d-heliopolis-near-villarreal|16|3|beach
 platja-de-castelldefels-near-vilanova-i-la-geltru|0|0|
+platja-de-l-almadrava-near-alzira|16|3|beach
 platja-de-l-almadrava-near-denia|16|3|beach
+platja-de-l-almadrava-near-xativa|16|3|beach
+platja-de-l-home-mort-near-vilanova-i-la-geltru|16|3|beach
+platja-de-la-mar-bella-near-badalona|16|3|beach
+platja-de-la-mar-bella-near-barcelona|16|3|beach
+platja-de-la-mar-bella-near-castelldefels|16|3|beach
+platja-de-la-mar-bella-near-granollers|16|3|beach
+platja-de-la-mar-bella-near-lhospitalet|16|3|beach
+platja-de-la-mar-bella-near-sabadell|16|3|beach
+platja-de-la-mar-bella-near-sant-cugat-del-valles|16|3|beach
+platja-de-la-mar-bella-near-terrassa|16|3|beach
+platja-de-la-mar-bella-near-vilanova-i-la-geltru|16|3|beach
+platja-de-la-marineta-cassiana-near-alzira|16|3|beach
 platja-de-la-marineta-cassiana-near-denia|16|3|beach
+platja-de-la-marineta-cassiana-near-xativa|16|3|beach
+platja-de-la-nova-icaria-near-badalona|16|3|beach
+platja-de-la-nova-icaria-near-barcelona|16|3|beach
+platja-de-la-nova-icaria-near-castelldefels|16|3|beach
+platja-de-la-nova-icaria-near-granollers|16|3|beach
+platja-de-la-nova-icaria-near-lhospitalet|16|3|beach
+platja-de-la-nova-icaria-near-sabadell|16|3|beach
+platja-de-la-nova-icaria-near-sant-cugat-del-valles|16|3|beach
+platja-de-la-nova-icaria-near-terrassa|16|3|beach
+platja-de-la-nova-icaria-near-vilanova-i-la-geltru|16|3|beach
+platja-de-la-nova-mar-bella-near-badalona|16|3|beach
+platja-de-la-nova-mar-bella-near-barcelona|16|3|beach
+platja-de-la-nova-mar-bella-near-castelldefels|16|3|beach
+platja-de-la-nova-mar-bella-near-granollers|16|3|beach
+platja-de-la-nova-mar-bella-near-lhospitalet|16|3|beach
+platja-de-la-nova-mar-bella-near-sabadell|16|3|beach
+platja-de-la-nova-mar-bella-near-sant-cugat-del-valles|16|3|beach
+platja-de-la-nova-mar-bella-near-terrassa|16|3|beach
+platja-de-la-nova-mar-bella-near-vilanova-i-la-geltru|16|3|beach
+platja-de-la-roda-near-xativa|16|3|beach
 platja-de-la-savinosa-near-tarragona|16|3|beach
+platja-de-les-arenes-near-alzira|16|3|beach
+platja-de-les-arenes-near-gandia|16|3|beach
+platja-de-les-arenes-near-torrent|16|3|beach
 platja-de-les-arenes-near-valencia|16|3|beach
+platja-de-les-arenes-near-villarreal|16|3|beach
+platja-de-les-arenes-near-xativa|16|3|beach
+platja-de-les-deveses-near-alzira|16|3|beach
 platja-de-les-deveses-near-gandia|16|3|beach
+platja-de-les-deveses-near-xativa|16|3|beach
 platja-de-les-marines-near-denia|16|3|beach
 platja-de-llevant-near-la-vila-joiosa|16|3|beach
+platja-de-manyetes-near-castellon-de-la-plana|16|3|beach
+platja-de-manyetes-near-villarreal|16|3|beach
+platja-de-massalfassar-near-alzira|16|3|beach
+platja-de-massalfassar-near-castellon-de-la-plana|16|3|beach
 platja-de-massalfassar-near-sagunto|16|3|beach
+platja-de-massalfassar-near-torrent|16|3|beach
+platja-de-massalfassar-near-valencia|16|3|beach
+platja-de-ponent-near-alcoy|16|3|beach
+platja-de-ponent-near-alicante|16|3|beach
+platja-de-ponent-near-benidorm|16|3|beach
+platja-de-ponent-near-elche|16|3|beach
+platja-de-ponent-near-gandia|16|3|beach
 platja-de-ponent-near-la-vila-joiosa|16|3|beach
+platja-de-ponent-near-xativa|16|3|beach
+platja-de-ribes-roges-near-vilanova-i-la-geltru|16|3|beach
 platja-de-ses-salines-near-ibiza|16|3|beach
 platja-de-sitges-near-vilanova-i-la-geltru|0|0|
 platja-de-talamanca-near-ibiza|4112|3|beach
 platja-de-vilanova-near-vilanova-i-la-geltru|0|0|
+platja-del-postiguet-near-alcoy|128|2|
 platja-del-postiguet-near-alicante|128|2|
+platja-del-postiguet-near-benidorm|128|2|
+platja-del-postiguet-near-elche|128|2|
+platja-del-postiguet-near-orihuela|128|2|
 platja-dels-capellans-near-tarragona|16|3|beach
 platja-des-cavallet-near-ibiza|16|3|beach
+platja-llarga-near-vilanova-i-la-geltru|528|3|beach
+platja-nord-near-castellon-de-la-plana|16|3|beach
 platja-s-estanyol-near-ibiza|16|3|beach
 platoul-meledic-near-mizil|65536|3|nature reserve
 platoul-meledic-near-ramnicu-sarat|65536|3|nature reserve
@@ -23419,42 +26934,103 @@ platwijers-near-hasselt|66048|3|wetland
 platzer-kuppe-near-bad-kissingen|1024|3|mountain
 plauer-see-near-brandenburg-an-der-havel|32|3|lake
 plauzu-ezers-near-aizkraukle|32|3|lake
+plava-laguna-near-porec|16|3|beach
+plava-laguna-near-pula|16|3|beach
+plava-laguna-near-rovinj|16|3|beach
 plava-spilja-near-herceg-novi|2|3|cave
 plavnik-near-crikvenica|64|3|island
 plavnik-near-labin|64|3|island
 playa-alicia-near-la-vega|16|3|beach
 playa-alicia-near-santiago-de-los-caballeros|16|3|beach
 playa-balandra-near-la-paz-mx|16|3|beach
+playa-blanca-near-puerto-del-rosario|16|3|beach
 playa-bonita-near-comodoro-rivadavia|16|3|beach
 playa-chinchorro-near-arica|16|3|beach
 playa-chinchorro-near-tacna|16|3|beach
 playa-coromuel-near-la-paz-mx|16|3|beach
 playa-de-arnao-near-aviles|16|3|beach
+playa-de-benijo-near-san-cristobal-de-la-laguna|16|3|beach
+playa-de-benijo-near-santa-cruz-de-tenerife|16|3|beach
+playa-de-bogatell-near-badalona|16|3|beach
+playa-de-bogatell-near-barcelona|16|3|beach
+playa-de-bogatell-near-castelldefels|16|3|beach
+playa-de-bogatell-near-granollers|16|3|beach
+playa-de-bogatell-near-lhospitalet|16|3|beach
+playa-de-bogatell-near-sabadell|16|3|beach
+playa-de-bogatell-near-sant-cugat-del-valles|16|3|beach
+playa-de-bogatell-near-terrassa|16|3|beach
+playa-de-bogatell-near-vilanova-i-la-geltru|16|3|beach
+playa-de-camposoto-near-cadiz|16|3|beach
+playa-de-camposoto-near-jerez-de-la-frontera|16|3|beach
 playa-de-camposoto-near-san-fernando|16|3|beach
+playa-de-camposoto-near-sanlucar-de-barrameda|16|3|beach
+playa-de-el-palo-near-malaga|131088|3|beach
+playa-de-el-palo-near-velez-malaga|131088|3|beach
+playa-de-el-portil-near-huelva|16|3|beach
+playa-de-garrucha-near-lorca|16|3|beach
 playa-de-guayabitos-near-tepic|16|3|beach
+playa-de-la-albufereta-near-alcoy|16|3|beach
+playa-de-la-albufereta-near-alicante|16|3|beach
+playa-de-la-albufereta-near-elche|16|3|beach
 playa-de-la-almadraba-near-alicante|16|3|beach
+playa-de-la-barrosa-near-cadiz|16|3|beach
+playa-de-la-barrosa-near-jerez-de-la-frontera|16|3|beach
+playa-de-la-barrosa-near-sanlucar-de-barrameda|16|3|beach
+playa-de-la-caleta-near-cadiz|16|3|beach
 playa-de-la-caleta-near-el-puerto-de-santa-maria|16|3|beach
+playa-de-la-caleta-near-jerez-de-la-frontera|16|3|beach
+playa-de-la-caleta-near-malaga|16|3|beach
+playa-de-la-caleta-near-marbella|16|3|beach
 playa-de-la-caleta-near-san-fernando|16|3|beach
+playa-de-la-caleta-near-sanlucar-de-barrameda|16|3|beach
+playa-de-la-caleta-near-velez-malaga|16|3|beach
 playa-de-la-carihuela-near-benalmadena|16|3|beach
 playa-de-la-carihuela-near-torremolinos|16|3|beach
 playa-de-la-costilla-near-sanlucar-de-barrameda|16|3|beach
 playa-de-la-garita-near-telde|16|3|beach
 playa-de-la-hipica-melilla-near-melilla|16|3|beach
+playa-de-la-hita-near-cartagena|16|3|beach
+playa-de-la-laja-near-las-palmas|16|3|beach
 playa-de-la-magdalena-near-santander|16|3|beach
 playa-de-la-malagueta-near-malaga|16|3|beach
+playa-de-la-malagueta-near-marbella|16|3|beach
+playa-de-la-malagueta-near-velez-malaga|16|3|beach
 playa-de-la-puntilla-near-el-puerto-de-santa-maria|16|3|beach
+playa-de-la-victoria-near-cadiz|16|3|beach
+playa-de-la-victoria-near-jerez-de-la-frontera|16|3|beach
 playa-de-la-victoria-near-san-fernando|16|3|beach
+playa-de-la-victoria-near-sanlucar-de-barrameda|16|3|beach
 playa-de-las-canteras-near-telde|131088|3|beach
+playa-de-las-conchas-near-arrecife|16|3|beach
+playa-de-las-gaviotas-near-san-cristobal-de-la-laguna|16|3|beach
+playa-de-las-gaviotas-near-santa-cruz-de-tenerife|16|3|beach
 playa-de-las-teresitas-near-san-cristobal-de-la-laguna|131088|3|beach
 playa-de-las-teresitas-near-santa-cruz-de-tenerife|131088|3|beach
 playa-de-levante-de-los-torunos-near-el-puerto-de-santa-maria|16|3|beach
+playa-de-levante-near-ceuta|16|3|beach
+playa-de-levante-near-marbella|16|3|beach
 playa-de-los-bikinis-near-santander|16|3|beach
-playa-de-los-caballos-near-torrelavega|0|0|
+playa-de-los-caballos-near-torrelavega|16|3|beach
+playa-de-los-genoveses-near-almeria|16|3|beach
 playa-de-los-muertos-near-puerto-vallarta|16|3|beach
+playa-de-poniente-gijon-near-gijon|16|3|beach
+playa-de-poniente-gijon-near-oviedo|16|3|beach
+playa-de-poniente-near-algeciras|16|3|beach
+playa-de-poniente-near-ceuta|16|3|beach
+playa-de-poniente-near-marbella|16|3|beach
+playa-de-rodas-near-pontevedra|16|3|beach
+playa-de-rodas-near-vigo|16|3|beach
+playa-de-rodiles-near-gijon|16|3|beach
+playa-de-rodiles-near-oviedo|16|3|beach
 playa-de-san-francisco-near-fuengirola|16|3|beach
 playa-de-san-julian-near-torremolinos|16|3|beach
 playa-de-santa-amalia-near-fuengirola|16|3|beach
+playa-de-santa-barbara-near-algeciras|16|3|beach
+playa-de-santa-barbara-near-ceuta|16|3|beach
+playa-de-santa-barbara-near-marbella|16|3|beach
 playa-de-santa-justa-near-torrelavega|16|3|beach
+playa-de-sotavento-de-jandia-near-puerto-del-rosario|16|3|beach
+playa-de-tebeto-near-puerto-del-rosario|16|3|beach
 playa-de-torre-del-mar-near-velez-malaga|16|3|beach
 playa-de-torreblanca-near-benalmadena|16|3|beach
 playa-de-torreblanca-near-fuengirola|16|3|beach
@@ -23463,22 +27039,35 @@ playa-de-vistahermosa-near-el-puerto-de-santa-maria|16|3|beach
 playa-de-vistahermosa-near-sanlucar-de-barrameda|16|3|beach
 playa-de-xago-near-aviles|16|3|beach
 playa-del-aculadero-near-el-puerto-de-santa-maria|16|3|beach
+playa-del-arbeyal-gijon-near-gijon|16|3|beach
+playa-del-arbeyal-gijon-near-oviedo|16|3|beach
 playa-del-bajondillo-near-benalmadena|16|3|beach
 playa-del-bajondillo-near-torremolinos|16|3|beach
 playa-del-castillo-near-fuengirola|16|3|beach
 playa-del-chaparral-near-fuengirola|16|3|beach
 playa-del-hombre-near-telde|128|2|
+playa-del-jablillo-near-arrecife|16|3|beach
+playa-del-muerto-near-san-cristobal-de-la-laguna|16|3|beach
+playa-del-muerto-near-santa-cruz-de-tenerife|16|3|beach
+playa-del-parador-de-mazagon-near-huelva|16|3|beach
+playa-del-penon-blanco-near-almeria|16|3|beach
 playa-del-reducto-near-arrecife|16|3|beach
 playa-dorada-near-la-vega|16|3|beach
 playa-dorada-near-santiago-de-los-caballeros|16|3|beach
 playa-el-miracle-near-tarragona|16|3|beach
+playa-jardin-near-santa-cruz-de-tenerife|16|3|beach
 playa-la-herradura-near-comodoro-rivadavia|16|3|beach
 playa-las-animas-near-puerto-vallarta|16|3|beach
 playa-las-lajas-near-david|16|3|beach
 playa-las-lajas-near-santiago-de-veraguas|16|3|beach
+playa-lido-garibaldi-near-agrigento|16|3|beach
 playa-los-cerritos-near-cabo-san-lucas|16|3|beach
 playa-los-cerritos-near-san-jose-del-cabo|16|3|beach
+playa-los-gigantes-near-san-cristobal-de-la-laguna|16|3|beach
 playa-los-peligros-near-santander|16|3|beach
+playa-luna-near-valparaiso|16|2|
+playa-luna-near-villa-alemana|16|2|
+playa-luna-near-vina-del-mar|16|2|
 playa-magagna-near-puerto-madryn|16|3|beach
 playa-magagna-near-rawson|16|3|beach
 playa-majahua-near-acapulco-de-juarez|16|3|beach
@@ -23493,12 +27082,16 @@ playa-pie-de-la-cuesta-near-acapulco-de-juarez|16|3|beach
 playa-pie-de-la-cuesta-near-chilpancingo-de-los-bravo|16|3|beach
 playa-punta-lobos-near-cabo-san-lucas|16|3|beach
 playa-punta-lobos-near-san-jose-del-cabo|16|3|beach
+playa-quemada-near-arrecife|0|0|
+playa-quemada-near-puerto-del-rosario|0|0|
 playa-rafa-near-torremolinos|16|3|beach
 playa-san-isidro-near-encarnacion|16|3|beach
 playa-san-isidro-near-posadas|16|3|beach
 playa-san-jose-near-encarnacion|16|3|beach
 playa-san-jose-near-posadas|16|3|beach
+playa-san-miguel-near-puntarenas|16|3|beach
 playa-san-pancho-near-puerto-vallarta|16|3|beach
+playa-san-vito-lo-capo-near-palermo|16|3|beach
 playa-sayulita-near-puerto-vallarta|16|3|beach
 playa-serena-near-roquetas-de-mar|16|3|beach
 playa-sosua-near-la-vega|16|3|beach
@@ -23510,6 +27103,12 @@ playa-varese-near-mar-del-plata|16|3|beach
 playa-varese-near-tandil|16|3|beach
 playalinda-beach-near-titusville|16|3|beach
 playas-valley-near-ciudad-juarez|2048|3|valley
+plazhi-i-golemit-near-durres|16|3|beach
+plazhi-i-golemit-near-tirana|16|3|beach
+plazhi-i-shengjinit-near-durres|16|3|beach
+plazhi-i-shengjinit-near-shkoder|16|3|beach
+plazhi-i-shengjinit-near-tirana|16|3|beach
+plazhi-i-velipojes-near-shkoder|16|3|beach
 pleckenbrinksee-near-unna|32|3|lake
 pleidelsheimer-wiesental-mit-altneckar-near-ludwigsburg|65536|3|Special Protection Area
 pleissewiesen-windischleuba-near-altenburg|65536|3|Special Area of Conservation
@@ -23549,10 +27148,12 @@ po-valley-near-lodi|2048|3|valley
 po-valley-near-sesto-san-giovanni|2048|3|valley
 poas-volcano-national-park-near-alajuela|32768|3|national park
 poas-volcano-national-park-near-heredia|32768|3|national park
+poas-volcano-national-park-near-san-jose|32768|3|national park
 pobiti-kamani-near-dobrich|65536|2|
 pocahontas-state-park-near-richmond|131072|2|
 pochepsukha-near-krasnodar|1024|3|mountain
 pocitos-beach-near-florida|16|3|beach
+pocitos-beach-near-montevideo|16|3|beach
 pociumbeni-near-edinet|65536|3|nature reserve
 pocono-mountains-near-scranton|1024|3|mountain range
 pocuvadlo-reservoir-near-banska-stiavnica|32|3|reservoir
@@ -23591,6 +27192,10 @@ poelbos-near-rixensart|81920|3|forest
 poelvenn-near-viersen|32|3|lake
 poensgen-park-near-ratingen|131072|3|park
 poetto-near-cagliari|131088|3|beach
+poetto-near-carbonia|131088|3|beach
+poetto-near-iglesias|131088|3|beach
+pogonitsa-near-arta|4128|3|lagoon
+pogonitsa-near-preveza|4128|3|lagoon
 pogoreloe-near-bender|16384|3|forest
 pogoreloe-near-dubasari|16384|3|forest
 pogoria-ii-near-bedzin|32|3|lake
@@ -23598,6 +27203,7 @@ pogoria-lakes-near-dabrowa-gornicza|0|0|
 pogost-reservoir-near-pinsk|32|3|reservoir
 pogost-reservoir-near-salihorsk|32|3|reservoir
 pogubie-wielkie-near-ostroleka|32|3|lake
+pohara-beach-near-nelson|16|3|beach
 pohlberg-near-annaberg-buchholz|1024|3|mountain
 pohorje-near-celje|1024|2|
 pohorje-near-maribor|1024|2|
@@ -23615,22 +27221,54 @@ poikilo-near-ilion|1024|3|mountain
 poikilo-near-petroupoli|1024|3|mountain
 poinsett-state-park-near-columbia|131072|2|
 point-aconi-near-sydney-ca|4096|3|peninsula
+point-arguello-near-santa-maria|4096|3|headland
 point-beach-state-forest-near-appleton|81920|3|state forest
 point-beach-state-forest-near-fond-du-lac|81920|3|state forest
 point-beach-state-forest-near-green-bay|81920|3|state forest
 point-beach-state-forest-near-oshkosh|81920|3|state forest
 point-beach-state-forest-near-sheboygan|81920|3|state forest
 point-defiance-park-near-tacoma|131072|3|urban park
+point-dume-state-beach-near-simi-valley|65552|3|California state beach
+point-dume-state-beach-near-thousand-oaks|65552|3|California state beach
+point-isabel-near-vacaville|4096|3|cape
+point-island-near-shanghai|64|3|island
+point-lobos-near-salinas|4096|3|cape
+point-lobos-near-santa-cruz|4096|3|cape
+point-lonsdale-near-cowes|0|0|
+point-lonsdale-near-frankston|0|0|
+point-lonsdale-near-geelong|0|0|
+point-lonsdale-near-melbourne|0|0|
 point-lookout-near-armidale|1024|3|mountain
 point-mugu-near-oxnard|4096|3|cape
+point-mugu-near-santa-monica|4096|3|cape
+point-mugu-near-simi-valley|4096|3|cape
+point-mugu-near-thousand-oaks|4096|3|cape
+point-of-ayr-near-birkenhead|4096|3|cape
+point-of-ayr-near-blackpool|4096|3|cape
+point-of-ayr-near-bootle|4096|3|cape
+point-of-ayr-near-chester|4096|3|cape
+point-of-ayr-near-liverpool|4096|3|cape
+point-of-ayr-near-st-helens|4096|3|cape
+point-of-ayr-near-widnes|4096|3|cape
+point-of-ayr-near-wigan|4096|3|cape
 point-pelee-national-park-near-chatham-kent|32768|3|national park
 point-pelee-national-park-near-elyria|32768|3|national park
 point-pelee-national-park-near-leamington|32768|3|national park
 point-pelee-national-park-near-sarnia|32768|3|national park
+point-perpendicular-near-nowra|4096|3|cape
 point-pinole-regional-shoreline-near-vallejo|131072|3|park
+point-potrero-near-antioch|4096|3|cape
+point-potrero-near-fairfield|4096|3|cape
+point-reyes-national-seashore-near-berkeley|69648|3|United States National Seashore
+point-reyes-national-seashore-near-daly-city|69648|3|United States National Seashore
 point-reyes-national-seashore-near-oakland|69648|3|United States National Seashore
+point-reyes-national-seashore-near-san-rafael|69648|3|United States National Seashore
 point-reyes-national-seashore-near-santa-rosa|69648|3|United States National Seashore
+point-reyes-national-seashore-near-vallejo|69648|3|United States National Seashore
 point-reyes-near-san-francisco|69648|3|United States National Seashore
+point-sal-near-san-luis-obispo|4096|3|cape
+point-sal-near-santa-maria|4096|3|cape
+point-sal-state-beach-near-san-luis-obispo|16|3|California state beach
 point-sal-state-beach-near-santa-maria|16|3|California state beach
 pointe-au-pere-national-wildlife-area-near-baie-comeau|65536|3|national wildlife area
 pointe-au-pere-national-wildlife-area-near-matane|65536|3|national wildlife area
@@ -23641,19 +27279,39 @@ pointe-aux-prairies-nature-park-near-mascouche|131072|3|regional park
 pointe-aux-prairies-nature-park-near-saint-lin-laurentides|131072|3|regional park
 pointe-aux-prairies-nature-park-near-terrebonne|131072|3|regional park
 pointe-aux-prairies-nature-park-near-varennes|131072|3|regional park
+pointe-de-barfleur-near-cherbourg|4096|3|cape
 pointe-de-corsen-near-brest|4096|3|cape
+pointe-de-grave-near-rochefort|4096|3|cape
 pointe-de-grave-near-royan|4096|3|cape
 pointe-de-grave-near-saintes|4096|3|cape
+pointe-de-l-arcouest-near-saint-brieuc|4096|3|cape
+pointe-de-la-courte-dune-audinghen-near-boulogne-sur-mer|4096|3|cape
+pointe-de-la-negade-near-rochefort|4096|3|cape
+pointe-de-la-negade-near-royan|4096|3|cape
+pointe-de-la-parata-near-ajaccio|4096|3|cape
+pointe-de-la-torche-near-quimper|4096|3|cape
 pointe-de-pen-hir-near-quimper|4096|3|cape
+pointe-des-almadies-near-dakar|4096|3|cape
 pointe-des-espagnols-near-brest|4096|3|cape
+pointe-des-espagnols-near-quimper|4096|3|cape
+pointe-du-castelli-near-saint-nazaire|4096|3|cape
+pointe-du-castelli-near-vannes|4096|3|cape
 pointe-du-grouin-near-saint-malo|65536|3|protected area
+pointe-du-hoc-near-caen|4096|3|cliff
+pointe-du-hoc-near-cherbourg|4096|3|cliff
+pointe-du-raz-near-brest|4096|3|cape
 pointe-du-raz-near-quimper|4096|3|cape
 pointe-du-roselier-near-saint-brieuc|69632|3|cape
+pointe-du-van-near-brest|4096|3|cape
+pointe-du-van-near-quimper|4096|3|cape
 pointe-saint-gildas-near-saint-nazaire|4096|3|cape
+pointe-saint-mathieu-near-brest|4096|3|cape
+pointe-saint-nicolas-near-lorient|4096|3|cape
 pointe-taillon-national-park-near-alma|32768|3|national park of Quebec
 pointe-taillon-national-park-near-dolbeau-mistassini|32768|3|national park of Quebec
 pointe-taillon-national-park-near-saguenay|32768|3|national park of Quebec
 pokagon-state-park-near-fort-wayne|131072|3|Indiana state park
+pokonji-dol-beach-near-makarska|16|3|beach
 pokrovskyi-dendropark-near-nikopol|65536|3|protected area
 polana-near-banska-bystrica|1024|3|mountain range
 polanska-niva-near-havirov|65536|3|protected area
@@ -23681,12 +27339,17 @@ polygon-wood-zonnebeke-near-halluin|16384|3|forest
 polygon-wood-zonnebeke-near-roeselare|16384|3|forest
 pomegues-near-martigues|64|3|island
 pomezni-rybnik-near-cheb|65568|3|lake
+pomier-caves-near-santo-domingo|2|3|cave
 pomologie-und-volkspark-reutlingen-near-reutlingen|131072|3|park
+pompeiana-near-imperia|65536|3|Natura 2000 site
 pomponrahka-near-raisio|65536|3|Natura 2000 site
 pompton-lake-near-paterson|32|3|reservoir
 ponce-de-leon-island-near-palm-bay|64|3|island
 ponce-de-leon-springs-state-park-near-dothan|131072|3|Florida state park
 pond-of-montady-near-agde|4640|3|lagoon
+pond-of-montady-near-beziers|4640|3|lagoon
+pond-of-montady-near-narbonne|4640|3|lagoon
+pond-of-montady-near-sete|4640|3|lagoon
 poniatowskiego-park-near-siemianowice-slaskie|131072|3|park
 ponijeri-near-zenica|0|0|
 ponjavica-nature-park-near-pancevo|196608|3|nature park
@@ -23695,13 +27358,21 @@ ponoarele-god-s-bridge-karst-complex-near-drobeta-turnu-severin|0|0|
 pont-d-espagne-near-tarbes|65536|3|protected area
 pont-du-gard-near-nimes|0|0|
 ponta-da-areia-near-feira-de-santana|16|3|beach
+ponta-da-ferraria-near-ponta-delgada|4096|3|headland
+ponta-da-fruta-near-serra|0|0|
+ponta-da-fruta-near-vila-velha|0|0|
+ponta-da-fruta-near-vitoria|0|0|
 ponta-da-piedade-near-portimao|69632|3|cape
 ponta-de-sao-lourenco-near-funchal|69632|3|peninsula
+ponta-do-arnel-near-ponta-delgada|4096|3|headland
 ponta-do-corumbau-near-porto-seguro|16|3|beach
 ponta-negra-near-natal|16|3|beach
 pontal-near-belford-roxo|16|3|beach
 pontal-near-duque-de-caxias|16|3|beach
+pontal-near-niteroi|16|3|beach
 pontal-near-nova-iguacu|16|3|beach
+pontal-near-rio-de-janeiro|16|3|beach
+pontal-near-sao-goncalo|16|3|beach
 pontal-near-sao-joao-de-meriti|16|3|beach
 pontic-mountains-near-rize|1024|3|mountain range
 ponurka-preserve-near-shostka|65536|3|protected area
@@ -23712,6 +27383,7 @@ poona-national-park-near-hervey-bay|32768|3|national park of Australia
 poona-national-park-near-maryborough|32768|3|national park of Australia
 pootatuck-state-forest-near-danbury|81920|3|state forest
 pope-john-paul-ii-park-reservation-near-quincy-us|131072|2|
+popham-beach-near-portland-me|16|3|beach
 popilnianskii-lis-near-fastiv|81920|3|forest reserve
 popinolashki-waterfall-near-sandanski|1|3|waterfall
 poplar-island-near-newbury|320|3|river island
@@ -23726,6 +27398,8 @@ porkkala-near-kauniainen|4096|3|peninsula
 porkkala-near-kirkkonummi|4096|3|peninsula
 porkkalanniemi-near-espoo|4096|3|peninsula
 porovesi-near-iisalmi|32|3|lake or pond
+porporela-near-dubrovnik|16|3|beach
+porporela-near-metkovic|16|3|beach
 porquerolles-near-hyeres|64|3|island
 porquerolles-near-la-seyne-sur-mer|64|3|island
 porquerolles-near-toulon|64|3|island
@@ -23750,10 +27424,15 @@ port-ventaine-near-silute|32|2|
 port-vieux-et-chantiers-navals-de-la-ciotat-near-la-ciotat|32|2|
 portage-island-near-miramichi|64|3|island
 porter-park-near-el-cajon|131072|3|park
+portland-bill-near-bournemouth|4096|3|headland
+portland-bill-near-poole|4096|3|headland
+portland-bill-near-yeovil|4096|3|headland
 portneuf-range-near-pocatello|1024|3|mountain range
 porto-cesareo-near-taranto|0|0|
 porto-conte-regional-natural-park-near-alghero|196608|3|protected area
 porto-conte-regional-park-near-sassari|4096|3|bay
+porto-da-varzea-river-beach-near-oliveira-do-bairro|16|3|beach
+porto-da-varzea-river-beach-near-tondela|16|3|beach
 porto-de-galinhas-beach-near-caruaru|16|3|beach
 porto-de-galinhas-beach-near-jaboatao-dos-guararapes|16|3|beach
 porto-de-galinhas-beach-near-olinda|16|3|beach
@@ -23765,6 +27444,8 @@ porto-ferreira-state-park-near-ribeirao-preto|131072|3|state park
 porto-ferreira-state-park-near-sao-carlos|131072|3|state park
 porto-ferreira-state-park-near-sao-jose-do-rio-preto|131072|3|state park
 porto-fluviale-di-mediolanum-near-sesto-san-giovanni|32|3|artificial lake
+porto-katsiki-near-lefkada|131088|3|beach
+porto-katsiki-near-preveza|131088|3|beach
 portofino-regional-park-near-genoa|196608|3|protected area
 portsea-island-near-andover|64|3|island
 portsea-island-near-chichester|64|3|island
@@ -23773,6 +27454,7 @@ portsea-island-near-littlehampton|64|3|island
 portsea-island-near-salisbury|64|3|island
 portsea-island-near-southampton|64|3|island
 portsea-island-near-winchester|64|3|island
+portuguese-island-near-maputo|64|3|island
 posadny-island-near-krasnoyarsk|64|3|island
 posavina-near-daruvar|2048|3|valley
 posavina-near-kutina|2048|3|valley
@@ -23796,7 +27478,7 @@ pothigai-hill-near-thiruvananthapuram|1024|3|mountain
 poti-river-near-teresina|256|3|river
 potosi-mountain-range-near-potosi|1024|3|mountain range
 potosi-mountain-range-near-sucre|1024|3|mountain range
-potoski-stol-near-jesenice|0|0|
+potoski-stol-near-jesenice|1024|3|mountain
 potsdam-near-berlin|0|0|
 pottawatomie-park-near-elgin|131072|3|urban park
 potyondi-mocsar-near-szombathely|512|3|marsh
@@ -23808,6 +27490,7 @@ povazsky-inovec-near-topolcany|1024|3|mountain range
 povington-hill-near-dorchester|1024|3|mountain
 povlen-near-uzice|1024|3|mountain
 povlen-near-valjevo|1024|3|mountain
+powai-lake-near-mumbai|32|3|lake
 powell-butte-near-gresham|1024|3|mountain
 powell-gardens-near-independence|0|0|
 powerscourt-waterfall-near-bray|1|3|waterfall
@@ -23817,6 +27500,7 @@ powidz-landscape-park-near-kalisz|196608|3|landscape park in Poland
 powidz-landscape-park-near-konin|196608|3|landscape park in Poland
 powidz-landscape-park-near-poznan|196608|3|landscape park in Poland
 powsin-culture-park-near-piaseczno|131072|3|park
+poyang-lake-near-wuhan|32|3|lake
 pozdisovsky-hrbet-near-michalovce|1024|3|mountain range
 pozdisovsky-hrbet-near-trebisov|1024|3|mountain range
 pozeska-gora-near-kutina|1024|3|mountain
@@ -23825,6 +27509,8 @@ pozeska-gora-near-nova-gradiska|1024|3|mountain
 pozeska-gora-near-pozega|1024|3|mountain
 pozeska-gora-near-slavonski-brod|1024|3|mountain
 pozo-de-las-nieves-public-park-near-aranjuez|131072|3|park
+pozo-izquierdo-near-las-palmas|144|2|
+pozo-izquierdo-near-telde|144|2|
 pozo-negro-near-puerto-del-rosario|65536|3|Natura 2000 site
 prachatice-kostel-near-prachatice|65536|3|Special Area of Conservation
 prachov-rocks-near-hradec-kralove|65536|3|nature reserve in the Czech Republic
@@ -23836,22 +27522,42 @@ praded-near-sumperk|1024|3|main peak
 prades-mountains-near-lleida|66560|3|mountain range
 prado-regional-park-near-corona|131072|3|regional park
 prado-regional-park-near-ontario|131072|3|regional park
+praesto-fjord-near-naestved|4096|3|fjord
+praesto-fjord-near-vordingborg|4096|3|fjord
 praia-azeda-near-campos-dos-goytacazes|16|3|beach
 praia-branca-near-mogi-das-cruzes|16|3|beach
+praia-da-adraga-near-agualva-cacem|16|3|beach
+praia-da-adraga-near-amadora|16|3|beach
+praia-da-adraga-near-cascais|16|3|beach
+praia-da-adraga-near-loures|16|3|beach
 praia-da-adraga-near-mafra|16|3|beach
+praia-da-adraga-near-sintra|16|3|beach
 praia-da-aguda-near-mafra|16|3|beach
 praia-da-barra-near-aveiro|16|3|beach
+praia-da-barra-near-figueira-da-foz|16|3|beach
 praia-da-barra-near-oliveira-do-bairro|16|3|beach
+praia-da-barra-near-tondela|16|3|beach
 praia-da-cerca-nova-near-santiago-do-cacem|16|3|beach
+praia-da-consolacao-near-alcobaca|16|3|beach
+praia-da-consolacao-near-marinha-grande|16|3|beach
 praia-da-cruz-quebrada-near-queluz|16|3|beach
 praia-da-dona-ana-near-lagos-pt|16|3|beach
 praia-da-enseada-near-mogi-das-cruzes|16|3|beach
 praia-da-galheta-near-florianopolis|16|3|beach
+praia-da-granja-near-aveiro|16|3|beach
 praia-da-granja-near-espinho|16|3|beach
+praia-da-granja-near-matosinhos|16|3|beach
+praia-da-granja-near-oliveira-de-azemeis|16|3|beach
+praia-da-granja-near-oliveira-do-bairro|16|3|beach
+praia-da-granja-near-pacos-de-ferreira|16|3|beach
 praia-da-granja-near-penafiel|16|3|beach
+praia-da-granja-near-porto|16|3|beach
 praia-da-granja-near-santa-maria-da-feira|16|3|beach
+praia-da-granja-near-vila-nova-de-gaia|16|3|beach
 praia-da-marinha-near-albufeira|16|3|beach
+praia-da-marinha-near-faro|16|3|beach
 praia-da-marinha-near-lagos-pt|16|3|beach
+praia-da-marinha-near-olhao|16|3|beach
 praia-da-marinha-near-portimao|16|3|beach
 praia-da-marinha-near-silves|16|3|beach
 praia-da-oura-near-albufeira|16|3|beach
@@ -23859,16 +27565,24 @@ praia-da-oura-near-loule|16|3|beach
 praia-da-pitinga-near-porto-seguro|16|3|beach
 praia-da-rocha-baixinha-near-faro|16|3|beach
 praia-da-rocha-baixinha-near-loule|16|3|beach
+praia-da-rocha-baixinha-near-tavira|16|3|beach
 praia-da-rocha-near-lagos-pt|16|3|beach
 praia-da-rocha-near-portimao|16|3|beach
 praia-da-senhora-da-rocha-near-silves|16|3|beach
+praia-da-sereia-near-serra|16|3|beach
+praia-da-sereia-near-vila-velha|16|3|beach
+praia-da-sereia-near-vitoria|16|3|beach
 praia-da-tapera-near-florianopolis|16|3|beach
 praia-da-tartaruga-near-campos-dos-goytacazes|16|3|beach
 praia-da-terra-estreita-near-olhao|16|3|beach
 praia-da-torre-near-oeiras|16|3|beach
 praia-da-torreira-near-oliveira-de-azemeis|16|3|beach
+praia-da-torreira-near-tondela|16|3|beach
 praia-da-vagueira-near-aveiro|16|3|beach
+praia-da-vagueira-near-figueira-da-foz|16|3|beach
 praia-da-vagueira-near-oliveira-do-bairro|16|3|beach
+praia-da-vagueira-near-tondela|16|3|beach
+praia-da-vinha-da-areia-near-ponta-delgada|16|3|beach
 praia-das-neves-near-feira-de-santana|16|3|beach
 praia-de-acau-near-olinda|16|3|beach
 praia-de-alburrica-near-barreiro|16|3|beach
@@ -23888,20 +27602,28 @@ praia-de-carcavelos-near-oeiras|16|3|beach
 praia-de-carvoeiro-near-silves|16|3|beach
 praia-de-itaguare-near-mogi-das-cruzes|16|3|beach
 praia-de-jacarape-near-joao-pessoa|16|3|beach
+praia-de-labruge-near-oliveira-de-azemeis|16|3|beach
 praia-de-maracaipe-near-caruaru|16|3|beach
 praia-de-maracaipe-near-jaboatao-dos-guararapes|16|3|beach
 praia-de-maracaipe-near-recife|16|3|beach
 praia-de-matosinhos-near-maia|16|3|beach
 praia-de-matosinhos-near-santo-tirso|16|3|beach
+praia-de-miramar-near-aveiro|16|3|beach
 praia-de-miramar-near-espinho|16|3|beach
 praia-de-miramar-near-gondomar|16|3|beach
+praia-de-miramar-near-oliveira-de-azemeis|16|3|beach
 praia-de-miramar-near-penafiel|16|3|beach
 praia-de-miramar-near-santa-maria-da-feira|16|3|beach
+praia-de-monte-gordo-near-tavira|16|3|beach
 praia-de-ofir-near-barcelos|16|3|beach
+praia-de-ofir-near-matosinhos|16|3|beach
 praia-de-ofir-near-povoa-de-varzim|16|3|beach
+praia-de-ofir-near-viana-do-castelo|16|3|beach
 praia-de-ofir-near-vila-do-conde|16|3|beach
 praia-de-ofir-near-vila-nova-de-famalicao|16|3|beach
+praia-de-ofir-near-vila-nova-de-gaia|16|3|beach
 praia-de-paco-de-arcos-near-oeiras|16|3|beach
+praia-de-paimogo-near-alcobaca|16|3|beach
 praia-de-paimogo-near-caldas-da-rainha|16|3|beach
 praia-de-paimogo-near-torres-vedras|16|3|beach
 praia-de-pitangui-near-natal|16|3|beach
@@ -23909,7 +27631,9 @@ praia-de-ponta-negra-near-manaus|16|3|beach
 praia-de-riazor-near-a-coruna|16|3|beach
 praia-de-ribeira-d-ilhas-near-mafra|16|3|beach
 praia-de-ribeira-d-ilhas-near-torres-vedras|16|3|beach
+praia-de-samil-near-pontevedra|16|3|beach
 praia-de-samil-near-vigo|16|3|beach
+praia-de-santa-eulalia-near-tavira|16|3|beach
 praia-de-santo-amaro-near-oeiras|16|3|beach
 praia-de-sao-bernardino-portugal-near-caldas-da-rainha|16|3|beach
 praia-de-sao-juliao-near-mafra|16|3|beach
@@ -23918,6 +27642,7 @@ praia-de-sao-lourenco-near-mogi-das-cruzes|16|3|beach
 praia-de-taipus-de-fora-near-ilheus|16|3|beach
 praia-de-valadares-near-espinho|16|3|beach
 praia-de-valadares-near-gondomar|16|3|beach
+praia-de-valadares-near-oliveira-de-azemeis|16|3|beach
 praia-de-valadares-near-penafiel|16|3|beach
 praia-de-valadares-near-santa-maria-da-feira|16|3|beach
 praia-de-valadares-near-valongo|16|3|beach
@@ -23927,9 +27652,12 @@ praia-do-camilo-near-lagos-pt|16|3|beach
 praia-do-carvalho-near-silves|16|3|beach
 praia-do-cassino-near-bage|16|3|beach
 praia-do-cassino-near-pelotas|16|3|beach
+praia-do-diabo-near-rio-de-janeiro|16|3|beach
+praia-do-fogo-near-ponta-delgada|16|3|beach
 praia-do-frances-near-aracaju|16|3|beach
 praia-do-gravata-near-florianopolis|16|3|beach
 praia-do-guaiuba-near-guaruja|16|3|beach
+praia-do-guaiuba-near-sao-vicente|16|3|beach
 praia-do-guincho-near-amadora|16|3|beach
 praia-do-gunga-near-aracaju|16|3|beach
 praia-do-inatel-near-albufeira|16|3|beach
@@ -23943,10 +27671,16 @@ praia-do-norte-near-alcobaca|16|3|beach
 praia-do-norte-near-caldas-da-rainha|16|3|beach
 praia-do-norte-near-leiria|16|3|beach
 praia-do-norte-near-marinha-grande|16|3|beach
+praia-do-norte-near-pombal|16|3|beach
 praia-do-norte-near-rio-maior|16|3|beach
 praia-do-paiva-near-jaboatao-dos-guararapes|16|3|beach
 praia-do-paiva-near-olinda|16|3|beach
 praia-do-paiva-near-recife|16|3|beach
+praia-do-pedrogao-near-alcobaca|16|3|beach
+praia-do-pedrogao-near-figueira-da-foz|16|3|beach
+praia-do-pedrogao-near-leiria|16|3|beach
+praia-do-pedrogao-near-marinha-grande|16|3|beach
+praia-do-pedrogao-near-pombal|16|3|beach
 praia-do-pina-near-jaboatao-dos-guararapes|16|3|beach
 praia-do-pina-near-olinda|16|3|beach
 praia-do-pina-near-recife|16|3|beach
@@ -23972,11 +27706,18 @@ praia-fluvial-de-froia-near-portalegre|16|3|beach
 praia-fluvial-do-alamal-near-abrantes|272|3|river beach
 praia-fluvial-do-alamal-near-portalegre|272|3|river beach
 praia-fluvial-do-alamal-near-tomar|272|3|river beach
+praia-formosa-near-funchal|16|3|beach
 praia-grande-near-silves|16|3|beach
 praia-mansa-near-fortaleza|16|3|beach
 praia-santa-eulalia-near-albufeira|16|3|beach
 praia-santa-eulalia-near-loule|16|3|beach
+praia-vermelha-near-belford-roxo|16|3|beach
+praia-vermelha-near-duque-de-caxias|16|3|beach
 praia-vermelha-near-niteroi|16|3|beach
+praia-vermelha-near-nova-iguacu|16|3|beach
+praia-vermelha-near-rio-de-janeiro|16|3|beach
+praia-vermelha-near-sao-goncalo|16|3|beach
+praia-vermelha-near-sao-joao-de-meriti|16|3|beach
 prainha-near-fortaleza|16|3|beach
 prairies-inondables-du-val-de-saone-near-chalon-sur-saone|65536|3|Natura 2000 site
 prall-s-island-near-elizabeth|576|3|island
@@ -24021,9 +27762,12 @@ presque-isle-state-park-near-erie|131072|3|Pennsylvania state park
 presquile-national-wildlife-refuge-near-richmond|65536|3|National Wildlife Refuge
 pressegger-see-near-spittal-an-der-drau|32|3|lake
 presterdkilen-near-tonsberg|65536|3|nature reserve
+preston-beach-near-bunbury|16|3|beach
 preston-park-near-brighton-and-hove|131072|3|park
 preston-park-rock-gardens-near-brighton-and-hove|0|0|
+pretty-beach-near-moruya|16|3|beach
 prettyboy-reservoir-near-york-us|32|3|reservoir
+preveli-beach-near-rethymno|16|3|beach
 prevlaka-island-near-budva|64|3|island
 prevlaka-island-near-cetinje|64|3|island
 pribaikalsky-national-park-near-irkutsk|65536|3|protected area of Russia
@@ -24060,10 +27804,17 @@ proctor-lake-near-abilene|32|3|reservoir
 production-site-of-szentendre-rose-natural-reserve-near-dunakeszi|65536|3|nature reserve
 professor-joao-vasconcelos-sobrinho-municipal-nature-park-near-caruaru|131072|3|municipal nature park
 profitis-ilias-near-sparta|1024|3|main peak
+prokopos-near-agrinio|4128|3|lagoon
+prokopos-near-elis|4128|3|lagoon
+prokopos-near-missolonghi|4128|3|lagoon
+prokopos-near-nafpaktos|4128|3|lagoon
+prokopos-near-patras|4128|3|lagoon
+prokopos-near-zakynthos|4128|3|lagoon
 prokosko-lake-near-zenica|32|3|lake
 prometheus-cave-natural-monument-near-kutaisi|2|3|show cave
 promised-land-state-park-near-scranton|131072|3|Pennsylvania state park
 promno-landscape-park-near-poznan|196608|3|landscape park in Poland
+promontorio-dell-argentario-near-grosseto|5120|3|massif
 proper-saimaa-near-imatra|32|3|lake
 prophetstown-state-park-near-kokomo|131072|3|Indiana state park
 prophetstown-state-park-near-noblesville|131072|3|Indiana state park
@@ -24109,10 +27860,17 @@ przedecz-lake-near-kutno|32|3|lake
 przemkow-landscape-park-near-zielona-gora|196608|3|landscape park in Poland
 przemysl-foothills-landscape-park-near-przemysl|196608|3|landscape park in Poland
 przymiarki-near-krosno|1024|3|mountain ridge
+psaromyta-cape-near-aigio|4096|3|cape
+psaromyta-cape-near-nafpaktos|4096|3|cape
+psaromyta-cape-near-patras|4096|3|cape
+psarrou-near-ermoupolis|16|3|beach
 psel-river-near-sumy|256|3|river
 psenodakh-near-maykop|32|3|lake
 pserimos-near-bodrum|64|3|island
 pserimos-near-kos|64|3|island
+psifta-lagoon-near-corinth|4128|3|lagoon
+psifta-lagoon-near-elefsina|4128|3|lagoon
+psifta-lagoon-near-megara|4128|3|lagoon
 psunj-near-daruvar|1024|3|mountain
 psunj-near-kutina|1024|3|mountain
 psunj-near-nova-gradiska|1024|3|mountain
@@ -24147,6 +27905,10 @@ puente-hills-near-pomona|1024|3|mountain range
 puente-hills-near-west-covina|1024|3|mountain range
 puente-nuevo-reservoir-near-cordoba-spain|32|3|reservoir
 puentes-dam-near-lorca|32|3|reservoir
+puerto-ozama-near-santo-domingo|4096|3|bay
+puerto-zapallar-near-valparaiso|4096|3|cove
+puerto-zapallar-near-villa-alemana|4096|3|cove
+puerto-zapallar-near-vina-del-mar|4096|3|cove
 puhajarv-near-elva|32|3|lake
 puhajarv-near-paide|32|3|lake
 puhajarv-near-polva|32|3|lake
@@ -24155,6 +27917,7 @@ puhajarv-near-turi|32|3|lake
 puhajarv-near-valka|32|3|lake
 puig-campana-near-benidorm|1024|3|mountain
 puig-cosco-near-castelldefels|1024|3|mountain
+puig-de-l-aliga-near-vilanova-i-la-geltru|1024|3|mountain
 puig-de-l-alzina-freda-near-castelldefels|1024|3|mountain
 puig-de-la-perdiu-near-castelldefels|1024|3|mountain
 puig-de-les-bruixes-near-llucmajor|1024|3|mountain
@@ -24173,8 +27936,11 @@ pukamuqu-near-cusco|1024|3|mountain
 pukaqucha-puno-near-juliaca|32|3|lake
 pukaqucha-puno-near-puno|32|3|lake
 pukarani-near-juliaca|1024|3|mountain
+pukehina-beach-near-rotorua|16|3|beach
+pukehina-beach-near-tauranga|16|3|beach
 pukekura-falls-near-new-plymouth|0|0|
 pukkisaaret-near-pieksamaki|64|3|island
+pulau-ketam-near-kuala-lumpur|64|3|island
 pulheimer-see-near-bergheim|32|3|lake
 pulicchio-di-gravina-near-molfetta|2|3|cave
 pulletop-nature-reserve-near-griffith|65536|3|nature reserve
@@ -24183,6 +27949,7 @@ pullinger-weiher-near-erding|32|3|lake
 pullinger-weiher-near-freising|32|3|lake
 pulo-di-altamura-near-molfetta|2|3|cave
 pulo-do-lobo-near-beja|1|3|waterfall
+pulsano-coastal-area-near-taranto|4096|3|coast
 pululagua-near-esmeraldas|1152|3|caldera
 pululagua-near-ibarra|1152|3|caldera
 pululagua-near-santo-domingo-ec|1152|3|caldera
@@ -24196,29 +27963,44 @@ puna-island-near-loja|64|3|island
 puna-island-near-machala|64|3|island
 puna-island-near-milagro|64|3|island
 puna-island-near-tumbes|64|3|island
+punaromia-beach-near-rotorua|16|3|beach
+punat-cove-near-crikvenica|4096|3|cove
+punat-cove-near-opatija|4096|3|cove
+punat-cove-near-pazin|4096|3|cove
+punat-cove-near-rijeka|4096|3|cove
 punchbowl-crater-near-honolulu|1024|3|mountain
 punderson-lake-near-akron|131072|3|Ohio state park
 punderson-state-park-near-cleveland|131072|3|Ohio state park
 punios-silas-near-prienai|81920|3|forest
 punt-van-reide-near-winschoten|4096|3|peninsula
 punta-angamos-near-antofagasta|4096|3|peninsula
+punta-carnero-near-algeciras|4096|3|cape
+punta-carnero-near-ceuta|4096|3|cape
 punta-carnero-near-manta|16|3|beach
+punta-chiappa-near-genoa|4096|3|cape
+punta-chiappa-near-la-spezia|4096|3|cape
+punta-chiappa-near-savona|4096|3|cape
 punta-cuevas-chubut-near-puerto-madryn|4096|3|cape
 punta-cuevas-chubut-near-rawson|4096|3|cape
 punta-curaumilla-near-vina-del-mar|4096|3|peninsula
 punta-de-calaburras-near-fuengirola|4096|3|peninsula
 punta-de-gando-near-telde|4096|3|peninsula
 punta-de-l-espero-near-mao|4096|3|cape
+punta-de-tarifa-near-algeciras|4096|3|cape
 punta-de-tarifa-near-ceuta|4096|3|cape
 punta-de-torremolinos-near-benalmadena|4096|3|peninsula
 punta-del-miracle-near-tarragona|4096|3|cape
+punta-del-moral-near-huelva|16|3|beach
 punta-dungeness-near-rio-gallegos|4096|3|cape
 punta-entinas-sabinar-near-roquetas-de-mar|66048|3|Ramsar site
 punta-gutzart-near-cuneo|1024|3|mountain
 punta-la-marmora-near-nuoro|1024|3|mountain
 punta-los-frailes-near-manta|16|3|beach
 punta-los-frailes-near-portoviejo|16|3|beach
+punta-maroma-near-cancun|4096|3|cape
 punta-mita-near-puerto-vallarta|4096|3|peninsula
+punta-murena-near-imperia|4096|3|cape
+punta-murena-near-sanremo|4096|3|cape
 punta-norte-near-puerto-madryn|4096|3|peninsula
 punta-norte-near-rawson|4096|3|peninsula
 punta-norte-near-viedma|4096|3|peninsula
@@ -24227,16 +28009,26 @@ punta-parinas-near-sullana|4096|3|cape
 punta-parinas-near-tumbes|4096|3|cape
 punta-patache-near-iquique|4096|3|peninsula
 punta-patino-near-unguia|65536|3|nature reserve
+punta-pezzo-near-messina|4096|3|cape
+punta-pezzo-near-reggio-calabria|4096|3|cape
 punta-prima-near-mao|16|1|
+punta-rata-near-ploce|16|3|beach
 punta-s-aliga-near-carbonia|65536|3|Natura 2000 site
+punta-sam-near-cancun|4096|3|cape
 punta-serpeddi-near-cagliari|1024|3|mountain
+punta-stilo-near-vibo-valentia|4096|3|cape
 punta-yeguas-beach-near-florida|16|3|beach
+punta-yeguas-beach-near-montevideo|16|3|beach
+puntarenas-near-puntarenas|16|3|beach
 pupplinger-au-near-starnberg|0|0|
 pura-nature-reserve-near-ashkelon|65536|3|nature reserve
 pura-nature-reserve-near-beersheba|65536|3|nature reserve
 purace-national-natural-park-near-florencia|32768|3|national park
 purace-national-natural-park-near-neiva|32768|3|national park
 purace-national-natural-park-near-popayan|32768|3|national park
+purekkari-cape-near-maardu|4096|3|cape
+purekkari-cape-near-rakvere|4096|3|cape
+purekkari-cape-near-tallinn|4096|3|cape
 purgatory-chasm-state-reservation-near-worcester|131072|3|state park
 purlingbrook-falls-near-beaudesert|1|3|waterfall
 purlingbrook-falls-near-murwillumbah|1|3|waterfall
@@ -24274,6 +28066,7 @@ pusztafogacs-near-szolnok|65536|3|Natura 2000 site
 putberg-near-heerlen|17408|3|hill
 putberg-near-kerkrade|17408|3|hill
 puthenthope-beach-near-thiruvananthapuram|16|3|beach
+putrajaya-lake-near-kuala-lumpur|32|3|lake
 putschanerlucke-near-baden|2|3|cave
 putyvsk-zakaznyk-near-shostka|65536|3|protected area
 puurijarvi-isosuo-national-park-near-sastamala|32768|3|national park
@@ -24299,6 +28092,7 @@ puy-griou-near-aurillac|263296|3|extinct volcano
 puy-violent-near-aurillac|1024|3|mountain
 puyehue-cordon-caulle-near-osorno|1152|3|volcano
 puyehue-lake-near-osorno|32|3|lake
+puzhal-lake-near-chennai|32|3|reservoir
 pyha-hakki-national-park-near-aanekoski|32768|3|national park
 pyha-luosto-national-park-near-rovaniemi|32768|3|national park
 pyhajarvi-near-akaa|32|3|lake
@@ -24359,6 +28153,7 @@ qianling-mountain-near-guiyang|1024|3|mountain
 qianling-mountain-near-zunyi|1024|3|mountain
 qilian-mountains-near-zhangye|1024|3|mountain range
 qinling-near-xi-an|1024|3|mountain range
+qionglai-mountains-near-chengdu|1024|3|mountain range
 qipanshan-international-scenery-and-tourism-development-zone-near-anshan|1024|3|mountain
 qipanshan-international-scenery-and-tourism-development-zone-near-changchun|1024|3|mountain
 qipanshan-international-scenery-and-tourism-development-zone-near-dandong|1024|3|mountain
@@ -24397,6 +28192,7 @@ que-hill-near-tai-an|1024|3|hill
 que-hill-near-weifang|1024|3|hill
 que-hill-near-xingtai|1024|3|hill
 que-hill-near-zibo|1024|3|hill
+quebrada-del-condorito-national-park-near-cordoba|32768|2|
 quebrada-del-condorito-national-park-near-rio-cuarto|32768|2|
 quebrada-del-toro-near-salta|2052|3|canyon
 quebrada-del-toro-near-san-salvador-de-jujuy|2052|3|canyon
@@ -24408,14 +28204,20 @@ queen-s-eyot-near-maidenhead|320|3|river island
 queen-s-park-bolton-near-bolton|131072|3|urban park
 queen-s-park-brighton-near-brighton-and-hove|131072|3|park
 queens-park-ipswich-queensland-near-ipswich|0|0|
+queensland-beach-near-dartmouth|16|3|beach
+queensland-beach-near-halifax|16|3|beach
 queenstown-hill-near-queenstown|1024|3|mountain
 quejigares-y-encinares-de-sierra-del-madero-near-soria|65536|3|Special Area of Conservation
 quell-und-niedermoore-der-arlauniederung-near-husum|65536|3|Special Area of Conservation
 quenzsee-near-brandenburg-an-der-havel|32|3|lake
+quiao-beach-near-matosinhos|16|3|beach
+quiao-beach-near-pacos-de-ferreira|16|3|beach
 quiao-beach-near-povoa-de-varzim|16|3|beach
 quiao-beach-near-santo-tirso|16|3|beach
+quiao-beach-near-viana-do-castelo|16|3|beach
 quiao-beach-near-vila-do-conde|16|3|beach
 quiao-beach-near-vila-nova-de-famalicao|16|3|beach
+quiao-beach-near-vila-nova-de-gaia|16|3|beach
 quiberon-peninsula-near-vannes|0|0|
 quidi-vidi-lake-near-st-johns|32|3|lake
 quiet-waters-park-near-pompano-beach|131072|3|county park
@@ -24435,8 +28237,10 @@ quli-dashi-near-ardabil|1024|3|mountain
 qummah-near-jizan|64|3|island
 qummah-near-sabya|64|3|island
 qunuqp-ukru-near-callao|1024|3|mountain
+qurayn-abu-al-bawl-near-doha|1024|3|mountain
 qurm-nature-reserve-near-bawshar|65536|3|nature reserve
 qurm-nature-reserve-near-ibri|65536|3|nature reserve
+qurm-nature-reserve-near-muscat|65536|3|nature reserve
 qurm-nature-reserve-near-nizwa|65536|3|nature reserve
 qurm-nature-reserve-near-seeb|65536|3|nature reserve
 qurm-nature-reserve-near-sur|65536|3|nature reserve
@@ -24488,6 +28292,7 @@ raghuji-talav-near-nagpur|32|3|reservoir
 ragininku-sala-near-silute|64|3|island
 rago-near-vastervik|65536|3|nature reserve
 rahatgarh-waterfall-near-bhopal|1|3|waterfall
+rahmaniyah-island-near-alexandria|320|3|river island
 raigardas-valley-near-druskininkai|2048|3|valley
 rainbow-falls-near-hilo|1|3|waterfall
 rainbow-monument-park-near-oyster-bay|131072|3|park
@@ -24520,12 +28325,24 @@ ramat-gan-national-park-near-petah-tikva|32768|3|national park
 ramat-gan-national-park-near-ramat-gan|32768|3|national park
 ramat-gan-national-park-near-rishon-lezion|32768|3|national park
 rambynas-regional-park-near-jurbarkas|131072|3|regional park
+rame-head-near-plymouth|4096|3|cape
+rame-head-near-torquay|4096|3|cape
 ramena-ohre-near-sokolov|65536|3|Special Area of Conservation
+ramirez-beach-near-montevideo|16|3|beach
 rammelsberg-near-goslar|66560|3|mountain
 ramnabagan-wildlife-sanctuary-near-kolkata|65536|3|wildlife refuge
 rampart-range-near-castle-rock|1024|3|mountain range
 ramsdiep-near-kampen|32|3|lake
 ramsey-lake-near-sudbury|32|3|lake
+ramsinniemi-near-espoo|4096|3|cape
+ramsinniemi-near-helsinki|4096|3|cape
+ramsinniemi-near-jarvenpaa|4096|3|cape
+ramsinniemi-near-kauniainen|4096|3|cape
+ramsinniemi-near-kerava|4096|3|cape
+ramsinniemi-near-kirkkonummi|4096|3|cape
+ramsinniemi-near-klaukkala|4096|3|cape
+ramsinniemi-near-tuusula|4096|3|cape
+ramsinniemi-near-vantaa|4096|3|cape
 rana-near-louny|1024|3|mountain
 rance-estuary-near-saint-malo|256|3|gold river
 rancho-conejo-playfields-near-thousand-oaks|131072|3|park
@@ -24538,8 +28355,15 @@ ranco-lake-near-osorno|32|3|lake
 ranco-lake-near-valdivia|32|3|lake
 rancocas-state-park-near-camden|131072|2|
 rancogne-cave-near-perigueux|65538|3|cave
+randers-fjord-near-aarhus|69632|3|fjord
+randers-fjord-near-grenaa|69632|3|fjord
+randers-fjord-near-hadsund|69632|3|fjord
 randers-fjord-near-randers|69632|3|fjord
+randers-fjord-near-skanderborg|69632|3|fjord
+randers-fjord-near-viborg|69632|3|fjord
 rands-fjord-near-fredericia|32|3|lake
+ranfjord-near-mo-i-rana|4096|3|fjord
+ranfjord-near-mosjoen|4096|3|fjord
 rangitoto-island-near-auckland|1216|3|island
 ranna-ryd-near-skovde|65536|3|nature reserve
 ranrapalca-near-huaraz|1024|3|mountain
@@ -24567,6 +28391,7 @@ rarau-massif-near-suceava|1024|3|mountain
 rarau-mountains-near-gura-humorului|1024|3|mountain
 rarau-mountains-near-radauti|1024|3|mountain
 rarau-mountains-near-vicovu-de-sus|1024|3|mountain
+ras-el-brayj-near-beirut|1024|3|mountain
 ras-muhammad-national-park-near-duba|32768|3|national park
 ras-nasrani-near-duba|0|0|
 raschelberg-near-freital|1024|3|mountain
@@ -24574,6 +28399,10 @@ rasen-near-eidsvoll-municipality|32|3|lake
 raskolaty-kamien-near-baranavichy|65536|3|natural monument
 raspaillebos-near-ninove|16384|3|forest
 raspberry-island-near-saint-paul|320|3|river island
+rastila-beach-near-jarvenpaa|16|3|beach
+rastila-beach-near-kerava|16|3|beach
+rastila-beach-near-tuusula|16|3|beach
+rastila-beach-near-vantaa|16|3|beach
 rat-island-near-geraldton|64|3|island
 ratan-mahal-wildlife-sanctuary-near-indore|65536|3|wildlife refuge
 ratan-mahal-wildlife-sanctuary-near-vadodara|65536|3|wildlife refuge
@@ -24590,6 +28419,7 @@ ratnieku-lake-near-sigulda|32|3|lake
 ratsinska-dacha-forestry-preserve-near-pervomaisk|81920|3|forest reserve
 ratsinska-dacha-forestry-preserve-near-pivdennoukrainsk|81920|3|forest reserve
 ratsinska-dacha-forestry-preserve-near-voznesensk|81920|3|forest reserve
+rattanakosin-island-near-bangkok|64|3|island
 rattlesnake-canyon-near-grand-junction|2052|3|canyon
 rattlesnake-lake-near-brooks|32|3|lake
 rattlesnake-mountains-near-missoula|1024|3|mountain range
@@ -24597,6 +28427,7 @@ rattlesnake-point-conservation-area-near-milton|65536|3|protected area
 rattlesnake-point-conservation-area-near-oakville|65536|3|protected area
 rattlesnake-point-near-guelph|4096|3|peninsula
 rattmannsdorfer-see-near-merseburg|32|3|lake
+rattray-head-near-aberdeen|4096|3|headland
 rattray-marsh-conservation-area-near-mississauga|65536|3|protected area
 rattray-marsh-conservation-area-near-oakville|65536|3|protected area
 ratzeburger-see-near-lubeck|32|3|glacial lake
@@ -24620,6 +28451,7 @@ raul-timis-intre-rusca-si-prisaca-near-resita|65536|3|Natura 2000 site
 raul-vedea-near-slatina|65536|3|Natura 2000 site
 raumanga-waterfall-near-whangarei|1|3|waterfall
 raunas-staburags-near-smiltene|65536|3|Natura 2000 site
+raunefjorden-near-bergen|4096|3|fjord
 raura-mountain-range-near-huacho|1024|3|mountain range
 raut-river-near-balti|256|3|river
 rautas-fjallurskog-near-kiruna|65536|3|nature reserve
@@ -24666,6 +28498,9 @@ recreatiegebied-de-heide-near-heerenveen|131104|3|lake
 rector-reservoir-near-fairfield|32|3|reservoir
 rector-reservoir-near-napa|32|3|reservoir
 reculee-de-poligny-near-dole|2048|3|steephead valley
+red-beach-near-heraklion|16|3|beach
+red-beach-near-rethymno|16|3|beach
+red-bluff-beach-near-wonthaggi|16|3|beach
 red-canyon-near-eilat|2052|3|canyon
 red-gate-woods-near-evanston|16384|3|forest
 red-gate-woods-near-gary|16384|3|forest
@@ -24707,6 +28542,7 @@ reed-bingham-state-park-near-valdosta|131072|3|state park
 reed-lake-near-moose-jaw|32|3|lake
 reed-lake-near-swift-current|32|3|lake
 reeds-lake-near-grand-rapids|32|3|lake
+reef-island-bahrain-near-manama|64|3|island
 reesor-lake-near-medicine-hat|32|3|lake
 reeuwijkse-plassen-near-gouda|196640|3|lake
 reeuwijkse-plassen-near-woerden|196640|3|lake
@@ -24734,6 +28570,7 @@ reichenau-island-near-kreuzlingen|64|3|island
 reichenau-island-near-schaffhausen|64|3|island
 reichenau-island-near-sigmaringen|64|3|island
 reichenau-island-near-tuttlingen|64|3|island
+reichenau-island-near-villingen-schwenningen|64|3|island
 reichenbach-falls-near-sarnen|1|3|waterfall
 reichenbach-falls-near-stans|1|3|waterfall
 reihersee-near-salzgitter|32|3|lake
@@ -24938,6 +28775,7 @@ reserve-naturelle-regionale-des-marais-de-cambrin-annequin-cuinchy-et-festubert-
 reserve-naturelle-regionale-des-marais-de-la-taute-near-saint-lo|65536|3|regional nature reserve
 reserve-naturelle-regionale-des-mardelles-de-premery-near-nevers|65536|3|regional nature reserve
 reserve-naturelle-regionale-des-prairies-du-val-de-sambre-near-maubeuge|65536|3|regional nature reserve
+reserve-naturelle-regionale-des-pres-du-moulin-madame-near-armentieres|65536|3|regional nature reserve
 reserve-naturelle-regionale-des-pres-du-moulin-madame-near-lille|65536|3|regional nature reserve
 reserve-naturelle-regionale-des-pres-du-moulin-madame-near-villeneuve-d-ascq|65536|3|regional nature reserve
 reserve-naturelle-regionale-des-riez-de-noeux-les-auxi-near-abbeville|65536|3|regional nature reserve
@@ -25047,6 +28885,7 @@ retezat-national-park-near-petrila|98304|3|national park
 retezat-national-park-near-petrosani|98304|3|national park
 retezat-national-park-near-targu-jiu|98304|3|national park
 rethymno-4-myssiria-near-rethymno|131088|3|beach
+retiro-island-near-brasilia|64|3|island
 retratten-near-kumla|65536|3|nature reserve
 rettbergsaue-near-mainz|320|3|river island
 revajovska-pustatina-near-komarno|65536|3|nature reserve
@@ -25058,6 +28897,14 @@ revera-near-rovinj|64|3|island
 reverchon-park-near-carrollton|131072|3|park
 reverchon-park-near-lewisville|131072|3|park
 reverchon-park-near-richardson|131072|3|park
+revere-beach-near-boston|131088|3|beach
+revere-beach-near-brockton|131088|3|beach
+revere-beach-near-cambridge-us|131088|3|beach
+revere-beach-near-lynn|131088|3|beach
+revere-beach-near-plymouth-us|131088|3|beach
+revere-beach-near-quincy-us|131088|3|beach
+revere-beach-near-salem-us|131088|3|beach
+revere-beach-near-taunton-us|131088|3|beach
 reversing-falls-near-saint-john|4097|3|coastal waterfall
 revythousa-near-megara|64|3|island
 rexroth-park-near-sarreguemines|131072|3|park
@@ -25092,6 +28939,8 @@ rhine-falls-near-zurich|1|3|waterfall
 rhine-gorge-upper-middle-rhine-valley-near-offenbach-am-main|0|0|
 rhine-taunus-nature-park-near-wiesbaden|196608|3|Naturpark
 rhineland-nature-park-near-cologne|196608|3|Naturpark
+rhoda-island-near-alexandria|320|3|river island
+rhoda-island-near-cairo|320|3|river island
 rhodope-mountains-near-alexandroupoli|1024|3|mountain range
 rhodope-mountains-near-komotini|1024|3|mountain range
 rhodope-mountains-near-plovdiv|1024|3|mountain range
@@ -25109,6 +28958,10 @@ rhondda-near-neath|2048|3|valley
 rhondda-near-port-talbot|2048|3|valley
 rhondda-near-swansea|2048|3|valley
 rhondda-near-weston-super-mare|2048|3|valley
+rhoose-point-near-bristol|4096|3|headland
+rhoose-point-near-cardiff|4096|3|headland
+rhoose-point-near-newport|4096|3|headland
+rhoose-point-near-weston-super-mare|4096|3|headland
 rhs-garden-hyde-hall-near-basildon|0|0|
 rhuys-peninsula-near-vannes|4096|3|peninsula
 ria-de-aveiro-near-matosinhos|65536|3|Natura 2000 site
@@ -25116,9 +28969,14 @@ ria-de-aveiro-near-vila-nova-de-gaia|65536|3|Natura 2000 site
 ria-formosa-castro-marim-near-tavira|65536|3|Natura 2000 site
 ria-formosa-natural-park-near-faro|197120|3|Ramsar site
 ria-formosa-nature-park-near-tavira|197120|3|Ramsar site
+ria-formosa-near-faro|4128|3|lagoon
+ria-formosa-near-olhao|4128|3|lagoon
+ria-formosa-near-tavira|4128|3|lagoon
 ria-lagartos-biosphere-reserve-near-merida|65536|3|biosphere reserve
 ria-lagartos-near-merida|65536|3|biosphere reserve
 ria-lagartos-near-san-francisco-de-campeche|65536|3|biosphere reserve
+rias-baixas-near-pontevedra|4096|3|coast
+rias-baixas-near-vigo|4096|3|coast
 rib-mountain-near-wausau|1024|3|mountain
 rib-mountain-state-park-near-wausau|131072|2|
 ribarsko-ostrvo-natural-monument-near-vukovar|65536|3|natural monument
@@ -25133,6 +28991,7 @@ rice-lake-state-park-near-mankato|131072|2|
 rice-lake-state-park-near-rochester-mn|131072|2|
 rice-park-near-saint-paul|131072|3|urban park
 richard-b-russell-state-park-near-athens-us|131072|3|state park
+richardson-beach-near-hilo|16|3|beach
 richmond-falls-near-darlington|1|3|waterfall
 richmond-falls-near-hartlepool|1|3|waterfall
 richmond-falls-near-stockton-on-tees|1|3|waterfall
@@ -25162,6 +29021,8 @@ richmond-park-near-welwyn-garden-city|131072|3|park
 richmond-park-near-windsor|131072|3|park
 richmond-park-near-woking|131072|3|park
 richnava-near-banska-stiavnica|32|3|reservoir
+richtis-gorge-near-agios-nikolaos|17|3|waterfall
+richtis-gorge-near-ierapetra|17|3|waterfall
 richtis-gorge-near-sitia|17|3|waterfall
 ricketts-glen-state-park-near-harrisburg|131072|3|Pennsylvania state park
 ricketts-glen-state-park-near-wilkes-barre|131072|3|Pennsylvania state park
@@ -25185,10 +29046,13 @@ riessersee-near-garmisch-partenkirchen|32|3|lake
 rietzer-griekogel-near-telfs|1024|3|mountain
 riezupe-nature-park-near-kuldiga|196608|3|Natura 2000 site
 rif-near-dongeradeel|64|3|island
+rif-near-rabat|1024|3|mountain range
 riga-canal-parks-near-marupe|131072|3|park
 riga-reservoir-near-ikskile|32|3|reservoir
 riga-reservoir-near-ogre|32|3|reservoir
 riga-reservoir-near-salaspils|32|3|reservoir
+rigas-jurmala-near-marupe|0|0|
+rigas-jurmala-near-olaine|0|0|
 rigi-near-altdorf|1024|3|mountain
 rigi-near-horgen|1024|3|mountain
 rigi-near-lucerne|1024|3|mountain
@@ -25224,11 +29088,16 @@ rimrose-valley-near-birkenhead|133120|3|valley
 rimrose-valley-near-bootle|133120|3|valley
 rimrose-valley-near-liverpool|133120|3|valley
 rimrose-valley-near-widnes|133120|3|valley
+rincon-beach-county-park-near-santa-barbara|131072|3|park
 rincon-beach-county-park-near-ventura|131072|3|park
 rineia-near-ermoupolis|64|3|island
 ring-mountain-near-san-rafael|1024|3|mountain
 ringane-near-larvik|65536|3|nature reserve
+ringaringa-beach-near-invercargill|16|3|beach
+ringdal-fjord-near-halden|4096|3|fjord
+ringdal-fjord-near-sarpsborg|4096|3|fjord
 ringgracht-near-lokeren|256|3|river
+ringkobing-fjord-near-holstebro|4096|3|fjord
 ringkogel-near-oberwart|1024|3|mountain
 ringsjoen-near-gjovik-municipality|32|3|lake
 ringvassoya-near-tromso|64|3|island
@@ -25240,25 +29109,37 @@ rinkenkopf-near-freudenstadt|1024|3|mountain
 rinnebacksravinen-near-lund|65536|3|nature reserve
 rio-abiseo-national-park-near-cajamarca|32768|2|
 rio-abiseo-national-park-near-tarapoto|32768|2|
+rio-alto-beach-near-matosinhos|16|3|beach
+rio-alto-beach-near-pacos-de-ferreira|16|3|beach
+rio-alto-beach-near-porto|16|3|beach
+rio-alto-beach-near-viana-do-castelo|16|3|beach
+rio-alto-beach-near-vila-nova-de-gaia|16|3|beach
 rio-clarillo-national-park-near-puente-alto|32768|3|national park
 rio-do-peixe-state-park-near-maringa|131072|3|state park
 rio-do-peixe-state-park-near-presidente-prudente|131072|3|state park
 rio-doce-state-park-near-coronel-fabriciano|131072|3|state park
 rio-doce-state-park-near-governador-valadares|131072|3|state park
 rio-dos-frades-wildlife-refuge-near-porto-seguro|65536|3|wildlife refuge of Brazil
+rio-grande-de-santiago-near-guadalajara|256|3|river
 rio-grande-nature-center-state-park-near-albuquerque|131072|2|
 rio-grande-nature-center-state-park-near-rio-rancho|131072|2|
+rio-grande-near-medellin|256|3|watercourse
 rio-grande-valley-near-edinburg-us|2048|3|valley
 rio-grande-valley-near-heroica-matamoros|2048|3|valley
 rio-grande-valley-near-nuevo-laredo|2048|3|valley
 rio-grande-valley-near-reynosa|2048|3|valley
+rio-irai-near-curitiba|256|3|river
 rio-manzanas-near-mirandela|256|3|river
+rio-matasnillo-near-panama-city|256|3|river
+rio-negro-near-montevideo|256|3|river
 rio-preto-state-park-near-montes-claros|131072|3|state park
 rio-tamega-near-chaves|65536|3|Special Area of Conservation
 rio-tinto-river-near-huelva|256|3|river
+rio-verde-near-guadalajara|256|3|river
 rip-mountain-near-litomerice|1152|3|extinct volcano
 rip-mountain-near-louny|1152|3|extinct volcano
 rip-mountain-near-melnik|1152|3|extinct volcano
+ripon-falls-near-kampala|1|3|waterfall
 ripple-rock-near-campbell-river|1024|3|mountain
 ririe-reservoir-near-idaho-falls|32|3|reservoir
 ririe-reservoir-near-rexburg|32|3|reservoir
@@ -25341,6 +29222,7 @@ river-highlands-state-park-near-middletown|131072|2|
 river-mountains-near-paradise|1024|3|mountain range
 river-road-provincial-park-near-steinbach|131072|3|provincial park of Manitoba
 river-road-provincial-park-near-winnipeg|131072|3|provincial park of Manitoba
+river-somme-near-armentieres|256|3|coastal river
 riverbank-state-park-near-hackensack|131072|3|New York state park
 riverbank-state-park-near-hoboken|131072|3|New York state park
 riverbank-state-park-near-paterson|131072|3|New York state park
@@ -25352,6 +29234,16 @@ riverside-park-near-amherst|131072|3|park
 riverside-state-park-near-spokane|131072|2|
 riverton-aparima-near-invercargill|0|0|
 riverview-farm-park-near-hampton|131072|3|park
+riviera-del-brenta-near-padua|4096|3|coast
+riviera-del-brenta-near-treviso|4096|3|coast
+riviera-del-brenta-near-venice|4096|3|coast
+riviera-delle-palme-near-ascoli-piceno|16|3|beach
+riviera-delle-palme-near-fermo|16|3|beach
+riviera-delle-palme-near-macerata|16|3|beach
+riviera-delle-palme-near-pescara|16|3|beach
+riviera-delle-palme-near-teramo|16|3|beach
+riviera-di-levante-near-genoa|4096|3|coast
+riviera-di-levante-near-la-spezia|4096|3|coast
 riviere-gentilly-regional-park-near-becancour|131072|3|regional park
 riviere-gentilly-regional-park-near-victoriaville|131072|3|regional park
 rivington-near-manchester|0|0|
@@ -25367,11 +29259,14 @@ rns-near-silkeborg|32|3|lake
 ro-plantage-near-ronne|16384|3|forest
 roaches-run-waterfowl-sanctuary-near-alexandria-va|196608|3|nature reserve
 roaches-run-waterfowl-sanctuary-near-washington-dc|196608|3|nature reserve
+roanhead-beach-near-barrow-in-furness|16|3|beach
+roanhead-beach-near-kendal|16|3|beach
+roanhead-beach-near-lancaster|16|3|beach
 roaring-river-state-park-near-bentonville|131072|3|Missouri state park
 robbers-cave-state-park-near-fort-smith|131072|2|
 robert-jeanrond-burgerpark-near-sarreguemines|131072|3|park
 robert-louis-stevenson-state-park-near-santa-rosa|131072|3|California state park
-robert-moses-state-park-near-babylon|0|0|
+robert-moses-state-park-near-babylon|131072|3|New York state park
 robert-moses-state-park-thousand-islands-near-cornwall|131072|3|New York state park
 roberto-clemente-state-park-near-hackensack|131072|3|New York state park
 roberts-island-near-modesto|64|3|island
@@ -25408,6 +29303,19 @@ rock-of-the-three-kingdoms-near-braganca|1024|3|mountain
 rock-of-the-three-kingdoms-near-chaves|1024|3|mountain
 rock-of-vergisson-near-macon-fr|1024|3|mountain
 rock-point-provincial-park-near-st-catharines|131072|3|provincial park of Canada
+rockaway-beach-near-babylon|16|3|beach
+rockaway-beach-near-edison|16|3|beach
+rockaway-beach-near-elizabeth|16|3|beach
+rockaway-beach-near-hackensack|16|3|beach
+rockaway-beach-near-hempstead|16|3|beach
+rockaway-beach-near-hoboken|16|3|beach
+rockaway-beach-near-new-york|16|3|beach
+rockaway-beach-near-newark|16|3|beach
+rockaway-beach-near-north-hempstead|16|3|beach
+rockaway-beach-near-oyster-bay|16|3|beach
+rockaway-beach-near-paterson|16|3|beach
+rockaway-beach-near-perth-amboy|16|3|beach
+rockaway-beach-near-yonkers|16|3|beach
 rocks-riverside-park-near-ipswich|131072|3|park
 rocks-state-park-near-lancaster-us|131072|2|
 rocks-state-park-near-york-us|131072|2|
@@ -25429,8 +29337,12 @@ rocky-mountain-park-near-westminster|131072|3|park
 rocky-mountain-trench-near-prince-george|2048|3|valley
 rocky-point-park-near-coquitlam|131072|3|urban park
 rocky-point-state-park-near-providence|131072|2|
+rodby-fjord-near-nakskov|4096|3|fjord
 rodebos-near-gembloux|81920|3|forest
 rodebos-near-wavre|81920|3|forest
+rodeo-beach-near-concord|16|3|beach
+rodeo-beach-near-fremont|16|3|beach
+rodeo-beach-near-vallejo|16|3|beach
 rodkallen-near-lulea|64|3|island
 rodkallen-near-pitea|64|3|island
 rodna-mountains-near-baia-mare|1024|3|mountain range
@@ -25455,6 +29367,7 @@ roero-near-asti|0|0|
 rogalin-landscape-park-near-poznan|196608|3|landscape park in Poland
 rogers-reservoir-conservation-area-near-newmarket|65536|3|protected area
 rogerstown-estuary-near-swords|70144|3|estuary
+roggero-reservoir-near-buenos-aires|32|3|reservoir
 rogla-near-celje|1024|3|mountain
 rogla-near-maribor|1024|3|mountain
 rogla-near-slovenj-gradec|1024|3|mountain
@@ -25489,15 +29402,21 @@ roman-nose-state-park-near-enid|131072|2|
 roman-nose-state-park-near-oklahoma-city|131072|2|
 roman-nose-state-park-near-stillwater|131072|2|
 romanka-near-zywiec|1024|3|mountain
+rombaken-near-harstad|4096|3|fjord
+rombaken-near-narvik|4096|3|fjord
 rombakstotta-near-narvik|1024|3|summit
 rombalds-moor-near-harrogate|65536|3|moorland
 romen-river-near-sumy|256|3|river
+romeral-near-medellin|1024|3|mountain
 romerike-landskapsvernomrade-near-jessheim|65536|1|
 romerike-landskapsvernomrade-near-ullensaker-municipality|65536|1|
 romincka-forest-near-vilkaviskis|16384|3|forest
 rommehed-near-borlange|65536|3|nature reserve
 romney-island-near-slough|320|3|river island
 romney-island-near-windsor|320|3|river island
+rompeculos-near-huelva|16|1|
+romsdalsfjord-near-kristiansund-municipality|4096|3|fjord
+romsdalsfjord-near-molde-municipality|4096|3|fjord
 romso-near-nyborg|64|3|island
 rondeau-provincial-park-near-chatham-kent|131072|3|provincial park of Canada
 rondeau-provincial-park-near-london-ontario|131072|3|provincial park of Canada
@@ -25537,6 +29456,7 @@ rosario-and-san-bernardo-corals-national-natural-park-near-salgar|32768|3|nation
 rosario-and-san-bernardo-corals-national-natural-park-near-san-bernardo-del-viento|32768|3|national park
 rosario-and-san-bernardo-corals-national-natural-park-near-san-jacinto|32768|3|national park
 rosario-and-san-bernardo-corals-national-natural-park-near-sincelejo|32768|3|national park
+rosario-beach-near-bellingham|16|3|beach
 roscani-near-orhei|65536|3|nature reserve
 rose-garden-center-near-tyler|0|0|
 rose-isle-near-abingdon-on-thames|320|3|river island
@@ -25550,20 +29470,43 @@ rose-valley-near-plovdiv|2048|3|valley
 rose-valley-near-sevlievo|2048|3|valley
 rose-valley-near-stara-zagora|2048|3|valley
 roseberry-topping-near-middlesbrough|1024|3|hill
+rosedale-beach-near-moruya|16|3|beach
 roseland-peninsula-near-truro|4096|3|peninsula
+rosenfelder-beach-near-lubeck|16|2|
 rosenholm-skov-near-randers|16384|3|forest
 rosenkogel-near-deutschlandsberg|1024|3|mountain
 rosenlundsskogen-nature-reserve-near-nynashamn|65536|3|nature reserve
 rosenstein-near-aalen|1024|3|mountain
 rosenstein-near-heidenheim-an-der-brenz|1024|3|mountain
+rosfjorden-near-kristiansand|4096|3|fjord
 rosh-ha-ayin-forest-near-bnei-brak|16384|3|forest
 rosh-ha-ayin-forest-near-petah-tikva|16384|3|forest
 rosh-ha-ayin-forest-near-ramat-gan|16384|3|forest
 rosicrucian-park-near-santa-clara|131072|3|park
 rosjon-near-taby|32|3|lake
 rosjoskogen-nature-reserve-near-taby|65536|3|nature reserve
+roskilde-fjord-near-copenhagen|4096|3|fjord
+roskilde-fjord-near-frederiksberg|4096|3|fjord
+roskilde-fjord-near-frederiksvaerk|4096|3|fjord
+roskilde-fjord-near-helsingor|4096|3|fjord
+roskilde-fjord-near-hillerod|4096|3|fjord
+roskilde-fjord-near-horsholm|4096|3|fjord
+roskilde-fjord-near-koge|4096|3|fjord
+roskilde-fjord-near-naestved|4096|3|fjord
 roskilde-fjord-near-roskilde|4096|3|fjord
 roskilde-near-copenhagen|0|0|
+roslagen-near-haninge-municipality|4096|3|coast
+roslagen-near-huddinge-municipality|4096|3|coast
+roslagen-near-lidingo|4096|3|coast
+roslagen-near-marsta|4096|3|coast
+roslagen-near-nacka-municipality|4096|3|coast
+roslagen-near-norrtalje|4096|3|coast
+roslagen-near-sodertalje|4096|3|coast
+roslagen-near-solna-municipality|4096|3|coast
+roslagen-near-stockholm|4096|3|coast
+roslagen-near-taby|4096|3|coast
+roslagen-near-tumba|4096|3|coast
+roslagen-near-upplands-vasby|4096|3|coast
 rospuda-augustowska-near-augustow|32|3|lake
 rospuda-near-augustow|65792|3|river
 rospuda-near-elk|65792|3|river
@@ -25571,6 +29514,8 @@ ross-creek-reservoir-near-dunedin|32|3|reservoir
 ross-island-near-killarney|64|3|island
 ross-island-near-vancouver-us|320|3|river island
 ross-valley-near-san-rafael|2048|3|valley
+rossbeigh-near-killarney|16|3|beach
+rossbeigh-near-tralee|16|3|beach
 rossberg-near-landau-in-der-pfalz|1024|3|mountain
 rossetter-park-near-palm-bay|131072|3|park
 rosskopf-near-emmendingen|1024|3|mountain
@@ -25615,6 +29560,7 @@ roxen-near-linkoping|32|3|lake
 roxen-near-motala|32|3|lake
 roxy-ann-peak-near-grants-pass|1152|3|volcanic landform
 roxy-ann-peak-near-medford|1152|3|volcanic landform
+roya-near-imperia|256|3|river
 royal-beskids-national-nature-park-near-sambir|32768|3|national park
 royal-cliff-near-dovzhansk|0|0|
 royal-national-park-sydney|0|0|
@@ -25638,6 +29584,15 @@ rspb-salthome-near-darlington|65536|3|nature reserve
 rspb-salthome-near-hartlepool|65536|3|nature reserve
 rspb-salthome-near-scarborough|65536|3|nature reserve
 rspb-salthome-near-stockton-on-tees|65536|3|nature reserve
+rt-kabal-near-makarska|4096|3|cape
+rt-kabal-near-omis|4096|3|cape
+rt-kabal-near-sinj|4096|3|cape
+rt-kabal-near-solin|4096|3|cape
+rt-kabal-near-trogir|4096|3|cape
+rt-kamenjak-near-pazin|4096|3|cape
+rt-kamenjak-near-porec|4096|3|cape
+rt-kamenjak-near-pula|4096|3|cape
+rt-kamenjak-near-rovinj|4096|3|cape
 rtanj-near-jagodina|1024|3|mountain range
 rtanj-near-krusevac|1024|3|mountain range
 rtanj-near-nis|1024|3|mountain range
@@ -25648,6 +29603,7 @@ rubin-near-zatec|1024|3|mountain
 rubskoe-near-ivanovo|65568|3|lake
 rubskoe-near-vladimir|65568|3|lake
 ruby-falls-near-chattanooga|3|3|subterranean waterfall
+rucica-beach-near-gospic|16|3|beach
 rudaiciu-tvenkinys-near-kretinga|32|3|reservoir
 rudaiciu-tvenkinys-near-palanga|32|3|reservoir
 rudawy-janowickie-near-jelenia-gora|1024|3|mountain range
@@ -25738,17 +29694,30 @@ russky-sever-national-park-near-vologda|65536|3|protected area of Russia
 rutajarvi-near-loimaa|32|3|lake
 ruth-bancroft-garden-near-concord|0|0|
 rutland-water-near-northampton|32|3|artificial lake
+ruvu-river-near-dar-es-salaam|256|3|river
 ruzina-reservoir-near-lucenec|32|3|reservoir
+ruzizi-river-near-kigali|256|3|transboundary river
+rya-nabbe-near-gothenburg|4096|3|cape
+rya-nabbe-near-kungalv|4096|3|cape
+rya-nabbe-near-kungsbacka|4096|3|cape
+rya-nabbe-near-lerum|4096|3|cape
+rya-nabbe-near-molndal|4096|3|cape
+rya-nabbe-near-molnlycke|4096|3|cape
+rya-nabbe-near-partille|4096|3|cape
 rybinsk-reservoir-near-vologda|32|3|reservoir
 rybinsk-reservoir-near-yaroslavl|32|3|reservoir
 rybnik-brezina-near-pelhrimov|65536|3|nature reserve in the Czech Republic
 rybnik-lake-near-wodzislaw-slaski|32|3|reservoir
 rychory-near-trutnov|1024|3|mountain range
+rye-town-park-bathing-complex-and-oakland-beach-near-bridgeport|16|3|beach
+rye-town-park-bathing-complex-and-oakland-beach-near-norwalk-us|16|3|beach
+rye-town-park-bathing-complex-and-oakland-beach-near-stamford|16|3|beach
 rye-town-park-bathing-complex-and-oakland-beach-near-white-plains|16|3|beach
 ryer-island-near-elk-grove|64|3|island
 ryer-island-near-fairfield|64|3|island
 ryer-island-near-vacaville|64|3|island
 ryer-island-near-woodland|64|3|island
+rynda-near-vladivostok|4096|3|cove
 rynskie-near-ketrzyn|32|3|lake
 ryssbergen-near-nykoping|65536|3|nature reserve
 rysy-near-kezmarok|1024|3|mountain
@@ -25763,10 +29732,15 @@ ryton-pools-country-park-near-rugby|131072|3|country park
 ryton-pools-country-park-near-stratford-upon-avon|131072|3|country park
 ryton-pools-country-park-near-warwick-uk|131072|3|country park
 ryumon-falls-near-utsunomiya|1|3|waterfall
+s-albufera-de-mallorca-natural-park-near-llucmajor|200704|3|estuarine lagoon
+s-albufera-de-mallorca-natural-park-near-manacor|200704|3|estuarine lagoon
 s-albufera-de-mallorca-near-palma|200736|3|estuarine lagoon
 s-albufera-des-grau-natural-park-near-mao|196608|3|protected area
+s-estany-d-en-mas-near-llucmajor|16|1|
 s-estany-d-en-mas-near-manacor|16|1|
+s-estany-d-en-mas-near-palma|16|1|
 sa-caleta-near-ibiza|16|3|beach
+saadiyat-island-near-abu-dhabi|64|3|island
 saadjarv-near-elva|32|3|lake
 saadjarv-near-jogeva|32|3|lake
 saadjarv-near-tartu|32|3|lake
@@ -25778,6 +29752,7 @@ saaledurchbruch-bei-rothenburg-near-eisleben|65536|3|Special Area of Conservatio
 saaletal-zwischen-hohenwarte-und-saalfeld-near-saalfeld|65536|3|Special Area of Conservation
 saalfeld-fairy-grottoes-near-weimar|0|0|
 saar-hunsruck-nature-park-near-saarbrucken|196608|3|Naturpark
+saaretirp-near-haapsalu|4096|3|peninsula
 saarijarvi-near-klaukkala|32|3|lake or pond
 saarijarvi-near-kouvola|32|3|lake or pond
 saarijarvi-near-nurmijarvi|32|3|lake or pond
@@ -25838,7 +29813,13 @@ saguenay-fjord-national-park-near-saguenay|32768|3|national park of Quebec
 saguenay-river-near-saguenay|256|3|river
 sahand-near-tabriz|1024|3|mountain range
 sahand-near-urmia|1024|3|mountain range
+sahara-beach-near-crikvenica|16|3|beach
+sahara-beach-near-gospic|16|3|beach
 saharna-landscape-reserve-near-ribnita|65536|3|landscape reserve
+saigon-river-near-ho-chi-minh-city|256|3|river
+saikazaki-near-akashi|4096|3|cape
+saikazaki-near-kobe|4096|3|cape
+saikazaki-near-sakai|4096|3|cape
 saikazaki-near-wakayama|4096|3|cape
 saimaa-near-imatra|32|3|lake
 saint-andrew-s-caves-near-calarasi|2|3|cave
@@ -25849,9 +29830,12 @@ saint-barnabe-island-near-rimouski|64|3|island
 saint-charles-reservoir-near-pueblo|32|3|reservoir
 saint-etienne-island-near-corbeil-essonnes|320|3|river island
 saint-etienne-island-near-melun|320|3|river island
+saint-george-bay-near-beirut|4096|3|bay
 saint-george-protected-area-near-pazardzhik|65536|2|
 saint-joe-river-near-coeur-dalene|256|3|river
 saint-john-river-near-fredericton|256|3|river
+saint-john-s-point-near-bangor|4096|3|cape
+saint-john-s-point-near-lisburn|4096|3|cape
 saint-laurent-near-beaune|320|3|river island
 saint-laurent-near-chalon-sur-saone|320|3|river island
 saint-leonard-cavern-near-terrebonne|2|3|show cave
@@ -25873,16 +29857,22 @@ sajno-near-augustow|32|3|lake
 sakar-mountain-near-dimitrovgrad|1024|3|mountain range
 sakar-mountain-near-edirne|1024|3|mountain range
 sakar-mountain-near-yambol|1024|3|mountain range
+sakarun-near-zadar|16|3|beach
 sakesar-near-faisalabad|1024|3|mountain
 sakesar-near-jhang|1024|3|mountain
 sakesar-near-multan|1024|3|mountain
 sakesar-near-sahiwal|1024|3|mountain
 sakesar-near-sargodha|1024|3|mountain
+sakhir-near-manama|8192|3|desert
 saksahan-river-near-kryvyi-rih|256|3|river
 sakske-near-yevpatoriia|32|3|lake
+sakskobing-fjord-near-nakskov|4096|3|fjord
+sakskobing-fjord-near-nykobing-falster|4096|3|fjord
+sakumono-lagoon-near-accra|4128|3|lagoon
 sakurayama-chosuichi-near-himeji|32|3|reservoir
 sakurayama-near-takasaki|1024|3|mountain
 saladinska-olsina-near-prachatice|65536|3|nature reserve in the Czech Republic
+salado-river-near-buenos-aires|256|3|river
 salair-ridge-near-barnaul|1024|3|mountain range
 salamis-island-near-agia-paraskevi|64|3|island
 salamis-island-near-corinth|64|3|island
@@ -25910,13 +29900,19 @@ salburua-near-vitoria-gasteiz|66048|3|wetland
 salcantay-near-abancay|1024|3|mountain
 salcey-forest-near-milton-keynes|16384|3|royal forest
 salcey-forest-near-northampton|16384|3|royal forest
+saleccia-beach-near-bastia|16|3|beach
 salento-near-brindisi|4096|3|peninsula
 salento-near-lecce|4096|3|peninsula
 saleve-near-annemasse|1024|3|mountain
+salgueira-beach-near-matosinhos|16|3|beach
+salgueira-beach-near-pacos-de-ferreira|16|3|beach
+salgueira-beach-near-porto|16|3|beach
 salgueira-beach-near-povoa-de-varzim|16|3|beach
 salgueira-beach-near-santo-tirso|16|3|beach
+salgueira-beach-near-viana-do-castelo|16|3|beach
 salgueira-beach-near-vila-do-conde|16|3|beach
 salgueira-beach-near-vila-nova-de-famalicao|16|3|beach
+salgueira-beach-near-vila-nova-de-gaia|16|3|beach
 salihorskaje-reservoir-near-asipovichy|32|3|reservoir
 salihorskaje-reservoir-near-salihorsk|32|3|reservoir
 salihorskaje-reservoir-near-slutsk|32|3|reservoir
@@ -25937,6 +29933,7 @@ saline-di-margherita-di-savoia-near-trani|65536|3|nature reserve
 saline-di-marsala-near-marsala|65536|3|Natura 2000 site
 saline-ettore-e-infersa-near-marsala|32|2|
 saline-genna-near-marsala|32|2|
+salinensee-near-villingen-schwenningen|32|3|lake
 salinskie-lake-near-lebork|32|3|lake
 salitrena-cave-near-valjevo|2|3|cave
 sallandse-heuvelrug-national-park-near-almelo|98304|3|national park
@@ -25955,12 +29952,22 @@ sallowsprings-near-hemel-hempstead|65536|3|nature reserve
 salmeron-near-caravaca-de-la-cruz|1024|3|mountain
 salobral-de-ocana-near-aranjuez|65536|3|protected area
 salonsaari-near-heinola|96|3|lake island
+saloum-river-near-dakar|256|3|river
 salse-di-nirano-natural-reserve-near-sassuolo|65536|3|regional nature reserve
 salse-di-nirano-near-sassuolo|65536|3|Special Area of Conservation
+salt-beach-near-amman|16|3|beach
 salt-lake-valley-near-salt-lake-city|2048|3|valley
+salt-pan-of-epanomi-near-evosmos|4128|3|lagoon
+salt-pan-of-epanomi-near-kalamaria|4128|3|lagoon
+salt-pan-of-epanomi-near-stavroupoli|4128|3|lagoon
+salt-pan-of-epanomi-near-thessaloniki|4128|3|lagoon
 salt-plains-national-wildlife-refuge-near-enid|65536|3|National Wildlife Refuge
 salt-plains-national-wildlife-refuge-near-hutchinson|65536|3|National Wildlife Refuge
+salt-ponds-beach-near-chesapeake|16|3|beach
 salt-ponds-beach-near-hampton|16|3|beach
+salt-ponds-beach-near-newport-news|16|3|beach
+salt-ponds-beach-near-norfolk|16|3|beach
+salt-ponds-beach-near-virginia-beach|16|3|beach
 salt-range-near-faisalabad|1024|3|mountain range
 salt-range-near-gujranwala|1024|3|mountain range
 salt-range-near-gujrat|1024|3|mountain range
@@ -25973,6 +29980,7 @@ salt-spring-island-near-victoria|64|3|island
 salt-spring-valley-reservoir-near-modesto|32|3|reservoir
 salt-springs-state-park-near-binghamton|131072|3|Pennsylvania state park
 saltburn-by-the-sea-near-middlesbrough|0|0|
+saltdal-fjord-near-bodo|4096|3|fjord
 saltfjellet-svartisen-national-park-near-mo-i-rana|32768|3|national park
 saltholm-near-copenhagen|64|3|island
 saltholm-near-eslov|64|3|island
@@ -25981,6 +29989,9 @@ saltholm-near-koge|64|3|island
 saltholm-near-landskrona|64|3|island
 saltholm-near-roskilde|64|3|island
 saltholm-near-trelleborg|64|3|island
+saltkalle-fjord-near-trollhattan|4096|3|fjord
+saltkalle-fjord-near-uddevalla|4096|3|fjord
+saltkalle-fjord-near-vanersborg|4096|3|fjord
 salto-de-bordones-near-florencia|1|3|waterfall
 salto-de-bordones-near-neiva|1|3|waterfall
 salto-de-bordones-near-popayan|1|3|waterfall
@@ -26007,6 +30018,7 @@ saltos-del-monday-near-foz-do-iguacu|1|3|waterfall
 saltoya-near-stjordalshalsen|64|3|island
 saltwater-state-park-near-federal-way|131072|2|
 saltwater-state-park-near-kent|131072|2|
+salty-brine-state-beach-near-providence|16|2|
 saluda-river-near-columbia|256|3|river
 salzach-near-braunau-am-inn|256|3|river
 salzburg-slate-alps-near-bischofshofen|1024|3|mountain range
@@ -26015,6 +30027,8 @@ salzgitter-hills-near-salzgitter|1024|3|mountain range
 salzgittersee-near-peine|32|3|reservoir
 salzgittersee-near-salzgitter|32|3|reservoir
 salzgittersee-near-wolfenbuttel|32|3|reservoir
+salzhaff-near-rostock|4128|3|estuarine lagoon
+salzhaff-near-wismar|4128|3|estuarine lagoon
 salziger-see-near-eisleben|32|3|lake
 salzwiesen-von-wisselsheim-near-friedberg|65536|3|Special Area of Conservation
 sam-houston-jones-state-park-near-lake-charles|131072|2|
@@ -26025,9 +30039,11 @@ samana-peninsula-near-san-pedro-de-macoris|4096|3|peninsula
 samara-embankment-near-samara|272|3|river beach
 samara-river-near-dnipro|256|3|river
 samara-river-near-samar|256|3|river
+samarador-near-palma|16|1|
 samaria-gorge-near-chania|2052|3|canyon
 samarskaya-luka-national-park-near-samara|65536|3|protected area of Russia
 samarskaya-luka-national-park-near-tolyatti|65536|3|protected area of Russia
+sambhar-salt-lake-near-jaipur|32|3|salt lake
 sambia-peninsula-near-kaliningrad|4096|3|peninsula
 sambre-near-charleroi|256|3|river
 samnite-apennine-near-campobasso|1024|3|mountain range
@@ -26109,6 +30125,10 @@ san-jose-near-san-rafael-ar|1152|3|volcano
 san-juan-reservoir-near-alcorcon|32|3|reservoir
 san-juan-reservoir-near-fuenlabrada|32|3|reservoir
 san-lazzaro-degli-armeni-near-rovigo|64|3|island
+san-leone-near-agrigento|16|3|beach
+san-lorenzo-beach-near-gijon|16|3|beach
+san-lorenzo-beach-near-oviedo|16|3|beach
+san-lorenzo-island-near-lima|64|3|island
 san-lucas-island-near-puntarenas|65600|3|island
 san-luis-national-wildlife-refuge-near-merced|65536|3|National Wildlife Refuge
 san-luis-national-wildlife-refuge-near-modesto|65536|3|National Wildlife Refuge
@@ -26119,6 +30139,11 @@ san-michele-near-padua|64|3|island
 san-michele-near-pordenone|64|3|island
 san-michele-near-venice|64|3|island
 san-miguel-national-park-near-melo|98304|3|national park
+san-onofre-state-beach-near-costa-mesa|16|3|California state beach
+san-onofre-state-beach-near-escondido|16|3|California state beach
+san-onofre-state-beach-near-irvine|16|3|California state beach
+san-onofre-state-beach-near-orange-us|16|3|California state beach
+san-onofre-state-beach-near-santa-ana|16|3|California state beach
 san-pablo-near-calama|1152|3|volcano
 san-pablo-reservoir-near-vallejo|32|3|reservoir
 san-pantaleo-near-marsala|64|3|island
@@ -26131,6 +30156,7 @@ san-pedro-nolasco-island-near-hermosillo|64|3|island
 san-quilez-near-monzon|1024|3|mountain
 san-rafael-de-navallana-reservoir-near-cordoba-spain|32|3|reservoir
 san-ramon-waterfall-near-david|1|3|waterfall
+san-roque-near-cordoba|32|3|reservoir
 san-rossore-park-near-lucca|196608|3|protected area
 san-rossore-park-near-pisa|196608|3|protected area
 san-tan-mountain-regional-park-near-chandler|131072|3|park
@@ -26150,6 +30176,10 @@ sand-hollow-state-park-near-st-george|131072|2|
 sand-island-near-honolulu|64|3|island
 sand-island-near-wroclaw|320|3|river island
 sand-pits-lake-near-gatineau|32|3|lake
+sand-point-and-middle-hope-near-bridgwater|4096|3|headland
+sand-point-and-middle-hope-near-cardiff|4096|3|headland
+sand-point-and-middle-hope-near-newport|4096|3|headland
+sand-point-and-middle-hope-near-weston-super-mare|4096|3|headland
 sand-point-near-bristol|4096|3|headland
 sand-ridge-state-forest-near-decatur|16384|1|
 sand-silberscharten-standorte-bei-quedlinburg-near-halberstadt|65536|3|Special Area of Conservation
@@ -26159,6 +30189,16 @@ sandbackstjarnet-near-karlstad|32|3|lake
 sandbanks-provincial-park-near-belleville|131072|3|provincial park of Canada
 sandbanks-provincial-park-near-kingston|131072|3|provincial park of Canada
 sandbanks-provincial-park-near-quinte-west|131072|3|provincial park of Canada
+sandbridge-beach-near-chesapeake|16|3|beach
+sandbridge-beach-near-hampton|16|3|beach
+sandbridge-beach-near-norfolk|16|3|beach
+sandbridge-beach-near-virginia-beach|16|3|beach
+sandefjordsfjord-near-fredrikstad|4096|3|fjord
+sandefjordsfjord-near-larvik|4096|3|fjord
+sandefjordsfjord-near-porsgrunn|4096|3|fjord
+sandefjordsfjord-near-sandefjord|4096|3|fjord
+sandefjordsfjord-near-sarpsborg|4096|3|fjord
+sandefjordsfjord-near-skien|4096|3|fjord
 sander-see-near-wilhelmshaven|32|3|lake
 sandhammaren-near-ronne|4096|3|cape
 sandhornoya-near-bodo|64|3|island
@@ -26166,13 +30206,21 @@ sandia-mountain-wilderness-near-rio-rancho|65536|3|United States Wilderness Area
 sandia-mountains-near-albuquerque|1024|3|mountain range
 sandia-mountains-near-rio-rancho|1024|3|mountain range
 sandilands-provincial-forest-near-steinbach|16384|1|
+sandnesfjorden-near-arendal|4096|3|fjord
 sandomierz-basin-near-tarnobrzeg|65536|3|protected area
 sandon-near-pitea|64|3|island
 sandoya-near-arendal|64|3|island
 sands-of-forvie-near-aberdeen|65536|3|national nature reserve
+sandsend-ness-near-darlington|4096|3|cape
+sandsend-ness-near-hartlepool|4096|3|cape
+sandsend-ness-near-middlesbrough|4096|3|cape
+sandsend-ness-near-scarborough|4096|3|cape
+sandsend-ness-near-stockton-on-tees|4096|3|cape
+sandsfjord-near-haugesund-municipality|4096|3|fjord
 sandsjobacka-naturreservat-hallands-lan-near-kungsbacka|65536|3|nature reserve
 sandsoya-near-harstad|64|3|island
 sandspit-beach-near-hyderabad-pk|65552|3|beach
+sandspit-beach-near-karachi|65552|3|beach
 sandvedparken-near-sandnes|131072|3|park
 sandvedparken-near-sandnes-municipality|131072|3|park
 sandwater-near-aurich|32|3|lake
@@ -26183,13 +30231,31 @@ sandwell-valley-rspb-reserve-near-lichfield|65536|3|nature reserve
 sandwell-valley-rspb-reserve-near-tamworth-uk|65536|3|nature reserve
 sandwell-valley-rspb-reserve-near-walsall|65536|3|nature reserve
 sandwell-valley-rspb-reserve-near-west-bromwich|65536|3|nature reserve
+sandwich-and-pegwell-bay-near-chatham|196624|3|beach
+sandwich-and-pegwell-bay-near-clacton-on-sea|196624|3|beach
+sandwich-and-pegwell-bay-near-gillingham|196624|3|beach
+sandwich-and-pegwell-bay-near-maidstone|196624|3|beach
+sandwich-and-pegwell-bay-near-rochester-uk|196624|3|beach
+sandwich-and-pegwell-bay-near-southend-on-sea|196624|3|beach
+sandwich-harbour-near-windhoek|4096|3|coast
+sandy-beach-near-honolulu|16|3|beach
+sandy-beach-reserve-near-christchurch|16|3|beach
+sandy-beach-reserve-near-rolleston|16|3|beach
 sandy-hook-near-edison|4096|3|peninsula
 sandy-hook-near-jersey-city|4096|3|peninsula
 sandy-hook-near-new-brunswick|4096|3|peninsula
 sandy-hook-near-newark|4096|3|peninsula
 sandy-hook-near-perth-amboy|4096|3|peninsula
 sandy-point-state-park-near-annapolis|131072|2|
+sandymount-strand-near-ashbourne|16|3|beach
+sandymount-strand-near-balbriggan|16|3|beach
+sandymount-strand-near-bray|16|3|beach
+sandymount-strand-near-drogheda|16|3|beach
+sandymount-strand-near-dublin|16|3|beach
 sandymount-strand-near-dun-laoghaire|16|3|beach
+sandymount-strand-near-greystones|16|3|beach
+sandymount-strand-near-leixlip|16|3|beach
+sandymount-strand-near-swords|16|3|beach
 sanford-lake-near-saginaw|32|3|lake
 sang-e-now-waterfall-near-sari|1|3|waterfall
 sangan-waterfall-near-karaj|1|3|waterfall
@@ -26200,11 +30266,13 @@ sangay-volcano-near-riobamba|1152|3|stratovolcano
 sanibel-island-near-cape-coral|0|0|
 sanibel-island-near-fort-myers|0|0|
 sanin-kaigan-national-park-near-tottori|32768|3|national park
+sanjay-lake-near-delhi|32|3|lake
 sanjay-lake-near-new-delhi|32|3|lake
 sanjay-national-park-near-prayagraj|32768|3|national park
 sankai-falls-near-yamagata|1|3|waterfall
 sankelmark-lake-near-flensburg|32|3|lake
 sankenbachsee-near-freudenstadt|32|3|lake
+sankey-tank-near-bangalore|4128|3|lagoon
 sankey-valley-park-near-st-helens|131072|3|park
 sanok-turka-mountains-near-sambir|1024|3|mountain range
 sant-antoni-near-alzira|16|3|urban beach
@@ -26274,6 +30342,7 @@ santa-isabel-near-ibague|1152|3|shield volcano
 santa-isabel-near-la-union|1152|3|shield volcano
 santa-isabel-near-manizales|1152|3|shield volcano
 santa-isabel-near-pereira|1152|3|shield volcano
+santa-lucia-hill-near-santiago|132096|3|mountain
 santa-luzia-reservoir-near-castelo-branco|32|3|reservoir
 santa-margarita-lake-near-santa-maria|32|3|reservoir
 santa-margarita-river-trail-preserve-near-murrieta|65536|3|nature reserve
@@ -26286,10 +30355,25 @@ santa-maria-island-near-talcahuano|64|3|island
 santa-monica-mountains-national-recreation-area-near-long-beach|32768|3|National Park System unit
 santa-monica-mountains-near-oxnard|1024|3|mountain range
 santa-monica-mountains-recreation-area-near-los-angeles|32768|3|National Park System unit
+santa-monica-state-beach-near-anaheim|16|3|California state beach
+santa-monica-state-beach-near-burbank|16|3|California state beach
+santa-monica-state-beach-near-carson|16|3|California state beach
+santa-monica-state-beach-near-compton|16|3|California state beach
+santa-monica-state-beach-near-downey|16|3|California state beach
+santa-monica-state-beach-near-fullerton|16|3|California state beach
+santa-monica-state-beach-near-garden-grove|16|3|California state beach
+santa-monica-state-beach-near-inglewood|16|3|California state beach
+santa-monica-state-beach-near-long-beach|16|3|California state beach
+santa-monica-state-beach-near-los-angeles|16|3|California state beach
+santa-monica-state-beach-near-norwalk|16|3|California state beach
 santa-monica-state-beach-near-santa-monica|16|3|California state beach
+santa-monica-state-beach-near-simi-valley|16|3|California state beach
+santa-monica-state-beach-near-thousand-oaks|16|3|California state beach
+santa-monica-state-beach-near-torrance|16|3|California state beach
 santa-rosa-island-near-leticia|320|3|river island
 santa-rosa-island-near-pensacola|64|3|island
 santa-susana-mountains-near-santa-clarita|1024|3|mountain range
+santa-teresa-beach-near-puntarenas|16|3|beach
 santa-teresa-national-park-near-melo|98304|3|national park
 santa-teresa-reservoir-near-salamanca|32|3|reservoir
 santa-ynez-mountains-near-santa-barbara|1024|3|mountain range
@@ -26302,6 +30386,7 @@ santis-near-st-gallen|1024|3|mountain
 santo-andre-beach-near-barcelos|16|3|beach
 santo-lake-modena-near-modena|32|3|lake
 santo-stefano-island-near-gaeta|64|3|island
+sao-bartolomeu-river-near-brasilia|256|3|river
 sao-francisco-de-paula-national-forest-near-caxias-do-sul|81920|3|national forest of Brazil
 sao-geraldo-do-araguaia-environmental-protection-area-near-imperatriz|65536|2|
 sao-luis-island-near-sao-luis|64|3|island
@@ -26309,6 +30394,7 @@ sao-pedro-de-moel-near-leiria|0|0|
 saona-island-near-higuey|64|3|island
 saona-island-near-la-romana|64|3|island
 saona-island-near-san-pedro-de-macoris|64|3|island
+saona-island-near-santo-domingo|64|3|island
 sapi-sapi-lagoon-near-iquitos|32|3|lake
 sapiranga-private-ecological-reserve-near-fortaleza|65536|3|nature reserve
 sappi-near-rauma|64|3|island
@@ -26343,6 +30429,7 @@ sardagna-waterfall-near-trento|1|3|waterfall
 sardis-lake-near-memphis|32|3|reservoir
 sarigua-national-park-near-santiago-de-veraguas|32768|3|national park
 sariska-tiger-reserve-near-agra|32768|3|national park
+sariska-tiger-reserve-near-jaipur|32768|3|national park
 sarkijarvi-near-jamsa|32|3|lake or pond
 sarkinen-near-kajaani|32|3|lake or pond
 sarnena-sredna-gora-near-dimitrovgrad|1024|3|mountain
@@ -26350,6 +30437,7 @@ sarnena-sredna-gora-near-kazanlak|1024|3|mountain
 sarnena-sredna-gora-near-sliven|1024|3|mountain
 sarnena-sredna-gora-near-yambol|1024|3|mountain
 saro-vasterskog-near-kungsbacka|65536|3|nature reserve
+saroornagar-lake-near-hyderabad|32|3|lake
 sarp-falls-near-fredrikstad|1|3|waterfall
 sarp-falls-near-sarpsborg|1|3|waterfall
 sarriko-parkea-near-barakaldo|131072|3|urban park
@@ -26393,6 +30481,10 @@ satinu-diki-near-saldus|65536|3|Natura 2000 site
 satpura-range-near-bhopal|1024|3|mountain range
 sattelberg-near-weiz|1024|3|mountain
 saturnia-hot-springs-near-grosseto|0|0|
+saturraran-near-barakaldo|16|3|beach
+saturraran-near-bilbao|16|3|beach
+saturraran-near-irun|16|3|beach
+saturraran-near-san-sebastian|16|3|beach
 sau-reservoir-near-sabadell|32|3|reservoir
 sauble-falls-provincial-park-near-owen-sound|131072|3|provincial park of Canada
 sauerland-near-bochum|0|0|
@@ -26457,7 +30549,13 @@ scafell-pike-near-lancaster|1024|3|mountain
 scala-dei-turchi-near-agrigento|69632|3|cape
 scammonden-reservoir-near-halifax-uk|32|3|reservoir
 scandola-nature-reserve-near-ajaccio|65536|3|protected area
+scarborough-beach-near-brisbane|16|3|beach
+scarborough-beach-near-caloundra|16|3|beach
+scarborough-beach-near-ipswich|16|3|beach
+scarborough-beach-near-new-bedford|16|3|beach
+scarborough-beach-near-providence|16|3|beach
 scarborough-marsh-near-portland-me|512|3|salt marsh
+scarborough-south-bay-near-scarborough|16|3|beach
 scarisoara-cave-near-alba-iulia|2|3|ice cave
 scarisoara-cave-near-cluj-napoca|2|3|ice cave
 scarpe-river-near-arras|256|3|river
@@ -26472,10 +30570,12 @@ schafberg-near-balingen|1024|3|mountain
 schafirrsee-near-neuburg-an-der-donau|32|3|lake
 schalke-near-goslar|1024|3|mountain
 schanzenkopf-near-gelnhausen|1024|3|mountain
+schaproder-bodden-near-greifswald|4128|3|lagoon
+schaproder-bodden-near-stralsund|4128|3|lagoon
 scharhorn-near-cuxhaven|64|2|
 schauinsland-near-emmendingen|1024|3|mountain
 schauinsland-near-freiburg|1024|3|mountain
-schauinsland-near-villingen-schwenningen|0|0|
+schauinsland-near-villingen-schwenningen|1024|3|mountain
 scheibenberg-near-annaberg-buchholz|66560|3|mountain
 schekinskoe-reservoir-near-kaluga|32|3|reservoir
 schekinskoe-reservoir-near-oryol|32|3|reservoir
@@ -26485,10 +30585,39 @@ scheldt-valley-national-park-near-beveren|32768|3|National Park Flanders
 scheldt-valley-national-park-near-brasschaat|32768|3|National Park Flanders
 schelhammerpark-near-klosterneuburg|131072|3|park
 schesaplana-near-bludenz|1024|3|main peak
+scheveningen-beach-near-aalsmeer|16|3|beach
+scheveningen-beach-near-alphen-aan-den-rijn|16|3|beach
+scheveningen-beach-near-amstelveen|16|3|beach
+scheveningen-beach-near-amsterdam|16|3|beach
+scheveningen-beach-near-beverwijk|16|3|beach
+scheveningen-beach-near-capelle-aan-den-ijssel|16|3|beach
+scheveningen-beach-near-castricum|16|3|beach
+scheveningen-beach-near-delft|16|3|beach
+scheveningen-beach-near-diemen|16|3|beach
+scheveningen-beach-near-gouda|16|3|beach
+scheveningen-beach-near-haarlem|16|3|beach
+scheveningen-beach-near-haarlemmermeer|16|3|beach
+scheveningen-beach-near-heemskerk|16|3|beach
+scheveningen-beach-near-ijmuiden|16|3|beach
+scheveningen-beach-near-katwijk|16|3|beach
+scheveningen-beach-near-leiden|16|3|beach
+scheveningen-beach-near-leidschendam-voorburg|16|3|beach
+scheveningen-beach-near-noordwijk|16|3|beach
+scheveningen-beach-near-rijswijk|16|3|beach
+scheveningen-beach-near-rotterdam|16|3|beach
+scheveningen-beach-near-the-hague|16|3|beach
+scheveningen-beach-near-velsen|16|3|beach
+scheveningen-beach-near-weesp|16|3|beach
+scheveningen-beach-near-zaanstad|16|3|beach
+scheveningen-beach-near-zandvoort|16|3|beach
+scheveningen-beach-near-zoetermeer|16|3|beach
 scheyville-national-park-near-penrith|32768|3|national park of Australia
 schie-near-barendrecht|256|3|river
 schiermonnikoog-national-park-near-dongeradeel|98304|3|national park
 schiermonnikoog-near-leeuwarden|0|0|
+schildhorn-near-berlin|4096|3|headland
+schildhorn-near-oranienburg|4096|3|headland
+schildhorn-near-potsdam|4096|3|headland
 schildmeer-near-winschoten|32|3|lake
 schillerpark-near-leonding|131072|3|park
 schilthorn-near-interlaken|1024|3|mountain
@@ -26499,6 +30628,10 @@ schinoasa-mare-near-bender|16384|3|forest
 schinoasa-mare-near-tiraspol|16384|3|forest
 schlangenberg-near-duren|65536|3|Special Area of Conservation
 schlaube-valley-nature-park-near-cottbus|196608|3|Naturpark
+schlei-near-flensburg|4096|3|bay
+schlei-near-husum|4096|3|bay
+schlei-near-kiel|4096|3|bay
+schlei-near-rendsburg|4096|3|bay
 schlern-near-bolzano|1024|3|mountain
 schliersee-near-rosenheim|32|3|lake
 schlosee-near-hanau|32|3|lake
@@ -26510,7 +30643,7 @@ schlossinsel-barmstedt-near-elmshorn|64|3|island
 schlosspark-rechnitz-near-szombathely|131072|3|park
 schlosspark-vechelde-near-salzgitter|131072|3|park
 schluchsee-near-freiburg|32|3|reservoir
-schluchsee-near-villingen-schwenningen|0|0|
+schluchsee-near-villingen-schwenningen|32|3|reservoir
 schlulberg-near-wels|81920|3|forest
 schmaloer-heide-near-coesfeld|16384|3|forest
 schmeietal-near-sigmaringen|65536|3|Special Area of Conservation
@@ -26526,6 +30659,7 @@ schollener-see-near-stendal|32|3|lake
 schonbrunn-vienna|0|0|
 schonbuch-nature-park-near-stuttgart|196608|3|Naturpark
 schonbuch-near-rottweil|16384|3|forest
+schonbuch-near-villingen-schwenningen|16384|3|forest
 schonfeldspitze-near-saalfelden-am-steinernen-meer|1024|3|mountain
 schonheitsbachtal-und-mauerbachtal-near-ratingen|65536|3|protected area
 schoorlse-duinen-near-alkmaar|65536|3|nature area
@@ -26567,12 +30701,19 @@ schwerter-wald-near-unna|16384|3|forest
 schwesternpark-near-witten|131072|3|park
 schwingetal-near-stade|65536|3|Special Area of Conservation
 scinawskie-bagna-near-lubin|65536|3|protected area
+scivu-near-carbonia|16|3|beach
+scivu-near-iglesias|16|3|beach
 scoglio-della-malghera-near-verbania|64|3|island
 scoglio-di-rovigliano-near-castellammare-di-stabia|64|3|island
 scout-lake-near-pearland|32|3|lake
 scropoasa-reservoir-near-breaza|32|3|reservoir
 scropoasa-reservoir-near-targoviste|32|3|reservoir
 sculpture-park-leidsche-rijn-near-nieuwegein|0|0|
+scurdie-ness-near-aberdeen|4096|3|headland
+scurdie-ness-near-dundee|4096|3|headland
+sea-bluff-beach-near-bridgeport|16|3|beach
+sea-bluff-beach-near-new-haven|16|3|beach
+sea-bluff-beach-near-waterbury|16|3|beach
 sea-isle-marina-near-hialeah|0|0|
 sea-of-galilee-near-acre|32|1|
 sea-of-galilee-near-nazareth|32|1|
@@ -26580,22 +30721,45 @@ sea-of-galilee-near-safed|32|1|
 sea-of-galilee-near-tiberias|32|1|
 sea-rim-state-park-near-beaumont|131072|3|Texas state park
 sea-rim-state-park-near-lake-charles|131072|3|Texas state park
+seacliff-state-beach-near-cupertino|16|3|California state beach
+seacliff-state-beach-near-mountain-view|16|3|California state beach
+seacliff-state-beach-near-salinas|16|3|California state beach
+seacliff-state-beach-near-san-jose-us|16|3|California state beach
+seacliff-state-beach-near-santa-clara|16|3|California state beach
+seacliff-state-beach-near-santa-cruz|16|3|California state beach
+seacliff-state-beach-near-sunnyvale|16|3|California state beach
+seal-island-near-stellenbosch|64|3|island
+sealine-beach-near-doha|16|3|beach
+seanina-near-haapsalu|4096|3|cape
 seaport-of-cassis-near-la-ciotat|32|2|
 seaside-regional-park-near-klaipeda|131072|3|regional park
 seaside-regional-park-near-kretinga|131072|3|regional park
 seaside-regional-park-near-liepaja|131072|3|regional park
 seaside-regional-park-near-palanga|131072|3|regional park
+seatuck-national-wildlife-refuge-near-babylon|65536|3|National Wildlife Refuge
 seaview-park-near-stamford|131072|3|park
 sebago-lake-near-portland-me|32|3|reservoir
 sebastian-inlet-state-park-near-fort-pierce|131072|3|Florida state park
 sebastian-inlet-state-park-near-melbourne-fl|131072|3|Florida state park
 sebastian-inlet-state-park-near-palm-bay|131072|3|Florida state park
 sebastian-inlet-state-park-near-port-st-lucie|131072|3|Florida state park
+sebou-river-near-casablanca|256|3|river
+sebou-river-near-rabat|256|3|river
 sec-reservoir-near-pardubice|0|0|
 secchia-near-reggio-emilia|256|3|river
 second-admiral-island-near-saint-petersburg|64|3|island
+second-beach-near-burnaby|16|3|beach
+second-beach-near-coquitlam|16|3|beach
+second-beach-near-delta|16|3|beach
+second-beach-near-langley|16|3|beach
+second-beach-near-maple-ridge|16|3|beach
+second-beach-near-nanaimo|16|3|beach
+second-beach-near-new-westminster|16|3|beach
 second-beach-near-north-vancouver|16|3|beach
+second-beach-near-port-moody|16|3|beach
 second-beach-near-richmond-ca|16|3|beach
+second-beach-near-vancouver|16|3|beach
+second-beach-near-white-rock|16|3|beach
 secoveljske-soline-in-estuarij-dragonje-near-izola|65536|3|Special Area of Conservation
 secoveljske-soline-near-izola|65536|3|Natura 2000 site
 seda-mire-near-smiltene|65536|3|Natura 2000 site
@@ -26617,7 +30781,12 @@ segelstamosse-near-nykoping|65536|3|nature reserve
 segersgarde-near-vastervik|65536|3|nature reserve
 segersjon-near-tumba|32|3|lake
 segovia-near-madrid|0|0|
+segre-near-vilanova-i-la-geltru|256|3|gold river
+segundo-river-near-cordoba|256|3|river
+sehlendorfer-binnensee-near-kiel|4128|3|lagoon
+sehlendorfer-binnensee-near-lubeck|4128|3|lagoon
 sehome-hill-near-bellingham|1024|3|mountain
+seil-amman-near-amman|256|3|river
 seiland-near-alta|64|3|island
 seiland-near-hammerfest|64|3|island
 seilbahnberg-near-peine|132096|3|mountain
@@ -26625,6 +30794,7 @@ seilbahnberg-near-salzgitter|132096|3|mountain
 seilersee-near-iserlohn|32|3|reservoir
 seinajoki-church-park-near-seinajoki|131072|3|park
 seiriskiu-lake-near-elektrenai|32|3|lake
+seitan-limania-near-chania|16|3|beach
 seitseminen-national-park-near-tampere|32768|3|national park
 seki-san-no-mori-near-funabashi|16384|2|
 seki-san-no-mori-near-ichikawa|16384|2|
@@ -26639,6 +30809,7 @@ selachava-near-vorsha|32|3|lake
 selaon-near-enkoping|64|3|island
 selaon-near-eskilstuna|64|3|island
 selaon-near-strangnas|64|3|island
+selbjornsfjorden-near-bergen|4096|3|fjord
 selevenj-heath-near-gyula|65536|3|nature reserve
 selevenj-heath-near-hodmezovasarhely|65536|3|nature reserve
 selevenj-heath-near-kikinda|65536|3|nature reserve
@@ -26652,6 +30823,17 @@ seliste-leu-near-ungheni|65536|3|nature reserve
 selja-river-nature-park-near-rakvere|65536|3|protected area
 selke-wildlife-refuge-near-rasht|65536|3|wildlife refuge
 selle-valley-near-valenciennes|256|3|river
+selsey-bill-near-brighton|4096|3|cape
+selsey-bill-near-brighton-and-hove|4096|3|cape
+selsey-bill-near-chichester|4096|3|cape
+selsey-bill-near-eastleigh|4096|3|cape
+selsey-bill-near-horsham-uk|4096|3|cape
+selsey-bill-near-lewes|4096|3|cape
+selsey-bill-near-littlehampton|4096|3|cape
+selsey-bill-near-portsmouth|4096|3|cape
+selsey-bill-near-southampton|4096|3|cape
+selsey-bill-near-winchester|4096|3|cape
+selsey-bill-near-worthing|4096|3|cape
 selwyns-wood-near-bexhill-on-sea|81920|3|woodland
 selwyns-wood-near-eastbourne|81920|3|woodland
 selwyns-wood-near-hastings-uk|81920|3|woodland
@@ -26687,6 +30869,10 @@ sennfelder-seenkranz-near-schweinfurt|32|2|
 sensuijima-near-fukuyama|64|3|island
 sentiero-costeggiato-da-panchine-near-pesaro|131072|3|park
 sentinel-peak-near-tucson|1024|3|mountain
+sentosa-near-singapore|64|3|island
+seokguram-near-busan|0|0|
+seokguram-near-daegu|0|0|
+seokguram-near-seoul|0|0|
 seoraksan-national-park-near-chuncheon|32768|3|national park
 seoraksan-near-chuncheon|1024|3|mountain
 sequoia-national-forest-near-bakersfield|81920|3|proclaimed forest
@@ -26725,6 +30911,7 @@ serra-azul-near-betim|1024|3|mountain range
 serra-calderona-near-castellon-de-la-plana|1024|3|mountain chain
 serra-d-espada-near-castellon-de-la-plana|1024|3|mountain range
 serra-d-irta-natural-park-near-castellon-de-la-plana|196608|3|protected area
+serra-da-baitaca-state-park-near-curitiba|131072|3|state park
 serra-da-baitaca-state-park-near-sao-jose-dos-pinhais|131072|3|state park
 serra-da-boa-viagem-near-coimbra|1024|3|mountain chain
 serra-da-boa-viagem-near-figueira-da-foz|1024|3|mountain chain
@@ -26849,6 +31036,7 @@ serra-do-intendente-state-park-near-montes-claros|131072|3|state park
 serra-do-itajai-national-park-near-blumenau|32768|3|national park
 serra-do-jatoba-near-campina-grande|1024|3|mountain
 serra-do-mar-near-campos-dos-goytacazes|1024|3|non-geologically related mountain range
+serra-do-mar-near-rio-de-janeiro|1024|3|non-geologically related mountain range
 serra-do-mar-state-park-near-itaquaquecetuba|131072|3|state park
 serra-do-mar-state-park-near-maua|131072|3|state park
 serra-do-mar-state-park-near-mogi-das-cruzes|131072|3|state park
@@ -26930,6 +31118,7 @@ seth-low-pierrepont-state-park-reserve-near-danbury|131072|2|
 setonaikai-national-park-near-fukuyama|32768|3|national park
 settlers-beach-near-port-hedland|16|3|beach
 settsukyo-near-hirakata|2048|3|valley
+setu-babakan-near-jakarta|32|3|lake
 setubal-lake-near-parana|32|3|lake
 setubal-lake-near-rosario|32|3|lake
 setubal-lake-near-san-nicolas-de-los-arroyos|32|3|lake
@@ -26947,11 +31136,21 @@ seven-lakes-state-park-near-pontiac|131072|2|
 seven-lakes-state-park-near-saginaw|131072|2|
 seven-mile-beach-national-park-near-nowra|32768|3|national park of Australia
 seven-mile-beach-near-nowra|16|3|beach
+seven-mile-beach-near-wollongong|16|3|beach
 seven-oaks-park-near-ajax|131072|3|urban park
 seven-rila-lakes-near-bansko|32|2|
 seven-rila-lakes-near-blagoevgrad|32|2|
 seven-seas-lagoon-near-kissimmee|32|3|reservoir
 seven-seas-lagoon-near-orlando|32|3|reservoir
+seven-sisters-near-bexhill-on-sea|4096|2|
+seven-sisters-near-brighton|4096|2|
+seven-sisters-near-brighton-and-hove|4096|2|
+seven-sisters-near-eastbourne|4096|2|
+seven-sisters-near-hastings-uk|4096|2|
+seven-sisters-near-horsham-uk|4096|2|
+seven-sisters-near-lewes|4096|2|
+seven-sisters-near-littlehampton|4096|2|
+seven-sisters-near-worthing|4096|2|
 seven-tubs-natural-area-near-wilkes-barre|196608|3|nature park
 sevenoaks-wildlife-reserve-near-basildon|65536|3|wildlife refuge
 seventy-five-mile-beach-near-hervey-bay|16|3|beach
@@ -26975,10 +31174,13 @@ shagara-near-ryazan|32|3|lake
 shah-alborz-near-qazvin|1024|3|mountain
 shahdad-lake-near-kerman|32|2|
 shaho-near-sulaymaniyah|1024|3|mountain
+shai-hills-near-accra|1024|3|hill
 shakshinskoye-ozero-near-chita|32|3|lake
+shakujii-park-near-tokyo|131072|2|
 shale-butte-wilderness-study-area-near-twin-falls|65536|2|
 shalmash-falls-near-kirkuk|1|3|waterfall
 shalmash-falls-near-sulaymaniyah|1|3|waterfall
+sham-chun-river-near-shenzhen|256|3|river
 shammar-mountains-near-ar-rass|1024|3|mountain
 shammar-mountains-near-burayda|1024|3|mountain
 shammar-mountains-near-ha-il|1024|3|mountain
@@ -26995,12 +31197,23 @@ shard-end-lake-near-nuneaton|32|3|lake
 shard-end-lake-near-tamworth-uk|32|3|lake
 shard-end-lake-near-warwick-uk|32|3|lake
 sharjah-national-park-near-ajman|32768|3|national park
+sharjah-national-park-near-dubai|32768|3|national park
 sharjah-national-park-near-fujairah|32768|3|national park
+sharjah-national-park-near-sharjah|32768|3|national park
 sharjah-national-park-near-umm-al-quwain|32768|3|national park
 shark-bay-marine-park-near-carnarvon|196608|2|
 sharkstooth-peak-near-durango|1024|3|mountain
 sharm-al-luli-near-umm-lajj|4112|3|beach
 sharplin-falls-near-ashburton|1|3|waterfall
+sharpness-point-near-darlington|4096|3|cape
+sharpness-point-near-durham|4096|3|cape
+sharpness-point-near-gateshead|4096|3|cape
+sharpness-point-near-hartlepool|4096|3|cape
+sharpness-point-near-middlesbrough|4096|3|cape
+sharpness-point-near-newcastle-upon-tyne|4096|3|cape
+sharpness-point-near-south-shields|4096|3|cape
+sharpness-point-near-stockton-on-tees|4096|3|cape
+sharpness-point-near-sunderland|4096|3|cape
 shartash-stone-tents-rocks-near-yekaterinburg|196608|3|protected area of Russia
 shasta-lake-near-redding|32|3|reservoir
 shasui-falls-near-odawara|1|3|waterfall
@@ -27016,11 +31229,19 @@ shaytantau-nature-reserve-near-aktobe|65536|3|protected area of Russia
 shebenik-jabllanice-national-park-near-ohrid|98304|3|national park
 shebenik-national-park-near-durres|98304|3|national park
 sheffield-island-near-norwalk-us|64|3|island
+shek-lung-kung-near-hong-kong|1024|3|hill
 sheksna-reservoir-near-vologda|32|3|reservoir
 sheldon-country-park-near-solihull|131072|3|park
 shelestiv-near-smila|64|3|island
 shell-ridge-open-space-near-concord|131072|3|park
 shellmouth-reservoir-near-yorkton|32|3|reservoir
+shelly-beach-near-central-coast|16|3|beach
+shelly-beach-near-gosford|16|3|beach
+shelly-beach-near-newcastle|16|3|beach
+shelly-beach-near-penrith|16|3|beach
+shelly-beach-near-sydney|16|3|beach
+shelly-beach-near-taree|16|3|beach
+shelly-beach-near-wollongong|16|3|beach
 shemurat-allon-near-hadera|81920|3|protected forest
 shenandoah-national-park-near-charlottesville|32768|3|National Park of the United States
 shenandoah-national-park-near-richmond|32768|3|National Park of the United States
@@ -27040,16 +31261,29 @@ sherwood-island-state-park-near-bridgeport|131072|2|
 sherwood-island-state-park-near-norwalk-us|131072|2|
 sheshan-hill-near-nantong|1024|3|mountain
 sheshan-hill-near-pudong|1024|3|mountain
+sheshan-hill-near-shanghai|1024|3|mountain
 sheshan-hill-near-suzhou|1024|3|mountain
 sheshan-hill-near-wuxi|1024|3|mountain
 sheshan-island-near-pudong|64|3|island
+sheung-yue-river-near-hong-kong|256|3|river
 sheybarah-island-near-al-ula|64|3|island
+sheybarah-island-near-medina|64|3|island
 sheybarah-island-near-tabuk|64|3|island
 sheybarah-island-near-umm-lajj|64|3|island
 sheybarah-island-near-yanbu|64|3|island
+shezidao-near-taipei|4096|3|peninsula
+shibayamagata-near-kanazawa|4128|3|lagoon
+shibukawa-beach-near-kurashiki|16|3|beach
 shicheng-island-near-anshan|64|3|island
 shicheng-island-near-dalian|64|3|island
 shicheng-island-near-dandong|64|3|island
+shichirigahama-near-kawasaki|0|0|
+shichirigahama-near-kisarazu|0|0|
+shichirigahama-near-mishima|0|0|
+shichirigahama-near-odawara|0|0|
+shichirigahama-near-sagamihara|0|0|
+shichirigahama-near-yokohama|0|0|
+shichirigahama-near-yokosuka|0|0|
 shidozero-near-arkhangelsk|32|3|lake
 shijushima-near-matsuyama|64|3|island
 shikhov-beach-near-shirvan|16|3|beach
@@ -27060,6 +31294,7 @@ shikotsu-toya-national-park-near-muroran|32768|3|national park
 shimabara-peninsula-near-kumamoto|4096|3|peninsula
 shimabara-peninsula-near-nagasaki|4096|3|peninsula
 shimane-peninsula-near-matsue|4096|3|peninsula
+shimohama-beach-near-akita|16|3|beach
 shimokita-hanto-quasi-national-park-near-hakodate|32768|3|quasi-national park of Japan
 shinall-mountain-near-conway|1024|3|mountain
 shinall-mountain-near-little-rock|1024|3|mountain
@@ -27067,6 +31302,10 @@ shinall-mountain-near-pine-bluff|1024|3|mountain
 shinjima-near-kagoshima|64|3|island
 shinjuku-niagara-falls-near-kawaguchi|0|0|
 shinjuku-niagara-falls-near-saitama|0|0|
+shinsuma-beach-near-kariya|16|3|beach
+shinsuma-beach-near-okazaki|16|3|beach
+shinsuma-beach-near-toyohashi|16|3|beach
+shinsuma-beach-near-toyota|16|3|beach
 ship-island-near-biloxi|64|3|island
 ship-island-near-gulfport|64|3|island
 shipyard-island-bremen-near-bremen|320|3|river island
@@ -27076,12 +31315,14 @@ shiraito-falls-near-shizuoka|1|3|waterfall
 shirak-mountain-range-near-gyumri|1024|3|mountain range
 shirakami-sanchi-near-aomori|1024|3|mountain range
 shirakami-sanchi-near-hirosaki|1024|3|mountain range
+shirakawa-river-near-kyoto|256|3|river
 shire-country-park-near-solihull|131072|3|park
 shirley-mountains-near-casper|1024|3|mountain range
 shiroyama-near-tokushima|1024|3|mountain
 shirvan-national-park-near-shirvan|32768|3|national park
 shirvan-state-nature-reserve-near-shirvan|65536|3|protected area
 shishijima-near-marugame|64|3|island
+shivanasamudra-falls-near-bangalore|1|3|waterfall
 shizilu-reservoir-near-ningbo|32|3|reservoir
 shkhara-near-nalchik|1024|3|mountain
 shmankivtsi-pond-near-chortkiv|32|3|lake
@@ -27094,7 +31335,13 @@ shomyo-falls-near-toyama|1|3|waterfall
 shooters-island-near-elizabeth|64|3|island
 shorabil-lake-near-ardabil|32|3|lake
 shorabil-lake-near-rasht|32|3|lake
+shoreham-beach-near-bexhill-on-sea|65552|3|beach
 shoreham-beach-near-brighton|65552|3|beach
+shoreham-beach-near-brighton-and-hove|65552|3|beach
+shoreham-beach-near-chichester|65552|3|beach
+shoreham-beach-near-eastbourne|65552|3|beach
+shoreham-beach-near-horsham-uk|65552|3|beach
+shoreham-beach-near-lewes|65552|3|beach
 shoreham-beach-near-littlehampton|65552|3|beach
 shoreham-beach-near-worthing|65552|3|beach
 short-beach-near-smithtown|16|3|beach
@@ -27103,6 +31350,8 @@ short-hills-provincial-park-near-niagara-falls|131072|3|provincial park of Canad
 short-hills-provincial-park-near-st-catharines|131072|3|provincial park of Canada
 shoshone-falls-near-twin-falls|1|3|waterfall
 showajima-near-kawasaki|0|0|
+showazan-near-osaka|1024|3|mountain
+shrungagiri-sri-shanmukha-swamy-temple-near-bangalore|0|0|
 shubie-park-near-dartmouth|131072|3|park
 shukyrtuz-near-pavlodar|32|3|lake
 shumen-plateau-nature-park-near-razgrad|196608|3|nature park
@@ -27145,11 +31394,13 @@ sibillini-mountains-near-teramo|1024|3|mountain range
 sibley-state-park-near-st-cloud|131072|2|
 sicani-mountains-near-agrigento|1024|3|mountain range
 sicevo-gorge-near-nis|65536|3|protected area
+sichuan-giant-panda-sanctuaries-near-chengdu|65536|3|nature reserve
 sico-alvaiazere-near-abrantes|65536|3|Natura 2000 site
 sico-alvaiazere-near-pombal|65536|3|Natura 2000 site
 sico-alvaiazere-near-tomar|65536|3|Natura 2000 site
 siddhanath-ki-dari-near-prayagraj|1|3|waterfall
 siddhanath-ki-dari-near-varanasi|1|3|waterfall
+sidi-abderrahman-islet-near-casablanca|64|3|tidal island
 sidlaws-near-dundee|1024|3|hill chain
 sidlaws-near-perth-uk|1024|3|hill chain
 sidobre-near-albi|0|0|
@@ -27164,6 +31415,7 @@ siebengebirge-near-siegburg|66560|3|non-geologically related mountain range
 siebengebirge-near-solingen|66560|3|non-geologically related mountain range
 siebengebirge-near-wuppertal|66560|3|non-geologically related mountain range
 siebleber-teich-near-gotha|32|3|lake
+siecha-lakes-near-bogota|32|3|lake
 sierakarotnia-near-horki|32|3|lake
 sierakarotnia-near-vorsha|32|3|lake
 siercze-near-ketrzyn|32|3|lake
@@ -27293,6 +31545,7 @@ sierra-espuna-near-molina-de-segura|1024|3|mountain chain
 sierra-espuna-near-murcia|1024|3|mountain chain
 sierra-grande-de-hornachos-near-almendralejo|1024|3|mountain
 sierra-jabalcuz-near-jaen|1024|3|mountain
+sierra-la-primavera-near-guadalajara|1152|3|volcano
 sierra-madre-de-chiapas-near-comitan-de-dominguez|1024|3|mountain range
 sierra-madre-de-chiapas-near-tapachula-de-cordova-y-ordonez|1024|3|mountain range
 sierra-madre-del-sur-near-chilpancingo-de-los-bravo|1024|3|mountain range
@@ -27302,6 +31555,7 @@ sierra-madre-occidental-near-cuauhtemoc|1024|3|mountain range
 sierra-madre-occidental-near-culiacan|1024|3|mountain range
 sierra-madre-occidental-near-navojoa|1024|3|mountain range
 sierra-madre-oriental-near-guadalupe|1024|3|mountain range
+sierra-madre-oriental-near-monterrey|1024|3|mountain range
 sierra-madre-oriental-near-saltillo|1024|3|mountain range
 sierra-madrona-near-andujar|1024|3|mountain chain
 sierra-madrona-near-ciudad-real|1024|3|mountain chain
@@ -27339,6 +31593,7 @@ sierras-de-balcarce-near-mar-del-plata|1024|3|mountain
 sierras-de-balcarce-near-tandil|1024|3|mountain
 sierras-de-comechingones-near-rio-cuarto|1024|3|mountain range
 sierras-de-comechingones-near-san-luis|1024|3|mountain range
+sierras-de-cordoba-near-cordoba|1024|3|mountain range
 sierras-de-guasayan-near-santiago-del-estero|1024|3|mountain chain
 sierras-de-mahoma-near-durazno|1024|3|mountain range
 sierras-de-mahoma-near-florida|1024|3|mountain range
@@ -27363,6 +31618,7 @@ signal-de-botrange-near-huy|1024|3|mountain
 signal-de-botrange-near-liege|1024|3|mountain
 signal-de-botrange-near-spa|1024|3|mountain
 signal-de-la-mere-boitier-near-macon-fr|1024|3|mountain
+signal-hill-near-cape-town|1024|3|mountain
 signal-hill-near-qingdao|1024|3|hill
 signal-hill-near-st-johns|0|0|
 signal-hill-near-weifang|1024|3|hill
@@ -27386,6 +31642,7 @@ silbersee-near-hanover|32|3|lake
 silbersee-near-neumunster|32|3|lake
 silbersee-near-siegen|32|3|lake
 silbersee-stuhr-near-delmenhorst|32|3|lake
+sildegapet-near-floro|4096|3|fjord
 sildemower-see-near-rostock|32|3|lake
 sile-river-near-treviso|256|1|
 silent-valley-reservoir-near-newry|32|3|reservoir
@@ -27404,6 +31661,9 @@ siljansnas-near-mora|65536|3|nature reserve
 silkeborg-forests-near-ikast|16384|3|forest
 silkeborg-langs-near-silkeborg|32|3|lake
 silkwood-park-near-santa-ana|131072|3|urban park
+sillamae-beach-near-kivioli|16|3|beach
+sillamae-beach-near-narva|16|3|beach
+sillon-de-talbert-near-saint-brieuc|65536|3|protected area
 silver-falls-state-park-near-portland|131072|2|
 silver-falls-state-park-near-salem|131072|2|
 silver-lake-hollis-new-hampshire-near-nashua|32|3|lake
@@ -27426,6 +31686,8 @@ silverband-falls-near-ararat|1|3|waterfall
 silverband-falls-near-hamilton|1|3|waterfall
 silverband-falls-near-horsham|1|3|waterfall
 silverband-falls-near-stawell|1|3|waterfall
+silversands-near-darwin|16|3|beach
+silverstrand-beach-near-shenzhen|16|2|
 silverwood-lake-near-san-bernardino|32|3|reservoir
 silverwood-lake-near-victorville|32|3|reservoir
 sima-slope-island-near-haikou|64|3|island
@@ -27435,11 +31697,13 @@ simkinsky-sustainable-development-reserve-near-saransk|196608|3|protected area o
 simmons-lake-near-olympia|32|3|lake
 simonka-near-vranov-nad-toplou|1024|3|mountain
 simonsberg-near-husum|1024|3|mountain
+simonsberg-near-stellenbosch|1024|3|mountain
 simpson-park-hammock-near-hialeah|131072|3|park
 simpson-park-hammock-near-miramar|131072|3|park
 simpsons-gap-near-alice-springs|0|0|
 simssee-near-rosenheim|32|3|lake
 sindinskoe-near-khabarovsk|32|3|lake
+singapore-river-near-singapore|256|3|river
 singletary-lake-state-park-near-fayetteville-nc|131072|3|North Carolina state park
 siniaje-lake-puchavicy-district-near-asipovichy|32|3|lake
 siniaje-lake-puchavicy-district-near-dzyarzhynsk|32|3|lake
@@ -27508,6 +31772,8 @@ siscowit-reservoir-near-stamford|32|3|reservoir
 siskiyou-mountains-near-grants-pass|1024|3|mountain range
 sistema-ambientale-della-tenuta-presidenziale-di-castelporziano-near-fiumicino|65536|3|protected area
 sistema-central-near-salamanca|1024|3|mountain range
+sisters-beach-near-smithton-au|16|3|beach
+sisters-beach-near-wynyard|16|3|beach
 sisters-island-near-smithton-au|64|3|island
 sisters-island-near-wynyard|64|3|island
 site-d-arjuzanx-near-mont-de-marsan|65568|3|lake
@@ -27519,6 +31785,7 @@ sitio-rangedor-state-park-near-sao-luis|131072|3|state park
 sitkove-near-lysychansk|65536|3|protected area
 sitno-near-banska-stiavnica|1024|3|mountain
 sitno-near-ziar-nad-hronom|1024|3|mountain
+situ-gintung-near-jakarta|32|3|lake
 siula-grande-near-huacho|1024|3|mountain
 siula-grande-near-huanuco|1024|3|mountain
 siva-brada-near-spisska-nova-ves|65536|3|national nature reserve
@@ -27529,11 +31796,16 @@ six-mile-cypress-slough-preserve-near-cape-coral|65536|3|protected area
 sjaelso-near-horsholm|32|3|lake
 sjalevadsfjarden-near-ornskoldsvik|32|3|lake
 sjobo-knappan-near-motala|65536|3|nature reserve
+sjona-near-mo-i-rana|4096|3|fjord
+sjona-near-mosjoen|4096|3|fjord
+sjosanden-near-kristiansand|16|2|
 sjunkhatten-national-park-near-bodo|32768|3|national park
 skabrijel-near-gorizia|1024|3|mountain
 skadar-lake-national-park-near-bar|32768|3|national park
 skaerso-near-billund|32|3|lake
 skagen-klitplantage-near-skagen|16384|3|forest
+skagen-sondre-strand-v-vippefyr-near-skagen|16|3|beach
+skagen-syd-v-damstedvej-near-skagen|16|3|beach
 skaha-bluffs-provincial-park-near-penticton|131072|3|provincial park of Canada
 skaha-lake-near-penticton|32|3|lake
 skaistis-near-grigiskes|65568|3|lake
@@ -27570,20 +31842,29 @@ skeppsholmen-near-marsta|64|3|island
 skeppsholmen-near-nacka-municipality|64|3|island
 skeppsholmen-near-solna-municipality|64|3|island
 skeppsholmen-near-upplands-vasby|64|3|island
+skerjafjordur-near-reykjavik|4096|3|fjord
 skevoniu-outcrop-near-prienai|65536|3|Natura 2000 site
 skiathos-near-volos|64|3|island
 skiatook-lake-near-broken-arrow|32|3|lake
 skibergfjellet-near-kongsberg|1024|3|mountain
+skibsted-fjord-near-skive|4096|3|fjord
 skidaway-island-state-park-near-savannah|131072|3|state park
 skiddaw-near-carlisle|1024|3|mountain
 skierbieszow-landscape-park-near-zamosc|196608|3|landscape park in Poland
+skillefjorden-near-alta|4096|3|fjord
 skinner-reservoir-near-murrieta|32|3|reservoir
 skinner-reservoir-near-temecula|32|3|reservoir
 skipas-near-falkenberg|65536|3|nature reserve
 skirtorpssjon-near-katrineholm|65536|3|nature reserve
 skissen-near-ludvika|32|3|lake
+skive-fjord-near-holstebro|4096|3|fjord
+skive-fjord-near-lemvig|4096|3|fjord
+skive-fjord-near-skive|4096|3|fjord
+skive-fjord-near-viborg|4096|3|fjord
+skjebergkilen-near-halden|4096|3|fjord
 skjebergkilen-near-sarpsborg|65536|3|nature reserve
 skjely-near-fredrikstad|64|3|island
+skjomen-near-narvik|4096|3|fjord
 skjomtinden-near-narvik|1024|3|mountain
 sklk-near-amasya|196608|3|protected area
 sklk-near-corum|196608|3|protected area
@@ -27623,6 +31904,9 @@ skupina-dvou-lip-malolistych-near-pribram|0|0|
 skurholmsfjarden-near-boden|32|3|lake
 skylands-near-ramapo|0|0|
 skyline-regional-park-near-surprise|65536|3|nature reserve
+slanica-beach-near-sibenik|16|3|beach
+slanica-beach-near-vodice|16|3|beach
+slanica-beach-near-zadar|16|3|beach
 slanske-hills-near-kosice|1024|3|mountain range
 slanske-hills-near-nyiregyhaza|1024|3|mountain range
 slanske-hills-near-trebisov|1024|3|mountain range
@@ -27630,11 +31914,17 @@ slanske-hills-near-vranov-nad-toplou|1024|3|mountain range
 slapy-reservoir-near-benesov|32|3|reservoir
 slate-run-metro-park-near-columbus|196608|3|nature reserve
 slate-run-metro-park-near-delaware|196608|3|nature reserve
+slatina-beach-near-crikvenica|16|3|beach
 slatina-beach-near-opatija|16|3|beach
+slatina-beach-near-pazin|16|3|beach
+slatina-beach-near-porec|16|3|beach
+slatina-beach-near-rijeka|16|3|beach
+slatina-beach-near-rovinj|16|3|beach
 slatinna-louka-u-liblic-near-melnik|65536|3|nature reserve in the Czech Republic
 slavkov-forest-near-karlovy-vary|1024|3|mountain range
 slavkov-forest-near-plzen|1024|3|mountain range
 slavnik-near-koper|1024|3|mountain
+slea-head-near-tralee|4096|3|cape
 sleeping-giant-near-bridgeport|1024|3|mountain
 sleeping-giant-provincial-park-near-thunder-bay|131072|3|provincial park of Canada
 sleepy-hollow-state-park-near-flint|131072|2|
@@ -27698,6 +31988,7 @@ slovak-paradise-national-park-near-spisska-nova-ves|98304|3|national park
 slovak-paradise-near-kezmarok|1024|3|mountain range
 slovak-paradise-near-levoca|1024|3|mountain range
 slovak-paradise-near-spisska-nova-ves|1024|3|mountain range
+slovenska-beach-near-cetinje|16|3|beach
 slovensky-springs-near-pskov|1|3|waterfall
 slover-mountain-near-fontana|1024|3|mountain
 slovincian-national-park-near-slupsk|98304|3|National Parks of Poland
@@ -27713,6 +32004,7 @@ small-pond-near-hall-in-tirol|32|3|lake
 small-prespa-lake-near-florina|32|3|lake
 small-prespa-lake-near-kastoria|32|3|lake
 smalvas-near-visaginas|32|3|lake
+smedsudden-near-nynashamn|4096|3|cape
 smelter-mountain-near-durango|1024|3|mountain
 smerdye-near-arkhangelsk|32|3|lake
 smetovi-near-zenica|1024|3|mountain
@@ -27725,6 +32017,7 @@ smilniansky-vrch-near-bardejov|1024|3|mountain
 smith-and-bybee-wetlands-natural-area-near-vancouver-us|65536|3|nature reserve
 smith-mountain-lake-near-roanoke|32|3|reservoir
 smith-rock-state-park-near-bend|131072|2|
+smiths-beach-near-busselton|16|3|beach
 smiths-beach-near-margaret-river|16|3|beach
 smitingen-harnoklubb-near-harnosand|65536|3|nature reserve
 smkircay-su-anbar-near-ganja|32|3|reservoir
@@ -27748,6 +32041,7 @@ snakeden-hollow-state-fish-and-wildlife-area-near-davenport|131072|3|Illinois st
 snasavatnet-near-steinkjer-municipality|32|3|lake
 snead-island-near-bradenton|64|3|island
 sneekermeer-near-sneek|32|3|lake
+snekkersten-strand-near-helsingor|16|3|beach
 snettisham-rspb-reserve-near-boston-uk|65536|3|nature reserve
 snettisham-rspb-reserve-near-king-s-lynn|65536|3|nature reserve
 snezhanka-cave-near-pazardzhik|2|3|show cave
@@ -27778,7 +32072,7 @@ sobaeksan-near-andong|1024|3|mountain
 soberania-national-park-near-colon-city|32768|3|national park
 soberania-national-park-near-la-chorrera|32768|3|national park
 soberania-national-park-near-san-miguelito-district|32768|3|national park
-sobiborski-park-krajobrazowy-near-chelm|0|0|
+sobiborski-park-krajobrazowy-near-chelm|196608|3|landscape park in Poland
 sobieszewo-island-near-sopot|64|3|island
 sobkivskyi-near-uman|0|0|
 sobolinoye-lake-near-irkutsk|32|3|lake
@@ -27827,6 +32121,7 @@ sofiivs-ke-urochyshche-forestry-preserve-near-yenakiieve|81920|3|forest reserve
 sofiyivsky-park-near-uman|0|0|
 sogard-so-near-aabenraa|32|3|lake
 sogeumgang-near-gangneung|2048|3|valley
+sognefjord-near-floro|4096|3|fjord
 sognsvann-near-baerum-municipality|32|3|lake
 sognsvann-near-lorenskog|32|3|lake
 sognsvann-near-oslo|32|3|lake
@@ -27845,6 +32140,10 @@ solfatara-near-acerra|1024|3|mountain
 solfatara-near-aversa|1024|3|mountain
 solfatara-near-pozzuoli|1024|3|mountain
 solido-near-vastervik|65600|3|island
+soline-bay-near-crikvenica|4096|3|cove
+soline-bay-near-opatija|4096|3|cove
+soline-bay-near-pazin|4096|3|cove
+soline-bay-near-rijeka|4096|3|cove
 solivka-near-stara-lubovna|1024|3|mountain
 solling-near-gottingen|1024|3|mountain range
 solling-near-hildesheim|1024|3|mountain range
@@ -27861,6 +32160,8 @@ solyonoe-lake-near-stavropol|65568|3|lake
 solyonoe-lake-near-taganrog|32|3|lake
 solyonoe-near-ulan-ude|32|3|lake
 solyst-near-stavanger-sandnes|64|3|island
+sombrio-beach-near-langford|16|3|beach
+somersville-pond-near-hartford|4128|3|lagoon
 somerville-lake-near-bryan|32|3|reservoir
 somes-river-near-satu-mare|256|3|river
 somesul-mare-intre-mica-si-beclean-near-bistrita|65536|3|Natura 2000 site
@@ -27869,6 +32170,7 @@ somiedo-natural-park-near-gijon|196608|3|biosphere reserve
 sommaroy-near-tromso|0|0|
 somme-river-near-arras|256|3|coastal river
 somsdorfer-klamm-near-freital|2048|3|valley
+son-tra-mountain-near-da-nang|5120|3|mountain
 sonbol-lake-near-sari|32|3|reservoir
 sonderberg-near-gotzis|1024|3|hill
 sonderso-near-viborg|32|3|lake
@@ -27917,15 +32219,24 @@ sopron-mountains-near-sopron|0|0|
 sor-degerberget-near-pitea|65536|3|nature reserve
 sor-degerberget-near-skelleftea|65536|3|nature reserve
 sorbas-karst-near-almeria|0|0|
+sorfolda-near-bodo|4096|3|fjord
 sorgenti-del-vallone-delle-ferriere-di-amalfi-near-castellammare-di-stabia|65536|3|Natura 2000 site
 soroya-near-hammerfest|64|3|island
 sorpe-reservoir-near-arnsberg|32|3|reservoir
+sorrentine-coast-near-acerra|4096|3|coast
+sorrentine-coast-near-aversa|4096|3|coast
+sorrentine-coast-near-caserta|4096|3|coast
+sorrentine-coast-near-castellammare-di-stabia|4096|3|coast
+sorrentine-coast-near-giugliano-in-campania|4096|3|coast
+sorrentine-coast-near-naples|4096|3|coast
+sorrentine-coast-near-pozzuoli|4096|3|coast
 sorrentine-peninsula-near-naples|4096|3|peninsula
 sorrento-peninsula-near-acerra|4096|3|peninsula
 sorrento-peninsula-near-avellino|4096|3|peninsula
 sorrento-peninsula-near-aversa|4096|3|peninsula
 sorrento-peninsula-near-pozzuoli|4096|3|peninsula
 sorrento-peninsula-near-salerno|4096|3|peninsula
+sosa-hill-near-panama-city|1024|3|hill
 sosina-near-chrzanow|32|3|reservoir
 sosina-near-jaworzno|32|3|reservoir
 soskovcheto-near-smolyan|65536|3|nature reserve
@@ -27937,12 +32248,30 @@ sotara-near-florencia|1152|3|volcano
 sotara-near-popayan|1152|3|volcano
 soto-de-vinuelas-near-san-sebastian-de-los-reyes|65536|3|Natura 2000 site
 sotra-near-bergen|64|3|island
+sounion-near-agia-paraskevi|4096|3|cape
+sounion-near-athens|4096|3|cape
+sounion-near-chalandri|4096|3|cape
+sounion-near-egaleo|4096|3|cape
+sounion-near-glyfada|4096|3|cape
+sounion-near-ilion|4096|3|cape
+sounion-near-kallithea|4096|3|cape
+sounion-near-korydallos|4096|3|cape
+sounion-near-nikaia|4096|3|cape
+sounion-near-peristeri|4096|3|cape
+sounion-near-petroupoli|4096|3|cape
+sounion-near-piraeus|4096|3|cape
+sounion-near-salamis-island|4096|3|cape
+sounion-near-vrilissia|4096|3|cape
+sounion-near-zografou|4096|3|cape
+source-of-the-danube-near-villingen-schwenningen|32|2|
 source-of-the-kalmius-river-gidrological-natural-monument-near-horlivka|0|0|
 source-of-the-mundo-river-near-albacete|256|3|river
 source-seine-near-troyes|0|0|
 sourland-mountain-near-new-brunswick|1024|3|mountain
 sourland-mountain-preserve-near-trenton|65536|3|protected area
+south-beach-durban-near-durban|0|0|
 south-beach-near-porirua|16|3|beach
+south-beach-near-upper-hutt|16|3|beach
 south-bruny-national-park-near-hobart|32768|3|national park of Australia
 south-carlsbad-state-beach-near-carlsbad|16|3|California state beach
 south-carlsbad-state-beach-near-oceanside|16|3|California state beach
@@ -27962,10 +32291,16 @@ south-downs-near-littlehampton|1024|3|mountain range
 south-downs-near-portsmouth|1024|3|mountain range
 south-downs-near-worthing|1024|3|mountain range
 south-falls-near-salem|1|3|waterfall
+south-foreland-near-ashford|4096|3|cape
+south-foreland-near-canterbury|4096|3|cape
+south-foreland-near-margate|4096|3|cape
 south-harz-karst-landscape-biosphere-reserve-near-sangerhausen|65536|2|
+south-lake-near-wuhan|32|3|lake
 south-lake-wuhan-near-huanggang|32|3|lake
 south-lake-wuhan-near-xinyang|32|3|lake
 south-lake-wuhan-near-yueyang|32|3|lake
+south-melbourne-beach-near-melbourne|16|3|beach
+south-melbourne-beach-near-melton|16|3|beach
 south-mountain-near-hagerstown|1024|3|mountain range
 south-mountain-park-near-chandler|131072|3|park
 south-mountain-park-near-mesa|131072|3|park
@@ -27992,12 +32327,49 @@ southern-carpathians-near-sibiu|1024|3|mountain range
 southern-carpathians-near-stefanesti|1024|3|mountain range
 southern-indian-lake-near-thompson|32|3|lake
 southern-konnevesi-national-park-near-pieksamaki|32768|3|national park
+southern-north-sea-coast-near-aalsmeer|4096|3|coast
+southern-north-sea-coast-near-almere|4096|3|coast
+southern-north-sea-coast-near-amersfoort|4096|3|coast
+southern-north-sea-coast-near-amstelveen|4096|3|coast
+southern-north-sea-coast-near-amsterdam|4096|3|coast
+southern-north-sea-coast-near-apeldoorn|4096|3|coast
+southern-north-sea-coast-near-barneveld|4096|3|coast
+southern-north-sea-coast-near-beverwijk|4096|3|coast
+southern-north-sea-coast-near-castricum|4096|3|coast
+southern-north-sea-coast-near-deventer|4096|3|coast
+southern-north-sea-coast-near-diemen|4096|3|coast
+southern-north-sea-coast-near-dronten|4096|3|coast
+southern-north-sea-coast-near-ede|4096|3|coast
+southern-north-sea-coast-near-enkhuizen|4096|3|coast
+southern-north-sea-coast-near-haarlemmermeer|4096|3|coast
+southern-north-sea-coast-near-harderwijk|4096|3|coast
+southern-north-sea-coast-near-heemskerk|4096|3|coast
+southern-north-sea-coast-near-hilversum|4096|3|coast
+southern-north-sea-coast-near-huizen|4096|3|coast
+southern-north-sea-coast-near-ijmuiden|4096|3|coast
+southern-north-sea-coast-near-kampen|4096|3|coast
+southern-north-sea-coast-near-lelystad|4096|3|coast
+southern-north-sea-coast-near-naarden|4096|3|coast
+southern-north-sea-coast-near-noordoostpolder|4096|3|coast
+southern-north-sea-coast-near-oldebroek|4096|3|coast
+southern-north-sea-coast-near-soest-nl|4096|3|coast
+southern-north-sea-coast-near-urk|4096|3|coast
+southern-north-sea-coast-near-veenendaal|4096|3|coast
+southern-north-sea-coast-near-velsen|4096|3|coast
+southern-north-sea-coast-near-voorst|4096|3|coast
+southern-north-sea-coast-near-weesp|4096|3|coast
+southern-north-sea-coast-near-zaanstad|4096|3|coast
+southern-north-sea-coast-near-zeist|4096|3|coast
+southern-north-sea-coast-near-zwolle|4096|3|coast
 southern-nowruz-park-lake-near-tehran|32|3|artificial lake
 southfield-farm-marsh-near-wellingborough|65536|3|nature reserve
 southmoor-nature-reserve-near-chichester|65536|3|nature reserve
 southorpe-meadow-near-boston-uk|65536|3|nature reserve
 southorpe-meadow-near-peterborough-uk|65536|3|nature reserve
 southorpe-paddock-near-peterborough-uk|65536|3|nature reserve
+southport-beach-near-bridgeport|16|3|beach
+southport-beach-near-new-haven|16|3|beach
+southport-beach-near-waterbury|16|3|beach
 southwest-alentejo-and-vicentine-coast-natural-park-near-portimao|196608|3|protected area
 southwest-corridor-park-near-cambridge-us|131072|2|
 southwest-mountains-near-charlottesville|1024|3|mountain range
@@ -28035,14 +32407,58 @@ spetses-near-sparta|64|3|island
 spexard-near-gutersloh|65536|3|protected area
 speyerlachsee-near-speyer|32|3|lake
 sphacteria-near-kalamata|64|3|island
+spiaggia-alimini-near-lecce|16|3|beach
+spiaggia-berchida-near-nuoro|16|3|beach
+spiaggia-ciammarita-near-palermo|16|3|beach
+spiaggia-dei-pescatori-near-acerra|16|3|beach
+spiaggia-dei-pescatori-near-aversa|16|3|beach
+spiaggia-dei-pescatori-near-caserta|16|3|beach
+spiaggia-dei-pescatori-near-castellammare-di-stabia|16|3|beach
+spiaggia-dei-pescatori-near-giugliano-in-campania|16|3|beach
+spiaggia-dei-pescatori-near-naples|16|3|beach
+spiaggia-dei-pescatori-near-pozzuoli|16|3|beach
+spiaggia-del-faro-near-padua|16|3|beach
+spiaggia-del-faro-near-treviso|16|3|beach
+spiaggia-del-faro-near-venice|16|3|beach
+spiaggia-della-punticeddha-near-lecce|16|3|beach
+spiaggia-della-purita-near-lecce|16|3|beach
 spiaggia-delle-bombarde-near-alghero|16|3|beach
+spiaggia-delle-bombarde-near-sassari|16|3|beach
+spiaggia-di-alba-adriatica-near-ascoli-piceno|16|3|beach
+spiaggia-di-alba-adriatica-near-chieti|16|3|beach
+spiaggia-di-alba-adriatica-near-pescara|16|3|beach
+spiaggia-di-alba-adriatica-near-teramo|16|3|beach
 spiaggia-di-albisola-marina-near-savona|16|3|beach
+spiaggia-di-barbarossa-near-grosseto|16|3|beach
 spiaggia-di-calamosca-near-cagliari|16|3|beach
+spiaggia-di-fano-near-ancona|16|3|beach
 spiaggia-di-fano-near-pesaro|16|3|beach
+spiaggia-di-fano-near-rimini|16|3|beach
+spiaggia-di-grottammare-near-ascoli-piceno|16|3|beach
+spiaggia-di-grottammare-near-fermo|16|3|beach
+spiaggia-di-grottammare-near-macerata|16|3|beach
+spiaggia-di-grottammare-near-teramo|16|3|beach
+spiaggia-di-guvano-near-carrara|16|3|beach
+spiaggia-di-guvano-near-massa|16|3|beach
 spiaggia-di-mari-ermi-near-oristano|16|3|beach
+spiaggia-di-minori-near-caserta|16|3|beach
+spiaggia-di-minori-near-salerno|16|3|beach
 spiaggia-di-ostia-near-fiumicino|16|3|beach
+spiaggia-di-pesaro-near-ancona|16|3|beach
+spiaggia-di-pesaro-near-cesena|16|3|beach
 spiaggia-di-pesaro-near-pesaro|16|3|beach
+spiaggia-di-pesaro-near-rimini|16|3|beach
+spiaggia-di-policoro-near-taranto|16|3|beach
+spiaggia-di-porto-santa-margherita-near-pordenone|16|3|beach
+spiaggia-di-punta-penna-near-chieti|16|3|beach
+spiaggia-di-punta-penna-near-pescara|16|3|beach
+spiaggia-di-san-michele-near-ancona|16|3|beach
+spiaggia-di-san-michele-near-fermo|16|3|beach
 spiaggia-di-san-michele-near-macerata|16|3|beach
+spiaggia-di-senigallia-near-ancona|16|3|beach
+spiaggia-di-senigallia-near-macerata|16|3|beach
+spiaggia-di-senigallia-near-pesaro|16|3|beach
+spiaggia-di-su-tiriarzu-near-nuoro|16|3|beach
 spiaggia-di-tesoro-maria-near-andria|16|3|beach
 spiaggia-di-tesoro-maria-near-barletta|16|3|beach
 spiaggia-di-tesoro-maria-near-molfetta|16|3|beach
@@ -28050,10 +32466,41 @@ spiaggia-di-tropea-near-vibo-valentia|16|3|beach
 spiaggia-fontanamare-near-iglesias|16|3|beach
 spiaggia-is-arutas-near-oristano|16|3|beach
 spiaggia-la-lanterna-near-gela|16|3|beach
+spiaggia-la-lanterna-near-ragusa|16|3|beach
+spiaggia-libera-near-pordenone|16|3|beach
+spiaggia-libera-near-treviso|16|3|beach
+spiaggia-libera-near-venice|16|3|beach
+spiaggia-lungomare-d-annunzio-near-padua|16|3|beach
+spiaggia-lungomare-d-annunzio-near-treviso|16|3|beach
+spiaggia-lungomare-d-annunzio-near-venice|16|3|beach
+spiaggia-marchesa-di-cassibile-near-syracuse-it|16|3|beach
 spiaggia-marina-di-massa-near-carrara|16|3|beach
 spiaggia-marina-di-pietrasanta-near-camaiore|16|3|beach
+spiaggia-marinella-di-sarzana-near-camaiore|16|3|beach
 spiaggia-marinella-di-sarzana-near-carrara|16|3|beach
+spiaggia-marinella-di-sarzana-near-lucca|16|3|beach
+spiaggia-marinella-di-sarzana-near-massa|16|3|beach
+spiaggia-marinella-di-sarzana-near-pisa|16|3|beach
+spiaggia-milano-marittima-near-cesena|16|3|beach
+spiaggia-milano-marittima-near-forli|16|3|beach
+spiaggia-milano-marittima-near-ravenna|16|3|beach
+spiaggia-milano-marittima-near-rimini|16|3|beach
+spiaggia-pedaso-near-ascoli-piceno|16|3|beach
+spiaggia-pedaso-near-fermo|16|3|beach
+spiaggia-pedaso-near-macerata|16|3|beach
+spiaggia-pedaso-near-teramo|16|3|beach
+spiaggia-pinarella-near-cesena|16|3|beach
+spiaggia-pinarella-near-forli|16|3|beach
+spiaggia-pinarella-near-pesaro|16|3|beach
+spiaggia-pinarella-near-ravenna|16|3|beach
+spiaggia-pinarella-near-rimini|16|3|beach
+spiaggia-torre-salsa-near-agrigento|16|3|beach
+spiaggia-urbani-near-ancona|16|3|beach
+spiaggia-urbani-near-fermo|16|3|beach
+spiaggia-urbani-near-macerata|16|3|beach
 spiaggia-vendicari-near-noto|16|3|beach
+spiaggia-vendicari-near-ragusa|16|3|beach
+spiaggia-vendicari-near-syracuse-it|16|3|beach
 spicers-peak-near-warwick|1024|3|mountain
 spiegel-en-blijkpolderplas-near-weesp|65568|3|lake
 spiekeroog-near-bremerhaven|0|0|
@@ -28144,9 +32591,21 @@ srima-near-sibenik|16|3|beach
 st-aidan-s-near-doncaster|196608|3|nature reserve
 st-aidan-s-near-wakefield|196608|3|nature reserve
 st-aidan-s-near-york|196608|3|nature reserve
+st-alban-s-head-near-poole|4096|3|cape
+st-alban-s-head-near-southampton|4096|3|cape
 st-ambroise-beach-provincial-park-near-portage-la-prairie|131072|3|provincial park of Manitoba
 st-ann-s-well-gardens-hove-near-brighton-and-hove|131072|3|park
+st-bees-beach-near-kendal|16|3|beach
+st-bees-head-near-barrow-in-furness|4096|3|cape
 st-bernard-state-park-near-new-orleans|131072|2|
+st-catherine-s-point-near-bournemouth|4096|3|headland
+st-catherine-s-point-near-chichester|4096|3|headland
+st-catherine-s-point-near-eastleigh|4096|3|headland
+st-catherine-s-point-near-littlehampton|4096|3|headland
+st-catherine-s-point-near-poole|4096|3|headland
+st-catherine-s-point-near-portsmouth|4096|3|headland
+st-catherine-s-point-near-southampton|4096|3|headland
+st-catherine-s-point-near-winchester|4096|3|headland
 st-chrischona-near-basel|1024|3|mountain
 st-chrischona-near-liestal|1024|3|mountain
 st-clair-national-wildlife-area-near-chatham-kent|65536|3|national wildlife area
@@ -28157,6 +32616,9 @@ st-george-island-state-park-near-tallahassee|131072|3|Florida state park
 st-ivan-island-near-nesebar|64|3|island
 st-john-s-island-egypt-near-umm-lajj|64|3|island
 st-joseph-island-near-sault-ste-marie|64|3|island
+st-kilda-beach-near-frankston|0|0|
+st-kilda-beach-near-melbourne|0|0|
+st-kilda-beach-near-melton|0|0|
 st-lawrence-park-near-oakville|131072|3|park
 st-leonards-park-near-hastings|131072|3|park
 st-malo-provincial-park-near-steinbach|131072|3|provincial park of Manitoba
@@ -28211,7 +32673,13 @@ staffelberg-near-coburg|66560|3|mountain
 stagni-della-piana-fiorentina-e-pratese-near-empoli|65536|3|Natura 2000 site
 stagni-della-piana-fiorentina-e-pratese-near-florence|65536|3|Natura 2000 site
 stagni-di-focognano-near-florence|65536|3|protected area
+stagno-di-cagliari-near-cagliari|4128|3|lagoon
+stagno-di-cagliari-near-carbonia|4128|3|lagoon
+stagno-di-cagliari-near-iglesias|4128|3|lagoon
 stagno-di-cagliari-saline-di-macchiareddu-laguna-di-santa-gilla-near-cagliari|65536|3|Natura 2000 site
+stagnone-lagoon-near-alcamo|4128|3|lagoon
+stagnone-lagoon-near-marsala|4128|3|lagoon
+stagnone-lagoon-near-trapani|4128|3|lagoon
 stahlibuck-near-frauenfeld|1024|3|mountain
 staksrode-skov-near-fredericia|16384|3|forest
 staksrode-skov-near-horsens|16384|3|forest
@@ -28241,6 +32709,7 @@ standortubungsplatz-landau-near-landau-in-der-pfalz|65536|3|Special Area of Cons
 standortubungsplatz-traunstein-near-traunstein|65536|3|Special Area of Conservation
 stanground-newt-ponds-near-peterborough-uk|65536|3|nature reserve
 stanground-wash-near-peterborough-uk|65536|3|nature reserve
+stanhope-beach-near-summerside|16|3|beach
 stanislaus-river-near-stockton|256|3|river
 stanisovska-jaskyna-near-liptovsky-mikulas|65538|3|cave
 stanku-ezers-near-bauska|32|3|lake
@@ -28265,6 +32734,8 @@ starobeshivs-ke-vodoskhovyshche-near-taganrog|32|3|reservoir
 starohutiansky-waterfall-near-levice|65537|3|waterfall
 starosaltivskyi-reserve-near-belgorod|81920|3|forest reserve
 starozyn-natural-reserve-near-horadnia|81920|3|forest reserve (Poland)
+start-point-near-exeter|4096|3|cape
+start-point-near-plymouth|4096|3|cape
 start-point-near-torquay|4096|3|cape
 startu-ezers-near-valmiera|32|3|lake
 starved-rock-state-park-near-chicago|131072|3|Illinois state park
@@ -28313,11 +32784,15 @@ stefan-cel-mare-central-park-near-durlesti|131072|3|park
 stefan-cel-mare-central-park-near-hincesti|131072|3|park
 stefan-cel-mare-central-park-near-ialoveni|131072|3|park
 stefan-cel-mare-central-park-near-singera|131072|3|park
+stege-nor-near-naestved|4128|3|lagoon
+stege-nor-near-nykobing-falster|4128|3|lagoon
 stegskopf-near-siegen|1024|3|mountain
 steigerwald-nature-park-near-furth|196608|3|Naturpark
 steigerwald-near-bamberg|1024|3|mountain range
 steigerwald-near-erfurt|17408|3|mountain range
 steigerwald-near-wurzburg|1024|3|mountain range
+steilkuste-kuhlungsborn-near-rostock|4096|2|
+steilkuste-kuhlungsborn-near-wismar|4096|2|
 steinachtal-mit-naturwaldreservat-kuhberg-near-kulmbach|65536|3|Special Area of Conservation
 steinberg-bei-wernesgrun-near-zwickau|1024|3|mountain
 steinbruch-vellern-near-warendorf|65536|3|Special Area of Conservation
@@ -28372,6 +32847,8 @@ stilleryd-near-karlshamn|65536|3|nature reserve
 stillgewasser-bei-kluse-near-meppen|65536|3|Special Area of Conservation
 stilling-solbjerg-lake-near-skanderborg|32|3|lake
 stim-berg-near-recklinghausen|1024|3|hill
+stiniva-near-split|16|3|beach
+stiniva-near-trogir|16|3|beach
 stintino-near-sassari|0|0|
 stiol-lake-near-borsa|32|3|lake
 stiphoutse-bossen-near-helmond|81920|3|forest
@@ -28382,18 +32859,31 @@ stitarsky-rybnik-near-as|65568|3|lake
 stjernoya-near-hammerfest|64|3|island
 stjordalen-near-steinkjer-municipality|2048|3|valley
 stjordalen-near-stjordalshalsen|2048|3|valley
+stjordalsfjord-near-stjordalshalsen|4096|3|fjord
+stjornfjorden-near-stjordalshalsen|4096|3|fjord
+stjornfjorden-near-trondheim|4096|3|fjord
 stobe-breg-near-kocevje|65536|3|Special Area of Conservation
 stobrawa-forest-near-brzeg|16384|3|forest
 stockbridge-bowl-near-pittsfield|32|3|reservoir
 stockert-near-euskirchen|1024|3|mountain
 stockgrove-country-park-near-luton|131072|3|park
 stockgrove-country-park-near-milton-keynes|131072|3|park
+stockholm-archipelago-near-haninge-municipality|64|3|archipelago
+stockholm-archipelago-near-huddinge-municipality|64|3|archipelago
+stockholm-archipelago-near-lidingo|64|3|archipelago
+stockholm-archipelago-near-marsta|64|3|archipelago
+stockholm-archipelago-near-nacka-municipality|64|3|archipelago
 stockholm-archipelago-near-norrtalje|64|3|archipelago
+stockholm-archipelago-near-solna-municipality|64|3|archipelago
 stockholm-archipelago-near-stockholm|64|3|archipelago
+stockholm-archipelago-near-taby|64|3|archipelago
+stockholm-archipelago-near-tumba|64|3|archipelago
+stockholm-archipelago-near-upplands-vasby|64|3|archipelago
 stockhorn-near-bern|1024|3|mountain
 stocking-springs-wood-near-st-albans|65536|3|nature reserve
 stocking-springs-wood-near-stevenage|65536|3|nature reserve
 stocking-springs-wood-near-welwyn-garden-city|65536|3|nature reserve
+stockton-beach-near-central-coast|16|3|beach
 stockton-beach-near-cessnock|16|3|beach
 stockton-beach-near-newcastle|16|3|beach
 stockton-lake-near-springfield|32|3|reservoir
@@ -28459,6 +32949,8 @@ store-mosse-national-park-near-jonkoping|32768|3|national park
 store-mosse-national-park-near-vaxjo|32768|3|national park
 store-oksso-near-hadsund|32|3|lake
 storesjon-near-nassjo|32|3|lake
+storfjorden-near-alesund|4096|3|fjord
+storfjorden-near-molde-municipality|4096|3|fjord
 storforsen-near-lulea|0|0|
 storholmen-near-alesund|0|0|
 storhornet-near-harstad|1024|3|summit
@@ -28493,15 +32985,21 @@ strait-of-messina-near-reggio-calabria|4096|3|strait
 strait-of-otranto-near-brindisi|4096|3|strait
 strand-near-backa-palanka|272|3|river beach
 strandbad-hemmingen-near-hanover|32|3|lake
+strandbad-wannsee-near-berlin|16|3|beach
+strandbad-wannsee-near-oranienburg|16|3|beach
+strandbad-wannsee-near-potsdam|16|3|beach
 strandzha-near-burgas|1024|3|mountain range
 stratumse-heide-near-eindhoven|81920|3|forest
 straumoya-near-bodo|64|3|island
+straumsfjorden-near-tromso|4096|3|strait
+straumsfjorden-near-tromso-municipality|4096|3|strait
 strawberry-island-near-amherst|320|3|river island
 strazilovo-near-novi-sad|1024|3|mountain
 strazov-mountains-near-banovce-nad-bebravou|1024|3|mountain range
 strazov-mountains-near-puchov|1024|3|mountain range
 strbske-pleso-near-poprad|0|0|
 streets-beach-near-brisbane|16|3|beach
+streets-beach-near-ipswich|16|3|beach
 strefi-hill-near-agia-paraskevi|1024|3|mountain
 strefi-hill-near-egaleo|1024|3|mountain
 strefi-hill-near-ilion|1024|3|mountain
@@ -28518,6 +33016,10 @@ strines-reservoir-near-sheffield|32|3|reservoir
 stroan-loch-near-dumfries|32|3|lake
 stromberg-heuchelberg-nature-park-near-heilbronn|196608|3|Naturpark
 stromelbe-im-stadtzentrum-magdeburg-near-magdeburg|65536|3|Special Area of Conservation
+strone-point-near-ayr-uk|4096|3|cape
+strone-point-near-dumbarton|4096|3|cape
+strone-point-near-greenock|4096|3|cape
+strone-point-near-kilmarnock|4096|3|cape
 stross-near-weiz|1024|3|mountain
 strukovsky-garden-near-samara|131072|3|urban park
 strundetal-near-bergisch-gladbach|65536|3|Naturschutzgebiet
@@ -28584,6 +33086,7 @@ sugar-house-park-near-west-jordan|131072|3|park
 sugar-loaf-near-newport|1024|3|hill
 sugarloaf-mountain-near-binghamton|1024|3|mountain
 sugarloaf-mountain-near-frederick-md|196608|3|protected area
+sugarloaf-mountain-near-rio-de-janeiro|70656|3|mountain
 sugarloaf-ridge-state-park-near-santa-rosa|131072|3|California state park
 sugarloaf-west-wicklow-near-carlow|1024|3|mountain
 sughereta-di-niscemi-near-gela|65536|3|regional nature reserve
@@ -28615,17 +33118,35 @@ sulejowski-reservoir-near-piotrkow-trybunalski|32|3|reservoir
 sulejowski-reservoir-near-tomaszow-mazowiecki|32|3|reservoir
 sulina-near-tulcea|0|0|
 sullivan-s-pond-park-near-dartmouth|131072|3|park
+sullivans-cove-near-hobart|4096|3|cove
+sullivans-cove-near-new-norfolk|4096|3|cove
 sulov-rocks-near-zilina|65536|3|national nature reserve
 sulperg-near-baden-ch|1024|3|mountain
 sulphur-mountain-near-canmore|1024|3|mountain
+sulphur-river-near-tyler|256|3|river
 sultan-mountains-near-afyonkarahisar|1024|3|mountain range
+sultanpur-national-park-near-delhi|32768|3|national park
 sultanpur-national-park-near-new-delhi|32768|3|national park
+suma-beach-near-akashi|4096|2|
+suma-beach-near-amagasaki|4096|2|
+suma-beach-near-kobe|4096|2|
+suma-beach-near-nishinomiya|4096|2|
+suma-beach-near-osaka|4096|2|
+suma-beach-near-sakai|4096|2|
+suma-swimming-beach-near-akashi|16|2|
+suma-swimming-beach-near-amagasaki|16|2|
+suma-swimming-beach-near-kobe|16|2|
+suma-swimming-beach-near-nishinomiya|16|2|
+suma-swimming-beach-near-osaka|16|2|
+suma-swimming-beach-near-sakai|16|2|
+suma-swimming-beach-near-wakayama|16|2|
 sumarice-lake-near-kragujevac|32|3|reservoir
 sumas-mountain-near-abbotsford|1024|3|mountain
 sumauma-state-park-near-manaus|131072|3|state park
 sumava-national-park-near-plzen|98304|3|national park
 sumava-national-park-near-prachatice|98304|3|national park
 sumava-national-park-near-strakonice|98304|3|national park
+sumida-river-near-tokyo|256|3|river
 sumidero-canyon-national-park-near-comitan-de-dominguez|32768|3|National Park of Mexico
 sumidero-canyon-national-park-near-san-cristobal-de-las-casas|32768|3|National Park of Mexico
 sumidero-canyon-national-park-near-tapachula-de-cordova-y-ordonez|32768|3|National Park of Mexico
@@ -28659,9 +33180,14 @@ sundskjaera-near-larvik|65536|3|nature reserve
 sundstatjarn-near-karlstad|32|3|lake
 sunezers-near-daugavpils|32|3|lake
 sunija-near-jurbarkas|65792|3|river
+sunj-near-ploce|16|3|beach
 sunken-meadow-state-park-near-babylon|0|0|
 sunken-meadow-state-park-near-smithtown|131072|3|New York state park
+sunnylvsfjorden-near-alesund|4096|3|fjord
+sunnyside-beach-near-cowes|16|3|beach
 sunnyside-beach-near-frankston|16|3|beach
+sunnyside-beach-near-hamilton-ontario|16|3|beach
+sunnyside-beach-near-melbourne|16|3|beach
 sunnyslope-mountain-near-phoenix|1024|3|mountain
 sunnyslope-mountain-near-surprise|1024|3|mountain
 sunnyslope-mountain-near-tempe|1024|3|mountain
@@ -28670,11 +33196,13 @@ sunowo-near-elk|32|3|lake
 sunrise-mountain-near-las-vegas|1024|3|mountain
 sunrise-mountain-near-north-las-vegas|1024|3|mountain
 sunrise-mountain-near-paradise|1024|3|mountain
+sunset-beach-near-honolulu|16|3|beach
 sunset-crater-near-flagstaff|1024|3|mountain
 sunset-lake-near-brockton|32|3|lake
 sunset-lake-near-quincy-us|32|3|lake
 suntel-near-hamelin|1024|3|mountain range
 suntel-near-hildesheim|1024|3|mountain range
+suomenlinna-beach-near-helsinki|16|3|beach
 suomenlinna-helsinki|0|0|
 supia-valley-landscape-park-near-slupsk|196608|3|landscape park in Poland
 supramonte-near-nuoro|1024|3|mountain range
@@ -28682,6 +33210,7 @@ sur-near-pezinok|65536|3|Natura 2000 site
 sur-near-senec|65536|3|Natura 2000 site
 sura-reservoir-near-saransk|32|3|reservoir
 surajkund-near-agra|32|3|reservoir
+surajkund-near-delhi|32|3|reservoir
 surajkund-near-new-delhi|32|3|reservoir
 suraksan-near-namyangju|1024|3|mountain
 suraksan-near-paju|1024|3|mountain
@@ -28691,6 +33220,7 @@ sureanu-mountains-near-cugir|1024|3|mountain range
 sureanu-mountains-near-petrila|1024|3|mountain range
 sureanu-mountains-near-petrosani|1024|3|mountain range
 suren-nazaryan-garden-near-abovyan|131072|3|park
+surfers-paradise-beach-near-gold-coast|16|3|beach
 surianske-slaniska-near-nove-zamky|65536|3|protected area
 surisan-near-ansan|1024|3|mountain
 surisan-near-pyeongtaek|1024|3|mountain
@@ -28699,6 +33229,8 @@ surketjarn-near-partille|32|3|lake
 surkhan-state-nature-reserve-near-qarshi|65536|3|nature reserve
 surprise-lake-near-federal-way|32|3|lake
 susa-valley-near-moncalieri|0|0|
+suseong-lake-near-daegu|32|3|lake
+susquehanna-river-near-babylon|256|3|river
 susquehanna-valley-near-binghamton|2048|3|valley
 susquehannock-state-park-near-lancaster-us|131072|3|Pennsylvania state park
 susquehannock-state-park-near-york-us|131072|3|Pennsylvania state park
@@ -28712,6 +33244,9 @@ sutter-buttes-near-woodland|1152|3|extinct volcano
 sutter-buttes-near-yuba-city|1152|3|extinct volcano
 sutton-bank-near-middlesbrough|1024|3|hill
 sutton-mountains-near-cowansville|1024|3|mountain range
+suttons-beach-near-brisbane|16|3|beach
+suttons-beach-near-caloundra|16|3|beach
+suttons-beach-near-ipswich|16|3|beach
 suujarvi-near-forssa|32|3|lake
 suullar-myraan-near-yakutsk|1024|3|mountain
 suur-pakri-near-paldiski|64|3|island
@@ -28725,10 +33260,17 @@ suvali-beach-near-surat|16|3|beach
 suvasvesi-near-kuopio|32|3|impact crater lake
 suvasvesi-near-varkaus|32|3|impact crater lake
 suviana-and-brasimone-lakes-regional-park-near-modena|196608|3|protected area
+suzhou-creek-near-shanghai|256|3|river
 suzuka-mountains-near-hikone|1024|3|mountain range
 suzuka-quasi-national-park-near-suzuka|32768|3|quasi-national park of Japan
 suzuka-quasi-national-park-near-tsu|32768|3|quasi-national park of Japan
 suzuka-quasi-national-park-near-yokkaichi|32768|3|quasi-national park of Japan
+svanemolle-beach-near-frederiksberg|16|3|beach
+svanemolle-beach-near-frederiksvaerk|16|3|beach
+svanemolle-beach-near-helsingor|16|3|beach
+svanemolle-beach-near-hillerod|16|3|beach
+svanemolle-beach-near-horsholm|16|3|beach
+svanemolle-beach-near-koge|16|3|beach
 svanninge-bakker-near-odense|65536|3|nature area
 svanviken-near-nykoping|65536|3|nature reserve
 svartbytrasket-near-boden|32|3|lake
@@ -28799,6 +33341,8 @@ swabian-jura-near-neu-ulm|1024|3|low mountain range
 swabian-jura-near-sigmaringen|1024|3|low mountain range
 swabian-jura-near-stuttgart|1024|3|low mountain range
 swabian-jura-near-ulm|1024|3|low mountain range
+swaik-lake-near-lahore|32|3|lake
+swakop-river-near-windhoek|256|3|river
 swaledale-near-darlington|2048|3|valley
 swaledale-near-hartlepool|2048|3|valley
 swaledale-near-stockton-on-tees|2048|3|valley
@@ -28821,6 +33365,8 @@ swietokrzyskie-mountains-near-mielec|1024|3|mountain range
 swietokrzyskie-mountains-near-radom|1024|3|mountain range
 swietokrzyskie-mountains-near-skarzysko-kamienna|1024|3|mountain range
 swietokrzyskie-mountains-near-starachowice|1024|3|mountain range
+swinoujscie-beach-on-usedom-near-swinoujscie|16|3|beach
+swinoujscie-beach-on-usedom-near-szczecin|16|3|beach
 swiss-national-park-near-davos|98304|3|national park
 swiss-national-park-near-lustenau|98304|3|national park
 swiss-tectonic-arena-sardona-near-st-gallen|1024|2|
@@ -28828,11 +33374,17 @@ swithland-reservoir-near-loughborough|32|3|reservoir
 swithland-wood-near-leicester|65536|3|protected area
 swope-park-near-independence|131072|3|park
 swope-park-near-olathe|131072|3|park
+sword-beach-near-caen|16|3|beach
+sword-beach-near-le-havre|16|3|beach
+sword-beach-near-lisieux|16|3|beach
 swyre-head-near-dorchester|5120|3|hill
 syberg-near-lunen|1024|3|mountain
 sycamore-canyon-park-near-moreno-valley|131072|3|park
 sycamore-state-park-near-dayton|131072|3|state park
 sycamore-state-park-near-hamilton-us|131072|3|state park
+sydney-cove-near-gosford|4096|3|cove
+sydney-cove-near-penrith|4096|3|cove
+sydney-cove-near-sydney|4096|3|cove
 sydney-harbour-national-park-near-sydney|32768|3|national park of Australia
 sygna-near-sandnes|1024|3|hill
 sygna-near-sandnes-municipality|1024|3|hill
@@ -28864,7 +33416,9 @@ syvajarvi-near-loviisa|32|3|lake or pond
 szaboova-skala-near-ziar-nad-hronom|65536|3|nature reserve
 szarcz-lake-near-gorzow-wielkopolski|32|3|lake
 szarsomlyo-near-mohacs|66560|3|summit
+szczecin-lagoon-near-greifswald|4128|3|estuarine lagoon
 szczecin-lagoon-near-swinoujscie|4128|3|estuarine lagoon
+szczecin-lagoon-near-szczecin|4128|3|estuarine lagoon
 szczecin-landscape-park-near-stargard|196608|3|landscape park in Poland
 szczecin-landscape-park-near-szczecin|196608|3|landscape park in Poland
 szechenyi-hill-near-erd|1024|3|mountain
@@ -28889,6 +33443,9 @@ tabarca-near-elche|0|0|
 taberg-near-vaxjo|0|0|
 tabernas-desert-near-almeria|8192|3|desert
 tablas-de-daimiel-national-park-near-fuenlabrada|98304|3|national park
+table-bay-near-cape-town|4096|3|bay
+table-mountain-national-park-near-cape-town|32768|2|
+table-mountain-near-cape-town|1024|3|mountain
 table-mountain-near-vladikavkaz|1024|3|mountain
 table-rock-lake-near-springfield|32|3|reservoir
 table-rock-state-park-near-greenville|131072|2|
@@ -28908,12 +33465,17 @@ taconic-mountains-near-troy|1024|3|mountain range
 tacora-near-arica|1152|3|stratovolcano
 tacora-near-tacna|1152|3|stratovolcano
 tacumshin-lake-near-wexford|32|3|lake
+taeanhaean-national-park-near-seoul|98304|3|national park
 taebaek-mountains-near-chuncheon|1024|3|mountain range
+taebaek-mountains-near-incheon|1024|3|mountain range
 taebaeksan-near-andong|1024|3|mountain
 tafelberg-near-calw|1024|3|mountain
 tafisa-park-near-pontevedra|131072|3|urban park
+tafjorden-near-molde-municipality|4096|3|fjord
+tagany-rog-near-taganrog|4096|3|cape
 tagarskoye-lake-near-abakan|32|3|lake
 tagarsky-near-abakan|320|3|river island
+tagonoura-near-shizuoka|4112|3|beach
 tagus-estuary-natural-reserve-near-almada|65536|3|nature reserve
 tagus-estuary-natural-reserve-near-amadora|65536|3|nature reserve
 tagus-estuary-natural-reserve-near-barreiro|65536|3|nature reserve
@@ -28928,8 +33490,10 @@ tagus-estuary-natural-reserve-near-vila-franca-de-xira|65536|3|nature reserve
 tagus-international-natural-park-near-badajoz|196608|3|protected area
 taheke-waterfalls-near-whangarei|1|3|waterfall
 tahquitz-falls-near-palm-springs|1|3|waterfall
+tahva-cape-near-haapsalu|4096|3|cape
 tai-mo-shan-near-dongguan|1024|3|mountain
 tai-mo-shan-near-huizhou|1024|3|mountain
+taiaroa-cape-near-dunedin|4096|3|headland
 taihang-mountains-near-anyang|1024|3|mountain range
 taihang-mountains-near-handan|1024|3|mountain range
 taihang-mountains-near-kaifeng|1024|3|mountain range
@@ -28945,6 +33509,7 @@ tainhas-state-park-near-caxias-do-sul|131072|3|state park
 tainter-lake-near-eau-claire|32|3|reservoir
 taipa-near-foshan|64|3|island
 taipa-near-jiangmen|64|3|island
+taipa-near-shenzhen|64|3|island
 taipa-near-zhaoqing|64|3|island
 taipa-near-zhongshan|64|3|island
 taipa-near-zhuhai|64|3|island
@@ -28952,19 +33517,24 @@ taiyang-island-near-changchun|64|3|island
 taiyang-island-near-harbin|64|3|island
 taiyang-island-near-jilin-city|64|3|island
 taiyang-island-near-qiqihar|64|3|island
+tajima-mihonoura-near-tottori|4096|3|coast
 tajzara-lake-near-tarija|32|3|lake
 takaboko-island-near-nagasaki|64|3|island
 takagoyama-prefectural-natural-park-near-kisarazu|196608|2|
+takano-river-near-kyoto|256|3|river
 takarunga-mount-victoria-near-auckland|1152|3|volcano
 takashima-near-karatsu|64|3|island
 takashima-near-okayama|64|3|island
 take-island-near-hikone|64|3|island
+takeno-beach-near-tottori|16|3|beach
 takern-near-linkoping|32|3|lake water body
 takern-near-motala|32|3|lake water body
 takern-near-norrkoping|32|3|lake water body
 takeshima-near-okazaki|64|3|tidal island
 takht-e-suleyman-massif-near-qazvin|1024|3|mountain range
+takil-cape-near-kerch|4096|3|cape
 takuni-near-arequipa|1024|3|mountain
+takwa-bay-beach-near-lagos|16|3|beach
 talabenets-near-pskov|64|3|island
 talabsk-near-pskov|64|3|island
 talampaya-national-park-near-la-rioja|32768|2|
@@ -28976,6 +33546,7 @@ talcott-mountain-state-park-near-hartford|131072|2|
 taldykol-lake-near-astana|32|3|lake
 taleghan-lake-near-qazvin|32|3|reservoir
 taler-sudostlich-lommatzsch-near-meissen|65536|3|Special Area of Conservation
+taljai-hills-near-pune|1024|3|mountain
 talkin-tarn-near-carlisle|32|3|lake
 tall-pines-state-preserve-near-camden|131072|2|
 tall-pines-state-preserve-near-philadelphia|131072|2|
@@ -28991,8 +33562,12 @@ talsperre-pohl-near-plauen|32|3|reservoir
 talsperre-schombach-near-altenburg|32|3|reservoir
 talsu-near-talsi|32|3|lake
 talysh-mountains-near-ardabil|1024|3|mountain range
+tam-dao-near-hanoi|1024|3|mountain range
+tamanduatei-river-near-sao-paulo|256|3|river
 tamarac-national-wildlife-refuge-near-moorhead|65536|3|National Wildlife Refuge
 tambaba-near-campina-grande|16|2|
+tambor-beach-near-puntarenas|16|3|beach
+tambor-near-puntarenas|0|0|
 tamborine-mountain-near-beaudesert|1024|3|mountain
 tamborine-national-park-near-beaudesert|32768|3|national park of Australia
 tamborine-national-park-near-brisbane|32768|3|national park of Australia
@@ -29000,6 +33575,7 @@ tamborine-national-park-near-gold-coast|32768|3|national park of Australia
 tamega-river-near-vila-real|256|3|river
 tammijarvi-near-loviisa|32|3|lake
 tammisaari-archipelago-national-park-near-helsinki|32768|3|national park
+tammiski-nukk-near-haapsalu|4096|3|cape
 tampaja-near-kirkkonummi|32|3|lake or pond
 tanaro-near-asti|256|3|river
 tandy-hills-natural-area-near-irving|65536|3|protected area
@@ -29011,6 +33587,7 @@ tange-so-near-viborg|32|3|lake
 tanger-mittel-und-unterlauf-near-stendal|65536|3|Special Area of Conservation
 tangeum-lake-near-cheongju|32|3|lake
 tangeum-lake-near-wonju|32|3|lake
+tangkuban-perahu-near-jakarta|1152|3|stratovolcano
 tankeng-reservoir-near-wenzhou|32|3|reservoir
 tankodrom-near-rakovnik|65536|3|nature reserve in the Czech Republic
 tannholz-chatzestiel-sibirie-near-biel-bienne|65536|3|protected area
@@ -29019,6 +33596,7 @@ tantanoola-caves-conservation-park-near-mount-gambier|65536|3|conservation park 
 taohua-island-near-ningbo|64|3|island
 taolin-reservoir-near-changsha|32|3|reservoir
 taolin-reservoir-near-hengyang|32|3|reservoir
+tap-shek-kok-near-zhuhai|4096|3|cape
 tapada-nacional-de-mafra-near-cascais|131072|3|park
 tapada-nacional-de-mafra-near-loures|131072|3|park
 tapin-tops-national-park-near-taree|32768|3|national park of Australia
@@ -29039,6 +33617,7 @@ tararua-range-near-masterton|1024|3|mountain range
 tararua-range-near-palmerston-north|1024|3|mountain range
 taras-hill-near-pryluky|1024|3|mountain
 taras-hill-near-smila|1024|3|mountain
+tarbat-ness-near-inverness|4096|3|cape
 tarbela-lake-near-abbottabad|32|3|reservoir
 tarbela-lake-near-mardan|32|3|reservoir
 tarbela-lake-near-peshawar|32|3|reservoir
@@ -29055,9 +33634,14 @@ tarifa-coast-near-cadiz|0|0|
 tariquia-flora-and-fauna-national-reserve-near-tarija|65536|3|nature reserve
 tarki-tau-near-makhachkala|1024|3|mountain range
 tarkiln-bayou-preserve-state-park-near-pensacola|131072|3|Florida state park
+tarkwa-bay-beach-near-lagos|16|3|beach
+tarn-point-near-barrow-in-furness|4096|3|cape
+tarn-point-near-kendal|4096|3|cape
+tarn-point-near-lancaster|4096|3|cape
 tarno-near-karlshamn|64|3|island
 tarnobrzeska-dolina-wisly-near-mielec|65536|3|Natura 2000 site
 tarnowskie-gory-ridge-near-bytom|0|0|
+taroko-national-park-near-taipei|163840|3|national park
 tarong-national-park-near-dalby|32768|3|national park of Australia
 tarong-national-park-near-kingaroy|32768|3|national park of Australia
 tarra-bulga-national-park-near-leongatha|32768|3|national park of Australia
@@ -29065,6 +33649,11 @@ tarra-bulga-national-park-near-morwell|32768|3|national park of Australia
 tarra-bulga-national-park-near-sale|32768|3|national park of Australia
 tarra-bulga-national-park-near-traralgon|32768|3|national park of Australia
 tarrytown-reservoir-near-white-plains|32|3|reservoir
+tarska-vala-near-opatija|4096|3|cove
+tarska-vala-near-pazin|4096|3|cove
+tarska-vala-near-porec|4096|3|cove
+tarska-vala-near-pula|4096|3|cove
+tarska-vala-near-rovinj|4096|3|cove
 tarsus-waterfall-near-tarsus|1|3|waterfall
 tarutyns-kyj-steppe-near-causeni|65536|3|landscape reserve
 tashkent-botanical-garden-near-chirchiq|0|0|
@@ -29077,6 +33666,7 @@ tasinge-near-svendborg|64|3|island
 tasman-national-park-near-hobart|32768|3|national park of Australia
 tasman-peninsula-near-kingston-au|4096|3|peninsula
 tastrup-so-near-skanderborg|32|3|lake
+tata-beach-near-nelson|16|3|beach
 tatabanyai-banyasz-cave-near-tatabanya|2|3|cave
 tatakooti-peak-near-sialkot|1024|3|mountain
 tatar-holes-near-veszprem|2|3|cave
@@ -29114,10 +33704,13 @@ taurus-mountains-near-karaman|1024|3|mountain range
 tautenburger-wald-near-naumburg|17408|3|mountain range
 tavolara-island-near-olbia|64|3|island
 tavsan-adas-istanbul-near-yalova|64|3|island
+tawi-river-near-lahore|256|3|river
 tawlli-urqu-near-ayacucho|1024|3|mountain
 taygetus-near-kalamata|1024|3|mountain range
 taylor-mountain-near-idaho-falls|1024|3|mountain
 taylor-mountain-near-pocatello|1024|3|mountain
+taylors-mistake-beach-near-christchurch|16|3|beach
+taylors-mistake-beach-near-rolleston|16|3|beach
 tayrona-national-natural-park-near-baranoa|32768|3|national park
 tayrona-national-natural-park-near-barranquilla|32768|3|national park
 tayrona-national-natural-park-near-riohacha|32768|3|national park
@@ -29129,7 +33722,12 @@ tchervenata-stena-biosphere-reserve-near-asenovgrad|65536|3|biosphere reserve
 tchervenata-stena-biosphere-reserve-near-plovdiv|65536|3|biosphere reserve
 tchouprene-biosphere-reserve-near-lom|65536|3|biosphere reserve
 tchouprene-biosphere-reserve-near-vidin|65536|3|biosphere reserve
+te-awa-a-te-atua-beach-near-rotorua|16|3|beach
+te-awa-a-te-atua-beach-near-tauranga|16|3|beach
 te-haupa-island-near-hibiscus-coast|64|3|island
+te-henga-bethells-beach-near-auckland|16|3|beach
+te-henga-bethells-beach-near-hibiscus-coast|16|3|beach
+te-henga-bethells-beach-near-pukekohe|16|3|beach
 te-heru-o-kahukura-sugarloaf-near-christchurch|1024|3|hill
 te-mata-peak-near-napier|1024|3|mountain
 te-motu-o-kura-bare-island-near-hastings|64|3|island
@@ -29137,8 +33735,12 @@ te-muri-regional-park-near-hibiscus-coast|131072|3|regional park
 te-onepoto-bay-near-porirua|4096|3|bay
 te-tapuwae-o-rongokako-marine-reserve-near-gisborne|0|0|
 te-urewera-near-gisborne|0|0|
+te-whangai-head-near-whangarei|4096|3|headland
 tebulosmta-near-grozny|1024|3|mountain
+teewah-beach-near-caloundra|16|3|beach
 teewah-beach-near-gympie|16|3|beach
+teewah-beach-near-nambour|16|3|beach
+teewah-beach-near-sunshine-coast|16|3|beach
 tegarayama-near-himeji|1024|3|hill
 tegeldammarna-lergravarna-near-hassleholm|65536|3|nature reserve
 tegernsee-near-bad-tolz|32|3|lake
@@ -29180,6 +33782,7 @@ telford-town-park-near-telford|196608|3|local nature reserve
 teliachyi-ostriv-near-nizhyn|64|3|island
 telita-landscape-reserve-near-causeni|65536|3|landscape reserve
 tellefson-park-near-inglewood|131072|3|park
+temara-forest-near-casablanca|16384|3|forest
 temnata-dupka-gara-lakatnik-near-vratsa|2|3|cave
 tempe-butte-near-chandler|1024|3|mountain
 tempe-butte-near-gilbert|1024|3|mountain
@@ -29196,6 +33799,7 @@ tenglo-island-near-puerto-montt|64|3|island
 tenhultasjon-near-nassjo|32|3|lake
 tenjin-beach-near-aizuwakamatsu|16|3|beach
 tenjin-beach-near-koriyama|16|3|beach
+tenney-beach-near-madison|16|3|beach
 tennozu-isle-near-kawasaki|0|0|
 teno-massif-near-san-cristobal-de-la-laguna|1152|3|volcano
 tenter-bach-und-bokerbach-near-remscheid|65536|3|protected area
@@ -29208,6 +33812,7 @@ teplice-castle-garden-near-teplice|0|0|
 tequendama-falls-near-hogares-soacha|1|3|waterfall
 tequendama-falls-near-ibague|1|3|waterfall
 tequendama-falls-near-villavicencio|1|3|waterfall
+tequendamita-falls-near-medellin|1|3|waterfall
 tequendamita-falls-near-quibdo|1|3|waterfall
 tequila-volcano-near-manzanillo|1024|3|mountain
 tequila-volcano-near-tlaquepaque|1024|3|mountain
@@ -29221,6 +33826,8 @@ terrain-peche-mele-near-montreuil|131072|3|park
 terrick-terrick-national-park-near-deniliquin|32768|3|national park of Australia
 terrick-terrick-national-park-near-echuca|32768|3|national park of Australia
 terrick-terrick-national-park-near-swan-hill|32768|3|national park of Australia
+terrigal-lagoon-near-central-coast|4128|3|lagoon
+terrigal-lagoon-near-gosford|4128|3|lagoon
 terril-near-moron-de-la-frontera|1024|3|mountain
 terry-hershey-park-near-sugar-land|131072|3|park
 tervete-nature-park-near-dobele|196608|3|nature park
@@ -29279,6 +33886,7 @@ tewantin-national-park-near-gympie|32768|3|national park of Australia
 texas-point-national-wildlife-refuge-near-beaumont|65536|3|National Wildlife Refuge
 texel-near-zaanstad|0|0|
 texelspitze-near-merano|1024|3|mountain
+tha-chin-river-near-bangkok|256|3|river
 thalaiyar-falls-near-madurai|1|3|waterfall
 thalerkogel-near-leoben|1024|3|mountain
 tharandt-forest-near-chemnitz|16384|3|forest
@@ -29286,6 +33894,7 @@ tharandt-forest-near-freiberg|16384|3|forest
 thasos-near-kavala|64|3|island
 thasos-near-komotini|64|3|island
 thayatal-national-park-near-jihlava|98304|3|national park
+the-basin-near-perth|4096|3|bay
 the-bog-garden-near-high-point|0|0|
 the-breadknife-near-goondiwindi|1024|3|mountain
 the-breadknife-near-moree|1024|3|mountain
@@ -29315,6 +33924,7 @@ the-nut-near-smithton-au|1152|3|volcanic plug
 the-nut-near-wynyard|1152|3|volcanic plug
 the-palisades-near-jersey-city|4096|3|cliff
 the-pinery-provincial-park-near-sarnia|131072|3|provincial park of Canada
+the-pink-beach-near-olbia|16|3|beach
 the-plens-near-corby|65536|3|nature reserve
 the-proval-steppe-near-dovzhansk|65536|3|protected area of Russia
 the-raven-nature-reserve-near-wexford|82432|3|Ramsar site
@@ -29328,6 +33938,12 @@ the-sanctuary-near-derby|65536|3|wildlife refuge
 the-sanctuary-near-loughborough|65536|3|wildlife refuge
 the-sanctuary-near-mansfield-uk|65536|3|wildlife refuge
 the-sanctuary-near-nottingham|65536|3|wildlife refuge
+the-street-near-basildon|0|0|
+the-street-near-chatham|0|0|
+the-street-near-chelmsford|0|0|
+the-street-near-colchester|0|0|
+the-street-near-gravesend|0|0|
+the-street-near-rochester-uk|0|0|
 the-three-sisters-near-canmore|1024|3|mountain
 the-three-sisters-near-mount-isa|1024|3|mountain
 the-trossachs-near-stirling|2048|3|glen
@@ -29348,6 +33964,7 @@ theopetra-cave-near-karditsa|2|3|show cave
 theopetra-cave-near-trikala|2|3|show cave
 thetford-forest-near-norwich|131072|3|park
 thimble-peak-near-tucson|1024|3|mountain
+thin-cape-gelendzhik-near-novorossiysk|4096|3|cape
 thingvellir-national-park-near-reykjavik|32768|2|
 third-beach-near-north-vancouver|16|3|beach
 thirparappu-waterfalls-near-thiruvananthapuram|1|3|waterfall
@@ -29358,6 +33975,10 @@ thol-lake-near-ahmedabad|32|3|lake
 thom-park-near-gresham|131072|3|park
 thomasteich-near-muhlhausen-thuringia|32|3|lake
 thompson-peak-near-tempe|1024|3|mountain
+thoms-cove-near-annapolis|4096|3|cove
+thoms-cove-near-baltimore|4096|3|cove
+thoms-cove-near-rockville|4096|3|cove
+thoms-cove-near-washington-dc|4096|3|cove
 thorah-island-near-kawartha-lakes|64|3|island
 thorah-island-near-orillia|64|3|island
 thorley-wash-nature-reserve-near-harlow|65536|3|nature reserve
@@ -29390,6 +34011,13 @@ thousand-islands-near-greater-napanee|64|3|island group
 thracian-sea-near-alexandroupoli|0|0|
 three-gorges-near-chongqing|2052|3|canyon
 three-sisters-islands-near-welland|320|3|island group
+three-tree-point-near-bellevue|4096|3|cape
+three-tree-point-near-federal-way|4096|3|cape
+three-tree-point-near-kent|4096|3|cape
+three-tree-point-near-redmond|4096|3|cape
+three-tree-point-near-renton|4096|3|cape
+three-tree-point-near-seattle|4096|3|cape
+three-tree-point-near-tacoma|4096|3|cape
 thruscross-reservoir-near-harrogate|32|3|reservoir
 thrypti-near-agios-nikolaos|1024|3|mountain
 thrypti-near-ierapetra|1024|3|mountain
@@ -29411,8 +34039,14 @@ thursford-wood-near-king-s-lynn|81920|3|woodland
 thursley-common-near-godalming|65536|3|national nature reserve
 thursley-common-near-guildford|65536|3|national nature reserve
 thurstaston-beach-near-birkenhead|16|3|beach
+thurstaston-beach-near-blackpool|16|3|beach
 thurstaston-beach-near-bootle|16|3|beach
+thurstaston-beach-near-chester|16|3|beach
+thurstaston-beach-near-liverpool|16|3|beach
+thurstaston-beach-near-preston|16|3|beach
+thurstaston-beach-near-st-helens|16|3|beach
 thurstaston-beach-near-widnes|16|3|beach
+thurstaston-beach-near-wigan|16|3|beach
 thurstaston-common-near-liverpool|65536|3|protected area
 tianmen-mountain-near-changde|1024|3|mountain
 tianping-mountain-near-changzhou|1024|3|mountain
@@ -29471,12 +34105,14 @@ tijuca-national-park-near-duque-de-caxias|32768|3|national park
 tijuca-national-park-near-niteroi|32768|3|national park
 tijuca-national-park-near-nova-iguacu|32768|3|national park
 tijuca-national-park-near-petropolis|32768|3|national park
+tijuca-national-park-near-rio-de-janeiro|32768|3|national park
 tijuca-national-park-near-sao-goncalo|32768|3|national park
 tijuca-national-park-near-sao-joao-de-meriti|32768|3|national park
 tikitapu-blue-lake-near-rotorua|160|3|volcanic crater lake
 tikkebroeken-near-geel|65536|3|protected area
 tikkebroeken-near-turnhout|65536|3|protected area
 tilden-regional-park-near-oakland|131072|3|park
+tilla-jogian-near-lahore|1024|3|mountain
 tilos-near-kos|64|3|island
 tilos-near-rhodes|64|3|island
 tilva-njagra-near-bor|1024|3|mountain
@@ -29517,6 +34153,7 @@ tinutul-padurenilor-near-hunedoara|65536|3|Natura 2000 site
 tinwald-domain-near-ashburton|131072|3|park
 tinwald-domain-near-timaru|131072|3|park
 tiny-marsh-provincial-wildlife-area-near-barrie|65536|3|protected area of Canada
+tipopugro-lake-near-quito|32|3|lake
 tipova-landscape-reserve-near-ribnita|65536|3|landscape reserve
 tippecanoe-lake-near-fort-wayne|32|3|glacial lake
 tippecanoe-lake-near-south-bend|32|3|glacial lake
@@ -29545,7 +34182,7 @@ tithal-beach-near-surat|16|3|beach
 titicaca-near-juliaca|32|3|lake
 titicaca-near-puno|32|3|lake
 titisee-near-freiburg|32|3|lake
-titisee-near-villingen-schwenningen|0|0|
+titisee-near-villingen-schwenningen|32|3|lake
 titlis-near-altdorf|1024|3|mountain
 titlis-near-lucerne|1024|3|mountain
 titlis-near-sarnen|1024|3|mountain
@@ -29570,10 +34207,16 @@ tjuvholmen-near-gjovik-municipality|4096|3|peninsula
 tjuvholmen-near-hamar-municipality|4096|3|peninsula
 tmtmixwtn-belcarra-regional-park-near-coquitlam|131072|3|regional park
 tmtmixwtn-belcarra-regional-park-near-port-moody|131072|3|regional park
+to-lich-river-near-hanoi|256|3|river
 toba-kakar-range-near-quetta|1024|3|mountain range
+tobay-beach-near-norwalk-us|16|3|beach
+tobay-beach-near-smithtown|16|3|beach
+tobay-beach-near-stamford|16|3|beach
+tobizin-cape-near-vladivostok|4096|3|cape
 tobyhanna-state-park-near-scranton|131072|3|Pennsylvania state park
 toccoa-falls-near-athens-us|1|3|waterfall
 tocllaraju-near-huaraz|1024|3|mountain
+todaiisei-beach-near-iwata|16|3|beach
 todt-hill-near-edison|1024|3|mountain
 todt-hill-near-new-brunswick|1024|3|mountain
 todt-hill-near-perth-amboy|1024|3|mountain
@@ -29588,6 +34231,8 @@ tohamsan-near-pohang|1024|3|mountain
 tohlopinsaari-near-ylojarvi|64|3|island
 tohloppi-near-nokia|32|3|lake or pond
 tohloppi-near-ylojarvi|32|3|lake or pond
+toila-beach-near-kivioli|16|3|beach
+toila-beach-near-narva|16|3|beach
 toila-oru-park-near-johvi|131072|3|park
 toila-oru-park-near-sillamae|131072|3|park
 toisvesi-near-alavus|32|3|lake
@@ -29595,6 +34240,7 @@ tokaj-kopasz-hill-near-nyiregyhaza|0|0|
 tokarnia-near-sanok|1024|3|mountain
 tokivskyi-vodospad-near-nikopol|1|3|waterfall
 tokko-san-near-ueda|1024|3|mountain
+tokyo-bay-near-tokyo|4096|3|bay
 tolaga-bay-near-gisborne|0|0|
 toldi-falls-near-sao-jose-dos-campos|1|3|waterfall
 toldi-falls-near-taubate|1|3|waterfall
@@ -29613,18 +34259,35 @@ tomaree-national-park-near-newcastle|32768|3|national park of Australia
 tomaros-near-arta|1024|3|mountain
 tombelaine-near-fougeres|64|3|tidal island
 tombo-beach-near-guaruja|16|3|beach
+tombo-beach-near-sao-vicente|16|3|beach
 tomoka-state-park-near-st-augustine|131072|3|Florida state park
 tomorr-mountain-national-park-near-durres|98304|3|national park
 tomylivskyi-park-near-bila-tserkva|65536|3|protected area
+tong-fuk-beach-near-zhuhai|16|2|
 tongling-valley-near-nanning|2048|3|valley
 tongrube-muldsberg-near-itzehoe|0|0|
 tonice-bezedna-near-kolin|65536|3|nature reserve in the Czech Republic
+tonle-bati-near-phnom-penh|32|3|lake
+tonle-sap-near-phnom-penh|32|3|lake
+tonle-sap-river-near-phnom-penh|256|3|river
+tonsbergfjorden-near-drobak|4096|3|fjord
+tonsbergfjorden-near-fredrikstad|4096|3|fjord
+tonsbergfjorden-near-halden|4096|3|fjord
+tonsbergfjorden-near-larvik|4096|3|fjord
+tonsbergfjorden-near-moss|4096|3|fjord
+tonsbergfjorden-near-porsgrunn|4096|3|fjord
+tonsbergfjorden-near-sandefjord|4096|3|fjord
+tonsbergfjorden-near-sarpsborg|4096|3|fjord
+tonsbergfjorden-near-skien|4096|3|fjord
 tonto-national-forest-near-mesa|81920|3|proclaimed forest
 toogood-park-near-richmond-hill|131072|3|park
 toolbrunup-near-katanning|1024|3|mountain
 topaljski-zaliv-near-herceg-novi|4096|3|bay
 topanga-state-park-near-santa-monica|131072|3|California state park
 topchanchi-lake-near-ranchi|32|3|artificial lake
+topdalsfjorden-near-arendal|4096|3|fjord
+topdalsfjorden-near-grimstad|4096|3|fjord
+topdalsfjorden-near-kristiansand|4096|3|fjord
 topolyne-near-taraclia|65536|3|protected area
 torc-mountain-near-killarney|1024|3|mountain
 torcal-de-antequera-near-malaga|65536|3|Special Area of Conservation
@@ -29635,6 +34298,7 @@ toro-toro-national-park-near-sucre|32768|3|national park
 toronto-islands-near-toronto|64|3|island group
 torozlin-near-sala|65536|3|nature reserve
 torpnoret-near-karlstad|32|3|lake
+torquay-surf-beach-near-geelong|16|3|beach
 torrance-county-beach-near-torrance|16|3|beach
 torre-de-abraham-reservoir-near-ciudad-real|32|3|reservoir
 torre-maggiore-mount-near-spoleto|1024|3|mountain
@@ -29653,7 +34317,9 @@ torsaule-near-bischofshofen|1024|3|mountain
 torsaule-near-st-johann-im-pongau|1024|3|mountain
 torslundagropen-near-enkoping|65536|3|nature reserve
 tortgul-reservoir-near-kokand|32|3|reservoir
+torto-river-near-brasilia|256|3|river
 tortoise-hill-near-huanggang|1024|3|mountain
+tortoise-hill-near-wuhan|1024|3|mountain
 tortoise-hill-near-xinyang|1024|3|mountain
 tortolita-mountains-near-heroica-nogales|1024|3|mountain range
 tortugas-mountain-near-las-cruces|1024|3|mountain
@@ -29666,12 +34332,14 @@ tosc-near-vrhnika|1024|3|mountain
 tossal-de-la-caperutxa-near-monzon|1024|3|mountain
 tot-er-near-yoshkar-ola|32|3|lake
 totara-park-near-upper-hutt|0|0|
+totaranui-beach-near-nelson|16|3|beach
 totem-lake-near-redmond|32|3|lake
 totenkopf-near-emmendingen|1024|3|mountain
 toter-mann-near-bad-hersfeld|1024|3|hill
 totes-gebirge-near-liezen|1024|3|mountain range
 totoriskes-near-trakai|32|3|lake
 totternhoe-knolls-near-aylesbury|65536|3|local nature reserve
+toubkal-national-park-near-marrakesh|32768|3|national park
 tour-d-ai-near-montreux|1024|3|mountain
 tour-d-ai-near-vevey|1024|3|mountain
 touvelle-state-recreation-site-near-grants-pass|131072|2|
@@ -29679,6 +34347,10 @@ touvelle-state-recreation-site-near-medford|131072|2|
 tovtra-verbetska-near-kamianets-podilskyi|0|0|
 towada-hachimantai-national-park-near-hachinohe|32768|3|national park
 towada-hachimantai-national-park-near-hirosaki|32768|3|national park
+toward-point-near-ayr-uk|4096|3|cape
+toward-point-near-dumbarton|4096|3|cape
+toward-point-near-greenock|4096|3|cape
+toward-point-near-kilmarnock|4096|3|cape
 toyon-canyon-closed-landfill-near-burbank|131072|3|park
 toyosu-near-chiba|0|0|
 toyosu-near-funabashi|0|0|
@@ -29689,6 +34361,8 @@ toyosu-near-koshigaya|0|0|
 toyosu-near-matsudo|0|0|
 toyosu-near-saitama|0|0|
 tozal-de-guara-near-huesca|1024|3|mountain
+trabocchi-coast-near-chieti|4096|3|coast
+trabocchi-coast-near-pescara|4096|3|coast
 trabocher-see-near-leoben|32|3|lake
 trail-view-state-park-near-north-hempstead|131072|3|New York state park
 trailview-park-near-fullerton|131072|3|park
@@ -29758,8 +34432,17 @@ trentham-falls-near-castlemaine|1|3|waterfall
 trentham-falls-near-kyneton|1|3|waterfall
 trenton-falls-near-utica|1|3|waterfall
 trephina-gorge-near-alice-springs|196608|3|nature reserve
+tres-platges-near-castellon-de-la-plana|16|3|beach
+tres-platges-near-villarreal|16|3|beach
 tresticklan-national-park-near-halden|32768|3|national park
+trestles-near-anaheim|4096|3|coast
+trestles-near-costa-mesa|4096|3|coast
+trestles-near-irvine|4096|3|coast
+trestles-near-newport-beach|4096|3|coast
+trestles-near-orange-us|4096|3|coast
+trestles-near-santa-ana|4096|3|coast
 trevatna-near-gjovik-municipality|32|3|reservoir
+tri-an-lake-near-ho-chi-minh-city|32|3|reservoir
 tri-chuke-near-lom|1024|3|summit
 tri-chuke-near-montana|1024|3|summit
 tri-krize-near-karlovy-vary|1024|3|mountain
@@ -29770,7 +34453,7 @@ tribec-near-nitra|1024|3|mountain range
 tribec-near-partizanske|1024|3|mountain range
 tribec-near-topolcany|1024|3|mountain range
 triberg-waterfalls-near-baden-baden|1|3|waterfall
-triberg-waterfalls-near-villingen-schwenningen|0|0|
+triberg-waterfalls-near-villingen-schwenningen|1|3|waterfall
 triboldingerbohl-near-konstanz|64|3|island
 triboldingerbohl-near-kreuzlingen|64|3|island
 tricity-landscape-park-near-gdansk|196608|3|landscape park in Poland
@@ -29784,6 +34467,8 @@ trinity-lake-near-redding|32|3|reservoir
 trinity-mountain-near-boise|1024|3|mountain
 trischen-near-cuxhaven|64|3|island
 tristacher-see-near-lienz|32|3|lake
+triton-beach-near-annapolis|16|3|beach
+triton-beach-near-baltimore|16|3|beach
 triunia-national-park-near-nambour|32768|3|national park of Australia
 triunia-national-park-near-sunshine-coast|32768|3|national park of Australia
 trizonia-island-near-patras|0|0|
@@ -29813,6 +34498,7 @@ tromsoya-near-tromso-municipality|64|3|island
 tronador-near-bariloche|1024|3|mountain
 trondelsee-near-kiel|32|3|lake
 trondheim-fjord-near-trondheim|4096|3|fjord
+trondheimsfjord-near-stjordalshalsen|4096|3|fjord
 troodos-mountains-near-lakatamia|1024|3|mountain range
 troodos-mountains-near-larnaca|1024|3|mountain range
 troodos-mountains-near-limassol|1024|3|mountain range
@@ -29823,11 +34509,21 @@ trottick-mill-ponds-near-dundee|65536|3|nature reserve
 trotus-river-near-barlad|256|3|river
 trou-de-bozouls-near-rodez|2052|3|canyon
 trout-lake-near-federal-way|32|3|lake
+trow-point-near-darlington|4096|3|cape
+trow-point-near-durham|4096|3|cape
+trow-point-near-gateshead|4096|3|cape
+trow-point-near-hartlepool|4096|3|cape
+trow-point-near-middlesbrough|4096|3|cape
+trow-point-near-newcastle-upon-tyne|4096|3|cape
+trow-point-near-south-shields|4096|3|cape
+trow-point-near-stockton-on-tees|4096|3|cape
+trow-point-near-sunderland|4096|3|cape
 trsicky-vodopad-near-prerov|0|0|
 trubyn-lake-near-hlukhiv|32|3|lake
 trubyn-lake-near-nizhyn|32|3|lake
 trubyn-lake-near-pryluky|32|3|lake
 trubyn-lake-near-romny|32|3|lake
+truc-bach-lake-near-hanoi|32|3|lake
 trukhaniv-island-near-boryspil|320|3|river island
 trukhaniv-island-near-bucha|320|3|river island
 trukhaniv-island-near-fastiv|320|3|river island
@@ -29843,11 +34539,13 @@ tsalka-reservoir-near-gori|32|3|reservoir
 tsankov-kamak-reservoir-near-smolyan|0|0|
 tsarnata-reka-near-kyustendil|65536|3|nature reserve
 tschirgant-near-imst|1024|3|mountain
+tsemes-bay-near-novorossiysk|4096|3|cove
 tsentral-nyy-park-kul-tury-i-otdykha-imeni-gafuri-near-ufa|131072|3|park
 tserik-kyol-near-nalchik|32|3|lake
 tsivlou-lake-near-aigio|32|3|lake
 tsjukemar-near-heerenveen|32|3|lake
 tsoukalas-lesvou-near-mytilene|64|2|
+tsoukalio-lagoon-near-arta|4128|3|lagoon
 tsugaru-peninsula-near-aomori|4096|3|peninsula
 tsujido-beach-near-fujisawa|16|3|beach
 tsukishima-near-chiba|0|0|
@@ -29859,12 +34557,16 @@ tsukishima-near-kawasaki|0|0|
 tsukishima-near-koshigaya|0|0|
 tsukishima-near-matsudo|0|0|
 tsukishima-near-saitama|0|0|
+tsukuda-island-near-tokyo|64|2|
 tsumanska-pushcha-national-nature-park-near-dubno|32768|3|national nature park
 tsumanska-pushcha-national-nature-park-near-lutsk|32768|3|national nature park
 tsumanska-pushcha-national-nature-park-near-netishyn|32768|3|national nature park
 tsumanska-pushcha-national-nature-park-near-rivne|32768|3|national nature park
 tsumanska-pushcha-national-nature-park-near-varash|32768|3|national nature park
+tsurigasaki-beach-near-chiba|4096|3|coast
+tsuru-no-megumi-near-nagoya|32|2|
 tsurushima-near-matsuyama|64|3|island
+tsushima-island-near-fukuoka|64|3|island group
 tsushima-island-near-geoje|64|3|island group
 tua-river-near-mirandela|256|3|river
 tua-river-near-vila-real|256|3|river
@@ -29877,6 +34579,7 @@ tuart-forest-national-park-near-busselton|32768|3|national park of Australia
 tuart-forest-national-park-near-collie|32768|3|national park of Australia
 tuban-kama-national-park-near-izhevsk|32768|2|
 tubes-near-pecs|1024|3|mountain
+tubli-bay-near-manama|4096|3|bay
 tucalota-hills-near-temecula|1024|3|mountain range
 tuchola-forest-national-park-near-bydgoszcz|32768|3|National Parks of Poland
 tuchola-forest-national-park-near-gdansk|32768|3|National Parks of Poland
@@ -29891,6 +34594,7 @@ tudor-grange-park-near-solihull|131072|3|park
 tuela-river-near-mirandela|256|3|river
 tuf-near-porec|64|3|island
 tuf-near-umag|64|3|island
+tugela-river-near-durban|256|3|river
 tuhanavicki-park-near-baranavichy|131072|3|park
 tulare-lake-near-visalia|0|0|
 tule-springs-fossil-beds-national-monument-near-north-las-vegas|32768|3|National Park System unit
@@ -29914,6 +34618,7 @@ tunas-peak-near-midland|1024|3|summit
 tunas-peak-near-odessa|1024|3|summit
 tunevannet-near-fredrikstad|32|3|lake
 tung-ping-chau-near-huizhou|64|3|island
+tungabhadra-river-near-hyderabad|256|3|river
 tungurahua-volcano-near-ambato|1152|3|stratovolcano
 tungurahua-volcano-near-latacunga|1152|3|stratovolcano
 tungurahua-volcano-near-quevedo|1152|3|stratovolcano
@@ -29931,6 +34636,10 @@ tuque-de-robert-near-agen|1024|3|mountain
 tuque-de-robert-near-cahors|1024|3|mountain
 tuque-de-robert-near-montauban|1024|3|mountain
 turajarvi-near-rauma|32|3|lake or pond
+turakirae-head-near-lower-hutt|4096|3|headland
+turakirae-head-near-paraparaumu|4096|3|headland
+turakirae-head-near-upper-hutt|4096|3|headland
+turakirae-head-near-wellington|4096|3|headland
 turbacz-near-nowy-targ|1024|3|mountain
 turda-gorge-near-alba-iulia|67584|3|valley
 turda-gorge-near-cluj-napoca|67584|3|valley
@@ -29940,6 +34649,8 @@ tureni-copaceni-gorge-near-ocna-mures|65536|3|nature reserve
 turestorpso-near-trelleborg|4096|3|peninsula
 turgesius-island-near-mullingar|64|3|island
 turia-natural-park-near-torrent|196608|3|protected area
+turimetta-beach-near-central-coast|16|3|beach
+turimetta-beach-near-gosford|16|3|beach
 turkey-run-state-park-near-terre-haute|131072|3|Indiana state park
 turlersee-near-horgen|32|3|lake
 turlersee-near-zug|32|3|lake
@@ -29959,6 +34670,7 @@ turrialba-near-cartago|1152|3|active volcano
 turrialba-near-heredia|1152|3|active volcano
 turrialba-near-limon|1152|3|active volcano
 turska-stinka-near-soroca|0|0|
+turtle-cove-near-hong-kong|4096|3|bay
 turtle-lake-near-rustavi|32|3|lake
 tuscan-archipelago-national-park-near-grosseto|98304|3|national park
 tuscan-archipelago-national-park-near-livorno|98304|3|national park
@@ -30011,7 +34723,7 @@ two-rivers-national-wildlife-refuge-near-st-charles|65536|3|National Wildlife Re
 two-tree-island-near-southend-on-sea|65856|3|river island
 two-twins-near-hendaye|64|3|island
 tybee-island-near-savannah|0|0|
-tyler-state-park-near-tyler|0|0|
+tyler-state-park-near-tyler|131072|3|Texas state park
 tylihul-estuary-near-mykolaiv|0|0|
 tylosand-near-halmstad|0|0|
 tymfi-near-grevena|1024|3|mountain
@@ -30079,6 +34791,8 @@ ugam-range-near-shymkent|1024|3|mountain range
 uggerby-a-near-frederikshavn|0|0|
 uggerby-a-near-hjorring|0|0|
 uggerby-a-near-skagen|0|0|
+uggool-beach-near-castlebar|16|3|beach
+uggool-beach-near-westport|16|3|beach
 ugra-national-park-near-bryansk|65536|3|biosphere reserve
 ugra-national-park-near-kaluga|65536|3|biosphere reserve
 ugra-national-park-near-oryol|65536|3|biosphere reserve
@@ -30092,7 +34806,11 @@ uitgeestermeer-near-castricum|32|3|lake
 uitgeestermeer-near-heemskerk|32|3|lake
 uitkerkse-polder-near-knokke-heist|65536|3|nature area
 uitkerkse-polder-near-ostend|65536|3|nature area
+uitru-spit-near-keila|0|0|
+uitru-spit-near-maardu|0|0|
+uitru-spit-near-tallinn|0|0|
 ujscie-calvary-near-pila|131072|3|park
+ujung-kulon-national-park-near-jakarta|32768|2|
 ukonvesi-near-mikkeli|32|3|lake
 ukrainian-steppe-nature-reserve-near-donetsk|0|0|
 ukrainian-steppe-nature-reserve-near-mariupol|0|0|
@@ -30103,10 +34821,14 @@ ulidarra-national-park-near-coffs-harbour|32768|3|national park of Australia
 ulistac-natural-area-near-santa-clara|65536|3|nature reserve
 ulken-azhbolat-near-pavlodar|32|3|salt lake
 ullarp-near-falkenberg|65536|3|nature reserve
+ulleungdo-near-daegu|64|3|island
 ullibarri-gamboa-reservoir-near-vitoria-gasteiz|32|3|reservoir
+ullsfjorden-near-tromso|4096|3|fjord
+ullsfjorden-near-tromso-municipality|4096|3|fjord
 ullstammaskogen-near-linkoping|65536|3|nature reserve
 ulqen-almaty-peak-near-almaty|1024|3|summit
 ulriken-near-bergen|1024|3|mountain
+ulsoor-lake-near-bangalore|32|3|lake
 ulubey-canyon-nature-park-near-kutahya|198660|3|canyon
 ulubey-canyon-nature-park-near-usak|198660|3|canyon
 uludag-national-park-near-kutahya|32768|3|national park
@@ -30122,10 +34844,16 @@ ulverscroft-valley-near-loughborough|2048|3|valley
 ulverscroft-valley-near-nuneaton|2048|3|valley
 umberumberka-near-broken-hill|1024|3|hill
 umgebung-des-favoriteparks-near-ludwigsburg|65536|3|Landschaftsschutzgebiet
+umgeni-river-near-durban|256|3|river
 umihotaru-parking-area-near-kisarazu|0|0|
+umm-bab-beach-near-doha|16|3|beach
 umstead-state-park-near-raleigh|131072|3|North Carolina state park
+umupuia-beach-near-auckland|16|3|beach
+umupuia-beach-near-pukekohe|16|3|beach
+umusambi-village-near-kigali|512|3|wetland
 uncanoonuc-mountains-near-manchester-nh|1024|3|mountain range
 uncatupi-caparicaya-near-callao|1024|3|summit
+unguja-near-dar-es-salaam|64|3|island
 ungurs-near-cesis|32|3|lake
 union-corner-provincial-park-near-summerside|131072|3|provincial park of Canada
 university-arboretum-at-california-state-university-sacramento-near-roseville|0|0|
@@ -30160,6 +34888,7 @@ upawa-river-near-slupsk|256|3|river
 uphuser-meer-near-emden|32|3|lake
 upor-cerninovsko-near-melnik|65536|3|nature reserve in the Czech Republic
 upor-near-melnik|65536|3|nature reserve in the Czech Republic
+upper-cheung-sha-beach-near-zhuhai|16|2|
 upper-danube-nature-park-near-ulm|196608|3|Naturpark
 upper-danube-valley-special-nature-reserve-near-vinkovci|65536|3|protected area
 upper-danube-valley-special-nature-reserve-near-vukovar|65536|3|protected area
@@ -30178,6 +34907,20 @@ upper-nashotah-lake-near-milwaukee|32|3|lake
 upper-nashotah-lake-near-oshkosh|32|3|lake
 upper-nashotah-lake-near-sheboygan|32|3|lake
 upper-nashotah-lake-near-waukesha|32|3|lake
+upper-new-york-bay-near-edison|4096|3|cove
+upper-new-york-bay-near-elizabeth|4096|3|cove
+upper-new-york-bay-near-hackensack|4096|3|cove
+upper-new-york-bay-near-hempstead|4096|3|cove
+upper-new-york-bay-near-hoboken|4096|3|cove
+upper-new-york-bay-near-jersey-city|4096|3|cove
+upper-new-york-bay-near-new-york|4096|3|cove
+upper-new-york-bay-near-newark|4096|3|cove
+upper-new-york-bay-near-north-hempstead|4096|3|cove
+upper-new-york-bay-near-oyster-bay|4096|3|cove
+upper-new-york-bay-near-paterson|4096|3|cove
+upper-new-york-bay-near-perth-amboy|4096|3|cove
+upper-new-york-bay-near-white-plains|4096|3|cove
+upper-new-york-bay-near-yonkers|4096|3|cove
 upper-otay-reservoir-near-chula-vista|32|3|reservoir
 upper-palatine-forest-near-amberg|1024|3|mountain range
 upper-palatine-forest-near-domazlice|1024|3|mountain range
@@ -30196,6 +34939,7 @@ urak-valley-near-quetta|2048|3|valley
 ural-river-near-atyrau|256|3|river
 urbansee-near-feldkirchen-in-karnten|32|3|lake
 urdaibai-biosphere-reserve-near-bilbao|65536|3|biosphere reserve
+uretiti-beach-near-whangarei|16|3|beach
 urevacki-peski-near-bjelovar|65536|3|Natura 2000 site
 urevacki-peski-near-koprivnica|65536|3|Natura 2000 site
 urgull-near-irun|1024|3|mountain
@@ -30266,8 +35010,11 @@ utrechtse-heuvelrug-national-park-near-wageningen|98304|3|national park
 utrechtse-heuvelrug-national-park-near-wijchen|98304|3|national park
 utrechtse-heuvelrug-national-park-near-zeist|98304|3|national park
 utria-national-natural-park-near-quibdo|32768|3|national park
+utrish-cape-near-novorossiysk|4096|3|cape
 utrish-near-novorossiysk|64|3|island
 utschgraben-near-bruck-an-der-mur|2048|3|valley
+utskarpen-near-mo-i-rana|4096|3|fjord
+utskarpen-near-mosjoen|4096|3|fjord
 uvac-special-nature-reserve-near-kraljevo|65536|3|nature reserve
 uvelka-near-kostanay|256|3|river
 uvita-greda-near-niksic|1024|3|mountain
@@ -30288,6 +35035,8 @@ uzunkum-nature-park-near-adapazar|196608|3|nature park
 uzusaliu-reservoir-near-jonava|32|3|reservoir
 uzvaras-parks-near-marupe|131072|3|park
 v-n-suchomasty-near-kladno|32|3|reservoir
+vaal-river-near-johannesburg|256|3|river
+vaal-river-near-pretoria|256|3|river
 vaaljarvi-near-rauma|32|3|lake or pond
 vaaljarvi-near-uusikaupunki|32|3|lake or pond
 vaalserberg-near-venlo|1024|3|hill
@@ -30311,6 +35060,8 @@ vaddo-near-norrtalje|64|3|island
 vadsoya-near-vadso|64|3|island
 vadvetjakka-national-park-near-narvik|32768|3|national park
 vagsater-bokskog-near-uddevalla|65536|3|nature reserve
+vagsfjorden-near-harstad|4096|3|fjord
+vagsfjorden-near-narvik|4096|3|fjord
 vahttecohkka-near-narvik|1024|3|mountain
 vahvajarvi-near-mikkeli|32|3|lake or pond
 vaidava-lake-near-valmiera|32|3|lake
@@ -30318,6 +35069,8 @@ vaike-pakri-near-paldiski|64|3|island
 vaike-viik-near-haapsalu|32|3|lake
 vaikejarv-near-rakvere|32|3|lake
 vainjarv-near-paide|32|3|lake
+vainupea-cape-near-kivioli|4096|3|cape
+vainupea-cape-near-rakvere|4096|3|cape
 vajnorske-jazero-near-senec|32|3|lake
 vake-park-near-rustavi|131072|3|urban park
 val-badia-near-brixen|2048|3|valley
@@ -30342,6 +35095,9 @@ valchi-dol-near-haskovo|65536|3|nature reserve
 valchi-dol-near-kardzhali|65536|3|nature reserve
 valcour-island-near-burlington-vt|64|3|island
 valdai-near-veliky-novgorod|32|3|lake
+valdanos-near-bar|16|3|beach
+valdanos-near-budva|16|3|beach
+valdanos-near-cetinje|16|3|beach
 valdanos-near-podgorica|16|3|beach
 valdayskoe-near-ivanovo|32|3|lake
 valdebernardo-park-near-coslada|131072|3|park
@@ -30355,6 +35111,7 @@ vale-de-alcantara-near-seixal|2048|3|valley
 vale-de-alcantara-near-vila-franca-de-xira|2048|3|valley
 vale-de-pousadas-near-castelo-branco|2048|3|valley
 vale-de-pousadas-near-portalegre|2048|3|valley
+vale-do-anhangabau-near-sao-paulo|2048|3|valley
 vale-do-rossim-reservoir-near-oliveira-do-hospital|32|3|reservoir
 vale-do-rossim-reservoir-near-seia|32|3|reservoir
 vale-do-rossim-reservoir-near-tondela|32|3|reservoir
@@ -30370,6 +35127,7 @@ valea-morilor-park-near-singera|131072|3|park
 valea-morilor-park-near-straseni|131072|3|park
 valea-oltului-inferior-near-slatina|65536|3|Natura 2000 site
 valentia-island-near-tralee|64|3|island
+valentin-beach-near-saint-nazaire|16|3|beach
 valgjarv-near-valga|32|3|lake
 valgjarv-near-valka|32|3|lake
 valguma-ezers-near-tukums|32|3|lake
@@ -30445,6 +35203,8 @@ valley-of-three-ponds-near-swietochlowice|32|3|reservoir
 valley-ridge-park-near-kent|131072|3|park
 valley-ridge-park-near-renton|131072|3|park
 valley-stream-state-park-near-hempstead|131072|3|New York state park
+valli-di-comacchio-near-cesena|4640|3|lagoon
+valli-di-comacchio-near-forli|4640|3|lagoon
 valli-di-comacchio-near-ravenna|4640|3|lagoon
 vallo-near-oskarshamn|65600|3|island
 vallombrosa-near-florence|0|0|
@@ -30455,6 +35215,10 @@ vallunaraju-near-huaraz|1024|3|mountain
 valnerina-near-spoleto|2048|3|valley
 valova-near-navapolack|32|3|lake
 valova-near-polatsak|32|3|lake
+valparaiso-bay-near-valparaiso|4096|3|bay
+valsaline-near-porec|16|3|beach
+valsaline-near-pula|16|3|beach
+valsaline-near-rovinj|16|3|beach
 valsan-river-near-pitesti|256|3|river
 valserra-near-spoleto|2048|3|valley
 valtellina-near-sondrio|2048|3|valley
@@ -30500,6 +35264,7 @@ vapor-cue-national-park-near-coronel-oviedo|32768|3|national park
 vapor-cue-national-park-near-luque|32768|3|national park
 vapor-cue-national-park-near-san-lorenzo|32768|3|national park
 varanger-peninsula-near-vadso|4096|3|peninsula
+varangerfjord-near-vadso|4096|3|fjord
 varangerhalvoya-national-park-near-vadso|32768|3|national park
 varaskruv-nature-reserve-near-vaxjo|65536|3|nature reserve
 vardavar-lake-near-yerevan|32|3|lake
@@ -30512,6 +35277,7 @@ vardsjon-near-alingsas|32|3|lake
 varenis-near-varena|32|3|lake
 vargas-plateau-regional-park-near-fremont|131072|3|park
 varhost-near-litomerice|1024|3|mountain
+varkala-beach-near-thiruvananthapuram|16|3|beach
 varmlandsskargarden-near-kristinehamn|65536|3|nature reserve
 varpan-near-falun|32|3|lake
 vartiovuorenmaki-near-kaarina|132096|3|hill
@@ -30548,6 +35314,8 @@ vayxr-su-anbar-near-nakhchivan|32|3|lake
 vchelka-waterfall-near-berdychiv|1|3|waterfall
 ve-slatinske-strani-near-rychnov-nad-kneznou|65536|3|nature reserve in the Czech Republic
 veals-near-moss|65536|3|nature reserve
+vecaki-beach-near-marupe|16|3|beach
+vecaki-beach-near-olaine|16|3|beach
 vechte-near-enschede|256|3|river
 vechtesee-near-meppen|32|3|lake
 vechtesee-near-nordhorn|32|3|lake
@@ -30566,12 +35334,25 @@ veerse-meer-near-schouwen-duiveland|65568|3|lake
 veerse-meer-near-terneuzen|65568|3|lake
 veerse-meer-near-tholen|65568|3|lake
 veerse-meer-near-vlissingen|65568|3|lake
+vefsnfjord-near-mosjoen|4096|3|fjord
 vega-archipelago-near-mosjoen|64|3|archipelago
+vejle-fjord-near-billund|4096|3|fjord
+vejle-fjord-near-fredericia|4096|3|fjord
+vejle-fjord-near-haderslev|4096|3|fjord
+vejle-fjord-near-horsens|4096|3|fjord
 vejle-fjord-near-kolding|4096|3|fjord
+vejle-fjord-near-odense|4096|3|fjord
+vejle-fjord-near-skanderborg|4096|3|fjord
 vejle-fjord-near-vejle|4096|3|fjord
 vejls-near-silkeborg|32|3|lake
 vejro-near-nakskov|64|3|island
 vela-draga-near-opatija|2048|3|valley
+vela-luka-bay-near-crikvenica|4096|3|cove
+vela-luka-bay-near-opatija|4096|3|cove
+vela-luka-bay-near-rijeka|4096|3|cove
+vela-sabusa-near-gospic|16|3|beach
+vela-sabusa-near-vodice|16|3|beach
+vela-sabusa-near-zadar|16|3|beach
 velabrum-near-rome|2048|3|valley
 veldenstein-forest-near-bamberg|0|0|
 veldenstein-forest-near-erlangen|0|0|
@@ -30579,19 +35360,23 @@ velebit-near-gospic|1024|3|mountain range
 velebit-near-zadar|1024|3|mountain range
 velence-and-dinnyes-nature-conservation-area-near-dunaujvaros|65536|3|nature reserve
 velence-hills-near-szekesfehervar|0|0|
-velestur-near-zvolen|0|0|
+velestur-near-zvolen|1024|3|mountain
 velez-near-mostar|1024|3|mountain range
+velfjorden-near-mosjoen|4096|3|fjord
 veli-skolj-near-porec|64|3|island
 veli-skolj-near-umag|64|3|island
 velika-kapela-near-crikvenica|1024|3|mountain range
 velika-kapela-near-ogulin|1024|3|mountain range
 velika-planina-near-zagorje-ob-savi|1024|3|karst plateau
+velika-plaza-near-bar|16|3|beach
+velika-plaza-near-budva|16|3|beach
 veliki-brijun-near-labin|64|3|island
 veliki-brijun-near-rovinj|64|3|island
 veliki-kabal-near-omis|1024|3|mountain
 veliki-kabal-near-sinj|1024|3|mountain
 veliki-krs-near-bor|1024|3|mountain
 veliki-vrh-barentaler-kotschna-near-jesenice|1024|3|mountain
+veliki-zali-beach-near-ploce|16|3|beach
 velikoe-near-kostroma|32|3|lake
 velikoe-near-vladimir|32|3|lake
 velikoe-near-yaroslavl|32|3|lake
@@ -30653,7 +35438,13 @@ veluwezoom-national-park-near-wageningen|98304|3|national park
 veluwezoom-national-park-near-wijchen|98304|3|national park
 veluwezoom-national-park-near-winterswijk|98304|3|national park
 veluwezoom-national-park-near-zutphen|98304|3|national park
+velvet-strand-near-ashbourne|16|3|beach
 velvet-strand-near-balbriggan|16|3|beach
+velvet-strand-near-bray|16|3|beach
+velvet-strand-near-drogheda|16|3|beach
+velvet-strand-near-dublin|16|3|beach
+velvet-strand-near-greystones|16|3|beach
+velvet-strand-near-leixlip|16|3|beach
 velyke-near-pinsk|32|3|lake
 velyke-near-varash|32|3|lake
 velyke-zhoranske-near-kovel|32|3|lake
@@ -30680,9 +35471,26 @@ vendee-river-near-niort|256|3|river
 vendicari-nature-reserve-near-syracuse-it|65536|3|regional nature reserve
 venekotensee-near-heinsberg|32|3|lake
 venet-near-landeck|1024|3|mountain
+venetian-lagoon-near-padua|4128|3|lagoon
+venetian-lagoon-near-pordenone|4128|3|lagoon
+venetian-lagoon-near-treviso|4128|3|lagoon
+venetian-lagoon-near-venice|4128|3|lagoon
 venetiko-near-chios-gr|64|3|island
 venetikos-near-kozani|256|3|river
+venice-beach-near-anaheim|131072|3|park
+venice-beach-near-burbank|131072|3|park
+venice-beach-near-carson|131072|3|park
+venice-beach-near-compton|131072|3|park
+venice-beach-near-downey|131072|3|park
+venice-beach-near-fullerton|131072|3|park
+venice-beach-near-inglewood|131072|3|park
+venice-beach-near-long-beach|131072|3|park
+venice-beach-near-los-angeles|131072|3|park
+venice-beach-near-norwalk|131072|3|park
 venice-beach-near-santa-monica|131072|3|park
+venice-beach-near-simi-valley|131072|3|park
+venice-beach-near-thousand-oaks|131072|3|park
+venice-beach-near-torrance|131072|3|park
 venice-hills-near-visalia|1024|3|mountain range
 venidse-near-hoorn|64|3|island
 venman-bushland-national-park-near-brisbane|32768|3|national park of Australia
@@ -30693,6 +35501,8 @@ venta-regional-park-near-naujoji-akmene|131072|3|regional park
 venta-valley-near-kuldiga|65536|3|Natura 2000 site
 ventaine-near-silute|0|0|
 vente-cape-near-kaliningrad|4096|3|cape
+vente-cape-near-klaipeda|4096|3|cape
+vente-cape-near-silute|4096|3|cape
 ventotene-near-gaeta|64|3|island
 venusberg-near-calw|1024|3|hill
 venusina-sopka-near-bruntal|1152|3|extinct volcano
@@ -30703,6 +35513,8 @@ vercors-regional-natural-park-near-valence|196608|3|protected area
 vercors-regional-park-near-grenoble|196608|3|protected area
 verdon-gorge-near-antibes|2052|3|defile
 verdugo-mountains-near-burbank|1024|3|mountain range
+vergi-cape-near-kivioli|4096|3|cape
+vergi-cape-near-rakvere|4096|3|cape
 verhnoesmanskyy-near-shostka|65536|3|landscape reserve
 verijarv-near-voru|32|3|lake
 verila-near-dupnitsa|1024|3|mountain
@@ -30722,6 +35534,7 @@ verneomrader-i-drammen-near-drammen|65536|3|nature reserve
 vernon-islands-near-darwin|64|3|island
 vernovice-near-jastrzebie-zdroj|65536|3|natural monument in the Czech Republic
 veronika-berg-near-arnstadt|1024|3|mountain
+verrasundet-near-steinkjer-municipality|4096|3|fjord
 verrewinkel-wood-near-auderghem|16384|3|forest
 verrewinkel-wood-near-etterbeek|16384|3|forest
 verrewinkel-wood-near-forest|16384|3|forest
@@ -30733,6 +35546,7 @@ verrewinkel-wood-near-woluwe-saint-pierre|16384|3|forest
 versailles-near-paris|0|0|
 versailles-state-park-near-covington|131072|3|Indiana state park
 verse-reservoir-near-ludenscheid|32|3|reservoir
+versova-beach-near-mumbai|16|3|beach
 vertes-hills-near-szekesfehervar|1024|3|mountain range
 vertesszolos-near-tatabanya|65536|3|nature reserve
 verto-near-gyula|32|3|lake
@@ -30748,6 +35562,8 @@ vesijarvi-near-heinola|32|3|lake or pond
 vesijarvi-near-kangasala|32|3|lake or pond
 vesijarvi-near-lahti|32|3|lake or pond
 vesslunda-near-falkenberg|65536|3|nature reserve
+vest-stadil-fjord-near-holstebro|4128|3|lake
+vest-stadil-fjord-near-lemvig|4128|3|lake
 vestfjorden-near-tonsberg|4096|3|fjord
 vestre-bokn-near-karmoy-municipality|64|3|island
 vestvannet-near-sarpsborg|32|3|lake
@@ -30757,6 +35573,7 @@ vesuvius-national-park-near-aversa|98304|3|national park
 vesuvius-national-park-near-giugliano-in-campania|98304|3|national park
 vesuvius-national-park-near-naples|98304|3|national park
 vesuvius-national-park-near-salerno|98304|3|national park
+vetal-hill-near-pune|1024|3|mountain
 veterans-park-near-elizabeth|131072|3|park
 veterans-point-garden-near-ajax|0|0|
 veterans-point-garden-near-whitby|0|0|
@@ -30775,6 +35592,7 @@ vezirsuyu-national-park-near-sinop|196608|3|nature park
 viaskogen-near-kumla|65536|3|nature reserve
 vicente-perez-rosales-national-park-near-puerto-montt|32768|3|national park
 vickleby-adellovskog-near-kalmar|65536|3|nature reserve
+victoria-island-near-lagos|64|3|island
 victoria-lake-near-christchurch|32|3|artificial lake
 victoria-park-lake-near-cambridge-ca|32|3|lake
 victoria-park-lake-near-kitchener|32|3|lake
@@ -30791,6 +35609,7 @@ victoria-park-near-surat|81920|3|forest reserve
 victoria-peak-near-huizhou|1024|3|mountain
 victoria-square-park-near-richmond-hill|131072|3|park
 victoriepark-near-hoorn|131072|3|park
+victory-beach-near-dunedin|16|3|beach
 victory-park-enerhodar-near-nikopol|131072|3|park
 victory-park-near-abovyan|131072|3|park
 victory-park-near-samara|131072|3|urban park
@@ -30827,6 +35646,7 @@ vievis-near-elektrenai|32|3|lake
 vignemale-near-jaca|1024|3|mountain
 vignemale-near-pau|1024|3|mountain
 vignemale-near-tarbes|1024|3|mountain
+vihar-lake-near-mumbai|32|3|reservoir
 vihnusjarvi-near-nokia|32|3|lake or pond
 vihorlat-gutin-area-near-khust|1024|3|mountain range
 vihorlat-mountains-near-snina|1024|3|mountain range
@@ -30887,6 +35707,7 @@ viniansky-hradny-vrch-near-humenne|65536|3|nature reserve
 viniansky-hradny-vrch-near-michalovce|65536|3|nature reserve
 vinksnos-lake-near-radviliskis|32|3|lake
 vinterskogen-nature-reserve-near-tumba|65536|3|nature reserve
+viola-beach-near-ponta-delgada|16|3|beach
 vipava-valley-near-izola|2048|3|valley
 vipava-valley-near-ljubljana|2048|3|valley
 vipava-valley-near-sezana|2048|3|valley
@@ -30943,6 +35764,7 @@ vitya-cherevichkin-children-s-park-near-rostov-on-don|131072|3|park
 vivara-near-acerra|64|3|island
 vivara-near-aversa|64|3|island
 vivara-near-pozzuoli|64|3|island
+viveros-de-coyoacan-near-mexico-city|32768|3|National Park of Mexico
 viveros-de-coyoacan-near-tenochtitlan|32768|3|National Park of Mexico
 vizfo-cave-near-kaposvar|2|3|cave
 vizhdarvan-canyon-near-baghdad|2052|3|canyon
@@ -30958,6 +35780,7 @@ vlasina-lake-near-leskovac|32|3|reservoir
 vlasina-lake-near-vranje|32|3|reservoir
 vlaska-lake-near-ploce|32|3|lake
 vlcek-near-marianske-lazne|66560|3|mountain
+vliehors-near-sneek|16|3|beach
 vlietland-near-leiden|131104|3|lake
 vlietland-near-leidschendam-voorburg|131104|3|lake
 vlietland-near-noordwijk|131104|3|lake
@@ -30976,6 +35799,7 @@ vogelschutzgelande-porta-westfalica-near-minden|65536|3|protected area
 vogelzangbos-heusden-zolder-near-beringen|81920|3|forest
 voidokilia-beach-near-kalamata|16|2|
 voievodyn-waterfall-near-uzhhorod|1|3|waterfall
+voile-d-or-beach-near-dakar|16|3|beach
 voinova-near-bender|65536|3|nature reserve
 voinova-near-causeni|65536|3|nature reserve
 voinova-near-tiraspol|65536|3|nature reserve
@@ -30985,7 +35809,10 @@ vojak-near-pazin|1024|3|main peak
 volat-stone-near-baranavichy|0|0|
 volcan-baru-national-park-near-david|32768|3|national park
 volcan-baru-near-david|1152|3|stratovolcano
+volcan-de-agua-near-guatemala-city|1152|3|volcano
+volcan-de-fuego-near-guatemala-city|1152|3|volcano
 volcan-lake-near-santa-cruz-de-la-sierra|32|3|lake
+volcan-maipo-near-valparaiso|1152|3|volcano
 volcan-san-juan-near-tepic|1152|3|volcano
 volcan-tacana-biosphere-reserve-near-comitan-de-dominguez|65536|3|biosphere reserve
 volcan-tacana-biosphere-reserve-near-tapachula-de-cordova-y-ordonez|65536|3|biosphere reserve
@@ -31011,6 +35838,7 @@ voloca-verbca-landscape-reserve-near-straseni|65536|3|landscape reserve
 volodymyrivska-dacha-near-okhtyrka|81920|3|forest reserve
 volovicky-vrch-near-prachatice|1024|3|mountain
 vondelbeek-near-lokeren|256|3|river
+voramar-near-castellon-de-la-plana|16|3|beach
 voramar-near-villarreal|16|3|beach
 voras-mountains-near-edessa|1024|3|mountain range
 voras-mountains-near-florina|1024|3|mountain range
@@ -31044,9 +35872,13 @@ vossemeer-near-kampen|65568|3|lake
 vossemeer-near-noordoostpolder|65568|3|lake
 vossemeer-near-oldebroek|65568|3|lake
 votkinsk-reservoir-near-izhevsk|32|3|reservoir
+votsalakia-beach-near-acharnes|16|3|beach
+votsalakia-beach-near-agia-paraskevi|16|3|beach
+votsalakia-beach-near-chalandri|16|3|beach
 votsalakia-beach-near-ilion|16|3|beach
 votsalakia-beach-near-kallithea|16|3|beach
 votsalakia-beach-near-korydallos|16|3|beach
+votsalakia-beach-near-vrilissia|16|3|beach
 vouga-river-near-espinho|65792|3|river
 vouga-river-near-figueira-da-foz|65792|3|river
 vouga-river-near-santa-maria-da-feira|65792|3|river
@@ -31089,6 +35921,7 @@ vrbenske-rybniky-near-ceske-budejovice|65536|3|nature reserve in the Czech Repub
 vrbicke-jezero-near-wodzislaw-slaski|32|3|artificial lake
 vrbina-near-komarno|65536|3|nature reserve
 vrchlice-reservoir-near-kutna-hora|32|3|reservoir
+vredefort-crater-near-johannesburg|1152|3|impact crater
 vrelo-bune-buna-spring-near-mostar|65536|3|natural heritage
 vremscica-near-sezana|1024|3|mountain range
 vrijbos-near-roeselare|81920|3|forest
@@ -31097,6 +35930,7 @@ vrontous-near-serres|1024|3|mountain
 vrouwenbos-near-herstal|81920|3|forest
 vrutci-lake-near-uzice|32|3|reservoir
 vrysinas-near-rethymno|1024|3|mountain
+vrysoudia-beach-paphos-near-paphos|16|3|beach
 vsechlapy-reservoir-near-teplice|32|3|reservoir
 vshivoye-ozero-near-stavropol|32|3|lake
 vsivavec-near-trnava|65536|3|protected area
@@ -31157,11 +35991,13 @@ wadden-sea-national-parks-near-husum|66048|3|Ramsar site
 waddensea-of-hamburg-biosphere-reserve-near-cuxhaven|65536|3|biosphere reserve
 waddensea-of-lower-saxony-biosphere-reserve-near-wilhelmshaven|65536|3|biosphere reserve
 wadi-el-gamal-national-park-near-umm-lajj|32768|3|national park
+wadi-el-natrun-near-alexandria|2048|3|valley
 wadi-lajab-near-abha|2048|3|valley
 wadi-lajab-near-jizan|2048|3|valley
 wadi-lajab-near-khamis-mushait|2048|3|valley
 wadi-lajab-near-najran|2048|3|valley
 wadi-lajab-near-sabya|2048|3|valley
+wadi-nafis-near-marrakesh|256|3|river
 wadi-shab-near-bawshar|2052|3|canyon
 wadi-shab-near-nizwa|2052|3|canyon
 wadi-shab-near-seeb|2052|3|canyon
@@ -31182,6 +36018,7 @@ wagram-near-tulln-an-der-donau|1024|3|mountain range
 wahconah-falls-state-park-near-pittsfield|131072|2|
 wahnenbusch-near-heinsberg|16384|3|forest
 waiheke-island-near-auckland|64|3|island
+waikanae-beach-near-gisborne|16|3|beach
 waimanu-lagoon-near-paraparaumu|4128|3|lagoon
 waimeha-lagoon-near-paraparaumu|32|3|lake
 waiotapu-near-rotorua|0|0|
@@ -31239,6 +36076,17 @@ wallace-state-park-near-lawrence|131072|3|Missouri state park
 wallace-state-park-near-overland-park|131072|3|Missouri state park
 wallace-state-park-near-st-joseph|131072|3|Missouri state park
 wallasea-island-near-southend-on-sea|64|3|island
+wallasea-ness-near-basildon|4096|3|cape
+wallasea-ness-near-chatham|4096|3|cape
+wallasea-ness-near-chelmsford|4096|3|cape
+wallasea-ness-near-clacton-on-sea|4096|3|cape
+wallasea-ness-near-colchester|4096|3|cape
+wallasea-ness-near-gillingham|4096|3|cape
+wallasea-ness-near-gravesend|4096|3|cape
+wallasea-ness-near-ipswich-uk|4096|3|cape
+wallasea-ness-near-maidstone|4096|3|cape
+wallasea-ness-near-rochester-uk|4096|3|cape
+wallasea-ness-near-southend-on-sea|4096|3|cape
 walled-lake-near-flint|32|3|lake
 walled-lake-near-pontiac|32|3|lake
 wallendorfer-see-near-merseburg|32|3|lake
@@ -31246,12 +36094,18 @@ waller-feldmarksee-near-bremen|32|3|lake
 walney-island-near-barrow-in-furness|64|3|island
 walney-island-near-blackpool|64|3|island
 walney-island-near-lancaster|64|3|island
+walnut-beach-near-bridgeport|16|3|beach
+walnut-beach-near-middletown|16|3|beach
+walnut-beach-near-new-haven|16|3|beach
+walnut-beach-near-norwalk-us|16|3|beach
+walnut-beach-near-waterbury|16|3|beach
 walnut-grove-park-near-thousand-oaks|131072|3|park
 walnut-park-near-elgin|131072|3|park
 walnut-street-park-near-hillsboro|131072|3|park
 walnut-woods-state-park-near-des-moines|131072|3|Iowa state park
 walpole-island-near-sarnia|0|0|
 walter-f-george-lake-near-columbus-ga|32|3|reservoir
+walvis-bay-near-windhoek|4096|3|bay
 walyunga-national-park-near-northam|32768|3|national park of Australia
 walyunga-national-park-near-perth|32768|3|national park of Australia
 wamberal-lagoon-near-gosford|32|3|lake
@@ -31266,6 +36120,7 @@ wandelbos-near-tilburg|147456|3|forest
 wandelbos-near-waalwijk|147456|3|forest
 wandlitzer-see-near-oranienburg|32|3|lake
 wandoo-national-park-near-northam|98304|3|national park of Australia
+wang-river-near-chiang-mai|256|3|river
 wangerooge-near-bremerhaven|0|0|
 wanitsuka-mountains-near-miyazaki|1024|3|mountain range
 wannon-falls-near-hamilton|1|3|waterfall
@@ -31280,18 +36135,22 @@ warande-near-helmond|196608|3|nature area
 warandepark-near-beringen|131072|3|park
 warawara-lake-near-cochabamba|32|3|lake
 warawara-lake-near-sacaba|32|3|lake
+warbah-island-near-kuwait-city|64|3|island
 warby-ovens-national-park-near-benalla|32768|3|national park of Australia
 warby-ovens-national-park-near-shepparton|32768|3|national park of Australia
 warby-ovens-national-park-near-wangaratta|32768|3|national park of Australia
 warby-ovens-national-park-near-wodonga|32768|3|national park of Australia
+ward-beach-near-blenheim|16|3|beach
 wardang-island-near-kadina|65600|3|island
 warley-moor-reservoir-near-burnley|32|3|reservoir
 warley-moor-reservoir-near-halifax-uk|32|3|reservoir
 warndt-near-saarlouis|65536|3|Special Area of Conservation
+warner-beach-near-madison|16|3|beach
 warrabah-national-park-near-gunnedah|32768|3|national park of Australia
 warrabah-national-park-near-inverell|32768|3|national park of Australia
 warrabah-national-park-near-narrabri|32768|3|national park of Australia
 warrabah-national-park-near-tamworth|32768|3|national park of Australia
+warraq-island-near-alexandria|0|0|
 warren-dunes-state-park-near-south-bend|131072|2|
 warren-reservoir-near-gawler|32|3|reservoir
 warren-reservoir-near-nuriootpa|32|3|reservoir
@@ -31351,7 +36210,11 @@ watchung-reservation-near-newark|65536|3|protected area
 wategos-beach-near-ballina-nsw|16|3|beach
 wategos-beach-near-byron-bay|16|3|beach
 wategos-beach-near-goonellabah|16|3|beach
+wategos-beach-near-lismore|16|3|beach
+wategos-beach-near-murwillumbah|16|3|beach
 water-reservoir-strz-near-zdar-nad-sazavou|32|3|reservoir
+water-taxi-beach-near-stamford|16|3|beach
+watercress-beach-near-invercargill|16|3|beach
 waterfall-azhek-near-sochi|1|3|waterfall
 waterfall-chervonohorod-near-chortkiv|1|3|waterfall
 waterfall-glen-forest-preserve-near-evanston|1|3|waterfall
@@ -31408,6 +36271,7 @@ websters-falls-near-cambridge-ca|1|3|waterfall
 websters-falls-near-halton-hills|1|3|waterfall
 websters-falls-near-hamilton-ontario|1|3|waterfall
 websters-falls-near-woodstock|1|3|waterfall
+wechecha-near-addis-ababa|1152|3|extinct volcano
 weddin-mountains-national-park-near-cootamundra|32768|3|national park of Australia
 weddin-mountains-national-park-near-cowra|32768|3|national park of Australia
 weddin-mountains-national-park-near-forbes|32768|3|national park of Australia
@@ -31458,6 +36322,7 @@ wellington-national-park-near-bunbury|32768|3|national park of Australia
 wellington-national-park-near-collie|32768|3|national park of Australia
 wellington-range-near-kingston-au|1024|3|mountain range
 wellington-range-near-new-norfolk|1024|3|mountain range
+wells-beach-near-portland-me|16|3|beach
 wells-state-park-near-worcester|131072|2|
 wellsee-near-kiel|32|3|lake
 wellsville-mountains-near-logan|1024|3|mountain range
@@ -31491,6 +36356,7 @@ west-bay-near-galveston|4096|3|bay
 west-bay-near-league-city|4096|3|bay
 west-beach-near-devonport|16|3|beach
 west-beach-near-esperance|16|3|beach
+west-beach-near-latrobe|16|3|beach
 west-beach-near-smithton-au|16|3|beach
 west-beach-near-wynyard|16|3|beach
 west-branch-state-park-near-canton|131072|3|Ohio state park
@@ -31500,16 +36366,27 @@ west-coyote-hills-near-norwalk|1024|3|mountain range
 west-coyote-hills-near-orange-us|1024|3|mountain range
 west-estonian-archipelago-biosphere-reserve-near-kuressaare|65536|3|biosphere reserve
 west-gate-park-near-downey|131072|3|park
+west-head-near-blenheim|4096|3|headland
 west-island-conservation-park-near-goolwa|65536|3|conservation park of Australia
 west-island-conservation-park-near-victor-harbor|65536|3|conservation park of Australia
 west-island-near-goolwa|64|3|island
 west-island-near-victor-harbor|64|3|island
 west-lake-eryuan-near-lijiang|32|3|lake
+west-lake-near-hanoi|32|3|lake
+west-lake-near-shanghai|32|3|lake
 west-mountain-national-park-guangxi-near-guilin|32768|3|national park
 west-mountain-national-park-guangxi-near-liuzhou|32768|3|national park
 west-mountain-national-park-guangxi-near-nanning|32768|3|national park
 west-point-lake-near-columbus-ga|32|3|reservoir
 west-point-lake-near-newnan|32|3|reservoir
+west-point-near-bellevue|4096|3|cape
+west-point-near-everett|4096|3|cape
+west-point-near-federal-way|4096|3|cape
+west-point-near-kent|4096|3|cape
+west-point-near-redmond|4096|3|cape
+west-point-near-renton|4096|3|cape
+west-point-near-seattle|4096|3|cape
+west-point-near-tacoma|4096|3|cape
 west-polesie-transboundary-biosphere-reserve-belarus-poland-ukraine-near-byerastsye|65536|3|biosphere reserve
 west-wittering-near-portsmouth|0|0|
 west-wood-little-sampford-near-basildon|81920|3|woodland
@@ -31529,6 +36406,7 @@ western-carpathians-near-stara-lubovna|1024|3|mountain range
 western-carpathians-near-zakopane|1024|3|mountain range
 western-getteron-nature-reserve-near-varberg|65536|3|nature reserve
 western-hills-near-baoding|1024|3|mountain range
+western-hills-near-beijing|1024|3|mountain range
 western-hills-near-cangzhou|1024|3|mountain range
 western-himalaya-near-sialkot|1024|3|mountain range
 western-pomerania-lagoon-area-national-park-near-stralsund|32768|3|Nationalpark
@@ -31559,12 +36437,18 @@ westonbirt-arboretum-near-swindon|0|0|
 westport-lake-near-newcastle-under-lyme|65568|3|lake
 westport-lake-near-stoke-on-trent|65568|3|lake
 westrittrumer-see-near-cloppenburg|32|3|lake
+westshore-beach-near-hastings|16|3|beach
+westshore-beach-near-napier|16|3|beach
 wet-mountains-near-pueblo|1024|3|mountain range
 wethouder-van-gelukpark-near-ijmuiden|131072|3|park
 wexford-wildfowl-reserve-near-wexford|65536|3|nature reserve
 weymouth-back-river-reservation-near-quincy-us|131072|2|
 weymouth-beach-near-dorchester|16|3|beach
 weymouth-woods-sandhills-nature-preserve-near-fayetteville-nc|0|0|
+whairepo-lagoon-near-lower-hutt|4128|3|lagoon
+whairepo-lagoon-near-upper-hutt|4128|3|lagoon
+whairepo-lagoon-near-wellington|4128|3|lagoon
+whalers-beach-near-albany|16|3|beach
 whanganui-national-park-near-whanganui|32768|3|national park
 whangarei-falls-near-whangarei|1|3|waterfall
 whangioterangi-echo-lake-near-taupo|32|3|lake
@@ -31574,10 +36458,14 @@ wharfedale-near-wakefield|2048|3|valley
 wharfedale-near-york|2048|3|valley
 wharite-peak-near-palmerston-north|1024|3|mountain
 wharton-state-forest-near-trenton|16384|1|
+whatipu-beach-near-auckland|16|3|beach
+whatipu-beach-near-hibiscus-coast|16|3|beach
+whatipu-beach-near-pukekohe|16|3|beach
 wheatley-provincial-park-near-chatham-kent|131072|3|provincial park of Canada
 wheatley-provincial-park-near-leamington|131072|3|provincial park of Canada
 wheeler-lake-near-decatur-us|32|3|reservoir
 wheeler-lake-near-florence-us|32|3|reservoir
+wherowhero-lagoon-near-gisborne|4128|3|lagoon
 whicher-national-park-near-margaret-river|32768|3|national park of Australia
 whicher-range-near-busselton|1024|3|mountain range
 whicher-range-near-margaret-river|1024|3|mountain range
@@ -31626,6 +36514,7 @@ white-rock-lake-park-near-carrollton|131072|3|park
 white-rock-lake-park-near-lewisville|131072|3|park
 white-rock-lake-park-near-plano|131072|3|park
 white-rock-lake-park-near-richardson|131072|3|park
+white-rocks-monagroulli-near-limassol|4096|3|cliff
 white-sitch-near-telford|32|3|lake
 white-tank-mountain-regional-park-near-surprise|131072|3|regional park
 whitefish-dunes-state-park-near-green-bay|0|0|
@@ -31636,6 +36525,9 @@ whites-hill-near-brisbane|1024|3|mountain
 whiteshell-provincial-park-near-kenora|131072|3|provincial park of Manitoba
 whitewater-lake-near-brandon|32|3|lake
 whitewater-state-park-near-rochester-mn|131072|2|
+whitlingham-great-broad-near-great-yarmouth|4128|3|lagoon
+whitlingham-great-broad-near-lowestoft|4128|3|lagoon
+whitlingham-great-broad-near-norwich|4128|3|lagoon
 whitlock-island-near-carnarvon|64|3|island
 whitney-point-reservoir-near-binghamton|32|3|reservoir
 whitsunday-island-near-bowen|64|3|island
@@ -31652,6 +36544,12 @@ wicken-fen-near-ely|65536|3|nature reserve
 wicken-fen-near-luton|65536|3|nature reserve
 wicken-fen-near-milton-keynes|65536|3|nature reserve
 wickham-park-near-palm-bay|131072|3|park
+wicklow-head-near-bray|4096|3|headland
+wicklow-head-near-dublin|4096|3|headland
+wicklow-head-near-dun-laoghaire|4096|3|headland
+wicklow-head-near-greystones|4096|3|headland
+wicklow-head-near-leixlip|4096|3|headland
+wicklow-head-near-swords|4096|3|headland
 wicklow-mountains-national-park-near-bray|98304|3|national park
 wicklow-mountains-national-park-near-swords|98304|3|national park
 wicklow-mountains-near-dublin|98304|3|national park
@@ -31683,6 +36581,7 @@ wieringen-near-enkhuizen|0|0|
 wieringen-near-heemskerk|0|0|
 wieringen-near-urk|0|0|
 wierzchowiska-nature-reserve-near-lublin|65536|3|nature reserve in Poland
+wiesbadenbrucke-near-wilhelmshaven|4096|3|headland
 wietrznia-reserve-in-kielce-near-kielce|65536|3|nature reserve in Poland
 wietzer-berg-near-celle|1024|3|mountain
 wiezyca-near-slupsk|0|0|
@@ -31716,10 +36615,16 @@ wildmoossee-near-telfs|32|3|lake
 wildoner-berg-near-leibnitz|1024|3|mountain
 wildseeloder-near-kitzbuhel|1024|3|mountain
 wildspitze-near-landeck|1024|3|mountain
-wilhelminapark-near-heerhugowaard|0|0|
+wilhelminapark-near-heerhugowaard|131072|3|urban park
 wilhelminapark-wormerveer-near-ijmuiden|131072|3|urban park
 will-rogers-gardens-near-norman|0|0|
+will-rogers-state-beach-near-burbank|16|3|California state beach
+will-rogers-state-beach-near-downey|16|3|California state beach
+will-rogers-state-beach-near-los-angeles|16|3|California state beach
+will-rogers-state-beach-near-norwalk|16|3|California state beach
 will-rogers-state-beach-near-santa-monica|16|3|California state beach
+will-rogers-state-beach-near-simi-valley|16|3|California state beach
+will-rogers-state-beach-near-thousand-oaks|16|3|California state beach
 willamette-mission-state-park-near-salem|131072|2|
 willamette-valley-near-corvallis|2048|3|valley
 willamette-valley-near-salem|2048|3|valley
@@ -31777,6 +36682,8 @@ windsor-great-park-near-windsor|147456|3|royal forest
 windsor-great-park-near-woking|147456|3|royal forest
 windsor-lake-near-greeley|32|3|lake
 windsor-near-london|0|0|
+windsorville-pond-near-hartford|4128|3|lagoon
+windsorville-pond-near-middletown|4128|3|lagoon
 windy-hill-near-huddersfield|1024|3|mountain
 windy-hill-near-rochdale|1024|3|mountain
 wingfoot-lake-state-park-near-akron|131072|3|Ohio state park
@@ -31796,12 +36703,19 @@ winter-hill-near-salford|1024|3|mountain
 winter-hill-near-stretford|1024|3|mountain
 winter-hill-near-warrington|1024|3|mountain
 winter-hill-near-wigan|1024|3|mountain
+winthrop-beach-near-brockton|16|3|beach
+winthrop-beach-near-cambridge-us|16|3|beach
+winthrop-beach-near-lynn|16|3|beach
+winthrop-beach-near-plymouth-us|16|3|beach
+winthrop-beach-near-quincy-us|16|3|beach
+winthrop-beach-near-salem-us|16|3|beach
+winthrop-beach-near-taunton-us|16|3|beach
 wiory-near-ostrowiec-swietokrzyski|32|3|reservoir
 wioslo-male-nature-reserve-near-kwidzyn|65536|3|nature reserve in Poland
 wipper-im-ostharz-near-sangerhausen|65536|3|Special Area of Conservation
 wipper-unterhalb-wippra-near-bernburg|65536|3|Special Area of Conservation
 wirral-peninsula-near-chester|20480|3|peninsula
-wirral-peninsula-near-warrington|0|0|
+wirral-peninsula-near-warrington|20480|3|peninsula
 wisenberg-near-aarau|1024|3|mountain
 wisenberg-near-liestal|1024|3|mountain
 wisenberg-near-olten|1024|3|mountain
@@ -31821,6 +36735,9 @@ witton-lakes-near-lichfield|32|3|reservoir
 witton-lakes-near-tamworth-uk|32|3|reservoir
 witton-lakes-near-walsall|32|3|reservoir
 witton-lakes-near-west-bromwich|32|3|reservoir
+witty-s-lagoon-near-victoria|4128|3|lagoon
+witwatersrand-near-johannesburg|1024|3|mountain range
+witwatersrand-near-pretoria|1024|3|mountain range
 wloclawek-reservoir-near-kutno|32|3|reservoir
 wocawek-reservoir-near-plock|32|3|reservoir
 wocawek-reservoir-near-wloclawek|32|3|reservoir
@@ -31858,7 +36775,9 @@ wolvenpolder-near-vlaardingen|65536|3|nature reserve
 wolverine-peak-near-anchorage|1024|3|mountain
 wombat-state-forest-near-castlemaine|81920|3|state forest
 wombat-state-forest-near-kyneton|81920|3|state forest
+wonderboom-nature-reserve-near-pretoria|65536|3|nature reserve
 wondul-range-national-park-near-goondiwindi|32768|3|national park of Australia
+wong-chuk-kok-tsui-near-shenzhen|4096|3|cape
 wood-islands-provincial-park-near-charlottetown|131072|3|provincial park of Canada
 wood-lake-near-bloomington|32|3|lake
 wood-lake-near-kelowna|32|3|lake
@@ -31866,13 +36785,26 @@ wood-lake-near-vernon|32|3|lake
 wood-s-douglas-fir-tree-sanctuary-near-airdrie|16384|3|forest
 wood-s-douglas-fir-tree-sanctuary-near-strathmore|16384|3|forest
 woodall-mountain-near-florence-us|1024|3|mountain
+woodbine-beach-near-ajax|16|3|beach
+woodbine-beach-near-brampton|16|3|beach
+woodbine-beach-near-burlington|16|3|beach
+woodbine-beach-near-markham|16|3|beach
+woodbine-beach-near-milton|16|3|beach
+woodbine-beach-near-mississauga|16|3|beach
+woodbine-beach-near-oakville|16|3|beach
+woodbine-beach-near-pickering|16|3|beach
+woodbine-beach-near-richmond-hill|16|3|beach
+woodbine-beach-near-toronto|16|3|beach
+woodbine-beach-near-vaughan|16|3|beach
 woodchester-park-near-cheltenham|65536|3|nature reserve
 woodchute-wilderness-near-prescott|65536|3|United States Wilderness Area
 woodford-halse-nature-reserve-near-banbury|65536|3|nature reserve
+woodman-point-near-perth|4096|3|headland
 woodston-ponds-near-peterborough-uk|65536|3|nature reserve
 woodwalton-fen-near-huntingdon|65536|3|nature reserve
 woodward-park-near-broken-arrow|0|0|
 woodward-park-near-clovis|131072|3|park
+woolamai-surf-beach-near-wonthaggi|16|3|beach
 wooldse-veen-near-aalten|65536|3|Natura 2000 site
 wooldse-veen-near-winterswijk|65536|3|Natura 2000 site
 woomargama-national-park-near-albury|32768|3|national park of Australia
@@ -31888,6 +36820,10 @@ workman-hill-near-downey|1024|3|mountain
 workman-hill-near-el-monte|1024|3|mountain
 workman-hill-near-west-covina|1024|3|mountain
 worlitzer-see-near-lutherstadt-wittenberg|32|3|lake
+worm-s-head-near-barnstaple|4160|3|tidal island
+worm-s-head-near-neath|4160|3|tidal island
+worm-s-head-near-port-talbot|4160|3|tidal island
+worm-s-head-near-swansea|4160|3|tidal island
 wormer-en-jisperveld-kalverpolder-near-castricum|65536|3|Natura 2000 site
 wormer-en-jisperveld-kalverpolder-near-heemskerk|65536|3|Natura 2000 site
 wormer-en-jisperveld-kalverpolder-near-purmerend|65536|3|Natura 2000 site
@@ -31901,6 +36837,8 @@ worthsee-near-furstenfeldbruck|32|3|lake
 worthsee-near-landsberg-am-lech|32|3|lake
 worthsee-near-starnberg|32|3|lake
 woszczelskie-lake-near-elk|32|3|lake
+wreck-beach-near-nanaimo|16|3|beach
+wreck-beach-near-wonthaggi|16|3|beach
 wright-island-near-goolwa|64|3|island
 wright-island-near-victor-harbor|64|3|island
 writing-on-stone-provincial-park-near-lethbridge|131072|3|provincial park of Canada
@@ -31943,6 +36881,9 @@ wzgorze-kaim-near-wieliczka|1024|3|mountain
 xanyo-xamshre-near-yuma|32|3|lake
 xcacel-beach-near-valladolid-mx|16|3|beach
 xi-beach-near-argostoli|135184|3|beach
+xi-beach-near-zakynthos|135184|3|beach
+xi-river-near-guangzhou|256|3|river
+xi-river-near-shenzhen|256|3|river
 xiamen-island-near-chaozhou|64|3|island
 xiamen-island-near-meizhou|64|3|island
 xiamen-island-near-quanzhou|64|3|island
@@ -31951,6 +36892,7 @@ xiamen-island-near-xiamen|64|3|island
 xiamen-island-near-zhangzhou|64|3|island
 xiang-lake-near-hangzhou|32|3|lake
 xiang-lake-near-shaoxing|32|3|lake
+xiangshan-near-taipei|1024|3|mountain
 xiao-qingdao-near-qingdao|64|3|island
 xiao-qingdao-near-weifang|64|3|island
 xiao-qingdao-near-yantai|64|3|island
@@ -31962,6 +36904,7 @@ xieyang-island-near-zhanjiang|64|3|island
 xinbu-island-near-haikou|64|3|island
 xinbu-island-near-maoming|64|3|island
 xinbu-island-near-zhanjiang|64|3|island
+xindian-river-near-taipei|256|3|river
 xinfengjiang-reservoir-near-chaozhou|32|3|reservoir
 xinfengjiang-reservoir-near-ganzhou|32|3|reservoir
 xinfengjiang-reservoir-near-meizhou|32|3|reservoir
@@ -31980,6 +36923,7 @@ yabase-kihan-island-near-otsu|0|0|
 yablonoi-mountains-near-chita|1024|3|mountain range
 yachenskoe-reservoir-near-kaluga|32|3|reservoir
 yachenskoe-reservoir-near-tula|32|3|reservoir
+yacoub-el-mansour-reservoir-near-marrakesh|32|3|reservoir
 yacuri-national-park-near-loja|32768|3|national park
 yacuri-national-park-near-piura|32768|3|national park
 yacuri-national-park-near-sullana|32768|3|national park
@@ -31991,26 +36935,31 @@ yaguarcocha-cajamarca-near-tarapoto|32|3|lake
 yaguarcocha-cajamarca-near-trujillo|32|3|lake
 yaguas-national-park-near-iquitos|32768|2|
 yalgorup-national-park-near-bunbury|32768|3|national park of Australia
+yallingup-beach-near-busselton|16|3|beach
 yallingup-beach-near-margaret-river|16|3|beach
 yamaguchi-reservoir-near-kawagoe|32|3|reservoir
 yamamoto-reservoir-near-nagaoka|32|3|reservoir
 yamaska-national-park-near-granby|32768|3|national park of Quebec
 yamaska-national-park-near-longueuil|32768|3|national park of Quebec
+yamato-river-near-osaka|256|3|river
 yamdrok-lake-near-lhasa|32|3|lake
 yamizo-mountains-near-mito|1024|3|mountain range
 yampilski-shary-near-soroca|0|0|
 yamskaya-step-near-kursk|65536|3|nature reserve
 yanaqucha-near-ayacucho|32|3|lake
+yang-sheng-an-shrine-and-gui-lake-near-chengdu|32|3|lake
 yangcheng-lake-near-changzhou|32|3|lake
 yangcheng-lake-near-nantong|32|3|lake
 yangcheng-lake-near-suzhou|32|3|lake
 yangcheng-lake-near-wuxi|32|3|lake
 yangibozor-natural-monument-near-nukus|65536|3|natural monument
+yangmingshan-national-park-near-taipei|32768|3|national park
 yangqi-shan-near-changsha|1024|3|mountain
 yangqi-shan-near-ganzhou|1024|3|mountain
 yangqi-shan-near-nanchang|1024|3|mountain
 yanka-kupala-park-near-minsk|131072|3|park
 yanka-kupala-park-near-zhodzina|131072|3|park
+yanliao-beach-park-near-taipei|16|3|beach
 yanqi-lake-near-tangshan|32|3|reservoir
 yantai-hill-fuzhou-near-fuzhou|1024|3|hill
 yantai-hill-fuzhou-near-quanzhou|1024|3|hill
@@ -32024,11 +36973,15 @@ yariguies-national-park-near-villa-del-rosario|32768|3|national park
 yarkon-national-park-near-bnei-brak|163840|3|national park
 yarkon-national-park-near-petah-tikva|163840|3|national park
 yarkon-national-park-near-ramat-gan|163840|3|national park
+yarkon-river-near-tel-aviv|256|3|river
 yarriabini-national-park-near-kempsey|32768|3|national park of Australia
 yarrow-reservoir-near-blackburn|32|3|reservoir
 yarrow-reservoir-near-wigan|32|3|reservoir
 yarrow-valley-park-near-wigan|131072|3|country park
+yas-island-near-abu-dhabi|64|3|island
 yas-island-near-al-ain|64|3|island
+yas-island-near-dubai|64|3|island
+yas-island-near-sharjah|64|3|island
 yasamal-park-near-khyrdalan|131072|3|park
 yashima-near-takamatsu|1024|3|mountain
 yatesville-lake-state-park-near-huntington|131072|2|
@@ -32041,6 +36994,7 @@ yazyavan-natural-monument-near-fergana|65536|3|natural monument
 yazyavan-natural-monument-near-namangan|65536|3|natural monument
 yberg-near-rastatt|1024|3|mountain
 yehi-am-fortress-national-park-near-acre|32768|3|national park
+yehliu-cape-near-taipei|4096|3|cape
 yekaterinburg-dendrarium-near-yekaterinburg|0|0|
 yekaterinburg-dendrarium-on-8-march-street-near-yekaterinburg|0|0|
 yelanets-steppe-nature-reserve-near-kryvyi-rih|65536|3|protected area
@@ -32054,6 +37008,7 @@ yellowwood-state-forest-near-noblesville|81920|3|state forest
 yellowwood-state-forest-near-terre-haute|81920|3|state forest
 yenikend-reservoir-near-ganja|32|3|reservoir
 yeongheungdo-near-hwaseong|64|3|island
+yeongjongdo-near-incheon|64|3|island
 yeoninsan-near-chuncheon|1024|3|mountain
 yeouido-near-ansan|320|3|river island
 yeouido-near-bucheon|320|3|river island
@@ -32065,9 +37020,11 @@ yeouido-near-namyangju|320|3|river island
 yeouido-near-paju|320|3|river island
 yeouido-near-pyeongtaek|320|3|river island
 yeouido-near-seongnam|320|3|river island
+yeouido-near-seoul|320|3|river island
 yeouido-near-suwon|320|3|river island
 yeouido-near-uijeongbu|320|3|river island
 yeouido-near-yongin|320|3|river island
+yerba-loca-nature-sanctuary-near-santiago|65536|3|nature reserve
 yerevan-botanical-garden-near-abovyan|0|0|
 yerevan-lake-near-vagharshapat|32|3|reservoir
 yerevan-lake-near-yerevan|32|3|reservoir
@@ -32087,19 +37044,24 @@ yiling-forest-park-near-yichang|147456|3|forest park
 yin-mountains-near-baotou|1024|3|mountain range
 yin-mountains-near-hohhot|1024|3|mountain range
 yindeer-lake-near-zhangye|32|3|lake
+yinggui-lake-near-chengdu|32|3|artificial lake
 yinggui-lake-near-chongqing|32|3|artificial lake
 yingshiling-reservoir-near-nanchang|32|3|reservoir
+yirrell-beach-near-brockton|16|3|beach
 yla-enonvesi-near-savonlinna|32|3|lake
 yli-kitka-near-kuusamo|32|3|lake or pond
 yli-lompolo-near-kiruna|32|3|lake
 ylinen-ritajarvi-near-sastamala|32|3|lake
 ylinenjarvi-near-nokia|32|3|lake or pond
 yngern-near-sodertalje|32|3|lake
+yodo-river-near-osaka|256|3|river
 yoho-national-park-near-banff|32768|3|national park
 yolo-bypass-wildlife-area-near-elk-grove|65536|3|nature reserve
 yolo-bypass-wildlife-area-near-sacramento|65536|3|nature reserve
 yolo-bypass-wildlife-area-near-woodland|65536|3|nature reserve
 yomegashima-near-matsue|96|3|lake island
+yongding-river-near-beijing|256|3|river
+yongmeori-coast-near-jeju|4096|3|coast
 yordanske-lake-kyiv-near-bucha|32|3|lake
 yordanske-lake-kyiv-near-vyshhorod|32|3|lake
 yorke-peninsula-near-kadina|4096|3|peninsula
@@ -32142,6 +37104,8 @@ yser-near-kortrijk|256|3|coastal river
 yser-near-ostend|256|3|coastal river
 ysica-near-radom|1024|3|mountain
 ystads-sandskog-near-ystad|65536|3|nature reserve
+ytre-oslofjord-near-halden|4096|3|fjord
+ytre-sundan-near-bodo|4096|3|fjord
 yucatan-peninsula-near-chetumal|0|0|
 yucatan-peninsula-near-merida|0|0|
 yucatan-peninsula-near-san-francisco-de-campeche|0|0|
@@ -32153,6 +37117,11 @@ yuhuan-lake-near-taizhou|32|3|reservoir
 yuhuan-lake-near-wenzhou|32|3|reservoir
 yuigahama-near-fujisawa|16|3|beach
 yuigahama-near-kamakura|16|3|beach
+yuigahama-near-kawasaki|16|3|beach
+yuigahama-near-kisarazu|16|3|beach
+yuigahama-near-mishima|16|3|beach
+yuigahama-near-odawara|16|3|beach
+yuigahama-near-sagamihara|16|3|beach
 yuigahama-near-yokohama|16|3|beach
 yuigahama-near-yokosuka|16|3|beach
 yulton-lake-near-coyhaique|32|3|lake
@@ -32193,6 +37162,8 @@ yunwu-mountain-near-liuzhou|1024|3|mountain
 yuraygir-national-park-near-grafton|98304|3|national park of Australia
 yurdi-lake-near-ardabil|32|3|lake
 yureva-horka-near-vitebsk|16384|3|urban forest
+yushan-main-peak-near-kaohsiung|1024|3|mountain
+yushan-main-peak-near-taipei|1024|3|mountain
 yuwi-paree-toolkoon-national-park-near-mackay|32768|3|national park of Australia
 yvoir-island-near-dinant|64|3|island
 yvoir-island-near-namur|64|3|island
@@ -32232,12 +37203,19 @@ zahlinicke-rybniky-nature-park-near-kromeriz|196608|2|
 zahumenice-near-trencin|65536|3|natural monument in the Czech Republic
 zaimokuza-beach-near-fujisawa|16|3|beach
 zaimokuza-beach-near-kamakura|16|3|beach
+zaimokuza-beach-near-kawasaki|16|3|beach
+zaimokuza-beach-near-mishima|16|3|beach
+zaimokuza-beach-near-odawara|16|3|beach
+zaimokuza-beach-near-sagamihara|16|3|beach
+zaimokuza-beach-near-yokohama|16|3|beach
+zaimokuza-beach-near-yokosuka|16|3|beach
+zakatek-wodny-trzebuskie-legi-near-szczecin|16|3|beach
 zakaznyk-zavadiv-near-sheptytskyi|81920|3|forest reserve
 zakova-hora-near-zdar-nad-sazavou|1024|3|mountain
 zakusala-near-ikskile|64|3|island
 zakusala-near-olaine|64|3|island
 zakusala-near-riga|64|3|island
-zakylske-pleso-near-zvolen|0|0|
+zakylske-pleso-near-zvolen|65536|3|natural monument
 zakynthos-near-argostoli|64|3|island
 zakynthos-near-elis|64|3|island
 zakynthos-near-zakynthos|64|3|island
@@ -32411,6 +37389,16 @@ ziemsnarad-lake-near-slutsk|32|3|reservoir
 zieskensee-near-neubrandenburg|32|3|lake
 ziezulis-near-varena|32|3|lake
 zijdelmeer-near-aalsmeer|65568|3|lake
+zika-forest-near-kampala|16384|3|forest
+zikim-beach-near-ashdod|16|3|beach
+zikim-beach-near-ashkelon|16|3|beach
+zikim-beach-near-bat-yam|16|3|beach
+zikim-beach-near-holon|16|3|beach
+zikim-beach-near-ramat-gan|16|3|beach
+zikim-beach-near-ramla|16|3|beach
+zikim-beach-near-rehovot|16|3|beach
+zikim-beach-near-rishon-lezion|16|3|beach
+zikim-beach-near-tel-aviv|16|3|beach
 zikri-lake-near-bukhara|32|3|lake
 zikri-lake-near-qarshi|32|3|lake
 zilaiskalns-near-valmiera|65536|3|Natura 2000 site
@@ -32426,6 +37414,10 @@ zingaro-nature-reserve-near-trapani|65536|3|regional nature reserve
 zingelsberg-near-feldkirchen-in-karnten|1024|3|mountain
 zion-national-park-near-st-george|32768|3|National Park of the United States
 zirbitzkogel-near-judenburg|66560|3|mountain
+zirgu-ragas-near-klaipeda|4096|3|cape
+zirgu-ragas-near-kretinga|4096|3|cape
+zirgu-ragas-near-palanga|4096|3|cape
+zirgu-ragas-near-silute|4096|3|cape
 zirje-near-vodice|64|3|island
 zitavsky-luh-near-levice|65536|3|Special Protection Area
 zitny-ostrov-near-nitra|320|3|river island
@@ -32438,13 +37430,18 @@ zlate-piesky-near-bratislava|32|3|lake
 zlate-piesky-near-dunajska-streda|32|3|lake
 zlate-piesky-near-pezinok|32|3|lake
 zlate-piesky-near-senec|32|3|lake
+zlatni-rat-near-kastela|16|3|beach
 zlatni-rat-near-makarska|16|3|beach
 zlatni-rat-near-omis|16|3|beach
+zlatni-rat-near-sinj|16|3|beach
 zlatni-rat-near-solin|16|3|beach
+zlatni-rat-near-split|16|3|beach
+zlatni-rat-near-trogir|16|3|beach
 zlato-pole-near-haskovo|65536|3|Natura 2000 site
 zlobinskaje-lake-near-baranavichy|32|3|lake
 zlobinskaje-lake-near-navahrudak|32|3|lake
 zlobinskaje-lake-near-slonim|32|3|lake
+zmeinoe-lake-bolshoy-utrish-near-novorossiysk|4128|3|lake
 zmeykovskiye-waterfalls-near-sochi|1|3|waterfall
 zmiina-hora-near-bakhmut|65536|3|protected area
 zmiina-hora-near-kramatorsk|65536|3|protected area
@@ -32462,11 +37459,14 @@ zolonceni-near-dubasari|65536|3|nature reserve
 zona-costiera-fra-briatico-e-nicotera-near-vibo-valentia|65536|3|Natura 2000 site
 zona-di-salvaguardia-dei-boschi-e-delle-rocche-del-roero-near-alba|65536|3|Natura 2000 site
 zoo-baneasa-near-voluntari|0|0|
+zoo-lake-near-johannesburg|32|3|lake
 zouvalka-near-vyskov|65536|3|nature reserve in the Czech Republic
 zouweboezem-near-gorinchem|65536|3|nature area
 zouweboezem-near-leerdam|65536|3|nature area
 zouweboezem-near-nieuwegein|65536|3|nature area
 zouweboezem-near-woerden|65536|3|nature area
+zrce-near-gospic|16|3|beach
+zrce-near-zadar|16|3|beach
 zrinska-gora-near-kutina|1024|3|mountain range
 zrinska-gora-near-petrinja|1024|3|mountain range
 zrinska-gora-near-prijedor|1024|3|mountain range
@@ -32517,6 +37517,15 @@ zuivka-reservoir-near-yenakiieve|32|3|reservoir
 zuivskiy-regional-landscape-park-near-yenakiieve|65536|3|protected area
 zujar-river-near-merida-spain|256|3|river
 zulpicher-see-near-euskirchen|32|3|lake
+zuma-beach-near-burbank|16|3|beach
+zuma-beach-near-carson|16|3|beach
+zuma-beach-near-compton|16|3|beach
+zuma-beach-near-inglewood|16|3|beach
+zuma-beach-near-los-angeles|16|3|beach
+zuma-beach-near-santa-monica|16|3|beach
+zuma-beach-near-simi-valley|16|3|beach
+zuma-beach-near-thousand-oaks|16|3|beach
+zuma-beach-near-torrance|16|3|beach
 zumberak-mountains-near-brezice|1024|3|mountain range
 zumberak-mountains-near-kocevje|1024|3|mountain range
 zumberak-mountains-near-krapina|1024|3|mountain range
@@ -32529,6 +37538,7 @@ zurichberg-near-dietikon|1024|3|mountain
 zurichberg-near-uster|1024|3|mountain
 zurichberg-near-zurich|1024|3|mountain
 zurriola-beach-near-irun|16|3|beach
+zurriola-beach-near-san-sebastian|16|3|beach
 zushi-beach-near-kamakura|16|3|beach
 zuunvallei-near-forest|2048|3|valley
 zuunvallei-near-halle-be|2048|3|valley
@@ -32547,6 +37557,18 @@ zvarde-woods-nature-park-near-saldus|196608|3|Natura 2000 site
 zvernec-island-near-vlore|64|3|island
 zvirgzdu-ezers-near-kuldiga|32|3|lake
 zvornik-lake-near-loznica|32|3|reservoir
+zvulun-beach-near-ashdod|16|3|beach
+zvulun-beach-near-bat-yam|16|3|beach
+zvulun-beach-near-bnei-brak|16|3|beach
+zvulun-beach-near-hadera|16|3|beach
+zvulun-beach-near-holon|16|3|beach
+zvulun-beach-near-netanya|16|3|beach
+zvulun-beach-near-petah-tikva|16|3|beach
+zvulun-beach-near-ramat-gan|16|3|beach
+zvulun-beach-near-ramla|16|3|beach
+zvulun-beach-near-rehovot|16|3|beach
+zvulun-beach-near-rishon-lezion|16|3|beach
+zvulun-beach-near-tel-aviv|16|3|beach
 zwarte-meer-near-dronten|66080|3|lake
 zwarte-meer-near-hoogeveen|66080|3|lake
 zwarte-meer-near-kampen|66080|3|lake
@@ -32555,6 +37577,7 @@ zwarte-meer-near-noordoostpolder|66080|3|lake
 zwarte-meer-near-oldebroek|66080|3|lake
 zwarte-meer-near-ommen|66080|3|lake
 zwarte-meer-near-zwolle|66080|3|lake
+zwartkop-near-johannesburg|1024|3|mountain
 zwierzyniecki-forest-in-bialystok-near-bialystok|81920|3|forest reserve (Poland)
 zwin-nature-reserve-near-dunkirk|70144|3|marsh
 zwin-natuur-park-near-knokke-heist|65536|3|nature area

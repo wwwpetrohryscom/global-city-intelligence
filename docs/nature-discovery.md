@@ -164,20 +164,28 @@ content is a three-card list. That is route count, not value.
 `protected-areas` aggregates `national-park` and `nature-reserve`; splitting
 them produces two thin pages where the reader wants one.
 
-## Known coverage gaps
+## Coverage
 
-These are corpus gaps, not classification failures, and the layer reports them
-by publishing nothing:
+Every one of the 4,444 indexed cities now has at least one classified nature
+place. The gaps this layer shipped with were closed by the V3 corpus recovery
+(`scripts/nature-v3/`, documented in its own README), not by relaxing any gate:
 
-- **97 cities have no curated nearby place at all** — Tokyo, Dubai, São Paulo,
-  Singapore, Cape Town, Cairo, Bangkok, Delhi and most of the earliest-seeded
-  non-European cohort. They get no nature pages.
-- **Marquee coastal cities are thin.** Nice has six curated places and none is
-  a beach; Gdańsk likewise. Porto has two. The corpus never collected them.
-- A handful of records carry a **wrong Wikidata QID** — Schauinsland is typed
-  `human`, Fire Island National Seashore `film`, Parc Natural del Garraf
-  `taxon`. The classifier refuses to classify them, so they are excluded rather
-  than mislabelled.
+| | V2 | V3 |
+| --- | --- | --- |
+| cities with zero coverage | 103 | **0** |
+| nature hubs | 3,540 | **3,759** |
+| beach pages | 59 | **324** |
+| dedicated category pages | 2,891 | **3,265** |
+
+The thresholds are unchanged. Lisbon still has no `/beaches` page because it
+has three verified beaches and the bar is four — that is the gate working, not
+a gap.
+
+Two classes of defect were repaired at source rather than worked around: 52
+records wired to the wrong Wikidata entity, and the discovery-graph distances
+that described the wrong point for cities such as Hradec Králové. Records whose
+correct entity could not be established safely stay excluded rather than
+guessed.
 
 ## Validation
 

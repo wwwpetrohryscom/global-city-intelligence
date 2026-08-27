@@ -1,0 +1,888 @@
+{
+ "byCountryName": {
+  "India": "Q668",
+  "China": "Q148",
+  "Japan": "Q17",
+  "South Africa": "Q258",
+  "Brazil": "Q155",
+  "South Korea": "Q884",
+  "Mexico": "Q96",
+  "Morocco": "Q1028",
+  "Saudi Arabia": "Q851",
+  "United Arab Emirates": "Q878",
+  "Vietnam": "Q881",
+  "Argentina": "Q414",
+  "Chile": "Q298",
+  "Colombia": "Q739",
+  "Egypt": "Q79",
+  "Pakistan": "Q843",
+  "Philippines": "Q928",
+  "Taiwan": "Q865",
+  "Thailand": "Q869",
+  "United States": "Q30",
+  "Bahrain": "Q398",
+  "Botswana": "Q963",
+  "Cambodia": "Q424",
+  "Costa Rica": "Q800",
+  "Dominican Republic": "Q786",
+  "Ecuador": "Q736",
+  "Ethiopia": "Q115",
+  "France": "Q142",
+  "Germany": "Q183",
+  "Ghana": "Q117",
+  "Guatemala": "Q774",
+  "Hong Kong": "Q8646",
+  "Indonesia": "Q252",
+  "Israel": "Q801",
+  "Italy": "Q38",
+  "Jordan": "Q810",
+  "Kenya": "Q114",
+  "Kuwait": "Q817",
+  "Lebanon": "Q822",
+  "Malaysia": "Q833",
+  "Mozambique": "Q1029",
+  "Namibia": "Q1030",
+  "Nigeria": "Q1033",
+  "Oman": "Q842",
+  "Panama": "Q804",
+  "Peru": "Q419",
+  "Qatar": "Q846",
+  "Rwanda": "Q1037",
+  "Senegal": "Q1041",
+  "Singapore": "Q334",
+  "Spain": "Q29",
+  "Sri Lanka": "Q854",
+  "Tanzania": "Q924",
+  "Tunisia": "Q948",
+  "Turkey": "Q43",
+  "Uganda": "Q1036",
+  "Uruguay": "Q77",
+  "Zambia": "Q953"
+ },
+ "cities": [
+  {
+   "slug": "buenos-aires",
+   "name": "Buenos Aires",
+   "country": "argentina",
+   "countryName": "Argentina",
+   "lat": -34.59972,
+   "lon": -58.38194
+  },
+  {
+   "slug": "cordoba",
+   "name": "Cordoba",
+   "country": "argentina",
+   "countryName": "Argentina",
+   "lat": -31.41667,
+   "lon": -64.18333
+  },
+  {
+   "slug": "manama",
+   "name": "Manama",
+   "country": "bahrain",
+   "countryName": "Bahrain",
+   "lat": 26.21667,
+   "lon": 50.58333
+  },
+  {
+   "slug": "gaborone",
+   "name": "Gaborone",
+   "country": "botswana",
+   "countryName": "Botswana",
+   "lat": -24.65694,
+   "lon": 25.90861
+  },
+  {
+   "slug": "brasilia",
+   "name": "Brasilia",
+   "country": "brazil",
+   "countryName": "Brazil",
+   "lat": -15.79389,
+   "lon": -47.88278
+  },
+  {
+   "slug": "curitiba",
+   "name": "Curitiba",
+   "country": "brazil",
+   "countryName": "Brazil",
+   "lat": -25.42972,
+   "lon": -49.27194
+  },
+  {
+   "slug": "rio-de-janeiro",
+   "name": "Rio de Janeiro",
+   "country": "brazil",
+   "countryName": "Brazil",
+   "lat": -22.91111,
+   "lon": -43.20555
+  },
+  {
+   "slug": "sao-paulo",
+   "name": "S\u00e3o Paulo",
+   "country": "brazil",
+   "countryName": "Brazil",
+   "lat": -23.55039,
+   "lon": -46.63395
+  },
+  {
+   "slug": "phnom-penh",
+   "name": "Phnom Penh",
+   "country": "cambodia",
+   "countryName": "Cambodia",
+   "lat": 11.56958,
+   "lon": 104.92103
+  },
+  {
+   "slug": "santiago",
+   "name": "Santiago",
+   "country": "chile",
+   "countryName": "Chile",
+   "lat": -33.4375,
+   "lon": -70.65
+  },
+  {
+   "slug": "valparaiso",
+   "name": "Valparaiso",
+   "country": "chile",
+   "countryName": "Chile",
+   "lat": -33.04611,
+   "lon": -71.61972
+  },
+  {
+   "slug": "beijing",
+   "name": "Beijing",
+   "country": "china",
+   "countryName": "China",
+   "lat": 39.90403,
+   "lon": 116.40753
+  },
+  {
+   "slug": "chengdu",
+   "name": "Chengdu",
+   "country": "china",
+   "countryName": "China",
+   "lat": 30.66,
+   "lon": 104.06333
+  },
+  {
+   "slug": "guangzhou",
+   "name": "Guangzhou",
+   "country": "china",
+   "countryName": "China",
+   "lat": 23.13,
+   "lon": 113.26
+  },
+  {
+   "slug": "shanghai",
+   "name": "Shanghai",
+   "country": "china",
+   "countryName": "China",
+   "lat": 31.2325,
+   "lon": 121.46917
+  },
+  {
+   "slug": "shenzhen",
+   "name": "Shenzhen",
+   "country": "china",
+   "countryName": "China",
+   "lat": 22.54667,
+   "lon": 114.05444
+  },
+  {
+   "slug": "wuhan",
+   "name": "Wuhan",
+   "country": "china",
+   "countryName": "China",
+   "lat": 30.595,
+   "lon": 114.2975
+  },
+  {
+   "slug": "bogota",
+   "name": "Bogot\u00e1",
+   "country": "colombia",
+   "countryName": "Colombia",
+   "lat": 4.60971,
+   "lon": -74.08175
+  },
+  {
+   "slug": "medellin",
+   "name": "Medell\u00edn",
+   "country": "colombia",
+   "countryName": "Colombia",
+   "lat": 6.2502,
+   "lon": -75.56758
+  },
+  {
+   "slug": "san-jose",
+   "name": "San Jos\u00e9",
+   "country": "costa-rica",
+   "countryName": "Costa Rica",
+   "lat": 9.93274,
+   "lon": -84.07961
+  },
+  {
+   "slug": "santo-domingo",
+   "name": "Santo Domingo",
+   "country": "dominican-republic",
+   "countryName": "Dominican Republic",
+   "lat": 18.4625,
+   "lon": -69.93611
+  },
+  {
+   "slug": "quito",
+   "name": "Quito",
+   "country": "ecuador",
+   "countryName": "Ecuador",
+   "lat": -0.22,
+   "lon": -78.5125
+  },
+  {
+   "slug": "alexandria",
+   "name": "Alexandria",
+   "country": "egypt",
+   "countryName": "Egypt",
+   "lat": 31.1975,
+   "lon": 29.8925
+  },
+  {
+   "slug": "cairo",
+   "name": "Cairo",
+   "country": "egypt",
+   "countryName": "Egypt",
+   "lat": 30.04444,
+   "lon": 31.23583
+  },
+  {
+   "slug": "addis-ababa",
+   "name": "Addis Ababa",
+   "country": "ethiopia",
+   "countryName": "Ethiopia",
+   "lat": 9.03583,
+   "lon": 38.7525
+  },
+  {
+   "slug": "armentieres",
+   "name": "Armenti\u00e8res",
+   "country": "france",
+   "countryName": "France",
+   "lat": 50.68722,
+   "lon": 2.88028
+  },
+  {
+   "slug": "villingen-schwenningen",
+   "name": "Villingen-Schwenningen",
+   "country": "germany",
+   "countryName": "Germany",
+   "lat": 48.06315,
+   "lon": 8.49296
+  },
+  {
+   "slug": "accra",
+   "name": "Accra",
+   "country": "ghana",
+   "countryName": "Ghana",
+   "lat": 5.55602,
+   "lon": -0.1969
+  },
+  {
+   "slug": "guatemala-city",
+   "name": "Guatemala City",
+   "country": "guatemala",
+   "countryName": "Guatemala",
+   "lat": 14.64167,
+   "lon": -90.51333
+  },
+  {
+   "slug": "hong-kong",
+   "name": "Hong Kong",
+   "country": "hong-kong",
+   "countryName": "Hong Kong",
+   "lat": 22.28007,
+   "lon": 114.16033
+  },
+  {
+   "slug": "bangalore",
+   "name": "Bangalore",
+   "country": "india",
+   "countryName": "India",
+   "lat": 12.97912,
+   "lon": 77.5913
+  },
+  {
+   "slug": "chennai",
+   "name": "Chennai",
+   "country": "india",
+   "countryName": "India",
+   "lat": 13.0825,
+   "lon": 80.275
+  },
+  {
+   "slug": "delhi",
+   "name": "Delhi",
+   "country": "india",
+   "countryName": "India",
+   "lat": 28.66667,
+   "lon": 77.21667
+  },
+  {
+   "slug": "hyderabad",
+   "name": "Hyderabad",
+   "country": "india",
+   "countryName": "India",
+   "lat": 17.36167,
+   "lon": 78.47472
+  },
+  {
+   "slug": "jaipur",
+   "name": "Jaipur",
+   "country": "india",
+   "countryName": "India",
+   "lat": 26.915,
+   "lon": 75.82
+  },
+  {
+   "slug": "mumbai",
+   "name": "Mumbai",
+   "country": "india",
+   "countryName": "India",
+   "lat": 19.07583,
+   "lon": 72.8775
+  },
+  {
+   "slug": "pune",
+   "name": "Pune",
+   "country": "india",
+   "countryName": "India",
+   "lat": 18.52111,
+   "lon": 73.85528
+  },
+  {
+   "slug": "jakarta",
+   "name": "Jakarta",
+   "country": "indonesia",
+   "countryName": "Indonesia",
+   "lat": -6.17528,
+   "lon": 106.82694
+  },
+  {
+   "slug": "tel-aviv",
+   "name": "Tel Aviv",
+   "country": "israel",
+   "countryName": "Israel",
+   "lat": 32.08,
+   "lon": 34.78
+  },
+  {
+   "slug": "imperia",
+   "name": "Imperia",
+   "country": "italy",
+   "countryName": "Italy",
+   "lat": 43.88647,
+   "lon": 8.02965
+  },
+  {
+   "slug": "fukuoka",
+   "name": "Fukuoka",
+   "country": "japan",
+   "countryName": "Japan",
+   "lat": 33.59014,
+   "lon": 130.40172
+  },
+  {
+   "slug": "kyoto",
+   "name": "Kyoto",
+   "country": "japan",
+   "countryName": "Japan",
+   "lat": 35.01161,
+   "lon": 135.76811
+  },
+  {
+   "slug": "nagoya",
+   "name": "Nagoya",
+   "country": "japan",
+   "countryName": "Japan",
+   "lat": 35.18139,
+   "lon": 136.90639
+  },
+  {
+   "slug": "osaka",
+   "name": "Osaka",
+   "country": "japan",
+   "countryName": "Japan",
+   "lat": 34.69375,
+   "lon": 135.50211
+  },
+  {
+   "slug": "sapporo",
+   "name": "Sapporo",
+   "country": "japan",
+   "countryName": "Japan",
+   "lat": 43.06195,
+   "lon": 141.35444
+  },
+  {
+   "slug": "tokyo",
+   "name": "Tokyo",
+   "country": "japan",
+   "countryName": "Japan",
+   "lat": 35.68944,
+   "lon": 139.69167
+  },
+  {
+   "slug": "amman",
+   "name": "Amman",
+   "country": "jordan",
+   "countryName": "Jordan",
+   "lat": 31.93098,
+   "lon": 35.92608
+  },
+  {
+   "slug": "nairobi",
+   "name": "Nairobi",
+   "country": "kenya",
+   "countryName": "Kenya",
+   "lat": -1.28639,
+   "lon": 36.81722
+  },
+  {
+   "slug": "kuwait-city",
+   "name": "Kuwait City",
+   "country": "kuwait",
+   "countryName": "Kuwait",
+   "lat": 29.375,
+   "lon": 47.98
+  },
+  {
+   "slug": "beirut",
+   "name": "Beirut",
+   "country": "lebanon",
+   "countryName": "Lebanon",
+   "lat": 33.88694,
+   "lon": 35.51306
+  },
+  {
+   "slug": "kuala-lumpur",
+   "name": "Kuala Lumpur",
+   "country": "malaysia",
+   "countryName": "Malaysia",
+   "lat": 3.14778,
+   "lon": 101.69528
+  },
+  {
+   "slug": "guadalajara",
+   "name": "Guadalajara",
+   "country": "mexico",
+   "countryName": "Mexico",
+   "lat": 20.67639,
+   "lon": -103.34222
+  },
+  {
+   "slug": "mexico-city",
+   "name": "Mexico City",
+   "country": "mexico",
+   "countryName": "Mexico",
+   "lat": 19.35377,
+   "lon": -99.13589
+  },
+  {
+   "slug": "monterrey",
+   "name": "Monterrey",
+   "country": "mexico",
+   "countryName": "Mexico",
+   "lat": 25.68444,
+   "lon": -100.31806
+  },
+  {
+   "slug": "casablanca",
+   "name": "Casablanca",
+   "country": "morocco",
+   "countryName": "Morocco",
+   "lat": 33.59917,
+   "lon": -7.62
+  },
+  {
+   "slug": "marrakesh",
+   "name": "Marrakesh",
+   "country": "morocco",
+   "countryName": "Morocco",
+   "lat": 31.62947,
+   "lon": -7.98108
+  },
+  {
+   "slug": "rabat",
+   "name": "Rabat",
+   "country": "morocco",
+   "countryName": "Morocco",
+   "lat": 34.02111,
+   "lon": -6.84139
+  },
+  {
+   "slug": "maputo",
+   "name": "Maputo",
+   "country": "mozambique",
+   "countryName": "Mozambique",
+   "lat": -25.96889,
+   "lon": 32.57333
+  },
+  {
+   "slug": "windhoek",
+   "name": "Windhoek",
+   "country": "namibia",
+   "countryName": "Namibia",
+   "lat": -22.57,
+   "lon": 17.08361
+  },
+  {
+   "slug": "lagos",
+   "name": "Lagos",
+   "country": "nigeria",
+   "countryName": "Nigeria",
+   "lat": 6.45611,
+   "lon": 3.39361
+  },
+  {
+   "slug": "muscat",
+   "name": "Muscat",
+   "country": "oman",
+   "countryName": "Oman",
+   "lat": 23.61389,
+   "lon": 58.59222
+  },
+  {
+   "slug": "karachi",
+   "name": "Karachi",
+   "country": "pakistan",
+   "countryName": "Pakistan",
+   "lat": 24.86,
+   "lon": 67.01
+  },
+  {
+   "slug": "lahore",
+   "name": "Lahore",
+   "country": "pakistan",
+   "countryName": "Pakistan",
+   "lat": 31.54972,
+   "lon": 74.34361
+  },
+  {
+   "slug": "panama-city",
+   "name": "Panama City",
+   "country": "panama",
+   "countryName": "Panama",
+   "lat": 8.97111,
+   "lon": -79.53472
+  },
+  {
+   "slug": "lima",
+   "name": "Lima",
+   "country": "peru",
+   "countryName": "Peru",
+   "lat": -12.06,
+   "lon": -77.0375
+  },
+  {
+   "slug": "cebu",
+   "name": "Cebu",
+   "country": "philippines",
+   "countryName": "Philippines",
+   "lat": 10.293,
+   "lon": 123.902
+  },
+  {
+   "slug": "manila",
+   "name": "Manila",
+   "country": "philippines",
+   "countryName": "Philippines",
+   "lat": 14.59583,
+   "lon": 120.97722
+  },
+  {
+   "slug": "doha",
+   "name": "Doha",
+   "country": "qatar",
+   "countryName": "Qatar",
+   "lat": 25.28611,
+   "lon": 51.52944
+  },
+  {
+   "slug": "kigali",
+   "name": "Kigali",
+   "country": "rwanda",
+   "countryName": "Rwanda",
+   "lat": -1.9525,
+   "lon": 30.115
+  },
+  {
+   "slug": "jeddah",
+   "name": "Jeddah",
+   "country": "saudi-arabia",
+   "countryName": "Saudi Arabia",
+   "lat": 21.52917,
+   "lon": 39.16111
+  },
+  {
+   "slug": "medina",
+   "name": "Medina",
+   "country": "saudi-arabia",
+   "countryName": "Saudi Arabia",
+   "lat": 24.47,
+   "lon": 39.61
+  },
+  {
+   "slug": "riyadh",
+   "name": "Riyadh",
+   "country": "saudi-arabia",
+   "countryName": "Saudi Arabia",
+   "lat": 24.65,
+   "lon": 46.71
+  },
+  {
+   "slug": "dakar",
+   "name": "Dakar",
+   "country": "senegal",
+   "countryName": "Senegal",
+   "lat": 14.67256,
+   "lon": -17.432
+  },
+  {
+   "slug": "singapore",
+   "name": "Singapore",
+   "country": "singapore",
+   "countryName": "Singapore",
+   "lat": 1.28778,
+   "lon": 103.85195
+  },
+  {
+   "slug": "cape-town",
+   "name": "Cape Town",
+   "country": "south-africa",
+   "countryName": "South Africa",
+   "lat": -33.92528,
+   "lon": 18.42389
+  },
+  {
+   "slug": "durban",
+   "name": "Durban",
+   "country": "south-africa",
+   "countryName": "South Africa",
+   "lat": -29.85833,
+   "lon": 31.025
+  },
+  {
+   "slug": "johannesburg",
+   "name": "Johannesburg",
+   "country": "south-africa",
+   "countryName": "South Africa",
+   "lat": -26.20436,
+   "lon": 28.04164
+  },
+  {
+   "slug": "pretoria",
+   "name": "Pretoria",
+   "country": "south-africa",
+   "countryName": "South Africa",
+   "lat": -25.74639,
+   "lon": 28.18806
+  },
+  {
+   "slug": "stellenbosch",
+   "name": "Stellenbosch",
+   "country": "south-africa",
+   "countryName": "South Africa",
+   "lat": -33.93667,
+   "lon": 18.86139
+  },
+  {
+   "slug": "busan",
+   "name": "Busan",
+   "country": "south-korea",
+   "countryName": "South Korea",
+   "lat": 35.18,
+   "lon": 129.075
+  },
+  {
+   "slug": "daegu",
+   "name": "Daegu",
+   "country": "south-korea",
+   "countryName": "South Korea",
+   "lat": 35.87167,
+   "lon": 128.60167
+  },
+  {
+   "slug": "incheon",
+   "name": "Incheon",
+   "country": "south-korea",
+   "countryName": "South Korea",
+   "lat": 37.46389,
+   "lon": 126.64861
+  },
+  {
+   "slug": "seoul",
+   "name": "Seoul",
+   "country": "south-korea",
+   "countryName": "South Korea",
+   "lat": 37.56,
+   "lon": 126.99
+  },
+  {
+   "slug": "vilanova-i-la-geltru",
+   "name": "Vilanova i la Geltr\u00fa",
+   "country": "spain",
+   "countryName": "Spain",
+   "lat": 41.22392,
+   "lon": 1.72511
+  },
+  {
+   "slug": "colombo",
+   "name": "Colombo",
+   "country": "sri-lanka",
+   "countryName": "Sri Lanka",
+   "lat": 6.92667,
+   "lon": 79.86056
+  },
+  {
+   "slug": "kaohsiung",
+   "name": "Kaohsiung",
+   "country": "taiwan",
+   "countryName": "Taiwan",
+   "lat": 22.615,
+   "lon": 120.2975
+  },
+  {
+   "slug": "taipei",
+   "name": "Taipei",
+   "country": "taiwan",
+   "countryName": "Taiwan",
+   "lat": 25.0375,
+   "lon": 121.5625
+  },
+  {
+   "slug": "dar-es-salaam",
+   "name": "Dar es Salaam",
+   "country": "tanzania",
+   "countryName": "Tanzania",
+   "lat": -6.81611,
+   "lon": 39.28028
+  },
+  {
+   "slug": "bangkok",
+   "name": "Bangkok",
+   "country": "thailand",
+   "countryName": "Thailand",
+   "lat": 13.75,
+   "lon": 100.51667
+  },
+  {
+   "slug": "chiang-mai",
+   "name": "Chiang Mai",
+   "country": "thailand",
+   "countryName": "Thailand",
+   "lat": 18.78889,
+   "lon": 98.98333
+  },
+  {
+   "slug": "tunis",
+   "name": "Tunis",
+   "country": "tunisia",
+   "countryName": "Tunisia",
+   "lat": 36.80083,
+   "lon": 10.18
+  },
+  {
+   "slug": "istanbul",
+   "name": "Istanbul",
+   "country": "turkey",
+   "countryName": "Turkey",
+   "lat": 41.01,
+   "lon": 28.96028
+  },
+  {
+   "slug": "kampala",
+   "name": "Kampala",
+   "country": "uganda",
+   "countryName": "Uganda",
+   "lat": 0.31361,
+   "lon": 32.58111
+  },
+  {
+   "slug": "abu-dhabi",
+   "name": "Abu Dhabi",
+   "country": "united-arab-emirates",
+   "countryName": "United Arab Emirates",
+   "lat": 24.45111,
+   "lon": 54.39694
+  },
+  {
+   "slug": "dubai",
+   "name": "Dubai",
+   "country": "united-arab-emirates",
+   "countryName": "United Arab Emirates",
+   "lat": 25.26972,
+   "lon": 55.30944
+  },
+  {
+   "slug": "sharjah",
+   "name": "Sharjah",
+   "country": "united-arab-emirates",
+   "countryName": "United Arab Emirates",
+   "lat": 25.3375,
+   "lon": 55.41194
+  },
+  {
+   "slug": "babylon",
+   "name": "Babylon",
+   "country": "united-states",
+   "countryName": "United States",
+   "lat": 40.6944,
+   "lon": -73.3294
+  },
+  {
+   "slug": "tyler",
+   "name": "Tyler",
+   "country": "united-states",
+   "countryName": "United States",
+   "lat": 32.35083,
+   "lon": -95.30056
+  },
+  {
+   "slug": "montevideo",
+   "name": "Montevideo",
+   "country": "uruguay",
+   "countryName": "Uruguay",
+   "lat": -34.90592,
+   "lon": -56.19131
+  },
+  {
+   "slug": "da-nang",
+   "name": "Da Nang",
+   "country": "vietnam",
+   "countryName": "Vietnam",
+   "lat": 16.06944,
+   "lon": 108.20972
+  },
+  {
+   "slug": "hanoi",
+   "name": "Hanoi",
+   "country": "vietnam",
+   "countryName": "Vietnam",
+   "lat": 21.0245,
+   "lon": 105.84117
+  },
+  {
+   "slug": "ho-chi-minh-city",
+   "name": "Ho Chi Minh City",
+   "country": "vietnam",
+   "countryName": "Vietnam",
+   "lat": 10.77556,
+   "lon": 106.70194
+  },
+  {
+   "slug": "lusaka",
+   "name": "Lusaka",
+   "country": "zambia",
+   "countryName": "Zambia",
+   "lat": -15.41667,
+   "lon": 28.28333
+  }
+ ]
+}

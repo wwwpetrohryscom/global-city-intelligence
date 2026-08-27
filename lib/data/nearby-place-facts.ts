@@ -2410,7 +2410,6 @@ export const NEARBY_PLACE_FACTS: Record<string, NearbyPlaceFacts> = {
   "juan-carlos-i-park-near-coslada": { designation: "sculpture garden", wikidataId: "Q1583169" },
   "quinta-de-torre-arias-park-near-coslada": { designation: "park", wikidataId: "Q33141667" },
   "azov-national-nature-park-near-melitopol": { designation: "national nature park", iucnCategory: "II", established: 2010, wikidataId: "Q891589" },
-  "fire-island-national-seashore-near-babylon": { designation: "national seashore", established: 1964, wikidataId: "Q5451946" },
   "balgzand-near-heerhugowaard": { designation: "nature reserve", wikidataId: "Q2482089" },
   "castro-marim-and-vila-real-de-santo-antonio-marsh-natural-reserve-near-tavira": { designation: "nature reserve", iucnCategory: "IV", established: 1975, wikidataId: "Q5050789" },
   "marismas-de-isla-cristina-near-tavira": { designation: "Special Protection Area", iucnCategory: "II", established: 1992, wikidataId: "Q3364572" },

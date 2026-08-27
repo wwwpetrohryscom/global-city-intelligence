@@ -1,0 +1,1616 @@
+[
+ {
+  "slug": "buenos-aires",
+  "name": "Buenos Aires",
+  "country": "argentina",
+  "countryName": "Argentina",
+  "lat": -34.59972,
+  "lon": -58.38194,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "cordoba",
+  "name": "Cordoba",
+  "country": "argentina",
+  "countryName": "Argentina",
+  "lat": -31.41667,
+  "lon": -64.18333,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "manama",
+  "name": "Manama",
+  "country": "bahrain",
+  "countryName": "Bahrain",
+  "lat": 26.21667,
+  "lon": 50.58333,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "gaborone",
+  "name": "Gaborone",
+  "country": "botswana",
+  "countryName": "Botswana",
+  "lat": -24.65694,
+  "lon": 25.90861,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "brasilia",
+  "name": "Brasilia",
+  "country": "brazil",
+  "countryName": "Brazil",
+  "lat": -15.79389,
+  "lon": -47.88278,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "curitiba",
+  "name": "Curitiba",
+  "country": "brazil",
+  "countryName": "Brazil",
+  "lat": -25.42972,
+  "lon": -49.27194,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "rio-de-janeiro",
+  "name": "Rio de Janeiro",
+  "country": "brazil",
+  "countryName": "Brazil",
+  "lat": -22.91111,
+  "lon": -43.20555,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "sao-paulo",
+  "name": "S\u00e3o Paulo",
+  "country": "brazil",
+  "countryName": "Brazil",
+  "lat": -23.55039,
+  "lon": -46.63395,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "phnom-penh",
+  "name": "Phnom Penh",
+  "country": "cambodia",
+  "countryName": "Cambodia",
+  "lat": 11.56958,
+  "lon": 104.92103,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "santiago",
+  "name": "Santiago",
+  "country": "chile",
+  "countryName": "Chile",
+  "lat": -33.4375,
+  "lon": -70.65,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "valparaiso",
+  "name": "Valparaiso",
+  "country": "chile",
+  "countryName": "Chile",
+  "lat": -33.04611,
+  "lon": -71.61972,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "beijing",
+  "name": "Beijing",
+  "country": "china",
+  "countryName": "China",
+  "lat": 39.90403,
+  "lon": 116.40753,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "chengdu",
+  "name": "Chengdu",
+  "country": "china",
+  "countryName": "China",
+  "lat": 30.66,
+  "lon": 104.06333,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "guangzhou",
+  "name": "Guangzhou",
+  "country": "china",
+  "countryName": "China",
+  "lat": 23.13,
+  "lon": 113.26,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "shanghai",
+  "name": "Shanghai",
+  "country": "china",
+  "countryName": "China",
+  "lat": 31.2325,
+  "lon": 121.46917,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "shenzhen",
+  "name": "Shenzhen",
+  "country": "china",
+  "countryName": "China",
+  "lat": 22.54667,
+  "lon": 114.05444,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "wuhan",
+  "name": "Wuhan",
+  "country": "china",
+  "countryName": "China",
+  "lat": 30.595,
+  "lon": 114.2975,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "bogota",
+  "name": "Bogot\u00e1",
+  "country": "colombia",
+  "countryName": "Colombia",
+  "lat": 4.60971,
+  "lon": -74.08175,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "medellin",
+  "name": "Medell\u00edn",
+  "country": "colombia",
+  "countryName": "Colombia",
+  "lat": 6.2502,
+  "lon": -75.56758,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "san-jose",
+  "name": "San Jos\u00e9",
+  "country": "costa-rica",
+  "countryName": "Costa Rica",
+  "lat": 9.93274,
+  "lon": -84.07961,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "santo-domingo",
+  "name": "Santo Domingo",
+  "country": "dominican-republic",
+  "countryName": "Dominican Republic",
+  "lat": 18.4625,
+  "lon": -69.93611,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "quito",
+  "name": "Quito",
+  "country": "ecuador",
+  "countryName": "Ecuador",
+  "lat": -0.22,
+  "lon": -78.5125,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "alexandria",
+  "name": "Alexandria",
+  "country": "egypt",
+  "countryName": "Egypt",
+  "lat": 31.1975,
+  "lon": 29.8925,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "cairo",
+  "name": "Cairo",
+  "country": "egypt",
+  "countryName": "Egypt",
+  "lat": 30.04444,
+  "lon": 31.23583,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "addis-ababa",
+  "name": "Addis Ababa",
+  "country": "ethiopia",
+  "countryName": "Ethiopia",
+  "lat": 9.03583,
+  "lon": 38.7525,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "armentieres",
+  "name": "Armenti\u00e8res",
+  "country": "france",
+  "countryName": "France",
+  "lat": 50.68722,
+  "lon": 2.88028,
+  "rawPlaces": 7,
+  "rejected": [
+   {
+    "slug": "mont-cassel-near-armentieres",
+    "name": "Mont Cassel",
+    "km": 30.6,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q4167410 (Wikimedia disambiguation page)",
+    "p31": [
+     "Wikimedia disambiguation page"
+    ]
+   },
+   {
+    "slug": "parc-de-la-citadelle-near-armentieres",
+    "name": "Parc de la Citadelle",
+    "km": 12.5,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q532 (village)",
+    "p31": [
+     "village",
+     "civil parish"
+    ]
+   },
+   {
+    "slug": "parc-barbieux-near-armentieres",
+    "name": "Parc Barbieux",
+    "km": 20.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "le-bois-de-boulogne-near-armentieres",
+    "name": "Le Bois de Boulogne",
+    "km": 12.8,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "jardin-vauban-near-armentieres",
+    "name": "Jardin Vauban",
+    "km": 13.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   },
+   {
+    "slug": "parc-jean-baptiste-lebas-near-armentieres",
+    "name": "Parc Jean-Baptiste Lebas",
+    "km": 15.0,
+    "confidence": "low",
+    "primary": "island",
+    "vetoed": null,
+    "p31": [
+     "parish in Prince Edward Island"
+    ]
+   },
+   {
+    "slug": "parc-de-la-deule-near-armentieres",
+    "name": "Parc de la De\u00fble",
+    "km": 13.6,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": [
+     "parish of New Brunswick"
+    ]
+   }
+  ],
+  "cause": "C/D. candidates exist but carry no publishable structured type"
+ },
+ {
+  "slug": "villingen-schwenningen",
+  "name": "Villingen-Schwenningen",
+  "country": "germany",
+  "countryName": "Germany",
+  "lat": 48.06315,
+  "lon": 8.49296,
+  "rawPlaces": 8,
+  "rejected": [
+   {
+    "slug": "triberg-waterfalls-near-villingen-schwenningen",
+    "name": "Triberg Waterfalls",
+    "km": 21.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   },
+   {
+    "slug": "schluchsee-near-villingen-schwenningen",
+    "name": "Schluchsee",
+    "km": 36.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "titisee-near-villingen-schwenningen",
+    "name": "Titisee",
+    "km": 32.2,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q36330215 (Wikimedia location map template)",
+    "p31": [
+     "Wikimedia location map template"
+    ]
+   },
+   {
+    "slug": "feldberg-near-villingen-schwenningen",
+    "name": "Feldberg",
+    "km": 42.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "mummelsee-near-villingen-schwenningen",
+    "name": "Mummelsee",
+    "km": 62.6,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": [
+     "combat vehicle model"
+    ]
+   },
+   {
+    "slug": "belchen-near-villingen-schwenningen",
+    "name": "Belchen",
+    "km": 56.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": [
+     "asteroid"
+    ]
+   },
+   {
+    "slug": "kandel-near-villingen-schwenningen",
+    "name": "Kandel",
+    "km": 35.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   },
+   {
+    "slug": "schauinsland-near-villingen-schwenningen",
+    "name": "Schauinsland",
+    "km": 47.3,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   }
+  ],
+  "cause": "C/D. candidates exist but carry no publishable structured type"
+ },
+ {
+  "slug": "accra",
+  "name": "Accra",
+  "country": "ghana",
+  "countryName": "Ghana",
+  "lat": 5.55602,
+  "lon": -0.1969,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "guatemala-city",
+  "name": "Guatemala City",
+  "country": "guatemala",
+  "countryName": "Guatemala",
+  "lat": 14.64167,
+  "lon": -90.51333,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "hong-kong",
+  "name": "Hong Kong",
+  "country": "hong-kong",
+  "countryName": "Hong Kong",
+  "lat": 22.28007,
+  "lon": 114.16033,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "bangalore",
+  "name": "Bangalore",
+  "country": "india",
+  "countryName": "India",
+  "lat": 12.97912,
+  "lon": 77.5913,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "chennai",
+  "name": "Chennai",
+  "country": "india",
+  "countryName": "India",
+  "lat": 13.0825,
+  "lon": 80.275,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "delhi",
+  "name": "Delhi",
+  "country": "india",
+  "countryName": "India",
+  "lat": 28.66667,
+  "lon": 77.21667,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "hyderabad",
+  "name": "Hyderabad",
+  "country": "india",
+  "countryName": "India",
+  "lat": 17.36167,
+  "lon": 78.47472,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "jaipur",
+  "name": "Jaipur",
+  "country": "india",
+  "countryName": "India",
+  "lat": 26.915,
+  "lon": 75.82,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "mumbai",
+  "name": "Mumbai",
+  "country": "india",
+  "countryName": "India",
+  "lat": 19.07583,
+  "lon": 72.8775,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "pune",
+  "name": "Pune",
+  "country": "india",
+  "countryName": "India",
+  "lat": 18.52111,
+  "lon": 73.85528,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "jakarta",
+  "name": "Jakarta",
+  "country": "indonesia",
+  "countryName": "Indonesia",
+  "lat": -6.17528,
+  "lon": 106.82694,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "tel-aviv",
+  "name": "Tel Aviv",
+  "country": "israel",
+  "countryName": "Israel",
+  "lat": 32.08,
+  "lon": 34.78,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "imperia",
+  "name": "Imperia",
+  "country": "italy",
+  "countryName": "Italy",
+  "lat": 43.88647,
+  "lon": 8.02965,
+  "rawPlaces": 7,
+  "rejected": [
+   {
+    "slug": "monte-saccarello-near-imperia",
+    "name": "Monte Saccarello",
+    "km": 31.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q4167410 (Wikimedia disambiguation page)",
+    "p31": [
+     "Wikimedia disambiguation page"
+    ]
+   },
+   {
+    "slug": "bignone-near-imperia",
+    "name": "Bignone",
+    "km": 27.8,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "monte-faudo-near-imperia",
+    "name": "Monte Faudo",
+    "km": 14.8,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "pizzo-d-evigno-near-imperia",
+    "name": "Pizzo d'Evigno",
+    "km": 11.5,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": [
+     "album"
+    ]
+   },
+   {
+    "slug": "monte-toraggio-near-imperia",
+    "name": "Monte Toraggio",
+    "km": 29.8,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   },
+   {
+    "slug": "monte-ceppo-near-imperia",
+    "name": "Monte Ceppo",
+    "km": 31.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "monte-monega-near-imperia",
+    "name": "Monte Monega",
+    "km": 22.3,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   }
+  ],
+  "cause": "C/D. candidates exist but carry no publishable structured type"
+ },
+ {
+  "slug": "fukuoka",
+  "name": "Fukuoka",
+  "country": "japan",
+  "countryName": "Japan",
+  "lat": 33.59014,
+  "lon": 130.40172,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "kyoto",
+  "name": "Kyoto",
+  "country": "japan",
+  "countryName": "Japan",
+  "lat": 35.01161,
+  "lon": 135.76811,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "nagoya",
+  "name": "Nagoya",
+  "country": "japan",
+  "countryName": "Japan",
+  "lat": 35.18139,
+  "lon": 136.90639,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "osaka",
+  "name": "Osaka",
+  "country": "japan",
+  "countryName": "Japan",
+  "lat": 34.69375,
+  "lon": 135.50211,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "sapporo",
+  "name": "Sapporo",
+  "country": "japan",
+  "countryName": "Japan",
+  "lat": 43.06195,
+  "lon": 141.35444,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "tokyo",
+  "name": "Tokyo",
+  "country": "japan",
+  "countryName": "Japan",
+  "lat": 35.68944,
+  "lon": 139.69167,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "amman",
+  "name": "Amman",
+  "country": "jordan",
+  "countryName": "Jordan",
+  "lat": 31.93098,
+  "lon": 35.92608,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "nairobi",
+  "name": "Nairobi",
+  "country": "kenya",
+  "countryName": "Kenya",
+  "lat": -1.28639,
+  "lon": 36.81722,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "kuwait-city",
+  "name": "Kuwait City",
+  "country": "kuwait",
+  "countryName": "Kuwait",
+  "lat": 29.375,
+  "lon": 47.98,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "beirut",
+  "name": "Beirut",
+  "country": "lebanon",
+  "countryName": "Lebanon",
+  "lat": 33.88694,
+  "lon": 35.51306,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "kuala-lumpur",
+  "name": "Kuala Lumpur",
+  "country": "malaysia",
+  "countryName": "Malaysia",
+  "lat": 3.14778,
+  "lon": 101.69528,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "guadalajara",
+  "name": "Guadalajara",
+  "country": "mexico",
+  "countryName": "Mexico",
+  "lat": 20.67639,
+  "lon": -103.34222,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "mexico-city",
+  "name": "Mexico City",
+  "country": "mexico",
+  "countryName": "Mexico",
+  "lat": 19.35377,
+  "lon": -99.13589,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "monterrey",
+  "name": "Monterrey",
+  "country": "mexico",
+  "countryName": "Mexico",
+  "lat": 25.68444,
+  "lon": -100.31806,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "casablanca",
+  "name": "Casablanca",
+  "country": "morocco",
+  "countryName": "Morocco",
+  "lat": 33.59917,
+  "lon": -7.62,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "marrakesh",
+  "name": "Marrakesh",
+  "country": "morocco",
+  "countryName": "Morocco",
+  "lat": 31.62947,
+  "lon": -7.98108,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "rabat",
+  "name": "Rabat",
+  "country": "morocco",
+  "countryName": "Morocco",
+  "lat": 34.02111,
+  "lon": -6.84139,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "maputo",
+  "name": "Maputo",
+  "country": "mozambique",
+  "countryName": "Mozambique",
+  "lat": -25.96889,
+  "lon": 32.57333,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "windhoek",
+  "name": "Windhoek",
+  "country": "namibia",
+  "countryName": "Namibia",
+  "lat": -22.57,
+  "lon": 17.08361,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "lagos",
+  "name": "Lagos",
+  "country": "nigeria",
+  "countryName": "Nigeria",
+  "lat": 6.45611,
+  "lon": 3.39361,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "muscat",
+  "name": "Muscat",
+  "country": "oman",
+  "countryName": "Oman",
+  "lat": 23.61389,
+  "lon": 58.59222,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "karachi",
+  "name": "Karachi",
+  "country": "pakistan",
+  "countryName": "Pakistan",
+  "lat": 24.86,
+  "lon": 67.01,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "lahore",
+  "name": "Lahore",
+  "country": "pakistan",
+  "countryName": "Pakistan",
+  "lat": 31.54972,
+  "lon": 74.34361,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "panama-city",
+  "name": "Panama City",
+  "country": "panama",
+  "countryName": "Panama",
+  "lat": 8.97111,
+  "lon": -79.53472,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "lima",
+  "name": "Lima",
+  "country": "peru",
+  "countryName": "Peru",
+  "lat": -12.06,
+  "lon": -77.0375,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "cebu",
+  "name": "Cebu",
+  "country": "philippines",
+  "countryName": "Philippines",
+  "lat": 10.293,
+  "lon": 123.902,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "manila",
+  "name": "Manila",
+  "country": "philippines",
+  "countryName": "Philippines",
+  "lat": 14.59583,
+  "lon": 120.97722,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "doha",
+  "name": "Doha",
+  "country": "qatar",
+  "countryName": "Qatar",
+  "lat": 25.28611,
+  "lon": 51.52944,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "kigali",
+  "name": "Kigali",
+  "country": "rwanda",
+  "countryName": "Rwanda",
+  "lat": -1.9525,
+  "lon": 30.115,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "jeddah",
+  "name": "Jeddah",
+  "country": "saudi-arabia",
+  "countryName": "Saudi Arabia",
+  "lat": 21.52917,
+  "lon": 39.16111,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "medina",
+  "name": "Medina",
+  "country": "saudi-arabia",
+  "countryName": "Saudi Arabia",
+  "lat": 24.47,
+  "lon": 39.61,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "riyadh",
+  "name": "Riyadh",
+  "country": "saudi-arabia",
+  "countryName": "Saudi Arabia",
+  "lat": 24.65,
+  "lon": 46.71,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "dakar",
+  "name": "Dakar",
+  "country": "senegal",
+  "countryName": "Senegal",
+  "lat": 14.67256,
+  "lon": -17.432,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "singapore",
+  "name": "Singapore",
+  "country": "singapore",
+  "countryName": "Singapore",
+  "lat": 1.28778,
+  "lon": 103.85195,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "cape-town",
+  "name": "Cape Town",
+  "country": "south-africa",
+  "countryName": "South Africa",
+  "lat": -33.92528,
+  "lon": 18.42389,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "durban",
+  "name": "Durban",
+  "country": "south-africa",
+  "countryName": "South Africa",
+  "lat": -29.85833,
+  "lon": 31.025,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "johannesburg",
+  "name": "Johannesburg",
+  "country": "south-africa",
+  "countryName": "South Africa",
+  "lat": -26.20436,
+  "lon": 28.04164,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "pretoria",
+  "name": "Pretoria",
+  "country": "south-africa",
+  "countryName": "South Africa",
+  "lat": -25.74639,
+  "lon": 28.18806,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "stellenbosch",
+  "name": "Stellenbosch",
+  "country": "south-africa",
+  "countryName": "South Africa",
+  "lat": -33.93667,
+  "lon": 18.86139,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "busan",
+  "name": "Busan",
+  "country": "south-korea",
+  "countryName": "South Korea",
+  "lat": 35.18,
+  "lon": 129.075,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "daegu",
+  "name": "Daegu",
+  "country": "south-korea",
+  "countryName": "South Korea",
+  "lat": 35.87167,
+  "lon": 128.60167,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "incheon",
+  "name": "Incheon",
+  "country": "south-korea",
+  "countryName": "South Korea",
+  "lat": 37.46389,
+  "lon": 126.64861,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "seoul",
+  "name": "Seoul",
+  "country": "south-korea",
+  "countryName": "South Korea",
+  "lat": 37.56,
+  "lon": 126.99,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "vilanova-i-la-geltru",
+  "name": "Vilanova i la Geltr\u00fa",
+  "country": "spain",
+  "countryName": "Spain",
+  "lat": 41.22392,
+  "lon": 1.72511,
+  "rawPlaces": 7,
+  "rejected": [
+   {
+    "slug": "massis-del-garraf-near-vilanova-i-la-geltru",
+    "name": "Mass\u00eds del Garraf",
+    "km": 16.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q36330215 (Wikimedia location map template)",
+    "p31": [
+     "Wikimedia location map template",
+     "Wikimedia template"
+    ]
+   },
+   {
+    "slug": "parc-del-foix-near-vilanova-i-la-geltru",
+    "name": "Parc del Foix",
+    "km": 8.3,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "platja-de-vilanova-near-vilanova-i-la-geltru",
+    "name": "Platja de Vilanova",
+    "km": 1.4,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   },
+   {
+    "slug": "serra-del-montgros-near-vilanova-i-la-geltru",
+    "name": "Serra del Montgr\u00f3s",
+    "km": 11.4,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "platja-de-sitges-near-vilanova-i-la-geltru",
+    "name": "Platja de Sitges",
+    "km": 7.3,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q374821 (film poster)",
+    "p31": [
+     "film poster"
+    ]
+   },
+   {
+    "slug": "platja-de-castelldefels-near-vilanova-i-la-geltru",
+    "name": "Platja de Castelldefels",
+    "km": 16.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "parc-natural-del-garraf-near-vilanova-i-la-geltru",
+    "name": "Parc Natural del Garraf",
+    "km": 15.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q16521 (taxon)",
+    "p31": [
+     "taxon"
+    ]
+   }
+  ],
+  "cause": "C/D. candidates exist but carry no publishable structured type"
+ },
+ {
+  "slug": "colombo",
+  "name": "Colombo",
+  "country": "sri-lanka",
+  "countryName": "Sri Lanka",
+  "lat": 6.92667,
+  "lon": 79.86056,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "kaohsiung",
+  "name": "Kaohsiung",
+  "country": "taiwan",
+  "countryName": "Taiwan",
+  "lat": 22.615,
+  "lon": 120.2975,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "taipei",
+  "name": "Taipei",
+  "country": "taiwan",
+  "countryName": "Taiwan",
+  "lat": 25.0375,
+  "lon": 121.5625,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "dar-es-salaam",
+  "name": "Dar es Salaam",
+  "country": "tanzania",
+  "countryName": "Tanzania",
+  "lat": -6.81611,
+  "lon": 39.28028,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "bangkok",
+  "name": "Bangkok",
+  "country": "thailand",
+  "countryName": "Thailand",
+  "lat": 13.75,
+  "lon": 100.51667,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "chiang-mai",
+  "name": "Chiang Mai",
+  "country": "thailand",
+  "countryName": "Thailand",
+  "lat": 18.78889,
+  "lon": 98.98333,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "tunis",
+  "name": "Tunis",
+  "country": "tunisia",
+  "countryName": "Tunisia",
+  "lat": 36.80083,
+  "lon": 10.18,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "istanbul",
+  "name": "Istanbul",
+  "country": "turkey",
+  "countryName": "Turkey",
+  "lat": 41.01,
+  "lon": 28.96028,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "kampala",
+  "name": "Kampala",
+  "country": "uganda",
+  "countryName": "Uganda",
+  "lat": 0.31361,
+  "lon": 32.58111,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "abu-dhabi",
+  "name": "Abu Dhabi",
+  "country": "united-arab-emirates",
+  "countryName": "United Arab Emirates",
+  "lat": 24.45111,
+  "lon": 54.39694,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "dubai",
+  "name": "Dubai",
+  "country": "united-arab-emirates",
+  "countryName": "United Arab Emirates",
+  "lat": 25.26972,
+  "lon": 55.30944,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "sharjah",
+  "name": "Sharjah",
+  "country": "united-arab-emirates",
+  "countryName": "United Arab Emirates",
+  "lat": 25.3375,
+  "lon": 55.41194,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "babylon",
+  "name": "Babylon",
+  "country": "united-states",
+  "countryName": "United States",
+  "lat": 40.6944,
+  "lon": -73.3294,
+  "rawPlaces": 8,
+  "rejected": [
+   {
+    "slug": "connetquot-river-state-park-preserve-near-babylon",
+    "name": "Connetquot River State Park Preserve",
+    "km": 16.5,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q16521 (taxon)",
+    "p31": [
+     "taxon"
+    ]
+   },
+   {
+    "slug": "fire-island-national-seashore-near-babylon",
+    "name": "Fire Island National Seashore",
+    "km": 20.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q11424 (film)",
+    "p31": [
+     "film"
+    ]
+   },
+   {
+    "slug": "captree-state-park-near-babylon",
+    "name": "Captree State Park",
+    "km": 8.8,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "heckscher-state-park-near-babylon",
+    "name": "Heckscher State Park",
+    "km": 14.4,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": [
+     "solar eclipse",
+     "annular solar eclipse"
+    ]
+   },
+   {
+    "slug": "bayard-cutting-arboretum-near-babylon",
+    "name": "Bayard Cutting Arboretum",
+    "km": 14.5,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": []
+   },
+   {
+    "slug": "robert-moses-state-park-near-babylon",
+    "name": "Robert Moses State Park",
+    "km": 10.1,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   },
+   {
+    "slug": "hempstead-lake-state-park-near-babylon",
+    "name": "Hempstead Lake State Park",
+    "km": 27.1,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   },
+   {
+    "slug": "sunken-meadow-state-park-near-babylon",
+    "name": "Sunken Meadow State Park",
+    "km": 24.9,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q9826 (high school)",
+    "p31": [
+     "high school",
+     "public school"
+    ]
+   }
+  ],
+  "cause": "C/D. candidates exist but carry no publishable structured type"
+ },
+ {
+  "slug": "tyler",
+  "name": "Tyler",
+  "country": "united-states",
+  "countryName": "United States",
+  "lat": 32.35083,
+  "lon": -95.30056,
+  "rawPlaces": 8,
+  "rejected": [
+   {
+    "slug": "rose-garden-center-near-tyler",
+    "name": "Rose Garden Center",
+    "km": 1.6,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": null,
+    "p31": [
+     "version, edition or translation"
+    ]
+   },
+   {
+    "slug": "tyler-state-park-near-tyler",
+    "name": "Tyler State Park",
+    "km": 14.4,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q16521 (taxon)",
+    "p31": [
+     "taxon"
+    ]
+   },
+   {
+    "slug": "lake-palestine-near-tyler",
+    "name": "Lake Palestine",
+    "km": 25.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q65661087 (village in Belarus)",
+    "p31": [
+     "village in Belarus"
+    ]
+   },
+   {
+    "slug": "lake-gilmer-near-tyler",
+    "name": "Lake Gilmer",
+    "km": 52.1,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "type-label:Q15243209 (historic district)",
+    "p31": [
+     "historic district"
+    ]
+   },
+   {
+    "slug": "lake-tawakoni-near-tyler",
+    "name": "Lake Tawakoni",
+    "km": 86.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q16521 (taxon)",
+    "p31": [
+     "taxon"
+    ]
+   },
+   {
+    "slug": "lake-o-the-pines-near-tyler",
+    "name": "Lake O' the Pines",
+    "km": 82.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q4167410 (Wikimedia disambiguation page)",
+    "p31": [
+     "Wikimedia disambiguation page"
+    ]
+   },
+   {
+    "slug": "lake-monticello-near-tyler",
+    "name": "Lake Monticello",
+    "km": 79.7,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "hard-type-label:Q5 (human)",
+    "p31": [
+     "human"
+    ]
+   },
+   {
+    "slug": "mission-tejas-state-park-near-tyler",
+    "name": "Mission Tejas State Park",
+    "km": 90.0,
+    "confidence": "none",
+    "primary": null,
+    "vetoed": "type-label:Q3947 (house)",
+    "p31": [
+     "house"
+    ]
+   }
+  ],
+  "cause": "C/D. candidates exist but carry no publishable structured type"
+ },
+ {
+  "slug": "montevideo",
+  "name": "Montevideo",
+  "country": "uruguay",
+  "countryName": "Uruguay",
+  "lat": -34.90592,
+  "lon": -56.19131,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "da-nang",
+  "name": "Da Nang",
+  "country": "vietnam",
+  "countryName": "Vietnam",
+  "lat": 16.06944,
+  "lon": 108.20972,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "hanoi",
+  "name": "Hanoi",
+  "country": "vietnam",
+  "countryName": "Vietnam",
+  "lat": 21.0245,
+  "lon": 105.84117,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "ho-chi-minh-city",
+  "name": "Ho Chi Minh City",
+  "country": "vietnam",
+  "countryName": "Vietnam",
+  "lat": 10.77556,
+  "lon": 106.70194,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ },
+ {
+  "slug": "lusaka",
+  "name": "Lusaka",
+  "country": "zambia",
+  "countryName": "Zambia",
+  "lat": -15.41667,
+  "lon": 28.28333,
+  "rawPlaces": 0,
+  "rejected": [],
+  "cause": "A. no nearby source data \u2014 generator never produced a place for this city"
+ }
+]

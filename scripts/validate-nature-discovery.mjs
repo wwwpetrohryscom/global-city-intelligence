@@ -392,6 +392,41 @@ for (const list of DERIVED.values()) {
   }
 }
 
+// 22 beach false positives — a beach must be typed as one
+const BEACH_TYPE = /beach|plage|playa|praia|strand|seashore|shore/i;
+const NOT_A_BEACH = /waterfront|marina|harbou?r|promenade|resort|municipalit|port\b/i;
+for (const [citySlug, list] of DERIVED) {
+  for (const p of list) {
+    if (!p.categories.includes("beach")) continue;
+    const label = CLASS.get(p.slug)?.typeLabel ?? "";
+    // typeLabel describes the PRIMARY category only, so the positive check
+    // applies to places presented as beaches. A gorge that is also typed a
+    // beach at its mouth (Richtis Gorge) is legitimately both.
+    if (p.primary === "beach" && label && !BEACH_TYPE.test(label)) {
+      fail(`22 ${citySlug}/${p.slug}: presented as a beach but typed "${label}"`);
+    }
+    if (NOT_A_BEACH.test(label)) {
+      fail(`22 ${citySlug}/${p.slug}: beach classification from a non-beach type "${label}"`);
+    }
+  }
+}
+
+// 23 image provenance — every published image must be a real Commons file
+for (const list of DERIVED.values()) {
+  for (const p of list) {
+    if (!p.image) continue;
+    if (!/^https:\/\/upload\.wikimedia\.org\//.test(p.image.src)) {
+      fail(`23 ${p.slug}: image src is not a Wikimedia upload URL`);
+    }
+    if (!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(p.image.sourceUrl)) {
+      fail(`23 ${p.slug}: image sourceUrl is not a Commons file page`);
+    }
+    if (!/Wikimedia Commons/.test(p.image.attributionText)) {
+      fail(`23 ${p.slug}: attribution does not name Wikimedia Commons`);
+    }
+  }
+}
+
 // 16 ordering
 for (const [citySlug, list] of DERIVED) {
   for (let i = 1; i < list.length; i += 1) {
@@ -563,6 +598,20 @@ if (SELF_TEST) {
 
   expectFail("contaminated place name", () => {
     if (CONTAMINATION.test("Palm Jumeirah artificial island")) fail("poisoned: contamination");
+  });
+
+  expectFail("beach classified from a non-beach type", () => {
+    if (NOT_A_BEACH.test("waterfront")) fail("poisoned: beach false positive");
+  });
+
+  expectFail("image that is not a Commons file", () => {
+    if (!/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test("https://example.com/x.jpg")) {
+      fail("poisoned: non-Commons image");
+    }
+  });
+
+  expectFail("attribution that does not name the source", () => {
+    if (!/Wikimedia Commons/.test("Some Author, CC BY 2.0")) fail("poisoned: bad attribution");
   });
 
   console.log("\nPoisoned-gate self-test:");

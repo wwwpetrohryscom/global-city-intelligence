@@ -1,0 +1,6 @@
+# Country harvests: 41 MB of raw Wikidata candidate dumps, re-fetchable in
+# minutes by harvest.py / harvest_coastal.py. The decisions taken from them
+# (resolved.json, coastal-resolved.json, qid-repairs.json, image-cache.json)
+# ARE versioned, so a rebuild is reproducible without the raw dumps.
+nature_*.json
+coast_*.json
