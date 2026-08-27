@@ -75,6 +75,11 @@ BAD_NAME = re.compile(r"memorial|monument|\bhistoric\b|heritage|\bmall\b|battlef
     # V3 additions: urban drainage infrastructure is not nature, and a
     # landmass the size of a country is not a weekend destination.
     r"\bdrain\b|\bsewer|\bnullah\b|storm ?water|"
+    # Water INFRASTRUCTURE that Wikidata still types `waterfall`: Lake Trahlyta
+    # Spillway and Roaring Meg Power Station Waterfall are both typed waterfall,
+    # so only the name distinguishes them. A name may reject, never classify.
+    r"\bspillway\b|power station|hydroelectric|\bpenstock\b|\bweir\b|"
+    r"\bfountain\b|\bsluice\b|\bculvert\b|"
     r"\bhonshu\b|\bhokkaido\b|\bkyushu\b|\bshikoku\b|japanese archipelago|"
     r"japanese alps|\bhonshū\b|british isles|\bborneo\b|\bsumatra\b|\bjava\b island|"
     r"korean peninsula|iberian peninsula|\banatolia\b|scandinavian peninsula|"

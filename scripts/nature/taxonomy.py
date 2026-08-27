@@ -63,6 +63,9 @@ VETO_TYPE_QIDS = {
     "Q13691",      # artificial island
     "Q28692646",   # artificial island airport
     "Q135474849",  # artificial archipelago
+    "Q10873387",   # list of National Forest Parks of China - a Wikimedia list
+    "Q65640417",   # petrified forest - a fossil site, not woodland
+    "Q139765196",  # former waterfall - no longer a waterfall
     "Q12053053",   # artificial waterfall
     "Q10460934",   # artificial hill      - a landscaped mound in a city park
     "Q483453",     # fountain
@@ -256,6 +259,23 @@ TYPE_CATEGORIES = {
     "Q16966008": ["forest", "nature-reserve"], "Q141112511": ["forest", "nature-reserve"],
     "Q107557544": ["forest", "nature-reserve"], "Q6629955": ["forest", "park"],
     "Q92272084": ["forest", "park"],
+    # --- V4 forest ontology additions (each type reviewed individually) -----
+    "Q1510380": ["forest"],     # grove
+    "Q10509765": ["forest"],    # border forest
+    "Q199403": ["forest"],      # tropical forest
+    "Q18578149": ["forest"],    # forest in the Netherlands
+    "Q6536864": ["forest"],     # holm oak forest
+    "Q7242530": ["forest"],     # ribbon forest
+    "Q4409552": ["forest"],     # riparian forest (alt id)
+    "Q1907114": ["forest"],     # gallery forest
+    "Q1189895": ["forest"],     # cloud forest
+    "Q194188": ["forest"],      # spruce forest
+    "Q1348589": ["forest"],     # beech forest
+    "Q2445146": ["forest"],     # oak forest
+    "Q4290092": ["forest"],     # boreal forest
+    "Q1153216": ["forest"],     # temperate rainforest
+    "Q159183": ["forest"],      # rainforest
+
     # --- national parks ---------------------------------------------------
     "Q46169": ["national-park"], "Q3220096": ["national-park"],
     "Q14215551": ["national-park"], "Q108060568": ["national-park"],
@@ -301,6 +321,10 @@ TYPE_CATEGORIES = {
     "Q37994313": ["park"], "Q37994596": ["park"], "Q111415237": ["park"],
     # --- viewpoints -------------------------------------------------------
     "Q6017969": ["viewpoint"],
+    # --- V4 waterfall ontology additions ------------------------------------
+    "Q1332767": ["waterfall"],  # cataract
+    "Q3623925": ["waterfall"],  # waterfall group
+
     # --- long tail promoted to high confidence after review ---------------
     "Q1226252": ["island"], "Q555937": ["island"], "Q1402592": ["island"],
     "Q131587717": ["island"],

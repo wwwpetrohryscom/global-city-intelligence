@@ -177,6 +177,16 @@ place. The gaps this layer shipped with were closed by the V3 corpus recovery
 | beach pages | 59 | **324** |
 | dedicated category pages | 2,891 | **3,265** |
 
+V4 (`scripts/nature-v4/`) then closed the two remaining weak categories the same
+way — by recovering source coverage, not by moving a bar:
+
+| | V3 | V4 |
+| --- | --- | --- |
+| forest pages | 83 | **1,840** |
+| waterfall pages | 10 | **1,503** |
+| nature hubs | 3,759 | **4,094** |
+| total nature routes | 7,024 | **11,220** |
+
 The thresholds are unchanged. Lisbon still has no `/beaches` page because it
 has three verified beaches and the bar is four — that is the gate working, not
 a gap.

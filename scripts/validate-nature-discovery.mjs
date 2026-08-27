@@ -427,6 +427,120 @@ for (const list of DERIVED.values()) {
   }
 }
 
+// ---------------------------------------------------------------- V4 gates
+// Structured type evidence for every place, from the generator's committed
+// Wikidata cache. These gates assert what a place IS, not what it is called —
+// "Forest" is a surname, a company and a railway station as often as it is
+// woodland.
+const TYPES_PATH = "scripts/nature/cache/place-types.json";
+let PLACE_TYPES = null;
+try {
+  PLACE_TYPES = JSON.parse(read(TYPES_PATH));
+} catch {
+  notes.push(`${TYPES_PATH} unavailable — forest/waterfall type gates skipped`);
+}
+
+const ARTIFICIAL_WATER = /artificial waterfall|fountain|water feature|dam\b|spillway|hydroelectric|weir|cascade fountain|swimming pool/i;
+// HARD disqualifiers only. A large forest is very often ALSO an
+// administrative or cultural region — the Vienna Woods, the Forest of Dean and
+// Bridger-Teton National Forest all carry `region` — so those classes are not
+// listed here. What is listed cannot also be woodland.
+const NOT_A_FOREST = new RegExp(
+  [
+    "^human$", "surname", "given name", "family name", "business", "company",
+    "enterprise", "\\bbrand\\b", "human settlement", "municipalit", "\\bvillage\\b",
+    "\\btown\\b", "\\bcity\\b", "neighbou?rhood", "railway station", "metro station",
+    "\\bschool\\b", "university", "cemetery", "golf", "\\bresort\\b", "\\bhotel\\b",
+    "botanical garden", "arboretum",
+  ].join("|"),
+  "i",
+);
+const FOREST_EVIDENCE = /forest|woodland|\bwood\b|rainforest|taiga|\bgrove\b|jungle|wald|bosque|\bbos\b/i;
+const WATERFALL_EVIDENCE = /waterfall|cascade|cataract|\bfalls\b/i;
+
+if (PLACE_TYPES) {
+  // Positive evidence may come from a superclass — that is exactly what the
+  // taxonomy's `medium` tier is. A DISQUALIFIER must be a direct P31: a real
+  // forest often carries an administrative co-type whose distant superclass is
+  // "human settlement" (Barsberge is typed both `forest` and `dwelling place`;
+  // Dainohara Forest Park is a `forest park` and a Japanese `chōchō`), and
+  // judging those on inherited classes would delete real forests.
+  const evidenceFor = (placeSlug) => {
+    const place = PLACES.get(placeSlug);
+    const t = place && PLACE_TYPES[place.wikidataId];
+    if (!t) return null;
+    return Object.values(t.p31 || {}).concat(Object.values(t.super || {})).filter(Boolean);
+  };
+  const directFor = (placeSlug) => {
+    const place = PLACES.get(placeSlug);
+    const t = place && PLACE_TYPES[place.wikidataId];
+    if (!t) return [];
+    return Object.values(t.p31 || {}).filter(Boolean);
+  };
+  for (const [citySlug, list] of DERIVED) {
+    for (const p of list) {
+      const labels = evidenceFor(p.slug);
+      if (!labels) continue;
+      const direct = directFor(p.slug);
+      const joined = labels.join(" | ");
+      // 24 artificial water features must never publish as waterfalls
+      if (p.categories.includes("waterfall")) {
+        for (const label of direct) {
+          if (ARTIFICIAL_WATER.test(label) && !/^waterfall$/i.test(label)) {
+            fail(`24 ${citySlug}/${p.slug}: waterfall from an artificial type "${label}"`);
+          }
+        }
+        if (!WATERFALL_EVIDENCE.test(joined)) {
+          fail(`25 ${citySlug}/${p.slug}: classified waterfall with no waterfall type evidence`);
+        }
+      }
+      // 26 forests need forest type evidence, and must not be people or places
+      if (p.categories.includes("forest")) {
+        if (!FOREST_EVIDENCE.test(joined)) {
+          fail(`26 ${citySlug}/${p.slug}: classified forest with no forest type evidence`);
+        }
+        for (const label of direct) {
+          if (NOT_A_FOREST.test(label) && !FOREST_EVIDENCE.test(label)) {
+            fail(`27 ${citySlug}/${p.slug}: forest from a non-forest type "${label}"`);
+          }
+        }
+      }
+      // 28 semantic mismatch: a place whose every type is a non-place class
+      if (direct.length && direct.every((l) => /^(human|asteroid|album|film|taxon|scholarly article|Wikimedia .*)$/i.test(l))) {
+        fail(`28 ${citySlug}/${p.slug}: published with a non-place entity type`);
+      }
+    }
+  }
+}
+
+// 30 water infrastructure named as a waterfall. Wikidata types both "Lake
+// Trahlyta Spillway" and "Roaring Meg Power Station Waterfall" as `waterfall`,
+// so type evidence alone cannot separate them from real falls. A name may
+// REJECT a classification here; it may never create one.
+const WATER_INFRASTRUCTURE = /\bspillway\b|power station|hydroelectric|\bpenstock\b|\bweir\b|\bfountain\b|\bsluice\b|\bculvert\b/i;
+for (const [citySlug, list] of DERIVED) {
+  for (const p of list) {
+    if (p.categories.includes("waterfall") && WATER_INFRASTRUCTURE.test(p.name)) {
+      fail(`30 ${citySlug}/${p.slug}: water infrastructure published as a waterfall ("${p.name}")`);
+    }
+  }
+}
+
+// 29 duplicate forest / waterfall entity within one city
+for (const [citySlug, list] of DERIVED) {
+  for (const category of ["forest", "waterfall"]) {
+    const seenQid = new Set(), seenName = new Set();
+    for (const p of list.filter((x) => x.categories.includes(category))) {
+      const id = p.wikidataId ?? p.slug;
+      if (seenQid.has(id)) fail(`29 ${citySlug}: duplicate ${category} entity ${id}`);
+      const norm = p.name.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "");
+      if (seenName.has(norm)) fail(`29 ${citySlug}: duplicate ${category} name "${p.name}"`);
+      seenQid.add(id);
+      seenName.add(norm);
+    }
+  }
+}
+
 // 16 ordering
 for (const [citySlug, list] of DERIVED) {
   for (let i = 1; i < list.length; i += 1) {
@@ -551,7 +665,13 @@ if (SELF_TEST) {
   };
 
   expectFail("thin category page slips through the threshold gate", () => {
-    const victim = [...EXPECTED_PAGES][0];
+    // Pick a page sitting exactly ON the bar, so removing one member must drop
+    // it below. Picking an arbitrary page stops proving anything once pages
+    // routinely carry more than the minimum.
+    const victim = [...EXPECTED_PAGES].find((k) => {
+      const [c, seg] = k.split("/");
+      return routeCount(DERIVED.get(c), seg) === PAGE_MIN;
+    }) ?? [...EXPECTED_PAGES][0];
     const [city, segment] = victim.split("/");
     const list = DERIVED.get(city);
     const wanted = ROUTE_CATEGORIES[segment];
@@ -612,6 +732,68 @@ if (SELF_TEST) {
 
   expectFail("attribution that does not name the source", () => {
     if (!/Wikimedia Commons/.test("Some Author, CC BY 2.0")) fail("poisoned: bad attribution");
+  });
+
+  expectFail("artificial waterfall published as a waterfall", () => {
+    if (ARTIFICIAL_WATER.test("artificial waterfall")) fail("poisoned: artificial waterfall");
+  });
+
+  expectFail("fountain published as a waterfall", () => {
+    if (ARTIFICIAL_WATER.test("fountain")) fail("poisoned: fountain as waterfall");
+  });
+
+  expectFail("dam spillway published as a waterfall", () => {
+    if (ARTIFICIAL_WATER.test("spillway")) fail("poisoned: spillway as waterfall");
+  });
+
+  expectFail("waterfall with no waterfall type evidence", () => {
+    if (!WATERFALL_EVIDENCE.test("lake | protected area")) fail("poisoned: no waterfall evidence");
+  });
+
+  expectFail("a person named Forest published as a forest", () => {
+    if (NOT_A_FOREST.test("human") && !FOREST_EVIDENCE.test("human")) fail("poisoned: human as forest");
+  });
+
+  expectFail("a settlement published as a forest", () => {
+    if (NOT_A_FOREST.test("human settlement") && !FOREST_EVIDENCE.test("human settlement")) {
+      fail("poisoned: settlement as forest");
+    }
+  });
+
+  expectFail("a botanical garden published as a forest", () => {
+    if (NOT_A_FOREST.test("botanical garden") && !FOREST_EVIDENCE.test("botanical garden")) {
+      fail("poisoned: botanical garden as forest");
+    }
+  });
+
+  expectFail("forest with no forest type evidence", () => {
+    if (!FOREST_EVIDENCE.test("park | protected area")) fail("poisoned: no forest evidence");
+  });
+
+  expectFail("a non-place entity type published", () => {
+    if (["film"].every((l) => /^(human|asteroid|album|film|taxon|scholarly article|Wikimedia .*)$/i.test(l))) {
+      fail("poisoned: non-place entity");
+    }
+  });
+
+  expectFail("duplicate waterfall entity within one city", () => {
+    const seen = new Set(["Q123"]);
+    if (seen.has("Q123")) fail("poisoned: duplicate waterfall");
+  });
+
+  expectFail("a dam spillway named as a waterfall", () => {
+    if (WATER_INFRASTRUCTURE.test("Lake Trahlyta Spillway")) fail("poisoned: spillway waterfall");
+  });
+
+  expectFail("a power-station outflow named as a waterfall", () => {
+    if (WATER_INFRASTRUCTURE.test("Roaring Meg Power Station Waterfall")) {
+      fail("poisoned: power station waterfall");
+    }
+  });
+
+  expectFail("duplicate forest name within one city", () => {
+    const seen = new Set(["blackforest"]);
+    if (seen.has("blackforest")) fail("poisoned: duplicate forest name");
   });
 
   console.log("\nPoisoned-gate self-test:");
