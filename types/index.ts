@@ -184,3 +184,16 @@ export type {
   NearbyPlaceDiscoveryNode,
   RelatedPlace,
 } from "./nearby-discovery";
+// Nature discovery (city-based outdoor destination taxonomy + distances).
+export type {
+  CityCoordinate,
+  CityNatureCategory,
+  CityNaturePlace,
+  CityNatureProfile,
+  NatureCategory,
+  NatureClassification,
+  NatureConfidence,
+  NatureDistanceBand,
+  NatureImage,
+  NatureRouteSegment,
+} from "./nature";

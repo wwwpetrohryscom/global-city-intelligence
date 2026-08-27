@@ -10,6 +10,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { SourceBlock } from "@/components/seo/source-block";
 import { Card } from "@/components/ui/Card";
 import { FactList } from "@/components/ui/fact-list";
+import { NatureExploreLinks } from "@/components/nature/NatureExploreLinks";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { WeekendTripChecklist } from "@/components/weekend-trip/WeekendTripChecklist";
 import {
@@ -55,6 +56,11 @@ import {
   generateWeekendTripMetadata,
   ogImageFromPlaceImage,
 } from "@/lib/seo/metadata";
+import {
+  getCityNatureProfile,
+  getNatureRoutesForCity,
+  hasNatureHubPage,
+} from "@/lib/nature/engine";
 import {
   arrivalRoute,
   cityRoute,
@@ -139,6 +145,13 @@ export default async function WeekendTripPage({ params }: PageProps) {
   const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
   const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
   const nearbyPlaces = getNearbyWeekendPlacesForWeekendTrip(city.slug, 6);
+  // Nature escapes and urban weekend trips stay distinct but connected: this
+  // page keeps its own place cards and simply points at the nature layer,
+  // which classifies the same corpus by what kind of outdoor place each is.
+  const natureProfile = hasNatureHubPage(city.slug)
+    ? getCityNatureProfile(city.slug)
+    : undefined;
+  const natureSegments = getNatureRoutesForCity(city.slug);
 
   const title = `Weekend Trip Planning Guide for ${cityTitleName(city)}, ${city.countryName}`;
   const description = `Plan a weekend city trip to ${cityTitleName(city)}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency.`;
@@ -546,6 +559,36 @@ export default async function WeekendTripPage({ params }: PageProps) {
           </h2>
           <WeekendTripRelatedLinks links={relatedLinks} />
         </section>
+
+        {natureProfile ? (
+          <section
+            aria-labelledby="weekend-nature-heading"
+            className="rounded-2xl border border-neutral-border bg-surface-soft p-6"
+          >
+            <h2
+              className="text-xl font-semibold text-text-primary"
+              id="weekend-nature-heading"
+            >
+              Nature escapes from {city.name}
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-text-primary">
+              {natureProfile.places.length} of the places connected to{" "}
+              {city.name} are classified outdoor destinations across{" "}
+              {natureProfile.categories.length} kinds of place, ordered by
+              measured straight-line distance from the city centre. Nearby towns
+              and cross-border city breaks stay on this page; the nature layer
+              answers the different question of what kind of landscape is within
+              reach.
+            </p>
+            <div className="mt-4">
+              <NatureExploreLinks
+                cityName={city.name}
+                citySlug={city.slug}
+                segments={natureSegments}
+              />
+            </div>
+          </section>
+        ) : null}
 
         {nearbyPlaces.length > 0 ? (
           <section aria-labelledby="weekend-nearby-heading">

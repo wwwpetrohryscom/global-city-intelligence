@@ -25,6 +25,7 @@ import { DataTable } from "@/components/tables/DataTable";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Card } from "@/components/ui/Card";
 import { ScoreBar } from "@/components/ui/score-bar";
+import { CityNatureModule } from "@/components/nature/CityNatureModule";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
   generateCityExplanation,
@@ -76,6 +77,7 @@ import type { EconomyCategory } from "@/types/economy";
 import type { EducationCategory } from "@/types/education";
 import type { HealthcareCategory } from "@/types/healthcare";
 import { getSourcesByIds } from "@/lib/data/sources";
+import { getCityNatureProfile, hasNatureHubPage } from "@/lib/nature/engine";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
 import { createMetadata, ogImageFromPlaceImage } from "@/lib/seo/metadata";
@@ -218,6 +220,9 @@ export default async function CityPage({ params }: PageProps) {
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
   const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
   const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
+  const natureProfile = hasNatureHubPage(city.slug)
+    ? getCityNatureProfile(city.slug)
+    : undefined;
   const cityAiOverview = getCityAiOverview(city.slug);
   const cityFaq = getCityFaq(city.slug);
 
@@ -753,6 +758,15 @@ export default async function CityPage({ params }: PageProps) {
             />
           </div>
         </section>
+
+        {natureProfile ? (
+          <CityNatureModule
+            categories={natureProfile.categories}
+            cityName={city.name}
+            citySlug={city.slug}
+            totalPlaces={natureProfile.places.length}
+          />
+        ) : null}
 
         {relatedCities.length > 0 ? (
           <section>

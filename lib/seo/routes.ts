@@ -1,5 +1,5 @@
 import { ECOSYSTEM_PATH } from "@/lib/ecosystem/products";
-import type { ModuleSlug } from "@/types";
+import type { ModuleSlug, NatureRouteSegment } from "@/types";
 
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
@@ -113,6 +113,17 @@ export function nearbyWeekendPlacesCityRoute(citySlug: string) {
 
 export function nearbyWeekendPlaceRoute(slug: string) {
   return `/nearby-weekend-places/${slug}`;
+}
+
+export function cityNatureRoute(citySlug: string) {
+  return `/cities/${citySlug}/nature`;
+}
+
+export function cityNatureCategoryRoute(
+  citySlug: string,
+  segment: NatureRouteSegment,
+) {
+  return `/cities/${citySlug}/${segment}`;
 }
 
 export function getCollectionUrl(slug: string) {
