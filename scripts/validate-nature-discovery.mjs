@@ -52,7 +52,6 @@ const read = (p) => readFileSync(join(ROOT, p), "utf8");
 // Parsed from source so the validator can never drift from the shipped rules
 // while still failing if someone quietly loosens a threshold.
 const taxonomySrc = read("lib/nature/taxonomy.ts");
-const distanceSrc = read("lib/nature/distance.ts");
 // Band thresholds moved to the canonical registry in lib/reachability/bands.ts;
 // lib/nature/distance.ts now re-exports them, so read them from the source.
 const bandsSrc = read("lib/reachability/bands.ts");
