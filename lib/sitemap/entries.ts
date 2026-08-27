@@ -2,6 +2,10 @@ import type { MetadataRoute } from "next";
 import { LAST_UPDATED } from "@/lib/data/constants";
 import { NEARBY_WEEKEND_PLACE_DETAIL_SLUGS } from "@/lib/data/nearby-place-detail-pages";
 import {
+  getAllCitiesWithNatureHub,
+  getAllNatureRoutePairs,
+} from "@/lib/nature/engine";
+import {
   getAllArrivalPages,
   getAllCitiesWithNearbyWeekendPlaces,
   getAllCityIntentPages,
@@ -34,6 +38,8 @@ import {
   getCollectionUrl,
   moduleRoute,
   movingToCityRoute,
+  cityNatureCategoryRoute,
+  cityNatureRoute,
   nearbyWeekendPlaceRoute,
   nearbyWeekendPlacesCityRoute,
   neighborhoodPlanningRoute,
@@ -64,6 +70,7 @@ export const SITEMAP_CATEGORY_ORDER = [
   "visual",
   "collections",
   "guides",
+  "nature",
 ] as const;
 export type SitemapCategory = (typeof SITEMAP_CATEGORY_ORDER)[number];
 
@@ -180,6 +187,24 @@ export function getSitemapEntries(): SitemapEntry[] {
     })),
   ]);
 
+  // ---- nature discovery (per-city hub + eligible category pages) ----
+  // Only routes that pass the publication threshold are emitted, so the
+  // sitemap can never advertise a thin or non-existent page.
+  const natureItems = tag("nature", [
+    ...getAllCitiesWithNatureHub().map((citySlug) => ({
+      url: absoluteUrl(cityNatureRoute(citySlug)),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.74,
+    })),
+    ...getAllNatureRoutePairs().map(({ citySlug, segment }) => ({
+      url: absoluteUrl(cityNatureCategoryRoute(citySlug, segment)),
+      lastModified: staticFreshness,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ]);
+
   // ---- weekend (weekend trips + summer travel) ----
   const weekendItems = tag("weekend", [
     ...getAllWeekendTripPages().map((page) => ({
@@ -277,5 +302,6 @@ export function getSitemapEntries(): SitemapEntry[] {
     ...visualItems,
     ...collectionItems,
     ...guideItems,
+    ...natureItems,
   ];
 }

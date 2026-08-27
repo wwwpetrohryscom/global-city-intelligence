@@ -1,0 +1,52 @@
+{
+ "alexandroupolis-gr": {
+  "canonical": "alexandroupoli",
+  "duplicate": "alexandroupolis-gr",
+  "edits": {
+   "climate.ts:citySlug": 1,
+   "cost-of-living.ts:citySlug": 1,
+   "economy.ts:citySlug": 2,
+   "education.ts:citySlug": 4,
+   "healthcare-retirement.ts:citySlug": 7,
+   "city-quality.ts:citySlug": 1,
+   "city-faqs.ts:citySlug": 1,
+   "city-ai-overviews.ts:citySlug": 1,
+   "visual-guides.ts:citySlug": 1,
+   "weekend-trip.ts:citySlug": 1,
+   "cities.ts:slug": 1,
+   "media/city-images.ts": 1,
+   "city-coordinates.ts": 1,
+   "city-discovery-graph.ts": {
+    "node": true,
+    "edges": 4
+   },
+   "regional-collections.ts": 2,
+   "thematic-collections.ts": 6
+  }
+ },
+ "tromso-municipality": {
+  "canonical": "tromso",
+  "duplicate": "tromso-municipality",
+  "edits": {
+   "climate.ts:citySlug": 1,
+   "cost-of-living.ts:citySlug": 1,
+   "economy.ts:citySlug": 2,
+   "education.ts:citySlug": 5,
+   "healthcare-retirement.ts:citySlug": 7,
+   "city-quality.ts:citySlug": 1,
+   "city-faqs.ts:citySlug": 1,
+   "city-ai-overviews.ts:citySlug": 1,
+   "visual-guides.ts:citySlug": 1,
+   "weekend-trip.ts:citySlug": 1,
+   "cities.ts:slug": 1,
+   "media/city-images.ts": 1,
+   "city-coordinates.ts": 1,
+   "city-discovery-graph.ts": {
+    "node": true,
+    "edges": 6
+   },
+   "regional-collections.ts": 2,
+   "thematic-collections.ts": 5
+  }
+ }
+}

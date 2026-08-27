@@ -1,0 +1,6 @@
+# Raw country harvests: re-fetchable in minutes by harvest.py. The decisions
+# taken from them (resolved-trimmed.json) ARE versioned, so a rebuild is
+# reproducible without the raw dumps.
+forest_*.json
+fall_*.json
+resolved.json

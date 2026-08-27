@@ -5301,7 +5301,6 @@ export const NEARBY_WEEKEND_PLACE_DETAIL_SLUGS: readonly NearbyWeekendPlace["slu
   "sveti-stefan-near-cetinje",
   "karatepe-aslantas-national-park-near-antakya",
   "evros-delta-national-park-near-alexandroupolis-gr",
-  "dadia-lefkimi-soufli-forest-national-park-near-alexandroupolis-gr",
   "imbros-near-alexandroupolis-gr",
   "srebarna-nature-reserve-near-silistra",
   "shumen-plateau-nature-park-near-silistra",

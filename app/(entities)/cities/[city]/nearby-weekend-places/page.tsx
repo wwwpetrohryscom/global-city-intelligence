@@ -5,6 +5,8 @@ import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
+import { NatureExploreLinks } from "@/components/nature/NatureExploreLinks";
+import { ReachabilityBands } from "@/components/reachability/ReachabilityBands";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
@@ -23,6 +25,11 @@ import {
   hasVisualCityGuidePage,
   hasWeekendTripPage,
 } from "@/lib/data/queries";
+import {
+  getNatureRoutesForCity,
+  hasNatureHubPage,
+} from "@/lib/nature/engine";
+import { getCityReachability } from "@/lib/reachability/engine";
 import { createMetadata } from "@/lib/seo/metadata";
 import { cityTitleName } from "@/lib/seo/city-title";
 import {
@@ -135,6 +142,9 @@ export default async function NearbyWeekendPlacesCityPage({
     })),
   };
 
+  const reachability = getCityReachability(city.slug);
+  const cityHasNature = hasNatureHubPage(city.slug);
+  const natureSegments = getNatureRoutesForCity(city.slug);
   const cityHasWeekendTrip = hasWeekendTripPage(city.slug);
   const cityHasSummerTravel = hasSummerTravelPage(city.slug);
   const cityHasVisualGuide = hasVisualCityGuidePage(city.slug);
@@ -202,6 +212,42 @@ export default async function NearbyWeekendPlacesCityPage({
 
       <Container className="space-y-12 py-12">
         <BreadcrumbNav items={breadcrumbs} />
+
+        {reachability ? (
+          <ReachabilityBands
+            cityName={city.name}
+            headingId="nearby-reachability-heading"
+            perBand={8}
+            reach={reachability}
+          />
+        ) : null}
+
+        {cityHasNature ? (
+          <section
+            aria-labelledby="nearby-nature-heading"
+            className="rounded-2xl border border-neutral-border bg-surface-soft p-6"
+          >
+            <h2
+              className="text-xl font-semibold text-text-primary"
+              id="nearby-nature-heading"
+            >
+              Looking for a specific kind of place?
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-text-primary">
+              The nature layer groups these same records by what kind of
+              outdoor place each one is — lakes, mountains, forests, beaches,
+              protected areas — and orders them by measured straight-line
+              distance from {city.name}.
+            </p>
+            <div className="mt-4">
+              <NatureExploreLinks
+                cityName={city.name}
+                citySlug={city.slug}
+                segments={natureSegments}
+              />
+            </div>
+          </section>
+        ) : null}
 
         <section
           aria-labelledby="detail-overview-heading"

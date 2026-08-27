@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "node --max-old-space-size=8192 ./node_modules/eslint/bin/eslint.js .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "node --max-old-space-size=8192 ./node_modules/typescript/bin/tsc --noEmit",
     "indexnow": "node scripts/submit-indexnow.mjs",
     "google-ping": "node scripts/google-ping.mjs",
     "bing-ping": "node scripts/bing-ping.mjs",
@@ -39,7 +39,11 @@
     "validate:quick-nav": "node scripts/validate-quick-nav.mjs",
     "validate:sentinel": "node scripts/validate-sentinel-cohort.mjs",
     "validate:city-intelligence": "node scripts/validate-city-intelligence.mjs",
-    "validate:similar-cities": "node scripts/validate-similar-cities.mjs"
+    "validate:similar-cities": "node scripts/validate-similar-cities.mjs",
+    "validate:nature-discovery": "node scripts/validate-nature-discovery.mjs",
+    "validate:city-geometry": "node scripts/validate-city-geometry.mjs",
+    "validate:city-identity": "node scripts/validate-city-identity.mjs",
+    "validate:reachability": "node scripts/validate-reachability.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",
