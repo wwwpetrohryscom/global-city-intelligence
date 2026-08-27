@@ -46832,21 +46832,6 @@ export const cityAiOverviews: readonly CityAiOverview[] = [
     ],
   },
   {
-    citySlug: "tromso-municipality",
-    items: [
-      { question: "Is Tromsø Municipality worth visiting?", answer: "Yes — excellent quality of life (88/100), with nearby nature such as Tromsøya, Kvaløya, Troms." },
-      { question: "Is Tromsø Municipality good for families?", answer: "Excellent (89/100) on safety, schools and green space." },
-      { question: "Is Tromsø Municipality affordable?", answer: "Relatively expensive; about NOK 26,300/month for one person (estimate)." },
-      { question: "When is the best time to visit Tromsø Municipality?", answer: "Late spring to early autumn; warmest in Jul, coldest in Jan." },
-      { question: "What are Tromsø Municipality's main industries?", answer: "Mainly energy, technology, research." },
-      { question: "What is the climate in Tromsø Municipality?", answer: "A subarctic climate, averaging about -4.5°C." },
-      { question: "Does Tromsø Municipality have universities?", answer: "Higher education is strong (68/100)." },
-      { question: "What is healthcare like in Tromsø Municipality?", answer: "Healthcare access is strong (72/100)." },
-      { question: "Is Tromsø Municipality good for retirement?", answer: "Retirement suitability is strong (65/100)." },
-      { question: "What nature is near Tromsø Municipality?", answer: "Within ~170 km: Tromsøya, Kvaløya, Troms." },
-    ],
-  },
-  {
     citySlug: "viborg",
     items: [
       { question: "Is Viborg worth visiting?", answer: "Yes — excellent quality of life (88/100), with nearby nature such as Nørresø, Søndersø." },
@@ -50744,21 +50729,6 @@ export const cityAiOverviews: readonly CityAiOverview[] = [
       { question: "What is healthcare like in Antakya?", answer: "Healthcare access is good (53/100)." },
       { question: "Is Antakya good for retirement?", answer: "Retirement suitability is strong (66/100)." },
       { question: "What nature is near Antakya?", answer: "Within ~170 km: Musa Dagh, Hazzi." },
-    ],
-  },
-  {
-    citySlug: "alexandroupolis-gr",
-    items: [
-      { question: "Is Alexandroupolis worth visiting?", answer: "Yes — strong quality of life (77/100), with nearby nature such as Evros Delta National Park, Dadia-Lefkimi-Soufli Forest National Park." },
-      { question: "Is Alexandroupolis good for families?", answer: "Strong (75/100) on safety, schools and green space." },
-      { question: "Is Alexandroupolis affordable?", answer: "Around average cost; about €1,170/month for one person (estimate)." },
-      { question: "When is the best time to visit Alexandroupolis?", answer: "Late spring to early autumn; warmest in Jul, coldest in Jan." },
-      { question: "What are Alexandroupolis's main industries?", answer: "Mainly tourism, hospitality, healthcare." },
-      { question: "What is the climate in Alexandroupolis?", answer: "A mediterranean climate, averaging about 16.3°C." },
-      { question: "Does Alexandroupolis have universities?", answer: "Higher education is good (57/100)." },
-      { question: "What is healthcare like in Alexandroupolis?", answer: "Healthcare access is good (60/100)." },
-      { question: "Is Alexandroupolis good for retirement?", answer: "Retirement suitability is strong (70/100)." },
-      { question: "What nature is near Alexandroupolis?", answer: "Within ~170 km: Evros Delta National Park, Dadia-Lefkimi-Soufli Forest National Park." },
     ],
   },
   {

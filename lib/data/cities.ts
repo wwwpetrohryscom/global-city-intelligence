@@ -49048,19 +49048,6 @@ const seeds: CitySeed[] = [
     scores: { overall: 80, affordability: 46, airQuality: 79, energy: 79, resilience: 87 },
   }),
   buildNeutralCitySeed({
-    slug: "tromso-municipality",
-    name: "Tromsø Municipality",
-    countrySlug: "norway",
-    countryName: "Norway",
-    region: "Northern Europe",
-    population: "~80K",
-    intro:
-      "Tromsø Municipality is an indexed city in Norway (Northern Europe), with a metropolitan population of about ~80K. This profile brings together deterministic city-intelligence indicators for Tromsø Municipality spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Tromsø Municipality profile to compare affordability, livability, and economic indicators against other indexed cities in Norway and across Northern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 80, affordability: 42, airQuality: 83, energy: 85, resilience: 87 },
-  }),
-  buildNeutralCitySeed({
     slug: "viborg",
     name: "Viborg",
     countrySlug: "denmark",
@@ -52440,19 +52427,6 @@ const seeds: CitySeed[] = [
     outlook:
       "Use the Antakya profile to compare affordability, livability, and economic indicators against other indexed cities in Turkey and across Western Asia, and to explore nearby nature and weekend destinations.",
     scores: { overall: 73, affordability: 61, airQuality: 67, energy: 67, resilience: 69 },
-  }),
-  buildNeutralCitySeed({
-    slug: "alexandroupolis-gr",
-    name: "Alexandroupolis",
-    countrySlug: "greece",
-    countryName: "Greece",
-    region: "Southern Europe",
-    population: "~59K",
-    intro:
-      "Alexandroupolis is an indexed city in Greece (Southern Europe), with a metropolitan population of about ~59K. This profile brings together deterministic city-intelligence indicators for Alexandroupolis spanning cost of living, climate, safety and quality of life, economy and jobs, education, and healthcare.",
-    outlook:
-      "Use the Alexandroupolis profile to compare affordability, livability, and economic indicators against other indexed cities in Greece and across Southern Europe, and to explore nearby nature and weekend destinations.",
-    scores: { overall: 73, affordability: 61, airQuality: 69, energy: 71, resilience: 73 },
   }),
   buildNeutralCitySeed({
     slug: "vorsha",

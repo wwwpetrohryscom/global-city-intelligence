@@ -5259,7 +5259,6 @@ export const NEARBY_PLACE_FACTS: Record<string, NearbyPlaceFacts> = {
   "sveti-stefan-near-cetinje": { designation: "Island", wikidataId: "Q844192" },
   "karatepe-aslantas-national-park-near-antakya": { designation: "National Park", established: 1958, wikidataId: "Q6025863" },
   "evros-delta-national-park-near-alexandroupolis-gr": { designation: "National Park", iucnCategory: "II", established: 1977, wikidataId: "Q12876743" },
-  "dadia-lefkimi-soufli-forest-national-park-near-alexandroupolis-gr": { designation: "National Park", iucnCategory: "VI", established: 2006, wikidataId: "Q24953272" },
   "imbros-near-alexandroupolis-gr": { designation: "Island", wikidataId: "Q658437" },
   "srebarna-nature-reserve-near-silistra": { designation: "Biosphere Reserve", iucnCategory: "IV", established: 1948, wikidataId: "Q122082" },
   "shumen-plateau-nature-park-near-silistra": { designation: "Nature Park", wikidataId: "Q24661407" },

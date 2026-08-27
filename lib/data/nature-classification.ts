@@ -2481,7 +2481,6 @@ balsa-del-cadimo-near-linares|32|3|reservoir
 balsam-lake-provincial-park-near-kawartha-lakes|131072|3|provincial park of Canada
 balsam-lake-provincial-park-near-peterborough|131072|3|provincial park of Canada
 balsfjorden-near-tromso|4096|3|fjord
-balsfjorden-near-tromso-municipality|4096|3|fjord
 balskai-reservoir-near-taurage|32|3|reservoir
 balta-ialomitei-near-cernavoda|320|3|river island
 balta-ialomitei-near-constanta|320|3|river island
@@ -10603,7 +10602,6 @@ dachstein-mountains-near-bischofshofen|1024|3|mountain range
 dachstein-mountains-near-st-johann-im-pongau|1024|3|mountain range
 dada-gorgud-park-in-baku-near-khyrdalan|131072|3|park
 dadia-lefkimi-soufli-forest-national-park-near-alexandroupoli|32768|3|national park
-dadia-lefkimi-soufli-forest-national-park-near-alexandroupolis-gr|32768|3|national park
 dadia-lefkimi-soufli-forest-national-park-near-edirne|32768|3|national park
 dadia-lefkimi-soufli-forest-national-park-near-komotini|32768|3|national park
 dadohaehaesang-national-park-near-jeju|32768|3|national park
@@ -13037,7 +13035,6 @@ erratic-rock-state-natural-site-near-salem|131072|2|
 erris-head-near-ballina|69632|3|cape
 erse-near-celle|65536|3|Special Area of Conservation
 ersfjorden-near-tromso|4096|3|fjord
-ersfjorden-near-tromso-municipality|4096|3|fjord
 ersha-island-near-dongguan|64|3|island
 ersha-island-near-foshan|64|3|island
 ersha-island-near-guangzhou|64|3|island
@@ -13638,7 +13635,6 @@ femo-near-nakskov|64|3|island
 femo-near-nykobing-falster|64|3|island
 femo-near-vordingborg|64|3|island
 femsjoen-near-halden|32|3|lake
-fengari-near-alexandroupolis-gr|1024|3|mountain
 fengari-near-canakkale|1024|3|mountain
 fenghuang-mountain-near-anshan|1024|3|mountain
 fenghuang-mountain-near-dandong|1024|3|mountain
@@ -21486,7 +21482,6 @@ kalchyk-river-near-mariupol|256|3|river
 kaldenkirchener-grenzwald-near-monchengladbach|16384|3|forest
 kaldenkirchener-grenzwald-near-viersen|16384|3|forest
 kaldfjorden-near-tromso|4096|3|fjord
-kaldfjorden-near-tromso-municipality|4096|3|fjord
 kaldvellfjorden-near-arendal|4096|3|fjord
 kaldvellfjorden-near-grimstad|4096|3|fjord
 kaldyceuskaje-lake-near-baranavichy|32|3|lake
@@ -23802,7 +23797,6 @@ kuzuyayla-nature-park-near-izmit|196608|3|nature park
 kvaenangen-near-alta|4096|3|fjord
 kvaeoya-near-harstad|64|3|island
 kvaloya-near-tromso|64|3|island
-kvaloya-troms-near-tromso-municipality|64|3|island
 kvannfjellet-near-molde-municipality|1024|3|mountain
 kvansas-bokar-near-nassjo|65536|3|nature reserve
 kvarken-archipelago-near-jakobstad|64|3|archipelago
@@ -26332,7 +26326,6 @@ lake-virelles-near-dinant|32|3|lake
 lake-virginia-near-whanganui|32|3|lake
 lake-vissi-near-elva|32|3|lake
 lake-vistonida-near-alexandroupoli|32|3|lake
-lake-vistonida-near-alexandroupolis-gr|32|3|lake
 lake-vistonida-near-komotini|32|3|lake
 lake-vistonida-near-xanthi|32|3|lake
 lake-viverone-near-novara|32|3|lake
@@ -28788,7 +28781,6 @@ malakoff-park-near-sainte-luce-sur-loire|131072|3|park
 malakoff-park-near-vertou|131072|3|park
 malanda-falls-near-innisfail|1|3|waterfall
 malangen-near-tromso|4096|3|fjord
-malangen-near-tromso-municipality|4096|3|fjord
 malaren-near-enkoping|32|3|lake
 malaren-near-marsta|32|3|lake
 malaren-near-strangnas|32|3|lake
@@ -40498,7 +40490,6 @@ ringkobing-fjord-near-holstebro|4096|3|fjord
 ringkogel-near-oberwart|1024|3|mountain
 ringsjoen-near-gjovik-municipality|32|3|lake
 ringvassoya-near-tromso|64|3|island
-ringvassoya-near-tromso-municipality|64|3|island
 ringwood-state-park-near-ramapo|131072|2|
 rinka-falls-near-brezice|1|3|waterfall
 rinka-falls-near-celje|1|3|waterfall
@@ -46209,7 +46200,6 @@ stratumse-heide-near-s-hertogenbosch|81920|3|forest
 stratumse-heide-near-weert|81920|3|forest
 straumoya-near-bodo|64|3|island
 straumsfjorden-near-tromso|4096|3|strait
-straumsfjorden-near-tromso-municipality|4096|3|strait
 strawberry-island-near-amherst|320|3|river island
 strazilovo-near-novi-sad|1024|3|mountain
 strazov-mountains-near-banovce-nad-bebravou|1024|3|mountain range
@@ -48910,7 +48900,6 @@ ullarp-near-falkenberg|65536|3|nature reserve
 ulleungdo-near-daegu|64|3|island
 ullibarri-gamboa-reservoir-near-vitoria-gasteiz|32|3|reservoir
 ullsfjorden-near-tromso|4096|3|fjord
-ullsfjorden-near-tromso-municipality|4096|3|fjord
 ullstammaskogen-near-linkoping|65536|3|nature reserve
 ulqen-almaty-peak-near-almaty|1024|3|summit
 ulriken-near-bergen|1024|3|mountain

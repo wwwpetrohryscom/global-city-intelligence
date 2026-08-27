@@ -48,6 +48,102 @@
   to = "/robots.txt"
   status = 301
 
+# ---------------------------------------------------------------------------
+# Retired duplicate city slugs (city identity cleanup).
+#
+# Each of these was a published record that denoted the same real place as its
+# canonical twin — same Wikidata entity, same coordinate — so the URL keeps a
+# permanent 301 rather than becoming a 404. The canonical target is a real file,
+# so no chain is possible: force is left off and a real file always wins.
+# Source of truth for the mapping is lib/data/city-aliases.ts.
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/cities/alexandroupolis-gr"
+  to = "/cities/alexandroupoli"
+  status = 301
+
+[[redirects]]
+  from = "/cities/alexandroupolis-gr/*"
+  to = "/cities/alexandroupoli/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/cities/tromso-municipality"
+  to = "/cities/tromso"
+  status = 301
+
+[[redirects]]
+  from = "/cities/tromso-municipality/*"
+  to = "/cities/tromso/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/air-quality/alexandroupolis-gr"
+  to = "/air-quality/alexandroupoli"
+  status = 301
+
+[[redirects]]
+  from = "/air-quality/tromso-municipality"
+  to = "/air-quality/tromso"
+  status = 301
+
+[[redirects]]
+  from = "/climate-risk/alexandroupolis-gr"
+  to = "/climate-risk/alexandroupoli"
+  status = 301
+
+[[redirects]]
+  from = "/climate-risk/tromso-municipality"
+  to = "/climate-risk/tromso"
+  status = 301
+
+[[redirects]]
+  from = "/cost-of-living/alexandroupolis-gr"
+  to = "/cost-of-living/alexandroupoli"
+  status = 301
+
+[[redirects]]
+  from = "/cost-of-living/tromso-municipality"
+  to = "/cost-of-living/tromso"
+  status = 301
+
+[[redirects]]
+  from = "/energy/alexandroupolis-gr"
+  to = "/energy/alexandroupoli"
+  status = 301
+
+[[redirects]]
+  from = "/energy/tromso-municipality"
+  to = "/energy/tromso"
+  status = 301
+
+[[redirects]]
+  from = "/internet-speed/alexandroupolis-gr"
+  to = "/internet-speed/alexandroupoli"
+  status = 301
+
+[[redirects]]
+  from = "/internet-speed/tromso-municipality"
+  to = "/internet-speed/tromso"
+  status = 301
+
+[[redirects]]
+  from = "/safety/alexandroupolis-gr"
+  to = "/safety/alexandroupoli"
+  status = 301
+
+[[redirects]]
+  from = "/safety/tromso-municipality"
+  to = "/safety/tromso"
+  status = 301
+
+# The one nearby-place detail page whose record was removed as a duplicate of a
+# feature the canonical city already carried.
+[[redirects]]
+  from = "/nearby-weekend-places/dadia-lefkimi-soufli-forest-national-park-near-alexandroupolis-gr"
+  to = "/nearby-weekend-places/dadia-lefkimi-soufli-forest-national-park-near-alexandroupoli"
+  status = 301
+
 # Canonical host. Production canonical is www; the apex must 301 to it so the
 # SEO identity in every <link rel="canonical"> stays the only reachable host.
 [[redirects]]

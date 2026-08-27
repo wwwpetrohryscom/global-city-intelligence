@@ -41,7 +41,8 @@
     "validate:city-intelligence": "node scripts/validate-city-intelligence.mjs",
     "validate:similar-cities": "node scripts/validate-similar-cities.mjs",
     "validate:nature-discovery": "node scripts/validate-nature-discovery.mjs",
-    "validate:city-geometry": "node scripts/validate-city-geometry.mjs"
+    "validate:city-geometry": "node scripts/validate-city-geometry.mjs",
+    "validate:city-identity": "node scripts/validate-city-identity.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",

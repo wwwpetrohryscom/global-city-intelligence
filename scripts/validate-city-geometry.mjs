@@ -32,16 +32,35 @@ const MAX_MEDIAN_PLACE_KM = 400;   // a city whose median curated place is
                                    // further than this is not that city
 
 /**
- * Pairs that legitimately share a point because lib/data/cities.ts carries the
- * SAME place twice — a known corpus duplication where a municipality record was
- * added alongside the city record. They are real duplicate city entries, not
- * anchor swaps, and deduplicating cities is outside this validator's job. Any
- * pair not listed here is a new collision and fails.
+ * Coordinate collisions that are real geography, each with its evidence.
+ *
+ * A bare slug allowlist only silences the gate; an entry here has to say WHY
+ * two records share a point and name the entities involved, so a future
+ * collision cannot be waved through by adding a string. The duplicate-identity
+ * pairs this file used to carry (alexandroupolis-gr, tromso-municipality) are
+ * gone — they were merged into their canonical twins, which is the actual fix.
  */
-const KNOWN_DUPLICATE_CITIES = new Set([
-  "alexandroupoli|alexandroupolis-gr",
-  "tromso|tromso-municipality",
-]);
+const JUSTIFIED_COORDINATE_COLLISIONS = [
+  {
+    slugs: ["baerum-municipality", "sandvika"],
+    reason: "municipality and its administrative centre",
+    evidence:
+      "Distinct Wikidata entities: Q57076 (Bærum Municipality, municipality of " +
+      "Norway) and Q651744 (Sandvika, urban area). Sandvika is P1376 " +
+      "capital-of and P131 located-in Q57076, and the municipality's published " +
+      "P625 point sits in Sandvika, so the two coordinates coincide.",
+  },
+];
+
+const JUSTIFIED_PAIRS = new Set(
+  JUSTIFIED_COORDINATE_COLLISIONS.map((c) => [...c.slugs].sort().join("|")),
+);
+
+for (const c of JUSTIFIED_COORDINATE_COLLISIONS) {
+  if (c.slugs.length !== 2 || !c.reason || !c.evidence || c.evidence.length < 40) {
+    fail(`2 justified collision entry for ${c.slugs.join("/")} lacks a reason or real evidence`);
+  }
+}
 
 function hav(aLat, aLon, bLat, bLon) {
   const r = (d) => (d * Math.PI) / 180;
@@ -64,7 +83,7 @@ for (const m of coordSrc.matchAll(/^\s*\["([a-z0-9-]+)", (-?\d+(?:\.\d+)?), (-?\
   coords.set(slug, { lat: la, lon: lo, qid });
   const key = `${la},${lo}`;
   const twin = seenPoint.get(key);
-  if (twin && !KNOWN_DUPLICATE_CITIES.has([slug, twin].sort().join("|"))) {
+  if (twin && !JUSTIFIED_PAIRS.has([slug, twin].sort().join("|"))) {
     fail(`2 ${slug} shares an exact coordinate with ${twin}`);
   }
   seenPoint.set(key, slug);

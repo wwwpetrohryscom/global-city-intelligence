@@ -17,6 +17,8 @@
  * pages it links to. Current data is always resolved from the discovery index.
  */
 
+import { resolveCitySlug } from "@/lib/data/city-aliases";
+
 /** Versioned keys: a shape change bumps the suffix and the old key is ignored. */
 export const SAVED_CITIES_KEY = "gci:saved-cities:v1";
 export const RECENT_CITIES_KEY = "gci:recent-cities:v1";
@@ -93,9 +95,14 @@ export function readSaved(): string[] {
   const out: string[] = [];
   const seen = new Set<string>();
   for (const entry of parsed) {
-    if (!isValidSlug(entry) || seen.has(entry)) continue;
-    seen.add(entry);
-    out.push(entry);
+    if (!isValidSlug(entry)) continue;
+    // A visitor may have saved a slug that has since been retired by an
+    // identity merge. Resolve it silently and collapse it into the canonical
+    // entry rather than dropping the save or showing the city twice.
+    const slug = resolveCitySlug(entry);
+    if (seen.has(slug)) continue;
+    seen.add(slug);
+    out.push(slug);
   }
   return out;
 }
@@ -121,17 +128,22 @@ export function writeSaved(slugs: string[]): boolean {
 export function readRecent(): RecentEntry[] {
   const parsed = readRaw(RECENT_CITIES_KEY);
   if (!Array.isArray(parsed)) return [];
-  const out: RecentEntry[] = [];
-  const seen = new Set<string>();
+  // Retired slugs resolve to their canonical twin, so two stored entries can
+  // collapse into one. Keep the MOST RECENT visit of the pair rather than
+  // whichever happened to be written first.
+  const newest = new Map<string, number>();
   for (const entry of parsed) {
     if (typeof entry !== "object" || entry === null) continue;
     const { slug, at } = entry as { slug?: unknown; at?: unknown };
-    if (!isValidSlug(slug) || seen.has(slug)) continue;
+    if (!isValidSlug(slug)) continue;
     if (typeof at !== "number" || !Number.isFinite(at)) continue;
-    seen.add(slug);
-    out.push({ slug, at });
+    const canonical = resolveCitySlug(slug);
+    const seenAt = newest.get(canonical);
+    if (seenAt === undefined || at > seenAt) newest.set(canonical, at);
   }
-  return out.sort((a, b) => b.at - a.at).slice(0, RECENT_LIMIT);
+  return Array.from(newest, ([slug, at]) => ({ slug, at }))
+    .sort((a, b) => b.at - a.at)
+    .slice(0, RECENT_LIMIT);
 }
 
 /**
