@@ -53,6 +53,9 @@ const read = (p) => readFileSync(join(ROOT, p), "utf8");
 // while still failing if someone quietly loosens a threshold.
 const taxonomySrc = read("lib/nature/taxonomy.ts");
 const distanceSrc = read("lib/nature/distance.ts");
+// Band thresholds moved to the canonical registry in lib/reachability/bands.ts;
+// lib/nature/distance.ts now re-exports them, so read them from the source.
+const bandsSrc = read("lib/reachability/bands.ts");
 const num = (src, name) => {
   const m = src.match(new RegExp(`export const ${name} = (\\d+(?:\\.\\d+)?)`));
   if (!m) throw new Error(`cannot read ${name}`);
@@ -62,8 +65,8 @@ const PAGE_MIN = num(taxonomySrc, "NATURE_PAGE_MIN_PLACES");
 const HUB_MIN_PLACES = num(taxonomySrc, "NATURE_HUB_MIN_PLACES");
 const HUB_MIN_CATEGORIES = num(taxonomySrc, "NATURE_HUB_MIN_CATEGORIES");
 const MAX_KM = num(taxonomySrc, "NATURE_MAX_DISTANCE_KM");
-const BAND_NEARBY = Number(distanceSrc.match(/nearby: (\d+)/)[1]);
-const BAND_DAY = Number(distanceSrc.match(/"day-trip": (\d+)/)[1]);
+const BAND_NEARBY = Number(bandsSrc.match(/nearby: (\d+)/)[1]);
+const BAND_DAY = Number(bandsSrc.match(/"day-trip": (\d+)/)[1]);
 
 const ROUTE_CATEGORIES = (() => {
   const block = taxonomySrc.slice(

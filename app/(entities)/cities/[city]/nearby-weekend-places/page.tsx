@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
 import { JsonLd } from "@/components/seo/json-ld";
 import { NatureExploreLinks } from "@/components/nature/NatureExploreLinks";
+import { ReachabilityBands } from "@/components/reachability/ReachabilityBands";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
@@ -28,6 +29,7 @@ import {
   getNatureRoutesForCity,
   hasNatureHubPage,
 } from "@/lib/nature/engine";
+import { getCityReachability } from "@/lib/reachability/engine";
 import { createMetadata } from "@/lib/seo/metadata";
 import { cityTitleName } from "@/lib/seo/city-title";
 import {
@@ -140,6 +142,7 @@ export default async function NearbyWeekendPlacesCityPage({
     })),
   };
 
+  const reachability = getCityReachability(city.slug);
   const cityHasNature = hasNatureHubPage(city.slug);
   const natureSegments = getNatureRoutesForCity(city.slug);
   const cityHasWeekendTrip = hasWeekendTripPage(city.slug);
@@ -209,6 +212,15 @@ export default async function NearbyWeekendPlacesCityPage({
 
       <Container className="space-y-12 py-12">
         <BreadcrumbNav items={breadcrumbs} />
+
+        {reachability ? (
+          <ReachabilityBands
+            cityName={city.name}
+            headingId="nearby-reachability-heading"
+            perBand={8}
+            reach={reachability}
+          />
+        ) : null}
 
         {cityHasNature ? (
           <section

@@ -24,6 +24,10 @@ import {
   natureCategoryPlural,
 } from "@/lib/nature/taxonomy";
 import {
+  REACHABILITY_BAND_LABEL,
+  REACHABILITY_BAND_ORDER,
+} from "@/lib/reachability/bands";
+import {
   cityRoute,
   countryRoute,
   nearbyWeekendPlaceRoute,
@@ -112,6 +116,11 @@ export function NatureCityPage({
   const bandsPresent = NATURE_BAND_ORDER.filter((band) =>
     places.some((place) => place.band === band),
   );
+
+  const reachabilityBands = REACHABILITY_BAND_ORDER.map((band) => ({
+    band,
+    count: places.filter((place) => place.band === band).length,
+  })).filter((entry) => entry.count > 0);
 
   const grid = (
     <ul className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
@@ -249,6 +258,39 @@ export function NatureCityPage({
             ) : null}
           </ul>
         </section>
+
+        {reachabilityBands.length > 0 ? (
+          <section
+            aria-labelledby="nature-reach-heading"
+            className="rounded-2xl border border-neutral-border bg-white p-6"
+          >
+            <h2
+              className="text-lg font-semibold text-text-primary"
+              id="nature-reach-heading"
+            >
+              How far these are
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-text-secondary">
+              Reachability is a second axis over the same places: the category
+              says what a destination is, the band says how far it sits from{" "}
+              {city.name}. Distances are measured in a straight line — this page
+              publishes no travel times.
+            </p>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {reachabilityBands.map(({ band, count }) => (
+                <li
+                  className="inline-flex items-center gap-1.5 rounded-full border border-neutral-border bg-surface-soft px-3 py-1.5 text-sm text-text-primary"
+                  key={band}
+                >
+                  <span className="font-semibold">{count}</span>
+                  <span className="text-text-secondary">
+                    {REACHABILITY_BAND_LABEL[band].toLowerCase()}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
         {categoryCounts.length > 0 ? (
           <section aria-labelledby="nature-breakdown-heading" className="space-y-4">

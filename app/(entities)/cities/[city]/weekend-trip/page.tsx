@@ -11,6 +11,7 @@ import { SourceBlock } from "@/components/seo/source-block";
 import { Card } from "@/components/ui/Card";
 import { FactList } from "@/components/ui/fact-list";
 import { NatureExploreLinks } from "@/components/nature/NatureExploreLinks";
+import { ReachabilityBands } from "@/components/reachability/ReachabilityBands";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { WeekendTripChecklist } from "@/components/weekend-trip/WeekendTripChecklist";
 import {
@@ -61,6 +62,7 @@ import {
   getNatureRoutesForCity,
   hasNatureHubPage,
 } from "@/lib/nature/engine";
+import { getCityReachability } from "@/lib/reachability/engine";
 import {
   arrivalRoute,
   cityRoute,
@@ -152,6 +154,7 @@ export default async function WeekendTripPage({ params }: PageProps) {
     ? getCityNatureProfile(city.slug)
     : undefined;
   const natureSegments = getNatureRoutesForCity(city.slug);
+  const reachability = getCityReachability(city.slug);
 
   const title = `Weekend Trip Planning Guide for ${cityTitleName(city)}, ${city.countryName}`;
   const description = `Plan a weekend city trip to ${cityTitleName(city)}${country ? `, ${country.name}` : ""} with arrival planning, visual orientation, Summer 2026 travel context, budget tools, transport notes, healthcare and public-safety context, comparisons, methodology, and source transparency.`;
@@ -559,6 +562,15 @@ export default async function WeekendTripPage({ params }: PageProps) {
           </h2>
           <WeekendTripRelatedLinks links={relatedLinks} />
         </section>
+
+        {reachability ? (
+          <ReachabilityBands
+            cityName={city.name}
+            headingId="weekend-reachability-heading"
+            perBand={6}
+            reach={reachability}
+          />
+        ) : null}
 
         {natureProfile ? (
           <section

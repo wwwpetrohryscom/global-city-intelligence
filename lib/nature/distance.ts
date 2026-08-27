@@ -1,3 +1,4 @@
+import { REACHABILITY_BAND_MAX_KM } from "@/lib/reachability/bands";
 import type { NatureDistanceBand } from "@/types";
 
 /**
@@ -33,15 +34,14 @@ export function greatCircleKm(
 }
 
 /**
- * Band boundaries reproduce the corpus's existing `distanceBand` vocabulary
- * measured against real coordinates: `nearby` records reach a p99 of 59 km,
- * `regional` runs 60-120 km, `longer_weekend` begins at 122 km.
+ * Band boundaries live in ONE place — `lib/reachability/bands.ts` — and are
+ * re-exported here so the nature layer and the reachability layer can never
+ * drift into two competing models. The thresholds themselves were derived from
+ * the corpus's own `distanceBand` vocabulary: `nearby` records reach a p99 of
+ * 59 km, `regional` runs 60-120 km, `longer_weekend` begins at 122 km.
  */
-export const NATURE_BAND_MAX_KM: Record<NatureDistanceBand, number> = {
-  nearby: 60,
-  "day-trip": 120,
-  weekend: Number.POSITIVE_INFINITY,
-};
+export const NATURE_BAND_MAX_KM: Record<NatureDistanceBand, number> =
+  REACHABILITY_BAND_MAX_KM;
 
 export const NATURE_BAND_ORDER: readonly NatureDistanceBand[] = [
   "nearby",

@@ -26,6 +26,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Card } from "@/components/ui/Card";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { CityNatureModule } from "@/components/nature/CityNatureModule";
+import { AroundCityModule } from "@/components/reachability/AroundCityModule";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
   generateCityExplanation,
@@ -78,6 +79,7 @@ import type { EducationCategory } from "@/types/education";
 import type { HealthcareCategory } from "@/types/healthcare";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { getCityNatureProfile, hasNatureHubPage } from "@/lib/nature/engine";
+import { getCityReachability } from "@/lib/reachability/engine";
 import { cityBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { hasCostOfLiving } from "@/lib/data/cost-of-living";
 import { createMetadata, ogImageFromPlaceImage } from "@/lib/seo/metadata";
@@ -220,6 +222,7 @@ export default async function CityPage({ params }: PageProps) {
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null);
   const relatedCollections = getRegionalCollectionsForCity(city.slug).slice(0, 6);
   const themedCollections = getThematicCollectionsForCity(city.slug).slice(0, 6);
+  const reachability = getCityReachability(city.slug);
   const natureProfile = hasNatureHubPage(city.slug)
     ? getCityNatureProfile(city.slug)
     : undefined;
@@ -758,6 +761,15 @@ export default async function CityPage({ params }: PageProps) {
             />
           </div>
         </section>
+
+        {reachability && reachability.destinations.length > 0 ? (
+          <AroundCityModule
+            cityName={city.name}
+            citySlug={city.slug}
+            hasNearbyPage={hasNearbyWeekendPlacesCityPage(city.slug)}
+            reach={reachability}
+          />
+        ) : null}
 
         {natureProfile ? (
           <CityNatureModule
