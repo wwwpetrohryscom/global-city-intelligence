@@ -65,14 +65,14 @@ const CATEGORIES: readonly CategoryConfig[] = [
 
 type CategoryValues = Record<CategoryKey, string>;
 
-const DEFAULT_VALUES: CategoryValues = {
-  housing: "1500",
-  food: "450",
-  transport: "150",
-  utilities: "120",
-  internet: "60",
-  healthcare: "200",
-  lifestyle: "300",
+const NEUTRAL_VALUES: CategoryValues = {
+  housing: "",
+  food: "",
+  transport: "",
+  utilities: "",
+  internet: "",
+  healthcare: "",
+  lifestyle: "",
 };
 
 const CURRENCY_OPTIONS = ["USD", "EUR", "GBP", "CHF", "CAD", "AUD", "JPY", "SGD"] as const;
@@ -121,15 +121,14 @@ export function CostOfLivingCalculator({
   methodologyPath,
 }: CalculatorProps) {
   const headingId = useId();
-  const summaryId = useId();
   const [currency, setCurrency] = useState<CurrencyOption>("USD");
   const [householdSize, setHouseholdSize] = useState<string>("1");
   const [currentCity, setCurrentCity] = useState<string>(cities[0]?.slug ?? "");
   const [targetCity, setTargetCity] = useState<string>(
     cities[1]?.slug ?? cities[0]?.slug ?? "",
   );
-  const [currentValues, setCurrentValues] = useState<CategoryValues>(DEFAULT_VALUES);
-  const [targetValues, setTargetValues] = useState<CategoryValues>(DEFAULT_VALUES);
+  const [currentValues, setCurrentValues] = useState<CategoryValues>(NEUTRAL_VALUES);
+  const [targetValues, setTargetValues] = useState<CategoryValues>(NEUTRAL_VALUES);
 
   const currentTotal = useMemo(
     () =>
@@ -253,11 +252,7 @@ export function CostOfLivingCalculator({
         </p>
       </div>
 
-      <div
-        aria-live="polite"
-        className="mt-8 rounded-2xl border border-neutral-border bg-surface-soft p-5"
-        id={summaryId}
-      >
+      <div className="mt-8 rounded-2xl border border-neutral-border bg-surface-soft p-5">
         <h3 className="text-base font-semibold text-text-primary">
           Planning estimate
         </h3>
@@ -265,7 +260,16 @@ export function CostOfLivingCalculator({
           Household size {parseNumber(householdSize) || 1}. Directional
           comparison — not an official cost-of-living measurement.
         </p>
-        <dl className="mt-4 grid gap-4 sm:grid-cols-3">
+        {currentTotal === 0 && targetTotal === 0 ? (
+          <p className="mt-3 rounded-lg border border-dashed border-neutral-border bg-white px-3 py-2 text-sm text-text-secondary">
+            Enter at least one monthly category in the current or target city
+            column above to see your planning estimate.
+          </p>
+        ) : null}
+        <dl
+          aria-live="polite"
+          className="mt-4 grid gap-4 sm:grid-cols-3"
+        >
           <SummaryStat
             label={`Current monthly (${currentCityData?.name ?? "current city"})`}
             value={formatCurrency(currentTotal, currency)}
@@ -280,12 +284,14 @@ export function CostOfLivingCalculator({
             value={formatSignedCurrency(monthlyDifference, currency)}
           />
         </dl>
-        <p className="mt-4 text-sm text-text-secondary">
+        <p aria-live="polite" className="mt-4 text-sm text-text-secondary">
           Annualised difference: {" "}
           <span className="font-semibold text-text-primary">
             {formatSignedCurrency(annualDifference, currency)}
           </span>
-          {monthlyDifference === 0 ? (
+          {currentTotal === 0 && targetTotal === 0 ? (
+            <span> — enter values above to compare.</span>
+          ) : monthlyDifference === 0 ? (
             <span> — the two budgets match.</span>
           ) : monthlyDifference > 0 ? (
             <span>
@@ -373,12 +379,7 @@ function SummaryStat({
       <dt className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
         {label}
       </dt>
-      <dd
-        className={[
-          "mt-1 text-xl font-semibold",
-          accent ? "text-text-primary" : "text-text-primary",
-        ].join(" ")}
-      >
+      <dd className="mt-1 text-xl font-semibold text-text-primary">
         {value}
       </dd>
     </div>
@@ -464,6 +465,7 @@ function BudgetInput({
         inputMode="decimal"
         min={0}
         onChange={(event) => onChange(event.target.value)}
+        placeholder="0"
         type="number"
         value={value}
       />
@@ -530,7 +532,7 @@ function CategoryShareTable({
             const targetValue = parseNumber(targetValues[category.key]);
             const delta = targetValue - currentValue;
             const share =
-              targetTotal > 0 ? (targetValue / targetTotal) * 100 : 0;
+              targetTotal > 0 ? (targetValue / targetTotal) * 100 : null;
             return (
               <tr key={category.key}>
                 <th
@@ -549,7 +551,7 @@ function CategoryShareTable({
                   {formatSignedCurrency(delta, currency)}
                 </td>
                 <td className="px-3 py-2 text-right tabular-nums text-text-secondary">
-                  {share.toFixed(0)}%
+                  {share === null ? "—" : `${share.toFixed(0)}%`}
                 </td>
               </tr>
             );
@@ -570,7 +572,7 @@ function CategoryShareTable({
               {formatSignedCurrency(targetTotal - currentTotal, currency)}
             </td>
             <td className="px-3 py-2 text-right tabular-nums text-text-secondary">
-              100%
+              {targetTotal > 0 ? "100%" : "—"}
             </td>
           </tr>
         </tfoot>
