@@ -44,12 +44,22 @@
 #   - the blog site must be in the SAME Netlify team, or the rewrite is refused
 #   - the blog site must NOT be password/SSO protected, or it 403s the proxy
 #
-# Replace <blog-origin> with the real Netlify subdomain before deploying.
-# See docs/blog-proxy-integration.md.
+# Origin verified live 2026-09-01: every /blog path returns 200 with no
+# redirect, 0 Functions, 0 Edge Functions. See docs/blog-proxy-integration.md.
 # ---------------------------------------------------------------------------
+# Two rules, not one. A `/blog/*` splat matches paths BENEATH /blog but does
+# not reliably match the bare `/blog`, which is exactly what the header nav
+# links to (Next.js strips the trailing slash from "/blog/"). Without the first
+# rule the primary nav link would 404 on the canonical domain.
+[[redirects]]
+  from = "/blog"
+  to = "https://globalcityintelligence-blog.netlify.app/blog"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/blog/*"
-  to = "https://<blog-origin>.netlify.app/blog/:splat"
+  to = "https://globalcityintelligence-blog.netlify.app/blog/:splat"
   status = 200
   force = true
 

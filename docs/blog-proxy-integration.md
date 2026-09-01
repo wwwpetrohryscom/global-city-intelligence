@@ -27,10 +27,11 @@ produces, which the `seo:*` gates would then either flag or, worse, silently vou
 
 ## Before deploying
 
-1. Replace `<blog-origin>` in `netlify.toml` with the real blog Netlify subdomain.
-2. Confirm the blog site is in the **same Netlify team** — Netlify refuses cross-team rewrites.
-3. Confirm the blog site's **production is not password/SSO protected** — a protected origin
-   returns 403 to the proxy and `/blog/*` breaks.
+1. ~~Replace `<blog-origin>`~~ — **done**: the origin is `globalcityintelligence-blog.netlify.app` (`gci-blog` was already taken by an unrelated Netlify site).
+2. ~~Confirm same Netlify team~~ — **verified**: both sites are in account `hello13hub` (`6a78a80749ba941ee3e25380`); it is the only team on the login.
+3. ~~Confirm the origin is unprotected~~ — **done, and it was not**: the new site inherited the
+   team default `sso_login: true` / `sso_login_context: all`, which protects production. It was
+   set to `sso_login: false` on the blog site only. The main GCI site was not touched.
 4. Ship inside a normal main-site release window. This site deploys as a manual 18 GB artifact
    upload; it must not be a surprise deploy.
 
