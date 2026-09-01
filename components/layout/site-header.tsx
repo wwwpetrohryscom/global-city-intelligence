@@ -13,6 +13,11 @@ const navItems = [
   { href: staticRoutes.collections, label: "Best Cities" },
   { href: staticRoutes.methodology, label: "Methodology" },
   { href: staticRoutes.dataSources, label: "Data Sources" },
+  // GCI Media is served from a separate Netlify deployment via the /blog/*
+  // proxy in netlify.toml. Deliberately a literal path, not a staticRoutes
+  // entry: this app generates no /blog route, so adding it to the route
+  // registry would make the SEO route model claim a page it never builds.
+  { href: "/blog/", label: "Analysis" },
 ];
 
 export function SiteHeader() {

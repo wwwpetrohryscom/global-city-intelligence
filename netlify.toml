@@ -25,6 +25,35 @@
   publish = "out"
 
 # ---------------------------------------------------------------------------
+# GCI Media (/blog/*) — proxied to a SEPARATE Netlify site.
+#
+# The editorial product is its own repository and its own Netlify deployment so
+# that publishing an article never requires rebuilding or re-uploading this
+# 17.8 GB / 169,774-file artifact. Readers and search engines see one domain;
+# infrastructure sees two independent deployment units.
+#
+# status = 200 makes this a REWRITE, not a redirect: the browser URL stays on
+# www.globalcityintelligence.com/blog/... The blog origin serves the same
+# /blog/... paths, so this is a 1:1 mapping with no path arithmetic.
+#
+# force = true because the blog owns the entire /blog/* namespace. Netlify's
+# default is that an existing static file wins over a rule; this artifact has no
+# /blog files today, and forcing keeps it that way deterministically.
+#
+# REQUIREMENTS (Netlify docs):
+#   - the blog site must be in the SAME Netlify team, or the rewrite is refused
+#   - the blog site must NOT be password/SSO protected, or it 403s the proxy
+#
+# Replace <blog-origin> with the real Netlify subdomain before deploying.
+# See docs/blog-proxy-integration.md.
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/blog/*"
+  to = "https://<blog-origin>.netlify.app/blog/:splat"
+  status = 200
+  force = true
+
+# ---------------------------------------------------------------------------
 # Redirects — exact translations of the four next.config.ts redirects, which
 # `output: 'export'` cannot express. force=false so a real file always wins.
 # ---------------------------------------------------------------------------
