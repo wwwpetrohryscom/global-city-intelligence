@@ -13,12 +13,18 @@ const navItems = [
   { href: staticRoutes.collections, label: "Best Cities" },
   { href: staticRoutes.methodology, label: "Methodology" },
   { href: staticRoutes.dataSources, label: "Data Sources" },
-  // GCI Media is served from a separate Netlify deployment via the /blog/*
-  // proxy in netlify.toml. Deliberately a literal path, not a staticRoutes
-  // entry: this app generates no /blog route, so adding it to the route
-  // registry would make the SEO route model claim a page it never builds.
-  { href: "/blog/", label: "Analysis" },
 ];
+
+// GCI Media is served from a SEPARATE Netlify deployment via the /blog proxy
+// rules in netlify.toml. Deliberately a literal path, not a staticRoutes entry:
+// this app generates no /blog route, so adding it to the route registry would
+// make the SEO route model claim a page it never builds.
+//
+// It is rendered apart from navItems so it can carry an editorial accent: the
+// brand orange rather than the eco-blue used by the data sections. That makes
+// the editorial product noticeable as a different KIND of destination without
+// adding a badge, animation or promotional treatment.
+const mediaNavItem = { href: "/blog", label: "Blog" };
 
 export function SiteHeader() {
   return (
@@ -44,6 +50,14 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
+            <li key={mediaNavItem.href}>
+              <Link
+                className="inline-flex min-h-10 items-center rounded-xl border border-brand-200 bg-brand-50 px-3.5 py-2 text-sm font-semibold text-brand-700 transition duration-150 hover:border-brand-300 hover:bg-brand-100 focus-visible:bg-brand-100"
+                href={mediaNavItem.href}
+              >
+                {mediaNavItem.label}
+              </Link>
+            </li>
           </ul>
         </nav>
       </Container>

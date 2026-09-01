@@ -254,6 +254,78 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/*
+          GCI Media entry point.
+
+          Deliberately ARTICLE-AGNOSTIC: it names the editorial sections, never
+          individual articles. A "latest posts" list would have to be rebuilt
+          into this 84,835-page artifact every time an article is published,
+          which is exactly the coupling the separate blog deployment exists to
+          avoid. The blog links here are literal paths because this app builds
+          no /blog route — those URLs are served by the /blog proxy.
+
+          No engagement labels ("trending", "popular"): GCI does not measure
+          article engagement, so it cannot honestly claim any.
+        */}
+        <section>
+          <div className="overflow-hidden rounded-2xl border border-brand-200 bg-brand-50">
+            <div className="grid gap-6 p-6 md:grid-cols-[1.15fr_1fr] md:items-center md:p-8">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.1em] text-brand-700">
+                  From GCI Media
+                </p>
+                <h2 className="mt-2 text-2xl font-semibold text-text-primary">
+                  Analysis, data stories and research about cities
+                </h2>
+                <p className="mt-3 leading-7 text-text-secondary">
+                  The same structured data layer, written up as editorial. City
+                  analysis, methodology write-ups, interviews and data stories —
+                  each one sourced, with the method stated in the open.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <Link
+                    className="inline-flex min-h-11 items-center rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition duration-150 hover:bg-brand-700"
+                    href="/blog"
+                  >
+                    Read GCI Media
+                  </Link>
+                  <Link
+                    className="inline-flex min-h-11 items-center rounded-xl border border-brand-300 bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 transition duration-150 hover:bg-brand-100"
+                    href="/blog/research"
+                  >
+                    Latest research
+                  </Link>
+                </div>
+              </div>
+              <ul className="grid gap-2.5 sm:grid-cols-2 md:grid-cols-1">
+                {[
+                  { href: "/blog/cities", title: "Cities", description: "How individual cities are changing" },
+                  { href: "/blog/data", title: "Data stories", description: "Findings, with the method in full" },
+                  { href: "/blog/research", title: "Research", description: "Methodology write-ups from GCI" },
+                  { href: "/blog/interviews", title: "Interviews", description: "The people who study and build cities" },
+                ].map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      className="flex items-baseline gap-2 rounded-xl border border-brand-200 bg-white px-4 py-3 transition duration-150 hover:border-brand-400"
+                      href={item.href}
+                    >
+                      <span className="text-sm font-semibold text-text-primary">
+                        {item.title}
+                      </span>
+                      <span className="text-xs text-text-muted">
+                        {item.description}
+                      </span>
+                      <span aria-hidden="true" className="ml-auto text-brand-600">
+                        &rarr;
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
           <Card className="p-6">
             <h2 className="text-2xl font-semibold text-text-primary">

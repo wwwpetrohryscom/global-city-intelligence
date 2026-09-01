@@ -107,6 +107,19 @@ export function Footer() {
           <FooterLink href={staticRoutes.methodology}>Methodology</FooterLink>
           <FooterLink href={staticRoutes.dataSources}>Data sources</FooterLink>
         </FooterColumn>
+
+        {/* GCI Media — a separate Netlify deployment served under /blog.
+            Literal paths for the same reason as the header: this app builds no
+            /blog route. Section hubs only, never article titles, so publishing
+            an article never requires rebuilding this site. */}
+        <FooterColumn label="GCI Media">
+          <FooterLink href="/blog">Blog home</FooterLink>
+          <FooterLink href="/blog/cities">City stories</FooterLink>
+          <FooterLink href="/blog/data">Data stories</FooterLink>
+          <FooterLink href="/blog/research">Research</FooterLink>
+          <FooterLink href="/blog/interviews">Interviews</FooterLink>
+          <FooterLink href="/blog/editorial-policy">Editorial policy</FooterLink>
+        </FooterColumn>
       </Container>
       <div className="border-t border-neutral-border bg-white/80">
         <Container className="flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-text-muted">
