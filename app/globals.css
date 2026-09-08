@@ -3,6 +3,11 @@
 @import "../styles/tokens.css";
 
 @theme {
+  /* The width at which all ten primary navigation destinations measurably fit
+     in one row (812px of links inside 860px of available space at 1180px).
+     Below it the header collapses to a disclosure; it never scrolls
+     sideways. Keep this in step with components/layout/PrimaryNav.tsx. */
+  --breakpoint-nav: 1180px;
   --color-brand-50: #fff8ed;
   --color-brand-100: #ffedd5;
   --color-brand-200: #fed7aa;
@@ -192,24 +197,6 @@ input,
 select,
 textarea {
   accent-color: var(--color-info);
-}
-
-.primary-nav-scroll {
-  scrollbar-color: var(--color-info-border) transparent;
-  scrollbar-width: thin;
-}
-
-.primary-nav-scroll::-webkit-scrollbar {
-  height: 0.4rem;
-}
-
-.primary-nav-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.primary-nav-scroll::-webkit-scrollbar-thumb {
-  background: var(--color-info-border);
-  border-radius: 999px;
 }
 
 ::selection {
