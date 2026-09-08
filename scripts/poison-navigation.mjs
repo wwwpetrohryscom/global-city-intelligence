@@ -243,6 +243,15 @@ const CASES = [
   },
   {
     group: "navigation",
+    name: "a contract-driven component rendering cross-deployment links with next/link",
+    file: "components/navigation/HubNav.tsx",
+    find: `import { EcosystemLink } from "@/components/navigation/EcosystemLink";\nimport { availableDestinations } from "@/lib/navigation/ecosystem";`,
+    replace: `import Link from "next/link";\nimport { availableDestinations } from "@/lib/navigation/ecosystem";\nconst EcosystemLink = Link;\nvoid (<Link href="/" />);`,
+    validator: NAV,
+    expect: "renders <Link> directly",
+  },
+  {
+    group: "navigation",
     name: "a cross-deployment path linked with next/link",
     file: "lib/navigation/ecosystem.ts",
     find: `export function isCrossDeploymentPath(href: string): boolean {\n  return ECOSYSTEM_DESTINATIONS.some(`,

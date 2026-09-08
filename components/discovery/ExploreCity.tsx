@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { PLACES_PUBLIC, isCrossDeploymentPath } from "@/lib/navigation/ecosystem";
+import { EcosystemLink } from "@/components/navigation/EcosystemLink";
+import { PLACES_PUBLIC } from "@/lib/navigation/ecosystem";
 import { placesLinkForCity } from "@/lib/navigation/places";
 import {
   publishedRankings,
@@ -135,12 +135,12 @@ export function ExploreCity({
           <ul className="mt-3 flex flex-wrap gap-2">
             {memberships.map((entry) => (
               <li key={entry.id}>
-                <Link
+                <EcosystemLink
                   className="inline-flex min-h-10 items-center rounded-full border border-eco-200 bg-eco-50/70 px-3.5 text-sm font-medium text-eco-800 transition hover:border-eco-300 hover:bg-eco-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-eco-500"
                   href={entry.route}
                 >
                   {entry.shortLabel}
-                </Link>
+                </EcosystemLink>
               </li>
             ))}
           </ul>
@@ -159,12 +159,12 @@ export function ExploreCity({
           <ul className="mt-3 flex flex-wrap gap-2">
             {entryPoints.map((entry) => (
               <li key={entry.id}>
-                <Link
+                <EcosystemLink
                   className="inline-flex min-h-10 items-center rounded-full border border-neutral-border bg-surface-soft px-3.5 text-sm text-text-secondary transition hover:border-eco-200 hover:bg-eco-50 hover:text-eco-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-eco-500"
                   href={entry.route}
                 >
                   {entry.shortLabel} ranking
-                </Link>
+                </EcosystemLink>
               </li>
             ))}
           </ul>
@@ -191,12 +191,9 @@ function ExploreLink({
   label: string;
   description: string;
 }) {
-  // Other deployments serve /blog and /places; this app builds no route for
-  // them, so a next/link would prefetch an RSC payload that 404s.
-  const Anchor = isCrossDeploymentPath(href) ? "a" : Link;
   return (
     <li>
-      <Anchor
+      <EcosystemLink
         className="group flex h-full flex-col rounded-xl border border-neutral-border bg-surface-soft p-4 transition hover:border-eco-300 hover:bg-eco-50/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-eco-500"
         href={href}
       >
@@ -206,7 +203,7 @@ function ExploreLink({
         <span className="mt-1 text-xs leading-5 text-text-secondary">
           {description}
         </span>
-      </Anchor>
+      </EcosystemLink>
     </li>
   );
 }

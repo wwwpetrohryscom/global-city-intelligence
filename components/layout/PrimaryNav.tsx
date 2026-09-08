@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
+import { EcosystemLink } from "@/components/navigation/EcosystemLink";
 import { availableDestinations } from "@/lib/navigation/ecosystem";
 
 /**
@@ -77,16 +77,10 @@ export function PrimaryNav() {
         >
           {destinations.map((item) => {
             const current = isCurrent(item.path);
-            // A destination served by ANOTHER deployment is a plain anchor, not
-            // a next/link. This app builds no /blog or /places route, so
-            // next/link would prefetch an RSC payload for a page it will never
-            // find — a 404 in the console of every wide-viewport page load —
-            // and then fall back to a hard navigation anyway.
-            const Anchor = item.servedBy ? "a" : Link;
             return (
               <li key={item.id}>
-                <Anchor
-                  aria-current={current ? "page" : undefined}
+                <EcosystemLink
+                  ariaCurrent={current ? "page" : undefined}
                   className={[
                     "inline-flex min-h-11 w-full items-center rounded-xl px-3 text-sm font-medium transition duration-150",
                     "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-eco-500",
@@ -104,7 +98,7 @@ export function PrimaryNav() {
                   href={item.path}
                 >
                   {item.label}
-                </Anchor>
+                </EcosystemLink>
               </li>
             );
           })}

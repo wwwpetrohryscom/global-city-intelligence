@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { EcosystemLink } from "@/components/navigation/EcosystemLink";
 import { availableDestinations } from "@/lib/navigation/ecosystem";
 
 export interface HubNavItem {
@@ -54,8 +54,8 @@ export function HubNav({
           const isActive = activeHref === item.href;
           return (
             <li key={item.href}>
-              <Link
-                aria-current={isActive ? "page" : undefined}
+              <EcosystemLink
+                ariaCurrent={isActive ? "page" : undefined}
                 className={[
                   "inline-flex items-center rounded-full border px-3 py-1.5 font-medium transition",
                   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-eco-500",
@@ -66,7 +66,7 @@ export function HubNav({
                 href={item.href}
               >
                 {item.label}
-              </Link>
+              </EcosystemLink>
             </li>
           );
         })}

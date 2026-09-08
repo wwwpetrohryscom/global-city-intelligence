@@ -1,10 +1,5 @@
-import Link from "next/link";
-import {
-  blogUrl,
-  isCrossDeploymentPath,
-  PLACES_PUBLIC,
-  placesIndexUrl,
-} from "@/lib/navigation/ecosystem";
+import { EcosystemLink } from "@/components/navigation/EcosystemLink";
+import { blogUrl, PLACES_PUBLIC, placesIndexUrl } from "@/lib/navigation/ecosystem";
 import { PLACES_CITIES } from "@/lib/navigation/places";
 import { staticRoutes } from "@/lib/seo/routes";
 
@@ -92,12 +87,9 @@ function ExploreLink({
   label: string;
   description: string;
 }) {
-  // Other deployments serve /blog and /places; this app builds no route for
-  // them, so a next/link would prefetch an RSC payload that 404s.
-  const Anchor = isCrossDeploymentPath(href) ? "a" : Link;
   return (
     <li>
-      <Anchor
+      <EcosystemLink
         className="group flex h-full flex-col rounded-xl border border-neutral-border bg-surface-soft p-4 transition hover:border-eco-300 hover:bg-eco-50/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-eco-500"
         href={href}
       >
@@ -107,7 +99,7 @@ function ExploreLink({
         <span className="mt-1 text-xs leading-5 text-text-secondary">
           {description}
         </span>
-      </Anchor>
+      </EcosystemLink>
     </li>
   );
 }

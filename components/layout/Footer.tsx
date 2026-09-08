@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BrandMark } from "@/components/layout/BrandMark";
 import { Container } from "@/components/layout/Container";
 import {
@@ -7,12 +6,8 @@ import {
   FEATURED_COUNTRIES,
   FEATURED_COUNTRIES_HEADING,
 } from "@/lib/navigation/featured";
-import {
-  PLACES_PUBLIC,
-  blogUrl,
-  isCrossDeploymentPath,
-  placesIndexUrl,
-} from "@/lib/navigation/ecosystem";
+import { EcosystemLink } from "@/components/navigation/EcosystemLink";
+import { PLACES_PUBLIC, blogUrl, placesIndexUrl } from "@/lib/navigation/ecosystem";
 import { PLACES_CITIES } from "@/lib/navigation/places";
 import { publishedRankingsByTheme } from "@/lib/navigation/rankings-registry";
 import { cityRoute, countryRoute, staticRoutes } from "@/lib/seo/routes";
@@ -133,12 +128,12 @@ export function Footer() {
             <p className="text-xs font-semibold uppercase tracking-wide text-eco-800">
               Rankings and shortlists
             </p>
-            <Link
+            <EcosystemLink
               className="text-sm text-text-secondary underline decoration-eco-300 underline-offset-4 transition hover:text-eco-800"
               href={staticRoutes.rankings}
             >
               All rankings
-            </Link>
+            </EcosystemLink>
           </div>
           <div className="mt-4 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-5">
             {rankingGroups.map((group) => (
@@ -201,27 +196,14 @@ function FooterLink({
   href: string;
   children: React.ReactNode;
 }) {
-  // /blog and /places are served by other deployments and have no route in
-  // this app, so they are plain anchors. The test lives in the navigation
-  // contract, not here, so a gate can hold it.
-  const external = isCrossDeploymentPath(href);
   return (
     <li>
-      {external ? (
-        <a
-          className="inline-flex min-h-[32px] items-center text-text-secondary transition hover:text-eco-800"
-          href={href}
-        >
-          {children}
-        </a>
-      ) : (
-        <Link
-          className="inline-flex min-h-[32px] items-center text-text-secondary transition hover:text-eco-800"
-          href={href}
-        >
-          {children}
-        </Link>
-      )}
+      <EcosystemLink
+        className="inline-flex min-h-[32px] items-center text-text-secondary transition hover:text-eco-800"
+        href={href}
+      >
+        {children}
+      </EcosystemLink>
     </li>
   );
 }

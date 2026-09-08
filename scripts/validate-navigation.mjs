@@ -358,6 +358,31 @@ for (const entry of PLACES_CITIES) {
 
   for (const file of componentFiles) {
     const source = readFileSync(file, "utf8");
+
+    // STRUCTURAL RULE. A component that reads the navigation contract renders
+    // /blog and /places among its destinations, and their hrefs arrive as
+    // variables — which the literal scan below cannot see. That is how the hub
+    // navigation shipped a next/link to /blog: it read the contract, rendered
+    // every entry with <Link>, and no rule was looking at variables.
+    //
+    // Two weaker versions of this rule were tried first — a convention, then a
+    // check that the helper was imported — and a poison test walked through
+    // both. So the decision lives in <EcosystemLink> and the rule is now a
+    // structural fact: a component that reads the contract may not render
+    // <Link> itself.
+    const readsContract =
+      /availableDestinations|ECOSYSTEM_DESTINATIONS|isCrossDeploymentPath|blogUrl|placesIndexUrl|placesCityUrl/.test(
+        source,
+      );
+    const rendersLink = /<Link\b/.test(source);
+    const isTheHelper = file.endsWith("components/navigation/EcosystemLink.tsx");
+    if (readsContract && rendersLink && !isTheHelper) {
+      check(
+        false,
+        `${file.slice(ROOT.length + 1)} reads the navigation contract and renders <Link> directly; ecosystem destinations must go through <EcosystemLink> so /blog and /places never prefetch routes this app does not build`,
+      );
+    }
+
     // `<Link ... href="/blog…">` or href={blogUrl(...)} on a Link element.
     const linkTags = source.match(/<Link\b[^>]*>/g) ?? [];
     for (const tag of linkTags) {
