@@ -398,6 +398,35 @@ for (const entry of PLACES_CITIES) {
 }
 
 /* ------------------------------------------------------------------ *
+ * 5c. The primary navigation row may not grow above its breakpoint.
+ *
+ * The header container is capped at max-w-7xl, so the space available to the
+ * row is IDENTICAL at 1280px and at 1920px. A responsive utility that widens
+ * the type, the padding or the gaps above the `nav` breakpoint therefore buys
+ * nothing and spends width the row does not have — and it is invisible until
+ * a destination is added.
+ *
+ * That is not hypothetical: with `xl:px-3 xl:text-sm xl:gap-1` the row fit ten
+ * destinations at 1180px and wrapped onto a second row at 1280, 1440 and 1600.
+ * The wider the screen, the more broken it looked.
+ * ------------------------------------------------------------------ */
+{
+  const navSource = readFileSync(join(ROOT, "components/layout/PrimaryNav.tsx"), "utf8");
+  // Only the class strings matter; comments explaining the rule must not trip it.
+  const classStrings = [...navSource.matchAll(/"([^"]*nav:[^"]*)"/g)].map((m) => m[1]);
+  const growth = [];
+  for (const value of classStrings) {
+    for (const token of value.split(/\s+/)) {
+      if (/^(xl|2xl):(px-|py-|p-|text-|gap-)/.test(token)) growth.push(token);
+    }
+  }
+  check(
+    growth.length === 0,
+    `the primary navigation row grows above its breakpoint (${growth.join(", ")}); the container is capped at max-w-7xl, so this only makes the row wrap on wider screens`,
+  );
+}
+
+/* ------------------------------------------------------------------ *
  * 6. RENDERED OUTPUT. Only what was actually emitted counts.
  * ------------------------------------------------------------------ */
 if (OUT) {

@@ -243,6 +243,15 @@ const CASES = [
   },
   {
     group: "navigation",
+    name: "the navigation row grows above its breakpoint and wraps on wide screens",
+    file: "components/layout/PrimaryNav.tsx",
+    find: `                    "nav:min-h-10 nav:w-auto nav:px-2.5 nav:text-[13.5px]",`,
+    replace: `                    "nav:min-h-10 nav:w-auto nav:px-2.5 nav:text-[13.5px] xl:px-3 xl:text-sm",`,
+    validator: NAV,
+    expect: "grows above its breakpoint",
+  },
+  {
+    group: "navigation",
     name: "a contract-driven component rendering cross-deployment links with next/link",
     file: "components/navigation/HubNav.tsx",
     find: `import { EcosystemLink } from "@/components/navigation/EcosystemLink";\nimport { availableDestinations } from "@/lib/navigation/ecosystem";`,
