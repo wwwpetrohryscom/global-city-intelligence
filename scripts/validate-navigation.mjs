@@ -234,10 +234,23 @@ for (const entry of PLACES_CITIES) {
       placesModule.hasPlacesCity(withoutHub) === false,
       `hasPlacesCity("${withoutHub}") must be false: that city has no Places hub`,
     );
-    const link = placesModule.placesLinkForCity(withoutHub);
+    // Forced ON. With the switch off every city returns null and this rule
+    // would pass for the wrong reason.
+    const released = placesModule.resolvePlacesLinkForCity(withoutHub, true);
     check(
-      link === null || link.cityScoped === false,
-      `a city with no Places hub must never get a city-scoped Places link (got ${link?.href})`,
+      released !== null && released.cityScoped === false,
+      `a city with no Places hub must never get a city-scoped Places link, even once Places is live (got ${JSON.stringify(released)})`,
+    );
+    check(
+      released?.href === "/places/",
+      `a city with no Places hub must fall back to the global Places surface (got ${released?.href})`,
+    );
+  }
+  if (withHub) {
+    const released = placesModule.resolvePlacesLinkForCity(withHub, true);
+    check(
+      released?.cityScoped === true && released.href === `/places/${withHub}/`,
+      `a city with a Places hub must resolve to its own hub once Places is live (got ${JSON.stringify(released)})`,
     );
   }
   if (!PLACES_PUBLIC) {

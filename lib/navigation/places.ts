@@ -49,14 +49,27 @@ export function placesCityEntry(citySlug: string): PlacesCityEntry | undefined {
  *
  * There is deliberately no fourth case. A city-shaped URL is never
  * constructed for a city the manifest does not list.
+ *
+ * `placesPublic` is a parameter rather than a closed-over constant so the
+ * second rule can be TESTED IN THE STATE IT WILL RUN IN. With the switch off
+ * every city returns null, so "a city without a hub gets no city-scoped link"
+ * would pass for the wrong reason — leaving the rule that matters most as the
+ * one rule nothing was checking, right up until release day.
  */
-export function placesLinkForCity(
+export function resolvePlacesLinkForCity(
   citySlug: string,
+  placesPublic: boolean = PLACES_PUBLIC,
 ): { href: string; label: string; cityScoped: boolean } | null {
-  if (!PLACES_PUBLIC) return null;
+  if (!placesPublic) return null;
   const entry = byGciSlug.get(citySlug);
   if (entry) {
     return { href: placesCityUrl(entry.placesCitySlug), label: "Places", cityScoped: true };
   }
   return { href: placesIndexUrl(), label: "Places", cityScoped: false };
+}
+
+export function placesLinkForCity(
+  citySlug: string,
+): { href: string; label: string; cityScoped: boolean } | null {
+  return resolvePlacesLinkForCity(citySlug);
 }
