@@ -9,7 +9,7 @@ import {
 } from "@/lib/navigation/featured";
 import { PLACES_PUBLIC, blogUrl, placesIndexUrl } from "@/lib/navigation/ecosystem";
 import { PLACES_CITIES } from "@/lib/navigation/places";
-import { publishedRankings } from "@/lib/navigation/rankings-registry";
+import { publishedRankingsByTheme } from "@/lib/navigation/rankings-registry";
 import { cityRoute, countryRoute, staticRoutes } from "@/lib/seo/routes";
 
 /**
@@ -28,7 +28,7 @@ import { cityRoute, countryRoute, staticRoutes } from "@/lib/seo/routes";
  * 2. EVERY PUBLISHED RANKING IS HERE. It used to be
  *    `getRankings().slice(0, 4)` — four of the thirteen ranking pages the site
  *    publishes, with no mechanism that would ever notice the other nine. The
- *    footer now projects the whole registry, and
+ *    footer now projects the whole registry, grouped by theme, and
  *    `scripts/validate-navigation.mjs` fails the build if a published ranking
  *    is missing from it.
  *
@@ -37,7 +37,7 @@ import { cityRoute, countryRoute, staticRoutes } from "@/lib/seo/routes";
  * corpus nothing.
  */
 export function Footer() {
-  const rankings = publishedRankings();
+  const rankingGroups = publishedRankingsByTheme();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -118,15 +118,44 @@ export function Footer() {
           <FooterLink href={staticRoutes.ecosystem}>HELPERG ecosystem</FooterLink>
         </FooterColumn>
 
-        <FooterColumn className="md:col-span-12" label="Rankings and shortlists">
-          <FooterLink href={staticRoutes.rankings}>All rankings</FooterLink>
-          {rankings.map((entry) => (
-            <FooterLink href={entry.route} key={entry.id}>
-              {entry.shortLabel}
-            </FooterLink>
-          ))}
-        </FooterColumn>
-
+        {/* EVERY published ranking, grouped by the themes the registry defines.
+            Not a top five, and not the four that happened to be hard-coded. */}
+        <nav
+          aria-label="Footer rankings links"
+          className="md:col-span-12"
+        >
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+            <p className="text-xs font-semibold uppercase tracking-wide text-eco-800">
+              Rankings and shortlists
+            </p>
+            <Link
+              className="text-sm text-text-secondary underline decoration-eco-300 underline-offset-4 transition hover:text-eco-800"
+              href={staticRoutes.rankings}
+            >
+              All rankings
+            </Link>
+          </div>
+          <div className="mt-4 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-5">
+            {rankingGroups.map((group) => (
+              <div key={group.key}>
+                <p className="text-xs font-medium uppercase tracking-wide text-text-muted">
+                  {group.label}
+                </p>
+                <ul className="mt-2 space-y-2 text-sm">
+                  {group.entries.map((entry) => (
+                    <FooterLink href={entry.route} key={entry.id}>
+                      {entry.shortLabel}
+                    </FooterLink>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-xs leading-5 text-text-muted">
+            Shortlists are curated city selections, not measured rankings.
+            Scored rankings state their method and sources on their own page.
+          </p>
+        </nav>
       </Container>
       <div className="border-t border-neutral-border bg-white/80">
         <Container className="flex flex-wrap items-center justify-between gap-3 py-4 text-xs text-text-muted">
