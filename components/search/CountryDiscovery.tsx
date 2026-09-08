@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
 import { useSearchIndex } from "@/components/search/use-search-index";
 import { fold, bestRank, MatchRank } from "@/lib/search/match";
 import { search } from "@/lib/search/query";
@@ -28,16 +28,54 @@ export interface CountryRow {
   macroRegion: MacroRegion | null;
   cityCount: number;
   flag: string;
+  /** Nominal GDP, current US$, snapshot reference year. Null when unreported. */
+  gdpCurrentUsd: number | null;
+  /** GDP per capita, current US$, same reference year. Null when unreported. */
+  gdpPerCapitaCurrentUsd: number | null;
+}
+
+/**
+ * MISSING VALUES SORT LAST, THEY DO NOT SORT AS ZERO.
+ *
+ * A country the World Bank does not report has no value. Treating that as 0
+ * would place it at the very bottom of a descending sort as though it were the
+ * smallest economy on earth — a claim the data does not make. It sorts after
+ * every country that has a comparable figure, alphabetically among its peers.
+ * This mirrors `compareByEconomicSort` on the server; the two must agree,
+ * because the server produces the first paint and this produces every reorder.
+ */
+function byNumberDesc(
+  field: "gdpCurrentUsd" | "gdpPerCapitaCurrentUsd",
+): (a: CountryRow, b: CountryRow) => number {
+  return (a, b) => {
+    const av = a[field];
+    const bv = b[field];
+    if (av !== null && bv !== null) return bv - av || a.name.localeCompare(b.name);
+    if (av !== null) return -1;
+    if (bv !== null) return 1;
+    return a.name.localeCompare(b.name);
+  };
 }
 
 /**
  * Only sorts backed by real fields. The country records carry no popularity,
  * ranking or created-at signal, so "Popular" and "Recently Added" are
  * deliberately absent rather than faked from row order.
+ *
+ * The two economic sorts read published World Bank indicators. Their labels
+ * name the measure — GDP is not called "wealth" and GDP per capita is not
+ * called "quality of life", because the source defines neither.
  */
 const SORTS = {
-  "name-asc": { label: "A–Z", compare: (a: CountryRow, b: CountryRow) => a.name.localeCompare(b.name) },
-  "name-desc": { label: "Z–A", compare: (a: CountryRow, b: CountryRow) => b.name.localeCompare(a.name) },
+  gdp: {
+    label: "Economic size",
+    compare: byNumberDesc("gdpCurrentUsd"),
+  },
+  "gdp-per-capita": {
+    label: "GDP per capita",
+    compare: byNumberDesc("gdpPerCapitaCurrentUsd"),
+  },
+  az: { label: "A–Z", compare: (a: CountryRow, b: CountryRow) => a.name.localeCompare(b.name) },
   "cities-desc": {
     label: "Most cities",
     compare: (a: CountryRow, b: CountryRow) =>
@@ -47,11 +85,87 @@ const SORTS = {
 
 type SortKey = keyof typeof SORTS;
 
-export function CountryDiscovery({ countries }: { countries: CountryRow[] }) {
+const SORT_KEYS = Object.keys(SORTS) as SortKey[];
+
+/**
+ * The default MUST match the server's `DEFAULT_COUNTRY_SORT`. If it did not,
+ * the list would silently reorder itself on hydration and the order in the
+ * served HTML would not be the order anybody sees.
+ */
+const DEFAULT_SORT: SortKey = "gdp";
+
+/**
+ * Compact currency for a card. Formats for READING only — every sort compares
+ * the raw number, never this string.
+ */
+function formatUsd(value: number): string {
+  if (value >= 1e12) return `$${(value / 1e12).toFixed(2)}T`;
+  if (value >= 1e9) return `$${(value / 1e9).toFixed(1)}B`;
+  if (value >= 1e6) return `$${(value / 1e6).toFixed(1)}M`;
+  return `$${Math.round(value).toLocaleString("en-US")}`;
+}
+
+function economicLine(
+  country: CountryRow,
+  sort: SortKey,
+  referenceYear: string,
+): string {
+  if (sort === "gdp-per-capita") {
+    return country.gdpPerCapitaCurrentUsd === null
+      ? "GDP per capita not reported by the World Bank"
+      : `${formatUsd(country.gdpPerCapitaCurrentUsd)} per person · ${referenceYear}`;
+  }
+  if (sort === "gdp") {
+    return country.gdpCurrentUsd === null
+      ? "GDP not reported by the World Bank"
+      : `${formatUsd(country.gdpCurrentUsd)} GDP · ${referenceYear}`;
+  }
+  // Under a non-economic sort the card says nothing about GDP rather than
+  // repeating the region line directly above it.
+  return "";
+}
+
+export function CountryDiscovery({
+  countries,
+  referenceYear,
+}: {
+  countries: CountryRow[];
+  /** The one year every economic value belongs to. Shown, never implied. */
+  referenceYear: string;
+}) {
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState<MacroRegion | "all">("all");
-  const [sort, setSort] = useState<SortKey>("name-asc");
+  const [sort, setSort] = useState<SortKey>(DEFAULT_SORT);
   const { cities, status, prime } = useSearchIndex();
+
+  /**
+   * SORT STATE IN THE URL — shareable, but never a second page.
+   *
+   * `?sort=` is read after mount and written with replaceState, so it never
+   * navigates and never creates a history entry. Because this site is a static
+   * export, a query string cannot produce a second document: /countries and
+   * /countries?sort=az are the same file, and its <link rel="canonical"> points
+   * at /countries with no query. There is exactly one indexable country
+   * directory, whatever the control is set to.
+   */
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get("sort");
+    if (requested && (SORT_KEYS as string[]).includes(requested)) {
+      setSort(requested as SortKey);
+    }
+  }, []);
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    if (sort === DEFAULT_SORT) {
+      if (!url.searchParams.has("sort")) return;
+      url.searchParams.delete("sort");
+    } else {
+      if (url.searchParams.get("sort") === sort) return;
+      url.searchParams.set("sort", sort);
+    }
+    window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+  }, [sort]);
 
   const baseId = useId();
   const inputId = `${baseId}-country-search`;
@@ -195,6 +309,29 @@ export function CountryDiscovery({ countries }: { countries: CountryRow[] }) {
             {cityHits.length ? ` · ${cityHits.length} matching cities` : ""}
           </p>
         </div>
+
+        {/* What is driving the order, in one line, always visible. */}
+        <p className="mt-3 text-xs leading-5 text-text-secondary">
+          {sort === "gdp" || sort === "gdp-per-capita" ? (
+            <>
+              Ordered by{" "}
+              <span className="font-medium text-text-primary">
+                {sort === "gdp"
+                  ? "nominal GDP (current US$)"
+                  : "GDP per capita (current US$)"}
+              </span>
+              , highest first · World Bank, reference year {referenceYear} ·
+              countries the World Bank does not report appear last.{" "}
+              <Link className="underline decoration-eco-300 underline-offset-2" href="/methodology#country-economic-order">
+                How this order is produced
+              </Link>
+            </>
+          ) : sort === "az" ? (
+            "Ordered alphabetically by country name."
+          ) : (
+            "Ordered by the number of indexed cities."
+          )}
+        </p>
       </div>
 
       {cityHits.length ? (
@@ -242,6 +379,11 @@ export function CountryDiscovery({ countries }: { countries: CountryRow[] }) {
                   </span>
                 </span>
                 <span className="text-xs text-text-secondary">{country.region}</span>
+                {economicLine(country, sort, referenceYear) ? (
+                  <span className="text-xs text-text-secondary">
+                    {economicLine(country, sort, referenceYear)}
+                  </span>
+                ) : null}
                 <span className="mt-auto flex items-center justify-between pt-1">
                   <span className="text-sm text-text-secondary">
                     {country.cityCount === 1

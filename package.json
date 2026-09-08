@@ -43,7 +43,10 @@
     "validate:nature-discovery": "node scripts/validate-nature-discovery.mjs",
     "validate:city-geometry": "node scripts/validate-city-geometry.mjs",
     "validate:city-identity": "node scripts/validate-city-identity.mjs",
-    "validate:reachability": "node scripts/validate-reachability.mjs"
+    "validate:reachability": "node scripts/validate-reachability.mjs",
+    "validate:navigation": "node scripts/validate-navigation.mjs",
+    "validate:country-economics": "node scripts/validate-country-economics.mjs",
+    "build:country-economics": "node scripts/build-country-economics.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",
@@ -58,6 +61,7 @@
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.20.0",
     "eslint-config-next": "^15.5.0",
+    "jiti": "^2.6.1",
     "postcss": "^8.5.0",
     "tailwindcss": "^4.1.0",
     "typescript": "^5.7.0"
