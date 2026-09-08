@@ -27,6 +27,7 @@ import { Card } from "@/components/ui/Card";
 import { ScoreBar } from "@/components/ui/score-bar";
 import { CityNatureModule } from "@/components/nature/CityNatureModule";
 import { AroundCityModule } from "@/components/reachability/AroundCityModule";
+import { ExploreCity } from "@/components/discovery/ExploreCity";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
   generateCityExplanation,
@@ -761,6 +762,17 @@ export default async function CityPage({ params }: PageProps) {
             />
           </div>
         </section>
+
+        {/* One shared cross-product module for every city route. Ranking
+            membership is read from the collections that actually name this
+            city, so the claim it makes is one the data supports. */}
+        <ExploreCity
+          cityName={city.name}
+          citySlug={city.slug}
+          memberRankingIds={cityCollections.map(
+            (collection) => `collection:${collection.slug}`,
+          )}
+        />
 
         {reachability && reachability.destinations.length > 0 ? (
           <AroundCityModule

@@ -168,13 +168,17 @@ export function GlobalSearch() {
         aria-label="Search countries or cities"
         aria-haspopup="dialog"
         aria-expanded={open}
-        // min-h-11 (44px) is the accessible touch-target floor on mobile; the
-        // desktop row can afford the tighter 40px so the header stays compact.
-        className="inline-flex min-h-11 w-full items-center gap-2 rounded-xl border border-eco-200 bg-white px-3.5 py-2 text-sm text-text-secondary transition duration-150 hover:border-eco-300 hover:bg-eco-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-eco-500 lg:min-h-10 lg:w-64"
+        // A COMPACT TRIGGER, not a field. The old 16rem field was the single
+        // biggest consumer of header width and the reason the navigation had
+        // to scroll sideways; the dialog it opens is unchanged, so nothing is
+        // lost but an empty box. min-h-11/w-11 (44px) is the accessible
+        // touch-target floor, so the icon-only state stays a full 44px square
+        // rather than shrinking to fit.
+        className="inline-flex min-h-11 w-11 items-center justify-center gap-2 rounded-xl border border-eco-200 bg-white text-sm text-text-secondary transition duration-150 hover:border-eco-300 hover:bg-eco-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-eco-500 xl:w-44 xl:justify-start xl:px-3.5"
       >
         <SearchIcon />
-        <span className="flex-1 text-left">Search countries or cities</span>
-        <kbd className="hidden rounded-md border border-eco-200 bg-eco-50 px-1.5 py-0.5 text-[11px] font-medium text-eco-700 lg:inline-block">
+        <span className="hidden flex-1 truncate text-left xl:block">Search</span>
+        <kbd className="hidden rounded-md border border-eco-200 bg-eco-50 px-1.5 py-0.5 text-[11px] font-medium text-eco-700 xl:inline-block">
           ⌘K
         </kbd>
       </button>

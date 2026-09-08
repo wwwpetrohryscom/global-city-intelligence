@@ -23,6 +23,7 @@ import { SourceBlock } from "@/components/seo/source-block";
 import { DataTable } from "@/components/tables/DataTable";
 import { TransportMobilitySection } from "@/components/transport/TransportMobilitySection";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { ExploreCountry } from "@/components/country/ExploreCountry";
 import {
   generateCountryExplanation,
   generateCountryIntro,
@@ -430,6 +431,13 @@ export default async function CountryPage({ params }: PageProps) {
         <CountryRankingsSection
           countryName={country.name}
           matches={countryRankings}
+        />
+
+        {/* PART W: onward navigation from a country, including Places only
+            where a city in this country genuinely publishes a hub. */}
+        <ExploreCountry
+          citySlugs={country.citySlugs}
+          countryName={country.name}
         />
 
         <section

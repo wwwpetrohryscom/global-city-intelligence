@@ -20,6 +20,12 @@ import {
   getCountryHealthcareProfile,
   hasVerifiedCountryIndicators,
 } from "@/lib/data/queries";
+import {
+  DEFAULT_COUNTRY_SORT,
+  compareByEconomicSort,
+  getCountryEconomics,
+  getCountryEconomicsMetadata,
+} from "@/lib/data/official/country-economics/queries";
 import { staticBreadcrumbs } from "@/lib/seo/breadcrumbs";
 import { createMetadata } from "@/lib/seo/metadata";
 import {
@@ -41,9 +47,23 @@ export const metadata: Metadata = createMetadata({
 });
 
 export default function CountriesIndexPage() {
+  /**
+   * DEFAULT ORDER IS ECONOMIC SIZE, NOT THE ALPHABET.
+   *
+   * This page used to open on A–Z, which put Albania at the top of a global
+   * country directory for no reason other than its first letter. The default
+   * is now nominal GDP, descending, from an official World Bank snapshot —
+   * a published statistic, not a Global City Intelligence score, and not a
+   * composite of several statistics whose weighting nobody could inspect.
+   *
+   * The order is produced HERE, on the server, so it is the order in the
+   * served HTML: a crawler, a reader with JavaScript disabled, and a reader
+   * with it enabled all see the same first row.
+   */
+  const economics = getCountryEconomicsMetadata();
   const countries = getAllCountries()
     .slice()
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .sort((a, b) => compareByEconomicSort(DEFAULT_COUNTRY_SORT, a, b));
   const breadcrumbs = staticBreadcrumbs("Countries", staticRoutes.countries);
 
   const rows = countries.map((country) => {
@@ -52,6 +72,7 @@ export default function CountriesIndexPage() {
     const healthcare = getCountryHealthcareProfile(country.slug);
     return {
       country,
+      gdpCurrentUsd: getCountryEconomics(country.slug)?.gdpCurrentUsd,
       cityCount: countryCities.length,
       cityNames: countryCities.map((city) => city.name).join(", "),
       hasEmergency: emergency?.verificationStatus === "verified",
@@ -62,15 +83,22 @@ export default function CountriesIndexPage() {
 
   // Lightweight rows for the client discovery layer: names, slugs, facets and
   // counts only — no intro prose, metrics or source lists.
-  const discoveryRows: CountryRow[] = rows.map((row) => ({
-    slug: row.country.slug,
-    name: row.country.name,
-    iso2: row.country.iso2,
-    region: row.country.region,
-    macroRegion: macroRegionFor(row.country.slug, row.country.region),
-    cityCount: row.cityCount,
-    flag: flagEmoji(row.country.iso2),
-  }));
+  const discoveryRows: CountryRow[] = rows.map((row) => {
+    const economic = getCountryEconomics(row.country.slug);
+    return {
+      slug: row.country.slug,
+      name: row.country.name,
+      iso2: row.country.iso2,
+      region: row.country.region,
+      macroRegion: macroRegionFor(row.country.slug, row.country.region),
+      cityCount: row.cityCount,
+      flag: flagEmoji(row.country.iso2),
+      // Raw numbers, never formatted strings: a client sort on "$1.2T" would
+      // order lexicographically and put $9B above $18T.
+      gdpCurrentUsd: economic?.gdpCurrentUsd ?? null,
+      gdpPerCapitaCurrentUsd: economic?.gdpPerCapitaCurrentUsd ?? null,
+    };
+  });
 
   const totalCities = rows.reduce((sum, row) => sum + row.cityCount, 0);
   const verifiedEmergency = rows.filter((row) => row.hasEmergency).length;
@@ -128,7 +156,27 @@ export default function CountriesIndexPage() {
         <BreadcrumbNav items={breadcrumbs} />
         <HubNav activeHref={staticRoutes.countries} />
 
-        <CountryDiscovery countries={discoveryRows} />
+        {/* PART L: the page says how it is ordered, by what, from where, and
+            for which year — before the reader has to infer it from the list. */}
+        <section className="rounded-2xl border border-eco-200 bg-eco-50/50 p-5">
+          <h2 className="text-sm font-semibold text-text-primary">
+            Sorted by economic size
+          </h2>
+          <p className="mt-1 text-sm leading-6 text-text-secondary">
+            Nominal GDP (current US$), largest first · World Bank World
+            Development Indicators, reference year {economics.referenceYear} ·{" "}
+            {economics.reportedCount} of {economics.totalCount} supported
+            countries have a published value.{" "}
+            <Link
+              className="font-medium text-eco-700 underline decoration-eco-300 underline-offset-4"
+              href={`${staticRoutes.methodology}#country-economic-order`}
+            >
+              How this order is produced
+            </Link>
+          </p>
+        </section>
+
+        <CountryDiscovery countries={discoveryRows} referenceYear={economics.referenceYear} />
 
         <section>
           <SectionHeading
@@ -153,6 +201,12 @@ export default function CountriesIndexPage() {
                     scope="col"
                   >
                     Region
+                  </th>
+                  <th
+                    className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+                    scope="col"
+                  >
+                    Nominal GDP ({economics.referenceYear})
                   </th>
                   <th
                     className="px-4 py-3 text-xs font-semibold uppercase tracking-wide"
@@ -190,6 +244,13 @@ export default function CountriesIndexPage() {
                     </th>
                     <td className="px-4 py-4 text-text-secondary">
                       {row.country.region}
+                    </td>
+                    <td className="whitespace-nowrap px-4 py-4 text-text-secondary">
+                      {row.gdpCurrentUsd === undefined ? (
+                        <span className="text-text-muted">Not reported</span>
+                      ) : (
+                        formatGdp(row.gdpCurrentUsd)
+                      )}
                     </td>
                     <td className="border-l-2 border-brand-500 px-4 py-4 text-text-primary">
                       <span className="font-semibold">{row.cityCount}</span>
@@ -376,6 +437,13 @@ export default function CountriesIndexPage() {
       </Container>
     </main>
   );
+}
+
+/** Reading format only. Ordering always compares the raw number. */
+function formatGdp(value: number): string {
+  if (value >= 1e12) return `$${(value / 1e12).toFixed(2)} trillion`;
+  if (value >= 1e9) return `$${(value / 1e9).toFixed(1)} billion`;
+  return `$${Math.round(value).toLocaleString("en-US")}`;
 }
 
 function LayerIndicator({

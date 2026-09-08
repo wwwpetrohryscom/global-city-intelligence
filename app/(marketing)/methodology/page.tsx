@@ -6,6 +6,7 @@ import { DataTable } from "@/components/tables/DataTable";
 import { FactList } from "@/components/ui/fact-list";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { REFERENCE_YEAR as ECONOMIC_REFERENCE_YEAR } from "@/lib/data/official/country-economics/dataset";
 import { DATA_YEAR, LAST_UPDATED } from "@/lib/data/constants";
 import { getSourcesByIds } from "@/lib/data/sources";
 import { staticBreadcrumbs } from "@/lib/seo/breadcrumbs";
@@ -95,6 +96,66 @@ export default function MethodologyPage() {
                 },
               ]}
             />
+          </div>
+        </section>
+
+        {/* PART AS: the country directory's default order is a data decision
+            with consequences, so it is documented where methodology lives
+            rather than only in a code comment. */}
+        <section id="country-economic-order" className="scroll-mt-[var(--sticky-stack-height)]">
+          <SectionHeading
+            description="How the country directory is ordered, and what that order does and does not claim."
+            title="Country directory order"
+          />
+          <div className="mt-6 space-y-4 text-base leading-7 text-text-secondary">
+            <p>
+              The country directory opens in order of economic size: nominal
+              GDP in current US dollars, largest first. The values are World
+              Bank World Development Indicators, indicator{" "}
+              <code className="rounded bg-neutral-soft px-1.5 py-0.5 text-sm">
+                NY.GDP.MKTP.CD
+              </code>
+              . The optional second sort uses GDP per capita in current US
+              dollars, indicator{" "}
+              <code className="rounded bg-neutral-soft px-1.5 py-0.5 text-sm">
+                NY.GDP.PCAP.CD
+              </code>
+              . Alphabetical order remains available as a utility sort.
+            </p>
+            <p>
+              <strong className="text-text-primary">One reference year.</strong>{" "}
+              Every value in the snapshot belongs to {ECONOMIC_REFERENCE_YEAR},
+              the most recent year for which both indicators are published for
+              every supported country the World Bank reports. Nothing is
+              compared across vintages, and no value is presented as if it were
+              current-year data.
+            </p>
+            <p>
+              <strong className="text-text-primary">Missing values.</strong> A
+              country the World Bank does not report carries no value. It is
+              never treated as zero — zero would sort it as the smallest
+              economy in the world — and it is never dropped from the
+              directory. It appears after every country with a comparable
+              figure, and the interface says the value is not reported.
+            </p>
+            <p>
+              <strong className="text-text-primary">
+                This is an ordering, not a ranking.
+              </strong>{" "}
+              Nothing here is a Global City Intelligence score, a composite, or
+              a weighting of several statistics. Two published World Bank
+              indicators are stored as they are issued and sorted numerically.
+              GDP is not a measure of wealth as households experience it, and
+              GDP per capita is not a measure of quality of life; neither is
+              described as such anywhere in the product.
+            </p>
+            <p>
+              The snapshot is committed and rebuilt deliberately by{" "}
+              <code className="rounded bg-neutral-soft px-1.5 py-0.5 text-sm">
+                scripts/build-country-economics.mjs
+              </code>
+              . Nothing is fetched at request time.
+            </p>
           </div>
         </section>
 

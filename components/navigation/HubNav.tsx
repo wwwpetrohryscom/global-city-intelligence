@@ -1,21 +1,22 @@
-import Link from "next/link";
-import { staticRoutes } from "@/lib/seo/routes";
+import { EcosystemLink } from "@/components/navigation/EcosystemLink";
+import { availableDestinations } from "@/lib/navigation/ecosystem";
 
 export interface HubNavItem {
   href: string;
   label: string;
 }
 
-const DEFAULT_HUB_ITEMS: HubNavItem[] = [
-  { href: staticRoutes.exploreCities, label: "Find a city" },
-  { href: staticRoutes.cities, label: "Cities" },
-  { href: staticRoutes.countries, label: "Countries" },
-  { href: staticRoutes.collections, label: "Best Cities" },
-  { href: staticRoutes.compare, label: "Compare" },
-  { href: staticRoutes.rankings, label: "Rankings" },
-  { href: staticRoutes.methodology, label: "Methodology" },
-  { href: staticRoutes.dataSources, label: "Data Sources" },
-];
+/**
+ * Drawn from the ecosystem navigation contract, so the hub pages, the header
+ * and the other two products offer the same destinations under the same
+ * labels in the same order. Previously this list was maintained by hand beside
+ * the header's list, and the two had already drifted (different order, and
+ * "Find a city" for a page the header now labels "City Finder").
+ */
+const DEFAULT_HUB_ITEMS: HubNavItem[] = availableDestinations().map((item) => ({
+  href: item.path,
+  label: item.label,
+}));
 
 interface HubNavProps {
   items?: HubNavItem[];
@@ -53,8 +54,8 @@ export function HubNav({
           const isActive = activeHref === item.href;
           return (
             <li key={item.href}>
-              <Link
-                aria-current={isActive ? "page" : undefined}
+              <EcosystemLink
+                ariaCurrent={isActive ? "page" : undefined}
                 className={[
                   "inline-flex items-center rounded-full border px-3 py-1.5 font-medium transition",
                   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-eco-500",
@@ -65,7 +66,7 @@ export function HubNav({
                 href={item.href}
               >
                 {item.label}
-              </Link>
+              </EcosystemLink>
             </li>
           );
         })}
