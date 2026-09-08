@@ -22,22 +22,23 @@
 export const CANONICAL_ORIGIN = "https://www.globalcityintelligence.com";
 
 /**
- * GCI Places is not yet reachable on the canonical domain: it has no
- * `/places/*` proxy in netlify.toml and www.globalcityintelligence.com/places
- * returns 404 (verified 2026-09-08).
+ * GCI Places IS reachable on the canonical domain, as of 2026-09-08:
+ * netlify.toml proxies `/places` and `/places/*` to its independent
+ * deployment, and the canonical URLs were verified serving 200 — with correct
+ * canonical tags and a real 404 for unknown paths — before this was flipped.
  *
- * This flag is the release switch. While it is false the ecosystem navigation
- * renders WITHOUT Places rather than shipping a link that 404s for every
- * visitor; the moment Places is deployed and proxied, flipping this one
- * constant to true turns on the Places entry in the header, the footer, every
- * city page and every country page at once.
+ * This flag is the release switch. While it was false the ecosystem navigation
+ * rendered WITHOUT Places rather than shipping a link that 404s for every
+ * visitor on all 84,835 pages. Turning it true enables the Places entry in the
+ * header, the footer, every city page and every country page at once, which is
+ * exactly why the route was made to exist and verified FIRST, in its own
+ * separately released step.
  *
- * Do not flip it until `/places/` serves 200 on the canonical domain. The
- * navigation validator asserts that no `/places` link is rendered while it is
- * false, and that every rendered Places link is canonical-domain-relative when
- * it is true.
+ * The navigation validator asserts the inverse of what it asserted before:
+ * that Places links are rendered, that every city-scoped one is backed by the
+ * Places publication manifest, and that none of them names a deployment origin.
  */
-export const PLACES_PUBLIC = false;
+export const PLACES_PUBLIC = true;
 
 export interface EcosystemDestination {
   /** Stable id, shared across all three repositories. */
