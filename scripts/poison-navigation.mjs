@@ -316,7 +316,8 @@ for (const testCase of CASES) {
 
   for (const target of targets) {
     const file = target.file ?? testCase.file;
-    const original = readOriginal(file);
+    // Snapshot before the first edit so restore() can put every file back.
+    readOriginal(file);
     const current = readFileSync(resolve(ROOT, file), "utf8");
     if (!current.includes(target.find)) {
       anchorMissing = `${file}: anchor not found`;

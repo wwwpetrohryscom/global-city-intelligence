@@ -129,7 +129,7 @@ export function Footer() {
               Rankings and shortlists
             </p>
             <EcosystemLink
-              className="text-sm text-text-secondary underline decoration-eco-300 underline-offset-4 transition hover:text-eco-800"
+              className="inline-flex min-h-[32px] items-center text-sm text-text-secondary underline decoration-eco-300 underline-offset-4 transition hover:text-eco-800"
               href={staticRoutes.rankings}
             >
               All rankings

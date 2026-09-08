@@ -21,8 +21,6 @@ import {
   hasVerifiedCountryIndicators,
 } from "@/lib/data/queries";
 import {
-  COUNTRY_SORT_DESCRIPTIONS,
-  COUNTRY_SORT_LABELS,
   DEFAULT_COUNTRY_SORT,
   compareByEconomicSort,
   getCountryEconomics,
