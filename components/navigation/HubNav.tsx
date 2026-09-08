@@ -1,21 +1,22 @@
 import Link from "next/link";
-import { staticRoutes } from "@/lib/seo/routes";
+import { availableDestinations } from "@/lib/navigation/ecosystem";
 
 export interface HubNavItem {
   href: string;
   label: string;
 }
 
-const DEFAULT_HUB_ITEMS: HubNavItem[] = [
-  { href: staticRoutes.exploreCities, label: "Find a city" },
-  { href: staticRoutes.cities, label: "Cities" },
-  { href: staticRoutes.countries, label: "Countries" },
-  { href: staticRoutes.collections, label: "Best Cities" },
-  { href: staticRoutes.compare, label: "Compare" },
-  { href: staticRoutes.rankings, label: "Rankings" },
-  { href: staticRoutes.methodology, label: "Methodology" },
-  { href: staticRoutes.dataSources, label: "Data Sources" },
-];
+/**
+ * Drawn from the ecosystem navigation contract, so the hub pages, the header
+ * and the other two products offer the same destinations under the same
+ * labels in the same order. Previously this list was maintained by hand beside
+ * the header's list, and the two had already drifted (different order, and
+ * "Find a city" for a page the header now labels "City Finder").
+ */
+const DEFAULT_HUB_ITEMS: HubNavItem[] = availableDestinations().map((item) => ({
+  href: item.path,
+  label: item.label,
+}));
 
 interface HubNavProps {
   items?: HubNavItem[];
