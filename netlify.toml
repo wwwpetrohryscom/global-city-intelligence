@@ -64,6 +64,52 @@
   force = true
 
 # ---------------------------------------------------------------------------
+# GCI Places (/places/*) — proxied to a SEPARATE Netlify site.
+#
+# The same architecture as /blog above, for the same reason: Places is its own
+# repository, its own corpus and its own deploy unit, so publishing a place
+# never requires rebuilding or re-uploading this 22 GB / 169,774-file artifact,
+# and this build is never made responsible for generating its ~1,000 routes.
+# Readers and search engines see one domain; infrastructure sees three
+# independent deployment units.
+#
+# status = 200 makes this a REWRITE, not a redirect: the browser URL stays on
+# www.globalcityintelligence.com/places/... The Places origin serves the same
+# /places/... paths, so this is a 1:1 mapping with no path arithmetic, and its
+# canonical tags already name this domain rather than the origin.
+#
+# force = true because Places owns the entire /places/* namespace. Netlify's
+# default is that an existing static file wins over a rule; this artifact has
+# no /places files today, and forcing keeps it that way deterministically.
+#
+# Two rules, not one, exactly as for /blog: a `/places/*` splat matches paths
+# BENEATH /places but does not reliably match the bare `/places`, which is what
+# the primary navigation will link to once PLACES_PUBLIC is enabled.
+#
+# REQUIREMENTS (verified 2026-09-08 on site 6ec4f94a-c2e0-4211-ba35-d57764a97f61):
+#   - same Netlify team as this site, or the rewrite is refused
+#   - sso_login MUST be false, or the origin 401s the proxy. New Netlify sites
+#     inherit sso_login = true; it was explicitly disabled after creation.
+#   - 0 Functions, 0 Edge Functions at the origin
+#
+# The origin's own robots.txt disallows everything, so it cannot be indexed as
+# a duplicate of these canonical URLs. That protection is deliberately NOT an
+# X-Robots-Tag header, because response headers propagate through this proxy
+# and would noindex the canonical pages too.
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/places"
+  to = "https://globalcityintelligence-places.netlify.app/places"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/places/*"
+  to = "https://globalcityintelligence-places.netlify.app/places/:splat"
+  status = 200
+  force = true
+
+# ---------------------------------------------------------------------------
 # Redirects — exact translations of the four next.config.ts redirects, which
 # `output: 'export'` cannot express. force=false so a real file always wins.
 # ---------------------------------------------------------------------------
