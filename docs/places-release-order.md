@@ -1,56 +1,80 @@
-# Release order: turning on GCI Places
+# GCI Places canonical integration — as released
 
-**Status: blocked.** `PLACES_PUBLIC_LINKING_BLOCKED_UNTIL_PLACES_RELEASE`
+**Status: released 2026-09-08.** `https://www.globalcityintelligence.com/places/`
+serves GCI Places through a static proxy from its own deployment.
 
-`https://www.globalcityintelligence.com/places/` returns 404 (verified
-2026-09-08). The navigation work for Places is complete and merged behind a
-switch; what is missing is the public surface itself.
+This file was the plan; it is now the record. Keep it as the runbook for the
+next product that joins the ecosystem the same way.
 
-## Why the links are switched off rather than shipped
+## The shape
 
-A link in the global navigation of an 84,000-page site is not a promise that
-can be broken cheaply. Shipping `/places` before the proxy exists would put a
-404 in the header of every page, in the footer of every page, and on every city
-page — and search engines would index it there. The switch costs one constant;
-the alternative costs a sitewide broken link.
+| Product | Repository | Origin | Public path |
+| --- | --- | --- | --- |
+| Main | `global-city-intelligence` | Netlify `85ce5e66-…` | `/*` |
+| GCI Media | `global-city-intelligence-blog` | `globalcityintelligence-blog.netlify.app` | `/blog/*` |
+| GCI Places | `globalcityintelligence-places` | `globalcityintelligence-places.netlify.app` | `/places/*` |
 
-## Order of operations
+One public domain, three independent deploy units. The main build is never made
+responsible for another product's routes, and publishing a place or an article
+never re-uploads this 22 GB artifact.
 
-1. **Deploy GCI Places.** From `globalcityintelligence-places`: `npm run gates`,
-   then a manual artifact deploy of `out/` to its own Netlify site. It is an
-   independent static deployment and must stay one — do not couple its build to
-   the main artifact.
-2. **Disable SSO on the Places site.** Netlify's `sso_login` defaults to true on
-   new sites and returns 401 to a proxy origin, which presents as a broken
-   rewrite rather than an auth error.
-3. **Add the rewrite** to the main repository's `netlify.toml`, alongside the
-   existing `/blog` pair — two rules, because a `/places/*` splat does not
-   reliably match the bare `/places`:
+## Order of operations, and why it was that order
 
-   ```toml
-   [[redirects]]
-     from = "/places"
-     to = "https://<places-site>.netlify.app/places"
-     status = 200
-     force = true
+1. **Prepare the Places origin.** Three things had to change before it could be
+   proxied safely: its `robots.txt` said `Allow: /` (it would have been indexed
+   as a duplicate of the canonical pages), its sitemap sat at the artifact root
+   (unreachable through a `/places/*`-only proxy and disallowed at the origin —
+   every Places page would have had no sitemap), and its brand link pointed at
+   `/`, which on the canonical domain is the main site's homepage.
+2. **Create the Netlify site and deploy the artifact.** New Netlify sites
+   inherit `sso_login: true`, which returns 401 to a proxy and presents as a
+   broken rewrite rather than an auth error. It was disabled explicitly.
+3. **Verify the origin.** Routes, 404 semantics, canonical tags, relative
+   redirect `Location` headers, no `X-Robots-Tag`, maps, search, filters.
+4. **Add the proxy to the main site, with `PLACES_PUBLIC` still false.** The
+   route exists and is verified before anything advertises it. Combining "the
+   page can be reached" with "every page links to it" into one unverified step
+   is how a sitewide broken link ships.
+5. **Verify the canonical namespace** on a draft, then in production.
+6. **Flip `PLACES_PUBLIC` in all three repositories**, rebuild, redeploy.
 
-   [[redirects]]
-     from = "/places/*"
-     to = "https://<places-site>.netlify.app/places/:splat"
-     status = 200
-     force = true
-   ```
+## Origin indexation
 
-4. **Verify** `/places/`, `/places/singapore/` and one deep place URL return 200
-   on the canonical host with no redirect.
-5. **Refresh the manifest** if the Places corpus changed:
-   `npx tsx scripts/export-nav-manifest.ts ../global-city-intelligence/lib/navigation/places-manifest.json`
-6. **Flip `PLACES_PUBLIC` to `true`** in all three repositories:
-   - `global-city-intelligence` — `lib/navigation/ecosystem.ts`
-   - `global-city-intelligence-blog` — `src/data/ecosystem.ts`
-   - `globalcityintelligence-places` — `src/lib/ecosystem.ts`
-7. **Rebuild and redeploy** GCI Media, then the main application (main last: it
-   is the largest artifact and the one whose navigation references the others).
-8. **Re-run** `npm run validate:navigation -- --out out` in the main repository.
-   With the switch on, it asserts the inverse of what it asserts today: that
-   Places links are present, and that every city-scoped one is in the manifest.
+The origin is protected by a `Disallow: /` robots.txt at its publish root,
+written by `scripts/emit-origin-guard.ts` in the Places repository.
+
+Deliberately **not** an `X-Robots-Tag: noindex` header: response headers
+propagate through a Netlify proxy, so a site-wide noindex at the origin would
+noindex the canonical `/places/` URLs too. A robots.txt at the origin root has
+the same protective effect with none of that risk, because on the canonical
+host `/robots.txt` is the main site's file and the proxy maps only `/places/*`.
+
+Same reasoning, same solution as GCI Media.
+
+## Gates
+
+```
+npm run validate:proxy-routes                   # the rewrite rules themselves
+npm run validate:proxy-routes -- --out out      # plus the emitted artifact
+npm run validate:navigation -- --out out        # Places links vs the manifest
+npm run poison:navigation                       # every rule shown failing
+```
+
+## Which cities get a city-specific Places link
+
+`lib/navigation/places-manifest.json`, generated by the Places repository from
+its own published-only accessors. Five cities have hubs; 4,437 do not, and they
+get the global Places surface rather than a `/places/<slug>/` URL that does not
+exist. Never infer coverage from this corpus.
+
+Refresh it with:
+
+```
+cd ../globalcityintelligence-places
+npx tsx scripts/export-nav-manifest.ts ../global-city-intelligence/lib/navigation/places-manifest.json
+```
+
+## Rollback
+
+Restore the previous production deploy on the affected site; never rebuild
+during incident response. Deploy ids are recorded in the release report.
