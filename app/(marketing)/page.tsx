@@ -282,19 +282,23 @@ export default function HomePage() {
                   analysis, methodology write-ups, interviews and data stories —
                   each one sourced, with the method stated in the open.
                 </p>
+                {/* Plain anchors: /blog is a separate deployment served
+                    through a Netlify rewrite, and this app builds no route for
+                    it. next/link would prefetch an RSC payload for a page that
+                    does not exist here and 404 on every homepage load. */}
                 <div className="mt-5 flex flex-wrap gap-3">
-                  <Link
+                  <a
                     className="inline-flex min-h-11 items-center rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition duration-150 hover:bg-brand-700"
                     href="/blog"
                   >
                     Read GCI Media
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     className="inline-flex min-h-11 items-center rounded-xl border border-brand-300 bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 transition duration-150 hover:bg-brand-100"
                     href="/blog/research"
                   >
                     Latest research
-                  </Link>
+                  </a>
                 </div>
               </div>
               <ul className="grid gap-2.5 sm:grid-cols-2 md:grid-cols-1">

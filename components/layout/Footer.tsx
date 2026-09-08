@@ -7,7 +7,12 @@ import {
   FEATURED_COUNTRIES,
   FEATURED_COUNTRIES_HEADING,
 } from "@/lib/navigation/featured";
-import { PLACES_PUBLIC, blogUrl, placesIndexUrl } from "@/lib/navigation/ecosystem";
+import {
+  PLACES_PUBLIC,
+  blogUrl,
+  isCrossDeploymentPath,
+  placesIndexUrl,
+} from "@/lib/navigation/ecosystem";
 import { PLACES_CITIES } from "@/lib/navigation/places";
 import { publishedRankingsByTheme } from "@/lib/navigation/rankings-registry";
 import { cityRoute, countryRoute, staticRoutes } from "@/lib/seo/routes";
@@ -196,14 +201,27 @@ function FooterLink({
   href: string;
   children: React.ReactNode;
 }) {
+  // /blog and /places are served by other deployments and have no route in
+  // this app, so they are plain anchors. The test lives in the navigation
+  // contract, not here, so a gate can hold it.
+  const external = isCrossDeploymentPath(href);
   return (
     <li>
-      <Link
-        className="inline-flex min-h-[32px] items-center text-text-secondary transition hover:text-eco-800"
-        href={href}
-      >
-        {children}
-      </Link>
+      {external ? (
+        <a
+          className="inline-flex min-h-[32px] items-center text-text-secondary transition hover:text-eco-800"
+          href={href}
+        >
+          {children}
+        </a>
+      ) : (
+        <Link
+          className="inline-flex min-h-[32px] items-center text-text-secondary transition hover:text-eco-800"
+          href={href}
+        >
+          {children}
+        </Link>
+      )}
     </li>
   );
 }

@@ -108,6 +108,27 @@ export function blogUrl(path = "/"): string {
   return path === "/" ? "/blog" : `/blog${path}`;
 }
 
+/**
+ * Whether a path is served by ANOTHER deployment.
+ *
+ * This app builds no /blog or /places route — both arrive through Netlify
+ * rewrites — so a next/link to either prefetches an RSC payload for a page
+ * that does not exist here, logs a 404 on every page load that puts the link
+ * in the viewport, and then falls back to a hard navigation anyway.
+ *
+ * It is an exported function rather than an inline condition at each call site
+ * precisely so it can be tested: an inline `href.startsWith("/blog")` inside a
+ * component is invisible to any gate, and a link component quietly deciding
+ * "not external" is exactly the regression this is here to prevent.
+ */
+export function isCrossDeploymentPath(href: string): boolean {
+  return ECOSYSTEM_DESTINATIONS.some(
+    (item) =>
+      item.servedBy !== undefined &&
+      (href === item.path || href.startsWith(`${item.path}/`)),
+  );
+}
+
 export function absoluteEcosystemUrl(path: string): string {
   return `${CANONICAL_ORIGIN}${path.startsWith("/") ? path : `/${path}`}`;
 }
