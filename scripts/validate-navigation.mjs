@@ -21,7 +21,7 @@
  * agree with each other perfectly while the rendered footer contains something
  * else entirely.
  */
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { createJiti } from "jiti";
 
@@ -295,6 +295,68 @@ for (const entry of PLACES_CITIES) {
     byCapita[0].slug !== ordered[0].slug,
     "the GDP-per-capita sort produces the same leader as the GDP sort — it is probably reading the same field",
   );
+}
+
+/* ------------------------------------------------------------------ *
+ * 5b. Cross-deployment links must not be next/link.
+ *
+ * /blog and /places are served by other deployments; this app builds no route
+ * for either. A next/link to one of them prefetches an RSC payload for a page
+ * that does not exist here, which 404s in the console of every page load that
+ * puts the link in the viewport, and then falls back to a hard navigation.
+ * Plain anchors, always.
+ * ------------------------------------------------------------------ */
+{
+  const componentFiles = [];
+  const walkSource = (dir) => {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      if (entry.name === "node_modules" || entry.name.startsWith(".")) continue;
+      const full = join(dir, entry.name);
+      if (entry.isDirectory()) walkSource(full);
+      else if (entry.name.endsWith(".tsx")) componentFiles.push(full);
+    }
+  };
+  walkSource(join(ROOT, "components"));
+  walkSource(join(ROOT, "app"));
+
+  // The helper itself: an inline `href.startsWith("/blog")` in a component is
+  // invisible to any gate, so the decision was extracted into one exported
+  // function and its behaviour is asserted here.
+  check(
+    ecosystem.isCrossDeploymentPath("/blog") === true,
+    "isCrossDeploymentPath must treat /blog as cross-deployment",
+  );
+  check(
+    ecosystem.isCrossDeploymentPath("/blog/cities") === true,
+    "isCrossDeploymentPath must treat /blog/cities as cross-deployment",
+  );
+  check(
+    ecosystem.isCrossDeploymentPath("/places/singapore/") === true,
+    "isCrossDeploymentPath must treat a Places path as cross-deployment",
+  );
+  check(
+    ecosystem.isCrossDeploymentPath("/cities/singapore") === false,
+    "isCrossDeploymentPath must treat this app's own routes as internal",
+  );
+  check(
+    ecosystem.isCrossDeploymentPath("/blogging") === false,
+    "isCrossDeploymentPath must not match a route that merely shares a prefix",
+  );
+
+  for (const file of componentFiles) {
+    const source = readFileSync(file, "utf8");
+    // `<Link ... href="/blog…">` or href={blogUrl(...)} on a Link element.
+    const linkTags = source.match(/<Link\b[^>]*>/g) ?? [];
+    for (const tag of linkTags) {
+      if (/href=(?:"|\{`)\/(?:blog|places)/.test(tag) || /href=\{(?:blogUrl|placesIndexUrl|placesCityUrl)\(/.test(tag)) {
+        check(
+          false,
+          `${file.slice(ROOT.length + 1)} uses next/link for a cross-deployment path; use a plain <a> so it does not prefetch a route this app never builds`,
+        );
+      }
+    }
+  }
+  checks += 1;
 }
 
 /* ------------------------------------------------------------------ *
