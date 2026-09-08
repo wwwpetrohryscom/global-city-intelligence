@@ -15,8 +15,16 @@ import { availableDestinations } from "@/lib/navigation/ecosystem";
  * standing in for an information architecture decision.
  *
  * WHAT IT IS NOW: one row of real links down to 1180px, where all ten
- * destinations measurably fit (812px of links in 860px of space), and a single
- * disclosure below that. There is no horizontal scrolling at any width.
+ * destinations measurably fit, and a single disclosure below that. There is no
+ * horizontal scrolling at any width.
+ *
+ * THE ROW IS SIZED FOR TEN. Measured on the built site with Places enabled:
+ * 812px of links inside 900px of available space, leaving 88px spare at every
+ * width from 1181px to 1920px. It is the same at all of them because the
+ * container is capped at max-w-7xl — which is exactly why the type and gaps
+ * must NOT grow above 1280px. They used to, and the tenth destination then
+ * wrapped the navigation onto a second row at 1280, 1440 and 1600 while still
+ * fitting at 1180: the wider the screen, the more broken it looked.
  *
  * ONE COPY OF EVERY LINK. The same <ul> is the row on desktop and the panel on
  * narrow screens — CSS changes its layout, not its contents. Nothing is
@@ -71,7 +79,11 @@ export function PrimaryNav() {
             open ? "flex" : "hidden",
             // Wide: the same list becomes the row. `!static` and `!flex` win
             // over the panel state, so the row can never be affected by it.
-            "nav:!static nav:!flex nav:flex-row nav:items-center nav:gap-0.5 nav:border-0 nav:bg-transparent nav:p-0 nav:shadow-none xl:gap-1",
+            // NO xl: upsizing. The container is capped at max-w-7xl, so the
+            // space available to the row is IDENTICAL at 1280 and at 1920 —
+            // growing the gaps or the type above 1280 buys nothing and cost a
+            // second row the moment Places became the tenth destination.
+            "nav:!static nav:!flex nav:flex-row nav:items-center nav:gap-0.5 nav:border-0 nav:bg-transparent nav:p-0 nav:shadow-none",
           ].join(" ")}
           id={panelId}
         >
@@ -84,7 +96,7 @@ export function PrimaryNav() {
                   className={[
                     "inline-flex min-h-11 w-full items-center rounded-xl px-3 text-sm font-medium transition duration-150",
                     "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-eco-500",
-                    "nav:min-h-10 nav:w-auto nav:px-2.5 nav:text-[13.5px] xl:px-3 xl:text-sm",
+                    "nav:min-h-10 nav:w-auto nav:px-2.5 nav:text-[13.5px]",
                     current
                       ? "bg-eco-50 font-semibold text-eco-800"
                       : "text-text-secondary hover:bg-eco-50 hover:text-eco-800",
