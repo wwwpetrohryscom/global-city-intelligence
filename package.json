@@ -48,7 +48,9 @@
     "validate:country-economics": "node scripts/validate-country-economics.mjs",
     "build:country-economics": "node scripts/build-country-economics.mjs",
     "poison:navigation": "node scripts/poison-navigation.mjs",
-    "validate:proxy-routes": "node scripts/validate-proxy-routes.mjs"
+    "validate:proxy-routes": "node scripts/validate-proxy-routes.mjs",
+    "validate:privacy": "node scripts/validate-privacy.mjs",
+    "poison:privacy": "node scripts/poison-privacy.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",
