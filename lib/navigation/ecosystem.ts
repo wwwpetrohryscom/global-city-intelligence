@@ -110,6 +110,22 @@ export function blogUrl(path = "/"): string {
 }
 
 /**
+ * Sitemaps published by the OTHER two deployments, inside the namespaces they
+ * own, and reachable on this domain through the proxy.
+ *
+ * They are listed in this application's robots.txt because that is the only
+ * robots.txt a crawler reads for this host — each origin serves its own, and
+ * each of those disallows everything, deliberately. Without these two lines
+ * roughly a thousand Places URLs and every article are reachable but
+ * undiscoverable.
+ *
+ * Declared, not fetched: this build must never depend on another deployment
+ * being up. `scripts/validate-proxy-routes.mjs` checks that each one sits
+ * inside a namespace this site actually proxies.
+ */
+export const PROXIED_SITEMAPS = ["/blog/sitemap.xml", "/places/sitemap.xml"] as const;
+
+/**
  * Whether a path is served by ANOTHER deployment.
  *
  * This app builds no /blog or /places route — both arrive through Netlify
