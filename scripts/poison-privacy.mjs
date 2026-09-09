@@ -235,6 +235,59 @@ poison({
   );
 }
 
+/* ---- The operator is published, so the page must actually name it ---- */
+poison({
+  name: "the operator is published but the page stops rendering the legal entity",
+  file: "app/privacy/page.tsx",
+  find: "{PRIVACY_OPERATOR.legalEntity}",
+  replace: "{PRIVACY_OPERATOR.displayName}",
+  expectRule: "privacy.operatorUnrendered",
+});
+
+poison({
+  name: "the operator is published but the page stops rendering the address",
+  file: "app/privacy/page.tsx",
+  find: "{PRIVACY_OPERATOR.postalAddress.map((line) => (",
+  replace: "{[].map((line) => (",
+  expectRule: "privacy.operatorUnrendered",
+});
+
+/* ---- The page keeps telling readers the operator is unknown ---- */
+poison({
+  name: "the page still claims the operator has not yet been published",
+  file: "app/privacy/page.tsx",
+  find: "a company registered in {PRIVACY_OPERATOR.country}",
+  replace: "whose registered details have not yet been published here",
+  expectRule: "privacy.operatorStale",
+});
+
+/* ---- A placeholder standing where an operator fact belongs ---- */
+poison({
+  name: "the legal entity is replaced with a placeholder",
+  file: "lib/legal/privacy.ts",
+  find: 'legalEntity: "HELPERG LLC",',
+  replace: 'legalEntity: "Example LLC",',
+  expectRule: "privacy.operatorPlaceholder",
+});
+
+/* ---- A contact that is not an address ---- */
+poison({
+  name: "the privacy contact is prose rather than an email address",
+  file: "lib/legal/privacy.ts",
+  find: '  contact: "info@helperg.com",',
+  replace: '  contact: "via the contact form",',
+  expectRule: "privacy.operatorContact",
+});
+
+/* ---- A contact printed but not reachable ---- */
+poison({
+  name: "the contact is shown as plain text with no mailto",
+  file: "app/privacy/page.tsx",
+  find: "href={`mailto:${PRIVACY_OPERATOR.contact}`}",
+  replace: 'href="/contact"',
+  expectRule: "privacy.operatorContact",
+});
+
 /* ================================================================== */
 const final = runValidator();
 process.stdout.write(`\n  restored: privacy contract is ${final.ok ? "GREEN" : "RED"}\n`);

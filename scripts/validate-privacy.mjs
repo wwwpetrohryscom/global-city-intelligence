@@ -282,6 +282,59 @@ for (const guarantee of [
       ? "operator identity: PUBLISHED"
       : "operator identity: NOT PUBLISHED — the page renders an explicit gap; see PRIVACY_BLOCKERS",
   );
+
+  /*
+   * A CONTRACT THE PAGE DOES NOT RENDER IS NOT A PUBLISHED OPERATOR.
+   *
+   * Filling in PRIVACY_OPERATOR and forgetting to print it would leave the
+   * contract asserting an accountable entity that no reader can see — which
+   * is the same failure as naming none, dressed as a resolution. So once the
+   * operator is set, the page must read every field of it.
+   */
+  /* Comments stripped first: a reference inside a comment renders nothing. */
+  const pageSource = code(readFileSync(join(ROOT, "app/privacy/page.tsx"), "utf8"));
+  const pageText = pageSource.replace(/\s+/g, " ");
+  if (operatorSet) {
+    for (const field of ["legalEntity", "postalAddress", "contact"]) {
+      if (!new RegExp(`PRIVACY_OPERATOR\\.${field}\\b`).test(pageSource)) {
+        fail("privacy.operatorUnrendered", "app/privacy/page.tsx", `the operator is published but the page never renders ${field}`);
+      }
+    }
+    /* And it must not still be telling readers the operator is unknown. */
+    if (/(not yet been published|have not been published|no registered operator)/i.test(pageText)) {
+      fail("privacy.operatorStale", "app/privacy/page.tsx", "the page still says the operator is unpublished while the contract publishes one");
+    }
+  }
+
+  /*
+   * A PLACEHOLDER IS NOT A FACT. An operator invented to make a gate green is
+   * worse than an admitted gap, because it looks settled.
+   */
+  const placeholder = /\b(TBD|TODO|FIXME|XXX|PLACEHOLDER|Example (Ltd|Inc|LLC|GmbH)|Acme|Your Company)\b/i;
+  for (const line of contractCode.split("\n")) {
+    if (!/legalEntity|postalAddress|contact:|country:/.test(line)) continue;
+    if (placeholder.test(line)) {
+      fail("privacy.operatorPlaceholder", "lib/legal/privacy.ts", `a placeholder stands where an operator fact belongs: ${line.trim().slice(0, 80)}`);
+    }
+  }
+
+  /*
+   * A CONTACT MUST BE REACHABLE, not merely printed.
+   *
+   * The page renders the address from the contract rather than repeating it as
+   * a literal — which is right, and means the check is about shape and reach:
+   * the contract must hold something that is actually an address, and the page
+   * must offer it as one a reader can click rather than as decoration.
+   */
+  if (operatorSet) {
+    const contact = contractCode.match(/\n\s*contact:\s*"([^"]+)"/)?.[1] ?? "";
+    if (!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(contact)) {
+      fail("privacy.operatorContact", "lib/legal/privacy.ts", `the privacy contact is not an email address: "${contact}"`);
+    }
+    if (!/mailto:\$\{PRIVACY_OPERATOR\.contact\}/.test(pageSource)) {
+      fail("privacy.operatorContact", "app/privacy/page.tsx", "the privacy contact is printed but not offered as a mailto link");
+    }
+  }
 }
 
 function report() {

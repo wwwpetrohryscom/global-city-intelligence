@@ -37,14 +37,37 @@ export const PRIVACY_OPERATOR = {
   displayName: "Global City Intelligence",
   /**
    * The legal entity accountable for the processing described here.
-   * `null` until the owner supplies it. See PRIVACY_BLOCKERS.
+   *
+   * Supplied by the owner as an explicit directive on PRIVACY_OPERATOR_DECIDED_ON.
+   * It was NOT inferred — not from repository ownership, Git author identity,
+   * the hosting or billing account, the domain registrant, or another product
+   * in the same family. None of those establishes who is accountable.
    */
-  legalEntity: null as string | null,
-  /** A postal address, where one is required. `null` until supplied. */
-  postalAddress: null as string | null,
-  /** A working contact route for privacy questions. `null` until supplied. */
-  contact: null as string | null,
+  legalEntity: "HELPERG LLC",
+  /** The public business address, as the owner gave it. */
+  postalAddress: ["30 N Gould St Ste N", "Sheridan, WY 82801", "United States"],
+  /** The country whose law the operator sits under. */
+  country: "United States",
+  /**
+   * A working contact route for privacy questions.
+   *
+   * Deliberately the general address rather than a `privacy@` alias: a role
+   * address that looks official and bounces is worse than a plain one that a
+   * person reads. If a dedicated mailbox is configured later, change it here.
+   */
+  contact: "info@helperg.com",
+  generalContact: "info@helperg.com",
+  /** True while privacy and general enquiries share one mailbox. */
+  contactIsShared: true,
 } as const;
+
+/**
+ * The date the owner supplied the operator details above.
+ *
+ * Distinct from PRIVACY_PREPARED_ON, which is about the text, and from the
+ * date the page goes live, which is neither.
+ */
+export const PRIVACY_OPERATOR_DECIDED_ON = "2026-09-09";
 
 /**
  * When this policy was written.
@@ -91,6 +114,8 @@ export const PRIVACY_FACTS = {
    */
   placesAnalyticsRequiresOptIn: true,
   placesAnalyticsPreferenceKey: "gci.privacy.v1",
+  /** The operator is published, so the page must name it. Checked by the gate. */
+  operatorPublished: true,
   /** No account system, and no server that could hold one. */
   accountsEnabled: false,
   cloudSyncEnabled: false,
@@ -197,10 +222,11 @@ export const PRIVACY_LOCAL_STORAGE = [
 export const PRIVACY_BLOCKERS = [
   {
     id: "operator-identity",
-    blocks: "publishing the policy",
+    blocks: "nothing — RESOLVED by owner directive on 2026-09-09",
     summary:
-      "No legal entity, postal address or contact route is published anywhere in the GCI ecosystem. The policy renders an explicit gap rather than inventing one.",
-    resolvedBy: "The owner supplying verified details for PRIVACY_OPERATOR.",
+      "Global City Intelligence is operated by HELPERG LLC, 30 N Gould St Ste N, Sheridan, WY 82801, United States, reachable at info@helperg.com. Supplied by the owner as an explicit directive rather than inferred from repository ownership, hosting, billing or the domain registrant, none of which establishes accountability. Only what the policy needs is published: no registration or tax identifiers, and no personal details of the people behind the entity.",
+    resolvedBy:
+      "Resolved. The page names the operator, the address and the contact from PRIVACY_OPERATOR, and the gate fails if it stops doing so.",
   },
   {
     id: "consent-mechanism",

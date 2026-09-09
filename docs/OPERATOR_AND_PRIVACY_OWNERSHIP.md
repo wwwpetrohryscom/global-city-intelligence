@@ -1,79 +1,83 @@
 # Operator and privacy ownership
 
-**Status: UNRESOLVED. This is an owner decision, not an engineering one.**
+**Status: RESOLVED by explicit owner directive, 2026-09-09.**
 
-The canonical privacy policy is written, gated and merged. It cannot be
-published until this page names a real operator, because a policy that
-misstates who is accountable is worse than one that admits a gap.
-
-## What was searched, and what was found
-
-Nothing. Across all three repositories — source, content, configuration and
-documentation — and across every live surface:
-
-| Looked at | Result |
-|---|---|
-| Main footer | `© Global City Intelligence` — a product name, not a legal entity |
-| `lib/ecosystem/products.ts` | places GCI in the HELPERG family; no entity, no contact |
-| `/about`, `/contact`, `/terms`, `/legal`, `/imprint`, `/impressum` | all 404 |
-| `/blog/about` | exists; publishes no entity and no contact address |
-| Every email address in the codebase | photographers', inside Wikimedia attribution strings |
-
-## What must NOT be used to fill the gap
-
-The operator was not, and must not be, inferred from GitHub repository
-ownership, Git author identity, the Netlify account, the domain registrant,
-billing details, WHOIS, another HELPERG product, or the footer copyright line.
-None of those establishes who is legally accountable for the processing this
-policy describes, and a plausible guess published as fact is the worst
-available outcome.
-
-## What is needed
-
-Five values. `PRIVACY_OPERATOR` in `lib/legal/privacy.ts` renders them
-automatically, and `scripts/validate-privacy.mjs` reports the change.
+Global City Intelligence is operated by **HELPERG LLC**.
 
 ```
-LEGAL ENTITY / OPERATOR:
-PUBLIC BUSINESS ADDRESS:
-PRIVACY CONTACT EMAIL:
-GENERAL CONTACT EMAIL:
-ENTITY COUNTRY:
+LEGAL ENTITY / OPERATOR:  HELPERG LLC
+PUBLIC BUSINESS ADDRESS:  30 N Gould St Ste N
+                          Sheridan, WY 82801
+                          United States
+PRIVACY CONTACT EMAIL:    info@helperg.com
+GENERAL CONTACT EMAIL:    info@helperg.com
+ENTITY COUNTRY:           United States
 ```
 
-Notes on each:
+These values live in `PRIVACY_OPERATOR` in `lib/legal/privacy.ts`. The privacy
+page renders them from there, and `scripts/validate-privacy.mjs` fails the
+build if the contract publishes an operator the page does not name — a contract
+nobody can read is the same failure as no contract, dressed as a resolution.
 
-- **Legal entity** — the exact registered spelling, if there is a registered
-  entity. If GCI is operated by an individual rather than a company, that is a
-  legitimate answer and the page should say so plainly.
-- **Public business address** — required in some jurisdictions, and a
-  reasonable thing for a reader to be able to find. If none is to be published,
-  say so and the page will not invent one.
-- **Privacy contact** — a role address (`privacy@`, `legal@`) is preferable,
-  but only if it actually exists and is monitored. A verified general contact
-  is acceptable. **Do not create an alias because it looks professional.**
-- **Entity country** — which law the operator sits under. Note this does not
-  decide the consent posture: readers' jurisdictions do, and that analysis is
-  already complete.
+## Where these came from
 
-## What is deliberately not asked for
+**An explicit owner directive**, and nothing else.
 
-Registration numbers, tax identifiers and any other corporate detail the policy
-does not need. Publishing more than is required is its own privacy failure.
+The operator was **not** inferred from GitHub repository ownership, Git author
+identity, the Netlify account, the domain registrant, billing details, WHOIS,
+another product in the HELPERG family, or the footer copyright line. None of
+those establishes who is legally accountable for the processing this policy
+describes, and a plausible guess published as fact would have been the worst
+available outcome — it looks settled while being unverified.
 
-## What this blocks, and what it does not
+Before the directive, a search across all three repositories and every live
+surface found nothing: `/about`, `/contact`, `/terms`, `/legal` and `/imprint`
+all 404, `/blog/about` published neither, and the only email addresses in the
+codebase belonged to photographers inside Wikimedia attribution strings. The
+page rendered an explicit gap for exactly as long as that was true.
 
-**Blocks:** publishing the privacy policy, and therefore the coordinated
-privacy release, and therefore Phase 9.3.
+## One mailbox, deliberately
 
-**Does not block:** anything already built. The policy, the disclosures, the
-consent architecture and the gates are all complete and correct; they are
-waiting on one fact, not on more work.
+`info@helperg.com` takes both privacy and general enquiries, and the page says
+so rather than implying a dedicated privacy desk.
+
+**No `privacy@` alias was invented.** A role address that looks official and
+bounces is worse than a plain one somebody reads — it turns a working contact
+route into a dead end at precisely the moment a reader needs it. If a dedicated
+mailbox is configured later, change `PRIVACY_OPERATOR.contact` and set
+`contactIsShared` to `false`; the page adjusts its own wording.
+
+## What is deliberately not published
+
+Per the owner directive, and because a privacy policy that over-publishes is
+its own privacy failure:
+
+- no EIN or other tax identifier
+- no registration or filing numbers
+- no member, officer or beneficial-owner personal details
+- no billing, hosting or repository ownership information
+
+The policy needs an accountable entity, a place to write to, and a working
+address. It has those. Anything further would be corporate detail published for
+its own sake.
+
+## What this unblocked
+
+Publishing the privacy policy, and therefore the coordinated privacy release.
+
+It does **not** enable measurement. `RETENTION_ANALYTICS_ENABLED` stays `false`
+and no tracker is loaded; naming the operator resolved an accountability
+question, not a consent one. Consent was settled separately as `GLOBAL_OPT_IN`
+— see the Places repository, `docs/ANALYTICS_CONSENT_DECISION.md`.
+
+Phase 9.3 remains blocked on one thing: the policy has to be **live**, not
+merged.
 
 ## Effective date
 
-The page's `PRIVACY_PREPARED_ON` records when the text was prepared, not when
-it went live. Whoever publishes it should confirm the date still reflects the
-text and set it if the wording changed in the meantime.
+`PRIVACY_PREPARED_ON` records when the text was prepared;
+`PRIVACY_OPERATOR_DECIDED_ON` records when the owner supplied these details.
+Neither is the date the page went live. Whoever publishes it should confirm the
+prepared date still reflects the text.
 
 Covers all three products: the main site, GCI Places and GCI Media.

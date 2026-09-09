@@ -4,7 +4,6 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
-  PRIVACY_BLOCKERS,
   PRIVACY_FACTS,
   PRIVACY_LOCAL_STORAGE,
   PRIVACY_OPERATOR,
@@ -53,8 +52,6 @@ function Prose({ children }: { children: React.ReactNode }) {
 }
 
 export default function PrivacyPage() {
-  const openBlockers = PRIVACY_BLOCKERS.filter((blocker) => blocker.id === "operator-identity");
-
   return (
     <main>
       <JsonLd data={webpageSchema({ path: staticRoutes.privacy, title, description })} />
@@ -83,30 +80,36 @@ export default function PrivacyPage() {
         <section>
           <SectionHeading title="Who runs this site" />
           <Prose>
-            {PRIVACY_OPERATOR.legalEntity && PRIVACY_OPERATOR.contact ? (
-              <p>
-                {PRIVACY_OPERATOR.displayName} is operated by {PRIVACY_OPERATOR.legalEntity}.
-                {PRIVACY_OPERATOR.postalAddress ? ` ${PRIVACY_OPERATOR.postalAddress}.` : ""} For
-                privacy questions, contact {PRIVACY_OPERATOR.contact}.
-              </p>
-            ) : (
-              /*
-               * An explicit gap rather than an invented controller.
-               *
-               * Nothing in this project publishes a legal entity or a contact
-               * address. Naming one here would misstate who is accountable,
-               * which is the single fact a reader most needs — so the page
-               * says so plainly, and the release checklist blocks publication
-               * until it is filled in.
-               */
-              <p>
-                {PRIVACY_OPERATOR.displayName} is a publishing project in the HELPERG family of
-                sites. A registered operator name and a contact address for privacy questions have
-                not yet been published here, and this page will name them once they are. Until
-                then, the rest of this page still describes accurately what the site does.
-              </p>
-            )}
-            {openBlockers.length > 0 ? null : null}
+            <p>
+              {PRIVACY_OPERATOR.displayName} is operated by{" "}
+              <strong className="font-medium text-text-strong">
+                {PRIVACY_OPERATOR.legalEntity}
+              </strong>
+              , a company registered in {PRIVACY_OPERATOR.country}. It is the entity accountable
+              for everything this page describes.
+            </p>
+            <address className="not-italic">
+              {PRIVACY_OPERATOR.postalAddress.map((line) => (
+                <span className="block" key={line}>
+                  {line}
+                </span>
+              ))}
+              <a
+                className="mt-2 inline-block underline underline-offset-2 hover:text-text-strong"
+                href={`mailto:${PRIVACY_OPERATOR.contact}`}
+              >
+                {PRIVACY_OPERATOR.contact}
+              </a>
+            </address>
+            <p>
+              {PRIVACY_OPERATOR.contactIsShared
+                ? "That address takes privacy questions and everything else — write to it about your data, and say so in the subject line."
+                : "Write to that address about your data."}{" "}
+              There is no account to close and no profile to delete, because neither exists. What
+              GCI Places holds is held by your own browser, and{" "}
+              <em>Things stored in your browser</em> below says how to clear it without asking
+              anyone.
+            </p>
           </Prose>
         </section>
 

@@ -14,26 +14,20 @@ that leaves saved places, lists, pins and notes untouched. Measurement is still
 switched off and no tracker is loaded.
 
 The sources and the condition-by-condition analysis are in the Places
-repository, `docs/ANALYTICS_CONSENT_DECISION.md`. The one remaining blocker is
-below.
+repository, `docs/ANALYTICS_CONSENT_DECISION.md`.
 
-## The blocker that comes first
+## The operator is named
 
-**The operator is not identified.** Nothing in any of the three repositories
-publishes a legal entity, a postal address or a contact route for privacy
-questions. The page currently renders an explicit gap — it says the operator
-and contact "have not yet been published here" — rather than inventing one,
-because naming the wrong accountable party is worse than naming none.
+**Global City Intelligence is operated by HELPERG LLC**, 30 N Gould St Ste N,
+Sheridan, WY 82801, United States, reachable at `info@helperg.com` — supplied
+as an explicit owner directive on 2026-09-09, not inferred from anything. The
+page names it, and the gate fails if it stops doing so. See
+`docs/OPERATOR_AND_PRIVACY_OWNERSHIP.md`.
 
-Publishing a privacy policy that cannot say who is accountable is defensible
-only as a temporary state. Before release, either:
+That was the blocker on publishing. **The policy is releasable.**
 
-- fill in `PRIVACY_OPERATOR.legalEntity`, `.postalAddress` and `.contact` in
-  `lib/legal/privacy.ts` — the page renders them automatically and the gate
-  reports the change; **or**
-- release deliberately with the gap acknowledged, and close it next.
-
-This is the owner's decision. It is not one this repository can make.
+One blocker remains before Phase 9.3, and it is this release: the policy has to
+be live, not merged.
 
 ## Release order, and why it matters more than usual
 
@@ -64,8 +58,10 @@ policy describing absent features looks authoritative and is not.
 
 ## Before releasing
 
-- [ ] `PRIVACY_OPERATOR` decided — see `docs/OPERATOR_AND_PRIVACY_OWNERSHIP.md`
+- [x] `PRIVACY_OPERATOR` decided — HELPERG LLC, by owner directive 2026-09-09
 - [ ] `PRIVACY_PREPARED_ON` still reflects when the text was last changed
+- [ ] `info@helperg.com` is monitored, and whoever reads it knows privacy
+      questions arrive there
 - [ ] `node scripts/validate-privacy.mjs` passes on the merged tree
 - [ ] `node scripts/poison-privacy.mjs` passes
 - [ ] Places `npm run validate:privacy-copy` passes
