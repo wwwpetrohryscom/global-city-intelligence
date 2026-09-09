@@ -20,8 +20,10 @@
  */
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { createJiti } from "jiti";
 
 const ROOT = resolve(import.meta.dirname, "..");
+const jiti = createJiti(ROOT, { alias: { "@": ROOT } });
 const outFlag = process.argv.indexOf("--out");
 const OUT = outFlag === -1 ? null : resolve(process.argv[outFlag + 1] ?? "out");
 
@@ -125,9 +127,71 @@ check(
   "two proxy rules declare the same `from` path",
 );
 
+/* ------------------------------------------------------------------ *
+ * The canonical robots.txt must advertise every proxied sitemap.
+ *
+ * Each origin serves its own robots.txt, and each of those disallows
+ * everything — deliberately, so the origin is never indexed as a duplicate.
+ * That makes THIS file the only robots.txt a crawler reads for this host, and
+ * therefore the only place the other two products' sitemaps can be announced.
+ * ------------------------------------------------------------------ */
+{
+  const ecosystem = jiti("./lib/navigation/ecosystem.ts");
+  const declared = ecosystem.PROXIED_SITEMAPS ?? [];
+  check(
+    declared.length === PROXIED.length,
+    `${declared.length} proxied sitemaps declared for ${PROXIED.length} proxied products`,
+  );
+  for (const product of PROXIED) {
+    const match = declared.find((path) => path.startsWith(`${product.base}/`));
+    check(
+      Boolean(match),
+      `${product.name}: no sitemap declared inside its "${product.base}" namespace`,
+    );
+  }
+  for (const path of declared) {
+    check(
+      path.startsWith("/"),
+      `declared sitemap "${path}" is not a domain-relative path`,
+    );
+    check(
+      !/netlify\.app|^https?:/i.test(path),
+      `declared sitemap "${path}" names an origin rather than this domain`,
+    );
+    check(
+      PROXIED.some((product) => path.startsWith(`${product.base}/`)),
+      `declared sitemap "${path}" is not inside any proxied namespace, so this site does not serve it`,
+    );
+  }
+}
+
 /* ---- the emitted artifact ---- */
 if (OUT) {
   check(existsSync(OUT), `${OUT} does not exist — build first`);
+
+  // The robots.txt this build emits must actually carry the sitemap lines.
+  // Declaring them in a constant proves intent; this proves delivery.
+  const robotsFile = join(OUT, "robots.txt");
+  if (existsSync(robotsFile)) {
+    const robots = readFileSync(robotsFile, "utf8");
+    const ecosystem = jiti("./lib/navigation/ecosystem.ts");
+    for (const path of ecosystem.PROXIED_SITEMAPS ?? []) {
+      check(
+        robots.includes(`Sitemap: https://www.globalcityintelligence.com${path}`),
+        `robots.txt does not advertise the proxied sitemap "${path}"`,
+      );
+    }
+    check(
+      robots.includes("Sitemap: https://www.globalcityintelligence.com/sitemap.xml"),
+      "robots.txt no longer advertises this site's own sitemap",
+    );
+    check(
+      !/netlify\.app/i.test(robots),
+      "robots.txt names a deployment origin",
+    );
+  } else {
+    check(false, "no robots.txt was emitted");
+  }
 
   for (const product of PROXIED) {
     const dir = join(OUT, product.base.replace(/^\//, ""));

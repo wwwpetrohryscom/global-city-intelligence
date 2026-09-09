@@ -22,6 +22,7 @@ const ROOT = resolve(import.meta.dirname, "..");
 
 const NAV = "scripts/validate-navigation.mjs";
 const ECON = "scripts/validate-country-economics.mjs";
+const PROXY = "scripts/validate-proxy-routes.mjs";
 
 const CASES = [
   /* ---- economic ordering ------------------------------------------- */
@@ -152,6 +153,35 @@ const CASES = [
     replace: `  family: "collection",\n  route: \`/best-cities/\${slug}\`,`,
     validator: NAV,
     expect: "its family publishes at",
+  },
+
+  /* ---- sitemap discovery --------------------------------------------- */
+  {
+    group: "sitemap",
+    name: "a proxied product's sitemap is dropped from robots.txt",
+    file: "lib/navigation/ecosystem.ts",
+    find: `export const PROXIED_SITEMAPS = ["/blog/sitemap.xml", "/places/sitemap.xml"] as const;`,
+    replace: `export const PROXIED_SITEMAPS = ["/blog/sitemap.xml"] as const;`,
+    validator: PROXY,
+    expect: 'no sitemap declared inside its "/places" namespace',
+  },
+  {
+    group: "sitemap",
+    name: "robots.txt points at a deployment origin instead of this domain",
+    file: "lib/navigation/ecosystem.ts",
+    find: `export const PROXIED_SITEMAPS = ["/blog/sitemap.xml", "/places/sitemap.xml"] as const;`,
+    replace: `export const PROXIED_SITEMAPS = ["/blog/sitemap.xml", "https://globalcityintelligence-places.netlify.app/places/sitemap.xml"] as const;`,
+    validator: PROXY,
+    expect: "names an origin rather than this domain",
+  },
+  {
+    group: "sitemap",
+    name: "a sitemap is declared for a namespace this site does not proxy",
+    file: "lib/navigation/ecosystem.ts",
+    find: `export const PROXIED_SITEMAPS = ["/blog/sitemap.xml", "/places/sitemap.xml"] as const;`,
+    replace: `export const PROXIED_SITEMAPS = ["/blog/sitemap.xml", "/places/sitemap.xml", "/guides/sitemap.xml"] as const;`,
+    validator: PROXY,
+    expect: "not inside any proxied namespace",
   },
 
   /* ---- navigation ---------------------------------------------------- */
@@ -303,7 +333,7 @@ const run = (validator) => {
 let failures = 0;
 let skipped = 0;
 
-for (const validator of [NAV, ECON]) {
+for (const validator of [NAV, ECON, PROXY]) {
   const baseline = run(validator);
   if (!baseline.ok) {
     console.error(`ABORT: ${validator} is already failing before any poison was applied.`);
@@ -311,7 +341,7 @@ for (const validator of [NAV, ECON]) {
     process.exit(1);
   }
 }
-console.log("  baseline: both validators are GREEN before poisoning\n");
+console.log("  baseline: all validators are GREEN before poisoning\n");
 
 for (const testCase of CASES) {
   if (testCase.skipReason) {
@@ -361,10 +391,11 @@ for (const testCase of CASES) {
 restore();
 const finalNav = run(NAV);
 const finalEcon = run(ECON);
+const finalProxy = run(PROXY);
 console.log(
-  `\n  restored: navigation is ${finalNav.ok ? "GREEN" : "RED"}, country economics is ${finalEcon.ok ? "GREEN" : "RED"}`,
+  `\n  restored: navigation is ${finalNav.ok ? "GREEN" : "RED"}, country economics is ${finalEcon.ok ? "GREEN" : "RED"}, proxy routes are ${finalProxy.ok ? "GREEN" : "RED"}`,
 );
-if (!finalNav.ok || !finalEcon.ok) failures += 1;
+if (!finalNav.ok || !finalEcon.ok || !finalProxy.ok) failures += 1;
 
 const tested = CASES.length - skipped;
 console.log(
