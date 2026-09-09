@@ -223,6 +223,18 @@ export default function PrivacyPage() {
               pin titles, your pin locations or your notes. This page will say so before that
               changes.
             </p>
+            <p>
+              <strong>And it will only happen if you say yes.</strong> GCI Places asks first, and
+              takes silence as a no — nothing is loaded and no identifier is created until you have
+              chosen. You can change your mind at any time under <em>Analytics preferences</em> on
+              the Saved page, and if your browser sends <em>Do Not Track</em> or has{" "}
+              <em>Global Privacy Control</em> switched on, measurement stays off regardless of what
+              is chosen here.
+            </p>
+            <p>
+              Declining never costs you anything: your saved places, lists, pins and notes are
+              stored separately and are not affected by that choice.
+            </p>
           </Prose>
         </section>
 

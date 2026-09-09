@@ -5,6 +5,18 @@ it, and added gates that keep the two agreeing. **Nothing was deployed.**
 
 This is what a release of that work has to get right.
 
+## Consent is resolved
+
+Phase 9.2A settled the global posture as **`GLOBAL_OPT_IN`** and implemented it
+in GCI Places: a first-party preference, Do Not Track and Global Privacy
+Control read by GCI's own code and outranking a stored grant, and a refusal
+that leaves saved places, lists, pins and notes untouched. Measurement is still
+switched off and no tracker is loaded.
+
+The sources and the condition-by-condition analysis are in the Places
+repository, `docs/ANALYTICS_CONSENT_DECISION.md`. The one remaining blocker is
+below.
+
 ## The blocker that comes first
 
 **The operator is not identified.** Nothing in any of the three repositories
@@ -52,11 +64,12 @@ policy describing absent features looks authoritative and is not.
 
 ## Before releasing
 
-- [ ] `PRIVACY_OPERATOR` decided — filled in, or released with the gap knowingly
+- [ ] `PRIVACY_OPERATOR` decided — see `docs/OPERATOR_AND_PRIVACY_OWNERSHIP.md`
 - [ ] `PRIVACY_PREPARED_ON` still reflects when the text was last changed
 - [ ] `node scripts/validate-privacy.mjs` passes on the merged tree
 - [ ] `node scripts/poison-privacy.mjs` passes
 - [ ] Places `npm run validate:privacy-copy` passes
+- [ ] Places `npm run validate:consent` and `npm run validate:readiness` pass
 - [ ] Media `npm run validate:links` passes
 - [ ] The Places release includes the personal map, not just the copy change
 
@@ -65,7 +78,9 @@ policy describing absent features looks authoritative and is not.
 - [ ] `https://www.globalcityintelligence.com/privacy/` returns 200
 - [ ] The footer link resolves on the main site, GCI Places and GCI Media
 - [ ] `https://www.globalcityintelligence.com/places/saved/` returns 200
-- [ ] The Saved page shows the corrected copy and its Privacy link
+- [ ] The Saved page shows the corrected copy, its Privacy link and the
+      Analytics preferences panel
+- [ ] A first visit shows the analytics ask; declining leaves Save working
 - [ ] The page appears in the sitemap
 - [ ] No page anywhere loads a tracker it did not load before
 
@@ -73,8 +88,10 @@ policy describing absent features looks authoritative and is not.
 
 It does not enable retention measurement. `RETENTION_ANALYTICS_ENABLED` stays
 `false`, no tracker is added to GCI Places, and no new identifier is created by
-any of this work.
+any of this work — including for readers who choose "Allow analytics", whose
+answer is recorded as authorisation for a future release and acted on by
+nothing today.
 
-Activation is Phase 9.3, and it is blocked on more than this release. See the
-Places repository, `docs/RETENTION_ANALYTICS_ACTIVATION.md` — in particular the
-consent question, which nothing here answers.
+Activation is Phase 9.3, and it is blocked on more than this release: the
+policy must be LIVE, and the operator must be named. See the Places repository,
+`docs/RETENTION_ANALYTICS_ACTIVATION.md`.

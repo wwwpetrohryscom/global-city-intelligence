@@ -63,6 +63,13 @@ export const PRIVACY_PREPARED_ON = "2026-09-09";
  * changes, the gate fails here rather than letting the page keep asserting
  * something that stopped being true.
  */
+/**
+ * The global consent posture, decided in Phase 9.2A against official EU, UK
+ * and Singapore guidance. Recorded here because the policy page describes it
+ * and the drift gate checks the page against this file.
+ */
+export const CONSENT_STRATEGY = "GLOBAL_OPT_IN" as const;
+
 export const PRIVACY_FACTS = {
   /** Main GCI loads the WebmasterID tracker. Verified in production HTML. */
   mainAnalyticsActive: true,
@@ -78,6 +85,12 @@ export const PRIVACY_FACTS = {
   analyticsHonoursGlobalPrivacyControl: true,
   /** No GCI cookie is set by any surface. Verified across all three products. */
   gciSetsCookies: false,
+  /**
+   * Measurement in GCI Places is opt-in and currently switched off. Both halves
+   * matter: the preference architecture exists, and nothing has been activated.
+   */
+  placesAnalyticsRequiresOptIn: true,
+  placesAnalyticsPreferenceKey: "gci.privacy.v1",
   /** No account system, and no server that could hold one. */
   accountsEnabled: false,
   cloudSyncEnabled: false,
@@ -191,11 +204,11 @@ export const PRIVACY_BLOCKERS = [
   },
   {
     id: "consent-mechanism",
-    blocks: "enabling retention measurement in GCI Places (Phase 9.3)",
+    blocks: "nothing — RESOLVED in Phase 9.2A",
     summary:
-      "The measurement provider stores a durable identifier in the browser. Whether that needs consent before it is written depends on the reader's jurisdiction and is not a question this repository can settle. No consent mechanism exists in any GCI product today.",
+      "Settled as GLOBAL_OPT_IN and implemented in GCI Places. The provider writes a durable identifier and sends a page view when its script initialises, with no supported way to disable either, so consent gates loading the script rather than emitting events. Do Not Track and Global Privacy Control are read by GCI's own code and outrank a stored grant. Declining leaves saved places, lists, pins and notes untouched.",
     resolvedBy:
-      "A specialist review of the applicable posture, and — if consent is required — a preferences mechanism decided as its own piece of work rather than bolted on.",
+      "Resolved. See the Places repository, docs/ANALYTICS_CONSENT_DECISION.md, for the official sources and the condition-by-condition analysis.",
   },
   {
     id: "places-not-deployed",
