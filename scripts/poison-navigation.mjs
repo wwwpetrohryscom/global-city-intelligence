@@ -167,6 +167,17 @@ const CASES = [
   },
   {
     group: "sitemap",
+    name: "the emitted robots.txt drops a proxied product's sitemap",
+    file: "app/robots.ts",
+    find: `      ...PROXIED_SITEMAPS.map((path) => absoluteUrl(path)),`,
+    replace: `      absoluteUrl(PROXIED_SITEMAPS[0] ?? "/blog/sitemap.xml"),`,
+    validator: PROXY,
+    expect: "does not advertise the proxied sitemap",
+    skipReason:
+      "the emitted-robots rule only runs with --out, and this harness runs the validators without a built tree because a rebuild is ~40 minutes. It WAS proven by hand: dropping the map() from app/robots.ts and rebuilding made both `validate-proxy-routes.mjs --out out` and `npm run validate:sitemap` fail with \"does not advertise the proxied sitemap /places/sitemap.xml\". The release run exercises both against the real artifact.",
+  },
+  {
+    group: "sitemap",
     name: "robots.txt points at a deployment origin instead of this domain",
     file: "lib/navigation/ecosystem.ts",
     find: `export const PROXIED_SITEMAPS = ["/blog/sitemap.xml", "/places/sitemap.xml"] as const;`,

@@ -9,16 +9,27 @@
  *   - every sitemap URL is absolute, HTTPS, and on the canonical host
  *   - every <url> has <lastmod>, <changefreq> and <priority>
  *   - no <changefreq>always (deterministic only)
- *   - robots.txt has exactly one Sitemap: line, pointing at the index
+ *   - robots.txt advertises this site's sitemap index AND every proxied
+ *     product's sitemap, all on the canonical host
  *   - sitemap URL set == generated indexable page set (no broken, no orphan)
  *
  * Exit non-zero on any failure.
  */
 import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
+import { createJiti } from "jiti";
 
 const ROOT = process.cwd();
 const APP = join(ROOT, ".next/server/app");
+/**
+ * The canonical host, and the sitemaps the OTHER two deployments publish inside
+ * the namespaces they own. Read from the navigation contract rather than typed
+ * here, so this gate and app/robots.ts cannot disagree about what should be
+ * advertised.
+ */
+const jiti = createJiti(ROOT, { alias: { "@": ROOT } });
+const { PROXIED_SITEMAPS } = jiti("./lib/navigation/ecosystem.ts");
+const SITE = "https://www.globalcityintelligence.com";
 const MAX_PER_SHARD = 45000;
 const errors = [];
 const warnings = [];
@@ -84,9 +95,30 @@ if (dupes.size) errors.push(`${dupes.size} duplicate URL(s) across shards, e.g. 
 const robots = read(join(APP, "robots.txt.body"));
 if (!robots) errors.push("robots.txt.body not found");
 else {
+  /*
+   * This used to require EXACTLY ONE Sitemap line. That rule encoded an
+   * assumption the architecture outgrew: one domain is now served by three
+   * independent deployments, and because each origin's own robots.txt
+   * disallows everything, this file is the only one a crawler reads for the
+   * host — so it is the only place /blog/sitemap.xml and /places/sitemap.xml
+   * can be announced. The rule now checks the SET, which is the thing that
+   * actually matters, rather than the count.
+   */
   const lines = [...robots.matchAll(/^\s*Sitemap:\s*(\S+)/gim)].map((m) => m[1]);
-  if (lines.length !== 1) errors.push(`robots.txt has ${lines.length} Sitemap: lines (expected 1)`);
-  else if (!/\/sitemap\.xml$/.test(lines[0])) errors.push(`robots Sitemap line not the index: ${lines[0]}`);
+  const ownIndex = `${SITE}/sitemap.xml`;
+  if (!lines.includes(ownIndex)) {
+    errors.push(`robots.txt does not advertise this site's sitemap index (${ownIndex})`);
+  }
+  for (const path of PROXIED_SITEMAPS) {
+    if (!lines.includes(`${SITE}${path}`)) {
+      errors.push(`robots.txt does not advertise the proxied sitemap ${path}`);
+    }
+  }
+  const expected = new Set([ownIndex, ...PROXIED_SITEMAPS.map((path) => `${SITE}${path}`)]);
+  for (const line of lines) {
+    if (!expected.has(line)) errors.push(`robots.txt advertises an unexpected sitemap: ${line}`);
+    if (!line.startsWith(`${SITE}/`)) errors.push(`robots Sitemap line is not on the canonical host: ${line}`);
+  }
 }
 
 // coverage: generated indexable pages vs sitemap
