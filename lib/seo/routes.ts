@@ -10,6 +10,7 @@ export const staticRoutes = {
   cities: "/cities",
   countries: "/countries",
   methodology: "/methodology",
+  privacy: "/privacy",
   dataSources: "/data-sources",
   rankings: "/rankings",
   compare: "/compare",

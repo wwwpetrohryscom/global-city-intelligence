@@ -98,6 +98,13 @@ export function getSitemapEntries(): SitemapEntry[] {
     { url: absoluteUrl(staticRoutes.countries), lastModified: staticFreshness, changeFrequency: "weekly", priority: 0.95 },
     { url: absoluteUrl(staticRoutes.methodology), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.8 },
     { url: absoluteUrl(staticRoutes.dataSources), lastModified: staticFreshness, changeFrequency: "monthly", priority: 0.8 },
+    /*
+     * The privacy policy is in the sitemap because this site has no
+     * legal-page exclusion convention — /methodology and /data-sources are
+     * both here — and because a policy people cannot find is not a
+     * disclosure. It is low priority: it should be findable, not promoted.
+     */
+    { url: absoluteUrl(staticRoutes.privacy), lastModified: staticFreshness, changeFrequency: "yearly", priority: 0.3 },
     { url: absoluteUrl(staticRoutes.rankings), lastModified: staticFreshness, changeFrequency: "weekly", priority: 0.9 },
     { url: absoluteUrl(staticRoutes.compare), lastModified: staticFreshness, changeFrequency: "weekly", priority: 0.9 },
     // The city finder is a genuine indexable surface: it carries static

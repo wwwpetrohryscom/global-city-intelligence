@@ -115,6 +115,13 @@ export function Footer() {
         <FooterColumn className="md:col-span-4 lg:col-span-2" label="Methodology and trust">
           <FooterLink href={staticRoutes.methodology}>Methodology</FooterLink>
           <FooterLink href={staticRoutes.dataSources}>Data sources</FooterLink>
+          {/*
+            Privacy belongs in the trust column, not the header. The global
+            header is a ten-destination contract shared with two other
+            products, and an eleventh item reopens the overflow that was
+            measured and fixed. A legal page is looked for, not browsed to.
+          */}
+          <FooterLink href={staticRoutes.privacy}>Privacy</FooterLink>
           <FooterLink href={staticRoutes.ecosystem}>HELPERG ecosystem</FooterLink>
         </FooterColumn>
 
