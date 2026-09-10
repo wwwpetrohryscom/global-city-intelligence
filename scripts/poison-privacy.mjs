@@ -68,20 +68,25 @@ function poison({ name, file, find, replace, expectRule }) {
 process.stdout.write("Privacy contract poison\n\n");
 
 /* ---- 1. The policy claims analytics is on while the layout has no tracker ---- */
+/*
+ * The tracker no longer lives in the layout — Phase 9.3A moved it behind a
+ * runtime, consent-gated loader — so the drift this case exists to catch is
+ * the opposite one: the layout reaching for the provider again.
+ */
 poison({
-  name: "policy claims main-site measurement is active while the layout has none",
+  name: "the layout loads the tracker unconditionally again",
   file: "app/layout.tsx",
-  find: 'src="https://webmasterid.com/tracker.iife.min.js"',
-  replace: 'src="https://webmasterid.example/disabled.js"',
-  expectRule: "privacy.analyticsDrift",
+  find: "        <AnalyticsLoader />",
+  replace: '        <script defer src="https://webmasterid.com/tracker.iife.min.js" />\n        <AnalyticsLoader />',
+  expectRule: "privacy.unconditionalTracker",
 });
 
 /* ---- 2. A tracker appears that the policy does not disclose ---- */
 poison({
   name: "an undisclosed third-party script added to the layout",
   file: "app/layout.tsx",
-  find: "        <Script",
-  replace: '        <Script src="https://cdn.trackerco.test/t.js" strategy="afterInteractive" id="x" />\n        <Script',
+  find: "        <AnalyticsPrompt />",
+  replace: '        <script src="https://cdn.trackerco.test/t.js" defer />\n        <AnalyticsPrompt />',
   expectRule: "privacy.undisclosedProvider",
 });
 
@@ -286,6 +291,63 @@ poison({
   find: "href={`mailto:${PRIVACY_OPERATOR.contact}`}",
   replace: 'href="/contact"',
   expectRule: "privacy.operatorContact",
+});
+
+/* ---- Active measurement described as universal rather than optional ---- */
+poison({
+  name: "the page stops saying measurement needs permission",
+  file: "app/privacy/page.tsx",
+  find: "<strong>Nothing here is measured unless you allow it.</strong> That applies to the",
+  replace: "<strong>Global City Intelligence measures how its sites are used.</strong> That applies to the",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page stops saying silence is a refusal",
+  file: "app/privacy/page.tsx",
+  find: "permanently, and silence counts as declining.",
+  replace: "permanently.",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page stops saying the choice can be changed",
+  file: "app/privacy/page.tsx",
+  find: "You can change your mind at any time — under <em>Your analytics choice</em> below, or",
+  replace: "This applies from now on — under <em>Your analytics choice</em> below, or",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page stops saying withdrawal deletes the identifier",
+  file: "app/privacy/page.tsx",
+  find: "setting. Withdrawing stops it immediately and deletes the identifier from your",
+  replace: "setting. Withdrawing stops it immediately for the",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page stops excluding private personal-map content",
+  file: "app/privacy/page.tsx",
+  find: "<strong>It never includes your list names, your pin titles, your pin locations or",
+  replace: "<strong>It never includes your saved cities or",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page still claims GCI Places measures nothing",
+  file: "app/privacy/page.tsx",
+  find: "<strong>Nothing here is measured unless you allow it.</strong>",
+  replace: "<strong>GCI Places currently measures nothing.</strong>",
+  expectRule: "privacy.staleAnalytics",
+});
+
+poison({
+  name: "measurement is active while the opt-in requirement is dropped",
+  file: "lib/legal/privacy.ts",
+  find: "  placesAnalyticsRequiresOptIn: true,",
+  replace: "  placesAnalyticsRequiresOptIn: false,",
+  expectRule: "privacy.consentDrift",
 });
 
 /* ================================================================== */

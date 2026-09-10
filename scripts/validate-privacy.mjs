@@ -68,22 +68,47 @@ function fact(name) {
 }
 
 /* ------------------------------------------------------------------ *
- * 1. THE MAIN SITE'S ANALYTICS CLAIM MATCHES THE MAIN SITE'S LAYOUT.
+ * 1. THE MAIN SITE'S ANALYTICS CLAIM MATCHES HOW THE TRACKER ACTUALLY ARRIVES.
+ *
+ * This rule used to require the tracker to be IN THE LAYOUT whenever the
+ * policy said measurement was active. Phase 9.3A established that a tag in the
+ * layout is exactly what must not happen: it ships in every static page and
+ * emits a preload, so a browser contacts the provider before anything has
+ * considered a preference — and a request to a third party is the act consent
+ * is about.
+ *
+ * So the rule inverts. Measurement being active now means a consent-gated
+ * LOADER exists; the layout must not carry a tracker at all.
  * ------------------------------------------------------------------ */
 {
   const layout = code(readFileSync(join(ROOT, "app/layout.tsx"), "utf8"));
-  const trackerPresent = /webmasterid\.com\/tracker/.test(layout);
+  const loaderPath = join(ROOT, "lib/analytics/tracker.ts");
+  const layoutLoadsTracker = /webmasterid\.com\/tracker/.test(layout);
+  const loaderExists = existsSync(loaderPath);
   const claimed = fact("mainAnalyticsActive");
+
   if (claimed === null) {
     fail("privacy.fact", "PRIVACY_FACTS", "mainAnalyticsActive is not declared");
-  } else if (claimed !== trackerPresent) {
+  } else if (layoutLoadsTracker) {
+    fail(
+      "privacy.unconditionalTracker",
+      "app/layout.tsx",
+      "the layout loads the tracker directly; it must be inserted at runtime after authorisation",
+    );
+  } else if (claimed && !loaderExists) {
     fail(
       "privacy.analyticsDrift",
-      "app/layout.tsx",
-      `the policy says the main site's measurement is ${claimed ? "active" : "inactive"}, but the layout ${trackerPresent ? "loads" : "does not load"} the tracker`,
+      "lib/analytics/tracker.ts",
+      "the policy says measurement is active but there is no consent-gated loader",
+    );
+  } else if (!claimed && loaderExists) {
+    fail(
+      "privacy.analyticsDrift",
+      "lib/analytics/tracker.ts",
+      "a tracker loader exists while the policy says the main site measures nothing",
     );
   } else {
-    notes.push(`main-site measurement: ${trackerPresent ? "active" : "inactive"} — layout and policy agree`);
+    notes.push(`main-site measurement: ${claimed ? "active, consent-gated at runtime" : "inactive"} — loader and policy agree`);
   }
 }
 
@@ -263,6 +288,75 @@ for (const guarantee of [
   ];
   for (const [pattern, why] of unsupported) {
     if (pattern.test(text)) fail("privacy.unsupportedClaim", "app/privacy/page.tsx", why);
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * 6b. ACTIVE MEASUREMENT MUST BE DESCRIBED AS OPTIONAL, NOT AS UNIVERSAL.
+ *
+ * `placesAnalyticsActive` means the capability is live. It does NOT mean every
+ * visitor is measured, and the difference is the whole consent architecture: a
+ * reader who has said nothing is not measured, and one who refused never will
+ * be. A policy that said "GCI Places uses analytics", full stop, would be false
+ * for everyone who has not chosen — which is everyone, until they do.
+ *
+ * So while measurement is active the page must carry the conditions, and must
+ * not carry the sentence it replaced.
+ * ------------------------------------------------------------------ */
+{
+  const page = code(readFileSync(join(ROOT, "app/privacy/page.tsx"), "utf8"));
+  /*
+   * SCOPED TO THE MEASUREMENT SECTION, and it has to be.
+   *
+   * The first version searched the whole page, so deleting "list names" from
+   * the paragraph about what analytics excludes still passed — the phrase
+   * survived in an unrelated section about browser storage. A guarantee has to
+   * be made where the reader is being told what is collected, not somewhere
+   * else on the same page.
+   */
+  const sectionStart = page.indexOf('title="Measuring how the site is used"');
+  const sectionEnd = page.indexOf("<SectionHeading", sectionStart + 1);
+  const text = (sectionStart === -1 ? page : page.slice(sectionStart, sectionEnd === -1 ? undefined : sectionEnd))
+    .replace(/\s+/g, " ");
+  if (sectionStart === -1) {
+    fail("privacy.activeAnalytics", "app/privacy/page.tsx", "the measurement section is missing or was renamed");
+  }
+  const active = /placesAnalyticsActive:\s*true/.test(contractCode);
+  const optIn = /placesAnalyticsRequiresOptIn:\s*true/.test(contractCode);
+
+  if (active && !optIn) {
+    fail("privacy.consentDrift", "PRIVACY_FACTS", "measurement is active in GCI Places without the opt-in requirement");
+  }
+  if (active) {
+    for (const [what, pattern] of [
+      ["that nothing happens unless the reader allows it", /unless you allow it|only if you say yes|asks first/i],
+      /*
+       * The claim, not the sentence. Several phrasings genuinely say silence is
+       * not agreement, and a rule pinned to one of them would fail an honest
+       * rewrite while passing an evasive one. What must never be absent is the
+       * statement itself, which the poison case removes to prove.
+       */
+      [
+        "that silence counts as a refusal",
+        /takes silence as a no|silence as a no|silence counts as declining|silence is not (agreement|consent)/i,
+      ],
+      ["that the choice can be changed", /change your mind/i],
+      ["that withdrawal deletes the identifier", /deletes the identifier|delete the identifier/i],
+      ["that DNT and GPC override it", /Do Not Track/i],
+      ["that private personal-map content is excluded", /list names/i],
+      ["that there is no advertising or profiling", /no advertising, no profiling|no profiling/i],
+    ]) {
+      if (!pattern.test(text)) {
+        fail("privacy.activeAnalytics", "app/privacy/page.tsx", `measurement is active but the page does not say ${what}`);
+      }
+    }
+    /* The sentence that became false the moment activation shipped. */
+    if (/GCI Places currently measures nothing|loads no measurement script/i.test(text)) {
+      fail("privacy.staleAnalytics", "app/privacy/page.tsx", "the page still says GCI Places measures nothing while measurement is active");
+    }
+  }
+  if (!active && !/currently measures nothing|measures nothing unless/i.test(text)) {
+    fail("privacy.staleAnalytics", "app/privacy/page.tsx", "measurement is inactive but the page does not say so");
   }
 }
 

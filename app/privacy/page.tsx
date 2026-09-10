@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BreadcrumbNav } from "@/components/seo/breadcrumb-nav";
+import { AnalyticsPreferencesPanel } from "@/components/analytics/AnalyticsPreferences";
 import { JsonLd } from "@/components/seo/json-ld";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -204,41 +205,71 @@ export default function PrivacyPage() {
           <SectionHeading title="Measuring how the site is used" />
           <Prose>
             <p>
-              <strong>The main site</strong> uses WebmasterID to count visits and see which pages
-              are read. It stores a random identifier in your browser — in local storage, not a
-              cookie — so that repeat visits from the same browser are counted once rather than many
-              times. That identifier is not a name and is not linked to an account, because there
-              are no accounts; but it does persist, so it can connect your visits to this site over
-              time until you clear your browser data.
+              <strong>Nothing here is measured unless you allow it.</strong> That applies to the
+              whole of Global City Intelligence — the main site and GCI Places alike. Until you
+              choose, no measurement script is loaded, nothing is requested from a measurement
+              company, no identifier is created and nothing is sent. Declining has the same effect,
+              permanently, and silence counts as declining.
+            </p>
+            <p>
+              If you do allow it, we use WebmasterID to count visits and see which pages are read.
+              It stores a random identifier in your browser — in local storage, not a cookie — so
+              that repeat visits from the same browser are counted once rather than many times.
+              That identifier is not a name and is not linked to an account, because there are no
+              accounts; but it does persist, so it can connect your visits to this site over time
+              until you clear your browser data, or until you withdraw below, which deletes it.
+            </p>
+            <p>
+              It is <strong>one choice for one site</strong>. The main site and GCI Places share the
+              same address, so answering in either place answers for both, and you are not asked
+              twice.
             </p>
             <p>
               If your browser sends <em>Do Not Track</em>, or if you have{" "}
-              <em>Global Privacy Control</em> switched on, the measurement script does not start at
-              all: no identifier is created and nothing is sent.
-            </p>
-            <p>
-              <strong>GCI Places currently measures nothing.</strong> It loads no measurement script
-              and sends no usage data. We may switch on a limited form of measurement there in
-              future, to answer questions like &ldquo;do people who save a place come back to
-              it?&rdquo;. If we do, it will record <em>that</em> an action happened — a place saved,
-              a list created, a map opened — along with which city and category it concerned, and a
-              rough sense of how much you have saved. It will never include your list names, your
-              pin titles, your pin locations or your notes. This page will say so before that
-              changes.
-            </p>
-            <p>
-              <strong>And it will only happen if you say yes.</strong> GCI Places asks first, and
-              takes silence as a no — nothing is loaded and no identifier is created until you have
-              chosen. You can change your mind at any time under <em>Analytics preferences</em> on
-              the Saved page, and if your browser sends <em>Do Not Track</em> or has{" "}
               <em>Global Privacy Control</em> switched on, measurement stays off regardless of what
-              is chosen here.
+              is chosen here: nothing is requested and no identifier is created. Turning that
+              setting off later does not silently re-enable anything you had refused.
+            </p>
+            <p>
+              <strong>What differs between the two is what is counted, not whether you are
+              asked.</strong> On the main site it is ordinary page measurement: which pages were
+              read, and a repeat visit counted once. GCI Places adds a little more, because it has
+              features to answer questions about — it records <em>that</em> certain actions happened
+              — a place saved, a list created, a map opened — along with which city and category
+              it concerned and a rough sense of how much you have saved. It is used to answer
+              questions like &ldquo;do people who save a place come back to it?&rdquo;, and for
+              nothing else: there is no advertising, no profiling, no session recording, and nothing
+              is sold or shared for marketing.
+            </p>
+            <p>
+              <strong>It never includes your list names, your pin titles, your pin locations or
+              your notes.</strong> Those stay in your browser. Nor is there any record of{" "}
+              <em>which</em> place you saved — only its city and category — so nothing here can
+              become a public count of how popular a place is.
+            </p>
+            <p>
+              You can change your mind at any time — under <em>Your analytics choice</em> below, or
+              under <em>Analytics preferences</em> on the GCI Places Saved page; they are the same
+              setting. Withdrawing stops it immediately and deletes the identifier from your
+              browser.
             </p>
             <p>
               Declining never costs you anything: your saved places, lists, pins and notes are
               stored separately and are not affected by that choice.
             </p>
           </Prose>
+        </section>
+
+        <section>
+          <SectionHeading title="Your analytics choice" />
+          <Prose>
+            <p>
+              This is the choice itself, so that changing it does not mean hunting for it. It
+              covers this site and GCI Places together, because they are one site behind one
+              address.
+            </p>
+          </Prose>
+          <AnalyticsPreferencesPanel />
         </section>
 
         <section>

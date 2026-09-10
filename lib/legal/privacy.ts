@@ -96,10 +96,19 @@ export const CONSENT_STRATEGY = "GLOBAL_OPT_IN" as const;
 export const PRIVACY_FACTS = {
   /** Main GCI loads the WebmasterID tracker. Verified in production HTML. */
   mainAnalyticsActive: true,
-  /** Places loads no analytics script at all. Verified in production HTML. */
-  placesAnalyticsActive: false,
+  /**
+   * Phase 9.3: GCI Places may now load the same tracker — but ONLY after a
+   * reader has explicitly allowed it, on the canonical host, with Do Not Track
+   * and Global Privacy Control able to override a stored grant.
+   *
+   * "Active" here means the capability is live, NOT that every visitor is
+   * measured. The page must describe it that way; a policy that says GCI
+   * Places is measured, full stop, would be false for everyone who has said
+   * nothing — which is everyone, until they choose.
+   */
+  placesAnalyticsActive: true,
   /** GCI Places' retention measurement flag. Source: Places analytics.ts. */
-  placesRetentionAnalyticsEnabled: false,
+  placesRetentionAnalyticsEnabled: true,
   /** The tracker's durable browser id lives in localStorage, not a cookie. */
   analyticsIdentifierStorage: "localStorage" as const,
   analyticsIdentifierKey: "wmid:av:v1",
@@ -109,8 +118,9 @@ export const PRIVACY_FACTS = {
   /** No GCI cookie is set by any surface. Verified across all three products. */
   gciSetsCookies: false,
   /**
-   * Measurement in GCI Places is opt-in and currently switched off. Both halves
-   * matter: the preference architecture exists, and nothing has been activated.
+   * Measurement in GCI Places is opt-in. This is the half that did not change
+   * in Phase 9.3 and must never change: activation made measurement possible,
+   * not automatic.
    */
   placesAnalyticsRequiresOptIn: true,
   placesAnalyticsPreferenceKey: "gci.privacy.v1",
