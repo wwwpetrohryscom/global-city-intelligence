@@ -460,16 +460,56 @@ if (!tracker.isMeasuredHost("www.globalcityintelligence.com")) {
         throw error;
       }
     };
-    const offending = grep("webmasterid");
-    const preloading = grep('rel="(preload|prefetch|preconnect|dns-prefetch|modulepreload)"[^>]*webmasterid');
+    /*
+     * WHAT IS FORBIDDEN IS A FETCH, NOT A MENTION.
+     *
+     * The first version failed on any page containing "webmasterid" and caught
+     * two that are correct: /ecosystem, which LINKS to WebmasterID as a sibling
+     * HELPERG product, and /privacy, which DISCLOSES it as the measurement
+     * provider — naming `wmid:av:v1` in the storage table because the policy is
+     * required to. A rule that fails a release for disclosing the provider
+     * would pressure somebody to delete a disclosure to keep a privacy gate
+     * green, which is precisely backwards.
+     *
+     * So the check is for the things that make a browser CONTACT the provider
+     * before anyone has agreed: the tracker script URL, the ingest endpoint, a
+     * <script> naming the host, and every resource hint or speculation rule
+     * that would fetch it. A hyperlink a reader may choose to follow, and a
+     * sentence describing what happens after they agree, are neither.
+     */
+    const initiators = [
+      ["the tracker script URL", "tracker\\.iife\\.min\\.js"],
+      ["the ingest endpoint", "webmasterid-ingest-api"],
+      ["a <script> naming the provider", "<script[^>]*webmasterid"],
+      ["a resource hint for the provider", 'rel="(preload|prefetch|preconnect|dns-prefetch|modulepreload)"[^>]*webmasterid'],
+      ["a speculation rule", "speculationrules"],
+    ];
+    /*
+     * ONE PASS OVER 21 GB, not five. The union answers the only question that
+     * matters — is there anything here that would fetch the provider — and the
+     * per-pattern classification runs afterwards, on the handful of files it
+     * found, which costs nothing. A gate slow enough to be skipped protects
+     * nobody.
+     */
+    const offending = grep(initiators.map(([, pattern]) => `(${pattern})`).join("|"));
     if (offending.length > 0) {
-      fail("consent.staticHtml", "out", `${offending.length} emitted page(s) name the provider, e.g. ${relative(out, offending[0])}`);
+      for (const [what, pattern] of initiators) {
+        const hits = offending.filter((f) => new RegExp(pattern, "i").test(readFileSync(f, "utf8")));
+        if (hits.length > 0) {
+          fail("consent.staticHtml", "out", `${hits.length} emitted page(s) contain ${what}, e.g. ${relative(out, hits[0])}`);
+        }
+      }
     }
+    const preloading = offending.filter((f) =>
+      /rel="(preload|prefetch|preconnect|dns-prefetch|modulepreload)"[^>]*webmasterid/i.test(readFileSync(f, "utf8")),
+    );
     if (preloading.length > 0) {
       fail("consent.preload", relative(out, preloading[0]), "asks the browser to fetch the provider ahead of any decision");
     }
+    const mentions = grep("webmasterid");
     notes.push(
-      `emitted output: ${offending.length} pages naming the provider, ${preloading.length} preloading it`,
+      `emitted output: ${offending.length} pages that would fetch the provider, ${preloading.length} preloading it ` +
+        `(${mentions.length} mention it in a link or a disclosure, which is expected)`,
     );
   }
 }
