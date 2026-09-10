@@ -267,6 +267,66 @@ for (const guarantee of [
 }
 
 /* ------------------------------------------------------------------ *
+ * 6b. ACTIVE MEASUREMENT MUST BE DESCRIBED AS OPTIONAL, NOT AS UNIVERSAL.
+ *
+ * `placesAnalyticsActive` means the capability is live. It does NOT mean every
+ * visitor is measured, and the difference is the whole consent architecture: a
+ * reader who has said nothing is not measured, and one who refused never will
+ * be. A policy that said "GCI Places uses analytics", full stop, would be false
+ * for everyone who has not chosen — which is everyone, until they do.
+ *
+ * So while measurement is active the page must carry the conditions, and must
+ * not carry the sentence it replaced.
+ * ------------------------------------------------------------------ */
+{
+  const page = code(readFileSync(join(ROOT, "app/privacy/page.tsx"), "utf8"));
+  /*
+   * SCOPED TO THE MEASUREMENT SECTION, and it has to be.
+   *
+   * The first version searched the whole page, so deleting "list names" from
+   * the paragraph about what analytics excludes still passed — the phrase
+   * survived in an unrelated section about browser storage. A guarantee has to
+   * be made where the reader is being told what is collected, not somewhere
+   * else on the same page.
+   */
+  const sectionStart = page.indexOf('title="Measuring how the site is used"');
+  const sectionEnd = page.indexOf("<SectionHeading", sectionStart + 1);
+  const text = (sectionStart === -1 ? page : page.slice(sectionStart, sectionEnd === -1 ? undefined : sectionEnd))
+    .replace(/\s+/g, " ");
+  if (sectionStart === -1) {
+    fail("privacy.activeAnalytics", "app/privacy/page.tsx", "the measurement section is missing or was renamed");
+  }
+  const active = /placesAnalyticsActive:\s*true/.test(contractCode);
+  const optIn = /placesAnalyticsRequiresOptIn:\s*true/.test(contractCode);
+
+  if (active && !optIn) {
+    fail("privacy.consentDrift", "PRIVACY_FACTS", "measurement is active in GCI Places without the opt-in requirement");
+  }
+  if (active) {
+    for (const [what, pattern] of [
+      ["that nothing happens unless the reader allows it", /unless you allow it|only if you say yes|asks first/i],
+      ["that silence counts as a refusal", /takes silence as a no|silence as a no/i],
+      ["that the choice can be changed", /change your mind/i],
+      ["that withdrawal deletes the identifier", /deletes the identifier|delete the identifier/i],
+      ["that DNT and GPC override it", /Do Not Track/i],
+      ["that private personal-map content is excluded", /list names/i],
+      ["that there is no advertising or profiling", /no advertising, no profiling|no profiling/i],
+    ]) {
+      if (!pattern.test(text)) {
+        fail("privacy.activeAnalytics", "app/privacy/page.tsx", `measurement is active but the page does not say ${what}`);
+      }
+    }
+    /* The sentence that became false the moment activation shipped. */
+    if (/GCI Places currently measures nothing|loads no measurement script/i.test(text)) {
+      fail("privacy.staleAnalytics", "app/privacy/page.tsx", "the page still says GCI Places measures nothing while measurement is active");
+    }
+  }
+  if (!active && !/currently measures nothing|measures nothing unless/i.test(text)) {
+    fail("privacy.staleAnalytics", "app/privacy/page.tsx", "measurement is inactive but the page does not say so");
+  }
+}
+
+/* ------------------------------------------------------------------ *
  * 7. BLOCKERS ARE VISIBLE, NOT BURIED.
  * ------------------------------------------------------------------ */
 {

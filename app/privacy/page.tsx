@@ -217,22 +217,31 @@ export default function PrivacyPage() {
               all: no identifier is created and nothing is sent.
             </p>
             <p>
-              <strong>GCI Places currently measures nothing.</strong> It loads no measurement script
-              and sends no usage data. We may switch on a limited form of measurement there in
-              future, to answer questions like &ldquo;do people who save a place come back to
-              it?&rdquo;. If we do, it will record <em>that</em> an action happened — a place saved,
-              a list created, a map opened — along with which city and category it concerned, and a
-              rough sense of how much you have saved. It will never include your list names, your
-              pin titles, your pin locations or your notes. This page will say so before that
-              changes.
+              <strong>GCI Places measures nothing unless you allow it.</strong> It asks first and
+              takes silence as a no: until you choose, no measurement script is loaded, no
+              identifier is created and nothing is sent. Refusing has the same effect, permanently.
             </p>
             <p>
-              <strong>And it will only happen if you say yes.</strong> GCI Places asks first, and
-              takes silence as a no — nothing is loaded and no identifier is created until you have
-              chosen. You can change your mind at any time under <em>Analytics preferences</em> on
-              the Saved page, and if your browser sends <em>Do Not Track</em> or has{" "}
-              <em>Global Privacy Control</em> switched on, measurement stays off regardless of what
-              is chosen here.
+              If you do allow it, the same WebmasterID script described above is loaded there, and
+              it stores the same kind of random identifier in your browser so repeat visits are
+              counted once rather than many times. On top of the pages you read, GCI Places then
+              records <em>that</em> certain actions happened — a place saved, a list created, a map
+              opened — along with which city and category it concerned and a rough sense of how much
+              you have saved. It is used to answer questions like &ldquo;do people who save a place
+              come back to it?&rdquo;, and for nothing else: there is no advertising, no profiling,
+              no session recording, and nothing is sold or shared for marketing.
+            </p>
+            <p>
+              <strong>It never includes your list names, your pin titles, your pin locations or
+              your notes.</strong> Those stay in your browser. Nor is there any record of{" "}
+              <em>which</em> place you saved — only its city and category — so nothing here can
+              become a public count of how popular a place is.
+            </p>
+            <p>
+              You can change your mind at any time under <em>Analytics preferences</em> on the Saved
+              page. Withdrawing stops it immediately, and deletes the identifier from your browser.
+              If your browser sends <em>Do Not Track</em>, or has <em>Global Privacy Control</em>{" "}
+              switched on, measurement stays off regardless of what is chosen here.
             </p>
             <p>
               Declining never costs you anything: your saved places, lists, pins and notes are

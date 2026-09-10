@@ -288,6 +288,63 @@ poison({
   expectRule: "privacy.operatorContact",
 });
 
+/* ---- Active measurement described as universal rather than optional ---- */
+poison({
+  name: "the page stops saying measurement needs permission",
+  file: "app/privacy/page.tsx",
+  find: "<strong>GCI Places measures nothing unless you allow it.</strong> It asks first and",
+  replace: "<strong>GCI Places measures how the site is used.</strong> It counts pages and",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page stops saying silence is a refusal",
+  file: "app/privacy/page.tsx",
+  find: "takes silence as a no: until you choose, no measurement script is loaded, no",
+  replace: "begins straight away: from your first visit a measurement script is loaded, an",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page stops saying the choice can be changed",
+  file: "app/privacy/page.tsx",
+  find: "You can change your mind at any time under <em>Analytics preferences</em> on the Saved",
+  replace: "This applies from now on, under <em>Analytics preferences</em> on the Saved",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page stops saying withdrawal deletes the identifier",
+  file: "app/privacy/page.tsx",
+  find: "Withdrawing stops it immediately, and deletes the identifier from your browser.",
+  replace: "Withdrawing stops it immediately.",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page stops excluding private personal-map content",
+  file: "app/privacy/page.tsx",
+  find: "your list names, your pin titles, your pin locations or",
+  replace: "your saved cities or",
+  expectRule: "privacy.activeAnalytics",
+});
+
+poison({
+  name: "the page still claims GCI Places measures nothing",
+  file: "app/privacy/page.tsx",
+  find: "<strong>GCI Places measures nothing unless you allow it.</strong>",
+  replace: "<strong>GCI Places currently measures nothing.</strong>",
+  expectRule: "privacy.staleAnalytics",
+});
+
+poison({
+  name: "measurement is active while the opt-in requirement is dropped",
+  file: "lib/legal/privacy.ts",
+  find: "  placesAnalyticsRequiresOptIn: true,",
+  replace: "  placesAnalyticsRequiresOptIn: false,",
+  expectRule: "privacy.consentDrift",
+});
+
 /* ================================================================== */
 const final = runValidator();
 process.stdout.write(`\n  restored: privacy contract is ${final.ok ? "GREEN" : "RED"}\n`);
