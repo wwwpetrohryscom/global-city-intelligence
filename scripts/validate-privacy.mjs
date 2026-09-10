@@ -68,22 +68,47 @@ function fact(name) {
 }
 
 /* ------------------------------------------------------------------ *
- * 1. THE MAIN SITE'S ANALYTICS CLAIM MATCHES THE MAIN SITE'S LAYOUT.
+ * 1. THE MAIN SITE'S ANALYTICS CLAIM MATCHES HOW THE TRACKER ACTUALLY ARRIVES.
+ *
+ * This rule used to require the tracker to be IN THE LAYOUT whenever the
+ * policy said measurement was active. Phase 9.3A established that a tag in the
+ * layout is exactly what must not happen: it ships in every static page and
+ * emits a preload, so a browser contacts the provider before anything has
+ * considered a preference — and a request to a third party is the act consent
+ * is about.
+ *
+ * So the rule inverts. Measurement being active now means a consent-gated
+ * LOADER exists; the layout must not carry a tracker at all.
  * ------------------------------------------------------------------ */
 {
   const layout = code(readFileSync(join(ROOT, "app/layout.tsx"), "utf8"));
-  const trackerPresent = /webmasterid\.com\/tracker/.test(layout);
+  const loaderPath = join(ROOT, "lib/analytics/tracker.ts");
+  const layoutLoadsTracker = /webmasterid\.com\/tracker/.test(layout);
+  const loaderExists = existsSync(loaderPath);
   const claimed = fact("mainAnalyticsActive");
+
   if (claimed === null) {
     fail("privacy.fact", "PRIVACY_FACTS", "mainAnalyticsActive is not declared");
-  } else if (claimed !== trackerPresent) {
+  } else if (layoutLoadsTracker) {
+    fail(
+      "privacy.unconditionalTracker",
+      "app/layout.tsx",
+      "the layout loads the tracker directly; it must be inserted at runtime after authorisation",
+    );
+  } else if (claimed && !loaderExists) {
     fail(
       "privacy.analyticsDrift",
-      "app/layout.tsx",
-      `the policy says the main site's measurement is ${claimed ? "active" : "inactive"}, but the layout ${trackerPresent ? "loads" : "does not load"} the tracker`,
+      "lib/analytics/tracker.ts",
+      "the policy says measurement is active but there is no consent-gated loader",
+    );
+  } else if (!claimed && loaderExists) {
+    fail(
+      "privacy.analyticsDrift",
+      "lib/analytics/tracker.ts",
+      "a tracker loader exists while the policy says the main site measures nothing",
     );
   } else {
-    notes.push(`main-site measurement: ${trackerPresent ? "active" : "inactive"} — layout and policy agree`);
+    notes.push(`main-site measurement: ${claimed ? "active, consent-gated at runtime" : "inactive"} — loader and policy agree`);
   }
 }
 
@@ -305,7 +330,16 @@ for (const guarantee of [
   if (active) {
     for (const [what, pattern] of [
       ["that nothing happens unless the reader allows it", /unless you allow it|only if you say yes|asks first/i],
-      ["that silence counts as a refusal", /takes silence as a no|silence as a no/i],
+      /*
+       * The claim, not the sentence. Several phrasings genuinely say silence is
+       * not agreement, and a rule pinned to one of them would fail an honest
+       * rewrite while passing an evasive one. What must never be absent is the
+       * statement itself, which the poison case removes to prove.
+       */
+      [
+        "that silence counts as a refusal",
+        /takes silence as a no|silence as a no|silence counts as declining|silence is not (agreement|consent)/i,
+      ],
       ["that the choice can be changed", /change your mind/i],
       ["that withdrawal deletes the identifier", /deletes the identifier|delete the identifier/i],
       ["that DNT and GPC override it", /Do Not Track/i],
