@@ -123,6 +123,112 @@ check(
   `${stripped.length} German alternates lost their trailing slash in the build (e.g. ${stripped[0]}) — each one now points at a redirect`,
 );
 
+/*
+ * ------------------------------------------------------------------------
+ * THE VISIBLE LANGUAGE SWITCH USES THIS SAME CONTRACT.
+ *
+ * The switcher reads the page's own `<link rel="alternate" hreflang>` elements
+ * — the ones validated above — so "visible targets == hreflang targets" is true
+ * by construction rather than by comparison. What still has to be proven is
+ * that it STAYS that way: that the component reads those elements and nothing
+ * else, that it ships no route corpus, and that it performs no runtime lookup.
+ * Those are properties of the source and the bundle, so they are checked here.
+ * ------------------------------------------------------------------------
+ */
+{
+  const switcherSource = readFileSync(join(ROOT, "components", "i18n", "LanguageSwitcher.tsx"), "utf8");
+  /*
+   * READ THE CODE, NOT THE PROSE ABOUT THE CODE.
+   *
+   * The first version of the locale-agnosticism check tested the whole file and
+   * failed on the component's own doc comment — which says, in as many words,
+   * that it knows nothing about Germany. A rule that cannot tell an assertion
+   * from a description of an assertion punishes the file for explaining itself.
+   * Comments are stripped before any of these checks run.
+   */
+  const switcher = switcherSource
+    .replace(/\/\*[\s\S]*?\*\//g, " ")
+    .replace(/(^|[^:])\/\/.*$/gm, "$1 ");
+
+  check(
+    /querySelectorAll\(\s*["']link\[rel=['"]alternate['"]\]\[hreflang\]["']\s*\)/.test(switcher),
+    "the language switcher no longer derives its options from the page's hreflang links",
+  );
+  check(
+    !/fetch\(|XMLHttpRequest|import\(/.test(switcher),
+    "the language switcher performs a runtime lookup — locale availability must be resolved at build time",
+  );
+  check(
+    !/german|deutschland|\/de\//i.test(switcher.replace(/\bde-DE\b/g, "").replace(/Deutsch/g, "")),
+    "the language switcher special-cases German — it must be locale-agnostic and reusable",
+  );
+  check(
+    !/globalcityintelligence-de\.netlify\.app/.test(switcher),
+    "the language switcher names the physical Netlify origin",
+  );
+  /*
+   * THE EXACT COMPARISON, NOT THE SUBSTRING.
+   *
+   * This read /x-default/ and a poison case renaming the comparison to
+   * "xx-default" sailed through — because "xx-default" contains "x-default".
+   * A substring test on a token is not a test of that token.
+   */
+  check(
+    /locale === ["']x-default["']/.test(switcher),
+    "the language switcher does not exclude x-default, which is a routing hint and not a language",
+  );
+
+  /*
+   * THE CONTRACT IS STILL WIRED INTO THE METADATA.
+   *
+   * Everything above reads the emitted artifact, so a change that stops
+   * createMetadata calling the contract cannot be seen until something is
+   * rebuilt — and by then the alternates are simply gone and this validator
+   * reports "0 pages emit a German alternate" without saying why. Checking the
+   * wiring at the source names the cause.
+   */
+  const metadata = readFileSync(join(ROOT, "lib", "seo", "metadata.ts"), "utf8")
+    .replace(/\/\*[\s\S]*?\*\//g, " ")
+    .replace(/(^|[^:])\/\/.*$/gm, "$1 ");
+  check(
+    /germanAlternate\(\s*path\s*\)/.test(metadata),
+    "createMetadata no longer asks the pair contract for a German alternate — pages will emit no German alternate at all",
+  );
+  check(
+    /languages\s*:/.test(metadata),
+    "createMetadata no longer emits an alternates.languages cluster",
+  );
+
+  /* The bundle must not carry the corpus. */
+  const chunkDir = join(ROOT, "out", "_next", "static", "chunks");
+  if (existsSync(chunkDir)) {
+    const probes = [
+      "german-localization-pairs",
+      "/de/deutschland/koeln/",
+      "germany-localization-completeness",
+      "SOURCE_TEMPLATED_DEFERRED",
+    ];
+    const walk = (dir) => {
+      const out = [];
+      for (const entry of readdirSync(dir)) {
+        const full = join(dir, entry);
+        if (statSync(full).isDirectory()) out.push(...walk(full));
+        else if (entry.endsWith(".js")) out.push(full);
+      }
+      return out;
+    };
+    const chunks = walk(chunkDir);
+    for (const probe of probes) {
+      const hit = chunks.find((f) => readFileSync(f, "utf8").includes(probe));
+      check(
+        hit === undefined,
+        `client JavaScript contains "${probe}" (${hit ? relative(OUT, hit) : ""}) — the localization corpus must never reach the browser`,
+      );
+    }
+    checks += chunks.length;
+  }
+}
+
 if (errors.length > 0) {
   console.error(`German alternate validation FAILED — ${errors.length} problem(s)`);
   for (const e of errors.slice(0, 12)) console.error(`  ${e}`);
