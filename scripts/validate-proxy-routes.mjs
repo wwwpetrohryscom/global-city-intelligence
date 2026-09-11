@@ -3,7 +3,8 @@
  * PROXY ROUTE GATE.
  *
  * Two of this site's three public products are served by other deployments
- * through Netlify rewrites: /blog/* (GCI Media) and /places/* (GCI Places).
+ * through Netlify rewrites: /blog/* (GCI Media), /places/* (GCI Places) and
+ * /de/* (the German edition).
  * Those rules are the only thing making one domain out of three deploy units,
  * and nothing else in the build would notice if one of them broke:
  *
@@ -38,6 +39,7 @@ const check = (ok, msg) => {
 const PROXIED = [
   { name: "GCI Media", base: "/blog", origin: "https://globalcityintelligence-blog.netlify.app" },
   { name: "GCI Places", base: "/places", origin: "https://globalcityintelligence-places.netlify.app" },
+  { name: "GCI German edition", base: "/de", origin: "https://globalcityintelligence-de.netlify.app" },
 ];
 
 const toml = readFileSync(join(ROOT, "netlify.toml"), "utf8");

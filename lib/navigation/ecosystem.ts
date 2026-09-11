@@ -50,7 +50,7 @@ export interface EcosystemDestination {
   /** Whether this destination belongs in the primary header navigation. */
   primary: boolean;
   /** Set when the destination is served by another deployment. */
-  servedBy?: "gci-media" | "gci-places";
+  servedBy?: "gci-media" | "gci-places" | "gci-de";
 }
 
 /**
@@ -69,6 +69,16 @@ export const ECOSYSTEM_DESTINATIONS: EcosystemDestination[] = [
   { id: "methodology", label: "Methodology", path: "/methodology", primary: true },
   { id: "data-sources", label: "Data Sources", path: "/data-sources", primary: true },
   { id: "blog", label: "Blog", path: "/blog", primary: true, servedBy: "gci-media" },
+  /*
+   * The German edition. `primary: false` on purpose — it is NOT a header item.
+   * It is listed here so that isCrossDeploymentPath() knows /de belongs to
+   * another deployment: a next/link to a proxied path prefetches an RSC
+   * payload for a page this build does not have, 404s on every page view that
+   * scrolls it into sight, and then hard-navigates anyway. Language choice is
+   * offered per page where a German counterpart exists, not as a tenth nav
+   * item.
+   */
+  { id: "german-edition", label: "Deutsch", path: "/de", primary: false, servedBy: "gci-de" },
 ];
 
 /** Destinations that are live on the canonical domain right now. */
@@ -123,7 +133,11 @@ export function blogUrl(path = "/"): string {
  * being up. `scripts/validate-proxy-routes.mjs` checks that each one sits
  * inside a namespace this site actually proxies.
  */
-export const PROXIED_SITEMAPS = ["/blog/sitemap.xml", "/places/sitemap.xml"] as const;
+export const PROXIED_SITEMAPS = [
+  "/blog/sitemap.xml",
+  "/places/sitemap.xml",
+  "/de/sitemap.xml",
+] as const;
 
 /**
  * Whether a path is served by ANOTHER deployment.
