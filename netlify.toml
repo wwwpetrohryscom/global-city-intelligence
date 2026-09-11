@@ -110,6 +110,41 @@
   force = true
 
 # ---------------------------------------------------------------------------
+# GCI German edition — /de/* is served by a third deployment.
+#
+# Site: globalcityintelligence-de (8cc0acc7-6167-491b-8c24-0d4df227ee68)
+# 2,758 prebuilt static pages; 0 Functions, 0 Edge Functions, no Git build.
+#
+# REQUIREMENTS (verified 2026-09-11, and each one has bitten this domain
+# before):
+#   - same Netlify team as this site, or the rewrite is refused
+#   - sso_login MUST be false. A new Netlify site inherits sso_login = true
+#     with context "all", which protects PRODUCTION and would 401 this proxy —
+#     /de would be entirely dead. Both other proxied origins run sso_login
+#     false for exactly this reason.
+#   - the origin's own robots.txt disallows everything, and that protection is
+#     deliberately NOT an X-Robots-Tag header: response headers propagate
+#     through this proxy and would noindex the canonical /de pages.
+#   - assets live at /de/_next/... on the origin, not /_next/..., so they
+#     cannot collide with this application's own build assets.
+#
+# TWO RULES, NOT ONE. The bare /de has no splat to match, so without its own
+# entry it falls through to this application's 404. The same pair serves
+# /blog and /places above.
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/de"
+  to = "https://globalcityintelligence-de.netlify.app/de"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/de/*"
+  to = "https://globalcityintelligence-de.netlify.app/de/:splat"
+  status = 200
+  force = true
+
+# ---------------------------------------------------------------------------
 # Redirects — exact translations of the four next.config.ts redirects, which
 # `output: 'export'` cannot express. force=false so a real file always wins.
 # ---------------------------------------------------------------------------
