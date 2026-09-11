@@ -2,6 +2,7 @@ import { BrandMark } from "@/components/layout/BrandMark";
 import { Container } from "@/components/layout/Container";
 import { PrimaryNav } from "@/components/layout/PrimaryNav";
 import { GlobalSearch } from "@/components/search/GlobalSearch";
+import { LanguageSwitcher } from "@/components/i18n/LanguageSwitcher";
 
 /**
  * The site header.
@@ -27,7 +28,15 @@ export function SiteHeader() {
       <Container className="relative flex items-center gap-2 py-2.5 md:gap-3">
         <BrandMark size="md" tone="accent" />
         <PrimaryNav />
-        <div className="shrink-0">
+        <div className="flex shrink-0 items-center gap-2 md:gap-3">
+          {/*
+            The language switch renders only on a page that HAS a translation,
+            and decides that from the page's own hreflang links — the same
+            elements the SEO cluster uses, so the two cannot disagree. On a page
+            with no counterpart it renders nothing at all, which is why it costs
+            no space on the 84,000 English-only pages.
+          */}
+          <LanguageSwitcher />
           <GlobalSearch />
         </div>
       </Container>
